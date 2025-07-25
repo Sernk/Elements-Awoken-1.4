@@ -1,0 +1,123 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace ElementsAwoken.Content.Projectiles.NPCProj
+{
+    public class Waternado : ModProjectile
+    {
+
+        public override void SetDefaults()
+        {
+            Projectile.width = 150;
+            Projectile.height = 42;
+            Projectile.hostile = true;
+            Projectile.penetrate = -1;
+            Projectile.tileCollide = false;
+            Projectile.ignoreWater = true;
+            Projectile.alpha = 255;
+            Projectile.timeLeft = 540;
+        }
+        public override void SetStaticDefaults()
+        {
+            // DisplayName.SetDefault("Waternado");
+            Main.projFrames[Projectile.type] = 6;
+        }
+        public override void AI()
+        {
+            int num606 = 10; // scaling
+            int num607 = 15; // scaling
+            float num608 = 1f; // scaling
+            int num609 = 150;
+            int num610 = 42;
+            if (Projectile.velocity.X != 0f)
+            {
+                Projectile.direction = (Projectile.spriteDirection = -Math.Sign(Projectile.velocity.X));
+            }
+            int num3 = Projectile.frameCounter;
+            Projectile.frameCounter = num3 + 1;
+            if (Projectile.frameCounter > 2)
+            {
+                num3 = Projectile.frame;
+                Projectile.frame = num3 + 1;
+                Projectile.frameCounter = 0;
+            }
+            if (Projectile.frame >= 6)
+            {
+                Projectile.frame = 0;
+            }
+            if (Projectile.localAI[0] == 0f && Main.myPlayer == Projectile.owner)
+            {
+                Projectile.localAI[0] = 1f;
+                Projectile.position.X = Projectile.position.X + (float)(Projectile.width / 2);
+                Projectile.position.Y = Projectile.position.Y + (float)(Projectile.height / 2);
+                Projectile.scale = ((float)(num606 + num607) - Projectile.ai[1]) * num608 / (float)(num607 + num606);
+                Projectile.width = (int)((float)num609 * Projectile.scale);
+                Projectile.height = (int)((float)num610 * Projectile.scale);
+                Projectile.position.X = Projectile.position.X - (float)(Projectile.width / 2);
+                Projectile.position.Y = Projectile.position.Y - (float)(Projectile.height / 2);
+                Projectile.netUpdate = true;
+            }
+            if (Projectile.ai[1] != -1f)
+            {
+                Projectile.scale = ((float)(num606 + num607) - Projectile.ai[1]) * num608 / (float)(num607 + num606);
+                Projectile.width = (int)((float)num609 * Projectile.scale);
+                Projectile.height = (int)((float)num610 * Projectile.scale);
+            }
+            if (!Collision.SolidCollision(Projectile.position, Projectile.width, Projectile.height))
+            {
+                Projectile.alpha -= 30;
+                if (Projectile.alpha < 60)
+                {
+                    Projectile.alpha = 60;
+                }
+            }
+            else
+            {
+                Projectile.alpha += 30;
+                if (Projectile.alpha > 150)
+                {
+                    Projectile.alpha = 150;
+                }
+            }
+            if (Projectile.ai[0] > 0f)
+            {
+                float[] var_2_19A93_cp_0 = Projectile.ai;
+                int var_2_19A93_cp_1 = 0;
+                float num73 = var_2_19A93_cp_0[var_2_19A93_cp_1];
+                var_2_19A93_cp_0[var_2_19A93_cp_1] = num73 - 1f;
+            }
+            if (Projectile.ai[0] == 1f && Projectile.ai[1] > 0f && Projectile.owner == Main.myPlayer)
+            {
+                Projectile.netUpdate = true;
+                Vector2 center = Projectile.Center;
+                center.Y -= (float)num610 * Projectile.scale / 2f;
+                float num611 = ((float)(num606 + num607) - Projectile.ai[1] + 1f) * num608 / (float)(num607 + num606);
+                center.Y -= (float)num610 * num611 / 2f;
+                center.Y += 2f;
+                Projectile.NewProjectile(Projectile.GetSource_FromThis(), center.X, center.Y, Projectile.velocity.X, Projectile.velocity.Y, Projectile.type, Projectile.damage, Projectile.knockBack, Projectile.owner, 10f, Projectile.ai[1] - 1f);
+            }
+            if (Projectile.ai[0] <= 0f)
+            {
+                float num615 = 0.104719758f;
+                float num616 = (float)Projectile.width / 5f;
+                if (Projectile.type == 386) // change this
+                {
+                    num616 *= 2f;
+                }
+                float num617 = (float)(Math.Cos((double)(num615 * -(double)Projectile.ai[0])) - 0.5) * num616;
+                Projectile.position.X = Projectile.position.X - num617 * (float)(-(float)Projectile.direction);
+                float[] var_2_19D98_cp_0 = Projectile.ai;
+                int var_2_19D98_cp_1 = 0;
+                float num73 = var_2_19D98_cp_0[var_2_19D98_cp_1];
+                var_2_19D98_cp_0[var_2_19D98_cp_1] = num73 - 1f;
+                num617 = (float)(Math.Cos((double)(num615 * -(double)Projectile.ai[0])) - 0.5) * num616;
+                Projectile.position.X = Projectile.position.X + num617 * (float)(-(float)Projectile.direction);
+                return;
+            }
+        }
+    }
+}

@@ -1,0 +1,499 @@
+Items: {
+	DeathwishFlame: {
+		// Tooltip: ""
+		// DisplayName: Deathwish Flame
+	}
+
+	DemonicFleshClump: {
+		// DisplayName: Demonic Flesh Clump
+		// Tooltip: ""
+	}
+
+	FleshClump: {
+		// DisplayName: Flesh Clump
+		// Tooltip: ""
+	}
+
+	ImpEar: {
+		// DisplayName: Imp Ear
+		// Tooltip: ""
+	}
+
+	InfinityCrys: {
+		// DisplayName: Infinity Crystal
+		// Tooltip: A cold crystal... What could it be used for?
+	}
+
+	LensFragment: {
+		// DisplayName: Lens Fragment
+		// Tooltip: ""
+	}
+
+	NeutronFragment: {
+		// DisplayName: Neutron Fragment
+		// Tooltip: The power of collapsed stars rests within this fragment. Use it wisely
+	}
+
+	Pyroplasm: {
+		// DisplayName: Pyroplasm
+		// Tooltip: ""
+	}
+
+	Antibiotics: {
+		// DisplayName: Antibiotics
+		// Tooltip: Antibacterial medicine
+	}
+
+	BrokenHeroWhip: {
+		// DisplayName: Broken Hero Whip
+		// Tooltip: ""
+	}
+
+	CInfinityCrys: {
+		// DisplayName: Cracked Infinity Crystal
+		/* Tooltip:
+			'''
+			Unimaginable power surges from this very crystal in your hands
+			It is up to you to decide what to do with it...
+			''' */
+	}
+
+	ConcentratedPyroplasm: {
+		// DisplayName: Concentrated Pyroplasm
+		// Tooltip: Used to craft Blightfire
+	}
+
+	VoidAshes: {
+		// DisplayName: Void Ashes
+		// Tooltip: ""
+	}
+
+	VoidLeviathanHeart: {
+		// DisplayName: Void Leviathan Heart
+		// Tooltip: ""
+	}
+
+	MagicalHerbs: {
+		// DisplayName: Magical Herbs
+		// Tooltip: It has strange healing properties
+	}
+
+	MagmaCrystal: {
+		// DisplayName: Magma Crystal
+		// Tooltip: ""
+	}
+
+	MysticLeaf: {
+		// DisplayName: Biomatter
+		// Tooltip: ""
+	}
+
+	PenguinFeather: {
+		// DisplayName: Penguin Feather
+		// Tooltip: ""
+	}
+
+	RoyalScale: {
+		// DisplayName: Royal Scale
+		// Tooltip: ""
+	}
+
+	Stardust: {
+		// DisplayName: Stardust
+		// Tooltip: ""
+	}
+
+	SunFragment: {
+		// DisplayName: Sun Fragment
+		// Tooltip: It has been sealed inside this temple for centuries.
+	}
+
+	VoiditeBar: {
+		// DisplayName: Voidite Bar
+		// Tooltip: ""
+	}
+
+	VoiditeOre: {
+		// DisplayName: Voidite Ore
+		// Tooltip: ""
+	}
+
+	MysticGemstone: {
+		// DisplayName: Mystic Gemstone
+		// Tooltip: ""
+	}
+
+	KawaiiOrangesMask: {
+		// DisplayName: Kawaii Oranges Mask
+		// Tooltip: ""
+	}
+
+	OrangesBreastplate: {
+		// DisplayName: Oranges Breastplate
+		// Tooltip: ""
+	}
+
+	OrangesLeggings: {
+		// DisplayName: Oranges Leggings
+		// Tooltip: ""
+	}
+
+	OrangesMask: {
+		// DisplayName: Oranges Mask
+		// Tooltip: ""
+	}
+
+	VolcanicStone: {
+		// DisplayName: Volcanic Stone
+		// Tooltip: ""
+	}
+
+	ElementalCapsule: {
+		// DisplayName: Elemental Capsule
+		// Tooltip: ""
+	}
+
+	MysteriousPotion: {
+		// DisplayName: Mysterious Potion
+		// Tooltip: ""
+	}
+
+	VoidbloodHeart: {
+		// DisplayName: Voidblood Heart
+		// Tooltip: ""
+	}
+
+	HiveCrate: {
+		// DisplayName: Hive Crate
+		// Tooltip: ""
+	}
+
+	MajesticHivefish: {
+		// DisplayName: Majestic Hivefish
+		// Tooltip: ""
+	}
+
+	DeathMirror: {
+		// DisplayName: Death Mirror
+		// Tooltip: ""
+	}
+
+	FireFlooder: {
+		// DisplayName: Fire Flooder
+		// Tooltip: ""
+	}
+
+	LavaLeecher: {
+		// DisplayName: Lava Leecher
+		// Tooltip: ""
+	}
+
+	CrashingWave: {
+		// DisplayName: Crashing Wave
+		// Tooltip: ""
+	}
+
+	PiohsPresent: {
+		// DisplayName: Piohs Present
+		// Tooltip: ""
+	}
+
+	SkylineWhirlwind: {
+		// DisplayName: Skyline Whirlwind
+		// Tooltip: ""
+	}
+}
+
+Tiles: {
+	// CrystalCracker.MapEntry: Crystal Cracker
+	// Voidite.MapEntry: Voidite
+
+	PapuansChest: {
+		// MapEntry1: Mods.ElementsAwoken.Tiles.PapuansChest.MapEntry1
+		// PapuansChest: Mods.ElementsAwoken.Tiles.PapuansChest.PapuansChest
+	}
+}
+
+Buffs: {
+	AwokenHealing: {
+		// DisplayName: Awoken Healing
+		// Description: Mods.ElementsAwoken.Buffs.AwokenHealing.Description
+	}
+
+	Bloodbath: {
+		// DisplayName: Bloodbath
+		// Description: Mods.ElementsAwoken.Buffs.Bloodbath.Description
+	}
+
+	ChaosShield: {
+		// DisplayName: Chaos Shield
+		// Description: Mods.ElementsAwoken.Buffs.ChaosShield.Description
+	}
+
+	BoostDriveCD: {
+		// DisplayName: Boost Drive C D
+		// Description: Mods.ElementsAwoken.Buffs.BoostDriveCD.Description
+	}
+
+	ChaosShieldCooldown: {
+		// DisplayName: Chaos Shield Cooldown
+		// Description: Mods.ElementsAwoken.Buffs.ChaosShieldCooldown.Description
+	}
+
+	CrystallineLocketCD: {
+		// DisplayName: Crystalline Locket C D
+		// Description: Mods.ElementsAwoken.Buffs.CrystallineLocketCD.Description
+	}
+
+	GreatLensCD: {
+		// DisplayName: Great Lens C D
+		// Description: Mods.ElementsAwoken.Buffs.GreatLensCD.Description
+	}
+
+	HoneyCocoonCD: {
+		// DisplayName: Honey Cocoon C D
+		// Description: Mods.ElementsAwoken.Buffs.HoneyCocoonCD.Description
+	}
+
+	AncientDecay: {
+		// DisplayName: Ancient Decay
+		// Description: Mods.ElementsAwoken.Buffs.AncientDecay.Description
+	}
+
+	ChaosBurn: {
+		// DisplayName: Chaos Burn
+		// Description: Mods.ElementsAwoken.Buffs.ChaosBurn.Description
+	}
+
+	DeterioratingWings: {
+		// DisplayName: Deteriorating Wings
+		// Description: Mods.ElementsAwoken.Buffs.DeterioratingWings.Description
+	}
+
+	Dragonfire: {
+		// DisplayName: Dragonfire
+		// Description: Mods.ElementsAwoken.Buffs.Dragonfire.Description
+	}
+
+	ExtinctionCurse: {
+		// DisplayName: Extinction Curse
+		// Description: Mods.ElementsAwoken.Buffs.ExtinctionCurse.Description
+	}
+
+	FastPoison: {
+		// DisplayName: Fast Poison
+		// Description: Mods.ElementsAwoken.Buffs.FastPoison.Description
+	}
+
+	ElementalArmorCooldown: {
+		// DisplayName: Elemental Armor Cooldown
+		// Description: Mods.ElementsAwoken.Buffs.ElementalArmorCooldown.Description
+	}
+
+	NeovirtuoCooldown: {
+		// DisplayName: Neovirtuo Cooldown
+		// Description: Mods.ElementsAwoken.Buffs.NeovirtuoCooldown.Description
+	}
+
+	DarkenedSkies: {
+		// DisplayName: Darkened Skies
+		// Description: Mods.ElementsAwoken.Buffs.DarkenedSkies.Description
+	}
+
+	Hypothermia: {
+		// DisplayName: Hypothermia
+		// Description: Mods.ElementsAwoken.Buffs.Hypothermia.Description
+	}
+
+	InfernacesWrath: {
+		// DisplayName: Infernaces Wrath
+		// Description: Mods.ElementsAwoken.Buffs.InfernacesWrath.Description
+	}
+
+	Psychosis: {
+		// DisplayName: Psychosis
+		// Description: Mods.ElementsAwoken.Buffs.Psychosis.Description
+	}
+
+	StormSurge: {
+		// DisplayName: Storm Surge
+		// Description: Mods.ElementsAwoken.Buffs.StormSurge.Description
+	}
+
+	StatueBuffGenihWat: {
+		// DisplayName: Statue Buff Genih Wat
+		// Description: Mods.ElementsAwoken.Buffs.StatueBuffGenihWat.Description
+	}
+
+	BehemothGaze: {
+		// Description: Mods.ElementsAwoken.Buffs.BehemothGaze.Description
+		// DisplayName: Behemoth Gaze
+	}
+
+	ElementalDragonBunnyBuff: {
+		// DisplayName: Elemental Dragon Bunny Buff
+		// Description: Mods.ElementsAwoken.Buffs.ElementalDragonBunnyBuff.Description
+	}
+
+	ScorpionBreakout: {
+		// DisplayName: Scorpion Breakout
+		// Description: Mods.ElementsAwoken.Buffs.ScorpionBreakout.Description
+	}
+
+	Discord: {
+		// DisplayName: Discord
+		// Description: Mods.ElementsAwoken.Buffs.Discord.Description
+	}
+
+	EndlessTears: {
+		// DisplayName: Endless Tears
+		// Description: Mods.ElementsAwoken.Buffs.EndlessTears.Description
+	}
+
+	HandsOfDespair: {
+		// DisplayName: Hands Of Despair
+		// Description: Mods.ElementsAwoken.Buffs.HandsOfDespair.Description
+	}
+
+	IceBound: {
+		// DisplayName: Ice Bound
+		// Description: Mods.ElementsAwoken.Buffs.IceBound.Description
+	}
+
+	SoulInferno: {
+		// DisplayName: Soul Inferno
+		// Description: Mods.ElementsAwoken.Buffs.SoulInferno.Description
+	}
+
+	CalamityBannerBuff: {
+		// DisplayName: Calamity Banner Buff
+		// Description: Mods.ElementsAwoken.Buffs.CalamityBannerBuff.Description
+	}
+
+	ChaosBannerBuff: {
+		// DisplayName: Chaos Banner Buff
+		// Description: Mods.ElementsAwoken.Buffs.ChaosBannerBuff.Description
+	}
+
+	HavocBannerBuff: {
+		// DisplayName: Havoc Banner Buff
+		// Description: Mods.ElementsAwoken.Buffs.HavocBannerBuff.Description
+	}
+
+	CalamityPotionBuff: {
+		// DisplayName: Calamity Potion Buff
+		// Description: Mods.ElementsAwoken.Buffs.CalamityPotionBuff.Description
+	}
+
+	ChaosPotionBuff: {
+		// DisplayName: Chaos Potion Buff
+		// Description: Mods.ElementsAwoken.Buffs.ChaosPotionBuff.Description
+	}
+
+	HavocPotionBuff: {
+		// DisplayName: Havoc Potion Buff
+		// Description: Mods.ElementsAwoken.Buffs.HavocPotionBuff.Description
+	}
+}
+
+NPCs: {
+	// ShadeWyrmBody.DisplayName: Shade Wyrm Body
+	// ShadeWyrmHead.DisplayName: Shade Wyrm Head
+	// ShadeWyrmTail.DisplayName: Shade Wyrm Tail
+	// MysticBunny.DisplayName: Mystic Bunny
+	// SolarFragment.DisplayName: Solar Fragment
+	// VoidLeviathanTail.DisplayName: Void Leviathan Tail
+	// VoidLeviathanOrb.DisplayName: Void Leviathan Orb
+	// VoidLeviathanHead.DisplayName: Void Leviathan Head
+	// VoidLeviathanBody.DisplayName: Void Leviathan Body
+	// BarrenSoul.DisplayName: Barren Soul
+	// BarrenOrbital.DisplayName: Barren Orbital
+	// ElderShadeWyrmTail.DisplayName: Elder Shade Wyrm Tail
+	// ElderShadeWyrmHead.DisplayName: Elder Shade Wyrm Head
+	// ElderShadeWyrmBody.DisplayName: Elder Shade Wyrm Body
+}
+
+Projectiles: {
+	// AbyssalBall.DisplayName: Abyssal Ball
+	// AbyssalPortal.DisplayName: Abyssal Portal
+	// AbyssalTentacle.DisplayName: Abyssal Tentacle
+	// AeroStorm.DisplayName: Aero Storm
+	// ArchaicProtection.DisplayName: Archaic Protection
+	// AsteroxShieldBase.DisplayName: Asterox Shield Base
+	// AsteroxShieldSwirl.DisplayName: Asterox Shield Swirl
+	// BloodbathDashP.DisplayName: Bloodbath Dash P
+	// ChaosRingShield.DisplayName: Chaos Ring Shield
+	// ChaosRingSwirl.DisplayName: Chaos Ring Swirl
+	// ChargeRifleHalf.DisplayName: Charge Rifle Half
+	// CrowLightning.DisplayName: Crow Lightning
+	// CrowStorm.DisplayName: Crow Storm
+	// EnergyWeaverBeam.DisplayName: Energy Weaver Beam
+	// Explosion.DisplayName: Explosion
+	// LegoBrickFriendly.DisplayName: Lego Brick Friendly
+	// LifesAura.DisplayName: Lifes Aura
+	// LightningCloud.DisplayName: Lightning Cloud
+	// LightningCloudSwirl.DisplayName: Lightning Cloud Swirl
+	// LightningExplosion.DisplayName: Lightning Explosion
+	// MechLightning.DisplayName: Mech Lightning
+	// Demon.DisplayName: Demon
+	// NeovirtuoBolt.DisplayName: Neovirtuo Bolt
+	// NeovirtuoHoming.DisplayName: Neovirtuo Homing
+	// NeovirtuoPortal.DisplayName: Neovirtuo Portal
+	// HailPellet.DisplayName: Hail Pellet
+	// Waternado.DisplayName: Waternado
+	// WaternadoBolt.DisplayName: Waternado Bolt
+	// RadiantPTeleport.DisplayName: Radiant P Teleport
+	// PoisonWater.DisplayName: Poison Water
+	// PutridCloud.DisplayName: Putrid Cloud
+	// ShackledBase.DisplayName: Shackled Base
+	// SlimeClawBall.DisplayName: Slime Claw Ball
+	// UkuleleArc.DisplayName: Ukulele Arc
+	// ViridiumBomb.DisplayName: Viridium Bomb
+	// VleviAegisSwirl.DisplayName: Vlevi Aegis Swirl
+	// VoidBlood.DisplayName: Void Blood
+	// VoidSinewave.DisplayName: Void Sinewave
+	// CrashingWaveP.DisplayName: Crashing Wave P
+	// VoidStrike.DisplayName: Void Strike
+	// VoidSpine.DisplayName: Void Spine
+	// VoidRunes.DisplayName: Void Runes
+	// VoidOrbProj.DisplayName: Void Orb Proj
+	// VoidOrbDestroyed.DisplayName: Void Orb Destroyed
+	// VoidBolt.DisplayName: Void Bolt
+	// ExtinctionBlast.DisplayName: Extinction Blast
+	// VoidRuneExplosion.DisplayName: Void Rune Explosion
+	// BunnyBreath.DisplayName: Bunny Breath
+	// HandsOfDespair.DisplayName: Hands Of Despair
+}
+
+Configs: {
+	Config: {
+		// DisplayName: Config
+		// screenshakeDisabled.Tooltip: ""
+	}
+}
+
+Config: {
+	// ElementsAwokenConfig: alchemist Potions Header
+	// AlchemistPotionShop: alchemist Potions
+	// EnablesShop: ""
+	// ResourceBars: resource Bars
+	// TurnsUI: ""
+	// DisableLabs: labs Disabled
+	// StopsLabs: ""
+	// DisableBoss: prompts Disabled
+	// Disablestheeffects: ""
+	// ItemChanges: v Item Changes Disabled
+	// vanillaitems: ""
+	// Screenshake: screenshake Disabled
+	// LowDust: low Dust
+	// Reduces: ""
+	// EnterDebug: debug Mode
+	// Shows: ""
+}
+
+Biomes: {
+	EABiomes: {
+		// DisplayName: E A Biomes
+		// TownNPCDialogueName: the E A Biomes
+	}
+}
