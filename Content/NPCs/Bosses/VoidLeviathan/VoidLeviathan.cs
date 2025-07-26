@@ -11,7 +11,9 @@ using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
@@ -21,6 +23,12 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
     class VoidLeviathanHead : VoidLeviathan
     {
         public override string Texture { get { return "ElementsAwoken/Content/NPCs/Bosses/VoidLeviathan/VoidLeviathanHead"; } }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
+                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().VoidLeviathan)
+            });
+        }
 
         public override void SetDefaults()
         {

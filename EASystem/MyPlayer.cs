@@ -3225,7 +3225,7 @@ namespace ElementsAwoken.EASystem
             }
             return base.ModifyNurseHeal(nurse, ref health, ref removeDebuffs, ref chatText);
         }
-        /*public override void ProcessTriggers(TriggersSet triggersSet)
+        public override void ProcessTriggers(TriggersSet triggersSet)
         {
             var source = Main.LocalPlayer.GetSource_FromThis();
             PlayerEnergy energyPlayer = Player.GetModPlayer<PlayerEnergy>();
@@ -3265,7 +3265,6 @@ namespace ElementsAwoken.EASystem
                     }
                 }
             }
-
             if (boostDrive != 0 && ElementsAwoken.specialAbility.JustPressed && Player.FindBuffIndex(BuffType<BoostDriveCD>()) == -1)
             {
                 bool hasEnergy = false;
@@ -3307,7 +3306,7 @@ namespace ElementsAwoken.EASystem
                     {
                         if (flareShieldCD <= 0)
                         {
-                            Player.AddBuff(BuffType<FlareShield>(), 900);
+                            Player.AddBuff(BuffType<Content.Buffs.Other.FlareShield>(), 900);
                             flareShieldCD = 3600;
                         }
                         else
@@ -3529,8 +3528,7 @@ namespace ElementsAwoken.EASystem
                 voidWalkerAura = 300;
             }
             doubleTappedDown = false;
-        }*/
-
+        }
         public static void explosionEffect(Player player, int type, int damage, float knockback, int dust)
         {
             var source = Main.LocalPlayer.GetSource_FromThis();

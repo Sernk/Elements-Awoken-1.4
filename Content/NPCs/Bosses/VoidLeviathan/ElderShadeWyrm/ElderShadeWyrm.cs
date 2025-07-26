@@ -8,6 +8,7 @@ using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
@@ -37,6 +38,12 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm
             NPC.DeathSound = SoundID.NPCDeath14;
             NPC.npcSlots = 1f;
             NPC.netAlways = true;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
+                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().ElderShadeWyrm)
+            });
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {

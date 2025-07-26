@@ -124,48 +124,62 @@ Items: {
 	}
 
 	KawaiiOrangesMask: {
-		DisplayName: Kawaii Oranges Mask
-		Tooltip: ""
+		DisplayName: ThatOneJuicyOrange's Mask
+		Tooltip: So kawaii
 	}
 
 	OrangesBreastplate: {
-		DisplayName: Oranges Breastplate
+		DisplayName: ThatOneJuicyOrange's Breastplate
 		Tooltip: ""
 	}
 
 	OrangesLeggings: {
-		DisplayName: Oranges Leggings
+		DisplayName: ThatOneJuicyOrange's Leggings
 		Tooltip: ""
 	}
 
 	OrangesMask: {
-		DisplayName: Oranges Mask
-		Tooltip: ""
+		DisplayName: ThatOneJuicyOrange's Mask
+		Tooltip: So juicy
 	}
 
 	VolcanicStone: {
 		DisplayName: Volcanic Stone
-		Tooltip: ""
+		Tooltip: The rocks seem to constantly shatter into flames
 	}
 
 	ElementalCapsule: {
 		DisplayName: Elemental Capsule
-		Tooltip: ""
+		Tooltip:
+			'''
+			Forces bend around this capsule...
+			Can only be used in Expert Mode
+			Only use if you are up for a challenge
+			Activates [c/f442aa:Awakened Mode] and sanity [i:ElementsAwoken/SanityChanger]
+			-75% more enemy life, defence and damage
+			-New harder boss AI's and stats
+			'''
 	}
 
 	MysteriousPotion: {
 		DisplayName: Mysterious Potion
-		Tooltip: ""
+		Tooltip: It has a foul smell about it
 	}
 
 	VoidbloodHeart: {
 		DisplayName: Voidblood Heart
-		Tooltip: ""
+		Tooltip:
+			'''
+			Disabled all natural regeneration
+			Healing potions are disabled
+			The nurse costs 3x more and is disabled when injured and during bossfights
+			You leak toxic Voidblood on hit and low health
+			'''
 	}
 
 	HiveCrate: {
 		DisplayName: Hive Crate
-		Tooltip: ""
+		Tooltip: Right click to open
 	}
 
 	MajesticHivefish: {
@@ -174,18 +188,23 @@ Items: {
 	}
 
 	DeathMirror: {
-		DisplayName: Death Mirror
-		Tooltip: ""
+		DisplayName: Hell's Reflection
+		Tooltip:
+			'''
+			Teleports the player to the last death postition
+			Must teleport back within 30 seconds
+			Has a 5 minute cooldown
+			'''
 	}
 
 	FireFlooder: {
 		DisplayName: Fire Flooder
-		Tooltip: ""
+		Tooltip: Contains an endless amount of lava
 	}
 
 	LavaLeecher: {
 		DisplayName: Lava Leecher
-		Tooltip: ""
+		Tooltip: Capable of soaking up an endless amount of lava
 	}
 
 	CrashingWave: {
@@ -194,12 +213,37 @@ Items: {
 	}
 
 	PiohsPresent: {
-		DisplayName: Piohs Present
-		Tooltip: ""
+		DisplayName: Pioh's Present
+		Tooltip:
+			'''
+			Summons a ridable Elemental Dragon Bunny
+			BabeElena's Youtuber item
+			'''
 	}
 
 	SkylineWhirlwind: {
 		DisplayName: Skyline Whirlwind
+		Tooltip:
+			'''
+			Crazy speed!
+			Grants immunity to fire blocks
+			Temporary immunity to lava
+			Allows flight and slow fall
+			'''
+	}
+
+	Railgun: {
+		DisplayName: Railgun
+		Tooltip:
+			'''
+			Loves worms
+			Using the item charges heat
+			Gaining too much heat will damage the player and decrease the items effectiveness
+			'''
+	}
+
+	SanityChanger: {
+		DisplayName: Sanity Changer
 		Tooltip: ""
 	}
 }
@@ -217,182 +261,231 @@ Tiles: {
 Buffs: {
 	AwokenHealing: {
 		DisplayName: Awoken Healing
-		Description: Mods.ElementsAwoken.Buffs.AwokenHealing.Description
+		Description: Your life rapidly regenerates
 	}
 
 	Bloodbath: {
 		DisplayName: Bloodbath
-		Description: Mods.ElementsAwoken.Buffs.Bloodbath.Description
+		Description: Damage is increased by 20
 	}
 
 	ChaosShield: {
 		DisplayName: Chaos Shield
-		Description: Mods.ElementsAwoken.Buffs.ChaosShield.Description
+		Description: ""
 	}
 
 	BoostDriveCD: {
-		DisplayName: Boost Drive C D
-		Description: Mods.ElementsAwoken.Buffs.BoostDriveCD.Description
+		DisplayName: Boost Drive Cooldown
+		Description: You cannot use the Boost Drive
 	}
 
 	ChaosShieldCooldown: {
 		DisplayName: Chaos Shield Cooldown
-		Description: Mods.ElementsAwoken.Buffs.ChaosShieldCooldown.Description
+		Description: You cannot create a chaos shield
 	}
 
 	CrystallineLocketCD: {
-		DisplayName: Crystalline Locket C D
-		Description: Mods.ElementsAwoken.Buffs.CrystallineLocketCD.Description
+		DisplayName: Crystalline Locket Cooldown
+		Description: You cannot use the crystalline locket
 	}
 
 	GreatLensCD: {
-		DisplayName: Great Lens C D
-		Description: Mods.ElementsAwoken.Buffs.GreatLensCD.Description
+		DisplayName: Great Lens Cooldown
+		Description: You cannot use the Great Lens
 	}
 
 	HoneyCocoonCD: {
-		DisplayName: Honey Cocoon C D
-		Description: Mods.ElementsAwoken.Buffs.HoneyCocoonCD.Description
+		DisplayName: Honey Cocoon Cooldown
+		Description: You cannot use the Honey Cocoon
 	}
 
 	AncientDecay: {
 		DisplayName: Ancient Decay
-		Description: Mods.ElementsAwoken.Buffs.AncientDecay.Description
+		Description: Your soul is wearing away
 	}
 
 	ChaosBurn: {
-		DisplayName: Chaos Burn
-		Description: Mods.ElementsAwoken.Buffs.ChaosBurn.Description
+		DisplayName: Chaotic Necrosis
+		Description: Your cells are being torn to shreds
 	}
 
 	DeterioratingWings: {
 		DisplayName: Deteriorating Wings
-		Description: Mods.ElementsAwoken.Buffs.DeterioratingWings.Description
+		Description: Your wings are crumbling into black dust
 	}
 
 	Dragonfire: {
 		DisplayName: Dragonfire
-		Description: Mods.ElementsAwoken.Buffs.Dragonfire.Description
+		Description: Your skin is burning off
 	}
 
 	ExtinctionCurse: {
 		DisplayName: Extinction Curse
-		Description: Mods.ElementsAwoken.Buffs.ExtinctionCurse.Description
+		Description: The forces of the abyss pull you deeper...
 	}
 
 	FastPoison: {
-		DisplayName: Fast Poison
-		Description: Mods.ElementsAwoken.Buffs.FastPoison.Description
+		DisplayName: Rapid Poison
+		Description: Rapidly losing life
 	}
 
 	ElementalArmorCooldown: {
-		DisplayName: Elemental Armor Cooldown
-		Description: Mods.ElementsAwoken.Buffs.ElementalArmorCooldown.Description
+		DisplayName: Elemental Revive Cooldown
+		Description: Your revive is recharging
 	}
 
 	NeovirtuoCooldown: {
 		DisplayName: Neovirtuo Cooldown
-		Description: Mods.ElementsAwoken.Buffs.NeovirtuoCooldown.Description
+		Description: You cant use Neovirtuo
 	}
 
 	DarkenedSkies: {
 		DisplayName: Darkened Skies
-		Description: Mods.ElementsAwoken.Buffs.DarkenedSkies.Description
+		Description:
+			'''
+			Lightning strikes from the sky
+			Storms happens more frequently
+			Defeat Regaroth to stop this effect
+			Disable this effect in the config
+			'''
 	}
 
 	Hypothermia: {
 		DisplayName: Hypothermia
-		Description: Mods.ElementsAwoken.Buffs.Hypothermia.Description
+		Description:
+			'''
+			The temperature plummets
+			Movement speed reduced by 5% and applys random ice debuffs
+			Frequent hailstorms
+			Being within 7 blocks of a campfire or lava removes this effect
+			Defeat Permafrost to stop this effect
+			Disable this effect in the config
+			'''
 	}
 
 	InfernacesWrath: {
-		DisplayName: Infernaces Wrath
-		Description: Mods.ElementsAwoken.Buffs.InfernacesWrath.Description
+		DisplayName: Infernace's Wrath
+		Description:
+			'''
+			Meteors rain from the sky
+			When approaching hell, Infernace's Guardians may attack the player
+			Defeat Infernace to stop this effect
+			Disable this effect in the config
+			'''
 	}
 
 	Psychosis: {
 		DisplayName: Psychosis
-		Description: Mods.ElementsAwoken.Buffs.Psychosis.Description
+		Description:
+			'''
+			The force of the void drags you down
+			10 decreased defence and 5% damage reduction
+			Causes hallucinations
+			Defeat the Void Leviathan to stop this effect
+			Disable this effect in the config
+			'''
 	}
 
 	StormSurge: {
 		DisplayName: Storm Surge
-		Description: Mods.ElementsAwoken.Buffs.StormSurge.Description
+		Description:
+			'''
+			Waternados sprout from the ground
+			Rain happens more frequently
+			Defeat Aqueous to stop this effect
+			Disable this effect in the config
+			'''
 	}
 
 	StatueBuffGenihWat: {
-		DisplayName: Statue Buff Genih Wat
-		Description: Mods.ElementsAwoken.Buffs.StatueBuffGenihWat.Description
+		DisplayName: Genih Wat's Presence
+		Description:
+			'''
+			15% increased magic damage
+			Increases Mana Regen by 5
+			Enemies are more aggressive
+			Enemies spawn more frequently
+			'''
 	}
 
 	BehemothGaze: {
-		Description: Mods.ElementsAwoken.Buffs.BehemothGaze.Description
+		Description: You have looked upon a being so great you cannot get away
 		DisplayName: Behemoth Gaze
 	}
 
 	ElementalDragonBunnyBuff: {
-		DisplayName: Elemental Dragon Bunny Buff
-		Description: Mods.ElementsAwoken.Buffs.ElementalDragonBunnyBuff.Description
+		DisplayName: Elemental Dragon Bunny
+		Description: It happily hops around
 	}
 
 	ScorpionBreakout: {
 		DisplayName: Scorpion Breakout
-		Description: Mods.ElementsAwoken.Buffs.ScorpionBreakout.Description
+		Description:
+			'''
+			Scorpions infest terraria
+			Defeat Wasteland to stop this effect
+			Disable this effect in the config
+			'''
 	}
 
 	Discord: {
 		DisplayName: Discord
-		Description: Mods.ElementsAwoken.Buffs.Discord.Description
+		Description: Every part of you aches...
 	}
 
 	EndlessTears: {
 		DisplayName: Endless Tears
-		Description: Mods.ElementsAwoken.Buffs.EndlessTears.Description
+		Description: The sadness pulls you down
 	}
 
 	HandsOfDespair: {
 		DisplayName: Hands Of Despair
-		Description: Mods.ElementsAwoken.Buffs.HandsOfDespair.Description
+		Description: They grasp at your limbs, pulling you down
 	}
 
 	IceBound: {
 		DisplayName: Ice Bound
-		Description: Mods.ElementsAwoken.Buffs.IceBound.Description
+		Description: Your bones and joints freeze
 	}
 
 	SoulInferno: {
 		DisplayName: Soul Inferno
-		Description: Mods.ElementsAwoken.Buffs.SoulInferno.Description
+		Description: You glow with a strange radiation
 	}
 
 	CalamityBannerBuff: {
-		DisplayName: Calamity Banner Buff
-		Description: Mods.ElementsAwoken.Buffs.CalamityBannerBuff.Description
+		DisplayName: Calamity Banner
+		Description: Spawnrates increased by 7.5x
 	}
 
 	ChaosBannerBuff: {
-		DisplayName: Chaos Banner Buff
-		Description: Mods.ElementsAwoken.Buffs.ChaosBannerBuff.Description
+		DisplayName: Chaos Banner
+		Description: Spawnrates increased by 5x
 	}
 
 	HavocBannerBuff: {
-		DisplayName: Havoc Banner Buff
-		Description: Mods.ElementsAwoken.Buffs.HavocBannerBuff.Description
+		DisplayName: Havoc Banner
+		Description: Spawnrates increased by 2x
 	}
 
 	CalamityPotionBuff: {
-		DisplayName: Calamity Potion Buff
-		Description: Mods.ElementsAwoken.Buffs.CalamityPotionBuff.Description
+		DisplayName: Calamity
+		Description: Spawnrates increased by 12.5x
 	}
 
 	ChaosPotionBuff: {
-		DisplayName: Chaos Potion Buff
-		Description: Mods.ElementsAwoken.Buffs.ChaosPotionBuff.Description
+		DisplayName: Chaos
+		Description: Spawnrates increased by 7.5x
 	}
 
 	HavocPotionBuff: {
-		DisplayName: Havoc Potion Buff
-		Description: Mods.ElementsAwoken.Buffs.HavocPotionBuff.Description
+		DisplayName: Havoc
+		Description: Spawnrates increased by 4x
+	}
+
+	FlareShield: {
+		DisplayName: Flare Shield
+		Description: ""
 	}
 }
 
@@ -463,32 +556,33 @@ Projectiles: {
 	VoidRuneExplosion.DisplayName: Void Rune Explosion
 	BunnyBreath.DisplayName: Bunny Breath
 	HandsOfDespair.DisplayName: Hands Of Despair
+	FlareShield.DisplayName: Flare Shield
 }
 
 Configs: {
 	Config: {
-		DisplayName: Config
+		DisplayName: Elements Awoken Config
 		screenshakeDisabled.Tooltip: ""
 	}
 }
 
 Config: {
-	ElementsAwokenConfig: alchemist Potions Header
-	AlchemistPotionShop: alchemist Potions
-	EnablesShop: ""
-	ResourceBars: resource Bars
-	TurnsUI: ""
-	DisableLabs: labs Disabled
-	StopsLabs: ""
-	DisableBoss: prompts Disabled
-	Disablestheeffects: ""
-	ItemChanges: v Item Changes Disabled
-	vanillaitems: ""
-	Screenshake: screenshake Disabled
-	LowDust: low Dust
-	Reduces: ""
-	EnterDebug: debug Mode
-	Shows: ""
+	ElementsAwokenConfig: Elements Awoken Config
+	AlchemistPotionShop: Enable Alchemist Potion Shop
+	EnablesShop: Enables the Alchemists potion shop, replacing the potion material shop
+	ResourceBars: Resource Bars
+	TurnsUI: Turns the energy and insanity UI into bars
+	DisableLabs: Disable Labs
+	StopsLabs: Stops Labs from generating on world gen
+	DisableBoss: Disable Boss Prompts
+	Disablestheeffects: Disables the effects that happen in the world 30 minutes after beating a boss
+	ItemChanges: Disable Vanilla Item Changes
+	vanillaitems: Disabled all changes to vanilla items
+	Screenshake: Disable Screenshake
+	LowDust: Low Dust Mode
+	Reduces: Reduces the amount of dust created by NPCs, projectiles and more (WARNING: only applied to certain objects)
+	EnterDebug: Enter Debug Mode
+	Shows: Shows information for testing (Mainly for Mod Devs)
 }
 
 Biomes: {
@@ -496,4 +590,21 @@ Biomes: {
 		DisplayName: E A Biomes
 		TownNPCDialogueName: the E A Biomes
 	}
+}
+
+Keybinds: {
+	Neovirtuo.DisplayName: Neovirtuo
+	"Special Ability.DisplayName": Special  Ability
+	"Armor Ability.DisplayName": Armor  Ability
+	"Secondary Dash.DisplayName": Secondary  Dash
+}
+
+Bestiary: {
+	Boss: {
+		VoidLeviathan: ""
+		ElderShadeWyrm: ""
+	}
+
+	Enemies.VoidLeviathanOrb: ""
+	Critters.MysticBunny: ""
 }

@@ -1,28 +1,33 @@
-﻿using Terraria.ModLoader;
+﻿using ElementsAwoken.EASystem.Global;
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.DataStructures;
+using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Items.Consumable
 {
     public class ElementalCapsule : ModItem
     {
-        /*public override void SetDefaults()
+        public override void SetDefaults()
         {
-            item.width = 28;
-            item.height = 18;
+            Item.width = 28;
+            Item.height = 18;
 
-            item.rare = 11;
-            item.expert = true;
+            Item.rare = 11;
+            Item.expert = true;
 
-            item.useAnimation = 45;
-            item.useTime = 45;
-            item.useStyle = 4;
-            item.UseSound = SoundID.Item119;
+            Item.useAnimation = 45;
+            Item.useTime = 45;
+            Item.useStyle = 4;
+            Item.UseSound = SoundID.Item119;
         }
 
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Elemental Capsule");
-            Tooltip.SetDefault($"Forces bend around this capsule...\nCan only be used in Expert Mode\nOnly use if you are up for a challenge\nActivates [c/f442aa:Awakened Mode] and sanity [i:{ItemType<SanityChanger>()}]\n  -75% more enemy life, defence and damage\n  -New harder boss AI's and stats");
-        }
+        //public override void SetStaticDefaults()
+        //{
+        //    DisplayName.SetDefault("Elemental Capsule");
+        //    Tooltip.SetDefault($"Forces bend around this capsule...\nCan only be used in Expert Mode\nOnly use if you are up for a challenge\nActivates [c/f442aa:Awakened Mode] and sanity [i:{ItemType<SanityChanger>()}]\n  -75% more enemy life, defence and damage\n  -New harder boss AI's and stats");
+        //}
 
         public override bool CanUseItem(Player player)
         {
@@ -47,7 +52,7 @@ namespace ElementsAwoken.Content.Items.Consumable
             }
             return false;
         }
-        public override void AddRecipes()
+        /*public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("IronBar", 8);

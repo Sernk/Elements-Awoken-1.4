@@ -1,7 +1,9 @@
 ﻿//using ElementsAwoken.Projectiles.GlobalProjectiles;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
+using ElementsAwoken.EASystem;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -47,6 +49,12 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("Void's Orb");
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
+                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().VoidLeviathanOrb)
+            });
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {

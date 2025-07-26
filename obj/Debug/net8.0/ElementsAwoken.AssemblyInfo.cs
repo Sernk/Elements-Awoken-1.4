@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElementsAwoken")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbed26897ca9e042435423d101a6a95508dbceec")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElementsAwoken")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElementsAwoken")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

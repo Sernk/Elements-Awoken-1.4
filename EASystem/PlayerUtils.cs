@@ -11,5 +11,9 @@ namespace ElementsAwoken.EASystem
     {
         public int enemiesKilledLastMin = 0;
         public int enemiesKilledLast10Secs = 0;
+        public int bossesKilledLastFiveMin = 0;
+        public int salesLastMin = 0;
+        public int buysLastMin = 0;
+        public int playerLight = 0;
     }
 }

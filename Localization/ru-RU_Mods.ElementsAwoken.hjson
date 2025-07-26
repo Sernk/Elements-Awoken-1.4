@@ -1,205 +1,226 @@
 Items: {
 	DeathwishFlame: {
-		// Tooltip: ""
-		// DisplayName: Deathwish Flame
+		Tooltip: ""
+		DisplayName: Пламя Смертожеланья
 	}
 
 	DemonicFleshClump: {
-		// DisplayName: Demonic Flesh Clump
-		// Tooltip: ""
+		DisplayName: Демонический Комок Плоти
+		Tooltip: ""
 	}
 
 	FleshClump: {
-		// DisplayName: Flesh Clump
-		// Tooltip: ""
+		DisplayName: Комок Плоти
+		Tooltip: ""
 	}
 
 	ImpEar: {
-		// DisplayName: Imp Ear
-		// Tooltip: ""
+		DisplayName: Ухо Чёрта
+		Tooltip: ""
 	}
 
 	InfinityCrys: {
-		// DisplayName: Infinity Crystal
-		// Tooltip: A cold crystal... What could it be used for?
+		DisplayName: Кристалл Бесконечности
+		Tooltip: Такой холодный кристал... Интересно, для чего он нужен?
 	}
 
 	LensFragment: {
-		// DisplayName: Lens Fragment
-		// Tooltip: ""
+		DisplayName: Фрагмент Линзы
+		Tooltip: ""
 	}
 
 	NeutronFragment: {
-		// DisplayName: Neutron Fragment
-		// Tooltip: The power of collapsed stars rests within this fragment. Use it wisely
+		DisplayName: Нейтронный Фрагмент
+		Tooltip: Сила погибших звёзд таится в этом фрагменте. Используй рассудительно.
 	}
 
 	Pyroplasm: {
-		// DisplayName: Pyroplasm
-		// Tooltip: ""
+		DisplayName: Огнеплазма
+		Tooltip: ""
 	}
 
 	Antibiotics: {
-		// DisplayName: Antibiotics
-		// Tooltip: Antibacterial medicine
+		DisplayName: Антибиотики
+		Tooltip: Обычные антибиотики.
 	}
 
 	BrokenHeroWhip: {
-		// DisplayName: Broken Hero Whip
-		// Tooltip: ""
+		DisplayName: Сломанный Хлыст Героя
+		Tooltip: ""
 	}
 
 	CInfinityCrys: {
-		// DisplayName: Cracked Infinity Crystal
-		/* Tooltip:
+		DisplayName: Треснувший Кристалл Бесконечности
+		Tooltip:
 			'''
-			Unimaginable power surges from this very crystal in your hands
-			It is up to you to decide what to do with it...
-			''' */
+			В твоих руках находится невообразимая сила, выплёскивающаяся прямиком из этого кристалла
+			Только тебе решать, на что её пустить...
+			'''
 	}
 
 	ConcentratedPyroplasm: {
-		// DisplayName: Concentrated Pyroplasm
-		// Tooltip: Used to craft Blightfire
+		DisplayName: Концентрированная Огнеплазма
+		Tooltip: Используется для крафта Гнилогня
 	}
 
 	VoidAshes: {
-		// DisplayName: Void Ashes
-		// Tooltip: ""
+		DisplayName: Пеплы Пустоты
+		Tooltip: ""
 	}
 
 	VoidLeviathanHeart: {
-		// DisplayName: Void Leviathan Heart
-		// Tooltip: ""
+		DisplayName: Сердце Левиафана Пустоты
+		Tooltip: ""
 	}
 
 	MagicalHerbs: {
-		// DisplayName: Magical Herbs
-		// Tooltip: It has strange healing properties
+		DisplayName: Магические Травы
+		Tooltip: Обладают странными лечащими свойствами
 	}
 
 	MagmaCrystal: {
-		// DisplayName: Magma Crystal
-		// Tooltip: ""
+		DisplayName: Кристалл Магмы
+		Tooltip: ""
 	}
 
 	MysticLeaf: {
-		// DisplayName: Biomatter
-		// Tooltip: ""
+		DisplayName: Биоматерия
+		Tooltip: ""
 	}
 
 	PenguinFeather: {
-		// DisplayName: Penguin Feather
-		// Tooltip: ""
+		DisplayName: Пингвинье Перо
+		Tooltip: ""
 	}
 
 	RoyalScale: {
-		// DisplayName: Royal Scale
-		// Tooltip: ""
+		DisplayName: Королевская Чешуя
+		Tooltip: ""
 	}
 
 	Stardust: {
-		// DisplayName: Stardust
-		// Tooltip: ""
+		DisplayName: Звездопыль
+		Tooltip: ""
 	}
 
 	SunFragment: {
-		// DisplayName: Sun Fragment
-		// Tooltip: It has been sealed inside this temple for centuries.
+		DisplayName: Фрагмент Солнца
+		Tooltip: Фрагменты, которые валяются в этом храме уже столетия.
 	}
 
 	VoiditeBar: {
-		// DisplayName: Voidite Bar
-		// Tooltip: ""
+		DisplayName: Слиток Пустония
+		Tooltip: ""
 	}
 
 	VoiditeOre: {
-		// DisplayName: Voidite Ore
-		// Tooltip: ""
+		DisplayName: Пустониевая Руда
+		Tooltip: ""
 	}
 
 	MysticGemstone: {
-		// DisplayName: Mystic Gemstone
-		// Tooltip: ""
+		DisplayName: Мистический Самоцвет
+		Tooltip: ""
 	}
 
 	KawaiiOrangesMask: {
-		// DisplayName: Kawaii Oranges Mask
-		// Tooltip: ""
+		DisplayName: Кавайная Маска Orange
+		Tooltip: ""
 	}
 
 	OrangesBreastplate: {
-		// DisplayName: Oranges Breastplate
-		// Tooltip: ""
+		DisplayName: Нагрудник Orange
+		Tooltip: ""
 	}
 
 	OrangesLeggings: {
-		// DisplayName: Oranges Leggings
-		// Tooltip: ""
+		DisplayName: Шаровары Orange
+		Tooltip: ""
 	}
 
 	OrangesMask: {
-		// DisplayName: Oranges Mask
-		// Tooltip: ""
+		DisplayName: Маска Orange
+		Tooltip: ""
 	}
 
 	VolcanicStone: {
-		// DisplayName: Volcanic Stone
-		// Tooltip: ""
+		DisplayName: Вулканический Камень
+		Tooltip: ""
 	}
 
 	ElementalCapsule: {
-		// DisplayName: Elemental Capsule
-		// Tooltip: ""
+		DisplayName: Капсула Элементов
+		Tooltip: ""
 	}
 
 	MysteriousPotion: {
-		// DisplayName: Mysterious Potion
-		// Tooltip: ""
+		DisplayName: Диковинное Зелье
+		Tooltip: ""
 	}
 
 	VoidbloodHeart: {
-		// DisplayName: Voidblood Heart
-		// Tooltip: ""
+		DisplayName: Пустокровное Сердце
+		Tooltip: ""
 	}
 
 	HiveCrate: {
-		// DisplayName: Hive Crate
-		// Tooltip: ""
+		DisplayName: Ящик Улья
+		Tooltip: ""
 	}
 
 	MajesticHivefish: {
-		// DisplayName: Majestic Hivefish
-		// Tooltip: ""
+		DisplayName: Великолепный Ульерыб
+		Tooltip: ""
 	}
 
 	DeathMirror: {
-		// DisplayName: Death Mirror
-		// Tooltip: ""
+		DisplayName: Зеркало Смерти
+		Tooltip: ""
 	}
 
 	FireFlooder: {
-		// DisplayName: Fire Flooder
-		// Tooltip: ""
+		DisplayName: Огнетопитель
+		Tooltip: ""
 	}
 
 	LavaLeecher: {
-		// DisplayName: Lava Leecher
-		// Tooltip: ""
+		DisplayName: Лавовая Пиявка
+		Tooltip: ""
 	}
 
 	CrashingWave: {
-		// DisplayName: Crashing Wave
-		// Tooltip: ""
+		DisplayName: Сокрушительная Волна
+		Tooltip: ""
 	}
 
 	PiohsPresent: {
-		// DisplayName: Piohs Present
-		// Tooltip: ""
+		DisplayName: Подарок Пиоха
+		Tooltip: ""
 	}
 
 	SkylineWhirlwind: {
 		// DisplayName: Skyline Whirlwind
+		/* Tooltip:
+			'''
+			Crazy speed!
+			Grants immunity to fire blocks
+			Temporary immunity to lava
+			Allows flight and slow fall
+			''' */
+	}
+
+	Railgun: {
+		// DisplayName: Railgun
+		/* Tooltip:
+			'''
+			Loves worms
+			Using the item charges heat
+			Gaining too much heat will damage the player and decrease the items effectiveness
+			''' */
+	}
+
+	SanityChanger: {
+		// DisplayName: Sanity Changer
 		// Tooltip: ""
 	}
 }
@@ -209,286 +230,336 @@ Tiles: {
 	// Voidite.MapEntry: Voidite
 
 	PapuansChest: {
-		// MapEntry1: Mods.ElementsAwoken.Tiles.PapuansChest.MapEntry1
-		// PapuansChest: Mods.ElementsAwoken.Tiles.PapuansChest.PapuansChest
+		MapEntry1: Папуасский Сундук
+		PapuansChest: Папуасский Сундук
 	}
 }
 
 Buffs: {
 	AwokenHealing: {
-		// DisplayName: Awoken Healing
-		// Description: Mods.ElementsAwoken.Buffs.AwokenHealing.Description
+		DisplayName: Пробуждённое Исцеление
+		Description: Твоё здоровье быстро восстанавливается
 	}
 
 	Bloodbath: {
-		// DisplayName: Bloodbath
-		// Description: Mods.ElementsAwoken.Buffs.Bloodbath.Description
+		DisplayName: РЕЗНЯ
+		Description: Наносимый урон увеличен на 20%
 	}
 
 	ChaosShield: {
-		// DisplayName: Chaos Shield
-		// Description: Mods.ElementsAwoken.Buffs.ChaosShield.Description
+		DisplayName: Щит Хаоса
+		Description: (без описания)
 	}
 
 	BoostDriveCD: {
-		// DisplayName: Boost Drive C D
-		// Description: Mods.ElementsAwoken.Buffs.BoostDriveCD.Description
+		DisplayName: Откат Ускоряющего Привода
+		Description: Ускоряющий Привод пока нельзя использовать
 	}
 
 	ChaosShieldCooldown: {
-		// DisplayName: Chaos Shield Cooldown
-		// Description: Mods.ElementsAwoken.Buffs.ChaosShieldCooldown.Description
+		DisplayName: Откат Щита Хаоса
+		Description: Щит Хаоса пока нельзя создать
 	}
 
 	CrystallineLocketCD: {
-		// DisplayName: Crystalline Locket C D
-		// Description: Mods.ElementsAwoken.Buffs.CrystallineLocketCD.Description
+		DisplayName: Откат Кристального Ожерелья
+		Description: Кристальное Ожерелье пока нельзя использовать
 	}
 
 	GreatLensCD: {
-		// DisplayName: Great Lens C D
-		// Description: Mods.ElementsAwoken.Buffs.GreatLensCD.Description
+		DisplayName: Откат Громадной Линзы
+		Description: Громадную Линзу пока нельзя использовать
 	}
 
 	HoneyCocoonCD: {
-		// DisplayName: Honey Cocoon C D
-		// Description: Mods.ElementsAwoken.Buffs.HoneyCocoonCD.Description
+		DisplayName: Откат Медового Кокона
+		Description: Медовый Кокон пока нельзя использовать
 	}
 
 	AncientDecay: {
-		// DisplayName: Ancient Decay
-		// Description: Mods.ElementsAwoken.Buffs.AncientDecay.Description
+		DisplayName: Древний Распад
+		Description: Твоя душа разваливается
 	}
 
 	ChaosBurn: {
-		// DisplayName: Chaos Burn
-		// Description: Mods.ElementsAwoken.Buffs.ChaosBurn.Description
+		DisplayName: Огонь Хаоса
+		Description: Твои клетки разорваны на куски
 	}
 
 	DeterioratingWings: {
-		// DisplayName: Deteriorating Wings
-		// Description: Mods.ElementsAwoken.Buffs.DeterioratingWings.Description
+		DisplayName: Увядающие Крылья
+		Description: Твои крылья рассыпаются в чёрную пыль
 	}
 
 	Dragonfire: {
-		// DisplayName: Dragonfire
-		// Description: Mods.ElementsAwoken.Buffs.Dragonfire.Description
+		DisplayName: Драконье Пламя
+		Description: Твоя кожа сгорает
 	}
 
 	ExtinctionCurse: {
-		// DisplayName: Extinction Curse
-		// Description: Mods.ElementsAwoken.Buffs.ExtinctionCurse.Description
+		DisplayName: Заклятье Вымирания
+		Description: Силы бездны затягивают тебя всё глубже и глубже...
 	}
 
 	FastPoison: {
-		// DisplayName: Fast Poison
-		// Description: Mods.ElementsAwoken.Buffs.FastPoison.Description
+		DisplayName: Быстрояд
+		Description: Ты быстро теряешь здоровье
 	}
 
 	ElementalArmorCooldown: {
-		// DisplayName: Elemental Armor Cooldown
-		// Description: Mods.ElementsAwoken.Buffs.ElementalArmorCooldown.Description
+		DisplayName: Откат Доспеха Элементов
+		Description: Твоё перерождение восстанавливается
 	}
 
 	NeovirtuoCooldown: {
-		// DisplayName: Neovirtuo Cooldown
-		// Description: Mods.ElementsAwoken.Buffs.NeovirtuoCooldown.Description
+		DisplayName: Откат Неовиртуо
+		Description: Неовиртуо пока нельзя использовать
 	}
 
 	DarkenedSkies: {
-		// DisplayName: Darkened Skies
-		// Description: Mods.ElementsAwoken.Buffs.DarkenedSkies.Description
+		DisplayName: Пасмурные Небеса
+		Description:
+			'''
+			Молнии бьют с небес
+			Штормы происходят чаще
+			Победи Регарота, чтобы убрать эти эффекты
+			Или отключи их в конфиге мода
+			'''
 	}
 
 	Hypothermia: {
-		// DisplayName: Hypothermia
-		// Description: Mods.ElementsAwoken.Buffs.Hypothermia.Description
+		DisplayName: Гипотермия
+		Description:
+			'''
+			Резко холодает
+			Скорость передвижения снижена на 5% и накладывает рандомные связанные со льдом дебаффы
+			Часто идёт град
+			Нахождение в радиусе 7 блоков от костра или лавы убирает эти эффекты
+			Победи Пермафроста, чтобы убрать эти эффекты
+			Или отключи их в конфиге мода
+			'''
 	}
 
 	InfernacesWrath: {
-		// DisplayName: Infernaces Wrath
-		// Description: Mods.ElementsAwoken.Buffs.InfernacesWrath.Description
+		DisplayName: Гнев Инфернейса
+		Description:
+			'''
+			Метеориты падают с небес
+			Приближаясь к Аду, стражники Инфернейса могут появиться и атаковать игрока
+			Победи Инфернейса, чтобы убрать эти эффекты
+			Или отключи их в конфиге мода
+			'''
 	}
 
 	Psychosis: {
-		// DisplayName: Psychosis
-		// Description: Mods.ElementsAwoken.Buffs.Psychosis.Description
+		DisplayName: Психоз
+		Description:
+			'''
+			Силы пустоты утягивают тебя
+			Защита снижена на 10 и сопротивление урону на 5%
+			У игрока появляются галлюцинации
+			Победи Левиафана Пустоты, чтобы убрать эти эффекты
+			Или отключи их в конфиге мода
+			'''
 	}
 
 	StormSurge: {
-		// DisplayName: Storm Surge
-		// Description: Mods.ElementsAwoken.Buffs.StormSurge.Description
+		DisplayName: Штормовой Всплеск
+		Description:
+			'''
+			Водонадо могут спонтанно появиться из-под земли
+			Дожди идут чаще
+			Победи Аквеоус, чтобы убрать эти эффекты
+			Или отключи их в конфиге мода
+			'''
 	}
 
 	StatueBuffGenihWat: {
-		// DisplayName: Statue Buff Genih Wat
-		// Description: Mods.ElementsAwoken.Buffs.StatueBuffGenihWat.Description
+		DisplayName: Присутствие Genih Wat
+		Description:
+			'''
+			Магический урон увеличен на 15%
+			Увеличивает регенерацию маны на 5
+			Увеличивает агрессивность врагов
+			Враги спавнятся чаще
+			'''
 	}
 
 	BehemothGaze: {
-		// Description: Mods.ElementsAwoken.Buffs.BehemothGaze.Description
-		// DisplayName: Behemoth Gaze
+		Description: Ты узрел что-то настолько невероятное, что не можешь убежать
+		DisplayName: Взгляд Бегемота
 	}
 
 	ElementalDragonBunnyBuff: {
-		// DisplayName: Elemental Dragon Bunny Buff
-		// Description: Mods.ElementsAwoken.Buffs.ElementalDragonBunnyBuff.Description
+		DisplayName: Элементальный Кроледракон
+		Description: Он радостно скачет
 	}
 
 	ScorpionBreakout: {
 		// DisplayName: Scorpion Breakout
-		// Description: Mods.ElementsAwoken.Buffs.ScorpionBreakout.Description
+		/* Description:
+			'''
+			Scorpions infest terraria
+			Defeat Wasteland to stop this effect
+			Disable this effect in the config
+			''' */
 	}
 
 	Discord: {
 		// DisplayName: Discord
-		// Description: Mods.ElementsAwoken.Buffs.Discord.Description
+		// Description: Every part of you aches...
 	}
 
 	EndlessTears: {
 		// DisplayName: Endless Tears
-		// Description: Mods.ElementsAwoken.Buffs.EndlessTears.Description
+		// Description: The sadness pulls you down
 	}
 
 	HandsOfDespair: {
 		// DisplayName: Hands Of Despair
-		// Description: Mods.ElementsAwoken.Buffs.HandsOfDespair.Description
+		// Description: They grasp at your limbs, pulling you down
 	}
 
 	IceBound: {
 		// DisplayName: Ice Bound
-		// Description: Mods.ElementsAwoken.Buffs.IceBound.Description
+		// Description: Your bones and joints freeze
 	}
 
 	SoulInferno: {
 		// DisplayName: Soul Inferno
-		// Description: Mods.ElementsAwoken.Buffs.SoulInferno.Description
+		// Description: You glow with a strange radiation
 	}
 
 	CalamityBannerBuff: {
-		// DisplayName: Calamity Banner Buff
-		// Description: Mods.ElementsAwoken.Buffs.CalamityBannerBuff.Description
+		// DisplayName: Calamity Banner
+		// Description: Spawnrates increased by 7.5x
 	}
 
 	ChaosBannerBuff: {
-		// DisplayName: Chaos Banner Buff
-		// Description: Mods.ElementsAwoken.Buffs.ChaosBannerBuff.Description
+		// DisplayName: Chaos Banner
+		// Description: Spawnrates increased by 5x
 	}
 
 	HavocBannerBuff: {
-		// DisplayName: Havoc Banner Buff
-		// Description: Mods.ElementsAwoken.Buffs.HavocBannerBuff.Description
+		// DisplayName: Havoc Banner
+		// Description: Spawnrates increased by 2x
 	}
 
 	CalamityPotionBuff: {
-		// DisplayName: Calamity Potion Buff
-		// Description: Mods.ElementsAwoken.Buffs.CalamityPotionBuff.Description
+		// DisplayName: Calamity
+		// Description: Spawnrates increased by 12.5x
 	}
 
 	ChaosPotionBuff: {
-		// DisplayName: Chaos Potion Buff
-		// Description: Mods.ElementsAwoken.Buffs.ChaosPotionBuff.Description
+		// DisplayName: Chaos
+		// Description: Spawnrates increased by 7.5x
 	}
 
 	HavocPotionBuff: {
-		// DisplayName: Havoc Potion Buff
-		// Description: Mods.ElementsAwoken.Buffs.HavocPotionBuff.Description
+		// DisplayName: Havoc
+		// Description: Spawnrates increased by 4x
+	}
+
+	FlareShield: {
+		// DisplayName: Flare Shield
+		// Description: ""
 	}
 }
 
 NPCs: {
-	// ShadeWyrmBody.DisplayName: Shade Wyrm Body
-	// ShadeWyrmHead.DisplayName: Shade Wyrm Head
-	// ShadeWyrmTail.DisplayName: Shade Wyrm Tail
-	// MysticBunny.DisplayName: Mystic Bunny
-	// SolarFragment.DisplayName: Solar Fragment
-	// VoidLeviathanTail.DisplayName: Void Leviathan Tail
-	// VoidLeviathanOrb.DisplayName: Void Leviathan Orb
-	// VoidLeviathanHead.DisplayName: Void Leviathan Head
-	// VoidLeviathanBody.DisplayName: Void Leviathan Body
-	// BarrenSoul.DisplayName: Barren Soul
-	// BarrenOrbital.DisplayName: Barren Orbital
-	// ElderShadeWyrmTail.DisplayName: Elder Shade Wyrm Tail
-	// ElderShadeWyrmHead.DisplayName: Elder Shade Wyrm Head
-	// ElderShadeWyrmBody.DisplayName: Elder Shade Wyrm Body
+	ShadeWyrmBody.DisplayName: Тело Тенезмея
+	ShadeWyrmHead.DisplayName: Голова Тенезмея
+	ShadeWyrmTail.DisplayName: Хвост Тенезмея
+	MysticBunny.DisplayName: Мистический Кролик
+	SolarFragment.DisplayName: Солнечный Фрагмент
+	VoidLeviathanTail.DisplayName: Хвост Левиафана Пустоты
+	VoidLeviathanOrb.DisplayName: Сфера Левиафана Пустоты
+	VoidLeviathanHead.DisplayName: Голова Левиафана Пустоты
+	VoidLeviathanBody.DisplayName: Тело Левиафана Пустоты
+	BarrenSoul.DisplayName: Пустодуша
+	BarrenOrbital.DisplayName: Кружитель Пустодуши
+	ElderShadeWyrmTail.DisplayName: Хвост Старшего Тенезмея
+	ElderShadeWyrmHead.DisplayName: Голова Старшего Тенезмея
+	ElderShadeWyrmBody.DisplayName: Тело Старшего Тенезмея
 }
 
 Projectiles: {
-	// AbyssalBall.DisplayName: Abyssal Ball
-	// AbyssalPortal.DisplayName: Abyssal Portal
-	// AbyssalTentacle.DisplayName: Abyssal Tentacle
-	// AeroStorm.DisplayName: Aero Storm
-	// ArchaicProtection.DisplayName: Archaic Protection
-	// AsteroxShieldBase.DisplayName: Asterox Shield Base
-	// AsteroxShieldSwirl.DisplayName: Asterox Shield Swirl
-	// BloodbathDashP.DisplayName: Bloodbath Dash P
-	// ChaosRingShield.DisplayName: Chaos Ring Shield
-	// ChaosRingSwirl.DisplayName: Chaos Ring Swirl
-	// ChargeRifleHalf.DisplayName: Charge Rifle Half
-	// CrowLightning.DisplayName: Crow Lightning
-	// CrowStorm.DisplayName: Crow Storm
-	// EnergyWeaverBeam.DisplayName: Energy Weaver Beam
-	// Explosion.DisplayName: Explosion
-	// LegoBrickFriendly.DisplayName: Lego Brick Friendly
-	// LifesAura.DisplayName: Lifes Aura
-	// LightningCloud.DisplayName: Lightning Cloud
-	// LightningCloudSwirl.DisplayName: Lightning Cloud Swirl
-	// LightningExplosion.DisplayName: Lightning Explosion
-	// MechLightning.DisplayName: Mech Lightning
-	// Demon.DisplayName: Demon
-	// NeovirtuoBolt.DisplayName: Neovirtuo Bolt
-	// NeovirtuoHoming.DisplayName: Neovirtuo Homing
-	// NeovirtuoPortal.DisplayName: Neovirtuo Portal
-	// HailPellet.DisplayName: Hail Pellet
-	// Waternado.DisplayName: Waternado
-	// WaternadoBolt.DisplayName: Waternado Bolt
-	// RadiantPTeleport.DisplayName: Radiant P Teleport
-	// PoisonWater.DisplayName: Poison Water
-	// PutridCloud.DisplayName: Putrid Cloud
-	// ShackledBase.DisplayName: Shackled Base
-	// SlimeClawBall.DisplayName: Slime Claw Ball
-	// UkuleleArc.DisplayName: Ukulele Arc
-	// ViridiumBomb.DisplayName: Viridium Bomb
-	// VleviAegisSwirl.DisplayName: Vlevi Aegis Swirl
-	// VoidBlood.DisplayName: Void Blood
-	// VoidSinewave.DisplayName: Void Sinewave
-	// CrashingWaveP.DisplayName: Crashing Wave P
-	// VoidStrike.DisplayName: Void Strike
-	// VoidSpine.DisplayName: Void Spine
-	// VoidRunes.DisplayName: Void Runes
-	// VoidOrbProj.DisplayName: Void Orb Proj
-	// VoidOrbDestroyed.DisplayName: Void Orb Destroyed
-	// VoidBolt.DisplayName: Void Bolt
-	// ExtinctionBlast.DisplayName: Extinction Blast
-	// VoidRuneExplosion.DisplayName: Void Rune Explosion
+	AbyssalBall.DisplayName: Шар Бездны
+	AbyssalPortal.DisplayName: Портал Бездны
+	AbyssalTentacle.DisplayName: Щупальце Бездны
+	AeroStorm.DisplayName: Воздушный Шторм
+	ArchaicProtection.DisplayName: Архаичная Защита
+	AsteroxShieldBase.DisplayName: Основа Щита Астерокса
+	AsteroxShieldSwirl.DisplayName: Вихрь Щита Астерокса
+	BloodbathDashP.DisplayName: Проджектайл Рывка Резни
+	ChaosRingShield.DisplayName: Щит Кольца Хаоса
+	ChaosRingSwirl.DisplayName: Вихрь Кольца Хаоса
+	ChargeRifleHalf.DisplayName: Ползаряда Винтовки
+	CrowLightning.DisplayName: Молния Ворона
+	CrowStorm.DisplayName: Вороний Шторм
+	EnergyWeaverBeam.DisplayName: Луч Энерготкача
+	Explosion.DisplayName: Взрыв
+	LegoBrickFriendly.DisplayName: Игроковский Кирпичик Лего
+	LifesAura.DisplayName: Аура Жизни
+	LightningCloud.DisplayName: Грозовое Облако
+	LightningCloudSwirl.DisplayName: Вихрь Грозового Облака
+	LightningExplosion.DisplayName: Взрыв Молнии
+	MechLightning.DisplayName: Меха-Молния
+	Demon.DisplayName: Демон
+	NeovirtuoBolt.DisplayName: Выстрел Неовиртуо
+	NeovirtuoHoming.DisplayName: Самонаводящийся Выстрел Неовиртуо
+	NeovirtuoPortal.DisplayName: Портал Неовиртуо
+	HailPellet.DisplayName: Градо-Пуля
+	Waternado.DisplayName: Водонадо
+	WaternadoBolt.DisplayName: Выстрел Водонадо
+	RadiantPTeleport.DisplayName: Проджектайл Лучезарного Телепорта
+	PoisonWater.DisplayName: Отравленная Вода
+	PutridCloud.DisplayName: Гнилоблако
+	ShackledBase.DisplayName: Закованная Основа
+	SlimeClawBall.DisplayName: Шар Слизнекогтя
+	UkuleleArc.DisplayName: Дуга Укулеле
+	ViridiumBomb.DisplayName: Виридиевая Бомба
+	VleviAegisSwirl.DisplayName: Вихрь Эгиды Влеви
+	VoidBlood.DisplayName: Пустокровь
+	VoidSinewave.DisplayName: Синусоида Пустоты
+	CrashingWaveP.DisplayName: Проджектайл Сокрушающей Волны
+	VoidStrike.DisplayName: Удар Пустоты
+	VoidSpine.DisplayName: Пустозвоночник
+	VoidRunes.DisplayName: Руны Пустоты
+	VoidOrbProj.DisplayName: Проджектайл Пустосферы
+	VoidOrbDestroyed.DisplayName: Пустосфера Разрушена
+	VoidBolt.DisplayName: Выстрел Пустоты
+	ExtinctionBlast.DisplayName: Пустовзрыв
+	VoidRuneExplosion.DisplayName: Взрыв Руны Пустоты
 	// BunnyBreath.DisplayName: Bunny Breath
 	// HandsOfDespair.DisplayName: Hands Of Despair
+	// FlareShield.DisplayName: Flare Shield
 }
 
 Configs: {
 	Config: {
-		// DisplayName: Config
-		// screenshakeDisabled.Tooltip: ""
+		DisplayName: Конфиг
+		screenshakeDisabled.Tooltip: ""
 	}
 }
 
 Config: {
-	// ElementsAwokenConfig: alchemist Potions Header
-	// AlchemistPotionShop: alchemist Potions
-	// EnablesShop: ""
-	// ResourceBars: resource Bars
-	// TurnsUI: ""
-	// DisableLabs: labs Disabled
-	// StopsLabs: ""
-	// DisableBoss: prompts Disabled
-	// Disablestheeffects: ""
-	// ItemChanges: v Item Changes Disabled
-	// vanillaitems: ""
-	// Screenshake: screenshake Disabled
-	// LowDust: low Dust
-	// Reduces: ""
-	// EnterDebug: debug Mode
-	// Shows: ""
+	ElementsAwokenConfig: Заголовок зелий алхимика
+	AlchemistPotionShop: Зелья алхимика
+	EnablesShop: ""
+	ResourceBars: Ресурсные полосы
+	TurnsUI: ""
+	DisableLabs: Лаборатории отключены
+	StopsLabs: ""
+	DisableBoss: Промпты отключены
+	Disablestheeffects: ""
+	ItemChanges: Изменения предметов отключены
+	vanillaitems: ""
+	Screenshake: Тряска экрана отключена
+	LowDust: Низкое количество частиц
+	Reduces: ""
+	EnterDebug: Режим дебага
+	Shows: ""
 }
 
 Biomes: {
@@ -496,4 +567,21 @@ Biomes: {
 		// DisplayName: E A Biomes
 		// TownNPCDialogueName: the E A Biomes
 	}
+}
+
+Keybinds: {
+	// Neovirtuo.DisplayName: Neovirtuo
+	// "Special Ability.DisplayName": Special  Ability
+	// "Armor Ability.DisplayName": Armor  Ability
+	// "Secondary Dash.DisplayName": Secondary  Dash
+}
+
+Bestiary: {
+	Boss: {
+		// VoidLeviathan: ""
+		// ElderShadeWyrm: ""
+	}
+
+	// Enemies.VoidLeviathanOrb: ""
+	// Critters.MysticBunny: ""
 }
