@@ -18,6 +18,8 @@ using Terraria.Chat;
 using Terraria.GameContent;
 using Terraria.GameInput;
 using Terraria.Graphics;
+using Terraria.Graphics.Effects;
+using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -248,7 +250,7 @@ namespace ElementsAwoken
             DateTime now = DateTime.Today;
             if (now.Day == 1 && now.Month == 4) aprilFools = true;
 
-            //calamityEnabled = ModLoader.GetMod("CalamityMod") != null;
+            calamityEnabled = ModLoader.TryGetMod("CalamityMod", out Mod CalamityMod);
             //bossChecklistEnabled = ModLoader.GetMod("BossChecklist") != null;
             //ancientsAwakenedEnabled = ModLoader.GetMod("AncientsAwakened") != null;
             //eaMusicEnabled = ModLoader.GetMod("EAMusic") != null;
@@ -263,7 +265,8 @@ namespace ElementsAwoken
             dash2 = KeybindLoader.RegisterKeybind(this, "Secondary Dash", "F");
             if (!Main.dedServ)
             {
-                //    Filters.Scene["ElementsAwoken:VoidLeviathanHead"] = new Filter(new VoidLeviathanScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                Filters.Scene["ElementsAwoken:VoidLeviathanHead"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                SkyManager.Instance["ElementsAwoken:VoidLeviathanHead"] = new EABiomeSky();
                 //    Filters.Scene["ElementsAwoken:Aqueous"] = new Filter(new AqueousScreenShaderData("FilterMiniTower").UseColor(0.4f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 //    SkyManager.Instance["ElementsAwoken:AqueousSky"] = new AqueousSky();
                 //    Filters.Scene["ElementsAwoken:Infernace"] = new Filter(new InfernaceScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);

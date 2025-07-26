@@ -246,15 +246,132 @@ Items: {
 		DisplayName: Sanity Changer
 		Tooltip: ""
 	}
+
+	Computer: {
+		DisplayName: Computer
+		Tooltip: Beep Boop
+	}
+
+	AncientsDrive: {
+		DisplayName: Ancients Drive
+		Tooltip: ""
+	}
+
+	AqueousDrive: {
+		DisplayName: Aqueous Drive
+		Tooltip: ""
+	}
+
+	AzanaDrive: {
+		DisplayName: Azana Drive
+		Tooltip: ""
+	}
+
+	CelestialDrive: {
+		DisplayName: Celestial Drive
+		Tooltip: ""
+	}
+
+	GuardianDrive: {
+		DisplayName: Guardian Drive
+		Tooltip: ""
+	}
+
+	InfernaceDrive: {
+		DisplayName: Infernace Drive
+		Tooltip: ""
+	}
+
+	ObsidiousDrive: {
+		DisplayName: Obsidious Drive
+		Tooltip: ""
+	}
+
+	PermafrostDrive: {
+		DisplayName: Permafrost Drive
+		Tooltip: ""
+	}
+
+	RegarothDrive: {
+		DisplayName: Regaroth Drive
+		Tooltip: ""
+	}
+
+	ScourgeFighterDrive: {
+		DisplayName: Scourge Fighter Drive
+		Tooltip: ""
+	}
+
+	VoidLeviathanDrive: {
+		DisplayName: Void Leviathan Drive
+		Tooltip: ""
+	}
+
+	VolcanoxDrive: {
+		DisplayName: Volcanox Drive
+		Tooltip: ""
+	}
+
+	WastelandDrive: {
+		DisplayName: Wasteland Drive
+		Tooltip: ""
+	}
+
+	Locker: {
+		DisplayName: Locker
+		Tooltip: ""
+	}
+
+	CopperWire: {
+		DisplayName: Copper Wire
+		Tooltip: Used for tech crafting
+	}
+
+	GoldWire: {
+		DisplayName: Gold Wire
+		Tooltip: Used for tech crafting
+	}
+
+	Coilgun: {
+		DisplayName: Coilgun
+		Tooltip: 
+				'''
+				Fires a fast high damaging bullet
+				Also consumes bullets as well as energy
+				'''
+	}
 }
 
 Tiles: {
 	CrystalCracker.MapEntry: Crystal Cracker
 	Voidite.MapEntry: Voidite
 
-	PapuansChest: {
-		MapEntry1: Mods.ElementsAwoken.Tiles.PapuansChest.MapEntry1
-		PapuansChest: Mods.ElementsAwoken.Tiles.PapuansChest.PapuansChest
+	Computer.MapEntry: Computer
+	DeadScientist.MapEntry: Dead Scientist
+	Desk.MapEntry: Desk
+	AncientsDrive.MapEntry: Ancients Drive
+	AqueousDrive.MapEntry: Aqueous Drive
+	AzanaDrive.MapEntry: Azana Drive
+	CelestialDrive.MapEntry: Celestial Drive
+	GuardianDrive.MapEntry: Guardian Drive
+	InfernaceDrive.MapEntry: Infernace Drive
+	ObsidiousDrive.MapEntry: Obsidious Drive
+	PermafrostDrive.MapEntry: Permafrost Drive
+	RegarothDrive.MapEntry: Regaroth Drive
+	ScourgeFighterDrive.MapEntry: Scourge Fighter Drive
+	VoidLeviathanDrive.MapEntry: Void Leviathan Drive
+	VolcanoxDrive.MapEntry: Volcanox Drive
+	WastelandDrive.MapEntry: Wasteland Drive
+	LabLight.MapEntry: Lab Light
+	OfficeChair.MapEntry: Office Chair
+	ScorpionPod.MapEntry: Scorpion Pod
+	ScorpionPodLarge.MapEntry: Scorpion Pod Large
+	CrystalContainer.MapEntry: Crystal Container
+	LabBench.MapEntry: Lab Bench
+
+	Locker: {
+		Locker: Locker
+		MapEntry1: Locker
 	}
 }
 
@@ -487,6 +604,20 @@ Buffs: {
 		DisplayName: Flare Shield
 		Description: ""
 	}
+
+	Starstruck: {
+		DisplayName: Starstruck
+		Description:
+			'''
+			Your will bends to your opponents
+			Each hit by an enemy increases the damage the player takes
+			'''
+	}
+
+	FrostShield: {
+		DisplayName: Frost Shield
+		Description: Mods.ElementsAwoken.Buffs.FrostShield.Description
+	}
 }
 
 NPCs: {
@@ -504,6 +635,8 @@ NPCs: {
 	ElderShadeWyrmTail.DisplayName: Elder Shade Wyrm Tail
 	ElderShadeWyrmHead.DisplayName: Elder Shade Wyrm Head
 	ElderShadeWyrmBody.DisplayName: Elder Shade Wyrm Body
+	RadiantMaster.DisplayName: The Radiant Master
+	RadiantMasterDeath.DisplayName: The Radiant Master
 }
 
 Projectiles: {
@@ -557,6 +690,19 @@ Projectiles: {
 	BunnyBreath.DisplayName: Bunny Breath
 	HandsOfDespair.DisplayName: Hands Of Despair
 	FlareShield.DisplayName: Flare Shield
+	RadiantFireball.DisplayName: Radiant Fireball
+	RadiantMasterStar.DisplayName: Radiant Master Star
+	RadiantStasisField.DisplayName: Radiant Stasis Field
+	RadiantTeleport.DisplayName: Radiant Teleport
+	RadiantWhirlwind.DisplayName: Radiant Whirlwind
+	StarstruckP.DisplayName: Starstruck P
+	HeartContainerHeal.DisplayName: Heart Container Heal
+	FrostShield.DisplayName: Frost Shield
+	FrostShield2.DisplayName: Frost Shield2
+	RadiantStarRain.DisplayName: Radiant Star Rain
+	VoidHeal.DisplayName: Heal
+	WhipCrack.DisplayName: Whip Crack
+	CoilRound.DisplayName: Coil Round
 }
 
 Configs: {
@@ -607,4 +753,205 @@ Bestiary: {
 
 	Enemies.VoidLeviathanOrb: ""
 	Critters.MysticBunny: ""
+}
+
+Ore: {
+	Voidite: The world has been cursed with Voidite...
+	Luminite: The world has been blessed with Luminite!
+}
+
+MyPlayerLocalization: {
+	MyPlayer: {
+		Worold: {
+			Hallowed: Hallowed
+			andHallowed: and Hallowed
+			Allevils: All evils
+			Crimson: Crimson
+			andCrimson: and Crimson
+			Corruption: Corruption
+		}
+
+		MasterSwordCharge.Discharged: Discharged
+
+		Encounter: {
+			Said: I see it now.
+			Said1: Who are you really?
+			Said2: You seek power...
+			Said3: A new challenger rises.
+			Said4: A simple lost soul?
+			Said5: But you haven't asked why.
+			Said6: You have a long way to go.
+			Said7: The path ahead is long.
+			Said8: Does it matter?
+			Said9: You are getting closer.
+			Said10: You are almost there.
+		}
+
+		Prompts: {
+			# �� void 5 ���� �����
+			void5: the Guide was slain...
+			void4: Leave
+			void3: You're not ready for this
+			void2: Impending doom approaches...
+			void1: Void Leviathan has awoken!
+			void: Death will consume all.
+		}
+
+		UponEnteringTheWorld: {
+			Music: You dont have a music pack enabled! All EA bosses will have vanilla music themes. Consider installing:
+			Music1: Elements Awoken Music
+			Music2: EA Retro Music
+		}
+
+		ComputerText: {
+			Text17: muffins
+			Text16:
+				'''
+				004: Upon further investigation, the shards belong to
+				a long forgotten race, thought to be eliminated.
+				No doubt, they could bring more chaos than anything
+				currently ever could. And that there are four survivors
+				gives me an awful feeling...
+				'''
+			Text15:
+				'''
+				003: We just witnissed something dangerous...some old
+				man entered our laboratory and split into four crystalline
+				monsters, which roamed the entire place. Almost the
+				entirety of our team is missing and all we found was some
+				crystal shards on the ground. We have to make some tests.
+				'''
+			Text14:
+				'''
+				002: Whoever finds this...I beg of you, do not make the
+				same mistakes as we did...Do not..
+				'''
+			Text13:
+				'''
+				001: This is going to be my final entry...
+				I've lost everything. I had, all my colleagues... everything
+				is gone and I'm alone. The chaos ravages the lands, and I
+				am unable to do anything. There is no reason for me to
+				live anymore...
+				'''
+			Text12:
+				'''
+				My colleagues have been constantly hallucinating, and were
+				showing signs of sickness, as well as being easily
+				tired. They are barely able to breathe. I am trying to find
+				some way to save them, however... I feel this will hit
+				me as well. I need to get this cure done -at all costs!
+				'''
+			Text11:
+				'''
+				After extensive research via our machines, we came to the
+				conclusion that, if the moon lord were to be felled,
+				the underworld would burst out in extreme heat, and even 
+				the most fire resistant gear would not last long... What 
+				sort of a being could withstand this heatwave?
+				'''
+			Text10:
+				'''
+				002: The drakonite shard, it had quite the reaction to lava
+				and then right before us, a giant...thing began to
+				build up. It was entirely made of drakonite! However it
+				was not friendly, we had to quickly evacuate to save
+				ourselves.
+				'''
+			Text9:
+				'''
+				001: This element, drakonite, is rather interesting to say
+				the least. We've taken a shard of it into our lab for
+				further research. However, we should be prepared for
+				whatever danger lurks within this shard...
+				'''
+			Text8:
+				'''
+				The tides have risen rather high, and there have been
+				rather heavy amounts of rain lately, with terrifying
+				consistency no less. On top of that, there are multiple
+				reports of tornados composed almost entirely of water.
+				The wrath of the ocean may be upon us soon..
+				'''
+			Text7:
+				'''
+				There appear to be signs of magic in the coldest parts of
+				the land, we have sent someone to look into it, but
+				unfortunately we have not heard from them as of yet...
+				I fear he has been frozen due to the cold. After all, these
+				lands are rather, harsh, to take on alone.
+				'''
+			Text6:
+				'''
+				We've heard of some, artifact lost in the underworld but
+				never bothered to look for it. Recently we checked and it
+				was gone. I suppose someone else found it first, ah well...
+				'''
+			Text5:
+				'''
+				When we attempted to find a source for the cultists to
+				relay celestial power from, we stumbled across an
+				imperfect reflection of the celestial forces... However, it
+				will be hard to find a source of power from that creature.
+				'''
+			Text4:
+				'''
+				A massive amount of energy surged through one of our
+				machines, overloading it and causing it to blow up. The
+				energy readings were... outstanding, to say the least,
+				almost supernatural. It has probably to do with that
+				thunder serpent, far up in the skies...
+				'''
+			Text3:
+				'''
+				Our other team managed to lose control of the 4 robots
+				they've built. Seems like some people are better off being
+				fired. Those things now roam the surface, I am not sure
+				of what will happen...
+				'''
+			Text2:
+				'''
+				My colleagues found something very interesting within the
+				deepest part of this world. A sentient being controlling fire
+				at will...unfortunately, we can't go down there, as it may
+				kill us if we approach it, but...we will continue watching it.
+				'''
+			Text1:
+				'''
+				What is this monstrosity, what have we created?!
+				This... beast, it has killed the others, I hear it trying to 
+				break the door to my room... Its coming for me... 
+				Anybody who finds this note, END THIS MADNESS, 
+				I beg of you... Oh no.. Its her-
+				'''
+			Text: ERROR- DRIVE NOT LOCATED
+		}
+
+		PlayerDeath: {
+			Death: shattered
+			Death1: became one with the stars
+		}
+
+		NurseHeal: {
+			Heal1: Cant you see I'm a little busy fixing myself up?
+			Heal: I'm sorry, I cant operate on your bloodtype under such urgent conditions.
+		}
+
+		Other: {
+			Other1: Insufficient Energy
+			Other2: seconds left until you can use Flare
+		}
+	}
+}
+
+MyWorldLocalization: {
+	MyWorld: {
+		voidInvasio: Darkness seeps through your veins...
+		voidInvasio1: Laughs echo throughout the world
+		voidInvasio2: Laughs echo throughout the world
+		Azana1: The radiant rain dissipates...
+		Azana: The rain glistens with unknown magic...
+		Ore: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore
+		Ore1: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore1
+	}
 }

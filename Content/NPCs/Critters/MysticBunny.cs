@@ -1,9 +1,4 @@
-﻿using ElementsAwoken.EASystem;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
@@ -29,13 +24,21 @@ namespace ElementsAwoken.Content.NPCs.Critters
 
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Mystic Bunny");
             Main.npcFrameCount[NPC.type] = 7;
+            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Velocity = -1f,
+                Direction = -1
+            };
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
+
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
-            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
-                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().MysticBunny)
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] 
+            {
+                new FlavorTextBestiaryInfoElement(EALocalization.MysticBunny),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheHallow,
             });
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)

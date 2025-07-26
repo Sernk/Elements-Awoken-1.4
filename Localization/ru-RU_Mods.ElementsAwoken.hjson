@@ -1,36 +1,36 @@
 Items: {
 	DeathwishFlame: {
 		Tooltip: ""
-		DisplayName: Пламя Смертожеланья
+		DisplayName: Пламя смертожеланья
 	}
 
 	DemonicFleshClump: {
-		DisplayName: Демонический Комок Плоти
+		DisplayName: Демонический комок плоти
 		Tooltip: ""
 	}
 
 	FleshClump: {
-		DisplayName: Комок Плоти
+		DisplayName: Комок плоти
 		Tooltip: ""
 	}
 
 	ImpEar: {
-		DisplayName: Ухо Чёрта
+		DisplayName: Ухо чёрта
 		Tooltip: ""
 	}
 
 	InfinityCrys: {
-		DisplayName: Кристалл Бесконечности
-		Tooltip: Такой холодный кристал... Интересно, для чего он нужен?
+		DisplayName: Кристалл бесконечности
+		Tooltip: Холодный кристалл... Интересно, для чего он нужен?
 	}
 
 	LensFragment: {
-		DisplayName: Фрагмент Линзы
+		DisplayName: Фрагмент линзы
 		Tooltip: ""
 	}
 
 	NeutronFragment: {
-		DisplayName: Нейтронный Фрагмент
+		DisplayName: Нейтронный фрагмент
 		Tooltip: Сила погибших звёзд таится в этом фрагменте. Используй рассудительно.
 	}
 
@@ -45,12 +45,12 @@ Items: {
 	}
 
 	BrokenHeroWhip: {
-		DisplayName: Сломанный Хлыст Героя
+		DisplayName: Сломанный хлыст героя
 		Tooltip: ""
 	}
 
 	CInfinityCrys: {
-		DisplayName: Треснувший Кристалл Бесконечности
+		DisplayName: Треснувший кристалл бесконечности
 		Tooltip:
 			'''
 			В твоих руках находится невообразимая сила, выплёскивающаяся прямиком из этого кристалла
@@ -59,12 +59,12 @@ Items: {
 	}
 
 	ConcentratedPyroplasm: {
-		DisplayName: Концентрированная Огнеплазма
+		DisplayName: Концентрированная огнеплазма
 		Tooltip: Используется для крафта Гнилогня
 	}
 
 	VoidAshes: {
-		DisplayName: Пеплы Пустоты
+		DisplayName: Пеплы пустоты
 		Tooltip: ""
 	}
 
@@ -74,12 +74,12 @@ Items: {
 	}
 
 	MagicalHerbs: {
-		DisplayName: Магические Травы
+		DisplayName: Магические травы
 		Tooltip: Обладают странными лечащими свойствами
 	}
 
 	MagmaCrystal: {
-		DisplayName: Кристалл Магмы
+		DisplayName: Магмовый кристалл
 		Tooltip: ""
 	}
 
@@ -89,12 +89,12 @@ Items: {
 	}
 
 	PenguinFeather: {
-		DisplayName: Пингвинье Перо
+		DisplayName: Пингвинье перо
 		Tooltip: ""
 	}
 
 	RoyalScale: {
-		DisplayName: Королевская Чешуя
+		DisplayName: Королевская чешуя
 		Tooltip: ""
 	}
 
@@ -104,140 +104,281 @@ Items: {
 	}
 
 	SunFragment: {
-		DisplayName: Фрагмент Солнца
+		DisplayName: Фрагмент солнца
 		Tooltip: Фрагменты, которые валяются в этом храме уже столетия.
 	}
 
 	VoiditeBar: {
-		DisplayName: Слиток Пустония
+		DisplayName: Слиток пустония
 		Tooltip: ""
 	}
 
 	VoiditeOre: {
-		DisplayName: Пустониевая Руда
+		DisplayName: Пустониевая руда
 		Tooltip: ""
 	}
 
 	MysticGemstone: {
-		DisplayName: Мистический Самоцвет
+		DisplayName: Мистический самоцвет
 		Tooltip: ""
 	}
 
 	KawaiiOrangesMask: {
-		DisplayName: Кавайная Маска Orange
-		Tooltip: ""
+		DisplayName: Маска ThatOneJuicyOrange
+		Tooltip: Такая кавайная
 	}
 
 	OrangesBreastplate: {
-		DisplayName: Нагрудник Orange
+		DisplayName: Нагрудник ThatOneJuicyOrange
 		Tooltip: ""
 	}
 
 	OrangesLeggings: {
-		DisplayName: Шаровары Orange
+		DisplayName: Шаровары ThatOneJuicyOrange
 		Tooltip: ""
 	}
 
 	OrangesMask: {
-		DisplayName: Маска Orange
-		Tooltip: ""
+		DisplayName: Маска ThatOneJuicyOrange
+		Tooltip: Такая сочная
 	}
 
 	VolcanicStone: {
-		DisplayName: Вулканический Камень
-		Tooltip: ""
+		DisplayName: Вулканический камень
+		Tooltip: Эти камешки, судя по всему, постоянно воспламеняются и пылают
 	}
 
 	ElementalCapsule: {
-		DisplayName: Капсула Элементов
-		Tooltip: ""
+		DisplayName: Элементальная капсула
+		Tooltip:
+			'''
+			Всевозможная сила огибает эту капсулу...
+			Может быть использована только в режиме Эксперт
+			Используй только в том случае, если любишь страдать
+			Включает [c/f442aa:Пробуждённый Режим] и Здравомыслие [i:ElementsAwoken/SanityChanger]
+			Здоровье, наносимый урон и защита у всех врагов увеличены на 75%
+			Боссы получают новый, усиленный ИИ и увеличенные статы
+			'''
 	}
 
 	MysteriousPotion: {
-		DisplayName: Диковинное Зелье
-		Tooltip: ""
+		DisplayName: Диковинное зелье
+		Tooltip: Какое же оно вонючее
 	}
 
 	VoidbloodHeart: {
-		DisplayName: Пустокровное Сердце
-		Tooltip: ""
+		DisplayName: Пустокровное сердце
+		Tooltip:
+			'''
+			Убирает натуральную регенерацию жизни
+			Лечащие зелья также отключены
+			Услуги медсестры стоят втрое дороже и ими нельзя воспользоваться во время битвы с боссами
+			Ты отхаркиваешь токсичую пустокровь при получении урона и/или при низком здоровье
+			'''
 	}
 
 	HiveCrate: {
-		DisplayName: Ящик Улья
-		Tooltip: ""
+		DisplayName: Ящик улья
+		Tooltip: Нажми ПКМ, чтобы открыть
 	}
 
 	MajesticHivefish: {
-		DisplayName: Великолепный Ульерыб
+		DisplayName: Великолепный ульерыб
 		Tooltip: ""
 	}
 
 	DeathMirror: {
-		DisplayName: Зеркало Смерти
-		Tooltip: ""
+		DisplayName: Отражение ада
+		Tooltip:
+			'''
+			Телепортирует игрока к его последнему месту смерти
+			Телепорт работает только в первые 30 секунд после смерти
+			Имеет 5-минутный откат после использования
+			'''
 	}
 
 	FireFlooder: {
-		DisplayName: Огнетопитель
-		Tooltip: ""
+		DisplayName: Огнепотоп
+		Tooltip: Тут находится бесконечное количество лавы
 	}
 
 	LavaLeecher: {
-		DisplayName: Лавовая Пиявка
-		Tooltip: ""
+		DisplayName: Лавогубка
+		Tooltip: Может впитать бесконечное количество лавы
 	}
 
 	CrashingWave: {
-		DisplayName: Сокрушительная Волна
+		DisplayName: Сокрушительная волна
 		Tooltip: ""
 	}
 
 	PiohsPresent: {
-		DisplayName: Подарок Пиоха
-		Tooltip: ""
+		DisplayName: Подарок Pioh'а
+		Tooltip:
+			'''
+			Призывает ездового Элементального кроледракона
+			Ютуберский предмет BabeElena
+			'''
 	}
 
 	SkylineWhirlwind: {
-		// DisplayName: Skyline Whirlwind
-		/* Tooltip:
+		DisplayName: Небосводный вихрь
+		Tooltip:
 			'''
-			Crazy speed!
-			Grants immunity to fire blocks
-			Temporary immunity to lava
-			Allows flight and slow fall
-			''' */
+			Крышесносная скорость!
+			Даёт иммунитет к огненным блокам
+			Даёт временный иммунитет к лаве
+			Позволяет летать и замедляет падение
+			'''
 	}
 
 	Railgun: {
-		// DisplayName: Railgun
-		/* Tooltip:
+		DisplayName: Рельсотрон
+		Tooltip:
 			'''
-			Loves worms
-			Using the item charges heat
-			Gaining too much heat will damage the player and decrease the items effectiveness
-			''' */
+			Самое то для червей всех сортов
+			Во время использования это оружие перегревается
+			Если оно перегреется слишком сильно, то начнёт обжигать руки игрока и эффективность оружия ухудшится
+			'''
 	}
 
 	SanityChanger: {
 		// DisplayName: Sanity Changer
 		// Tooltip: ""
 	}
+
+	Computer: {
+		// DisplayName: Computer
+		// Tooltip: Beep Boop
+	}
+
+	AncientsDrive: {
+		// DisplayName: Ancients Drive
+		// Tooltip: ""
+	}
+
+	AqueousDrive: {
+		// DisplayName: Aqueous Drive
+		// Tooltip: ""
+	}
+
+	AzanaDrive: {
+		// DisplayName: Azana Drive
+		// Tooltip: ""
+	}
+
+	CelestialDrive: {
+		// DisplayName: Celestial Drive
+		// Tooltip: ""
+	}
+
+	GuardianDrive: {
+		// DisplayName: Guardian Drive
+		// Tooltip: ""
+	}
+
+	InfernaceDrive: {
+		// DisplayName: Infernace Drive
+		// Tooltip: ""
+	}
+
+	ObsidiousDrive: {
+		// DisplayName: Obsidious Drive
+		// Tooltip: ""
+	}
+
+	PermafrostDrive: {
+		// DisplayName: Permafrost Drive
+		// Tooltip: ""
+	}
+
+	RegarothDrive: {
+		// DisplayName: Regaroth Drive
+		// Tooltip: ""
+	}
+
+	ScourgeFighterDrive: {
+		// DisplayName: Scourge Fighter Drive
+		// Tooltip: ""
+	}
+
+	VoidLeviathanDrive: {
+		// DisplayName: Void Leviathan Drive
+		// Tooltip: ""
+	}
+
+	VolcanoxDrive: {
+		// DisplayName: Volcanox Drive
+		// Tooltip: ""
+	}
+
+	WastelandDrive: {
+		// DisplayName: Wasteland Drive
+		// Tooltip: ""
+	}
+
+	Locker: {
+		// DisplayName: Locker
+		// Tooltip: ""
+	}
+
+	CopperWire: {
+		// DisplayName: Copper Wire
+		// Tooltip: ""
+	}
+
+	GoldWire: {
+		// DisplayName: Gold Wire
+		// Tooltip: ""
+	}
+
+	Coilgun: {
+		// DisplayName: Coilgun
+		// Tooltip: ""
+	}
 }
 
 Tiles: {
-	// CrystalCracker.MapEntry: Crystal Cracker
-	// Voidite.MapEntry: Voidite
+	CrystalCracker.MapEntry: Открыстатель
+	Voidite.MapEntry: Пустоний
 
 	PapuansChest: {
-		MapEntry1: Папуасский Сундук
-		PapuansChest: Папуасский Сундук
+		MapEntry1: Папуасский сундук
+		PapuansChest: Папуасский сундук
+	}
+
+	// Computer.MapEntry: Computer
+	// DeadScientist.MapEntry: Dead Scientist
+	// Desk.MapEntry: Desk
+	// AncientsDrive.MapEntry: Ancients Drive
+	// AqueousDrive.MapEntry: Aqueous Drive
+	// AzanaDrive.MapEntry: Azana Drive
+	// CelestialDrive.MapEntry: Celestial Drive
+	// GuardianDrive.MapEntry: Guardian Drive
+	// InfernaceDrive.MapEntry: Infernace Drive
+	// ObsidiousDrive.MapEntry: Obsidious Drive
+	// PermafrostDrive.MapEntry: Permafrost Drive
+	// RegarothDrive.MapEntry: Regaroth Drive
+	// ScourgeFighterDrive.MapEntry: Scourge Fighter Drive
+	// VoidLeviathanDrive.MapEntry: Void Leviathan Drive
+	// VolcanoxDrive.MapEntry: Volcanox Drive
+	// WastelandDrive.MapEntry: Wasteland Drive
+	// LabLight.MapEntry: Lab Light
+	// OfficeChair.MapEntry: Office Chair
+	// ScorpionPod.MapEntry: Scorpion Pod
+	// ScorpionPodLarge.MapEntry: Scorpion Pod Large
+	// CrystalContainer.MapEntry: Crystal Container
+	// LabBench.MapEntry: Lab Bench
+
+	Locker: {
+		// Locker: Mods.ElementsAwoken.Tiles.Locker.Locker
+		// MapEntry1: Mods.ElementsAwoken.Tiles.Locker.MapEntry1
 	}
 }
 
 Buffs: {
 	AwokenHealing: {
-		DisplayName: Пробуждённое Исцеление
+		DisplayName: Пробуждённое исцеление
 		Description: Твоё здоровье быстро восстанавливается
 	}
 
@@ -247,57 +388,57 @@ Buffs: {
 	}
 
 	ChaosShield: {
-		DisplayName: Щит Хаоса
+		DisplayName: Щит хаоса
 		Description: (без описания)
 	}
 
 	BoostDriveCD: {
-		DisplayName: Откат Ускоряющего Привода
-		Description: Ускоряющий Привод пока нельзя использовать
+		DisplayName: Откат ускоряющего привода
+		Description: Ускоряющий привод пока нельзя использовать
 	}
 
 	ChaosShieldCooldown: {
-		DisplayName: Откат Щита Хаоса
-		Description: Щит Хаоса пока нельзя создать
+		DisplayName: Откат щита хаоса
+		Description: Щит хаоса пока нельзя создать
 	}
 
 	CrystallineLocketCD: {
-		DisplayName: Откат Кристального Ожерелья
-		Description: Кристальное Ожерелье пока нельзя использовать
+		DisplayName: Откат кристального ожерелья
+		Description: Кристальное ожерелье пока нельзя использовать
 	}
 
 	GreatLensCD: {
-		DisplayName: Откат Громадной Линзы
-		Description: Громадную Линзу пока нельзя использовать
+		DisplayName: Откат громадной линзы
+		Description: Громадную линзу пока нельзя использовать
 	}
 
 	HoneyCocoonCD: {
-		DisplayName: Откат Медового Кокона
-		Description: Медовый Кокон пока нельзя использовать
+		DisplayName: Откат медового кокона
+		Description: Медовый кокон пока нельзя использовать
 	}
 
 	AncientDecay: {
-		DisplayName: Древний Распад
+		DisplayName: Древний распад
 		Description: Твоя душа разваливается
 	}
 
 	ChaosBurn: {
-		DisplayName: Огонь Хаоса
+		DisplayName: Хаотический некроз
 		Description: Твои клетки разорваны на куски
 	}
 
 	DeterioratingWings: {
-		DisplayName: Увядающие Крылья
+		DisplayName: Увядающие крылья
 		Description: Твои крылья рассыпаются в чёрную пыль
 	}
 
 	Dragonfire: {
-		DisplayName: Драконье Пламя
+		DisplayName: Драконье пламя
 		Description: Твоя кожа сгорает
 	}
 
 	ExtinctionCurse: {
-		DisplayName: Заклятье Вымирания
+		DisplayName: Заклятье вымирания
 		Description: Силы бездны затягивают тебя всё глубже и глубже...
 	}
 
@@ -307,8 +448,8 @@ Buffs: {
 	}
 
 	ElementalArmorCooldown: {
-		DisplayName: Откат Доспеха Элементов
-		Description: Твоё перерождение восстанавливается
+		DisplayName: Откат элементального возрождения
+		Description: Твоё возрождение восстанавливается
 	}
 
 	NeovirtuoCooldown: {
@@ -317,7 +458,7 @@ Buffs: {
 	}
 
 	DarkenedSkies: {
-		DisplayName: Пасмурные Небеса
+		DisplayName: Пасмурные небеса
 		Description:
 			'''
 			Молнии бьют с небес
@@ -364,18 +505,18 @@ Buffs: {
 	}
 
 	StormSurge: {
-		DisplayName: Штормовой Всплеск
+		DisplayName: Штормовой всплеск
 		Description:
 			'''
 			Водонадо могут спонтанно появиться из-под земли
 			Дожди идут чаще
-			Победи Аквеоус, чтобы убрать эти эффекты
+			Победи Аквеус, чтобы убрать эти эффекты
 			Или отключи их в конфиге мода
 			'''
 	}
 
 	StatueBuffGenihWat: {
-		DisplayName: Присутствие Genih Wat
+		DisplayName: Присутствие Genih Wat'а
 		Description:
 			'''
 			Магический урон увеличен на 15%
@@ -386,83 +527,97 @@ Buffs: {
 	}
 
 	BehemothGaze: {
-		Description: Ты узрел что-то настолько невероятное, что не можешь убежать
-		DisplayName: Взгляд Бегемота
+		Description: Ты узрел что-то настолько невероятное, что уже не можешь убежать
+		DisplayName: Взор Бегемота
 	}
 
 	ElementalDragonBunnyBuff: {
-		DisplayName: Элементальный Кроледракон
+		DisplayName: Элементальный кроледракон
 		Description: Он радостно скачет
 	}
 
 	ScorpionBreakout: {
-		// DisplayName: Scorpion Breakout
-		/* Description:
+		DisplayName: Побег скорпионов
+		Description:
 			'''
-			Scorpions infest terraria
-			Defeat Wasteland to stop this effect
-			Disable this effect in the config
-			''' */
+			Скорпионы наводняют земли Террарии
+			Победи Пустошь, чтобы убрать эти эффекты
+			Или отключи их в конфиге мода
+			'''
 	}
 
 	Discord: {
-		// DisplayName: Discord
-		// Description: Every part of you aches...
+		DisplayName: Раздор
+		Description: У тебя всё болит...
 	}
 
 	EndlessTears: {
-		// DisplayName: Endless Tears
-		// Description: The sadness pulls you down
+		DisplayName: Бесконечные слёзы
+		Description: Ты угнетён печалью
 	}
 
 	HandsOfDespair: {
-		// DisplayName: Hands Of Despair
-		// Description: They grasp at your limbs, pulling you down
+		DisplayName: Длани отчаянья
+		Description: Они хватают тебя по рукам и ногам, утягивая вниз
 	}
 
 	IceBound: {
-		// DisplayName: Ice Bound
-		// Description: Your bones and joints freeze
+		DisplayName: Скован льдом
+		Description: Твои кости и суставы замёрзли
 	}
 
 	SoulInferno: {
-		// DisplayName: Soul Inferno
-		// Description: You glow with a strange radiation
+		DisplayName: Пекло души
+		Description: От тебя как-то странно фонит
 	}
 
 	CalamityBannerBuff: {
-		// DisplayName: Calamity Banner
-		// Description: Spawnrates increased by 7.5x
+		DisplayName: Баннер бедствия
+		Description: Спавнрейт врагов увеличен в 7 с половиной раз
 	}
 
 	ChaosBannerBuff: {
-		// DisplayName: Chaos Banner
-		// Description: Spawnrates increased by 5x
+		DisplayName: Баннер хаоса
+		Description: Спавнрейт врагов увеличен в 5 раз
 	}
 
 	HavocBannerBuff: {
-		// DisplayName: Havoc Banner
-		// Description: Spawnrates increased by 2x
+		DisplayName: Баннер беспорядка
+		Description: Спавнрейт врагов увеличен вдвое
 	}
 
 	CalamityPotionBuff: {
-		// DisplayName: Calamity
-		// Description: Spawnrates increased by 12.5x
+		DisplayName: Бедствие
+		Description: Спавнрейт врагов увеличен в 12 с половиной раз
 	}
 
 	ChaosPotionBuff: {
-		// DisplayName: Chaos
-		// Description: Spawnrates increased by 7.5x
+		DisplayName: Хаос
+		Description: Спавнрейт врагов увеличен в 7 с половиной раз
 	}
 
 	HavocPotionBuff: {
-		// DisplayName: Havoc
-		// Description: Spawnrates increased by 4x
+		DisplayName: Беспорядок
+		Description: Спавнрейт врагов увеличен вчетверо
 	}
 
 	FlareShield: {
-		// DisplayName: Flare Shield
-		// Description: ""
+		DisplayName: Вспышка-щит
+		Description: ""
+	}
+
+	Starstruck: {
+		// DisplayName: Starstruck
+		/* Description:
+			'''
+			Your will bends to your opponents
+			Each hit by an enemy increases the damage the player takes
+			''' */
+	}
+
+	FrostShield: {
+		// DisplayName: Frost Shield
+		// Description: Mods.ElementsAwoken.Buffs.FrostShield.Description
 	}
 }
 
@@ -481,6 +636,8 @@ NPCs: {
 	ElderShadeWyrmTail.DisplayName: Хвост Старшего Тенезмея
 	ElderShadeWyrmHead.DisplayName: Голова Старшего Тенезмея
 	ElderShadeWyrmBody.DisplayName: Тело Старшего Тенезмея
+	// RadiantMaster.DisplayName: The Radiant Master
+	// RadiantMasterDeath.DisplayName: The Radiant Master
 }
 
 Projectiles: {
@@ -531,9 +688,22 @@ Projectiles: {
 	VoidBolt.DisplayName: Выстрел Пустоты
 	ExtinctionBlast.DisplayName: Пустовзрыв
 	VoidRuneExplosion.DisplayName: Взрыв Руны Пустоты
-	// BunnyBreath.DisplayName: Bunny Breath
-	// HandsOfDespair.DisplayName: Hands Of Despair
-	// FlareShield.DisplayName: Flare Shield
+	BunnyBreath.DisplayName: Дыхание кролика
+	HandsOfDespair.DisplayName: Длани отчаянья
+	FlareShield.DisplayName: Вспышка-щит
+	// RadiantFireball.DisplayName: Radiant Fireball
+	// RadiantMasterStar.DisplayName: Radiant Master Star
+	// RadiantStasisField.DisplayName: Radiant Stasis Field
+	// RadiantTeleport.DisplayName: Radiant Teleport
+	// RadiantWhirlwind.DisplayName: Radiant Whirlwind
+	// StarstruckP.DisplayName: Starstruck P
+	// HeartContainerHeal.DisplayName: Heart Container Heal
+	// FrostShield.DisplayName: Frost Shield
+	// FrostShield2.DisplayName: Frost Shield2
+	// RadiantStarRain.DisplayName: Radiant Star Rain
+	// VoidHeal.DisplayName: Heal
+	// WhipCrack.DisplayName: Whip Crack
+	// CoilRound.DisplayName: Coil Round
 }
 
 Configs: {
@@ -564,24 +734,225 @@ Config: {
 
 Biomes: {
 	EABiomes: {
-		// DisplayName: E A Biomes
-		// TownNPCDialogueName: the E A Biomes
+		DisplayName: Биомы Elements Awoken
+		TownNPCDialogueName: Биомы Elements Awoken
 	}
 }
 
 Keybinds: {
-	// Neovirtuo.DisplayName: Neovirtuo
-	// "Special Ability.DisplayName": Special  Ability
-	// "Armor Ability.DisplayName": Armor  Ability
-	// "Secondary Dash.DisplayName": Secondary  Dash
+	Neovirtuo.DisplayName: Неовиртуо
+	"Special Ability.DisplayName": Спецвозможность
+	"Armor Ability.DisplayName": Возможность брони
+	"Secondary Dash.DisplayName": Вторичный рывок
 }
 
 Bestiary: {
 	Boss: {
-		// VoidLeviathan: ""
-		// ElderShadeWyrm: ""
+		VoidLeviathan: Змееобразное чудовище, пришедшее в этот мир прямиком из глубин Пустоты, этого змея боятся все живые существа Террарии. Оно жаждет любой достаточно сильной души, чтобы ещё больше усилить свою мощь...
+		ElderShadeWyrm: Старший представитель вида Тенезмеев, которые зародились в Пустоте, и у кого было достаточно времени, чтобы вырасти до настолько огромных размеров и непредсказуемой мощи.
 	}
 
-	// Enemies.VoidLeviathanOrb: ""
-	// Critters.MysticBunny: ""
+	Enemies.VoidLeviathanOrb: Огромная, странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
+	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде в других частях мира.
+}
+
+Ore: {
+	// Voidite: The world has been cursed with Voidite...
+	// Luminite: The world has been blessed with Luminite!
+}
+
+MyPlayerLocalization: {
+	MyPlayer: {
+		Worold: {
+			Hallowed: Освящение
+			andHallowed: и Освящение
+			Allevils: Все злые биомы
+			Crimson: Кримзон
+			andCrimson: и Кримзон
+			Corruption: Искажение
+		}
+
+		MasterSwordCharge.Discharged: Разряжен
+
+		Encounter: {
+			Said: Всё ясно.
+			Said1: Но кто же ты такой?
+			Said2: Ты ведь ищешь силу...
+			Said3: Новый боец восходит.
+			Said4: Простая ли потерянная душа?
+			Said5: Но ты не спрашивал - для чего.
+			Said6: Идти ещё далеко.
+			Said7: Впереди долгая дорога.
+			Said8: Но значит ли это что-нибудь?
+			Said9: Ты всё ближе.
+			Said10: Ты почти на месте.
+		}
+
+		Prompts: {
+			# �� void 5 ���� �����
+			void5: Гид убит...
+			void4: Уходи
+			void3: Ты ещё не готов
+			void2: Неминуемая гибель грядёт...
+			void1: Левиафан Пустоты пробудился!
+			void: Смерть поглотит всё и всех.
+		}
+
+		UponEnteringTheWorld: {
+			Music: Погоди, у тебя не стоит музыкальный аддон! У всех боссов из Elements Awoken будет ванильная музыка. Советуем поставить (хотя это уже не нужно):
+			Music1: Elements Awoken Music
+			Music2: EA Retro Music
+		}
+
+		ComputerText: {
+			Text17: кексы
+			Text16:
+				'''
+				004: При исследовании стало понятно, что эти осколки
+				принадлежат давно забытой расе, которая, как считается, была полностью искоренена.
+				Поэтому неудивительно, что они могут посеять куда больше больше хаоса,
+				чем что угодно, что у нас имеется сейчас. И от того факта, что у них осталось четверо выживших,
+				мне становится не по себе...
+				'''
+			Text15:
+				'''
+				003: Мы только что стали свидетелями чего-то довольно опасного... Какой-то старик
+				зашёл в нашу лабораторию и раскололся на четверых
+				монстров, которые тут повсюду носились. Почти все
+				из наших пропали, и всё, что от них осталось - лишь
+				кристальные осколки на полу. Нам определённо стоит провести необходимые опыты.
+				'''
+			Text14:
+				'''
+				002: Неважно, кто это найдёт... Только умоляю, не совершайте
+				таких же ошибок, что и мы... Не стоит..
+				'''
+			Text13:
+				'''
+				001: Похоже, это будет моя последняя запись...
+				Ведь я уже всё потерял. Всё, что у меня было, и моих коллег тоже... вообще всё,
+				всё пошло прахом, и я остался в полном одиночестве. Хаос уже во всю терроризирует эти земли, а я
+				вообще уже никак на это не могу повлиять. Так зачем же мне
+				вообще жить теперь?...
+				'''
+			Text12:
+				'''
+				У моих коллег появились постоянные галлюцинации, и по ним
+				было видно, что они уже поражены болезнью, а также крайне быстро
+				утомлялись. Они уже даже едва дышали. Хоть я и пытаюсь найти хоть
+				какие-нибудь способы спасти их... Боюсь, меня такая же участь
+				настигнет. Я обязан доделать это лекарство - не смотря ни на что, любой ценой!
+				'''
+			Text11:
+				'''
+				После тщательного исследования с имеющейся у нас техникой, мы
+				пришли к выводу, что если Лунный Лорд когда-либо падёт, не важно от кого или чего,
+				Ад разгорится с невиданной доселе силой, такой, что даже 
+				самое жаростойкое снаряжение долго там не продержится... И из этого 
+				возникает вопрос, а что вообще сможет выдержать такое пекло?
+				'''
+			Text10:
+				'''
+				002: Драконитовые осколки, у них была весьма своеобразная реакция на лаву
+				и сразу после этого прямо перед нашими глазами, гигантское... нечто
+				появилось. И оно было сделано из чистого Драконита! Оно также было отнюдь
+				не дружелюбно настроенным, а посему нам пришлось быстро искать укрытие просто для того, чтобы
+				спастись от этого чудища.
+				'''
+			Text9:
+				'''
+				001: Этот элемент, Драконит, весьма занимателен,
+				мягко говоря. Получив один такой на руки, мы его забрали в нашу лабораторию
+				для дальнейшего исследования. Хотя нам, однако, стоит быть готовыми ко всей той
+				опасности, которую может таить в себе этот маленький осколок...
+				'''
+			Text8:
+				'''
+				Волны вздымались, прямо скажем, куда выше, чем обычно
+				и дожди тут шли куда сильнее, чем когда-либо до этого,
+				не прекращаясь очень долгое время. И тут, к тому же, были ещё и
+				сообщения о странных торнадо, состоящих полностью из одной только воды.
+				Вполне возможно, что скоро мы сможем почуять ярость океана на своей шкуре..
+				'''
+			Text7:
+				'''
+				Кажется, в самых северных частях мира были обнаружены
+				признаки наличия магии, мы даже отправили какую-то команду туда, чтобы разведать ситуацию,
+				но, к сожалению, от них мы пока не слышали ничего...
+				Как бы они там не замёрзли насмерть. В конце-концов,
+				покорять те замёрзшие земли в одиночку, мягко скажем, отнюдь не легко.
+				'''
+			Text6:
+				'''
+				Мы, конечно, слышали, о каком-то артифакте потерянном в Аду, но
+				никому в голову не приходило отправиться его искать. Но недавно мы-таки отправились
+				проверить, где он там, и его уже не было. Ну, видать, его кто-то уже нашёл до нас...
+				'''
+			Text5:
+				'''
+				Когда мы попытались найти, откуда культисты получают
+				свою небесную силу, мы наткнулись на странное,
+				неказистое отражение этой небесной силы... Однако, судя по всему,
+				найти источник силы этого существа будет отнюдь не просто.
+				'''
+			Text4:
+				'''
+				Огромное напряжение как-то прошло через одну из
+				наших машин, перегрузив её, и после этого она взорвалась.
+				Узнав, что это было и откуда... Мы были, мягко скажем, шокированы,
+				как будто это было что-то сверхъестественное. Вероятно, это как-то связано
+				с тем грозовым змеем, высоко в небесах...
+				'''
+			Text3:
+				'''
+				Одна из наших команд каким-то образом потеряла доступ к четырём
+				машинам, которые они же и построили. Судя по всему, кого-то придётся
+				уволить. И вот теперь эти машины скитаются по миру, и мне как-то страшно
+				из-за того, что может произойти...
+				'''
+			Text2:
+				'''
+				Мои коллеги нашли нечто крайне занимательное в глубинах
+				этого мира. Разумное существо, способное контроллировать
+				огонь силой мысли... К сожалению, спускаться туда может быть опасно,
+				так как оно вполне может убить нас, но... Мы продолжим свои наблюдения.
+				'''
+			Text1:
+				'''
+				Что за чудище, что же мы создали?!
+				Это... чудовище убило всех остальных и я слышу, как
+				оно сейчас пытается пробиться в мою комнату... Оно идёт и за мной... 
+				Не важно, кто найдёт эту запись, просто ПОКОНЧИТЕ УЖЕ С ЭТИМ КОШМАРОМ, 
+				Умоляю... О нет.. Оно уже зде-
+				'''
+			Text: ОШИБКА - ДИСК НЕ ОБНАРУЖЕН
+		}
+
+		PlayerDeath: {
+			Death: разбился
+			Death1: стал единым целым со звёздами
+		}
+
+		NurseHeal: {
+			Heal1: Что, разве не видно, что я пытаюсь сама себя подлатать сейчас?
+			Heal: Прошу прощения, но в таких экстренных обстоятельствах я не могу заниматься с твоим типом крови.
+		}
+
+		Other: {
+			Other1: Недостаточно энергии
+			Other2: секунд осталось, пока Вспышку снова можно будет использовать
+		}
+	}
+}
+
+MyWorldLocalization: {
+	MyWorld: {
+		// voidInvasio: Darkness seeps through your veins...
+		// voidInvasio1: Laughs echo throughout the world
+		// voidInvasio2: Laughs echo throughout the world
+		// Azana1: The radiant rain dissipates...
+		// Azana: The rain glistens with unknown magic...
+		// Ore: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore
+		// Ore1: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore1
+	}
 }

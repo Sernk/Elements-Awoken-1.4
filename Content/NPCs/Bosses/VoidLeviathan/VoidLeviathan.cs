@@ -3,6 +3,8 @@ using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.Utilities;
+
 //using ElementsAwoken.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -26,7 +28,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
-                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().VoidLeviathan)
+                new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathan)
             });
         }
 

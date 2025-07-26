@@ -7,7 +7,6 @@ using ElementsAwoken.Content.Dusts;
 using ElementsAwoken.Content.Dusts.Ancients;
 using ElementsAwoken.Content.Items.Ancient;
 using ElementsAwoken.Content.Items.Armor.Vanity.TOJO;
-using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Consumable;
 using ElementsAwoken.Content.Items.ItemSets.HiveCrate;
 using ElementsAwoken.Content.Items.Other;
@@ -21,25 +20,18 @@ using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.Content.Projectiles.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Projectiles.Other;
-using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Mono.Cecil;
-using ReLogic.Graphics;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
-using Terraria.GameContent.Achievements;
 using Terraria.GameInput;
-using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using static Terraria.ModLoader.ModContent;
@@ -51,8 +43,10 @@ namespace ElementsAwoken.EASystem
     /// DustID.PinkFlame => DustID.Firework_Pink 
     /// This is maybe not true
     /// </summary>
-    public class MyPlayer : ModPlayer
+    public class MyPlayer : ModPlayer, ILocalizedModType
     {
+        public string LocalizationCategory => "MyPlayerLocalization";
+
         int PinkFlame = DustID.Firework_Pink;
 
         public bool voidBlood = false;
@@ -631,6 +625,68 @@ namespace ElementsAwoken.EASystem
                 aridFalling = Player.velocity.Y;
             }
         }
+        public override void Load()
+        {
+            _ = this.GetLocalization("Worold.Corruption").Value;
+            _ = this.GetLocalization("Worold.andCrimson").Value;
+            _ = this.GetLocalization("Worold.Crimson").Value;
+            _ = this.GetLocalization("Worold.Allevils").Value;
+            _ = this.GetLocalization("Worold.andHallowed").Value;
+            _ = this.GetLocalization("Worold.Hallowed").Value;
+
+            _ = this.GetLocalization("MasterSwordCharge.Discharged").Value;
+
+            _ = this.GetLocalization("Encounter.Said").Value;
+            _ = this.GetLocalization("Encounter.Said1").Value;
+            _ = this.GetLocalization("Encounter.Said2").Value;
+            _ = this.GetLocalization("Encounter.Said3").Value;
+            _ = this.GetLocalization("Encounter.Said4").Value;
+            _ = this.GetLocalization("Encounter.Said5").Value;
+            _ = this.GetLocalization("Encounter.Said6").Value;
+            _ = this.GetLocalization("Encounter.Said7").Value;
+            _ = this.GetLocalization("Encounter.Said8").Value;
+            _ = this.GetLocalization("Encounter.Said9").Value;
+            _ = this.GetLocalization("Encounter.Said10").Value;
+
+            _ = this.GetLocalization("Prompts.void").Value;
+            _ = this.GetLocalization("Prompts.void1").Value;
+            _ = this.GetLocalization("Prompts.void2").Value;
+            _ = this.GetLocalization("Prompts.void3").Value;
+            _ = this.GetLocalization("Prompts.void4").Value;
+            _ = this.GetLocalization("Prompts.void5").Value;
+
+            _ = this.GetLocalization("UponEnteringTheWorld.Music").Value;
+            _ = this.GetLocalization("UponEnteringTheWorld.Music1").Value;
+            _ = this.GetLocalization("UponEnteringTheWorld.Music2").Value;
+
+            _ = this.GetLocalization("ComputerText.Text").Value;
+            _ = this.GetLocalization("ComputerText.Text1").Value;
+            _ = this.GetLocalization("ComputerText.Text2").Value;
+            _ = this.GetLocalization("ComputerText.Text3").Value;
+            _ = this.GetLocalization("ComputerText.Text4").Value;
+            _ = this.GetLocalization("ComputerText.Text5").Value;
+            _ = this.GetLocalization("ComputerText.Text6").Value;
+            _ = this.GetLocalization("ComputerText.Text7").Value;
+            _ = this.GetLocalization("ComputerText.Text8").Value;
+            _ = this.GetLocalization("ComputerText.Text9").Value;
+            _ = this.GetLocalization("ComputerText.Text10").Value;
+            _ = this.GetLocalization("ComputerText.Text11").Value;
+            _ = this.GetLocalization("ComputerText.Text12").Value;
+            _ = this.GetLocalization("ComputerText.Text13").Value;
+            _ = this.GetLocalization("ComputerText.Text14").Value;
+            _ = this.GetLocalization("ComputerText.Text15").Value;
+            _ = this.GetLocalization("ComputerText.Text16").Value;
+            _ = this.GetLocalization("ComputerText.Text17").Value;
+
+            _ = this.GetLocalization("PlayerDeath.Death").Value;
+            _ = this.GetLocalization("PlayerDeath.Death1").Value;
+
+            _ = this.GetLocalization("Other.Other1").Value;
+            _ = this.GetLocalization("Other.Other2").Value;
+
+            _ = this.GetLocalization("NurseHeal.Heal").Value;
+            _ = this.GetLocalization("NurseHeal.Heal1").Value;
+        }
         public override void PostUpdateMiscEffects()
         {
             var source = Main.LocalPlayer.GetSource_FromThis();
@@ -991,41 +1047,49 @@ namespace ElementsAwoken.EASystem
             else archaicProtectionPos = Vector2.Zero;
 
             if (brokenWings) Player.wingTimeMax = 1;
-
+            string Corruption = this.GetLocalization("Worold.Corruption").Value;
+            string AndCrimson = this.GetLocalization("Worold.andCrimson").Value;
+            string Crimson = this.GetLocalization("Worold.Crimson").Value;
+            string Allevils = this.GetLocalization("Worold.Allevils").Value;
+            string andHallowed = this.GetLocalization("Worold.andHallowed").Value;
+            string Hallowed = this.GetLocalization("Worold.Hallowed").Value;
+            string and = " " + AndCrimson;
+            string and2 = "," + " " + Crimson;
+            string and3 = " " + andHallowed;
             if (dryadsRadar)
             {
                 if (MyWorld.corruptionTiles > 0)
                 {
-                    nearbyEvil = "Corruption";
+                    nearbyEvil = Corruption;
                 }
                 if (MyWorld.crimsonTiles > 0)
                 {
                     if (MyWorld.corruptionTiles > 0 && MyWorld.hallowedTiles == 0)
                     {
-                        nearbyEvil += " and Crimson";
+                        nearbyEvil += and;
                     }
                     else if (MyWorld.corruptionTiles > 0)
                     {
-                        nearbyEvil += ", Crimson";
+                        nearbyEvil += and2;
                     }
                     else
                     {
-                        nearbyEvil = "Crimson";
+                        nearbyEvil = Crimson;
                     }
                 }
                 if (MyWorld.hallowedTiles > 0)
                 {
                     if (MyWorld.corruptionTiles > 0 && MyWorld.crimsonTiles > 0)
                     {
-                        nearbyEvil = "All evils";
+                        nearbyEvil = Allevils;
                     }
                     else if (MyWorld.corruptionTiles > 0 || MyWorld.crimsonTiles > 0)
                     {
-                        nearbyEvil += " and Hallowed";
+                        nearbyEvil += and3;
                     }
                     else
                     {
-                        nearbyEvil = "Hallowed";
+                        nearbyEvil = Hallowed;
                     }
                 }
             }
@@ -1167,7 +1231,6 @@ namespace ElementsAwoken.EASystem
                     lightningCloudCharge = 300;
                 }
             }
-
             if (scourgeDrive)
             {
                 float pVelX = Player.velocity.X;
@@ -1231,7 +1294,7 @@ namespace ElementsAwoken.EASystem
                 }
                 if (masterSwordCountdown == 1)
                 {
-                    CombatText.NewText(Player.getRect(), Color.Red, "Discharged", true, false);
+                    CombatText.NewText(Player.getRect(), Color.Red, this.GetLocalization("MasterSwordCharge.Discharged").Value, true, false);
                 }
             }
             if (empyreanCloudCD < 0)
@@ -1451,7 +1514,6 @@ namespace ElementsAwoken.EASystem
             }
             if (overInfinityCharged > 0)
             {
-
                 int num5 = Dust.NewDust(Player.position, Player.width, Player.height, 66, 0f, 0f, 100, new Color(Main.DiscoR, Main.DiscoG, Main.DiscoB), 0.5f);
                 Main.dust[num5].noGravity = true;
                 Main.dust[num5].velocity *= 0.75f;
@@ -1524,6 +1586,18 @@ namespace ElementsAwoken.EASystem
             #region encounters
             if (ElementsAwoken.encounter != 0)
             {
+                string Said = this.GetLocalization("Encounter.Said").Value;
+                string Said1 = this.GetLocalization("Encounter.Said1").Value;
+                string Said2 = this.GetLocalization("Encounter.Said2").Value;
+                string Said3 = this.GetLocalization("Encounter.Said3").Value;
+                string Said4 = this.GetLocalization("Encounter.Said4").Value;
+                string Said5 = this.GetLocalization("Encounter.Said5").Value;
+                string Said6 = this.GetLocalization("Encounter.Said6").Value;
+                string Said7 = this.GetLocalization("Encounter.Said7").Value;
+                string Said8 = this.GetLocalization("Encounter.Said8").Value;
+                string Said9 = this.GetLocalization("Encounter.Said9").Value;
+                string Said10 = this.GetLocalization("Encounter.Said10").Value;
+
                 if (ElementsAwoken.encounter == 1)
                 {
                     screenshakeAmount = 5f;
@@ -1536,25 +1610,25 @@ namespace ElementsAwoken.EASystem
                 {
                     encounterTextTimer = 300;
                     encounterTextAlpha = 0;
-                    if (ElementsAwoken.encounter == 1) encounterText = "I see it now.";
-                    else if (ElementsAwoken.encounter == 2) encounterText = "Who are you really?";
-                    else if (ElementsAwoken.encounter == 3) encounterText = "You seek power...";
+                    if (ElementsAwoken.encounter == 1) encounterText = Said;
+                    else if (ElementsAwoken.encounter == 2) encounterText = Said1;
+                    else if (ElementsAwoken.encounter == 3) encounterText = Said2;
                 }
                 else if (ElementsAwoken.encounterTimer == 2700)
                 {
                     encounterTextTimer = 300;
                     encounterTextAlpha = 0;
-                    if (ElementsAwoken.encounter == 1) encounterText = "A new challenger rises.";
-                    else if (ElementsAwoken.encounter == 2) encounterText = "A simple lost soul?";
-                    else if (ElementsAwoken.encounter == 3) encounterText = "But you haven't asked why.";
+                    if (ElementsAwoken.encounter == 1) encounterText = Said3;
+                    else if (ElementsAwoken.encounter == 2) encounterText = Said4;
+                    else if (ElementsAwoken.encounter == 3) encounterText = Said5;
                 }
                 else if (ElementsAwoken.encounterTimer == 2200)
                 {
                     encounterTextTimer = 300;
                     encounterTextAlpha = 0;
-                    if (ElementsAwoken.encounter == 1) encounterText = "You have a long way to go.";
-                    else if (ElementsAwoken.encounter == 2) encounterText = "The path ahead is long.";
-                    else if (ElementsAwoken.encounter == 3) encounterText = "Does it matter?";
+                    if (ElementsAwoken.encounter == 1) encounterText = Said6;
+                    else if (ElementsAwoken.encounter == 2) encounterText = Said7;
+                    else if (ElementsAwoken.encounter == 3) encounterText = Said8;
                 }
                 else if (ElementsAwoken.encounterTimer == 1700)
                 {
@@ -1563,10 +1637,10 @@ namespace ElementsAwoken.EASystem
                         encounterTextTimer = 300;
                         encounterTextAlpha = 0;
                     }
-                    if (ElementsAwoken.encounter == 2) encounterText = "You are getting closer.";
+                    if (ElementsAwoken.encounter == 2) encounterText = Said9;
                     else if (ElementsAwoken.encounter == 3)
                     {
-                        encounterText = "You are almost there.";
+                        encounterText = Said10;
                         SoundEngine.PlaySound(SoundID.Zombie105, Player.position);
                         finalText = true;
                     }
@@ -1989,6 +2063,13 @@ namespace ElementsAwoken.EASystem
                     {
                         Player.AddBuff(BuffType<Psychosis>(), 60);
 
+                        string Void = this.GetLocalization("Prompts.void").Value;
+                        string Void1 = this.GetLocalization("Prompts.void1").Value;
+                        string Void2 = this.GetLocalization("Prompts.void2").Value;
+                        string Void3 = this.GetLocalization("Prompts.void3").Value;
+                        string Void4 = this.GetLocalization("Prompts.void4").Value;
+                        string Void5 = this.GetLocalization("Prompts.void5").Value;
+
                         if (Main.rand.Next(20) == 0)
                         {
                             int num1 = Dust.NewDust(Player.position, Player.width, Player.height, 14);
@@ -2002,13 +2083,13 @@ namespace ElementsAwoken.EASystem
                             int choice = Main.rand.Next(12);
                             if (choice == 0)
                             {
-                                Main.NewText("Death will consume all.", Color.Purple.R, Color.Purple.G, Color.Purple.B);
-                                Main.NewText("Void Leviathan has awoken!", Color.MediumPurple.R, Color.MediumPurple.G, Color.MediumPurple.B);
+                                Main.NewText(Void, Color.Purple.R, Color.Purple.G, Color.Purple.B);
+                                Main.NewText(Void1, Color.MediumPurple.R, Color.MediumPurple.G, Color.MediumPurple.B);
                                 SoundEngine.PlaySound(SoundID.Roar, Player.Center);
                             }
-                            else if (choice == 1) Main.NewText("Impending doom approaches...", Color.PaleGreen.R, Color.PaleGreen.G, Color.PaleGreen.B);
-                            else if (choice == 2) Main.NewText("You're not ready for this", Color.Red.R, Color.Red.G, Color.Red.B);
-                            else if (choice == 3) Main.NewText("Leave", Color.Red.R, Color.Red.G, Color.Red.B);
+                            else if (choice == 1) Main.NewText(Void2, Color.PaleGreen.R, Color.PaleGreen.G, Color.PaleGreen.B);
+                            else if (choice == 2) Main.NewText(Void3, Color.Red.R, Color.Red.G, Color.Red.B);
+                            else if (choice == 3) Main.NewText(Void4, Color.Red.R, Color.Red.G, Color.Red.B);
                             else if (choice == 4) SoundEngine.PlaySound(SoundID.NPCDeath62, Player.Center);
                             else if (choice == 5) SoundEngine.PlaySound(SoundID.NPCDeath59, Player.Center);
                             else if (choice == 6) SoundEngine.PlaySound(SoundID.NPCDeath51, Player.Center);
@@ -2021,7 +2102,7 @@ namespace ElementsAwoken.EASystem
                                 int guide = NPC.FindFirstNPC(NPCID.Guide);
                                 if (guide >= 0 && Main.rand.Next(5) == 0)
                                 {
-                                    Main.NewText(Main.npc[guide].GivenName + "the Guide was slain...", Color.Red.R, Color.Red.G, Color.Red.B);
+                                    Main.NewText(Main.npc[guide].GivenName + Void5, Color.Red.R, Color.Red.G, Color.Red.B);
                                 }
                             }
                         }
@@ -2089,7 +2170,6 @@ namespace ElementsAwoken.EASystem
                             Player.buffTime[l] *= 2;
                         oiniteDoubledBuff[l] = true;      
                     }
-
                 }
             }
             else
@@ -2120,11 +2200,14 @@ namespace ElementsAwoken.EASystem
         {
             if (Player.whoAmI == Main.myPlayer)
             {
+                string Music = this.GetLocalization("UponEnteringTheWorld.Music").Value;
+                string Music1 = this.GetLocalization("UponEnteringTheWorld.Music1").Value; 
+                string Music2 = this.GetLocalization("UponEnteringTheWorld.Music2").Value; 
                 if (!InstalledPack())
                 {
-                    Main.NewText("You dont have a music pack enabled! All EA bosses will have vanilla music themes. Consider installing:", Color.Red.R, Color.Red.G, Color.Red.B);
-                    Main.NewText("Elements Awoken Music", Color.Purple.R, Color.Purple.G, Color.Purple.B);
-                    Main.NewText("EA Retro Music", Color.Purple.R, Color.Purple.G, Color.Purple.B);
+                    Main.NewText(Music, Color.Red.R, Color.Red.G, Color.Red.B);
+                    Main.NewText(Music1, Color.Purple.R, Color.Purple.G, Color.Purple.B);
+                    Main.NewText(Music2, Color.Purple.R, Color.Purple.G, Color.Purple.B);
                 }
                 //Mod yabhb = ModLoader.GetMod("ExtensibleInventory");
                 //if (yabhb != null)
@@ -2151,7 +2234,6 @@ namespace ElementsAwoken.EASystem
             //}
             return false;
         }
-
         public override void PostItemCheck()
         {
             var source = Main.LocalPlayer.GetSource_FromThis();
@@ -2309,6 +2391,25 @@ namespace ElementsAwoken.EASystem
         }
         private void ComputerText()
         {
+            string ComputerText = this.GetLocalization("ComputerText.Text").Value;
+            string ComputerText1 = this.GetLocalization("ComputerText.Text1").Value; 
+            string ComputerText2 = this.GetLocalization("ComputerText.Text2").Value;
+            string ComputerText3 = this.GetLocalization("ComputerText.Text3").Value;
+            string ComputerText4 = this.GetLocalization("ComputerText.Text4").Value;
+            string ComputerText5 = this.GetLocalization("ComputerText.Text5").Value;
+            string ComputerText6 = this.GetLocalization("ComputerText.Text6").Value;
+            string ComputerText7 = this.GetLocalization("ComputerText.Text7").Value;
+            string ComputerText8 = this.GetLocalization("ComputerText.Text8").Value;
+            string ComputerText9 = this.GetLocalization("ComputerText.Text9").Value;
+            string ComputerText10 = this.GetLocalization("ComputerText.Text10").Value;
+            string ComputerText11 = this.GetLocalization("ComputerText.Text11").Value;
+            string ComputerText12 = this.GetLocalization("ComputerText.Text12").Value;
+            string ComputerText13 = this.GetLocalization("ComputerText.Text13").Value;
+            string ComputerText14 = this.GetLocalization("ComputerText.Text14").Value;
+            string ComputerText15 = this.GetLocalization("ComputerText.Text15").Value;
+            string ComputerText16 = this.GetLocalization("ComputerText.Text16").Value;
+            string ComputerText17 = this.GetLocalization("ComputerText.Text17").Value;
+
             int num16 = (int)(((double)Player.position.X + (double)Player.width * 0.5) / 16.0);
             int num17 = (int)(((double)Player.position.Y + (double)Player.height * 0.5) / 16.0);
             if (num16 < computerPos.X - Player.tileRangeX || num16 > computerPos.X + Player.tileRangeX + 1 || num17 < computerPos.Y - Player.tileRangeY || num17 > computerPos.Y + Player.tileRangeY + 1)
@@ -2323,83 +2424,83 @@ namespace ElementsAwoken.EASystem
             {
                 case 0:
                     //no drive
-                    computerText = "ERROR- DRIVE NOT LOCATED";
+                    computerText = ComputerText;
                     break;
                 case 1:
                     //wasteland
-                    computerText = "What is this monstrosity, what have we created?!\nThis... beast, it has killed the others, I hear it trying to \nbreak the door to my room... Its coming for me... \nAnybody who finds this note, END THIS MADNESS, \nI beg of you... Oh no.. Its her-";
+                    computerText = ComputerText1;
                     break;
                 case 2:
                     //infernace
-                    computerText = "My colleagues found something very interesting within the\ndeepest part of this world. A sentient being controlling fire\nat will...unfortunately, we can't go down there, as it may\nkill us if we approach it, but...we will continue watching it.";
+                    computerText = ComputerText2;
                     break;
                 case 3:
                     //scourge fighter
-                    computerText = "Our other team managed to lose control of the 4 robots\nthey've built. Seems like some people are better off being\nfired. Those things now roam the surface, I am not sure\nof what will happen...";
+                    computerText = ComputerText3;
                     break;
                 case 4:
                     //regaroth
-                    computerText = "A massive amount of energy surged through one of our\nmachines, overloading it and causing it to blow up. The\nenergy readings were... outstanding, to say the least,\nalmost supernatural. It has probably to do with that\nthunder serpent, far up in the skies...";
+                    computerText = ComputerText4;
                     break;
                 case 5:
                     //the celestial
-                    computerText = "When we attempted to find a source for the cultists to\nrelay celestial power from, we stumbled across an\nimperfect reflection of the celestial forces... However, it\nwill be hard to find a source of power from that creature.";
+                    computerText = ComputerText5;
                     break;
                 case 6:
                     //obsidious
-                    computerText = "We've heard of some, artifact lost in the underworld but\nnever bothered to look for it. Recently we checked and it\nwas gone. I suppose someone else found it first, ah well...";
+                    computerText = ComputerText6;
                     break;
                 case 7:
                     //permafrost
-                    computerText = "There appear to be signs of magic in the coldest parts of\nthe land, we have sent someone to look into it, but\nunfortunately we have not heard from them as of yet...\nI fear he has been frozen due to the cold. After all, these\nlands are rather, harsh, to take on alone.";
+                    computerText = ComputerText7;
                     break;
                 case 8:
                     //aqueous
-                    computerText = "The tides have risen rather high, and there have been\nrather heavy amounts of rain lately, with terrifying\nconsistency no less. On top of that, there are multiple\nreports of tornados composed almost entirely of water.\nThe wrath of the ocean may be upon us soon..";
+                    computerText = ComputerText8;
                     break;
                 case 9:
                     //the guardian
                     if (guardianEntryNo == 0)
                     {
-                        computerText = "001: This element, drakonite, is rather interesting to say\nthe least. We've taken a shard of it into our lab for\nfurther research. However, we should be prepared for\nwhatever danger lurks within this shard...";
+                        computerText = ComputerText9;
                     }
                     else
                     {
-                        computerText = "002: The drakonite shard, it had quite the reaction to lava\nand then right before us, a giant...thing began to\nbuild up. It was entirely made of drakonite! However it\nwas not friendly, we had to quickly evacuate to save\nourselves.";
+                        computerText = ComputerText10;
                     }
                     break;
                 case 10:
                     //volcanox
-                    computerText = "After extensive research via our machines, we came to the\nconclusion that, if the moon lord were to be felled,\nthe underworld would burst out in extreme heat, and even \nthe most fire resistant gear would not last long... What \nsort of a being could withstand this heatwave?";
+                    computerText = ComputerText11;
                     break;
                 case 11:
                     //void leviathan
-                    computerText = "My colleagues have been constantly hallucinating, and were\nshowing signs of sickness, as well as being easily\ntired. They are barely able to breathe. I am trying to find\nsome way to save them, however... I feel this will hit\nme as well. I need to get this cure done -at all costs!";
+                    computerText = ComputerText12;
                     break;
                 case 12:
                     //azana
                     if (azanaEntryNo == 0)
                     {
-                        computerText = "001: This is going to be my final entry...\nI've lost everything. I had, all my colleagues... everything\nis gone and I'm alone. The chaos ravages the lands, and I\nam unable to do anything. There is no reason for me to\nlive anymore...";
+                        computerText = ComputerText13;
                     }
                     else
                     {
-                        computerText = "002: Whoever finds this...I beg of you, do not make the\nsame mistakes as we did...Do not..";
+                        computerText = ComputerText14;
                     }
                     break;
                 case 13:
                     //ancients
                     if (ancientsEntryNo == 0)
                     {
-                        computerText = "003: We just witnissed something dangerous...some old\nman entered our laboratory and split into four crystalline\nmonsters, which roamed the entire place. Almost the\nentirety of our team is missing and all we found was some\ncrystal shards on the ground. We have to make some tests.";
+                        computerText = ComputerText15;
                     }
                     else
                     {
-                        computerText = "004: Upon further investigation, the shards belong to\na long forgotten race, thought to be eliminated.\nNo doubt, they could bring more chaos than anything\ncurrently ever could. And that there are four survivors\ngives me an awful feeling...";
+                        computerText = ComputerText16;
                     }
                     break;
                 default:
-                    computerText = "muffins";
+                    computerText = ComputerText17;
                     return;
             }
         }
@@ -3056,7 +3157,8 @@ namespace ElementsAwoken.EASystem
             {
                 modifiers.DisableSound();
                 SoundEngine.PlaySound(SoundID.Shatter, Player.position);
-                Player.KillMe(PlayerDeathReason.ByCustomReason(Player.name + " shattered"), 1, 1);
+                NetworkText DeathReason = NetworkText.FromLiteral(Player.name + " " + this.GetLocalization("PlayerDeath.Death").Value);
+                Player.KillMe(PlayerDeathReason.ByCustomReason(DeathReason), 1, 1);
                 return;
 
             }
@@ -3214,12 +3316,12 @@ namespace ElementsAwoken.EASystem
             {
                 if (AnyBoss())
                 {
-                    chatText = "I'm sorry, I cant operate on your bloodtype under such urgent conditions.";
+                    chatText = this.GetLocalization("NurseHeal.Heal").Value;
                     return false;
                 }
                 if (nurse.life < nurse.lifeMax)
                 {
-                    chatText = "Cant you see I'm a little busy fixing myself up?";
+                    chatText = this.GetLocalization("NurseHeal.Heal1").Value;
                     return false;
                 }
             }
@@ -3267,6 +3369,7 @@ namespace ElementsAwoken.EASystem
             }
             if (boostDrive != 0 && ElementsAwoken.specialAbility.JustPressed && Player.FindBuffIndex(BuffType<BoostDriveCD>()) == -1)
             {
+                string Energy = this.GetLocalization("Other.Other1").Value;
                 bool hasEnergy = false;
                 int dustID = 226;
                 if (boostDrive == 1 && energyPlayer.energy >= 50)
@@ -3296,12 +3399,13 @@ namespace ElementsAwoken.EASystem
                         Main.dust[dust].velocity = Vector2.Normalize(velocity) * 2f;
                     }
                 }
-                else CombatText.NewText(Player.getRect(), Color.Red, "Insufficient Energy", true, false);
+                else CombatText.NewText(Player.getRect(), Color.Red, Energy, true, false);
             }
             if (flare)
             {
                 if (ElementsAwoken.specialAbility.JustPressed)
                 {
+                    string dead = this.GetLocalization("Other.Other2").Value;
                     if (!Player.dead)
                     {
                         if (flareShieldCD <= 0)
@@ -3311,7 +3415,7 @@ namespace ElementsAwoken.EASystem
                         }
                         else
                         {
-                            Main.NewText(flareShieldCD / 60 + " seconds left until you can use Flare");
+                            Main.NewText(flareShieldCD / 60 + " " + dead);
                         }
                     }
                 }
@@ -3435,8 +3539,9 @@ namespace ElementsAwoken.EASystem
                 {
                     if (Player.chaosState)
                     {
+                        NetworkText DeathReason1 = NetworkText.FromLiteral(Player.name + " " + this.GetLocalization("PlayerDeath.Death1").Value);
                         Player.statLife -= Player.statLifeMax2 / 7;
-                        if (Player.statLife < 0) Player.KillMe(PlayerDeathReason.ByCustomReason(Player.name + " became one with the stars"), 1, 1);
+                        if (Player.statLife < 0) Player.KillMe(PlayerDeathReason.ByCustomReason(DeathReason1), 1, 1);
                     }
                     int numProj = 5;
                     Vector2 distance = (toPos - Player.Center) / numProj;
@@ -3572,7 +3677,6 @@ namespace ElementsAwoken.EASystem
             Gore gore92 = Main.gore[num373];
             gore92.velocity.Y = gore92.velocity.Y - 1f;
         }
-
         private static void EyeDust(Player player, int dust)
         {
             int num = 0;
@@ -3629,7 +3733,6 @@ namespace ElementsAwoken.EASystem
                 expr_3D9.shader = GameShaders.Armor.GetSecondaryShader(player.cYorai, player);
             }
         }
-
         private int CollideWithNPCs(Rectangle myRect, float Damage, float Knockback, int NPCImmuneTime, int PlayerImmuneTime)
         {
             int num = 0;

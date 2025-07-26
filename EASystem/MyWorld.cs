@@ -1,22 +1,24 @@
-﻿using ElementsAwoken.Content.Buffs.Debuffs;
+﻿using CalamityMod.Projectiles.Melee;
+using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Events.RadiantRain.Enemies;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Items.Weapons.Melee.Whips;
+using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Tiles;
+using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Events.VoidEvent;
+using ElementsAwoken.Utilities;
+using ElementsAwoken.Utilities.Structures;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using ReLogic.Graphics;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Chat;
-using Terraria.DataStructures;
-using Terraria.GameContent.Events;
 using Terraria.GameContent.Generation;
 using Terraria.Graphics.Effects;
 using Terraria.ID;
@@ -26,27 +28,22 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.WorldBuilding;
 using static Terraria.ModLoader.ModContent;
-using ElementsAwoken.EASystem;
+
 namespace ElementsAwoken
 {
-    public class MyWorld : ModSystem
+    public class MyWorld : ModSystem, ILocalizedModType
     {
+        public string LocalizationCategory => "MyWorldLocalization";
         public static bool awakenedMode = false;
-
         public static bool credits = false;
         public static int creditsCounter = 0;
-
         public static int moonlordKills = 0;
         public static int voidLeviathanKills = 0;
         public static int ancientSummons = 0;
         public static int ancientKills = 0;
-
         public static bool genVoidite = false;
         public static bool genLuminite = false;
-
         public static string[] mysteriousPotionColours = new string[10];
-
-        // downed bools
         public static bool downedToySlime = false;
         public static bool downedWasteland = false;
         public static bool downedInfernace = false;
@@ -68,31 +65,21 @@ namespace ElementsAwoken
         public static bool downedCosmicObserver = false;
         public static bool completedRadiantRain = false;
         public static bool downedRadiantMaster = false;
-
-        // events
         public static bool darkMoon = false;
-
         public static bool voidInvasionUp = false;
         public static bool voidInvasionWillStart = false;
         public static int voidInvasionFinished = 0;
-
-        // hailstorm
         public static int hailStormTime = 0;
-        // tiles
         public static int SkyTiles = 0;
         public static int lizardTiles = 0;
         public static int corruptionTiles = 0;
         public static int crimsonTiles = 0;
         public static int hallowedTiles = 0;
-        //lab
         public static int labPosition = 0;
-        public static int sizeMult = (int)(Math.Floor(Main.maxTilesX / 4200f)); //Small = 2; Medium = ~3; Large = 4;
+        public static int sizeMult = (int)(Math.Floor(Main.maxTilesX / 4200f));
         public static bool generatedLabs = false;
-        // genih statue
         public static bool aggressiveEnemies = false;
         public static bool swearingEnemies = false;
-
-        // has obtained the computer drives
         public static bool ancientsDrive = false;
         public static bool aqueousDrive = false;
         public static bool azanaDrive = false;
@@ -106,34 +93,25 @@ namespace ElementsAwoken
         public static bool voidLeviathanDrive = false;
         public static bool volcanoxDrive = false;
         public static bool wastelandDrive = false;
-
-        // boss prompts
         public static int desertPrompt = 0;
         public static int firePrompt = 0;
         public static int skyPrompt = 0;
         public static int frostPrompt = 0;
         public static int waterPrompt = 0;
         public static int voidPrompt = 0;
-
         public static int skyPromptRainCD = 0;
-
         public static bool radiantRain = false;
         public static bool prevTickRaining = false;
-
-        public override void OnWorldLoad()/* tModPorter Suggestion: Also override OnWorldUnload, and mirror your worldgen-sensitive data initialization in PreWorldGen */ // called when the world is loaded
+        public override void OnWorldLoad()
         {
             awakenedMode = false;
-
             credits = false;
-
             voidLeviathanKills = 0;
             moonlordKills = 0;
             ancientKills = 0;
             ancientSummons = 0;
-
             sizeMult = (int)(Math.Floor(Main.maxTilesX / 4200f));
             generatedLabs = false;
-
             downedToySlime = false;
             downedWasteland = false;
             downedInfernace = false;
@@ -155,25 +133,18 @@ namespace ElementsAwoken
             downedCosmicObserver = false;
             completedRadiantRain = false;
             downedRadiantMaster = false;
-
             Main.invasionSize = 0;
-
             voidInvasionUp = false;
             voidInvasionWillStart = false;
             voidInvasionFinished = 0;
-
             darkMoon = false;
-
             genVoidite = false;
             genLuminite = false;
-
             aggressiveEnemies = false;
             swearingEnemies = false;
-
             ElementsAwoken.encounter = 0;
             ElementsAwoken.encounterTimer = 0;
             ElementsAwoken.encounterSetup = false;
-
             aqueousDrive = false;
             azanaDrive = false;
             celestialDrive = false;
@@ -186,18 +157,14 @@ namespace ElementsAwoken
             voidLeviathanDrive = false;
             volcanoxDrive = false;
             wastelandDrive = false;
-
             desertPrompt = 0;
             firePrompt = 0;
             skyPrompt = 0;
             frostPrompt = 0;
             waterPrompt = 0;
             voidPrompt = 0;
-
             skyPromptRainCD = 0;
-
             hailStormTime = 0;
-
             radiantRain = false;
             prevTickRaining = false;
         }
@@ -223,16 +190,12 @@ namespace ElementsAwoken
             tag["downedCosmicObserver"] = downedCosmicObserver;
             tag["completedRadiantRain"] = completedRadiantRain;
             tag["downedRadiantMaster"] = downedRadiantMaster;
-
             tag["downedVoidEvent"] = downedVoidEvent;
-
             tag["generatedLabs"] = generatedLabs;
-
             tag["moonlordKills"] = moonlordKills;
             tag["voidLeviathanKills"] = voidLeviathanKills;
             tag["ancientKills"] = ancientKills;
             tag["ancientSummons"] = ancientSummons;
-
             tag["aqueousDrive"] = aqueousDrive;
             tag["azanaDrive"] = azanaDrive;
             tag["celestialDrive"] = celestialDrive;
@@ -245,16 +208,13 @@ namespace ElementsAwoken
             tag["voidLeviathanDrive"] = voidLeviathanDrive;
             tag["volcanoxDrive"] = volcanoxDrive;
             tag["wastelandDrive"] = wastelandDrive;
-
             tag["desertPrompt"] = desertPrompt;
             tag["firePrompt"] = firePrompt;
             tag["skyPrompt"] = skyPrompt;
             tag["frostPrompt"] = frostPrompt;
             tag["waterPrompt"] = waterPrompt;
             tag["voidPrompt"] = voidPrompt;
-
             tag["radiantRain"] = radiantRain;
-
             for (int i = 0; i < mysteriousPotionColours.Length; i++)
             {
                 tag["potColours" + i] = mysteriousPotionColours[i];
@@ -263,7 +223,6 @@ namespace ElementsAwoken
         public override void LoadWorldData(TagCompound tag)
         {
             awakenedMode = tag.GetBool("awakenedMode");
-
             downedInfernace = tag.GetBool("downedInfernace");
             downedAqueous = tag.GetBool("downedAqueous");
             downedVoidLeviathan = tag.GetBool("downedVoidLeviathan");
@@ -284,16 +243,12 @@ namespace ElementsAwoken
             downedAncients = tag.GetBool("downedAncients");
             downedCosmicObserver = tag.GetBool("downedCosmicObserver");
             downedRadiantMaster = tag.GetBool("downedRadiantMaster");
-
             downedVoidEvent = tag.GetBool("downedVoidEvent");
-
             generatedLabs = tag.GetBool("generatedLabs");
-
             moonlordKills = tag.GetInt("moonlordKills");
             voidLeviathanKills = tag.GetInt("voidLeviathanKills");
             ancientKills = tag.GetInt("ancientKills");
             ancientSummons = tag.GetInt("ancientSummons");
-
             aqueousDrive = tag.GetBool("aqueousDrive");
             azanaDrive = tag.GetBool("azanaDrive");
             celestialDrive = tag.GetBool("celestialDrive");
@@ -306,16 +261,13 @@ namespace ElementsAwoken
             voidLeviathanDrive = tag.GetBool("voidLeviathanDrive");
             volcanoxDrive = tag.GetBool("volcanoxDrive");
             wastelandDrive = tag.GetBool("wastelandDrive");
-
             desertPrompt = tag.GetInt("desertPrompt");
             firePrompt = tag.GetInt("firePrompt");
             skyPrompt = tag.GetInt("skyPrompt");
             frostPrompt = tag.GetInt("frostPrompt");
             waterPrompt = tag.GetInt("waterPrompt");
             voidPrompt = tag.GetInt("voidPrompt");
-
             radiantRain = tag.GetBool("radiantRain");
-
             for (int i = 0; i < mysteriousPotionColours.Length; i++)
             {
                 mysteriousPotionColours[i] = tag.GetString("potColours" + i);
@@ -323,7 +275,6 @@ namespace ElementsAwoken
         }
         public override void NetSend(BinaryWriter writer)
         {
-            // downed
             BitsByte flags1 = new BitsByte();
             flags1[0] = downedAqueous;
             flags1[1] = downedVoidLeviathan;
@@ -334,7 +285,6 @@ namespace ElementsAwoken
             flags1[6] = downedWasteland;
             flags1[7] = downedPermafrost;
             writer.Write(flags1);
-
             BitsByte flags2 = new BitsByte();
             flags2[0] = downedGuardian;
             flags2[1] = downedEye;
@@ -345,7 +295,6 @@ namespace ElementsAwoken
             flags2[6] = downedVoidEvent;
             flags2[7] = downedToySlime;
             writer.Write(flags2);
-
             BitsByte flags3 = new BitsByte();
             flags3[0] = downedAzana;
             flags3[1] = downedAncients;
@@ -353,8 +302,6 @@ namespace ElementsAwoken
             flags3[3] = sparedAzana;
             flags3[4] = downedRadiantMaster;
             writer.Write(flags3);
-
-            // lab gen & drive obtained
             BitsByte flags4 = new BitsByte();
             flags4[0] = generatedLabs;
             flags4[1] = aqueousDrive;
@@ -365,7 +312,6 @@ namespace ElementsAwoken
             flags2[6] = obsidiousDrive;
             flags2[7] = permafrostDrive;
             writer.Write(flags4);
-
             BitsByte flags5 = new BitsByte();
             flags5[0] = regarothDrive;
             flags5[1] = scourgeFighterDrive;
@@ -373,13 +319,10 @@ namespace ElementsAwoken
             flags5[3] = volcanoxDrive;
             flags5[4] = wastelandDrive;
             writer.Write(flags5);
-
-            // mysterious pots
             for (int i = 0; i < mysteriousPotionColours.Length; i++)
             {
                 writer.Write(mysteriousPotionColours[i]);
             }
-            //random
             BitsByte flags6 = new BitsByte();
             flags6[0] = awakenedMode;
             flags6[1] = genLuminite;
@@ -388,23 +331,14 @@ namespace ElementsAwoken
             flags6[4] = prevTickRaining;
             flags6[5] = voidInvasionUp;
             writer.Write(flags6);
-
-            // prompts
             writer.Write(desertPrompt);
             writer.Write(firePrompt);
             writer.Write(skyPrompt);
             writer.Write(frostPrompt);
             writer.Write(waterPrompt);
             writer.Write(voidPrompt);
-
-            //kills
             writer.Write(moonlordKills);
             writer.Write(voidLeviathanKills);
-
-            //writer.Write(encounter);
-            //writer.Write(encounterShakeTimer);
-            //writer.Write(encounterTimer);
-
         }
         public override void NetReceive(BinaryReader reader)
         {
@@ -417,7 +351,6 @@ namespace ElementsAwoken
             completedRadiantRain = flags1[5];
             downedWasteland = flags1[6];
             downedPermafrost = flags1[7];
-
             BitsByte flags2 = reader.ReadByte();
             downedGuardian = flags2[0];
             downedEye = flags2[1];
@@ -427,15 +360,12 @@ namespace ElementsAwoken
             downedVolcanox = flags2[5];
             downedVoidEvent = flags2[6];
             downedToySlime = flags2[7];
-
             BitsByte flags3 = reader.ReadByte();
             downedAzana = flags3[0];
             downedAncients = flags3[1];
             downedCosmicObserver = flags3[2];
             sparedAzana = flags3[3];
             downedRadiantMaster = flags3[4];
-
-            // lab gen & drive obtained
             BitsByte flags4 = reader.ReadByte();
             generatedLabs = flags4[0];
             aqueousDrive = flags4[1];
@@ -445,20 +375,16 @@ namespace ElementsAwoken
             infernaceDrive = flags4[5];
             obsidiousDrive = flags4[6];
             permafrostDrive = flags4[7];
-
             BitsByte flags5 = reader.ReadByte();
             regarothDrive = flags5[0];
             scourgeFighterDrive = flags5[1];
             voidLeviathanDrive = flags5[2];
             volcanoxDrive = flags5[3];
             wastelandDrive = flags5[4];            
-
-            // mysterious pots
             for (int i = 0; i < mysteriousPotionColours.Length; i++)
             {
                 mysteriousPotionColours[i] = reader.ReadString();
             }
-            //random 
             BitsByte flags6 = reader.ReadByte();
             awakenedMode = flags6[0];
             genLuminite = flags6[1];
@@ -466,23 +392,23 @@ namespace ElementsAwoken
             radiantRain = flags6[3];
             prevTickRaining = flags6[4];
             voidInvasionUp = flags6[5];
-
-            // essence notifacations
             desertPrompt = reader.ReadInt32();
             firePrompt = reader.ReadInt32();
             skyPrompt = reader.ReadInt32();
             frostPrompt = reader.ReadInt32();
             waterPrompt = reader.ReadInt32();
             voidPrompt = reader.ReadInt32();
-
             moonlordKills = reader.ReadInt32();
             voidLeviathanKills = reader.ReadInt32();
-
-            //encounter = reader.ReadInt32();
-            //encounterShakeTimer = reader.ReadInt32();
-            //encounterTimer = reader.ReadInt32();
         }
-
+        public override void Load()
+        {
+            _ = this.GetLocalization("voidInvasio").Value;
+            _ = this.GetLocalization("voidInvasio1").Value;
+            _ = this.GetLocalization("voidInvasio2").Value;
+            _ = this.GetLocalization("Azana").Value;
+            _ = this.GetLocalization("Azana1").Value;
+        }
         // adding item in chests
         public override void PostWorldGen()
         {
@@ -523,16 +449,17 @@ namespace ElementsAwoken
                     }
                 }
             }
-
         }
-        /*public bool CalamityModRevengeance
-        {
-            get { return CalamityMod.CalamityWorld.revenge; }
-        }*/ // gimme the fckn windows.dll pls 
         public override void PostUpdateWorld()
         {
             Player player = Main.player[Main.myPlayer];
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
+
+            string VoidInvasio = this.GetLocalization("voidInvasio").Value;
+            string VoidInvasio1 = this.GetLocalization("voidInvasio1").Value;
+            string VoidInvasio2 = this.GetLocalization("voidInvasio2").Value;
+            string Azana = this.GetLocalization("Azana").Value;
+            string Azana1 = this.GetLocalization("Azana1").Value;
 
             if (!ModContent.GetInstance<Config>().promptsDisabled)
             {
@@ -567,40 +494,20 @@ namespace ElementsAwoken
                         hailStormTime = Main.rand.Next(1800, 7200);
                     }
                 }
-
                 if (hailStormTime > 0)
                 {
                     hailStormTime--;
                 }
             }
-            if (ElementsAwoken.calamityEnabled)
-            {
-                /*if (CalamityModRevengeance)
-                {
-                    if (!awakenedMode)
-                    {
-                        Main.NewText("The forces of the world get twisted beyond imagination...", Color.DeepPink);
-                        awakenedMode = true;
-                    }
-                }*/
-            }
-            //if (awakenedMode)
-            //{
-            //    Main.expertMode = true;
-            //}
             if (modPlayer.voidEnergyTimer > 0)
             {
                 MoonlordShake(1f);
             }
-
             if (modPlayer.infinityDeath)
             {
                 MoonlordShake(0.6f);
             }
-
             #region credits
-
-
             #endregion
             #region DotV
             voidInvasionFinished--;
@@ -608,25 +515,22 @@ namespace ElementsAwoken
             {
                 voidInvasionFinished = 0;
             }
-
             if (voidInvasionUp)
             {
-                //Updates the invasion while it heads to spawn point and ends it
                 VoidEvent.UpdateInvasion();
-                // gradual brightness change
                 if (!Main.dayTime && Main.time > 12620 && Main.time < 16220)
                 {
-                    Lighting.GlobalBrightness = 0.75f; // lower because it doesnt have darkness and blackout too
+                    Lighting.GlobalBrightness = 0.75f;
                 }
                 if (!Main.dayTime && Main.time > 15620 && Main.time < 15620)
                 {
-                    Lighting.GlobalBrightness = 0.4f; // lower because it doesnt have darkness and blackout too
+                    Lighting.GlobalBrightness = 0.4f;
                 }
                 if (!Main.dayTime && Main.time == 16220)
                 {
-                    Main.NewText("Darkness seeps through your veins...", 31, 34, 66);
+                    Main.NewText(VoidInvasio, 31, 34, 66);
                 }
-                if (!NPC.AnyNPCs(NPCType<ShadeWyrmHead>()) && (Main.time == 19800 || Main.time == 27000)) NPC.SpawnOnPlayer(player.whoAmI, NPCType<ShadeWyrmHead>()); // at 1 and 3
+                if (!NPC.AnyNPCs(NPCType<ShadeWyrmHead>()) && (Main.time == 19800 || Main.time == 27000)) NPC.SpawnOnPlayer(player.whoAmI, NPCType<ShadeWyrmHead>());
                 if (!Main.dayTime && Main.time > 16220)
                 {
                     MoonlordShake(1f);
@@ -635,10 +539,9 @@ namespace ElementsAwoken
                         Player p = Main.player[i];
                         if (p.active)
                         {
-                            //player.AddBuff(BuffID.Darkness, 60);
                             p.AddBuff(BuffID.Blackout, 60);
                             p.AddBuff(BuffID.Slow, 60);
-                            Lighting.GlobalBrightness = 0.5f; // idk if this is bad to do
+                            Lighting.GlobalBrightness = 0.5f;
                             p.AddBuff(BuffType<DeterioratingWings>(), 60, false);
                         }
                     }
@@ -665,8 +568,8 @@ namespace ElementsAwoken
                     }
                     if (allDead)
                     {
-                        if (Main.netMode == 0) Main.NewText("Laughs echo throughout the world", 182, 15, 15);
-                        if (Main.netMode == 2) ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral("Laughs echo throughout the world"), new Color(182, 15, 15));
+                        if (Main.netMode == 0) Main.NewText(VoidInvasio1, 182, 15, 15);
+                        if (Main.netMode == 2) ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(VoidInvasio2), new Color(182, 15, 15));
                         SoundEngine.PlaySound(SoundID.Zombie105, new Vector2(Main.player[i].position.X, Main.player[i].position.Y));
                         voidInvasionUp = false;
                         voidInvasionFinished = 200;
@@ -688,19 +591,17 @@ namespace ElementsAwoken
                     }
                 }
             }
-
             if (voidInvasionWillStart)
             {
                 if (!Main.dayTime)
                 {
                     VoidEvent.StartInvasion();
-                    Main.invasionX = Main.spawnTileX; // instantly start
+                    Main.invasionX = Main.spawnTileX;
                     voidInvasionWillStart = false;
                     Filters.Scene.Deactivate("MoonLordShake", new object[0]);
                 }
                 float intensity = MathHelper.Clamp((float)Main.time / 54000f, 0f, 1f);
                 MoonlordShake(intensity);
-                //Main.NewText("time" + " " + Main.time + " " + "intensity" + " " + intensity, Color.White.R, Color.White.G, Color.White.B);
             }
             if (genLuminite)
             {
@@ -720,18 +621,18 @@ namespace ElementsAwoken
                     if (Main.rand.NextBool(4) || !completedRadiantRain)
                     {
                         radiantRain = true;
-                        Main.NewText("The rain glistens with unknown magic...", Color.HotPink);
+                        Main.NewText(Azana, Color.HotPink);
                     }
                 }
             }
             if (radiantRain)
             {
-                //if (Main.rainTime == 7200) NPC.SpawnOnPlayer(player.whoAmI, NPCType<RadiantMaster>());
+                if (Main.rainTime == 7200) NPC.SpawnOnPlayer(player.whoAmI, NPCType<RadiantMaster>());
                 if (!Main.raining)
                 {
                     radiantRain = false;
                     completedRadiantRain = true;
-                    Main.NewText("The radiant rain dissipates...", Color.HotPink);
+                    Main.NewText(Azana1, Color.HotPink);
                 }
                 int amount = Main.expertMode ? awakenedMode ? 100 : 120 : 240;
                 if (Main.rand.NextBool(120))
@@ -742,9 +643,9 @@ namespace ElementsAwoken
                         if (starShowerP.active)
                         {
                             Vector2 pos = new Vector2(starShowerP.Center.X - Main.rand.Next(-1000,1000), starShowerP.Center.Y - 1000);
-                            /*Vector2 vel = new Vector2(Main.windSpeed * 10, 10f);
-                            Projectile proj = Main.projectile[Projectile.NewProjectile(pos.X, pos.Y, vel.X, vel.Y, ProjectileType<RadiantStarRain>(), Main.expertMode ? awakenedMode ? 150 : 100 : 75, 10f, Main.myPlayer, 0f, 0f)];
-                            proj.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;*/
+                            Vector2 vel = new Vector2(Main.windSpeedCurrent * 10, 10f);
+                            Projectile proj = Main.projectile[Projectile.NewProjectile(player.GetSource_FromThis(), pos.X, pos.Y, vel.X, vel.Y, ProjectileType<RadiantStarRain>(), Main.expertMode ? awakenedMode ? 150 : 100 : 75, 10f, Main.myPlayer, 0f, 0f)];
+                            proj.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                         }
                     }
                 }
@@ -757,7 +658,7 @@ namespace ElementsAwoken
         {
             if (!ModContent.GetInstance<Config>().labsDisabled)
             {
-                int genIndex2 = tasks.FindIndex(genpass => genpass.Name.Equals("Buried Chests")); // "Lihzahrd Altars" are basically the last thing to be generated
+                int genIndex2 = tasks.FindIndex(genpass => genpass.Name.Equals("Buried Chests"));
                 tasks.Insert(genIndex2 + 2, new PassLegacy("Generating Labs", delegate (GenerationProgress progress, GameConfiguration configuration)
                 {
                     progress.Message = "Killing Scientists";
@@ -765,26 +666,11 @@ namespace ElementsAwoken
                 }));
             }
         }
-        /*private Point16 AlterStructureLocation(int xO, int yO, int structX, int structY)
-        {
-            structX += Main.rand.Next(225 * sizeMult);
-            if (structX > xO + 225 * sizeMult)
-            {
-                structX -= 225 * sizeMult * 2;
-                structY += Main.rand.Next(275 * sizeMult / 4, 275 * sizeMult / 2);
-                if (structY > yO + 275 * sizeMult)
-                {
-                    structY -= 275 * sizeMult * 2;
-                }
-            }
-            Point16 structurePosition = new Point16(structX, structY);
-            return structurePosition;
-        }*/
         private void LabStructures()
         {
             int s = 0;
             generatedLabs = true;
-            for (int q = 0; q < 13; q++) // 13 different labs. dont try generating above 200, it runs out of space and crashes(might be fixed)
+            for (int q = 0; q < 13; q++)
             {
                 int xMin = Main.maxTilesX / 2 - Main.maxTilesX / 5;
                 int xMax = Main.maxTilesX / 2 + Main.maxTilesX / 5;
@@ -797,14 +683,13 @@ namespace ElementsAwoken
                 s = GenerateLab(s, labPosX, labPosY);
             }
         }
-
         private int GenerateLab(int s, int structX, int structY)
         {
             if (TileCheckSafe(structX, structY))
             {
                 if (!Chest.NearOtherChests(structX, structY))
                 {
-                    if (structY < Main.maxTilesY - 220) // wont generate in hell (it shouldnt anyway because the max is above hell still)
+                    if (structY < Main.maxTilesY - 220)
                     {
                         bool mirrored = false;
                         if (Main.rand.Next(2) == 0)
@@ -814,7 +699,7 @@ namespace ElementsAwoken
                         s++;
                         if (s > 12)
                         {
-                            s = 0; // this should never happen but just to be safe
+                            s = 0;
                         }
                     }
                 }
@@ -823,29 +708,27 @@ namespace ElementsAwoken
         }
         private void PickLab(int s, int structX, int structY, bool mirrored)
         {
-            //if (s == 0)
-            //{
-            //    WastelandLab.StructureGen(structX, structY, mirrored); // create the structure first
-            //    WastelandLabPlatforms.StructureGen(structX, structY, mirrored); // then create the platforms (on top of the walls)
-            //    WastelandLabFurniture.StructureGen(structX, structY, mirrored); // then the furniture
-            //}
-            //else if (s == 12)
-            //{
-            //    AncientsLab.Generate(structX, structY, mirrored);
-            //}
-            //else
-            //{
-            //    Lab.StructureGen(structX, structY, mirrored); // create the structure first
-            //    LabPlatforms.StructureGen(structX, structY, mirrored); // create the structure first
-            //    LabFurniture.StructureGen(structX, structY, mirrored, s - 1); // then the furniture. s - 1 so the drives start at 0 again
-            //}
-
+            if (s == 0)
+            {
+                WastelandLab.StructureGen(structX, structY, mirrored);
+                WastelandLabPlatforms.StructureGen(structX, structY, mirrored);
+                WastelandLabFurniture.StructureGen(structX, structY, mirrored);
+            }
+            else if (s == 12)
+            {
+                AncientsLab.Generate(structX, structY, mirrored);
+            }
+            else
+            {
+                Lab.StructureGen(structX, structY, mirrored);
+                LabPlatforms.StructureGen(structX, structY, mirrored);
+                LabFurniture.StructureGen(structX, structY, mirrored, s - 1);
+            }
         }
-
         public static void PlaceLabLocker(int x, int y, ushort floorType)
         {
             ClearSpaceForChest(x, y, floorType);
-            int chestIndex = WorldGen.PlaceChest(x, y, (ushort)ModContent.TileType<PapuansChest>()/*ModContent.TileType<Locker>()*/, false, 0);
+            int chestIndex = WorldGen.PlaceChest(x, y, (ushort)TileType<Content.Tiles.Lab.Locker>(), false, 0);
 
             int specialItem = GetLabLoot();
             labPosition++;
@@ -1012,7 +895,7 @@ namespace ElementsAwoken
             {
                 return;
             }
-            string text = "The world has been cursed with Voidite...";
+            string text = EALocalization.Voidite;
             if (Main.netMode == NetmodeID.SinglePlayer) Main.NewText(text, Color.DeepPink);
             else ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), Color.DeepPink);
             for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 4E-05); k++) // xE-05 x is how many veins will spawn
@@ -1029,8 +912,7 @@ namespace ElementsAwoken
             {
                 return;
             }
-
-            string text = "The world has been blessed with Luminite!";
+            string text = EALocalization.Luminite;
             if (Main.netMode == NetmodeID.SinglePlayer) Main.NewText(text, Color.GreenYellow);
             else ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), Color.GreenYellow);
             for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 5E-05); k++) // xE-05 x is how many veins will spawn
