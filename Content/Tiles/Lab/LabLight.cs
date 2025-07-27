@@ -21,7 +21,6 @@ namespace ElementsAwoken.Content.Tiles.Lab
             TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2Top);
             TileObjectData.newTile.Width = 1;
             TileObjectData.newTile.Height = 1;
-            //TileObjectData.newTile.Origin = new Point16(1, 0);
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
             LocalizedText name = CreateMapEntryName();
             AddMapEntry(new Color(200, 200, 200),CreateMapEntryName());

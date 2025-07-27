@@ -14,6 +14,7 @@ namespace ElementsAwoken.EASystem
         public const string SandstoneGroup = "SandstoneGroup";
         public const string IceGroup = "IceGroup";
         public const string CopperBar = "CopperBar";
+        public const string IronBar = "IronBar";
         public const string SilverBar = "SilverBar";
         public const string GoldBar = "GoldBar";
         public const string EvilBar = "EvilBar";
@@ -44,6 +45,9 @@ namespace ElementsAwoken.EASystem
             // bars
             group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + (" Copper Bar"), new int[] { ItemID.CopperBar, ItemID.TinBar, });
             RecipeGroup.RegisterGroup(CopperBar, group);
+
+            group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + (" Iron Bar"), new int[] { ItemID.IronBar, ItemID.LeadBar, });
+            RecipeGroup.RegisterGroup(IronBar, group);
 
             group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + (" Silver Bar"), new int[] { ItemID.SilverBar, ItemID.TungstenBar, });
             RecipeGroup.RegisterGroup(SilverBar, group);

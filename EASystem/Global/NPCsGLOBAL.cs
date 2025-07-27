@@ -12,8 +12,10 @@ using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.EASystem.Global
 {
-    public class NPCsGLOBAL : GlobalNPC
+    public class NPCsGLOBAL : GlobalNPC, ILocalizedModType
     {
+        public string LocalizationCategory => "NPCsGLOBALLocalization";
+
         int PinkFlame = DustID.Firework_Pink;
         public bool iceBound = false;
         public bool extinctionCurse = false;
@@ -61,7 +63,6 @@ namespace ElementsAwoken.EASystem.Global
             impishCurse = false;
             variableLifeDrain = false;
         }
-
         public override bool InstancePerEntity
         {
             get
@@ -69,7 +70,10 @@ namespace ElementsAwoken.EASystem.Global
                 return true;
             }
         }
-
+        public override void Load()
+        {
+            _ = this.GetLocalization("NoHit.Nohit").Value;
+        }
         public static void ImmuneAllEABuffs(NPC npc)
         {
             npc.buffImmune[BuffType<IceBound>()] = true;

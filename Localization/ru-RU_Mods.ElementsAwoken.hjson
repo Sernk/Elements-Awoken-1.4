@@ -324,16 +324,68 @@ Items: {
 
 	CopperWire: {
 		// DisplayName: Copper Wire
-		// Tooltip: ""
+		// Tooltip: Used for tech crafting
 	}
 
 	GoldWire: {
 		// DisplayName: Gold Wire
-		// Tooltip: ""
+		// Tooltip: Used for tech crafting
 	}
 
 	Coilgun: {
 		// DisplayName: Coilgun
+		/* Tooltip:
+			'''
+			Fires a fast high damaging bullet
+			Also consumes bullets as well as energy
+			''' */
+	}
+
+	Electrozzitron: {
+		// DisplayName: Electrozzitron
+		/* Tooltip:
+			'''
+			Looks like it will electrocute you any moment...
+			Shoots exploding mines
+			''' */
+	}
+
+	TeslaRod: {
+		// DisplayName: Tesla Rod
+		// Tooltip: ""
+	}
+
+	BassBooster: {
+		// DisplayName: Bass Booster
+		// Tooltip: ""
+	}
+
+	Taser: {
+		// DisplayName: Taser
+		// Tooltip: ""
+	}
+
+	RustedMechanism: {
+		// DisplayName: Rusted Mechanism
+		/* Tooltip:
+			'''
+			When you are hit, you shoot out a bunch of the first ammo you have
+			Consumes 3 energy on use
+			''' */
+	}
+
+	Capacitor: {
+		// DisplayName: Capacitor
+		// Tooltip: ""
+	}
+
+	ThrowerEmblem: {
+		// DisplayName: Thrower Emblem
+		// Tooltip: ""
+	}
+
+	SanityRegenerationPotion: {
+		// DisplayName: Sanity Regeneration Potion
 		// Tooltip: ""
 	}
 }
@@ -341,12 +393,6 @@ Items: {
 Tiles: {
 	CrystalCracker.MapEntry: Открыстатель
 	Voidite.MapEntry: Пустоний
-
-	PapuansChest: {
-		MapEntry1: Папуасский сундук
-		PapuansChest: Папуасский сундук
-	}
-
 	// Computer.MapEntry: Computer
 	// DeadScientist.MapEntry: Dead Scientist
 	// Desk.MapEntry: Desk
@@ -371,8 +417,8 @@ Tiles: {
 	// LabBench.MapEntry: Lab Bench
 
 	Locker: {
-		// Locker: Mods.ElementsAwoken.Tiles.Locker.Locker
-		// MapEntry1: Mods.ElementsAwoken.Tiles.Locker.MapEntry1
+		// Locker: Locker
+		// MapEntry1: Locker
 	}
 }
 
@@ -619,6 +665,20 @@ Buffs: {
 		// DisplayName: Frost Shield
 		// Description: Mods.ElementsAwoken.Buffs.FrostShield.Description
 	}
+
+	EldritchHorror: {
+		// DisplayName: Eldritch Horror
+		/* Description:
+			'''
+			Your mind cannot comprehend its power...
+			Sanity is drained
+			''' */
+	}
+
+	SanityRegenerationBuff: {
+		// DisplayName: Sanity Regeneration
+		// Description: Increases sanity regeneration
+	}
 }
 
 NPCs: {
@@ -704,6 +764,10 @@ Projectiles: {
 	// VoidHeal.DisplayName: Heal
 	// WhipCrack.DisplayName: Whip Crack
 	// CoilRound.DisplayName: Coil Round
+	// ElectroniumMine.DisplayName: Electronium Mine
+	// BassBoost.DisplayName: Bass Boost
+	// TaserLightning.DisplayName: Taser Lightning
+	// TeslaSpark.DisplayName: Tesla Spark
 }
 
 Configs: {
@@ -761,6 +825,24 @@ Ore: {
 	// Luminite: The world has been blessed with Luminite!
 }
 
+Nurse: {
+	// Said: Sorry, I'm still preparing my stuff. Come back in
+	// Said1: seconds
+}
+
+Tooltips: {
+	// ItemEnergy: Uses
+	// ItemEnergy1: energy
+	// Awakened: Awakened
+}
+
+Resurs: {
+	Sanity: Sanity
+	Energy: Energy
+}
+
+// Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
+
 MyPlayerLocalization: {
 	MyPlayer: {
 		Worold: {
@@ -809,10 +891,10 @@ MyPlayerLocalization: {
 			Text16:
 				'''
 				004: При исследовании стало понятно, что эти осколки
-				принадлежат давно забытой расе, которая, как считается, была полностью искоренена.
-				Поэтому неудивительно, что они могут посеять куда больше больше хаоса,
-				чем что угодно, что у нас имеется сейчас. И от того факта, что у них осталось четверо выживших,
-				мне становится не по себе...
+				принадлежат давно забытой расе, вероятно, уже давно истреблённой.
+				Так что неудивительно, что они могут посеять куда больше хаоса,
+				чем что-либо иное, имеющееся у нас. И зная то, что из этой
+				расы осталось четверо выживших, мне как-то становится не по себе...
 				'''
 			Text15:
 				'''
@@ -830,9 +912,9 @@ MyPlayerLocalization: {
 			Text13:
 				'''
 				001: Похоже, это будет моя последняя запись...
-				Ведь я уже всё потерял. Всё, что у меня было, и моих коллег тоже... вообще всё,
-				всё пошло прахом, и я остался в полном одиночестве. Хаос уже во всю терроризирует эти земли, а я
-				вообще уже никак на это не могу повлиять. Так зачем же мне
+				Ведь уже всё пропало. Всё, что у меня было, мои коллеги... вообще всё,
+				всё пошло прахом, и теперь я остался один. Хаос уже во всю терроризирует
+				эти земли, а я вообще уже никак на это не могу повлиять. Зачем же мне
 				вообще жить теперь?...
 				'''
 			Text12:
@@ -856,15 +938,16 @@ MyPlayerLocalization: {
 				002: Драконитовые осколки, у них была весьма своеобразная реакция на лаву
 				и сразу после этого прямо перед нашими глазами, гигантское... нечто
 				появилось. И оно было сделано из чистого Драконита! Оно также было отнюдь
-				не дружелюбно настроенным, а посему нам пришлось быстро искать укрытие просто для того, чтобы
-				спастись от этого чудища.
+				не дружелюбно настроенным, а посему нам пришлось быстро искать укрытие 
+				просто для того, чтобы спастись от этого чудища.
 				'''
 			Text9:
 				'''
-				001: Этот элемент, Драконит, весьма занимателен,
-				мягко говоря. Получив один такой на руки, мы его забрали в нашу лабораторию
-				для дальнейшего исследования. Хотя нам, однако, стоит быть готовыми ко всей той
+				001: Этот элемент, Драконит, весьма занимателен, это как минимум.
+				Получив один такой на руки, мы его забрали в нашу лабораторию
+				для дальнейшего исследования. Нам, однако, стоит быть готовыми к любой
 				опасности, которую может таить в себе этот маленький осколок...
+				            
 				'''
 			Text8:
 				'''
@@ -876,17 +959,20 @@ MyPlayerLocalization: {
 				'''
 			Text7:
 				'''
-				Кажется, в самых северных частях мира были обнаружены
-				признаки наличия магии, мы даже отправили какую-то команду туда, чтобы разведать ситуацию,
-				но, к сожалению, от них мы пока не слышали ничего...
-				Как бы они там не замёрзли насмерть. В конце-концов,
-				покорять те замёрзшие земли в одиночку, мягко скажем, отнюдь не легко.
+				Мы заметили, что в самых северных частях мира были обнаружены
+				признаки наличия магии, и решили послать туда разведовательную
+				команду. Но, к сожалению, от них мы пока не слышали ничего, ни слова.
+				Как бы они там не замёрзли насмерть... В конце-концов, покорять эту
+				промёрзшую тундру в одиночку, мягко скажем, совсем не легко.
+				            
 				'''
 			Text6:
 				'''
 				Мы, конечно, слышали, о каком-то артифакте потерянном в Аду, но
-				никому в голову не приходило отправиться его искать. Но недавно мы-таки отправились
-				проверить, где он там, и его уже не было. Ну, видать, его кто-то уже нашёл до нас...
+				никому и в голову не приходило отправиться его искать. Однако недавно
+				мы решили всё-таки спуститься вниз, чтобы разведать ситуацию и проверить,
+				где он там, но его уже не было. Ну, видать, его кто-то уже нашёл до нас...
+				            
 				'''
 			Text5:
 				'''
@@ -952,7 +1038,8 @@ MyWorldLocalization: {
 		// voidInvasio2: Laughs echo throughout the world
 		// Azana1: The radiant rain dissipates...
 		// Azana: The rain glistens with unknown magic...
-		// Ore: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore
-		// Ore1: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore1
 	}
 }
+
+# Текста больше но сейчас он не доступен
+// NPCsGLOBALLocalization.NPCsGLOBAL.NoHit.Nohit: No-hit!

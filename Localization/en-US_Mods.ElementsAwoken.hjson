@@ -334,18 +334,65 @@ Items: {
 
 	Coilgun: {
 		DisplayName: Coilgun
-		Tooltip: 
-				'''
-				Fires a fast high damaging bullet
-				Also consumes bullets as well as energy
-				'''
+		Tooltip:
+			'''
+			Fires a fast high damaging bullet
+			Also consumes bullets as well as energy
+			'''
+	}
+
+	Electrozzitron: {
+		DisplayName: Electrozzitron
+		Tooltip:
+			'''
+			Looks like it will electrocute you any moment...
+			Shoots exploding mines
+			'''
+	}
+
+	TeslaRod: {
+		DisplayName: Tesla Rod
+		Tooltip: ""
+	}
+
+	BassBooster: {
+		DisplayName: Bass Booster
+		Tooltip: ""
+	}
+
+	Taser: {
+		DisplayName: Taser
+		Tooltip: ""
+	}
+
+	RustedMechanism: {
+		DisplayName: Rusted Mechanism
+		Tooltip:
+			'''
+			When you are hit, you shoot out a bunch of the first ammo you have
+			Consumes 3 energy on use
+			'''
+	}
+
+	Capacitor: {
+		DisplayName: Capacitor
+		Tooltip: ""
+	}
+
+	ThrowerEmblem: {
+		DisplayName: Thrower Emblem
+		Tooltip: ""
+	}
+
+	SanityRegenerationPotion: {
+		DisplayName: Sanity Regeneration Potion
+		Tooltip: ""
 	}
 }
 
 Tiles: {
 	CrystalCracker.MapEntry: Crystal Cracker
 	Voidite.MapEntry: Voidite
-
 	Computer.MapEntry: Computer
 	DeadScientist.MapEntry: Dead Scientist
 	Desk.MapEntry: Desk
@@ -618,6 +665,20 @@ Buffs: {
 		DisplayName: Frost Shield
 		Description: Mods.ElementsAwoken.Buffs.FrostShield.Description
 	}
+
+	EldritchHorror: {
+		DisplayName: Eldritch Horror
+		Description:
+			'''
+			Your mind cannot comprehend its power...
+			Sanity is drained
+			'''
+	}
+
+	SanityRegenerationBuff: {
+		DisplayName: Sanity Regeneration
+		Description: Increases sanity regeneration
+	}
 }
 
 NPCs: {
@@ -703,6 +764,10 @@ Projectiles: {
 	VoidHeal.DisplayName: Heal
 	WhipCrack.DisplayName: Whip Crack
 	CoilRound.DisplayName: Coil Round
+	ElectroniumMine.DisplayName: Electronium Mine
+	BassBoost.DisplayName: Bass Boost
+	TaserLightning.DisplayName: Taser Lightning
+	TeslaSpark.DisplayName: Tesla Spark
 }
 
 Configs: {
@@ -759,6 +824,24 @@ Ore: {
 	Voidite: The world has been cursed with Voidite...
 	Luminite: The world has been blessed with Luminite!
 }
+
+Nurse: {
+	Said: Sorry, I'm still preparing my stuff. Come back in
+	Said1: seconds
+}
+
+Tooltips: {
+	ItemEnergy: Uses
+	ItemEnergy1: energy
+	Awakened: Awakened
+}
+
+Resurs: {
+	Sanity: Sanity
+	Energy: Energy
+}
+
+Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 
 MyPlayerLocalization: {
 	MyPlayer: {
@@ -951,7 +1034,8 @@ MyWorldLocalization: {
 		voidInvasio2: Laughs echo throughout the world
 		Azana1: The radiant rain dissipates...
 		Azana: The rain glistens with unknown magic...
-		Ore: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore
-		Ore1: Mods.ElementsAwoken.MyWorldLocalization.MyWorld.Ore1
 	}
 }
+
+# Текста больше но сейчас он не доступен
+NPCsGLOBALLocalization.NPCsGLOBAL.NoHit.Nohit: No-hit!

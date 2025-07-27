@@ -1,19 +1,15 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.Utilities;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
-using SteelSeries.GameSense;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.GameContent.UI.Elements;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
-using Terraria.UI.Chat;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.EASystem.UI
@@ -80,7 +76,7 @@ namespace ElementsAwoken.EASystem.UI
             float uiX = innerDimensions.X;
             float uiY = innerDimensions.Y;
 
-            string sentence = "You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)";
+            string sentence = EALocalization.Prompt;
             string[] words = sentence.Split(new char[] { ' ' });
             IList<string> sentenceParts = new List<string>();
             sentenceParts.Add(string.Empty);

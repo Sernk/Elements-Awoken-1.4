@@ -13,7 +13,7 @@ namespace ElementsAwoken.Content.Tiles.Lab.Drives
         {
             Main.tileFrameImportant[Type] = true;
             TileObjectData.newTile.CopyFrom(TileObjectData.Style1x1);
-            TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.Table, 0, 0);
+            TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.Table, 1, 0);
             TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.newTile.StyleWrapLimit = 36;
             TileObjectData.addTile(Type);

@@ -81,7 +81,7 @@ namespace ElementsAwoken.EASystem
         {
             if (awakened)
             {
-                tooltips.Add(new TooltipLine(this.Mod, "Elements Awoken:AwakenedTip", "Awakened") { OverrideColor = new Color?(new Color(220, 50, Main.DiscoB)) });
+                tooltips.Add(new TooltipLine(this.Mod, "Elements Awoken:AwakenedTip", EALocalization.Awakened) { OverrideColor = new Color?(new Color(220, 50, Main.DiscoB)) });
             }
         }
         public override void UpdateInventory(Item item, Player player)

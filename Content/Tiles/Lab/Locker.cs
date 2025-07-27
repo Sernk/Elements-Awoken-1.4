@@ -45,12 +45,10 @@ namespace ElementsAwoken.Content.Tiles.Lab
             TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
             TileObjectData.addTile(Type);
         }
-
         public override ushort GetMapOption(int i, int j)
         {
             return (ushort)(Main.tile[i, j].TileFrameX / 36);
         }
-
         public override void Load()
         {
             _ = this.GetLocalization("Locker").Value;
@@ -60,17 +58,14 @@ namespace ElementsAwoken.Content.Tiles.Lab
             int option = frameX / 36;
             return this.GetLocalization("Locker");
         }
-
         public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings)
         {
             return true;
         }
-
         public override bool IsLockedChest(int i, int j)
         {
             return Main.tile[i, j].TileFrameX / 36 == 1;
         }
-
         public override bool UnlockChest(int i, int j, ref short frameXAdjustment, ref int dustType, ref bool manual)
         {
             if (Main.dayTime)
@@ -82,7 +77,6 @@ namespace ElementsAwoken.Content.Tiles.Lab
             DustType = dustType;
             return true;
         }
-
         public override bool LockChest(int i, int j, ref short frameXAdjustment, ref bool manual)
         {
             int style = TileObjectData.GetTileStyle(Main.tile[i, j]);
@@ -92,7 +86,6 @@ namespace ElementsAwoken.Content.Tiles.Lab
             }
             return false;
         }
-
         public static string MapChestName(string name, int i, int j)
         {
             int left = i;
@@ -102,36 +95,29 @@ namespace ElementsAwoken.Content.Tiles.Lab
             {
                 left--;
             }
-
             if (tile.TileFrameY != 0)
             {
                 top--;
             }
-
             int chest = Chest.FindChest(left, top);
             if (chest < 0)
             {
                 return Language.GetTextValue("LegacyChestType.0");
             }
-
             if (Main.chest[chest].name == "")
             {
                 return name;
             }
-
             return name + ": " + Main.chest[chest].name;
         }
-
         public override void NumDust(int i, int j, bool fail, ref int num)
         {
             num = 1;
         }
-
         public override void KillMultiTile(int i, int j, int frameX, int frameY)
         {
             Chest.DestroyChest(i, j);
         }
-
         public override bool RightClick(int i, int j)
         {
             Player player = Main.LocalPlayer;
@@ -143,12 +129,10 @@ namespace ElementsAwoken.Content.Tiles.Lab
             {
                 left--;
             }
-
             if (tile.TileFrameY != 0)
             {
                 top--;
             }
-
             player.CloseSign();
             player.SetTalkNPC(-1);
             Main.npcChatCornerItem = 0;
@@ -159,13 +143,11 @@ namespace ElementsAwoken.Content.Tiles.Lab
                 Main.editChest = false;
                 Main.npcChatText = string.Empty;
             }
-
             if (player.editedChestName)
             {
                 NetMessage.SendData(MessageID.SyncPlayerChest, -1, -1, NetworkText.FromLiteral(Main.chest[player.chest].name), player.chest, 1f);
                 player.editedChestName = false;
             }
-
             bool isLocked = Chest.IsLocked(left, top);
             if (Main.netMode == NetmodeID.MultiplayerClient && !isLocked)
             {
@@ -215,10 +197,8 @@ namespace ElementsAwoken.Content.Tiles.Lab
                     }
                 }
             }
-
             return true;
         }
-
         public override void MouseOver(int i, int j)
         {
             Player player = Main.LocalPlayer;
@@ -229,12 +209,10 @@ namespace ElementsAwoken.Content.Tiles.Lab
             {
                 left--;
             }
-
             if (tile.TileFrameY != 0)
             {
                 top--;
             }
-
             int chest = Chest.FindChest(left, top);
             player.cursorItemIconID = -1;
             if (chest < 0)
@@ -258,7 +236,6 @@ namespace ElementsAwoken.Content.Tiles.Lab
             player.noThrow = 2;
             player.cursorItemIconEnabled = true;
         }
-
         public override void MouseOverFar(int i, int j)
         {
             MouseOver(i, j);

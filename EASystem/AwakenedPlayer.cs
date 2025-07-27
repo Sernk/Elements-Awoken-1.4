@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Effects;
+using ElementsAwoken.Content.Items.Consumable.Potions;
+using ElementsAwoken.Content.Tiles;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.Collections.Generic;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.Graphics.Shaders;
-using Terraria.GameInput;
-using System.Linq;
 using Terraria.ModLoader.IO;
-using ReLogic.Graphics;
-using Terraria.Graphics.Effects;
-using ElementsAwoken.Content.NPCs;
-using ElementsAwoken.Content.Effects;
 
 namespace ElementsAwoken.EASystem
 {
@@ -77,16 +72,13 @@ namespace ElementsAwoken.EASystem
             sanityMax = sanityIncreaser;
             craftWeaponCooldown--;
             aleCD--;
-            // decreases
             if (MyWorld.awakenedMode)
             {
                 // if (sanity > 0)
                 {
-                    // low life
                     if (Player.statLife < Player.statLifeMax2 * 0.25f)
                     {
                         int sanityRegenLoss = (int)Math.Round(MathHelper.Lerp(4, 1, Player.statLife / (Player.statLifeMax2 * 0.25f)));
-                        //ElementsAwoken.DebugModeText(sanityRegenLoss);
                         sanityRegen -= sanityRegenLoss;
 
                         AddSanityDrain(sanityRegenLoss, "Low Health");
@@ -95,12 +87,10 @@ namespace ElementsAwoken.EASystem
                     if (playerUtils.playerLight < 0.2)
                     {
                         int sanityRegenLoss = (int)Math.Round(MathHelper.Lerp(3, 1, playerUtils.playerLight / 0.2f));
-                        //ElementsAwoken.DebugModeText(playerUtils.playerLight);
                         sanityRegen -= sanityRegenLoss;
 
                         AddSanityDrain(sanityRegenLoss, "Darkness");
                     }
-                    // events
                     if (Main.bloodMoon)
                     {
                         sanityRegen--;
@@ -136,12 +126,9 @@ namespace ElementsAwoken.EASystem
                     }
                     if (NPC.AnyNPCs(NPCID.MoonLordCore))
                     {
-                        Player.AddBuff(Mod.Find<ModBuff>("EldritchHorror").Type, 2);
+                        Player.AddBuff(ModContent.BuffType<EldritchHorror>(), 2);
                     }
                 }
-
-                // increases
-                //if (sanity < sanityMax)
                 {
                     for (int i = 0; i < 22; i++)
                     {
@@ -149,7 +136,6 @@ namespace ElementsAwoken.EASystem
                         {
                             sanityRegen++;
                             AddSanityRegen(1, "Pet");
-                            //if (Main.time % 100 == 0) ElementsAwoken.DebugModeText("has pet");
                             break;
                         }
                     }
@@ -186,7 +172,7 @@ namespace ElementsAwoken.EASystem
                                 }
 
                             }
-                            if (t.TileType == Mod.Find<ModTile>("Voidite").Type)
+                            if (t.TileType == ModContent.TileType<Voidite>())
                             {
                                 Vector2 tileCenter = new Vector2(i * 16, j * 16);
                                 if (closestVoidite != null)
@@ -257,7 +243,7 @@ namespace ElementsAwoken.EASystem
                     {
                         if (mineTileCooldown > mineTileCooldownMax - 300)
                         {
-                            sanityRegen += 3; // first 5 seconds after mining a tile gives sanity
+                            sanityRegen += 3;
                             AddSanityRegen(3, "Mining");
                         }
                     }
@@ -291,8 +277,6 @@ namespace ElementsAwoken.EASystem
                         }
                     }
                 }
-
-                // sanity regen logic
                 if (!MyWorld.credits)
                 {
                     sanityRegenCount = Math.Abs(sanityRegen);
@@ -362,11 +346,7 @@ namespace ElementsAwoken.EASystem
         }
         private bool CheckValidSanityTile(Tile t)
         {
-            if (t.TileType == TileID.Campfire ||
-                t.TileType == TileID.Fireplace ||
-                t.TileType == TileID.FireflyinaBottle ||
-                t.TileType == TileID.Sunflower ||
-                t.TileType == TileID.PlanterBox)
+            if (t.TileType == TileID.Campfire || t.TileType == TileID.Fireplace || t.TileType == TileID.FireflyinaBottle || t.TileType == TileID.Sunflower || t.TileType == TileID.PlanterBox)
             {
                 return true;
             }
@@ -389,9 +369,7 @@ namespace ElementsAwoken.EASystem
         {
             sanity = sanityMax / 2;
         }
-
-        // remove sanity on killing stuff 
-        public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)/* tModPorter If you don't need the Item, consider using OnHitNPC instead */
+        public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (MyWorld.awakenedMode)
             {
@@ -410,7 +388,7 @@ namespace ElementsAwoken.EASystem
                 }
             }
         }
-        public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)/* tModPorter If you don't need the Projectile, consider using OnHitNPC instead */
+        public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (MyWorld.awakenedMode)
             {
@@ -446,25 +424,18 @@ namespace ElementsAwoken.EASystem
                 sanity -= 1;
             }
         }
-
         public override void UpdateDead()
         {
             nurseCooldown = 0;
         }
-
         public override bool ModifyNurseHeal(NPC nurse, ref int health, ref bool removeDebuffs, ref string chatText)
         {
             if (MyWorld.awakenedMode)
             {
-                /*health = (int)((player.statLifeMax2 * 0.75f) - player.statLife);
-                if (player.statLife > player.statLifeMax2 * 0.75f)
-                {
-                    return false;
-                }*/
                 if (nurseCooldown > 0)
                 {
                     int nurseCDSeconds = nurseCooldown / 60;
-                    chatText = "Sorry, I'm still preparing my stuff. Come back in " + nurseCDSeconds + " seconds";
+                    chatText = EALocalization.Nurse + " " + nurseCDSeconds + " " + EALocalization.Nurse1;
                     return false;
                 }
                 else
@@ -495,7 +466,6 @@ namespace ElementsAwoken.EASystem
                 price = newPrice;
             }
         }
-
         private float GetNursePriceScale()
         {
             float scale = 0.5f;
@@ -522,7 +492,6 @@ namespace ElementsAwoken.EASystem
             if (MyWorld.downedAncients) scale += 3f;
             return scale;
         }
-
         public override void PostSellItem(NPC vendor, Item[] shopInventory, Item item)
         {
             PlayerUtils playerUtils = Player.GetModPlayer<PlayerUtils>();
@@ -547,7 +516,7 @@ namespace ElementsAwoken.EASystem
                 }
             }
         }
-        public override void SaveData(TagCompound tag)/* tModPorter Suggestion: Edit tag parameter instead of returning new TagCompound */
+        public override void SaveData(TagCompound tag)
         {
             tag["sanity"] = sanity;
         }
@@ -555,10 +524,6 @@ namespace ElementsAwoken.EASystem
         {
             sanity = tag.GetInt("sanity");
         }
-        //public override void CopyClientState(ModPlayer clientClone)/* tModPorter Suggestion: Replace Item.Clone usages with Item.CopyNetStateTo */
-        //{
-        //    MyPlayer clone = clientClone as MyPlayer;
-        //}
         public override void SyncPlayer(int toWho, int fromWho, bool newPlayer)
         {
             ModPacket packet = Mod.GetPacket();
@@ -577,30 +542,9 @@ namespace ElementsAwoken.EASystem
             sanityRegens.Add(amount);
             sanityRegensName.Add(type);
         }
-        /*private void QuickBuff()
-        {
-            PlayerUtils playerUtils = player.GetModPlayer<PlayerUtils>();
-
-            // only checks potions
-            if (player.noItems)
-            {
-                return;
-            }
-            for (int i = 0; i < 58; i++)
-            {
-                if (playerUtils.CheckValidInvPotion(i))
-                {
-                    if (playerUtils.potionsConsumedLastMin > 5)
-                    {
-                        sanity -= 3;
-                    }
-                }
-            }
-        }*/
     }
     class SanityNPC : GlobalNPC
     {
-
         public override void OnKill(NPC npc)
         {
             Player player = Main.player[Main.myPlayer];
@@ -644,8 +588,7 @@ namespace ElementsAwoken.EASystem
             AwakenedPlayer modPlayer = player.GetModPlayer<AwakenedPlayer>();
             if (MyWorld.awakenedMode)
             {
-                // lavawet isnt set yet so check it manually
-                reduceSanityCD--; // takes 3 frames for vanilla to destroy the voodoo doll (idk why) so add a cooldown so it doesnt reduce it too much
+                reduceSanityCD--;
                 if (item.type == ItemID.GuideVoodooDoll && Collision.LavaCollision(item.position, item.width, item.height) && Main.netMode != NetmodeID.MultiplayerClient && NPC.AnyNPCs(NPCID.Guide) && reduceSanityCD <= 0)
                 {
                     reduceSanityCD = 5;
@@ -662,25 +605,20 @@ namespace ElementsAwoken.EASystem
             }
             return base.ReforgePrice(item, ref reforgePrice, ref canApplyDiscount);
         }
-        // check using potions
-        public override bool? UseItem(Item item, Player player)/* tModPorter Suggestion: Return null instead of false */
+        public override bool? UseItem(Item item, Player player)
         {
             AwakenedPlayer modPlayer = player.GetModPlayer<AwakenedPlayer>();
             PlayerUtils playerUtils = player.GetModPlayer<PlayerUtils>();
             if (MyWorld.awakenedMode)
             {
-                //if (item.buffType != 0 && item.useStyle == 2 && item.consumable && item.type != mod.ItemType("SanityRegenerationPotion") && item.type != ItemID.Ale)
-                //{
-                //    if (playerUtils.potionsConsumedLastMin > 5)
-                //    {
-                //        modPlayer.sanity -= 3;
-                //    }
-                //}
+                if (item.buffType != 0 && item.useStyle == 2 && item.consumable && item.type != ModContent.ItemType<SanityRegenerationPotion>() && item.type != ItemID.Ale)
+                {
+                    if (playerUtils.potionsConsumedLastMin > 5)
+                    {
+                        modPlayer.sanity -= 3;
+                    }
+                }
             }
-            /*if (item.Name.Contains("Potion") && item.buffType != 0)
-            {
-
-            }*/
             if (modPlayer.aleCD <= 0 && item.type == ItemID.Ale)
             {
                 modPlayer.sanity += 3;

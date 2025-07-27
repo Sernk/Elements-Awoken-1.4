@@ -10,14 +10,12 @@ using ReLogic.Graphics;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Chat;
 using Terraria.GameContent;
 using Terraria.GameInput;
-using Terraria.Graphics;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
@@ -89,158 +87,6 @@ namespace ElementsAwoken
             //}
             //texture.SetData(buffer);
         }
-        //public override void AddRecipes()
-        //{
-        //    ModRecipe recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(null, "Stardust", 5);
-        //    recipe.SetResult(ItemID.FallenStar, 1);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(null, "ThrowerEmblem");
-        //    recipe.AddIngredient(ItemID.SoulofMight, 5);
-        //    recipe.AddIngredient(ItemID.SoulofSight, 5);
-        //    recipe.AddIngredient(ItemID.SoulofFright, 5);
-        //    recipe.SetResult(ItemID.AvengerEmblem, 1);
-        //    recipe.AddTile(TileID.TinkerersWorkbench);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(null, "SunFragment", 5);
-        //    recipe.AddIngredient(ItemID.StoneBlock, 100);
-        //    recipe.SetResult(ItemID.LihzahrdBrick, 100);
-        //    recipe.AddTile(TileID.WorkBenches);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(null, "Stardust", 13);
-        //    recipe.AddIngredient(ItemID.Glass, 12);
-        //    recipe.AddIngredient(ItemID.RecallPotion, 6);
-        //    recipe.AddRecipeGroup("ElementsAwoken:EvilBar", 8);
-        //    recipe.SetResult(ItemID.MagicMirror, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(null, "CInfinityCrys", 1);
-        //    recipe.AddIngredient(null, "Pyroplasm", 30);
-        //    recipe.AddIngredient(ItemID.LunarBar, 18);
-        //    recipe.AddIngredient(ItemID.CrystalShard, 10);
-        //    recipe.AddIngredient(ItemID.PixieDust, 6);
-        //    recipe.AddIngredient(ItemID.UnicornHorn, 2);
-        //    recipe.SetResult(ItemID.RodofDiscord, 1);
-        //    recipe.AddTile(TileID.LunarCraftingStation);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(null, "DeathwishFlame", 10);
-        //    recipe.AddIngredient(ItemID.Torch, 1);
-        //    recipe.SetResult(ItemID.WaterCandle, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddRecipeGroup("Wood", 2);
-        //    recipe.AddIngredient(ItemID.StoneBlock, 5);
-        //    recipe.SetResult(ItemID.ThrowingKnife, 25);
-        //    recipe.AddTile(TileID.WorkBenches);
-        //    recipe.AddRecipe();
-
-        //    // accessories
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddRecipeGroup("IronBar", 12);
-        //    recipe.AddIngredient(ItemID.Bone, 16);
-        //    recipe.SetResult(ItemID.WaterWalkingBoots, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddRecipeGroup("ElementsAwoken:GoldBar", 12);
-        //    recipe.AddIngredient(ItemID.SoulofFlight, 3);
-        //    recipe.SetResult(ItemID.LuckyHorseshoe, 1);
-        //    recipe.AddTile(TileID.MythrilAnvil);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddRecipeGroup("ElementsAwoken:CobaltBar", 12);
-        //    recipe.AddIngredient(ItemID.Bone, 30);
-        //    recipe.SetResult(ItemID.CobaltShield, 1);
-        //    recipe.AddTile(TileID.MythrilAnvil);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.LifeCrystal, 1);
-        //    recipe.AddRecipeGroup("IronBar", 12);
-        //    recipe.AddIngredient(ItemID.Ruby, 1);
-        //    recipe.SetResult(ItemID.BandofRegeneration, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.ManaCrystal, 1);
-        //    recipe.AddRecipeGroup("IronBar", 12);
-        //    recipe.AddIngredient(ItemID.Sapphire, 1);
-        //    recipe.SetResult(ItemID.BandofStarpower, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.HellstoneBar, 12);
-        //    recipe.AddIngredient(ItemID.SoulofLight, 4);
-        //    recipe.AddIngredient(null, "MagmaCrystal", 5);
-        //    recipe.SetResult(ItemID.LavaCharm, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddRecipeGroup("IronBar", 8);
-        //    recipe.AddIngredient(ItemID.SwiftnessPotion, 1);
-        //    recipe.AddIngredient(null, "LensFragment", 8);
-        //    recipe.SetResult(ItemID.Aglet, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.JungleRose);
-        //    recipe.AddIngredient(ItemID.ManaCrystal, 5);
-        //    recipe.SetResult(ItemID.NaturesGift);
-        //    recipe.AddTile(TileID.WorkBenches);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.Vine, 3);
-        //    recipe.AddIngredient(ItemID.SwiftnessPotion, 3);
-        //    recipe.AddIngredient(ItemID.JungleSpores, 15);
-        //    recipe.AddIngredient(ItemID.Stinger, 5);
-        //    recipe.SetResult(ItemID.AnkletoftheWind);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.Bone, 30);
-        //    recipe.AddIngredient(ItemID.Feather, 9);
-        //    recipe.AddIngredient(null, "Stardust", 12);
-        //    recipe.SetResult(ItemID.HermesBoots);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.ManaCrystal, 5);
-        //    recipe.AddIngredient(ItemID.HellstoneBar, 8);
-        //    recipe.AddIngredient(ItemID.NaturesGift, 1);
-        //    recipe.SetResult(ItemID.CelestialMagnet, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-
-        //    recipe = new ModRecipe(this);
-        //    recipe.AddIngredient(ItemID.Silk, 18);
-        //    recipe.AddRecipeGroup("IronBar", 8);
-        //    recipe.AddIngredient(ItemID.IceBlock, 20);
-        //    recipe.SetResult(ItemID.IceSkates, 1);
-        //    recipe.AddTile(TileID.Anvils);
-        //    recipe.AddRecipe();
-        //}
-
         public override void Load()
         {
             //Main.OnTick -= Update;
@@ -519,7 +365,7 @@ namespace ElementsAwoken
         {
             for (int num25 = 0; num25 < 22; num25++)
             {
-                TextureAssets.Cloud[num25] = ModContent.Request<Texture2D>(string.Concat(new object[] { "Images", Path.DirectorySeparatorChar.ToString(), "Cloud_", num25 }));
+                TextureAssets.Cloud[num25] = ModContent.Request<Texture2D>(string.Concat(new object[] { "Terraria/Images", Path.DirectorySeparatorChar.ToString(), "Cloud_", num25 }));
             }
         }
         #region draw methods
@@ -1168,12 +1014,130 @@ namespace ElementsAwoken
         }
         public void DrawComputer(SpriteBatch spriteBatch)
         {
-            var mod = ModLoader.GetMod("ElementsAwoken");
             var background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText").Value;
+            var mod = ModLoader.GetMod("ElementsAwoken");
             var player = Main.player[Main.myPlayer].GetModPlayer<MyPlayer>();
             string text = player.computerText;
-            spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
-            Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 230, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+            if (Language.ActiveCulture.Name == "ru-RU") // TODO: Maybe the problem is with other languages too
+            {
+                if (player.computerTextNo == 0)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 1)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText1Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 401, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 2)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 3)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 4)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 5)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 6)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 7)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerTextRuText9").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 385, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 8)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText1Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 401, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 9)
+                {
+                    if (player.guardianEntryNo == 0)
+                    {
+                        background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                        spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                        Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                    }
+                    else
+                    {
+                        background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                        spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                        Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                    }
+                }
+                if (player.computerTextNo == 10)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 11)
+                {
+                    background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText1Ru").Value;
+                    spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 401, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                }
+                if (player.computerTextNo == 12)
+                {
+                    if (player.azanaEntryNo == 0)
+                    {
+                        background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                        spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                        Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                    }
+                    else
+                    {
+                        background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText9Ru").Value;
+                        spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                        Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 395, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                    }
+                }
+                if (player.computerTextNo == 13)
+                {
+                    if (player.ancientsEntryNo == 0)
+                    {
+                        background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText13Ru").Value;
+                        spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                        Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 425, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                    }
+                    else
+                    {
+                        background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText13Ru").Value;
+                        spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                        Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 425, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                    }
+                }
+            }
+            else
+            {
+                background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText").Value;
+                spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
+                Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 230, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+            }
         }
         public void DrawSanityBook()
         {

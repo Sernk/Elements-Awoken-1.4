@@ -1,8 +1,11 @@
-﻿using CalamityMod.Projectiles.Melee;
-using ElementsAwoken.Content.Buffs.Debuffs;
+﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Events.RadiantRain.Enemies;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
 using ElementsAwoken.Content.Items.Consumable.Potions;
+using ElementsAwoken.Content.Items.Tech.Accessories.Tier2;
+using ElementsAwoken.Content.Items.Tech.Materials;
+using ElementsAwoken.Content.Items.Tech.Weapons.Tier1;
+using ElementsAwoken.Content.Items.Tech.Weapons.Tier2;
 using ElementsAwoken.Content.Items.Weapons.Melee.Whips;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Tiles;
@@ -744,18 +747,7 @@ namespace ElementsAwoken
         }
         private static int GetLabLoot()
         {
-            int[] labLoot = new int[] {
-                ItemID.WolfBanner
-            };
-            /*int[] labLoot = new int[] {
-                ElementsAwoken.instance.ItemType("Coilgun"),
-                ElementsAwoken.instance.ItemType("Electrozzitron"),
-                ElementsAwoken.instance.ItemType("TeslaRod"),
-                ElementsAwoken.instance.ItemType("BassBooster"),
-                ElementsAwoken.instance.ItemType("Taser"),
-                ElementsAwoken.instance.ItemType("RustedMechanism"),
-            };*/
-
+            int[] labLoot = new int[] { ItemType<Coilgun>(), ItemType<Electrozzitron>(), ItemType<TeslaRod>(), ItemType<BassBooster>(), ItemType<Taser>(), ItemType<RustedMechanism>(), };
             if (labPosition < labLoot.GetLength(0))
                 return labLoot[labPosition];
             else
@@ -807,7 +799,7 @@ namespace ElementsAwoken
         }
         private static int[] GetMiscLoot()
         {
-            int[] mscLoot = new int[] { /*ElementsAwoken.instance.ItemType("Capacitor"), ElementsAwoken.instance.ItemType("CopperWire"), ElementsAwoken.instance.ItemType("GoldWire")*/ ItemID.SDMG };
+            int[] mscLoot = new int[] { ItemType<Capacitor>(), ItemType<CopperWire>(), ItemType<GoldWire>() };
             int mscPos = Main.rand.Next(mscLoot.GetLength(0));
             int mscCount = Main.rand.Next(2, 6);
             int[] msc = { 0, 0 };
@@ -853,14 +845,13 @@ namespace ElementsAwoken
             return false;
         }
         #endregion
-
         public override void TileCountsAvailable(ReadOnlySpan<int> tileCounts)
         {
             SkyTiles = tileCounts[TileID.Cloud];
             lizardTiles = tileCounts[TileID.LihzahrdBrick];
 
             corruptionTiles = tileCounts[TileID.CorruptGrass] + tileCounts[TileID.CorruptHardenedSand] + tileCounts[TileID.CorruptIce] + tileCounts[TileID.CorruptSandstone] + tileCounts[TileID.CorruptThorns] + tileCounts[TileID.Ebonsand] + tileCounts[TileID.Ebonstone];
-            //crimsonTiles = tileCounts[TileID.FleshGrass] + tileCounts[TileID.CrimsonHardenedSand] + tileCounts[TileID.FleshIce] + tileCounts[TileID.CrimsonSandstone] + tileCounts[TileID.CrimtaneThorns] + tileCounts[TileID.Crimsand] + tileCounts[TileID.Crimstone];
+            crimsonTiles = tileCounts[TileID.FleshBlock] + tileCounts[TileID.CrimsonHardenedSand] + tileCounts[TileID.FleshIce] + tileCounts[TileID.CrimsonSandstone] + tileCounts[TileID.Crimtane] + tileCounts[TileID.Crimsand] + tileCounts[TileID.Crimstone];
             hallowedTiles = tileCounts[TileID.HallowedGrass] + tileCounts[TileID.HallowHardenedSand] + tileCounts[TileID.HallowedIce] + tileCounts[TileID.HallowedPlants] + tileCounts[TileID.HallowedPlants2] + tileCounts[TileID.HallowSandstone] + tileCounts[TileID.Pearlsand] + tileCounts[TileID.Pearlstone];
         }
         private void MoonlordShake(float intensity)
@@ -898,12 +889,12 @@ namespace ElementsAwoken
             string text = EALocalization.Voidite;
             if (Main.netMode == NetmodeID.SinglePlayer) Main.NewText(text, Color.DeepPink);
             else ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), Color.DeepPink);
-            for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 4E-05); k++) // xE-05 x is how many veins will spawn
+            for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 4E-05); k++)
             {
                 int x = WorldGen.genRand.Next(100, Main.maxTilesX - 100);
                 int y = WorldGen.genRand.Next((int)(Main.maxTilesY * .4f), Main.maxTilesY - 200);
 
-                //WorldGen.OreRunner(x, y, WorldGen.genRand.Next(3, 5), WorldGen.genRand.Next(4, 7), (ushort)(ushort)ElementsAwoken.instance.TileType("Voidite"));
+                WorldGen.OreRunner(x, y, WorldGen.genRand.Next(3, 5), WorldGen.genRand.Next(4, 7), (ushort)TileType<Voidite>());
             }
         }
         public static void GenLuminite()
@@ -915,10 +906,10 @@ namespace ElementsAwoken
             string text = EALocalization.Luminite;
             if (Main.netMode == NetmodeID.SinglePlayer) Main.NewText(text, Color.GreenYellow);
             else ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(text), Color.GreenYellow);
-            for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 5E-05); k++) // xE-05 x is how many veins will spawn
+            for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 5E-05); k++)
             {
                 int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-                int y = WorldGen.genRand.Next((int)(Main.maxTilesY * .6f), Main.maxTilesY - 200); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+                int y = WorldGen.genRand.Next((int)(Main.maxTilesY * .6f), Main.maxTilesY - 200);
 
                 WorldGen.OreRunner(x, y, WorldGen.genRand.Next(3, 5), WorldGen.genRand.Next(4, 7), TileID.LunarOre);
             }
@@ -927,7 +918,6 @@ namespace ElementsAwoken
         {
             var nums = Enumerable.Range(0, 10).ToArray();
 
-            // Shuffle the array
             for (int i = 0; i < nums.Length; ++i)
             {
                 int randomIndex = Main.rand.Next(nums.Length);

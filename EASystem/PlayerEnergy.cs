@@ -8,21 +8,18 @@ namespace ElementsAwoken.EASystem
 {
     public class PlayerEnergy : ModPlayer
     {
-
         public int energy = 0;
-        public int batteryEnergy = 0; // updated by the battieres
-        public int maxEnergy = 0; // updated by the battieres
+        public int batteryEnergy = 0;
+        public int maxEnergy = 0;
 
         public bool soulConverter;
         public bool kineticConverter;
         public override void ResetEffects()
         {
             batteryEnergy = 0;
-
             soulConverter = false;
             kineticConverter = false;
         }
-
         public override void PostUpdateMiscEffects()
         {
             maxEnergy = batteryEnergy;
@@ -35,7 +32,7 @@ namespace ElementsAwoken.EASystem
                 energy = 0;
             }
         }
-        public override void SaveData(TagCompound tag)/* tModPorter Suggestion: Edit tag parameter instead of returning new TagCompound */
+        public override void SaveData(TagCompound tag)
         {
             tag["energy"] = energy;
         }
@@ -43,10 +40,6 @@ namespace ElementsAwoken.EASystem
         {
             energy = tag.GetInt("energy");
         }
-        //public override void CopyClientState(ModPlayer clientClone)/* tModPorter Suggestion: Replace Item.Clone usages with Item.CopyNetStateTo */
-        //{
-        //    MyPlayer clone = clientClone as MyPlayer;
-        //}
         public override void SyncPlayer(int toWho, int fromWho, bool newPlayer)
         {
             ModPacket packet = Mod.GetPacket();

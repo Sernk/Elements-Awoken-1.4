@@ -13,27 +13,27 @@ namespace ElementsAwoken.Content.Tiles.Lab
 {
     public class Computer : ModTile
     {
-        public int entryNo = 0; // no drive
+        public int entryNo = 0;
         public int noDetectTimer = 0;
         public override void SetStaticDefaults()
         {
+            Main.tileTable[Type] = true;
+            Main.tileSolidTop[Type] = true;
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = true;
             TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
             TileObjectData.newTile.CoordinateHeights = new int[] { 16, 18 };
             TileObjectData.newTile.Direction = TileObjectDirection.PlaceLeft;
-            TileObjectData.newTile.StyleWrapLimit = 2; //not really necessary but allows me to add more subtypes of chairs below the example chair texture
-            TileObjectData.newTile.StyleMultiplier = 2; //same as above
+            TileObjectData.newTile.StyleWrapLimit = 2;
+            TileObjectData.newTile.StyleMultiplier = 2; 
             TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
-            TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight; //allows me to place example chairs facing the same way as the player
-            TileObjectData.addAlternate(1); //facing right will use the second texture style
+            TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
+            TileObjectData.addAlternate(1);
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(98, 214, 177), CreateMapEntryName());
             TileID.Sets.DisableSmartCursor[Type] = true;
-            //adjTiles = new int[] { TileID.Chairs };
-
         }
         public override bool RightClick(int i, int j)
         {
@@ -44,14 +44,6 @@ namespace ElementsAwoken.Content.Tiles.Lab
             float distance = 3 * 16;
             Point topLeft = ((new Vector2(i * 16, j * 16) - new Vector2(distance, distance)) / 16).ToPoint();
             Point bottomRight = ((new Vector2(i * 16 - 16, j * 16 - 16) + new Vector2(distance, distance)) / 16).ToPoint();
-
-            // draws dust where the detection zone is 
-            /*for (int d = 0; d < 3; d++)
-            {
-                int dust = Dust.NewDust(new Vector2(topLeft.X * 16, topLeft.Y * 16), (bottomRight.X - topLeft.X) * 16, (bottomRight.Y - topLeft.Y) * 16, 57, 0f, 0f, 100);
-                Main.dust[dust].velocity *= 0.01f;
-            }*/
-            // needs to check all of the tiles 
             for (int k = topLeft.X; k <= bottomRight.X; k++)
             {
                 for (int l = topLeft.Y; l <= bottomRight.Y; l++)
@@ -148,12 +140,10 @@ namespace ElementsAwoken.Content.Tiles.Lab
             }
             #endregion
             Main.playerInventory = false;
-            //player.talkNPC = -1;
             player.sign = -1;
             modPlayer.inComputer = true;
             modPlayer.computerPos = new Vector2(i, j);
             modPlayer.computerTextNo = entryNo;
-
             return true;
         }
         public override void MouseOver(int i, int j)

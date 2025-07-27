@@ -21,7 +21,6 @@ namespace ElementsAwoken.EASystem.Global
                 return true;
             }
         }
-
         public override void SetDefaults(Projectile projectile)
         {
             if (projectile.hostile)
@@ -46,7 +45,7 @@ namespace ElementsAwoken.EASystem.Global
             {
                 if (Main.rand.Next(3) == 0)
                 {
-                    target.statLife += damage; // to stop damage
+                    target.statLife += damage;
                     projectile.velocity.X = -projectile.velocity.X;
                     projectile.velocity.Y = -projectile.velocity.Y;
                 }
@@ -57,7 +56,7 @@ namespace ElementsAwoken.EASystem.Global
             float damage = modifiers.SourceDamage.Base;
             if (Main.expertMode && dontScaleDamage && projectile.hostile)
             {
-                damage = (int)(damage * 0.5f); // cut damage in half in expert 
+                damage = (int)(damage * 0.5f);
             }
         }
         public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)

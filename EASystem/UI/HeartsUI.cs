@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.Utilities;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using ReLogic.Graphics;
@@ -136,9 +137,8 @@ namespace ElementsAwoken.EASystem.UI
                 Main.spriteBatch.Draw(sanityTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);                   
             }
 
-
             // === Текстовое значение ===
-            string sanityText = $"Sanity: {awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
+            string sanityText = $"{EALocalization.Sanity}: {awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
             Vector2 textSize = font.MeasureString(sanityText);
             Vector2 textPos = sanityBasePos + new Vector2(maxEyes * eyeSpacing / 2 - textSize.X / 2f, -20);
             Main.spriteBatch.DrawString(font, sanityText, textPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
@@ -207,7 +207,7 @@ namespace ElementsAwoken.EASystem.UI
             }
 
             // === Текстовое значение Energy ===
-            string energyText = $"Energy: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
+            string energyText = $"{EALocalization.Energy}: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
             Vector2 energyTextSize = font.MeasureString(energyText);
             Vector2 energyTextPos = energyBasePos + new Vector2(totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f, -20);
 

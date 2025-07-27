@@ -1,6 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -11,14 +12,13 @@ namespace ElementsAwoken.Content.Items.Tech.Weapons.Tier2
 {
     public class Coilgun : ModItem
     {
-
         public override void SetDefaults()
         {
             Item.width = 60;
             Item.height = 26;
             Item.damage = 65;
             Item.knockBack = 3.5f;
-            //Item.GetGlobalItem<ItemEnergy>().energy = 8;
+            Item.GetGlobalItem<ItemEnergy>().energy = 8;
             Item.useAnimation = 45;
             Item.useTime = 45;
             Item.useStyle = 5;
