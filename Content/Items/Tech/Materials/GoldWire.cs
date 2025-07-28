@@ -17,11 +17,6 @@ namespace ElementsAwoken.Content.Items.Tech.Materials
             Item.value = Item.buyPrice(0, 1, 0, 0);
             Item.rare = 1;
         }
-        //public override void SetStaticDefaults()
-        //{
-        //    DisplayName.SetDefault("Gold Wire");
-        //    Tooltip.SetDefault("Used for tech crafting");
-        //}
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe(5);

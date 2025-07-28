@@ -145,14 +145,14 @@ Items: {
 
 	VolcanicStone: {
 		DisplayName: Вулканический камень
-		Tooltip: Эти камешки, судя по всему, постоянно воспламеняются и пылают
+		Tooltip: Эти камни, судя по всему, постоянно воспламеняются и пылают
 	}
 
 	ElementalCapsule: {
 		DisplayName: Элементальная капсула
 		Tooltip:
 			'''
-			Всевозможная сила огибает эту капсулу...
+			Всевозможная сила изгибается вокруг этой капсулы...
 			Может быть использована только в режиме Эксперт
 			Используй только в том случае, если любишь страдать
 			Включает [c/f442aa:Пробуждённый Режим] и Здравомыслие [i:ElementsAwoken/SanityChanger]
@@ -243,102 +243,98 @@ Items: {
 	}
 
 	SanityChanger: {
-		// DisplayName: Sanity Changer
-		// Tooltip: ""
+		DisplayName: Изменитель здравомыслия
+		Tooltip: ""
 	}
 
 	Computer: {
-		// DisplayName: Computer
-		// Tooltip: Beep Boop
+		DisplayName: Компьютер
+		Tooltip: Бип-буп
 	}
 
 	AncientsDrive: {
-		// DisplayName: Ancients Drive
-		// Tooltip: ""
+		DisplayName: Диск (Древние)
+		Tooltip: ""
 	}
 
 	AqueousDrive: {
-		// DisplayName: Aqueous Drive
-		// Tooltip: ""
+		DisplayName: Диск (Аквеус)
+		Tooltip: ""
 	}
 
 	AzanaDrive: {
-		// DisplayName: Azana Drive
-		// Tooltip: ""
+		DisplayName: Диск (Азана)
+		Tooltip: ""
 	}
 
 	CelestialDrive: {
-		// DisplayName: Celestial Drive
-		// Tooltip: ""
+		DisplayName: Диск (Небожители)
+		Tooltip: ""
 	}
 
 	GuardianDrive: {
-		// DisplayName: Guardian Drive
-		// Tooltip: ""
+		DisplayName: Диск (Стражник)
+		Tooltip: ""
 	}
 
 	InfernaceDrive: {
-		// DisplayName: Infernace Drive
-		// Tooltip: ""
+		DisplayName: Диск (Инфернейс)
+		Tooltip: ""
 	}
 
 	ObsidiousDrive: {
-		// DisplayName: Obsidious Drive
-		// Tooltip: ""
+		DisplayName: Диск (Обсидиус)
+		Tooltip: ""
 	}
 
 	PermafrostDrive: {
-		// DisplayName: Permafrost Drive
-		// Tooltip: ""
+		DisplayName: Диск (Пермафрост)
+		Tooltip: ""
 	}
 
 	RegarothDrive: {
-		// DisplayName: Regaroth Drive
-		// Tooltip: ""
+		DisplayName: Диск (Регарот)
+		Tooltip: ""
 	}
 
 	ScourgeFighterDrive: {
-		// DisplayName: Scourge Fighter Drive
-		// Tooltip: ""
+		DisplayName: Диск (Бичеборец)
+		Tooltip: ""
 	}
 
 	VoidLeviathanDrive: {
-		// DisplayName: Void Leviathan Drive
-		// Tooltip: ""
+		DisplayName: Диск (Левиафан Пустоты)
+		Tooltip: ""
 	}
 
 	VolcanoxDrive: {
-		// DisplayName: Volcanox Drive
-		// Tooltip: ""
+		DisplayName: Диск (Волканокс)
+		Tooltip: ""
 	}
 
 	WastelandDrive: {
-		// DisplayName: Wasteland Drive
-		// Tooltip: ""
+		DisplayName: Диск (Пустошь)
+		Tooltip: ""
 	}
 
 	Locker: {
-		// DisplayName: Locker
-		// Tooltip: ""
+		DisplayName: Шкафчик
+		Tooltip: ""
 	}
 
 	CopperWire: {
-		// DisplayName: Copper Wire
-		// Tooltip: Used for tech crafting
+		DisplayName: Медная проволока
+		Tooltip: ""
 	}
 
 	GoldWire: {
-		// DisplayName: Gold Wire
-		// Tooltip: Used for tech crafting
+		DisplayName: Золотая проволока
+		Tooltip: ""
 	}
 
 	Coilgun: {
-		// DisplayName: Coilgun
-		/* Tooltip:
-			'''
-			Fires a fast high damaging bullet
-			Also consumes bullets as well as energy
-			''' */
+		DisplayName: Катушко-пушка
+		Tooltip: ""
 	}
 
 	Electrozzitron: {
@@ -388,38 +384,182 @@ Items: {
 		// DisplayName: Sanity Regeneration Potion
 		// Tooltip: ""
 	}
+
+	DesertTrailers: {
+		// DisplayName: Desert Trailers
+		// Tooltip: Nice speed!
+	}
+
+	DesertEssence: {
+		// DisplayName: Desert Essence
+		// Tooltip: Essence from the fury of the sand
+	}
+
+	ElementalForge: {
+		// DisplayName: Elemental Forge
+		// Tooltip: Used to craft the elemental items
+	}
+
+	FireTreads: {
+		// DisplayName: Fire Treads
+		/* Tooltip:
+			'''
+			Cool speed!
+			Grants immunity to fire blocks
+			Temporary immunity to lava
+			''' */
+	}
+
+	FrostWalkers: {
+		// DisplayName: Frost Walkers
+		/* Tooltip:
+			'''
+			Awesome speed!
+			Greater mobility on ice
+			Grants immunity to fire blocks
+			Temporary immunity to lava
+			Allows flight and slow fall
+			''' */
+	}
+
+	FireEssence: {
+		// DisplayName: Fire Essence
+		// Tooltip: Essence from the keepers of hell
+	}
+
+	FrostEssence: {
+		// DisplayName: Frost Essence
+		// Tooltip: Essence from the frosty wasteland
+	}
+
+	NyanBoots: {
+		// DisplayName: Boots of Nyan
+		/* Tooltip:
+			'''
+			Fly through space and time in style!
+			Greater mobility on ice
+			Water and lava walking
+			Infinite immunity to lava
+			Allows flight and slow fall
+			Allows the ability to climb walls and dash
+			Gives a chance to dodge attacks
+			''' */
+	}
+
+	VoidBoots: {
+		// DisplayName: Boots of the Void
+		/* Tooltip:
+			'''
+			Insane speed!
+			Greater mobility on ice
+			Water and lava walking
+			Infinite immunity to lava
+			Allows flight and slow fall
+			Allows the ability to climb walls and dash
+			Gives a chance to dodge attacks
+			''' */
+	}
+
+	AqueousWaders: {
+		// DisplayName: Aqueous Waders
+		/* Tooltip:
+			'''
+			Ridiculous speed!
+			Greater mobility on ice
+			Water and lava walking
+			Temporary immunity to lava
+			Allows flight and slow fall
+			''' */
+	}
+
+	ElementalEssence: {
+		// DisplayName: Essence of the Elements
+		// Tooltip: The essence of Terraria
+	}
+
+	SkyEssence: {
+		// DisplayName: Sky Essence
+		// Tooltip: Essence from the vast empty void of space
+	}
+
+	VoidEssence: {
+		// DisplayName: Void Essence
+		// Tooltip: Essence from the depths of Terraria
+	}
+
+	WaterEssence: {
+		// DisplayName: Water Essence
+		// Tooltip: Essence from the creatures of the deep
+	}
+
+	HoneyCocoon: {
+		// DisplayName: Honey Cocoon
+		// Tooltip: ""
+	}
+
+	Honeycrest: {
+		// DisplayName: Honeycrest
+		/* Tooltip:
+			'''
+			Fires a stinger
+			Hitting enemies with the sword its self gives the player 'Honey'
+			''' */
+	}
+
+	Honeysuckle: {
+		// DisplayName: Honeysuckle
+		/* Tooltip:
+			'''
+			Increases life and mana regen by 1
+			Increases the duration of Honey
+			Increases maximum life by 10
+			''' */
+	}
+
+	Microcontroller: {
+		// DisplayName: Controller
+		// Tooltip: ""
+	}
+
+	SiliconBoard: {
+		// DisplayName: Silicon Board
+		// Tooltip: ""
+	}
 }
 
 Tiles: {
 	CrystalCracker.MapEntry: Открыстатель
 	Voidite.MapEntry: Пустоний
-	// Computer.MapEntry: Computer
-	// DeadScientist.MapEntry: Dead Scientist
-	// Desk.MapEntry: Desk
-	// AncientsDrive.MapEntry: Ancients Drive
-	// AqueousDrive.MapEntry: Aqueous Drive
-	// AzanaDrive.MapEntry: Azana Drive
-	// CelestialDrive.MapEntry: Celestial Drive
-	// GuardianDrive.MapEntry: Guardian Drive
-	// InfernaceDrive.MapEntry: Infernace Drive
-	// ObsidiousDrive.MapEntry: Obsidious Drive
-	// PermafrostDrive.MapEntry: Permafrost Drive
-	// RegarothDrive.MapEntry: Regaroth Drive
-	// ScourgeFighterDrive.MapEntry: Scourge Fighter Drive
-	// VoidLeviathanDrive.MapEntry: Void Leviathan Drive
-	// VolcanoxDrive.MapEntry: Volcanox Drive
-	// WastelandDrive.MapEntry: Wasteland Drive
-	// LabLight.MapEntry: Lab Light
-	// OfficeChair.MapEntry: Office Chair
-	// ScorpionPod.MapEntry: Scorpion Pod
-	// ScorpionPodLarge.MapEntry: Scorpion Pod Large
-	// CrystalContainer.MapEntry: Crystal Container
-	// LabBench.MapEntry: Lab Bench
+	Computer.MapEntry: Компьютер
+	DeadScientist.MapEntry: Мёртвый учёный
+	Desk.MapEntry: Компьютерный стол
+	AncientsDrive.MapEntry: Диск (Древние)
+	AqueousDrive.MapEntry: Диск (Аквеус)
+	AzanaDrive.MapEntry: Диск (Азана)
+	CelestialDrive.MapEntry: Диск (Небожители)
+	GuardianDrive.MapEntry: Диск (Стражник)
+	InfernaceDrive.MapEntry: Диск (Инфернейс)
+	ObsidiousDrive.MapEntry: Диск (Обсидиус)
+	PermafrostDrive.MapEntry: Диск (Пермафрост)
+	RegarothDrive.MapEntry: Диск (Регарот)
+	ScourgeFighterDrive.MapEntry: Диск (Бичеборец)
+	VoidLeviathanDrive.MapEntry: Диск (Левиафан Пустоты)
+	VolcanoxDrive.MapEntry: Диск (Волканокс)
+	WastelandDrive.MapEntry: Диск (Пустошь)
+	LabLight.MapEntry: Лабораторная лампочка
+	OfficeChair.MapEntry: Офисное кресло
+	ScorpionPod.MapEntry: Клетка со скорпионом
+	ScorpionPodLarge.MapEntry: Большая клетка со скорпионом
+	CrystalContainer.MapEntry: Кристальный ящик
+	LabBench.MapEntry: Лабораторная скамья
 
 	Locker: {
-		// Locker: Locker
-		// MapEntry1: Locker
+		Locker: Шкафчик
+		MapEntry1: Шкафчик
 	}
+
+	// ElementalForge.MapEntry: Elemental Forge
+	// HiveCratePlaced.MapEntry: Hive Crate
 }
 
 Buffs: {
@@ -653,17 +793,17 @@ Buffs: {
 	}
 
 	Starstruck: {
-		// DisplayName: Starstruck
-		/* Description:
+		DisplayName: Звездоражён
+		Description:
 			'''
-			Your will bends to your opponents
-			Each hit by an enemy increases the damage the player takes
-			''' */
+			Твоя воля переносится к врагам
+			Каждый последующий удар врага по тебе наносит ещё больше урона
+			'''
 	}
 
 	FrostShield: {
-		// DisplayName: Frost Shield
-		// Description: Mods.ElementsAwoken.Buffs.FrostShield.Description
+		DisplayName: Морозный щит
+		Description: (нет описания)
 	}
 
 	EldritchHorror: {
@@ -678,6 +818,46 @@ Buffs: {
 	SanityRegenerationBuff: {
 		// DisplayName: Sanity Regeneration
 		// Description: Increases sanity regeneration
+	}
+
+	RottenHeart: {
+		// DisplayName: Rotten Heart
+		// Description: Your health is reduced by 10%
+	}
+
+	SuperSlow: {
+		// DisplayName: Super Slow
+		// Description: You can hardly step
+	}
+
+	Glowing: {
+		// DisplayName: Glowing
+		// Description: You release blinding light\nEvery monster can see you
+	}
+
+	GoldenWeapons: {
+		// DisplayName: Golden Weapons
+		// Description: You deal 10% extra damage
+	}
+
+	Invincibility: {
+		// DisplayName: Invincibility
+		// Description: You cant be damaged
+	}
+
+	StrongHeart: {
+		// DisplayName: Strong Heart
+		// Description: Your health is increased by 10%
+	}
+
+	SuperSpeed: {
+		// DisplayName: Super Speed
+		// Description: You move at uncontrollable speeds
+	}
+
+	BurningHands: {
+		// DisplayName: Burning Hands
+		// Description: You are holding a hot weapon
 	}
 }
 
@@ -696,8 +876,8 @@ NPCs: {
 	ElderShadeWyrmTail.DisplayName: Хвост Старшего Тенезмея
 	ElderShadeWyrmHead.DisplayName: Голова Старшего Тенезмея
 	ElderShadeWyrmBody.DisplayName: Тело Старшего Тенезмея
-	// RadiantMaster.DisplayName: The Radiant Master
-	// RadiantMasterDeath.DisplayName: The Radiant Master
+	RadiantMaster.DisplayName: Лучезарный мастер
+	RadiantMasterDeath.DisplayName: Лучезарный мастер
 }
 
 Projectiles: {
@@ -751,23 +931,26 @@ Projectiles: {
 	BunnyBreath.DisplayName: Дыхание кролика
 	HandsOfDespair.DisplayName: Длани отчаянья
 	FlareShield.DisplayName: Вспышка-щит
-	// RadiantFireball.DisplayName: Radiant Fireball
-	// RadiantMasterStar.DisplayName: Radiant Master Star
-	// RadiantStasisField.DisplayName: Radiant Stasis Field
-	// RadiantTeleport.DisplayName: Radiant Teleport
-	// RadiantWhirlwind.DisplayName: Radiant Whirlwind
-	// StarstruckP.DisplayName: Starstruck P
-	// HeartContainerHeal.DisplayName: Heart Container Heal
-	// FrostShield.DisplayName: Frost Shield
-	// FrostShield2.DisplayName: Frost Shield2
-	// RadiantStarRain.DisplayName: Radiant Star Rain
-	// VoidHeal.DisplayName: Heal
-	// WhipCrack.DisplayName: Whip Crack
-	// CoilRound.DisplayName: Coil Round
+	RadiantFireball.DisplayName: Лучезарный огнешар
+	RadiantMasterStar.DisplayName: Звезда Лучезарного мастера
+	RadiantStasisField.DisplayName: Поле лучезарного стазиса
+	RadiantTeleport.DisplayName: Лучезарный телепорт
+	RadiantWhirlwind.DisplayName: Лучезарный вихрь
+	StarstruckP.DisplayName: Звездоражённый проджектайл
+	HeartContainerHeal.DisplayName: Хилка исцеляющего сосуда
+	FrostShield.DisplayName: Морозный щит
+	FrostShield2.DisplayName: Морозный щитДва
+	RadiantStarRain.DisplayName: Лучезарный звездождь
+	VoidHeal.DisplayName: Исцеление
+	WhipCrack.DisplayName: Треск хлыста
+	CoilRound.DisplayName: Катушка
 	// ElectroniumMine.DisplayName: Electronium Mine
 	// BassBoost.DisplayName: Bass Boost
 	// TaserLightning.DisplayName: Taser Lightning
 	// TeslaSpark.DisplayName: Tesla Spark
+	// NyanBootsTrail.DisplayName: Nyan Boots Trail
+	// HoneycrestStinger.DisplayName: Stinger
+	// RailgunBeam.DisplayName: Railgun
 }
 
 Configs: {
@@ -812,17 +995,17 @@ Keybinds: {
 
 Bestiary: {
 	Boss: {
-		VoidLeviathan: Змееобразное чудовище, пришедшее в этот мир прямиком из глубин Пустоты, этого змея боятся все живые существа Террарии. Оно жаждет любой достаточно сильной души, чтобы ещё больше усилить свою мощь...
-		ElderShadeWyrm: Старший представитель вида Тенезмеев, которые зародились в Пустоте, и у кого было достаточно времени, чтобы вырасти до настолько огромных размеров и непредсказуемой мощи.
+		// VoidLeviathan: ""
+		// ElderShadeWyrm: ""
 	}
 
-	Enemies.VoidLeviathanOrb: Огромная, странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
-	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде в других частях мира.
+	Enemies.VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
+	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
 }
 
 Ore: {
-	// Voidite: The world has been cursed with Voidite...
-	// Luminite: The world has been blessed with Luminite!
+	Voidite: Пустоний проклинает этот мир...
+	Luminite: Люминит благословляет этот мир!
 }
 
 Nurse: {
@@ -834,11 +1017,52 @@ Tooltips: {
 	// ItemEnergy: Uses
 	// ItemEnergy1: energy
 	// Awakened: Awakened
+	// ElementalCapsule: couldn't withstand the power.
+	// ElementalCapsule1: The forces of the world settle.
+	// ElementalCapsule2: The forces of the world get twisted beyond imagination...
+	// VoidbloodHeart: Your veins return to normal.
+	// VoidbloodHeart1: Your veins turn black.
+	// MysteriousPotion: It has a foul smell about it
+	// MysteriousPotion1: Instant Health
+	// MysteriousPotion2: Heals you for 20% of your total health
+	// MysteriousPotion3: Instant Damage
+	// MysteriousPotion4: Damages you for 20% of your total health
+	// MysteriousPotion5: Toxic
+	// MysteriousPotion6: Reduces your maximum health by 10%
+	// MysteriousPotion7: Healthy
+	// MysteriousPotion8: Increases your maximum health by 10%
+	// MysteriousPotion9: Invincibility
+	// MysteriousPotion10: Makes you invincible for 10 seconds
+	// MysteriousPotion11: Intensity
+	// MysteriousPotion12: Increases damage by 10%
+	// MysteriousPotion13: Bright
+	// MysteriousPotion14: Makes you release blinding light
+	// MysteriousPotion15: Poison
+	// MysteriousPotion16: Poisons you
+	// MysteriousPotion17: Snail
+	// MysteriousPotion18: Makes you move very slowly
+	// MysteriousPotion19: Lightning
+	// MysteriousPotion20: Makes you move at uncontrollable speeds
+	// MysteriousPotion21: had a bad swig
+	# Не трогай HoneyCocoon!!!!
+	// HoneyCocoon: <Special Ability Unbound>
+	// HoneyCocoon1: Pressing the special ability key
+	/* HoneyCocoon2:
+		'''
+		will encase the player in a honey cocoon for 15 seconds
+		The cocoon can absorb up to 100 damage before breaking
+		Press <Special Ability Unbound> again to get out
+		Being in the cocoon prevents movement
+		1 minute cooldown
+		''' */
+	// DeathMirror: The reflection is still too dim...
+	// DeathMirror1: seconds remain
+	// Railgun: burnt their face off
 }
 
 Resurs: {
-	Sanity: Sanity
-	Energy: Energy
+	// Sanity: Sanity
+	// Energy: Energy
 }
 
 // Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
@@ -862,10 +1086,10 @@ MyPlayerLocalization: {
 			Said2: Ты ведь ищешь силу...
 			Said3: Новый боец восходит.
 			Said4: Простая ли потерянная душа?
-			Said5: Но ты не спрашивал - для чего.
-			Said6: Идти ещё далеко.
+			Said5: Но ты не думал - зачем.
+			Said6: Путь пока далёкий.
 			Said7: Впереди долгая дорога.
-			Said8: Но значит ли это что-нибудь?
+			Said8: Но имеет ли это значение вообще?
 			Said9: Ты всё ближе.
 			Said10: Ты почти на месте.
 		}
@@ -873,7 +1097,7 @@ MyPlayerLocalization: {
 		Prompts: {
 			# �� void 5 ���� �����
 			void5: Гид убит...
-			void4: Уходи
+			void4: Уйти
 			void3: Ты ещё не готов
 			void2: Неминуемая гибель грядёт...
 			void1: Левиафан Пустоты пробудился!
@@ -881,7 +1105,7 @@ MyPlayerLocalization: {
 		}
 
 		UponEnteringTheWorld: {
-			Music: Погоди, у тебя не стоит музыкальный аддон! У всех боссов из Elements Awoken будет ванильная музыка. Советуем поставить (хотя это уже не нужно):
+			Music: Стой, у тебя же не стоит музыкальный аддон! У всех боссов из Elements Awoken будет ванильная музыка. Советуем поставить (хотя это уже не нужно):
 			Music1: Elements Awoken Music
 			Music2: EA Retro Music
 		}
@@ -1033,11 +1257,11 @@ MyPlayerLocalization: {
 
 MyWorldLocalization: {
 	MyWorld: {
-		// voidInvasio: Darkness seeps through your veins...
-		// voidInvasio1: Laughs echo throughout the world
-		// voidInvasio2: Laughs echo throughout the world
-		// Azana1: The radiant rain dissipates...
-		// Azana: The rain glistens with unknown magic...
+		voidInvasio: Тьма проникает в твои вены...
+		voidInvasio1: Смех разносится эхом по миру
+		voidInvasio2: Смех разносится эхом по миру
+		Azana1: Лучезарный дождь рассеивается...
+		Azana: Дождь блистает неизвестной магией...
 	}
 }
 

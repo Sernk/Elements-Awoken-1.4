@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static ElementsAwoken.EASystem.EARarity;
+using static ElementsAwoken.EASystem.UI.Tooltips.EARarity;
 
 namespace ElementsAwoken.Content.Items.Materials
 {

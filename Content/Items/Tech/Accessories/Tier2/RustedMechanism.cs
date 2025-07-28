@@ -17,13 +17,7 @@ namespace ElementsAwoken.Content.Items.Tech.Accessories.Tier2
             Item.value = Item.sellPrice(0, 0, 50, 0);
             Item.rare = 2;    
             Item.accessory = true;
-
         }
-        //public override void SetStaticDefaults()
-        //{
-        //    DisplayName.SetDefault("Rusted Mechanism");
-        //    Tooltip.SetDefault("When you are hit, you shoot out a bunch of the first ammo you have\nConsumes 3 energy on use");
-        //}
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             PlayerEnergy modPlayer = player.GetModPlayer<PlayerEnergy>();
@@ -71,7 +65,6 @@ namespace ElementsAwoken.Content.Items.Tech.Accessories.Tier2
                 hasShot = false;
             }
         }
-
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

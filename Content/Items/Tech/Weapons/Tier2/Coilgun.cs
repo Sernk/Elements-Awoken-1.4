@@ -32,12 +32,6 @@ namespace ElementsAwoken.Content.Items.Tech.Weapons.Tier2
             Item.shoot = ModContent.ProjectileType<CoilRound>();
             Item.useAmmo = 97;
         }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Coilgun");
-            // Tooltip.SetDefault("Fires a fast high damaging bullet\nAlso consumes bullets as well as energy");
-        }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 speed, int type, int damage, float knockback)
         {
             Projectile.NewProjectile(source, position.X, position.Y, speed.X, speed.Y, ModContent.ProjectileType<CoilRound>(), damage, knockback, player.whoAmI, 0.0f, 0.0f);

@@ -13,11 +13,8 @@ namespace ElementsAwoken.Content.Items.Armor.Vanity.TOJO
             Item.rare = 9;
             Item.vanity = true;
         }
-
         public override void SetStaticDefaults()
         {
-            //DisplayName.SetDefault("ThatOneJuicyOrange's Mask");
-            //Tooltip.SetDefault("So kawaii");
             ArmorIDs.Head.Sets.DrawHead[Item.headSlot] = false;
         }
     }

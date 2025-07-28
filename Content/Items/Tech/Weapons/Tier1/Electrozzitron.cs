@@ -37,11 +37,6 @@ namespace ElementsAwoken.Content.Items.Tech.Weapons.Tier1
             Projectile.NewProjectile(source, position.X, position.Y, speed.X, speed.Y, ModContent.ProjectileType<ElectroniumMine>(), damage, knockback, player.whoAmI, 0.0f, 0.0f);
             return false;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Electrozzitron");
-            // Tooltip.SetDefault("Looks like it will electrocute you any moment...\nShoots exploding mines");
-        }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

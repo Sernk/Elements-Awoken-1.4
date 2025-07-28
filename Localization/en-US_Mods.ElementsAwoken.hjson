@@ -388,6 +388,147 @@ Items: {
 		DisplayName: Sanity Regeneration Potion
 		Tooltip: ""
 	}
+
+	DesertTrailers: {
+		DisplayName: Desert Trailers
+		Tooltip: Nice speed!
+	}
+
+	DesertEssence: {
+		DisplayName: Desert Essence
+		Tooltip: Essence from the fury of the sand
+	}
+
+	ElementalForge: {
+		DisplayName: Elemental Forge
+		Tooltip: Used to craft the elemental items
+	}
+
+	FireTreads: {
+		DisplayName: Fire Treads
+		Tooltip:
+			'''
+			Cool speed!
+			Grants immunity to fire blocks
+			Temporary immunity to lava
+			'''
+	}
+
+	FrostWalkers: {
+		DisplayName: Frost Walkers
+		Tooltip:
+			'''
+			Awesome speed!
+			Greater mobility on ice
+			Grants immunity to fire blocks
+			Temporary immunity to lava
+			Allows flight and slow fall
+			'''
+	}
+
+	FireEssence: {
+		DisplayName: Fire Essence
+		Tooltip: Essence from the keepers of hell
+	}
+
+	FrostEssence: {
+		DisplayName: Frost Essence
+		Tooltip: Essence from the frosty wasteland
+	}
+
+	NyanBoots: {
+		DisplayName: Boots of Nyan
+		Tooltip:
+			'''
+			Fly through space and time in style!
+			Greater mobility on ice
+			Water and lava walking
+			Infinite immunity to lava
+			Allows flight and slow fall
+			Allows the ability to climb walls and dash
+			Gives a chance to dodge attacks
+			'''
+	}
+
+	VoidBoots: {
+		DisplayName: Boots of the Void
+		Tooltip:
+			'''
+			Insane speed!
+			Greater mobility on ice
+			Water and lava walking
+			Infinite immunity to lava
+			Allows flight and slow fall
+			Allows the ability to climb walls and dash
+			Gives a chance to dodge attacks
+			'''
+	}
+
+	AqueousWaders: {
+		DisplayName: Aqueous Waders
+		Tooltip:
+			'''
+			Ridiculous speed!
+			Greater mobility on ice
+			Water and lava walking
+			Temporary immunity to lava
+			Allows flight and slow fall
+			'''
+	}
+
+	ElementalEssence: {
+		DisplayName: Essence of the Elements
+		Tooltip: The essence of Terraria
+	}
+
+	SkyEssence: {
+		DisplayName: Sky Essence
+		Tooltip: Essence from the vast empty void of space
+	}
+
+	VoidEssence: {
+		DisplayName: Void Essence
+		Tooltip: Essence from the depths of Terraria
+	}
+
+	WaterEssence: {
+		DisplayName: Water Essence
+		Tooltip: Essence from the creatures of the deep
+	}
+
+	HoneyCocoon: {
+		DisplayName: Honey Cocoon
+		Tooltip: ""
+	}
+
+	Honeycrest: {
+		DisplayName: Honeycrest
+		Tooltip:
+			'''
+			Fires a stinger
+			Hitting enemies with the sword its self gives the player 'Honey'
+			'''
+	}
+
+	Honeysuckle: {
+		DisplayName: Honeysuckle
+		Tooltip:
+			'''
+			Increases life and mana regen by 1
+			Increases the duration of Honey
+			Increases maximum life by 10
+			'''
+	}
+
+	Microcontroller: {
+		DisplayName: Controller
+		Tooltip: ""
+	}
+
+	SiliconBoard: {
+		DisplayName: Silicon Board
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -420,6 +561,9 @@ Tiles: {
 		Locker: Locker
 		MapEntry1: Locker
 	}
+
+	ElementalForge.MapEntry: Elemental Forge
+	HiveCratePlaced.MapEntry: Hive Crate
 }
 
 Buffs: {
@@ -679,6 +823,46 @@ Buffs: {
 		DisplayName: Sanity Regeneration
 		Description: Increases sanity regeneration
 	}
+
+	RottenHeart: {
+		DisplayName: Rotten Heart
+		Description: Your health is reduced by 10%
+	}
+
+	SuperSlow: {
+		DisplayName: Super Slow
+		Description: You can hardly step
+	}
+
+	Glowing: {
+		DisplayName: Glowing
+		Description: You release blinding light\nEvery monster can see you
+	}
+
+	GoldenWeapons: {
+		DisplayName: Golden Weapons
+		Description: You deal 10% extra damage
+	}
+
+	Invincibility: {
+		DisplayName: Invincibility
+		Description: You cant be damaged
+	}
+
+	StrongHeart: {
+		DisplayName: Strong Heart
+		Description: Your health is increased by 10%
+	}
+
+	SuperSpeed: {
+		DisplayName: Super Speed
+		Description: You move at uncontrollable speeds
+	}
+
+	BurningHands: {
+		DisplayName: Burning Hands
+		Description: You are holding a hot weapon
+	}
 }
 
 NPCs: {
@@ -768,6 +952,9 @@ Projectiles: {
 	BassBoost.DisplayName: Bass Boost
 	TaserLightning.DisplayName: Taser Lightning
 	TeslaSpark.DisplayName: Tesla Spark
+	NyanBootsTrail.DisplayName: Nyan Boots Trail
+	HoneycrestStinger.DisplayName: Stinger
+	RailgunBeam.DisplayName: Railgun
 }
 
 Configs: {
@@ -834,6 +1021,47 @@ Tooltips: {
 	ItemEnergy: Uses
 	ItemEnergy1: energy
 	Awakened: Awakened
+	ElementalCapsule: couldn't withstand the power.
+	ElementalCapsule1: The forces of the world settle.
+	ElementalCapsule2: The forces of the world get twisted beyond imagination...
+	VoidbloodHeart: Your veins return to normal.
+	VoidbloodHeart1: Your veins turn black.
+	MysteriousPotion: It has a foul smell about it
+	MysteriousPotion1: Instant Health
+	MysteriousPotion2: Heals you for 20% of your total health
+	MysteriousPotion3: Instant Damage
+	MysteriousPotion4: Damages you for 20% of your total health
+	MysteriousPotion5: Toxic
+	MysteriousPotion6: Reduces your maximum health by 10%
+	MysteriousPotion7: Healthy
+	MysteriousPotion8: Increases your maximum health by 10%
+	MysteriousPotion9: Invincibility
+	MysteriousPotion10: Makes you invincible for 10 seconds
+	MysteriousPotion11: Intensity
+	MysteriousPotion12: Increases damage by 10%
+	MysteriousPotion13: Bright
+	MysteriousPotion14: Makes you release blinding light
+	MysteriousPotion15: Poison
+	MysteriousPotion16: Poisons you
+	MysteriousPotion17: Snail
+	MysteriousPotion18: Makes you move very slowly
+	MysteriousPotion19: Lightning
+	MysteriousPotion20: Makes you move at uncontrollable speeds
+	MysteriousPotion21: had a bad swig
+	# Не трогай HoneyCocoon!!!!
+	HoneyCocoon: <Special Ability Unbound>
+	HoneyCocoon1: Pressing the special ability key
+	HoneyCocoon2:
+		'''
+		will encase the player in a honey cocoon for 15 seconds
+		The cocoon can absorb up to 100 damage before breaking
+		Press <Special Ability Unbound> again to get out
+		Being in the cocoon prevents movement
+		1 minute cooldown
+		'''
+	DeathMirror: The reflection is still too dim...
+	DeathMirror1: seconds remain
+	Railgun: burnt their face off
 }
 
 Resurs: {

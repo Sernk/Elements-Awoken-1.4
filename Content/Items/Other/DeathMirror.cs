@@ -1,12 +1,11 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
+using ElementsAwoken.EASystem;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using System;
-using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem;
 
 namespace ElementsAwoken.Content.Items.Other
 {
@@ -26,23 +25,17 @@ namespace ElementsAwoken.Content.Items.Other
             Item.rare = 6;
             return;
         }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Hell's Reflection");
-            // Tooltip.SetDefault("Teleports the player to the last death postition\nMust teleport back within 30 seconds\nHas a 5 minute cooldown");
-        }
         public override bool CanUseItem(Player player)
         {
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
             if (modPlayer.hellsReflectionCD > 0)
             {
-                Main.NewText("The reflection is still too dim... " + (int)modPlayer.hellsReflectionCD / 60 + " seconds remain", Color.DarkOrange);
+                Main.NewText(EALocalization.DeathMirror + " " + (int)modPlayer.hellsReflectionCD / 60 + " " + EALocalization.DeathMirror1, Color.DarkOrange);
                 return false;
             }
             return player.lastDeathTime > DateTime.MinValue && modPlayer.hellsReflectionTimer > 0;
         }
-        public override bool? UseItem(Player player)/* tModPorter Suggestion: Return null instead of false */
+        public override bool? UseItem(Player player)
         {
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
             player.Teleport(new Vector2(player.lastDeathPostion.X, player.lastDeathPostion.Y - player.height));

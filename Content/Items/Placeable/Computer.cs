@@ -1,7 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria;
-using Terraria.DataStructures;
-using Terraria.ID;
+﻿using Terraria;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Items.Placeable
@@ -12,7 +9,7 @@ namespace ElementsAwoken.Content.Items.Placeable
         {
             Item.width = 20;
             Item.height = 11;
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
             Item.value = Item.sellPrice(0, 0, 50, 0);
             Item.rare = 0;
             Item.useTurn = true;
@@ -22,12 +19,6 @@ namespace ElementsAwoken.Content.Items.Placeable
             Item.useStyle = 1;
             Item.consumable = true;
             Item.createTile = ModContent.TileType<Tiles.Lab.Computer>();
-        }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Computer");
-            // Tooltip.SetDefault("Beep Boop");
         }
     }
 }

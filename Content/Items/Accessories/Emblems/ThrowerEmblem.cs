@@ -13,14 +13,6 @@ namespace ElementsAwoken.Content.Items.Accessories.Emblems
             Item.value = Item.buyPrice(0, 10, 0, 0);
             Item.accessory = true;
         }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Thrower Emblem");
-            // Tooltip.SetDefault("15% increased throwing damage");
-        }
-
-
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.GetDamage(DamageClass.Throwing) += 0.15f;

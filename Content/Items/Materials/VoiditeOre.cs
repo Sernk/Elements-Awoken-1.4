@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Tiles;
-using ElementsAwoken.EASystem;
 using Terraria;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.UI.Tooltips.EARarity;
 
 namespace ElementsAwoken.Content.Items.Materials
 {
@@ -14,7 +14,7 @@ namespace ElementsAwoken.Content.Items.Materials
             Item.maxStack = 9999;
             Item.value = Item.sellPrice(0, 2, 0, 0);
             Item.consumable = true;
-            Item.rare = ModContent.RarityType<EARarity.Rarity12>();
+            Item.rare = ModContent.RarityType<Rarity12>();
             Item.useAnimation = 15;
             Item.useTime = 10;
             Item.useStyle = 1;

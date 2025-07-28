@@ -1,8 +1,8 @@
-using Microsoft.Xna.Framework;
-using Terraria;
+﻿using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.UI.Tooltips.EARarity;
 
 namespace ElementsAwoken.Content.Items.Ancient
 {
@@ -12,16 +12,14 @@ namespace ElementsAwoken.Content.Items.Ancient
         {
             Item.width = 20;
             Item.height = 20;
-            Item.maxStack = 999;
-
+            Item.maxStack = 9999;
             Item.value = Item.sellPrice(0, 1, 0, 0);
-            Item.rare = 0;
+            Item.rare = ModContent.RarityType<Mystic>();
         }
-
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Mystic Gemstone");
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(7, 53));
+            ItemID.Sets.AnimatesAsSoul[Type] = true;
         }
         public override void AddRecipes()
         {

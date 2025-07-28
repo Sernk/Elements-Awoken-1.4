@@ -16,19 +16,13 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             Item.consumable = true;
             Item.useTurn = true;
             Item.UseSound = SoundID.Item3;
-            Item.useStyle = 2;
+            Item.useStyle = ItemUseStyleID.DrinkLiquid;
             Item.useAnimation = 17;
             Item.useTime = 17;
             Item.value = Item.sellPrice(0, 0, 2, 0);
             Item.rare = 3;
             Item.buffType = ModContent.BuffType<SanityRegenerationBuff>();
             Item.buffTime = 7200;
-        }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Sanity Regeneration Potion");
-            // Tooltip.SetDefault("Increases sanity regeneration");
         }
         public override void AddRecipes()
         {

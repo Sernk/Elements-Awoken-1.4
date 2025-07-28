@@ -16,11 +16,6 @@ namespace ElementsAwoken.Content.Items.Testing
             Item.useStyle = 4;
             Item.autoReuse = true;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("sanitinator");
-            // Tooltip.SetDefault("this game drives me crazy");
-        }
         public override bool AltFunctionUse(Player player)
         {
             return true;

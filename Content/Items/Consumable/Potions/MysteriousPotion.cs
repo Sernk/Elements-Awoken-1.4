@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using ElementsAwoken.Content.Buffs;
+using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.EASystem;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System.Collections.Generic;
+using System.IO;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
@@ -14,8 +18,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
     public class MysteriousPotion : ModItem
     {
         public int potionNum = 0;
-        /*public int potionNum = 0; 
-        public override bool CloneNewInstances
+        protected override bool CloneNewInstances
         {
             get { return true; }
         }
@@ -23,54 +26,35 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
         {
             writer.Write(potionNum);
         }
-
-        public override void NetRecieve(BinaryReader reader)
+        public override void NetReceive(BinaryReader reader)
         {
             potionNum = reader.ReadInt32();
         }
-
-        public override TagCompound Save()
+        public override void SaveData(TagCompound tag)
         {
-            return new TagCompound
-            {
-                {
-                    "potionNum", potionNum
-                }
-            };
+            potionNum = tag.GetInt("potionNum");
         }
-
-        public override void Load(TagCompound tag)
+        public override void LoadData(TagCompound tag)
         {
             potionNum = tag.GetInt("potionNum");
         }
         public override void SetDefaults()
         {
-            item.width = 20;
-            item.height = 28;
-
-            item.useTurn = true;
-            item.consumable = true;
-
-            item.useAnimation = 17;
-            item.useTime = 17;
-            item.UseSound = SoundID.Item3;
-            item.useStyle = 2;
-
-            item.maxStack = 1;
-
-            item.value = Item.sellPrice(0, 0, 1, 0);
-            item.rare = 1;
+            Item.width = 20;
+            Item.height = 28;
+            Item.useTurn = true;
+            Item.consumable = true;
+            Item.useAnimation = 17;
+            Item.useTime = 17;
+            Item.UseSound = SoundID.Item3;
+            Item.useStyle = ItemUseStyleID.DrinkLiquid;
+            Item.maxStack = 1;
+            Item.value = Item.sellPrice(0, 0, 1, 0);
+            Item.rare = 1;
             //item.potion = true;
-
-            item.buffType = BuffID.Regeneration;
-            item.buffTime = 0;
+            Item.buffType = BuffID.Regeneration;
+            Item.buffTime = 0;
             return;
-        }
-
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Mysterious Potion");
-            Tooltip.SetDefault("It has a foul smell about it");
         }
         public override bool OnPickup(Player player)
         {
@@ -82,66 +66,66 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             MyPlayer modPlayer = Main.LocalPlayer.GetModPlayer<MyPlayer>();
 
             string name = MyWorld.mysteriousPotionColours[potionNum];
-            string desc = "It has a foul smell about it";
+            string desc = EALocalization.MysteriousPotion;
             if (modPlayer.mysteriousPotionsDrank[potionNum])
             {
                 switch (potionNum)
                 {
                     case 0:
-                        name = "Instant Health";
-                        desc = "Heals you for 20% of your total health";
+                        name = EALocalization.MysteriousPotion1;
+                        desc = EALocalization.MysteriousPotion2;
                         break;
                     case 1:
-                        name = "Instant Damage";
-                        desc = "Damages you for 20% of your total health";
+                        name = EALocalization.MysteriousPotion3;
+                        desc = EALocalization.MysteriousPotion4;
                         break;
                     case 2:
-                        name = "Toxic";
-                        desc = "Reduces your maximum health by 10%";
+                        name = EALocalization.MysteriousPotion5;
+                        desc = EALocalization.MysteriousPotion6;
                         break;
                     case 3:
-                        name = "Healthy";
-                        desc = "Increases your maximum health by 10%";
+                        name = EALocalization.MysteriousPotion7;
+                        desc = EALocalization.MysteriousPotion8;
                         break;
                     case 4:
-                        name = "Invincibility";
-                        desc = "Makes you invincible for 10 seconds";
+                        name = EALocalization.MysteriousPotion9;
+                        desc = EALocalization.MysteriousPotion10;
                         break;
                     case 5:
-                        name = "Intensity";
-                        desc = "Increases damage by 10%";
+                        name = EALocalization.MysteriousPotion11;
+                        desc = EALocalization.MysteriousPotion12;
                         break;
                     case 6:
-                        name = "Bright";
-                        desc = "Makes you release blinding light";
+                        name = EALocalization.MysteriousPotion13;
+                        desc = EALocalization.MysteriousPotion14;
                         break;
                     case 7:
-                        name = "Poison";
-                        desc = "Poisons you";
+                        name = EALocalization.MysteriousPotion15;
+                        desc = EALocalization.MysteriousPotion16;
                         break;
                     case 8:
-                        name = "Snail";
-                        desc = "Makes you move very slowly";
+                        name = EALocalization.MysteriousPotion17;
+                        desc = EALocalization.MysteriousPotion18;
                         break;
                     case 9:
-                        name = "Lightning";
-                        desc = "Makes you move at uncontrollable speeds";
+                        name = EALocalization.MysteriousPotion19;
+                        desc = EALocalization.MysteriousPotion20;
                         break;
                 }
             }
             foreach (TooltipLine line2 in tooltips)
             {
-                if (line2.mod == "Terraria" && line2.Name.StartsWith("Tooltip"))
+                if (line2.Mod == "Terraria" && line2.Name.StartsWith("Tooltip"))
                 {
-                    line2.text = desc;
+                    line2.Text = desc;
                     if (ModContent.GetInstance<Config>().debugMode)
                     {
-                        line2.text += "\npotionNum:" + potionNum + "\ncolor:" + MyWorld.mysteriousPotionColours[potionNum];
+                        line2.Text += "\npotionNum:" + potionNum + "\ncolor:" + MyWorld.mysteriousPotionColours[potionNum];
                     }
                 }
-                if (line2.mod == "Terraria" && line2.Name.Contains("ItemName"))
+                if (line2.Mod == "Terraria" && line2.Name.Contains("ItemName"))
                 {
-                    line2.text = name + " Potion";
+                    line2.Text = name + " Potion";
                 }
             }
         }
@@ -151,7 +135,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             {
                 return false;
             }
-                return base.CanUseItem(player);
+            return base.CanUseItem(player);
         }
         public override bool ConsumeItem(Player player)
         {
@@ -168,20 +152,20 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             {
                 int amount = (int)(player.statLifeMax2 * 0.2f);
                 player.statLife -= amount;
-                if (player.statLife < 0) player.KillMe(PlayerDeathReason.ByCustomReason(player.name + " had a bad swig"),1,1);
+                if (player.statLife < 0) player.KillMe(PlayerDeathReason.ByCustomReason(NetworkText.FromLiteral(player.name + " " + EALocalization.MysteriousPotion21)), 1, 1);
                 CombatText.NewText(player.getRect(), Color.OrangeRed, -amount + " Health");
             }
-            else if (potionNum == 2)player.AddBuff(mod.BuffType("RottenHeart"), 3600);
-            else if (potionNum == 3) player.AddBuff(mod.BuffType("StrongHeart"), 3600);
-            else if (potionNum == 4) player.AddBuff(mod.BuffType("Invincibility"), 600);
-            else if (potionNum == 5) player.AddBuff(mod.BuffType("GoldenWeapons"), 1800);
-            else if (potionNum == 6) player.AddBuff(mod.BuffType("Glowing"), 1800);
+            else if (potionNum == 2) player.AddBuff(ModContent.BuffType<RottenHeart>(), 3600);
+            else if (potionNum == 3) player.AddBuff(ModContent.BuffType<StrongHeart>(), 3600);
+            else if (potionNum == 4) player.AddBuff(ModContent.BuffType<Invincibility>(), 600);
+            else if (potionNum == 5) player.AddBuff(ModContent.BuffType<GoldenWeapons>(), 1800);
+            else if (potionNum == 6) player.AddBuff(ModContent.BuffType<Glowing>(), 1800);
             else if (potionNum == 7) player.AddBuff(BuffID.Poisoned, 3600);
-            else if (potionNum == 8) player.AddBuff(mod.BuffType("SuperSlow"), 1200);
-            else if (potionNum == 9) player.AddBuff(mod.BuffType("SuperSpeed"), 600);
+            else if (potionNum == 8) player.AddBuff(ModContent.BuffType<SuperSlow>(), 1200);
+            else if (potionNum == 9) player.AddBuff(ModContent.BuffType<SuperSpeed>(), 600);
 
             modPlayer.mysteriousPotionsDrank[potionNum] = true;
-            if (ModContent.GetInstance<Config>().debugMode) item.stack++;
+            if (ModContent.GetInstance<Config>().debugMode) Item.stack++;
             return base.ConsumeItem(player);
         }
         public override void PostDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale)
@@ -197,8 +181,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             else if (MyWorld.mysteriousPotionColours[potionNum] == "Yellow") color = Color.Yellow;
             else if (MyWorld.mysteriousPotionColours[potionNum] == "Blue") color = Color.DarkBlue;
             else if (MyWorld.mysteriousPotionColours[potionNum] == "Purple") color = Color.Purple;
-
-            Texture2D tex = mod.GetTexture("Items/Consumable/Potions/MysteriousPotionContents");
+            Texture2D tex = ModContent.Request<Texture2D>("ElementsAwoken/Content/Items/Consumable/Potions/MysteriousPotionContents").Value;
             spriteBatch.Draw(tex, position, frame, color, 0f, origin, scale, SpriteEffects.None, 0f);
         }
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
@@ -214,9 +197,8 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             else if (MyWorld.mysteriousPotionColours[potionNum] == "Yellow") color = Color.LightYellow;
             else if (MyWorld.mysteriousPotionColours[potionNum] == "Blue") color = Color.DarkBlue;
             else if (MyWorld.mysteriousPotionColours[potionNum] == "Purple") color = Color.Purple;
-            Texture2D tex = mod.GetTexture("Items/Consumable/Potions/MysteriousPotionContents");
-            spriteBatch.Draw(tex, item.position, null, color, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
+            Texture2D tex = ModContent.Request<Texture2D>("ElementsAwoken/Content/Items/Consumable/Potions/MysteriousPotionContents").Value;
+            spriteBatch.Draw(tex, Item.position, null, color, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
         }
-    }*/
     }
 }

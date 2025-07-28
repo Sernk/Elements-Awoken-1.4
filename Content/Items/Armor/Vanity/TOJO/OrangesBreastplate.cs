@@ -12,9 +12,5 @@ namespace ElementsAwoken.Content.Items.Armor.Vanity.TOJO
             Item.rare = 9;
             Item.vanity = true;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("ThatOneJuicyOrange's Breastplate");
-        }
     }
 }

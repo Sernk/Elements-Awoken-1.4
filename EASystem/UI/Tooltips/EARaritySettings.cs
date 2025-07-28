@@ -1,62 +1,17 @@
-﻿using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.Utilities;
+﻿using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
-using System.Collections.Generic;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem
+namespace ElementsAwoken.EASystem.UI.Tooltips
 {
-    public class EARarity : GlobalItem
+    public class EARaritySettings : GlobalItem
     {
-        #region Rarity
-        public class Rarity12 : ModRarity
-        {
-            public override Color RarityColor => EAColors.RarityMagenta;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
-        }
-        public class Rarity13 : ModRarity
-        {
-            public override Color RarityColor => EAColors.RarityDarkRed;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
-        }
-        public class Rarity14 : ModRarity
-        {
-            public override Color RarityColor => EAColors.RarityDarkBlue;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
-        }
-        public class Rarity15 : ModRarity
-        {
-            public override Color RarityColor => EAColors.RarityBrightGreen;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
-        }
-        public class Awakened : ModRarity
-        {
-            public override Color RarityColor => new Color(220, 50, Main.DiscoB);
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
-        }
-        #endregion
         public bool awakened = false;
         private int initialRarity = 0;
         public int rare = 0;
 
-        public EARarity()
+        public EARaritySettings()
         {
             rare = 0;
             initialRarity = 0;
@@ -71,22 +26,15 @@ namespace ElementsAwoken.EASystem
         }
         public override GlobalItem Clone(Item item, Item itemClone)
         {
-            EARarity myClone = (EARarity)base.Clone(item, itemClone);
+            EARaritySettings myClone = (EARaritySettings)base.Clone(item, itemClone);
             myClone.rare = rare;
             myClone.initialRarity = initialRarity;
             myClone.awakened = awakened;
             return myClone;
         }
-        public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
-        {
-            if (awakened)
-            {
-                tooltips.Add(new TooltipLine(this.Mod, "Elements Awoken:AwakenedTip", EALocalization.Awakened) { OverrideColor = new Color?(new Color(220, 50, Main.DiscoB)) });
-            }
-        }
         public override void UpdateInventory(Item item, Player player)
         {
-            EARarity modItem = item.GetGlobalItem<EARarity>();
+            EARaritySettings modItem = item.GetGlobalItem<EARaritySettings>();
 
             int prefix = item.prefix;
             float damageBoost = 1f;
@@ -346,7 +294,7 @@ namespace ElementsAwoken.EASystem
                     damageBoost = 1.05f;
                     break;
             }
-            float prefixValue = 1f * damageBoost * (2f - speedBoost) * (2f - manaCostBoost) * sizeBoost * knockbackBoost * shootspeedBoost * (1f + (float)item.crit * 0.02f);
+            float prefixValue = 1f * damageBoost * (2f - speedBoost) * (2f - manaCostBoost) * sizeBoost * knockbackBoost * shootspeedBoost * (1f + item.crit * 0.02f);
 
             if (prefix == 62 || prefix == 69 || prefix == 73 || prefix == 77)
             {
@@ -392,6 +340,21 @@ namespace ElementsAwoken.EASystem
             //{
             //    modItem.rare = 15;
             //}
+        }
+        public static Color GetAnimatedItemColor()
+        {
+            int transitionTime = 60;
+            int colorCount = EAColors.AnimatedColors.Length;
+            int totalTime = transitionTime * colorCount;
+
+            int timer = (int)(Main.GameUpdateCount % totalTime);
+            int index = timer / transitionTime;
+            float t = timer % transitionTime / (float)transitionTime;
+
+            Color from = EAColors.AnimatedColors[index % colorCount];
+            Color to = EAColors.AnimatedColors[(index + 1) % colorCount];
+
+            return Color.Lerp(from, to, t);
         }
     }
 }

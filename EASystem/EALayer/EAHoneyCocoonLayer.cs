@@ -8,7 +8,7 @@ namespace ElementsAwoken.EASystem.EALayer
 {
     public class EAHoneyCocoonLayer : PlayerDrawLayer
     {
-        public override Position GetDefaultPosition() => new AfterParent(PlayerDrawLayers.Wings);
+        public override Position GetDefaultPosition() => new AfterParent(PlayerDrawLayers.IceBarrier);
         public override bool GetDefaultVisibility(PlayerDrawSet drawInfo)
         {
             Player drawPlayer = drawInfo.drawPlayer;

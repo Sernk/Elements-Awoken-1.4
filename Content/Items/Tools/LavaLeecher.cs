@@ -1,9 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.BossDrops.Volcanox;
 using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -11,7 +8,6 @@ namespace ElementsAwoken.Content.Items.Tools
 {
     public class LavaLeecher : ModItem
     {
-
         public override void SetDefaults()
         {
             Item.useStyle = 1;
@@ -25,14 +21,6 @@ namespace ElementsAwoken.Content.Items.Tools
             Item.value = Item.sellPrice(0, 10, 0, 0);
             Item.tileBoost += 2;
         }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Lava Leecher");
-            // Tooltip.SetDefault("Capable of soaking up an endless amount of lava");
-        }
-
-
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
@@ -41,7 +29,6 @@ namespace ElementsAwoken.Content.Items.Tools
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.Register();
         }
-
         public override void MeleeEffects(Player player, Rectangle hitbox)
         {
             if (Main.rand.Next(9) == 0)

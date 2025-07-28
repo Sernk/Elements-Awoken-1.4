@@ -3,7 +3,6 @@ using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
-using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -36,10 +35,6 @@ namespace ElementsAwoken.Content.Items.Tech.Weapons.Tier1
         {
             SoundEngine.PlaySound(new SoundStyle("ElementsAwoken/Sounds/Item/ElectricArcing"), player.position);
             return true;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Tesla Rod");
         }
         public override void AddRecipes()
         {

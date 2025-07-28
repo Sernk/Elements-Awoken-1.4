@@ -31,10 +31,6 @@ namespace ElementsAwoken.Content.Items.Tech.Weapons.Tier2
             Item.shootSpeed = 6f;
             Item.shoot = ModContent.ProjectileType<BassBoost>();
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Bass Booster");
-        }
         public override Vector2? HoldoutOffset()
         {
             return new Vector2(-1, 0);

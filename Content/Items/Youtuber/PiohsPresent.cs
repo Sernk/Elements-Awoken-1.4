@@ -1,5 +1,5 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using ElementsAwoken.Content.Mounts;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -19,8 +19,8 @@ namespace ElementsAwoken.Content.Items.Youtuber
             Item.rare = 5;
             Item.UseSound = SoundID.Item79;
             Item.noMelee = true;
-            //item.mountType = mod.MountType("ElementalDragonBunny");
-            //item.GetGlobalItem<EATooltip>().youtuber = true;
+            Item.mountType = ModContent.MountType<ElementalDragonBunny>();
+            Item.GetGlobalItem<EATooltip>().youtuber = true;
         }
 
         public override void SetStaticDefaults()
