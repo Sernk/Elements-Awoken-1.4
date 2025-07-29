@@ -43,25 +43,25 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
             {
                 if (modItem.donator)
                 {
-                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", "-Donator Item-");
+                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", EALocalization.Donator);
                     tip.OverrideColor = new Color(118, 108, 247);
                     tooltips.Insert(1, tip);
                 }
                 if (modItem.artifact)
                 {
-                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", "-Artifact Item-");
+                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", EALocalization.Artifact);
                     tip.OverrideColor = new Color(255, 154, 30);
                     tooltips.Insert(1, tip);
                 }
                 if (modItem.developer)
                 {
-                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", "-Developer Item-");
+                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", EALocalization.Developer);
                     tip.OverrideColor = new Color(214, 32, 177);
                     tooltips.Insert(1, tip);
                 }
                 if (modItem.youtuber)
                 {
-                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", "-Youtuber Item-");
+                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", EALocalization.Youtuber);
                     tip.OverrideColor = new Color(3, 160, 92);
                     tooltips.Insert(1, tip);
                 }

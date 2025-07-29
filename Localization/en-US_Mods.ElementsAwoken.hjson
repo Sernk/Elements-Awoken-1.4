@@ -529,6 +529,327 @@ Items: {
 		DisplayName: Silicon Board
 		Tooltip: ""
 	}
+
+	NebulaEmblem: {
+		DisplayName: Nebula Emblem
+		Tooltip:
+			'''
+			22% increased magic damage
+			75% decreased non-magic damage
+			'''
+	}
+
+	SolarEmblem: {
+		DisplayName: Solar Emblem
+		Tooltip:
+			'''
+			22% increased melee damage
+			75% decreased non-melee damage
+			'''
+	}
+
+	StardustEmblem: {
+		DisplayName: Stardust Emblem
+		Tooltip:
+			'''
+			22% increased summon damage
+			75% decreased non-summon damage
+			'''
+	}
+
+	VortexEmblem: {
+		DisplayName: Vortex Emblem
+		Tooltip:
+			'''
+			22% increased ranged damage
+			75% decreased non-ranged damage
+			'''
+	}
+
+	DiggerTooth: {
+		DisplayName: Digger Tooth
+		Tooltip: 15% increased mining speed
+	}
+
+	TombCrawlerTooth: {
+		DisplayName: Dune Splicer Tooth
+		Tooltip: 25% increased mining speed
+	}
+
+	ToothCharm: {
+		DisplayName: Tooth Charm
+		Tooltip: 50% increased mining speed
+	}
+
+	AlchemistsTimer: {
+		DisplayName: Alchemist's Timer
+		Tooltip: Displays your damage per second performed by debuffs
+	}
+
+	BalletShoes: {
+		DisplayName: Ballet Shoes
+		Tooltip:
+			'''
+			Jump speed increased by 40%
+			When the player jumps they get a speed boost
+			'''
+	}
+
+	BloodDiamond: {
+		DisplayName: Blood Diamond
+		Tooltip: Sucks the life of enemies around you that have under 1000 life
+	}
+
+	DryadsRadar: {
+		DisplayName: Dryad's Radar
+		Tooltip: Detects nearby evils or hallowed
+	}
+
+	FatalPendant: {
+		DisplayName: Fatal Pendant
+		Tooltip:
+			'''
+			Filled with the souls of tortured creatures
+			Gives the player buffs or debuffs randomly
+			'''
+	}
+
+	IllusiveCharm: {
+		DisplayName: Illusive Charm
+		Tooltip:
+			'''
+			Mana increased by 60
+			Magic damage increased by 10%
+			'''
+	}
+
+	CoreCharm: {
+		DisplayName: Core Charm
+		Tooltip: Occasionally fires 2 homing fire skulls at nearby enemies
+	}
+
+	EnergyGeode: {
+		DisplayName: Energy Geode
+		Tooltip:
+			'''
+			Mana increased by 60
+			Magic damage increased by 10%
+			8% increased movement speed
+			Immunity to most debuffs
+			'''
+	}
+
+	HellbatWing: {
+		DisplayName: Hellbat Wing
+		Tooltip:
+			'''
+			Jump speed increased by 200%
+			Crit chance increased by 5%
+			'''
+	}
+
+	ImmortalResolve: {
+		DisplayName: Immortal Resolve
+		Tooltip:
+			'''
+			Greatly increased life regen
+			Max life increased by 50
+			Standing still increases life regen
+			Critical strikes heal the player
+			The higher the weapon's critical strike chance, the less it heals
+			'''
+	}
+
+	InfernalChalice: {
+		DisplayName: Infernal Chalice
+		Tooltip: Anyone that walks into the ring suffers a painful death
+	}
+
+	LifeDiamond: {
+		DisplayName: Life Diamond
+		Tooltip: Sucks the life of enemies around you that have under 3000 life
+	}
+
+	LightningCloud: {
+		DisplayName: Lightning Cloud
+		Tooltip:
+			'''
+			A storm brews above you, charging you with electricity
+			When hit, you release the electricity
+			'''
+	}
+
+	VoidDiamond: {
+		DisplayName: Void Diamond
+		Tooltip: Sucks the life of enemies around you that have under 10000 life
+	}
+
+	LunarShell: {
+		DisplayName: Lunar Shell
+		Tooltip:
+			'''
+			The lower your health the less damage you take
+			5 defense
+			'''
+	}
+
+	ManaShield: {
+		DisplayName: Shield of Magic
+		Tooltip:
+			'''
+			Shield of a true mage
+			Restores mana when damaged
+			Increases pickup range for stars
+			Automatically use mana potions when needed
+			'''
+	}
+
+	PrismPolish: {
+		DisplayName: Prism Polish
+		Tooltip: Allows the Last Prism to be charged faster
+	}
+
+	RainMeter: {
+		DisplayName: Rain Meter
+		Tooltip: Displays how much longer it will be raining for
+	}
+
+	RingOfReplenishment: {
+		DisplayName: Ring of Replenishment
+		Tooltip: Has a chance to restore some life after every kill
+	}
+
+	SharktoothShackle: {
+		DisplayName: Sharktooth Shackle
+		Tooltip: Increases armor penetration by 5
+	}
+
+	SpikeBoots: {
+		DisplayName: Dungeon Walker's Boots
+		Tooltip: Immunity to spikes
+	}
+
+	SteakShield: {
+		DisplayName: Meat Shield
+		Tooltip:
+			'''
+			What?
+			4 defense
+			Enemies are more likely to target the player
+			'''
+	}
+
+	StompingSoles: {
+		DisplayName: Stomping Soles
+		Tooltip:
+			'''
+			Breaks blocks under the player when falling
+			Disable visibility to disable explosions
+			'''
+	}
+
+	TempleSpikeBoots: {
+		DisplayName: Lihzahrdian Explorer's Boots
+		Tooltip: Immunity to wooden spikes
+	}
+
+	Swordstorm: {
+		DisplayName: Swordstorm Charm
+		Tooltip:
+			'''
+			Shoots out swords on hit
+			Swords do extra damage in hardmode and expert mode
+			'''
+	}
+
+	Unity: {
+		DisplayName: Unity
+		Tooltip:
+			'''
+			The lower your health the less damage you take
+			5 defense
+			Mana increased by 100
+			Magic damage increased by 15%
+			16% increased movement speed
+			Immunity to most debuffs
+			'''
+	}
+
+	DiscordantArrow: {
+		DisplayName: Chaotron Arrow
+		Tooltip:
+			'''
+			Leaves a trail of arrows from the chaos dimension
+			Some of these arrows phase through dimensions and shoot at enemies
+			Also inflicts 'Chaotic Necrosis'
+			'''
+	}
+
+	DiscordantBullet: {
+		DisplayName: Chaotron Bullet
+		Tooltip: The chaos causes them to teleport near living organisms
+	}
+
+	DiscordantBar: {
+		DisplayName: Chaotron Alloy
+		Tooltip: A dangerous mix of Chaotron particles and terran ore
+	}
+
+	DiscordantOre: {
+		DisplayName: Chaotron Ore
+		Tooltip: A dangerous mix of Chaotron particles and terran ore
+	}
+
+	ChaoticFlare: {
+		DisplayName: Chaotic Flare
+		Tooltip: Even holding this sends pain through your body
+	}
+
+	ChaoticCrucible: {
+		DisplayName: Chaotic Crucible
+		Tooltip: ""
+	}
+
+	DisarrayI: {
+		DisplayName: Disarray I
+		Tooltip: Summons a crystalline entity to protect you\nEach crystalline entity takes up 2 minion slots
+	}
+
+	DisarrayII: {
+		DisplayName: Disarray II
+		Tooltip: Summons a crystalline entity to protect you\nEach crystalline entity takes up 2 minion slots
+	}
+
+	DisarrayIII: {
+		DisplayName: Disarray III
+		Tooltip: Summons a crystalline entity to protect you\nEach crystalline entity takes up 2 minion slots
+	}
+
+	DisarrayIV: {
+		DisplayName: Disarray IV
+		Tooltip: Summons a crystalline entity to protect you\nEach crystalline entity takes up 2 minion slots
+	}
+
+	AncientShard: {
+		DisplayName: Ancient Shard
+		Tooltip: ""
+	}
+
+	DesolationI: {
+		DisplayName: Desolation I
+		Tooltip: Turns normal arrows into shattering crystalline arrows
+	}
+
+	DesolationII: {
+		DisplayName: Desolation II
+		Tooltip: 
+				'''
+				Turns normal arrows into shattering crystalline arrows
+				Right Click to shoot a disc that bounces between enemies
+				Cooldown is shown on the item
+				25% chance not to consume ammo
+				'''
+	}
 }
 
 Tiles: {
@@ -564,6 +885,7 @@ Tiles: {
 
 	ElementalForge.MapEntry: Elemental Forge
 	HiveCratePlaced.MapEntry: Hive Crate
+	ChaoticCrucible.MapEntry: Chaotron Crucible
 }
 
 Buffs: {
@@ -863,6 +1185,16 @@ Buffs: {
 		DisplayName: Burning Hands
 		Description: You are holding a hot weapon
 	}
+
+	VariableLifeRegen: {
+		DisplayName: Life Drain
+		Description: Suck the life out of you.
+	}
+
+	CrystallineEntityBuff: {
+		DisplayName: Crystalline Entity
+		Description: A faint hum radiates off the crystal
+	}
 }
 
 NPCs: {
@@ -955,6 +1287,22 @@ Projectiles: {
 	NyanBootsTrail.DisplayName: Nyan Boots Trail
 	HoneycrestStinger.DisplayName: Stinger
 	RailgunBeam.DisplayName: Railgun
+	HealProjBlood.DisplayName: Heal
+	FireSkull.DisplayName: Fire Skull
+	InfernalFury.DisplayName: Infernal Fury
+	HealProjLife.DisplayName: Heal
+	HealProjVoid.DisplayName: Heal
+	Sword.DisplayName: Sword
+	DiscordantArrow.DisplayName: Chaotron Arrow
+	DiscordantArrowChaos.DisplayName: Chaotron Arrow
+	DiscordantBulletP.DisplayName: Chaotron Bullet
+	DisarrayBeam.DisplayName: Disarray Beam
+	DisarrayBlast.DisplayName: Disarray Blast
+	DisarrayShard.DisplayName: Disarray Shard
+	DisarrayEntity.DisplayName: Crystalline Entity
+	DesolationArrow.DisplayName: Desolation Arrow
+	DesolationShard.DisplayName: Desolation Shard
+	DesolationDisc.DisplayName: Desolation Disc
 }
 
 Configs: {
@@ -1021,6 +1369,10 @@ Tooltips: {
 	ItemEnergy: Uses
 	ItemEnergy1: energy
 	Awakened: Awakened
+	Youtuber: -Youtuber Item-
+	Developer: -Developer Item-
+	Artifact: -Artifact Item-
+	Donator: -Donator Item-
 	ElementalCapsule: couldn't withstand the power.
 	ElementalCapsule1: The forces of the world settle.
 	ElementalCapsule2: The forces of the world get twisted beyond imagination...
@@ -1062,6 +1414,11 @@ Tooltips: {
 	DeathMirror: The reflection is still too dim...
 	DeathMirror1: seconds remain
 	Railgun: burnt their face off
+}
+
+AccInfo: {
+	NEB: Nearby Evil Biomes
+	Nearby: nearby
 }
 
 Resurs: {

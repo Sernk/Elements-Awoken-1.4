@@ -23,6 +23,10 @@ namespace ElementsAwoken.Utilities
         public static string ItemEnergy = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ItemEnergy");
         public static string ItemEnergy1 = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ItemEnergy1");
         public static string Awakened = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Awakened");
+        public static string Donator = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Donator");
+        public static string Artifact = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Artifact");
+        public static string Developer = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Developer");
+        public static string Youtuber = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Youtuber");
         public static string ElementalCapsule = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ElementalCapsule");
         public static string ElementalCapsule1 = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ElementalCapsule1");
         public static string ElementalCapsule2 = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ElementalCapsule2");
@@ -56,6 +60,9 @@ namespace ElementsAwoken.Utilities
         public static string DeathMirror = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.DeathMirror");
         public static string DeathMirror1 = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.DeathMirror1");
         public static string Railgun = Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Railgun");
+
+        public static string NEB = Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
+        public static string Nearby = Language.GetTextValue("Mods.ElementsAwoken.AccInfo.Nearby");
 
         public static string Prompt = Language.GetTextValue("Mods.ElementsAwoken.Prompt");
     }

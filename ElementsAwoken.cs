@@ -2,6 +2,7 @@ using ElementsAwoken.Content.Effects;
 using ElementsAwoken.Content.Items.Tech.Weapons.Tier6;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.UI;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoMod.Cil;
@@ -96,7 +97,7 @@ namespace ElementsAwoken
             DateTime now = DateTime.Today;
             if (now.Day == 1 && now.Month == 4) aprilFools = true;
 
-            calamityEnabled = ModLoader.TryGetMod("CalamityMod", out Mod CalamityMod);
+            calamityEnabled = ModLoader.TryGetMod("CalamityMod", out Mod CalamityMod); 
             //bossChecklistEnabled = ModLoader.GetMod("BossChecklist") != null;
             //ancientsAwakenedEnabled = ModLoader.GetMod("AncientsAwakened") != null;
             //eaMusicEnabled = ModLoader.GetMod("EAMusic") != null;
@@ -1206,10 +1207,10 @@ namespace ElementsAwoken
                 {
                     if ((!modPlayer.hideEAInfo[1] || Main.playerInventory))
                     {
-                        hoverText = "Nearby Evil Biomes";
+                        hoverText = EALocalization.NEB;
                         whichInfoDrawing = infoNum;
 
-                        text2 = modPlayer.nearbyEvil + " nearby";
+                        text2 = modPlayer.nearbyEvil + " " + EALocalization.Nearby;
                     }
                     amountOfInfoEquipped++;
                     if (!modPlayer.hideEAInfo[1])
@@ -1326,7 +1327,7 @@ namespace ElementsAwoken
                             Main.spriteBatch.Draw(tex, vector, new Rectangle?(new Rectangle(0, 0, tex.Width, tex.Height)), white, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
                             if (flag14)
                             {
-                                Texture2D outline = ModContent.Request<Texture2D>("Images" + Path.DirectorySeparatorChar.ToString() + "UI" + Path.DirectorySeparatorChar.ToString() + "InfoIcon_13").Value;
+                                Texture2D outline = ModContent.Request<Texture2D>("Terraria/Images" + Path.DirectorySeparatorChar.ToString() + "UI" + Path.DirectorySeparatorChar.ToString() + "InfoIcon_13").Value;
                                 Main.spriteBatch.Draw(outline, vector - Vector2.One * 2f, null, Main.OurFavoriteColor, 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
                                 ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, FontAssets.MouseText.Value, hoverText, new Vector2(Main.mouseX, Main.mouseX), new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One, -1f, 2f);
                             }

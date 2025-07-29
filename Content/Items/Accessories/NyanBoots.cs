@@ -50,14 +50,18 @@ namespace ElementsAwoken.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
-            if (hideVisual)
+            if (!hideVisual)
             {
+                player.GetModPlayer<MyPlayer>().nyanBoots = true;
                 if (player.ownedProjectileCounts[ProjectileType<NyanBootsTrail>()] < 1 && player.GetModPlayer<MyPlayer>().nyanBoots)
                 {
                     Projectile.NewProjectile(player.GetSource_FromThis(), player.Center.X, player.Center.Y, 0f, 0f, ProjectileType<NyanBootsTrail>(), 0, 0, player.whoAmI);
                 }
             }
+            else
+            {
 
+            }
             modPlayer.eaDash = 2;
             player.accRunSpeed = 13.75f;
             player.rocketBoots = 3;
