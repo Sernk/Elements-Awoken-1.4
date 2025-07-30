@@ -71,6 +71,8 @@ namespace ElementsAwoken.EASystem.UI
 
         protected override void DrawSelf(SpriteBatch spriteBatch)
         {
+            var EALocalization = GetInstance<EALocalization>();
+
             CalculatedStyle innerDimensions = GetInnerDimensions();
 
             float uiX = innerDimensions.X;

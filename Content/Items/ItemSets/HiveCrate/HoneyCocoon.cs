@@ -19,6 +19,7 @@ namespace ElementsAwoken.Content.Items.ItemSets.HiveCrate
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             string hotkey;
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             var list = ElementsAwoken.specialAbility.GetAssignedKeys();
             if (list.Count > 0) hotkey = list[0];
             else hotkey = EALocalization.HoneyCocoon; 

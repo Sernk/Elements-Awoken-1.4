@@ -26,6 +26,7 @@ namespace ElementsAwoken.Content.Items.Consumable
         }
         public override bool CanUseItem(Player player)
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             if (NPCsGLOBAL.AnyBoss())
             {
                 NetworkText DeathReason = NetworkText.FromLiteral(player.name + " " + EALocalization.ElementalCapsule);

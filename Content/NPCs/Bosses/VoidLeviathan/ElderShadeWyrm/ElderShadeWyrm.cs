@@ -42,6 +42,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
+            var EALocalization = GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new FlavorTextBestiaryInfoElement(EALocalization.ElderShadeWyrm)
             });

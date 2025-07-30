@@ -837,8 +837,220 @@ Items: {
 	}
 
 	DesolationII: {
-		// DisplayName: Desolation I I
+		// DisplayName: Desolation II
+		/* Tooltip:
+			'''
+			Turns normal arrows into shattering crystalline arrows
+			Right Click to shoot a disc that bounces between enemies
+			Cooldown is shown on the item
+			25% chance not to consume ammo
+			''' */
+	}
+
+	DesolationIII: {
+		// DisplayName: Desolation III
+		/* Tooltip:
+			'''
+			Turns normal arrows into shattering crystalline arrows
+			50% chance not to consume ammo
+			Right Click to change modes
+			''' */
+	}
+
+	DesolationIV: {
+		// DisplayName: Desolation IV
+		/* Tooltip:
+			'''
+			Turns normal arrows into shattering crystalline arrows
+			70% chance not to consume ammo
+			Right Click to change modes
+			''' */
+	}
+
+	#TODO можешь добавить от себя описания
+	MysticBunny: {
+		// DisplayName: Mystic Bunny
 		// Tooltip: ""
+	}
+
+	AtaxiaI: {
+		// DisplayName: Ataxia I
+		// Tooltip: Every fifth attack releases lingering crystal blades
+	}
+
+	AtaxiaII: {
+		// DisplayName: Ataxia II
+		/* Tooltip:
+			'''
+			Randomly fires lingering crystal blades
+			Every fourth attack summons crystals to swirl around the player
+			''' */
+	}
+
+	AtaxiaIII: {
+		// DisplayName: Ataxia III
+		/* Tooltip:
+			'''
+			Randomly fires lingering crystal blades
+			Every fourth attack summons crystals to swirl around the player
+			Hold right click to fire a charged bolt that gets stronger the longer its held
+			''' */
+	}
+
+	AtaxiaIV: {
+		// DisplayName: Ataxia IV
+		/* Tooltip:
+			'''
+			Randomly fires lingering crystal blades
+			Every eighth attack summons crystals to swirl around the player
+			Hold right click to fire a charged bolt that gets stronger the longer its held
+			''' */
+	}
+
+	LamentI: {
+		// DisplayName: Lament I
+		// Tooltip: ""
+	}
+
+	LamentII: {
+		// DisplayName: Lament II
+		// Tooltip: ""
+	}
+
+	LamentIII: {
+		// DisplayName: Lament III
+		// Tooltip: ""
+	}
+
+	LamentIV: {
+		// DisplayName: Lament IV
+		// Tooltip: ""
+	}
+
+	AxolotlMask: {
+		// DisplayName: Axolotl Mask
+		// Tooltip: ""
+	}
+
+	GenihWatMask: {
+		// DisplayName: Genih Wat's Mask
+		/* Tooltip:
+			'''
+			Doesn't actually look like the Genih Wat, but instead the Wat's preferred goddess
+			Genih claims this goddess resides in something called a 'hyperdimension'
+			''' */
+	}
+
+	DiscordantAmber: {
+		// DisplayName: Unstable Amber
+		// Tooltip: ""
+	}
+
+	FieryJar: {
+		// DisplayName: Fiery Ashes
+		// Tooltip: ""
+	}
+
+	GlowingSlush: {
+		// DisplayName: Glowing Slush
+		// Tooltip: ""
+	}
+
+	OddWater: {
+		// DisplayName: Odd Water
+		// Tooltip: ""
+	}
+
+	SoulOfPlight: {
+		// DisplayName: Gem of the Universe
+		// Tooltip: ""
+	}
+
+	StrangeTotem: {
+		// DisplayName: Strange Idol
+		// Tooltip: ""
+	}
+
+	ChaosFlameFlask: {
+		// DisplayName: Chaos Flame Flask
+		/* Tooltip:
+			'''
+			Inflicts fire damage on attack
+			Grants immunity to fire blocks
+			Jump speed increased by 200%
+			Crit chance increased by 5%
+			''' */
+	}
+
+	DiscordantSkull: {
+		// DisplayName: Skull of the Old One
+		/* Tooltip:
+			'''
+			30% increased mining speed
+			4% increased damage
+			Reduces damage taken by 5%
+			Grants immunity to knockback
+			''' */
+	}
+
+	ElementalArcanum: {
+		// DisplayName: Elemental Arcanum
+		/* Tooltip:
+			'''
+			Damage increased by 35%
+			Critical strike chance increased by 10%
+			Maximum mana increased by 150
+			Life regen increased
+			30% increased mining speed
+			Reduces damage taken by 5%
+			Has all the effects from the Elemental Artifacts
+			''' */
+	}
+
+	EtherealShell: {
+		// DisplayName: Ethereal Shell
+		/* Tooltip:
+			'''
+			20% increased magic damage
+			Mana increased by 100
+			Restores mana when damaged
+			Increases pickup range for stars
+			Automatically use mana potions when needed
+			Emits light when underwater
+			''' */
+	}
+
+	FrozenGauntlet: {
+		// DisplayName: Frozen Gauntlet
+		/* Tooltip:
+			'''
+			Inflicts chilled and frostburn on attack
+			Stars fall from the sky when injured
+			Increased invincibility time
+			Damage increased by 15%
+			''' */
+	}
+
+	GreatThunderTotem: {
+		// DisplayName: Great Thunder Idol
+		/* Tooltip:
+			'''
+			Movement speed increased by 50%
+			Releases lightning on hit
+			Armor penetration increased by 5
+			''' */
+	}
+
+	Nanocore: {
+		// DisplayName: Nanocore
+		/* Tooltip:
+			'''
+			Damage increased by 20%
+			Reduced cooldown for healing potions
+			Life regen increased
+			When under 50% life, damage reduction increased by 15%
+			Turns the holder into a werewolf at night and a merfolk when entering water
+			''' */
 	}
 }
 
@@ -1185,6 +1397,11 @@ Buffs: {
 		// DisplayName: Crystalline Entity
 		// Description: A faint hum radiates off the crystal
 	}
+
+	AncientsCurse: {
+		// DisplayName: Ancients Curse
+		// Description: ""
+	}
 }
 
 NPCs: {
@@ -1293,6 +1510,25 @@ Projectiles: {
 	// DesolationArrow.DisplayName: Desolation Arrow
 	// DesolationShard.DisplayName: Desolation Shard
 	// DesolationDisc.DisplayName: Desolation Disc
+	// DesolationCharge1.DisplayName: Desolation
+	// DesolationCharge2.DisplayName: Desolation
+	// DesolationCharge3.DisplayName: Desolation
+	// DesolationCharge4.DisplayName: Desolation
+	// DesolationIIIHeld.DisplayName: Desolation
+	// DesolationExplosion.DisplayName: Desolation
+	// DesolationIVHeld.DisplayName: Desolation
+	// BarrenBeam.DisplayName: Barren Beam
+	// AtaxiaBall.DisplayName: Ataxia
+	// AtaxiaBlade.DisplayName: Ataxia
+	// AtaxiaCrystal.DisplayName: Ataxia
+	// AtaxiaBolt.DisplayName: Ataxia
+	// AtaxiaWave.DisplayName: Ataxia
+	// LamentBall.DisplayName: Lament
+	// LamentBallExplosive.DisplayName: Lament
+	// LamentExplosion.DisplayName: Lament
+	// LamentPierce.DisplayName: Lament
+	// LamentWave.DisplayName: Lament
+	// LamentSuperPierce.DisplayName: Lament Super Pierce
 }
 
 Configs: {
@@ -1335,10 +1571,11 @@ Keybinds: {
 	"Secondary Dash.DisplayName": Вторичный рывок
 }
 
+#TODO добавь и на английский также
 Bestiary: {
 	Boss: {
-		// VoidLeviathan: ""
-		// ElderShadeWyrm: ""
+		VoidLeviathan: Змееобразное чудовище, пришедшее в этот мир прямиком из глубин Пустоты, которого боятся все живые существа Террарии. Оно жаждет любой достаточно сильной души, чтобы ещё больше усилить свою мощь...
+		ElderShadeWyrm: Старший представитель вида Тенезмеев, которые зародились в Пустоте и росли, эволюционировали достаточно долго, чтобы вырасти до настолько огромных размеров и непредсказуемой мощи.
 	}
 
 	Enemies.VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
@@ -1404,6 +1641,10 @@ Tooltips: {
 	DeathMirror: Отражение по-прежнему тусклое...
 	DeathMirror1: секунд осталось
 	Railgun: получил ожоги пятой степени
+	// Desolation: Wave
+	// Desolation1: Charge
+	// Desolation2: Disc
+	// Desolation3: Rapid
 }
 
 AccInfo: {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
+using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -49,7 +50,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions
                     float Speed = 10f;
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                     float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                    Projectile beam = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), Mod.Find<ModProjectile>("BarrenBeam").Type, projDamage, 0f, 0)];
+                    Projectile beam = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<BarrenBeam>(), projDamage, 0f, 0)];
                     //beam.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                 }
                 else

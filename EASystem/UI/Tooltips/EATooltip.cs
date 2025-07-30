@@ -37,6 +37,7 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
         }
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             EATooltip modItem = item.GetGlobalItem<EATooltip>();
             EARaritySettings eaRarity = item.GetGlobalItem<EARaritySettings>();
             if (!item.expert)

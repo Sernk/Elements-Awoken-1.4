@@ -48,6 +48,7 @@ namespace ElementsAwoken.EASystem.Global
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
             ItemEnergy modItem = item.GetGlobalItem<ItemEnergy>();
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             if (modItem.energy > 0)
             {
                 TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Energy", EALocalization.ItemEnergy + " " + energy + " " + EALocalization.ItemEnergy1);

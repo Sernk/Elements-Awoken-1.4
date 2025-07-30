@@ -65,6 +65,8 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
         {
             MyPlayer modPlayer = Main.LocalPlayer.GetModPlayer<MyPlayer>();
 
+            var EALocalization = ModContent.GetInstance<EALocalization>();
+
             string name = MyWorld.mysteriousPotionColours[potionNum];
             string desc = EALocalization.MysteriousPotion;
             if (modPlayer.mysteriousPotionsDrank[potionNum])
@@ -140,6 +142,8 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
         public override bool ConsumeItem(Player player)
         {
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
+
+            var EALocalization = ModContent.GetInstance<EALocalization>();
 
             if (potionNum == 0)
             {

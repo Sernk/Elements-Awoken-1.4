@@ -434,8 +434,9 @@ namespace ElementsAwoken.EASystem
             {
                 if (nurseCooldown > 0)
                 {
+                    var p = ModContent.GetInstance<EALocalization>();
                     int nurseCDSeconds = nurseCooldown / 60;
-                    chatText = EALocalization.Nurse + " " + nurseCDSeconds + " " + EALocalization.Nurse1;
+                    chatText = p.Nurse + " " + nurseCDSeconds + " " + p.Nurse1;
                     return false;
                 }
                 else

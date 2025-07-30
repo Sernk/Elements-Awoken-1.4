@@ -136,7 +136,7 @@ namespace ElementsAwoken.EASystem.UI
                 Vector2 origin = eyeSize / 2f;
                 Main.spriteBatch.Draw(sanityTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);                   
             }
-
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             // === Текстовое значение ===
             string sanityText = $"{EALocalization.Sanity}: {awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
             Vector2 textSize = font.MeasureString(sanityText);

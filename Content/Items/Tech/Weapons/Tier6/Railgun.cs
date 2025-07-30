@@ -55,6 +55,7 @@ namespace ElementsAwoken.Content.Items.Tech.Weapons.Tier6
         }
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 speed, int type, int damage, float knockback)
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             SoundEngine.PlaySound(SoundID.Item113, player.position);
             Vector2 muzzleOffset = Vector2.Normalize(new Vector2(speed.X, speed.Y)) * 70f;
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();

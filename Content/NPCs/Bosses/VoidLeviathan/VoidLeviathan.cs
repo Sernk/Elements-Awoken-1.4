@@ -27,6 +27,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override string Texture { get { return "ElementsAwoken/Content/NPCs/Bosses/VoidLeviathan/VoidLeviathanHead"; } }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathan)
             });
@@ -628,7 +629,10 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     }
                     if (doGore)
                     {
-                        Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("Gores/" + this.GetType().Name).Type, 1.1f);
+                        //Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("ElementsAwoken/Gores/" + this.GetType().Name).Type, 1.1f);
+                        Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("VoidLeviathanHead").Type, 1f);
+                        Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("VoidLeviathanBody").Type, 1f);
+                        Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("VoidLeviathanTail").Type, 1f);
                         NPC.position.X = NPC.position.X + (float)(NPC.width / 2);
                         NPC.position.Y = NPC.position.Y + (float)(NPC.height / 2);
                         NPC.width = 50;

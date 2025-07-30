@@ -1172,6 +1172,7 @@ namespace ElementsAwoken
             Player player = Main.player[Main.myPlayer];
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
 
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             int amountOfInfoActive = CountAvailableInfo() - 1; // - 1 so it starts at 0 when 1 is equipped
             int amountOfInfoEquipped = CountEquippedInfo() - 1;
 

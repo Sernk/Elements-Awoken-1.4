@@ -882,6 +882,8 @@ namespace ElementsAwoken
         }
         public static void GenVoidite()
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
+
             if (Main.netMode == 1 || WorldGen.noTileActions || WorldGen.gen)
             {
                 return;
@@ -899,6 +901,7 @@ namespace ElementsAwoken
         }
         public static void GenLuminite()
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             if (Main.netMode == 1 || WorldGen.noTileActions || WorldGen.gen)
             {
                 return;

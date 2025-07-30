@@ -23,6 +23,7 @@ namespace ElementsAwoken.Content.Items.Consumable
         }
         public override bool CanUseItem(Player player)
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             if (player.GetModPlayer<MyPlayer>().voidBlood)
             {
                 Main.NewText(EALocalization.VoidbloodHeart, Color.DarkRed);

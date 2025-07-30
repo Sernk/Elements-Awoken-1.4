@@ -30,6 +30,7 @@ namespace ElementsAwoken.Content.Items.Other
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
             if (modPlayer.hellsReflectionCD > 0)
             {
+                var EALocalization = ModContent.GetInstance<EALocalization>();
                 Main.NewText(EALocalization.DeathMirror + " " + (int)modPlayer.hellsReflectionCD / 60 + " " + EALocalization.DeathMirror1, Color.DarkOrange);
                 return false;
             }

@@ -52,6 +52,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathanOrb)
             });
