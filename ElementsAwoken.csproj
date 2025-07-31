@@ -12,6 +12,9 @@
 	    <HintPath>..\ModAssemblies\CalamityMod_v2.0.5.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Content\Projectiles\Pets\BreathOfDarkness\" />
+	</ItemGroup>
 
 	<!-- References -->
 

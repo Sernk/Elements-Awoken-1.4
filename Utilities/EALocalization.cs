@@ -87,11 +87,19 @@ namespace ElementsAwoken.Utilities
         public string Desolation1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Desolation1");
         public string Desolation2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Desolation2");
         public string Desolation3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Desolation3");
+        #region VoidLeviathansAegis
+        public string VoidLeviathansAegis => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis");
+        public string VoidLeviathansAegis1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis1");
+        public string VoidLeviathansAegis2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis2");
+        #endregion
         #endregion
         #endregion
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
         public string Nearby => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.Nearby");
+        #endregion
+        #region Said
+        public string VoidLeviathanHead => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead");
         #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");

@@ -1056,6 +1056,197 @@ Items: {
 			Turns the holder into a werewolf at night and a merfolk when entering water
 			'''
 	}
+
+	AbyssalMatter: {
+		DisplayName: Abyssal Matter
+		Tooltip:
+			'''
+			Creates Abyss Portals around the player
+			If the player is hit for above 40% life, they enter Abyssal Rage granting
+			30% increased damage
+			50% increased movement speed
+			'''
+	}
+
+	AmuletOfDestruction: {
+		DisplayName: Amulet of Despair
+		Tooltip:
+			'''
+			Extinction lasers rain down from the sky
+			Greatly increased life regen when under 20% life
+			Immunity to 'Extinction Curse' and 'Hands of Despair'
+			You charge up void energy overtime
+			When the ability key is pressed:
+			80% reduced movement speed and 20% increased damage
+			Projectiles get shot in every direction
+			'''
+	}
+
+	BladeOfTheNight: {
+		DisplayName: Blade of the Night
+		Tooltip:
+			'''
+			Projectiles become more unstable the longer they are alive
+			Every 30th swing unleashes the spirit of The Void Leviathan to tear apart your enemies
+			Every 10th true melee hit deals 10x damage
+			'''
+	}
+
+	BreathOfDarkness: {
+		DisplayName: Breath of Darkness
+		Tooltip: Summons a miniature Void Leviathan
+	}
+
+	CosmicWrath: {
+		DisplayName: Cosmic Wrath
+		Tooltip:
+			'''
+			Right Click to cause all spears to explode
+			Critical strikes do 3x damage
+			'''
+	}
+
+	EndlessAbyssBlaster: {
+		DisplayName: Void Singularity Mortar
+		Tooltip: ""
+	}
+
+	ExtinctionBow: {
+		DisplayName: Extinction Bow
+		Tooltip:
+			'''
+			Turns normal arrows into extinction arrows
+			Right Click to create a void portal that follows the cursor
+			Portals can only be created every 30 seconds
+			'''
+	}
+
+	LightsAffliction: {
+		DisplayName: Light's Affliction
+		Tooltip: ""
+	}
+
+	PikeOfEternalDespair: {
+		DisplayName: Pike of Eternal Despair
+		Tooltip: ""
+	}
+
+	Reaperstorm: {
+		DisplayName: Reaperstorm
+		Tooltip: Hail death from the sky
+	}
+
+	VoidInferno: {
+		DisplayName: Void Inferno
+		Tooltip: ""
+	}
+
+	VoidLeviathanMask: {
+		DisplayName: Void Leviathan Mask
+		Tooltip: ""
+	}
+
+	VoidLeviathansAegis: {
+		DisplayName: Void Leviathan's Aegis
+		Tooltip: ""
+	}
+
+	VoidWalkersGreatmask: {
+		VoidWalkersGreatmaskSetBonus:
+			'''
+			Press the armour ability key to activate psychosis aura
+			The psychosis aura confuses enemies and inflicts extinction curse
+			'''
+		DisplayName: Void Walker's  Greatmask
+		Tooltip:
+			'''
+			25% increased melee damage
+			15% increased melee critical strike chance
+			20% increased melee speed\nMelee weapons inflict extinction curse
+			'''
+	}
+
+	VoidWalkersHelm: {
+		VoidWalkersHelmSetBonus:
+			'''
+			Press the armour ability key to activate psychosis aura
+			The psychosis aura confuses enemies and inflicts extinction curse
+			'''
+		DisplayName: Void Walker's Helm
+		Tooltip:
+			'''
+			40% increased minion damage
+			Maximum minions increased by 6
+			Massively increased minion knockback
+			Minions inflict extinction curse
+			'''
+	}
+
+	VoidWalkersHood: {
+		VoidWalkersHoodSetBonus:
+			'''
+			Press the armour ability key to activate psychosis aura
+			The psychosis aura confuses enemies and inflicts extinction curse
+			'''
+		DisplayName: Void Walker's Hood
+		Tooltip:
+			'''
+			30% increased magic damage
+			10% increased magic critical strike chance
+			20% decreased mana cost
+			100 increased mana
+			Magic weapons inflict extinction curse
+			'''
+	}
+
+	VoidWalkersVisage: {
+		VoidWalkersVisageSetBonus:
+			'''
+			Press the armour ability key to activate psychosis aura
+			The psychosis aura confuses enemies and inflicts extinction curse
+			'''
+		DisplayName: Void Walker's Visage
+		Tooltip:
+			'''
+			35% increased ranged damage
+			30% increased ranged critical strike chance
+			25% chance not to consume ammo
+			Ranged weapons inflict extinction curse
+			'''
+	}
+
+	VoidLeviathanTrophy: {
+		DisplayName: Void Leviathan Trophy
+		Tooltip: ""
+	}
+
+	VoidWalkersBreastplate: {
+		DisplayName: Void Walker's Breastplate
+		Tooltip:
+			'''
+			Life regenerates rapidly after taking more than half the players life of damage
+			Damage taken reduced by 8%
+			'''
+	}
+
+	VoidWalkersLeggings: {
+		DisplayName: Void Walker's Leggings
+		Tooltip:
+			'''
+			20% increased movement speed
+			Even greater speed when low health
+			'''
+	}
+
+	VoidLeviathanBag: {
+		DisplayName: Treasure Bag
+		Tooltip: Right Click to open
+	}
+
+	EpicHealingPotion: {
+		DisplayName: Grand Healing Potion
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -1092,6 +1283,7 @@ Tiles: {
 	ElementalForge.MapEntry: Elemental Forge
 	HiveCratePlaced.MapEntry: Hive Crate
 	ChaoticCrucible.MapEntry: Chaotron Crucible
+	VoidLeviathanTrophy.MapEntry: Void Leviathan Trophy
 }
 
 Buffs: {
@@ -1406,6 +1598,11 @@ Buffs: {
 		DisplayName: Ancients Curse
 		Description: ""
 	}
+
+	MiniVleviBuff: {
+		DisplayName: Miniature Void Leviathan
+		Description: This Void Leviathan will protect you
+	}
 }
 
 NPCs: {
@@ -1472,6 +1669,7 @@ Projectiles: {
 	VoidRunes.DisplayName: Void Runes
 	VoidOrbProj.DisplayName: Void Orb Proj
 	VoidOrbDestroyed.DisplayName: Void Orb Destroyed
+	VoidOrb.DisplayName: Void Orb
 	VoidBolt.DisplayName: Void Bolt
 	ExtinctionBlast.DisplayName: Extinction Blast
 	VoidRuneExplosion.DisplayName: Void Rune Explosion
@@ -1533,6 +1731,32 @@ Projectiles: {
 	LamentPierce.DisplayName: Lament
 	LamentWave.DisplayName: Lament
 	LamentSuperPierce.DisplayName: Lament Super Pierce
+	AmuletProj.DisplayName: Amulet Proj
+	ExtinctionBall.DisplayName: Extinction Ball
+	BabyShadeWyrmHead.DisplayName: Worm
+	VoidLeviathanProjBody.DisplayName: Void Leviathan
+	VoidLeviathanProjHead.DisplayName: Void Leviathan
+	VoidLeviathanProjTail.DisplayName: Void Leviathan
+	VleviBody.DisplayName: Vlevi Body
+	VleviHead.DisplayName: Vlevi Head
+	VleviTail.DisplayName: Vlevi Tail
+	CosmicWrathExplosion.DisplayName: Explosion
+	CosmicWrathP.DisplayName: Cosmic Wrath
+	Blackhole.DisplayName: Blackhole
+	BlackholeCreator.DisplayName: Blackhole Creator
+	BlackholeOrbit.DisplayName: Blackhole Orbit
+	ExtinctionArrow.DisplayName: Extinction Arrow
+	VoidPortal.DisplayName: Void Portal
+	VoidPortalSinewave.DisplayName: Void Wave
+	LightsAfflictionExplosion.DisplayName: TheSpine
+	LightsAfflictionP.DisplayName: Lights Affliction
+	DespairBody.DisplayName: Pike of Eternal Despair
+	DespairTip.DisplayName: Gladiolus
+	PikeOfEternalDespairP.DisplayName: Pike of Eternal Despair
+	VoidExplosion.DisplayName: Explosion
+	ReaperstormProj.DisplayName: Reaperstorm
+	VoidInfernoBlast.DisplayName: Extinction Blast
+	VoidInfernoP.DisplayName: Void Inferno
 }
 
 Configs: {
@@ -1565,6 +1789,11 @@ Biomes: {
 	EABiomes: {
 		DisplayName: E A Biomes
 		TownNPCDialogueName: the E A Biomes
+	}
+
+	Emptiness: {
+		DisplayName: Emptiness
+		TownNPCDialogueName: the Emptiness
 	}
 }
 
@@ -1649,6 +1878,20 @@ Tooltips: {
 	Desolation1: Charge
 	Desolation2: Disc
 	Desolation3: Rapid
+	VoidLeviathansAegis: <Dash Unbound>
+	VoidLeviathansAegis1:
+		'''
+		Life increased by 50
+		When under half health, defense is increased by 5%
+		Allows the player to perform a secondary dash using the
+		'''
+	VoidLeviathansAegis2:
+		'''
+		key
+		For 15 seconds after taking 500 total damage:
+		40% increased movement speed
+		20% increased damage
+		'''
 }
 
 AccInfo: {
@@ -1661,6 +1904,7 @@ Resurs: {
 	Energy: Energy
 }
 
+said.VoidLeviathanHead: Infection overcomes the world...
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 
 MyPlayerLocalization: {
@@ -1859,3 +2103,13 @@ MyWorldLocalization: {
 
 # Текста больше но сейчас он не доступен
 NPCsGLOBALLocalization.NPCsGLOBAL.NoHit.Nohit: No-hit!
+
+AwakenedModeNPCLocalization: {
+	AwakenedModeNPC: {
+		Name4: Poisonous
+		Name3: Shielded
+		Name2: Electrifying
+		Name1: Frozen
+		Name: Blazing
+	}
+}

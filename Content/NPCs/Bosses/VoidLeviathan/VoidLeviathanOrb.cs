@@ -1,11 +1,12 @@
-﻿//using ElementsAwoken.Projectiles.GlobalProjectiles;
-using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
+﻿using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.EABiomes;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
 {
@@ -23,23 +24,20 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         {
             NPC.width = 40;
             NPC.height = 40;
-
             NPC.aiStyle = -1;
-
             NPC.damage = 0;
             NPC.lifeMax = 30000;
             NPC.defense =  90;
             NPC.knockBackResist = 0f;
-
             NPC.scale = 1.5f;
             NPC.boss = true;
             NPC.HitSound = SoundID.NPCHit5;
             NPC.DeathSound = SoundID.NPCDeath56;
             NPC.noTileCollide = true;
             NPC.noGravity = true;
-            //NPC.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
-
-//            NPCsGLOBAL.ImmuneAllEABuffs(NPC);
+            SpawnModBiomes = new int[1] { ModContent.GetInstance<Emptiness>().Type };
+            NPC.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
+            NPCsGLOBAL.ImmuneAllEABuffs(NPC);
             // all vanilla buffs
             for (int k = 0; k < NPC.buffImmune.Length; k++)
             {
@@ -49,12 +47,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override void SetStaticDefaults()
         {
             // DisplayName.SetDefault("Void's Orb");
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers() { };
+            value.Position.X += 0f;
+            value.Position.Y += 10f;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             var EALocalization = ModContent.GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
-                new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathanOrb)
+                new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathanOrb),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
             });
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
@@ -90,7 +93,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                 if (MyWorld.awakenedMode) projDamage = (int)(projectileBaseDamage * 1.8f);
 
                 Projectile strike = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, Main.rand.NextFloat(-3, 3), Main.rand.NextFloat(-3, 3), ModContent.ProjectileType<VoidOrbProj>(), projDamage, 0f, Main.myPlayer)];
-                //strike.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                strike.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                 shootTimer = 60;
             }
 

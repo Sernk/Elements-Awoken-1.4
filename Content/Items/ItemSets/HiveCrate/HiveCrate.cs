@@ -24,7 +24,6 @@ namespace ElementsAwoken.Content.Items.ItemSets.HiveCrate
         {
             return true;
         }
-
         public override void RightClick(Player player)
         {
             var source = player.GetSource_OpenItem(Type);

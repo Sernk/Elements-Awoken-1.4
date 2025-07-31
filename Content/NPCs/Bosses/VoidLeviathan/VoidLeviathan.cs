@@ -1,11 +1,13 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
+using ElementsAwoken.Content.Items.Consumable.Potions;
+using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
-
-//using ElementsAwoken.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -14,9 +16,10 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.EABiomes;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
@@ -27,35 +30,45 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override string Texture { get { return "ElementsAwoken/Content/NPCs/Bosses/VoidLeviathan/VoidLeviathanHead"; } }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
-            var EALocalization = ModContent.GetInstance<EALocalization>();
+            var EALocalization = GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
-                new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathan)
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathan),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
             });
         }
-
+        public override void SetStaticDefaults()
+        {
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Scale = 0.6f,
+                PortraitScale = 0.5f,
+                CustomTexturePath = "ElementsAwoken/Extra/Bestiary/VoidLeviathanBestiary"
+            };
+            value.Position.X += 40f;
+            value.Position.Y += 20f;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
+        }
         public override void SetDefaults()
         {
             base.SetDefaults();
-
             NPC.width = 108;
             NPC.height = 134;
-
             NPC.damage = 250;
             NPC.knockBackResist = 0f;
-
             NPC.boss = true;
             NPC.lavaImmune = true;
             NPC.noGravity = true;
             NPC.noTileCollide = true;
             NPC.behindTiles = true;
-
             NPC.value = Item.buyPrice(1, 50, 0, 0);
             NPC.npcSlots = 1f;
             Music = MusicID.LunarBoss;
+            SpawnModBiomes = new int[1] { GetInstance<Emptiness>().Type };
             //music = mod.GetSoundSlot(SoundType.Music, "Sounds/Music/VoidLeviathanTheme");
             NPC.netAlways = true;
-
-            //bossBag = mod.ItemType("VoidLeviathanBag");
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
@@ -69,67 +82,27 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                 NPC.defense = 67;
             }
         }
-        /*public override void NPCLoot()
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            if (Main.expertMode)
-            {
-                npc.DropBossBags();
-                if (Main.rand.Next(10) == 0) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<VoidCrystal>());
-            }
-            else
-            {
-                int choice = Main.rand.Next(10);
-                switch (choice)
-                {
-                    case 0:
-                        choice = ItemType<VoidInferno>();
-                        break;
-                    case 1:
-                        choice = ItemType<EndlessAbyssBlaster>();
-                        break;
-                    case 2:
-                        choice = ItemType<ExtinctionBow>();
-                        break;
-                    case 3:
-                        choice = ItemType<Reaperstorm>();
-                        break;
-                    case 4:
-                        choice = ItemType<BladeOfTheNight>();
-                        break;
-                    case 5:
-                        choice = ItemType<CosmicWrath>();
-                        break;
-                    case 6:
-                        choice = ItemType<PikeOfEternalDespair>();
-                        break;
-                    case 7:
-                        choice = ItemType<VoidLeviathansAegis>();
-                        break;
-                    case 8:
-                        choice = ItemType<BreathOfDarkness>(); 
-                        break;
-                    case 9:
-                        choice = ItemType<LightsAffliction>();
-                        break;
-                }
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, choice);
-                if (Main.rand.Next(7) == 0) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<VoidLeviathanMask>());
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<VoidLeviathanHeart>(), 1);
-
-                if (Main.rand.Next(10) == 0) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<VoidLeviathanTrophy>());
-            }
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, Masiv.LeviLoot));
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
+            npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
+            npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));
+            npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanHeart>()));
+            npcLoot.Add(ItemDropRule.Common(ItemType<VoidEssence>(), 1000000));
+        }
+        public override void OnKill()
+        {
             int essenceAmount = Main.rand.Next(2, 8);
             if (Main.expertMode) essenceAmount = Main.rand.Next(5, 13);
             if (MyWorld.awakenedMode) essenceAmount = Main.rand.Next(8, 20);
-            VoidEssence essence = (VoidEssence)Main.item[Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<VoidEssence>(), essenceAmount)].modItem;
-            essence.variant = 1;
-
+            Item.NewItem(Const.NPCs(NPC), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ItemType<VoidEssence>(), essenceAmount);
             if (!MyWorld.downedVoidLeviathan)
             {
                 ElementsAwoken.encounter = 3;
                 ElementsAwoken.encounterTimer = 3600;
                 ElementsAwoken.DebugModeText("encounter 3 start");
-                Main.NewText("Infection overcomes the world...", new Color(235, 70, 106));
+                Main.NewText(GetInstance<EALocalization>().VoidLeviathan, new Color(235, 70, 106));
             }
             if (MyWorld.voidLeviathanKills < 3)
             {
@@ -137,24 +110,21 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             }
             MyWorld.voidLeviathanKills++;
             MyWorld.downedVoidLeviathan = true;
-            if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData); // Immediately inform clients of new world state.
-
-        }
+            if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
+        }  
         public override void BossLoot(ref string name, ref int potionType)
         {
-            potionType = mod.ItemType("EpicHealingPotion");
-        }*/
+            potionType = ItemType<EpicHealingPotion>();
+        }
         public override bool CheckActive()
         {
             return false;
         }
-
         public override void Init()
         {
             base.Init();
             head = true;
         }
-
         private int projectileBaseDamage = 80;
 
         private float attackCounter;
@@ -172,7 +142,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             writer.Write(orbTimer);
             writer.Write(spawnNPCs);
         }
-
         public override void ReceiveExtraAI(BinaryReader reader)
         {
             attackCounter = reader.ReadSingle();
@@ -182,7 +151,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             orbTimer = reader.ReadSingle();
             spawnNPCs = reader.ReadInt32();
         }
-
         public override void CustomBehavior()
         {
             Player P = Main.player[NPC.target];
@@ -259,7 +227,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     projVel.Normalize();
                     projVel *= 8f;
                     Projectile strike = Main.projectile[Projectile.NewProjectile(s, projPos.X, projPos.Y, projVel.X, projVel.Y, ProjectileType<VoidStrike>(), projDamage, 6f, 0)];
-                    //strike.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                    strike.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                 }
                 strikeCircleTimer = 0;
             }
@@ -291,7 +259,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     if (MyWorld.awakenedMode) projDamage = (int)(projectileBaseDamage * 2f);
 
                     Projectile rune = Main.projectile[Projectile.NewProjectile(s, P.Center.X + Main.rand.Next(-600, 600), P.Center.Y + Main.rand.Next(-600, 600), Main.rand.NextFloat(-2f, 2f), Main.rand.NextFloat(-2f, 2f), ProjectileType<VoidRunes>(), projDamage, 6f, Main.myPlayer)];
-                    //rune.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                    rune.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                 }
             }
             if (!NPC.AnyNPCs(ModContent.NPCType<VoidLeviathanOrb>())) orbTimer++;
@@ -312,7 +280,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                         int maxOrbDistance = 1500;
 
                         Vector2 orbPos = new Vector2(P.Center.X + Main.rand.Next(-maxOrbDistance, maxOrbDistance), 2700 + Main.rand.Next(-maxOrbDistance, maxOrbDistance));
-
                         Vector2 worldMapSize = new Vector2(Main.maxTilesX * 16, Main.maxTilesY * 16);
                         if (orbPos.X < 0) orbPos.X = Main.rand.Next(100, maxOrbDistance / 2);
                         else if (orbPos.X > worldMapSize.X) orbPos.X = worldMapSize.X- Main.rand.Next(200, maxOrbDistance / 2);
@@ -346,7 +313,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     }
                     orbTimer = 0;
                 }
-
                 if (spawnNPCs == 1)
                 {
                     NPC.NewNPC(s, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<ElderShadeWyrmHead>(), NPC.whoAmI);
@@ -435,20 +401,16 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override void SetDefaults()
         {
             base.SetDefaults();
-
             NPC.width = 80;
             NPC.height = 100;
-
             NPC.damage = 150;
             NPC.defense = 10;
             NPC.knockBackResist = 0.0f;
-
             NPC.behindTiles = true;
             NPC.noTileCollide = true;
             NPC.netAlways = true;
             NPC.noGravity = true;
             NPC.dontCountMe = true;
-
             NPC.takenDamageMultiplier = 3;
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
@@ -508,8 +470,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             tail = true;
         }
     }
-
-    // I made this 2nd base class to limit code repetition.
     public abstract class VoidLeviathan : VoidLeviathanAI
     {
         public override void SetDefaults()
@@ -523,20 +483,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             NPC.HitSound = SoundID.NPCHit4;
             NPC.DeathSound = SoundID.NPCDeath6;
 
-           // NPCsGLOBAL.ImmuneAllEABuffs(NPC);
-            // all vanilla buffs
+            NPCsGLOBAL.ImmuneAllEABuffs(NPC);
             for (int k = 0; k < NPC.buffImmune.Length; k++)
             {
                 NPC.buffImmune[k] = true;
             }
-            //npc.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
+            NPC.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Void Leviathan");
             Main.npcFrameCount[NPC.type] = 3;
         }
-
         public override void Init()
         {
             wormLength = 60;
@@ -558,11 +515,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
 
     public abstract class VoidLeviathanAI : ModNPC
     {
-        /* ai[0] = follower
-		 * ai[1] = following
-		 * ai[2] = distanceFromTail
-		 * ai[3] = head
-		 */
         public bool head;
         public bool tail;
         public int wormLength;
@@ -608,12 +560,10 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                 NPC.localAI[1] = 1f;
                 Init();
             }
-            //Main.NewText(npc.Center + " | " + new Vector2(wanderX,wanderY));
             int phase = 0;
             if (aiTimer > 600 && aiTimer <= 1020) phase = 1;
             if (aiTimer > 1020 && aiTimer <= 1440) phase = 2;
             if (aiTimer > 1440) phase = 3;
-            //Main.NewText(state);
 
             if (headNPC.life <= headNPC.lifeMax * 0.3f && headNPC.life != 0)
             {
@@ -624,12 +574,11 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     {
                         VoidLeviathanBody vleviBody = (VoidLeviathanBody)NPC.ModNPC;
                         int modNum = 4;
-                        if (ModContent.GetInstance<Config>().lowDust) modNum = 2;
+                        if (GetInstance<Config>().lowDust) modNum = 2;
                         if (vleviBody.bodyNum % modNum == 0) doGore = false;
                     }
                     if (doGore)
                     {
-                        //Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("ElementsAwoken/Gores/" + this.GetType().Name).Type, 1.1f);
                         Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("VoidLeviathanHead").Type, 1f);
                         Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("VoidLeviathanBody").Type, 1f);
                         Gore.NewGore(NPC.GetSource_Death(), NPC.position, NPC.velocity, Mod.Find<ModGore>("VoidLeviathanTail").Type, 1f);
@@ -768,8 +717,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     NPC.localAI[2]++;
                 }
             }
-            //if (MathHelper.Distance(npc.Center.Y, P.Center.Y) > 2000 && phase == 0) speedAI *= 0.3f; // to stop him going turbo speed
-
             Vector2 vector18 = new Vector2(NPC.position.X + (float)NPC.width * 0.5f, NPC.position.Y + (float)NPC.height * 0.5f);
             float targetX = P.Center.X;
             float targetY = P.Center.Y;
@@ -866,8 +813,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                                 NPC.velocity.X = NPC.velocity.X - turnSpeedAI * xTurnSpeedScale;
                             }
                         }
- 
-
                         if (NPC.velocity.Y < targetY)
                         {
                             NPC.velocity.Y = NPC.velocity.Y + turnSpeedAI * yTurnSpeedScale;
