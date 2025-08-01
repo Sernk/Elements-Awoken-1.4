@@ -58,11 +58,6 @@ namespace ElementsAwoken.Content.Items.Ancient.Kirvein
                 }
             }
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Desolation IV");
-            // Tooltip.SetDefault("Turns normal arrows into shattering crystalline arrows\n70% chance not to consume ammo\nRight Click to change modes");
-        }
         public override bool AltFunctionUse(Player player)
         {
                 return true;
@@ -199,7 +194,7 @@ namespace ElementsAwoken.Content.Items.Ancient.Kirvein
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<DesolationIII>(), 1);
-            recipe.AddIngredient(ModContent.ItemType<AncientShard>(), 5);
+            recipe.AddIngredient(ModContent.ItemType<BossDrops.Ancients.AncientShard>(), 5);
             recipe.AddIngredient(ModContent.ItemType<VoiditeBar>(), 4);
             recipe.AddIngredient(ModContent.ItemType<DiscordantBar>(), 20);
             recipe.AddTile(ModContent.TileType<Tiles.Crafting.ChaoticCrucible>());

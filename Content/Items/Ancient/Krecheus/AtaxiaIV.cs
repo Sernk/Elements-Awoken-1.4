@@ -111,7 +111,7 @@ namespace ElementsAwoken.Content.Items.Ancient.Krecheus
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<AtaxiaIII>(), 1);
-            recipe.AddIngredient(ModContent.ItemType<AncientShard>(), 5);
+            recipe.AddIngredient(ModContent.ItemType<BossDrops.Ancients.AncientShard>(), 5);
             recipe.AddIngredient(ModContent.ItemType<VoiditeBar>(), 4);
             recipe.AddIngredient(ModContent.ItemType<DiscordantBar>(), 20);
             recipe.AddTile(ModContent.TileType<Tiles.Crafting.ChaoticCrucible>());

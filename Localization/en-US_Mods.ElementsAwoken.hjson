@@ -1247,6 +1247,114 @@ Items: {
 		DisplayName: Grand Healing Potion
 		Tooltip: ""
 	}
+
+	Chromacast: {
+		Tooltip:
+			'''
+			Deals more damage the closer you are to the enemy
+			Dont get too close to the explosion
+			'''
+		DisplayName: Chromacast
+	}
+
+	GiftOfTheArchaic: {
+		Tooltip: ""
+		DisplayName: Gift Of The Archaic
+	}
+
+	CrystallineLocket: {
+		Tooltip: Press the special ability key to make the player always critically strike for 10 seconds
+		DisplayName: Crystalline Locket
+	}
+
+	CrystalAmalgamate: {
+		Tooltip: ""
+		DisplayName: Crystal Amalgamate
+	}
+
+	Shimmerspark: {
+		Tooltip: Hold Left Click to charge a reality breaking blast
+		DisplayName: Shimmerspark
+	}
+
+	TheFundamentals: {
+		Tooltip: Hold the weapon in your hand without dealing damage for 10 seconds for your next strike to do 8x damage
+		DisplayName: The Fundamentals
+	}
+
+	AncientsBag: {
+		Tooltip: Right Click to open
+		DisplayName: Treasure Bag
+	}
+
+	AqueousMask: {
+		DisplayName: Aqueous' Crystal
+		Tooltip:
+			'''
+			Summons the 4 minions of Aqueous to defend you
+			You leave behind a trail of bubbles
+			'''
+	}
+
+	AqueousTrophy: {
+		DisplayName: Aqueous Trophy
+		Tooltip: ""
+	}
+
+	BrinyBuster: {
+		DisplayName: Briny Buster
+		Tooltip: Strike your enemies with the force of the ocean
+	}
+
+	BubblePopper: {
+		DisplayName: Bubble Popper
+		Tooltip: Turns bullets into water bolts that explode into bubbles on impact
+	}
+
+	HighTide: {
+		DisplayName: High Tide
+		Tooltip: Throws two chakrams that explode into bubbles on enemy hit
+	}
+
+	OceansRazor: {
+		DisplayName: Ocean's Razor
+		Tooltip: Fires three explosive water shots
+	}
+
+	TheWave: {
+		DisplayName: Overflow
+		Tooltip: ""
+	}
+
+	Varee: {
+		DisplayName: Varee
+		Tooltip: Turns normal arrows into splitting aquatic arrows
+	}
+
+	AqueousBag: {
+		DisplayName: Treasure Bag
+		Tooltip: Right Click to open
+	}
+
+	HeatSink: {
+		DisplayName: Heat Sink
+		Tooltip: ""
+	}
+
+	LRM: {
+		DisplayName: Laser Refraction Matrix
+		Tooltip: ""
+	}
+
+	Transformer: {
+		DisplayName: Transformer
+		Tooltip: ""
+	}
+
+	Transistor: {
+		DisplayName: Transistor
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -1284,6 +1392,7 @@ Tiles: {
 	HiveCratePlaced.MapEntry: Hive Crate
 	ChaoticCrucible.MapEntry: Chaotron Crucible
 	VoidLeviathanTrophy.MapEntry: Void Leviathan Trophy
+	AqueousTrophy.MapEntry: Aqueous Trophy
 }
 
 Buffs: {
@@ -1603,6 +1712,16 @@ Buffs: {
 		DisplayName: Miniature Void Leviathan
 		Description: This Void Leviathan will protect you
 	}
+
+	ArchaicProtectionCD: {
+		Description: You cannot encase yourself in crystals
+		DisplayName: Archaic Protection Cooldown
+	}
+
+	AqueousMinions: {
+		DisplayName: Aqueous's Minions
+		Description: The minions of Aqueous defend you
+	}
 }
 
 NPCs: {
@@ -1757,6 +1876,24 @@ Projectiles: {
 	ReaperstormProj.DisplayName: Reaperstorm
 	VoidInfernoBlast.DisplayName: Extinction Blast
 	VoidInfernoP.DisplayName: Void Inferno
+	BigExplosion.DisplayName: Explosion
+	ChromacastBall.DisplayName: Chromacast
+	ShimmersparkStrike.DisplayName: Shimmerspark
+	ShimmersparkHeld.DisplayName: Shimmerspark
+	ShimmerShrapnel.DisplayName: Shimmerspark
+	FundementalStrike.DisplayName: The Fundementals
+	AncientShard.DisplayName: Ancient Shard
+	AqueousMinionFriendly1.DisplayName: Aqueous Minion
+	AqueousMinionFriendly2.DisplayName: Aqueous Minion
+	AqueousMinionFriendly3.DisplayName: Aqueous Minion
+	AqueousMinionFriendly4.DisplayName: Aqueous Minion
+	WaterballFriendly.DisplayName: Waterball
+	BrinyBusterP.DisplayName: Briny Buster
+	BubblePopperP.DisplayName: Bubble Popper
+	HighTideP.DisplayName: High Tide
+	AquaticArrow.DisplayName: Aquatic Arrow
+	AquaticArrow2.DisplayName: Aquatic Arrow
+	Watershot.DisplayName: Watershot
 }
 
 Configs: {
@@ -1891,6 +2028,12 @@ Tooltips: {
 		For 15 seconds after taking 500 total damage:
 		40% increased movement speed
 		20% increased damage
+		'''
+	GiftOfTheArchaic: Press
+	GiftOfTheArchaic1:
+		'''
+		to encase the player in a crystal that knocks enemies away from the player and prevents damage
+		Hover over the item while equipped and press ctrl + key to rebind
 		'''
 }
 

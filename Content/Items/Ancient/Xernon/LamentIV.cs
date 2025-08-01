@@ -54,7 +54,7 @@ namespace ElementsAwoken.Content.Items.Ancient.Xernon
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ModContent.ItemType<LamentIII>(), 1);
-            recipe.AddIngredient(ModContent.ItemType<AncientShard>(), 5);
+            recipe.AddIngredient(ModContent.ItemType<BossDrops.Ancients.AncientShard>(), 5);
             recipe.AddIngredient(ModContent.ItemType<VoiditeBar>(), 4);
             recipe.AddIngredient(ModContent.ItemType<DiscordantBar>(), 20);
             recipe.AddTile(ModContent.TileType<Tiles.Crafting.ChaoticCrucible>());

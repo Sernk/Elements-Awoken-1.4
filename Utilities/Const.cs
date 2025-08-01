@@ -17,6 +17,14 @@ namespace ElementsAwoken
         {
             ItemID.Sets.AnimatesAsSoul[type] = true;
         }
+        public static void Longer(int type)
+        {
+            BuffID.Sets.LongerExpertDebuff[type] = true;
+        }
+        public static void CanBeCleared(int type)
+        {
+            BuffID.Sets.NurseCannotRemoveDebuff[type] = true;
+        }
         public static void DSCursor(int type)
         {
             TileID.Sets.DisableSmartCursor[type] = true;

@@ -1,7 +1,6 @@
-﻿using CalamityMod.Projectiles.DraedonsArsenal;
-using ElementsAwoken.Utilities;
-using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Loot;
+using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
@@ -12,16 +11,11 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
     {
         public override void SetDefaults()
         {
-            Item.maxStack = 99;
+            Item.maxStack = 9999;
             Item.consumable = true;
             Item.width = 24;
             Item.height = 24;
             Item.expert = true;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Treasure Bag");
-            // Tooltip.SetDefault("Right Click to open");
         }
         public override bool CanRightClick()
         {

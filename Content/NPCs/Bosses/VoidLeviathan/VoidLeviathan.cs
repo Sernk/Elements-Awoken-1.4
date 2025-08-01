@@ -39,6 +39,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         }
         public override void SetStaticDefaults()
         {
+            Main.npcFrameCount[NPC.type] = 3;
             NPCID.Sets.BossBestiaryPriority.Add(Type);
             NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
             {
