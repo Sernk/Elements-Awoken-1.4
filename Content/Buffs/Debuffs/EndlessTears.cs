@@ -10,14 +10,11 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
     {
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Endless Tears");
-            // Description.SetDefault("The sadness pulls you down");  
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
-            BuffID.Sets.LongerExpertDebuff[Type] = true;
+            Const.Longer(Type);
         }
-
         public override void Update(NPC npc, ref int buffIndex)
         {
             npc.GetGlobalNPC<NPCsGLOBAL>().endlessTears = true;

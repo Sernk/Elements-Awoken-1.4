@@ -50,7 +50,7 @@ namespace ElementsAwoken.Content.Projectiles
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Main.spriteBatch.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, prevRot[k], drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, prevRot[k], drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

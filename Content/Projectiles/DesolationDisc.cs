@@ -1,9 +1,7 @@
 ﻿using ElementsAwoken.Content.Dusts.Ancients;
 using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -140,7 +138,6 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            // waves
             float numDusts = 48f;
             Vector2 shape = new Vector2(0.5f, 6f);
             float size = 1.5f;
@@ -159,8 +156,6 @@ namespace ElementsAwoken.Content.Projectiles
                     dust.velocity = Projectile.velocity * 0f + vector11.SafeNormalize(Vector2.UnitY) * size * ((l + 1) * 0.4f);
                 }
             }
-
-            // circles
             for (int i = 0; i < 10; i++)
             {
                 Vector2 position = Projectile.Center + Main.rand.NextVector2Circular(Projectile.width * 0.5f, Projectile.height * 0.5f);

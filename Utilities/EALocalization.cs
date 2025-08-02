@@ -106,6 +106,14 @@ namespace ElementsAwoken.Utilities
         #region Said
         public string VoidLeviathanHead => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead");
         #endregion
+        #region SetBonus
+        public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");
+        public string CosmicalusVisor => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.CosmicalusVisor");
+        public string VoidWalkersVisage => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersVisage");
+        public string VoidWalkersHood => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersHood");
+        public string VoidWalkersHelm => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersHelm");
+        public string VoidWalkersGreatmask => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersGreatmask");
+        #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");
         #endregion

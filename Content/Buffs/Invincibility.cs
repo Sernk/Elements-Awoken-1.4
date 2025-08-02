@@ -1,17 +1,10 @@
-using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Buffs
 {
     public class Invincibility : ModBuff
     {
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Invincibility");
-            // Description.SetDefault("You cant be damaged");
-        }
         public override void Update(Player player, ref int buffIndex)
         {
             player.shadowDodge = true;

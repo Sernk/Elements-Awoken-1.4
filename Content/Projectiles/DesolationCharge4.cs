@@ -12,22 +12,15 @@ namespace ElementsAwoken.Content.Projectiles
 {
     public class DesolationCharge4 : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.ignoreWater = true;
             Projectile.minion = true;
-
             Projectile.penetrate = 6;
             Projectile.timeLeft = 600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Desolation");
         }
         public override void AI()
         {
@@ -60,7 +53,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         private void Explode()
         {
-            Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X - Projectile.velocity.X * 1.5f, Projectile.Center.Y- Projectile.velocity.Y * 1.5f, 0f, 0f, ModContent.ProjectileType<DesolationExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X - Projectile.velocity.X * 1.5f, Projectile.Center.Y- Projectile.velocity.Y * 1.5f, 0f, 0f, ModContent.ProjectileType<DesolationExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item14, Projectile.position);           
         }
     }

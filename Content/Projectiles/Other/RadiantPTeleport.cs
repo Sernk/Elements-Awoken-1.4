@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace ElementsAwoken.Content.Projectiles.Other
 {
@@ -14,19 +10,16 @@ namespace ElementsAwoken.Content.Projectiles.Other
         {
             Projectile.width = 24;
             Projectile.height = 44;
-
             Projectile.hostile = true;
             Projectile.tileCollide = false;
-
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Radiance");
             Main.projFrames[Projectile.type] = 6;
         }
-        public override bool? CanDamage()/* tModPorter Suggestion: Return null instead of true */
+        public override bool? CanDamage()
         {
             return false;
         }

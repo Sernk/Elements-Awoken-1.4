@@ -101,7 +101,7 @@ namespace ElementsAwoken.Content.Projectiles.Thrown
         }
         public override void OnKill(int timeLeft)
         {
-            var s = Projectile.GetSource_FromThis();
+            var s = Const.Proj(Projectile);
             Projectile.NewProjectile(s, Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<CosmicWrathExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item14, Projectile.position);
             for (int num369 = 0; num369 < 20; num369++)

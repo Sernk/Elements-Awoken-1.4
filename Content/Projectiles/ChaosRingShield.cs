@@ -1,9 +1,5 @@
 ﻿using ElementsAwoken.Content.Buffs;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -23,10 +19,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.timeLeft = 10000;
             Projectile.DamageType = DamageClass.Magic;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Ring of Chaos");
-        }
         public override void AI()
         {
             Player P = Main.player[Projectile.owner];
@@ -41,7 +33,7 @@ namespace ElementsAwoken.Content.Projectiles
                 {
                     int distance = 16;
 
-                    orbital = Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<ChaosRingSwirl>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
+                    orbital = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<ChaosRingSwirl>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
                 }
                 Projectile.ai[0] = 1;
             }

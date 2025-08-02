@@ -19,10 +19,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.timeLeft = 100000;
             Projectile.alpha = 255;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Lightning Cloud");
-        }
         public override void AI()
         {
             Player parent = Main.player[(int)Projectile.ai[1]];
@@ -39,7 +35,7 @@ namespace ElementsAwoken.Content.Projectiles
 
             Projectile.ai[0] += 3f;
             int distance = 25;
-            double rad = Projectile.ai[0] * (Math.PI / 180); // angle to radians
+            double rad = Projectile.ai[0] * (Math.PI / 180);
             Projectile.position.X = parent.Center.X - (int)(Math.Cos(rad) * distance) - Projectile.width / 2;
             Projectile.position.Y = parent.Center.Y - (int)(Math.Sin(rad) * distance) - Projectile.height / 2;
 

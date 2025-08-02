@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -26,10 +24,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.penetrate = -1;
             Projectile.timeLeft = 4000;
             Projectile.extraUpdates = 2;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Andromeda");
         }
         public override void AI()
         {

@@ -3,7 +3,6 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
 using Terraria.GameContent;
-using Terraria.GameContent.Achievements;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -11,10 +10,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
 {
     public class BarrenBeam : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Barren Beam");
-        }
         public override void SetDefaults()
         {
             Projectile.width = 36;
@@ -38,10 +33,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
         {
             Player player = Main.player[Projectile.owner];
             Projectile.ai[1] += 6f * multiplier;
-            /*if (projectile.ai[1] == charge)
-            {
-                projectile.hostile = true;
-            }*/
             if (Projectile.ai[1] >= charge + 60f && multiplier == 1)
             {
                 multiplier = -1;
@@ -61,7 +52,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                 sampledLength += sampleArray[i];
             }
             sampledLength /= sampleArray.Length;
-            float amount = 0.75f; // last prism is 0.75 rather than 0.5?
+            float amount = 0.75f;
             LaserLength = MathHelper.Lerp(LaserLength, sampledLength, amount);
 
             #region Dusts
@@ -103,10 +94,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
         {
             return DelegateMethods.CutTiles(x, y);
         }
-        public override void ModifyHitPlayer(Player target, ref Player.HurtModifiers modifiers)
-        {
-            //damage = (int)(target.statLifeMax2 * 0.75f) + target.statDefense;
-        }
         public override bool CanHitPlayer(Player target)
         {
             if (Projectile.ai[1] < charge) return false;
@@ -124,7 +111,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
             float num228 = LaserLength;
             Color color44 = Color.White * 0.8f * (Projectile.ai[1] >= charge ? 1f : 0.5f) ;
             Vector2 arg_AF99_2 = Projectile.Center + new Vector2(0, Projectile.gfxOffY) - Main.screenPosition;
-            Main.spriteBatch.Draw(tailTex, arg_AF99_2, null, color44, Projectile.rotation, tailTex.Size() / 2f, new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
+            Const.Sb.Draw(tailTex, arg_AF99_2, null, color44, Projectile.rotation, tailTex.Size() / 2f, new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
             num228 -= (float)(tailTex.Height / 2 + headTex.Height) * Projectile.scale;
             Vector2 value20 = Projectile.Center + new Vector2(0, Projectile.gfxOffY);
             value20 += Projectile.velocity * Projectile.scale * (float)tailTex.Height / 2f;
@@ -138,7 +125,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                     {
                         rectangle7.Height = (int)(num228 - num229);
                     }
-                    Main.spriteBatch.Draw(beamTex, value20 - Main.screenPosition, new Microsoft.Xna.Framework.Rectangle?(rectangle7), color44, Projectile.rotation, new Vector2((float)(rectangle7.Width / 2), 0f), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
+                    Const.Sb.Draw(beamTex, value20 - Main.screenPosition, new Microsoft.Xna.Framework.Rectangle?(rectangle7), color44, Projectile.rotation, new Vector2((float)(rectangle7.Width / 2), 0f), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
                     num229 += (float)rectangle7.Height * Projectile.scale;
                     value20 += Projectile.velocity * (float)rectangle7.Height * Projectile.scale;
                     rectangle7.Y += 16;
@@ -148,7 +135,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                     }
                 }
             }
-            Main.spriteBatch.Draw(headTex, value20 - Main.screenPosition, null, color44, Projectile.rotation, headTex.Frame(1, 1, 0, 0).Top(), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
+            Const.Sb.Draw(headTex, value20 - Main.screenPosition, null, color44, Projectile.rotation, headTex.Frame(1, 1, 0, 0).Top(), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
             return false;
         }
     }

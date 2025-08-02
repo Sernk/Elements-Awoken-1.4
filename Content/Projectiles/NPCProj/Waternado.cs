@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles.NPCProj
 {
     public class Waternado : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 150;
@@ -23,14 +20,13 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Waternado");
             Main.projFrames[Projectile.type] = 6;
         }
         public override void AI()
         {
-            int num606 = 10; // scaling
-            int num607 = 15; // scaling
-            float num608 = 1f; // scaling
+            int num606 = 10;
+            int num607 = 15;
+            float num608 = 1f;
             int num609 = 150;
             int num610 = 42;
             if (Projectile.velocity.X != 0f)
@@ -98,13 +94,13 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                 float num611 = ((float)(num606 + num607) - Projectile.ai[1] + 1f) * num608 / (float)(num607 + num606);
                 center.Y -= (float)num610 * num611 / 2f;
                 center.Y += 2f;
-                Projectile.NewProjectile(Projectile.GetSource_FromThis(), center.X, center.Y, Projectile.velocity.X, Projectile.velocity.Y, Projectile.type, Projectile.damage, Projectile.knockBack, Projectile.owner, 10f, Projectile.ai[1] - 1f);
+                Projectile.NewProjectile(Const.Proj(Projectile), center.X, center.Y, Projectile.velocity.X, Projectile.velocity.Y, Projectile.type, Projectile.damage, Projectile.knockBack, Projectile.owner, 10f, Projectile.ai[1] - 1f);
             }
             if (Projectile.ai[0] <= 0f)
             {
                 float num615 = 0.104719758f;
                 float num616 = (float)Projectile.width / 5f;
-                if (Projectile.type == 386) // change this
+                if (Projectile.type == 386)
                 {
                     num616 *= 2f;
                 }

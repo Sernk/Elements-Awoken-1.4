@@ -1,5 +1,4 @@
-﻿using ElementsAwoken.Content.NPCs;
-using ElementsAwoken.Content.Projectiles.Other;
+﻿using ElementsAwoken.Content.Projectiles.Other;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using Terraria;
@@ -13,12 +12,9 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
     {
         public override void SetStaticDefaults()
         {
-            //DisplayName.SetDefault("Starstruck");
-            //Description.SetDefault("Your will bends to your opponents\nEach hit by an enemy increases the damage the player takes");
             Main.debuff[Type] = true;
-            BuffID.Sets.LongerExpertDebuff[Type] = true;
+            Const.Longer(Type);
         }
-
         public override void Update(Player player, ref int buffIndex)
         {
             player.GetModPlayer<MyPlayer>().starstruck = true;
@@ -32,7 +28,7 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
             }
             if (Main.rand.Next(10) == 0)
             {
-                Projectile.NewProjectile(player.GetSource_FromThis(), player.position.X + Main.rand.Next(player.width), player.position.Y + Main.rand.Next(player.height), Main.rand.NextFloat(-1,1), Main.rand.NextFloat(-1, 1), ProjectileType<StarstruckP>(), 0, 0, Main.myPlayer, Main.rand.Next(0, 5));
+                Projectile.NewProjectile(Const.Players(player), player.position.X + Main.rand.Next(player.width), player.position.Y + Main.rand.Next(player.height), Main.rand.NextFloat(-1,1), Main.rand.NextFloat(-1, 1), ProjectileType<StarstruckP>(), 0, 0, Main.myPlayer, Main.rand.Next(0, 5));
             }
         }
         public override void Update(NPC npc, ref int buffIndex)

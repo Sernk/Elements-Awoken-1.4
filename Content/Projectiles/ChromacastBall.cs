@@ -74,10 +74,10 @@ namespace ElementsAwoken.Content.Projectiles
             }
             for (int num371 = 0; num371 < 20; num371++)
             {
-                int num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, GetDustID(), 0f, 0f, 100, default(Color), 2.5f);
+                int num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.GetDustID(), 0f, 0f, 100, default(Color), 2.5f);
                 Main.dust[num372].noGravity = true;
                 Main.dust[num372].velocity *= 7f;
-                num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, GetDustID(), 0f, 0f, 100, default(Color), 1.5f);
+                num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.GetDustID(), 0f, 0f, 100, default(Color), 1.5f);
                 Main.dust[num372].velocity *= 5f;
             }
             int num373 = Gore.NewGore(Const.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
@@ -104,22 +104,6 @@ namespace ElementsAwoken.Content.Projectiles
             gore91.velocity.X = gore91.velocity.X - 1f;
             Gore gore92 = Main.gore[num373];
             gore92.velocity.Y = gore92.velocity.Y - 1f;
-        }
-        private int GetDustID()
-        {
-            switch (Main.rand.Next(4))
-            {
-                case 0:
-                    return ModContent.DustType<AncientRed>();
-                case 1:
-                    return ModContent.DustType<AncientGreen>();
-                case 2:
-                    return ModContent.DustType<AncientBlue>();
-                case 3:
-                    return ModContent.DustType<AncientPink>();
-                default:
-                    return ModContent.DustType<AncientRed>();
-            }
         }
     }
 }

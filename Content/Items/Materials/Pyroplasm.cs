@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.Items.Materials
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(8, 4));
-            ItemID.Sets.AnimatesAsSoul[Type] = true;
+            Const.SetSoul(Type);
         }
     }
 }

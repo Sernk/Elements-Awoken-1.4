@@ -1,8 +1,6 @@
-﻿using System;
+﻿using ElementsAwoken.EASystem;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem;
 
 namespace ElementsAwoken.Content.Buffs.Debuffs
 {
@@ -10,16 +8,13 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
 	{
 		public override void SetStaticDefaults()
 		{
-            // DisplayName.SetDefault("Deteriorating Wings");
-            // Description.SetDefault("Your wings are crumbling into black dust");
 			Main.debuff[Type] = true;
 			Main.pvpBuff[Type] = true;
 			Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
-            BuffID.Sets.LongerExpertDebuff[Type] = true;
-            BuffID.Sets.NurseCannotRemoveDebuff[Type] = true;
-        }
-	
+            Const.Longer(Type);
+            Const.CanBeCleared(Type);
+        }	
         public override void Update(Player player, ref int buffIndex)
         {
             player.GetModPlayer<MyPlayer>().brokenWings = true;

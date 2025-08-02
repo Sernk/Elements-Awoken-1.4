@@ -1,8 +1,5 @@
-﻿using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -23,7 +20,6 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Lego Brick");
             Main.projFrames[Projectile.type] = 4;
         }
         public override bool PreDraw(ref Color lightColor)

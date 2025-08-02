@@ -23,10 +23,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.timeLeft = 600;
             Projectile.DamageType = DamageClass.Magic;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Asterox");
-        }
         public override void AI()
         {
             Projectile.position.X = Main.player[Projectile.owner].Center.X - (float)(Projectile.width / 2);
@@ -38,10 +34,8 @@ namespace ElementsAwoken.Content.Projectiles
                 Projectile.ai[1] = Projectile.whoAmI;
                 for (int l = 0; l < swirlCount; l++)
                 {
-                    //cos = y, sin = x
                     int distance = 59;
-                    orbital = Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<AsteroxShieldSwirl>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
-
+                    orbital = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<AsteroxShieldSwirl>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
                 }
                 Projectile.ai[0] = 1;
             }

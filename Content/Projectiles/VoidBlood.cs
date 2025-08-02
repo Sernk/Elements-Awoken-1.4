@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -10,21 +7,14 @@ namespace ElementsAwoken.Content.Projectiles
     public class VoidBlood : ModProjectile
     {
         public override string Texture { get { return "ElementsAwoken/Content/Projectiles/Blank"; } }
-
         public override void SetDefaults()
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.tileCollide = true;
-
             Projectile.penetrate = -1;
             Projectile.timeLeft = 180;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Voidblood");
         }
         public override void AI()
         {
@@ -45,7 +35,7 @@ namespace ElementsAwoken.Content.Projectiles
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
             Projectile.velocity = Vector2.Zero;
-            Projectile.position.Y -= 6; // to elevate slightly above the ground
+            Projectile.position.Y -= 6;
             Projectile.ai[0] = 1;
             return false;
         }

@@ -1,22 +1,19 @@
 ﻿using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
+
 namespace ElementsAwoken.Content.Buffs.Debuffs
 {
     public class ChaosBurn : ModBuff
     {
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Chaotic Necrosis");
-            // Description.SetDefault("Your cells are being torn to shreds");
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
-            BuffID.Sets.LongerExpertDebuff[Type] = true;
+            Const.Longer(Type);
         }
-
         public override void Update(NPC npc, ref int buffIndex)
         {
             npc.GetGlobalNPC<NPCsGLOBAL>().extinctionCurse = true;
@@ -33,6 +30,5 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
             Main.dust[num1].velocity *= 2f;
             Main.dust[num1].noGravity = true;
         }
-
     }
 }

@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -52,9 +53,9 @@ namespace ElementsAwoken.Content.Projectiles
                 }
                 hasOrbital = true;
             }
-            if (ProjUtils.CountProjectiles(Projectile.type, Projectile.owner) > 3)
+            if (ProjectileUtils.CountProjectiles(Projectile.type, Projectile.owner) > 3)
             {
-                if (ProjUtils.HasLeastTimeleft(Projectile.whoAmI))
+                if (ProjectileUtils.HasLeastTimeleft(Projectile.whoAmI))
                 {
                     Projectile.alpha += 10;
                     if (Projectile.alpha >= 255)
@@ -63,7 +64,6 @@ namespace ElementsAwoken.Content.Projectiles
                     }
                 }
             }
-            // grav
             int maxDist = 400;
             float gravStength = 0.3f;
             for (int i = 0; i < Main.npc.Length; i++)

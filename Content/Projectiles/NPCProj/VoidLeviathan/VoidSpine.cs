@@ -22,10 +22,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 8;
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Void Spine");
-        }
         public override bool CanHitPlayer(Player target)
         {
             if (Projectile.alpha != 0) return false;
@@ -55,18 +51,16 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
 
             if (!ModContent.GetInstance<Config>().lowDust && Main.rand.Next(2) == 0)
             {
-                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.Firework_Pink);
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame);
                 Main.dust[dust].noGravity = true;
                 Main.dust[dust].scale = 1f;
                 Main.dust[dust].velocity *= 0.1f;
             }
         }
-
         public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {
             target.AddBuff(ModContent.BuffType<ExtinctionCurse>(), 80, true);
         }
-
         public override bool PreDraw(ref Color lightColor)
         {
             Vector2 drawOrigin = new Vector2(TextureAssets.Projectile[Projectile.type].Value.Width * 0.5f, Projectile.height * 0.5f);
@@ -74,7 +68,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Main.spriteBatch.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

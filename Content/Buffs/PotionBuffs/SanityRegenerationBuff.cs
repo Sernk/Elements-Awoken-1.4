@@ -1,7 +1,5 @@
 ﻿using ElementsAwoken.EASystem;
-using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Buffs.PotionBuffs
@@ -11,8 +9,6 @@ namespace ElementsAwoken.Content.Buffs.PotionBuffs
         public override void SetStaticDefaults()
         {
             Main.buffNoTimeDisplay[Type] = false;
-            // DisplayName.SetDefault("Sanity Regeneration");
-            // Description.SetDefault("Increases sanity regeneration");
         }
         public override void Update(Player player, ref int buffIndex)
         {

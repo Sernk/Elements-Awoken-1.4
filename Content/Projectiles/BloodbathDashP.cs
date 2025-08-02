@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.EASystem.Global;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -15,10 +16,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.penetrate = 1;
             Projectile.timeLeft = 300;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Bloodbath Dash");
-        }
         public override void AI()
         {
             Projectile.velocity *= 0.97f;
@@ -28,7 +25,7 @@ namespace ElementsAwoken.Content.Projectiles
             dust.scale *= 0.6f;
             dust.noGravity = true;
 
-            //ProjectileUtils.Home(projectile, 6f);
+            ProjectileUtils.Home(Projectile, 6f);
         }
     }
 }

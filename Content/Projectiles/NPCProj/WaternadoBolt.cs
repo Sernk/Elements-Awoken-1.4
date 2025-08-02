@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -10,7 +8,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
 {
     public class WaternadoBolt : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 4;
@@ -21,10 +18,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
             Projectile.alpha = 255;
             Projectile.penetrate = 1;
             Projectile.timeLeft = 250;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Waternado");
         }
         public override void AI()
         {
@@ -55,7 +48,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                 if (Projectile.ai[1] < 1f)
                 {
                     int num329 = Main.expertMode ? 25 : 40;
-                    int num330 = Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X - (float)(Projectile.direction * 30), Projectile.Center.Y - 4f, (float)(-(float)Projectile.direction) * 0.01f, 0f, Mod.Find<ModProjectile>("Waternado").Type, num329, 4f, Projectile.owner, 16f, 15f);
+                    int num330 = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X - (float)(Projectile.direction * 30), Projectile.Center.Y - 4f, (float)(-(float)Projectile.direction) * 0.01f, 0f, Mod.Find<ModProjectile>("Waternado").Type, num329, 4f, Projectile.owner, 16f, 15f);
                     Main.projectile[num330].netUpdate = true;
                 }
                 else
@@ -90,7 +83,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                         num3 = num334;
                     }
                     int num335 = Main.expertMode ? 50 : 80;
-                    int num336 = Projectile.NewProjectile(Projectile.GetSource_FromThis(), (float)(num332 * 16 + 8), (float)(num331 * 16 - 24), 0f, 0f, ModContent.ProjectileType<Waternado>(), num335, 4f, Main.myPlayer, 16f, 24f);
+                    int num336 = Projectile.NewProjectile(Const.Proj(Projectile), (float)(num332 * 16 + 8), (float)(num331 * 16 - 24), 0f, 0f, ModContent.ProjectileType<Waternado>(), num335, 4f, Main.myPlayer, 16f, 24f);
                     Main.projectile[num336].netUpdate = true;
                 }
             }

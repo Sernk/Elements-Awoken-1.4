@@ -1,10 +1,6 @@
 ﻿using ElementsAwoken.Content.Dusts.Ancients;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles.Explosions
@@ -24,9 +20,7 @@ namespace ElementsAwoken.Content.Projectiles.Explosions
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Desolation");
             Main.projFrames[Projectile.type] = 7;
-
         }
         public override void AI()
         {

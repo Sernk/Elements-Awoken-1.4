@@ -1,6 +1,4 @@
-﻿using System;
-using Terraria;
-using Terraria.ID;
+﻿using Terraria;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Buffs.Cooldowns
@@ -9,11 +7,9 @@ namespace ElementsAwoken.Content.Buffs.Cooldowns
     {
         public override void SetStaticDefaults()
 		{
-            // DisplayName.SetDefault("Great Lens Cooldown");
-            // Description.SetDefault("You cannot use the Great Lens");
+            Const.CanBeCleared(Type);
             Main.debuff[Type] = true;
             Main.buffNoSave[Type] = true;
-            BuffID.Sets.NurseCannotRemoveDebuff[Type] = false;
         }
 	}
 }

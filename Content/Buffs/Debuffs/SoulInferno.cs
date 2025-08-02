@@ -9,8 +9,6 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
         public override void SetStaticDefaults()
         {
             Main.buffNoTimeDisplay[Type] = false;
-            // DisplayName.SetDefault("Soul Inferno");
-            // Description.SetDefault("You glow with a strange radiation");
         }
 		public override void Update(NPC npc, ref int buffIndex)
         {

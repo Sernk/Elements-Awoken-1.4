@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Utilities;
+using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
 {
@@ -19,16 +16,11 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
         public override void SetDefaults()
         {
             Projectile.width = 120;
-            Projectile.height = 500; // 210
-            // projectile.aiStyle = 145;
+            Projectile.height = 500;
             Projectile.hostile = true;
             Projectile.tileCollide = false;
             Projectile.penetrate = -1;
             Projectile.timeLeft = 300;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Radiant Whirlwind");
         }
         public override bool? CanCutTiles()
         {
@@ -114,9 +106,9 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
                     }
                     color52.A = (byte)((float)color52.A * 0.5f);
                     color52 *= scale9;
-                    Main.spriteBatch.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color52, num263 + num269, origin7, (1f + num270) * scale * 0.8f, effects2, 0f);
+                    Const.Sb.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color52, num263 + num269, origin7, (1f + num270) * scale * 0.8f, effects2, 0f);
                 }
-                Main.spriteBatch.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color51, num263 + num269, origin7, (1f + num270) * scale, effects2, 0f);
+                Const.Sb.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color51, num263 + num269, origin7, (1f + num270) * scale, effects2, 0f);
             }
             return false;
         }

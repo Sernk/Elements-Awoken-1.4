@@ -41,7 +41,7 @@ namespace ElementsAwoken.Content.Projectiles
                 float alpha = (1 - Projectile.alpha / 255) - ((float)k / (float)Projectile.oldPos.Length);
                 float scale = 1 - ((float)k / (float)Projectile.oldPos.Length);
                 Color color = Color.Lerp(Color.White, new Color(245, 224, 66), (float)k / (float)Projectile.oldPos.Length) * alpha;
-                Main.spriteBatch.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale * scale, SpriteEffects.None, 0f);
+                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale * scale, SpriteEffects.None, 0f);
             }
             return false;
         }

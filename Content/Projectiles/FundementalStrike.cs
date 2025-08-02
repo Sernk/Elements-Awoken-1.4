@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.Dusts.Ancients;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -68,7 +69,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             if (Projectile.ai[0] != 1)
             {
-                //ProjectileUtils.Explosion(projectile, new int[] { mod.DustType("AncientRed"), mod.DustType("AncientGreen"), mod.DustType("AncientBlue"), mod.DustType("AncientPink") }, damageType: "melee");
+                ProjectileUtils.Explosion(Projectile, new int[] { ModContent.DustType<AncientRed>(), ModContent.DustType<AncientGreen>(), ModContent.DustType<AncientBlue>(), ModContent.DustType<AncientPink>() }, damageType: "melee");
 
                 for (int i = 0; i < 4; i++)
                 {

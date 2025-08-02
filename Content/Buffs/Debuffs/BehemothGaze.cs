@@ -1,7 +1,4 @@
-﻿using ElementsAwoken.Content.NPCs;
-using System;
-using Terraria;
-using Terraria.ID;
+﻿using Terraria;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Buffs.Debuffs
@@ -10,16 +7,10 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
 	{
 		public override void SetStaticDefaults()
 		{
-            // DisplayName.SetDefault("Behemoth Gaze");
-            // Description.SetDefault("You have looked upon a being so great you cannot get away");
 			Main.debuff[Type] = true;
 			Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
-            BuffID.Sets.NurseCannotRemoveDebuff[Type] = false;
+            Const.Longer(Type);
         }
-
-        public override void Update(Player player, ref int buffIndex)
-        {
-		}
 	}
 }

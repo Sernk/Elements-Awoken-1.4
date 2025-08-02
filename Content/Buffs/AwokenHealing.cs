@@ -1,17 +1,10 @@
-using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Buffs
 {
     public class AwokenHealing : ModBuff
     {
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Awoken Healing");
-            // Description.SetDefault("Your life rapidly regenerates");
-        }
         public override void Update(Player player, ref int buffIndex)
         {
             player.lifeRegen += 20;

@@ -1,8 +1,8 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using ElementsAwoken.EASystem;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem;
+
 namespace ElementsAwoken.Content.Projectiles
 {
     public class LightningCloud : ModProjectile
@@ -20,7 +20,6 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Lightning Cloud");
             Main.projFrames[Projectile.type] = 6;
         }
         public override bool PreDraw(ref Color lightColor)

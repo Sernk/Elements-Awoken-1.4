@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElementsAwoken.EASystem.Global;
+using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -49,7 +50,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            //ProjectileUtils.Explosion(projectile, 135, damageType: "ranged");
+            ProjectileUtils.Explosion(Projectile, 135, damageType: "ranged");
         }
     }
 }

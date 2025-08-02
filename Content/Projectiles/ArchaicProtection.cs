@@ -1,10 +1,10 @@
-﻿using ElementsAwoken.Content.Dusts.Ancients;
+﻿using ElementsAwoken.EASystem;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem;
+
 namespace ElementsAwoken.Content.Projectiles
 {
     public class ArchaicProtection : ModProjectile
@@ -29,10 +29,9 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.Center = player.Center - new Vector2(0, 20);
             if (modPlayer.archaicProtectionTimer <= 0) Projectile.Kill();
 
-            Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, GetDustID())];
+            Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.GetDustID())];
             dust.noGravity = true;
             dust.velocity *= 1.5f;
-
 
             if (Projectile.localAI[0] == 0)
             {
@@ -59,7 +58,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
 
             int maxDist = 300;
-            // calculated from the players feet so projectiles that are on the ground get pushed away instead of into the ground
+
             if (Projectile.ai[0] == num + duration / 2)
             {
                 for (int i = 0; i < Main.npc.Length; i++)
@@ -102,32 +101,15 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int i = 0; i < 31; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, GetDustID())];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.GetDustID())];
                 dust.noGravity = true;
                 dust.velocity *= 1.5f;
-            }
-        }
-        private int GetDustID()
-        {
-            switch (Main.rand.Next(4))
-            {
-                case 0:
-                    return ModContent.DustType<AncientRed>();
-                case 1:
-                    return ModContent.DustType<AncientGreen>();
-                case 2:
-                    return ModContent.DustType<AncientBlue>();
-                case 3:
-                    return ModContent.DustType<AncientPink>();
-                default:
-                    return ModContent.DustType<AncientRed>();
             }
         }
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D tex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/Circle").Value;
-            Main.spriteBatch.Draw(tex, Projectile.Center - Main.screenPosition - (tex.Size() * circleScale) / 2, null, Color.White * circleAlpha, Projectile.rotation, Vector2.Zero, circleScale, SpriteEffects.None, 0f);
-
+            Const.Sb.Draw(tex, Projectile.Center - Main.screenPosition - (tex.Size() * circleScale) / 2, null, Color.White * circleAlpha, Projectile.rotation, Vector2.Zero, circleScale, SpriteEffects.None, 0f);
             return true;
         }
     }

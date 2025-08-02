@@ -16,10 +16,6 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
             Projectile.extraUpdates = 1;
             Projectile.timeLeft = 200;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Chaotron Arrow");
-        }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(ModContent.BuffType<ChaosBurn>(), 200);

@@ -1,5 +1,6 @@
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -17,6 +18,8 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
             Item.rare = ModContent.RarityType<Rarity12>();
             Item.value = Item.sellPrice(0, 25, 0, 0);
             Item.defense = 45;
+            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsHelmet = true;
+            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsVoidWalkersGreatmask = true;
         }
         public override void Load()
         {
@@ -39,7 +42,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
         }
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = this.GetLocalization("VoidWalkersGreatmaskSetBonus").Value;//= "Press the armour ability key to activate psychosis aura\nThe psychosis aura confuses enemies and inflicts extinction curse";
+            player.setBonus = this.GetLocalization("VoidWalkersGreatmaskSetBonus").Value;
             player.GetModPlayer<MyPlayer>().voidWalkerArmor = 1;
         }
         public override void AddRecipes()

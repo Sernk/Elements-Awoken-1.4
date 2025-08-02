@@ -19,31 +19,22 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 14;
             Projectile.height = 14;
-
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 10;
-
             Projectile.DamageType = DamageClass.Throwing;
             Projectile.friendly = true;
             Projectile.ignoreWater = true;
             Projectile.tileCollide = true;
-
             Projectile.alpha = 255;
             Projectile.penetrate = -1;
             Projectile.extraUpdates = 8;
             Projectile.timeLeft = 600;
-
             ProjectileID.Sets.TrailingMode[Projectile.type] = 1;
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 20;
             Projectile.scale *= 0.5f;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Lightning");
-        }
         public override void AI()
         {
-            //arc code
             int num3 = Projectile.frameCounter;
             Projectile.frameCounter = num3 + 1;
             Lighting.AddLight(Projectile.Center, 0.3f, 0.45f, 0.5f);

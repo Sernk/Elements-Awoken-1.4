@@ -1,5 +1,6 @@
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -17,6 +18,8 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
             Item.rare = ModContent.RarityType<Rarity12>();
             Item.value = Item.sellPrice(0, 25, 0, 0);
             Item.defense = 9;
+            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsHelmet = true;
+            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsVoidWalkersHelm = true;
         }
         public override void Load()
         {

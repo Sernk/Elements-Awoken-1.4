@@ -1,31 +1,23 @@
 ﻿using ElementsAwoken.Content.Dusts.Ancients;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
 {
     public class DesolationCharge3 : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.ignoreWater = true;
             Projectile.minion = true;
-
             Projectile.penetrate = 5;
             Projectile.timeLeft = 600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Desolation");
         }
         public override void AI()
         {
@@ -53,7 +45,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         private void Explode()
         {
-            //ProjectileUtils.Explosion(projectile, mod.DustType("AncientGreen"), damageType: "ranged");
+            ProjectileUtils.Explosion(Projectile, ModContent.DustType<AncientGreen>(), damageType: "ranged");
         }
     }
 }

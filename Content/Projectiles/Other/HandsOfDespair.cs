@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -7,7 +6,6 @@ namespace ElementsAwoken.Content.Projectiles.Other
 {
     public class HandsOfDespair : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 76;
@@ -21,7 +19,6 @@ namespace ElementsAwoken.Content.Projectiles.Other
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Hands of Despair");
             Main.projFrames[Projectile.type] = 4;
         }
         public override bool PreDraw(ref Color lightColor)
@@ -36,7 +33,7 @@ namespace ElementsAwoken.Content.Projectiles.Other
             }
             return true;
         }
-        public override bool? CanDamage()/* tModPorter Suggestion: Return null instead of true */
+        public override bool? CanDamage()
         {
             return false;
         }
@@ -44,8 +41,6 @@ namespace ElementsAwoken.Content.Projectiles.Other
         {
             Player parent = Main.player[(int)Projectile.ai[1]];
             NPC parent1 = Main.npc[(int)Projectile.ai[1]];
-
-            //Player player = Main.player[projectile.owner];
 
             if (Projectile.ai[0] > 0)
             {
@@ -77,7 +72,6 @@ namespace ElementsAwoken.Content.Projectiles.Other
                 Projectile.hostile = false;
                 Projectile.friendly = true;
             }
-
             if (Projectile.alpha >= 255)
             {
                 Projectile.Kill();

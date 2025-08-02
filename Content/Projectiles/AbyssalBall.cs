@@ -19,10 +19,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.light = 1f;
             Projectile.extraUpdates = 1;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Abyss Ball");
-        }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(ModContent.BuffType<ExtinctionCurse>(), 300);

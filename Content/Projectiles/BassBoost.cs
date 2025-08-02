@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -14,24 +11,17 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 16;
             Projectile.height = 16;
-
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Ranged;
             Projectile.tileCollide = true;
-
             Projectile.penetrate = 2;
             Projectile.timeLeft = 200;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Bass Boost");
         }
         public override void AI()
         {
             Projectile.localAI[1]++;
-            if (Projectile.localAI[1] % 5 == 0) // every 5 ticks
+            if (Projectile.localAI[1] % 5 == 0) 
             {
-                // make dust in an expanding circle
                 int numDusts = 36;
                 for (int i = 0; i < numDusts; i++)
                 {

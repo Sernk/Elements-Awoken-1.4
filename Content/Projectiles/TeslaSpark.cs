@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -19,10 +16,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.penetrate = 3;
             Projectile.timeLeft = 120;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Tesla Spark");
-        }
         public override void AI()
         {
             if (Main.rand.Next(2) == 0)
@@ -38,7 +31,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             if (target.knockBackResist != 0f)
             {
-                target.velocity.Y -= 1f; // little jolt
+                target.velocity.Y -= 1f;
                 target.velocity.X *= 0.5f;
             }
         }

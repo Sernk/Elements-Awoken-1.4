@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.EASystem.Global;
+using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.ModLoader;
@@ -43,7 +44,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            //ProjectileUtils.Explosion(projectile, DustID.PinkFlame, damageType: "melee");
+            ProjectileUtils.Explosion(Projectile, Const.PinkFlame, damageType: "melee");
         }
     }
 }

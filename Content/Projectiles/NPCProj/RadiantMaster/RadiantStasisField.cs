@@ -16,10 +16,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
             Projectile.penetrate = -1;
             Projectile.timeLeft = 420;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Radiant Stasis Field");
-        }
         public override bool CanHitPlayer(Player target)
         {
             return false;
@@ -66,10 +62,10 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
         {
             Vector2 drawPos = Projectile.Center - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY);
             Texture2D auraTex = ModContent.Request<Texture2D>("ElementsAwoken/Content/Projectiles/NPCProj/RadiantMaster/RadiantStasisField").Value;
-            Main.spriteBatch.Draw(auraTex, drawPos - new Vector2(auraTex.Width / 2, auraTex.Height / 2), null, Color.White * 0.6f, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+            Const.Sb.Draw(auraTex, drawPos - new Vector2(auraTex.Width / 2, auraTex.Height / 2), null, Color.White * 0.6f, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
             Texture2D middleTex = ModContent.Request<Texture2D>("ElementsAwoken/Content/Projectiles/NPCProj/RadiantMaster/RadiantStasisFieldStar").Value;
             Vector2 middleOrigin = new Vector2(middleTex.Width / 2, middleTex.Height / 2);
-            Main.spriteBatch.Draw(middleTex, drawPos, null, Color.White, Projectile.rotation, middleOrigin, 1f, SpriteEffects.None, 0f);
+            Const.Sb.Draw(middleTex, drawPos, null, Color.White, Projectile.rotation, middleOrigin, 1f, SpriteEffects.None, 0f);
             return false;
         }
     }

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -14,17 +12,11 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.tileCollide = false;
-
             Projectile.penetrate = 1;
             Projectile.extraUpdates = 100;
             Projectile.timeLeft = 600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Strange Ukulele");
         }
         public override bool? CanHitNPC(NPC target)
         {

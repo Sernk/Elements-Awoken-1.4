@@ -1,10 +1,4 @@
 ﻿using ElementsAwoken.Content.Items.Artifacts.Materials;
-using ElementsAwoken.Content.Items.Elements.Desert;
-using ElementsAwoken.Content.Items.Elements.Fire;
-using ElementsAwoken.Content.Items.Elements.Frost;
-using ElementsAwoken.Content.Items.Elements.Sky;
-using ElementsAwoken.Content.Items.Elements.Void;
-using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.DataStructures;

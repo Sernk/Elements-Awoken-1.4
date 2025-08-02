@@ -1,7 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -13,17 +11,11 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Magic;
-
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
             Projectile.light = 0.1f;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Slime Ball");
         }
         public override void AI()
         {

@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -12,13 +11,11 @@ namespace ElementsAwoken.Content.Projectiles.Other
             Projectile.width = 18;
             Projectile.height = 18;
             Projectile.tileCollide = false;
-
             Projectile.penetrate = -1;
             Projectile.timeLeft = 60000;
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Hands of Despair");
             Main.projFrames[Projectile.type] = 4;
         }
         public override bool PreDraw(ref Color lightColor)

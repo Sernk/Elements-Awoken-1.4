@@ -1,6 +1,5 @@
 using ElementsAwoken.Content.Dusts.Ancients;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -11,37 +10,27 @@ namespace ElementsAwoken.Content.Projectiles
 {
     public class DesolationIIIHeld : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 52;
             Projectile.height = 52;
-
-            //projectile.aiStyle = 75;
-
             Projectile.penetrate = -1;
-
             Projectile.friendly = true;
             Projectile.tileCollide = false;
             Projectile.hide = true;
             Projectile.DamageType = DamageClass.Ranged;
             Projectile.ignoreWater = true;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Desolation");
-        }
         public override void AI()
         {
             Player player = Main.player[Projectile.owner];
             Vector2 vector = player.RotatedRelativePoint(player.MountedCenter, true);
 
-            var s = Projectile.GetSource_FromThis();
+            var s = Const.Proj(Projectile);
 
             float chargeLevel1 = 20f;
             float chargeLevel2 = 45f;
             float chargeLevel3 = 60f;
-
 
             Projectile.ai[0] += 1f;
             Projectile.ai[1] += 1f;

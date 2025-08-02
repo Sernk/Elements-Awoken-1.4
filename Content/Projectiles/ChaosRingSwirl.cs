@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
+using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -22,10 +20,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.penetrate = -1;
             Projectile.timeLeft = 10000;
             Projectile.extraUpdates = 2;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Chaos Ring");
         }
         public override void AI()
         {
@@ -63,7 +57,6 @@ namespace ElementsAwoken.Content.Projectiles
                 dust = Main.dust[num100];
                 dust.velocity += Projectile.velocity * 0.5f;
             }
-        }
-        
+        }    
     }
 }

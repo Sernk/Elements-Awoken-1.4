@@ -1,8 +1,4 @@
-﻿using CalamityMod.Projectiles.Magic;
-using ElementsAwoken.Content.Projectiles.Explosions;
-using Microsoft.Xna.Framework;
-using System;
-using System.Collections.Generic;
+﻿using ElementsAwoken.Content.Projectiles.Explosions;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -32,7 +28,6 @@ namespace ElementsAwoken.Content.Projectiles
                 Projectile.ai[1] = 1f;
                 SoundEngine.PlaySound(SoundID.Item12, Projectile.position);
             }
-
             for (int i = 0; i < 4; i++)
             {
                 Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];

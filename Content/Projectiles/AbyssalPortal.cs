@@ -23,7 +23,6 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Abyssal Portal");
             Main.projFrames[Projectile.type] = 4;
         }
         public override bool PreDraw(ref Color lightColor)
@@ -46,7 +45,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int k = 0; k < 5; k++)
             {
-                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, DustID.Firework_Pink, 0f, 0f, 100, default(Color)); // DustID.PinkFlame
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color));
                 Main.dust[dust].noGravity = true;
                 Main.dust[dust].velocity *= 3;
             }
@@ -66,7 +65,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
             if (Main.rand.NextBool(6))
             {
-                int dust = Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, DustID.Firework_Pink, 0f, 0f, 100, default(Color));
+                int dust = Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color));
                 Main.dust[dust].noGravity = true;
             }
             Projectile.ai[0]++;
@@ -82,7 +81,7 @@ namespace ElementsAwoken.Content.Projectiles
                         float rotation = (float)Math.Atan2(Projectile.Center.Y - nPC.Center.Y, Projectile.Center.X - nPC.Center.X);
                         Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
                         SoundEngine.PlaySound(SoundID.Item20, Projectile.position);
-                        Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ModContent.ProjectileType<AbyssalBall>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ModContent.ProjectileType<AbyssalBall>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                         Projectile.ai[1] = 1;
                         break;
                     }

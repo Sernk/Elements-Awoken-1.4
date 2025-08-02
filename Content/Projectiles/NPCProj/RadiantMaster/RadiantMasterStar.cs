@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
@@ -30,7 +29,6 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
             rotSpeed = reader.ReadSingle();
             aiTimer = reader.ReadSingle();
         }
-
         public override void SetDefaults()
         {
             Projectile.width = 30;
@@ -43,17 +41,13 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 20;
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Sparkle");
-        }
         public override void AI()
         {
             NPC parent = Main.npc[(int)Projectile.ai[1]];
             Player player = Main.LocalPlayer;
             if (rotSpeed > 0 && aiTimer > 0) rotSpeed -= 2 / orbitDur;
 
-           if (dist < 120) dist += 2;
+            if (dist < 120) dist += 2;
             if (Projectile.localAI[1] == 0) aiTimer += 1f;
             if (aiTimer == orbitDur)
             {
@@ -63,9 +57,9 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
             }
             else if (aiTimer < orbitDur)
             {
-                Projectile.ai[0] += rotSpeed; // speed
+                Projectile.ai[0] += rotSpeed;
                 int distance = dist;
-                double rad = Projectile.ai[0] * (Math.PI / 180); // angle to radians
+                double rad = Projectile.ai[0] * (Math.PI / 180);
                 Projectile.position.X = parent.Center.X - (int)(Math.Cos(rad) * distance) - Projectile.width / 2;
                 Projectile.position.Y = parent.Center.Y - (int)(Math.Sin(rad) * distance) - Projectile.height / 2;
 
@@ -114,12 +108,12 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
                     Color color35 = Color.White;
                     color35 *= 1f - num147 * (float)num148 / 1f;
                     color35.A = (byte)((float)color35.A * (1f - num149));
-                    Main.spriteBatch.Draw(texture, vector40 + Projectile.oldPos[num148] - Projectile.position, null, color35, Projectile.oldRot[num148], vector11, Projectile.scale * MathHelper.Lerp(0.8f, 0.3f, num149), spriteEffects, 0f);
+                    Const.Sb.Draw(texture, vector40 + Projectile.oldPos[num148] - Projectile.position, null, color35, Projectile.oldRot[num148], vector11, Projectile.scale * MathHelper.Lerp(0.8f, 0.3f, num149), spriteEffects, 0f);
                     num148--;
                 }
             }
             texture = TextureAssets.Extra[57].Value;
-            Main.spriteBatch.Draw(texture, vector40, null, Color.HotPink, 0f, texture.Size() / 2f, Projectile.scale, spriteEffects, 0f);
+            Const.Sb.Draw(texture, vector40, null, Color.HotPink, 0f, texture.Size() / 2f, Projectile.scale, spriteEffects, 0f);
             return false;
         }
     }

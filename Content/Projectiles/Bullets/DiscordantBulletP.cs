@@ -38,7 +38,7 @@ namespace ElementsAwoken.Content.Projectiles.Bullets
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Main.spriteBatch.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }
@@ -57,7 +57,7 @@ namespace ElementsAwoken.Content.Projectiles.Bullets
                     Projectile.tileCollide = false;
 
                     double angle = Main.rand.NextDouble() * 2d * Math.PI;
-                    Vector2 offset = new Vector2((float)Math.Sin(angle) * max, (float)Math.Cos(angle) * max);// unit circle yay
+                    Vector2 offset = new Vector2((float)Math.Sin(angle) * max, (float)Math.Cos(angle) * max);
                     Projectile.Center = nPC.Center + offset;
 
                     Vector2 toTarget = new Vector2(nPC.Center.X - Projectile.Center.X, nPC.Center.Y - Projectile.Center.Y);

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -20,10 +17,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.alpha = 255;
             Projectile.penetrate = 1;
             Projectile.timeLeft = 200;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Bunny Breath");
         }
         public override void AI()
         {

@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.EASystem.Global;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -11,18 +12,11 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 16;
             Projectile.height = 16;
-
             Projectile.penetrate = 3;
-
             Projectile.friendly = true;
             Projectile.DamageType = DamageClass.Ranged;
             Projectile.tileCollide = false;
-
             Projectile.timeLeft = 300;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Mine");
         }
         public override void AI()
         {
@@ -37,7 +31,6 @@ namespace ElementsAwoken.Content.Projectiles
                     dust.scale = 1f;
                 }
             }
-            // tile stick
             try
             {
                 int num187 = (int)(Projectile.position.X / 16f) - 1;
@@ -84,7 +77,6 @@ namespace ElementsAwoken.Content.Projectiles
             catch
             {
             }
-
             if (Projectile.ai[1] != 0)
             {
                 NPC stick = Main.npc[(int)Projectile.ai[0]];
@@ -113,9 +105,9 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.velocity =(target.Center - Projectile.Center) * 0.75f;
             Projectile.netUpdate = true;
         }
-        //public override void Kill(int timeLeft)
-        //{
-        //    ProjectileUtils.Explosion(projectile, new int[] { 6 }, projectile.damage, "ranged");
-        //}
+        public override void OnKill(int timeLeft)
+        {
+            ProjectileUtils.Explosion(Projectile, new int[] { 6 }, Projectile.damage, "ranged");
+        }
     }
 }

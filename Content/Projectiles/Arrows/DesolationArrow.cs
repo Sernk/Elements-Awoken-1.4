@@ -40,7 +40,7 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
             }
             for (int i = 0; i < numberProjectiles; i++)
             {
-                Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, Main.rand.NextFloat(-1.2f, 1.2f), Main.rand.NextFloat(-1.2f, 1.2f), ModContent.ProjectileType<DesolationShard>(), (int)(Projectile.damage * 0.75f), 2f, Projectile.owner, 0f, 0f);
+                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.NextFloat(-1.2f, 1.2f), Main.rand.NextFloat(-1.2f, 1.2f), ModContent.ProjectileType<DesolationShard>(), (int)(Projectile.damage * 0.75f), 2f, Projectile.owner, 0f, 0f);
             }
         }
     }

@@ -36,7 +36,7 @@ namespace ElementsAwoken.Content.Projectiles
 
             Projectile.ai[0] += 5f;
             float distance = Projectile.localAI[0];
-            double rad = Projectile.ai[0] * (Math.PI / 180); // angle to radians
+            double rad = Projectile.ai[0] * (Math.PI / 180);
             Projectile.Center = player.Center- new Vector2((int)(Math.Cos(rad) * distance) - Projectile.width / 2, (int)(Math.Sin(rad) * distance) - Projectile.height / 2);
 
             if (Main.rand.Next(5) == 0)

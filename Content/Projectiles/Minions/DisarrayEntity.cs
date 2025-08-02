@@ -1,6 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.MinionBuffs;
 using ElementsAwoken.Content.Dusts.Ancients;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -18,12 +19,10 @@ namespace ElementsAwoken.Content.Projectiles.Minions
         public float shootTimer = 0f;
         public float shootTimer2 = 0f;
         private float shootAi = 0f;
-
         private float dashAi = 0f;
         private int dashCount = 0;
         Vector2 dashTargetPos = new Vector2();
         NPC dashTarget = null;
-
         NPC tpTarget = null;
         private float tpAi = -1f;
         public override void SetDefaults()
@@ -77,7 +76,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                 for (int k = 0; k < 4; k++)
                 {
                     Vector2 drawPos = new Vector2(Projectile.Center.X + 50 * (k >= 2 ? -1 : 1), Projectile.Center.Y - 50 * (k % 2 == 0 ? -1 : 1)) - Main.screenPosition + drawOrigin;
-                    Main.spriteBatch.Draw(texture, drawPos, null, Color.White, 0f, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                    Const.Sb.Draw(texture, drawPos, null, Color.White, 0f, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
                 }
             }
             return true;
@@ -119,7 +118,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                                         float rotation = (float)Math.Atan2(Projectile.Center.Y - nPC.Center.Y, Projectile.Center.X - nPC.Center.X);
                                         Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
 
-                                        Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayShard>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayShard>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                                         if (Projectile.ai[0] == 0) shootTimer = 75;
                                         else if (Projectile.ai[0] == 1)
                                         {
@@ -149,8 +148,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                             vector.Normalize();
                             vector *= 34f;
                             Main.dust[num5].position = Projectile.Center - vector;
-
-                        } // pre shoot dust
+                        }
                     }
                 }
 
@@ -163,7 +161,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                 {
                     attacking = true;
                 }
-                int maxPlayerDist = 500; // how far away the player can be
+                int maxPlayerDist = 500;
 
                 if (Math.Abs(Projectile.Center.X - player.Center.X) + Math.Abs(Projectile.Center.Y - player.Center.Y) > (float)maxPlayerDist)
                 {
@@ -217,15 +215,14 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                 {
                     Projectile.tileCollide = false;
                 }
-                // idle
                 if (!attacking)
                 {
                     float speed = 8f;
-                    if (Projectile.localAI[0] == 1f) speed = 12f; // too far from player
+                    if (Projectile.localAI[0] == 1f) speed = 12f;
                     float goToX = player.Center.X - Projectile.Center.X;
                     float goToY = player.Center.Y - Projectile.Center.Y - 60f;
                     float targetDist = (float)Math.Sqrt((double)(goToX * goToX + goToY * goToY));
-                    if (targetDist < 100f && Projectile.localAI[0] == 1f && !Collision.SolidCollision(Projectile.position, Projectile.width, Projectile.height)) // if in range of player and not in tile
+                    if (targetDist < 100f && Projectile.localAI[0] == 1f && !Collision.SolidCollision(Projectile.position, Projectile.width, Projectile.height))
                     {
                         Projectile.localAI[0] = 0f;
                     }
@@ -255,7 +252,6 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                         return;
                     }
                 }
-                // attack
                 else
                 {
                     if (Projectile.ai[0] != 3)
@@ -286,7 +282,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                                 }
                             }
                         }
-                        else // dashing
+                        else
                         {
                             Projectile.tileCollide = false;
                             if (Projectile.localAI[1] == 0f)
@@ -392,10 +388,9 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                 if (!attacking)
                 {
                     tpAi = -1f;
-                    // fly around
 
                     float speed = 8f;
-                    if (Projectile.localAI[0] == 1f) speed = 12f; // too far from player
+                    if (Projectile.localAI[0] == 1f) speed = 12f;
                     float goToX = player.Center.X - Projectile.Center.X;
                     float goToY = player.Center.Y - Projectile.Center.Y - 60f;
                     float targetDist = (float)Math.Sqrt((double)(goToX * goToX + goToY * goToY));
@@ -460,23 +455,20 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                             float rotation = (float)Math.Atan2(Projectile.Center.Y - tpTarget.Center.Y, Projectile.Center.X - tpTarget.Center.X);
                             Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
 
-                            Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayBlast>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayBlast>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                             for (int k = 0; k < 4; k++)
                             {
                                 Vector2 crystalPos = new Vector2(Projectile.Center.X + 50 * (k >= 2 ? -1 : 1), Projectile.Center.Y - 50 * (k % 2 == 0 ? -1 : 1));
                                 float beamRotation = (float)Math.Atan2(crystalPos.Y - tpTarget.Center.Y, crystalPos.X - tpTarget.Center.X);
                                 Vector2 beamSpeed = new Vector2((float)((Math.Cos(beamRotation) * Speed) * -1), (float)((Math.Sin(beamRotation) * Speed) * -1));
-                                Projectile.NewProjectile(Projectile.GetSource_FromThis(), crystalPos.X, crystalPos.Y, beamSpeed.X, beamSpeed.Y, ProjectileType<DisarrayBeam>(), (int)(Projectile.damage * 0.75f), Projectile.knockBack, Projectile.owner);
-
+                                Projectile.NewProjectile(Const.Proj(Projectile), crystalPos.X, crystalPos.Y, beamSpeed.X, beamSpeed.Y, ProjectileType<DisarrayBeam>(), (int)(Projectile.damage * 0.75f), Projectile.knockBack, Projectile.owner);
                             }
-
                             tpAi = 0;
                         }
                     }
                 }
             }
-
-           // ProjectileUtils.PushOtherEntities(Projectile);
+            ProjectileUtils.PushOtherEntities(Projectile);
         }
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
@@ -521,7 +513,6 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                 vector.Normalize();
                 vector *= 34f;
                 Main.dust[num5].position = Projectile.Center - vector;
-
             }
         }
     }

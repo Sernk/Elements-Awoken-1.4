@@ -1,6 +1,5 @@
-using System;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -14,20 +13,13 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 8;
             Projectile.height = 8;
-
             Projectile.alpha = 255;
             Projectile.timeLeft = 600;
-
             Projectile.friendly = true;
             Projectile.tileCollide = true;
             Projectile.ignoreWater = false;
             Projectile.DamageType = DamageClass.Ranged;
-
             Projectile.penetrate = 1;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Blade of the Night");
         }
         public override void AI()
         {
@@ -48,7 +40,7 @@ namespace ElementsAwoken.Content.Projectiles
             float rotateIntensity = Projectile.localAI[0];
             float waveTime = 16f;
             Projectile.ai[0]++;
-            if (Projectile.ai[1] == 0) // this part is to fix the offset (it is still slightlyyyy offset)
+            if (Projectile.ai[1] == 0)
             {
                 if (Projectile.ai[0] > waveTime * 0.5f)
                 {

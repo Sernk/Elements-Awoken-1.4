@@ -51,7 +51,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.velocity.X = (Projectile.velocity.X * 15f + num510) / 16f;
             Projectile.velocity.Y = (Projectile.velocity.Y * 15f + num511) / 16f;
 
-            //dust
             for (int num519 = 0; num519 < 5; num519 += 1)
             {
                 float num520 = Projectile.velocity.X * 0.2f * (float)num519;

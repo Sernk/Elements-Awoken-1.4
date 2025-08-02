@@ -20,10 +20,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.timeLeft = 100000;
             Projectile.alpha = 255;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("");
-        }
         public override void AI()
         {
             Player parent = Main.player[(int)Projectile.ai[1]];

@@ -1070,302 +1070,478 @@ Items: {
 	}
 
 	AbyssalMatter: {
-		// DisplayName: Abyssal Matter
-		/* Tooltip:
+		DisplayName: Материя Бездны
+		Tooltip:
 			'''
-			Creates Abyss Portals around the player
-			If the player is hit for above 40% life, they enter Abyssal Rage granting
-			30% increased damage
-			50% increased movement speed
-			''' */
+			Создаёт порталы Бездны вокруг игрока
+			При получении урона в больше, чем 40% от максимального здоровья, ты входишь в режим Ярости Бездны, дающий
+			на 30% увеличенный весь урон
+			на 50% увеличенную скорость передвижения
+			'''
 	}
 
 	AmuletOfDestruction: {
-		// DisplayName: Amulet of Despair
-		/* Tooltip:
+		DisplayName: Ожерелье отчаяния
+		Tooltip:
 			'''
-			Extinction lasers rain down from the sky
-			Greatly increased life regen when under 20% life
-			Immunity to 'Extinction Curse' and 'Hands of Despair'
-			You charge up void energy overtime
-			When the ability key is pressed:
-			80% reduced movement speed and 20% increased damage
-			Projectiles get shot in every direction
-			''' */
+			Лазеры вымирания падают с небес, аки дождь
+			Значительно увеличивает регенерацию жизни, если у тебя осталось меньше 20% здоровья
+			Даёт неуязвимость к дебаффам "Заклятие вымирания" и "Длани отчаянья"
+			Со временем в тебе заряжается энергия пустоты
+			При нажатии на кнопку способности произойдёт следующее:
+			Скорость передвижения уменьшится на 80%, но урон увеличится на 20%
+			Дополнительно снаряды будут лететь из игрока во все стороны
+			'''
 	}
 
 	BladeOfTheNight: {
-		// DisplayName: Blade of the Night
-		/* Tooltip:
+		DisplayName: Лезвие ночи
+		Tooltip:
 			'''
-			Projectiles become more unstable the longer they are alive
-			Every 30th swing unleashes the spirit of The Void Leviathan to tear apart your enemies
-			Every 10th true melee hit deals 10x damage
-			''' */
+			Чем дольше снаряды летят, тем более нестабильными они становятся
+			При каждом 30-м взмахе призывает дух Левиафана Пустоты, бросающийся на врагов
+			Каждый десятый удар самим мечом наносит в 10 раз больше урона
+			'''
 	}
 
 	BreathOfDarkness: {
-		// DisplayName: Breath of Darkness
-		// Tooltip: Summons a miniature Void Leviathan
+		DisplayName: Дыханье тьмы
+		Tooltip: Призывает Левиафана Пустоты младшего
 	}
 
 	CosmicWrath: {
-		// DisplayName: Cosmic Wrath
-		/* Tooltip:
+		DisplayName: Космоярость
+		Tooltip:
 			'''
-			Right Click to cause all spears to explode
-			Critical strikes do 3x damage
-			''' */
+			Нажми ПКМ, чтобы сразу взорвать все существующие копья
+			Критические удары наносят втрое больше урона
+			'''
 	}
 
 	EndlessAbyssBlaster: {
-		// DisplayName: Void Singularity Mortar
-		// Tooltip: ""
+		DisplayName: Миномёт пустингулярности
+		Tooltip: Стреляет ракетами, наверное, хз...
 	}
 
 	ExtinctionBow: {
-		// DisplayName: Extinction Bow
-		/* Tooltip:
+		DisplayName: Лук вымирания
+		Tooltip:
 			'''
-			Turns normal arrows into extinction arrows
-			Right Click to create a void portal that follows the cursor
-			Portals can only be created every 30 seconds
-			''' */
+			Превращает обычные стрелы в стрелы Вымирания
+			Нажми ПКМ, чтобы создать портал пустоты, следующий за твоим курсором
+			Портал можно создать только раз в 30 секунд
+			'''
 	}
 
 	LightsAffliction: {
-		// DisplayName: Light's Affliction
-		// Tooltip: ""
+		DisplayName: Скорбь света
+		Tooltip: У него спрайт самого флейла всё ещё старый...
 	}
 
 	PikeOfEternalDespair: {
-		// DisplayName: Pike of Eternal Despair
-		// Tooltip: ""
+		DisplayName: Пика вечнотчаянья
+		Tooltip: щука вечного отчаяния.
 	}
 
 	Reaperstorm: {
-		// DisplayName: Reaperstorm
-		// Tooltip: Hail death from the sky
+		DisplayName: Жнеце-буря
+		Tooltip: Да прольётся с небес погибель, аки град!
 	}
 
 	VoidInferno: {
-		// DisplayName: Void Inferno
-		// Tooltip: ""
+		DisplayName: Пеклостота
+		Tooltip: а чё, название в оригинале тоже какое-то бредовое, если подумать
 	}
 
 	VoidLeviathanMask: {
-		// DisplayName: Void Leviathan Mask
-		// Tooltip: ""
+		DisplayName: Маска Левиафана Пустоты
+		Tooltip: снова старый спрайт бай зе вэй
 	}
 
 	VoidLeviathansAegis: {
-		// DisplayName: Void Leviathan's Aegis
-		// Tooltip: ""
+		DisplayName: Эгида Левиафана Пустоты
+		Tooltip: ещё один старый спрайт...
 	}
 
 	VoidWalkersGreatmask: {
-		/* VoidWalkersGreatmaskSetBonus:
+		VoidWalkersGreatmaskSetBonus:
 			'''
-			Press the armour ability key to activate psychosis aura
-			The psychosis aura confuses enemies and inflicts extinction curse
-			''' */
-		// DisplayName: Void Walker's  Greatmask
-		/* Tooltip:
+			Нажми кнопку способности брони, чтобы создать ауру Психоза
+			Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 			'''
-			25% increased melee damage
-			15% increased melee critical strike chance
-			20% increased melee speed\nMelee weapons inflict extinction curse
-			''' */
+		DisplayName: Великая маска Пустоходца
+		Tooltip:
+			'''
+			Увеличивает ближний урон на 25%
+			Увеличивает ближний шанс критического удара на 15%
+			Увеличивает скорость оружий ближнего боя на 25% и все
+			оружия ближнего боя накладывают дебафф "Заклятье вымирания" на врагов
+			'''
 	}
 
 	VoidWalkersHelm: {
-		/* VoidWalkersHelmSetBonus:
+		VoidWalkersHelmSetBonus:
 			'''
-			Press the armour ability key to activate psychosis aura
-			The psychosis aura confuses enemies and inflicts extinction curse
-			''' */
-		// DisplayName: Void Walker's Helm
-		/* Tooltip:
+			Нажми кнопку способности брони, чтобы создать ауру Психоза
+			Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 			'''
-			40% increased minion damage
-			Maximum minions increased by 6
-			Massively increased minion knockback
-			Minions inflict extinction curse
-			''' */
+		DisplayName: Шлем Пустоходца
+		Tooltip:
+			'''
+			Увеличивает урон призывателя на 40%
+			Увеличивает максимальное количество миньон-слотов на 6
+			Значительно увеличивает отбрасывание от атак миньонов
+			Все миньоны накладывают дебафф "Заклятье вымирания" на врагов
+			'''
 	}
 
 	VoidWalkersHood: {
-		/* VoidWalkersHoodSetBonus:
+		VoidWalkersHoodSetBonus:
 			'''
-			Press the armour ability key to activate psychosis aura
-			The psychosis aura confuses enemies and inflicts extinction curse
-			''' */
-		// DisplayName: Void Walker's Hood
-		/* Tooltip:
+			Нажми кнопку способности брони, чтобы создать ауру Психоза
+			Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 			'''
-			30% increased magic damage
-			10% increased magic critical strike chance
-			20% decreased mana cost
-			100 increased mana
-			Magic weapons inflict extinction curse
-			''' */
+		DisplayName: Капюшон Пустоходца
+		Tooltip:
+			'''
+			Увеличивает магический урон на 30%
+			Увеличивает магический шанс критического удара на 10%
+			Уменьшает количество маны, потребляемой оружиями на 20%
+			Увеличивает максимальную ману на 100
+			Все магические оружия накладывают дебафф "Заклятье вымирания" на врагов.
+			'''
 	}
 
 	VoidWalkersVisage: {
-		/* VoidWalkersVisageSetBonus:
+		VoidWalkersVisageSetBonus:
 			'''
-			Press the armour ability key to activate psychosis aura
-			The psychosis aura confuses enemies and inflicts extinction curse
-			''' */
-		// DisplayName: Void Walker's Visage
-		/* Tooltip:
+			Нажми кнопку способности брони, чтобы создать ауру Психоза
+			Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 			'''
-			35% increased ranged damage
-			30% increased ranged critical strike chance
-			25% chance not to consume ammo
-			Ranged weapons inflict extinction curse
-			''' */
+		DisplayName: Личина Пустоходца
+		Tooltip:
+			'''
+			Увеличивает дальний урон на 35%
+			Увеличивает дальний шанс критического удара на 30%
+			Даёт 25% шанс не потратить аммуницию при стрельбе
+			Все дальние оружия накладывают на врагов дебафф "Заклятье вымирания"
+			'''
 	}
 
 	VoidLeviathanTrophy: {
-		// DisplayName: Void Leviathan Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Левиафана Пустоты
+		Tooltip: ...угадайте, какой спрайт тут опять?
 	}
 
 	VoidWalkersBreastplate: {
-		// DisplayName: Void Walker's Breastplate
-		/* Tooltip:
+		DisplayName: Нагрудник Пустоходца
+		Tooltip:
 			'''
-			Life regenerates rapidly after taking more than half the players life of damage
-			Damage taken reduced by 8%
-			''' */
+			При получении урона в больше, чем 50% от максимального здоровья, ты получаешь сильный бафф к регенерации жизни
+			Увеличивает сопротивление урону на 8%
+			'''
 	}
 
 	VoidWalkersLeggings: {
-		// DisplayName: Void Walker's Leggings
-		/* Tooltip:
+		DisplayName: Поножи Пустоходца
+		Tooltip:
 			'''
-			20% increased movement speed
-			Even greater speed when low health
-			''' */
+			Увеличивает скорость передвижения на 20%
+			Скорость передвижения ещё больше увеличивается, если у тебя остаётся мало здоровья
+			'''
 	}
 
 	VoidLeviathanBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: Right Click to open
+		DisplayName: Мешок с сокровищами Левиафана Пустоты
+		Tooltip: Нажми ПКМ, чтобы открыть.
 	}
 
 	EpicHealingPotion: {
-		// DisplayName: Grand Healing Potion
-		// Tooltip: ""
+		DisplayName: Мегалечащее зелье
+		Tooltip: в любом более-менее крупном моде должно быть хоть одно такое, это обязательный троп террарийского моддинга.
 	}
 
 	Chromacast: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Deals more damage the closer you are to the enemy
-			Dont get too close to the explosion
-			''' */
-		// DisplayName: Chromacast
+			Чем ближе ты к врагу, тем больше урона наносишь
+			Только не подходи слишком близко к взрыву
+			'''
+		DisplayName: Хромакаст
 	}
 
 	GiftOfTheArchaic: {
-		// Tooltip: ""
-		// DisplayName: Gift Of The Archaic
+		Tooltip: вставьте абсолютно неподходящую по контексту шутку сюда
+		DisplayName: Дар старины
 	}
 
 	CrystallineLocket: {
-		// Tooltip: Press the special ability key to make the player always critically strike for 10 seconds
-		// DisplayName: Crystalline Locket
+		Tooltip: Нажми кнопку спецальной способности, чтобы все твои атаки всегда наносили критические удары на 10 секунд
+		DisplayName: Кристальный оберег
 	}
 
 	CrystalAmalgamate: {
-		// Tooltip: ""
-		// DisplayName: Crystal Amalgamate
+		Tooltip: это чё вам, андертейл что-ли, чтобы тут были амальгаметы?
+		DisplayName: Кристальный амальгамет
 	}
 
 	Shimmerspark: {
-		// Tooltip: Hold Left Click to charge a reality breaking blast
-		// DisplayName: Shimmerspark
+		Tooltip: Зажми ЛКМ, чтобы зарядить выстрел, способный прорвать саму ткань реальности
+		DisplayName: Сверкоискра
 	}
 
 	TheFundamentals: {
-		// Tooltip: Hold the weapon in your hand without dealing damage for 10 seconds for your next strike to do 8x damage
-		// DisplayName: The Fundamentals
+		Tooltip: Держа это оружие, но не атакуя им на протяжении 10 и более секунд увеличит урон от его следующей атаки в 8 раз
+		DisplayName: Фундаменталисты
 	}
 
 	AncientsBag: {
-		// Tooltip: Right Click to open
-		// DisplayName: Treasure Bag
+		Tooltip: Нажми ПКМ, чтобы открыть (разве это не дефолтный ванильный тултип с 1.4 ещё?)
+		DisplayName: Мешок с сокровищами Древних
 	}
 
 	AqueousMask: {
-		// DisplayName: Aqueous' Crystal
-		/* Tooltip:
+		DisplayName: Кристалл Аквеус
+		Tooltip:
 			'''
-			Summons the 4 minions of Aqueous to defend you
-			You leave behind a trail of bubbles
-			''' */
+			Призывает четверых миньонов Аквеус, атакующих ближайших врагов
+			Ты оставляешь след из пузырьков, когда двигаешься
+			'''
 	}
 
 	AqueousTrophy: {
-		// DisplayName: Aqueous Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Аквеус
+		Tooltip: ""
 	}
 
 	BrinyBuster: {
-		// DisplayName: Briny Buster
-		// Tooltip: Strike your enemies with the force of the ocean
+		DisplayName: Солоноцеп
+		Tooltip: Сражай врагов своих мощью океана!
 	}
 
 	BubblePopper: {
-		// DisplayName: Bubble Popper
-		// Tooltip: Turns bullets into water bolts that explode into bubbles on impact
+		DisplayName: Пузырькопушка
+		Tooltip: Превращает обычные пули в водяные выстрелы, превращающиеся в пузырьки при контакте с врагами
 	}
 
 	HighTide: {
-		// DisplayName: High Tide
-		// Tooltip: Throws two chakrams that explode into bubbles on enemy hit
+		DisplayName: Прилив
+		Tooltip: Кидает два бумеранга, которые распадаются на пузырьки при контакте с врагами
 	}
 
 	OceansRazor: {
-		// DisplayName: Ocean's Razor
-		// Tooltip: Fires three explosive water shots
+		DisplayName: Битва океана
+		Tooltip: Стреляет тремя водяными выстрелами, взрывающимися при контакте с врагами
 	}
 
 	TheWave: {
-		// DisplayName: Overflow
-		// Tooltip: ""
+		DisplayName: Перелив
+		Tooltip: до толчка не добежал, походу
 	}
 
 	Varee: {
-		// DisplayName: Varee
-		// Tooltip: Turns normal arrows into splitting aquatic arrows
+		DisplayName: Вари
+		Tooltip: Превращает обычные стрелы в водяные стрелы, которые распадаются на ещё больше стрел при контакте с врагами
 	}
 
 	AqueousBag: {
+		DisplayName: Мешок с сокровищами Аквеус
+		Tooltip: Нажми <right>, чтобы открыть
+	}
+
+	HeatSink: {
+		DisplayName: Радиатор
+		Tooltip: хотя на радиатор он чё-то вообще не похож
+	}
+
+	LRM: {
+		DisplayName: Лазерная матрица переломления
+		Tooltip: больше похоже на прожектор какой-то, честно говоря
+	}
+
+	Transformer: {
+		DisplayName: Трансформатор
+		Tooltip: к счастью, не тот трансформер...
+	}
+
+	Transistor: {
+		DisplayName: Транзистор
+		Tooltip: ""
+	}
+
+	Anarchy: {
+		// DisplayName: Contamination
+		// Tooltip: Fires chaos bolts everywhere, while occasionally releasing chaos waves
+	}
+
+	AzanaMask: {
+		// DisplayName: Azana Mask
+		// Tooltip: ""
+	}
+
+	AzanaMinionStaff: {
+		// DisplayName: Vow of Malaise
+		// Tooltip: Summons an infection mouth to fight with you
+	}
+
+	AzanaTrophy: {
+		// DisplayName: Azana Trophy
+		// Tooltip: ""
+	}
+
+	ChaoticGaze: {
+		// DisplayName: Outbreak
+		/* Tooltip:
+			'''
+			Turns regular bullets into outbreak darts that increase the damage with each hit to a maximum of 2x
+			Has a chance to fire a chaos eater dealing 3x damage
+			50% chance to not consume ammo
+			''' */
+	}
+
+	ChaoticImpaler: {
+		// DisplayName: Chaotron Impaler
+		/* Tooltip:
+			'''
+			Charges arrows into chaotron lasers
+			Has a chance to fire a high damaging chaotron discharge
+			''' */
+	}
+
+	EntropicCoating: {
+		// DisplayName: Entropic Coating
+		// Tooltip: Grants immunity to Chaotic Necrosis
+	}
+
+	GleamOfAnnhialation: {
+		// DisplayName: Virulent Gleam
+		// Tooltip: ""
+	}
+
+	InfectionHeart: {
+		// DisplayName: Infection Heart
+		/* Tooltip:
+			'''
+			A dismal fusion of technology and magic...
+			Reactivate by using the item
+			Throw ores nearby to convert them into Chaotron Ore
+			''' */
+	}
+
+	Pandemonium: {
+		// DisplayName: Pandemonium
+		// Tooltip: ""
+	}
+
+	PurgeRifle: {
+		// DisplayName: Chaotron Accelerator
+		// Tooltip: ""
+	}
+
+	RingOfChaos: {
+		// DisplayName: Mark of the Infection
+		/* Tooltip:
+			'''
+			Pressing the ability key will create a shield around the player that absorbs damage, buffing the player as they absorb damage
+			10% increased critical strike chance
+			5% increased damage
+			''' */
+	}
+
+	AzanaBag: {
 		// DisplayName: Treasure Bag
 		// Tooltip: Right Click to open
 	}
 
-	HeatSink: {
-		// DisplayName: Heat Sink
+	ChargeRifle: {
+		// DisplayName: Charge Rifle
+		// Tooltip: <right> to charge
+	}
+
+	CosmicCrusher: {
+		// DisplayName: Cosmic Crusher
 		// Tooltip: ""
 	}
 
-	LRM: {
-		// DisplayName: Laser Refraction Matrix
+	CosmicShard: {
+		// DisplayName: Cosmic Shard
+		// Tooltip: It resonates slightly
+	}
+
+	CosmicGlass: {
+		// DisplayName: Cosmic Glass
+		/* Tooltip:
+			'''
+			15% increases critical strike chance
+			Critical strikes fire a cosmic beam at the enemy
+			''' */
+	}
+
+	CosmicObserverStaff: {
+		// DisplayName: Cosmic Observer Staff
+		// Tooltip: Summons a mini cosmic observer to fight for you
+	}
+
+	Demolecularizer: {
+		// DisplayName: Demolecularizer
+		/* Tooltip:
+			'''
+			Turns normal arrows into cosmic arrows
+			Has a chance to fire a cosmic hyperbeam
+			''' */
+	}
+
+	EnergyFork: {
+		// DisplayName: Energy Fork
 		// Tooltip: ""
 	}
 
-	Transformer: {
-		// DisplayName: Transformer
+	OrionsBelt: {
+		// DisplayName: Orion's Belt
+		// Tooltip: The Buildmonger's donator item
+	}
+
+	PlanetaryWave: {
+		// DisplayName: Planetary Wave
 		// Tooltip: ""
 	}
 
-	Transistor: {
-		// DisplayName: Transistor
+	CosmicalusVisor: {
+		/* SetBonus:
+			'''
+			Summons a cosmic ring to shoot at nearby enemies
+			Stops sanity from being drained in space
+			''' */
+		// DisplayName: Cosmicalus Visor
+		/* Tooltip:
+			'''
+			5% increased crit chance
+			Adds an extra minion slot
+			''' */
+	}
+
+	CosmicalusBreastplate: {
+		// DisplayName: Cosmicalus Breastplate
+		// Tooltip: 10% increased damage
+	}
+
+	CosmicalusLeggings: {
+		// DisplayName: Cosmicalus Leggings
+		// Tooltip: 15% increased movement speed
+	}
+
+	FireBlaster: {
+		// DisplayName: Fire Blaster
 		// Tooltip: ""
+	}
+
+	FireHarpyStaff: {
+		// DisplayName: Scepter of Warmth
+		/* Tooltip:
+			'''
+			Summons a hearth to defend you
+			Hearth's take 2 minion slots
+			''' */
 	}
 }
 
@@ -1403,8 +1579,9 @@ Tiles: {
 	ElementalForge.MapEntry: Элементальная печь
 	HiveCratePlaced.MapEntry: Ящик улья
 	ChaoticCrucible.MapEntry: Хаотронный тигель
-	// VoidLeviathanTrophy.MapEntry: Void Leviathan Trophy
-	// AqueousTrophy.MapEntry: Aqueous Trophy
+	VoidLeviathanTrophy.MapEntry: Трофей Левиафана Пустоты
+	AqueousTrophy.MapEntry: Трофей Аквеус
+	// AzanaTrophy.MapEntry: Azana Trophy
 }
 
 Buffs: {
@@ -1721,18 +1898,33 @@ Buffs: {
 	}
 
 	MiniVleviBuff: {
-		// DisplayName: Miniature Void Leviathan
-		// Description: This Void Leviathan will protect you
+		DisplayName: Левиафан Пустоты младший
+		Description: Маленький Левиафан Пустоты сражается за тебя
 	}
 
 	ArchaicProtectionCD: {
-		// Description: You cannot encase yourself in crystals
-		// DisplayName: Archaic Protection Cooldown
+		Description: Ты пока не можешь снова обратиться кристаллом
+		DisplayName: Откат старинной защиты
 	}
 
 	AqueousMinions: {
-		// DisplayName: Aqueous's Minions
-		// Description: The minions of Aqueous defend you
+		DisplayName: Миньоны Аквеус
+		Description: Миньоны Аквеус сражаются за тебя
+	}
+
+	InfectionMouthBuff: {
+		// DisplayName: Infection Mouth
+		// Description: Dont inhale the particles
+	}
+
+	CosmicObserverBuff: {
+		// DisplayName: Cosmic Observer
+		// Description: Its edges are insanely sharp
+	}
+
+	HearthMinionBuff: {
+		// DisplayName: Hearth
+		// Description: It radiates a soft warmth
 	}
 }
 
@@ -1862,50 +2054,84 @@ Projectiles: {
 	LamentPierce.DisplayName: Пирсящий проджектайл стенания
 	LamentWave.DisplayName: Волна стенания
 	LamentSuperPierce.DisplayName: Суперпирсящий проджектайл стенания
-	// AmuletProj.DisplayName: Amulet Proj
-	// ExtinctionBall.DisplayName: Extinction Ball
-	// BabyShadeWyrmHead.DisplayName: Worm
-	// VoidLeviathanProjBody.DisplayName: Void Leviathan
-	// VoidLeviathanProjHead.DisplayName: Void Leviathan
-	// VoidLeviathanProjTail.DisplayName: Void Leviathan
-	// VleviBody.DisplayName: Vlevi Body
-	// VleviHead.DisplayName: Vlevi Head
-	// VleviTail.DisplayName: Vlevi Tail
-	// CosmicWrathExplosion.DisplayName: Explosion
-	// CosmicWrathP.DisplayName: Cosmic Wrath
-	// Blackhole.DisplayName: Blackhole
-	// BlackholeCreator.DisplayName: Blackhole Creator
-	// BlackholeOrbit.DisplayName: Blackhole Orbit
-	// ExtinctionArrow.DisplayName: Extinction Arrow
-	// VoidPortal.DisplayName: Void Portal
-	// VoidPortalSinewave.DisplayName: Void Wave
-	// LightsAfflictionExplosion.DisplayName: TheSpine
-	// LightsAfflictionP.DisplayName: Lights Affliction
-	// DespairBody.DisplayName: Pike of Eternal Despair
-	// DespairTip.DisplayName: Gladiolus
-	// PikeOfEternalDespairP.DisplayName: Pike of Eternal Despair
-	// VoidExplosion.DisplayName: Explosion
-	// ReaperstormProj.DisplayName: Reaperstorm
-	// VoidInfernoBlast.DisplayName: Extinction Blast
-	// VoidInfernoP.DisplayName: Void Inferno
-	// BigExplosion.DisplayName: Explosion
-	// ChromacastBall.DisplayName: Chromacast
-	// ShimmersparkStrike.DisplayName: Shimmerspark
-	// ShimmersparkHeld.DisplayName: Shimmerspark
-	// ShimmerShrapnel.DisplayName: Shimmerspark
-	// FundementalStrike.DisplayName: The Fundementals
-	// AncientShard.DisplayName: Ancient Shard
-	// AqueousMinionFriendly1.DisplayName: Aqueous Minion
-	// AqueousMinionFriendly2.DisplayName: Aqueous Minion
-	// AqueousMinionFriendly3.DisplayName: Aqueous Minion
-	// AqueousMinionFriendly4.DisplayName: Aqueous Minion
-	// WaterballFriendly.DisplayName: Waterball
-	// BrinyBusterP.DisplayName: Briny Buster
-	// BubblePopperP.DisplayName: Bubble Popper
-	// HighTideP.DisplayName: High Tide
-	// AquaticArrow.DisplayName: Aquatic Arrow
-	// AquaticArrow2.DisplayName: Aquatic Arrow
-	// Watershot.DisplayName: Watershot
+	AmuletProj.DisplayName: Проджектайл амулета
+	ExtinctionBall.DisplayName: Шар вымирания
+	BabyShadeWyrmHead.DisplayName: Черв ь
+	VoidLeviathanProjBody.DisplayName: Левиафан Пустоты младший
+	VoidLeviathanProjHead.DisplayName: Левиафан Пустоты младший
+	VoidLeviathanProjTail.DisplayName: Левиафан Пустоты младший
+	VleviBody.DisplayName: Тело Влеви
+	VleviHead.DisplayName: Глава Влеви
+	VleviTail.DisplayName: Хвост Влеви
+	CosmicWrathExplosion.DisplayName: Взрыв космоярости
+	CosmicWrathP.DisplayName: Космоярость
+	Blackhole.DisplayName: чОрная дыра
+	BlackholeCreator.DisplayName: Создатель чОрной дыры
+	BlackholeOrbit.DisplayName: Кружитель чОрной дыры
+	ExtinctionArrow.DisplayName: Стрела вымирания
+	VoidPortal.DisplayName: Портал пустоты
+	VoidPortalSinewave.DisplayName: Пустоволна
+	LightsAfflictionExplosion.DisplayName: Взрыв светоскорби
+	LightsAfflictionP.DisplayName: Светоскорбь
+	DespairBody.DisplayName: Тело щуки вечнотчаянья
+	DespairTip.DisplayName: Кончик щуки вечнотчаянья
+	PikeOfEternalDespairP.DisplayName: Щука вечнотчаянья
+	VoidExplosion.DisplayName: Взрыв пустоты
+	ReaperstormProj.DisplayName: Жнецебуря
+	VoidInfernoBlast.DisplayName: Выстрел вымирания
+	VoidInfernoP.DisplayName: Пеклостота
+	BigExplosion.DisplayName: БольшойВзрыв
+	ChromacastBall.DisplayName: Хромакаст
+	ShimmersparkStrike.DisplayName: Удар сверкоискры
+	ShimmersparkHeld.DisplayName: Холдаут сверкоискры
+	ShimmerShrapnel.DisplayName: Ошмётки сверкоискры
+	FundementalStrike.DisplayName: Фундаменталисты
+	AncientShard.DisplayName: Древний осколок
+	AqueousMinionFriendly1.DisplayName: Миньон Аквеус
+	AqueousMinionFriendly2.DisplayName: Миньон Аквеус
+	AqueousMinionFriendly3.DisplayName: Миньон Аквеус
+	AqueousMinionFriendly4.DisplayName: Миньон Аквеус
+	WaterballFriendly.DisplayName: Водошар
+	BrinyBusterP.DisplayName: Солоноватая попойка
+	BubblePopperP.DisplayName: Проджектайл пузырькострела
+	HighTideP.DisplayName: Проджектайл прилива
+	AquaticArrow.DisplayName: Акватическая стрела
+	AquaticArrow2.DisplayName: Aкватическая стрела
+	Watershot.DisplayName: Водовыстрел
+	// AnarchyLaser.DisplayName: Anarchy Laser
+	// AnarchyWave.DisplayName: Anarchy Wave
+	// AnarchyP.DisplayName: Anarchy
+	// InfectionMouthMinion.DisplayName: Hungry
+	// ExplosionHostile.DisplayName: Explosion
+	// OutbreakDart.DisplayName: Outbreak Dart
+	// ChaosGazer.DisplayName: Chaos Gazer
+	// ChaosLaser.DisplayName: Chaos Laser
+	// ChaosShard.DisplayName: Chaos Shard
+	// ChaoticBlast.DisplayName: Chaotron Discharge
+	// AzanaNanoBolt.DisplayName: Azana
+	// InfectionHeart.DisplayName: Infection Heart
+	// PandemoniumBlast.DisplayName: Pandemonium
+	// PandemoniumFlame.DisplayName: Pandemonium
+	// PurgeBeam.DisplayName: Purge Beam
+	// ChargeRifleFull.DisplayName: Charge Rifle
+	// ChargeRifleHeld.DisplayName: Charge Rifle
+	// CosmicCrusherBlade.DisplayName: Cosmic Crusher
+	// CosmicCrusherSpawner.DisplayName: Cosmic Crusher
+	// CosmicArrow.DisplayName: Cosmic Arrow
+	// CosmicMinionShot.DisplayName: The Guardian
+	// DemolecularizerLaser.DisplayName: Demolecularizer
+	// CosmicObserver.DisplayName: Cosmic Invader
+	// OrionsBeltGalaxy.DisplayName: Orions Belt Galaxy
+	// PlanetarySpike.DisplayName: Planetary Spike
+	// PlanetaryWavePortal.DisplayName: Planetary Wave
+	// EnergyFork.DisplayName: Energy Fork
+	// EnergyFork2.DisplayName: Energy Fork
+	// OrionsBeltP.DisplayName: Orion's Belt
+	// CosmicalusRing.DisplayName: Cosmicalus
+	// FireBlasterBolt.DisplayName: Fire Blaster
+	// GreekFire.DisplayName: Greek Fire
+	// HearthMinion.DisplayName: Hearth
+	// HearthBeam.DisplayName: Hearth Beam
 }
 
 Configs: {
@@ -1917,13 +2143,13 @@ Configs: {
 
 Config: {
 	ElementsAwokenConfig: Основной конфиг
-	AlchemistPotionShop: Зелья алхимика
+	AlchemistPotionShop: Магазин алхимика
 	EnablesShop: ""
 	ResourceBars: Ресурсные полосы
 	TurnsUI: ""
 	DisableLabs: Отключить генерацию лабораторий
 	StopsLabs: ""
-	DisableBoss: Отключить промпты
+	DisableBoss: Отключить напоминания о боссах
 	Disablestheeffects: ""
 	ItemChanges: Отключить изменения ванильных предметов
 	vanillaitems: ""
@@ -1941,8 +2167,8 @@ Biomes: {
 	}
 
 	Emptiness: {
-		// DisplayName: Emptiness
-		// TownNPCDialogueName: the Emptiness
+		DisplayName: Пустота
+		TownNPCDialogueName: Пустота
 	}
 }
 
@@ -1951,6 +2177,7 @@ Keybinds: {
 	"Special Ability.DisplayName": Спецвозможность
 	"Armor Ability.DisplayName": Возможность брони
 	"Secondary Dash.DisplayName": Вторичный рывок
+	// "Armor Set Bonus ToolTips.DisplayName": Armor  Set  Bonus  Tool Tips
 }
 
 #TODO добавь и на английский также
@@ -2027,26 +2254,26 @@ Tooltips: {
 	Desolation1: Заряд
 	Desolation2: Диск
 	Desolation3: Быстрая стрельба
-	// VoidLeviathansAegis: <Dash Unbound>
-	/* VoidLeviathansAegis1:
+	VoidLeviathansAegis: <Dash Unbound>
+	VoidLeviathansAegis1:
 		'''
-		Life increased by 50
-		When under half health, defense is increased by 5%
-		Allows the player to perform a secondary dash using the
-		''' */
-	/* VoidLeviathansAegis2:
+		Увеличивает максимальное здоровье на 50
+		Когда здоровье ниже половины от максимума, твоя защита увеличивается на 5%
+		Позволяет игроку совершать вторичный рывок,
 		'''
-		key
-		For 15 seconds after taking 500 total damage:
-		40% increased movement speed
-		20% increased damage
-		''' */
-	// GiftOfTheArchaic: Press
-	/* GiftOfTheArchaic1:
+	VoidLeviathansAegis2:
 		'''
-		to encase the player in a crystal that knocks enemies away from the player and prevents damage
-		Hover over the item while equipped and press ctrl + key to rebind
-		''' */
+		нажав кнопку
+		После получения 500 урона, ты получаешь на 15 секунд:
+		Увеличение скорости передвижения на 40%
+		Увеличение всего урона на 20%
+		'''
+	GiftOfTheArchaic: Нажми кнопку
+	GiftOfTheArchaic1:
+		'''
+		чтобы обратиться в кристалл, отталкивающий врагов, которые его касаются и защищающий тебя от урона
+		Наведи курсор на этот аксессуар, когда он экипирован и нажми Ctrl + кнопка, на которую ты хочешь переключить хоткей использования его способности
+		'''
 }
 
 AccInfo: {
@@ -2059,7 +2286,36 @@ Resurs: {
 	Energy: Энергия
 }
 
-// said.VoidLeviathanHead: Infection overcomes the world...
+SetBonus: {
+	// SetBonusToolTips: Press Q to see the armor bonus set
+	/* CosmicalusVisor:
+		'''
+		Summons a cosmic ring to shoot at nearby enemies
+		Stops sanity from being drained in space
+		''' */
+	VoidWalkersVisage:
+		'''
+		Нажми кнопку способности брони, чтобы создать ауру Психоза
+		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
+		'''
+	VoidWalkersHood:
+		'''
+		Нажми кнопку способности брони, чтобы создать ауру Психоза
+		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
+		'''
+	VoidWalkersHelm:
+		'''
+		Нажми кнопку способности брони, чтобы создать ауру Психоза
+		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
+		'''
+	VoidWalkersGreatmask:
+		'''
+		Нажми кнопку способности брони, чтобы создать ауру Психоза
+		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
+		'''
+}
+
+said.VoidLeviathanHead: Инфекция поражает этот мир...
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 
 MyPlayerLocalization: {
@@ -2265,10 +2521,10 @@ MyWorldLocalization: {
 
 AwakenedModeNPCLocalization: {
 	AwakenedModeNPC: {
-		// Name4: Poisonous
-		// Name3: Shielded
-		// Name2: Electrifying
-		// Name1: Frozen
-		// Name: Blazing
+		Name4: Отравляющий
+		Name3: Защищённый
+		Name2: Наэлектризованный
+		Name1: Замораживающий
+		Name: Горящий
 	}
 }

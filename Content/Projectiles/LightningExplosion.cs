@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -19,10 +16,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.DamageType = DamageClass.Ranged;
             Projectile.timeLeft = 300;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Lightning");
-        }
         public override void AI()
         {
             for (int num134 = 0; num134 < 10; num134++)
@@ -37,7 +30,6 @@ namespace ElementsAwoken.Content.Projectiles
                 Main.dust[num135].noGravity = true;
             }
         }
-
         public override void OnKill(int timeLeft)
         {
             for (int k = 0; k < 5; k++)

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -21,10 +19,6 @@ namespace ElementsAwoken.Content.Projectiles.InfinityGauntlet
             Projectile.extraUpdates = 2;
             Projectile.timeLeft = 60000;
             Projectile.light = 2f;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Frost Shield");
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {

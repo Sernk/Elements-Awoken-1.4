@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -24,7 +25,7 @@ namespace ElementsAwoken.Content.Projectiles.Yoyos
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            target.AddBuff(Mod.Find<ModBuff>("ExtinctionCurse").Type, 200);
+            target.AddBuff(ModContent.BuffType<ExtinctionCurse>(), 200);
         }
         public override void AI()
         {

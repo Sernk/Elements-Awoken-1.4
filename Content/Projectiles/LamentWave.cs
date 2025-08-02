@@ -1,3 +1,4 @@
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -42,7 +43,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            //ProjectileUtils.Explosion(projectile, 113, damageType: "magic");
+            ProjectileUtils.Explosion(Projectile, 113, damageType: "magic");
         }
     }
 }

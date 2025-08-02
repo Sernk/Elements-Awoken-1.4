@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -21,10 +18,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.penetrate = 1;
             Projectile.extraUpdates = 2;
             Projectile.timeLeft = 600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Charge Rifle");
         }
         public override void AI()
         {

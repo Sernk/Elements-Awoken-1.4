@@ -18,17 +18,11 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.tileCollide = false;
-
             Projectile.penetrate = 6;
             Projectile.extraUpdates = 100;
             Projectile.timeLeft = 200;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Mech Lightning");
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
@@ -87,7 +81,6 @@ namespace ElementsAwoken.Content.Projectiles
                 goToX *= dist;
                 goToY *= dist;
                 Projectile.velocity = new Vector2((Projectile.velocity.X * 20f + goToX) / 21f, (Projectile.velocity.Y * 20f + goToY) / 21f).RotatedByRandom(.5);
-                //velocity = projectile.velocity;
                 return;
             }
             else

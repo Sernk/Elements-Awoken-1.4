@@ -9,8 +9,6 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
         public override void SetStaticDefaults()
         {
             Main.buffNoTimeDisplay[Type] = false;
-            // DisplayName.SetDefault("Ancients Curse");
-            // Description.SetDefault("");
         }
 		public override void Update(NPC npc, ref int buffIndex)
         {
@@ -18,7 +16,6 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
             dust.scale = Main.rand.NextFloat(0.5f,1.1f);
             dust.velocity *= 0.5f;
             dust.noGravity = true;
-
             npc.defense = (int)(npc.defense * 0.5f);
         }
     }

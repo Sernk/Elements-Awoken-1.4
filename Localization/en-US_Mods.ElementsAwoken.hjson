@@ -1355,6 +1355,181 @@ Items: {
 		DisplayName: Transistor
 		Tooltip: ""
 	}
+
+	Anarchy: {
+		DisplayName: Contamination
+		Tooltip: Fires chaos bolts everywhere, while occasionally releasing chaos waves
+	}
+
+	AzanaMask: {
+		DisplayName: Azana Mask
+		Tooltip: ""
+	}
+
+	AzanaMinionStaff: {
+		DisplayName: Vow of Malaise
+		Tooltip: Summons an infection mouth to fight with you
+	}
+
+	AzanaTrophy: {
+		DisplayName: Azana Trophy
+		Tooltip: ""
+	}
+
+	ChaoticGaze: {
+		DisplayName: Outbreak
+		Tooltip:
+			'''
+			Turns regular bullets into outbreak darts that increase the damage with each hit to a maximum of 2x
+			Has a chance to fire a chaos eater dealing 3x damage
+			50% chance to not consume ammo
+			'''
+	}
+
+	ChaoticImpaler: {
+		DisplayName: Chaotron Impaler
+		Tooltip:
+			'''
+			Charges arrows into chaotron lasers
+			Has a chance to fire a high damaging chaotron discharge
+			'''
+	}
+
+	EntropicCoating: {
+		DisplayName: Entropic Coating
+		Tooltip: Grants immunity to Chaotic Necrosis
+	}
+
+	GleamOfAnnhialation: {
+		DisplayName: Virulent Gleam
+		Tooltip: ""
+	}
+
+	InfectionHeart: {
+		DisplayName: Infection Heart
+		Tooltip:
+			'''
+			A dismal fusion of technology and magic...
+			Reactivate by using the item
+			Throw ores nearby to convert them into Chaotron Ore
+			'''
+	}
+
+	Pandemonium: {
+		DisplayName: Pandemonium
+		Tooltip: ""
+	}
+
+	PurgeRifle: {
+		DisplayName: Chaotron Accelerator
+		Tooltip: ""
+	}
+
+	RingOfChaos: {
+		DisplayName: Mark of the Infection
+		Tooltip:
+			'''
+			Pressing the ability key will create a shield around the player that absorbs damage, buffing the player as they absorb damage
+			10% increased critical strike chance
+			5% increased damage
+			'''
+	}
+
+	AzanaBag: {
+		DisplayName: Treasure Bag
+		Tooltip: Right Click to open
+	}
+
+	ChargeRifle: {
+		DisplayName: Charge Rifle
+		Tooltip: <right> to charge
+	}
+
+	CosmicCrusher: {
+		DisplayName: Cosmic Crusher
+		Tooltip: ""
+	}
+
+	CosmicShard: {
+		DisplayName: Cosmic Shard
+		Tooltip: It resonates slightly
+	}
+
+	CosmicGlass: {
+		DisplayName: Cosmic Glass
+		Tooltip:
+			'''
+			15% increases critical strike chance
+			Critical strikes fire a cosmic beam at the enemy
+			'''
+	}
+
+	CosmicObserverStaff: {
+		DisplayName: Cosmic Observer Staff
+		Tooltip: Summons a mini cosmic observer to fight for you
+	}
+
+	Demolecularizer: {
+		DisplayName: Demolecularizer
+		Tooltip:
+			'''
+			Turns normal arrows into cosmic arrows
+			Has a chance to fire a cosmic hyperbeam
+			'''
+	}
+
+	EnergyFork: {
+		DisplayName: Energy Fork
+		Tooltip: ""
+	}
+
+	OrionsBelt: {
+		DisplayName: Orion's Belt
+		Tooltip: The Buildmonger's donator item
+	}
+
+	PlanetaryWave: {
+		DisplayName: Planetary Wave
+		Tooltip: ""
+	}
+
+	CosmicalusVisor: {
+		SetBonus:
+			'''
+			Summons a cosmic ring to shoot at nearby enemies
+			Stops sanity from being drained in space
+			'''
+		DisplayName: Cosmicalus Visor
+		Tooltip:
+			'''
+			5% increased crit chance
+			Adds an extra minion slot
+			'''
+	}
+
+	CosmicalusBreastplate: {
+		DisplayName: Cosmicalus Breastplate
+		Tooltip: 10% increased damage
+	}
+
+	CosmicalusLeggings: {
+		DisplayName: Cosmicalus Leggings
+		Tooltip: 15% increased movement speed
+	}
+
+	FireBlaster: {
+		DisplayName: Fire Blaster
+		Tooltip: ""
+	}
+
+	FireHarpyStaff: {
+		DisplayName: Scepter of Warmth
+		Tooltip:
+			'''
+			Summons a hearth to defend you
+			Hearth's take 2 minion slots
+			'''
+	}
 }
 
 Tiles: {
@@ -1393,6 +1568,7 @@ Tiles: {
 	ChaoticCrucible.MapEntry: Chaotron Crucible
 	VoidLeviathanTrophy.MapEntry: Void Leviathan Trophy
 	AqueousTrophy.MapEntry: Aqueous Trophy
+	AzanaTrophy.MapEntry: Azana Trophy
 }
 
 Buffs: {
@@ -1722,6 +1898,21 @@ Buffs: {
 		DisplayName: Aqueous's Minions
 		Description: The minions of Aqueous defend you
 	}
+
+	InfectionMouthBuff: {
+		DisplayName: Infection Mouth
+		Description: Dont inhale the particles
+	}
+
+	CosmicObserverBuff: {
+		DisplayName: Cosmic Observer
+		Description: Its edges are insanely sharp
+	}
+
+	HearthMinionBuff: {
+		DisplayName: Hearth
+		Description: It radiates a soft warmth
+	}
 }
 
 NPCs: {
@@ -1894,6 +2085,40 @@ Projectiles: {
 	AquaticArrow.DisplayName: Aquatic Arrow
 	AquaticArrow2.DisplayName: Aquatic Arrow
 	Watershot.DisplayName: Watershot
+	AnarchyLaser.DisplayName: Anarchy Laser
+	AnarchyWave.DisplayName: Anarchy Wave
+	AnarchyP.DisplayName: Anarchy
+	InfectionMouthMinion.DisplayName: Hungry
+	ExplosionHostile.DisplayName: Explosion
+	OutbreakDart.DisplayName: Outbreak Dart
+	ChaosGazer.DisplayName: Chaos Gazer
+	ChaosLaser.DisplayName: Chaos Laser
+	ChaosShard.DisplayName: Chaos Shard
+	ChaoticBlast.DisplayName: Chaotron Discharge
+	AzanaNanoBolt.DisplayName: Azana
+	InfectionHeart.DisplayName: Infection Heart
+	PandemoniumBlast.DisplayName: Pandemonium
+	PandemoniumFlame.DisplayName: Pandemonium
+	PurgeBeam.DisplayName: Purge Beam
+	ChargeRifleFull.DisplayName: Charge Rifle
+	ChargeRifleHeld.DisplayName: Charge Rifle
+	CosmicCrusherBlade.DisplayName: Cosmic Crusher
+	CosmicCrusherSpawner.DisplayName: Cosmic Crusher
+	CosmicArrow.DisplayName: Cosmic Arrow
+	CosmicMinionShot.DisplayName: The Guardian
+	DemolecularizerLaser.DisplayName: Demolecularizer
+	CosmicObserver.DisplayName: Cosmic Invader
+	OrionsBeltGalaxy.DisplayName: Orions Belt Galaxy
+	PlanetarySpike.DisplayName: Planetary Spike
+	PlanetaryWavePortal.DisplayName: Planetary Wave
+	EnergyFork.DisplayName: Energy Fork
+	EnergyFork2.DisplayName: Energy Fork
+	OrionsBeltP.DisplayName: Orion's Belt
+	CosmicalusRing.DisplayName: Cosmicalus
+	FireBlasterBolt.DisplayName: Fire Blaster
+	GreekFire.DisplayName: Greek Fire
+	HearthMinion.DisplayName: Hearth
+	HearthBeam.DisplayName: Hearth Beam
 }
 
 Configs: {
@@ -1939,6 +2164,7 @@ Keybinds: {
 	"Special Ability.DisplayName": Special  Ability
 	"Armor Ability.DisplayName": Armor  Ability
 	"Secondary Dash.DisplayName": Secondary  Dash
+	"Armor Set Bonus ToolTips.DisplayName": Armor  Set  Bonus  Tool Tips
 }
 
 #TODO добавь и на английский также
@@ -2045,6 +2271,35 @@ AccInfo: {
 Resurs: {
 	Sanity: Sanity
 	Energy: Energy
+}
+
+SetBonus: {
+	SetBonusToolTips: Press Q to see the armor bonus set
+	CosmicalusVisor:
+		'''
+		Summons a cosmic ring to shoot at nearby enemies
+		Stops sanity from being drained in space
+		'''
+	VoidWalkersVisage:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	VoidWalkersHood:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	VoidWalkersHelm:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	VoidWalkersGreatmask:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
 }
 
 said.VoidLeviathanHead: Infection overcomes the world...

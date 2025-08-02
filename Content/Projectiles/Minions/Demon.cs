@@ -10,7 +10,6 @@ namespace ElementsAwoken.Content.Projectiles.Minions
     public class Demon : ModProjectile
     {
         public int shootTimer = 30;
-
         public override void SetDefaults()
         {
             Projectile.width = 30;
@@ -24,12 +23,10 @@ namespace ElementsAwoken.Content.Projectiles.Minions
             ProjectileID.Sets.MinionTargettingFeature[Projectile.type] = true;
             Projectile.penetrate = -1;
             Projectile.minion = true;
-            //aiType = 317;
             Projectile.aiStyle = 62;
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Demon");
             Main.projFrames[Projectile.type] = 2;
         }
         public override bool PreDraw(ref Color lightColor)
@@ -62,7 +59,6 @@ namespace ElementsAwoken.Content.Projectiles.Minions
             {
                 Projectile.active = false;
             }
-
             shootTimer--;
             float maxDist = 400f;
             float shootSpeed = 15f;
@@ -104,7 +100,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                     shootVel.Normalize();
                     shootVel *= shootSpeed;
                     SoundEngine.PlaySound(SoundID.Item8, player.position);
-                    int proj = Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X, Projectile.Center.Y, shootVel.X, shootVel.Y, ProjectileID.DemonScythe, 20, Projectile.knockBack, Main.myPlayer, 0f, 0f);
+                    int proj = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, shootVel.X, shootVel.Y, ProjectileID.DemonScythe, 20, Projectile.knockBack, Main.myPlayer, 0f, 0f);
                     Main.projectile[proj].timeLeft = 300;
                     Main.projectile[proj].netUpdate = true;
                     Projectile.netUpdate = true;

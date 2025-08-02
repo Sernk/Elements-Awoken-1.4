@@ -1,5 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Terraria.ModLoader;
+﻿using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
 {

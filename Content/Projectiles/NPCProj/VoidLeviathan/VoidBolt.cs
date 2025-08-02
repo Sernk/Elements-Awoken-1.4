@@ -11,23 +11,16 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
 {
     public class VoidBolt : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 6;
             Projectile.height = 6;
             Projectile.penetrate = -1;
             Projectile.scale *= 1.4f;
-
             Projectile.hostile = true;
-
             Projectile.timeLeft = 300;
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 12;
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Void Leviathan Bolt");
         }
         public override void AI()
         {
@@ -43,12 +36,10 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                 dust.scale = 1f;
             }
         }
-
         public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {
             target.AddBuff(ModContent.BuffType<ExtinctionCurse>(), 80, true);
         }
-
         public override bool PreDraw(ref Color lightColor)
         {
             Vector2 drawOrigin = new Vector2(TextureAssets.Projectile[Projectile.type].Value.Width * 0.5f, Projectile.height * 0.5f);
@@ -56,7 +47,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Main.spriteBatch.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

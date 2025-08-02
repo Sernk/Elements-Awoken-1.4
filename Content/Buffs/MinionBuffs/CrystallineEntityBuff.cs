@@ -9,7 +9,7 @@ namespace ElementsAwoken.Content.Buffs.MinionBuffs
     {
         public override void Update(Player player, ref int buffIndex)
         {
-            MyPlayer modPlayer = (MyPlayer)player.GetModPlayer<MyPlayer>();
+            MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
             if (player.ownedProjectileCounts[ModContent.ProjectileType<DisarrayEntity>()] > 0)
             {
                 modPlayer.crystalEntity = true;

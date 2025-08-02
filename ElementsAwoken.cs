@@ -40,6 +40,7 @@ namespace ElementsAwoken
         public static ModKeybind specialAbility;
         public static ModKeybind armorAbility;
         public static ModKeybind dash2;
+        public static ModKeybind ASBT;
 
         public static ElementsAwoken instance;
 
@@ -110,6 +111,7 @@ namespace ElementsAwoken
             specialAbility = KeybindLoader.RegisterKeybind(this, "Special Ability", "Z");
             armorAbility = KeybindLoader.RegisterKeybind(this, "Armor Ability", "X");
             dash2 = KeybindLoader.RegisterKeybind(this, "Secondary Dash", "F");
+            ASBT = KeybindLoader.RegisterKeybind(this, "Armor Set Bonus ToolTips", "Q");
             if (!Main.dedServ)
             {
                 Filters.Scene["ElementsAwoken:VoidLeviathanHead"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);

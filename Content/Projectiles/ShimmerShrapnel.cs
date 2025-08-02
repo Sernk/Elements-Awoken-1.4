@@ -66,26 +66,10 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + 1.57f;
             if (Main.rand.Next(4) == 0)
             {
-                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, GetDustID());
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.GetDustID());
                 Main.dust[dust].noGravity = true;
                 Main.dust[dust].scale = 1f;
                 Main.dust[dust].velocity *= 0.1f;
-            }
-        }
-        private int GetDustID()
-        {
-            switch (Main.rand.Next(4))
-            {
-                case 0:
-                    return ModContent.DustType<AncientRed>();
-                case 1:
-                    return ModContent.DustType<AncientGreen>();
-                case 2:
-                    return ModContent.DustType<AncientBlue>();
-                case 3:
-                    return ModContent.DustType<AncientPink>();
-                default:
-                    return ModContent.DustType<AncientRed>();
             }
         }
     }

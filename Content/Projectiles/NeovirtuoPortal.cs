@@ -1,8 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -10,7 +8,6 @@ namespace ElementsAwoken.Content.Projectiles
     public class NeovirtuoPortal : ModProjectile
     {
         public int laserTimer = 5;
-
         public override void SetDefaults()
         {
             Projectile.width = 36;
@@ -24,10 +21,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.timeLeft = 600;
             Main.projFrames[Projectile.type] = 4;
             Projectile.DamageType = DamageClass.Magic;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Neovirtuo Portal");
         }
         public override void AI()
         {
@@ -48,12 +41,11 @@ namespace ElementsAwoken.Content.Projectiles
                     if (laserTimer <= 0)
                     {
                         Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1)).RotatedByRandom(MathHelper.ToRadians(20));
-                        Projectile.NewProjectile(Projectile.GetSource_FromThis(), vector8.X, vector8.Y, perturbedSpeed.X, perturbedSpeed.Y, type, 60, 0f, Main.myPlayer, 0f, 0f);
+                        Projectile.NewProjectile(Const.Proj(Projectile), vector8.X, vector8.Y, perturbedSpeed.X, perturbedSpeed.Y, type, 60, 0f, Main.myPlayer, 0f, 0f);
                         laserTimer = 5;
                     }
                 }
             }
-
         }
         public override bool PreDraw(ref Color lightColor)
         {

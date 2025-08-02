@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -19,10 +17,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.tileCollide = false;
             Projectile.penetrate = -1;
             Projectile.timeLeft = 100;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Poison Water");
         }
         public override void AI()
         {
@@ -55,7 +49,6 @@ namespace ElementsAwoken.Content.Projectiles
                 }
             }
         }
-
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(BuffID.Poisoned, 120);

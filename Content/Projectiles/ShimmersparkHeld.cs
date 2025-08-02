@@ -75,7 +75,7 @@ namespace ElementsAwoken.Content.Projectiles
                         num19 *= 1.2f;
                     }
                     Vector2 vector14 = value5 + ((float)Main.rand.NextDouble() * 6.28318548f).ToRotationVector2() * (12f - (float)(num16 * 2));
-                    int num20 = Dust.NewDust(vector14 - Vector2.One * 8f, 16, 16, GetDustID(), Projectile.velocity.X / 2f, Projectile.velocity.Y / 2f, 0, default(Color), 1f);
+                    int num20 = Dust.NewDust(vector14 - Vector2.One * 8f, 16, 16, Const.GetDustID(), Projectile.velocity.X / 2f, Projectile.velocity.Y / 2f, 0, default(Color), 1f);
                     Main.dust[num20].velocity = Vector2.Normalize(value5 - vector14) * 1.5f * (10f - (float)num16 * 2f) / 10f;
                     Main.dust[num20].noGravity = true;
                     Main.dust[num20].scale = num19;
@@ -140,22 +140,6 @@ namespace ElementsAwoken.Content.Projectiles
                 Projectile.netUpdate = true;
             }
             Projectile.velocity = vector4;
-        }
-        private int GetDustID()
-        {
-            switch (Main.rand.Next(4))
-            {
-                case 0:
-                    return ModContent.DustType<AncientRed>();
-                case 1:
-                    return ModContent.DustType<AncientGreen>();
-                case 2:
-                    return ModContent.DustType<AncientBlue>();
-                case 3:
-                    return ModContent.DustType<AncientPink>();
-                default:
-                    return ModContent.DustType<AncientRed>();
-            }
         }
     }
 }

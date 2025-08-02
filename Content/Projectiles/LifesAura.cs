@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.EASystem.Global;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
@@ -13,18 +14,10 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 170;
             Projectile.height = 170;
-
             Projectile.alpha = 150;
-
             Projectile.penetrate = -1;
-
             Projectile.tileCollide = false;
-
             Projectile.timeLeft = 3600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Life's Aura");
         }
         public override void AI()
         {
@@ -38,7 +31,7 @@ namespace ElementsAwoken.Content.Projectiles
                 dust.noGravity = true;
             }
             Projectile.ai[0]++;
-            /*if (ProjectileUtils.CountProjectiles(Projectile.type, Projectile.owner) > 1)
+            if (ProjectileUtils.CountProjectiles(Projectile.type, Projectile.owner) > 1)
             {
                 if (ProjectileUtils.HasLeastTimeleft(Projectile.whoAmI))
                 {
@@ -48,7 +41,7 @@ namespace ElementsAwoken.Content.Projectiles
                         Projectile.Kill();
                     }
                 }
-            }*/
+            }
             if (Projectile.timeLeft < 60)
             {
                 Projectile.alpha += 5;

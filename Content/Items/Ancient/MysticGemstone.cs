@@ -23,7 +23,7 @@ namespace ElementsAwoken.Content.Items.Ancient
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(7, 53));
-            ItemID.Sets.AnimatesAsSoul[Type] = true;
+            Const.SetSoul(Type);
         }
         public override void AddRecipes()
         {

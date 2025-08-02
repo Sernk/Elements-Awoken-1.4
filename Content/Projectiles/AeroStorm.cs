@@ -1,5 +1,4 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -22,7 +21,6 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Aero Storm");
             Main.projFrames[Projectile.type] = 6;
         }
         public override bool PreDraw(ref Color lightColor)
@@ -44,12 +42,12 @@ namespace ElementsAwoken.Content.Projectiles
             int spawnWidth = Projectile.width - 4;
             if (Projectile.ai[0] <= 0)
             {
-                Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X + Main.rand.Next(-spawnWidth / 2, spawnWidth / 2), Projectile.position.Y + Projectile.height, 0, 10, ProjectileID.RainFriendly, Projectile.damage, 0, Projectile.owner);
+                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X + Main.rand.Next(-spawnWidth / 2, spawnWidth / 2), Projectile.position.Y + Projectile.height, 0, 10, ProjectileID.RainFriendly, Projectile.damage, 0, Projectile.owner);
                 Projectile.ai[0] = 15;
             }
             if (Projectile.ai[1] <= 0)
             {
-                Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center.X + Main.rand.Next(-spawnWidth / 2, spawnWidth / 2), Projectile.position.Y + Projectile.height, Main.rand.NextFloat(-2, 2), 10, Mod.Find<ModProjectile>("AeroLightning").Type, Projectile.damage * 2, 0, Projectile.owner);
+                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X + Main.rand.Next(-spawnWidth / 2, spawnWidth / 2), Projectile.position.Y + Projectile.height, Main.rand.NextFloat(-2, 2), 10, Mod.Find<ModProjectile>("AeroLightning").Type, Projectile.damage * 2, 0, Projectile.owner);
                 Projectile.ai[1] = Main.rand.Next(60, 120);
                 Projectile.netUpdate = true;
             }

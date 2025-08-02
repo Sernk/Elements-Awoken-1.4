@@ -1,6 +1,5 @@
 ﻿using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -11,14 +10,11 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
     {
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Extinction Curse");
-            // Description.SetDefault("The forces of the abyss pull you deeper...");
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
-            BuffID.Sets.LongerExpertDebuff[Type] = true;
+            Const.Longer(Type);
         }
-
         public override void Update(NPC npc, ref int buffIndex)
         {
             npc.GetGlobalNPC<NPCsGLOBAL>().extinctionCurse = true;
@@ -38,6 +34,5 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
             Main.dust[num1].velocity *= 3f;
             Main.dust[num1].noGravity = true;
         }
-
     }
 }

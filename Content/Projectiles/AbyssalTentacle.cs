@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using ElementsAwoken.Content.Buffs.Debuffs;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -19,10 +17,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.DamageType = DamageClass.Magic;
             Projectile.friendly = true;
             Projectile.tileCollide = false;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Void Tentacle");
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {

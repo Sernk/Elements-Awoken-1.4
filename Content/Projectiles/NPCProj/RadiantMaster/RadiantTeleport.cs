@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
 {
@@ -14,16 +10,13 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
         {
             Projectile.width = 66;
             Projectile.height = 150;
-
             Projectile.hostile = true;
             Projectile.tileCollide = false;
-
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Radiant Master");
             Main.projFrames[Projectile.type] = 6;
         }
         public override bool CanHitPlayer(Player target)

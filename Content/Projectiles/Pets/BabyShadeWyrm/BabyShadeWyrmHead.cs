@@ -43,7 +43,6 @@ namespace ElementsAwoken.Content.Projectiles.Pets.BabyShadeWyrm
                 Projectile.timeLeft = 2;
             }
 
-            // head
             Vector2 center14 = player.Center;
             int num1049 = 10;
             int num1053 = -1;

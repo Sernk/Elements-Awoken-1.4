@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace ElementsAwoken.Content.Projectiles
 {
@@ -16,11 +12,9 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 38;
             Projectile.height = 38;
-
             Projectile.friendly = true;
             Projectile.ignoreWater = true;
             Projectile.tileCollide = false;
-
             Projectile.penetrate = -1;
             Projectile.extraUpdates = 2;
             Projectile.timeLeft = 600;
@@ -29,7 +23,6 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Aero Storm");
             Main.projFrames[Projectile.type] = 6;
         }
         public override bool PreDraw(ref Color lightColor)

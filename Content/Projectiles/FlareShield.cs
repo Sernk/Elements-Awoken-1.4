@@ -1,8 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -20,10 +18,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.penetrate = -1;
             Projectile.tileCollide = false;
             Projectile.timeLeft = 10000;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Drakonian Guard Shield");
         }
         public override void AI()
         {

@@ -9,7 +9,6 @@ namespace ElementsAwoken.Content.Projectiles.Explosions
     public class VoidRuneExplosion : ModProjectile
     {
         public override string Texture { get { return "ElementsAwoken/Content/Projectiles/Explosions/LightsAfflictionExplosion"; } }
-
         public override void SetDefaults()
         {
             Projectile.width = 98;
@@ -21,9 +20,7 @@ namespace ElementsAwoken.Content.Projectiles.Explosions
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Void Rune");
             Main.projFrames[Projectile.type] = 7;
-
         }
         public override bool CanHitPlayer(Player target)
         {

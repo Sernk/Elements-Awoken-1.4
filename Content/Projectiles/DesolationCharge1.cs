@@ -1,9 +1,7 @@
 ﻿using ElementsAwoken.Content.Dusts.Ancients;
 using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
@@ -14,17 +12,11 @@ namespace ElementsAwoken.Content.Projectiles
         {
             Projectile.width = 4;
             Projectile.height = 4;
-
             Projectile.friendly = true;
             Projectile.ignoreWater = true;
             Projectile.minion = true;
-
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Desolation");
         }
         public override void AI()
         {

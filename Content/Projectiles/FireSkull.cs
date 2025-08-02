@@ -1,3 +1,4 @@
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
@@ -63,7 +64,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            //ProjectileUtils.Explosion(Projectile, 6);
+            ProjectileUtils.Explosion(Projectile, 6);
         }
     }
 }

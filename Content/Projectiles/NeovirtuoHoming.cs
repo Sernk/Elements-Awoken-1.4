@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
+using System;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Projectiles
 {
     public class NeovirtuoHoming : ModProjectile
     {
-
         public override void SetDefaults()
         {
             Projectile.width = 4;
@@ -20,10 +18,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.DamageType = DamageClass.Melee;
             Projectile.penetrate = 1;
             Projectile.timeLeft = 600;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Neovirtuo");
         }
         public override Color? GetAlpha(Color lightColor)
         {
@@ -83,7 +77,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            //ProjectileUtils.Explosion(Projectile, 60, damageType: "melee");
+            ProjectileUtils.Explosion(Projectile, 60, damageType: "melee");
         }
     }
 }

@@ -20,12 +20,9 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
             Projectile.extraUpdates = 2;
             Projectile.timeLeft = 600;
             Projectile.scale = 0.6f;
-            //ProjectileID.Sets.TrailCacheLength[projectile.type] = 16;
-            //ProjectileID.Sets.TrailingMode[projectile.type] = 0;
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Void Orb");
             Main.projFrames[Projectile.type] = 2;
         }
         public override void AI()
@@ -70,7 +67,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
                 Rectangle rectangle = new Rectangle(0, (tex.Height / Main.projFrames[Projectile.type]) * Projectile.frame, tex.Width, tex.Height / Main.projFrames[Projectile.type]);
-                Main.spriteBatch.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                Const.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

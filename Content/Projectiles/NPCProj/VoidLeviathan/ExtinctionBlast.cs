@@ -12,23 +12,15 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
     {
         public override void SetDefaults()
         {
-            //projectile.CloneDefaults(ProjectileID.CultistBossFireBall);
-            //aiType = ProjectileID.CultistBossFireBall;
-            //ProjectileID.Sets.Homing[projectile.type] = true;
             Main.projFrames[Projectile.type] = 4;
             Projectile.width = 32;
             Projectile.height = 32;
-            //projectile.aiStyle = 1;
             Projectile.hostile = true;
             Projectile.ignoreWater = true;
             Projectile.extraUpdates = 1;
             Projectile.hostile = true;
             Projectile.friendly = false;
             Projectile.tileCollide = false;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Extinction Blast");
         }
         public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {

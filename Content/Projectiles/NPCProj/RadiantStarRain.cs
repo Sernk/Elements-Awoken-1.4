@@ -22,14 +22,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
             ProjectileID.Sets.TrailCacheLength[Projectile.type] = 20;
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Sparkle");
-        }
-        public override void AI()
-        {
-
-        }
+        public override void AI() { }
         public override void OnKill(int timeLeft)
         {
             Vector2 spinningpoint = new Vector2(0f, -3f).RotatedByRandom(3.1415927410125732);
@@ -69,11 +62,11 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                 Color color35 = Color.White;
                 color35 *= 1f - num147 * (float)num148 / 1f;
                 color35.A = (byte)((float)color35.A * (1f - num149));
-                Main.spriteBatch.Draw(texture, vector40 + Projectile.oldPos[num148] - Projectile.position, null, color35, Projectile.oldRot[num148], vector11, Projectile.scale * MathHelper.Lerp(0.8f, 0.3f, num149), spriteEffects, 0f);
+                Const.Sb.Draw(texture, vector40 + Projectile.oldPos[num148] - Projectile.position, null, color35, Projectile.oldRot[num148], vector11, Projectile.scale * MathHelper.Lerp(0.8f, 0.3f, num149), spriteEffects, 0f);
                 num148--;
             }
             texture = TextureAssets.Extra[57].Value;
-            Main.spriteBatch.Draw(texture, vector40, null, Color.HotPink, 0f, texture.Size() / 2f, Projectile.scale, spriteEffects, 0f);
+            Const.Sb.Draw(texture, vector40, null, Color.HotPink, 0f, texture.Size() / 2f, Projectile.scale, spriteEffects, 0f);
             return false;
         }
     }

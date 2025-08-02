@@ -31,7 +31,6 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
                 dust.noGravity = true;
                 dust.scale = 1f;
             }
-
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
