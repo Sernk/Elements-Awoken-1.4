@@ -95,7 +95,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
             else tileCollideTimer = 0;
         }
-        private bool CheckForNearbyLessHitNPCs(NPC currentNPC) // the worst name
+        private bool CheckForNearbyLessHitNPCs(NPC currentNPC)
         {
             for (int i = 0; i < Main.npc.Length; i++)
             {

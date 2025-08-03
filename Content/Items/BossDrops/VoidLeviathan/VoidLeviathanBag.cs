@@ -23,7 +23,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
-            var _AwakenedMode = new LeadingConditionRule(new IDRNC(IDRNC.BossType.AwakenedMode, true));
+            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
             itemLoot.Add(ItemDropRule.OneFromOptions(1, Masiv.LeviLoot));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VoidLeviathanHeart>(), 1, 2, 2));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AmuletOfDestruction>()));

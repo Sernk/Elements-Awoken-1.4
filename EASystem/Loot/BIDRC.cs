@@ -6,8 +6,9 @@ namespace ElementsAwoken.EASystem.Loot
 {
     /// <summary>
     /// A condition that checks if a specific boss has been defeated or not.
+    /// BIDRC = Boss Item Drop Rule Condition
     /// </summary>
-    public class IDRNC : IItemDropRuleCondition
+    public class BIDRC : IItemDropRuleCondition
     {
         public enum BossType
         {
@@ -31,7 +32,6 @@ namespace ElementsAwoken.EASystem.Loot
             Deerclops,
             EmpressOfLight,
             Custom,
-            AwakenedMode
         }
 
         private readonly BossType bossType;
@@ -45,7 +45,7 @@ namespace ElementsAwoken.EASystem.Loot
         /// <param name="bossType">The type of boss to check</param>
         /// <param name="requireDefeated">If true, the condition passes when the boss is defeated. If false, it passes when the boss is not defeated.</param>
         /// <param name="customBossID">Only used when bossType is Custom</param>
-        public IDRNC(BossType bossType, bool requireDefeated = true, int customBossID = -1)
+        public BIDRC(BossType bossType, bool requireDefeated = true, int customBossID = -1)
         {
             this.bossType = bossType;
             this.requireDefeated = requireDefeated;
@@ -97,7 +97,6 @@ namespace ElementsAwoken.EASystem.Loot
                 BossType.Deerclops => NPC.downedDeerclops,
                 BossType.EmpressOfLight => NPC.downedEmpressOfLight,
                 BossType.Custom => IsBossDefeatedByID(customBossID),
-                BossType.AwakenedMode => MyWorld.awakenedMode,
                 _ => false,
             };
         }

@@ -13,6 +13,7 @@ public class ArmorSetBonusToolTips : GlobalItem
     public bool IsVoidWalkersHood;
     public bool IsVoidWalkersHelm;
     public bool IsVoidWalkersGreatmask;
+    public bool IsEnergyWeaversHelm;
     public ArmorSetBonusToolTips()
     {
         IsHelmet = false;
@@ -21,6 +22,7 @@ public class ArmorSetBonusToolTips : GlobalItem
         IsVoidWalkersHood = false;
         IsVoidWalkersHelm = false;
         IsVoidWalkersGreatmask = false;
+        IsEnergyWeaversHelm = false;
     }
     public override bool InstancePerEntity
     {
@@ -60,6 +62,10 @@ public class ArmorSetBonusToolTips : GlobalItem
                 if (IsVoidWalkersGreatmask)
                 {
                     tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.VoidWalkersGreatmask) { OverrideColor = new Color(128, 128, 128) });
+                }
+                if (IsEnergyWeaversHelm)
+                {
+                    tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.EnergyWeaversHelm) { OverrideColor = new Color(128, 128, 128) });
                 }
             }
         }

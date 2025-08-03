@@ -24,7 +24,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Ancients
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
-            var _AwakenedMode = new LeadingConditionRule(new IDRNC(IDRNC.BossType.AwakenedMode, true));
+            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
             itemLoot.Add(ItemDropRule.OneFromOptions(1, Masiv.AncLot));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystallineLocket>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystalAmalgamate>(), 2));

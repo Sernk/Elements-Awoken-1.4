@@ -1530,6 +1530,307 @@ Items: {
 			Hearth's take 2 minion slots
 			'''
 	}
+
+	FireHeart: {
+		DisplayName: Inferno Heart
+		Tooltip:
+			'''
+			Ignites nearby enemies
+			Blows up nearby lesser enemies that are on low health
+			Lights up the area
+			'''
+	}
+
+	FlareSword: {
+		DisplayName: Blade of Ashes
+		Tooltip: ""
+	}
+
+	InfernaceMask: {
+		DisplayName: Infernace Mask
+		Tooltip: ""
+	}
+
+	InfernaceTrophy: {
+		DisplayName: Infernace Trophy
+		Tooltip: ""
+	}
+
+	InfernoVortex: {
+		DisplayName: Inferno Vortex
+		Tooltip: ""
+	}
+
+	InfernaceBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	CrystallineCluster: {
+		DisplayName: Crystalline Cluster
+		Tooltip: Summons a possessed hand
+	}
+
+	Magmarox: {
+		DisplayName: Magmarox
+		Tooltip: ""
+	}
+
+	ObsidiousTrophy: {
+		DisplayName: Obsidious Trophy
+		Tooltip: ""
+	}
+
+	ObsidiousWings: {
+		DisplayName: Obsidious Wings
+		Tooltip: Allows flight and slow fall
+	}
+
+	SacredCrystal: {
+		DisplayName: Sacred Crystal
+		Tooltip: Greed drives even the strongest minds to madness
+	}
+
+	TerreneScepter: {
+		DisplayName: Terrene Scepter
+		Tooltip: Summons a terrene mortar to defend you
+	}
+
+	Ultramarine: {
+		DisplayName: Ultramarine
+		Tooltip: ""
+	}
+
+	VioletEdge: {
+		DisplayName: Violet Edge
+		Tooltip: ""
+	}
+
+	ObsidiousBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	ObsidiousMask: {
+		DisplayName: Obsidious Mask
+		Tooltip: ""
+	}
+
+	ObsidiousPants: {
+		DisplayName: Obsidious Pants
+		Tooltip: ""
+	}
+
+	ObsidiousRobes: {
+		DisplayName: Obsidious Robes
+		Tooltip: ""
+	}
+
+	Flurry: {
+		DisplayName: Flurry
+		Tooltip: Summons an icicle to fight for you
+	}
+
+	Frigidblaster: {
+		DisplayName: Frigidblaster
+		Tooltip: ""
+	}
+
+	IceReaver: {
+		DisplayName: Ice Reaver
+		Tooltip: ""
+	}
+
+	IceWrath: {
+		DisplayName: Ice Wrath
+		Tooltip: ""
+	}
+
+	IcyHeart: {
+		DisplayName: Icy Heart
+		Tooltip:
+			'''
+			The player generates an ice shield after 10 seconds of not taking damage
+			Takes 20 seconds of charging to block 100% of damage
+			'''
+	}
+
+	PermafrostMask: {
+		DisplayName: Permafrost Mask
+		Tooltip: ""
+	}
+
+	PermafrostTrophy: {
+		DisplayName: Permafrost Trophy
+		Tooltip: ""
+	}
+
+	Snowdrift: {
+		DisplayName: Snowdrift
+		Tooltip: ""
+	}
+
+	SoulOfTheFrost: {
+		DisplayName: Soul of the Frost
+		Tooltip:
+			'''
+			The icy power source of Permafrost
+			10% increased damage
+			Immunity to chilled, frostburn and frozen
+			Armor penetration increased by 10
+			'''
+	}
+
+	PermafrostBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	Majesty: {
+		DisplayName: Majesty
+		Tooltip: ""
+	}
+
+	RadiantBomb: {
+		DisplayName: Master's Vortex
+		Tooltip: ""
+	}
+
+	RadiantBow: {
+		DisplayName: Rosy Skies
+		Tooltip: Turns normal arrows homing radiant stars
+	}
+
+	RadiantSword: {
+		DisplayName: Magenta Storm
+		Tooltip: Right Click to summon sentient blades around the player
+	}
+
+	RadiantCrown: {
+		DisplayName: Radiant Crown
+		Tooltip:
+			'''
+			Double tap down to teleport you to the position of the mouse
+			Creates a radiant storm around nearby enemies
+			'''
+	}
+
+	EnergyStaff: {
+		DisplayName: Energy Staff
+		Tooltip: Summons an energy spirit to fight for you
+	}
+
+	EyeOfRegaroth: {
+		DisplayName: Eye of Regaroth
+		Tooltip: ""
+	}
+
+	RegarothMask: {
+		DisplayName: Regaroth Mask
+		Tooltip: ""
+	}
+
+	RegarothTrophy: {
+		DisplayName: Regaroth Trophy
+		Tooltip: ""
+	}
+
+	Starstruck: {
+		DisplayName: Thundering Recurve
+		Tooltip: ""
+	}
+
+	StoneOfHope: {
+		DisplayName: Stone Of Hope
+		Tooltip:
+			'''
+			The relic of Regaroth
+			The lower your health the higher your defense and damage
+			'''
+	}
+
+	TheSilencer: {
+		DisplayName: The Silencer
+		Tooltip: ""
+	}
+
+	EnergyWeaversBreastplate: {
+		DisplayName: Energy Weaver's Breastplate
+		Tooltip:
+			'''
+			Wing mobility is greatly increased
+			20% decreased mana usage
+			'''
+	}
+
+	EnergyWeaversHelm: {
+		DisplayName: Energy Weaver's Helm
+		Tooltip:
+			'''
+			Damage increased the closer it is to midday to a maximum of 30%
+			Critical strike chance increased by 7
+			'''
+	}
+
+	EnergyWeaversLeggings: {
+		DisplayName: Energy Weaver's Leggings
+		Tooltip:
+			'''
+			Damage increased the closer it is to midday to a maximum of 5%
+			20% increased movement speed
+			You leave a trail of energy particles
+			'''
+	}
+
+	RegarothBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	ScourgeDrive: {
+		DisplayName: Scourge Drive
+		Tooltip:
+			'''
+			Greatly increases movement speeds
+			When the player is going above 60mph:
+			You explode on hit
+			Damage is increased by 25%
+			'''
+	}
+
+	ScourgeFighterMachineGun: {
+		DisplayName: Scourge Fighter Machine Gun
+		Tooltip: Ripped off the remains of the Scourge Fighter
+	}
+
+	ScourgeFighterRocketLauncher: {
+		DisplayName: Scourge Rocket Launcher
+		Tooltip:
+			'''
+			Ripped off the remains of the Scourge Fighter
+			Turns normal rockets into scourge rockets
+			'''
+	}
+
+	ScourgeFighterTrophy: {
+		DisplayName: Scourge Fighter Trophy
+		Tooltip: ""
+	}
+
+	ScourgeSword: {
+		DisplayName: Bounty Hunt
+		Tooltip: ""
+	}
+
+	SignalBooster: {
+		DisplayName: Signal Booster
+		Tooltip: ""
+	}
+
+	ScourgeFighterBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
 }
 
 Tiles: {
@@ -1569,6 +1870,11 @@ Tiles: {
 	VoidLeviathanTrophy.MapEntry: Void Leviathan Trophy
 	AqueousTrophy.MapEntry: Aqueous Trophy
 	AzanaTrophy.MapEntry: Azana Trophy
+	InfernaceTrophy.MapEntry: Infernace Trophy
+	ObsidiousTrophy.MapEntry: Obsidious Trophy
+	PermafrostTrophy.MapEntry: Permafrost Trophy
+	RegarothTrophy.MapEntry: Regaroth Trophy
+	ScourgeFighterTrophy.MapEntry: Scourge Fighter Trophy
 }
 
 Buffs: {
@@ -1913,6 +2219,21 @@ Buffs: {
 		DisplayName: Hearth
 		Description: It radiates a soft warmth
 	}
+
+	PossessedHandBuff: {
+		DisplayName: Possessed Hand
+		Description: It has noBody
+	}
+
+	IcicleBuff: {
+		DisplayName: Icicle
+		Description: It never melts
+	}
+
+	EnergySpiritBuff: {
+		DisplayName: Energy Spirit
+		Description: Its almost too bright to look at
+	}
 }
 
 NPCs: {
@@ -2119,6 +2440,37 @@ Projectiles: {
 	GreekFire.DisplayName: Greek Fire
 	HearthMinion.DisplayName: Hearth
 	HearthBeam.DisplayName: Hearth Beam
+	FireBlade.DisplayName: Fire Blade
+	SpinningFlame.DisplayName: Spinning Flame
+	MagmaroxMeteor.DisplayName: Solar Fragment
+	MagmaroxRock.DisplayName: Magmarox
+	PossessedHand.DisplayName: Possessed Hand
+	SacredCrystalLaser.DisplayName: Sacred Crystals
+	TerreneMortar.DisplayName: Terrene Mortar
+	TerreneRock.DisplayName: Terrene Rock
+	UltramarineBeam.DisplayName: Ultramarine
+	VioletEdgeBall.DisplayName: Violet Edge Ball
+	Frigidbullet.DisplayName: Frigidbullet
+	IcicleMinion.DisplayName: Bubble
+	IceWrathArrow.DisplayName: Ice Wrath
+	IceReaverP.DisplayName: Ice Reaver
+	IceWrathBeam.DisplayName: Ice Wrath
+	SnowdriftBomb.DisplayName: Snowdrift
+	RadiantStarHoming.DisplayName: Radiant Star
+	RadiantStarSpiral.DisplayName: Radiant Star
+	RadiantBombP.DisplayName: Master's Vortex
+	MajestyP.DisplayName: Majesty
+	RadiantBlade.DisplayName: Radiant Blade
+	RadiantStarBow.DisplayName: Radiant Star
+	RadiantStorm.DisplayName: Radiant Storm
+	EnergySpiritBolt.DisplayName: Energy Bolt
+	EnergySpirit.DisplayName: Energy Spirit
+	TheSilencerP.DisplayName: The Silencer
+	StarstruckArrow.DisplayName: Starstruck
+	StarstruckBeam.DisplayName: Starstruck
+	BountyP.DisplayName: Signal Booster
+	ScourgeRocketFriendly.DisplayName: Rocket
+	SignalBoost.DisplayName: Signal Booster
 }
 
 Configs: {
@@ -2300,9 +2652,16 @@ SetBonus: {
 		Press the armour ability key to activate psychosis aura
 		The psychosis aura confuses enemies and inflicts extinction curse
 		'''
+	EnergyWeaversHelm: You charge up energy and release it at nearby enemies
 }
 
 said.VoidLeviathanHead: Infection overcomes the world...
+
+LooTCondition: {
+	AwakenedModeActive: Exclusively in awakened mode
+	ScourgeLootCondition: Drop chance 1/3
+}
+
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 
 MyPlayerLocalization: {

@@ -113,6 +113,11 @@ namespace ElementsAwoken.Utilities
         public string VoidWalkersHood => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersHood");
         public string VoidWalkersHelm => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersHelm");
         public string VoidWalkersGreatmask => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersGreatmask");
+        public string EnergyWeaversHelm => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.EnergyWeaversHelm");
+        #endregion
+        #region LooTCondition 
+        public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");
+        public string ScourgeLootCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.ScourgeLootCondition");
         #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");

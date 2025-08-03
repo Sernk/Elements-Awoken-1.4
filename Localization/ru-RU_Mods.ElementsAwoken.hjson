@@ -1296,7 +1296,7 @@ Items: {
 	}
 
 	AncientsBag: {
-		Tooltip: Нажми ПКМ, чтобы открыть (разве это не дефолтный ванильный тултип с 1.4 ещё?)
+		Tooltip: Нажми <right>, чтобы открыть
 		DisplayName: Мешок с сокровищами Древних
 	}
 
@@ -1370,178 +1370,479 @@ Items: {
 	}
 
 	Anarchy: {
-		// DisplayName: Contamination
-		// Tooltip: Fires chaos bolts everywhere, while occasionally releasing chaos waves
+		DisplayName: Заражение
+		Tooltip: Запускает выстрелы хаоса во все стороны, иногда выпуская волны хаоса
 	}
 
 	AzanaMask: {
-		// DisplayName: Azana Mask
-		// Tooltip: ""
+		DisplayName: Маска Азаны
+		Tooltip: ""
 	}
 
 	AzanaMinionStaff: {
-		// DisplayName: Vow of Malaise
-		// Tooltip: Summons an infection mouth to fight with you
+		DisplayName: Обет недомогания
+		Tooltip: Призывает уста инфекции сражаться за тебя
 	}
 
 	AzanaTrophy: {
-		// DisplayName: Azana Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Азаны
+		Tooltip: ""
 	}
 
 	ChaoticGaze: {
-		// DisplayName: Outbreak
-		/* Tooltip:
+		DisplayName: Вспышка заражения
+		Tooltip:
 			'''
-			Turns regular bullets into outbreak darts that increase the damage with each hit to a maximum of 2x
-			Has a chance to fire a chaos eater dealing 3x damage
-			50% chance to not consume ammo
-			''' */
+			Превращает обычные пули в дротики заражения, которые постепенно увеличивают свой урон, вплоть до 200% от изначального, при каждом попадании по врагу
+			Также имеет шанс выпустить Хаосоеда, наносящим втрое больше урона, чем само оружие
+			Имеет 50% шанс не потратить аммуницию при выстреле
+			'''
 	}
 
 	ChaoticImpaler: {
-		// DisplayName: Chaotron Impaler
-		/* Tooltip:
+		DisplayName: Хаотронный пронзатель
+		Tooltip:
 			'''
-			Charges arrows into chaotron lasers
-			Has a chance to fire a high damaging chaotron discharge
-			''' */
+			Заряжает обычные стрелы, превращая их в Хаотронные лазеры
+			Также имеет шанс выстрелить Хаотронным разрядом, наносящим намного больше урона
+			'''
 	}
 
 	EntropicCoating: {
-		// DisplayName: Entropic Coating
-		// Tooltip: Grants immunity to Chaotic Necrosis
+		DisplayName: Энтропийное покрытие
+		Tooltip: Даёт неуязвимость к дебаффу "Хаотический некроз"
 	}
 
 	GleamOfAnnhialation: {
-		// DisplayName: Virulent Gleam
-		// Tooltip: ""
+		DisplayName: Заразный блеск
+		Tooltip: как блеск может быть заразным вообще?
 	}
 
 	InfectionHeart: {
-		// DisplayName: Infection Heart
-		/* Tooltip:
+		DisplayName: Сердце инфекции
+		Tooltip:
 			'''
-			A dismal fusion of technology and magic...
-			Reactivate by using the item
-			Throw ores nearby to convert them into Chaotron Ore
-			''' */
+			Жуткое сочетание техники и магии...
+			Используй предмет снова, чтобы его активировать заново
+			Кинь к этому предмету любую руду, чтобы превратить её в Хаотронную руду
+			'''
 	}
 
 	Pandemonium: {
-		// DisplayName: Pandemonium
-		// Tooltip: ""
+		DisplayName: Пандемоний
+		Tooltip: ""
 	}
 
 	PurgeRifle: {
-		// DisplayName: Chaotron Accelerator
-		// Tooltip: ""
+		DisplayName: Ускоритель Хаотронных частиц
+		Tooltip: ""
 	}
 
 	RingOfChaos: {
-		// DisplayName: Mark of the Infection
-		/* Tooltip:
+		DisplayName: Знак инфекции
+		Tooltip:
 			'''
-			Pressing the ability key will create a shield around the player that absorbs damage, buffing the player as they absorb damage
-			10% increased critical strike chance
-			5% increased damage
-			''' */
+			Нажми кнопку специальной способности, чтобы создать вокруг себя щит, поглощающий весь урон и усиляющий тебя при поглощении урона
+			Увеличивает весь шанс критического удара на 10%
+			Увеличивает весь урон на 5%
+			'''
 	}
 
 	AzanaBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: Right Click to open
+		DisplayName: Мешок с сокровищами Азаны
+		Tooltip: Нажми <right>, чтобы открыть
 	}
 
 	ChargeRifle: {
-		// DisplayName: Charge Rifle
-		// Tooltip: <right> to charge
+		DisplayName: Зарядная винтовка
+		Tooltip: Нажми <right>, чтобы зарядить оружие
 	}
 
 	CosmicCrusher: {
-		// DisplayName: Cosmic Crusher
-		// Tooltip: ""
+		DisplayName: Космический крушитель
+		Tooltip: ""
 	}
 
 	CosmicShard: {
-		// DisplayName: Cosmic Shard
-		// Tooltip: It resonates slightly
+		DisplayName: Космический осколок
+		Tooltip: Он немного гудит
 	}
 
 	CosmicGlass: {
-		// DisplayName: Cosmic Glass
-		/* Tooltip:
+		DisplayName: Космозеркало
+		Tooltip:
 			'''
-			15% increases critical strike chance
-			Critical strikes fire a cosmic beam at the enemy
-			''' */
+			Увеличивает весь шанс критического удара на 15%
+			Любой критический удар дополнительно создаёт космический луч, стреляющий во врага
+			'''
 	}
 
 	CosmicObserverStaff: {
-		// DisplayName: Cosmic Observer Staff
-		// Tooltip: Summons a mini cosmic observer to fight for you
+		DisplayName: Посох Космоблюдателя
+		Tooltip: Призывает Космоблюдателя младшего сражаться за тебя
 	}
 
 	Demolecularizer: {
-		// DisplayName: Demolecularizer
-		/* Tooltip:
+		DisplayName: Размолекулеризатор
+		Tooltip:
 			'''
-			Turns normal arrows into cosmic arrows
-			Has a chance to fire a cosmic hyperbeam
-			''' */
+			Превращает обычные стрелы в космические стрелы
+			Также имеет шанс выпустить космический гиперлуч при выстреле
+			'''
 	}
 
 	EnergyFork: {
-		// DisplayName: Energy Fork
-		// Tooltip: ""
+		DisplayName: Энерговилы
+		Tooltip: ""
 	}
 
 	OrionsBelt: {
-		// DisplayName: Orion's Belt
-		// Tooltip: The Buildmonger's donator item
+		DisplayName: Пояс Ориона
+		Tooltip: Предмет донатора Buildmonger
 	}
 
 	PlanetaryWave: {
-		// DisplayName: Planetary Wave
-		// Tooltip: ""
+		DisplayName: Планетная волна
+		Tooltip: ""
 	}
 
 	CosmicalusVisor: {
-		/* SetBonus:
+		SetBonus:
 			'''
-			Summons a cosmic ring to shoot at nearby enemies
-			Stops sanity from being drained in space
-			''' */
-		// DisplayName: Cosmicalus Visor
-		/* Tooltip:
+			Создаёт космическое кольцо, атакующее врагов
+			Здравомыслие больше не понижается в космосе
 			'''
-			5% increased crit chance
-			Adds an extra minion slot
-			''' */
+		DisplayName: Забрало Космикала
+		Tooltip:
+			'''
+			Увеличивает весь шанс критического удара на 5%
+			Увеличивает максимальное количество миньон-слотов на 1
+			'''
 	}
 
 	CosmicalusBreastplate: {
-		// DisplayName: Cosmicalus Breastplate
-		// Tooltip: 10% increased damage
+		DisplayName: Нагрудник Космикала
+		Tooltip: Увеличивает весь урон на 10%
 	}
 
 	CosmicalusLeggings: {
-		// DisplayName: Cosmicalus Leggings
-		// Tooltip: 15% increased movement speed
+		DisplayName: Штаны Космикала
+		Tooltip: 15% increased movement speed
 	}
 
 	FireBlaster: {
-		// DisplayName: Fire Blaster
-		// Tooltip: ""
+		DisplayName: Огнебластер
+		Tooltip: ""
 	}
 
 	FireHarpyStaff: {
-		// DisplayName: Scepter of Warmth
+		DisplayName: Жезл тепла
+		Tooltip:
+			'''
+			Призывает очаг сражаться за тебя
+			Каждый очаг занимает 2 миньон-слота
+			'''
+	}
+
+	FireHeart: {
+		// DisplayName: Inferno Heart
 		/* Tooltip:
 			'''
-			Summons a hearth to defend you
-			Hearth's take 2 minion slots
+			Ignites nearby enemies
+			Blows up nearby lesser enemies that are on low health
+			Lights up the area
 			''' */
+	}
+
+	FlareSword: {
+		// DisplayName: Blade of Ashes
+		// Tooltip: ""
+	}
+
+	InfernaceMask: {
+		// DisplayName: Infernace Mask
+		// Tooltip: ""
+	}
+
+	InfernaceTrophy: {
+		// DisplayName: Infernace Trophy
+		// Tooltip: ""
+	}
+
+	InfernoVortex: {
+		// DisplayName: Inferno Vortex
+		// Tooltip: ""
+	}
+
+	InfernaceBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	CrystallineCluster: {
+		// DisplayName: Crystalline Cluster
+		// Tooltip: Summons a possessed hand
+	}
+
+	Magmarox: {
+		// DisplayName: Magmarox
+		// Tooltip: ""
+	}
+
+	ObsidiousTrophy: {
+		// DisplayName: Obsidious Trophy
+		// Tooltip: ""
+	}
+
+	ObsidiousWings: {
+		// DisplayName: Obsidious Wings
+		// Tooltip: Allows flight and slow fall
+	}
+
+	SacredCrystal: {
+		// DisplayName: Sacred Crystal
+		// Tooltip: Greed drives even the strongest minds to madness
+	}
+
+	TerreneScepter: {
+		// DisplayName: Terrene Scepter
+		// Tooltip: Summons a terrene mortar to defend you
+	}
+
+	Ultramarine: {
+		// DisplayName: Ultramarine
+		// Tooltip: ""
+	}
+
+	VioletEdge: {
+		// DisplayName: Violet Edge
+		// Tooltip: ""
+	}
+
+	ObsidiousBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	ObsidiousMask: {
+		// DisplayName: Obsidious Mask
+		// Tooltip: ""
+	}
+
+	ObsidiousPants: {
+		// DisplayName: Obsidious Pants
+		// Tooltip: ""
+	}
+
+	ObsidiousRobes: {
+		// DisplayName: Obsidious Robes
+		// Tooltip: ""
+	}
+
+	Flurry: {
+		// DisplayName: Flurry
+		// Tooltip: Summons an icicle to fight for you
+	}
+
+	Frigidblaster: {
+		// DisplayName: Frigidblaster
+		// Tooltip: ""
+	}
+
+	IceReaver: {
+		// DisplayName: Ice Reaver
+		// Tooltip: ""
+	}
+
+	IceWrath: {
+		// DisplayName: Ice Wrath
+		// Tooltip: ""
+	}
+
+	IcyHeart: {
+		// DisplayName: Icy Heart
+		/* Tooltip:
+			'''
+			The player generates an ice shield after 10 seconds of not taking damage
+			Takes 20 seconds of charging to block 100% of damage
+			''' */
+	}
+
+	PermafrostMask: {
+		// DisplayName: Permafrost Mask
+		// Tooltip: ""
+	}
+
+	PermafrostTrophy: {
+		// DisplayName: Permafrost Trophy
+		// Tooltip: ""
+	}
+
+	Snowdrift: {
+		// DisplayName: Snowdrift
+		// Tooltip: ""
+	}
+
+	SoulOfTheFrost: {
+		// DisplayName: Soul of the Frost
+		/* Tooltip:
+			'''
+			The icy power source of Permafrost
+			10% increased damage
+			Immunity to chilled, frostburn and frozen
+			Armor penetration increased by 10
+			''' */
+	}
+
+	PermafrostBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	Majesty: {
+		// DisplayName: Majesty
+		// Tooltip: ""
+	}
+
+	RadiantBomb: {
+		// DisplayName: Master's Vortex
+		// Tooltip: ""
+	}
+
+	RadiantBow: {
+		// DisplayName: Rosy Skies
+		// Tooltip: Turns normal arrows homing radiant stars
+	}
+
+	RadiantSword: {
+		// DisplayName: Magenta Storm
+		// Tooltip: Right Click to summon sentient blades around the player
+	}
+
+	RadiantCrown: {
+		// DisplayName: Radiant Crown
+		/* Tooltip:
+			'''
+			Double tap down to teleport you to the position of the mouse
+			Creates a radiant storm around nearby enemies
+			''' */
+	}
+
+	EnergyStaff: {
+		// DisplayName: Energy Staff
+		// Tooltip: Summons an energy spirit to fight for you
+	}
+
+	EyeOfRegaroth: {
+		// DisplayName: Eye of Regaroth
+		// Tooltip: ""
+	}
+
+	RegarothMask: {
+		// DisplayName: Regaroth Mask
+		// Tooltip: ""
+	}
+
+	RegarothTrophy: {
+		// DisplayName: Regaroth Trophy
+		// Tooltip: ""
+	}
+
+	Starstruck: {
+		// DisplayName: Thundering Recurve
+		// Tooltip: ""
+	}
+
+	StoneOfHope: {
+		// DisplayName: Stone Of Hope
+		/* Tooltip:
+			'''
+			The relic of Regaroth
+			The lower your health the higher your defense and damage
+			''' */
+	}
+
+	TheSilencer: {
+		// DisplayName: The Silencer
+		// Tooltip: ""
+	}
+
+	EnergyWeaversBreastplate: {
+		// DisplayName: Energy Weaver's Breastplate
+		/* Tooltip:
+			'''
+			Wing mobility is greatly increased
+			20% decreased mana usage
+			''' */
+	}
+
+	EnergyWeaversHelm: {
+		// DisplayName: Energy Weaver's Helm
+		/* Tooltip:
+			'''
+			Damage increased the closer it is to midday to a maximum of 30%
+			Critical strike chance increased by 7
+			''' */
+	}
+
+	EnergyWeaversLeggings: {
+		// DisplayName: Energy Weaver's Leggings
+		/* Tooltip:
+			'''
+			Damage increased the closer it is to midday to a maximum of 5%
+			20% increased movement speed
+			You leave a trail of energy particles
+			''' */
+	}
+
+	RegarothBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	ScourgeDrive: {
+		// DisplayName: Scourge Drive
+		/* Tooltip:
+			'''
+			Greatly increases movement speeds
+			When the player is going above 60mph:
+			You explode on hit
+			Damage is increased by 25%
+			''' */
+	}
+
+	ScourgeFighterMachineGun: {
+		// DisplayName: Scourge Fighter Machine Gun
+		// Tooltip: Ripped off the remains of the Scourge Fighter
+	}
+
+	ScourgeFighterRocketLauncher: {
+		// DisplayName: Scourge Rocket Launcher
+		/* Tooltip:
+			'''
+			Ripped off the remains of the Scourge Fighter
+			Turns normal rockets into scourge rockets
+			''' */
+	}
+
+	ScourgeFighterTrophy: {
+		// DisplayName: Scourge Fighter Trophy
+		// Tooltip: ""
+	}
+
+	ScourgeSword: {
+		// DisplayName: Bounty Hunt
+		// Tooltip: ""
+	}
+
+	SignalBooster: {
+		// DisplayName: Signal Booster
+		// Tooltip: ""
+	}
+
+	ScourgeFighterBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
 	}
 }
 
@@ -1581,7 +1882,12 @@ Tiles: {
 	ChaoticCrucible.MapEntry: Хаотронный тигель
 	VoidLeviathanTrophy.MapEntry: Трофей Левиафана Пустоты
 	AqueousTrophy.MapEntry: Трофей Аквеус
-	// AzanaTrophy.MapEntry: Azana Trophy
+	AzanaTrophy.MapEntry: Трофей Азаны
+	// InfernaceTrophy.MapEntry: Infernace Trophy
+	// ObsidiousTrophy.MapEntry: Obsidious Trophy
+	// PermafrostTrophy.MapEntry: Permafrost Trophy
+	// RegarothTrophy.MapEntry: Regaroth Trophy
+	// ScourgeFighterTrophy.MapEntry: Scourge Fighter Trophy
 }
 
 Buffs: {
@@ -1913,18 +2219,33 @@ Buffs: {
 	}
 
 	InfectionMouthBuff: {
-		// DisplayName: Infection Mouth
-		// Description: Dont inhale the particles
+		DisplayName: Уста инфекции
+		Description: Главное - не вдыхать их частицы
 	}
 
 	CosmicObserverBuff: {
-		// DisplayName: Cosmic Observer
-		// Description: Its edges are insanely sharp
+		DisplayName: Космоблюдатель
+		Description: Охренеть у него острые углы, конечно
 	}
 
 	HearthMinionBuff: {
-		// DisplayName: Hearth
-		// Description: It radiates a soft warmth
+		DisplayName: Очаг
+		Description: Излучает приятное тепло...
+	}
+
+	PossessedHandBuff: {
+		// DisplayName: Possessed Hand
+		// Description: It has noBody
+	}
+
+	IcicleBuff: {
+		// DisplayName: Icicle
+		// Description: It never melts
+	}
+
+	EnergySpiritBuff: {
+		// DisplayName: Energy Spirit
+		// Description: Its almost too bright to look at
 	}
 }
 
@@ -1992,7 +2313,7 @@ Projectiles: {
 	VoidRunes.DisplayName: Руны Пустоты
 	VoidOrbProj.DisplayName: Проджектайл Пустосферы
 	VoidOrbDestroyed.DisplayName: Пустосфера Разрушена
-	// VoidOrb.DisplayName: Void Orb
+	VoidOrb.DisplayName: Пустосфера
 	VoidBolt.DisplayName: Выстрел Пустоты
 	ExtinctionBlast.DisplayName: Пустовзрыв
 	VoidRuneExplosion.DisplayName: Взрыв Руны Пустоты
@@ -2098,40 +2419,71 @@ Projectiles: {
 	AquaticArrow.DisplayName: Акватическая стрела
 	AquaticArrow2.DisplayName: Aкватическая стрела
 	Watershot.DisplayName: Водовыстрел
-	// AnarchyLaser.DisplayName: Anarchy Laser
-	// AnarchyWave.DisplayName: Anarchy Wave
-	// AnarchyP.DisplayName: Anarchy
-	// InfectionMouthMinion.DisplayName: Hungry
-	// ExplosionHostile.DisplayName: Explosion
-	// OutbreakDart.DisplayName: Outbreak Dart
-	// ChaosGazer.DisplayName: Chaos Gazer
-	// ChaosLaser.DisplayName: Chaos Laser
-	// ChaosShard.DisplayName: Chaos Shard
-	// ChaoticBlast.DisplayName: Chaotron Discharge
-	// AzanaNanoBolt.DisplayName: Azana
-	// InfectionHeart.DisplayName: Infection Heart
-	// PandemoniumBlast.DisplayName: Pandemonium
-	// PandemoniumFlame.DisplayName: Pandemonium
-	// PurgeBeam.DisplayName: Purge Beam
-	// ChargeRifleFull.DisplayName: Charge Rifle
-	// ChargeRifleHeld.DisplayName: Charge Rifle
-	// CosmicCrusherBlade.DisplayName: Cosmic Crusher
-	// CosmicCrusherSpawner.DisplayName: Cosmic Crusher
-	// CosmicArrow.DisplayName: Cosmic Arrow
-	// CosmicMinionShot.DisplayName: The Guardian
-	// DemolecularizerLaser.DisplayName: Demolecularizer
-	// CosmicObserver.DisplayName: Cosmic Invader
-	// OrionsBeltGalaxy.DisplayName: Orions Belt Galaxy
-	// PlanetarySpike.DisplayName: Planetary Spike
-	// PlanetaryWavePortal.DisplayName: Planetary Wave
-	// EnergyFork.DisplayName: Energy Fork
-	// EnergyFork2.DisplayName: Energy Fork
-	// OrionsBeltP.DisplayName: Orion's Belt
-	// CosmicalusRing.DisplayName: Cosmicalus
-	// FireBlasterBolt.DisplayName: Fire Blaster
-	// GreekFire.DisplayName: Greek Fire
-	// HearthMinion.DisplayName: Hearth
-	// HearthBeam.DisplayName: Hearth Beam
+	AnarchyLaser.DisplayName: Лазер анархии
+	AnarchyWave.DisplayName: Волна анархии
+	AnarchyP.DisplayName: Анархия
+	InfectionMouthMinion.DisplayName: Уста инфекции
+	ExplosionHostile.DisplayName: Вражеский взрыв
+	OutbreakDart.DisplayName: Дротик заражения
+	ChaosGazer.DisplayName: Хаозритель
+	ChaosLaser.DisplayName: Лазер хаоса
+	ChaosShard.DisplayName: Осколок хаоса
+	ChaoticBlast.DisplayName: Хаотронный разряд
+	AzanaNanoBolt.DisplayName: Азановый нановыстрел
+	InfectionHeart.DisplayName: Сердце инфекции
+	PandemoniumBlast.DisplayName: Взрыв пандемония
+	PandemoniumFlame.DisplayName: Пламя пандемония
+	PurgeBeam.DisplayName: Луч чисточки
+	ChargeRifleFull.DisplayName: Полностью заряженная винтовка
+	ChargeRifleHeld.DisplayName: Холдаут заряжаемой винтовки
+	CosmicCrusherBlade.DisplayName: Космокрушительское лезвие
+	CosmicCrusherSpawner.DisplayName: Спавнер космокрушителя
+	CosmicArrow.DisplayName: Космическая стрела
+	CosmicMinionShot.DisplayName: Космический миньон
+	DemolecularizerLaser.DisplayName: Размолекулеризаторский лазер
+	CosmicObserver.DisplayName: Космоблюдатель
+	OrionsBeltGalaxy.DisplayName: Галактика пояса Ориона
+	PlanetarySpike.DisplayName: Планетарский шип
+	PlanetaryWavePortal.DisplayName: Планетарская волна
+	EnergyFork.DisplayName: Энерговилка
+	EnergyFork2.DisplayName: Энерговилка2
+	OrionsBeltP.DisplayName: Проджектайл пояса Ориона
+	CosmicalusRing.DisplayName: КосмиКАЛовское кольцо
+	FireBlasterBolt.DisplayName: Выстрел огнебластера
+	GreekFire.DisplayName: Греческий огонь
+	HearthMinion.DisplayName: Очаг
+	HearthBeam.DisplayName: Выстрел очага
+	// FireBlade.DisplayName: Fire Blade
+	// SpinningFlame.DisplayName: Spinning Flame
+	// MagmaroxMeteor.DisplayName: Solar Fragment
+	// MagmaroxRock.DisplayName: Magmarox
+	// PossessedHand.DisplayName: Possessed Hand
+	// SacredCrystalLaser.DisplayName: Sacred Crystals
+	// TerreneMortar.DisplayName: Terrene Mortar
+	// TerreneRock.DisplayName: Terrene Rock
+	// UltramarineBeam.DisplayName: Ultramarine
+	// VioletEdgeBall.DisplayName: Violet Edge Ball
+	// Frigidbullet.DisplayName: Frigidbullet
+	// IcicleMinion.DisplayName: Bubble
+	// IceWrathArrow.DisplayName: Ice Wrath
+	// IceReaverP.DisplayName: Ice Reaver
+	// IceWrathBeam.DisplayName: Ice Wrath
+	// SnowdriftBomb.DisplayName: Snowdrift
+	// RadiantStarHoming.DisplayName: Radiant Star
+	// RadiantStarSpiral.DisplayName: Radiant Star
+	// RadiantBombP.DisplayName: Master's Vortex
+	// MajestyP.DisplayName: Majesty
+	// RadiantBlade.DisplayName: Radiant Blade
+	// RadiantStarBow.DisplayName: Radiant Star
+	// RadiantStorm.DisplayName: Radiant Storm
+	// EnergySpiritBolt.DisplayName: Energy Bolt
+	// EnergySpirit.DisplayName: Energy Spirit
+	// TheSilencerP.DisplayName: The Silencer
+	// StarstruckArrow.DisplayName: Starstruck
+	// StarstruckBeam.DisplayName: Starstruck
+	// BountyP.DisplayName: Signal Booster
+	// ScourgeRocketFriendly.DisplayName: Rocket
+	// SignalBoost.DisplayName: Signal Booster
 }
 
 Configs: {
@@ -2177,7 +2529,7 @@ Keybinds: {
 	"Special Ability.DisplayName": Спецвозможность
 	"Armor Ability.DisplayName": Возможность брони
 	"Secondary Dash.DisplayName": Вторичный рывок
-	// "Armor Set Bonus ToolTips.DisplayName": Armor  Set  Bonus  Tool Tips
+	"Armor Set Bonus ToolTips.DisplayName": Тултип сет бонуса брони
 }
 
 #TODO добавь и на английский также
@@ -2287,12 +2639,12 @@ Resurs: {
 }
 
 SetBonus: {
-	// SetBonusToolTips: Press Q to see the armor bonus set
-	/* CosmicalusVisor:
+	SetBonusToolTips: Нажми Q, чтобы увидеть сет бонус брони
+	CosmicalusVisor:
 		'''
-		Summons a cosmic ring to shoot at nearby enemies
-		Stops sanity from being drained in space
-		''' */
+		Создаёт космическое кольцо, стреляющее во врагов
+		Здравомыслие больше не понижается в космосе
+		'''
 	VoidWalkersVisage:
 		'''
 		Нажми кнопку способности брони, чтобы создать ауру Психоза
@@ -2313,9 +2665,16 @@ SetBonus: {
 		Нажми кнопку способности брони, чтобы создать ауру Психоза
 		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 		'''
+	// EnergyWeaversHelm: You charge up energy and release it at nearby enemies
 }
 
 said.VoidLeviathanHead: Инфекция поражает этот мир...
+
+LooTCondition: {
+	// AwakenedModeActive: Исключительно в пробужденном режиме
+	// ScourgeLootCondition: Drop chance 1/3
+}
+
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 
 MyPlayerLocalization: {
