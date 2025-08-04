@@ -1,1 +1,10 @@
-Modify this file with a description of your mod.
+It is important for the modders to change the loot
+
+using ElementsAwoken.Utilities
+
+Load()
+{
+	Where is TCelLoot boss loot you can find more details on git hub 
+	
+	ListItems.TCelLoot.Add(ItemID.Zenith) // For example
+}

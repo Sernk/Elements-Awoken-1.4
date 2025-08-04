@@ -19,13 +19,13 @@ namespace ElementsAwoken.Content.Items.BossDrops.ScourgeFighter
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(9, 4));
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             for (int i = 0; i < 3; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(player.position, player.width, player.height, Const.PinkFlame, 0, 0, 0, default(Color))];
+                Dust dust = Main.dust[Dust.NewDust(player.position, player.width, player.height, EAU.PinkFlame, 0, 0, 0, default(Color))];
                 dust.noGravity = true;
             }
             player.accRunSpeed *= 1.5f;

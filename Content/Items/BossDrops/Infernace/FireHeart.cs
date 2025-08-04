@@ -49,7 +49,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Infernace
         }
         private void Explosion(Player player, Vector2 target)
         {
-            var p = Const.Players(player);
+            var p = EAU.Play(player);
             Projectile exp = Main.projectile[Projectile.NewProjectile(p, target.X, target.Y, 0f, 0f, ModContent.ProjectileType<Explosion>(), 50, 5f, player.whoAmI, 0f, 0f)];
             SoundEngine.PlaySound(SoundID.Item14, player.position);
             int num = ModContent.GetInstance<Config>().lowDust ? 10 : 20;

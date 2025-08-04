@@ -217,62 +217,61 @@ namespace ElementsAwoken.EASystem.UI
                         ElementsAwoken.ResetCloudTexture();
                     }
                 }
+
+                var textLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
+                var textState = new LegacyGameInterfaceLayer("ElementsAwoken: Text",
+                    delegate
+                    {
+                        for (int i = 0; i < screenText.Length - 1; i++)
+                        {
+                            if (screenText[i] != "" && screenText[i] != null)
+                            {
+                                screenTextTimer[i]++;
+                                if (screenTextTimer[i] < screenTextDuration[i] / 8) screenTextAlpha[i] += 1f / ((float)screenTextDuration[i] / 8f);// 1/4 of the time fading 
+                                else if (screenTextTimer[i] > screenTextDuration[i] - (screenTextDuration[i] / 8)) screenTextAlpha[i] -= 1f / ((float)screenTextDuration[i] / 8f);
+                                else screenTextAlpha[i] = 1;
+                                if (screenTextTimer[i] > screenTextDuration[i]) screenText[i] = "";
+
+                                ElementsAwoken.DrawStringOutlined(Main.spriteBatch, screenText[i], screenTextPos[i], Color.White * screenTextAlpha[i], screenTextScale[i]);
+                            }
+                        }
+                        return true;
+
+                    },
+                    InterfaceScaleType.UI);
+                if (!MyWorld.credits) layers.Insert(textLayer, textState);
+                else layers.Insert(1, textState); // in credits all layers r deleted
+
+                if (modPlayer.screenTransition)
+                {
+                    var transLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Interface Logic 4"));
+                    var transState = new LegacyGameInterfaceLayer("ElementsAwoken: Transitions",
+                        delegate
+                        {
+                            ElementsAwoken.BlackScreenTrans();
+                            return true;
+                        },
+                        InterfaceScaleType.UI);
+                    if (!MyWorld.credits) layers.Insert(transLayer, transState);
+                    else layers.Insert(1, transState); // in credits all layers r deleted
+                }
+            }
+            int inventoryIndex = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
+            if (inventoryIndex != -1)
+            {
+                layers.Insert(inventoryIndex, new LegacyGameInterfaceLayer(
+                    "ElementsAwoken: Alchemist UI",
+                    delegate
+                    {
+                        mod.AlchemistUserInterface.Draw(Main.spriteBatch, new GameTime());
+                        mod.VoidTimerChangerUI.Draw(Main.spriteBatch, new GameTime());
+                        if (PromptInfoUI.Visible) mod.PromptInfoUserInterface.Draw(Main.spriteBatch, new GameTime());
+                        return true;
+                    },
+                    InterfaceScaleType.UI)
+                );
             }
         }
-
-//        var textLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
-//        var textState = new LegacyGameInterfaceLayer("ElementsAwoken: Text",
-//            delegate
-//            {
-//                for (int i = 0; i < screenText.Length - 1; i++)
-//                {
-//                    if (screenText[i] != "" && screenText[i] != null)
-//                    {
-//                        screenTextTimer[i]++;
-//                        if (screenTextTimer[i] < screenTextDuration[i] / 8) screenTextAlpha[i] += 1f / ((float)screenTextDuration[i] / 8f);// 1/4 of the time fading 
-//                        else if (screenTextTimer[i] > screenTextDuration[i] - (screenTextDuration[i] / 8)) screenTextAlpha[i] -= 1f / ((float)screenTextDuration[i] / 8f);
-//                        else screenTextAlpha[i] = 1;
-//                        if (screenTextTimer[i] > screenTextDuration[i]) screenText[i] = "";
-
-            //                        ElementsAwoken.DrawStringOutlined(Main.spriteBatch, screenText[i], screenTextPos[i], Color.White * screenTextAlpha[i], screenTextScale[i]);
-            //                    }
-            //                }
-            //                return true;
-            //            },
-            //            InterfaceScaleType.UI);
-            //        if (!MyWorld.credits) layers.Insert(textLayer, textState);
-            //        else layers.Insert(1, textState); // in credits all layers r deleted
-
-            //        if (modPlayer.screenTransition)
-            //        {
-            //            var transLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Interface Logic 4"));
-            //            var transState = new LegacyGameInterfaceLayer("ElementsAwoken: Transitions",
-            //                delegate
-            //                {
-            //                    ElementsAwoken.BlackScreenTrans();
-            //                    return true;
-            //                },
-            //                InterfaceScaleType.UI);
-            //            if (!MyWorld.credits) layers.Insert(transLayer, transState);
-            //            else layers.Insert(1, transState); // in credits all layers r deleted
-            //        }
-            //    }
-
-            //    int inventoryIndex = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
-            //    if (inventoryIndex != -1)
-            //    {
-            //        layers.Insert(inventoryIndex, new LegacyGameInterfaceLayer(
-            //            "ElementsAwoken: Alchemist UI",
-            //            delegate {
-            //                mod.AlchemistUserInterface.Draw(Main.spriteBatch, new GameTime());
-            //                mod.VoidTimerChangerUI.Draw(Main.spriteBatch, new GameTime());
-            //                if (PromptInfoUI.Visible) mod.PromptInfoUserInterface.Draw(Main.spriteBatch, new GameTime());
-            //                return true;
-            //            },
-            //            InterfaceScaleType.UI)
-            //        );
-            //    }
-            //}
         public override void UpdateUI(GameTime gameTime)
         {
             ElementsAwoken mod = ModContent.GetInstance<ElementsAwoken>();

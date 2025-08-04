@@ -103,7 +103,7 @@ namespace ElementsAwoken.Content.Projectiles
                         for (int i = 0; i < numberProjectiles; i++)
                         {
                             Vector2 perturbedSpeed = new Vector2(vector16.X, vector16.Y).RotatedByRandom(MathHelper.ToRadians(12));
-                            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<DesolationCharge4>(), damage, Projectile.knockBack, player.whoAmI);
+                            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<DesolationCharge4>(), damage, Projectile.knockBack, player.whoAmI);
                         }
                         SoundEngine.PlaySound(SoundID.Item113, Projectile.position);
                         Projectile.Kill();
@@ -130,7 +130,7 @@ namespace ElementsAwoken.Content.Projectiles
                         vector16 = -Vector2.UnitY;
                     }
                     int damage = (int)((Projectile.damage - 38) + Projectile.ai[0] * 2f);
-                    Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, projType, damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, projType, damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
                     SoundEngine.PlaySound(SoundID.Item33, Projectile.position);
                     Projectile.Kill();
                 }

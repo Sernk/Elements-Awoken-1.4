@@ -54,9 +54,9 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
                         float rotation = (float)Math.Atan2(Projectile.Center.Y - npc.Center.Y, Projectile.Center.X - npc.Center.X);
 
                         Vector2 speed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
-                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<DiscordantArrowChaos>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<DiscordantArrowChaos>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                     }
-                    else Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Projectile.velocity.X * 0.9f, Projectile.velocity.Y * 0.9f, ModContent.ProjectileType<DiscordantArrowChaos>(), (int)(Projectile.damage * 1.5f), Projectile.knockBack, Projectile.owner);
+                    else Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Projectile.velocity.X * 0.9f, Projectile.velocity.Y * 0.9f, ModContent.ProjectileType<DiscordantArrowChaos>(), (int)(Projectile.damage * 1.5f), Projectile.knockBack, Projectile.owner);
                 }
             }
         }   
@@ -67,7 +67,7 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(ModContent.Request<Texture2D>("ElementsAwoken/Content/Projectiles/Arrows/DiscordantArrowChaos").Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(ModContent.Request<Texture2D>("ElementsAwoken/Content/Projectiles/Arrows/DiscordantArrowChaos").Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

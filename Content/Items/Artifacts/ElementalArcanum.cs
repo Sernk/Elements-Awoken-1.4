@@ -25,7 +25,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(7, 4));
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override bool CanEquipAccessory(Player player, int slot, bool modded)
         {
@@ -34,7 +34,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
                 int maxAccessoryIndex = 5 + player.extraAccessorySlots;
                 for (int i = 3; i < 3 + maxAccessoryIndex; i++)
                 {
-                    if (slot != i && Masiv.Artifact.Contains(player.armor[i].type))
+                    if (slot != i && ListItems.Artifact.Contains(player.armor[i].type))
                     {
                         return false;
                     }

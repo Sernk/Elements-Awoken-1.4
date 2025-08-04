@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.Items.Materials
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(9, 8));
             ItemID.Sets.ItemNoGravity[Item.type] = true;
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override void AddRecipes()
         {

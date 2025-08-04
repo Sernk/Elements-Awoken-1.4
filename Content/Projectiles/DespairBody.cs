@@ -40,7 +40,7 @@ namespace ElementsAwoken.Content.Projectiles
                         {
                             num47 = ModContent.ProjectileType<DespairTip>();
                         }
-                        int num48 = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.position.X + Projectile.velocity.X + (float)(Projectile.width / 2), Projectile.position.Y + Projectile.velocity.Y + (float)(Projectile.height / 2), Projectile.velocity.X, Projectile.velocity.Y, num47, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, Projectile.ai[1] + 1f);
+                        int num48 = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.position.X + Projectile.velocity.X + (float)(Projectile.width / 2), Projectile.position.Y + Projectile.velocity.Y + (float)(Projectile.height / 2), Projectile.velocity.X, Projectile.velocity.Y, num47, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, Projectile.ai[1] + 1f);
                         NetMessage.SendData(27, -1, -1, null, num48, 0f, 0f, 0f, 0, 0, 0);
                         return;
                     }
@@ -52,7 +52,7 @@ namespace ElementsAwoken.Content.Projectiles
                 {
                     for (int i = 0; i < 8; i++)
                     {
-                        Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame, Projectile.velocity.X * 0.025f, Projectile.velocity.Y * 0.025f)];
+                        Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame, Projectile.velocity.X * 0.025f, Projectile.velocity.Y * 0.025f)];
                         dust.noGravity = true;
                         dust.velocity *= 0.5f;
                     }
@@ -69,7 +69,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int k = 0; k < 3; k++)
             {
-                Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, Const.PinkFlame, Projectile.oldVelocity.X * 0.025f, Projectile.oldVelocity.Y * 0.025f);
+                Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, EAU.PinkFlame, Projectile.oldVelocity.X * 0.025f, Projectile.oldVelocity.Y * 0.025f);
             }
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)

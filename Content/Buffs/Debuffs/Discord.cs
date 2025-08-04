@@ -12,7 +12,7 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
 			Main.debuff[Type] = true;
 			Main.pvpBuff[Type] = true;
 			Main.buffNoSave[Type] = true;
-            Const.Longer(Type);
+            EAU.Longer(Type);
         }	
 		public override void Update(NPC npc, ref int buffIndex)
 		{

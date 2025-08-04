@@ -72,7 +72,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
             {
                 if (Main.rand.Next(12) == 0)
                 {
-                    Projectile.NewProjectile(Const.Proj(Projectile), Projectile.position + Projectile.velocity, Main.rand.NextVector2Square(-3,3), ProjectileType<RadiantStarHoming>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.position + Projectile.velocity, Main.rand.NextVector2Square(-3,3), ProjectileType<RadiantStarHoming>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                 }
             }
             Projectile.position = player.RotatedRelativePoint(player.MountedCenter, true) - Projectile.Size / 2f;
@@ -99,7 +99,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
             {
                 for (int num51 = 0; num51 < 2; num51++)
                 {
-                    Dust dust = Main.dust[Dust.NewDust(Projectile.position + Projectile.velocity * 2f, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 2f)];
+                    Dust dust = Main.dust[Dust.NewDust(Projectile.position + Projectile.velocity * 2f, Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 2f)];
                     dust.noGravity = true;
                     dust.velocity *= 2f;
                     dust.velocity += Projectile.localAI[0].ToRotationVector2();
@@ -112,7 +112,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                     if (Main.rand.Next(4) == 0)
                     {
                         Vector2 position = Projectile.position + Projectile.velocity + Projectile.velocity * ((float)num53 / num52);
-                        Dust dust2 = Main.dust[Dust.NewDust(position, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 1f)];
+                        Dust dust2 = Main.dust[Dust.NewDust(position, Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 1f)];
                         dust2.noGravity = true;
                         dust2.fadeIn = 0.5f;
                         dust2.velocity += Projectile.localAI[0].ToRotationVector2();
@@ -144,7 +144,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
             Rectangle rectangle8 = new Rectangle(0, 0, texture2D22.Width, 40);
             Vector2 value29 = new Vector2(0f, Main.player[Projectile.owner].gfxOffY);
             float rotation24 = Projectile.rotation + 3.14159274f;
-            Const.Sb.Draw(texture2D22, Projectile.Center.Floor() - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, rectangle8.Size() / 2f - Vector2.UnitY * 4f, Projectile.scale, SpriteEffects.None, 0f);
+            EAU.Sb.Draw(texture2D22, Projectile.Center.Floor() - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, rectangle8.Size() / 2f - Vector2.UnitY * 4f, Projectile.scale, SpriteEffects.None, 0f);
             //chain
             num230 -= 40f * Projectile.scale; // how long chains are? dont mess with this, it messes stuff up
             Vector2 vector31 = Projectile.Center.Floor();
@@ -159,7 +159,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                     {
                         rectangle8.Height = (int)(num230 - num231);
                     }
-                    Const.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
                     num231 += (float)rectangle8.Height * Projectile.scale;
                     vector31 += value28 * (float)rectangle8.Height * Projectile.scale;
                 }
@@ -188,14 +188,14 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                     {
                         num237 *= 0.75f;
                     }
-                    Const.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
                     num234 += num237;
                     vector31 += value28 * num237;
                 }
             }
 
             rectangle8 = new Rectangle(0, 94, texture2D22.Width, 38); //end
-            Const.Sb.Draw(texture2D22, value30 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, texture2D22.Frame(1, 1, 0, 0).Top(), Projectile.scale, SpriteEffects.None, 0f);
+            EAU.Sb.Draw(texture2D22, value30 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, texture2D22.Frame(1, 1, 0, 0).Top(), Projectile.scale, SpriteEffects.None, 0f);
             return false;
         }
         public override void CutTiles()

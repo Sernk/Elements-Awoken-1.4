@@ -40,7 +40,7 @@ namespace ElementsAwoken.Content.Projectiles
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
 
                 Rectangle rectangle = new Rectangle(0, 0, tex.Width, (tex.Height / Main.projFrames[Projectile.type]) * Projectile.frame);
-                Const.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             Projectile.frame = (int)Projectile.ai[0];
             return false;
@@ -66,7 +66,7 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + 1.57f;
             if (Main.rand.Next(4) == 0)
             {
-                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.GetDustID());
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.GetDustID());
                 Main.dust[dust].noGravity = true;
                 Main.dust[dust].scale = 1f;
                 Main.dust[dust].velocity *= 0.1f;

@@ -135,7 +135,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
             Rectangle rectangle8 = new Rectangle(0, 0, texture2D22.Width, 26);
             Vector2 value29 = new Vector2(0f, Main.player[Projectile.owner].gfxOffY);
             float rotation24 = Projectile.rotation + 3.14159274f;
-            Const.Sb.Draw(texture2D22, Projectile.Center.Floor() - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, rectangle8.Size() / 2f - Vector2.UnitY * 4f, Projectile.scale, SpriteEffects.None, 0f);
+            EAU.Sb.Draw(texture2D22, Projectile.Center.Floor() - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, rectangle8.Size() / 2f - Vector2.UnitY * 4f, Projectile.scale, SpriteEffects.None, 0f);
             num230 -= 40f * Projectile.scale;
             Vector2 vector31 = Projectile.Center.Floor();
             vector31 += value28 * Projectile.scale * 16f;
@@ -149,7 +149,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                     {
                         rectangle8.Height = (int)(num230 - num231);
                     }
-                    Const.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
                     num231 += (float)rectangle8.Height * Projectile.scale;
                     vector31 += value28 * (float)rectangle8.Height * Projectile.scale;
                 }
@@ -177,13 +177,13 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                     {
                         num237 *= 0.75f;
                     }
-                    Const.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(texture2D22, vector31 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, new Vector2((float)(rectangle8.Width / 2), 0f), Projectile.scale, SpriteEffects.None, 0f);
                     num234 += num237;
                     vector31 += value28 * num237;
                 }
             }
             rectangle8 = new Rectangle(0, 54, texture2D22.Width, 20); //end
-            Const.Sb.Draw(texture2D22, value30 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, texture2D22.Frame(1, 1, 0, 0).Top(), Projectile.scale, SpriteEffects.None, 0f);
+            EAU.Sb.Draw(texture2D22, value30 - Main.screenPosition + value29, new Rectangle?(rectangle8), alpha3, rotation24, texture2D22.Frame(1, 1, 0, 0).Top(), Projectile.scale, SpriteEffects.None, 0f);
             return false;
         }
         public override void CutTiles()

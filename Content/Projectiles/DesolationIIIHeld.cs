@@ -26,7 +26,7 @@ namespace ElementsAwoken.Content.Projectiles
             Player player = Main.player[Projectile.owner];
             Vector2 vector = player.RotatedRelativePoint(player.MountedCenter, true);
 
-            var s = Const.Proj(Projectile);
+            var s = EAU.Proj(Projectile);
 
             float chargeLevel1 = 20f;
             float chargeLevel2 = 45f;

@@ -195,7 +195,7 @@ namespace ElementsAwoken.EASystem
                                 }
                                 shootVel.Normalize();
                                 shootVel *= shootSpeed;
-                                int proj = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, shootVel.X, shootVel.Y, shoot, Projectile.damage, Projectile.knockBack, Main.myPlayer, 0f, 0f);
+                                int proj = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, shootVel.X, shootVel.Y, shoot, Projectile.damage, Projectile.knockBack, Main.myPlayer, 0f, 0f);
                                 Main.projectile[proj].timeLeft = 300;
                                 Main.projectile[proj].netUpdate = true;
                                 Projectile.netUpdate = true;

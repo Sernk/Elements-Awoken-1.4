@@ -100,7 +100,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                     shootVel.Normalize();
                     shootVel *= shootSpeed;
                     SoundEngine.PlaySound(SoundID.Item8, player.position);
-                    int proj = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, shootVel.X, shootVel.Y, ProjectileID.DemonScythe, 20, Projectile.knockBack, Main.myPlayer, 0f, 0f);
+                    int proj = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, shootVel.X, shootVel.Y, ProjectileID.DemonScythe, 20, Projectile.knockBack, Main.myPlayer, 0f, 0f);
                     Main.projectile[proj].timeLeft = 300;
                     Main.projectile[proj].netUpdate = true;
                     Projectile.netUpdate = true;

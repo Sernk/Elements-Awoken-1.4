@@ -45,7 +45,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int k = 0; k < 5; k++)
             {
-                int dust = Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color));
+                int dust = Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color));
                 Main.dust[dust].noGravity = true;
             }
         }
@@ -61,7 +61,7 @@ namespace ElementsAwoken.Content.Projectiles
                 }
             }
 
-            int dust = Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color));
+            int dust = Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color));
             Main.dust[dust].noGravity = true;
             float speed = 0.6f;
             if (Vector2.Distance(Projectile.Center, Main.MouseWorld) >= 500)
@@ -86,7 +86,7 @@ namespace ElementsAwoken.Content.Projectiles
                     {
                         Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
                         SoundEngine.PlaySound(SoundID.Item103, Projectile.position);
-                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ModContent.ProjectileType<VoidPortalSinewave>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ModContent.ProjectileType<VoidPortalSinewave>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                         shootTimer = 5;
                     }
                 }

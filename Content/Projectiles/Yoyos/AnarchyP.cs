@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Projectiles.Yoyos
         }
         public override void AI()
         {
-            var p = Const.Proj(Projectile);
+            var p = EAU.Proj(Projectile);
             Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, 127, Projectile.velocity.X * 0.5f, Projectile.velocity.Y * 0.5f);
             shootTimer--;
             shootTimer2--;

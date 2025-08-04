@@ -3,11 +3,12 @@ using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Items.BossDrops.Ancients
 {
-    public class AncientsBag : ModItem
+    public class AncientsBag : ModItem, IDropSettings
     {
         public override void SetDefaults()
         {
@@ -25,10 +26,15 @@ namespace ElementsAwoken.Content.Items.BossDrops.Ancients
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
             var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, Masiv.AncLot));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.AncLot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystallineLocket>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystalAmalgamate>(), 2));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AncientShard>(), minimumDropped:7, maximumDropped:12));
+
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.AncItemId1, chanceDenominator: IDropSettings.AncChanceDenominator1, minimumDropped: IDropSettings.AncMinimumDropped1, maximumDropped: IDropSettings.AncMaximumDropped1));
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.AncItemId2, chanceDenominator: IDropSettings.AncChanceDenominator2, minimumDropped: IDropSettings.AncMinimumDropped2, maximumDropped: IDropSettings.AncMaximumDropped2));
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.AncItemId3, chanceDenominator: IDropSettings.AncChanceDenominator3, minimumDropped: IDropSettings.AncMinimumDropped3, maximumDropped: IDropSettings.AncMaximumDropped3));
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.AncItemId4, chanceDenominator: IDropSettings.AncChanceDenominator4, minimumDropped: IDropSettings.AncMinimumDropped4, maximumDropped: IDropSettings.AncMaximumDropped4));
 
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AncientsMask>(), 10));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AncientsTrophy>(), 10));

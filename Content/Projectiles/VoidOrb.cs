@@ -44,7 +44,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            ProjectileUtils.Explosion(Projectile, Const.PinkFlame, damageType: "melee");
+            ProjectileUtils.Explosion(Projectile, EAU.PinkFlame, damageType: "melee");
         }
     }
 }

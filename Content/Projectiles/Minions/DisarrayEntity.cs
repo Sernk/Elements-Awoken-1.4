@@ -76,7 +76,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                 for (int k = 0; k < 4; k++)
                 {
                     Vector2 drawPos = new Vector2(Projectile.Center.X + 50 * (k >= 2 ? -1 : 1), Projectile.Center.Y - 50 * (k % 2 == 0 ? -1 : 1)) - Main.screenPosition + drawOrigin;
-                    Const.Sb.Draw(texture, drawPos, null, Color.White, 0f, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(texture, drawPos, null, Color.White, 0f, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
                 }
             }
             return true;
@@ -118,7 +118,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                                         float rotation = (float)Math.Atan2(Projectile.Center.Y - nPC.Center.Y, Projectile.Center.X - nPC.Center.X);
                                         Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
 
-                                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayShard>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayShard>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                                         if (Projectile.ai[0] == 0) shootTimer = 75;
                                         else if (Projectile.ai[0] == 1)
                                         {
@@ -455,13 +455,13 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                             float rotation = (float)Math.Atan2(Projectile.Center.Y - tpTarget.Center.Y, Projectile.Center.X - tpTarget.Center.X);
                             Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
 
-                            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayBlast>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
+                            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, projSpeed.X, projSpeed.Y, ProjectileType<DisarrayBlast>(), Projectile.damage, Projectile.knockBack, Projectile.owner);
                             for (int k = 0; k < 4; k++)
                             {
                                 Vector2 crystalPos = new Vector2(Projectile.Center.X + 50 * (k >= 2 ? -1 : 1), Projectile.Center.Y - 50 * (k % 2 == 0 ? -1 : 1));
                                 float beamRotation = (float)Math.Atan2(crystalPos.Y - tpTarget.Center.Y, crystalPos.X - tpTarget.Center.X);
                                 Vector2 beamSpeed = new Vector2((float)((Math.Cos(beamRotation) * Speed) * -1), (float)((Math.Sin(beamRotation) * Speed) * -1));
-                                Projectile.NewProjectile(Const.Proj(Projectile), crystalPos.X, crystalPos.Y, beamSpeed.X, beamSpeed.Y, ProjectileType<DisarrayBeam>(), (int)(Projectile.damage * 0.75f), Projectile.knockBack, Projectile.owner);
+                                Projectile.NewProjectile(EAU.Proj(Projectile), crystalPos.X, crystalPos.Y, beamSpeed.X, beamSpeed.Y, ProjectileType<DisarrayBeam>(), (int)(Projectile.damage * 0.75f), Projectile.knockBack, Projectile.owner);
                             }
                             tpAi = 0;
                         }

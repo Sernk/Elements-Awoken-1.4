@@ -32,7 +32,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            var p = Const.Proj(Projectile);
+            var p = EAU.Proj(Projectile);
             // Anarchy = ModItem || AnarchyLaser = ModProjectile ?
             // было Anarchy стало AnarchyLaser
             Projectile.NewProjectile(p, Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<AnarchyLaser>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);

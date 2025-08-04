@@ -36,7 +36,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.RadiantMaster
                     if (!nPC.CanBeChasedBy(this) || Vector2.Distance(player.Center, nPC.Center) > range) continue;
                     if (player.whoAmI == Main.myPlayer)
                     {
-                        Projectile proj = Main.projectile[Projectile.NewProjectile(Const.Players(player), nPC.Center, Vector2.Zero, ProjectileType<RadiantStorm>(), 200, 5f, player.whoAmI, 0f, 0f)];
+                        Projectile proj = Main.projectile[Projectile.NewProjectile(EAU.Play(player), nPC.Center, Vector2.Zero, ProjectileType<RadiantStorm>(), 200, 5f, player.whoAmI, 0f, 0f)];
                         proj.Bottom = nPC.Bottom;
                         break;
                     }

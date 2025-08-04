@@ -48,7 +48,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                 if (Projectile.ai[1] < 1f)
                 {
                     int num329 = Main.expertMode ? 25 : 40;
-                    int num330 = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X - (float)(Projectile.direction * 30), Projectile.Center.Y - 4f, (float)(-(float)Projectile.direction) * 0.01f, 0f, Mod.Find<ModProjectile>("Waternado").Type, num329, 4f, Projectile.owner, 16f, 15f);
+                    int num330 = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X - (float)(Projectile.direction * 30), Projectile.Center.Y - 4f, (float)(-(float)Projectile.direction) * 0.01f, 0f, Mod.Find<ModProjectile>("Waternado").Type, num329, 4f, Projectile.owner, 16f, 15f);
                     Main.projectile[num330].netUpdate = true;
                 }
                 else
@@ -83,7 +83,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                         num3 = num334;
                     }
                     int num335 = Main.expertMode ? 50 : 80;
-                    int num336 = Projectile.NewProjectile(Const.Proj(Projectile), (float)(num332 * 16 + 8), (float)(num331 * 16 - 24), 0f, 0f, ModContent.ProjectileType<Waternado>(), num335, 4f, Main.myPlayer, 16f, 24f);
+                    int num336 = Projectile.NewProjectile(EAU.Proj(Projectile), (float)(num332 * 16 + 8), (float)(num331 * 16 - 24), 0f, 0f, ModContent.ProjectileType<Waternado>(), num335, 4f, Main.myPlayer, 16f, 24f);
                     Main.projectile[num336].netUpdate = true;
                 }
             }

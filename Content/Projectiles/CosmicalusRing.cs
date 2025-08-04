@@ -72,7 +72,7 @@ namespace ElementsAwoken.Content.Projectiles
                         {
                             Vector2 speed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
                             SoundEngine.PlaySound(SoundID.Item30, Projectile.position);
-                            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<PlanetarySpike>(), 30, Projectile.knockBack, Projectile.owner);
+                            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<PlanetarySpike>(), 30, Projectile.knockBack, Projectile.owner);
                             shootTimer = 100;
                         }
                     }
@@ -89,11 +89,11 @@ namespace ElementsAwoken.Content.Projectiles
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
                 float trailScale = (1f + scale) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, trailScale, spriteEffects, 0f);
+                EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, trailScale, spriteEffects, 0f);
             }
             Vector2 glowPos = Projectile.position - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
             Color color1 = Projectile.GetAlpha(lightColor) * 0.4f;
-            Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, glowPos, null, color1, Projectile.rotation, drawOrigin, 1f + scale, spriteEffects, 0f);
+            EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, glowPos, null, color1, Projectile.rotation, drawOrigin, 1f + scale, spriteEffects, 0f);
             return true;
         }
     }

@@ -56,7 +56,7 @@ namespace ElementsAwoken.Content.Projectiles
                 }
                 if (Main.rand.Next(10) == 0 && Projectile.ai[0] == 0)
                 {
-                    Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 8, ModContent.ProjectileType<UltramarineBeam>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 1);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 8, ModContent.ProjectileType<UltramarineBeam>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 1);
                 }
             }
             return;

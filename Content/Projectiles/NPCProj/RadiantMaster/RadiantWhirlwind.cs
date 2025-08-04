@@ -106,9 +106,9 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
                     }
                     color52.A = (byte)((float)color52.A * 0.5f);
                     color52 *= scale9;
-                    Const.Sb.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color52, num263 + num269, origin7, (1f + num270) * scale * 0.8f, effects2, 0f);
+                    EAU.Sb.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color52, num263 + num269, origin7, (1f + num270) * scale * 0.8f, effects2, 0f);
                 }
-                Const.Sb.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color51, num263 + num269, origin7, (1f + num270) * scale, effects2, 0f);
+                EAU.Sb.Draw(texture2D30, vector51, new Rectangle?(rectangle15), color51, num263 + num269, origin7, (1f + num270) * scale, effects2, 0f);
             }
             return false;
         }

@@ -33,7 +33,7 @@ namespace ElementsAwoken.Content.Projectiles
                 switch (Main.rand.Next(2))
                 {
                     case 0:
-                        dustType = Const.PinkFlame;
+                        dustType = EAU.PinkFlame;
                         break;
                     case 1:
                         dustType = 54;

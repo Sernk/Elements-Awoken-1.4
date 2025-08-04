@@ -36,7 +36,7 @@ namespace ElementsAwoken.Content.Projectiles
                     Vector2 position71 = new Vector2(Projectile.position.X + 3f + num256, Projectile.position.Y + 3f + num257) - Projectile.velocity * 0.5f;
                     int width67 = Projectile.width - 8;
                     int height67 = Projectile.height - 8;
-                    int num258 = Dust.NewDust(position71, width67, height67, Const.PinkFlame, 0f, 0f, 100, default(Color), 1f);
+                    int num258 = Dust.NewDust(position71, width67, height67, EAU.PinkFlame, 0f, 0f, 100, default(Color), 1f);
                     Dust dust = Main.dust[num258];
                     dust.scale *= 2f + (float)Main.rand.Next(10) * 0.1f;
                     dust = Main.dust[num258];
@@ -54,7 +54,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            ProjectileUtils.Explosion(Projectile, Const.PinkFlame, damageType: "ranged");
+            ProjectileUtils.Explosion(Projectile, EAU.PinkFlame, damageType: "ranged");
         }
     }
 }

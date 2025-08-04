@@ -1,11 +1,12 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
@@ -80,8 +81,23 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
         }
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("The Radiant Master");
             Main.npcFrameCount[NPC.type] = 6;
+            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Velocity = -1f,
+                Direction = -1
+            };
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
+            Main.npcCatchable[NPC.type] = true;
+            NPCID.Sets.CountsAsCritter[NPC.type] = true;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
+            {
+                new FlavorTextBestiaryInfoElement(GetInstance<EALocalization>().RadiantMaster),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheHallow,
+            });
         }
         public override void OnHitPlayer(Player target, Player.HurtInfo hurtInfo)
         {

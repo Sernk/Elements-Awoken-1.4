@@ -39,7 +39,7 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.velocity.Y = 0f;
             if (Main.rand.Next(3) == 0)
             {
-                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame);
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame);
                 Main.dust[dust].noGravity = true;
                 Main.dust[dust].scale = 1f;
             }
@@ -49,7 +49,7 @@ namespace ElementsAwoken.Content.Projectiles
                 for (int l = 0; l < swirlCount; l++)
                 {
                     int distance = 360 / swirlCount;
-                    int orbital = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<BlackholeOrbit>(), Projectile.damage, Projectile.knockBack, 0, l * distance, Projectile.whoAmI);
+                    int orbital = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<BlackholeOrbit>(), Projectile.damage, Projectile.knockBack, 0, l * distance, Projectile.whoAmI);
                 }
                 hasOrbital = true;
             }

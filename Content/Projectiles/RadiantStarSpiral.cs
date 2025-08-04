@@ -38,7 +38,7 @@ namespace ElementsAwoken.Content.Projectiles
                 float alpha = (1 - Projectile.alpha / 255) - ((float)k / (float)Projectile.oldPos.Length);
                 float scale = 1 - ((float)k / (float)Projectile.oldPos.Length);
                 Color color = Color.Lerp(Color.White, new Color(127, 3, 252), (float)k / (float)Projectile.oldPos.Length) * alpha;
-                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale * scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale * scale, SpriteEffects.None, 0f);
             }
             return true;
         }
@@ -57,7 +57,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
             if (!ModContent.GetInstance<Config>().lowDust)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame)];
                 dust.velocity *= 0.1f;
                 dust.scale *= 0.2f;
                 dust.noGravity = true;
@@ -67,7 +67,7 @@ namespace ElementsAwoken.Content.Projectiles
         public override void OnKill(int timeLeft)
         {
             float dustAmountScale = ModContent.GetInstance<Config>().lowDust ? 0.3f : 1f;
-            ProjectileUtils.OutwardsCircleDust(Projectile, Const.PinkFlame, (int)(16 * dustAmountScale), 6f, randomiseVel: true, dustScale: 2f);
+            ProjectileUtils.OutwardsCircleDust(Projectile, EAU.PinkFlame, (int)(16 * dustAmountScale), 6f, randomiseVel: true, dustScale: 2f);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace ElementsAwoken.Content.Buffs.Prompts
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
-            Const.CanBeCleared(Type);
+            EAU.CanBeCleared(Type);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.Center = player.Center - new Vector2(0, 20);
             if (modPlayer.archaicProtectionTimer <= 0) Projectile.Kill();
 
-            Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.GetDustID())];
+            Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.GetDustID())];
             dust.noGravity = true;
             dust.velocity *= 1.5f;
 
@@ -101,7 +101,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int i = 0; i < 31; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.GetDustID())];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.GetDustID())];
                 dust.noGravity = true;
                 dust.velocity *= 1.5f;
             }
@@ -109,7 +109,7 @@ namespace ElementsAwoken.Content.Projectiles
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D tex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/Circle").Value;
-            Const.Sb.Draw(tex, Projectile.Center - Main.screenPosition - (tex.Size() * circleScale) / 2, null, Color.White * circleAlpha, Projectile.rotation, Vector2.Zero, circleScale, SpriteEffects.None, 0f);
+            EAU.Sb.Draw(tex, Projectile.Center - Main.screenPosition - (tex.Size() * circleScale) / 2, null, Color.White * circleAlpha, Projectile.rotation, Vector2.Zero, circleScale, SpriteEffects.None, 0f);
             return true;
         }
     }

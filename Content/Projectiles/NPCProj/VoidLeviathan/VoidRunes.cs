@@ -65,7 +65,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                 {
                     double angle = Main.rand.NextDouble() * 2d * Math.PI;
                     Vector2 offset = new Vector2((float)Math.Sin(angle) * maxDist, (float)Math.Cos(angle) * maxDist);
-                    Dust dust = Main.dust[Dust.NewDust(Projectile.Center + offset - Vector2.One * 4, 0, 0, Const.PinkFlame, 0, 0, 100)];
+                    Dust dust = Main.dust[Dust.NewDust(Projectile.Center + offset - Vector2.One * 4, 0, 0, EAU.PinkFlame, 0, 0, 100)];
                     dust.noGravity = true;
                 }
             }
@@ -74,7 +74,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
         {
             if (!ModContent.GetInstance<Config>().lowDust)
             {
-                ProjectileUtils.HostileExplosion(Projectile, new int[] { Const.PinkFlame }, Projectile.damage);
+                ProjectileUtils.HostileExplosion(Projectile, new int[] { EAU.PinkFlame }, Projectile.damage);
             }
             else
             {
@@ -89,7 +89,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
                 Texture2D auraTex = ModContent.Request<Texture2D>("Projectiles/Content/NPCProj/VoidLeviathan/VoidRunesCircle").Value;
                 Vector2 drawOrigin = new Vector2(auraTex.Width * 0.5f, auraTex.Height * 0.5f);
                 Vector2 drawPos = Projectile.Center - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY);
-                Const.Sb.Draw(auraTex, drawPos, null, Color.White * (1-((float)Projectile.alpha / 255f)), 0f, drawOrigin, 1f, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(auraTex, drawPos, null, Color.White * (1-((float)Projectile.alpha / 255f)), 0f, drawOrigin, 1f, SpriteEffects.None, 0f);
             }
         }
     }

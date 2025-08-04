@@ -134,7 +134,7 @@ Items: {
 	}
 
 	OrangesLeggings: {
-		DisplayName: Шаровары ThatOneJuicyOrange
+		DisplayName: Брюки ThatOneJuicyOrange
 		Tooltip: ""
 	}
 
@@ -270,6 +270,11 @@ Items: {
 	CelestialDrive: {
 		DisplayName: Диск (Небожители)
 		Tooltip: ""
+	}
+
+	Celestia: {
+		// DisplayName: Celestia
+		// Tooltip: ""
 	}
 
 	GuardianDrive: {
@@ -1253,7 +1258,7 @@ Items: {
 
 	VoidLeviathanBag: {
 		DisplayName: Мешок с сокровищами Левиафана Пустоты
-		Tooltip: Нажми ПКМ, чтобы открыть.
+		Tooltip: <right>, чтобы открыть.
 	}
 
 	EpicHealingPotion: {
@@ -1296,7 +1301,7 @@ Items: {
 	}
 
 	AncientsBag: {
-		Tooltip: Нажми <right>, чтобы открыть
+		Tooltip: <right>, чтобы открыть
 		DisplayName: Мешок с сокровищами Древних
 	}
 
@@ -1346,7 +1351,7 @@ Items: {
 
 	AqueousBag: {
 		DisplayName: Мешок с сокровищами Аквеус
-		Tooltip: Нажми <right>, чтобы открыть
+		Tooltip: <right>, чтобы открыть
 	}
 
 	HeatSink: {
@@ -1450,7 +1455,7 @@ Items: {
 
 	AzanaBag: {
 		DisplayName: Мешок с сокровищами Азаны
-		Tooltip: Нажми <right>, чтобы открыть
+		Tooltip: <right>, чтобы открыть
 	}
 
 	ChargeRifle: {
@@ -1545,304 +1550,656 @@ Items: {
 	}
 
 	FireHeart: {
-		// DisplayName: Inferno Heart
-		/* Tooltip:
+		DisplayName: Сердце пекла
+		Tooltip:
 			'''
-			Ignites nearby enemies
-			Blows up nearby lesser enemies that are on low health
-			Lights up the area
-			''' */
+			Поджигает всех ближайших врагов
+			Взрывает ближайших обычных врагов, если у них осталось мало здоровья
+			Излучает свет
+			'''
 	}
 
 	FlareSword: {
-		// DisplayName: Blade of Ashes
-		// Tooltip: ""
+		DisplayName: Лезвие пепла
+		Tooltip: ""
+	}
+
+	Flare: {
+		// DisplayName: Drakonian Guard
+		// Tooltip: Pressing the ability key will create a shield around the player that pushes enemies and projectiles away
 	}
 
 	InfernaceMask: {
-		// DisplayName: Infernace Mask
-		// Tooltip: ""
+		DisplayName: Маска Инфернейса
+		Tooltip: ""
 	}
 
 	InfernaceTrophy: {
-		// DisplayName: Infernace Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Инфернейса
+		Tooltip: ""
 	}
 
 	InfernoVortex: {
-		// DisplayName: Inferno Vortex
-		// Tooltip: ""
+		DisplayName: Пекловихрь
+		Tooltip: ""
 	}
 
 	InfernaceBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Инфернейса
+		Tooltip: <right>, чтобы открыть
 	}
 
 	CrystallineCluster: {
-		// DisplayName: Crystalline Cluster
-		// Tooltip: Summons a possessed hand
+		DisplayName: Кристальный кластер
+		Tooltip: Призывает одержимую обсидиановую руку
 	}
 
 	Magmarox: {
-		// DisplayName: Magmarox
-		// Tooltip: ""
+		DisplayName: Магмарокс
+		Tooltip: не думаю, что это название переводится
 	}
 
 	ObsidiousTrophy: {
-		// DisplayName: Obsidious Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Обсидиуса
+		Tooltip: ""
 	}
 
 	ObsidiousWings: {
-		// DisplayName: Obsidious Wings
-		// Tooltip: Allows flight and slow fall
+		DisplayName: Крылья Обсидиуса
+		Tooltip: Позволяют летать и замедляют падение
 	}
 
 	SacredCrystal: {
-		// DisplayName: Sacred Crystal
-		// Tooltip: Greed drives even the strongest minds to madness
+		DisplayName: Священный кристалл
+		Tooltip: Жадность способна сломить даже сильнейшие умы
 	}
 
 	TerreneScepter: {
-		// DisplayName: Terrene Scepter
-		// Tooltip: Summons a terrene mortar to defend you
+		DisplayName: Терреновый посох
+		Tooltip: Призывает терреновую мортиру на твою защиту
 	}
 
 	Ultramarine: {
-		// DisplayName: Ultramarine
-		// Tooltip: ""
+		DisplayName: Ультрамарин
+		Tooltip: это вам чё, вархаммер что-ли?
 	}
 
 	VioletEdge: {
-		// DisplayName: Violet Edge
-		// Tooltip: ""
+		DisplayName: Пурпурная пика
+		Tooltip: или щука, кому как нравится
 	}
 
 	ObsidiousBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Обсидиуса
+		Tooltip: <right>, чтобы открыть
 	}
 
 	ObsidiousMask: {
-		// DisplayName: Obsidious Mask
-		// Tooltip: ""
+		DisplayName: Маска Обсидиуса
+		Tooltip: ""
 	}
 
 	ObsidiousPants: {
-		// DisplayName: Obsidious Pants
-		// Tooltip: ""
+		DisplayName: Шаровары Обсидиуса
+		Tooltip: ""
 	}
 
 	ObsidiousRobes: {
-		// DisplayName: Obsidious Robes
-		// Tooltip: ""
+		DisplayName: Балахон Обсидиуса
+		Tooltip: ""
 	}
 
 	Flurry: {
-		// DisplayName: Flurry
-		// Tooltip: Summons an icicle to fight for you
+		DisplayName: Шквал
+		Tooltip: Призывает сосульку сражаться за тебя
 	}
 
 	Frigidblaster: {
-		// DisplayName: Frigidblaster
-		// Tooltip: ""
+		DisplayName: Морозобластер
+		Tooltip: ""
 	}
 
 	IceReaver: {
-		// DisplayName: Ice Reaver
-		// Tooltip: ""
+		DisplayName: Ледохититель
+		Tooltip: ""
 	}
 
 	IceWrath: {
-		// DisplayName: Ice Wrath
-		// Tooltip: ""
+		DisplayName: Ярость льда
+		Tooltip: ""
 	}
 
 	IcyHeart: {
-		// DisplayName: Icy Heart
-		/* Tooltip:
+		DisplayName: Ледяное сердце
+		Tooltip:
 			'''
-			The player generates an ice shield after 10 seconds of not taking damage
-			Takes 20 seconds of charging to block 100% of damage
-			''' */
+			Если игрок не получал урон на протяжении 10 и более секунд, вокруг него начинает создаваться ледяной щит
+			Щит создаётся 20 секунд, но после этого он сможет поглотить 100% всего полученного урона
+			'''
 	}
 
 	PermafrostMask: {
-		// DisplayName: Permafrost Mask
-		// Tooltip: ""
+		DisplayName: Маска Пермафроста
+		Tooltip: нет, не того самого, который из КАЛамимити.
 	}
 
 	PermafrostTrophy: {
-		// DisplayName: Permafrost Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Пермафроста
+		Tooltip: ""
 	}
 
 	Snowdrift: {
-		// DisplayName: Snowdrift
-		// Tooltip: ""
+		DisplayName: Сугроб
+		Tooltip: ""
 	}
 
 	SoulOfTheFrost: {
-		// DisplayName: Soul of the Frost
-		/* Tooltip:
+		DisplayName: Душа мороза
+		Tooltip:
 			'''
-			The icy power source of Permafrost
-			10% increased damage
-			Immunity to chilled, frostburn and frozen
-			Armor penetration increased by 10
-			''' */
+			Источник ледяной магии Пермафроста
+			Увеличивает весь урон на 10%
+			Даёт неуязвимость к дебаффам "Переохлаждение", "Морозогонь" и "Заморозка"
+			Увеличивает пробивание брони на 10
+			'''
 	}
 
 	PermafrostBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Пермафроста
+		Tooltip: <right>, чтобы открыть
 	}
 
 	Majesty: {
-		// DisplayName: Majesty
-		// Tooltip: ""
+		DisplayName: Великолепие
+		Tooltip: просто рассыпается в эпитетах...
 	}
 
 	RadiantBomb: {
-		// DisplayName: Master's Vortex
-		// Tooltip: ""
+		DisplayName: Вихрь Мастера
+		Tooltip: жаль, что не данжен мастера
 	}
 
 	RadiantBow: {
-		// DisplayName: Rosy Skies
-		// Tooltip: Turns normal arrows homing radiant stars
+		DisplayName: Румяные небеса
+		Tooltip: Превращает обычные стрелы в самонаводящиеся лучезарные звёзды
 	}
 
 	RadiantSword: {
-		// DisplayName: Magenta Storm
-		// Tooltip: Right Click to summon sentient blades around the player
+		DisplayName: Пурпурный шторм
+		Tooltip: Нажми ПКМ, чтобы призвать разумные клинки, летающие вокруг тебя
 	}
 
 	RadiantCrown: {
-		// DisplayName: Radiant Crown
-		/* Tooltip:
+		DisplayName: Лучезарная корона
+		Tooltip:
 			'''
-			Double tap down to teleport you to the position of the mouse
-			Creates a radiant storm around nearby enemies
-			''' */
+			Нажми ВНИЗ дважды, чтобы телепортироваться туда, где находится твой курсор
+			Создаёт лучезарные торнадо вокруг ближайших врагов
+			'''
 	}
 
 	EnergyStaff: {
-		// DisplayName: Energy Staff
-		// Tooltip: Summons an energy spirit to fight for you
+		DisplayName: Энергетический посох
+		Tooltip: Призывает энергетического духа сражаться за тебя
 	}
 
 	EyeOfRegaroth: {
-		// DisplayName: Eye of Regaroth
-		// Tooltip: ""
+		DisplayName: Глаз Регарота
+		Tooltip: ""
 	}
 
 	RegarothMask: {
-		// DisplayName: Regaroth Mask
-		// Tooltip: ""
+		DisplayName: Маска Регарота
+		Tooltip: ""
 	}
 
 	RegarothTrophy: {
-		// DisplayName: Regaroth Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Регарота
+		Tooltip: ""
 	}
 
 	Starstruck: {
-		// DisplayName: Thundering Recurve
-		// Tooltip: ""
+		DisplayName: Громолук
+		Tooltip: ""
 	}
 
 	StoneOfHope: {
-		// DisplayName: Stone Of Hope
-		/* Tooltip:
+		DisplayName: Камень надежды
+		Tooltip:
 			'''
-			The relic of Regaroth
-			The lower your health the higher your defense and damage
-			''' */
+			Реликвия Регарота
+			Чем меньше у тебя остаётся здоровья, тем больше увеличиваются твоя защита и урон
+			'''
 	}
 
 	TheSilencer: {
-		// DisplayName: The Silencer
-		// Tooltip: ""
+		DisplayName: Глушитель
+		Tooltip: ""
 	}
 
 	EnergyWeaversBreastplate: {
-		// DisplayName: Energy Weaver's Breastplate
-		/* Tooltip:
+		DisplayName: Нагрудник Энерготкача
+		Tooltip:
 			'''
-			Wing mobility is greatly increased
-			20% decreased mana usage
-			''' */
+			Значительно улучшает мобильность для всех крыльев
+			Уменьшает использование маны на 20%
+			'''
 	}
 
 	EnergyWeaversHelm: {
-		// DisplayName: Energy Weaver's Helm
-		/* Tooltip:
+		DisplayName: Шлем Энерготкача
+		Tooltip:
 			'''
-			Damage increased the closer it is to midday to a maximum of 30%
-			Critical strike chance increased by 7
-			''' */
+			Чем ближе к полудню, тем больше увеличивается твой урон, вплоть до 30%
+			Увеличивает шанс критического удара на 7%
+			'''
 	}
 
 	EnergyWeaversLeggings: {
-		// DisplayName: Energy Weaver's Leggings
-		/* Tooltip:
+		DisplayName: Поножи Энерготкача
+		Tooltip:
 			'''
-			Damage increased the closer it is to midday to a maximum of 5%
-			20% increased movement speed
-			You leave a trail of energy particles
-			''' */
+			Чем ближе к полудню, тем больше увеличивается твой урон, вплоть до 5%
+			Увеливиает скорость передвижения на 20%
+			Ты оставляешь след из энергочастиц при движении
+			'''
 	}
 
 	RegarothBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Регарота
+		Tooltip: <right>, чтобы открыть
 	}
 
 	ScourgeDrive: {
-		// DisplayName: Scourge Drive
-		/* Tooltip:
+		DisplayName: Движок Бича
+		Tooltip:
 			'''
-			Greatly increases movement speeds
-			When the player is going above 60mph:
-			You explode on hit
-			Damage is increased by 25%
-			''' */
+			Значительно увеличивает скорость передвижения
+			Если ты движешься со скоростью быстрее 60 км/ч:
+			При получении урона ты взрываешься
+			Весь урон увеличен на 25%
+			'''
 	}
 
 	ScourgeFighterMachineGun: {
-		// DisplayName: Scourge Fighter Machine Gun
-		// Tooltip: Ripped off the remains of the Scourge Fighter
+		DisplayName: Пулемёт Бичеборца
+		Tooltip: Вырван из останков корпуса Бичеборца
 	}
 
 	ScourgeFighterRocketLauncher: {
-		// DisplayName: Scourge Rocket Launcher
-		/* Tooltip:
+		DisplayName: Ракетомёт Бичеборца
+		Tooltip:
 			'''
-			Ripped off the remains of the Scourge Fighter
-			Turns normal rockets into scourge rockets
-			''' */
+			Вырван из останков корпуса Бицеборца
+			Превращает обычные ракеты в биче-ракеты
+			'''
 	}
 
 	ScourgeFighterTrophy: {
-		// DisplayName: Scourge Fighter Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Бичеборца
+		Tooltip: ""
 	}
 
 	ScourgeSword: {
-		// DisplayName: Bounty Hunt
-		// Tooltip: ""
+		DisplayName: Клинок охотника за сокровищами
+		Tooltip: ""
 	}
 
 	SignalBooster: {
-		// DisplayName: Signal Booster
-		// Tooltip: ""
+		DisplayName: Усилитель сигнала
+		Tooltip: ""
 	}
 
 	ScourgeFighterBag: {
+		DisplayName: Мешок с сокровищами Бичеборца
+		Tooltip: <right>, чтобы открыть
+	}
+
+	CelestialFlame: {
+		// DisplayName: Astra's Flare
+		/* Tooltip:
+			'''
+			10% increased critical strike chance
+			Shoots lasers at nearby enemies
+			''' */
+	}
+
+	CelestialInferno: {
+		// DisplayName: Skylight Swirl
+		// Tooltip: ""
+	}
+
+	CelestialsMask: {
+		// DisplayName: The Celestials Mask
+		// Tooltip: ""
+	}
+
+	EyeballStaff: {
+		// DisplayName: Starlight Staff
+		// Tooltip: Summons a celestial watcher to serve you
+	}
+
+	Solus: {
+		// DisplayName: Solus
+		// Tooltip: ""
+	}
+
+	TheCelestialBag: {
 		// DisplayName: Treasure Bag
 		// Tooltip: <right> to open
+	}
+
+	TheCelestialTrophy: {
+		// DisplayName: The Celestial Trophy
+		// Tooltip: ""
+	}
+
+	FieryCore: {
+		// DisplayName: Fiery Core
+		/* Tooltip:
+			'''
+			The ancient temple artifact of fire
+			10% increased damage when in hell
+			Immunity to On Fire and Burning
+			You set nearby creatures on fire and inflict fire on hit
+			''' */
+	}
+
+	Godslayer: {
+		// DisplayName: Godslayer
+		// Tooltip: ""
+	}
+
+	InfernoStorm: {
+		// DisplayName: Inferno Storm
+		// Tooltip: ""
+	}
+
+	TemplesWrath: {
+		// DisplayName: Temple's Wrath
+		// Tooltip: ""
+	}
+
+	TheGuardianMask: {
+		// DisplayName: The Guardian Mask
+		// Tooltip: ""
+	}
+
+	TheGuardianTrophy: {
+		// DisplayName: The Guardian Trophy
+		// Tooltip: ""
+	}
+
+	GuardianBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	GazeOfInferno: {
+		// DisplayName: Gaze Of Inferno
+		// Tooltip: ""
+	}
+
+	WyrmHeart: {
+		// Tooltip: ""
+		// DisplayName: Wyrm Heart
+	}
+
+	WyrmClaw: {
+		// Tooltip: ""
+		// DisplayName: Wyrm Claw
+	}
+
+	TheAllSeer: {
+		// Tooltip: ""
+		// DisplayName: The All Seer
+	}
+
+	TemplesCrystal: {
+		// Tooltip: ""
+		// DisplayName: Temple's Crystal
+	}
+
+	TempleFragment: {
+		// Tooltip: ""
+		// DisplayName: Temple Fragment
+	}
+
+	TempleKeepersBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	CharredInsignia: {
+		// DisplayName: Charred Insignia
+		/* Tooltip:
+			'''
+			Ignites nearby enemies
+			10% increased damage
+			6% increased critical strike chance
+			Armor penetration increased by 20
+			''' */
+	}
+
+	Combustia: {
+		// DisplayName: Combustia
+		// Tooltip: ""
+	}
+
+	EmberBurst: {
+		// DisplayName: Ember Burst
+		// Tooltip: ""
+	}
+
+	FatesFlame: {
+		// DisplayName: Fates Flame
+		// Tooltip: ""
+	}
+
+	FirestarterStaff: {
+		// DisplayName: Firestarter Staff
+		// Tooltip: Summons a Volcanic Tentacle to serve you
+	}
+
+	Hearth: {
+		// DisplayName: Hearth
+		// Tooltip: ""
+	}
+
+	VolcanoxBag: {
+		// DisplayName: Volcanox Bag
+		// Tooltip: ""
+	}
+
+	VolcanoxMask: {
+		// DisplayName: Volcanox Mask
+		// Tooltip: ""
+	}
+
+	VolcanoxTrophy: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	ChitinStaff: {
+		// DisplayName: Mother's Magic
+		// Tooltip: Summons a scorpion to fight for you
+	}
+
+	Pincer: {
+		// DisplayName: Defender's Recurve
+		// Tooltip: Turns normal arrows into venom imbued arrows
+	}
+
+	ScorpionBlade: {
+		// DisplayName: Protector's Edge
+		// Tooltip: ""
+	}
+
+	Stinger: {
+		// DisplayName: Scepter of the Tortured
+		// Tooltip: ""
+	}
+
+	TheAntidote: {
+		// DisplayName: The Antidote
+		// Tooltip: Cuts debuff life loss in half
+	}
+
+	VenomSample: {
+		// DisplayName: Venom Gland
+		// Tooltip: Attacks inflict venom and poison
+	}
+
+	WastelandBag: {
+		// DisplayName: Treasure Bag
+		// Tooltip: <right> to open
+	}
+
+	WastelandMask: {
+		// DisplayName: Wasteland Mask
+		// Tooltip: ""
+	}
+
+	WastelandTrophy: {
+		// DisplayName: Wasteland Trophy
+		// Tooltip: ""
+	}
+
+	CelestialIdol: {
+		// DisplayName: Celestial Idol
+		/* Tooltip:
+			'''
+			10 defense
+			Ancient stars rain down from the sky on hit
+			20% increased magic damage
+			Inflicts Ancient Decay on hit
+			''' */
+	}
+
+	Fireblast: {
+		// DisplayName: Fireblast
+		// Tooltip: Fires ancient cultist fireballs
+	}
+
+	Frosthail: {
+		// DisplayName: Frosthail
+		// Tooltip: Fires ice mist
+	}
+
+	GreekFire: {
+		// DisplayName: Greek Fire
+		// Tooltip: ""
+	}
+
+	NinjaKatana: {
+		// DisplayName: Ninja Katana
+		// Tooltip: Right Click to dash
+	}
+
+	Retinasm: {
+		// DisplayName: Retinasm
+		// Tooltip: ""
+	}
+
+	Shockstorm: {
+		// DisplayName: Shockstorm
+		/* Tooltip:
+			'''
+			Summons a lightning orb which attacks nearby enemies
+			Only two lightning orbs can be active at once
+			''' */
+	}
+
+	SkeletronFist: {
+		// DisplayName: Skeletron Fist
+		// Tooltip: Punch with the force of Skeletron
+	}
+
+	SpinalSplayer: {
+		// DisplayName: Spinal Splayer
+		// Tooltip: ""
+	}
+
+	Starthrower: {
+		// DisplayName: Starthrower
+		// Tooltip: Fires three homing stars
+	}
+
+	TearsOfSorrow: {
+		// DisplayName: Tears of Sorrow
+		// Tooltip: Turns normal arrows into tear arrows that slow enemies down greatly
+	}
+
+	TheDestroyer: {
+		// DisplayName: The Destroyer
+		// Tooltip: Hold Left Click to charge the laser
+	}
+
+	TheEater: {
+		// DisplayName: The Eater
+		// Tooltip: Chomp Chomp
+	}
+
+	BleedingHeart: {
+		// DisplayName: Bleeding Heart
+		/* Tooltip:
+			'''
+			Releases homing projectiles when dashing
+			Killing 5 enemies in 10 seconds grants the player, 'Bloodbath' which increases damage by 20%
+			''' */
+	}
+
+	CorruptedFang: {
+		// DisplayName: Corrupted Fang
+		/* Tooltip:
+			'''
+			The player spawns corrupted fangs that shoot at nearby enemies
+			When the fangs hit, the player gets 5% increased damage and attacks inflict posion and venom
+			''' */
+	}
+
+	CrystalNectar: {
+		// DisplayName: Crystal Nectar
+		/* Tooltip:
+			'''
+			Causes bees to become friendly
+			Being in honey speed up the player's swimming speed and doubles the honey duration
+			Increases the strength of friendly bees
+			''' */
+	}
+
+	FadedCloth: {
+		// DisplayName: Cursed Cloth
+		/* Tooltip:
+			'''
+			Homing skulls are shot at nearby enemies
+			True melee damage is increased by:
+			Base: 50%
+			After Wall of Flesh: 75%
+			After Plantera: 100%
+			After Moonlord: 300%
+			''' */
+	}
+
+	GreatLens: {
+		// DisplayName: Great Lens
+		// Tooltip: ""
+	}
+
+	HellishFleshHeart: {
+		// DisplayName: Flesh Drive
+		// Tooltip: Summons 3 Hungry to steal the life off enemies
+	}
+
+	SlimeBooster: {
+		// DisplayName: Slime Booster
+		/* Tooltip:
+			'''
+			Walking leaves a acidic slimy trail
+			Greatly increased jump speed
+			When the player is hit, they shoot out slime spikes
+			''' */
 	}
 }
 
@@ -1883,11 +2240,15 @@ Tiles: {
 	VoidLeviathanTrophy.MapEntry: Трофей Левиафана Пустоты
 	AqueousTrophy.MapEntry: Трофей Аквеус
 	AzanaTrophy.MapEntry: Трофей Азаны
-	// InfernaceTrophy.MapEntry: Infernace Trophy
-	// ObsidiousTrophy.MapEntry: Obsidious Trophy
-	// PermafrostTrophy.MapEntry: Permafrost Trophy
-	// RegarothTrophy.MapEntry: Regaroth Trophy
-	// ScourgeFighterTrophy.MapEntry: Scourge Fighter Trophy
+	InfernaceTrophy.MapEntry: Трофей Инфернейса
+	ObsidiousTrophy.MapEntry: Трофей Обсидиуса
+	PermafrostTrophy.MapEntry: Трофей Пермафроста
+	RegarothTrophy.MapEntry: Трофей Регарота
+	ScourgeFighterTrophy.MapEntry: Трофей Бичеборца
+	// TheCelestialTrophy.MapEntry: The Celestial Trophy
+	// TheGuardianTrophy.MapEntry: The Guardian Trophy
+	// VolcanoxTrophy.MapEntry: Volcanox Trophy
+	// WastelandTrophy.MapEntry: Wasteland Trophy
 }
 
 Buffs: {
@@ -2234,18 +2595,47 @@ Buffs: {
 	}
 
 	PossessedHandBuff: {
-		// DisplayName: Possessed Hand
-		// Description: It has noBody
+		DisplayName: Одержимая рука
+		Description: Она бесТелесная
 	}
 
 	IcicleBuff: {
-		// DisplayName: Icicle
-		// Description: It never melts
+		DisplayName: Сосулька
+		Description: Никогда не тает
 	}
 
 	EnergySpiritBuff: {
-		// DisplayName: Energy Spirit
-		// Description: Its almost too bright to look at
+		DisplayName: Энергетический дух
+		Description: Настолько яркий, что на него почти больно смотреть
+	}
+
+	Eyeball: {
+		// DisplayName: Eyeball
+		// Description: The Celestials minions follow you
+	}
+
+	VolcanicTentacleBuff: {
+		// DisplayName: Volcanic Tentacle
+		// Description: It clings onto you
+	}
+
+	ScorpionMinionBuff: {
+		// DisplayName: Scorpion
+		// Description: Snip Snap
+	}
+
+	DashCooldown: {
+		// DisplayName: Ninja Dash Cooldown
+		// Description: Your dash is recharging
+	}
+
+	VilePower: {
+		// DisplayName: Vile Power
+		/* Description:
+			'''
+			Damage is increased by 5%
+			Attacks inflict poison and venom
+			''' */
 	}
 }
 
@@ -2453,37 +2843,85 @@ Projectiles: {
 	GreekFire.DisplayName: Греческий огонь
 	HearthMinion.DisplayName: Очаг
 	HearthBeam.DisplayName: Выстрел очага
-	// FireBlade.DisplayName: Fire Blade
-	// SpinningFlame.DisplayName: Spinning Flame
-	// MagmaroxMeteor.DisplayName: Solar Fragment
-	// MagmaroxRock.DisplayName: Magmarox
-	// PossessedHand.DisplayName: Possessed Hand
-	// SacredCrystalLaser.DisplayName: Sacred Crystals
-	// TerreneMortar.DisplayName: Terrene Mortar
-	// TerreneRock.DisplayName: Terrene Rock
-	// UltramarineBeam.DisplayName: Ultramarine
-	// VioletEdgeBall.DisplayName: Violet Edge Ball
-	// Frigidbullet.DisplayName: Frigidbullet
-	// IcicleMinion.DisplayName: Bubble
-	// IceWrathArrow.DisplayName: Ice Wrath
-	// IceReaverP.DisplayName: Ice Reaver
-	// IceWrathBeam.DisplayName: Ice Wrath
-	// SnowdriftBomb.DisplayName: Snowdrift
-	// RadiantStarHoming.DisplayName: Radiant Star
-	// RadiantStarSpiral.DisplayName: Radiant Star
-	// RadiantBombP.DisplayName: Master's Vortex
-	// MajestyP.DisplayName: Majesty
-	// RadiantBlade.DisplayName: Radiant Blade
-	// RadiantStarBow.DisplayName: Radiant Star
-	// RadiantStorm.DisplayName: Radiant Storm
-	// EnergySpiritBolt.DisplayName: Energy Bolt
-	// EnergySpirit.DisplayName: Energy Spirit
-	// TheSilencerP.DisplayName: The Silencer
-	// StarstruckArrow.DisplayName: Starstruck
-	// StarstruckBeam.DisplayName: Starstruck
-	// BountyP.DisplayName: Signal Booster
-	// ScourgeRocketFriendly.DisplayName: Rocket
-	// SignalBoost.DisplayName: Signal Booster
+	FireBlade.DisplayName: Огнелезвие
+	SpinningFlame.DisplayName: Крутогонь
+	MagmaroxMeteor.DisplayName: Метеор магмарокса
+	MagmaroxRock.DisplayName: Камень магмарокса
+	PossessedHand.DisplayName: Одержимая рука
+	SacredCrystalLaser.DisplayName: Священные кристаллы
+	TerreneMortar.DisplayName: Терреновая мортира
+	TerreneRock.DisplayName: Терреновый камень
+	UltramarineBeam.DisplayName: Заморский луч
+	VioletEdgeBall.DisplayName: Шар пурпурной щуки
+	Frigidbullet.DisplayName: Морозопуля
+	IcicleMinion.DisplayName: Миньон-сосулька
+	IceWrathArrow.DisplayName: Ледояростная стрела
+	IceReaverP.DisplayName: Проджектайл ледосхитителя
+	IceWrathBeam.DisplayName: Ледояростный луч
+	SnowdriftBomb.DisplayName: Бомба сугроба
+	RadiantStarHoming.DisplayName: Хоумящая лучезарная звезда
+	RadiantStarSpiral.DisplayName: Спираль лучезарной звезды
+	RadiantBombP.DisplayName: Проджектайл лучезарной бомбы
+	MajestyP.DisplayName: Проджектайл величества
+	RadiantBlade.DisplayName: Лучезарный клинок
+	RadiantStarBow.DisplayName: Холдаут лучезарного лука
+	RadiantStorm.DisplayName: Лучезарный шторм
+	EnergySpiritBolt.DisplayName: Энергетический духовыстрел
+	EnergySpirit.DisplayName: Энергетический дух
+	TheSilencerP.DisplayName: Проджектайл глушителя
+	StarstruckArrow.DisplayName: Звездоражённая стрела
+	StarstruckBeam.DisplayName: Звездоражённый луч
+	// Star.DisplayName: Star
+	BountyP.DisplayName: Проджектайл охоты за сокровищами
+	ScourgeRocketFriendly.DisplayName: Игроковская бичеракета
+	SignalBoost.DisplayName: Усилитель сигнала
+	// CelestiaArc.DisplayName: Lightning
+	// CelestialBoltFriendly.DisplayName: Celestial Laser
+	// CelestiaPortal.DisplayName: Celestia
+	// CelestialInfernoSpin.DisplayName: Celestial Inferno Spin
+	// EyeballMinion.DisplayName: Celestial Watcher
+	// SolusP.DisplayName: Celestial Laser
+	// TemplesWrathArrow.DisplayName: Temple's Wrath
+	// GodslayerStrike.DisplayName: Godslayer
+	// InfernoCloud.DisplayName: Inferno Storm
+	// InfernoLightning.DisplayName: Inferno Storm
+	// TemplesWrathSword.DisplayName: Temple's Wrath
+	// InfernoEye.DisplayName: Fire Runes
+	// InfernoShot.DisplayName: Inferno Shot
+	// WyrmClawSlash.DisplayName: Wyrm Claw Slash
+	// TempleBeam.DisplayName: Temple Beam
+	// TempleBall.DisplayName: Temple Ball
+	// RuneBlast.DisplayName: Rune Blast
+	// FireRunes.DisplayName: Fire Runes
+	// CombustiaWave.DisplayName: Combustia Wave
+	// FirelashFlames.DisplayName: Firelash Flames
+	// EmberBurstP.DisplayName: Ember Burst P
+	// HearthBlade.DisplayName: Hearth Blade
+	// HearthP.DisplayName: Hearth
+	// VolcanicTentacle.DisplayName: Volcanic Tentacle
+	// PincerArrow.DisplayName: Scorpion Arrow
+	// ScorpionMinion.DisplayName: Scorpion
+	// WastelandStingerFriendly.DisplayName: Stinger
+	// AncientStar.DisplayName: Ancient Star
+	// AncientStar2.DisplayName: Ancient Star
+	// Fireblast.DisplayName: Fireblast
+	// IceMist.DisplayName: Ice Mist
+	// IceMistSpike.DisplayName: Frosthail
+	// RetinasmP.DisplayName: Retinasm
+	// SkeletronFistP.DisplayName: Skeletron Fist
+	// LightningArc.DisplayName: Lightning
+	// ShockstormPortal.DisplayName: Shockstorm
+	// SpinalEye.DisplayName: Giga Eye
+	// Spine.DisplayName: Spine
+	// TearArrow.DisplayName: Tear Arrow
+	// DestroyerLaserFull.DisplayName: Charge Rifle
+	// DestroyerLaserHalf.DisplayName: The Destroyer
+	// MiniEaterOfSouls.DisplayName: Miniature Eater Of Souls
+	// TheDestroyerHeld.DisplayName: The Destroyer
+	// CorruptedFangP.DisplayName: Corrupted Fang
+	// HungryMinion.DisplayName: Hungry
+	// SkeleSkull.DisplayName: Skull
+	// SlimeBoosterTrail.DisplayName: Slime
 }
 
 Configs: {
@@ -2534,9 +2972,10 @@ Keybinds: {
 
 #TODO добавь и на английский также
 Bestiary: {
-	Boss: {
+	Bosses: {
 		VoidLeviathan: Змееобразное чудовище, пришедшее в этот мир прямиком из глубин Пустоты, которого боятся все живые существа Террарии. Оно жаждет любой достаточно сильной души, чтобы ещё больше усилить свою мощь...
 		ElderShadeWyrm: Старший представитель вида Тенезмеев, которые зародились в Пустоте и росли, эволюционировали достаточно долго, чтобы вырасти до настолько огромных размеров и непредсказуемой мощи.
+		RadiantMaster: Всё, что осталось от тех магов, кто поддался воле Лучезарного Дождя - лишь бездушные оболочки их былого величия, единственная цель существования которых теперь состоит лишь в том, чтобы оберегать существование Дождя и дальше.
 	}
 
 	Enemies.VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
@@ -2626,6 +3065,10 @@ Tooltips: {
 		чтобы обратиться в кристалл, отталкивающий врагов, которые его касаются и защищающий тебя от урона
 		Наведи курсор на этот аксессуар, когда он экипирован и нажми Ctrl + кнопка, на которую ты хочешь переключить хоткей использования его способности
 		'''
+	// GreatLens: <Special Ability Unbound>
+	// GreatLens1: Pressing the special ability key
+	// GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
+	// GreatLens3: If the player is hit by an enemy the damage is reflected to them
 }
 
 AccInfo: {
@@ -2665,14 +3108,17 @@ SetBonus: {
 		Нажми кнопку способности брони, чтобы создать ауру Психоза
 		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 		'''
-	// EnergyWeaversHelm: You charge up energy and release it at nearby enemies
+	EnergyWeaversHelm: В тебе заряжается энергия, которую ты можешь выпустить во врагов
 }
 
-said.VoidLeviathanHead: Инфекция поражает этот мир...
+Said: {
+	// VoidLeviathanHead: Infection overcomes the world...
+	// VoidLeviathanHead2: ""
+}
 
 LooTCondition: {
-	// AwakenedModeActive: Исключительно в пробужденном режиме
-	// ScourgeLootCondition: Drop chance 1/3
+	AwakenedModeActive: "[c/973999:Эксклюзив Пробуждённого режима]"
+	ScourgeLootCondition: Шанс дропа 1/3
 }
 
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.

@@ -93,7 +93,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
             {
                 for (int num51 = 0; num51 < 2; num51++)
                 {
-                    Dust dust = Main.dust[Dust.NewDust(Projectile.position + Projectile.velocity * 2f, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 2f)];
+                    Dust dust = Main.dust[Dust.NewDust(Projectile.position + Projectile.velocity * 2f, Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 2f)];
                     dust.noGravity = true;
                     dust.velocity *= 2f;
                     dust.velocity += Projectile.localAI[0].ToRotationVector2();
@@ -106,7 +106,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                     if (Main.rand.Next(4) == 0)
                     {
                         Vector2 position = Projectile.position + Projectile.velocity + Projectile.velocity * ((float)num53 / num52);
-                        Dust dust2 = Main.dust[Dust.NewDust(position, Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 1f)];
+                        Dust dust2 = Main.dust[Dust.NewDust(position, Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 1f)];
                         dust2.noGravity = true;
                         dust2.fadeIn = 0.5f;
                         dust2.velocity += Projectile.localAI[0].ToRotationVector2();
@@ -210,7 +210,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(ModContent.BuffType<ExtinctionCurse>(), 200);
-            Projectile.NewProjectile(Const.Proj(Projectile), target.Center.X, target.Center.Y, 0, 0, ModContent.ProjectileType<LightsAfflictionExplosion>(), Projectile.damage, 0, Projectile.owner);
+            Projectile.NewProjectile(EAU.Proj(Projectile), target.Center.X, target.Center.Y, 0, 0, ModContent.ProjectileType<LightsAfflictionExplosion>(), Projectile.damage, 0, Projectile.owner);
         }
     }
 }

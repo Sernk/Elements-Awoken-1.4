@@ -1017,6 +1017,7 @@ namespace ElementsAwoken
         }
         public void DrawComputer(SpriteBatch spriteBatch)
         {
+            #region Computer
             var background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ComputerText").Value;
             var mod = ModLoader.GetMod("ElementsAwoken");
             var player = Main.player[Main.myPlayer].GetModPlayer<MyPlayer>();
@@ -1141,6 +1142,7 @@ namespace ElementsAwoken
                 spriteBatch.Draw(background, new Rectangle(Main.screenWidth / 2, 150, background.Width, background.Height), null, Color.White, 0f, new Vector2(background.Width / 2, background.Height / 2), SpriteEffects.None, 0f);
                 Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth / 2 - 230, 86, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
             }
+            #endregion
         }
         public void DrawSanityBook()
         {

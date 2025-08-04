@@ -36,7 +36,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int k = 0; k < 2; k++)
             {
-                Projectile proj = Main.projectile[Projectile.NewProjectile(Const.Proj(Projectile), Projectile.position.X, Projectile.position.Y, Main.rand.NextFloat(-6f, 6f), Main.rand.NextFloat(-6f, 6f), ModContent.ProjectileType<GreekFire>(), (int)(Projectile.damage * 0.4f), Projectile.knockBack * 0.35f, Main.myPlayer, 0f, 0f)];
+                Projectile proj = Main.projectile[Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.position.X, Projectile.position.Y, Main.rand.NextFloat(-6f, 6f), Main.rand.NextFloat(-6f, 6f), ModContent.ProjectileType<GreekFire>(), (int)(Projectile.damage * 0.4f), Projectile.knockBack * 0.35f, Main.myPlayer, 0f, 0f)];
                 proj.timeLeft = 120;
                 proj.DamageType = DamageClass.Ranged;
             }

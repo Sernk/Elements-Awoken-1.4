@@ -7,7 +7,7 @@ namespace ElementsAwoken.Content.Buffs.Cooldowns
     {
         public override void SetStaticDefaults()
 		{
-            Const.CanBeCleared(Type);
+            EAU.CanBeCleared(Type);
             Main.debuff[Type] = true;
             Main.buffNoSave[Type] = true;
         }

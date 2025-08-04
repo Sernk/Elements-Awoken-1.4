@@ -47,7 +47,7 @@ namespace ElementsAwoken.Content.Projectiles
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
                 Rectangle rectangle = new Rectangle(0, (tex.Height / Main.projFrames[Projectile.type]) * Projectile.frame, tex.Width, tex.Height / Main.projFrames[Projectile.type]);
                 float scale = 1 - ((float)k / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, scale, SpriteEffects.None, 0f);
             }
             return true;
         }
@@ -61,9 +61,9 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            Gore.NewGore(Const.Proj(Projectile), Projectile.position, Projectile.velocity, Mod.Find<ModGore>("ChaosGazer").Type, 1f);
-            Gore.NewGore(Const.Proj(Projectile), Projectile.position, Projectile.velocity, Mod.Find<ModGore>("ChaosGazer2").Type, 1f);
-            Gore.NewGore(Const.Proj(Projectile), Projectile.position, Projectile.velocity, Mod.Find<ModGore>("ChaosGazer3").Type, 1f);
+            Gore.NewGore(EAU.Proj(Projectile), Projectile.position, Projectile.velocity, Mod.Find<ModGore>("ChaosGazer").Type, 1f);
+            Gore.NewGore(EAU.Proj(Projectile), Projectile.position, Projectile.velocity, Mod.Find<ModGore>("ChaosGazer2").Type, 1f);
+            Gore.NewGore(EAU.Proj(Projectile), Projectile.position, Projectile.velocity, Mod.Find<ModGore>("ChaosGazer3").Type, 1f);
         }
     }
 }

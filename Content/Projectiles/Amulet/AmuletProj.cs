@@ -30,7 +30,7 @@ namespace ElementsAwoken.Content.Projectiles.Amulet
             Lighting.AddLight(Projectile.Center, 0.4f, 0.2f, 0.4f);
             for (int num121 = 0; num121 < 5; num121++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame)];
                 dust.velocity *= 0.1f;
                 dust.position -= Projectile.velocity / 5f * (float)num121;
                 dust.noGravity = true;

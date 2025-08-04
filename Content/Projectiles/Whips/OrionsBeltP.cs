@@ -37,7 +37,7 @@ namespace ElementsAwoken.Content.Projectiles.Whips
                 for (int l = 0; l < swirlCount; l++)
                 {
                     int distance = 360 / swirlCount;
-                    int orbital = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<OrionsBeltGalaxy>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
+                    int orbital = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<OrionsBeltGalaxy>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
                 }
                 createdGalaxy = true;
             }

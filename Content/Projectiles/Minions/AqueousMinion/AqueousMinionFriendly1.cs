@@ -88,7 +88,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions.AqueousMinion
                     num406 = num403 / num406;
                     num404 *= num406;
                     num405 *= num406;
-                    Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X - 4f, Projectile.Center.Y, num404, num405, ModContent.ProjectileType<WaterballFriendly>(), 60, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X - 4f, Projectile.Center.Y, num404, num405, ModContent.ProjectileType<WaterballFriendly>(), 60, Projectile.knockBack, Projectile.owner, 0f, 0f);
                     Projectile.ai[0] = 50f;
                     return;
                 }

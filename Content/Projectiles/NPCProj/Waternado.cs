@@ -94,7 +94,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj
                 float num611 = ((float)(num606 + num607) - Projectile.ai[1] + 1f) * num608 / (float)(num607 + num606);
                 center.Y -= (float)num610 * num611 / 2f;
                 center.Y += 2f;
-                Projectile.NewProjectile(Const.Proj(Projectile), center.X, center.Y, Projectile.velocity.X, Projectile.velocity.Y, Projectile.type, Projectile.damage, Projectile.knockBack, Projectile.owner, 10f, Projectile.ai[1] - 1f);
+                Projectile.NewProjectile(EAU.Proj(Projectile), center.X, center.Y, Projectile.velocity.X, Projectile.velocity.Y, Projectile.type, Projectile.damage, Projectile.knockBack, Projectile.owner, 10f, Projectile.ai[1] - 1f);
             }
             if (Projectile.ai[0] <= 0f)
             {

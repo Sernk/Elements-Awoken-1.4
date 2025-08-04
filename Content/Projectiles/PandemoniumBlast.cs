@@ -38,7 +38,7 @@ namespace ElementsAwoken.Content.Projectiles
                 Vector2 value15 = new Vector2((float)Main.rand.Next(-12, 12), (float)Main.rand.Next(-12, 12));
                 value15.X *= 0.25f;
                 value15.Y *= 0.25f;
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, value15.X, value15.Y, ModContent.ProjectileType<PandemoniumFlame>(), Projectile.damage / 2, 2f, Projectile.owner, 0f, 0f);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, value15.X, value15.Y, ModContent.ProjectileType<PandemoniumFlame>(), Projectile.damage / 2, 2f, Projectile.owner, 0f, 0f);
             }
         }
         public override bool PreDraw(ref Color lightColor)

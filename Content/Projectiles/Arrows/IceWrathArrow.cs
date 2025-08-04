@@ -26,7 +26,7 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            var p = Const.Proj(Projectile);
+            var p = EAU.Proj(Projectile);
             var damage = hit.Damage;
             Vector2 vector8 = new Vector2(Projectile.position.X + (Projectile.width / 2), Projectile.position.Y + (Projectile.height / 2));
             int type = ModContent.ProjectileType<IceWrathBeam>();

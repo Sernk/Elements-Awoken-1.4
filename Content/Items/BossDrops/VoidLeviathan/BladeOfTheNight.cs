@@ -69,7 +69,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
                 {
                     Vector2 dustPos = (Vector2.One * new Vector2((float)player.width / 2f, (float)player.height) * 0.75f * 0.5f).RotatedBy((double)((float)(i - (numDusts / 2 - 1)) * 6.28318548f / (float)numDusts), default(Vector2)) + player.Center;
                     Vector2 velocity = dustPos - player.Center;
-                    Dust dust = Main.dust[Dust.NewDust(dustPos + velocity, 0, 0, Const.PinkFlame, velocity.X * 2f, velocity.Y * 2f, 100, default, 1.4f)];
+                    Dust dust = Main.dust[Dust.NewDust(dustPos + velocity, 0, 0, EAU.PinkFlame, velocity.X * 2f, velocity.Y * 2f, 100, default, 1.4f)];
                     dust.noGravity = true;
                     dust.noLight = true;
                     dust.velocity = Vector2.Normalize(velocity) * 3f;

@@ -42,7 +42,7 @@ namespace ElementsAwoken.Content.Projectiles
             int numberProjectiles = 1;
             for (int i = 0; i < numberProjectiles; i++)
             {
-                int proj = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.Next(-4, 4), Main.rand.Next(-4, 4), ProjectileID.FlaironBubble, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                int proj = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.Next(-4, 4), Main.rand.Next(-4, 4), ProjectileID.FlaironBubble, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
                 Main.projectile[proj].DamageType = DamageClass.Ranged;
             }
             return false;
@@ -52,7 +52,7 @@ namespace ElementsAwoken.Content.Projectiles
             int numberProjectiles = 1;
             for (int i = 0; i < numberProjectiles; i++)
             {
-                int proj = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.Next(-4, 4), Main.rand.Next(-4, 4), ProjectileID.FlaironBubble, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                int proj = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.Next(-4, 4), Main.rand.Next(-4, 4), ProjectileID.FlaironBubble, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
                 Main.projectile[proj].DamageType = DamageClass.Ranged;
             }
         }

@@ -10,7 +10,7 @@ namespace ElementsAwoken.Content.Buffs
 			Main.debuff[Type] = true;
 			Main.pvpBuff[Type] = true;
 			Main.buffNoSave[Type] = true;
-            Const.CanBeCleared(Type);
+            EAU.CanBeCleared(Type);
         }	
 		public override void Update(Player player, ref int buffIndex)
 		{

@@ -1,6 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -12,6 +13,7 @@ using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.EABiomes;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm
@@ -39,12 +41,29 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm
             NPC.DeathSound = SoundID.NPCDeath14;
             NPC.npcSlots = 1f;
             NPC.netAlways = true;
+            SpawnModBiomes = new int[1] { GetInstance<Emptiness>().Type };
+        }
+        public override void SetStaticDefaults()
+        {
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Scale = 0.8f,
+                PortraitScale = 0.7f,
+                CustomTexturePath = "ElementsAwoken/Extra/Bestiary/ElderShadeWyrmBestiary"
+            };
+            value.Position.X += 40f;
+            value.Position.Y += 20f;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {
             var EALocalization = GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
-                new FlavorTextBestiaryInfoElement(EALocalization.ElderShadeWyrm)
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement(EALocalization.ElderShadeWyrm),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
             });
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
@@ -161,7 +180,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm
 
                             Projectile bolt = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center, projSpeed, ProjectileType<VoidBolt>(), projDamage, 0f, 0)];
                             bolt.Name = "Elder Shade Wyrm Bolt";
-                            //bolt.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                            bolt.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                         }
                         SoundEngine.PlaySound(SoundID.Item12, NPC.position);
                     }
@@ -221,13 +240,13 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm
         {
             NPC.lifeMax = 40000;
 
-            //NPCsGLOBAL.ImmuneAllEABuffs(npc);
+            NPCsGLOBAL.ImmuneAllEABuffs(NPC);
             // all vanilla buffs
             for (int k = 0; k < NPC.buffImmune.Length; k++)
             {
                 NPC.buffImmune[k] = true;
             }
-            //npc.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
+            NPC.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
         }
 
         public override void SetStaticDefaults()

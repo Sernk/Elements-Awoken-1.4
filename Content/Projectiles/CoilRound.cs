@@ -44,7 +44,7 @@ namespace ElementsAwoken.Content.Projectiles
                 Vector2 drawPos = Projectile.oldPos[k] + new Vector2(Projectile.width / 2, Projectile.height / 2) - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
                 float scale = 1 - ((float)k / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(tex, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale * scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(tex, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale * scale, SpriteEffects.None, 0f);
             }
             return true;
         }

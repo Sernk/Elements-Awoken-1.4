@@ -67,8 +67,8 @@ namespace ElementsAwoken.Content.Projectiles
             for (int i = 0; i < 4; i++)
             {
                 offsetAngle = (startAngle + deltaAngle * (i + i * i) / 2f) + 32f * i;
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, (float)(Math.Sin(offsetAngle) * 8f), (float)(Math.Cos(offsetAngle) * 8f), type, Projectile.damage, 8f, 0);
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, (float)(-Math.Sin(offsetAngle) * 8f), (float)(-Math.Cos(offsetAngle) * 8f), type, Projectile.damage, 8f, 0);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, (float)(Math.Sin(offsetAngle) * 8f), (float)(Math.Cos(offsetAngle) * 8f), type, Projectile.damage, 8f, 0);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, (float)(-Math.Sin(offsetAngle) * 8f), (float)(-Math.Cos(offsetAngle) * 8f), type, Projectile.damage, 8f, 0);
             }
             ProjectileUtils.Explosion(Projectile, 127, damageType: "magic");
         }

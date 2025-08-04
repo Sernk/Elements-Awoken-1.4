@@ -20,7 +20,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Aqueous
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            var p = Const.Players(player);
+            var p = EAU.Play(player);
             if (((double)player.velocity.X > 0 || (double)player.velocity.Y > 0 || (double)player.velocity.X < -0.1 || (double)player.velocity.Y < -0.1))
             {
                 if (Main.rand.Next(3) == 0)

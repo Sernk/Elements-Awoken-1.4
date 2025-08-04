@@ -12,7 +12,6 @@ namespace ElementsAwoken.Content.Items.Accessories
     public class CoreCharm : ModItem
     {
         public int shootTimer = 120;
-
         public override void SetDefaults()
         {
             Item.width = 26;
@@ -24,7 +23,7 @@ namespace ElementsAwoken.Content.Items.Accessories
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(7, 4));
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
@@ -45,7 +44,7 @@ namespace ElementsAwoken.Content.Items.Accessories
                             for (int i = 0; i < numberProjectiles; i++)
                             {
                                 Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1)).RotatedByRandom(MathHelper.ToRadians(20));
-                                Projectile.NewProjectile(Const.Players(player), player.Center.X, player.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<FireSkull>(), 20, 0f, Main.myPlayer, 0f, 0f);
+                                Projectile.NewProjectile(EAU.Play(player), player.Center.X, player.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<FireSkull>(), 20, 0f, Main.myPlayer, 0f, 0f);
                             }
                             shootTimer = 120;
                             return;

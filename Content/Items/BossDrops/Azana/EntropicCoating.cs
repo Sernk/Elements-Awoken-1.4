@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Azana
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(9, 4));
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {

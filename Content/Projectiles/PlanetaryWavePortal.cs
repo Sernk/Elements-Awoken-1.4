@@ -44,7 +44,7 @@ namespace ElementsAwoken.Content.Projectiles
                 float amount = (Projectile.localAI[0] - numProj / 2);
                 float amount2 = player.direction == -1 ? amount - 3 : -amount + 3;
                 Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedBy(MathHelper.Lerp(-rotation, rotation, amount2));
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<PlanetarySpike>(), Projectile.damage, Projectile.knockBack, player.whoAmI);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<PlanetarySpike>(), Projectile.damage, Projectile.knockBack, player.whoAmI);
                 Projectile.localAI[0]++;
             }
             if (Projectile.localAI[0] >= numProj)

@@ -66,7 +66,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.RadiantMaster
         {
             if (Main.rand.Next(5) == 0)
             {
-                int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, Const.PinkFlame);
+                int dust = Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, EAU.PinkFlame);
                 Main.dust[dust].noGravity = true;
             }
         }

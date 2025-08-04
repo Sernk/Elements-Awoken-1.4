@@ -97,7 +97,7 @@ namespace ElementsAwoken.Content.Mounts
                     {
                         Vector2 speed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
                         SoundEngine.PlaySound(SoundID.Item12, player.position);
-                        Projectile.NewProjectile(Const.Players(player), player.Center.X - 4f, player.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<SacredCrystalLaser>(), 30, 5f, player.whoAmI, type);
+                        Projectile.NewProjectile(EAU.Play(player), player.Center.X - 4f, player.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<SacredCrystalLaser>(), 30, 5f, player.whoAmI, type);
                         shootTimer = 6;
                     }
                 }

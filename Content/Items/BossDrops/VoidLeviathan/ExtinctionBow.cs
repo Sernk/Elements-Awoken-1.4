@@ -79,7 +79,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
             {
                 for (int i = 0; i < 2; i++)
                 {
-                    int num5 = Dust.NewDust(player.position, player.width, player.height, Const.PinkFlame, 0f, 0f, 200, default(Color), 0.5f);
+                    int num5 = Dust.NewDust(player.position, player.width, player.height, EAU.PinkFlame, 0f, 0f, 200, default(Color), 0.5f);
                     Main.dust[num5].noGravity = true;
                     Main.dust[num5].velocity *= 0.75f;
                     Main.dust[num5].fadeIn = 1.3f;

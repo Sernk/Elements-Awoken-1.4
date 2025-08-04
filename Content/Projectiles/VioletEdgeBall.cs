@@ -33,7 +33,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
             for (int i = 0; i < 2; i++)
             {
-                int dust2 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 1.5f);
+                int dust2 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 1.5f);
                 Main.dust[dust2].noGravity = true;
                 Main.dust[dust2].velocity *= 0f;
             }

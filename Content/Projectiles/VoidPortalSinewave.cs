@@ -30,7 +30,7 @@ namespace ElementsAwoken.Content.Projectiles
             int dustLength = 7;
             for (int i = 0; i < dustLength; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame)];
                 dust.velocity = Vector2.Zero;
                 dust.position -= Projectile.velocity / dustLength * (float)i;
                 dust.noGravity = true;

@@ -53,7 +53,7 @@ namespace ElementsAwoken.Content.Projectiles
                     Texture2D arg_D4F2_1 = texture2D32;
                     Vector2 arg_D4F2_2 = vector54 - Main.screenPosition;
                     Rectangle? sourceRectangle2 = null;
-                    Const.Sb.Draw(arg_D4F2_1, arg_D4F2_2, sourceRectangle2, color53, rotation25, origin9, scale10, SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(arg_D4F2_1, arg_D4F2_2, sourceRectangle2, color53, rotation25, origin9, scale10, SpriteEffects.None, 0f);
                 }
             }
             return true;

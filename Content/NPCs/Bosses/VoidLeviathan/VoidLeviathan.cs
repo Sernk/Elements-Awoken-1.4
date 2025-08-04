@@ -7,6 +7,7 @@ using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -19,6 +20,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.UI;
 using static ElementsAwoken.EASystem.EABiomes;
 using static Terraria.ModLoader.ModContent;
 
@@ -85,25 +87,29 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, Masiv.LeviLoot));
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [..ListItems.LeviLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanHeart>()));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidEssence>(), 1000000));
+            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
+
+            _AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<AbyssalMatter>()));
+            npcLoot.Add(_AwakenedMode);
         }
         public override void OnKill()
         {
             int essenceAmount = Main.rand.Next(2, 8);
             if (Main.expertMode) essenceAmount = Main.rand.Next(5, 13);
             if (MyWorld.awakenedMode) essenceAmount = Main.rand.Next(8, 20);
-            Item.NewItem(Const.NPCs(NPC), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ItemType<VoidEssence>(), essenceAmount);
+            Item.NewItem(EAU.NPCs(NPC), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ItemType<VoidEssence>(), essenceAmount);
             if (!MyWorld.downedVoidLeviathan)
             {
                 ElementsAwoken.encounter = 3;
                 ElementsAwoken.encounterTimer = 3600;
                 ElementsAwoken.DebugModeText("encounter 3 start");
-                Main.NewText(GetInstance<EALocalization>().VoidLeviathan, new Color(235, 70, 106));
+                Main.NewText(GetInstance<EALocalization>().VoidLeviathanHead, new Color(235, 70, 106));
             }
             if (MyWorld.voidLeviathanKills < 3)
             {

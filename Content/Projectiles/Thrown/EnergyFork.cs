@@ -43,7 +43,7 @@ namespace ElementsAwoken.Content.Projectiles.Thrown
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             int dir = Main.rand.Next(2) == 0 ? -1 : 1;
-            Projectile.NewProjectile(Const.Proj(Projectile), target.Center.X, target.Center.Y - 140 * dir, 0f, 12 * dir, ModContent.ProjectileType<EnergyFork2>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+            Projectile.NewProjectile(EAU.Proj(Projectile), target.Center.X, target.Center.Y - 140 * dir, 0f, 12 * dir, ModContent.ProjectileType<EnergyFork2>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
         }
     }
 }

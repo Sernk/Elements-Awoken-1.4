@@ -89,9 +89,9 @@ namespace ElementsAwoken.EASystem.Global
         public static int Explosion(Projectile projectile, int[] dustIDs, int damage = -1, string damageType = "normal", float numDustScale = 1f, float dustScale = 1f, int soundID = 14)
         {
             if (damage == -1) damage = projectile.damage;
-            int expID = Projectile.NewProjectile(Const.Proj(projectile), projectile.Center.X, projectile.Center.Y, 0f, 0f, ProjectileType<Explosion>(), damage, projectile.knockBack, projectile.owner);
+            int expID = Projectile.NewProjectile(EAU.Proj(projectile), projectile.Center.X, projectile.Center.Y, 0f, 0f, ProjectileType<Explosion>(), damage, projectile.knockBack, projectile.owner);
             Projectile exp = Main.projectile[expID];
-            if (Masiv.damageTypes.TryGetValue(damageType.ToLower(), out var dmgClass))
+            if (ListItems.damageTypes.TryGetValue(damageType.ToLower(), out var dmgClass))
                 exp.DamageType = dmgClass;
             else
                 exp.DamageType = DamageClass.Default;
@@ -107,7 +107,7 @@ namespace ElementsAwoken.EASystem.Global
         public static int HostileExplosion(Projectile projectile, int[] dustIDs, int damage = -1, float numDustScale = 1f, float dustScale = 1f, int soundID = 14)
         {
             if (damage == -1) damage = projectile.damage;
-            int expID = Projectile.NewProjectile(Const.Proj(projectile), projectile.Center.X, projectile.Center.Y, 0f, 0f, ProjectileType<ExplosionHostile>(), damage, projectile.knockBack, projectile.owner, 0f, 0f);
+            int expID = Projectile.NewProjectile(EAU.Proj(projectile), projectile.Center.X, projectile.Center.Y, 0f, 0f, ProjectileType<ExplosionHostile>(), damage, projectile.knockBack, projectile.owner, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item14, projectile.position);
             ExplosionDust(projectile, dustIDs, numDustScale, dustScale);
             return expID;
@@ -119,7 +119,7 @@ namespace ElementsAwoken.EASystem.Global
         }
         private static void ExplosionDust(Projectile projectile, int[] dustIDs, float numDustScale = 1f, float dustScale = 1f)
         {
-            var p = Const.Proj(projectile);
+            var p = EAU.Proj(projectile);
             int num = GetInstance<Config>().lowDust ? 10 : 20;
             num = (int)(num * numDustScale);
             for (int i = 0; i < num; i++)

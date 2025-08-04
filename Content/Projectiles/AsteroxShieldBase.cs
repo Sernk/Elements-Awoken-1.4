@@ -35,7 +35,7 @@ namespace ElementsAwoken.Content.Projectiles
                 for (int l = 0; l < swirlCount; l++)
                 {
                     int distance = 59;
-                    orbital = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<AsteroxShieldSwirl>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
+                    orbital = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<AsteroxShieldSwirl>(), Projectile.damage, Projectile.knockBack, Projectile.owner, l * distance, Projectile.whoAmI);
                 }
                 Projectile.ai[0] = 1;
             }

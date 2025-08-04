@@ -18,7 +18,6 @@ namespace ElementsAwoken.Content.Projectiles
             Projectile.ignoreWater = true;
             Projectile.timeLeft = 600;
         }
-
         public override void AI()
         {
             Projectile.rotation = (float)Math.Atan2((double)Projectile.velocity.Y, (double)Projectile.velocity.X) + 1.57f;

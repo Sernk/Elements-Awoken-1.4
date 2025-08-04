@@ -16,7 +16,7 @@ namespace ElementsAwoken.Content.Tiles.Trophies
             TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.newTile.StyleWrapLimit = 42;
             TileObjectData.addTile(Type);
-            Const.DSCursor(Type);
+            EAU.DSCursor(Type);
             AddMapEntry(new Color(120, 85, 60), CreateMapEntryName());
         }
     }

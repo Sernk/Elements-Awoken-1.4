@@ -75,7 +75,7 @@ namespace ElementsAwoken.Content.Projectiles
                         num19 *= 1.2f;
                     }
                     Vector2 vector14 = value5 + ((float)Main.rand.NextDouble() * 6.28318548f).ToRotationVector2() * (12f - (float)(num16 * 2));
-                    int num20 = Dust.NewDust(vector14 - Vector2.One * 8f, 16, 16, Const.GetDustID(), Projectile.velocity.X / 2f, Projectile.velocity.Y / 2f, 0, default(Color), 1f);
+                    int num20 = Dust.NewDust(vector14 - Vector2.One * 8f, 16, 16, EAU.GetDustID(), Projectile.velocity.X / 2f, Projectile.velocity.Y / 2f, 0, default(Color), 1f);
                     Main.dust[num20].velocity = Vector2.Normalize(value5 - vector14) * 1.5f * (10f - (float)num16 * 2f) / 10f;
                     Main.dust[num20].noGravity = true;
                     Main.dust[num20].scale = num19;
@@ -93,7 +93,7 @@ namespace ElementsAwoken.Content.Projectiles
                         {
                             vector16 = -Vector2.UnitY;
                         }
-                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, ModContent.ProjectileType<ShimmersparkStrike>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, ModContent.ProjectileType<ShimmersparkStrike>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
                         SoundEngine.PlaySound(new SoundStyle("ElementsAwoken/Sounds/Item/BigExplosion"), Projectile.position);
                         modPlayer.screenshakeAmount = 4f;
                         Projectile.ai[0] = 0;

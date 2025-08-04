@@ -43,7 +43,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.CosmicObserver
             player.GetModPlayer<MyPlayer>().cosmicalusArmor = true;
             if (player.ownedProjectileCounts[ModContent.ProjectileType<CosmicalusRing>()] <= 0)
             {
-                Projectile.NewProjectile(Const.Players(player), player.Center.X, player.Center.Y, 0f, 0f, ModContent.ProjectileType<CosmicalusRing>(), 0, 0f, player.whoAmI);
+                Projectile.NewProjectile(EAU.Play(player), player.Center.X, player.Center.Y, 0f, 0f, ModContent.ProjectileType<CosmicalusRing>(), 0, 0f, player.whoAmI);
             }
         }
         public override void AddRecipes()

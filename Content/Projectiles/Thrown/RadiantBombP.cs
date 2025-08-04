@@ -32,7 +32,7 @@ namespace ElementsAwoken.Content.Projectiles.Thrown
             for (int i = 0; i < numProj; i++)
             {
                 Vector2 perturbedSpeed = (rotation / numProj * i).ToRotationVector2() * 6.5f;
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ProjectileType<RadiantStarSpiral>(), (int)(Projectile.damage * 0.6f), Projectile.knockBack, Projectile.owner);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ProjectileType<RadiantStarSpiral>(), (int)(Projectile.damage * 0.6f), Projectile.knockBack, Projectile.owner);
             }
         }
     }

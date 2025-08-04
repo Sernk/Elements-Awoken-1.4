@@ -6,11 +6,10 @@ namespace ElementsAwoken.Utilities
     public class EALocalization : ModSystem
     {
         #region Bestiary
-        public string VoidLeviathan => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Boss.VoidLeviathan");
-        public string ElderShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Boss.ElderShadeWyrm");
-
+        public string VoidLeviathan => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VoidLeviathan");
+        public string ElderShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ElderShadeWyrm");
+        public string RadiantMaster => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster");
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
-
         public string MysticBunny => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny");
         #endregion
         #region Ore
@@ -98,6 +97,12 @@ namespace ElementsAwoken.Utilities
         public string GiftOfTheArchaic => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GiftOfTheArchaic");
         public string GiftOfTheArchaic1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GiftOfTheArchaic1");
         #endregion
+        #region GreatLens
+        public string GreatLens => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GreatLens");
+        public string GreatLens1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GreatLens1");
+        public string GreatLens2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GreatLens2");
+        public string GreatLens3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GreatLens3");
+        #endregion
         #endregion
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
@@ -105,6 +110,7 @@ namespace ElementsAwoken.Utilities
         #endregion
         #region Said
         public string VoidLeviathanHead => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead");
+        public string VoidLeviathanHead2 => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead2");
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");

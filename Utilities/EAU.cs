@@ -11,7 +11,7 @@ namespace ElementsAwoken
     /// <summary>
     /// TODO
     /// </summary>
-    public class Const
+    public class EAU
     {
         public static SpriteBatch Sb => Main.spriteBatch;
         public static int PinkFlame => DustID.Firework_Pink;
@@ -39,7 +39,7 @@ namespace ElementsAwoken
         {
             return npc.GetSource_FromThis();
         }
-        public static IEntitySource Players(Player player)
+        public static IEntitySource Play(Player player)
         {
             return player.GetSource_FromThis();
         }

@@ -35,7 +35,7 @@ namespace ElementsAwoken.Content.Projectiles
             ProjectileUtils.PushOtherEntities(Projectile);
             if (!ModContent.GetInstance<Config>().lowDust)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame)];
                 dust.velocity *= 0.1f;
                 dust.scale *= 0.2f;
                 dust.noGravity = true;
@@ -97,7 +97,7 @@ namespace ElementsAwoken.Content.Projectiles
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }
@@ -105,7 +105,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int i = 0; i < 16; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 100, default(Color), 1.2f)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 100, default(Color), 1.2f)];
                 dust.noGravity = true;
                 dust.velocity *= 0.5f;
                 dust.fadeIn = 0.9f;

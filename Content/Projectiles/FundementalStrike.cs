@@ -74,7 +74,7 @@ namespace ElementsAwoken.Content.Projectiles
                 for (int i = 0; i < 4; i++)
                 {
                     Vector2 speed = new Vector2((float)Main.rand.Next(-9, 9), (float)Main.rand.Next(-9, 9));
-                    Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<AncientShard>(), (int)(Projectile.damage * 0.75f), Projectile.knockBack, Projectile.owner, 0f, 0f);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, speed.X, speed.Y, ModContent.ProjectileType<AncientShard>(), (int)(Projectile.damage * 0.75f), Projectile.knockBack, Projectile.owner, 0f, 0f);
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace ElementsAwoken.Content.Projectiles
                 float damageMult = Projectile.damage > 1000 ? 0.4f : 0.75f;
                 for (int i = 0; i < 2; i++)
                 {                
-                    Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X + 500 * (i % 2 == 0 ? -1 : 1), Projectile.Center.Y, 22f * (i % 2 == 0 ? 1 : -1), 0f, ModContent.ProjectileType<FundementalStrike>(), (int)(Projectile.damage * damageMult), Projectile.knockBack, Projectile.owner, 1f, 0f);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X + 500 * (i % 2 == 0 ? -1 : 1), Projectile.Center.Y, 22f * (i % 2 == 0 ? 1 : -1), 0f, ModContent.ProjectileType<FundementalStrike>(), (int)(Projectile.damage * damageMult), Projectile.knockBack, Projectile.owner, 1f, 0f);
                 }
                 target.immune[Projectile.owner] = 5;
             }
@@ -112,7 +112,7 @@ namespace ElementsAwoken.Content.Projectiles
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
                 Rectangle rectangle = new Rectangle(0, (tex.Height / Main.projFrames[Projectile.type]) * Projectile.frame, tex.Width, tex.Height / Main.projFrames[Projectile.type]);
-                Const.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(tex, drawPos, rectangle, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
 
             return true;

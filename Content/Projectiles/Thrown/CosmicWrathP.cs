@@ -101,7 +101,7 @@ namespace ElementsAwoken.Content.Projectiles.Thrown
         }
         public override void OnKill(int timeLeft)
         {
-            var s = Const.Proj(Projectile);
+            var s = EAU.Proj(Projectile);
             Projectile.NewProjectile(s, Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<CosmicWrathExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item14, Projectile.position);
             for (int num369 = 0; num369 < 20; num369++)
@@ -111,10 +111,10 @@ namespace ElementsAwoken.Content.Projectiles.Thrown
             }
             for (int num371 = 0; num371 < 10; num371++)
             {
-                int num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 2.5f);
+                int num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 2.5f);
                 Main.dust[num372].noGravity = true;
                 Main.dust[num372].velocity *= 5f;
-                num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.PinkFlame, 0f, 0f, 100, default(Color), 1.5f);
+                num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, EAU.PinkFlame, 0f, 0f, 100, default(Color), 1.5f);
                 Main.dust[num372].velocity *= 3f;
             }
             int num373 = Gore.NewGore(s, new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);

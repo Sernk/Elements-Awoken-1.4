@@ -272,6 +272,11 @@ Items: {
 		Tooltip: ""
 	}
 
+	Celestia: {
+		DisplayName: Celestia
+		Tooltip: ""
+	}
+
 	GuardianDrive: {
 		DisplayName: Guardian Drive
 		Tooltip: ""
@@ -1546,6 +1551,11 @@ Items: {
 		Tooltip: ""
 	}
 
+	Flare: {
+		DisplayName: Drakonian Guard
+		Tooltip: Pressing the ability key will create a shield around the player that pushes enemies and projectiles away
+	}
+
 	InfernaceMask: {
 		DisplayName: Infernace Mask
 		Tooltip: ""
@@ -1831,6 +1841,353 @@ Items: {
 		DisplayName: Treasure Bag
 		Tooltip: <right> to open
 	}
+
+	CelestialFlame: {
+		DisplayName: Astra's Flare
+		Tooltip:
+			'''
+			10% increased critical strike chance
+			Shoots lasers at nearby enemies
+			'''
+	}
+
+	CelestialInferno: {
+		DisplayName: Skylight Swirl
+		Tooltip: ""
+	}
+
+	CelestialsMask: {
+		DisplayName: The Celestials Mask
+		Tooltip: ""
+	}
+
+	EyeballStaff: {
+		DisplayName: Starlight Staff
+		Tooltip: Summons a celestial watcher to serve you
+	}
+
+	Solus: {
+		DisplayName: Solus
+		Tooltip: ""
+	}
+
+	TheCelestialBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	TheCelestialTrophy: {
+		DisplayName: The Celestial Trophy
+		Tooltip: ""
+	}
+
+	FieryCore: {
+		DisplayName: Fiery Core
+		Tooltip:
+			'''
+			The ancient temple artifact of fire
+			10% increased damage when in hell
+			Immunity to On Fire and Burning
+			You set nearby creatures on fire and inflict fire on hit
+			'''
+	}
+
+	Godslayer: {
+		DisplayName: Godslayer
+		Tooltip: ""
+	}
+
+	InfernoStorm: {
+		DisplayName: Inferno Storm
+		Tooltip: ""
+	}
+
+	TemplesWrath: {
+		DisplayName: Temple's Wrath
+		Tooltip: ""
+	}
+
+	TheGuardianMask: {
+		DisplayName: The Guardian Mask
+		Tooltip: ""
+	}
+
+	TheGuardianTrophy: {
+		DisplayName: The Guardian Trophy
+		Tooltip: ""
+	}
+
+	GuardianBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	GazeOfInferno: {
+		DisplayName: Gaze Of Inferno
+		Tooltip: ""
+	}
+
+	WyrmHeart: {
+		Tooltip: ""
+		DisplayName: Wyrm Heart
+	}
+
+	WyrmClaw: {
+		Tooltip: ""
+		DisplayName: Wyrm Claw
+	}
+
+	TheAllSeer: {
+		Tooltip: ""
+		DisplayName: The All Seer
+	}
+
+	TemplesCrystal: {
+		Tooltip: ""
+		DisplayName: Temple's Crystal
+	}
+
+	TempleFragment: {
+		Tooltip: ""
+		DisplayName: Temple Fragment
+	}
+
+	TempleKeepersBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	CharredInsignia: {
+		DisplayName: Charred Insignia
+		Tooltip:
+			'''
+			Ignites nearby enemies
+			10% increased damage
+			6% increased critical strike chance
+			Armor penetration increased by 20
+			'''
+	}
+
+	Combustia: {
+		DisplayName: Combustia
+		Tooltip: ""
+	}
+
+	EmberBurst: {
+		DisplayName: Ember Burst
+		Tooltip: ""
+	}
+
+	FatesFlame: {
+		DisplayName: Fates Flame
+		Tooltip: ""
+	}
+
+	FirestarterStaff: {
+		DisplayName: Firestarter Staff
+		Tooltip: Summons a Volcanic Tentacle to serve you
+	}
+
+	Hearth: {
+		DisplayName: Hearth
+		Tooltip: ""
+	}
+
+	VolcanoxBag: {
+		DisplayName: Volcanox Bag
+		Tooltip: ""
+	}
+
+	VolcanoxMask: {
+		DisplayName: Volcanox Mask
+		Tooltip: ""
+	}
+
+	VolcanoxTrophy: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	ChitinStaff: {
+		DisplayName: Mother's Magic
+		Tooltip: Summons a scorpion to fight for you
+	}
+
+	Pincer: {
+		DisplayName: Defender's Recurve
+		Tooltip: Turns normal arrows into venom imbued arrows
+	}
+
+	ScorpionBlade: {
+		DisplayName: Protector's Edge
+		Tooltip: ""
+	}
+
+	Stinger: {
+		DisplayName: Scepter of the Tortured
+		Tooltip: ""
+	}
+
+	TheAntidote: {
+		DisplayName: The Antidote
+		Tooltip: Cuts debuff life loss in half
+	}
+
+	VenomSample: {
+		DisplayName: Venom Gland
+		Tooltip: Attacks inflict venom and poison
+	}
+
+	WastelandBag: {
+		DisplayName: Treasure Bag
+		Tooltip: <right> to open
+	}
+
+	WastelandMask: {
+		DisplayName: Wasteland Mask
+		Tooltip: ""
+	}
+
+	WastelandTrophy: {
+		DisplayName: Wasteland Trophy
+		Tooltip: ""
+	}
+
+	CelestialIdol: {
+		DisplayName: Celestial Idol
+		Tooltip:
+			'''
+			10 defense
+			Ancient stars rain down from the sky on hit
+			20% increased magic damage
+			Inflicts Ancient Decay on hit
+			'''
+	}
+
+	Fireblast: {
+		DisplayName: Fireblast
+		Tooltip: Fires ancient cultist fireballs
+	}
+
+	Frosthail: {
+		DisplayName: Frosthail
+		Tooltip: Fires ice mist
+	}
+
+	GreekFire: {
+		DisplayName: Greek Fire
+		Tooltip: ""
+	}
+
+	NinjaKatana: {
+		DisplayName: Ninja Katana
+		Tooltip: Right Click to dash
+	}
+
+	Retinasm: {
+		DisplayName: Retinasm
+		Tooltip: ""
+	}
+
+	Shockstorm: {
+		DisplayName: Shockstorm
+		Tooltip:
+			'''
+			Summons a lightning orb which attacks nearby enemies
+			Only two lightning orbs can be active at once
+			'''
+	}
+
+	SkeletronFist: {
+		DisplayName: Skeletron Fist
+		Tooltip: Punch with the force of Skeletron
+	}
+
+	SpinalSplayer: {
+		DisplayName: Spinal Splayer
+		Tooltip: ""
+	}
+
+	Starthrower: {
+		DisplayName: Starthrower
+		Tooltip: Fires three homing stars
+	}
+
+	TearsOfSorrow: {
+		DisplayName: Tears of Sorrow
+		Tooltip: Turns normal arrows into tear arrows that slow enemies down greatly
+	}
+
+	TheDestroyer: {
+		DisplayName: The Destroyer
+		Tooltip: Hold Left Click to charge the laser
+	}
+
+	TheEater: {
+		DisplayName: The Eater
+		Tooltip: Chomp Chomp
+	}
+
+	BleedingHeart: {
+		DisplayName: Bleeding Heart
+		Tooltip:
+			'''
+			Releases homing projectiles when dashing
+			Killing 5 enemies in 10 seconds grants the player, 'Bloodbath' which increases damage by 20%
+			'''
+	}
+
+	CorruptedFang: {
+		DisplayName: Corrupted Fang
+		Tooltip:
+			'''
+			The player spawns corrupted fangs that shoot at nearby enemies
+			When the fangs hit, the player gets 5% increased damage and attacks inflict posion and venom
+			'''
+	}
+
+	CrystalNectar: {
+		DisplayName: Crystal Nectar
+		Tooltip:
+			'''
+			Causes bees to become friendly
+			Being in honey speed up the player's swimming speed and doubles the honey duration
+			Increases the strength of friendly bees
+			'''
+	}
+
+	FadedCloth: {
+		DisplayName: Cursed Cloth
+		Tooltip:
+			'''
+			Homing skulls are shot at nearby enemies
+			True melee damage is increased by:
+			Base: 50%
+			After Wall of Flesh: 75%
+			After Plantera: 100%
+			After Moonlord: 300%
+			'''
+	}
+
+	GreatLens: {
+		DisplayName: Great Lens
+		Tooltip: ""
+	}
+
+	HellishFleshHeart: {
+		DisplayName: Flesh Drive
+		Tooltip: Summons 3 Hungry to steal the life off enemies
+	}
+
+	SlimeBooster: {
+		DisplayName: Slime Booster
+		Tooltip:
+			'''
+			Walking leaves a acidic slimy trail
+			Greatly increased jump speed
+			When the player is hit, they shoot out slime spikes
+			'''
+	}
 }
 
 Tiles: {
@@ -1875,6 +2232,10 @@ Tiles: {
 	PermafrostTrophy.MapEntry: Permafrost Trophy
 	RegarothTrophy.MapEntry: Regaroth Trophy
 	ScourgeFighterTrophy.MapEntry: Scourge Fighter Trophy
+	TheCelestialTrophy.MapEntry: The Celestial Trophy
+	TheGuardianTrophy.MapEntry: The Guardian Trophy
+	VolcanoxTrophy.MapEntry: Volcanox Trophy
+	WastelandTrophy.MapEntry: Wasteland Trophy
 }
 
 Buffs: {
@@ -2234,6 +2595,35 @@ Buffs: {
 		DisplayName: Energy Spirit
 		Description: Its almost too bright to look at
 	}
+
+	Eyeball: {
+		DisplayName: Eyeball
+		Description: The Celestials minions follow you
+	}
+
+	VolcanicTentacleBuff: {
+		DisplayName: Volcanic Tentacle
+		Description: It clings onto you
+	}
+
+	ScorpionMinionBuff: {
+		DisplayName: Scorpion
+		Description: Snip Snap
+	}
+
+	DashCooldown: {
+		DisplayName: Ninja Dash Cooldown
+		Description: Your dash is recharging
+	}
+
+	VilePower: {
+		DisplayName: Vile Power
+		Description:
+			'''
+			Damage is increased by 5%
+			Attacks inflict poison and venom
+			'''
+	}
 }
 
 NPCs: {
@@ -2468,9 +2858,57 @@ Projectiles: {
 	TheSilencerP.DisplayName: The Silencer
 	StarstruckArrow.DisplayName: Starstruck
 	StarstruckBeam.DisplayName: Starstruck
+	Star.DisplayName: Star
 	BountyP.DisplayName: Signal Booster
 	ScourgeRocketFriendly.DisplayName: Rocket
 	SignalBoost.DisplayName: Signal Booster
+	CelestiaArc.DisplayName: Lightning
+	CelestialBoltFriendly.DisplayName: Celestial Laser
+	CelestiaPortal.DisplayName: Celestia
+	CelestialInfernoSpin.DisplayName: Celestial Inferno Spin
+	EyeballMinion.DisplayName: Celestial Watcher
+	SolusP.DisplayName: Celestial Laser
+	TemplesWrathArrow.DisplayName: Temple's Wrath
+	GodslayerStrike.DisplayName: Godslayer
+	InfernoCloud.DisplayName: Inferno Storm
+	InfernoLightning.DisplayName: Inferno Storm
+	TemplesWrathSword.DisplayName: Temple's Wrath
+	InfernoEye.DisplayName: Fire Runes
+	InfernoShot.DisplayName: Inferno Shot
+	WyrmClawSlash.DisplayName: Wyrm Claw Slash
+	TempleBeam.DisplayName: Temple Beam
+	TempleBall.DisplayName: Temple Ball
+	RuneBlast.DisplayName: Rune Blast
+	FireRunes.DisplayName: Fire Runes
+	CombustiaWave.DisplayName: Combustia Wave
+	FirelashFlames.DisplayName: Firelash Flames
+	EmberBurstP.DisplayName: Ember Burst P
+	HearthBlade.DisplayName: Hearth Blade
+	HearthP.DisplayName: Hearth
+	VolcanicTentacle.DisplayName: Volcanic Tentacle
+	PincerArrow.DisplayName: Scorpion Arrow
+	ScorpionMinion.DisplayName: Scorpion
+	WastelandStingerFriendly.DisplayName: Stinger
+	AncientStar.DisplayName: Ancient Star
+	AncientStar2.DisplayName: Ancient Star
+	Fireblast.DisplayName: Fireblast
+	IceMist.DisplayName: Ice Mist
+	IceMistSpike.DisplayName: Frosthail
+	RetinasmP.DisplayName: Retinasm
+	SkeletronFistP.DisplayName: Skeletron Fist
+	LightningArc.DisplayName: Lightning
+	ShockstormPortal.DisplayName: Shockstorm
+	SpinalEye.DisplayName: Giga Eye
+	Spine.DisplayName: Spine
+	TearArrow.DisplayName: Tear Arrow
+	DestroyerLaserFull.DisplayName: Charge Rifle
+	DestroyerLaserHalf.DisplayName: The Destroyer
+	MiniEaterOfSouls.DisplayName: Miniature Eater Of Souls
+	TheDestroyerHeld.DisplayName: The Destroyer
+	CorruptedFangP.DisplayName: Corrupted Fang
+	HungryMinion.DisplayName: Hungry
+	SkeleSkull.DisplayName: Skull
+	SlimeBoosterTrail.DisplayName: Slime
 }
 
 Configs: {
@@ -2501,8 +2939,8 @@ Config: {
 
 Biomes: {
 	EABiomes: {
-		DisplayName: E A Biomes
-		TownNPCDialogueName: the E A Biomes
+		DisplayName: EA Biomes
+		TownNPCDialogueName: the EA Biomes
 	}
 
 	Emptiness: {
@@ -2521,13 +2959,14 @@ Keybinds: {
 
 #TODO добавь и на английский также
 Bestiary: {
-	Boss: {
-		VoidLeviathan: ss
-		ElderShadeWyrm: ss
+	Bosses: {
+		VoidLeviathan: A serpentine beast from the depths of the Void, feared across all of Terraria. It hungers for a soul strong enough to reinforce its power even further...
+		ElderShadeWyrm: An elder specimen of the Shade Wyrms, serpents from the depths of the Void, which have been granted enough time to evolve and grow to such enormous sizes and unpredictable power.
+		RadiantMaster: " "
 	}
 
-	Enemies.VoidLeviathanOrb: " ds"
-	Critters.MysticBunny: "ds "
+	Enemies.VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
+	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
 }
 
 Ore: {
@@ -2613,6 +3052,10 @@ Tooltips: {
 		to encase the player in a crystal that knocks enemies away from the player and prevents damage
 		Hover over the item while equipped and press ctrl + key to rebind
 		'''
+	GreatLens: <Special Ability Unbound>
+	GreatLens1: Pressing the special ability key
+	GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
+	GreatLens3: If the player is hit by an enemy the damage is reflected to them
 }
 
 AccInfo: {
@@ -2655,10 +3098,13 @@ SetBonus: {
 	EnergyWeaversHelm: You charge up energy and release it at nearby enemies
 }
 
-said.VoidLeviathanHead: Infection overcomes the world...
+Said: {
+	VoidLeviathanHead: Infection overcomes the world...
+	VoidLeviathanHead2: ""
+}
 
 LooTCondition: {
-	AwakenedModeActive: Exclusively in awakened mode
+	AwakenedModeActive: "[c/973999:Exclusively in awakened mode]"
 	ScourgeLootCondition: Drop chance 1/3
 }
 

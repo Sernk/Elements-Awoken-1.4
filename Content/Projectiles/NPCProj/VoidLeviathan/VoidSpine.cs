@@ -51,7 +51,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
 
             if (!ModContent.GetInstance<Config>().lowDust && Main.rand.Next(2) == 0)
             {
-                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame);
+                int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame);
                 Main.dust[dust].noGravity = true;
                 Main.dust[dust].scale = 1f;
                 Main.dust[dust].velocity *= 0.1f;
@@ -68,7 +68,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

@@ -68,7 +68,7 @@ namespace ElementsAwoken.Content.Projectiles
         {
             for (int i = 0; i < 31; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 100, default, 1.8f)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 100, default, 1.8f)];
                 dust.noGravity = true;
                 dust.velocity *= 0.5f;
             }

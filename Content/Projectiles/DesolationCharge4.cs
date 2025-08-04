@@ -53,7 +53,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         private void Explode()
         {
-            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X - Projectile.velocity.X * 1.5f, Projectile.Center.Y- Projectile.velocity.Y * 1.5f, 0f, 0f, ModContent.ProjectileType<DesolationExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X - Projectile.velocity.X * 1.5f, Projectile.Center.Y- Projectile.velocity.Y * 1.5f, 0f, 0f, ModContent.ProjectileType<DesolationExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item14, Projectile.position);           
         }
     }

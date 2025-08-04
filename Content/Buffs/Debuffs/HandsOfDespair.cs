@@ -12,7 +12,7 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
-            Const.Longer(Type);
+            EAU.Longer(Type);
         }
         public override void Update(NPC npc, ref int buffIndex)
         {
@@ -23,7 +23,7 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
             player.GetModPlayer<MyPlayer>().handsOfDespair = true;
             if (player.ownedProjectileCounts[ModContent.ProjectileType<Projectiles.Other.HandsOfDespair>()] == 0)
             {
-                Projectile.NewProjectile(Const.Players(player), player.Center.X, player.Center.Y, 0f, 0f, ModContent.ProjectileType<Projectiles.Other.HandsOfDespair>(), 0, 0f, player.whoAmI, 0f, player.whoAmI);
+                Projectile.NewProjectile(EAU.Play(player), player.Center.X, player.Center.Y, 0f, 0f, ModContent.ProjectileType<Projectiles.Other.HandsOfDespair>(), 0, 0f, player.whoAmI, 0f, player.whoAmI);
             }
         }
     }

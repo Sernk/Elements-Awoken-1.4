@@ -21,7 +21,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(9, 4));
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override bool CanAccessoryBeEquippedWith(Item equippedItem, Item incomingItem, Player player)
         {

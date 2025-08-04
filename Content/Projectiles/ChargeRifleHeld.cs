@@ -77,7 +77,7 @@ namespace ElementsAwoken.Content.Projectiles
                             vector16 = -Vector2.UnitY;
                         }
                         int damage = (int)(Projectile.damage * 5f);
-                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, ModContent.ProjectileType<ChargeRifleFull>(), damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, ModContent.ProjectileType<ChargeRifleFull>(), damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
                         SoundEngine.PlaySound(SoundID.Item92, Projectile.position);
                         Projectile.Kill();
                     }
@@ -104,7 +104,7 @@ namespace ElementsAwoken.Content.Projectiles
                             sound = SoundID.Item91;
                         }
                         int damage = (int)((Projectile.damage - 38) + Projectile.ai[0] * 2f);
-                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, projType, damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, vector16.X, vector16.Y, projType, damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
                         SoundEngine.PlaySound(sound, Projectile.position);
                     }
                     Projectile.Kill();

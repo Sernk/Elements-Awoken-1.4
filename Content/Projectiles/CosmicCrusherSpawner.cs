@@ -39,7 +39,7 @@ namespace ElementsAwoken.Content.Projectiles
                     shootVel.Normalize();
                     shootVel *= shootSpeed;
                     Vector2 perturbedSpeed = new Vector2(shootVel.X, shootVel.Y).RotatedByRandom(MathHelper.ToRadians(20));
-                    int proj = Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<CosmicCrusherBlade>(), Projectile.damage, Projectile.knockBack, Main.myPlayer, 0f, 0f);
+                    int proj = Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<CosmicCrusherBlade>(), Projectile.damage, Projectile.knockBack, Main.myPlayer, 0f, 0f);
                     Main.projectile[proj].timeLeft = 300;
                     Main.projectile[proj].netUpdate = true;
                     Projectile.netUpdate = true;

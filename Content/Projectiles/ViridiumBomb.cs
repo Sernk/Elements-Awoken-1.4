@@ -21,7 +21,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            var p = Const.Proj(Projectile);
+            var p = EAU.Proj(Projectile);
             Projectile.NewProjectile(p, Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<Explosion>(), 50, Projectile.knockBack, Projectile.owner, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item14, Projectile.position);
             for (int num369 = 0; num369 < 20; num369++)

@@ -48,7 +48,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
             shootTimer--;
             if (shootTimer <= 0)
             {
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.NextFloat(-3, 3), -8, ModContent.ProjectileType<TerreneRock>(), Projectile.damage, Projectile.knockBack, Main.myPlayer, 0f, 0f);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.NextFloat(-3, 3), -8, ModContent.ProjectileType<TerreneRock>(), Projectile.damage, Projectile.knockBack, Main.myPlayer, 0f, 0f);
                 shootTimer = Main.rand.Next(5, 40);
             }
         }

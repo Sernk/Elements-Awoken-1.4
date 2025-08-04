@@ -20,7 +20,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void AI()
         {
-            int dust = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.PinkFlame, Projectile.velocity.X * 1.2f, Projectile.velocity.Y * 1.2f, 130, default(Color), 3.75f);
+            int dust = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, EAU.PinkFlame, Projectile.velocity.X * 1.2f, Projectile.velocity.Y * 1.2f, 130, default(Color), 3.75f);
             Main.dust[dust].velocity *= 0.6f;
             Main.dust[dust].scale *= 0.6f;
             Main.dust[dust].noGravity = true;
@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.position.X, Projectile.position.Y, 0f, 0f, ModContent.ProjectileType<Blackhole>(), Projectile.damage, 0f, Main.myPlayer, 0f, 0f);
+            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.position.X, Projectile.position.Y, 0f, 0f, ModContent.ProjectileType<Blackhole>(), Projectile.damage, 0f, Main.myPlayer, 0f, 0f);
             SoundEngine.PlaySound(SoundID.Item117, Projectile.position);
         }
     }

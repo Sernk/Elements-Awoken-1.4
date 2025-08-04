@@ -47,14 +47,14 @@ namespace ElementsAwoken.Content.Projectiles.Other
             for (int k = 0; k < Main.maxItems; k++)
             {
                 Item other = Main.item[k];
-                if ((other.Name.Contains("Ore") || Const.VanillaOreIDs().Contains(other.type)) && other.type != ModContent.ItemType<DiscordantOre>() && other.maxStack > 1 && other.active && Vector2.Distance(other.Center,Projectile.Center) < maxDist)
+                if ((other.Name.Contains("Ore") || EAU.VanillaOreIDs().Contains(other.type)) && other.type != ModContent.ItemType<DiscordantOre>() && other.maxStack > 1 && other.active && Vector2.Distance(other.Center,Projectile.Center) < maxDist)
                 {
                     if (other.stack + Projectile.ai[0] >= maxConvert)
                     {
                         int diff = other.stack - (int)Projectile.ai[0];
                         if (diff > maxConvert) diff = maxConvert;
                         other.stack -= diff;
-                        int item = Item.NewItem(Const.Proj(Projectile), other.Center, ModContent.ItemType<DiscordantOre>(), diff);
+                        int item = Item.NewItem(EAU.Proj(Projectile), other.Center, ModContent.ItemType<DiscordantOre>(), diff);
                         if (Main.netMode == 1 && item >= 0)
                         {
                             NetMessage.SendData(MessageID.SyncItem, -1, -1, null, item, 1f);
@@ -111,7 +111,7 @@ namespace ElementsAwoken.Content.Projectiles.Other
             }
             if (Projectile.ai[0] == 0 && Projectile.owner == Main.myPlayer)
             {
-                int item = Item.NewItem(Const.Proj(Projectile), Projectile.Center, ModContent.ItemType<Content.Items.BossDrops.Azana.InfectionHeart>());
+                int item = Item.NewItem(EAU.Proj(Projectile), Projectile.Center, ModContent.ItemType<Content.Items.BossDrops.Azana.InfectionHeart>());
                 if (Main.netMode == 1 && item >= 0)
                 {
                     NetMessage.SendData(MessageID.SyncItem, -1, -1, null, item, 1f);

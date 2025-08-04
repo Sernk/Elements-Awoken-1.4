@@ -160,7 +160,7 @@ namespace ElementsAwoken.Content.Projectiles
                     vector2.X *= -1f;
                     Vector2 value4 = new Vector2(6f, 10f);
                     Vector2 position2 = value + vector * vector2 * 0.5f + value4;
-                    Dust dust = Main.dust[Dust.NewDust(position2, 0, 0, Const.PinkFlame, 0f, 0f, 0, default(Color), 1f)];
+                    Dust dust = Main.dust[Dust.NewDust(position2, 0, 0, EAU.PinkFlame, 0f, 0f, 0, default(Color), 1f)];
                     dust.position = position2;
                     dust.fadeIn = 1.3f;
                     dust.scale = 0.87f;

@@ -40,7 +40,7 @@ namespace ElementsAwoken.Content.Projectiles.Thrown
             int numberProjectiles = 2;
             for (int i = 0; i < numberProjectiles; i++)
             {
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.Next(-4, 4), Main.rand.Next(-4, 4), ProjectileID.FlaironBubble, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, Main.rand.Next(-4, 4), Main.rand.Next(-4, 4), ProjectileID.FlaironBubble, Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
             }
         }
     }

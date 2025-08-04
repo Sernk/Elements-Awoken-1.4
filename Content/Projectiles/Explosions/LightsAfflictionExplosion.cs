@@ -22,7 +22,7 @@ namespace ElementsAwoken.Content.Projectiles.Explosions
         }
         public override void AI()
         {
-            int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame);
+            int dust = Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame);
             Main.dust[dust].noGravity = true;
             Main.dust[dust].scale = 1.5f;
             Main.dust[dust].velocity *= 1f;

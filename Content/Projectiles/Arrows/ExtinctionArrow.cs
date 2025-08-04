@@ -25,7 +25,7 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
 
             for (int i = 0; i < 5; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame)];
                 dust.velocity = Vector2.Zero;
                 dust.position -= Projectile.velocity / 5f * (float)i;
                 dust.noGravity = true;

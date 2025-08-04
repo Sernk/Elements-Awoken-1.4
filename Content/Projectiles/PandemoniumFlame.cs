@@ -54,7 +54,7 @@ namespace ElementsAwoken.Content.Projectiles
                 Rectangle rect = new Rectangle(0, 4, TextureAssets.Projectile[Projectile.type].Value.Width, TextureAssets.Projectile[Projectile.type].Value.Height - 4);
                 if (k == 0) rect.Y -= 4;
                 float scale = 1 - ((float)k / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, rect, color, Projectile.rotation, drawOrigin, scale * Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, rect, color, Projectile.rotation, drawOrigin, scale * Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }

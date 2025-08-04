@@ -46,7 +46,7 @@ namespace ElementsAwoken.Content.Projectiles
             {
                 Vector2 drawPos = Projectile.oldPos[k] - Main.screenPosition + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
                 Color color = Projectile.GetAlpha(lightColor) * ((float)(Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-                Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
+                EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0f);
             }
             return true;
         }
@@ -57,7 +57,7 @@ namespace ElementsAwoken.Content.Projectiles
             for (int i = 0; i < numberProjectiles; i++)
             {
                 Vector2 value15 = new Vector2((float)Main.rand.Next(-9, 9), (float)Main.rand.Next(-9, 9));
-                Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, value15.X, value15.Y, ProjectileType<ChaosShard>(), Projectile.damage / 2, Projectile.knockBack / 3, Projectile.owner);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, value15.X, value15.Y, ProjectileType<ChaosShard>(), Projectile.damage / 2, Projectile.knockBack / 3, Projectile.owner);
             }
         }
     }

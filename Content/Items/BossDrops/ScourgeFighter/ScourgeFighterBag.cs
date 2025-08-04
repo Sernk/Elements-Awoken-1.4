@@ -12,7 +12,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.ScourgeFighter
     /// No Item = ModContent.ItemType<ScourgeFighterMask>()
     /// fixes this
     /// </summary>
-    public class ScourgeFighterBag : ModItem
+    public class ScourgeFighterBag : ModItem, IDropSettings
     {
         public override void SetDefaults()
         {
@@ -28,10 +28,15 @@ namespace ElementsAwoken.Content.Items.BossDrops.ScourgeFighter
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, Masiv.ScoLoot));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.ScoLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeDrive>()));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterTrophy>(), 10));
+
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId1, chanceDenominator: IDropSettings.ScoChanceDenominator1, minimumDropped: IDropSettings.ScoMinimumDropped1, maximumDropped: IDropSettings.ScoMaximumDropped1));
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId2, chanceDenominator: IDropSettings.ScoChanceDenominator2, minimumDropped: IDropSettings.ScoMinimumDropped2, maximumDropped: IDropSettings.ScoMaximumDropped2));
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId3, chanceDenominator: IDropSettings.ScoChanceDenominator3, minimumDropped: IDropSettings.ScoMinimumDropped3, maximumDropped: IDropSettings.ScoMaximumDropped3));
+            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId4, chanceDenominator: IDropSettings.ScoChanceDenominator4, minimumDropped: IDropSettings.ScoMinimumDropped4, maximumDropped: IDropSettings.ScoMaximumDropped4));
 
             IItemDropRule weaponDrop = new LeadingConditionRule(new EAIDRC.ScourgeLootCondition());
             weaponDrop.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterRocketLauncher>()));

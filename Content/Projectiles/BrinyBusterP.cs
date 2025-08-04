@@ -47,7 +47,7 @@ namespace ElementsAwoken.Content.Projectiles
                     vector2_4 = mountedCenter - position;
                     Color color2 = Lighting.GetColor((int)position.X / 16, (int)((double)position.Y / 16.0));
                     color2 = Projectile.GetAlpha(color2);
-                    Const.Sb.Draw(texture, position - Main.screenPosition, sourceRectangle, color2, rotation, origin, 1f, SpriteEffects.None, 0.0f);
+                    EAU.Sb.Draw(texture, position - Main.screenPosition, sourceRectangle, color2, rotation, origin, 1f, SpriteEffects.None, 0.0f);
                 }
             }
             return true;

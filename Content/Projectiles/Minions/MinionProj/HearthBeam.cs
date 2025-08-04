@@ -112,7 +112,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions.MinionProj
             float num228 = LaserLength;
             Color color44 = Color.White * 0.8f * (Projectile.ai[1] >= charge ? 1f : 0.95f);
             Vector2 arg_AF99_2 = Projectile.Center + new Vector2(0, Projectile.gfxOffY) - Main.screenPosition;
-            Const.Sb.Draw(tailTex, arg_AF99_2, null, color44, Projectile.rotation, tailTex.Size() / 2f, new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
+            EAU.Sb.Draw(tailTex, arg_AF99_2, null, color44, Projectile.rotation, tailTex.Size() / 2f, new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
             num228 -= (float)(tailTex.Height / 2 + headTex.Height) * Projectile.scale;
             Vector2 value20 = Projectile.Center + new Vector2(0, Projectile.gfxOffY);
             value20 += Projectile.velocity * Projectile.scale * (float)tailTex.Height / 2f;
@@ -126,7 +126,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions.MinionProj
                     {
                         rectangle7.Height = (int)(num228 - num229);
                     }
-                    Const.Sb.Draw(beamTex, value20 - Main.screenPosition, new Microsoft.Xna.Framework.Rectangle?(rectangle7), color44, Projectile.rotation, new Vector2((float)(rectangle7.Width / 2), 0f), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
+                    EAU.Sb.Draw(beamTex, value20 - Main.screenPosition, new Microsoft.Xna.Framework.Rectangle?(rectangle7), color44, Projectile.rotation, new Vector2((float)(rectangle7.Width / 2), 0f), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
                     num229 += (float)rectangle7.Height * Projectile.scale;
                     value20 += Projectile.velocity * (float)rectangle7.Height * Projectile.scale;
                     rectangle7.Y += 16;
@@ -136,7 +136,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions.MinionProj
                     }
                 }
             }
-            Const.Sb.Draw(headTex, value20 - Main.screenPosition, null, color44, Projectile.rotation, headTex.Frame(1, 1, 0, 0).Top(), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
+            EAU.Sb.Draw(headTex, value20 - Main.screenPosition, null, color44, Projectile.rotation, headTex.Frame(1, 1, 0, 0).Top(), new Vector2(Math.Min(Projectile.ai[1], charge) / charge, 1f), SpriteEffects.None, 0f);
             return false;
         }
     }

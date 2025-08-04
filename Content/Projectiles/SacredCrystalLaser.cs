@@ -85,7 +85,7 @@ namespace ElementsAwoken.Content.Projectiles
                     Color color32 = Projectile.GetAlpha(color25);
                     color32 *= (num173 - (float)num174) / num173;
                     color32.A = 0;
-                    Const.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, value8 - value9, null, color32, Projectile.rotation, new Vector2(num148, (float)(Projectile.height / 2)), Projectile.scale, spriteEffects, 0f);
+                    EAU.Sb.Draw(TextureAssets.Projectile[Projectile.type].Value, value8 - value9, null, color32, Projectile.rotation, new Vector2(num148, (float)(Projectile.height / 2)), Projectile.scale, spriteEffects, 0f);
                 }
             }
             return false;

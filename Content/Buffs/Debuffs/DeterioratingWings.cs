@@ -12,8 +12,8 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
 			Main.pvpBuff[Type] = true;
 			Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
-            Const.Longer(Type);
-            Const.CanBeCleared(Type);
+            EAU.Longer(Type);
+            EAU.CanBeCleared(Type);
         }	
         public override void Update(Player player, ref int buffIndex)
         {

@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.Buffs.PetBuffs
             bool petProjectileNotSpawned = player.ownedProjectileCounts[ModContent.ProjectileType<PossessedHand>()] <= 0;
             if (petProjectileNotSpawned && player.whoAmI == Main.myPlayer)
             {
-                Projectile.NewProjectile(Const.Players(player), player.position.X + (float)(player.width / 2), player.position.Y + (float)(player.height / 2), 0f, 0f, ModContent.ProjectileType<PossessedHand>(), 0, 0f, player.whoAmI, 0f, 0f);
+                Projectile.NewProjectile(EAU.Play(player), player.position.X + (float)(player.width / 2), player.position.Y + (float)(player.height / 2), 0f, 0f, ModContent.ProjectileType<PossessedHand>(), 0, 0f, player.whoAmI, 0f, 0f);
             }
         }
     }

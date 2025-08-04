@@ -10,7 +10,7 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
 			Main.debuff[Type] = true;
 			Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
-            Const.Longer(Type);
+            EAU.Longer(Type);
         }
 	}
 }

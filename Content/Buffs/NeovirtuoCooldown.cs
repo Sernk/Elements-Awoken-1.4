@@ -10,8 +10,8 @@ namespace ElementsAwoken.Content.Buffs
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
-            Const.Longer(Type);
-            Const.CanBeCleared(Type);
+            EAU.Longer(Type);
+            EAU.CanBeCleared(Type);
         }
 	}
 }

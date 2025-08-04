@@ -69,7 +69,7 @@ namespace ElementsAwoken.Content.Projectiles.Minions
                         for (int l = 0; l < numberProjectiles; l++)
                         {
                             Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1)).RotatedByRandom(MathHelper.ToRadians(7));
-                            Projectile.NewProjectile(Const.Proj(Projectile), vector8.X, vector8.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, 0f, Main.myPlayer, 0f, 0f);
+                            Projectile.NewProjectile(EAU.Proj(Projectile), vector8.X, vector8.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, 0f, Main.myPlayer, 0f, 0f);
                         }
                         shootTimer = Main.rand.Next(60, 180);
                     }

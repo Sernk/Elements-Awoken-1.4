@@ -23,7 +23,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
         public override void SetStaticDefaults()
         {
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(9, 6));
-            Const.SetSoul(Type);
+            EAU.SetSoul(Type);
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {

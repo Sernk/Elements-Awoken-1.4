@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Projectiles.Yoyos
         }
         public override void AI()
         {
-            Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, Const.PinkFlame, Projectile.velocity.X * 0.5f, Projectile.velocity.Y * 0.5f);
+            Dust.NewDust(Projectile.position + Projectile.velocity, Projectile.width, Projectile.height, EAU.PinkFlame, Projectile.velocity.X * 0.5f, Projectile.velocity.Y * 0.5f);
             if (cooldown <= 0)
             {
                 cooldown = 45;
@@ -47,7 +47,7 @@ namespace ElementsAwoken.Content.Projectiles.Yoyos
                     Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
                     if (timer <= 0 && cooldown <= 18)
                     {
-                        Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<VoidInfernoBlast>(), Projectile.damage, 0f, Main.myPlayer, 0f, 0f);
+                        Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<VoidInfernoBlast>(), Projectile.damage, 0f, Main.myPlayer, 0f, 0f);
                         SoundEngine.PlaySound(SoundID.Item20, Projectile.position);
                         timer = 6;
                     }

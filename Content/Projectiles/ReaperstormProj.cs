@@ -30,7 +30,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
             for (int i = 0; i < 4; i++)
             {
-                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, Const.PinkFlame)];
+                Dust dust = Main.dust[Dust.NewDust(Projectile.position, Projectile.width, Projectile.height, EAU.PinkFlame)];
                 dust.velocity *= 0.1f;
                 dust.position -= Projectile.velocity / 5f * (float)i;
                 dust.noGravity = true;
@@ -39,7 +39,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<VoidExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
+            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<VoidExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace ElementsAwoken.Content.Buffs
         {
             if (player.ownedProjectileCounts[ModContent.ProjectileType<ChaosRingShield>()] == 0)
             {
-                Projectile.NewProjectile(Const.Players(player), player.Center.X, player.Center.Y, 0f, 0f, ModContent.ProjectileType<ChaosRingShield>(), 100, 0f, player.whoAmI);
+                Projectile.NewProjectile(EAU.Play(player), player.Center.X, player.Center.Y, 0f, 0f, ModContent.ProjectileType<ChaosRingShield>(), 100, 0f, player.whoAmI);
             }
         }
     }

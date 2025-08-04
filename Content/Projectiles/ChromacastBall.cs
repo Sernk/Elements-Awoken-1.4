@@ -65,7 +65,7 @@ namespace ElementsAwoken.Content.Projectiles
         }
         public override void OnKill(int timeLeft)
         {
-            Projectile proj = Main.projectile[Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<BigExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f)];
+            Projectile proj = Main.projectile[Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ModContent.ProjectileType<BigExplosion>(), Projectile.damage, Projectile.knockBack, Projectile.owner, 0f, 0f)];
             SoundEngine.PlaySound(SoundID.Item14, Projectile.position);
             for (int num369 = 0; num369 < 30; num369++)
             {
@@ -74,31 +74,31 @@ namespace ElementsAwoken.Content.Projectiles
             }
             for (int num371 = 0; num371 < 20; num371++)
             {
-                int num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.GetDustID(), 0f, 0f, 100, default(Color), 2.5f);
+                int num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, EAU.GetDustID(), 0f, 0f, 100, default(Color), 2.5f);
                 Main.dust[num372].noGravity = true;
                 Main.dust[num372].velocity *= 7f;
-                num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, Const.GetDustID(), 0f, 0f, 100, default(Color), 1.5f);
+                num372 = Dust.NewDust(new Vector2(Projectile.position.X, Projectile.position.Y), Projectile.width, Projectile.height, EAU.GetDustID(), 0f, 0f, 100, default(Color), 1.5f);
                 Main.dust[num372].velocity *= 5f;
             }
-            int num373 = Gore.NewGore(Const.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
+            int num373 = Gore.NewGore(EAU.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
             Main.gore[num373].velocity *= 0.4f;
             Gore gore85 = Main.gore[num373];
             gore85.velocity.X = gore85.velocity.X + 1f;
             Gore gore86 = Main.gore[num373];
             gore86.velocity.Y = gore86.velocity.Y + 1f;
-            num373 = Gore.NewGore(Const.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
+            num373 = Gore.NewGore(EAU.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
             Main.gore[num373].velocity *= 0.4f;
             Gore gore87 = Main.gore[num373];
             gore87.velocity.X = gore87.velocity.X - 1f;
             Gore gore88 = Main.gore[num373];
             gore88.velocity.Y = gore88.velocity.Y + 1f;
-            num373 = Gore.NewGore(Const.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
+            num373 = Gore.NewGore(EAU.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
             Main.gore[num373].velocity *= 0.4f;
             Gore gore89 = Main.gore[num373];
             gore89.velocity.X = gore89.velocity.X + 1f;
             Gore gore90 = Main.gore[num373];
             gore90.velocity.Y = gore90.velocity.Y - 1f;
-            num373 = Gore.NewGore(Const.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
+            num373 = Gore.NewGore(EAU.Proj(Projectile), new Vector2(Projectile.position.X, Projectile.position.Y), default(Vector2), Main.rand.Next(61, 64), 1f);
             Main.gore[num373].velocity *= 0.4f;
             Gore gore91 = Main.gore[num373];
             gore91.velocity.X = gore91.velocity.X - 1f;

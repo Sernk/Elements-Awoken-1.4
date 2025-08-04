@@ -37,7 +37,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
             vector39 += vector11 * Projectile.scale + new Vector2(0f, num66 + Projectile.gfxOffY);
             texture = TextureAssets.Projectile[Projectile.type].Value;
             Rectangle frame = new Rectangle(0, texture.Height * Projectile.frame, texture.Width, texture.Height);
-            Const.Sb.Draw(texture, vector39, frame, Projectile.GetAlpha(color9), Projectile.rotation, vector11, Projectile.scale, spriteEffects, 0f);
+            EAU.Sb.Draw(texture, vector39, frame, Projectile.GetAlpha(color9), Projectile.rotation, vector11, Projectile.scale, spriteEffects, 0f);
             float num143 = 1f / (float)Projectile.oldPos.Length * 0.7f;
             int num144 = Projectile.oldPos.Length - 1;
             while (num144 >= 0f)
@@ -46,7 +46,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
                 Color color34 = Color.Pink;
                 color34 *= 1f - num143 * (float)num144 / 1f;
                 color34.A = (byte)((float)color34.A * (1f - num145));
-                Const.Sb.Draw(texture, vector39 + Projectile.oldPos[num144] - Projectile.position, new Rectangle?(), color34, Projectile.oldRot[num144], vector11, Projectile.scale * MathHelper.Lerp(0.3f, 1.1f, num145), spriteEffects, 0f);
+                EAU.Sb.Draw(texture, vector39 + Projectile.oldPos[num144] - Projectile.position, new Rectangle?(), color34, Projectile.oldRot[num144], vector11, Projectile.scale * MathHelper.Lerp(0.3f, 1.1f, num145), spriteEffects, 0f);
                 num144--;
             }
             return false;
@@ -105,7 +105,7 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster
         private void KillWithStasis()
         {
             Projectile.Kill();
-            Projectile.NewProjectile(Const.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ProjectileType<RadiantStasisField>(), 0, 0f, Main.myPlayer);
+            Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, 0f, 0f, ProjectileType<RadiantStasisField>(), 0, 0f, Main.myPlayer);
         }
     }
 }

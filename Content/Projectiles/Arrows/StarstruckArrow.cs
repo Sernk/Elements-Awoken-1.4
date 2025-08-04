@@ -24,7 +24,7 @@ namespace ElementsAwoken.Content.Projectiles.Arrows
         }
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            var p = Const.Proj(Projectile);
+            var p = EAU.Proj(Projectile);
             var type = ModContent.ProjectileType<StarstruckBeam>();
             Projectile.NewProjectile(p, Projectile.Center.X, Projectile.Center.Y + -300, 0, 15, type, Projectile.damage, 0, Projectile.owner);
             Projectile.NewProjectile(p, Projectile.Center.X, Projectile.Center.Y + 300, 0, -15, type, Projectile.damage, 0, Projectile.owner);
