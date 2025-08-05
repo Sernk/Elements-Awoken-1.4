@@ -2188,6 +2188,11 @@ Items: {
 			When the player is hit, they shoot out slime spikes
 			'''
 	}
+
+	VoidLeviathanSummon: {
+		DisplayName: Embryo of Existence
+		Tooltip: Summons the guardian of the void
+	}
 }
 
 Tiles: {
@@ -3108,6 +3113,7 @@ LooTCondition: {
 	ScourgeLootCondition: Drop chance 1/3
 }
 
+AwakenedSummonItem: Not consumed in Awakened Mode
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 
 MyPlayerLocalization: {

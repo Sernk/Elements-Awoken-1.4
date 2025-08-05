@@ -127,6 +127,7 @@ namespace ElementsAwoken.Utilities
         #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");
+        public string AwakenedSummonItem => Language.GetTextValue("Mods.ElementsAwoken.AwakenedSummonItem");
         #endregion
     }
 }

@@ -2130,9 +2130,10 @@ namespace ElementsAwoken.EASystem
                             npc.DeathSound = SoundID.NPCDeath6;
                         }
                     }
-                    #endregion
+                    
                 }
-            }
+            }  
+            #endregion
         }
         private static bool HotTile(Tile t)
         {

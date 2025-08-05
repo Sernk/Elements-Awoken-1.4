@@ -13,6 +13,7 @@ using ElementsAwoken.Content.Items.BossDrops.TheTempleKeepers;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.BossDrops.Volcanox;
 using ElementsAwoken.Content.Items.BossDrops.Wasteland;
+using ElementsAwoken.Content.Items.BossSummons;
 using System.Collections.Generic;
 using Terraria.ModLoader;
 
@@ -69,6 +70,9 @@ namespace ElementsAwoken.Utilities
         #region Wasteland Loot
         public static readonly List<int> WasLoot = [ModContent.ItemType<Pincer>(), ModContent.ItemType<ScorpionBlade>(), ModContent.ItemType<Stinger>(), ModContent.ItemType<ChitinStaff>()];
         #endregion
+        #endregion
+        #region
+        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>()];
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

@@ -279,7 +279,17 @@ namespace ElementsAwoken.EASystem.UI
             mod.VoidTimerChangerUI?.Update(gameTime);
             if (PromptInfoUI.Visible)
             {
-                mod.PromptInfoUserInterface?.Update(gameTime);
+                if (mod.PromptInfoUserInterface?.CurrentState == null)
+                {
+                    mod.PromptInfoUserInterface?.SetState(mod.PromptUI);
+                }
+            }
+            else
+            {
+                if (mod.PromptInfoUserInterface?.CurrentState == null)
+                {
+                    mod.PromptInfoUserInterface?.SetState(null);
+                }
             }
         }
     }

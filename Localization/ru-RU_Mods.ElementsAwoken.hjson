@@ -64,7 +64,7 @@ Items: {
 	}
 
 	VoidAshes: {
-		DisplayName: Пеплы пустоты
+		DisplayName: Пепел пустоты
 		Tooltip: ""
 	}
 
@@ -105,7 +105,7 @@ Items: {
 
 	SunFragment: {
 		DisplayName: Фрагмент солнца
-		Tooltip: Фрагменты, которые валяются в этом храме уже столетия.
+		Tooltip: Они лежали в Яхщерском храме целые столетия.
 	}
 
 	VoiditeBar: {
@@ -145,7 +145,7 @@ Items: {
 
 	VolcanicStone: {
 		DisplayName: Вулканический камень
-		Tooltip: Эти камни, судя по всему, постоянно воспламеняются и пылают
+		Tooltip: Эти камни, судя по всему, пылают постоянно
 	}
 
 	ElementalCapsule: {
@@ -179,7 +179,7 @@ Items: {
 
 	HiveCrate: {
 		DisplayName: Ящик улья
-		Tooltip: Нажми ПКМ, чтобы открыть
+		Tooltip: <right>, чтобы открыть
 	}
 
 	MajesticHivefish: {
@@ -213,7 +213,7 @@ Items: {
 	}
 
 	PiohsPresent: {
-		DisplayName: Подарок Pioh'а
+		DisplayName: Дарование Pioh'а
 		Tooltip:
 			'''
 			Призывает ездового Элементального кроледракона
@@ -243,7 +243,7 @@ Items: {
 	}
 
 	SanityChanger: {
-		DisplayName: Изменитель здравомыслия
+		DisplayName: Здравомыслие
 		Tooltip: ""
 	}
 
@@ -273,8 +273,8 @@ Items: {
 	}
 
 	Celestia: {
-		// DisplayName: Celestia
-		// Tooltip: ""
+		DisplayName: Селестия
+		Tooltip: чзх еав референс?
 	}
 
 	GuardianDrive: {
@@ -522,7 +522,7 @@ Items: {
 	}
 
 	Microcontroller: {
-		DisplayName: Контроллер
+		DisplayName: Микроконтроллер
 		Tooltip: ""
 	}
 
@@ -573,7 +573,7 @@ Items: {
 	}
 
 	TombCrawlerTooth: {
-		DisplayName: Зуб дюносплавщика
+		DisplayName: Зуб разорителя дюн
 		Tooltip: Увеличивает скорость копания на 25%
 	}
 
@@ -663,7 +663,7 @@ Items: {
 
 	InfernalChalice: {
 		DisplayName: Адская чаша
-		Tooltip: Любой, кто осмелится зайти в этот круг, умрёт мучительной смертью.
+		Tooltip: Создаёт огненную ауру вокруг игрока, наносящую урон всем врагам, находящимся внутри неё
 	}
 
 	LifeDiamond: {
@@ -716,8 +716,8 @@ Items: {
 	}
 
 	RingOfReplenishment: {
-		DisplayName: Кольцо восполнения
-		Tooltip: Даёт шанс восполнить здоровье при убийстве врагов
+		DisplayName: Восполняющее кольцо
+		Tooltip: Имеет шанс игроку восполнить немного здоровья при убийстве врагов
 	}
 
 	SharktoothShackle: {
@@ -734,17 +734,17 @@ Items: {
 		DisplayName: Мясощит
 		Tooltip:
 			'''
-			Чё?
+			Чего?
 			Даёт 4 защиты
 			Увеличивает агрессивность врагов
 			'''
 	}
 
 	StompingSoles: {
-		DisplayName: Говнодавы
+		DisplayName: Взрыво-обувь
 		Tooltip:
 			'''
-			При падении игрока ломает блоки под ним
+			Ты ломаешь блоки под собой при падении с достаточной высоты
 			Выключи видимость аксессуара, чтобы убрать взрывы
 			'''
 	}
@@ -788,7 +788,7 @@ Items: {
 
 	DiscordantBullet: {
 		DisplayName: Хаотронная пуля
-		Tooltip: Их хаос заставляет живых существ телепортироваться туда-сюда
+		Tooltip: Хаос заставляет их телепортироваться к ближайшим живым организмам
 	}
 
 	DiscordantBar: {
@@ -803,7 +803,7 @@ Items: {
 
 	ChaoticFlare: {
 		DisplayName: Хаоспышка
-		Tooltip: Просто держа его в руках, у тебя болит всё тело
+		Tooltip: Просто держа её в руках, у тебя болит всё тело...
 	}
 
 	ChaoticCrucible: {
@@ -958,7 +958,7 @@ Items: {
 		Tooltip:
 			'''
 			На самом деле не особо похоже на Genih Wat'а, а скорее на богиню, которую он почитает
-			Он говорит, что она обитает в месте, называющимся "гиперизмерением" или чё-то типо того
+			Он говорит, что она обитает в месте, называющимся "гиперизмерением" или чё-то типа того
 			'''
 	}
 
@@ -1045,7 +1045,7 @@ Items: {
 		DisplayName: Морозная рукавица
 		Tooltip:
 			'''
-			Все атаки наносят дебаффы "Переохлаждение" и "Морозогонь" на врагов
+			Все атаки наносят дебаффы "Озноб" и "Морозогонь" на врагов
 			Звёзды падают с небес при получении урона
 			Увеличивает количество кадров неуязвимости после получения урона
 			Увеличивает весь урон на 15%
@@ -1075,7 +1075,7 @@ Items: {
 	}
 
 	AbyssalMatter: {
-		DisplayName: Материя Бездны
+		DisplayName: Суть Бездны
 		Tooltip:
 			'''
 			Создаёт порталы Бездны вокруг игрока
@@ -1094,8 +1094,8 @@ Items: {
 			Даёт неуязвимость к дебаффам "Заклятие вымирания" и "Длани отчаянья"
 			Со временем в тебе заряжается энергия пустоты
 			При нажатии на кнопку способности произойдёт следующее:
-			Скорость передвижения уменьшится на 80%, но урон увеличится на 20%
-			Дополнительно снаряды будут лететь из игрока во все стороны
+			Скорость передвижения уменьшится на 80%, но весь урон увеличится на 20%
+			Дополнительно из тебя во все стороны будут лететь снаряды
 			'''
 	}
 
@@ -1258,7 +1258,7 @@ Items: {
 
 	VoidLeviathanBag: {
 		DisplayName: Мешок с сокровищами Левиафана Пустоты
-		Tooltip: <right>, чтобы открыть.
+		Tooltip: <right>, чтобы открыть
 	}
 
 	EpicHealingPotion: {
@@ -1270,7 +1270,7 @@ Items: {
 		Tooltip:
 			'''
 			Чем ближе ты к врагу, тем больше урона наносишь
-			Только не подходи слишком близко к взрыву
+			Взрывы также наносят урон игроку
 			'''
 		DisplayName: Хромакаст
 	}
@@ -1281,7 +1281,7 @@ Items: {
 	}
 
 	CrystallineLocket: {
-		Tooltip: Нажми кнопку спецальной способности, чтобы все твои атаки всегда наносили критические удары на 10 секунд
+		Tooltip: Нажми кнопку спецальной способности, чтобы все твои атаки наносили только критические удары
 		DisplayName: Кристальный оберег
 	}
 
@@ -1296,8 +1296,8 @@ Items: {
 	}
 
 	TheFundamentals: {
-		Tooltip: Держа это оружие, но не атакуя им на протяжении 10 и более секунд увеличит урон от его следующей атаки в 8 раз
-		DisplayName: Фундаменталисты
+		Tooltip: Держа это оружие в руках, но не атакуя им на протяжении 10 и более секунд увеличит урон от его следующей атаки в 8 раз
+		DisplayName: Клинок основ
 	}
 
 	AncientsBag: {
@@ -1398,7 +1398,7 @@ Items: {
 		DisplayName: Вспышка заражения
 		Tooltip:
 			'''
-			Превращает обычные пули в дротики заражения, которые постепенно увеличивают свой урон, вплоть до 200% от изначального, при каждом попадании по врагу
+			Превращает обычные пули в дротики заражения, увеличивающие свой урон при попадании по врагу, вплоть до 200%
 			Также имеет шанс выпустить Хаосоеда, наносящим втрое больше урона, чем само оружие
 			Имеет 50% шанс не потратить аммуницию при выстреле
 			'''
@@ -1428,8 +1428,8 @@ Items: {
 		Tooltip:
 			'''
 			Жуткое сочетание техники и магии...
-			Используй предмет снова, чтобы его активировать заново
-			Кинь к этому предмету любую руду, чтобы превратить её в Хаотронную руду
+			Используй предмет, чтобы его активировать
+			После этого кинь к нему любую руду, чтобы превратить её в Хаотронную
 			'''
 	}
 
@@ -1447,7 +1447,7 @@ Items: {
 		DisplayName: Знак инфекции
 		Tooltip:
 			'''
-			Нажми кнопку специальной способности, чтобы создать вокруг себя щит, поглощающий весь урон и усиляющий тебя при поглощении урона
+			Нажми кнопку специальной способности, чтобы создать вокруг себя щит, поглощающий урон, и усиляющий тебя при этом
 			Увеличивает весь шанс критического удара на 10%
 			Увеличивает весь урон на 5%
 			'''
@@ -1470,7 +1470,7 @@ Items: {
 
 	CosmicShard: {
 		DisplayName: Космический осколок
-		Tooltip: Он немного гудит
+		Tooltip: От него слышится слабое гудение
 	}
 
 	CosmicGlass: {
@@ -1478,7 +1478,7 @@ Items: {
 		Tooltip:
 			'''
 			Увеличивает весь шанс критического удара на 15%
-			Любой критический удар дополнительно создаёт космический луч, стреляющий во врага
+			Критические удары дополнительно создают космический лучи, стреляющие во врагов
 			'''
 	}
 
@@ -1503,7 +1503,7 @@ Items: {
 
 	OrionsBelt: {
 		DisplayName: Пояс Ориона
-		Tooltip: Предмет донатора Buildmonger
+		Tooltip: это уже в другом тултипе есть так-то
 	}
 
 	PlanetaryWave: {
@@ -1532,7 +1532,7 @@ Items: {
 
 	CosmicalusLeggings: {
 		DisplayName: Штаны Космикала
-		Tooltip: 15% increased movement speed
+		Tooltip: Увеличивает скорость передвижения на 15% (как я вообще это не заметил в прошлый раз?)
 	}
 
 	FireBlaster: {
@@ -1544,8 +1544,8 @@ Items: {
 		DisplayName: Жезл тепла
 		Tooltip:
 			'''
-			Призывает очаг сражаться за тебя
-			Каждый очаг занимает 2 миньон-слота
+			Призывает Очаг сражаться за тебя
+			Каждый Очаг занимает 2 миньон-слота
 			'''
 	}
 
@@ -1565,8 +1565,8 @@ Items: {
 	}
 
 	Flare: {
-		// DisplayName: Drakonian Guard
-		// Tooltip: Pressing the ability key will create a shield around the player that pushes enemies and projectiles away
+		DisplayName: Драконовский щит
+		Tooltip: Нажми на кнопку специальной способности, чтобы создать щит, отталкивающий врагов
 	}
 
 	InfernaceMask: {
@@ -1699,7 +1699,7 @@ Items: {
 			'''
 			Источник ледяной магии Пермафроста
 			Увеличивает весь урон на 10%
-			Даёт неуязвимость к дебаффам "Переохлаждение", "Морозогонь" и "Заморозка"
+			Даёт неуязвимость к дебаффам "Озноб", "Морозогонь" и "Заморозка"
 			Увеличивает пробивание брони на 10
 			'''
 	}
@@ -1856,350 +1856,356 @@ Items: {
 	}
 
 	CelestialFlame: {
-		// DisplayName: Astra's Flare
-		/* Tooltip:
+		DisplayName: Вспышка Астры
+		Tooltip:
 			'''
-			10% increased critical strike chance
-			Shoots lasers at nearby enemies
-			''' */
+			Увеличивает шанс критического удара на 10%
+			Стреляет лазерами в ближайших врагов
+			'''
 	}
 
 	CelestialInferno: {
-		// DisplayName: Skylight Swirl
-		// Tooltip: ""
+		DisplayName: Вихрь небосвета
+		Tooltip: его уже вообще тут не должно быть, целестиалов уже давно снесли так-то...
 	}
 
 	CelestialsMask: {
-		// DisplayName: The Celestials Mask
-		// Tooltip: ""
+		DisplayName: Маска Небожителей
+		Tooltip: ""
 	}
 
 	EyeballStaff: {
-		// DisplayName: Starlight Staff
-		// Tooltip: Summons a celestial watcher to serve you
+		DisplayName: Звездосветный посох
+		Tooltip: Призывает небесмотрителя сражаться за тебя
 	}
 
 	Solus: {
-		// DisplayName: Solus
-		// Tooltip: ""
+		DisplayName: Солус
+		Tooltip: ""
 	}
 
 	TheCelestialBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Небожителей
+		Tooltip: <right>, чтобы открыть
 	}
 
 	TheCelestialTrophy: {
-		// DisplayName: The Celestial Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Небожителей
+		Tooltip: ""
 	}
 
 	FieryCore: {
-		// DisplayName: Fiery Core
-		/* Tooltip:
+		DisplayName: Огнеядро
+		Tooltip:
 			'''
-			The ancient temple artifact of fire
-			10% increased damage when in hell
-			Immunity to On Fire and Burning
-			You set nearby creatures on fire and inflict fire on hit
-			''' */
+			Древний храмовый артифакт огня
+			Увеличивает весь урон на 10% при нахождении в Аду
+			Даёт неуязвимость к дебаффам "В огне!" и "Жжение"
+			Ты поджигаешь ближайших врагов и все твои атаки наносят дебафф "В огне!"
+			'''
 	}
 
 	Godslayer: {
-		// DisplayName: Godslayer
-		// Tooltip: ""
+		DisplayName: Богоубийца
+		Tooltip: КАЛамимити референс?
 	}
 
 	InfernoStorm: {
-		// DisplayName: Inferno Storm
-		// Tooltip: ""
+		DisplayName: Адобуря
+		Tooltip: ""
 	}
 
 	TemplesWrath: {
-		// DisplayName: Temple's Wrath
-		// Tooltip: ""
+		DisplayName: Храмовая ярость
+		Tooltip: ""
 	}
 
 	TheGuardianMask: {
-		// DisplayName: The Guardian Mask
-		// Tooltip: ""
+		DisplayName: Маска Хранителя
+		Tooltip: ""
 	}
 
 	TheGuardianTrophy: {
-		// DisplayName: The Guardian Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Хранителя
+		Tooltip: ""
 	}
 
 	GuardianBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Хранителя
+		Tooltip: <right>, чтобы открыть
 	}
 
 	GazeOfInferno: {
-		// DisplayName: Gaze Of Inferno
-		// Tooltip: ""
+		DisplayName: Взгляд Ада
+		Tooltip: ""
 	}
 
 	WyrmHeart: {
-		// Tooltip: ""
-		// DisplayName: Wyrm Heart
+		Tooltip: ""
+		DisplayName: Сердце Змея
 	}
 
 	WyrmClaw: {
-		// Tooltip: ""
-		// DisplayName: Wyrm Claw
+		Tooltip: ""
+		DisplayName: Коготь Змея
 	}
 
 	TheAllSeer: {
-		// Tooltip: ""
-		// DisplayName: The All Seer
+		Tooltip: ""
+		DisplayName: Всевидец
 	}
 
 	TemplesCrystal: {
-		// Tooltip: ""
-		// DisplayName: Temple's Crystal
+		Tooltip: ""
+		DisplayName: Храмовый кристалл
 	}
 
 	TempleFragment: {
-		// Tooltip: ""
-		// DisplayName: Temple Fragment
+		Tooltip: ""
+		DisplayName: Храмовый фрагмент
 	}
 
 	TempleKeepersBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Храмовых Хранителей
+		Tooltip: <right>, чтобы открыть
 	}
 
 	CharredInsignia: {
-		// DisplayName: Charred Insignia
-		/* Tooltip:
+		DisplayName: Обугленный знак отличия
+		Tooltip:
 			'''
-			Ignites nearby enemies
-			10% increased damage
-			6% increased critical strike chance
-			Armor penetration increased by 20
-			''' */
+			Поджигает ближайших врагов
+			Увеличивает весь урон на 10%
+			Увеличивает шанс критического удара на 6%
+			Увеличивает пробивание брони на 20
+			'''
 	}
 
 	Combustia: {
-		// DisplayName: Combustia
-		// Tooltip: ""
+		DisplayName: Подрыватель
+		Tooltip: не ебу, как правильно это название перевести, честно говоря
 	}
 
 	EmberBurst: {
-		// DisplayName: Ember Burst
-		// Tooltip: ""
+		DisplayName: Тлеющий взрыв
+		Tooltip: ""
 	}
 
 	FatesFlame: {
-		// DisplayName: Fates Flame
-		// Tooltip: ""
+		DisplayName: Судьбогонь
+		Tooltip: ""
 	}
 
 	FirestarterStaff: {
-		// DisplayName: Firestarter Staff
-		// Tooltip: Summons a Volcanic Tentacle to serve you
+		DisplayName: Посох поджигателя
+		Tooltip: Призывает волканическое щупальце сражаться за тебя
 	}
 
 	Hearth: {
-		// DisplayName: Hearth
-		// Tooltip: ""
+		DisplayName: Очаг
+		Tooltip: ""
 	}
 
 	VolcanoxBag: {
-		// DisplayName: Volcanox Bag
-		// Tooltip: ""
+		DisplayName: Мешок с сокровищами Волканокса
+		Tooltip: <right>, чтобы открыть
 	}
 
 	VolcanoxMask: {
-		// DisplayName: Volcanox Mask
-		// Tooltip: ""
+		DisplayName: Маска Волканокса
+		Tooltip: ""
 	}
 
 	VolcanoxTrophy: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Трофей Волканокса
+		Tooltip: тут ошибка была изначально, оно было перепутано с трижер бэгом.
 	}
 
 	ChitinStaff: {
-		// DisplayName: Mother's Magic
-		// Tooltip: Summons a scorpion to fight for you
+		DisplayName: Материнская магия
+		Tooltip: Призывает скорпиона сражаться за тебя
 	}
 
 	Pincer: {
-		// DisplayName: Defender's Recurve
-		// Tooltip: Turns normal arrows into venom imbued arrows
+		DisplayName: Лук защитника
+		Tooltip: Покрывает обычные стрелы скорпионовым ядом
 	}
 
 	ScorpionBlade: {
-		// DisplayName: Protector's Edge
-		// Tooltip: ""
+		DisplayName: Клинок защитника
+		Tooltip: ""
 	}
 
 	Stinger: {
-		// DisplayName: Scepter of the Tortured
-		// Tooltip: ""
+		DisplayName: Скипетр измученных
+		Tooltip: а то чё я и стафф и скептер постоянно перевожу как посох, в самом-то деле?
 	}
 
 	TheAntidote: {
-		// DisplayName: The Antidote
-		// Tooltip: Cuts debuff life loss in half
+		DisplayName: Антидот
+		Tooltip: Ты теряешь на 50% меньше здоровья от дебаффов
 	}
 
 	VenomSample: {
-		// DisplayName: Venom Gland
-		// Tooltip: Attacks inflict venom and poison
+		DisplayName: Ядожелеза
+		Tooltip: Все атаки накладывают дебаффы "Отравление" и "Яд" на врагов
 	}
 
 	WastelandBag: {
-		// DisplayName: Treasure Bag
-		// Tooltip: <right> to open
+		DisplayName: Мешок с сокровищами Пустоши
+		Tooltip: <right>, чтобы открыть
 	}
 
 	WastelandMask: {
-		// DisplayName: Wasteland Mask
-		// Tooltip: ""
+		DisplayName: Маска Пустоши
+		Tooltip: ""
 	}
 
 	WastelandTrophy: {
-		// DisplayName: Wasteland Trophy
-		// Tooltip: ""
+		DisplayName: Трофей Пустоши
+		Tooltip: ""
 	}
 
 	CelestialIdol: {
-		// DisplayName: Celestial Idol
-		/* Tooltip:
+		DisplayName: Небесный идол
+		Tooltip:
 			'''
-			10 defense
-			Ancient stars rain down from the sky on hit
-			20% increased magic damage
-			Inflicts Ancient Decay on hit
-			''' */
+			Даёт 10 защиты
+			При получении урона древние звёзды падают с небес
+			Увеличивает магический урон на 20%
+			Атаки накладывают дебафф "Древнее разложение" на врагов
+			'''
 	}
 
 	Fireblast: {
-		// DisplayName: Fireblast
-		// Tooltip: Fires ancient cultist fireballs
+		DisplayName: Пламевзрыв
+		Tooltip: Стреляет древними огнешарами
 	}
 
 	Frosthail: {
-		// DisplayName: Frosthail
-		// Tooltip: Fires ice mist
+		DisplayName: Ледоград
+		Tooltip: Стреляет ледяным туманом
 	}
 
 	GreekFire: {
-		// DisplayName: Greek Fire
-		// Tooltip: ""
+		DisplayName: Греческий огонь
+		Tooltip: ""
 	}
 
 	NinjaKatana: {
-		// DisplayName: Ninja Katana
-		// Tooltip: Right Click to dash
+		DisplayName: Ниндзевая катана
+		Tooltip: <right>, чтобы совершить рывок
 	}
 
 	Retinasm: {
-		// DisplayName: Retinasm
-		// Tooltip: ""
+		DisplayName: Ретиназм
+		Tooltip: не думаю, что это переводится
 	}
 
 	Shockstorm: {
-		// DisplayName: Shockstorm
-		/* Tooltip:
+		DisplayName: Шок-буря
+		Tooltip:
 			'''
-			Summons a lightning orb which attacks nearby enemies
-			Only two lightning orbs can be active at once
-			''' */
+			Призывает молнесферу, атакующую врагов
+			За раз может быть призвано всего две молнесферы
+			'''
 	}
 
 	SkeletronFist: {
-		// DisplayName: Skeletron Fist
-		// Tooltip: Punch with the force of Skeletron
+		DisplayName: Кулак Скелетрона
+		Tooltip: Бьёт, аки Скелетрон
 	}
 
 	SpinalSplayer: {
-		// DisplayName: Spinal Splayer
-		// Tooltip: ""
+		DisplayName: Ломатель позвонков
+		Tooltip: что вообще значит сплеер?
 	}
 
 	Starthrower: {
-		// DisplayName: Starthrower
-		// Tooltip: Fires three homing stars
+		DisplayName: Звездомёт
+		Tooltip: Стреляет тремя самонаводящимися звёздами
 	}
 
 	TearsOfSorrow: {
-		// DisplayName: Tears of Sorrow
-		// Tooltip: Turns normal arrows into tear arrows that slow enemies down greatly
+		DisplayName: Слёзы печали
+		Tooltip: Превращает обычные стрелы в слезострелы, сильно замедляющие врагов при попадании
 	}
 
 	TheDestroyer: {
-		// DisplayName: The Destroyer
-		// Tooltip: Hold Left Click to charge the laser
+		DisplayName: Уничтожитель
+		Tooltip: Зажми ЛКМ, чтобы зарядить лазер
 	}
 
 	TheEater: {
-		// DisplayName: The Eater
-		// Tooltip: Chomp Chomp
+		DisplayName: Пожиратель
+		Tooltip: Кусь
 	}
 
 	BleedingHeart: {
-		// DisplayName: Bleeding Heart
-		/* Tooltip:
+		DisplayName: Кровоточащее сердце
+		Tooltip:
 			'''
-			Releases homing projectiles when dashing
-			Killing 5 enemies in 10 seconds grants the player, 'Bloodbath' which increases damage by 20%
-			''' */
+			При рывке создаёт самонаводящиеся снаряды
+			При убийстве 5 и более врагов за 10 секунд даёт бафф "Резня", увеличивающий весь урон на 20%
+			'''
 	}
 
 	CorruptedFang: {
-		// DisplayName: Corrupted Fang
-		/* Tooltip:
+		DisplayName: Порченный клык
+		Tooltip:
 			'''
-			The player spawns corrupted fangs that shoot at nearby enemies
-			When the fangs hit, the player gets 5% increased damage and attacks inflict posion and venom
-			''' */
+			Заставляет игрока выплёвывать порченные клыки во врагов
+			При попадании клыков во врага игрок получает 5%-ное увеличение ко всему урону, и атаки
+			накладывают дебаффы "Отравление" и "Яд" на врагов
+			'''
 	}
 
 	CrystalNectar: {
-		// DisplayName: Crystal Nectar
-		/* Tooltip:
+		DisplayName: Кристальный нектар
+		Tooltip:
 			'''
-			Causes bees to become friendly
-			Being in honey speed up the player's swimming speed and doubles the honey duration
-			Increases the strength of friendly bees
-			''' */
+			Пчёлы перестают атаковать игрока
+			При нахождении в мёде увеличивает вдвое скорость плавания и длительность баффа "Мёд"
+			Усиляет пчёл игрока
+			'''
 	}
 
 	FadedCloth: {
-		// DisplayName: Cursed Cloth
-		/* Tooltip:
+		DisplayName: Проклятая ткань
+		Tooltip:
 			'''
-			Homing skulls are shot at nearby enemies
-			True melee damage is increased by:
-			Base: 50%
-			After Wall of Flesh: 75%
-			After Plantera: 100%
-			After Moonlord: 300%
-			''' */
+			Стреляет самонаводящимися проклятыми черепами во врагов
+			Увеличивает урон мечей, не имеющих снарядов:
+			В Пре-Хардмоде на 50%
+			После убийства Стены Плоти на 75%
+			После убийства Плантеры на 100%
+			После убийства Лунного Лорда на 300%
+			'''
 	}
 
 	GreatLens: {
-		// DisplayName: Great Lens
-		// Tooltip: ""
+		DisplayName: Громадная линза
+		Tooltip: ""
 	}
 
 	HellishFleshHeart: {
-		// DisplayName: Flesh Drive
-		// Tooltip: Summons 3 Hungry to steal the life off enemies
+		DisplayName: Плоте-двигатель
+		Tooltip: Призывает трёх Голодных, крадущих жизнь у врагов при ударе
 	}
 
 	SlimeBooster: {
-		// DisplayName: Slime Booster
-		/* Tooltip:
+		DisplayName: Слизеусилитель
+		Tooltip:
 			'''
-			Walking leaves a acidic slimy trail
-			Greatly increased jump speed
-			When the player is hit, they shoot out slime spikes
-			''' */
+			Ты оставляешь след из кислотной слизи при движении
+			Значительно увеличивает скорость прыжка
+			При получении урона ты выпускаешь слизневые шипы
+			'''
+	}
+
+	VoidLeviathanSummon: {
+		// DisplayName: Embryo of Existence
+		// Tooltip: Summons the guardian of the void
 	}
 }
 
@@ -2245,10 +2251,10 @@ Tiles: {
 	PermafrostTrophy.MapEntry: Трофей Пермафроста
 	RegarothTrophy.MapEntry: Трофей Регарота
 	ScourgeFighterTrophy.MapEntry: Трофей Бичеборца
-	// TheCelestialTrophy.MapEntry: The Celestial Trophy
-	// TheGuardianTrophy.MapEntry: The Guardian Trophy
-	// VolcanoxTrophy.MapEntry: Volcanox Trophy
-	// WastelandTrophy.MapEntry: Wasteland Trophy
+	TheCelestialTrophy.MapEntry: Трофей Небожителей
+	TheGuardianTrophy.MapEntry: Трофей Хранителя
+	VolcanoxTrophy.MapEntry: Трофей Вулканокса
+	WastelandTrophy.MapEntry: Трофей Пустоши
 }
 
 Buffs: {
@@ -2427,7 +2433,7 @@ Buffs: {
 	}
 
 	EndlessTears: {
-		DisplayName: Бесконечные слёзы
+		DisplayName: Нескончаемые слёзы
 		Description: Ты угнетён печалью
 	}
 
@@ -2492,7 +2498,7 @@ Buffs: {
 
 	FrostShield: {
 		DisplayName: Морозный щит
-		Description: (нет описания)
+		Description: круто, наверное...
 	}
 
 	EldritchHorror: {
@@ -2561,7 +2567,7 @@ Buffs: {
 
 	AncientsCurse: {
 		DisplayName: Проклятие Древних
-		Description: Ой вей!
+		Description: ъ
 	}
 
 	MiniVleviBuff: {
@@ -2610,32 +2616,32 @@ Buffs: {
 	}
 
 	Eyeball: {
-		// DisplayName: Eyeball
-		// Description: The Celestials minions follow you
+		DisplayName: Зеница ока
+		Description: Небесные миньоны следуют за тобою
 	}
 
 	VolcanicTentacleBuff: {
-		// DisplayName: Volcanic Tentacle
-		// Description: It clings onto you
+		DisplayName: Вулканическое щупальце
+		Description: Оно присосалось к тебе
 	}
 
 	ScorpionMinionBuff: {
-		// DisplayName: Scorpion
-		// Description: Snip Snap
+		DisplayName: Скорпион
+		Description: (звуки скорпиона)
 	}
 
 	DashCooldown: {
-		// DisplayName: Ninja Dash Cooldown
-		// Description: Your dash is recharging
+		DisplayName: Откат ниндзе-рывка
+		Description: Рывок пока нельзя совершить снова
 	}
 
 	VilePower: {
-		// DisplayName: Vile Power
-		/* Description:
+		DisplayName: Мерзкий порошок
+		Description:
 			'''
-			Damage is increased by 5%
-			Attacks inflict poison and venom
-			''' */
+			Увеличивает весь урон на 5%
+			Все атаки накладывают дебаффы "Отравление" и "Яд" на врагов
+			'''
 	}
 }
 
@@ -2875,53 +2881,53 @@ Projectiles: {
 	BountyP.DisplayName: Проджектайл охоты за сокровищами
 	ScourgeRocketFriendly.DisplayName: Игроковская бичеракета
 	SignalBoost.DisplayName: Усилитель сигнала
-	// CelestiaArc.DisplayName: Lightning
-	// CelestialBoltFriendly.DisplayName: Celestial Laser
-	// CelestiaPortal.DisplayName: Celestia
-	// CelestialInfernoSpin.DisplayName: Celestial Inferno Spin
-	// EyeballMinion.DisplayName: Celestial Watcher
-	// SolusP.DisplayName: Celestial Laser
-	// TemplesWrathArrow.DisplayName: Temple's Wrath
-	// GodslayerStrike.DisplayName: Godslayer
-	// InfernoCloud.DisplayName: Inferno Storm
-	// InfernoLightning.DisplayName: Inferno Storm
-	// TemplesWrathSword.DisplayName: Temple's Wrath
-	// InfernoEye.DisplayName: Fire Runes
-	// InfernoShot.DisplayName: Inferno Shot
-	// WyrmClawSlash.DisplayName: Wyrm Claw Slash
-	// TempleBeam.DisplayName: Temple Beam
-	// TempleBall.DisplayName: Temple Ball
-	// RuneBlast.DisplayName: Rune Blast
-	// FireRunes.DisplayName: Fire Runes
-	// CombustiaWave.DisplayName: Combustia Wave
-	// FirelashFlames.DisplayName: Firelash Flames
-	// EmberBurstP.DisplayName: Ember Burst P
-	// HearthBlade.DisplayName: Hearth Blade
-	// HearthP.DisplayName: Hearth
-	// VolcanicTentacle.DisplayName: Volcanic Tentacle
-	// PincerArrow.DisplayName: Scorpion Arrow
-	// ScorpionMinion.DisplayName: Scorpion
-	// WastelandStingerFriendly.DisplayName: Stinger
-	// AncientStar.DisplayName: Ancient Star
-	// AncientStar2.DisplayName: Ancient Star
-	// Fireblast.DisplayName: Fireblast
-	// IceMist.DisplayName: Ice Mist
-	// IceMistSpike.DisplayName: Frosthail
-	// RetinasmP.DisplayName: Retinasm
-	// SkeletronFistP.DisplayName: Skeletron Fist
-	// LightningArc.DisplayName: Lightning
-	// ShockstormPortal.DisplayName: Shockstorm
-	// SpinalEye.DisplayName: Giga Eye
-	// Spine.DisplayName: Spine
-	// TearArrow.DisplayName: Tear Arrow
-	// DestroyerLaserFull.DisplayName: Charge Rifle
-	// DestroyerLaserHalf.DisplayName: The Destroyer
-	// MiniEaterOfSouls.DisplayName: Miniature Eater Of Souls
-	// TheDestroyerHeld.DisplayName: The Destroyer
-	// CorruptedFangP.DisplayName: Corrupted Fang
-	// HungryMinion.DisplayName: Hungry
-	// SkeleSkull.DisplayName: Skull
-	// SlimeBoosterTrail.DisplayName: Slime
+	CelestiaArc.DisplayName: Небесная молния
+	CelestialBoltFriendly.DisplayName: Небесный лазер
+	CelestiaPortal.DisplayName: Селестия
+	CelestialInfernoSpin.DisplayName: Крутилка небоада
+	EyeballMinion.DisplayName: Небесмотритель
+	SolusP.DisplayName: Проджектайл солуса
+	TemplesWrathArrow.DisplayName: Стрела храмовой ярости
+	GodslayerStrike.DisplayName: Удар богоубийцы
+	InfernoCloud.DisplayName: Адоблако
+	InfernoLightning.DisplayName: Адомолния
+	TemplesWrathSword.DisplayName: Меч храмовой ярости
+	InfernoEye.DisplayName: Око Ада
+	InfernoShot.DisplayName: Адовыстрел
+	WyrmClawSlash.DisplayName: Проджектайл когтя змея
+	TempleBeam.DisplayName: Храмовый луч
+	TempleBall.DisplayName: Храмовый шар
+	RuneBlast.DisplayName: Рунический выстрел
+	FireRunes.DisplayName: Огнеруны
+	CombustiaWave.DisplayName: Волна подрывателя
+	FirelashFlames.DisplayName: Огни огнеплети
+	EmberBurstP.DisplayName: Проджектайл тлеющего взрыва
+	HearthBlade.DisplayName: Лезвие очага
+	HearthP.DisplayName: Проджектайл очага
+	VolcanicTentacle.DisplayName: Вулканическое щупальце
+	PincerArrow.DisplayName: Скорпионовская стрела
+	ScorpionMinion.DisplayName: Скорпион-миньон
+	WastelandStingerFriendly.DisplayName: Игроковское жало пустоши
+	AncientStar.DisplayName: Древняя звезда
+	AncientStar2.DisplayName: Древняя звезда2
+	Fireblast.DisplayName: Огневзрыв
+	IceMist.DisplayName: Ледяной туман
+	IceMistSpike.DisplayName: Шип ледяного тумана
+	RetinasmP.DisplayName: Проджектайл ретиназма
+	SkeletronFistP.DisplayName: Проджектайл кулака скелетрона
+	LightningArc.DisplayName: Арка молнии
+	ShockstormPortal.DisplayName: Шокоштормовой портал
+	SpinalEye.DisplayName: Око Спинала
+	Spine.DisplayName: Позвоночник
+	TearArrow.DisplayName: Слезострела
+	DestroyerLaserFull.DisplayName: Полностью заряженный лазер дестроера
+	DestroyerLaserHalf.DisplayName: Наполовину заряженный лазер дестроера
+	MiniEaterOfSouls.DisplayName: Мини-пожиратель душ
+	TheDestroyerHeld.DisplayName: Холдаут дестроерской пушки
+	CorruptedFangP.DisplayName: Проджектайл порченного клыка
+	HungryMinion.DisplayName: Голодный-миньон
+	SkeleSkull.DisplayName: Скелечереп
+	SlimeBoosterTrail.DisplayName: Трейл слизеусилителя
 }
 
 Configs: {
@@ -2934,20 +2940,20 @@ Configs: {
 Config: {
 	ElementsAwokenConfig: Основной конфиг
 	AlchemistPotionShop: Магазин алхимика
-	EnablesShop: ""
+	EnablesShop: хз
 	ResourceBars: Ресурсные полосы
-	TurnsUI: ""
-	DisableLabs: Отключить генерацию лабораторий
-	StopsLabs: ""
-	DisableBoss: Отключить напоминания о боссах
-	Disablestheeffects: ""
-	ItemChanges: Отключить изменения ванильных предметов
-	vanillaitems: ""
-	Screenshake: Отключить тряску экрана
+	TurnsUI: Включает ресурсные полосы для Энергии и Здравомыслия
+	DisableLabs: Генерация лабораторий
+	StopsLabs: Подземные лаборатории больше не будут спавниться при создании мира
+	DisableBoss: Напоминания о боссах
+	Disablestheeffects: Если они тебя бесят, перестань есть кактус и просто выключи их
+	ItemChanges: Изменения ванильных предметов
+	vanillaitems: хз, о каких изменениях речь
+	Screenshake: Тряска экрана
 	LowDust: Пониженное количество частиц
-	Reduces: ""
+	Reduces: типа лаги должно убирать, а так хз
 	EnterDebug: Режим дебага
-	Shows: ""
+	Shows: и так понятно
 }
 
 Biomes: {
@@ -3063,12 +3069,13 @@ Tooltips: {
 	GiftOfTheArchaic1:
 		'''
 		чтобы обратиться в кристалл, отталкивающий врагов, которые его касаются и защищающий тебя от урона
-		Наведи курсор на этот аксессуар, когда он экипирован и нажми Ctrl + кнопка, на которую ты хочешь переключить хоткей использования его способности
+		Наведи курсор на этот аксессуар, когда он экипирован и нажми Ctrl + кнопка, на которую ты
+		хочешь переключить хоткей использования его способности
 		'''
-	// GreatLens: <Special Ability Unbound>
-	// GreatLens1: Pressing the special ability key
-	// GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
-	// GreatLens3: If the player is hit by an enemy the damage is reflected to them
+	GreatLens: <Special Ability Unbound>
+	GreatLens1: Нажав на кнопку специальной способности
+	GreatLens2: игрок прикроется громадной линзой, которая поглощает 20% урона от врагов и их снарядов
+	GreatLens3: Враги получают урон при контакте с игроком, равный их контактному урону
 }
 
 AccInfo: {
@@ -3112,8 +3119,8 @@ SetBonus: {
 }
 
 Said: {
-	// VoidLeviathanHead: Infection overcomes the world...
-	// VoidLeviathanHead2: ""
+	VoidLeviathanHead: Так это уже было ведь...
+	VoidLeviathanHead2: я пидорас
 }
 
 LooTCondition: {
@@ -3121,6 +3128,7 @@ LooTCondition: {
 	ScourgeLootCondition: Шанс дропа 1/3
 }
 
+// AwakenedSummonItem: Not consumed in Awakened Mode
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 
 MyPlayerLocalization: {
