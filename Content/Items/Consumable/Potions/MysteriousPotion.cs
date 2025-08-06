@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs;
 using ElementsAwoken.Content.Buffs.Debuffs;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

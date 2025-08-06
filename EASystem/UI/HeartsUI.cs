@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Utilities;
+﻿using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;

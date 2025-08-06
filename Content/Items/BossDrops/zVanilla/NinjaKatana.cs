@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Buffs.Cooldowns;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Graphics.Shaders;

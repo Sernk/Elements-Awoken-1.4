@@ -7,7 +7,7 @@ using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.DataStructures;

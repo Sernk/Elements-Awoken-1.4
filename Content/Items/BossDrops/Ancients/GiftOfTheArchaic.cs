@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Buffs.Cooldowns;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;

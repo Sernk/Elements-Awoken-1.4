@@ -8,7 +8,7 @@ namespace ElementsAwoken.EASystem
 {
     public class EARecipe : ModSystem
     {
-        public override void PostAddRecipes() //TODO: ВРОДЕ КАК НЕ ДАЕТ
+        public override void PostAddRecipes()
         {
             foreach (Recipe recipe in Main.recipe)
             {

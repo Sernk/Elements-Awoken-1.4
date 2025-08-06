@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Projectiles.Amulet;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

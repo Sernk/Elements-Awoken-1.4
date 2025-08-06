@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.MinionBuffs;
 using ElementsAwoken.Content.Projectiles.Minions.AqueousMinion;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

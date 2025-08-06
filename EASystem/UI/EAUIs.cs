@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.EASystem.Global;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using System.IO;
@@ -61,7 +62,7 @@ namespace ElementsAwoken.EASystem.UI
                     // encounter text
                     if (encounter != 0)
                     {
-                        var encounterLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
+                        var encounterLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Mouse Text"));
                         var encounterState = new LegacyGameInterfaceLayer("ElementsAwoken: UI",
                             delegate
                             {

@@ -2193,6 +2193,15 @@ Items: {
 		DisplayName: Embryo of Existence
 		Tooltip: Summons the guardian of the void
 	}
+
+	WastelandSummon: {
+		DisplayName: Mutated Scorpion
+		Tooltip:
+			'''
+			It writhes in your hand
+			Summons Wasteland on use
+			'''
+	}
 }
 
 Tiles: {
@@ -2629,6 +2638,11 @@ Buffs: {
 			Attacks inflict poison and venom
 			'''
 	}
+
+	AcidBurn: {
+		DisplayName: Acid Burn
+		Description: Mods.ElementsAwoken.Buffs.AcidBurn.Description
+	}
 }
 
 NPCs: {
@@ -2648,6 +2662,11 @@ NPCs: {
 	ElderShadeWyrmBody.DisplayName: Elder Shade Wyrm Body
 	RadiantMaster.DisplayName: The Radiant Master
 	RadiantMasterDeath.DisplayName: The Radiant Master
+	Scorpion.DisplayName: Scorpion
+	Wasteland.DisplayName: Wasteland
+	WastelandDeath.DisplayName: Wasteland
+	WastelandEgg.DisplayName: Egg
+	WastelandMinion.DisplayName: Mutated Scorpion
 }
 
 Projectiles: {
@@ -2894,6 +2913,7 @@ Projectiles: {
 	PincerArrow.DisplayName: Scorpion Arrow
 	ScorpionMinion.DisplayName: Scorpion
 	WastelandStingerFriendly.DisplayName: Stinger
+	WastelandStinger.DisplayName: Wasteland Stinger
 	AncientStar.DisplayName: Ancient Star
 	AncientStar2.DisplayName: Ancient Star
 	Fireblast.DisplayName: Fireblast
@@ -2914,6 +2934,16 @@ Projectiles: {
 	HungryMinion.DisplayName: Hungry
 	SkeleSkull.DisplayName: Skull
 	SlimeBoosterTrail.DisplayName: Slime
+	AcidAuraBase.DisplayName: Acid Aura
+	AcidBall.DisplayName: Acid Blob
+	Shockwave.DisplayName: Shockwave
+	WastelandDiggingProj.DisplayName: Wasteland
+	WastelandDiggingProjReal.DisplayName: Wasteland
+	WastelandDiggingSpout.DisplayName: Wasteland
+	WastelandDiggingSpoutReal.DisplayName: Wasteland
+	WastelandDryad.DisplayName: Wasteland Dryad
+	WastelandSnap.DisplayName: Wasteland's Pincers
+	WastelandStormBolt.DisplayName: Wasteland
 }
 
 Configs: {
@@ -2968,9 +2998,14 @@ Bestiary: {
 		VoidLeviathan: A serpentine beast from the depths of the Void, feared across all of Terraria. It hungers for a soul strong enough to reinforce its power even further...
 		ElderShadeWyrm: An elder specimen of the Shade Wyrms, serpents from the depths of the Void, which have been granted enough time to evolve and grow to such enormous sizes and unpredictable power.
 		RadiantMaster: " "
+		WastelandBoss: Скорпион, ставший жертвой эксперимента, в котором всё пошло не по плану. Пустошь должна была стать живым оружием, способным уничтожить всё и всех на своём пути, но в итоге энергия, которую вживляли в её тело начала брать контроль над её разумом, заставляя существо сойти с ума.
 	}
 
-	Enemies.VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
+	Enemies: {
+		Scorpion: ""
+		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
+	}
+
 	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
 }
 
@@ -3104,8 +3139,10 @@ SetBonus: {
 }
 
 Said: {
+	Wasteland: Wasteland sinks back into the sand
+	WastelandDryad: Wait! Stop!
+	WastelandDryad1: I can handle this!
 	VoidLeviathanHead: Infection overcomes the world...
-	VoidLeviathanHead2: ""
 }
 
 LooTCondition: {

@@ -1,5 +1,5 @@
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;

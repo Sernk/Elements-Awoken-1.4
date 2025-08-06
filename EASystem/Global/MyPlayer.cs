@@ -20,7 +20,7 @@ using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.Content.Projectiles.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Projectiles.Other;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.UI.UIIIII;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -36,9 +36,8 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using static Terraria.ModLoader.ModContent;
 
-namespace ElementsAwoken.EASystem
+namespace ElementsAwoken.EASystem.Global
 {
-    
     /// <summary>
     /// DustID.PinkFlame => DustID.Firework_Pink 
     /// This is maybe not true
@@ -1582,7 +1581,6 @@ namespace ElementsAwoken.EASystem
                 voidWalkerRegen--;
                 Player.lifeRegen += 75;
             }
-
             #region encounters
             if (ElementsAwoken.encounter != 0)
             {
@@ -1605,33 +1603,39 @@ namespace ElementsAwoken.EASystem
                 if (ElementsAwoken.encounter >= 2)
                 {
                     if (Player.active && !Player.dead) Player.AddBuff(BuffID.Darkness, 60);
+                    UISystemSettings.VoidSay = true;
+                    UISystemSettings.VoidTime++;
                 }
-                if (ElementsAwoken.encounterTimer == 3200)
+                if (UISystemSettings.VoidTime == 400)
                 {
+                    UISystemSettings.VoidTime++;
                     encounterTextTimer = 300;
                     encounterTextAlpha = 0;
                     if (ElementsAwoken.encounter == 1) encounterText = Said;
                     else if (ElementsAwoken.encounter == 2) encounterText = Said1;
                     else if (ElementsAwoken.encounter == 3) encounterText = Said2;
                 }
-                else if (ElementsAwoken.encounterTimer == 2700)
+                else if (UISystemSettings.VoidTime == 800)
                 {
+                    UISystemSettings.VoidTime++;
                     encounterTextTimer = 300;
                     encounterTextAlpha = 0;
                     if (ElementsAwoken.encounter == 1) encounterText = Said3;
                     else if (ElementsAwoken.encounter == 2) encounterText = Said4;
                     else if (ElementsAwoken.encounter == 3) encounterText = Said5;
                 }
-                else if (ElementsAwoken.encounterTimer == 2200)
+                else if (UISystemSettings.VoidTime == 1100)
                 {
+                    UISystemSettings.VoidTime++;
                     encounterTextTimer = 300;
                     encounterTextAlpha = 0;
                     if (ElementsAwoken.encounter == 1) encounterText = Said6;
                     else if (ElementsAwoken.encounter == 2) encounterText = Said7;
                     else if (ElementsAwoken.encounter == 3) encounterText = Said8;
                 }
-                else if (ElementsAwoken.encounterTimer == 1700)
+                else if (UISystemSettings.VoidTime == 1400)
                 {
+                    UISystemSettings.VoidTime++;
                     if (ElementsAwoken.encounter != 1)
                     {
                         encounterTextTimer = 300;
@@ -1641,18 +1645,16 @@ namespace ElementsAwoken.EASystem
                     else if (ElementsAwoken.encounter == 3)
                     {
                         encounterText = Said10;
+                        UISystemSettings.VoidColor = Color.DarkRed;
                         SoundEngine.PlaySound(SoundID.Zombie105, Player.position);
                         finalText = true;
                     }
                 }
-                encounterTextTimer--;
-                if (encounterTextTimer <= 0)
+                else if (UISystemSettings.VoidTime == 1700)
                 {
-                    encounterTextTimer = 0;
-                    finalText = false;
+                    encounterText = "";
                 }
-
-                if (encounterTextTimer > 60)
+                if (UISystemSettings.VoidTime > 300)
                 {
                     if (encounterTextAlpha > 255) encounterTextAlpha = 255;
                     else encounterTextAlpha += (int)Math.Ceiling(255f / 60f);

@@ -294,6 +294,24 @@ public interface IDropSettings
     internal static int WasMaximumDropped4;
     #endregion
     #endregion
+    #region Bool
+    public static bool Slot(int slot)
+    {
+        return slot == AncItemId1 || slot == AquItemId1 || slot == AzaItemId1 || slot == InfItemId1 || slot == ObsiItemId1 || slot == PermItemId1 || slot == RegItemId1 || slot == ScoItemId1 || slot == TCelItemId1 || slot == TGuaItemId1 || slot == TempItemId1 || slot == LeviItemId1 || slot == WasItemId1;
+    }
+    public static bool Slot2(int slot)
+    {
+        return slot == AncItemId2 || slot == AquItemId2 || slot == AzaItemId2 || slot == InfItemId2 || slot == ObsiItemId2 || slot == PermItemId2 || slot == RegItemId2 || slot == ScoItemId2 || slot == TCelItemId2 || slot == TGuaItemId2 || slot == TempItemId2 || slot == LeviItemId2 || slot == WasItemId2;
+    }
+    public static bool Slot3(int slot)
+    {
+        return slot == AncItemId3 || slot == AquItemId3 || slot == AzaItemId3 || slot == InfItemId3 || slot == ObsiItemId3 || slot == PermItemId3 || slot == RegItemId3 || slot == ScoItemId3 || slot == TCelItemId3 || slot == TGuaItemId3 || slot == TempItemId3 || slot == LeviItemId3 || slot == WasItemId3;
+    }
+    public static bool Slot4(int slot)
+    {
+        return slot == AncItemId4 || slot == AquItemId4 || slot == AzaItemId4 || slot == InfItemId4 || slot == ObsiItemId4 || slot == PermItemId4 || slot == RegItemId4 || slot == ScoItemId4 || slot == TCelItemId4 || slot == TGuaItemId4 || slot == TempItemId4 || slot == LeviItemId4 || slot == WasItemId4;
+    }
+    #endregion
 }
 #region Boss Bag
 public class AncSettings : IDropSettings

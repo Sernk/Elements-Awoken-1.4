@@ -40,5 +40,97 @@ namespace ElementsAwoken.EASystem.Loot
             public bool CanShowItemDropInUI() => true;
             public string GetConditionDescription() => ModContent.GetInstance<EALocalization>().AwakenedModeActive;
         }
+        public class DropSlot : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info) => true;
+            public bool CanShowItemDropInUI()
+            {
+                if (IDropSettings.AncItemId1 == ModContent.ItemType<ModItem>())
+                {
+                    return false;
+                }
+                return true;
+            }
+            public string GetConditionDescription() => null;
+        }
+        public class DropSlot2 : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info) => true;
+            public bool CanShowItemDropInUI()
+            {
+                if (IDropSettings.AncItemId2 == ModContent.ItemType<ModItem>())
+                {
+                    return false;
+                }
+                return true;
+            }
+            public string GetConditionDescription() => null;
+        }
+        public class DropSlot3 : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info) => true;
+            public bool CanShowItemDropInUI()
+            {
+                if (IDropSettings.AncItemId3 == ModContent.ItemType<ModItem>())
+                {
+                    return false;
+                }
+                return true;
+            }
+            public string GetConditionDescription() => null;
+        }
+        public class DropSlot4 : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info) => true;
+            public bool CanShowItemDropInUI()
+            {
+                if (IDropSettings.AncItemId4 == ModContent.ItemType<ModItem>())
+                {
+                    return false;
+                }
+                return true;
+            }
+            public string GetConditionDescription() => null;
+        }
+        public class DropVoidEssenceExpert : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (Main.expertMode && MyWorld.awakenedMode == false)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI()
+            {
+                if (Main.expertMode && MyWorld.awakenedMode == false)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public string GetConditionDescription() => null;
+        }
+        public class DropVoidEssenceAwakened : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (MyWorld.awakenedMode)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI()
+            {
+                if (MyWorld.awakenedMode)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public string GetConditionDescription() => null;
+        }
     }
 }

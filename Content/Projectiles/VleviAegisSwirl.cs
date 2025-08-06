@@ -3,7 +3,7 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 
 namespace ElementsAwoken.Content.Projectiles
 {

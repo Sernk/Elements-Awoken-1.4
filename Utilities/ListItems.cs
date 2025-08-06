@@ -71,8 +71,8 @@ namespace ElementsAwoken.Utilities
         public static readonly List<int> WasLoot = [ModContent.ItemType<Pincer>(), ModContent.ItemType<ScorpionBlade>(), ModContent.ItemType<Stinger>(), ModContent.ItemType<ChitinStaff>()];
         #endregion
         #endregion
-        #region
-        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>()];
+        #region Boss Summon
+        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>()];
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

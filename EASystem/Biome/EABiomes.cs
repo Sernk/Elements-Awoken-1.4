@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
+using ElementsAwoken.EASystem.Global;
 using Terraria;
 using Terraria.ModLoader;
 

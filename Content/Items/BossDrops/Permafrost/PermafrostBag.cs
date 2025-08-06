@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Terraria;
@@ -25,15 +25,24 @@ namespace ElementsAwoken.Content.Items.BossDrops.Permafrost
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
             var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
+            var _NewItem = new LeadingConditionRule(new EAIDRC.DropSlot());
+            var _NewItem2 = new LeadingConditionRule(new EAIDRC.DropSlot2());
+            var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
+            var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
+
             itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.PermLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<SoulOfTheFrost>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<PermafrostMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<PermafrostTrophy>(), 10));
 
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.PermItemId1, chanceDenominator: IDropSettings.PermChanceDenominator1, minimumDropped: IDropSettings.PermMinimumDropped1, maximumDropped: IDropSettings.PermMaximumDropped1));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.PermItemId2, chanceDenominator: IDropSettings.PermChanceDenominator2, minimumDropped: IDropSettings.PermMinimumDropped2, maximumDropped: IDropSettings.PermMaximumDropped2));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.PermItemId3, chanceDenominator: IDropSettings.PermChanceDenominator3, minimumDropped: IDropSettings.PermMinimumDropped3, maximumDropped: IDropSettings.PermMaximumDropped3));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.PermItemId4, chanceDenominator: IDropSettings.PermChanceDenominator4, minimumDropped: IDropSettings.PermMinimumDropped4, maximumDropped: IDropSettings.PermMaximumDropped4));
+            _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.PermItemId1, chanceDenominator: IDropSettings.PermChanceDenominator1, minimumDropped: IDropSettings.PermMinimumDropped1, maximumDropped: IDropSettings.PermMaximumDropped1));
+            itemLoot.Add(_NewItem);
+            _NewItem2.OnSuccess(ItemDropRule.Common(IDropSettings.PermItemId2, chanceDenominator: IDropSettings.PermChanceDenominator2, minimumDropped: IDropSettings.PermMinimumDropped2, maximumDropped: IDropSettings.PermMaximumDropped2));
+            itemLoot.Add(_NewItem2);
+            _NewItem3.OnSuccess(ItemDropRule.Common(IDropSettings.PermItemId3, chanceDenominator: IDropSettings.PermChanceDenominator3, minimumDropped: IDropSettings.PermMinimumDropped3, maximumDropped: IDropSettings.PermMaximumDropped3));
+            itemLoot.Add(_NewItem3);
+            _NewItem4.OnSuccess(ItemDropRule.Common(IDropSettings.PermItemId4, chanceDenominator: IDropSettings.PermChanceDenominator4, minimumDropped: IDropSettings.PermMinimumDropped4, maximumDropped: IDropSettings.PermMaximumDropped4));
+            itemLoot.Add(_NewItem4);
 
             _AwakenedMode.OnSuccess(ItemDropRule.Common(ModContent.ItemType<IcyHeart>()));
             itemLoot.Add(_AwakenedMode);

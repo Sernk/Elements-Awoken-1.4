@@ -9,7 +9,6 @@ using ElementsAwoken.Content.Items.Tech.Weapons.Tier2;
 using ElementsAwoken.Content.Items.Weapons.Melee.Whips;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Tiles;
-using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Events.VoidEvent;
 using ElementsAwoken.Utilities;

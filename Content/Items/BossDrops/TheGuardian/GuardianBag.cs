@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
@@ -23,13 +24,22 @@ namespace ElementsAwoken.Content.Items.BossDrops.TheGuardian
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
+            var _NewItem = new LeadingConditionRule(new EAIDRC.DropSlot());
+            var _NewItem2 = new LeadingConditionRule(new EAIDRC.DropSlot2());
+            var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
+            var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
+
             itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.TGuaLoot]));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuadianMask>(), 10));
 
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.TGuaItemId1, chanceDenominator: IDropSettings.TGuaChanceDenominator1, minimumDropped: IDropSettings.TGuaMinimumDropped1, maximumDropped: IDropSettings.TGuaMaximumDropped1));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.TGuaItemId2, chanceDenominator: IDropSettings.TGuaChanceDenominator2, minimumDropped: IDropSettings.TGuaMinimumDropped2, maximumDropped: IDropSettings.TGuaMaximumDropped2));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.TGuaItemId3, chanceDenominator: IDropSettings.TGuaChanceDenominator3, minimumDropped: IDropSettings.TGuaMinimumDropped3, maximumDropped: IDropSettings.TGuaMaximumDropped3));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.TGuaItemId4, chanceDenominator: IDropSettings.TGuaChanceDenominator4, minimumDropped: IDropSettings.TGuaMinimumDropped4, maximumDropped: IDropSettings.TGuaMaximumDropped4));
+            _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.TGuaItemId1, chanceDenominator: IDropSettings.TGuaChanceDenominator1, minimumDropped: IDropSettings.TGuaMinimumDropped1, maximumDropped: IDropSettings.TGuaMaximumDropped1));
+            itemLoot.Add(_NewItem);
+            _NewItem2.OnSuccess(ItemDropRule.Common(IDropSettings.TGuaItemId2, chanceDenominator: IDropSettings.TGuaChanceDenominator2, minimumDropped: IDropSettings.TGuaMinimumDropped2, maximumDropped: IDropSettings.TGuaMaximumDropped2));
+            itemLoot.Add(_NewItem2);
+            _NewItem3.OnSuccess(ItemDropRule.Common(IDropSettings.TGuaItemId3, chanceDenominator: IDropSettings.TGuaChanceDenominator3, minimumDropped: IDropSettings.TGuaMinimumDropped3, maximumDropped: IDropSettings.TGuaMaximumDropped3));
+            itemLoot.Add(_NewItem3);
+            _NewItem4.OnSuccess(ItemDropRule.Common(IDropSettings.TGuaItemId4, chanceDenominator: IDropSettings.TGuaChanceDenominator4, minimumDropped: IDropSettings.TGuaMinimumDropped4, maximumDropped: IDropSettings.TGuaMaximumDropped4));
+            itemLoot.Add(_NewItem4);
 
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuardianTrophy>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<FieryCore>()));

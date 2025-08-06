@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 namespace ElementsAwoken.Content.Projectiles
 {
     public class ShackledBase : ModProjectile

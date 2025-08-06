@@ -1,5 +1,5 @@
 using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

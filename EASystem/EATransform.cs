@@ -2,6 +2,7 @@
 using Terraria.Graphics;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
+using ElementsAwoken.EASystem.Global;
 
 namespace ElementsAwoken.EASystem
 {

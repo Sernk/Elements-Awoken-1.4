@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Terraria;
@@ -28,15 +28,24 @@ namespace ElementsAwoken.Content.Items.BossDrops.ScourgeFighter
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
+            var _NewItem = new LeadingConditionRule(new EAIDRC.DropSlot());
+            var _NewItem2 = new LeadingConditionRule(new EAIDRC.DropSlot2());
+            var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
+            var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
+
             itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.ScoLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeDrive>()));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterTrophy>(), 10));
 
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId1, chanceDenominator: IDropSettings.ScoChanceDenominator1, minimumDropped: IDropSettings.ScoMinimumDropped1, maximumDropped: IDropSettings.ScoMaximumDropped1));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId2, chanceDenominator: IDropSettings.ScoChanceDenominator2, minimumDropped: IDropSettings.ScoMinimumDropped2, maximumDropped: IDropSettings.ScoMaximumDropped2));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId3, chanceDenominator: IDropSettings.ScoChanceDenominator3, minimumDropped: IDropSettings.ScoMinimumDropped3, maximumDropped: IDropSettings.ScoMaximumDropped3));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.ScoItemId4, chanceDenominator: IDropSettings.ScoChanceDenominator4, minimumDropped: IDropSettings.ScoMinimumDropped4, maximumDropped: IDropSettings.ScoMaximumDropped4));
+            _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.ScoItemId1, chanceDenominator: IDropSettings.ScoChanceDenominator1, minimumDropped: IDropSettings.ScoMinimumDropped1, maximumDropped: IDropSettings.ScoMaximumDropped1));
+            itemLoot.Add(_NewItem);
+            _NewItem2.OnSuccess(ItemDropRule.Common(IDropSettings.ScoItemId2, chanceDenominator: IDropSettings.ScoChanceDenominator2, minimumDropped: IDropSettings.ScoMinimumDropped2, maximumDropped: IDropSettings.ScoMaximumDropped2));
+            itemLoot.Add(_NewItem2);
+            _NewItem3.OnSuccess(ItemDropRule.Common(IDropSettings.ScoItemId3, chanceDenominator: IDropSettings.ScoChanceDenominator3, minimumDropped: IDropSettings.ScoMinimumDropped3, maximumDropped: IDropSettings.ScoMaximumDropped3));
+            itemLoot.Add(_NewItem3);
+            _NewItem4.OnSuccess(ItemDropRule.Common(IDropSettings.ScoItemId4, chanceDenominator: IDropSettings.ScoChanceDenominator4, minimumDropped: IDropSettings.ScoMinimumDropped4, maximumDropped: IDropSettings.ScoMaximumDropped4));
+            itemLoot.Add(_NewItem4);
 
             IItemDropRule weaponDrop = new LeadingConditionRule(new EAIDRC.ScourgeLootCondition());
             weaponDrop.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterRocketLauncher>()));

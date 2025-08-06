@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

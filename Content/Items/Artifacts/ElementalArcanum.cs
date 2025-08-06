@@ -1,5 +1,4 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using System;
@@ -8,6 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ElementsAwoken.Utilities;
+using ElementsAwoken.EASystem.Global;
 
 namespace ElementsAwoken.Content.Items.Artifacts
 {

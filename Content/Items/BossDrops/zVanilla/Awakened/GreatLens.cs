@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using ElementsAwoken.Utilities;
 using System.Collections.Generic;

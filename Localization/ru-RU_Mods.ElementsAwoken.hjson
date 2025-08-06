@@ -2207,6 +2207,15 @@ Items: {
 		// DisplayName: Embryo of Existence
 		// Tooltip: Summons the guardian of the void
 	}
+
+	WastelandSummon: {
+		// DisplayName: Mutated Scorpion
+		/* Tooltip:
+			'''
+			It writhes in your hand
+			Summons Wasteland on use
+			''' */
+	}
 }
 
 Tiles: {
@@ -2643,6 +2652,11 @@ Buffs: {
 			Все атаки накладывают дебаффы "Отравление" и "Яд" на врагов
 			'''
 	}
+
+	AcidBurn: {
+		// DisplayName: Acid Burn
+		// Description: Mods.ElementsAwoken.Buffs.AcidBurn.Description
+	}
 }
 
 NPCs: {
@@ -2662,6 +2676,11 @@ NPCs: {
 	ElderShadeWyrmBody.DisplayName: Старший Тенезмей
 	RadiantMaster.DisplayName: Лучезарный мастер
 	RadiantMasterDeath.DisplayName: Лучезарный мастер
+	// Scorpion.DisplayName: Scorpion
+	// Wasteland.DisplayName: Wasteland
+	// WastelandDeath.DisplayName: Wasteland
+	// WastelandEgg.DisplayName: Egg
+	// WastelandMinion.DisplayName: Mutated Scorpion
 }
 
 Projectiles: {
@@ -2908,6 +2927,7 @@ Projectiles: {
 	PincerArrow.DisplayName: Скорпионовская стрела
 	ScorpionMinion.DisplayName: Скорпион-миньон
 	WastelandStingerFriendly.DisplayName: Игроковское жало пустоши
+	// WastelandStinger.DisplayName: Wasteland Stinger
 	AncientStar.DisplayName: Древняя звезда
 	AncientStar2.DisplayName: Древняя звезда2
 	Fireblast.DisplayName: Огневзрыв
@@ -2928,6 +2948,16 @@ Projectiles: {
 	HungryMinion.DisplayName: Голодный-миньон
 	SkeleSkull.DisplayName: Скелечереп
 	SlimeBoosterTrail.DisplayName: Трейл слизеусилителя
+	// AcidAuraBase.DisplayName: Acid Aura
+	// AcidBall.DisplayName: Acid Blob
+	// Shockwave.DisplayName: Shockwave
+	// WastelandDiggingProj.DisplayName: Wasteland
+	// WastelandDiggingProjReal.DisplayName: Wasteland
+	// WastelandDiggingSpout.DisplayName: Wasteland
+	// WastelandDiggingSpoutReal.DisplayName: Wasteland
+	// WastelandDryad.DisplayName: Wasteland Dryad
+	// WastelandSnap.DisplayName: Wasteland's Pincers
+	// WastelandStormBolt.DisplayName: Wasteland
 }
 
 Configs: {
@@ -2982,9 +3012,14 @@ Bestiary: {
 		VoidLeviathan: Змееобразное чудовище, пришедшее в этот мир прямиком из глубин Пустоты, которого боятся все живые существа Террарии. Оно жаждет любой достаточно сильной души, чтобы ещё больше усилить свою мощь...
 		ElderShadeWyrm: Старший представитель вида Тенезмеев, которые зародились в Пустоте и росли, эволюционировали достаточно долго, чтобы вырасти до настолько огромных размеров и непредсказуемой мощи.
 		RadiantMaster: Всё, что осталось от тех магов, кто поддался воле Лучезарного Дождя - лишь бездушные оболочки их былого величия, единственная цель существования которых теперь состоит лишь в том, чтобы оберегать существование Дождя и дальше.
+		// WastelandBoss: Скорпион, ставший жертвой эксперимента, в котором всё пошло не по плану. Пустошь должна была стать живым оружием, способным уничтожить всё и всех на своём пути, но в итоге энергия, которую вживляли в её тело начала брать контроль над её разумом, заставляя существо сойти с ума.
 	}
 
-	Enemies.VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
+	Enemies: {
+		Scorpion: Представитель вида и так необычайно ядовитых скорпионов, обитающих в пустыне, которого люди использовали в своих экспериментах, надеясь превратить его в живое оружие. Кто знает, какое чудище оно способно призвать среди песков пустыни...
+		VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
+	}
+
 	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
 }
 
@@ -3119,8 +3154,10 @@ SetBonus: {
 }
 
 Said: {
+	// Wasteland: Wasteland sinks back into the sand
+	// WastelandDryad: Wait! Stop!
+	// WastelandDryad1: I can handle this!
 	VoidLeviathanHead: Так это уже было ведь...
-	VoidLeviathanHead2: я пидорас
 }
 
 LooTCondition: {

@@ -1,6 +1,7 @@
 using ElementsAwoken.Content.Effects;
 using ElementsAwoken.Content.Items.Tech.Weapons.Tier6;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;

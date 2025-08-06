@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;

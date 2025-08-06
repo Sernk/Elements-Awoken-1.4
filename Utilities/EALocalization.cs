@@ -6,9 +6,11 @@ namespace ElementsAwoken.Utilities
     public class EALocalization : ModSystem
     {
         #region Bestiary
+        public string WastelandBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.WastelandBoss");
         public string VoidLeviathan => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VoidLeviathan");
         public string ElderShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ElderShadeWyrm");
         public string RadiantMaster => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster");
+        public string Scorpion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion");
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
         public string MysticBunny => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny");
         #endregion
@@ -109,8 +111,10 @@ namespace ElementsAwoken.Utilities
         public string Nearby => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.Nearby");
         #endregion
         #region Said
+        public string Wasteland => Language.GetTextValue("Mods.ElementsAwoken.Said.Wasteland");
+        public string WastelandDryad => Language.GetTextValue("Mods.ElementsAwoken.Said.WastelandDryad");
+        public string WastelandDryad1 => Language.GetTextValue("Mods.ElementsAwoken.Said.WastelandDryad1");
         public string VoidLeviathanHead => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead");
-        public string VoidLeviathanHead2 => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead2");
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");

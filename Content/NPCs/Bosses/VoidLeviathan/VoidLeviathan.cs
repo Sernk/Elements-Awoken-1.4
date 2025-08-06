@@ -5,7 +5,6 @@ using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
-using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
@@ -86,24 +85,26 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             }
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
-        {
+        {            
+            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
+            var _AwakenedModeEssence = new LeadingConditionRule(new EAIDRC.DropVoidEssenceAwakened());
+            var _AwakenedModeExpert = new LeadingConditionRule(new EAIDRC.DropVoidEssenceExpert());
+
             npcLoot.Add(ItemDropRule.OneFromOptions(1, [..ListItems.LeviLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanHeart>()));
-            npcLoot.Add(ItemDropRule.Common(ItemType<VoidEssence>(), 1000000));
-            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
 
             _AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<AbyssalMatter>()));
             npcLoot.Add(_AwakenedMode);
+            _AwakenedModeEssence.OnSuccess(ItemDropRule.Common(ItemType<VoidEssence>(), minimumDropped: 8, maximumDropped: 20));
+            npcLoot.Add(_AwakenedModeEssence);            
+            _AwakenedModeExpert.OnSuccess(ItemDropRule.Common(ItemType<VoidEssence>(), minimumDropped: 5, maximumDropped: 13));
+            npcLoot.Add(_AwakenedModeExpert);
         }
         public override void OnKill()
         {
-            int essenceAmount = Main.rand.Next(2, 8);
-            if (Main.expertMode) essenceAmount = Main.rand.Next(5, 13);
-            if (MyWorld.awakenedMode) essenceAmount = Main.rand.Next(8, 20);
-            Item.NewItem(EAU.NPCs(NPC), (int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height, ItemType<VoidEssence>(), essenceAmount);
             if (!MyWorld.downedVoidLeviathan)
             {
                 ElementsAwoken.encounter = 3;
@@ -119,7 +120,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             MyWorld.downedVoidLeviathan = true;
             if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
         }  
-        public override void BossLoot(ref string name, ref int potionType)
+        public override void BossLoot(ref int potionType)
         {
             potionType = ItemType<EpicHealingPotion>();
         }

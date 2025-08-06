@@ -1,5 +1,5 @@
 using ElementsAwoken.Content.Projectiles.Minions.BreathOfDarkness;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Terraria;
 using Terraria.ModLoader;
 

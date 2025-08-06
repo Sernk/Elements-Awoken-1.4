@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using System.Collections.Generic;
 using Terraria;

@@ -5,6 +5,7 @@ using ElementsAwoken.Content.Items.Elements.Sky;
 using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;

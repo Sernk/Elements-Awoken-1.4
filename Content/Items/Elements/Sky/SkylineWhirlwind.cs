@@ -5,6 +5,7 @@ using ElementsAwoken.Content.Items.Elements.Void;
 using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Global;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;

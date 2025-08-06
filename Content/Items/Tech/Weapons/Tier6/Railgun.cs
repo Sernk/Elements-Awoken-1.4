@@ -2,7 +2,6 @@
 using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Items.Tech.Weapons.Tier2;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;

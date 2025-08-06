@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
@@ -22,14 +23,23 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
+            var _NewItem = new LeadingConditionRule(new EAIDRC.DropSlot());
+            var _NewItem2 = new LeadingConditionRule(new EAIDRC.DropSlot2());
+            var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
+            var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
+
             itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.LeviLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VoidLeviathanHeart>(), 1, 2, 2));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AmuletOfDestruction>()));
 
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.LeviItemId1, chanceDenominator: IDropSettings.LeviChanceDenominator1, minimumDropped: IDropSettings.LeviMinimumDropped1, maximumDropped: IDropSettings.LeviMaximumDropped1));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.LeviItemId2, chanceDenominator: IDropSettings.LeviChanceDenominator2, minimumDropped: IDropSettings.LeviMinimumDropped2, maximumDropped: IDropSettings.LeviMaximumDropped2));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.LeviItemId3, chanceDenominator: IDropSettings.LeviChanceDenominator3, minimumDropped: IDropSettings.LeviMinimumDropped3, maximumDropped: IDropSettings.LeviMaximumDropped3));
-            itemLoot.Add(ItemDropRule.Common(IDropSettings.LeviItemId4, chanceDenominator: IDropSettings.LeviChanceDenominator4, minimumDropped: IDropSettings.LeviMinimumDropped4, maximumDropped: IDropSettings.LeviMaximumDropped4));
+            _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.LeviItemId1, chanceDenominator: IDropSettings.LeviChanceDenominator1, minimumDropped: IDropSettings.LeviMinimumDropped1, maximumDropped: IDropSettings.LeviMaximumDropped1));
+            itemLoot.Add(_NewItem);
+            _NewItem2.OnSuccess(ItemDropRule.Common(IDropSettings.LeviItemId2, chanceDenominator: IDropSettings.LeviChanceDenominator2, minimumDropped: IDropSettings.LeviMinimumDropped2, maximumDropped: IDropSettings.LeviMaximumDropped2));
+            itemLoot.Add(_NewItem2);
+            _NewItem3.OnSuccess(ItemDropRule.Common(IDropSettings.LeviItemId3, chanceDenominator: IDropSettings.LeviChanceDenominator3, minimumDropped: IDropSettings.LeviMinimumDropped3, maximumDropped: IDropSettings.LeviMaximumDropped3));
+            itemLoot.Add(_NewItem3);
+            _NewItem4.OnSuccess(ItemDropRule.Common(IDropSettings.LeviItemId4, chanceDenominator: IDropSettings.LeviChanceDenominator4, minimumDropped: IDropSettings.LeviMinimumDropped4, maximumDropped: IDropSettings.LeviMaximumDropped4));
+            itemLoot.Add(_NewItem4);
 
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VoidLeviathanMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VoidLeviathanTrophy>(), 10));
