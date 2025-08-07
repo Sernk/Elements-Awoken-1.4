@@ -2191,7 +2191,11 @@ Items: {
 
 	VoidLeviathanSummon: {
 		DisplayName: Embryo of Existence
-		Tooltip: Summons the guardian of the void
+		Tooltip:
+			'''
+			Use at night
+			Summons the guardian of the void
+			'''
 	}
 
 	WastelandSummon: {
@@ -2200,6 +2204,34 @@ Items: {
 			'''
 			It writhes in your hand
 			Summons Wasteland on use
+			'''
+	}
+
+	AncientDragonSummon: {
+		DisplayName: Will of Fire
+		Tooltip:
+			'''
+			Use at night
+			Summons the Temple Keepers on use
+			'''
+	}
+
+	RefinedDrakonite: {
+		DisplayName: Refined Drakonite
+		Tooltip: Holds much more power than a regular crystal
+	}
+
+	Drakonite: {
+		DisplayName: Drakonite Shard
+		Tooltip: A faint warmth radiates from this crystal
+	}
+
+	AqueousSummon: {
+		DisplayName: Strange Shell
+		Tooltip:
+			'''
+			It glows mysteriously
+			Summons Aqueous on use
 			'''
 	}
 }
@@ -2667,6 +2699,15 @@ NPCs: {
 	WastelandDeath.DisplayName: Wasteland
 	WastelandEgg.DisplayName: Egg
 	WastelandMinion.DisplayName: Mutated Scorpion
+	AncientWyrmArms.DisplayName: Ancient Wyrm
+	AncientWyrmBody.DisplayName: Ancient Wyrm
+	AncientWyrmHead.DisplayName: Ancient Wyrm
+	AncientWyrmTail.DisplayName: Ancient Wyrm
+	TheEye.DisplayName: The Eye
+	AquaticReaper.DisplayName: Aqueous Minion
+	Aqueous.DisplayName: Aqueous
+	AqueousMinion1.DisplayName: Aqueous Minion
+	AqueousMinion2.DisplayName: Aqueous Minion
 }
 
 Projectiles: {
@@ -2814,6 +2855,7 @@ Projectiles: {
 	AqueousMinionFriendly3.DisplayName: Aqueous Minion
 	AqueousMinionFriendly4.DisplayName: Aqueous Minion
 	WaterballFriendly.DisplayName: Waterball
+	Waterball.DisplayName: Aqueous
 	BrinyBusterP.DisplayName: Briny Buster
 	BubblePopperP.DisplayName: Bubble Popper
 	HighTideP.DisplayName: High Tide
@@ -2944,6 +2986,14 @@ Projectiles: {
 	WastelandDryad.DisplayName: Wasteland Dryad
 	WastelandSnap.DisplayName: Wasteland's Pincers
 	WastelandStormBolt.DisplayName: Wasteland
+	GuardianShot.DisplayName: The Guardian
+	WyrmBreath.DisplayName: Wyrm's Breath
+	Aquanado.DisplayName: Aquanado
+	AquanadoBolt.DisplayName: Aquanado Bolt
+	AquaticBlast.DisplayName: Aquatic Blast
+	AquaticBolt.DisplayName: Aqueous
+	WaterKnife.DisplayName: Aqueous
+	WaterKnifeHoming.DisplayName: Aqueous
 }
 
 Configs: {
@@ -2993,16 +3043,20 @@ Keybinds: {
 }
 
 #TODO добавь и на английский также
+#Да без б ваще, ща.
 Bestiary: {
 	Bosses: {
 		VoidLeviathan: A serpentine beast from the depths of the Void, feared across all of Terraria. It hungers for a soul strong enough to reinforce its power even further...
 		ElderShadeWyrm: An elder specimen of the Shade Wyrms, serpents from the depths of the Void, which have been granted enough time to evolve and grow to such enormous sizes and unpredictable power.
-		RadiantMaster: " "
-		WastelandBoss: Скорпион, ставший жертвой эксперимента, в котором всё пошло не по плану. Пустошь должна была стать живым оружием, способным уничтожить всё и всех на своём пути, но в итоге энергия, которую вживляли в её тело начала брать контроль над её разумом, заставляя существо сойти с ума.
+		RadiantMaster: What remained of the magicians succumbed to the relevations of the Radiant Rain now are mere soulless shells of what they used to be, existing for the sole purpose of protecting the Rain's further existence.
+		WastelandBoss: Victim of an experiment gone terribly wrong, this scorpion was supposed to be a living weapon, able to smite all and everything in its path. The energy injected in its body began to take control of its brain, making the scorpion lose its mind.
+		TheEye: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Eye is imbued with the Guardian's mind and voice.
+		AncientWyrm: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Wyrm represents the Guardian's destructive nature.
+		AqueousBoss: Now merely a shell of her former self, Aqueous once was one of the mightiest warriors to ever live in the Terran ocean, serving to the crown of the Sea King, the mutant known as Duke Fishron, before its murder. Rest assured, she will do whatever it takes to strike down whoever had slain her King...
 	}
 
 	Enemies: {
-		Scorpion: ""
+		Scorpion: This specimen of already unusually venomous desert scorpions was used in an experiment in order to turn it into a living weapon. Unleashing one in the sands of the desert might have detrimental consequences...
 		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
 	}
 
@@ -3096,6 +3150,7 @@ Tooltips: {
 	GreatLens1: Pressing the special ability key
 	GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
 	GreatLens3: If the player is hit by an enemy the damage is reflected to them
+	AqueousSummon: Time for your reign to end, murderer
 }
 
 AccInfo: {
@@ -3143,13 +3198,18 @@ Said: {
 	WastelandDryad: Wait! Stop!
 	WastelandDryad1: I can handle this!
 	VoidLeviathanHead: Infection overcomes the world...
+	Aqueous: I understand why my king perished at your hands...
+	Aqueous1: Enough! You destroyed my lord, I will not let you cast the same fate upon me!
 }
 
 LooTCondition: {
 	AwakenedModeActive: "[c/973999:Exclusively in awakened mode]"
 	ScourgeLootCondition: Drop chance 1/3
+	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
+	TheEye: if The Eye was killed first
 }
 
+AwakenedMode: "[c/973999:Awakened Mode Active]"
 AwakenedSummonItem: Not consumed in Awakened Mode
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 

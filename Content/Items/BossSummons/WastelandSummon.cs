@@ -13,18 +13,13 @@ namespace ElementsAwoken.Content.Items.BossSummons
         {
             Item.width = 28;
             Item.height = 18;
-            Item.maxStack = 20;
+            Item.maxStack = 9999;
             Item.rare = 2;
             Item.useAnimation = 45;
             Item.useTime = 45;
             Item.useStyle = 4;
             Item.UseSound = SoundID.Item44;
             Item.GetGlobalItem<EABossSummon>().AwakenedSummonItem = true;
-        }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Mutated Scorpion");
-            // Tooltip.SetDefault("It writhes in your hand\nSummons Wasteland on use");
         }
         public override bool CanUseItem(Player player)
         {

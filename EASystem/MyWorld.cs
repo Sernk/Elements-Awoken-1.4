@@ -170,9 +170,19 @@ namespace ElementsAwoken
             radiantRain = false;
             prevTickRaining = false;
         }
+        public override void SaveWorldHeader(TagCompound tag)
+        {
+            if (awakenedMode)
+            {
+                tag["awakenedMode"] = true;
+            }
+        }
         public override void SaveWorldData(TagCompound tag)
         {
-            tag["awakenedMode"] = awakenedMode;
+            if (awakenedMode)
+            {
+                tag["awakenedMode"] = awakenedMode;
+            }
             tag["downedInfernace"] = downedInfernace;
             tag["downedScourgeFighter"] = downedScourgeFighter;
             tag["downedRegaroth"] = downedRegaroth;

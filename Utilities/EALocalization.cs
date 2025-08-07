@@ -7,6 +7,9 @@ namespace ElementsAwoken.Utilities
     {
         #region Bestiary
         public string WastelandBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.WastelandBoss");
+        public string AqueousBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AqueousBoss");
+        public string TheEye => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheEye");
+        public string AncientWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AncientWyrm");
         public string VoidLeviathan => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VoidLeviathan");
         public string ElderShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ElderShadeWyrm");
         public string RadiantMaster => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster");
@@ -105,6 +108,9 @@ namespace ElementsAwoken.Utilities
         public string GreatLens2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GreatLens2");
         public string GreatLens3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GreatLens3");
         #endregion
+        #region AqueousSummon
+        public string AqueousSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AqueousSummon");
+        #endregion
         #endregion
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
@@ -114,6 +120,8 @@ namespace ElementsAwoken.Utilities
         public string Wasteland => Language.GetTextValue("Mods.ElementsAwoken.Said.Wasteland");
         public string WastelandDryad => Language.GetTextValue("Mods.ElementsAwoken.Said.WastelandDryad");
         public string WastelandDryad1 => Language.GetTextValue("Mods.ElementsAwoken.Said.WastelandDryad1");
+        public string Aqueous => Language.GetTextValue("Mods.ElementsAwoken.Said.Aqueous");
+        public string Aqueous1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Aqueous1");
         public string VoidLeviathanHead => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead");
         #endregion
         #region SetBonus
@@ -128,10 +136,13 @@ namespace ElementsAwoken.Utilities
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");
         public string ScourgeLootCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.ScourgeLootCondition");
+        public string AncientWyrmHeadDeath => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AncientWyrmHeadDeath");
+        public string TheEyeCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.TheEye");
         #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");
         public string AwakenedSummonItem => Language.GetTextValue("Mods.ElementsAwoken.AwakenedSummonItem");
+        public string AwakenedMode => Language.GetTextValue("Mods.ElementsAwoken.AwakenedMode");
         #endregion
     }
 }

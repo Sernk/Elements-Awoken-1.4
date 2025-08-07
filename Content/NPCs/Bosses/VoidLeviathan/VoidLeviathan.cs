@@ -19,7 +19,6 @@ using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.UI;
 using static ElementsAwoken.EASystem.EABiomes;
 using static Terraria.ModLoader.ModContent;
 

@@ -2,3 +2,4 @@ displayName = Elements Awoken
 author = ThatOneJuicyOrange_ , Gs_qs
 version = 0.1
 weakReferences = CalamityMod
+modReferences = Luminance

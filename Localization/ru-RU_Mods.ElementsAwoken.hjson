@@ -1744,7 +1744,7 @@ Items: {
 	}
 
 	EyeOfRegaroth: {
-		DisplayName: Глаз Регарота
+		DisplayName: Око Регарота
 		Tooltip: ""
 	}
 
@@ -2117,7 +2117,7 @@ Items: {
 	}
 
 	SpinalSplayer: {
-		DisplayName: Ломатель позвонков
+		DisplayName: Позвонкострел
 		Tooltip: что вообще значит сплеер?
 	}
 
@@ -2204,17 +2204,49 @@ Items: {
 	}
 
 	VoidLeviathanSummon: {
-		// DisplayName: Embryo of Existence
-		// Tooltip: Summons the guardian of the void
+		DisplayName: Эмбрион бытия
+		Tooltip:
+			'''
+			Может быть использовано только ночью
+			Призывает Левиафана Пустоты
+			'''
 	}
 
 	WastelandSummon: {
-		// DisplayName: Mutated Scorpion
-		/* Tooltip:
+		DisplayName: Скорпион-мутант
+		Tooltip:
 			'''
-			It writhes in your hand
-			Summons Wasteland on use
-			''' */
+			Он извивается у тебя в руках...
+			Призывает Пустошь при использовании в Пустыне
+			'''
+	}
+
+	AncientDragonSummon: {
+		DisplayName: Воля Огня
+		Tooltip:
+			'''
+			Может быть использовано только ночью
+			Призывает Хранителей Храма
+			'''
+	}
+
+	RefinedDrakonite: {
+		DisplayName: Очищенный Драконит
+		Tooltip: В нём заточено куда больше энергии, чем в необработанном кристалле...
+	}
+
+	Drakonite: {
+		DisplayName: Драконитовый осколок
+		Tooltip: Держа его в руках, ты чувствуешь исходящее от него едва заметное тепло...
+	}
+
+	AqueousSummon: {
+		DisplayName: Странная ракушка
+		Tooltip:
+			'''
+			Она загадочно сияет
+			Призывает Аквеус при использовании в Океане
+			'''
 	}
 }
 
@@ -2279,7 +2311,7 @@ Buffs: {
 
 	ChaosShield: {
 		DisplayName: Щит хаоса
-		Description: (без описания)
+		Description: прикольно, наверное...
 	}
 
 	BoostDriveCD: {
@@ -2576,7 +2608,7 @@ Buffs: {
 
 	AncientsCurse: {
 		DisplayName: Проклятие Древних
-		Description: ъ
+		Description: пиздец
 	}
 
 	MiniVleviBuff: {
@@ -2654,8 +2686,8 @@ Buffs: {
 	}
 
 	AcidBurn: {
-		// DisplayName: Acid Burn
-		// Description: Mods.ElementsAwoken.Buffs.AcidBurn.Description
+		DisplayName: Кислогорение
+		Description: ААААААААААААААААААААААААА!!!!!!!!!!!!!!
 	}
 }
 
@@ -2676,11 +2708,20 @@ NPCs: {
 	ElderShadeWyrmBody.DisplayName: Старший Тенезмей
 	RadiantMaster.DisplayName: Лучезарный мастер
 	RadiantMasterDeath.DisplayName: Лучезарный мастер
-	// Scorpion.DisplayName: Scorpion
-	// Wasteland.DisplayName: Wasteland
-	// WastelandDeath.DisplayName: Wasteland
-	// WastelandEgg.DisplayName: Egg
-	// WastelandMinion.DisplayName: Mutated Scorpion
+	Scorpion.DisplayName: Скорпион-мутант
+	Wasteland.DisplayName: Пустошь
+	WastelandDeath.DisplayName: Пустошь
+	WastelandEgg.DisplayName: Яйцо
+	WastelandMinion.DisplayName: Мутировавший скорпион
+	AncientWyrmArms.DisplayName: Древний Змей
+	AncientWyrmBody.DisplayName: Древний Змей
+	AncientWyrmHead.DisplayName: Древний Змей
+	AncientWyrmTail.DisplayName: Древний Змей
+	TheEye.DisplayName: Око
+	AquaticReaper.DisplayName: Аква-жнец
+	Aqueous.DisplayName: Аквеус
+	AqueousMinion1.DisplayName: Миньон Аквеус
+	AqueousMinion2.DisplayName: Миньон Аквеус
 }
 
 Projectiles: {
@@ -2827,7 +2868,8 @@ Projectiles: {
 	AqueousMinionFriendly2.DisplayName: Миньон Аквеус
 	AqueousMinionFriendly3.DisplayName: Миньон Аквеус
 	AqueousMinionFriendly4.DisplayName: Миньон Аквеус
-	WaterballFriendly.DisplayName: Водошар
+	WaterballFriendly.DisplayName: Игроковский водошар
+	Waterball.DisplayName: Водошар
 	BrinyBusterP.DisplayName: Солоноватая попойка
 	BubblePopperP.DisplayName: Проджектайл пузырькострела
 	HighTideP.DisplayName: Проджектайл прилива
@@ -2896,7 +2938,7 @@ Projectiles: {
 	TheSilencerP.DisplayName: Проджектайл глушителя
 	StarstruckArrow.DisplayName: Звездоражённая стрела
 	StarstruckBeam.DisplayName: Звездоражённый луч
-	// Star.DisplayName: Star
+	Star.DisplayName: Звезда
 	BountyP.DisplayName: Проджектайл охоты за сокровищами
 	ScourgeRocketFriendly.DisplayName: Игроковская бичеракета
 	SignalBoost.DisplayName: Усилитель сигнала
@@ -2927,7 +2969,7 @@ Projectiles: {
 	PincerArrow.DisplayName: Скорпионовская стрела
 	ScorpionMinion.DisplayName: Скорпион-миньон
 	WastelandStingerFriendly.DisplayName: Игроковское жало пустоши
-	// WastelandStinger.DisplayName: Wasteland Stinger
+	WastelandStinger.DisplayName: Жало Пустоши
 	AncientStar.DisplayName: Древняя звезда
 	AncientStar2.DisplayName: Древняя звезда2
 	Fireblast.DisplayName: Огневзрыв
@@ -2948,16 +2990,24 @@ Projectiles: {
 	HungryMinion.DisplayName: Голодный-миньон
 	SkeleSkull.DisplayName: Скелечереп
 	SlimeBoosterTrail.DisplayName: Трейл слизеусилителя
-	// AcidAuraBase.DisplayName: Acid Aura
-	// AcidBall.DisplayName: Acid Blob
-	// Shockwave.DisplayName: Shockwave
-	// WastelandDiggingProj.DisplayName: Wasteland
-	// WastelandDiggingProjReal.DisplayName: Wasteland
-	// WastelandDiggingSpout.DisplayName: Wasteland
-	// WastelandDiggingSpoutReal.DisplayName: Wasteland
-	// WastelandDryad.DisplayName: Wasteland Dryad
-	// WastelandSnap.DisplayName: Wasteland's Pincers
-	// WastelandStormBolt.DisplayName: Wasteland
+	AcidAuraBase.DisplayName: База кислотоауры
+	AcidBall.DisplayName: Кислотный шар
+	Shockwave.DisplayName: Ударная волна
+	WastelandDiggingProj.DisplayName: Проджектайл закапывающейся Пустоши
+	WastelandDiggingProjReal.DisplayName: Реальный проджектайл закапывающейся Пустоши
+	WastelandDiggingSpout.DisplayName: Хз, как правильно перевести
+	WastelandDiggingSpoutReal.DisplayName: То же самое, но типа реальное
+	WastelandDryad.DisplayName: Катсцена Дриады и Пустоши
+	WastelandSnap.DisplayName: Кусь
+	WastelandStormBolt.DisplayName: Штормовыстрел Пустоши
+	GuardianShot.DisplayName: Выстрел Стражника
+	WyrmBreath.DisplayName: Дыхание Змия
+	Aquanado.DisplayName: Водонадо
+	AquanadoBolt.DisplayName: Выстрел Водонадо
+	AquaticBlast.DisplayName: Аквавыстрел
+	AquaticBolt.DisplayName: Выстрел Аквеус
+	WaterKnife.DisplayName: Водонож
+	WaterKnifeHoming.DisplayName: Хоумящий водонож
 }
 
 Configs: {
@@ -2976,14 +3026,14 @@ Config: {
 	DisableLabs: Генерация лабораторий
 	StopsLabs: Подземные лаборатории больше не будут спавниться при создании мира
 	DisableBoss: Напоминания о боссах
-	Disablestheeffects: Если они тебя бесят, перестань есть кактус и просто выключи их
+	Disablestheeffects: Если они тебя бесят, перестань есть кактус и просто выключи их, в самом-то деле.
 	ItemChanges: Изменения ванильных предметов
 	vanillaitems: хз, о каких изменениях речь
 	Screenshake: Тряска экрана
 	LowDust: Пониженное количество частиц
 	Reduces: типа лаги должно убирать, а так хз
 	EnterDebug: Режим дебага
-	Shows: и так понятно
+	Shows: и так понятно, что делает
 }
 
 Biomes: {
@@ -3007,12 +3057,16 @@ Keybinds: {
 }
 
 #TODO добавь и на английский также
+#Да без б ваще, ща.
 Bestiary: {
 	Bosses: {
 		VoidLeviathan: Змееобразное чудовище, пришедшее в этот мир прямиком из глубин Пустоты, которого боятся все живые существа Террарии. Оно жаждет любой достаточно сильной души, чтобы ещё больше усилить свою мощь...
 		ElderShadeWyrm: Старший представитель вида Тенезмеев, которые зародились в Пустоте и росли, эволюционировали достаточно долго, чтобы вырасти до настолько огромных размеров и непредсказуемой мощи.
 		RadiantMaster: Всё, что осталось от тех магов, кто поддался воле Лучезарного Дождя - лишь бездушные оболочки их былого величия, единственная цель существования которых теперь состоит лишь в том, чтобы оберегать существование Дождя и дальше.
-		// WastelandBoss: Скорпион, ставший жертвой эксперимента, в котором всё пошло не по плану. Пустошь должна была стать живым оружием, способным уничтожить всё и всех на своём пути, но в итоге энергия, которую вживляли в её тело начала брать контроль над её разумом, заставляя существо сойти с ума.
+		WastelandBoss: Скорпион, ставший жертвой эксперимента, в котором всё пошло не по плану. Пустошь должна была стать живым оружием, способным уничтожить всё и всех на своём пути, но в итоге энергия, которую вживляли в её тело начала брать контроль над её разумом, заставляя существо сойти с ума.
+		TheEye: Одна из двух частей, на которые раскололся Стражник, из-за давления от сосуда энергии, созданного Яхщерами во время битвы с ними. Око - это сосуд, в котором содержатся голос и разум Стражника.
+		AncientWyrm: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
+		AqueousBoss: Теперь всего лишь пустая оболочка былой себя, Аквеус когда-то была одним из сильнейших воинов, когда-либо живших в Террарийском океане. Она служила короне короля морей, мутанта Герцога Рыброна, пока его не убили. И, уж поверь, она точно сделает всё возможное, чтобы отомстить убийце своего короля...
 	}
 
 	Enemies: {
@@ -3111,6 +3165,7 @@ Tooltips: {
 	GreatLens1: Нажав на кнопку специальной способности
 	GreatLens2: игрок прикроется громадной линзой, которая поглощает 20% урона от врагов и их снарядов
 	GreatLens3: Враги получают урон при контакте с игроком, равный их контактному урону
+	AqueousSummon: Пора положить конец твоей тирании, убийца...
 }
 
 AccInfo: {
@@ -3154,18 +3209,23 @@ SetBonus: {
 }
 
 Said: {
-	// Wasteland: Wasteland sinks back into the sand
-	// WastelandDryad: Wait! Stop!
-	// WastelandDryad1: I can handle this!
+	Wasteland: Пустошь укрывается обратно в пески
+	WastelandDryad: Эй, хватит!
+	WastelandDryad1: Дай мне самой уладить ситуацию!
 	VoidLeviathanHead: Так это уже было ведь...
+	Aqueous: Теперь понятно, почему мой король погиб от твоих рук...
+	Aqueous1: С меня хватит! Ты безжалостно убил моего лидера, и я не позволю тебе так же сделать и со мной!
 }
 
 LooTCondition: {
-	AwakenedModeActive: "[c/973999:Эксклюзив Пробуждённого режима]"
+	AwakenedModeActive: "[c/b523d2:Эксклюзив Пробуждённого режима]"
 	ScourgeLootCondition: Шанс дропа 1/3
+	AncientWyrmHeadDeath: Если в битве первым был убит Древний Змей
+	TheEye: Если в битве первым было убито Око
 }
 
-// AwakenedSummonItem: Not consumed in Awakened Mode
+AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
+AwakenedSummonItem: Не расходуется в Пробуждённом режиме
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 
 MyPlayerLocalization: {
@@ -3367,7 +3427,7 @@ MyWorldLocalization: {
 }
 
 # Текста больше но сейчас он не доступен
-// NPCsGLOBALLocalization.NPCsGLOBAL.NoHit.Nohit: No-hit!
+NPCsGLOBALLocalization.NPCsGLOBAL.NoHit.Nohit: Безупречная победа!
 
 AwakenedModeNPCLocalization: {
 	AwakenedModeNPC: {

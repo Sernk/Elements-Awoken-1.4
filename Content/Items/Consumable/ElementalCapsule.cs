@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Items.Materials;
+﻿using CalamityMod.World;
+using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
@@ -49,6 +50,14 @@ namespace ElementsAwoken.Content.Items.Consumable
             }
             return false;
         }
+        //public bool Enabled
+        //{
+        //    get => MyWorld.AwakenedModeEnabled;
+        //    set
+        //    {
+        //        MyWorld.AwakenedModeEnabled = value;
+        //    }
+        //}
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

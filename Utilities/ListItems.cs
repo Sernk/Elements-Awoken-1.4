@@ -72,7 +72,7 @@ namespace ElementsAwoken.Utilities
         #endregion
         #endregion
         #region Boss Summon
-        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>()];
+        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>(), ModContent.ItemType<AncientDragonSummon>(), ModContent.ItemType<AqueousSummon>()];
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

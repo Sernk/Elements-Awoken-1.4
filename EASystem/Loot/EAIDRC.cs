@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Utilities;
+﻿using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
+using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
@@ -131,6 +132,32 @@ namespace ElementsAwoken.EASystem.Loot
                 return false;
             }
             public string GetConditionDescription() => null;
+        }
+        public class DropAncientWyrmHeadDeath : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (!NPC.AnyNPCs(ModContent.NPCType<AncientWyrmHead>()))
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI() => true;
+            public string GetConditionDescription() => ModContent.GetInstance<EALocalization>().AncientWyrmHeadDeath;
+        }
+        public class DropTheEyeDeath : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (!NPC.AnyNPCs(ModContent.NPCType<TheEye>()))
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI() => true;
+            public string GetConditionDescription() => ModContent.GetInstance<EALocalization>().TheEyeCondition;
         }
     }
 }
