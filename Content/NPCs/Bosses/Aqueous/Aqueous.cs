@@ -68,7 +68,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
             NPC.buffImmune[ModContent.BuffType<IceBound>()] = true;
             NPC.buffImmune[ModContent.BuffType<EndlessTears>()] = true;
         }
-
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
             NPC.damage = 90;
@@ -112,7 +111,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
             var EALocalization = ModContent.GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new BossBestiaryInfoElement(),
-                new FlavorTextBestiaryInfoElement(EALocalization.AqueousBoss),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.AqueousBoss"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Ocean,
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Events.Rain,
             });
@@ -191,9 +190,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
             #region Ai 1
             if (NPC.life > NPC.lifeMax * 0.65f)
             {
-                Main.rainTime = 0;
-                Main.raining = false;
-                Main.maxRaining = 0f;
+                Main.StopRain();
 
                 if (NPC.ai[0] > 1500f)
                 {
@@ -238,9 +235,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
             #region Ai 2
             if (NPC.life <= NPC.lifeMax * 0.65f && NPC.life > NPC.lifeMax * 0.3f)
             {
-                Main.rainTime = 0;
-                Main.raining = false;
-                Main.maxRaining = 0f;
+                Main.StopRain();
 
                 float movSpeed = 6f;
                 if (Main.expertMode) movSpeed += 0.05f;
@@ -340,10 +335,10 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
             if (NPC.life <= NPC.lifeMax * 0.3f)
             {
                 //rain
-                Main.rainTime = 600;
-                Main.raining = true;
+                Main.StartRain();
                 Main.maxRaining = 1f;
-                Main.windSpeedTarget = 2.2f;
+                Main.windSpeedTarget = 0.9f;
+
 
                 float movSpeed = 6f;
                 if (Main.expertMode) movSpeed += 0.4f;

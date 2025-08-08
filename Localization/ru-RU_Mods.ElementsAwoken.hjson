@@ -2248,6 +2248,31 @@ Items: {
 			Призывает Аквеус при использовании в Океане
 			'''
 	}
+
+	AzanaSummon: {
+		// DisplayName: Infected Microchip
+		/* Tooltip:
+			'''
+			It gleams with red light
+			Summons Azana on use
+			''' */
+	}
+
+	CosmicObserverSummon: {
+		// DisplayName: Otherworldly Crystal
+		// Tooltip: Increases the spawn chance of the Cosmic Observer for a minute
+	}
+
+	GuardianSummon: {
+		// DisplayName: Ancient Rune
+		/* Tooltip:
+			'''
+			It is covered in dust
+			Not consumable
+			Use at night
+			Summons The Guardian on use
+			''' */
+	}
 }
 
 Tiles: {
@@ -2722,6 +2747,14 @@ NPCs: {
 	Aqueous.DisplayName: Аквеус
 	AqueousMinion1.DisplayName: Миньон Аквеус
 	AqueousMinion2.DisplayName: Миньон Аквеус
+	// Azana.DisplayName: Azana
+	// AzanaEye.DisplayName: Azana
+	// InfectionMouth.DisplayName: Infection Mouth
+	// CosmicObserver.DisplayName: A Cosmic Observer
+	// CosmicObserverHand.DisplayName: Cosmic Observer Hand
+	// GuardianProbe.DisplayName: Temple Guard
+	// TheGuardian.DisplayName: The Guardian
+	// TheGuardianFly.DisplayName: The Guardian
 }
 
 Projectiles: {
@@ -3008,6 +3041,37 @@ Projectiles: {
 	AquaticBolt.DisplayName: Выстрел Аквеус
 	WaterKnife.DisplayName: Водонож
 	WaterKnifeHoming.DisplayName: Хоумящий водонож
+	// AzanaBlood.DisplayName: Azana Blood
+	// AzanaBeam.DisplayName: Chaos Laser
+	// AzanaBeamQuick.DisplayName: Chaos Laser
+	// AzanaCloud.DisplayName: Spore Cloud
+	// AzanaGiantCloud.DisplayName: Spore Cloud
+	// AzanaGlob.DisplayName: Chaos Blast
+	// AzanaInfection.DisplayName: Infection
+	// AzanaInfectionPillar.DisplayName: Infection Pillar
+	// AzanaInfectionPillarTip.DisplayName: Gladiolus
+	// AzanaLaserWarning.DisplayName: Warning
+	// AzanaMiniBlast.DisplayName: Chaos Blast
+	// AzanaMiniBlastAccelerate.DisplayName: Chaos Blast
+	// AzanaMiniBlastSpiral.DisplayName: Chaos Blast
+	// AzanaMiniBlastWave.DisplayName: Chaos Blast
+	// AzanaTarget.DisplayName: Target
+	// AzanaWave.DisplayName: Azana
+	// ObserverBeam.DisplayName: Observer Beam
+	// ObserverFireball.DisplayName: Observer Fireball
+	// ObserverShard.DisplayName: Observer Shard
+	// ObserverSpell.DisplayName: Observer Shard
+	// GuardianBeam.DisplayName: Guardian Beam
+	// GuardianCircle.DisplayName: The Guardian
+	// GuardianFire.DisplayName: Fire
+	// GuardianFireball.DisplayName: The Guardian
+	// GuardianInfernoball.DisplayName: The Guardian
+	// GuardianOrb.DisplayName: The Guardian
+	// GuardianPortal.DisplayName: Temples Vortex
+	// GuardianPortalSwirl.DisplayName: The Guardian
+	// GuardianStickyBolt.DisplayName: Guardian Sticky Bolt
+	// GuardianStrike.DisplayName: The Guardian
+	// GuardianTargeter.DisplayName: The Guardian
 }
 
 Configs: {
@@ -3067,6 +3131,11 @@ Bestiary: {
 		TheEye: Одна из двух частей, на которые раскололся Стражник, из-за давления от сосуда энергии, созданного Яхщерами во время битвы с ними. Око - это сосуд, в котором содержатся голос и разум Стражника.
 		AncientWyrm: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
 		AqueousBoss: Теперь всего лишь пустая оболочка былой себя, Аквеус когда-то была одним из сильнейших воинов, когда-либо живших в Террарийском океане. Она служила короне короля морей, мутанта Герцога Рыброна, пока его не убили. И, уж поверь, она точно сделает всё возможное, чтобы отомстить убийце своего короля...
+		AzanaEyeBestiary: ""
+		AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
+		CosmicObserverBestiary: После падения чудища из плоти в Аду, древняя энергия была выпущена в мир, и какая-то часть этой энергии вселилась в камни, летающие в атмосфере, создавая таким образом космоблюдателей.
+		TheGuardian: ""
+		TheGuardianFly: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
 	}
 
 	Enemies: {
@@ -3215,6 +3284,27 @@ Said: {
 	VoidLeviathanHead: Так это уже было ведь...
 	Aqueous: Теперь понятно, почему мой король погиб от твоих рук...
 	Aqueous1: С меня хватит! Ты безжалостно убил моего лидера, и я не позволю тебе так же сделать и со мной!
+	// AzanaEye: PAKURGH ULURADOK
+	// AzanaEye1: REKAHED PHORLOSPI
+	// Azana: Ah, the spores cannot withstand these godly powers...
+	// Azana1: But nothing satisfies your bloodlust...
+	// Azana2: NEW VESSEL
+	// Azana3: NEKTOZ AXLKA
+	// Azana4: WE HUNGER
+	// Azana5: KROLP UMULEK
+	// Azana6: YOU CAN'T RESIST
+	// Azana7: VAKEZ WAKTI
+	// Azana8: PAIN IS MORTAL
+	// Azana9: XANZE MOAKZ
+	// Azana10: DON'T Hel-p me
+	// Azana11: NOU HEHLP
+	// Azana12: End this...
+	// Azana13: ECHnd it
+	// Azana14: PLEase stop...
+	// Azana15: You're... You're not attacking me?
+	// Azana16: Maybe there is good in you...
+	// Azana17: Salvation...
+	// TheGuardian: This is only the beginning!
 }
 
 LooTCondition: {
@@ -3224,6 +3314,7 @@ LooTCondition: {
 	TheEye: Если в битве первым было убито Око
 }
 
+// AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
 AwakenedSummonItem: Не расходуется в Пробуждённом режиме
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.

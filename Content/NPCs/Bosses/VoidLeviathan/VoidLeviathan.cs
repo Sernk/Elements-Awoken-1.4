@@ -33,7 +33,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             var EALocalization = GetInstance<EALocalization>();
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new BossBestiaryInfoElement(),
-                new FlavorTextBestiaryInfoElement(EALocalization.VoidLeviathan),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.VoidLeviathan"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
             });
         }
@@ -86,8 +86,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {            
             var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
-            var _AwakenedModeEssence = new LeadingConditionRule(new EAIDRC.DropVoidEssenceAwakened());
-            var _AwakenedModeExpert = new LeadingConditionRule(new EAIDRC.DropVoidEssenceExpert());
+            var _AwakenedModeEssence = new LeadingConditionRule(new EAIDRC.DropAwakened());
+            var _AwakenedModeExpert = new LeadingConditionRule(new EAIDRC.DropExpert());
 
             npcLoot.Add(ItemDropRule.OneFromOptions(1, [..ListItems.LeviLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));

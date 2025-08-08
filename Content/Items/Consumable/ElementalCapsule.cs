@@ -1,5 +1,4 @@
-﻿using CalamityMod.World;
-using ElementsAwoken.Content.Items.Materials;
+﻿using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
@@ -39,11 +38,13 @@ namespace ElementsAwoken.Content.Items.Consumable
                 {
                     Main.NewText(EALocalization.ElementalCapsule1, Color.DeepPink);
                     MyWorld.awakenedMode = false;
+                    MyWorld.awakenedModeNoActive = true;
                 }
                 else
                 {
                     Main.NewText(EALocalization.ElementalCapsule2, Color.DeepPink);
                     MyWorld.awakenedMode = true;
+                    MyWorld.awakenedModeNoActive = false;
                 }
                 if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
                 return true;

@@ -9,9 +9,12 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
     public class EABossSummon : GlobalItem
     {
         public bool AwakenedSummonItem = false;
+        public static bool TimeToSummon = false;
+        public static int TimeToSummonNextUses = 0;
         public EABossSummon()
         {
             AwakenedSummonItem = false;
+            TimeToSummonNextUses = 0;
         }
         public override bool InstancePerEntity
         {
@@ -42,9 +45,14 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
             var EALocalization = ModContent.GetInstance<EALocalization>();
+            string Use = $"Можно использовать спустя {TimeToSummonNextUses}";
             if (MyWorld.awakenedMode && AwakenedSummonItem)
             {
                 tooltips.Add(new TooltipLine(Mod, "Elements Awoken:AwakenedTip", EALocalization.AwakenedSummonItem) { OverrideColor = new Color?(new Color(220, 50, Main.DiscoB)) }); //OverrideColor = new Color?(new Color(225, 21, 170))
+                //if (TimeToSummon)
+                //{
+                //    tooltips.Add(new TooltipLine(Mod, "Elements Awoken:AwakenedTip", Use) { OverrideColor = new Color?(new Color(220, 50, Main.DiscoB)) });
+                //}
             }
             else if (!MyWorld.awakenedMode && AwakenedSummonItem)
             {

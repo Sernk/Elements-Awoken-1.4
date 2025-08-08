@@ -127,7 +127,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
             {
-                new FlavorTextBestiaryInfoElement(GetInstance<EALocalization>().WastelandBoss),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.WastelandBoss"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Desert,
             });
         }
@@ -820,7 +820,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
                 Tile tile5 = Main.tile[num170 + NPC.direction, num171 - 1];
                 Tile tile6 = Main.tile[num170 + NPC.direction, num171 + 1];
                 Tile tile7 = Main.tile[num170 - NPC.direction, num171 + 1];
-                Tile tile8 = Main.tile[num170, num171 + 1];
+                //Tile tile8 = Main.tile[num170, num171 + 1];
                 if (Main.tile[num170, num171] == null)
                 {
                     tile1 = new Tile();
@@ -853,7 +853,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
                 {
                     tile7 = new Tile();
                 }
-                tile8.IsHalfBlock = true; // ???
+                //tile8.IsHalfBlock = true; // ???
                 if ((Main.tile[num170, num171 - 1].HasUnactuatedTile && (Main.tile[num170, num171 - 1].TileType == 10 || Main.tile[num170, num171 - 1].TileType == 388)) & flag5)
                 {
                     NPC.ai[2] += 1f;

@@ -29,6 +29,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.WorldBuilding;
+using static ElementsAwoken.EASystem.Loot.EAIDRC;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken
@@ -36,6 +37,7 @@ namespace ElementsAwoken
     public class MyWorld : ModSystem, ILocalizedModType
     {
         public string LocalizationCategory => "MyWorldLocalization";
+        public static bool awakenedModeNoActive = true;
         public static bool awakenedMode = false;
         public static bool credits = false;
         public static int creditsCounter = 0;
@@ -176,12 +178,20 @@ namespace ElementsAwoken
             {
                 tag["awakenedMode"] = true;
             }
+            if (awakenedModeNoActive)
+            {
+                tag["awakenedModeNoActive"] = true;
+            }
         }
         public override void SaveWorldData(TagCompound tag)
         {
             if (awakenedMode)
             {
                 tag["awakenedMode"] = awakenedMode;
+            }
+            if (awakenedModeNoActive)
+            {
+                tag["awakenedModeNoActive"] = awakenedModeNoActive;
             }
             tag["downedInfernace"] = downedInfernace;
             tag["downedScourgeFighter"] = downedScourgeFighter;
@@ -234,6 +244,7 @@ namespace ElementsAwoken
         }
         public override void LoadWorldData(TagCompound tag)
         {
+            awakenedModeNoActive= tag.GetBool("awakenedModeNoActive");
             awakenedMode = tag.GetBool("awakenedMode");
             downedInfernace = tag.GetBool("downedInfernace");
             downedAqueous = tag.GetBool("downedAqueous");

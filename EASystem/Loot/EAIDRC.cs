@@ -93,7 +93,7 @@ namespace ElementsAwoken.EASystem.Loot
             }
             public string GetConditionDescription() => null;
         }
-        public class DropVoidEssenceExpert : IItemDropRuleCondition
+        public class DropExpert : IItemDropRuleCondition
         {
             public bool CanDrop(DropAttemptInfo info)
             {
@@ -113,7 +113,7 @@ namespace ElementsAwoken.EASystem.Loot
             }
             public string GetConditionDescription() => null;
         }
-        public class DropVoidEssenceAwakened : IItemDropRuleCondition
+        public class DropAwakened : IItemDropRuleCondition
         {
             public bool CanDrop(DropAttemptInfo info)
             {
@@ -126,6 +126,26 @@ namespace ElementsAwoken.EASystem.Loot
             public bool CanShowItemDropInUI()
             {
                 if (MyWorld.awakenedMode)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public string GetConditionDescription() => null;
+        }
+        public class DropNormal : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (Main.expertMode == false)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI()
+            {
+                if (Main.expertMode == false)
                 {
                     return true;
                 }

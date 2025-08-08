@@ -95,7 +95,7 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
             {
-                new FlavorTextBestiaryInfoElement(GetInstance<EALocalization>().RadiantMaster),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheHallow,
             });
         }

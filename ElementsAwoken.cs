@@ -113,6 +113,7 @@ namespace ElementsAwoken
             armorAbility = KeybindLoader.RegisterKeybind(this, "Armor Ability", "X");
             dash2 = KeybindLoader.RegisterKeybind(this, "Secondary Dash", "F");
             ASBT = KeybindLoader.RegisterKeybind(this, "Armor Set Bonus ToolTips", "Q");
+            MyWorld.awakenedModeNoActive = true;
             if (!Main.dedServ)
             {
                 Filters.Scene["ElementsAwoken:VoidLeviathanHead"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);
@@ -326,6 +327,10 @@ namespace ElementsAwoken
             //instakillImmune.Add(ModContent.NPCType<VolcanoxHook>());
             //instakillImmune.Add(ModContent.NPCType<VolcanoxTentacle>());
             #endregion
+        }
+        public override void Unload()
+        {
+            MyWorld.awakenedModeNoActive = false;
         }
         public static bool prevMenuState;
         public static void Update()

@@ -43,7 +43,7 @@ namespace ElementsAwoken.Content.NPCs.Critters
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
             {
-                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().MysticBunny),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheHallow,
             });
         }

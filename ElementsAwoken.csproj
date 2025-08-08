@@ -16,6 +16,7 @@
 	  </Reference>
 	</ItemGroup>
 	<ItemGroup>
+	  <Folder Include="Content\Items\BossSummons\SummonProj\" />
 	  <Folder Include="Content\Projectiles\Pets\BreathOfDarkness\" />
 	</ItemGroup>
 

@@ -2234,6 +2234,31 @@ Items: {
 			Summons Aqueous on use
 			'''
 	}
+
+	AzanaSummon: {
+		DisplayName: Infected Microchip
+		Tooltip:
+			'''
+			It gleams with red light
+			Summons Azana on use
+			'''
+	}
+
+	CosmicObserverSummon: {
+		DisplayName: Otherworldly Crystal
+		Tooltip: Increases the spawn chance of the Cosmic Observer for a minute
+	}
+
+	GuardianSummon: {
+		DisplayName: Ancient Rune
+		Tooltip:
+			'''
+			It is covered in dust
+			Not consumable
+			Use at night
+			Summons The Guardian on use
+			'''
+	}
 }
 
 Tiles: {
@@ -2708,6 +2733,14 @@ NPCs: {
 	Aqueous.DisplayName: Aqueous
 	AqueousMinion1.DisplayName: Aqueous Minion
 	AqueousMinion2.DisplayName: Aqueous Minion
+	Azana.DisplayName: Azana
+	AzanaEye.DisplayName: Azana
+	InfectionMouth.DisplayName: Infection Mouth
+	CosmicObserver.DisplayName: A Cosmic Observer
+	CosmicObserverHand.DisplayName: Cosmic Observer Hand
+	GuardianProbe.DisplayName: Temple Guard
+	TheGuardian.DisplayName: The Guardian
+	TheGuardianFly.DisplayName: The Guardian
 }
 
 Projectiles: {
@@ -2994,6 +3027,37 @@ Projectiles: {
 	AquaticBolt.DisplayName: Aqueous
 	WaterKnife.DisplayName: Aqueous
 	WaterKnifeHoming.DisplayName: Aqueous
+	AzanaBlood.DisplayName: Azana Blood
+	AzanaBeam.DisplayName: Chaos Laser
+	AzanaBeamQuick.DisplayName: Chaos Laser
+	AzanaCloud.DisplayName: Spore Cloud
+	AzanaGiantCloud.DisplayName: Spore Cloud
+	AzanaGlob.DisplayName: Chaos Blast
+	AzanaInfection.DisplayName: Infection
+	AzanaInfectionPillar.DisplayName: Infection Pillar
+	AzanaInfectionPillarTip.DisplayName: Gladiolus
+	AzanaLaserWarning.DisplayName: Warning
+	AzanaMiniBlast.DisplayName: Chaos Blast
+	AzanaMiniBlastAccelerate.DisplayName: Chaos Blast
+	AzanaMiniBlastSpiral.DisplayName: Chaos Blast
+	AzanaMiniBlastWave.DisplayName: Chaos Blast
+	AzanaTarget.DisplayName: Target
+	AzanaWave.DisplayName: Azana
+	ObserverBeam.DisplayName: Observer Beam
+	ObserverFireball.DisplayName: Observer Fireball
+	ObserverShard.DisplayName: Observer Shard
+	ObserverSpell.DisplayName: Observer Shard
+	GuardianBeam.DisplayName: Guardian Beam
+	GuardianCircle.DisplayName: The Guardian
+	GuardianFire.DisplayName: Fire
+	GuardianFireball.DisplayName: The Guardian
+	GuardianInfernoball.DisplayName: The Guardian
+	GuardianOrb.DisplayName: The Guardian
+	GuardianPortal.DisplayName: Temples Vortex
+	GuardianPortalSwirl.DisplayName: The Guardian
+	GuardianStickyBolt.DisplayName: Guardian Sticky Bolt
+	GuardianStrike.DisplayName: The Guardian
+	GuardianTargeter.DisplayName: The Guardian
 }
 
 Configs: {
@@ -3053,6 +3117,11 @@ Bestiary: {
 		TheEye: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Eye is imbued with the Guardian's mind and voice.
 		AncientWyrm: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Wyrm represents the Guardian's destructive nature.
 		AqueousBoss: Now merely a shell of her former self, Aqueous once was one of the mightiest warriors to ever live in the Terran ocean, serving to the crown of the Sea King, the mutant known as Duke Fishron, before its murder. Rest assured, she will do whatever it takes to strike down whoever had slain her King...
+		AzanaEyeBestiary: ""
+		AzanaBestiary: ""
+		CosmicObserverBestiary: ""
+		TheGuardian: ""
+		TheGuardianFly: ""
 	}
 
 	Enemies: {
@@ -3200,6 +3269,27 @@ Said: {
 	VoidLeviathanHead: Infection overcomes the world...
 	Aqueous: I understand why my king perished at your hands...
 	Aqueous1: Enough! You destroyed my lord, I will not let you cast the same fate upon me!
+	AzanaEye: PAKURGH ULURADOK
+	AzanaEye1: REKAHED PHORLOSPI
+	Azana: Ah, the spores cannot withstand these godly powers...
+	Azana1: But nothing satisfies your bloodlust...
+	Azana2: NEW VESSEL
+	Azana3: NEKTOZ AXLKA
+	Azana4: WE HUNGER
+	Azana5: KROLP UMULEK
+	Azana6: YOU CAN'T RESIST
+	Azana7: VAKEZ WAKTI
+	Azana8: PAIN IS MORTAL
+	Azana9: XANZE MOAKZ
+	Azana10: DON'T Hel-p me
+	Azana11: NOU HEHLP
+	Azana12: End this...
+	Azana13: ECHnd it
+	Azana14: PLEase stop...
+	Azana15: You're... You're not attacking me?
+	Azana16: Maybe there is good in you...
+	Azana17: Salvation...
+	TheGuardian: This is only the beginning!
 }
 
 LooTCondition: {
@@ -3209,6 +3299,7 @@ LooTCondition: {
 	TheEye: if The Eye was killed first
 }
 
+AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
 AwakenedMode: "[c/973999:Awakened Mode Active]"
 AwakenedSummonItem: Not consumed in Awakened Mode
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)

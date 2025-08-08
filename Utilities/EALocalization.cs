@@ -7,12 +7,16 @@ namespace ElementsAwoken.Utilities
     {
         #region Bestiary
         public string WastelandBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.WastelandBoss");
+        public string CosmicObserverBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.CosmicObserverBestiary");
         public string AqueousBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AqueousBoss");
         public string TheEye => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheEye");
         public string AncientWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AncientWyrm");
+        public string TheGuardianFly => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheGuardianFly");
         public string VoidLeviathan => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VoidLeviathan");
         public string ElderShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ElderShadeWyrm");
         public string RadiantMaster => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster");
+        public string AzanaEyeBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaEyeBestiary");
+        public string AzanaBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaBestiary");
         public string Scorpion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion");
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
         public string MysticBunny => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny");
@@ -122,7 +126,28 @@ namespace ElementsAwoken.Utilities
         public string WastelandDryad1 => Language.GetTextValue("Mods.ElementsAwoken.Said.WastelandDryad1");
         public string Aqueous => Language.GetTextValue("Mods.ElementsAwoken.Said.Aqueous");
         public string Aqueous1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Aqueous1");
+        public string TheGuardian => Language.GetTextValue("Mods.ElementsAwoken.Said.TheGuardian");
         public string VoidLeviathanHead => Language.GetTextValue("Mods.ElementsAwoken.Said.VoidLeviathanHead");
+        public string AzanaEye => Language.GetTextValue("Mods.ElementsAwoken.Said.AzanaEye");
+        public string AzanaEye1 => Language.GetTextValue("Mods.ElementsAwoken.Said.AzanaEye1");
+        public string Azana => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana");
+        public string Azana1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana1");
+        public string Azana2 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana2");
+        public string Azana3 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana3");
+        public string Azana4 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana4");
+        public string Azana5 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana5");
+        public string Azana6 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana6");
+        public string Azana7 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana7");
+        public string Azana8 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana8");
+        public string Azana9 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana9");
+        public string Azana10 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana10");
+        public string Azana11 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana11");
+        public string Azana12 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana12");
+        public string Azana13 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana13");
+        public string Azana14 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana14");
+        public string Azana15 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana15");
+        public string Azana16 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana16");
+        public string Azana17 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana17");
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");
@@ -143,6 +168,7 @@ namespace ElementsAwoken.Utilities
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");
         public string AwakenedSummonItem => Language.GetTextValue("Mods.ElementsAwoken.AwakenedSummonItem");
         public string AwakenedMode => Language.GetTextValue("Mods.ElementsAwoken.AwakenedMode");
+        public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         #endregion
     }
 }

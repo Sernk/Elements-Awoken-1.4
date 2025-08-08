@@ -52,7 +52,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
             {
-                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().Scorpion),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Desert,
             });
         }

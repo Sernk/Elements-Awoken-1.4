@@ -71,7 +71,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         {
             bestiaryEntry.Info.AddRange(
             [
-                new FlavorTextBestiaryInfoElement(ModContent.GetInstance<EALocalization>().AncientWyrm),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.AncientWyrm"),
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Times.NightTime,
             ]);

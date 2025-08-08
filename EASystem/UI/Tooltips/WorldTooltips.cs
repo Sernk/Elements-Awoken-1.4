@@ -1,11 +1,9 @@
-﻿using ElementsAwoken.Utilities;
-using Luminance.Core.MenuInfoUI;
+﻿using Luminance.Core.MenuInfoUI;
 using System.Collections.Generic;
-using Terraria.ModLoader;
 
 namespace ElementsAwoken.EASystem.UI.Tooltips
 {
-    public class WoroldTooltips : InfoUIManager
+    public class WorldTooltips : InfoUIManager
     {
         public override IEnumerable<WorldInfoIcon> GetWorldInfoIcons()
         {
@@ -15,6 +13,12 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
                 if (!Dota2.TryGetHeaderData<MyWorld>(out var tag))
                     return false;
                 return tag.ContainsKey("awakenedMode");
+            }, 1);
+            yield return new WorldInfoIcon("ElementsAwoken/icon_small_grayscale", "Mods.ElementsAwoken.AwakenedModeNotActive", Dota =>
+            {
+                if (!Dota.TryGetHeaderData<MyWorld>(out var tag))
+                    return false;
+                return tag.ContainsKey("awakenedModeNoActive");
             }, 1);
         }
     }
