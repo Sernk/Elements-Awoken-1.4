@@ -2259,6 +2259,15 @@ Items: {
 			Summons The Guardian on use
 			'''
 	}
+
+	InfernaceSummon: {
+		DisplayName: Fire Core
+		Tooltip:
+			'''
+			It radiates a burning heat
+			Summons Infernace on use
+			'''
+	}
 }
 
 Tiles: {
@@ -2741,6 +2750,13 @@ NPCs: {
 	GuardianProbe.DisplayName: Temple Guard
 	TheGuardian.DisplayName: The Guardian
 	TheGuardianFly.DisplayName: The Guardian
+	Furosia.DisplayName: Furosia
+	HealingHearth.DisplayName: Healing Hearth
+	Infernace.DisplayName: Infernace
+	RockLarge.DisplayName: Rock
+	RockMedium.DisplayName: Rock
+	RockSmall.DisplayName: Rock
+	InfernaceSpawner.DisplayName: Infernace's Guardian
 }
 
 Projectiles: {
@@ -3058,6 +3074,15 @@ Projectiles: {
 	GuardianStickyBolt.DisplayName: Guardian Sticky Bolt
 	GuardianStrike.DisplayName: The Guardian
 	GuardianTargeter.DisplayName: The Guardian
+	FurosiaSoul.DisplayName: Daughteru?
+	FurosiaSpike.DisplayName: Infernace
+	InfernaceFire.DisplayName: Fire
+	InfernaceSoul.DisplayName: Husbando
+	InfernaceWifeSoul.DisplayName: Waifu
+	InfernalMonolith.DisplayName: Infernal Monolith
+	InfernalMonolithSpawn.DisplayName: IInfernal Monolith
+	InfernaceSpike.DisplayName: Infernace
+	InfernaceWave.DisplayName: Infernace
 }
 
 Configs: {
@@ -3122,11 +3147,13 @@ Bestiary: {
 		CosmicObserverBestiary: ""
 		TheGuardian: ""
 		TheGuardianFly: ""
+		InfernaceBestiary: ""
 	}
 
 	Enemies: {
 		Scorpion: This specimen of already unusually venomous desert scorpions was used in an experiment in order to turn it into a living weapon. Unleashing one in the sands of the desert might have detrimental consequences...
 		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
+		Furosia: ""
 	}
 
 	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
@@ -3220,6 +3247,7 @@ Tooltips: {
 	GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
 	GreatLens3: If the player is hit by an enemy the damage is reflected to them
 	AqueousSummon: Time for your reign to end, murderer
+	InfernaceSummon: You arrive, at last.
 }
 
 AccInfo: {
@@ -3290,6 +3318,13 @@ Said: {
 	Azana16: Maybe there is good in you...
 	Azana17: Salvation...
 	TheGuardian: This is only the beginning!
+	Infernace: I will kill you in my dying breaths!
+	Infernace1: Furosia, help me rid of this pest!
+	Infernace2: My daughter... I will be your downfall, monster!
+	InfernaceWifeSoul: Welcome home...
+	InfernaceWifeSoul1: It's been a while.
+	InfernaceWifeSoul2: I'm sorry it had to end this way.
+	InfernaceWifeSoul3: Be safe, Furosia
 }
 
 LooTCondition: {

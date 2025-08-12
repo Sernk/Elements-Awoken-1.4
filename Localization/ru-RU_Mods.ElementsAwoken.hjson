@@ -145,7 +145,7 @@ Items: {
 
 	VolcanicStone: {
 		DisplayName: Вулканический камень
-		Tooltip: Эти камни, судя по всему, пылают постоянно
+		Tooltip: Эти камни, судя по всему, никогда не остывают
 	}
 
 	ElementalCapsule: {
@@ -155,14 +155,14 @@ Items: {
 			Всевозможная сила изгибается вокруг этой капсулы...
 			Может быть использована только в режиме Эксперт
 			Используй только в том случае, если любишь страдать
-			Включает [c/f442aa:Пробуждённый Режим] и Здравомыслие [i:ElementsAwoken/SanityChanger]
+			Включает [c/f442aa:Пробуждённый режим] и Здравомыслие [i:ElementsAwoken/SanityChanger]
 			Здоровье, наносимый урон и защита у всех врагов увеличены на 75%
 			Боссы получают новый, усиленный ИИ и увеличенные статы
 			'''
 	}
 
 	MysteriousPotion: {
-		DisplayName: Диковинное зелье
+		DisplayName: Загадочное зелье
 		Tooltip: Какое же оно вонючее
 	}
 
@@ -249,7 +249,7 @@ Items: {
 
 	Computer: {
 		DisplayName: Компьютер
-		Tooltip: Бип-буп
+		Tooltip: Удивительно, что он ещё работает.
 	}
 
 	AncientsDrive: {
@@ -690,7 +690,7 @@ Items: {
 		Tooltip:
 			'''
 			Чем меньше у тебя остаётся здоровья, тем меньше урона ты получаешь
-			Дополнительно даёт 5 защиты
+			Даёт 5 защиты
 			'''
 	}
 
@@ -707,12 +707,12 @@ Items: {
 
 	PrismPolish: {
 		DisplayName: Полироль для призмы
-		Tooltip: Последняя призма заряжается быстрее
+		Tooltip: Заставляет последнюю призму заряжаться быстрее
 	}
 
 	RainMeter: {
 		DisplayName: Дождемер
-		Tooltip: Показывает, как долго ещё будет идти дождь или Лучезарный Дождь
+		Tooltip: Показывает, как долго ещё будет идти дождь или Лучезарный дождь
 	}
 
 	RingOfReplenishment: {
@@ -803,7 +803,7 @@ Items: {
 
 	ChaoticFlare: {
 		DisplayName: Хаоспышка
-		Tooltip: Просто держа её в руках, у тебя болит всё тело...
+		Tooltip: Просто держа её в руках, у тебя начинает болеть всё тело...
 	}
 
 	ChaoticCrucible: {
@@ -930,22 +930,31 @@ Items: {
 
 	LamentI: {
 		DisplayName: Стенание I
-		Tooltip: У них и в оригинале не было тултипа, хз что оно делает.
+		Tooltip: Выпускает энергетический снаряд
 	}
 
 	LamentII: {
 		DisplayName: Стенание II
-		Tooltip: У них и в оригинале не было тултипа, хз что оно делает.
+		Tooltip: Выпускает энергетический снаряд, создающий взрывы при контакте с врагами или блоками
 	}
 
 	LamentIII: {
 		DisplayName: Стенание III
-		Tooltip: У них и в оригинале не было тултипа, хз что оно делает.
+		Tooltip:
+			'''
+			Выпускает энергетический снаряд, оставляющий позади себя взрывы
+			При каждой пятой атаке выстреливает либо волной, либо пронзающим снарядом
+			'''
 	}
 
 	LamentIV: {
 		DisplayName: Стенание IV
-		Tooltip: У них и в оригинале не было тултипа, хз что оно делает.
+		Tooltip:
+			'''
+			Выпускает энергетический снаряд, оставляющий позади себя взрывы
+			При каждой пятой атаке выстреливает волной
+			При каждой третьей атаке выстреливает сверхпронзающим снарядом
+			'''
 	}
 
 	AxolotlMask: {
@@ -1125,7 +1134,7 @@ Items: {
 
 	EndlessAbyssBlaster: {
 		DisplayName: Миномёт пустингулярности
-		Tooltip: Стреляет ракетами, наверное, хз...
+		Tooltip: Создаёт пустотный портал там, где находится курсор. Всего может существовать только 3 таких портала.
 	}
 
 	ExtinctionBow: {
@@ -1140,22 +1149,22 @@ Items: {
 
 	LightsAffliction: {
 		DisplayName: Скорбь света
-		Tooltip: У него спрайт самого флейла всё ещё старый...
+		Tooltip: Имеет шанс взорвать врага при ударе, также накладывает дебафф "Заклятье вымирания"
 	}
 
 	PikeOfEternalDespair: {
 		DisplayName: Пика вечнотчаянья
-		Tooltip: щука вечного отчаяния.
+		Tooltip: Выпускает проходящий сквозь стены и пронзающий врагов снаряд Вечного отчаяния
 	}
 
 	Reaperstorm: {
 		DisplayName: Жнеце-буря
-		Tooltip: Да прольётся с небес погибель, аки град!
+		Tooltip: Да прольётся же с небес погибель, аки град!
 	}
 
 	VoidInferno: {
 		DisplayName: Пеклостота
-		Tooltip: а чё, название в оригинале тоже какое-то бредовое, если подумать
+		Tooltip: При ударе накладывает на врагов дебафф "Заклятье вымирания"
 	}
 
 	VoidLeviathanMask: {
@@ -1165,7 +1174,15 @@ Items: {
 
 	VoidLeviathansAegis: {
 		DisplayName: Эгида Левиафана Пустоты
-		Tooltip: ещё один старый спрайт...
+		Tooltip:
+			'''
+			Увеличивает максимальное здоровье на 50
+			Если у игрока ниже 50% от максимального здоровья, защита увеличивается на 5%
+			Позволяет совершать вторичный рывок
+			После получения 500 урона, игрок получает на 15 секунд следующее:
+			Увеличенную на 40% скорость передвижения
+			Увеличенный на 20% весь урон
+			'''
 	}
 
 	VoidWalkersGreatmask: {
@@ -1263,7 +1280,7 @@ Items: {
 
 	EpicHealingPotion: {
 		DisplayName: Мегалечащее зелье
-		Tooltip: в любом более-менее крупном моде должно быть хоть одно такое, это обязательный троп террарийского моддинга.
+		Tooltip: В любом более-менее крупном моде должно быть хоть одно такое, это обязательный троп террарийского моддинга.
 	}
 
 	Chromacast: {
@@ -1341,7 +1358,7 @@ Items: {
 
 	TheWave: {
 		DisplayName: Перелив
-		Tooltip: до толчка не добежал, походу
+		Tooltip: Стреляет пузырьками
 	}
 
 	Varee: {
@@ -1371,7 +1388,7 @@ Items: {
 
 	Transistor: {
 		DisplayName: Транзистор
-		Tooltip: ""
+		Tooltip: мне по кайфу вставлять отсебятину. жаль только потом её всю придётся удалить...
 	}
 
 	Anarchy: {
@@ -1420,7 +1437,7 @@ Items: {
 
 	GleamOfAnnhialation: {
 		DisplayName: Заразный блеск
-		Tooltip: как блеск может быть заразным вообще?
+		Tooltip: у этой хуйни даже на вики описания нет...
 	}
 
 	InfectionHeart: {
@@ -1435,12 +1452,12 @@ Items: {
 
 	Pandemonium: {
 		DisplayName: Пандемоний
-		Tooltip: ""
+		Tooltip: Выпускает снаряды, распадающиеся на хаотическую энергию при контакте со врагами или блоками
 	}
 
 	PurgeRifle: {
 		DisplayName: Ускоритель Хаотронных частиц
-		Tooltip: ""
+		Tooltip: снова нет описания даже на вики...
 	}
 
 	RingOfChaos: {
@@ -1465,7 +1482,7 @@ Items: {
 
 	CosmicCrusher: {
 		DisplayName: Космический крушитель
-		Tooltip: ""
+		Tooltip: Стреляет пятью сгустками космической энергии при взмахе
 	}
 
 	CosmicShard: {
@@ -1498,7 +1515,7 @@ Items: {
 
 	EnergyFork: {
 		DisplayName: Энерговилы
-		Tooltip: ""
+		Tooltip: Запускает энергетические вилы, которые при ударе по врагу создают копии себя сверху и снизу
 	}
 
 	OrionsBelt: {
@@ -1508,7 +1525,7 @@ Items: {
 
 	PlanetaryWave: {
 		DisplayName: Планетная волна
-		Tooltip: ""
+		Tooltip: Создаёт портал над игроком, который стреляет потоком планетарных шипов в точку курсора
 	}
 
 	CosmicalusVisor: {
@@ -2250,27 +2267,36 @@ Items: {
 	}
 
 	AzanaSummon: {
-		// DisplayName: Infected Microchip
-		/* Tooltip:
+		DisplayName: Заражённый микрочип
+		Tooltip:
 			'''
-			It gleams with red light
-			Summons Azana on use
-			''' */
+			Излучает зловещий красный цвет
+			Призывает Азану при использовании
+			'''
 	}
 
 	CosmicObserverSummon: {
-		// DisplayName: Otherworldly Crystal
-		// Tooltip: Increases the spawn chance of the Cosmic Observer for a minute
+		DisplayName: Внеземной кристалл
+		Tooltip: На одну минуту увеличивает шанс спавна Космоблюдателя
 	}
 
 	GuardianSummon: {
-		// DisplayName: Ancient Rune
+		DisplayName: Древняя руна
+		Tooltip:
+			'''
+			Покрыта слоями древней пыли
+			Не расходуется
+			Может быть использована только ночью
+			Призывает Стражника при использовании
+			'''
+	}
+
+	InfernaceSummon: {
+		// DisplayName: Fire Core
 		/* Tooltip:
 			'''
-			It is covered in dust
-			Not consumable
-			Use at night
-			Summons The Guardian on use
+			It radiates a burning heat
+			Summons Infernace on use
 			''' */
 	}
 }
@@ -2747,14 +2773,21 @@ NPCs: {
 	Aqueous.DisplayName: Аквеус
 	AqueousMinion1.DisplayName: Миньон Аквеус
 	AqueousMinion2.DisplayName: Миньон Аквеус
-	// Azana.DisplayName: Azana
-	// AzanaEye.DisplayName: Azana
-	// InfectionMouth.DisplayName: Infection Mouth
-	// CosmicObserver.DisplayName: A Cosmic Observer
-	// CosmicObserverHand.DisplayName: Cosmic Observer Hand
-	// GuardianProbe.DisplayName: Temple Guard
-	// TheGuardian.DisplayName: The Guardian
-	// TheGuardianFly.DisplayName: The Guardian
+	Azana.DisplayName: Азана
+	AzanaEye.DisplayName: Азана
+	InfectionMouth.DisplayName: Уста инфекции
+	CosmicObserver.DisplayName: Космоблюдатель
+	CosmicObserverHand.DisplayName: Длань Космоблюдателя
+	GuardianProbe.DisplayName: Храмовый Страж
+	TheGuardian.DisplayName: Стражник
+	TheGuardianFly.DisplayName: Стражник
+	// Furosia.DisplayName: Furosia
+	// HealingHearth.DisplayName: Healing Hearth
+	// Infernace.DisplayName: Infernace
+	// RockLarge.DisplayName: Rock
+	// RockMedium.DisplayName: Rock
+	// RockSmall.DisplayName: Rock
+	// InfernaceSpawner.DisplayName: Infernace's Guardian
 }
 
 Projectiles: {
@@ -3041,43 +3074,52 @@ Projectiles: {
 	AquaticBolt.DisplayName: Выстрел Аквеус
 	WaterKnife.DisplayName: Водонож
 	WaterKnifeHoming.DisplayName: Хоумящий водонож
-	// AzanaBlood.DisplayName: Azana Blood
-	// AzanaBeam.DisplayName: Chaos Laser
-	// AzanaBeamQuick.DisplayName: Chaos Laser
-	// AzanaCloud.DisplayName: Spore Cloud
-	// AzanaGiantCloud.DisplayName: Spore Cloud
-	// AzanaGlob.DisplayName: Chaos Blast
-	// AzanaInfection.DisplayName: Infection
-	// AzanaInfectionPillar.DisplayName: Infection Pillar
-	// AzanaInfectionPillarTip.DisplayName: Gladiolus
-	// AzanaLaserWarning.DisplayName: Warning
-	// AzanaMiniBlast.DisplayName: Chaos Blast
-	// AzanaMiniBlastAccelerate.DisplayName: Chaos Blast
-	// AzanaMiniBlastSpiral.DisplayName: Chaos Blast
-	// AzanaMiniBlastWave.DisplayName: Chaos Blast
-	// AzanaTarget.DisplayName: Target
-	// AzanaWave.DisplayName: Azana
-	// ObserverBeam.DisplayName: Observer Beam
-	// ObserverFireball.DisplayName: Observer Fireball
-	// ObserverShard.DisplayName: Observer Shard
-	// ObserverSpell.DisplayName: Observer Shard
-	// GuardianBeam.DisplayName: Guardian Beam
-	// GuardianCircle.DisplayName: The Guardian
-	// GuardianFire.DisplayName: Fire
-	// GuardianFireball.DisplayName: The Guardian
-	// GuardianInfernoball.DisplayName: The Guardian
-	// GuardianOrb.DisplayName: The Guardian
-	// GuardianPortal.DisplayName: Temples Vortex
-	// GuardianPortalSwirl.DisplayName: The Guardian
-	// GuardianStickyBolt.DisplayName: Guardian Sticky Bolt
-	// GuardianStrike.DisplayName: The Guardian
-	// GuardianTargeter.DisplayName: The Guardian
+	AzanaBlood.DisplayName: Кровь Азаны
+	AzanaBeam.DisplayName: Луч Азаны
+	AzanaBeamQuick.DisplayName: Быстролуч Азаны
+	AzanaCloud.DisplayName: Облако Азаны
+	AzanaGiantCloud.DisplayName: Огромное облако Азаны
+	AzanaGlob.DisplayName: Плевок Азаны
+	AzanaInfection.DisplayName: Инфекция Азаны
+	AzanaInfectionPillar.DisplayName: Столб инфекции
+	AzanaInfectionPillarTip.DisplayName: Потому, что гладиолус
+	AzanaLaserWarning.DisplayName: Телеграф лазера
+	AzanaMiniBlast.DisplayName: Хаовыстрел
+	AzanaMiniBlastAccelerate.DisplayName: Ускоряющийся минивыстрел Азаны
+	AzanaMiniBlastSpiral.DisplayName: Спиральный минивыстрел Азаны
+	AzanaMiniBlastWave.DisplayName: Волна минивыстрела Азаны
+	AzanaTarget.DisplayName: Цель Азаны
+	AzanaWave.DisplayName: Волна Азаны
+	ObserverBeam.DisplayName: Луч наблюдателя
+	ObserverFireball.DisplayName: Огнешар наблюдателя
+	ObserverShard.DisplayName: Осколок наблюдателя
+	ObserverSpell.DisplayName: Заклинание наблюдателя
+	GuardianBeam.DisplayName: Луч Стражника
+	GuardianCircle.DisplayName: Круг Стражника
+	GuardianFire.DisplayName: Огонь Стражника
+	GuardianFireball.DisplayName: Огнешар Стражника
+	GuardianInfernoball.DisplayName: Адошар Стражника
+	GuardianOrb.DisplayName: Сфера Стражника
+	GuardianPortal.DisplayName: Портал Стражника
+	GuardianPortalSwirl.DisplayName: Вихрь портала Стражника
+	GuardianStickyBolt.DisplayName: Липкий выстрел Стражника
+	GuardianStrike.DisplayName: Выстрел Стражника
+	GuardianTargeter.DisplayName: Целящийся Стражника
+	// FurosiaSoul.DisplayName: Daughteru?
+	// FurosiaSpike.DisplayName: Infernace
+	// InfernaceFire.DisplayName: Fire
+	// InfernaceSoul.DisplayName: Husbando
+	// InfernaceWifeSoul.DisplayName: Waifu
+	// InfernalMonolith.DisplayName: Infernal Monolith
+	// InfernalMonolithSpawn.DisplayName: IInfernal Monolith
+	// InfernaceSpike.DisplayName: Infernace
+	// InfernaceWave.DisplayName: Infernace
 }
 
 Configs: {
 	Config: {
 		DisplayName: Конфиг
-		screenshakeDisabled.Tooltip: ""
+		screenshakeDisabled.Tooltip: Полностью выключает эффект тряски экрана, например, при использовании некоторых оружий
 	}
 }
 
@@ -3117,7 +3159,7 @@ Keybinds: {
 	"Special Ability.DisplayName": Спецвозможность
 	"Armor Ability.DisplayName": Возможность брони
 	"Secondary Dash.DisplayName": Вторичный рывок
-	"Armor Set Bonus ToolTips.DisplayName": Тултип сет бонуса брони
+	"Armor Set Bonus ToolTips.DisplayName": Просмотр сет бонуса брони
 }
 
 #TODO добавь и на английский также
@@ -3131,16 +3173,18 @@ Bestiary: {
 		TheEye: Одна из двух частей, на которые раскололся Стражник, из-за давления от сосуда энергии, созданного Яхщерами во время битвы с ними. Око - это сосуд, в котором содержатся голос и разум Стражника.
 		AncientWyrm: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
 		AqueousBoss: Теперь всего лишь пустая оболочка былой себя, Аквеус когда-то была одним из сильнейших воинов, когда-либо живших в Террарийском океане. Она служила короне короля морей, мутанта Герцога Рыброна, пока его не убили. И, уж поверь, она точно сделает всё возможное, чтобы отомстить убийце своего короля...
-		AzanaEyeBestiary: ""
-		AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
+		AzanaEyeBestiary: AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
+		// AzanaBestiary: ""
 		CosmicObserverBestiary: После падения чудища из плоти в Аду, древняя энергия была выпущена в мир, и какая-то часть этой энергии вселилась в камни, летающие в атмосфере, создавая таким образом космоблюдателей.
-		TheGuardian: ""
-		TheGuardianFly: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
+		TheGuardian: TheGuardianFly: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
+		// TheGuardianFly: ""
+		InfernaceBestiary: Когда-то давным-давно, в глубинах Ада была цивилизация, жившая под защитой Инфернейса и его дочери, Фуросии. И даже несмотря на то, что эту цивилизацию много тысяч лет назад сравняли с землёй, Инфернейс всё равно продолжает свою службу, даже будучи сильно ослабленным.
 	}
 
 	Enemies: {
 		Scorpion: Представитель вида и так необычайно ядовитых скорпионов, обитающих в пустыне, которого люди использовали в своих экспериментах, надеясь превратить его в живое оружие. Кто знает, какое чудище оно способно призвать среди песков пустыни...
 		VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
+		Furosia: Дочь Инфернейса, которая когда-то была стражем и защитником цивилизации, жившей в глубинах Ада, пока её не сравняли с землёй много тысячелетий назад.
 	}
 
 	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
@@ -3235,6 +3279,7 @@ Tooltips: {
 	GreatLens2: игрок прикроется громадной линзой, которая поглощает 20% урона от врагов и их снарядов
 	GreatLens3: Враги получают урон при контакте с игроком, равный их контактному урону
 	AqueousSummon: Пора положить конец твоей тирании, убийца...
+	// InfernaceSummon: You arrive, at last.
 }
 
 AccInfo: {
@@ -3284,27 +3329,34 @@ Said: {
 	VoidLeviathanHead: Так это уже было ведь...
 	Aqueous: Теперь понятно, почему мой король погиб от твоих рук...
 	Aqueous1: С меня хватит! Ты безжалостно убил моего лидера, и я не позволю тебе так же сделать и со мной!
-	// AzanaEye: PAKURGH ULURADOK
-	// AzanaEye1: REKAHED PHORLOSPI
-	// Azana: Ah, the spores cannot withstand these godly powers...
-	// Azana1: But nothing satisfies your bloodlust...
-	// Azana2: NEW VESSEL
-	// Azana3: NEKTOZ AXLKA
-	// Azana4: WE HUNGER
-	// Azana5: KROLP UMULEK
-	// Azana6: YOU CAN'T RESIST
-	// Azana7: VAKEZ WAKTI
-	// Azana8: PAIN IS MORTAL
-	// Azana9: XANZE MOAKZ
-	// Azana10: DON'T Hel-p me
-	// Azana11: NOU HEHLP
-	// Azana12: End this...
-	// Azana13: ECHnd it
-	// Azana14: PLEase stop...
-	// Azana15: You're... You're not attacking me?
-	// Azana16: Maybe there is good in you...
-	// Azana17: Salvation...
-	// TheGuardian: This is only the beginning!
+	AzanaEye: ВКПИТРГ АПОГРОЫВ
+	AzanaEye1: АНРЛЬХЕ КНЕШЩЬТБЛ
+	Azana: Ах, споры не могут совладать с такой богоподобной мощью...
+	Azana1: Но ничто не способно удовлетворить твоё кровожадие...
+	Azana2: НОВЫЙ СОСУД
+	Azana3: ЦУЕНКР ТВАПЛ
+	Azana4: МЫ ГОЛОДНЫ
+	Azana5: ВЕПРШ САИОТЬ
+	Azana6: НЕ СОПРОТИВЛЯЙСЯ
+	Azana7: КВПОГ УКЕГШ
+	Azana8: БОЛЬ - СМЕРТНА
+	Azana9: ВАПРТ РПВГО
+	Azana10: НЕ п-помогай м-мне...
+	Azana11: НИ ПОМАГАЙ
+	Azana12: Покончи уже с этим...
+	Azana13: ПАокончи с этим
+	Azana14: ПОЖалуйста, хватит...
+	Azana15: Ты... больше не атакуешь меня?
+	Azana16: Наверное, даже в тебе что-то хорошее есть...
+	Azana17: Наконец-то, спасение...
+	TheGuardian: Всё только начинается!
+	// Infernace: I will kill you in my dying breaths!
+	// Infernace1: Furosia, help me rid of this pest!
+	// Infernace2: My daughter... I will be your downfall, monster!
+	// InfernaceWifeSoul: Welcome home...
+	// InfernaceWifeSoul1: It's been a while.
+	// InfernaceWifeSoul2: I'm sorry it had to end this way.
+	// InfernaceWifeSoul3: Be safe, Furosia
 }
 
 LooTCondition: {
@@ -3314,7 +3366,7 @@ LooTCondition: {
 	TheEye: Если в битве первым было убито Око
 }
 
-// AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
+AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
 AwakenedSummonItem: Не расходуется в Пробуждённом режиме
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
