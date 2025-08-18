@@ -34,7 +34,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
                 int maxAccessoryIndex = 5 + player.extraAccessorySlots;
                 for (int i = 3; i < 3 + maxAccessoryIndex; i++)
                 {
-                    if (slot != i && ListItems.Artifact.Contains(player.armor[i].type))
+                    if (slot != i && EAList.Artifact.Contains(player.armor[i].type))
                     {
                         return false;
                     }

@@ -24,11 +24,6 @@ namespace ElementsAwoken.Content.Items.BossSummons
             Item.UseSound = SoundID.Item44;
             Item.GetGlobalItem<EABossSummon>().AwakenedSummonItem = true;
         }
-        public override bool CanUseItem(Player player)
-        {
-            return
-            !NPC.AnyNPCs(ModContent.NPCType<AzanaEye>()) &&!NPC.AnyNPCs(ModContent.NPCType<Azana>());           
-        }
         public override bool? UseItem(Player player)
         {
             if (Main.netMode != NetmodeID.MultiplayerClient) NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<AzanaEye>());

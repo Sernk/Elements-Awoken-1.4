@@ -143,11 +143,43 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.AzaLoot]));
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AzaLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<AzanaBag>(), 1));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<EntropicCoating>(), 7));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AzanaTrophy>(), 10));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AzanaMask>(), 10));
+        }
+        public void SaveLifeForAzana()
+        {
+            var p = Main.LocalPlayer;
+            var ns = EAU.NPCs(NPC);
+            int item = Main.rand.Next(5);
+            int r7 = Main.rand.Next(1, 8);
+            int r10 = Main.rand.Next(1, 11);
+            switch (item)
+            {
+                case 0: item = ModContent.ItemType<Anarchy>(); break;
+                case 1: item = ModContent.ItemType<PurgeRifle>(); break;
+                case 2: item = ModContent.ItemType<ChaoticImpaler>(); break;
+                case 3: item = ModContent.ItemType<Pandemonium>(); break;
+                case 4: item = ModContent.ItemType<Pandemonium>(); break;
+                case 5: item = ModContent.ItemType<AzanaMinionStaff>(); break;
+                default: item = ItemID.DirtBlock; break;
+            }
+            Item.NewItem(ns, NPC.Hitbox, item);
+            if (Main.expertMode)
+            {
+                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaBag>());
+            }
+            if (r7 == 7)
+            {
+                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<EntropicCoating>());
+            }
+            if (r10 == 10)
+            {
+                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaMask>());
+                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaTrophy>());
+            }
         }
         public override void OnKill()
         {
@@ -271,9 +303,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
             }
             else if (stopHitTimer >= 2700)
             {
-                Main.NewText(e.Azana16, new Color(235, 70, 106));
+                Main.NewText(e.Azana17, new Color(235, 70, 106));
                 if (Main.netMode != NetmodeID.MultiplayerClient) Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, 0, 0, ModContent.ProjectileType<Content.Projectiles.Other.InfectionHeart>(), 0, 0f, Main.myPlayer);
-
+                SaveLifeForAzana();
                 MyWorld.sparedAzana = true;
                 MyWorld.downedAzana = false;
                 NPC.active = false;

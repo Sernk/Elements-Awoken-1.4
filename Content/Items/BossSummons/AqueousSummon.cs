@@ -26,7 +26,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override bool CanUseItem(Player player)
         {
-            if (player.ZoneBeach && !NPC.AnyNPCs(ModContent.NPCType<Aqueous>()))
+            if (player.ZoneBeach)
             {
                 Main.NewText(ModContent.GetInstance<EALocalization>().AqueousSummon, Color.Cyan.R, Color.Cyan.G, Color.Cyan.B);
                 return true;

@@ -27,7 +27,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Wasteland
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.WasLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.WasLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VenomSample>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<WastelandMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<WastelandTrophy>(), 10));

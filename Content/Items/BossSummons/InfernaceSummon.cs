@@ -26,7 +26,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override bool CanUseItem(Player player)
         {
-            return player.ZoneUnderworldHeight && !NPC.AnyNPCs(ModContent.NPCType<Infernace>());
+            return player.ZoneUnderworldHeight;
         }
         public override bool? UseItem(Player player)
         {

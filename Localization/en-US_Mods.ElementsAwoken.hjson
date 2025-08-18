@@ -2268,6 +2268,16 @@ Items: {
 			Summons Infernace on use
 			'''
 	}
+
+	ObsidiousSummon: {
+		DisplayName: Ulticore
+		Tooltip:
+			'''
+			The power [c/bc3a31:He] seeks
+			Use at night
+			Summons Obsidious
+			'''
+	}
 }
 
 Tiles: {
@@ -2559,7 +2569,7 @@ Buffs: {
 
 	FrostShield: {
 		DisplayName: Frost Shield
-		Description: Mods.ElementsAwoken.Buffs.FrostShield.Description
+		Description: ""
 	}
 
 	EldritchHorror: {
@@ -2588,7 +2598,11 @@ Buffs: {
 
 	Glowing: {
 		DisplayName: Glowing
-		Description: You release blinding light\nEvery monster can see you
+		Description:
+			'''
+			You release blinding light
+			Every monster can see you
+			'''
 	}
 
 	GoldenWeapons: {
@@ -2707,7 +2721,7 @@ Buffs: {
 
 	AcidBurn: {
 		DisplayName: Acid Burn
-		Description: Mods.ElementsAwoken.Buffs.AcidBurn.Description
+		Description: It feels like liquid fire.
 	}
 }
 
@@ -2757,6 +2771,10 @@ NPCs: {
 	RockMedium.DisplayName: Rock
 	RockSmall.DisplayName: Rock
 	InfernaceSpawner.DisplayName: Infernace's Guardian
+	Obsidious.DisplayName: Obsidious
+	ObsidiousHand.DisplayName: Obsidious Hand
+	ObsidiousHuman.DisplayName: Obsidious
+	ObsidiousTransition.DisplayName: Obsidious Transition
 }
 
 Projectiles: {
@@ -3083,6 +3101,28 @@ Projectiles: {
 	InfernalMonolithSpawn.DisplayName: IInfernal Monolith
 	InfernaceSpike.DisplayName: Infernace
 	InfernaceWave.DisplayName: Infernace
+	GreekFireHostile.DisplayName: Fire
+	ObsidiousFireCrystal.DisplayName: Obsidious Fire Crystal
+	ObsidiousFireCrystalStationary.DisplayName: Obsidious Fire Crystal
+	ObsidiousHumanRockOrbital.DisplayName: Obsidious
+	ObsidiousIceBeam.DisplayName: Obsidious
+	ObsidiousIceBeamCrystal.DisplayName: Obsidious
+	ObsidiousIceCrystalSpin.DisplayName: Obsidious
+	ObsidiousIceCrystal.DisplayName: Obsidious
+	ObsidiousRitual.DisplayName: Obsidious
+	ObsidiousBeam.DisplayName: Obsidious
+	ObsidiousFireBeam.DisplayName: Obsidious
+	ObsidiousFirePortal.DisplayName: Fire Portal
+	ObsidiousHandOverlay.DisplayName: Obsidious
+	ObsidiousHandTrail.DisplayName: Obsidious
+	ObsidiousHomingBall.DisplayName: Obsidious Homing Ball
+	ObsidiousIceLaser.DisplayName: Obsidious
+	ObsidiousRockLarge.DisplayName: Obsidious
+	ObsidiousRockNoCollide.DisplayName: Obsidious
+	ObsidiousRockOrbital.DisplayName: Obsidious
+	ObsidiousTargetCrystal.DisplayName: Obsidious
+	ObsidiousTargetCrystalCenter.DisplayName: Obsidious
+	SolarFragmentProj.DisplayName: Solar Fragment
 }
 
 Configs: {
@@ -3148,6 +3188,7 @@ Bestiary: {
 		TheGuardian: ""
 		TheGuardianFly: ""
 		InfernaceBestiary: ""
+		ObsidiousBoss: ""
 	}
 
 	Enemies: {
@@ -3325,6 +3366,17 @@ Said: {
 	InfernaceWifeSoul1: It's been a while.
 	InfernaceWifeSoul2: I'm sorry it had to end this way.
 	InfernaceWifeSoul3: Be safe, Furosia
+	Obsidious: Easy, you do not deserve such power.
+	Obsidious1: I tried to warn you, kid.
+	Obsidious2: You have something I require...
+	Obsidious3: Come on kid, hand it over and I'll spare you the pain
+	Obsidious4: I didnt want to have to do this...
+	Obsidious5: You put up a good fight, but alas, it had to be this way.
+	Obsidious6: You forced me to do this.
+	Obsidious7: You put up a good fight for a mere Terrarian
+	Obsidious8: I didnt sacrifice my life for nothing, the core will be mine!
+	Obsidious9: No... my crystal is too powerful! I can't die... It's impossible...
+	Obsidious10: Ah, my crystal... crumbling... You still arent... strong enough for him
 }
 
 LooTCondition: {
@@ -3337,6 +3389,7 @@ LooTCondition: {
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
 AwakenedMode: "[c/973999:Awakened Mode Active]"
 AwakenedSummonItem: Not consumed in Awakened Mode
+IsSummon: It is impossible to summon because the boss has already been summoned:
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 
 MyPlayerLocalization: {

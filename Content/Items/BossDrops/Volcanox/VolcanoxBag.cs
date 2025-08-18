@@ -30,7 +30,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Volcanox
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.VolLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.VolLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CharredInsignia>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VolcanoxMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VolcanoxTrophy>(), 10));

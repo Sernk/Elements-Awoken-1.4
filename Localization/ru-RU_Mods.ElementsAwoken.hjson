@@ -2239,7 +2239,7 @@ Items: {
 	}
 
 	AncientDragonSummon: {
-		DisplayName: Воля Огня
+		DisplayName: Огненная воля
 		Tooltip:
 			'''
 			Может быть использовано только ночью
@@ -2292,11 +2292,21 @@ Items: {
 	}
 
 	InfernaceSummon: {
-		// DisplayName: Fire Core
+		DisplayName: Огненное ядро
+		Tooltip:
+			'''
+			Оно обжигающе горячее...
+			Призывает Инфернейса при использовании в Аду
+			'''
+	}
+
+	ObsidiousSummon: {
+		// DisplayName: Ulticore
 		/* Tooltip:
 			'''
-			It radiates a burning heat
-			Summons Infernace on use
+			The power [c/bc3a31:He] seeks
+			Use at night
+			Summons Obsidious
 			''' */
 	}
 }
@@ -2659,7 +2669,7 @@ Buffs: {
 
 	AncientsCurse: {
 		DisplayName: Проклятие Древних
-		Description: пиздец
+		Description: Пиздец.
 	}
 
 	MiniVleviBuff: {
@@ -2781,13 +2791,17 @@ NPCs: {
 	GuardianProbe.DisplayName: Храмовый Страж
 	TheGuardian.DisplayName: Стражник
 	TheGuardianFly.DisplayName: Стражник
-	// Furosia.DisplayName: Furosia
-	// HealingHearth.DisplayName: Healing Hearth
-	// Infernace.DisplayName: Infernace
-	// RockLarge.DisplayName: Rock
-	// RockMedium.DisplayName: Rock
-	// RockSmall.DisplayName: Rock
-	// InfernaceSpawner.DisplayName: Infernace's Guardian
+	Furosia.DisplayName: Фуросия
+	HealingHearth.DisplayName: Исцеляющий очаг
+	Infernace.DisplayName: Инфернейс
+	RockLarge.DisplayName: Камень
+	RockMedium.DisplayName: Камень
+	RockSmall.DisplayName: Камень
+	InfernaceSpawner.DisplayName: Страж Инфернейса
+	// Obsidious.DisplayName: Obsidious
+	// ObsidiousHand.DisplayName: Obsidious Hand
+	// ObsidiousHuman.DisplayName: Obsidious
+	// ObsidiousTransition.DisplayName: Obsidious Transition
 }
 
 Projectiles: {
@@ -3105,15 +3119,37 @@ Projectiles: {
 	GuardianStickyBolt.DisplayName: Липкий выстрел Стражника
 	GuardianStrike.DisplayName: Выстрел Стражника
 	GuardianTargeter.DisplayName: Целящийся Стражника
-	// FurosiaSoul.DisplayName: Daughteru?
-	// FurosiaSpike.DisplayName: Infernace
-	// InfernaceFire.DisplayName: Fire
-	// InfernaceSoul.DisplayName: Husbando
-	// InfernaceWifeSoul.DisplayName: Waifu
-	// InfernalMonolith.DisplayName: Infernal Monolith
-	// InfernalMonolithSpawn.DisplayName: IInfernal Monolith
-	// InfernaceSpike.DisplayName: Infernace
-	// InfernaceWave.DisplayName: Infernace
+	FurosiaSoul.DisplayName: Душа Фуросии
+	FurosiaSpike.DisplayName: Шип Фуросии
+	InfernaceFire.DisplayName: Огонь Инфернейса
+	InfernaceSoul.DisplayName: Душа Инфернейса
+	InfernaceWifeSoul.DisplayName: Душа жены Инфернейса
+	InfernalMonolith.DisplayName: Адский монолит
+	InfernalMonolithSpawn.DisplayName: Проджектайл спавна адского монолита
+	InfernaceSpike.DisplayName: Шип Инфернейса
+	InfernaceWave.DisplayName: Волна Инфернейса
+	// GreekFireHostile.DisplayName: Fire
+	// ObsidiousFireCrystal.DisplayName: Obsidious Fire Crystal
+	// ObsidiousFireCrystalStationary.DisplayName: Obsidious Fire Crystal
+	// ObsidiousHumanRockOrbital.DisplayName: Obsidious
+	// ObsidiousIceBeam.DisplayName: Obsidious
+	// ObsidiousIceBeamCrystal.DisplayName: Obsidious
+	// ObsidiousIceCrystalSpin.DisplayName: Obsidious
+	// ObsidiousIceCrystal.DisplayName: Obsidious
+	// ObsidiousRitual.DisplayName: Obsidious
+	// ObsidiousBeam.DisplayName: Obsidious
+	// ObsidiousFireBeam.DisplayName: Obsidious
+	// ObsidiousFirePortal.DisplayName: Fire Portal
+	// ObsidiousHandOverlay.DisplayName: Obsidious
+	// ObsidiousHandTrail.DisplayName: Obsidious
+	// ObsidiousHomingBall.DisplayName: Obsidious Homing Ball
+	// ObsidiousIceLaser.DisplayName: Obsidious
+	// ObsidiousRockLarge.DisplayName: Obsidious
+	// ObsidiousRockNoCollide.DisplayName: Obsidious
+	// ObsidiousRockOrbital.DisplayName: Obsidious
+	// ObsidiousTargetCrystal.DisplayName: Obsidious
+	// ObsidiousTargetCrystalCenter.DisplayName: Obsidious
+	// SolarFragmentProj.DisplayName: Solar Fragment
 }
 
 Configs: {
@@ -3126,20 +3162,20 @@ Configs: {
 Config: {
 	ElementsAwokenConfig: Основной конфиг
 	AlchemistPotionShop: Магазин алхимика
-	EnablesShop: хз
+	EnablesShop: наверное делает так, что алхимик продаёт всякие семена. не ебу, честно говоря...
 	ResourceBars: Ресурсные полосы
 	TurnsUI: Включает ресурсные полосы для Энергии и Здравомыслия
 	DisableLabs: Генерация лабораторий
 	StopsLabs: Подземные лаборатории больше не будут спавниться при создании мира
 	DisableBoss: Напоминания о боссах
-	Disablestheeffects: Если они тебя бесят, перестань есть кактус и просто выключи их, в самом-то деле.
-	ItemChanges: Изменения ванильных предметов
-	vanillaitems: хз, о каких изменениях речь
+	Disablestheeffects: Если они тебя бесят, то перестань есть кактус и просто выключи их, в самом-то деле.
+	ItemChanges: Рецепты ванильных предметов
+	vanillaitems: Добавляет новые крафтовые рецепты для некоторых ванильных предметов. Например, для кобальтового щита или жезла раздора
 	Screenshake: Тряска экрана
 	LowDust: Пониженное количество частиц
-	Reduces: типа лаги должно убирать, а так хз
+	Reduces: Сильно ограничивает количество частиц, которые могут существовать одновременно
 	EnterDebug: Режим дебага
-	Shows: и так понятно, что делает
+	Shows: вполне возможно, что эта хуйня вообще в принципе не работает.
 }
 
 Biomes: {
@@ -3176,9 +3212,10 @@ Bestiary: {
 		AzanaEyeBestiary: AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
 		// AzanaBestiary: ""
 		CosmicObserverBestiary: После падения чудища из плоти в Аду, древняя энергия была выпущена в мир, и какая-то часть этой энергии вселилась в камни, летающие в атмосфере, создавая таким образом космоблюдателей.
-		TheGuardian: TheGuardianFly: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
+		TheGuardian: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
 		// TheGuardianFly: ""
 		InfernaceBestiary: Когда-то давным-давно, в глубинах Ада была цивилизация, жившая под защитой Инфернейса и его дочери, Фуросии. И даже несмотря на то, что эту цивилизацию много тысяч лет назад сравняли с землёй, Инфернейс всё равно продолжает свою службу, даже будучи сильно ослабленным.
+		ObsidiousBoss: Давным-давно, будучи простым смертным, Обсидиус был искателем артифактов, известным своей жадностью. Его же собственная жадность его в конце-концов и погубила, когда во время поиска очередного артифакта он его нашёл, но тот в конечном итоге превратил его в каменную оболочку, в которой он обречён остаться до конца времён.
 	}
 
 	Enemies: {
@@ -3279,7 +3316,7 @@ Tooltips: {
 	GreatLens2: игрок прикроется громадной линзой, которая поглощает 20% урона от врагов и их снарядов
 	GreatLens3: Враги получают урон при контакте с игроком, равный их контактному урону
 	AqueousSummon: Пора положить конец твоей тирании, убийца...
-	// InfernaceSummon: You arrive, at last.
+	InfernaceSummon: И вот, ты здесь.
 }
 
 AccInfo: {
@@ -3350,13 +3387,24 @@ Said: {
 	Azana16: Наверное, даже в тебе что-то хорошее есть...
 	Azana17: Наконец-то, спасение...
 	TheGuardian: Всё только начинается!
-	// Infernace: I will kill you in my dying breaths!
-	// Infernace1: Furosia, help me rid of this pest!
-	// Infernace2: My daughter... I will be your downfall, monster!
-	// InfernaceWifeSoul: Welcome home...
-	// InfernaceWifeSoul1: It's been a while.
-	// InfernaceWifeSoul2: I'm sorry it had to end this way.
-	// InfernaceWifeSoul3: Be safe, Furosia
+	Infernace: Я прикончу тебя, чего бы мне это не стоило!
+	Infernace1: Фуросия, прошу тебя помочь мне разобраться с этим гадёнышем!
+	Infernace2: Моя дочь... Нет... Да я тебя уничтожу, чудовище!
+	InfernaceWifeSoul: Добро пожаловать домой...
+	InfernaceWifeSoul1: Уже прошло много времени, как мы не виделись.
+	InfernaceWifeSoul2: Жаль, конечно, что всё закончилось именно так...
+	InfernaceWifeSoul3: Береги себя, Фуросия.
+	// Obsidious: Easy, you do not deserve such power.
+	// Obsidious1: I tried to warn you, kid.
+	// Obsidious2: You have something I require...
+	// Obsidious3: Come on kid, hand it over and I'll spare you the pain
+	// Obsidious4: I didnt want to have to do this...
+	// Obsidious5: You put up a good fight, but alas, it had to be this way.
+	// Obsidious6: You forced me to do this.
+	// Obsidious7: You put up a good fight for a mere Terrarian
+	// Obsidious8: I didnt sacrifice my life for nothing, the core will be mine!
+	// Obsidious9: No... my crystal is too powerful! I can't die... It's impossible...
+	// Obsidious10: Ah, my crystal... crumbling... You still arent... strong enough for him
 }
 
 LooTCondition: {
@@ -3369,6 +3417,7 @@ LooTCondition: {
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
 AwakenedSummonItem: Не расходуется в Пробуждённом режиме
+// IsSummon: It is impossible to summon because the boss has already been summoned:
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 
 MyPlayerLocalization: {

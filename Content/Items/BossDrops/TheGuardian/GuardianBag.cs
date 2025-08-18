@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.TheGuardian
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.TGuaLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.TGuaLoot]));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuadianMask>(), 10));
 
             _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.TGuaItemId1, chanceDenominator: IDropSettings.TGuaChanceDenominator1, minimumDropped: IDropSettings.TGuaMinimumDropped1, maximumDropped: IDropSettings.TGuaMaximumDropped1));

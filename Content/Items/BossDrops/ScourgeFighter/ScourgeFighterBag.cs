@@ -33,7 +33,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.ScourgeFighter
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.ScoLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.ScoLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeDrive>()));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterTrophy>(), 10));

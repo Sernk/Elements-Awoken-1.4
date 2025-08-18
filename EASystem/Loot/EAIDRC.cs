@@ -179,5 +179,18 @@ namespace ElementsAwoken.EASystem.Loot
             public bool CanShowItemDropInUI() => true;
             public string GetConditionDescription() => ModContent.GetInstance<EALocalization>().TheEyeCondition;
         }
+        public class DropRobe : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (Main.rand.Next(3) == 2)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI() => true;
+            public string GetConditionDescription() => null;
+        }
     }
 }

@@ -28,7 +28,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Infernace
         }
         public override void ModifyItemLoot(ItemLoot itemLoot)
         {
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [..ListItems.InfeLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [..EAList.InfeLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<FireHeart>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfernaceMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<InfernaceTrophy>(), 10));

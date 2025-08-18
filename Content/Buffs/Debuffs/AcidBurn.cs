@@ -8,8 +8,6 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
     {
         public override void SetStaticDefaults()
         {
-            // DisplayName.SetDefault("Acid Burn");
-            // Description.SetDefault("It feels like liquid fire.");
             Main.debuff[Type] = true;
             Main.pvpBuff[Type] = true;
             Main.buffNoSave[Type] = true;
@@ -42,6 +40,5 @@ namespace ElementsAwoken.Content.Buffs.Debuffs
                 dust.fadeIn = 1f;
             }
         }
-
     }
 }

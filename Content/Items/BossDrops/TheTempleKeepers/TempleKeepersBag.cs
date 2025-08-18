@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.TheTempleKeepers
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.TempLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.TempLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<Flare>()));
 
             _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.TempItemId1, chanceDenominator: IDropSettings.TempChanceDenominator1, minimumDropped: IDropSettings.TempMinimumDropped1, maximumDropped: IDropSettings.TempMaximumDropped1));

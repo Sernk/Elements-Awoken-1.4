@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.TheCelestial
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.TCelLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.TCelLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheCelestialTrophy>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CelestialsMask>(), 10));
             //itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CelestialCrown>(), 10));

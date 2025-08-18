@@ -30,7 +30,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Aqueous
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.AquLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AquLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AqueousMask>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AqueousTrophy>(), 10));
 

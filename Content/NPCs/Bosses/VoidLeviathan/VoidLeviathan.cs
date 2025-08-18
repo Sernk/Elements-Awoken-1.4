@@ -89,7 +89,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             var _AwakenedModeEssence = new LeadingConditionRule(new EAIDRC.DropAwakened());
             var _AwakenedModeExpert = new LeadingConditionRule(new EAIDRC.DropExpert());
 
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [..ListItems.LeviLoot]));
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [..EAList.LeviLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
             npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));

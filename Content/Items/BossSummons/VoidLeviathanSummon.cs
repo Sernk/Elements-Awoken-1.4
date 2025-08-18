@@ -25,7 +25,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override bool CanUseItem(Player player)
         {
-            return !Main.dayTime && !NPC.AnyNPCs(ModContent.NPCType<VoidLeviathanHead>());          
+            return !Main.dayTime;          
         }
         public override bool? UseItem(Player player)
         {

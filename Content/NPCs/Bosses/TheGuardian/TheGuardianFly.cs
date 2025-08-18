@@ -128,7 +128,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.TGuaLoot]));
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.TGuaLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<GuardianBag>(), 1));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuardianTrophy>(), 10));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuardianMask>(), 10));

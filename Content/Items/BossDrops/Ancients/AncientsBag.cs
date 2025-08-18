@@ -31,7 +31,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Ancients
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.AncLot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AncLot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystallineLocket>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystalAmalgamate>(), 2));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AncientShard>(), minimumDropped:7, maximumDropped:12));

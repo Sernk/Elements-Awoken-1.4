@@ -14,6 +14,14 @@ using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.BossDrops.Volcanox;
 using ElementsAwoken.Content.Items.BossDrops.Wasteland;
 using ElementsAwoken.Content.Items.BossSummons;
+using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
+using ElementsAwoken.Content.NPCs.Bosses.Azana;
+using ElementsAwoken.Content.NPCs.Bosses.Infernace;
+using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
+using ElementsAwoken.Content.NPCs.Bosses.TheGuardian;
+using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
+using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
+using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
 using System.Collections.Generic;
 using Terraria.ModLoader;
 
@@ -24,7 +32,7 @@ namespace ElementsAwoken.Utilities
     /// <More details cref ="IDropSettings"></chec>
     /// You can only add 4 items that would be considered new
     /// </summary>
-    public class ListItems
+    public class EAList
     {
         public static readonly List<int> Artifact = [ModContent.ItemType<ChaosFlameFlask>(), ModContent.ItemType<ElementalArcanum>(), ModContent.ItemType<EtherealShell>(), ModContent.ItemType<FrozenGauntlet>(), ModContent.ItemType<GreatThunderTotem>(), ModContent.ItemType<Nanocore>()];
         #region Boss Loot      
@@ -72,8 +80,11 @@ namespace ElementsAwoken.Utilities
         #endregion
         #endregion
         #region Boss Summon
-        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>(), ModContent.ItemType<AncientDragonSummon>(), ModContent.ItemType<AqueousSummon>(), ModContent.ItemType<AzanaSummon>(), ModContent.ItemType<GuardianSummon>(), ModContent.ItemType<InfernaceSummon>()];
+        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>(), ModContent.ItemType<AncientDragonSummon>(), ModContent.ItemType<AqueousSummon>(), ModContent.ItemType<AzanaSummon>(), ModContent.ItemType<GuardianSummon>(), ModContent.ItemType<InfernaceSummon>(), ModContent.ItemType<ObsidiousSummon>()];
         #endregion
+        #region Bosses
+        public static readonly List<int> BossName = [ModContent.NPCType<AncientWyrmHead>(), ModContent.NPCType<TheEye>(), ModContent.NPCType<Aqueous>(), ModContent.NPCType<AzanaEye>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Content.NPCs.Bosses.CosmicObserver.CosmicObserver>(), ModContent.NPCType<TheGuardian>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<Infernace>(), ModContent.NPCType<VoidLeviathanHead>(), ModContent.NPCType<Wasteland>(), ModContent.NPCType<ObsidiousHuman>(), ModContent.NPCType<Obsidious>()];
+        #endregion;
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {
             ["melee"] = DamageClass.Melee,

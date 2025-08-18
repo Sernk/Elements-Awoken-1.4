@@ -30,7 +30,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Permafrost
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.PermLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.PermLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<SoulOfTheFrost>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<PermafrostMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<PermafrostTrophy>(), 10));

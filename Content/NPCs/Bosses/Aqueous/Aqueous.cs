@@ -1,6 +1,5 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
-using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.NPCProj.Aqueous;
 using ElementsAwoken.Utilities;
@@ -118,7 +117,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.AquLoot]));
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AquLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<AqueousBag>(), 1));
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<WaterEssence>(), 1, 5, 25));
             //npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AqueousTrophy>(), 10));

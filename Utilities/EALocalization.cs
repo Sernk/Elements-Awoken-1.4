@@ -10,6 +10,7 @@ namespace ElementsAwoken.Utilities
         public string InfernaceBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.InfernaceBestiary");
         public string CosmicObserverBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.CosmicObserverBestiary");
         public string AqueousBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AqueousBoss");
+        public string ObsidiousBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ObsidiousBoss");
         public string TheEye => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheEye");
         public string AncientWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AncientWyrm");
         public string TheGuardianFly => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheGuardianFly");
@@ -160,6 +161,17 @@ namespace ElementsAwoken.Utilities
         public string Azana15 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana15");
         public string Azana16 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana16");
         public string Azana17 => Language.GetTextValue("Mods.ElementsAwoken.Said.Azana17");
+        public string Obsidious => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious");
+        public string Obsidious1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious1");
+        public string Obsidious2 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious2");
+        public string Obsidious3 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious3");
+        public string Obsidious4 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious4");
+        public string Obsidious5 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious5");
+        public string Obsidious6 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious6");
+        public string Obsidious7 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious7");
+        public string Obsidious8 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious8");
+        public string Obsidious9 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious9");
+        public string Obsidious10 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious10");
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");
@@ -179,6 +191,7 @@ namespace ElementsAwoken.Utilities
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");
         public string AwakenedSummonItem => Language.GetTextValue("Mods.ElementsAwoken.AwakenedSummonItem");
+        public string IsSummon => Language.GetTextValue("Mods.ElementsAwoken.IsSummon");
         public string AwakenedMode => Language.GetTextValue("Mods.ElementsAwoken.AwakenedMode");
         public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         #endregion

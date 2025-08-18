@@ -23,9 +23,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override bool CanUseItem(Player player)
         {
-            return 
-            player.ZoneDesert && !NPC.AnyNPCs(ModContent.NPCType<Wasteland>());
-            
+            return player.ZoneDesert;
         }
         public override bool? UseItem(Player player)
         {

@@ -29,12 +29,15 @@ namespace ElementsAwoken.Content.Items.BossDrops.Obsidious
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.ObsiLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.ObsiLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<SacredCrystal>()));
-            itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ObsidiousMask>(), 10));
-            itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ObsidiousRobes>(), 10));
-            itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ObsidiousPants>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<ObsidiousTrophy>(), 10));
+
+            var RobeDrop = new LeadingConditionRule(new EAIDRC.DropRobe());
+            RobeDrop.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousMask>()));
+            RobeDrop.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousRobes>()));
+            RobeDrop.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousPants>()));
+            itemLoot.Add(RobeDrop);
 
             _NewItem.OnSuccess(ItemDropRule.Common(IDropSettings.ObsiItemId1, chanceDenominator: IDropSettings.ObsiChanceDenominator1, minimumDropped: IDropSettings.ObsiMinimumDropped1, maximumDropped: IDropSettings.ObsiMaximumDropped1));
             itemLoot.Add(_NewItem);

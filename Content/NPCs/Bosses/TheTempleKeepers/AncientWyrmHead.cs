@@ -112,7 +112,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
 
             npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<WyrmHeart>()));
 
-            AncientWyrm.OnSuccess(ItemDropRule.OneFromOptions(1, [.. ListItems.TempLoot]));
+            AncientWyrm.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.TempLoot]));
             AncientWyrm.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<TempleKeepersBag>(), 1));
             npcLoot.Add(AncientWyrm);
         }

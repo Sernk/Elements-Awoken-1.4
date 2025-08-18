@@ -91,7 +91,7 @@ namespace ElementsAwoken.EASystem.Global
             if (damage == -1) damage = projectile.damage;
             int expID = Projectile.NewProjectile(EAU.Proj(projectile), projectile.Center.X, projectile.Center.Y, 0f, 0f, ProjectileType<Explosion>(), damage, projectile.knockBack, projectile.owner);
             Projectile exp = Main.projectile[expID];
-            if (ListItems.damageTypes.TryGetValue(damageType.ToLower(), out var dmgClass))
+            if (EAList.damageTypes.TryGetValue(damageType.ToLower(), out var dmgClass))
                 exp.DamageType = dmgClass;
             else
                 exp.DamageType = DamageClass.Default;

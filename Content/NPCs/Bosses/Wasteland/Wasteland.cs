@@ -226,7 +226,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.WasLoot]));
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.WasLoot]));
             npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<WastelandBag>()));
             npcLoot.Add(ItemDropRule.Common(ItemType<WastelandTrophy>(), 10));
             npcLoot.Add(ItemDropRule.Common(ItemType<WastelandMask>(), 10));

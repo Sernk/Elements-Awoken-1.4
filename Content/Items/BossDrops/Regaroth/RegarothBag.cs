@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Regaroth
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.RegLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.RegLoot]));
 			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<StoneOfHope>()));
 			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegarothMask>(), 10));
 			itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegarothTrophy>(), 10));

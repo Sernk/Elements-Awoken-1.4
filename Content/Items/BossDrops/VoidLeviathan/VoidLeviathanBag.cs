@@ -28,7 +28,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. ListItems.LeviLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.LeviLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<VoidLeviathanHeart>(), 1, 2, 2));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AmuletOfDestruction>()));
 

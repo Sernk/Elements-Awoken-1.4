@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Azana
             var _NewItem3 = new LeadingConditionRule(new EAIDRC.DropSlot3());
             var _NewItem4 = new LeadingConditionRule(new EAIDRC.DropSlot4());
 
-            itemLoot.Add(ItemDropRule.OneFromOptions(1, [..ListItems.AzaLoot]));
+            itemLoot.Add(ItemDropRule.OneFromOptions(1, [..EAList.AzaLoot]));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<RingOfChaos>()));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AzanaMask>(), 10));
             itemLoot.Add(ItemDropRule.Common(ModContent.ItemType<AzanaTrophy>(), 10));

@@ -37,7 +37,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override bool CanUseItem(Player player)
         {
-            return !Main.dayTime && !NPC.AnyNPCs(ModContent.NPCType<TheGuardian>()) && !NPC.AnyNPCs(ModContent.NPCType<TheGuardianFly>());         
+            return !Main.dayTime;
         }
         public override void AddRecipes()
         {
