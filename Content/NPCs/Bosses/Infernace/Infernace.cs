@@ -209,7 +209,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.InfernaceBestiary"),
-                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Underground,
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheUnderworld,
             });
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)

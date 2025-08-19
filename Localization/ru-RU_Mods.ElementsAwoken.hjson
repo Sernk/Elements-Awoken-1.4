@@ -2301,12 +2301,58 @@ Items: {
 	}
 
 	ObsidiousSummon: {
-		// DisplayName: Ulticore
+		DisplayName: Сверх-ядро
+		Tooltip:
+			'''
+			В нём заточена та сила, которую [c/bc3a31:Он] ищет...
+			Может быть использовано только ночью
+			Призывает Обсидиуса
+			'''
+	}
+
+	PermafrostSummon: {
+		// DisplayName: Enchanted Ice Crystal
 		/* Tooltip:
 			'''
-			The power [c/bc3a31:He] seeks
+			Harbours immense amounts of ice magic
+			Summons Permafrost on use
+			''' */
+	}
+
+	RadiantRainSummon: {
+		// DisplayName: Radiant Starholder
+		// Tooltip: Enchants the rain with the Radiance
+	}
+
+	Radia: {
+		// DisplayName: Radia
+		// Tooltip: ""
+	}
+
+	RegarothSummon: {
+		// DisplayName: Swirling Energies
+		/* Tooltip:
+			'''
+			Summons Regaroth on use
+			Use in the sky
+			''' */
+	}
+
+	ScourgeFighterSummon: {
+		// DisplayName: Scourge Remote
+		/* Tooltip:
+			'''
 			Use at night
-			Summons Obsidious
+			Summons the Scourge Fighter on use
+			''' */
+	}
+
+	SlimeRainSummon: {
+		// DisplayName: Energized Gel
+		/* Tooltip:
+			'''
+			The electric charge has crystallised the gel
+			Summons the Slime Rain on use
 			''' */
 	}
 }
@@ -2798,10 +2844,20 @@ NPCs: {
 	RockMedium.DisplayName: Камень
 	RockSmall.DisplayName: Камень
 	InfernaceSpawner.DisplayName: Страж Инфернейса
-	// Obsidious.DisplayName: Obsidious
-	// ObsidiousHand.DisplayName: Obsidious Hand
-	// ObsidiousHuman.DisplayName: Obsidious
-	// ObsidiousTransition.DisplayName: Obsidious Transition
+	Obsidious.DisplayName: Обсидиус
+	ObsidiousHand.DisplayName: Рука Обсидиуса
+	ObsidiousHuman.DisplayName: Обсидиус
+	ObsidiousTransition.DisplayName: Трансформация Обсидиуса
+	// Permafrost.DisplayName: Permafrost
+	// PermaOrbital.DisplayName: Perma Orbital
+	// RegarothBody.DisplayName: Thunderling
+	// RegarothHead.DisplayName: Thunderling
+	// RegarothMinionBody.DisplayName: Regaroth
+	// RegarothMinionHead.DisplayName: Regaroth
+	// RegarothMinionTail.DisplayName: Regaroth
+	// RegarothTail.DisplayName: Thunderling
+	// MiniFighter.DisplayName: Mini Fighter
+	// ScourgeFighter.DisplayName: Scourge Fighter
 }
 
 Projectiles: {
@@ -3021,6 +3077,7 @@ Projectiles: {
 	Star.DisplayName: Звезда
 	BountyP.DisplayName: Проджектайл охоты за сокровищами
 	ScourgeRocketFriendly.DisplayName: Игроковская бичеракета
+	// ScourgeRocket.DisplayName: Scourge Rocket
 	SignalBoost.DisplayName: Усилитель сигнала
 	CelestiaArc.DisplayName: Небесная молния
 	CelestialBoltFriendly.DisplayName: Небесный лазер
@@ -3128,28 +3185,43 @@ Projectiles: {
 	InfernalMonolithSpawn.DisplayName: Проджектайл спавна адского монолита
 	InfernaceSpike.DisplayName: Шип Инфернейса
 	InfernaceWave.DisplayName: Волна Инфернейса
-	// GreekFireHostile.DisplayName: Fire
-	// ObsidiousFireCrystal.DisplayName: Obsidious Fire Crystal
-	// ObsidiousFireCrystalStationary.DisplayName: Obsidious Fire Crystal
-	// ObsidiousHumanRockOrbital.DisplayName: Obsidious
-	// ObsidiousIceBeam.DisplayName: Obsidious
-	// ObsidiousIceBeamCrystal.DisplayName: Obsidious
-	// ObsidiousIceCrystalSpin.DisplayName: Obsidious
-	// ObsidiousIceCrystal.DisplayName: Obsidious
-	// ObsidiousRitual.DisplayName: Obsidious
-	// ObsidiousBeam.DisplayName: Obsidious
-	// ObsidiousFireBeam.DisplayName: Obsidious
-	// ObsidiousFirePortal.DisplayName: Fire Portal
-	// ObsidiousHandOverlay.DisplayName: Obsidious
-	// ObsidiousHandTrail.DisplayName: Obsidious
-	// ObsidiousHomingBall.DisplayName: Obsidious Homing Ball
-	// ObsidiousIceLaser.DisplayName: Obsidious
-	// ObsidiousRockLarge.DisplayName: Obsidious
-	// ObsidiousRockNoCollide.DisplayName: Obsidious
-	// ObsidiousRockOrbital.DisplayName: Obsidious
-	// ObsidiousTargetCrystal.DisplayName: Obsidious
-	// ObsidiousTargetCrystalCenter.DisplayName: Obsidious
-	// SolarFragmentProj.DisplayName: Solar Fragment
+	GreekFireHostile.DisplayName: Вражеский греческий огонь
+	ObsidiousFireCrystal.DisplayName: Огненный кристалл Обсидиуса
+	ObsidiousFireCrystalStationary.DisplayName: Стационарный огненный кристалл Обсидиуса
+	ObsidiousHumanRockOrbital.DisplayName: Камнекружитель человеческой версии Обсидиуса
+	ObsidiousIceBeam.DisplayName: Ледолуч Обсидиуса
+	ObsidiousIceBeamCrystal.DisplayName: Кристалл ледолуча Обсидиуса
+	ObsidiousIceCrystalSpin.DisplayName: Крутилка ледокристалла Обсидиуса
+	ObsidiousIceCrystal.DisplayName: Ледокристалл Обсидиуса
+	ObsidiousRitual.DisplayName: Ритуал Обсидиуса
+	ObsidiousBeam.DisplayName: Луч Обсидиуса
+	ObsidiousFireBeam.DisplayName: Огнелуч Обсидиуса
+	ObsidiousFirePortal.DisplayName: Огнепортал Обсидиуса
+	ObsidiousHandOverlay.DisplayName: Оверлей руки Обсидиуса
+	ObsidiousHandTrail.DisplayName: Трейл руки Обсидиуса
+	ObsidiousHomingBall.DisplayName: Самонаводящийся шар Обсидиуса
+	ObsidiousIceLaser.DisplayName: Ледолазер Обсидиуса
+	ObsidiousRockLarge.DisplayName: Большой камень Обсидиуса
+	ObsidiousRockNoCollide.DisplayName: Неколлайдящийся камень Обсидиуса
+	ObsidiousRockOrbital.DisplayName: Камнекружитель Обсидиуса
+	ObsidiousTargetCrystal.DisplayName: Кристалл-цель Обсидиуса
+	ObsidiousTargetCrystalCenter.DisplayName: Центр кристалла-цели Обсидиуса
+	SolarFragmentProj.DisplayName: Солнечный фрагмент
+	// FrigidBreath.DisplayName: Accursed Fire
+	// FrostExplosion.DisplayName: Frost Explosion
+	// HomingIce.DisplayName: Enchanted Ice
+	// IceMagic.DisplayName: Ice Magic
+	// IceRain.DisplayName: Ice Rain
+	// PermaDashWarn.DisplayName: Permafrost
+	// PermafrostIcicle.DisplayName: Mystic Icicle
+	// PermafrostTP.DisplayName: Permafrost
+	// RegarothBolt.DisplayName: Regaroth Bolt
+	// RegarothBomb.DisplayName: Regaroth Bomb
+	// RegarothPortal.DisplayName: Regaroth Portal
+	// Napalm.DisplayName: Scourge Napalm
+	// ScourgeBeam.DisplayName: Mini Fighter
+	// ScourgeBullet.DisplayName: Scourge Bullet
+	// ScourgeHomingRocket.DisplayName: Homing Rocket
 }
 
 Configs: {
@@ -3209,19 +3281,23 @@ Bestiary: {
 		TheEye: Одна из двух частей, на которые раскололся Стражник, из-за давления от сосуда энергии, созданного Яхщерами во время битвы с ними. Око - это сосуд, в котором содержатся голос и разум Стражника.
 		AncientWyrm: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
 		AqueousBoss: Теперь всего лишь пустая оболочка былой себя, Аквеус когда-то была одним из сильнейших воинов, когда-либо живших в Террарийском океане. Она служила короне короля морей, мутанта Герцога Рыброна, пока его не убили. И, уж поверь, она точно сделает всё возможное, чтобы отомстить убийце своего короля...
-		AzanaEyeBestiary: AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
-		// AzanaBestiary: ""
+		AzanaEyeBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
+		AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
 		CosmicObserverBestiary: После падения чудища из плоти в Аду, древняя энергия была выпущена в мир, и какая-то часть этой энергии вселилась в камни, летающие в атмосфере, создавая таким образом космоблюдателей.
 		TheGuardian: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
-		// TheGuardianFly: ""
+		TheGuardianFly: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
 		InfernaceBestiary: Когда-то давным-давно, в глубинах Ада была цивилизация, жившая под защитой Инфернейса и его дочери, Фуросии. И даже несмотря на то, что эту цивилизацию много тысяч лет назад сравняли с землёй, Инфернейс всё равно продолжает свою службу, даже будучи сильно ослабленным.
-		ObsidiousBoss: Давным-давно, будучи простым смертным, Обсидиус был искателем артифактов, известным своей жадностью. Его же собственная жадность его в конце-концов и погубила, когда во время поиска очередного артифакта он его нашёл, но тот в конечном итоге превратил его в каменную оболочку, в которой он обречён остаться до конца времён.
+		ObsidiousBoss: Давным-давно, будучи простым смертным, Обсидиус был искателем артифактов, известным своей жадностью. Его же собственная жадность его в конце-концов и погубила, когда во время поиска очередного артифакта он его нашёл... Но тот в конечном итоге превратил его в каменную оболочку, в которой он и обречён остаться до конца времён.
+		Permafrost: Практически не имеющий равных по силе своего вида магии, ледяной дух Пермафрост правил, как добрый король своим небольшим королевством в тундре... Пока в один судный день в него не вторгнулась раса из глубин Пустоты, начавшая уничтожать всё и всех на своём пути, всё, чем Пермафрост так дорожил, ожесточив тем самым его душу.
+		Regaroth: Змей, считающийся проявлением самой молнии, созданный из душ сотен небесных элементалей и ещё больше усиленный Абраксисом, Регарот был создан для того, чтобы служить стражником вышних слоёв атмосферы.
+		ScourgeFighterBoss: Машина, созданная командой марсианских учёных, что надеялись создать свой эквивалент механическим монстрам, созданным пленным механиком в Данже, с одной целью - для помощи им в завоевании Террарии. Однако, даже они сами не подозревали, к чему это в итоге приведёт...
 	}
 
 	Enemies: {
 		Scorpion: Представитель вида и так необычайно ядовитых скорпионов, обитающих в пустыне, которого люди использовали в своих экспериментах, надеясь превратить его в живое оружие. Кто знает, какое чудище оно способно призвать среди песков пустыни...
 		VoidLeviathanOrb: Огромная странная сфера, созданная Левиафаном Пустоты с помощью его невероятной силы. Неизвестно как, но само лишь присутствие даже одной такой сферы делает змея неуязвимым к любому физическому урону...
 		Furosia: Дочь Инфернейса, которая когда-то была стражем и защитником цивилизации, жившей в глубинах Ада, пока её не сравняли с землёй много тысячелетий назад.
+		RegarothMinion: Отпрыск грозового змея, призванный Регаротом для помощи ему в битве. Не стоит судить по его малому размеру, ведь он всё равно может представлять опасность.
 	}
 
 	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
@@ -3291,19 +3367,13 @@ Tooltips: {
 	Desolation2: Диск
 	Desolation3: Быстрая стрельба
 	VoidLeviathansAegis: <Dash Unbound>
-	VoidLeviathansAegis1:
-		'''
-		Увеличивает максимальное здоровье на 50
-		Когда здоровье ниже половины от максимума, твоя защита увеличивается на 5%
-		Позволяет игроку совершать вторичный рывок,
-		'''
-	VoidLeviathansAegis2:
-		'''
-		нажав кнопку
-		После получения 500 урона, ты получаешь на 15 секунд:
-		Увеличение скорости передвижения на 40%
-		Увеличение всего урона на 20%
-		'''
+	VoidLeviathansAegis1: Увеличивает максимальное здоровье на 50
+	VoidLeviathansAegis2: Когда здоровье ниже половины от максимума, твоя защита увеличивается на 5%
+	VoidLeviathansAegis3: Позволяет игроку совершать вторичный рывок,
+	VoidLeviathansAegis4: нажав кнопку
+	VoidLeviathansAegis5: После получения 500 урона, ты получаешь на 15 секунд:
+	VoidLeviathansAegis6: Увеличение скорости передвижения на 40%
+	VoidLeviathansAegis7: Увеличение всего урона на 20%
 	GiftOfTheArchaic: Нажми кнопку
 	GiftOfTheArchaic1:
 		'''
@@ -3317,6 +3387,8 @@ Tooltips: {
 	GreatLens3: Враги получают урон при контакте с игроком, равный их контактному урону
 	AqueousSummon: Пора положить конец твоей тирании, убийца...
 	InfernaceSummon: И вот, ты здесь.
+	// RadiantRainSummon: The rain glistens with unknown magic...
+	// SlimeRainSummon: A sticky drop appears on your shoulder.
 }
 
 AccInfo: {
@@ -3394,17 +3466,20 @@ Said: {
 	InfernaceWifeSoul1: Уже прошло много времени, как мы не виделись.
 	InfernaceWifeSoul2: Жаль, конечно, что всё закончилось именно так...
 	InfernaceWifeSoul3: Береги себя, Фуросия.
-	// Obsidious: Easy, you do not deserve such power.
-	// Obsidious1: I tried to warn you, kid.
-	// Obsidious2: You have something I require...
-	// Obsidious3: Come on kid, hand it over and I'll spare you the pain
-	// Obsidious4: I didnt want to have to do this...
-	// Obsidious5: You put up a good fight, but alas, it had to be this way.
-	// Obsidious6: You forced me to do this.
-	// Obsidious7: You put up a good fight for a mere Terrarian
-	// Obsidious8: I didnt sacrifice my life for nothing, the core will be mine!
-	// Obsidious9: No... my crystal is too powerful! I can't die... It's impossible...
-	// Obsidious10: Ah, my crystal... crumbling... You still arent... strong enough for him
+	Obsidious: Легкотня, ты просто недостоин такой силы.
+	Obsidious1: А я ведь предупреждал тебя, малой.
+	Obsidious2: У тебя есть то, что мне нужно...
+	Obsidious3: Давай, малец, гони эту штуку сюда, и больно не сделаю.
+	Obsidious4: Не хотел я прибегать к этому, честно...
+	Obsidious5: Ты сражался достойно, но, увы, всё и должно было закончиться именно так.
+	Obsidious6: Ты заставил меня это сделать, не я.
+	Obsidious7: Как для обычного Террарийца, ты сражаешься очень даже неплохо.
+	Obsidious8: Я что, просто так свою жизнь отдаю за это ядро?! Оно будет моим!
+	Obsidious9: Нет... Только не это, мой кристалл ведь сильнее этого! Я не умру... Этого не может быть...
+	Obsidious10: Ай, мой кристалл... он разваливается... Послушай, ты всё ещё слаб... слишком слаб, чтобы выстоять против него...
+	// ScourgeFighter: FATAL ERROR DETECTED. SYSTEM WILL NOW SHUT DOWN IMMEDIATELY.
+	// ScourgeFighter1: Homing Missiles Firing
+	// ScourgeFighter2: Missile Strike Incoming
 }
 
 LooTCondition: {
@@ -3417,7 +3492,7 @@ LooTCondition: {
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
 AwakenedSummonItem: Не расходуется в Пробуждённом режиме
-// IsSummon: It is impossible to summon because the boss has already been summoned:
+IsSummon: Призывалка не работает, так как сейчас призван другой босс:
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 
 MyPlayerLocalization: {

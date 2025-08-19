@@ -183,7 +183,20 @@ namespace ElementsAwoken.EASystem.Loot
         {
             public bool CanDrop(DropAttemptInfo info)
             {
-                if (Main.rand.Next(3) == 2)
+                if (Main.rand.Next(10) == 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            public bool CanShowItemDropInUI() => true;
+            public string GetConditionDescription() => null;
+        }
+        public class DropArmor : IItemDropRuleCondition
+        {
+            public bool CanDrop(DropAttemptInfo info)
+            {
+                if (Main.rand.Next(5) == 0)
                 {
                     return true;
                 }

@@ -18,6 +18,9 @@ using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
 using ElementsAwoken.Content.NPCs.Bosses.Azana;
 using ElementsAwoken.Content.NPCs.Bosses.Infernace;
 using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
+using ElementsAwoken.Content.NPCs.Bosses.Permafrost;
+using ElementsAwoken.Content.NPCs.Bosses.Regaroth;
+using ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter;
 using ElementsAwoken.Content.NPCs.Bosses.TheGuardian;
 using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
@@ -80,10 +83,12 @@ namespace ElementsAwoken.Utilities
         #endregion
         #endregion
         #region Boss Summon
-        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>(), ModContent.ItemType<AncientDragonSummon>(), ModContent.ItemType<AqueousSummon>(), ModContent.ItemType<AzanaSummon>(), ModContent.ItemType<GuardianSummon>(), ModContent.ItemType<InfernaceSummon>(), ModContent.ItemType<ObsidiousSummon>()];
+        public static readonly List<int> BossSummonList = [ModContent.ItemType<VoidLeviathanSummon>(), ModContent.ItemType<WastelandSummon>(), ModContent.ItemType<AncientDragonSummon>(), ModContent.ItemType<AqueousSummon>(), ModContent.ItemType<AzanaSummon>(), ModContent.ItemType<GuardianSummon>(), ModContent.ItemType<InfernaceSummon>(), ModContent.ItemType<ObsidiousSummon>(), ModContent.ItemType<PermafrostSummon>(), ModContent.ItemType<RadiantRainSummon>(), ModContent.ItemType<RegarothSummon>(), ModContent.ItemType<ScourgeFighterSummon>(), ModContent.ItemType<SlimeRainSummon>()];
         #endregion
         #region Bosses
-        public static readonly List<int> BossName = [ModContent.NPCType<AncientWyrmHead>(), ModContent.NPCType<TheEye>(), ModContent.NPCType<Aqueous>(), ModContent.NPCType<AzanaEye>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Content.NPCs.Bosses.CosmicObserver.CosmicObserver>(), ModContent.NPCType<TheGuardian>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<Infernace>(), ModContent.NPCType<VoidLeviathanHead>(), ModContent.NPCType<Wasteland>(), ModContent.NPCType<ObsidiousHuman>(), ModContent.NPCType<Obsidious>()];
+        public static readonly List<int> BossName = [ModContent.NPCType<AncientWyrmHead>(), ModContent.NPCType<TheEye>(), ModContent.NPCType<Aqueous>(), ModContent.NPCType<AzanaEye>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Content.NPCs.Bosses.CosmicObserver.CosmicObserver>(), 
+        ModContent.NPCType<TheGuardian>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<Infernace>(), ModContent.NPCType<VoidLeviathanHead>(), ModContent.NPCType<Wasteland>(), ModContent.NPCType<ObsidiousHuman>(), ModContent.NPCType<Obsidious>(), ModContent.NPCType<Permafrost>(), 
+        ModContent.NPCType<RegarothHead>(), ModContent.NPCType<ScourgeFighter>()];
         #endregion;
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

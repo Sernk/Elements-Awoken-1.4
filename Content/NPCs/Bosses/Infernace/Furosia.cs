@@ -96,7 +96,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
                 new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Enemies.Furosia"),
-                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Underground,
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheUnderworld,
             });
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)

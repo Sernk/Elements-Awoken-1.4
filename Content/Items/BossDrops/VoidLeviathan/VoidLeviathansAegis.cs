@@ -22,18 +22,18 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             string hotkey;
-            var EALocalization = ModContent.GetInstance<EALocalization>();
+            var e = ModContent.GetInstance<EALocalization>();
             var list = ElementsAwoken.dash2.GetAssignedKeys();
             if (list.Count > 0) hotkey = list[0];
-            else hotkey = EALocalization.VoidLeviathansAegis;
+            else hotkey = e.VoidLeviathansAegis;
 
-            string baseTooltip = $"{EALocalization.VoidLeviathansAegis1} ({ hotkey }) {EALocalization.VoidLeviathansAegis2.Replace("<Dash Unbound>", hotkey)}\n";
-            foreach (TooltipLine line2 in tooltips)
+            string[] lines = [e.VoidLeviathansAegis1, e.VoidLeviathansAegis2, e.VoidLeviathansAegis3 + e.VoidLeviathansAegis4 + " " + hotkey, e.VoidLeviathansAegis5, e.VoidLeviathansAegis6, e.VoidLeviathansAegis7];
+
+            tooltips.RemoveAll(t => t.Mod == "Terraria" && t.Name.StartsWith("Tooltip"));
+
+            for (int i = 0; i < lines.Length; i++)
             {
-                if (line2.Mod == "Terraria" && line2.Name.StartsWith("Tooltip"))
-                {
-                    line2.Text = baseTooltip;
-                }
+                tooltips.Add(new TooltipLine(Mod, "Tooltip" + (i + 1), lines[i]));
             }
         }
         public override void UpdateAccessory(Player player, bool hideVisual)

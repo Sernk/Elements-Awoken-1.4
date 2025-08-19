@@ -2278,6 +2278,52 @@ Items: {
 			Summons Obsidious
 			'''
 	}
+
+	PermafrostSummon: {
+		DisplayName: Enchanted Ice Crystal
+		Tooltip:
+			'''
+			Harbours immense amounts of ice magic
+			Summons Permafrost on use
+			'''
+	}
+
+	RadiantRainSummon: {
+		DisplayName: Radiant Starholder
+		Tooltip: Enchants the rain with the Radiance
+	}
+
+	Radia: {
+		DisplayName: Radia
+		Tooltip: ""
+	}
+
+	RegarothSummon: {
+		DisplayName: Swirling Energies
+		Tooltip:
+			'''
+			Summons Regaroth on use
+			Use in the sky
+			'''
+	}
+
+	ScourgeFighterSummon: {
+		DisplayName: Scourge Remote
+		Tooltip:
+			'''
+			Use at night
+			Summons the Scourge Fighter on use
+			'''
+	}
+
+	SlimeRainSummon: {
+		DisplayName: Energized Gel
+		Tooltip:
+			'''
+			The electric charge has crystallised the gel
+			Summons the Slime Rain on use
+			'''
+	}
 }
 
 Tiles: {
@@ -2775,6 +2821,16 @@ NPCs: {
 	ObsidiousHand.DisplayName: Obsidious Hand
 	ObsidiousHuman.DisplayName: Obsidious
 	ObsidiousTransition.DisplayName: Obsidious Transition
+	Permafrost.DisplayName: Permafrost
+	PermaOrbital.DisplayName: Perma Orbital
+	RegarothBody.DisplayName: Thunderling
+	RegarothHead.DisplayName: Thunderling
+	RegarothMinionBody.DisplayName: Regaroth
+	RegarothMinionHead.DisplayName: Regaroth
+	RegarothMinionTail.DisplayName: Regaroth
+	RegarothTail.DisplayName: Thunderling
+	MiniFighter.DisplayName: Mini Fighter
+	ScourgeFighter.DisplayName: Scourge Fighter
 }
 
 Projectiles: {
@@ -2994,6 +3050,7 @@ Projectiles: {
 	Star.DisplayName: Star
 	BountyP.DisplayName: Signal Booster
 	ScourgeRocketFriendly.DisplayName: Rocket
+	ScourgeRocket.DisplayName: Scourge Rocket
 	SignalBoost.DisplayName: Signal Booster
 	CelestiaArc.DisplayName: Lightning
 	CelestialBoltFriendly.DisplayName: Celestial Laser
@@ -3123,6 +3180,21 @@ Projectiles: {
 	ObsidiousTargetCrystal.DisplayName: Obsidious
 	ObsidiousTargetCrystalCenter.DisplayName: Obsidious
 	SolarFragmentProj.DisplayName: Solar Fragment
+	FrigidBreath.DisplayName: Accursed Fire
+	FrostExplosion.DisplayName: Frost Explosion
+	HomingIce.DisplayName: Enchanted Ice
+	IceMagic.DisplayName: Ice Magic
+	IceRain.DisplayName: Ice Rain
+	PermaDashWarn.DisplayName: Permafrost
+	PermafrostIcicle.DisplayName: Mystic Icicle
+	PermafrostTP.DisplayName: Permafrost
+	RegarothBolt.DisplayName: Regaroth Bolt
+	RegarothBomb.DisplayName: Regaroth Bomb
+	RegarothPortal.DisplayName: Regaroth Portal
+	Napalm.DisplayName: Scourge Napalm
+	ScourgeBeam.DisplayName: Mini Fighter
+	ScourgeBullet.DisplayName: Scourge Bullet
+	ScourgeHomingRocket.DisplayName: Homing Rocket
 }
 
 Configs: {
@@ -3189,12 +3261,16 @@ Bestiary: {
 		TheGuardianFly: ""
 		InfernaceBestiary: ""
 		ObsidiousBoss: ""
+		Permafrost: ""
+		Regaroth: ""
+		ScourgeFighterBoss: ""
 	}
 
 	Enemies: {
 		Scorpion: This specimen of already unusually venomous desert scorpions was used in an experiment in order to turn it into a living weapon. Unleashing one in the sands of the desert might have detrimental consequences...
 		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
 		Furosia: ""
+		RegarothMinion: ""
 	}
 
 	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
@@ -3264,19 +3340,13 @@ Tooltips: {
 	Desolation2: Disc
 	Desolation3: Rapid
 	VoidLeviathansAegis: <Dash Unbound>
-	VoidLeviathansAegis1:
-		'''
-		Life increased by 50
-		When under half health, defense is increased by 5%
-		Allows the player to perform a secondary dash using the
-		'''
-	VoidLeviathansAegis2:
-		'''
-		key
-		For 15 seconds after taking 500 total damage:
-		40% increased movement speed
-		20% increased damage
-		'''
+	VoidLeviathansAegis1: Life increased by 50
+	VoidLeviathansAegis2: When under half health, defense is increased by 5%
+	VoidLeviathansAegis3: Allows the player to perform a secondary dash using the
+	VoidLeviathansAegis4: key
+	VoidLeviathansAegis5: For 15 seconds after taking 500 total damage:
+	VoidLeviathansAegis6: 40% increased movement speed
+	VoidLeviathansAegis7: 20% increased damage
 	GiftOfTheArchaic: Press
 	GiftOfTheArchaic1:
 		'''
@@ -3289,6 +3359,8 @@ Tooltips: {
 	GreatLens3: If the player is hit by an enemy the damage is reflected to them
 	AqueousSummon: Time for your reign to end, murderer
 	InfernaceSummon: You arrive, at last.
+	RadiantRainSummon: The rain glistens with unknown magic...
+	SlimeRainSummon: A sticky drop appears on your shoulder.
 }
 
 AccInfo: {
@@ -3377,6 +3449,9 @@ Said: {
 	Obsidious8: I didnt sacrifice my life for nothing, the core will be mine!
 	Obsidious9: No... my crystal is too powerful! I can't die... It's impossible...
 	Obsidious10: Ah, my crystal... crumbling... You still arent... strong enough for him
+	ScourgeFighter: FATAL ERROR DETECTED. SYSTEM WILL NOW SHUT DOWN IMMEDIATELY.
+	ScourgeFighter1: Homing Missiles Firing
+	ScourgeFighter2: Missile Strike Incoming
 }
 
 LooTCondition: {

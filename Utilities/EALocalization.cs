@@ -9,6 +9,8 @@ namespace ElementsAwoken.Utilities
         public string WastelandBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.WastelandBoss");
         public string InfernaceBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.InfernaceBestiary");
         public string CosmicObserverBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.CosmicObserverBestiary");
+        public string ScourgeFighterBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ScourgeFighterBoss");
+        public string Regaroth => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.Regaroth");
         public string AqueousBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AqueousBoss");
         public string ObsidiousBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ObsidiousBoss");
         public string TheEye => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheEye");
@@ -21,6 +23,7 @@ namespace ElementsAwoken.Utilities
         public string AzanaBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaBestiary");
         public string Scorpion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion");
         public string Furosia => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Furosia");
+        public string RegarothMinion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.RegarothMinion");
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
         public string MysticBunny => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny");
         #endregion
@@ -98,11 +101,15 @@ namespace ElementsAwoken.Utilities
         public string Desolation1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Desolation1");
         public string Desolation2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Desolation2");
         public string Desolation3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Desolation3");
-
         #region VoidLeviathansAegis
         public string VoidLeviathansAegis => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis");
         public string VoidLeviathansAegis1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis1");
         public string VoidLeviathansAegis2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis2");
+        public string VoidLeviathansAegis3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis3");
+        public string VoidLeviathansAegis4 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis4");
+        public string VoidLeviathansAegis5 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis5");
+        public string VoidLeviathansAegis6 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis6");
+        public string VoidLeviathansAegis7 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidLeviathansAegis7");
         #endregion
         #endregion
         #region GiftOfTheArchaic
@@ -121,6 +128,12 @@ namespace ElementsAwoken.Utilities
         #region InfernaceSummon
         public string InfernaceSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfernaceSummon");
         #endregion
+        #region RadiantRainSummon
+        public string RadiantRainSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.RadiantRainSummon");
+        #endregion
+        #region SlimeRainSummon
+        #endregion
+        public string SlimeRainSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.SlimeRainSummon");
         #endregion
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
@@ -137,6 +150,9 @@ namespace ElementsAwoken.Utilities
         public string InfernaceWifeSoul1 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceWifeSoul1");
         public string InfernaceWifeSoul2 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceWifeSoul2");
         public string InfernaceWifeSoul3 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceWifeSoul3");
+        public string ScourgeFighter => Language.GetTextValue("Mods.ElementsAwoken.Said.ScourgeFighter");
+        public string ScourgeFighter1 => Language.GetTextValue("Mods.ElementsAwoken.Said.ScourgeFighter1");
+        public string ScourgeFighter2 => Language.GetTextValue("Mods.ElementsAwoken.Said.ScourgeFighter2");
         public string Aqueous => Language.GetTextValue("Mods.ElementsAwoken.Said.Aqueous");
         public string Aqueous1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Aqueous1");
         public string TheGuardian => Language.GetTextValue("Mods.ElementsAwoken.Said.TheGuardian");

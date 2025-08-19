@@ -1,5 +1,5 @@
 using ElementsAwoken.Content.Effects;
-using ElementsAwoken.Content.Items.Tech.Weapons.Tier6;
+using ElementsAwoken.Content.Projectiles.NPCProj.Wasteland;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI;
@@ -30,6 +30,7 @@ namespace ElementsAwoken
 {
     public class ElementsAwoken : Mod
     {
+        public static string a = "";
         public static DynamicSpriteFont encounterFont;
 
         internal UserInterface AlchemistUserInterface;
@@ -153,9 +154,17 @@ namespace ElementsAwoken
 
                 //    Filters.Scene["ElementsAwoken:HeatDistortion"] = new Filter(new ScreenShaderData("FilterHeatDistortion").UseImage("Images/Misc/noise", 0, null).UseIntensity(4f), EffectPriority.Low);
 
-                //Ref<Effect> screenRef = new Ref<Effect>(GetEffect("Effects/ShockwaveEffect"));
-                //Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData(screenRef, "Shockwave"), EffectPriority.VeryHigh);
+                //Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
+                //Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData("Shockwave"), EffectPriority.VeryHigh);
                 //Filters.Scene["Shockwave"].Load();
+                //Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
+                //Filters.Scene["ShockwaveEffect"] = new Filter(new ScreenShaderData("FilterMoonLord"), EffectPriority.VeryHigh);
+                //Filters.Scene["ShockwaveEffect"].Load();
+                Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
+                Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData(screenRef, "Shockwave"), EffectPriority.VeryHigh);
+                Filters.Scene["Shockwave"].Load();
+
+                Effect effect = Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value;
 
                 Main.QueueMainThreadAction(() =>
                 {

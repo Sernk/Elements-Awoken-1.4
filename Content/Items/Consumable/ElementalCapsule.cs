@@ -8,6 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using Terraria.Audio;
 
 namespace ElementsAwoken.Content.Items.Consumable
 {
@@ -22,7 +23,7 @@ namespace ElementsAwoken.Content.Items.Consumable
             Item.useAnimation = 45;
             Item.useTime = 45;
             Item.useStyle = 4;
-            Item.UseSound = SoundID.Item119;
+            Item.UseSound = new SoundStyle("ElementsAwoken/Sounds/Item/FromProfessionalClown");
         }
         public override bool CanUseItem(Player player)
         {
@@ -51,14 +52,6 @@ namespace ElementsAwoken.Content.Items.Consumable
             }
             return false;
         }
-        //public bool Enabled
-        //{
-        //    get => MyWorld.AwakenedModeEnabled;
-        //    set
-        //    {
-        //        MyWorld.AwakenedModeEnabled = value;
-        //    }
-        //}
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
