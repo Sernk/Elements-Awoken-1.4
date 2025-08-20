@@ -1,5 +1,4 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
-using ElementsAwoken.Content.Items.BossDrops.Regaroth;
 using ElementsAwoken.Content.Items.BossDrops.ScourgeFighter;
 using ElementsAwoken.Content.Projectiles.NPCProj.ScourgeFighter;
 using ElementsAwoken.EASystem.Loot;
@@ -14,7 +13,6 @@ using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.UI;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
 {

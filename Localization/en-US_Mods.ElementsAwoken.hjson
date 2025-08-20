@@ -2324,6 +2324,132 @@ Items: {
 			Summons the Slime Rain on use
 			'''
 	}
+
+	ToySlimeMask: {
+		Tooltip: ""
+		DisplayName: Toy Slime Mask
+	}
+
+	ToySlimeClaw: {
+		Tooltip: ""
+		DisplayName: Slimy Toy Claw
+	}
+
+	BrokenToys: {
+		Tooltip: Most effective on the feet
+		DisplayName: Broken Toys
+	}
+
+	ToySlimeSummon: {
+		Tooltip:
+			'''
+			It sticks to your hands
+			Increases the spawn chance of Toy Slimes for a minute
+			'''
+		DisplayName: Large Slimeball
+	}
+
+	VoidEventSummon: {
+		DisplayName: Dark Pearl
+		Tooltip: Summons the Dawn of the Void on use
+	}
+
+	VoidEventSummon2: {
+		DisplayName: Insignia of Emptyness
+		Tooltip:
+			'''
+			Summons the Dawn of the Void II on use
+			Use after midnight
+			'''
+	}
+
+	Darkstone: {
+		DisplayName: Darkstone
+		Tooltip: It's cold to the touch
+	}
+
+	UndownerTerraria: {
+		DisplayName: Undowner Terraria
+		Tooltip: ""
+	}
+
+	VolcanoxSummon: {
+		DisplayName: Volcanox Summon
+		Tooltip:
+			'''
+			It's eternal blaze burns your eyes
+			Summons Volcanox on use
+			'''
+	}
+
+	Sanguine: {
+		DisplayName: Sanguine
+		Tooltip: ""
+	}
+
+	Wormer: {
+		DisplayName: Wormer
+		Tooltip:
+			'''
+			Fires a parasitic worm
+			50% chance to not consume ammo
+			'''
+	}
+
+	Soulsword: {
+		DisplayName: Soulsword
+		Tooltip: Releases souls from enemies on hit
+	}
+
+	Nihongo: {
+		DisplayName: Nihongo
+		Tooltip: The ancient spear of Japan
+	}
+
+	ForeverSword: {
+		DisplayName: Forever
+		Tooltip: Rapidly shoots life stealing bolts
+	}
+
+	SearingBlaze: {
+		Tooltip:
+			'''
+			Turns normal arrows into searing arrows
+			Releases thick clouds of smoke when arrows collide
+			50% chance not to consume ammo
+			'''
+		DisplayName: Searing Blaze
+	}
+
+	MasterSword: {
+		DisplayName: Master Sword
+		Tooltip: Hold right click to charge the blade
+	}
+
+	Gladiolus: {
+		Tooltip: A blade grown from the seeds of Plantera
+		DisplayName: Gladiolus
+	}
+
+	Mjolnir: {
+		Tooltip: Shoots lightning out at enemies
+		DisplayName: Mjolnir
+	}
+
+	PoseidonsTrident: {
+		DisplayName: Poseidon's Trident
+		Tooltip: ""
+	}
+
+	EmptyGauntlet: {
+		DisplayName: Empty Gauntlet
+		Tooltip: Odd slots are built into the gauntlet
+	}
+
+	AncientsSummon: {
+		Tooltip: Summons The Ancients on use
+		DisplayName: Resurrection Sigil
+	}
 }
 
 Tiles: {
@@ -2372,6 +2498,7 @@ Tiles: {
 	TheGuardianTrophy.MapEntry: The Guardian Trophy
 	VolcanoxTrophy.MapEntry: Volcanox Trophy
 	WastelandTrophy.MapEntry: Wasteland Trophy
+	Darkstone.MapEntry: Darkstone
 }
 
 Buffs: {
@@ -2831,6 +2958,157 @@ NPCs: {
 	RegarothTail.DisplayName: Thunderling
 	MiniFighter.DisplayName: Mini Fighter
 	ScourgeFighter.DisplayName: Scourge Fighter
+	ToySlime.DisplayName: Toy Slime
+	MiniToySlime.DisplayName: Mini Toy Slime
+	Firefly.DisplayName: Firefly
+	SoulOfInfernace.DisplayName: Soul of Infernace
+	Volcanox.DisplayName: Volcanox
+	VolcanoxHook.DisplayName: Volcanox Hook
+	VolcanoxTentacle.DisplayName: Volcanox Tentacle
+
+	Storyteller: {
+		DisplayName: Storyteller
+
+		TownNPCMood: {
+			Content: Я довольный.
+			NoHome: Терпеть не могу, когда у меня нет дома.
+			FarFromHome: Я слишком далеко от дома.
+			LoveSpace: Я люблю, когда так много пространства.
+			DislikeCrowded: Мне не нравится то, как здесь людно.
+			HateCrowded: Я ненавижу то, как здесь людно.
+			LikeNPC_Princess: Мне нравится {NPCName}.
+			Princess_LovesNPC: Мне нравится {NPCName}.
+		}
+
+		Name: {
+			Amadis: Amadis
+			Neivirk: Neivirk
+			Herckeus: Herckeus
+			Nornex: Nornex
+			Zairis: Zairis
+			#TODO default == отладка
+			default: default
+		}
+
+		Census.SpawnCondition: Only during the day
+
+		ButtonText: {
+			Text2: Fight
+			Text1: Question
+			Text: Story
+		}
+
+		Story: {
+			#TODO: Cтока не может быть начата с ' . , вызвет ошибку при компиляций мода
+			#пример Story1_1: ' исполузуй в начале ""
+			Story: The king of the slimes roams the fields with it's followers, causing earthquakes. A '
+			Story_1: may provoke him.
+			Story1: A giant eyeball is terrorizing the night, which hides sharp teeth underneath his lens. You found this '
+			Story1_1: "'...maybe it'll be just perfect for the eyeball to appear."
+			Story2: Dust is spreading out within the desert, storming. Scorpions suddenly arise from the sands. No doubt, it's Wasteland hunting it's next victim. Catch one of the '
+			Story2_1: "' with a net to get his attention."
+			Story3: A loud roar halled through the dead lands of the Crimson. It's guardian roams free again, it seems. Destroy three of these 'Crimson Hearts' within the caves. Alternatively, provoke it with a '
+			Story3_1: "'."
+			Story4: A loud roar halled through the dead lands of the Corruption. It's guardian roams free again, it seems. Destroy three of these 'Shadow Orbs' within the caves. Alternatively, provoke it with some '
+			Story4_1: "'"
+			Story5: The queen of all bees buzzes through the jungle, trying to build it's hives at every corner. Smash one of the hive's larva or use an '
+			Story5_1: "' to put an end to that madness."
+			Story6: An ancient curse has befallen the old man near the dungeon. This curse will cause a giant skull to emerge. Kill him with a '
+			Story6_1: "' or visit the halls of the dungeon to summon it."
+			Story7: After the skull has fallen, ash and fire rains down upon the lands. The fire lord Infernace seems to be enraged. Create a '
+			Story7_1: "' and use it within the underworld to get him to show up."
+			Story8: I've heared that the guide is fully aware of his fate and deems you challenging to fight the underworld's master. Heh, what a fool. Little does he know what it's defeat will bring over the world...
+			Story9: Do you remember that giant eyeball? Some group of scientists created an mechanical copy of him - and this time, there are two of them. Use a '
+			Story9_1: "'. As it's similiar to the eye you've made back then, it may cause them to appear."
+			Story10: You feel those earthquakes? They are way worse than the ones of the King Slime back then. Create an '
+			Story10_1: "' and use it, maybe the source of the earthquake will show up then."
+			Story11: The skull has been reborn as a four armed mechanoid. And he causes more havoc than ever before. A '
+			Story11_1: "' will cause it to appear."
+			Story12: A group of martians had created a powerful jet robot long ago dubbed the Scourge Fighter, with an AI to destroy whatever it comes across. If you can obtain a duplicate of his '
+			Story12_1: "', you may be able to signal it your coordinates."
+			Story13: The mechanical trio went rogue after shocking thunders hit them. It was caused by the cosmic thunder serpent, Regaroth. If you are able to get ahold of a piece of his '
+			Story13_1: "', he may come to reclaim it. Prepare for the worst."
+			Story14: Flowers are always pretty, however, not when they're giant and have tentacles and spikes. I'm talking about the jungle guardian Plantera. Destroy her bulb to awaken her.
+			Story15: The Golem is a ancient automaton within the depths of the jungle temple. Right now it's deactivated, but you can reactivate it by using one of it's '
+			Story15_1: "' at an Lihzahrd Altar."
+			Story16: The once friendly ice wizard Permafrost returned as a hatred filled spirit, taking revenge upon those who forgot him. An '
+			Story16_1: "' will call upon him."
+			Story17: Forbidden artifact only cause calamitous things, yet some do not want to listen. The resulted, obsidian-plated monster, Obsidious, can be summoned with a '
+			Story17_1: "'."
+			Story18: The king of the ocean, Duke Fishron recently scared me when I was looking for some fresh fish to have a nice dinner. He nearly devoured one of my arms. He is highly dangerous, so it's better to catch him with a '
+			Story18_1: "' and get rid of him."
+			Story19: No bad action remains unpunished. The knight of the ocean has come to take your life for taking Fishron's. Get ready for a tough battle. The knight will be further provoked by holding a '
+			Story19_1: "' at the ocean."
+			Story20: A group of cultists stand at the entrance of the dungeon, praising something that they shouldn't. You better take them out before they summon anything chaotic.
+			Story21: You've caused a great mess. Because of you, the moon lord and the 4 lunar pillars awaken in the land once more. This creature could mean the end of everything. Are you ready to take on him? If so, kill those pillars or use a '
+			Story21_1: "' to awake him for real."
+			Story22: The divine being of the underworld, Volcanox, has been freed from it's prison. To calm the underworld down once again, you will have to make sure that he will fall. A '
+			Story22_1: "' will be enough to unleash him."
+			Story23: The town is full of hallucinations and fatigue and the void glows with a sinister power - the Void Leviathan has returned from it's slumber. He is after your soul, so he can reach his full potenial once again. Take him down by summoning him with the '
+			Story23_1: "'"
+			Story24: A long forgotten chaotic infection has taken the control of a scientist, infusing her with a mechanical suit to create an mindless, horrifying abomination. If you use an '
+			Story24_1: "', you might be able to gain it's attention..."
+			Story25: Sorry, I'm all out of tales
+			Story26: You question my origin? I am a crystalline being, born within the depths of
+			Story26_1: For so long, you mindlessly did what I said, without questioning. You did your job well. Now, it's time for you to perish. I do not need you any longer.
+		}
+
+		Chat: {
+			Chat: The flare of chaos is now extinct... that such a great warrior did fall with ease is truly interesting...
+			Chat1: You did put the ex-goddess out of her misery, huh? I'm curious... what do you seek?
+			Chat2: Little do you know what power you've set free...you're just as foolish as you look...
+			Chat3: potaot
+			Chat4: Gah, perhaps I should just kill
+			Chat4_1: now. Oh! I didn't see you there
+			Chat4_2: ... You didn't hear anything did you?
+			Chat5: Say, is it really you who makes these decisions? Or is it the puppeteer behind the curtain who pulls your strings?
+			Chat6: What a great night to kill monsters. The red moon makes it even way more fun.
+			Chat7: I never could understand humanity's satisfaction at that time of the year. They clearly didn't see real monsters. And the beings of this Pumpkin Moon are nothing compared to true ones, either.
+			Chat8: At least this cold night ended in a good fight and not into an ice queen singing about her doubts. Ugh.
+			Chat9: Go tell
+			Chat9_1: to tone down the noise, I'm sick of her partying.
+			Chat10: calls herself old. She has barely been born.
+			Chat11: What on Earth is
+			Chat11_1: ? In all my time here, I have never seen a being so peculiar...
+			Chat12: "'s weapons are feeble little creations."
+			Chat13: Hah,
+			Chat13_1: is a useless fool! No one requires his little 'tips' he has. Petty...
+			Chat14: Really? Boss Checklist? Am I seriously not good enough... Well then, guess I'll have to prove I'm better. You'll see.
+			Chat15: Ah, the Moon Lord is defeated... Well done, you are almost as strong as I.
+			Chat16: Old
+			Chat16_1: is afraid of some puny eyeball! I would slay it in seconds if I believed it was even worth the effort. Hah!
+			Chat17: Argh! These damn scorpions keep getting in my house! I heard of a genetics lab meltdown after that giant eye was slain. Imbeciles cant even contain a scorpion!
+			Chat18: Strange floral creatures have started appearing in the jungle... I saw one with a shell made of petals!
+			Chat19: The skies brighten once more, creatures that harbour an ore of immense power reside up there now.
+			Chat20: Death spreads. The critters are looking sickly. I watched one get eaten from the inside out by a giant purple tick...
+			Chat21: Burning spirits have began to appear in the dungeon. I suspect that the lunar surge may have caused Volcanox to release them into the world.
+			Chat22: You look weary,
+			Chat22_1: ". Go pay a visit to "
+			Chat23: You look weary,
+			Chat23_1: . Go pay a visit to the nurse. Oh wait... We don't have one
+			Chat24: I wouldn't reccomend getting into a fight with me. I may be old but trust me, I have plenty of strength.
+			Chat25: The beasts of Terraria are rough, I'll sell you some nasty weapons to aid in your combat.
+			Chat26: These weapons are all made from 100% natural resources!
+			Chat27: Hope you enjoy what I'm selling. Who am I kidding, of course you will!
+			Chat28: Hmph. Sometimes standing around and mingling with all these people gets boring. I miss the days of war.
+			Chat29: You want help crafting? I'm a storyteller! I deal legends not knowledge.
+			Chat30: Why don't I kill the monsters myself? Uh, I'm awfully busy and you look like a strong young man.
+			Chat31: I despise cookies. They are way too sweet for me. Honestly, I prefer the spicy stuff.
+		}
+	}
+
+	CrystalSerpentTail.DisplayName: Crystal Serpent
+	CrystalSerpentHead.DisplayName: Crystal Serpent
+	CrystalSerpentBody.DisplayName: Crystal Serpent
+	Krecheus.DisplayName: Krecheus
+	Kirvein.DisplayName: Kirvein
+	Izaris.DisplayName: Izaris
+	EnergySeeker.DisplayName: Energy Seeker
+	ShardBase.DisplayName: ""
+	Xernon.DisplayName: Xernon
+	AncientAmalgamFist.DisplayName: Ancient Amalgamate Fist
+	AncientAmalgamDeath.DisplayName: The Ancient Amalgamate
+	AncientAmalgam.DisplayName: The Ancient Amalgamate
 }
 
 Projectiles: {
@@ -2850,6 +3128,7 @@ Projectiles: {
 	EnergyWeaverBeam.DisplayName: Energy Weaver Beam
 	Explosion.DisplayName: Explosion
 	LegoBrickFriendly.DisplayName: Lego Brick Friendly
+	LegoBrick.DisplayName: Lego Brick
 	LifesAura.DisplayName: Lifes Aura
 	LightningCloud.DisplayName: Lightning Cloud
 	LightningCloudSwirl.DisplayName: Lightning Cloud Swirl
@@ -3195,6 +3474,62 @@ Projectiles: {
 	ScourgeBeam.DisplayName: Mini Fighter
 	ScourgeBullet.DisplayName: Scourge Bullet
 	ScourgeHomingRocket.DisplayName: Homing Rocket
+	VolcanicBoom.DisplayName: Volcanic Boom
+	VolcanicDebris.DisplayName: Volcanox
+	VolcanicDemon.DisplayName: Volcanic Demon
+	VolcanoxBlast.DisplayName: Volcanox
+	VolcanoxBolt.DisplayName: Volcanox
+	VolcanoxExplosion.DisplayName: Explosion
+	CrystallineKunai.DisplayName: Crystalline Kunai
+	BloodshotP.DisplayName: Bloodshot
+	Worm.DisplayName: Worm
+	SoulswordSoul.DisplayName: Soulsword
+	SoulswordSoul2.DisplayName: Soulsword
+	NihongoPoint.DisplayName: Nihongo
+	NihongoP.DisplayName: Nihongo
+	ForeverBolt.DisplayName: Forever Bolt
+	ThickSmoke.DisplayName: Discord Toxin
+	SearingArrow.DisplayName: Searing Arrow
+	MasterSwordWave.DisplayName: Master Sword
+	GladiolusTip.DisplayName: Gladiolus
+	Gladiolus.DisplayName: Gladiolus
+	MjolnirP.DisplayName: Mjolnir
+	PoseidonsTridentP.DisplayName: Poseidons Trident
+	IzarisShard.DisplayName: ""
+	KirveinShard.DisplayName: ""
+	KrecheusShard.DisplayName: ""
+	XernonShard.DisplayName: ""
+	KirveinArrow.DisplayName: Kirvein
+	KirveinCrystalFragment.DisplayName: Kirvein
+	KirveinExplosion.DisplayName: Kirvein
+	KirveinExplosiveArrow.DisplayName: Kirvein
+	KirveinFragCrystal.DisplayName: Kirvein
+	KrecheusBlade.DisplayName: Krecheus
+	KrecheusBolt.DisplayName: Krecheus
+	KrecheusCircle.DisplayName: Krecheus
+	KrecheusPortal.DisplayName: Krecheus
+	KrecheusSide.DisplayName: Krecheus
+	KrecheusSpike.DisplayName: Krecheus
+	XernonBolt.DisplayName: Xernon
+	XernonBoltExplosive.DisplayName: Xernon
+	XernonBoltHoming.DisplayName: Xernon Bolt Homing
+	XernonBoltSuper.DisplayName: Xernon
+	XernonCrystal.DisplayName: Xernon
+	XernonExplosion.DisplayName: Xernon
+	CreditsStarter.DisplayName: ""
+	ShardBase.DisplayName: Shard Base
+	Lightbeam.DisplayName: ""
+	DeathShockwave.DisplayName: Death Shockwave
+	CrystallineShardHoming.DisplayName: Ancient Amalgamate
+	CrystallineShard.DisplayName: Ancient Amalgamate
+	CrystallineKunaiHostileNG.DisplayName: Ancient Amalgamate
+	CrystallineKunaiHostileExplosive.DisplayName: Ancient Amalgamate
+	CrystalFlower.DisplayName: Crystal Flower
+	CrystalCluster.DisplayName: Crystal Cluster
+	AncientProjectionSwirl2.DisplayName: Ancient Projection
+	AncientProjectionSwirl.DisplayName: Ancient Projection
+	AncientProjection.DisplayName: Ancient Projection
+	AAHandOverlay.DisplayName: Ancient Amalgamate
 }
 
 Configs: {
@@ -3264,6 +3599,8 @@ Bestiary: {
 		Permafrost: ""
 		Regaroth: ""
 		ScourgeFighterBoss: ""
+		ToySlime: ""
+		VolcanoxBoss: ""
 	}
 
 	Enemies: {
@@ -3271,6 +3608,8 @@ Bestiary: {
 		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
 		Furosia: ""
 		RegarothMinion: ""
+		MiniToySlime: ""
+		Firefly: ""
 	}
 
 	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
@@ -3361,6 +3700,31 @@ Tooltips: {
 	InfernaceSummon: You arrive, at last.
 	RadiantRainSummon: The rain glistens with unknown magic...
 	SlimeRainSummon: A sticky drop appears on your shoulder.
+	ToySlimeClaw: <Special Ability Unbound>
+	ToySlimeClaw1: Allows the ability to slide down walls
+	ToySlimeClaw2: Pressing the special ability key
+	ToySlimeClaw3: key will throw slime at the cursor
+	ToySlimeClaw4: If it is thrown down, the player will get launched up into the air and throw multiple projectiles down
+	VoidEventSummon: It is too late to call upon the void...
+	VoidEventSummon1: You cannot intensify the void...
+	VoidEventSummon2: Your head is already filled with screams...
+	VoidEventSummon3: You feel a wave of cold rush over you...
+	VoidEventSummon4: Your head throbs
+	VoidEventSummon5: The void retreats from the light
+	VoidEventSummon6: The shadows grow darker...
+	Betatest: --Item for testing mod--
+	UndownerTerraria: Permafrost was killed:
+	AncientsSummon: I've waited centuries for this!
+	AncientsSummon1: Back for more?
+	AncientsSummon2: I could do this all day!
+	AncientsSummon3: You should have gone for the head...
+	AncientsSummon4: Really? Still trying?
+	AncientsSummon5: Give up already.
+	AncientsSummon6: Are you seriously gonna keep dying?
+	AncientsSummon7: As much fun slaying you is, there are better things to do with both our lives.
+	AncientsSummon8: Lunatic.
+	AncientsSummon9: I just don't think you are cut out to do this... Go find some other hobby.
+	AncientsSummon10: You bring me back to this awful land... Why?
 }
 
 AccInfo: {
@@ -3452,6 +3816,10 @@ Said: {
 	ScourgeFighter: FATAL ERROR DETECTED. SYSTEM WILL NOW SHUT DOWN IMMEDIATELY.
 	ScourgeFighter1: Homing Missiles Firing
 	ScourgeFighter2: Missile Strike Incoming
+	Volcanox: You will pay for what you've done!
+	Izaris: Your time has come, mortal!
+	Izaris1: I guess we are doing this again...
+	ShardBase: Using autopause huh? What a wimp
 }
 
 LooTCondition: {
@@ -3459,6 +3827,11 @@ LooTCondition: {
 	ScourgeLootCondition: Drop chance 1/3
 	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
 	TheEye: if The Eye was killed first
+}
+
+ShopCondition: {
+	BossString: After defeating the
+	BossString1: or
 }
 
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"

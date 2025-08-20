@@ -1,4 +1,18 @@
-﻿using Terraria.Localization;
+﻿using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
+using ElementsAwoken.Content.NPCs.Bosses.Azana;
+using ElementsAwoken.Content.NPCs.Bosses.Infernace;
+using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
+using ElementsAwoken.Content.NPCs.Bosses.Permafrost;
+using ElementsAwoken.Content.NPCs.Bosses.Regaroth;
+using ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter;
+using ElementsAwoken.Content.NPCs.Bosses.TheGuardian;
+using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
+using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
+using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
+using System.Runtime.Intrinsics.X86;
+using Terraria;
+using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Utilities
@@ -7,6 +21,7 @@ namespace ElementsAwoken.Utilities
     {
         #region Bestiary
         public string WastelandBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.WastelandBoss");
+        public string ToySlime => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ToySlime");
         public string InfernaceBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.InfernaceBestiary");
         public string CosmicObserverBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.CosmicObserverBestiary");
         public string ScourgeFighterBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ScourgeFighterBoss");
@@ -21,10 +36,13 @@ namespace ElementsAwoken.Utilities
         public string RadiantMaster => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster");
         public string AzanaEyeBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaEyeBestiary");
         public string AzanaBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaBestiary");
+        public string VolcanoxBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VolcanoxBoss");
         public string Scorpion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion");
+        public string MiniToySlime => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.MiniToySlime");
         public string Furosia => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Furosia");
         public string RegarothMinion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.RegarothMinion");
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
+        public string Firefly => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Firefly");
         public string MysticBunny => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny");
         #endregion
         #region Ore
@@ -50,6 +68,7 @@ namespace ElementsAwoken.Utilities
         public string Artifact => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Artifact");
         public string Developer => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Developer");
         public string Youtuber => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Youtuber");
+        public string Betatest => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Betatest");
         #endregion
         #region ElementalCapsule
         public string ElementalCapsule => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ElementalCapsule");
@@ -132,8 +151,38 @@ namespace ElementsAwoken.Utilities
         public string RadiantRainSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.RadiantRainSummon");
         #endregion
         #region SlimeRainSummon
-        #endregion
         public string SlimeRainSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.SlimeRainSummon");
+        #endregion
+        #region ToySlimeClaw
+        public string ToySlimeClaw => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ToySlimeClaw");
+        public string ToySlimeClaw1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ToySlimeClaw1");
+        public string ToySlimeClaw2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ToySlimeClaw2");
+        public string ToySlimeClaw3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ToySlimeClaw3");
+        public string ToySlimeClaw4 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.ToySlimeClaw4");
+        #endregion
+        #region VoidEventSummon
+        public string VoidEventSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon");
+        public string VoidEventSummon1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon1");
+        public string VoidEventSummon2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon2");
+        public string VoidEventSummon3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon3");
+        public string VoidEventSummon4 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon4");
+        public string VoidEventSummon5 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon5");
+        public string VoidEventSummon6 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.VoidEventSummon6");
+        #endregion
+        #region AncientsSummon
+        public string AncientsSummon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon");
+        public string AncientsSummon1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon1");
+        public string AncientsSummon2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon2");
+        public string AncientsSummon3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon3");
+        public string AncientsSummon4 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon4");
+        public string AncientsSummon5 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon5");
+        public string AncientsSummon6 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon6");
+        public string AncientsSummon7 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon7");
+        public string AncientsSummon8 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon8");
+        public string AncientsSummon9 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon9");
+        public string AncientsSummon10 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon10");
+        #endregion
+        public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
@@ -188,6 +237,10 @@ namespace ElementsAwoken.Utilities
         public string Obsidious8 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious8");
         public string Obsidious9 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious9");
         public string Obsidious10 => Language.GetTextValue("Mods.ElementsAwoken.Said.Obsidious10");
+        public string Volcanox => Language.GetTextValue("Mods.ElementsAwoken.Said.Volcanox");
+        public string Izaris => Language.GetTextValue("Mods.ElementsAwoken.Said.Izaris");
+        public string Izaris1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Izaris1");
+        public string ShardBase => Language.GetTextValue("Mods.ElementsAwoken.Said.ShardBase");
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");
@@ -204,6 +257,10 @@ namespace ElementsAwoken.Utilities
         public string AncientWyrmHeadDeath => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AncientWyrmHeadDeath");
         public string TheEyeCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.TheEye");
         #endregion
+        #region ShopCondition
+        public string BossString => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString");
+        public string BossString1 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString1");
+        #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");
         public string AwakenedSummonItem => Language.GetTextValue("Mods.ElementsAwoken.AwakenedSummonItem");
@@ -211,5 +268,43 @@ namespace ElementsAwoken.Utilities
         public string AwakenedMode => Language.GetTextValue("Mods.ElementsAwoken.AwakenedMode");
         public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         #endregion
+        public static string BossName(int BossProgres)
+        {
+            var e = ModContent.GetInstance<EALocalization>();
+            return BossProgres switch
+            {
+                1 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.EyeofCthulhu)}",
+                2 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.EaterofWorldsHead) + " " + e.BossString1 + " " + Lang.GetNPCNameValue(NPCID.BrainofCthulhu)}",
+                3 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.SkeletronHead)}",
+                4 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.WallofFlesh)}",
+                5 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.TheDestroyer)}",
+                6 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.Spazmatism) + " " + e.BossString1 + " " + Lang.GetNPCNameValue(NPCID.Retinazer)}",
+                7 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.SkeletronPrime)}",
+                8 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.Plantera)}",
+                9 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.Golem)}",
+                10 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.DukeFishron)}",
+                11 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.MoonLordHead)}",
+                _ => "",
+            };
+        }
+        public static string MBossName(int MBossProgres)
+        {
+            var e = ModContent.GetInstance<EALocalization>();
+            return MBossProgres switch
+            {
+                1 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Wasteland>())}",
+                2 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Infernace>())}",
+                3 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<ScourgeFighter>())}",
+                4 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<RegarothHead>())}",
+                5 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Obsidious>())}",
+                6 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Permafrost>())}",
+                7 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Aqueous>())}",
+                8 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<TheGuardian>())}",
+                9 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Volcanox>())}",
+                10 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<VoidLeviathanHead>())}",
+                11 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Azana>())}",
+                _ => ""
+            };
+        }
     }
 }

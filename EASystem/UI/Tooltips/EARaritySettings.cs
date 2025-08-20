@@ -10,12 +10,13 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
         public bool awakened = false;
         private int initialRarity = 0;
         public int rare = 0;
-
+        public bool betatest = false;
         public EARaritySettings()
         {
             rare = 0;
             initialRarity = 0;
             awakened = false;
+            betatest = false;
         }
         public override bool InstancePerEntity
         {
@@ -353,6 +354,21 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
 
             Color from = EAColors.AnimatedColors[index % colorCount];
             Color to = EAColors.AnimatedColors[(index + 1) % colorCount];
+
+            return Color.Lerp(from, to, t);
+        }
+        public static Color GetAnimatedItemColorTets()
+        {
+            int transitionTime = 40;
+            int colorCount = EAColors.BetaTestColors.Length;
+            int totalTime = transitionTime * colorCount;
+
+            int timer = (int)(Main.GameUpdateCount % totalTime);
+            int index = timer / transitionTime;
+            float t = timer % transitionTime / (float)transitionTime;
+
+            Color from = EAColors.BetaTestColors[index % colorCount];
+            Color to = EAColors.BetaTestColors[(index + 1) % colorCount];
 
             return Color.Lerp(from, to, t);
         }

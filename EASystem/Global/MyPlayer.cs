@@ -2649,7 +2649,7 @@ namespace ElementsAwoken.EASystem.Global
         //    bool useAzana = NPC.AnyNPCs(mod.NPCType("Azana"));
         //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Azana", useAzana);
 
-        //    bool useAncients = NPC.AnyNPCs(mod.NPCType("Izaris")) || NPC.AnyNPCs(mod.NPCType("Kirvein")) || NPC.AnyNPCs(mod.NPCType("Krecheus")) || NPC.AnyNPCs(mod.NPCType("Xernon")) || NPC.AnyNPCs(mod.NPCType("AncientAmalgam"));
+        //    bool useAncients = NPC.AnyNPCs( ModContent.NPCType<Izaris>()) || NPC.AnyNPCs(mod.NPCType("Kirvein")) || NPC.AnyNPCs(ModContent.NPCType<Krecheus>()) || NPC.AnyNPCs(ModContent.NPCType<Xernon>()) || NPC.AnyNPCs(mod.NPCType("AncientAmalgam"));
         //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Ancients", useAncients);
 
         //    bool useVoidEvent = MyWorld.voidInvasionUp && Main.time <= 16220 && !Main.dayTime;

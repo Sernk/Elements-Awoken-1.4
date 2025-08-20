@@ -16,6 +16,13 @@ namespace ElementsAwoken.Utilities
         public static readonly Color Green = new Color(82, 184, 117);
         public static readonly Color Purpal = new Color(156, 37, 131);
 
+        //BetaTest
+        public static readonly Color DarkRed = Color.DarkRed;
+        public static readonly Color Red = Color.Red;
+        public static readonly Color DarkOrange = Color.DarkOrange;
+        public static readonly Color Orage = Color.Orange;
+        public static readonly Color Yelow = Color.Yellow;
+
         public static readonly Color[] AnimatedColors = new Color[]
         {
             Blue,
@@ -23,6 +30,16 @@ namespace ElementsAwoken.Utilities
             Green,
             Purpal,
             Main.DiscoColor
+        };
+        public static readonly Color[] BetaTestColors = new Color[]
+        {
+            DarkRed,
+            Red,
+            DarkOrange,
+            Orage,
+            Yelow,
+            Green,
+            //Main.DiscoColor
         };
     }
 }

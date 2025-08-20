@@ -60,5 +60,13 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
                 ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<MysticGemstone>()] = true;
             }
         }
+        public class BETATEST : ModRarity
+        {
+            public override Color RarityColor => EARaritySettings.GetAnimatedItemColorTets();
+            public override void SetStaticDefaults()
+            {
+                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<MysticGemstone>()] = true;
+            }
+        }
     }
 }

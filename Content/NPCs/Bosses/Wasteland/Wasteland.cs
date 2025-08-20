@@ -237,10 +237,11 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         }
         public override void OnKill()
         {
+            MyWorld.downedWasteland = true;
             Sandstorm.Happening = false;
             Sandstorm.TimeLeft = 0;
             Sandstorm.IntendedSeverity = 0;
-            if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData); // Immediately inform clients of new world state.
+            if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
         }
         public override void BossLoot(ref int potionType)
         {
