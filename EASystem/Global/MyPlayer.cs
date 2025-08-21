@@ -386,8 +386,24 @@ namespace ElementsAwoken.EASystem.Global
         public bool useLeviathan = false;
         public bool useVolcanox = false;
         public bool useGuardian = false;
-        public bool useInfernace = false;
+        public bool useAqueous = false;
         public bool usePermafrost = false;
+        public bool useInfernace = false; 
+
+        public bool useVoidEvent = false;
+        public bool useVoidEventDark = false;
+        public bool useRadRain = false;
+
+        public bool useEncounter1 = false;
+        public bool useEncounter2 = false;
+        public bool useEncounter3 = false;
+
+        public bool useDespair = false;
+        public bool useblizzard = false;
+        public bool useInfWrath = false;
+
+        public int useRegaroth = 0;
+        public int useAqueousint = 0;
         #endregion
         public override void Initialize()
         {
@@ -2637,68 +2653,7 @@ namespace ElementsAwoken.EASystem.Global
         }
         //public override void UpdateBiomeVisuals()
         //{
-        //    bool useAncients = NPC.AnyNPCs( ModContent.NPCType<Izaris>()) || NPC.AnyNPCs(mod.NPCType("Kirvein")) || NPC.AnyNPCs(ModContent.NPCType<Krecheus>()) || NPC.AnyNPCs(ModContent.NPCType<Xernon>()) || NPC.AnyNPCs(mod.NPCType("AncientAmalgam"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Ancients", useAncients);
-
-        //    bool useVoidEvent = MyWorld.voidInvasionUp && Main.time <= 16220 && !Main.dayTime;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:VoidEvent", useVoidEvent);
-        //    bool useVoidEventDark = MyWorld.voidInvasionUp && Main.time > 16220 && !Main.dayTime;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:VoidEventDark", useVoidEventDark);
-
-        //    bool useRadRain = MyWorld.radiantRain && player.position.Y / 16 < Main.worldSurface;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:RadiantRain", useRadRain);
-
-        //    int useRegaroth = 0;
-        //    for (int i = 0; i < Main.npc.Length; ++i)
-        //    {
-        //        if (Main.npc[i].active && Main.npc[i].type == mod.NPCType("RegarothHead"))
-        //        {
-        //            if (Main.npc[i].life > Main.npc[i].lifeMax / 2)
-        //            {
-        //                useRegaroth = 1;
-        //                if (Main.npc[i].localAI[1] == 1)
-        //                {
-        //                    useRegaroth = 3;
-        //                }
-        //            }
-        //            else
-        //            {
-        //                useRegaroth = 2;
-        //                if (Main.npc[i].localAI[1] == 1)
-        //                {
-        //                    useRegaroth = 4;
-        //                }
-        //            }
-
-        //        }
-        //    }
-
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Regaroth", useRegaroth == 1);
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Regaroth2", useRegaroth == 2);
-
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:RegarothIntense", useRegaroth == 3);
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Regaroth2Intense", useRegaroth == 4);
-
-        //    bool useEncounter1 = ElementsAwoken.encounter == 1;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Encounter1", useEncounter1);
-        //    bool useEncounter2 = ElementsAwoken.encounter == 2;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Encounter2", useEncounter2);
-        //    bool useEncounter3 = ElementsAwoken.encounter == 3;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Encounter3", useEncounter3);
-
-        //    bool useDespair = voidEnergyTimer > 0 || voidWalkerAura > 0;
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Despair", useDespair);
-
-
-
-        //    //Point point = player.Center.ToTileCoordinates();
-        //    bool useblizzard = MyWorld.hailStormTime > 0 && player.ZoneOverworldHeight && !player.ZoneDesert && !ActiveBoss() && !GetInstance<Config>().lowDust;
-        //    player.ManageSpecialBiomeVisuals("Blizzard", useblizzard, default(Vector2));
-
-        //        bool useInfWrath = MyWorld.firePrompt > ElementsAwoken.bossPromptDelay && !ActiveBoss() && !GetInstance<Config>().promptsDisabled;
-        //        player.ManageSpecialBiomeVisuals("ElementsAwoken:AshShader", useInfWrath);
-        //        player.ManageSpecialBiomeVisuals("ElementsAwoken:AshBlizzardEffect", useInfWrath && player.position.Y / 16 < Main.worldSurface);
-
+        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:AshBlizzardEffect", useInfWrath && player.position.Y / 16 < Main.worldSurface);
         //    if (useInfWrath)
         //    {
         //        SkyManager.Instance.Activate("ElementsAwoken:InfernacesWrath", player.Center);
@@ -2710,40 +2665,8 @@ namespace ElementsAwoken.EASystem.Global
         //        Overlays.Scene.Deactivate("ElementsAwoken:AshParticles");
         //    }
         //    if (GetInstance<Config>().lowDust) Overlays.Scene.Deactivate("ElementsAwoken:AshParticles");
-        //    NPC aqueous = null;
-        //    for (int i = 0; i < Main.npc.Length; ++i)
-        //    {
-        //        NPC npc = Main.npc[i];
-        //        if (npc.active && npc.type == mod.NPCType("Aqueous"))
-        //        {
-        //            aqueous = npc;
-        //            break;
-        //        }
-        //    }
-
-        //    bool useAqueous = NPC.AnyNPCs(mod.NPCType("Aqueous"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Aqueous", useAqueous);
-        //    if (aqueous != null)
-        //    {
-        //        bool useAqueousSky = aqueous.life <= aqueous.lifeMax * 0.65f;
-        //        if (useAqueousSky)
-        //        {
-        //            SkyManager.Instance.Activate("ElementsAwoken:AqueousSky", player.Center);
-        //        }
-        //        else
-        //        {
-        //            SkyManager.Instance.Deactivate("ElementsAwoken:AqueousSky");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        SkyManager.Instance.Deactivate("ElementsAwoken:AqueousSky");
-        //    }
-
-        //    /*bool useCelestial = NPC.AnyNPCs(mod.NPCType("TheCelestial"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:TheCelestial", useCelestial);*/
         //}
-        private bool ActiveBoss()
+        public bool ActiveBoss()
         {
             for (int i = 0; i < Main.npc.Length; ++i)
             {

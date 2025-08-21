@@ -16,6 +16,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.Chat;
 using Terraria.GameContent;
+using Terraria.GameContent.Shaders;
 using Terraria.GameInput;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
@@ -34,8 +35,27 @@ namespace ElementsAwoken
         public const string VoidLeviathanHead = "ElementsAwoken:VoidLeviathanHead";
         public const string Volcanox = "ElementsAwoken:Volcanox";
         public const string TheGuardianFly = "ElementsAwoken:TheGuardianFly";
+        public const string Aqueous = "ElementsAwoken:Aqueous";
         public const string Permafrost = "ElementsAwoken:Permafrost";
         public const string Infernace = "ElementsAwoken:Infernace";
+
+        public const string VoidEvent = "ElementsAwoken:VoidEvent";
+        public const string VoidEventDark = "ElementsAwoken:VoidEventDark";
+        public const string RadiantRain = "ElementsAwoken:RadiantRain";
+
+        public const string Regaroth = "ElementsAwoken:Regaroth";
+        public const string Regaroth2 = "ElementsAwoken:Regaroth2";
+        public const string RegarothIntense = "ElementsAwoken:RegarothIntense";
+        public const string Regaroth2Intense = "ElementsAwoken:Regaroth2Intense";
+
+        public const string Encounter1 = "ElementsAwoken:Encounter1";
+        public const string Encounter2 = "ElementsAwoken:Encounter2";
+        public const string Encounter3 = "ElementsAwoken:Encounter3";
+
+        public const string Despair = "ElementsAwoken:Despair";
+        public const string Blizzard = "ElementsAwoken:Blizzard";
+        public const string InfernacesWrath = "ElementsAwoken:InfernacesWrath";
+        public const string AshParticles = "ElementsAwoken:AshParticles";
 
         public static string a = "";
         public static DynamicSpriteFont encounterFont;
@@ -134,34 +154,43 @@ namespace ElementsAwoken
                 SkyManager.Instance[Volcanox] = new EABiomeSky();
                 Filters.Scene[TheGuardianFly] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[TheGuardianFly] = new EABiomeSky();
-                Filters.Scene[Infernace] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                SkyManager.Instance[Infernace] = new EABiomeSky();
+                Filters.Scene[Aqueous] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.4f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Aqueous] = new EABiomeSky();
                 Filters.Scene[Permafrost] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.6f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Permafrost] = new EABiomeSky();
-                //    Filters.Scene["ElementsAwoken:Aqueous"] = new Filter(new AqueousScreenShaderData("FilterMiniTower").UseColor(0.4f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    SkyManager.Instance["ElementsAwoken:AqueousSky"] = new AqueousSky();               
-                //    Filters.Scene["ElementsAwoken:Ancients"] = new Filter(new TheGuardianScreenShaderData("FilterMiniTower").UseColor(0f, 0.8f, 0.4f).UseOpacity(0.3f), EffectPriority.VeryHigh);
+                Filters.Scene[Infernace] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Infernace] = new EABiomeSky();
 
-                //    Filters.Scene["Blizzard"] = new Filter(new BlizzardShaderData("FilterBlizzardForeground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High);
-                //    Overlays.Scene["Blizzard"] = new SimpleOverlay("Images/Misc/noise", new BlizzardShaderData("FilterBlizzardBackground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High, RenderLayers.Landscape);
+                Filters.Scene[VoidEvent] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.8f, 0.2f, 0.0f).UseOpacity(0.3f), EffectPriority.VeryHigh);
+                SkyManager.Instance[VoidEvent] = new EABiomeSky();
+                Filters.Scene[VoidEventDark] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[VoidEventDark] = new EABiomeSky();
+                Filters.Scene[RadiantRain] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                SkyManager.Instance[RadiantRain] = new EABiomeSky();
 
-                //    Filters.Scene["ElementsAwoken:VoidEvent"] = new Filter(new VoidEventScreenShaderData("FilterMiniTower").UseColor(0.8f, 0.2f, 0.0f).UseOpacity(0.3f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:VoidEventDark"] = new Filter(new VoidEventScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh); // 0.9 opacity for a very dark spooky effect where u can barely see
+                Filters.Scene[Regaroth] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.4f, 0.7f).UseOpacity(0.3f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Regaroth] = new EABiomeSky();
+                Filters.Scene[Regaroth2] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.3f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Regaroth2] = new EABiomeSky();
+                Filters.Scene[RegarothIntense] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.4f, 0.7f).UseOpacity(0.75f), EffectPriority.VeryHigh);
+                SkyManager.Instance[RegarothIntense] = new EABiomeSky();
+                Filters.Scene[Regaroth2Intense] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.75f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Regaroth2Intense] = new EABiomeSky();
 
-                //    Filters.Scene["ElementsAwoken:Encounter1"] = new Filter(new EncountersScreenShaderData("FilterMiniTower").UseColor(1f, 0.2f, 0.3f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Encounter2"] = new Filter(new EncountersScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.1f, 0.3f).UseOpacity(0.2f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Encounter3"] = new Filter(new EncountersScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh); // 0.9 opacity for a very dark spooky effect where u can barely see
+                Filters.Scene[Encounter1] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.2f, 0.3f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Encounter1] = new EABiomeSky();
+                Filters.Scene[Encounter2] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.1f, 0.3f).UseOpacity(0.2f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Encounter2] = new EABiomeSky();
+                Filters.Scene[Encounter3] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Encounter3] = new EABiomeSky();
 
-                //    Filters.Scene["ElementsAwoken:Despair"] = new Filter(new VoidEventScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 0.3f).UseOpacity(0.4f), EffectPriority.VeryHigh);
-
-                //    Filters.Scene["ElementsAwoken:Regaroth"] = new Filter(new RegarothScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.4f, 0.7f).UseOpacity(0.3f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Regaroth2"] = new Filter(new RegarothScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.3f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:RegarothIntense"] = new Filter(new RegarothScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.4f, 0.7f).UseOpacity(0.75f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Regaroth2Intense"] = new Filter(new RegarothScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.75f), EffectPriority.VeryHigh);
-
-                //    Filters.Scene["ElementsAwoken:RadiantRain"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.4f), EffectPriority.VeryHigh);
-
-                //    SkyManager.Instance["ElementsAwoken:InfernacesWrath"] = new InfernacesWrathSky();
+                Filters.Scene[Despair] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
+                SkyManager.Instance[Despair] = new EABiomeSky();
+                Filters.Scene[Blizzard] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 0.3f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                Overlays.Scene[Blizzard] = new SimpleOverlay("Images/Misc/noise", new BlizzardShaderData("FilterBlizzardBackground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High, RenderLayers.Landscape);
+                SkyManager.Instance[Blizzard] = new EABiomeSky();
+                Filters.Scene[InfernacesWrath] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.0f, 0.0f, 0f).UseIntensity(0.0f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
+                SkyManager.Instance[InfernacesWrath] = new InfernacesWrathSky();
                 //    Overlays.Scene["ElementsAwoken:AshParticles"] = new AshOverlay(EffectPriority.VeryHigh);
                 //    Filters.Scene["ElementsAwoken:AshBlizzardEffect"] = new Filter((new BlizzardShaderData("FilterBlizzardForeground")).UseColor(0.2f, 0.2f, 0.2f).UseSecondaryColor(0.05f, 0.05f, 0.05f).UseImage("Images/Misc/noise", 0, null).UseOpacity(0.04f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High);
                 //    Filters.Scene["ElementsAwoken:AshShader"] = new Filter(new InfernaceScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.2f), EffectPriority.VeryHigh);
@@ -1512,44 +1541,18 @@ namespace ElementsAwoken
         //    Mod bossChecklist = ModLoader.GetMod("BossChecklist");
         //    if (bossChecklist != null)
         //    {
-        //        /** Vanilla boss numbers
-        //        * SlimeKing = 1f;
-        //        * EyeOfCthulhu = 2f;
-        //        * EaterOfWorlds = 3f;
-        //        * QueenBee = 4f;
-        //        * Skeletron = 5f;
-        //        * WallOfFlesh = 6f;
-        //        * TheTwins = 7f;
-        //        * TheDestroyer = 8f;
-        //        * SkeletronPrime = 9f;
-        //        * Plantera = 10f;
-        //        * Golem = 11f;
-        //        * DukeFishron = 12f;
-        //        * LunaticCultist = 13f;
-        //        * Moonlord = 14f;
-        //        **/
         //        /*bossChecklist.Call("AddMiniBoss", toySlime, NPCType("ToySlime"), this, "Toy Slime", (Func<bool>)(() => MyWorld.downedToySlime), ItemType("ToySlimeSummon"), 
         //            default,
-        //            new List<int>() { ItemType("ToyBlade"), ItemType("ToyBow"), ItemType("ToyWand"), ItemType("ToyRobotControlRod"), ItemType("ToyPickaxe"), ItemType("ToyHelm"), ItemType("ToyBreastplate"), ItemType("ToyLeggings") },
         //            "The Toy Slime spawns naturally if it has not been defeated already and the player has atleast 140 life and 7 defence. Use a[i: " + ItemType("ToySlimeSummon") + "] to increase the chance of it spawning",
         //            "The Toy Slime hops away.", default, default, true);*/
 
         //        bossChecklist.Call("AddBoss", wasteland, NPCType("Wasteland"), this, "Wasteland", (Func<bool>)(() => MyWorld.downedWasteland), ItemType("WastelandSummon"),
-        //            new List<int>() { ItemType("WastelandMask"), ItemType("WastelandTrophy") },
-        //            new List<int>() { ItemType("TheAntidote"), ItemType("Pincer"), ItemType("ScorpionBlade"), ItemType("Stinger"), ItemType("ChitinStaff"), ItemType("VenomSample"), ItemType("WastelandBag") },
-        //            "Catch and use a [i:" + ItemType("WastelandSummon") + "] in the desert. They spawn naturally in the desert after the Eye of Cthulhu has been defeated",
         //            "Wasteland burrows back into the sand...", default, default, true);
 
         //        bossChecklist.Call("AddBoss", infernace, NPCType("Infernace"), this, "Infernace", (Func<bool>)(() => MyWorld.downedInfernace), ItemType("InfernaceSummon"),
-        //            new List<int>() { ItemType("InfernaceMask"), ItemType("InfernaceTrophy") },
-        //            new List<int>() { ItemType("FireBlaster"), ItemType("FireHarpyStaff"), ItemType("FireHeart"), ItemType("FlareSword"), ItemType("InfernaceBag") },
-        //            "Use the [i:" + ItemType("InfernaceSummon") + "] in the underworld. An obsidian platform arena is reccomended on expert mode because of the lava slimes.",
         //            "Infernace fades into the heatwaves...", default, default, true);
 
         //        bossChecklist.Call("AddMiniBoss", observer, NPCType("CosmicObserver"), this, "Cosmic Observer", (Func<bool>)(() => MyWorld.downedCosmicObserver), ItemType("CosmicObserverSummon"),
-        //            default,
-        //            new List<int>() { ItemType("CosmicGlass"), ItemType("ChargeRifle"), ItemType("CosmicCrusher"), ItemType("CosmicObserverStaff"), ItemType("Demolecularizer"), ItemType("EnergyFork"), ItemType("OrionsBelt"), ItemType("PlanetaryWave"), ItemType("CosmicalusVisor"), ItemType("CosmicalusBreastplate"), ItemType("CosmicalusLeggings") },
-        //            "The Cosmic Observer spawns naturally in the sky in hardmode. Use a[i: " + ItemType("CosmicObserverSummon") + "] to increase the chance of it spawning",
         //            "The Cosmic Observer retreats into the clouds...", default, default, true);
 
         //        bossChecklist.Call("AddBoss", scourge, NPCType("ScourgeFighter"), this, "Scourge Fighter", (Func<bool>)(() => MyWorld.downedScourgeFighter), ItemType("ScourgeFighterSummon"),

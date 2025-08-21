@@ -2,6 +2,7 @@
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.NPCProj.Aqueous;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System;
@@ -124,6 +125,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
         }
         public override void OnKill()
         {
+            Main.LocalPlayer.GetModPlayer<MyPlayer>().useAqueousint = 0;
             Main.windSpeedTarget = 0.5f;
             MyWorld.downedAqueous = true;
             if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
@@ -235,7 +237,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
             if (NPC.life <= NPC.lifeMax * 0.65f && NPC.life > NPC.lifeMax * 0.3f)
             {
                 Main.StopRain();
-
+                Main.LocalPlayer.GetModPlayer<MyPlayer>().useAqueousint = 2;
                 float movSpeed = 6f;
                 if (Main.expertMode) movSpeed += 0.05f;
                 if (MyWorld.awakenedMode) movSpeed += 0.075f;

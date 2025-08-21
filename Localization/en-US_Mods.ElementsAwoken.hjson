@@ -2900,23 +2900,69 @@ Buffs: {
 
 NPCs: {
 	ShadeWyrmBody.DisplayName: Shade Wyrm Body
-	ShadeWyrmHead.DisplayName: Shade Wyrm Head
-	ShadeWyrmTail.DisplayName: Shade Wyrm Tail
+
+	ShadeWyrmHead: {
+		DisplayName: Shade Wyrm
+
+		BossChecklistIntegration: {
+			EntryName: Shade Wyrm
+			SpawnInfo: The Shade Wyrm spawns during the Dawn of the Void after midnight
+		}
+	}
+
+	ShadeWyrmTail: {
+		DisplayName: Shade Wyrm
+
+		#TODO: для ивента нужен обязательно npc
+		#Пусть это будет козлом отпущения
+		BossChecklistIntegration: {
+			EntryName: Dawn of the Void
+			SpawnInfo: Use a [i:ElementsAwoken/VoidEventSummon] at nighttime before 10pm. The item can be used during the day but the event wont start until night time, where it will start instantly.
+		}
+	}
+
 	MysticBunny.DisplayName: Mystic Bunny
 	SolarFragment.DisplayName: Solar Fragment
 	VoidLeviathanTail.DisplayName: Void Leviathan Tail
 	VoidLeviathanOrb.DisplayName: Void Leviathan Orb
-	VoidLeviathanHead.DisplayName: Void Leviathan Head
+
+	VoidLeviathanHead: {
+		DisplayName: Void Leviathan
+
+		BossChecklistIntegration: {
+			EntryName: Void Leviathan
+			SpawnInfo: Use a [i:ElementsAwoken/VoidLeviathanSummon] at nighttime.
+		}
+	}
+
 	VoidLeviathanBody.DisplayName: Void Leviathan Body
 	BarrenSoul.DisplayName: Barren Soul
 	BarrenOrbital.DisplayName: Barren Orbital
 	ElderShadeWyrmTail.DisplayName: Elder Shade Wyrm Tail
 	ElderShadeWyrmHead.DisplayName: Elder Shade Wyrm Head
 	ElderShadeWyrmBody.DisplayName: Elder Shade Wyrm Body
-	RadiantMaster.DisplayName: The Radiant Master
+
+	RadiantMaster: {
+		DisplayName: The Radiant Master
+
+		BossChecklistIntegration: {
+			EntryName: The Radiant Master
+			SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned using a [i:ElementsAwoken/RadiantRainSummon]
+		}
+	}
+
 	RadiantMasterDeath.DisplayName: The Radiant Master
 	Scorpion.DisplayName: Scorpion
-	Wasteland.DisplayName: Wasteland
+
+	Wasteland: {
+		DisplayName: Wasteland
+
+		BossChecklistIntegration: {
+			EntryName: Wasteland
+			SpawnInfo: Catch and use a [i:ElementsAwoken/WastelandSummon] in the desert. They spawn naturally in the desert after the Eye of Cthulhu has been defeated
+		}
+	}
+
 	WastelandDeath.DisplayName: Wasteland
 	WastelandEgg.DisplayName: Egg
 	WastelandMinion.DisplayName: Mutated Scorpion
@@ -2924,45 +2970,144 @@ NPCs: {
 	AncientWyrmBody.DisplayName: Ancient Wyrm
 	AncientWyrmHead.DisplayName: Ancient Wyrm
 	AncientWyrmTail.DisplayName: Ancient Wyrm
-	TheEye.DisplayName: The Eye
+
+	TheEye: {
+		DisplayName: The Eye
+
+		BossChecklistIntegration: {
+			EntryName: The Eye
+			SpawnInfo: Use the [i:ElementsAwoken/AncientDragonSummon] at nighttime
+		}
+	}
+
 	AquaticReaper.DisplayName: Aqueous Minion
-	Aqueous.DisplayName: Aqueous
+
+	Aqueous: {
+		DisplayName: Aqueous
+
+		BossChecklistIntegration: {
+			EntryName: Aqueous
+			SpawnInfo: Use a [i:ElementsAwoken/AqueousSummon] in the ocean
+		}
+	}
+
 	AqueousMinion1.DisplayName: Aqueous Minion
 	AqueousMinion2.DisplayName: Aqueous Minion
-	Azana.DisplayName: Azana
+
+	Azana: {
+		DisplayName: Azana
+
+		BossChecklistIntegration: {
+			EntryName: Azana
+			SpawnInfo: Use a [i:ElementsAwoken/AzanaSummon] at nighttime.
+		}
+	}
+
 	AzanaEye.DisplayName: Azana
 	InfectionMouth.DisplayName: Infection Mouth
-	CosmicObserver.DisplayName: A Cosmic Observer
+
+	CosmicObserver: {
+		DisplayName: Cosmic Observer
+
+		BossChecklistIntegration: {
+			EntryName: Cosmic Observer
+			SpawnInfo: The Cosmic Observer spawns naturally in the sky in hardmode. Use a [i:ElementsAwoken/CosmicObserverSummon] to increase the chance of it spawning
+		}
+	}
+
 	CosmicObserverHand.DisplayName: Cosmic Observer Hand
 	GuardianProbe.DisplayName: Temple Guard
-	TheGuardian.DisplayName: The Guardian
+
+	TheGuardian: {
+		DisplayName: The Guardian
+
+		BossChecklistIntegration: {
+			EntryName: The Guardian
+			SpawnInfo: Use the [i:ElementsAwoken/GuardianSummon] at nighttime
+		}
+	}
+
 	TheGuardianFly.DisplayName: The Guardian
 	Furosia.DisplayName: Furosia
 	HealingHearth.DisplayName: Healing Hearth
-	Infernace.DisplayName: Infernace
+
+	Infernace: {
+		DisplayName: Infernace
+
+		BossChecklistIntegration: {
+			EntryName: Infernace
+			SpawnInfo: "[i:ElementsAwoken/InfernaceSummon] in the underworld. An obsidian platform arena is reccomended on expert mode because of the lava slimes."
+		}
+	}
+
 	RockLarge.DisplayName: Rock
 	RockMedium.DisplayName: Rock
 	RockSmall.DisplayName: Rock
 	InfernaceSpawner.DisplayName: Infernace's Guardian
-	Obsidious.DisplayName: Obsidious
+
+	Obsidious: {
+		DisplayName: Obsidious
+
+		BossChecklistIntegration: {
+			EntryName: Obsidious
+			SpawnInfo: Use a [i:ElementsAwoken/ObsidiousSummon] at nighttime
+		}
+	}
+
 	ObsidiousHand.DisplayName: Obsidious Hand
 	ObsidiousHuman.DisplayName: Obsidious
 	ObsidiousTransition.DisplayName: Obsidious Transition
-	Permafrost.DisplayName: Permafrost
+
+	Permafrost: {
+		DisplayName: Permafrost
+
+		BossChecklistIntegration: {
+			EntryName: Permafrost
+			SpawnInfo: Use an [i:ElementsAwoken/PermafrostSummon] in the snow
+		}
+	}
+
 	PermaOrbital.DisplayName: Perma Orbital
 	RegarothBody.DisplayName: Thunderling
-	RegarothHead.DisplayName: Thunderling
+
+	RegarothHead: {
+		DisplayName: Thunderling
+
+		BossChecklistIntegration: {
+			EntryName: Thunderling
+			SpawnInfo: Use a [i:ElementsAwoken/RegarothSummon] on a sky island.
+		}
+	}
+
 	RegarothMinionBody.DisplayName: Regaroth
 	RegarothMinionHead.DisplayName: Regaroth
 	RegarothMinionTail.DisplayName: Regaroth
 	RegarothTail.DisplayName: Thunderling
 	MiniFighter.DisplayName: Mini Fighter
-	ScourgeFighter.DisplayName: Scourge Fighter
+
+	ScourgeFighter: {
+		DisplayName: Scourge Fighter
+
+		BossChecklistIntegration: {
+			EntryName: Scourge Fighter
+			SpawnInfo: Use the [i:ElementsAwoken/ScourgeFighterSummon] at nighttime.
+		}
+	}
+
 	ToySlime.DisplayName: Toy Slime
 	MiniToySlime.DisplayName: Mini Toy Slime
 	Firefly.DisplayName: Firefly
 	SoulOfInfernace.DisplayName: Soul of Infernace
-	Volcanox.DisplayName: Volcanox
+
+	Volcanox: {
+		DisplayName: Volcanox
+
+		BossChecklistIntegration: {
+			EntryName: Volcanox
+			SpawnInfo: Use a [i:ElementsAwoken/VolcanoxSummon] in the underworld
+		}
+	}
+
 	VolcanoxHook.DisplayName: Volcanox Hook
 	VolcanoxTentacle.DisplayName: Volcanox Tentacle
 
@@ -3123,7 +3268,15 @@ NPCs: {
 	Xernon.DisplayName: Xernon
 	AncientAmalgamFist.DisplayName: Ancient Amalgamate Fist
 	AncientAmalgamDeath.DisplayName: The Ancient Amalgamate
-	AncientAmalgam.DisplayName: The Ancient Amalgamate
+
+	AncientAmalgam: {
+		DisplayName: The Ancient Amalgamate
+
+		BossChecklistIntegration: {
+			EntryName: The Ancient Amalgamate
+			SpawnInfo: Speak to the storyteller or use a [i:ElementsAwoken/AncientsSummon]
+		}
+	}
 }
 
 Projectiles: {
@@ -4070,4 +4223,11 @@ AwakenedModeNPCLocalization: {
 		Name1: Frozen
 		Name: Blazing
 	}
+}
+
+BossChecklistIntegration: {
+	DotvEvent.EntryName: Dotv Event
+	ShadeWyrmEvent.EntryName: Shade Wyrm Event
+	VolcanoxEvent.EntryName: Volcanox Event
+	VleviEvent.EntryName: Vlevi Event
 }

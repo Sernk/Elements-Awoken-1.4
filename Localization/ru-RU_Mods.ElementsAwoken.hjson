@@ -145,7 +145,7 @@ Items: {
 
 	VolcanicStone: {
 		DisplayName: Вулканический камень
-		Tooltip: Эти камни, судя по всему, никогда не остывают
+		Tooltip: Кусок оболочки самого Вулканокса
 	}
 
 	ElementalCapsule: {
@@ -2936,23 +2936,69 @@ Buffs: {
 
 NPCs: {
 	ShadeWyrmBody.DisplayName: Тенезмей
-	ShadeWyrmHead.DisplayName: Тенезмей
-	ShadeWyrmTail.DisplayName: Тенезмей
+
+	ShadeWyrmHead: {
+		DisplayName: Тенезмей
+
+		BossChecklistIntegration: {
+			// EntryName: Shade Wyrm
+			// SpawnInfo: The Shade Wyrm spawns during the Dawn of the Void after midnight
+		}
+	}
+
+	ShadeWyrmTail: {
+		DisplayName: Тенезмей
+
+		#TODO: для ивента нужен обязательно npc
+		#Пусть это будет козлом отпущения
+		BossChecklistIntegration: {
+			// EntryName: Dawn of the Void
+			// SpawnInfo: Use a [i:ElementsAwoken/VoidEventSummon] at nighttime before 10pm. The item can be used during the day but the event wont start until night time, where it will start instantly.
+		}
+	}
+
 	MysticBunny.DisplayName: Диковинный кролик
 	SolarFragment.DisplayName: Солнечный фрагмент
 	VoidLeviathanTail.DisplayName: Левиафан Пустоты
 	VoidLeviathanOrb.DisplayName: Пустосфера
-	VoidLeviathanHead.DisplayName: Левиафан Пустоты
+
+	VoidLeviathanHead: {
+		DisplayName: Левиафан Пустоты
+
+		BossChecklistIntegration: {
+			// EntryName: Void Leviathan
+			// SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned using a [i:ElementsAwoken/RadiantRainSummon]
+		}
+	}
+
 	VoidLeviathanBody.DisplayName: Левиафан Пустоты
 	BarrenSoul.DisplayName: Пустодуша
 	BarrenOrbital.DisplayName: Кружитель пустодуши
 	ElderShadeWyrmTail.DisplayName: Старший Тенезмей
 	ElderShadeWyrmHead.DisplayName: Старший Тенезмей
 	ElderShadeWyrmBody.DisplayName: Старший Тенезмей
-	RadiantMaster.DisplayName: Лучезарный мастер
+
+	RadiantMaster: {
+		DisplayName: Лучезарный мастер
+
+		BossChecklistIntegration: {
+			// EntryName: The Radiant Master
+			// SpawnInfo: Use a [i:ElementsAwoken/AzanaSummon] at nighttime.
+		}
+	}
+
 	RadiantMasterDeath.DisplayName: Лучезарный мастер
 	Scorpion.DisplayName: Скорпион-мутант
-	Wasteland.DisplayName: Пустошь
+
+	Wasteland: {
+		DisplayName: Пустошь
+
+		BossChecklistIntegration: {
+			// EntryName: Wasteland
+			// SpawnInfo: Catch and use a [i:ElementsAwoken/WastelandSummon] in the desert. They spawn naturally in the desert after the Eye of Cthulhu has been defeated
+		}
+	}
+
 	WastelandDeath.DisplayName: Пустошь
 	WastelandEgg.DisplayName: Яйцо
 	WastelandMinion.DisplayName: Мутировавший скорпион
@@ -2960,45 +3006,144 @@ NPCs: {
 	AncientWyrmBody.DisplayName: Древний Змей
 	AncientWyrmHead.DisplayName: Древний Змей
 	AncientWyrmTail.DisplayName: Древний Змей
-	TheEye.DisplayName: Око
+
+	TheEye: {
+		DisplayName: Око
+
+		BossChecklistIntegration: {
+			// EntryName: The Eye
+			// SpawnInfo: Use the [i:ElementsAwoken/AncientDragonSummon] at nighttime
+		}
+	}
+
 	AquaticReaper.DisplayName: Аква-жнец
-	Aqueous.DisplayName: Аквеус
+
+	Aqueous: {
+		DisplayName: Аквеус
+
+		BossChecklistIntegration: {
+			// EntryName: Aqueous
+			// SpawnInfo: Use a [i:ElementsAwoken/AqueousSummon] in the ocean
+		}
+	}
+
 	AqueousMinion1.DisplayName: Миньон Аквеус
 	AqueousMinion2.DisplayName: Миньон Аквеус
-	Azana.DisplayName: Азана
+
+	Azana: {
+		DisplayName: Азана
+
+		BossChecklistIntegration: {
+			// EntryName: Azana
+			// SpawnInfo: Use a [i:ElementsAwoken/AzanaSummon] at nighttime.
+		}
+	}
+
 	AzanaEye.DisplayName: Азана
 	InfectionMouth.DisplayName: Уста инфекции
-	CosmicObserver.DisplayName: Космоблюдатель
+
+	CosmicObserver: {
+		DisplayName: Космоблюдатель
+
+		BossChecklistIntegration: {
+			// EntryName: Cosmic Observer
+			// SpawnInfo: The Cosmic Observer spawns naturally in the sky in hardmode. Use a [i:ElementsAwoken/CosmicObserverSummon] to increase the chance of it spawning
+		}
+	}
+
 	CosmicObserverHand.DisplayName: Длань Космоблюдателя
 	GuardianProbe.DisplayName: Храмовый Страж
-	TheGuardian.DisplayName: Стражник
+
+	TheGuardian: {
+		DisplayName: Стражник
+
+		BossChecklistIntegration: {
+			// EntryName: The Guardian
+			// SpawnInfo: Use the [i:ElementsAwoken/GuardianSummon] at nighttime
+		}
+	}
+
 	TheGuardianFly.DisplayName: Стражник
 	Furosia.DisplayName: Фуросия
 	HealingHearth.DisplayName: Исцеляющий очаг
-	Infernace.DisplayName: Инфернейс
+
+	Infernace: {
+		DisplayName: Инфернейс
+
+		BossChecklistIntegration: {
+			// EntryName: Infernace
+			// SpawnInfo: "[i:ElementsAwoken/InfernaceSummon] in the underworld. An obsidian platform arena is reccomended on expert mode because of the lava slimes."
+		}
+	}
+
 	RockLarge.DisplayName: Камень
 	RockMedium.DisplayName: Камень
 	RockSmall.DisplayName: Камень
 	InfernaceSpawner.DisplayName: Страж Инфернейса
-	Obsidious.DisplayName: Обсидиус
+
+	Obsidious: {
+		DisplayName: Обсидиус
+
+		BossChecklistIntegration: {
+			// EntryName: Obsidious
+			// SpawnInfo: Use a [i:ElementsAwoken/ObsidiousSummon] at nighttime
+		}
+	}
+
 	ObsidiousHand.DisplayName: Рука Обсидиуса
 	ObsidiousHuman.DisplayName: Обсидиус
 	ObsidiousTransition.DisplayName: Трансформация Обсидиуса
-	Permafrost.DisplayName: Пермафрост
+
+	Permafrost: {
+		DisplayName: Пермафрост
+
+		BossChecklistIntegration: {
+			// EntryName: Permafrost
+			// SpawnInfo: Use an [i:ElementsAwoken/PermafrostSummon] in the snow
+		}
+	}
+
 	PermaOrbital.DisplayName: Кружитель Пермафроста
 	RegarothBody.DisplayName: Громовёнок
-	RegarothHead.DisplayName: Громовёнок
+
+	RegarothHead: {
+		DisplayName: Громовёнок
+
+		BossChecklistIntegration: {
+			// EntryName: Thunderling
+			// SpawnInfo: Use a [i:ElementsAwoken/RegarothSummon] on a sky island.
+		}
+	}
+
 	RegarothMinionBody.DisplayName: Регарот
 	RegarothMinionHead.DisplayName: Регарот
 	RegarothMinionTail.DisplayName: Регарот
 	RegarothTail.DisplayName: Громовёнок
 	MiniFighter.DisplayName: Миниборец
-	ScourgeFighter.DisplayName: Бичеборец
+
+	ScourgeFighter: {
+		DisplayName: Бичеборец
+
+		BossChecklistIntegration: {
+			// EntryName: Scourge Fighter
+			// SpawnInfo: Use the [i:ElementsAwoken/ScourgeFighterSummon] at nighttime.
+		}
+	}
+
 	ToySlime.DisplayName: Игрушечный слизень
 	MiniToySlime.DisplayName: Мелкий игрушечный слизень
 	Firefly.DisplayName: Светляк
 	SoulOfInfernace.DisplayName: Душа Инфернейса
-	Volcanox.DisplayName: Волканокс
+
+	Volcanox: {
+		DisplayName: Волканокс
+
+		BossChecklistIntegration: {
+			// EntryName: Volcanox
+			// SpawnInfo: Use a [i:ElementsAwoken/VolcanoxSummon] in the underworld
+		}
+	}
+
 	VolcanoxHook.DisplayName: Крюк Волканокса
 	VolcanoxTentacle.DisplayName: Щупальце Волканокса
 
@@ -3014,12 +3159,12 @@ NPCs: {
 			HateCrowded: Если ты не хочешь, чтобы я сам решил тут проблему перенаселённости, убери этих людей от меня.
 			LikeNPC_Princess: Не понимаю, почему всем так нравится {NPCName}.
 			Princess_LovesNPC: Хм... По-моему, с  {NPCName} что-то не так...
-			// LikeBiome: Мне нравится {BiomeName}.
-			// DislikeBiome: Мне не нравится {BiomeName}.
-			// HateBiome: Я ненавижу {BiomeName}.
-			// LikeNPC: Мне нравится {NPCName}.
-			// DislikeNPC: Мне не нравится {NPCName}.
-			// HateNPC: Я ненавижу {NPCName}.
+			LikeBiome: "{BiomeName} - я считаю, самое нормальное место."
+			DislikeBiome: Не нравится мне {BiomeName}, тут даже для меня слишком жарко.
+			HateBiome: Что я вообще делаю в {BiomeName}?
+			LikeNPC: Хоть я и говорил, что {NPCName} - никчёмный балбес, он всё равно хоть чем-то может быть полезен.
+			DislikeNPC: "{NPCName} слишком лезет не в свои дела."
+			HateNPC: Это какая-то шутка, что ты поселил меня с {NPCName}? Он меня бесит больше, чем кто-либо ещё здесь.
 		}
 
 		Name: {
@@ -3139,12 +3284,12 @@ NPCs: {
 		}
 
 		Content_1_4: {
-			BossD: There are rumors of a giant humanoid single-eyed monster roving the everfrosen lands of the Tundra, who seems to have come from a different dimension. Not that i know much about it, but crafting a certain '
-			BossD_1: "'might lure it, probably."
-			BossQ: You definitely have seen the king of all slimes, have you? What if i tell you that there is a queen of all slimes, which might also have wings? I've heard about a '
-			BossQ_1: "' made of pure gelatin, try using it in the Hallow, who knows, maybe something will happen."
-			BossE: Do you know who's behind the Hallow and all of the bizarre stuff there? No one else than the infamous Empress of Light herself! And have you seen the weird, iridescent butterflies '
-			BossE_1: "' there? I wonder if are connected in some way..."
+			BossD: Слыхал, по тундре бродит огромное одноглазое чудовище, похожее на полу-человека, полу-оленя? Говорят, оно пришло из другого измерения. Не сказать, чтобы я много о нём знал, но кое-какая '
+			BossD_1: "'олене-штука может привлечь его внимание, наверное."
+			BossQ: Ты точно уже видел короля слизней, но что, если я тебе скажу, что есть ещё и королева слизней? И у неё даже могут быть крылья. Я слышал про какой-то '
+			BossQ_1: "', почему бы тебе не попробовать его использовать в Освящении? Кто знает, может это сработает."
+			BossE: Знаешь ли ты, кто стоит за Освящением и всякими диковинками там? Никто иная, как Императрица Света собственной персоной! И да, ты, может, видел странных, переливающихся всеми цветами радуги '
+			BossE_1: "' в тех местах? Интересно, связаны ли они как-нибудь или нет..."
 		}
 	}
 
@@ -3159,7 +3304,15 @@ NPCs: {
 	Xernon.DisplayName: Ксернон
 	AncientAmalgamFist.DisplayName: Кулак Древнего Амальгамета
 	AncientAmalgamDeath.DisplayName: ""
-	AncientAmalgam.DisplayName: Древний Амальгамет
+
+	AncientAmalgam: {
+		DisplayName: Древний Амальгамет
+
+		BossChecklistIntegration: {
+			// EntryName: The Ancient Amalgamate
+			// SpawnInfo: Speak to the storyteller or use a [i:ElementsAwoken/AncientsSummon]
+		}
+	}
 }
 
 Projectiles: {
@@ -3669,8 +3822,8 @@ Bestiary: {
 	}
 
 	TownNPCs: {
-		// Storyteller: ???
-		// Storyteller2: ""
+		Storyteller: ???
+		Storyteller2: ???
 	}
 
 	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
@@ -4111,4 +4264,11 @@ AwakenedModeNPCLocalization: {
 		Name1: Замораживающий
 		Name: Горящий
 	}
+}
+
+BossChecklistIntegration: {
+	// DotvEvent.EntryName: Dotv Event
+	// ShadeWyrmEvent.EntryName: Shade Wyrm Event
+	// VolcanoxEvent.EntryName: Volcanox Event
+	// VleviEvent.EntryName: Vlevi Event
 }

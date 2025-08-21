@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.EASystem.Global;
+﻿using ElementsAwoken.Content.Buffs.Prompts;
+using ElementsAwoken.EASystem.Global;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -19,8 +20,21 @@ namespace ElementsAwoken.EASystem
             bool _LeviathanSkyVisual = false;
             bool _VolcanoxSkyVisual = false;
             bool _TheGuardianFlySkyVisual = false;
-            bool _InfernaceSkyVisual = false;
+            bool _AqueousSkyVisual = false;
             bool _PermafrostSkyVisual = false;
+            bool _InfernaceSkyVisual = false; 
+
+            bool _VoidEventSkyVisual = false;
+            bool _VoidEventDarkSkyVisual = false;
+            bool _RadiantRainSkyVisual = false;
+
+            bool _Encounter1SkyVisual = false;
+            bool _Encounter2SkyVisual = false;
+            bool _Encounter3SkyVisual = false;
+
+            bool _DespairSkyVisual = false;
+            bool _BlizzardSkyVisual = false;
+            bool _InfernacesWrathSkyVisual = false;
 
             if (Leviathan.useLeviathan)
             {
@@ -134,6 +148,227 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Ancients);
             }
+
+            if (Leviathan.useAqueous)
+            {
+                _AqueousSkyVisual = true;
+            }
+            if (_AqueousSkyVisual && Leviathan.useAqueousint == 2)
+            {
+                if (!Filters.Scene[ElementsAwoken.Aqueous].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Aqueous, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Aqueous].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Aqueous);
+            }
+
+            #region Event
+            if (Leviathan.useVoidEvent)
+            {
+                _VoidEventSkyVisual = true;
+            }
+            if (_VoidEventSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.VoidEvent].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.VoidEvent, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.VoidEvent].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.VoidEvent);
+            }
+
+            if (Leviathan.useVoidEventDark)
+            {
+                _VoidEventDarkSkyVisual = true;
+            }
+            if (_VoidEventDarkSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.VoidEventDark].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.VoidEventDark, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.VoidEventDark].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.VoidEventDark);
+            }
+
+            if (Leviathan.useRadRain)
+            {
+                _RadiantRainSkyVisual = true;
+            }
+            if (_RadiantRainSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.RadiantRain].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.RadiantRain, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.RadiantRain].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.RadiantRain);
+            }
+            #endregion
+            #region Regaroth
+            if (Leviathan.useRegaroth == 1)
+            {
+                if (!Filters.Scene[ElementsAwoken.Regaroth].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Regaroth, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Regaroth].IsActive() || Leviathan.useRegaroth == 2)
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Regaroth);
+            }
+
+            if (Leviathan.useRegaroth == 2)
+            {
+                if (!Filters.Scene[ElementsAwoken.Regaroth2].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Regaroth2, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Regaroth2].IsActive() || Leviathan.useRegaroth == 3)
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Regaroth2);
+            }
+
+            if (Leviathan.useRegaroth == 3)
+            {
+                if (!Filters.Scene[ElementsAwoken.RegarothIntense].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.RegarothIntense, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.RegarothIntense].IsActive() || Leviathan.useRegaroth == 4)
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.RegarothIntense);
+            }
+
+            if (Leviathan.useRegaroth == 4)
+            {
+                if (!Filters.Scene[ElementsAwoken.Regaroth2Intense].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Regaroth2Intense, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Regaroth2Intense].IsActive() || Leviathan.useRegaroth == 0)
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Regaroth2Intense);
+            }
+
+            if (Leviathan.useRegaroth == 0)
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Regaroth);
+                Filters.Scene.Deactivate(ElementsAwoken.Regaroth2);
+                Filters.Scene.Deactivate(ElementsAwoken.RegarothIntense);
+                Filters.Scene.Deactivate(ElementsAwoken.Regaroth2Intense);
+            }
+            #endregion
+            #region Encounter
+            if (Leviathan.useEncounter1)
+            {
+                _Encounter1SkyVisual = true;
+            }
+            if (_Encounter1SkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Encounter1].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Encounter1, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Encounter1].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Encounter1);
+            }
+
+            if (Leviathan.useEncounter2)
+            {
+                _Encounter2SkyVisual = true;
+            }
+            if (_Encounter2SkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Encounter2].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Encounter2, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Encounter2].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Encounter2);
+            }
+
+            if (Leviathan.useEncounter3)
+            {
+                _Encounter3SkyVisual = true;
+            }
+            if (_Encounter3SkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Encounter3].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Encounter3, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Encounter3].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Encounter3);
+            }
+            #endregion
+            #region ??SkyVisual
+            if (Leviathan.useDespair)
+            {
+                _DespairSkyVisual = true;
+            }
+            if (_DespairSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Despair].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Despair, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Despair].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Despair);
+            }
+
+            if (Leviathan.useblizzard)
+            {
+                _BlizzardSkyVisual = true;
+            }
+            if (_BlizzardSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Blizzard].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Blizzard, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Blizzard].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Blizzard);
+            }
+
+            if (Leviathan.useInfWrath)
+            {
+                _InfernacesWrathSkyVisual = true;
+            }
+            if (_InfernacesWrathSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.InfernacesWrath, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.InfernacesWrath);
+            }
+            #endregion
         }
     }
     public class EABiomeSky : CustomSky
