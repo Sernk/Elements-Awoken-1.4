@@ -12,27 +12,127 @@ namespace ElementsAwoken.EASystem
     {
         public override void PostUpdateEverything()
         {
-            var Leviathan = Main.LocalPlayer.GetModPlayer<MyPlayer>().useLeviathan;
+            var Leviathan = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+
+            bool _AncientsSkyVisual = false;
+            bool _AzanaSkyVisual = false;
             bool _LeviathanSkyVisual = false;
-            NPC[] npc = Main.npc;
-            foreach (NPC npc2 in npc)
+            bool _VolcanoxSkyVisual = false;
+            bool _TheGuardianFlySkyVisual = false;
+            bool _InfernaceSkyVisual = false;
+            bool _PermafrostSkyVisual = false;
+
+            if (Leviathan.useLeviathan)
             {
-                if (Leviathan)
-                {
-                    _LeviathanSkyVisual = true;
-                    break;
-                }
+                _LeviathanSkyVisual = true;
             }
             if (_LeviathanSkyVisual)
             {
-                if (!Filters.Scene["ElementsAwoken:VoidLeviathanHead"].IsActive())
+                if (!Filters.Scene[ElementsAwoken.VoidLeviathanHead].IsActive())
                 {
-                    Filters.Scene.Activate("ElementsAwoken:VoidLeviathanHead", default(Vector2));
+                    Filters.Scene.Activate(ElementsAwoken.VoidLeviathanHead, default);
                 }
             }
-            else if (Filters.Scene["ElementsAwoken:VoidLeviathanHead"].IsActive())
+            else if (Filters.Scene[ElementsAwoken.VoidLeviathanHead].IsActive())
             {
-                Filters.Scene.Deactivate("ElementsAwoken:VoidLeviathanHead");
+                Filters.Scene.Deactivate(ElementsAwoken.VoidLeviathanHead);
+            }
+
+            if (Leviathan.useInfernace)
+            {
+                _InfernaceSkyVisual = true;
+            }
+            if (_InfernaceSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Infernace].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Infernace, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Infernace].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Infernace);
+            }
+
+            if (Leviathan.usePermafrost)
+            {
+                _PermafrostSkyVisual = true;
+            }
+            if (_PermafrostSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Permafrost].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Permafrost, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Permafrost].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Permafrost);
+            }
+
+            if (Leviathan.useGuardian)
+            {
+                _TheGuardianFlySkyVisual = true;
+            }
+            if (_TheGuardianFlySkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.TheGuardianFly].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.TheGuardianFly, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.TheGuardianFly].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.TheGuardianFly);
+            }
+
+
+            if (Leviathan.useVolcanox)
+            {
+                _VolcanoxSkyVisual = true;
+            }
+            if (_VolcanoxSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Volcanox].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Volcanox, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Volcanox].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Volcanox);
+            }
+
+            if (Leviathan.useAzana)
+            {
+                _AzanaSkyVisual = true;
+            }
+            if (_AzanaSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Azana].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Azana, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Azana].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Azana);
+            }
+
+            if (Leviathan.useAncients)
+            {
+                _AncientsSkyVisual = true;
+            }
+            if (_AncientsSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Ancients].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Ancients, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Ancients].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Ancients);
             }
         }
     }

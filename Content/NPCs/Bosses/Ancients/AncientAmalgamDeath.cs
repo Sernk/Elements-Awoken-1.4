@@ -3,6 +3,7 @@ using ElementsAwoken.Content.Projectiles.Other;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.Events;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -43,6 +44,25 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 5;
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                // 0.n == уменшает изоброжения
+                Scale = 0.8f, // Мини иконка в бестиарии 
+                PortraitScale = 0.8f, // При нажатии на иконку в бестиарии
+            };
+            value.Position.X += 0;
+            value.Position.Y -= 15;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange([
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement(""),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+            ]);
         }
         public override void FindFrame(int frameHeight)
         {

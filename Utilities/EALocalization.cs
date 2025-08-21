@@ -9,7 +9,6 @@ using ElementsAwoken.Content.NPCs.Bosses.TheGuardian;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
-using System.Runtime.Intrinsics.X86;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
@@ -37,6 +36,11 @@ namespace ElementsAwoken.Utilities
         public string AzanaEyeBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaEyeBestiary");
         public string AzanaBestiary => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AzanaBestiary");
         public string VolcanoxBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VolcanoxBoss");
+        public string IzarisBoss => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.IzarisBoss");
+        public string Kirvein => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.Kirvein");
+        public string Krecheus => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.Krecheus");
+        public string Xernon => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.Xernon");
+        public string AncientAmalgam => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AncientAmalgam");
         public string Scorpion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion");
         public string MiniToySlime => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.MiniToySlime");
         public string Furosia => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Furosia");
@@ -44,6 +48,8 @@ namespace ElementsAwoken.Utilities
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
         public string Firefly => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Firefly");
         public string MysticBunny => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Critters.MysticBunny");
+        public string Storyteller => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.TownNPCs.Storyteller");
+        public string Storyteller2 => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.TownNPCs.Storyteller2");
         #endregion
         #region Ore
         public string Voidite => Language.GetTextValue("Mods.ElementsAwoken.Ore.Voidite");
@@ -268,6 +274,7 @@ namespace ElementsAwoken.Utilities
         public string AwakenedMode => Language.GetTextValue("Mods.ElementsAwoken.AwakenedMode");
         public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         #endregion
+        #region BossNAME
         public static string BossName(int BossProgres)
         {
             var e = ModContent.GetInstance<EALocalization>();
@@ -306,5 +313,6 @@ namespace ElementsAwoken.Utilities
                 _ => ""
             };
         }
+        #endregion
     }
 }

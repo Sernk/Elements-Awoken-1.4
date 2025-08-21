@@ -2367,8 +2367,8 @@ Items: {
 	}
 
 	BrokenToys: {
-		Tooltip: Наступать на них не стоит
-		DisplayName: Игрушечные обломки
+		Tooltip: Не стоит на них наступать
+		DisplayName: Обломки игрушек
 	}
 
 	ToySlimeSummon: {
@@ -2381,105 +2381,114 @@ Items: {
 	}
 
 	VoidEventSummon: {
-		// DisplayName: Dark Pearl
-		// Tooltip: Summons the Dawn of the Void on use
+		DisplayName: Жемчужина тьмы
+		Tooltip:
+			'''
+			Призывает Рассвет Пустоты
+			Может быть использована только днём/до 10 вечера
+			'''
 	}
 
 	VoidEventSummon2: {
-		// DisplayName: Insignia of Emptyness
-		/* Tooltip:
+		DisplayName: Эмблема пустоты
+		Tooltip:
 			'''
-			Summons the Dawn of the Void II on use
-			Use after midnight
-			''' */
+			Призывает вторую фазу Рассвета Пустоты
+			Может быть использована только после полуночи
+			'''
 	}
 
 	Darkstone: {
-		// DisplayName: Darkstone
-		// Tooltip: It's cold to the touch
+		DisplayName: Мракамень
+		Tooltip: Необычайно холоден на ощупь
 	}
 
 	UndownerTerraria: {
-		// DisplayName: Undowner Terraria
-		// Tooltip: ""
+		DisplayName: Андаунер Elements Awoken
+		Tooltip:
+			'''
+			Тестовый предмет. Откатывает убийства боссов.
+			<left> что бы все сбросить
+			<right> что бы всех убить
+			'''
 	}
 
 	VolcanoxSummon: {
-		// DisplayName: Volcanox Summon
-		/* Tooltip:
+		DisplayName: Обугленное ядро
+		Tooltip:
 			'''
-			It's eternal blaze burns your eyes
-			Summons Volcanox on use
-			''' */
+			Его негасимое пламя жжёт твои глаза
+			Призывает Волканокса при использовании в Аду
+			'''
 	}
 
 	Sanguine: {
-		// DisplayName: Sanguine
-		// Tooltip: ""
+		DisplayName: Кровожадность
+		Tooltip: Создаёт кровавые выстрелы, способные пронзить до двух врагов
 	}
 
 	Wormer: {
-		// DisplayName: Wormer
-		/* Tooltip:
+		DisplayName: Очервитель
+		Tooltip:
 			'''
-			Fires a parasitic worm
-			50% chance to not consume ammo
-			''' */
+			Запускает червя-паразита
+			Имеет 50% шанс не потратить аммуницию при выстреле
+			'''
 	}
 
 	Soulsword: {
-		// DisplayName: Soulsword
-		// Tooltip: Releases souls from enemies on hit
+		DisplayName: Душемеч
+		Tooltip: Создаёт души, вылетающие из врагов при ударе
 	}
 
 	Nihongo: {
-		// DisplayName: Nihongo
-		// Tooltip: The ancient spear of Japan
+		DisplayName: Нихонго
+		Tooltip: Древнее копьё родом из Японии (чё жапания вообще в мире террарии делает, кстати?)
 	}
 
 	ForeverSword: {
-		// DisplayName: Forever
-		// Tooltip: Rapidly shoots life stealing bolts
+		DisplayName: Вечность
+		Tooltip: При взмахе быстро выпускает снаряды, исцеляющие игрока при попадании по врагу
 	}
 
 	SearingBlaze: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Turns normal arrows into searing arrows
-			Releases thick clouds of smoke when arrows collide
-			50% chance not to consume ammo
-			''' */
-		// DisplayName: Searing Blaze
+			Превращает обычные стрелы в обжигающие стрелы
+			Стрелы выпускают облака густого дыма при контакте с врагами или блоками
+			Имеет 50% шанс не потратить стрелу при выстреле
+			'''
+		DisplayName: Жгучая вспышка
 	}
 
 	MasterSword: {
-		// DisplayName: Master Sword
-		// Tooltip: Hold right click to charge the blade
+		DisplayName: Мастерский меч
+		Tooltip: <right>, чтобы начать заряжать меч. Заряд меча увеличивает его силу.
 	}
 
 	Gladiolus: {
-		// Tooltip: A blade grown from the seeds of Plantera
-		// DisplayName: Gladiolus
+		Tooltip: Клинок, выращенный из семян самой Плантеры.
+		DisplayName: Гладиолус
 	}
 
 	Mjolnir: {
-		// Tooltip: Shoots lightning out at enemies
-		// DisplayName: Mjolnir
+		Tooltip: Выпускает молот-бумеранг, стреляющий молниями во врагов
+		DisplayName: Мьёлнир
 	}
 
 	PoseidonsTrident: {
-		// DisplayName: Poseidon's Trident
-		// Tooltip: ""
+		DisplayName: Тризубец Посейдона
+		Tooltip: чё греческие боги вообще в террарии делают?
 	}
 
 	EmptyGauntlet: {
-		// DisplayName: Empty Gauntlet
-		// Tooltip: Odd slots are built into the gauntlet
+		DisplayName: Пустая руковица
+		Tooltip: В эту руковицу встроены слоты странной формы...
 	}
 
 	AncientsSummon: {
-		// Tooltip: Summons The Ancients on use
-		// DisplayName: Resurrection Sigil
+		Tooltip: Возрождает Древних при использовании
+		DisplayName: Знамя воскрешения
 	}
 }
 
@@ -2529,7 +2538,7 @@ Tiles: {
 	TheGuardianTrophy.MapEntry: Трофей Хранителя
 	VolcanoxTrophy.MapEntry: Трофей Вулканокса
 	WastelandTrophy.MapEntry: Трофей Пустоши
-	// Darkstone.MapEntry: Darkstone
+	Darkstone.MapEntry: Мракамень
 }
 
 Buffs: {
@@ -2987,155 +2996,170 @@ NPCs: {
 	ScourgeFighter.DisplayName: Бичеборец
 	ToySlime.DisplayName: Игрушечный слизень
 	MiniToySlime.DisplayName: Мелкий игрушечный слизень
-	// Firefly.DisplayName: Firefly
-	// SoulOfInfernace.DisplayName: Soul of Infernace
-	// Volcanox.DisplayName: Volcanox
-	// VolcanoxHook.DisplayName: Volcanox Hook
-	// VolcanoxTentacle.DisplayName: Volcanox Tentacle
+	Firefly.DisplayName: Светляк
+	SoulOfInfernace.DisplayName: Душа Инфернейса
+	Volcanox.DisplayName: Волканокс
+	VolcanoxHook.DisplayName: Крюк Волканокса
+	VolcanoxTentacle.DisplayName: Щупальце Волканокса
 
 	Storyteller: {
-		// DisplayName: Storyteller
+		DisplayName: Рассказчик
 
 		TownNPCMood: {
-			// Content: Я довольный.
-			// NoHome: Терпеть не могу, когда у меня нет дома.
-			// FarFromHome: Я слишком далеко от дома.
-			// LoveSpace: Я люблю, когда так много пространства.
-			// DislikeCrowded: Мне не нравится то, как здесь людно.
-			// HateCrowded: Я ненавижу то, как здесь людно.
-			// LikeNPC_Princess: Мне нравится {NPCName}.
-			// Princess_LovesNPC: Мне нравится {NPCName}.
+			Content: Нормально всё, сойдёт.
+			NoHome: У тебя разве нет свободных комнат в доме?
+			FarFromHome: По-моему я ушёл слишком далеко от дома.
+			LoveSpace: Идеально, тут нет почти никаких раздражителей.
+			DislikeCrowded: Можно мне какую-нибудь другую комнату? Тут чересчур много людей.
+			HateCrowded: Если ты не хочешь, чтобы я сам решил тут проблему перенаселённости, убери этих людей от меня.
+			LikeNPC_Princess: Не понимаю, почему всем так нравится {NPCName}.
+			Princess_LovesNPC: Хм... По-моему, с  {NPCName} что-то не так...
+			// LikeBiome: Мне нравится {BiomeName}.
+			// DislikeBiome: Мне не нравится {BiomeName}.
+			// HateBiome: Я ненавижу {BiomeName}.
+			// LikeNPC: Мне нравится {NPCName}.
+			// DislikeNPC: Мне не нравится {NPCName}.
+			// HateNPC: Я ненавижу {NPCName}.
 		}
 
 		Name: {
-			// Amadis: Amadis
-			// Neivirk: Neivirk
-			// Herckeus: Herckeus
-			// Nornex: Nornex
-			// Zairis: Zairis
+			Amadis: Амадис
+			Neivirk: Нейвирк
+			Herckeus: Хэркеус
+			Nornex: Норнекс
+			Zairis: Зайрис
 			#TODO default == отладка
-			// default: default
+			default: default
 		}
 
-		// Census.SpawnCondition: Only during the day
+		Census.SpawnCondition: Только днём
 
 		ButtonText: {
-			// Text2: Fight
-			// Text1: Question
-			// Text: Story
+			Text2: Сразиться
+			Text1: Вопрос
+			Text: Расскажи что-нибудь
 		}
 
 		Story: {
 			#TODO: Cтока не может быть начата с ' . , вызвет ошибку при компиляций мода
 			#пример Story1_1: ' исполузуй в начале ""
-			// Story: The king of the slimes roams the fields with it's followers, causing earthquakes. A '
-			// Story_1: may provoke him.
-			// Story1: A giant eyeball is terrorizing the night, which hides sharp teeth underneath his lens. You found this '
-			// Story1_1: "'...maybe it'll be just perfect for the eyeball to appear."
-			// Story2: Dust is spreading out within the desert, storming. Scorpions suddenly arise from the sands. No doubt, it's Wasteland hunting it's next victim. Catch one of the '
-			// Story2_1: "' with a net to get his attention."
-			// Story3: A loud roar halled through the dead lands of the Crimson. It's guardian roams free again, it seems. Destroy three of these 'Crimson Hearts' within the caves. Alternatively, provoke it with a '
-			// Story3_1: "'."
-			// Story4: A loud roar halled through the dead lands of the Corruption. It's guardian roams free again, it seems. Destroy three of these 'Shadow Orbs' within the caves. Alternatively, provoke it with some '
-			// Story4_1: "'"
-			// Story5: The queen of all bees buzzes through the jungle, trying to build it's hives at every corner. Smash one of the hive's larva or use an '
-			// Story5_1: "' to put an end to that madness."
-			// Story6: An ancient curse has befallen the old man near the dungeon. This curse will cause a giant skull to emerge. Kill him with a '
-			// Story6_1: "' or visit the halls of the dungeon to summon it."
-			// Story7: After the skull has fallen, ash and fire rains down upon the lands. The fire lord Infernace seems to be enraged. Create a '
-			// Story7_1: "' and use it within the underworld to get him to show up."
-			// Story8: I've heared that the guide is fully aware of his fate and deems you challenging to fight the underworld's master. Heh, what a fool. Little does he know what it's defeat will bring over the world...
-			// Story9: Do you remember that giant eyeball? Some group of scientists created an mechanical copy of him - and this time, there are two of them. Use a '
-			// Story9_1: "'. As it's similiar to the eye you've made back then, it may cause them to appear."
-			// Story10: You feel those earthquakes? They are way worse than the ones of the King Slime back then. Create an '
-			// Story10_1: "' and use it, maybe the source of the earthquake will show up then."
-			// Story11: The skull has been reborn as a four armed mechanoid. And he causes more havoc than ever before. A '
-			// Story11_1: "' will cause it to appear."
-			// Story12: A group of martians had created a powerful jet robot long ago dubbed the Scourge Fighter, with an AI to destroy whatever it comes across. If you can obtain a duplicate of his '
-			// Story12_1: "', you may be able to signal it your coordinates."
-			// Story13: The mechanical trio went rogue after shocking thunders hit them. It was caused by the cosmic thunder serpent, Regaroth. If you are able to get ahold of a piece of his '
-			// Story13_1: "', he may come to reclaim it. Prepare for the worst."
-			// Story14: Flowers are always pretty, however, not when they're giant and have tentacles and spikes. I'm talking about the jungle guardian Plantera. Destroy her bulb to awaken her.
-			// Story15: The Golem is a ancient automaton within the depths of the jungle temple. Right now it's deactivated, but you can reactivate it by using one of it's '
-			// Story15_1: "' at an Lihzahrd Altar."
-			// Story16: The once friendly ice wizard Permafrost returned as a hatred filled spirit, taking revenge upon those who forgot him. An '
-			// Story16_1: "' will call upon him."
-			// Story17: Forbidden artifact only cause calamitous things, yet some do not want to listen. The resulted, obsidian-plated monster, Obsidious, can be summoned with a '
-			// Story17_1: "'."
-			// Story18: The king of the ocean, Duke Fishron recently scared me when I was looking for some fresh fish to have a nice dinner. He nearly devoured one of my arms. He is highly dangerous, so it's better to catch him with a '
-			// Story18_1: "' and get rid of him."
-			// Story19: No bad action remains unpunished. The knight of the ocean has come to take your life for taking Fishron's. Get ready for a tough battle. The knight will be further provoked by holding a '
-			// Story19_1: "' at the ocean."
-			// Story20: A group of cultists stand at the entrance of the dungeon, praising something that they shouldn't. You better take them out before they summon anything chaotic.
-			// Story21: You've caused a great mess. Because of you, the moon lord and the 4 lunar pillars awaken in the land once more. This creature could mean the end of everything. Are you ready to take on him? If so, kill those pillars or use a '
-			// Story21_1: "' to awake him for real."
-			// Story22: The divine being of the underworld, Volcanox, has been freed from it's prison. To calm the underworld down once again, you will have to make sure that he will fall. A '
-			// Story22_1: "' will be enough to unleash him."
-			// Story23: The town is full of hallucinations and fatigue and the void glows with a sinister power - the Void Leviathan has returned from it's slumber. He is after your soul, so he can reach his full potenial once again. Take him down by summoning him with the '
-			// Story23_1: "'"
-			// Story24: A long forgotten chaotic infection has taken the control of a scientist, infusing her with a mechanical suit to create an mindless, horrifying abomination. If you use an '
-			// Story24_1: "', you might be able to gain it's attention..."
-			// Story25: Sorry, I'm all out of tales
-			// Story26: You question my origin? I am a crystalline being, born within the depths of
-			// Story26_1: For so long, you mindlessly did what I said, without questioning. You did your job well. Now, it's time for you to perish. I do not need you any longer.
+			Story: Склизкий король прокатывается по полям и лесам, словно шторм, заставляя землю трястись под его прыжками, а его прислужники следуют за ним. Некая '
+			Story_1: "' может призвать его."
+			Story1: Огромное глазное яблоко, скрывающее острые зубы под своей линзой, кошмарит землю под покровом ночи. А ты как раз нашёл '
+			Story1_1: "'...Может быть, именно эта штука и привлечёт его внимание к тебе?"
+			Story2: Пылевые штормы беснуются в Пустыне. Из песков, словно гром среди ясного неба, появляются скорпионы... Тут уж нельзя ошибиться - Пустошь вышла на охоту. Поймай какого-нибудь из этих '
+			Story2_1: "' сачком, чтобы обратить её внимание на себя."
+			Story3: Громогласный рык прокатился эхом по пустошам Кримзона. Судя по всему, стражник этой мерзости снова на воле. Разрушь три этих 'Сердца Кримзона' там, глубоко в пещерах. Ну, или можешь призвать его с помощью '
+			Story3_1: "'."
+			Story4: Громогласный рык прокатился эхом по пустошам Кримзона. Судя по всему, стражник этого проклятого места снова на воле. Разрушь три этих 'Теневых сферы' там, глубоко в пещерах. Ну, или можешь призвать его с помощью '
+			Story4_1: "'"
+			Story5: Королева пчёл трудится, летает по всем Джунглям, пытаясь построить свои ульи на каждом шагу. Разбей один из её коконов или используй эту '
+			Story5_1: "', чтобы положить этому конец раз и навсегда."
+			Story6: Древнее проклятие пало на немощного старика, аки холера. Из-за него в нём поселился гигантский череп. Убей его с '
+			Story6_1: ", или прийди к нему в Данж, чтобы призвать его."
+			Story7: Стоило только Скелетрону пасть, так сразу огонь начал литься с небес, словно град. Кажется, это разгневало мастера огня, Инфернейса. Создай '
+			Story7_1: "' и используй его в самой Преисподне, чтобы явить его к себе."
+			Story8: Слыхал я, что Гид знает о своём проклятии и считает тебя воином, способным сразить чудовище внутри него. Какой же он профан, вообще ведь не понимает, к чему это приведёт...
+			Story9: Помнишь тот огромный глаз, да? Так вот, группа каких-то учёных создала его механическую копию, да не одну, а аж две. Используй '
+			Story9_1: "', так как это тоже может их призвать, по аналогии с первым Глазом."
+			Story10: Чувствуешь, как земля трясётся иногда? И теперь они куда более ощутимы, чем те, которые создавал Король слизней. Создай '
+			Story10_1: "' и используй его ночью, и, может быть, сам источник этих подземных толчков явится собственной персоной."
+			Story11: Скелетрона перестроили, и сделали машиной для убийств. Стоит ли говорить, что сейчас, аж с четырьмя руками, он представляет куда большую угрозу. '
+			Story11_1: "' скорее всего, вызовет его к тебе."
+			Story12: Какая-то группа марсианских учёных попыталась создать свой аналог механическим монстрам, назвав его "Бичеборец" и вооружив его ИИ, уничтожающим всё на своём пути. Если ты сможешь где-то достать дубликат его '
+			Story12_1: "', он, вероятно, сможет узнать твоё местоположение."
+			Story13: Механические чудища словно с катушек слетели после очередной грозы. И за этим стоял небесный змей, Регарот. Если ты сможешь заграбастать его '
+			Story13_1: "', он может к тебе явиться, чтобы вернуть его. Тебе стоит быть готовым ко всему."
+			Story14: Обычно цветы всегда красивы и приятны... Но не когда они гигантские, и плюются шипами. Да, я говорю о страже Джунглей, Плантере. Разбей её бутон, и она придёт по твою душу.
+			Story15: Голем - древний автоматон, томящийся в глубине Яхщерского храма. На данный момент он выключен, но его легко можно включить снова, использовав '
+			Story15_1: "' на Яхщерском алтаре."
+			Story16: Однажды добрый маг льда, Пермафрост, преобразился до неузнаваемости, когда смерть его королевства ожесточила его душу. '
+			Story16_1: "' должен его призвать."
+			Story17: Запретные артифакты на то и запретные, что приводят к бедствиям, но кому-то жадность застилает глаза. Одна из таких жертв собственной жадности, невольно одетая в обсидиановый доспех - Обсидиус, придёт к тебе, стоит тебе сверкнуть '
+			Story17_1: "'м."
+			Story18: Царь морей, Герцог Рыброн, мягко скажем, постращал меня, когда я всего лишь пришёл к морю синему наловить рыбы на уху. Он почти сожрал мою руку. Крайне опасная зверушка, так что поймай-ка его используя '
+			Story18_1: "' и преподай ему урок, как пугать невинных стариков."
+			Story19: На любое действие находится противодействие. Рыцарь Океана пришла по твою душу, после того, как Рыброн пал от твоих рук. Тебе стоит готовиться к жёсткой схватке. Следай первый шаг сам, использовав '
+			Story19_1: "' в Океане."
+			Story20: Группа каких-то культистов стоит у Данжа, и поклоняется тому, чему не стоило бы. По-моему тебе лучше их порешать, прежде чем из-за их действий произойдёт что-то недоброе...
+			Story21: Ты устроил настоящий хаос на этой земле. Из-за тебя, четыре лунных башни и сам Лунный Лорд были снова выпущены на волю. Это чудовище может легко покончить с этим миром. Ты уверен, что с ним справишься? Ну, а раз ты так уверен, тебе надо уничтожить четыре башни или использовать '
+			Story21_1: "', чтобы его призвать по-настоящему."
+			Story22: Бог Ада, Вулканокс, был освобождён от своих оков. Чтобы снова усмирить Ад, тебе придётся его сразить. '
+			Story22_1: "' взовёт к нему, из самых глубин Ада."
+			Story23: Город кишит галлюцинациями и унынием, а Пустота беснуется вновь - никак сам Левиафан Пустоты проснулся от своей спячки... И он определённо нацелен поглотить твою душу, чтобы вернуть себе былую мощь. Уничтожь его, призвав сначала с помощью '
+			Story23_1: "'."
+			Story24: Давно забытая хворь захватила тело бедной учёной, обратив её в опасного, безвольного своего раба, одетого в механический костюм. Если ты осмелишься использовать '
+			Story24_1: "', она может явиться к тебе сама..."
+			Story25: Э... Прошу прощения, кажись, у меня закончились мои охренительные истории.
+			Story26: Тебе интересно, откуда я родом? Я - кристальное существо, рождённое в самых дальних глубинах Террарии.
+			Story26_1: Настолько долго ты просто бездумно выполнял все мои поручения, даже не спрашивая, зачем мне это нужно. И ты справился с этим прекрасно. Ну, а теперь... твоё время вышло. В твоих услугах я более не нуждаюсь.
 		}
 
 		Chat: {
-			// Chat: The flare of chaos is now extinct... that such a great warrior did fall with ease is truly interesting...
-			// Chat1: You did put the ex-goddess out of her misery, huh? I'm curious... what do you seek?
-			// Chat2: Little do you know what power you've set free...you're just as foolish as you look...
-			// Chat3: potaot
-			// Chat4: Gah, perhaps I should just kill
-			// Chat4_1: now. Oh! I didn't see you there
-			// Chat4_2: ... You didn't hear anything did you?
-			// Chat5: Say, is it really you who makes these decisions? Or is it the puppeteer behind the curtain who pulls your strings?
-			// Chat6: What a great night to kill monsters. The red moon makes it even way more fun.
-			// Chat7: I never could understand humanity's satisfaction at that time of the year. They clearly didn't see real monsters. And the beings of this Pumpkin Moon are nothing compared to true ones, either.
-			// Chat8: At least this cold night ended in a good fight and not into an ice queen singing about her doubts. Ugh.
-			// Chat9: Go tell
-			// Chat9_1: to tone down the noise, I'm sick of her partying.
-			// Chat10: calls herself old. She has barely been born.
-			// Chat11: What on Earth is
-			// Chat11_1: ? In all my time here, I have never seen a being so peculiar...
-			// Chat12: "'s weapons are feeble little creations."
-			// Chat13: Hah,
-			// Chat13_1: is a useless fool! No one requires his little 'tips' he has. Petty...
-			// Chat14: Really? Boss Checklist? Am I seriously not good enough... Well then, guess I'll have to prove I'm better. You'll see.
-			// Chat15: Ah, the Moon Lord is defeated... Well done, you are almost as strong as I.
-			// Chat16: Old
-			// Chat16_1: is afraid of some puny eyeball! I would slay it in seconds if I believed it was even worth the effort. Hah!
-			// Chat17: Argh! These damn scorpions keep getting in my house! I heard of a genetics lab meltdown after that giant eye was slain. Imbeciles cant even contain a scorpion!
-			// Chat18: Strange floral creatures have started appearing in the jungle... I saw one with a shell made of petals!
-			// Chat19: The skies brighten once more, creatures that harbour an ore of immense power reside up there now.
-			// Chat20: Death spreads. The critters are looking sickly. I watched one get eaten from the inside out by a giant purple tick...
-			// Chat21: Burning spirits have began to appear in the dungeon. I suspect that the lunar surge may have caused Volcanox to release them into the world.
-			// Chat22: You look weary,
-			// Chat22_1: ". Go pay a visit to "
-			// Chat23: You look weary,
-			// Chat23_1: . Go pay a visit to the nurse. Oh wait... We don't have one
-			// Chat24: I wouldn't reccomend getting into a fight with me. I may be old but trust me, I have plenty of strength.
-			// Chat25: The beasts of Terraria are rough, I'll sell you some nasty weapons to aid in your combat.
-			// Chat26: These weapons are all made from 100% natural resources!
-			// Chat27: Hope you enjoy what I'm selling. Who am I kidding, of course you will!
-			// Chat28: Hmph. Sometimes standing around and mingling with all these people gets boring. I miss the days of war.
-			// Chat29: You want help crafting? I'm a storyteller! I deal legends not knowledge.
-			// Chat30: Why don't I kill the monsters myself? Uh, I'm awfully busy and you look like a strong young man.
-			// Chat31: I despise cookies. They are way too sweet for me. Honestly, I prefer the spicy stuff.
+			Chat: Вспышка хаоса наконец угасла... То, что настолько могучий воин пал настолько легко - поистине любопытно...
+			Chat1: Ты прекратил страдания бывшей богини, да? Интересно, а что ты ищешь?
+			Chat2: Ты ведь вообще не представляешь, какую силу высвободил... Оно и видно, ты точно такой же болван, каким и выглядишь...
+			Chat3: каротшка
+			Chat4: Ух, наверное, мне просто стоит покончить раз и навсегда с
+			Chat4_1: прямо сейчас. Ай! Прощу прощения, не заметил тебя.
+			Chat4_2: ... Ты ничего не слышал ведь, правда?
+			Chat5: Скажи, ты точно совершаешь все свои действия самостоятельно? Или ты просто марионетка, которой управляет какая-нибудь внешняя сила?
+			Chat6: Ах, какая прекрасная ночь для резни, не находишь? А в кровавую луну это даже ещё веселее!
+			Chat7: Наверное, я никогда не пойму, почему люди так ждут этого времени года. Они ведь даже не видят настоящих монстров. А те ничтожества из Тыквенной Луны - даже в подмётки реальным чудовищам не годятся.
+			Chat8: Хотя бы ночь закончилась добротным таким побоищем, а не концертом по заявкам ледяной королевы. Тьфу ты...
+			Chat9: Слушай, пойди-ка скажи
+			Chat9_1: вырубить её музло. Меня задолбали уже её бесконечные тусовки.
+			Chat10: называет себя старой. Хотя она лишь только родилась.
+			Chat11: Что вообще такое этот ваш
+			Chat11_1: ? Сколько я здесь был, ни разу ничего такого диковинного не видел...
+			Chat12: продаёт не оружия, а лишь жалкие пародии на реальные оружия.
+			Chat13: Хах, -
+			Chat13_1: никому не нужный балбес! Жаль он не понимает, что никому и даром не нужны его советы. Ничтожество...
+			Chat14: Погоди, что? Boss Checklist? Я что, недостаточно хорош, по-твоему? Ну, в таком случае, я должен доказать тебе, что ты ошибаешься. Вот увидишь.
+			Chat15: Что-ж, Лунный Лорд пал... И теперь ты почти так же силён, как и я.
+			Chat16: Старик
+			Chat16_1: боится какого-то жалкого глазика! Я мог бы разорвать его голыми руками за считанные секунды здесь и сейчас, если бы видел в этом хоть какой-то смысл. Хах!
+			Chat17: Да чтоб вас всех в рот, это самое! Эти проклятые скорпионы всё пробираются и пробираются в мою комнату! Я слышал, что в какой-то лаборатории под землёй произошёл взрыв, когда ты убил Глаза Ктулху. Эти дебилы даже скорпиона сдержать не смогли!
+			Chat18: Диковинные полу-растения полу-звери появились в Джунглях недавно... Я видел какого-то жука с панцирем из лепестков!
+			Chat19: Небеса озарились вновь, и теперь существа, носящие невероятно мощную руду, обитают высоко там.
+			Chat20: Смерть бродит по белу свету... Звери явно выглядят нездорово. Я видел, как из какого-то животного вылез огромный пурпурный клещ...
+			Chat21: Гневные духи поселились в давно мёртвых жителях Данжа. Мне почему-то кажется, что всплеск лунной энергии заставил Волканокса выпустить их наружу.
+			Chat22: Тебе, похоже, нехорошо,
+			Chat22_1: . Сходи-ка лучше к .
+			Chat23: Тебе, похоже, нехорошо,
+			Chat23_1: . Сходи-ка лучше к . Так, погоди... А у нас ведь её нет.
+			Chat24: Не советую со мной биться. Я, может, и стар, но отнюдь не немощен, уж поверь.
+			Chat25: Чудища Террарии сильны, и я могу продать тебе добрые оружия, дабы помочь совладать с ними.
+			Chat26: Все эти оружия сделаны исключительно из природных материалов!
+			Chat27: Надеюсь, ты оценишь мои товары. Ах, кого я обманываю, конечно ты оценишь!
+			Chat28: Хех. Иногда просто стоять и общаться с этими людишками сильно наскучивает. Начинаю скучать по временам брани...
+			Chat29: Тебе нужна помощь с крафтом? Вообще-то, я рассказчик, если ты не понял! Я работаю языком, а не руками.
+			Chat30: А почему я сам не бьюсь с чудищами? Э... Ну, я, вообще, просто всегда занят. А ты как раз похож на крепкого, дюжего хлопца.
+			Chat31: Терпеть не могу печенье. Всё оно, по-моему, слишком приторное. Честно, мне больше по нраву острое.
+		}
+
+		Content_1_4: {
+			BossD: There are rumors of a giant humanoid single-eyed monster roving the everfrosen lands of the Tundra, who seems to have come from a different dimension. Not that i know much about it, but crafting a certain '
+			BossD_1: "'might lure it, probably."
+			BossQ: You definitely have seen the king of all slimes, have you? What if i tell you that there is a queen of all slimes, which might also have wings? I've heard about a '
+			BossQ_1: "' made of pure gelatin, try using it in the Hallow, who knows, maybe something will happen."
+			BossE: Do you know who's behind the Hallow and all of the bizarre stuff there? No one else than the infamous Empress of Light herself! And have you seen the weird, iridescent butterflies '
+			BossE_1: "' there? I wonder if are connected in some way..."
 		}
 	}
 
-	// CrystalSerpentTail.DisplayName: Crystal Serpent
-	// CrystalSerpentHead.DisplayName: Crystal Serpent
-	// CrystalSerpentBody.DisplayName: Crystal Serpent
-	// Krecheus.DisplayName: Krecheus
-	// Kirvein.DisplayName: Kirvein
-	// Izaris.DisplayName: Izaris
-	// EnergySeeker.DisplayName: Energy Seeker
-	// ShardBase.DisplayName: ""
-	// Xernon.DisplayName: Xernon
-	// AncientAmalgamFist.DisplayName: Ancient Amalgamate Fist
-	// AncientAmalgamDeath.DisplayName: The Ancient Amalgamate
-	// AncientAmalgam.DisplayName: The Ancient Amalgamate
+	CrystalSerpentTail.DisplayName: Кристаллозмей
+	CrystalSerpentHead.DisplayName: Кристаллозмей
+	CrystalSerpentBody.DisplayName: Кристаллозмей
+	Krecheus.DisplayName: Кречеус
+	Kirvein.DisplayName: Кирвейн
+	Izaris.DisplayName: Изарис
+	EnergySeeker.DisplayName: Энергискатель
+	ShardBase.DisplayName: Основание осколка
+	Xernon.DisplayName: Ксернон
+	AncientAmalgamFist.DisplayName: Кулак Древнего Амальгамета
+	AncientAmalgamDeath.DisplayName: ""
+	AncientAmalgam.DisplayName: Древний Амальгамет
 }
 
 Projectiles: {
@@ -3155,7 +3179,7 @@ Projectiles: {
 	EnergyWeaverBeam.DisplayName: Луч Энерготкача
 	Explosion.DisplayName: Взрыв
 	LegoBrickFriendly.DisplayName: Игроковский Кирпичик Лего
-	// LegoBrick.DisplayName: Lego Brick
+	LegoBrick.DisplayName: Кубик лего
 	LifesAura.DisplayName: Аура Жизни
 	LightningCloud.DisplayName: Грозовое Облако
 	LightningCloudSwirl.DisplayName: Вихрь Грозового Облака
@@ -3501,62 +3525,62 @@ Projectiles: {
 	ScourgeBeam.DisplayName: Бичелуч
 	ScourgeBullet.DisplayName: Бичепуля
 	ScourgeHomingRocket.DisplayName: Самонаводящаяся бичеракета
-	// VolcanicBoom.DisplayName: Volcanic Boom
-	// VolcanicDebris.DisplayName: Volcanox
-	// VolcanicDemon.DisplayName: Volcanic Demon
-	// VolcanoxBlast.DisplayName: Volcanox
-	// VolcanoxBolt.DisplayName: Volcanox
-	// VolcanoxExplosion.DisplayName: Explosion
-	// CrystallineKunai.DisplayName: Crystalline Kunai
-	// BloodshotP.DisplayName: Bloodshot
-	// Worm.DisplayName: Worm
-	// SoulswordSoul.DisplayName: Soulsword
-	// SoulswordSoul2.DisplayName: Soulsword
-	// NihongoPoint.DisplayName: Nihongo
-	// NihongoP.DisplayName: Nihongo
-	// ForeverBolt.DisplayName: Forever Bolt
-	// ThickSmoke.DisplayName: Discord Toxin
-	// SearingArrow.DisplayName: Searing Arrow
-	// MasterSwordWave.DisplayName: Master Sword
-	// GladiolusTip.DisplayName: Gladiolus
-	// Gladiolus.DisplayName: Gladiolus
-	// MjolnirP.DisplayName: Mjolnir
-	// PoseidonsTridentP.DisplayName: Poseidons Trident
-	// IzarisShard.DisplayName: ""
-	// KirveinShard.DisplayName: ""
-	// KrecheusShard.DisplayName: ""
-	// XernonShard.DisplayName: ""
-	// KirveinArrow.DisplayName: Kirvein
-	// KirveinCrystalFragment.DisplayName: Kirvein
-	// KirveinExplosion.DisplayName: Kirvein
-	// KirveinExplosiveArrow.DisplayName: Kirvein
-	// KirveinFragCrystal.DisplayName: Kirvein
-	// KrecheusBlade.DisplayName: Krecheus
-	// KrecheusBolt.DisplayName: Krecheus
-	// KrecheusCircle.DisplayName: Krecheus
-	// KrecheusPortal.DisplayName: Krecheus
-	// KrecheusSide.DisplayName: Krecheus
-	// KrecheusSpike.DisplayName: Krecheus
-	// XernonBolt.DisplayName: Xernon
-	// XernonBoltExplosive.DisplayName: Xernon
-	// XernonBoltHoming.DisplayName: Xernon Bolt Homing
-	// XernonBoltSuper.DisplayName: Xernon
-	// XernonCrystal.DisplayName: Xernon
-	// XernonExplosion.DisplayName: Xernon
-	// CreditsStarter.DisplayName: ""
-	// ShardBase.DisplayName: Shard Base
-	// Lightbeam.DisplayName: ""
-	// DeathShockwave.DisplayName: Death Shockwave
-	// CrystallineShardHoming.DisplayName: Ancient Amalgamate
-	// CrystallineShard.DisplayName: Ancient Amalgamate
-	// CrystallineKunaiHostileNG.DisplayName: Ancient Amalgamate
-	// CrystallineKunaiHostileExplosive.DisplayName: Ancient Amalgamate
-	// CrystalFlower.DisplayName: Crystal Flower
-	// CrystalCluster.DisplayName: Crystal Cluster
-	// AncientProjectionSwirl2.DisplayName: Ancient Projection
-	// AncientProjectionSwirl.DisplayName: Ancient Projection
-	// AncientProjection.DisplayName: Ancient Projection
-	// AAHandOverlay.DisplayName: Ancient Amalgamate
+	VolcanicBoom.DisplayName: Вулканический взрыв
+	VolcanicDebris.DisplayName: Вулканические ошмётки
+	VolcanicDemon.DisplayName: Вулканический демон
+	VolcanoxBlast.DisplayName: Взрыв Волканокса
+	VolcanoxBolt.DisplayName: Выстрел Волканокса
+	VolcanoxExplosion.DisplayName: Тоже взрыв Волканокса
+	CrystallineKunai.DisplayName: Кристаллический кунай
+	BloodshotP.DisplayName: Проджектайл кровыстрела
+	Worm.DisplayName: Чер вь
+	SoulswordSoul.DisplayName: Душа душемеча
+	SoulswordSoul2.DisplayName: Вторая душа душемеча
+	NihongoPoint.DisplayName: Указка японго
+	NihongoP.DisplayName: Нихуёнго
+	ForeverBolt.DisplayName: Вечный выстрел
+	ThickSmoke.DisplayName: Густой дым
+	SearingArrow.DisplayName: Жгучая стрела
+	MasterSwordWave.DisplayName: Меч мастера
+	GladiolusTip.DisplayName: Кончик гладиолуса
+	Gladiolus.DisplayName: ПотомуЧтоГладиолус
+	MjolnirP.DisplayName: Проджектайл Мьёльнира
+	PoseidonsTridentP.DisplayName: Проджектайл трезубца Посейдона
+	IzarisShard.DisplayName: Осколок Изариса
+	KirveinShard.DisplayName: Осколок Кирвейна
+	KrecheusShard.DisplayName: Осколок Кречеуса
+	XernonShard.DisplayName: Осколок Ксернона
+	KirveinArrow.DisplayName: Стрела Кирвейна
+	KirveinCrystalFragment.DisplayName: Кристальный фрагмент Кирвейна
+	KirveinExplosion.DisplayName: Взрыв Кирвейна
+	KirveinExplosiveArrow.DisplayName: Взрывострела Кирвейна
+	KirveinFragCrystal.DisplayName: Осколок кристалла Кирвейна
+	KrecheusBlade.DisplayName: Меч Кречеуса
+	KrecheusBolt.DisplayName: Выстрел Кречеуса
+	KrecheusCircle.DisplayName: Круг Кречеуса
+	KrecheusPortal.DisplayName: Портал Кречеуса
+	KrecheusSide.DisplayName: Проджектайл Кречеуса
+	KrecheusSpike.DisplayName: Шип Кречеуса
+	XernonBolt.DisplayName: Выстрел Ксернона
+	XernonBoltExplosive.DisplayName: Взрывыстрел Ксернона
+	XernonBoltHoming.DisplayName: Самонаводящийся выстрел Ксернона
+	XernonBoltSuper.DisplayName: Супервыстрел Ксернона
+	XernonCrystal.DisplayName: Кристалл Ксернона
+	XernonExplosion.DisplayName: Взрыв Ксернона
+	CreditsStarter.DisplayName: Проджектайл-триггер финальной катсцены
+	ShardBase.DisplayName: Основа осколка
+	Lightbeam.DisplayName: Светолуч
+	DeathShockwave.DisplayName: Взрывная волна смерти
+	CrystallineShardHoming.DisplayName: Самонаводящийся кристальный осколок
+	CrystallineShard.DisplayName: Кристальный осколок
+	CrystallineKunaiHostileNG.DisplayName: СлишкомДлинноеНазваниеПроджектайла
+	CrystallineKunaiHostileExplosive.DisplayName: Вражеский кристальный взрывокунай
+	CrystalFlower.DisplayName: Кристальный цветок
+	CrystalCluster.DisplayName: Кристальный кластер
+	AncientProjectionSwirl2.DisplayName: Вихрь древней проекции2
+	AncientProjectionSwirl.DisplayName: Вихрь древней проекции
+	AncientProjection.DisplayName: Древняя проекция
+	AAHandOverlay.DisplayName: Оверлей руки древнего амальгамета
 }
 
 Configs: {
@@ -3628,6 +3652,11 @@ Bestiary: {
 		ScourgeFighterBoss: Машина, созданная командой марсианских учёных, что надеялись создать свой эквивалент механическим монстрам, созданным пленным механиком в Данже, с одной целью - для помощи им в завоевании Террарии. Однако, даже они сами не подозревали, к чему это в итоге приведёт...
 		ToySlime: Изначально этот слизень был создан в качестве безобидной игрушки для детей. Однако, стоило Морозной Луне взойти в одну злополучную ночь, и он словно осатанел, начав безудержно сеять хаос везде, куда идёт.
 		VolcanoxBoss: Древний бог Ада и первородное воплощение огня, магмы и пепла. Волканокс ответственен за создание такого чудовища из глубин, как Стена Плоти, а также стража цивилизации Ада, Инфернейса.
+		IzarisBoss: Кристальное чудище, рождённое тысячелетия назад в глубинах Террарии, движимое бесконечной жаждой силы, кого многие столетия назад лишил физической формы Абраксис. Ему пришлось принять форму дряхлого, немощного старика и ждать, пока не придёт герой, которого оно сможет использовать для того, чтобы вернуть свою былую форму.
+		Kirvein: Кристальное чудище, рождённое тысячелетия назад в глубинах Террарии, движимое бесконечной жаждой силы, кого многие столетия назад лишил физической формы Абраксис. Ему пришлось принять форму дряхлого, немощного старика и ждать, пока не придёт герой, которого оно сможет использовать для того, чтобы вернуть свою былую форму.
+		Krecheus: Кристальное чудище, рождённое тысячелетия назад в глубинах Террарии, движимое бесконечной жаждой силы, кого многие столетия назад лишил физической формы Абраксис. Ему пришлось принять форму дряхлого, немощного старика и ждать, пока не придёт герой, которого оно сможет использовать для того, чтобы вернуть свою былую форму.
+		Xernon: Кристальное чудище, рождённое тысячелетия назад в глубинах Террарии, движимое бесконечной жаждой силы, кого многие столетия назад лишил физической формы Абраксис. Ему пришлось принять форму дряхлого, немощного старика и ждать, пока не придёт герой, которого оно сможет использовать для того, чтобы вернуть свою былую форму.
+		AncientAmalgam: Благодаря герою, убившему многих великих чудовищ этого мира, Древние снова объеденены в одну единую оболочку, сильнее, чем когда-либо, и жаждя наконец поставить точку в истории не только Террарии, но и всей вселенной, чтобы стать единоличными владыками этого мира...
 	}
 
 	Enemies: {
@@ -3637,6 +3666,11 @@ Bestiary: {
 		RegarothMinion: Отпрыск грозового змея, призванный Регаротом для помощи ему в битве. Не стоит судить по его малому размеру, ведь он всё равно может представлять опасность.
 		MiniToySlime: Маленький слизень, отколовшийся от большого игрушечного слизня. И хотя по размеру они меньше оригинала, они по-прежнему могут представлять угрозу.
 		Firefly: Разгневанный дух, похожий на огромного светлячка, призванный Волканоксом. Будь уверен, оно сделает всё возможное, чтобы уничтожить что и кого угодно по приказу своего хозяина.
+	}
+
+	TownNPCs: {
+		// Storyteller: ???
+		// Storyteller2: ""
 	}
 
 	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
@@ -3733,26 +3767,26 @@ Tooltips: {
 	ToySlimeClaw2: При нажатии кнопки специальной способности
 	ToySlimeClaw3: ", оно выстрелит сгустком слизи в точку курсора"
 	ToySlimeClaw4: Если сгусток выстреливает вниз, оно подкинет игрока вверх и выпустит ещё несколько снарядов
-	// VoidEventSummon: It is too late to call upon the void...
-	// VoidEventSummon1: You cannot intensify the void...
-	// VoidEventSummon2: Your head is already filled with screams...
-	// VoidEventSummon3: You feel a wave of cold rush over you...
-	// VoidEventSummon4: Your head throbs
-	// VoidEventSummon5: The void retreats from the light
-	// VoidEventSummon6: The shadows grow darker...
-	// Betatest: --Item for testing mod--
-	UndownerTerraria: Пермафрост был убит:
-	// AncientsSummon: I've waited centuries for this!
-	// AncientsSummon1: Back for more?
-	// AncientsSummon2: I could do this all day!
-	// AncientsSummon3: You should have gone for the head...
-	// AncientsSummon4: Really? Still trying?
-	// AncientsSummon5: Give up already.
-	// AncientsSummon6: Are you seriously gonna keep dying?
-	// AncientsSummon7: As much fun slaying you is, there are better things to do with both our lives.
-	// AncientsSummon8: Lunatic.
-	// AncientsSummon9: I just don't think you are cut out to do this... Go find some other hobby.
-	// AncientsSummon10: You bring me back to this awful land... Why?
+	VoidEventSummon: Слишком поздний час уже, чтобы взывать к силам Пустоты...
+	VoidEventSummon1: Ты не можешь загустить Пустоту...
+	VoidEventSummon2: Твоя голова уже раскалывается от криков...
+	VoidEventSummon3: Ты почувствовал, как тебя пробил озноб...
+	VoidEventSummon4: У тебя начинает гудеть в голове...
+	VoidEventSummon5: Полщича пустоты убираются ото света дневного...
+	VoidEventSummon6: Мрак всё сгущается...
+	Betatest: --Тестовый предмет--
+	UndownerTerraria: Пермафрост убит?:
+	AncientsSummon: Наконец-то, я ждал этого момента целые столетия!
+	AncientsSummon1: Что, вернулся за добавкой?
+	AncientsSummon2: Я могу заниматься этим сутки напролёт!
+	AncientsSummon3: Тебе стоило целиться в голову...
+	AncientsSummon4: Чё? Тебе ещё не надоело?
+	AncientsSummon5: Сдавайся уже, пацан.
+	AncientsSummon6: Ты так и будешь подыхать, как последний лох?
+	AncientsSummon7: Убивать тебя раз за разом, конечно, весело, но у нас ведь дела и получше есть, слыхал?
+	AncientsSummon8: Да у тебя, браток, не все дома, я смотрю.
+	AncientsSummon9: По-моему, тебе это не по зубам, малой. Иди лучше в роблокс играй, или типа того.
+	AncientsSummon10: Ты вернул меня в эти поганые земли... Нахрена?
 }
 
 AccInfo: {
@@ -3844,10 +3878,10 @@ Said: {
 	ScourgeFighter: ЗАФИКСИРОВАНА ФАТАЛЬНАЯ ОШИБКА. СИСТЕМА ВЫКЛЮЧИТСЯ ПРЯМО СЕЙЧАС.
 	ScourgeFighter1: Запуск самонаводящихся ракет
 	ScourgeFighter2: Подготовка к запуску ракет
-	// Volcanox: You will pay for what you've done!
-	// Izaris: Your time has come, mortal!
-	// Izaris1: I guess we are doing this again...
-	// ShardBase: Using autopause huh? What a wimp
+	Volcanox: Ты заплатишь за свои грехи!
+	Izaris: Твоё время вышло, смертный!
+	Izaris1: Ну что-ж, поехали по-новой...
+	ShardBase: Ты чё, серьёзно автопаузу используешь? ХАХАХА, лошара!
 }
 
 LooTCondition: {
@@ -3858,8 +3892,8 @@ LooTCondition: {
 }
 
 ShopCondition: {
-	// BossString: After defeating the
-	// BossString1: or
+	BossString: После победы над
+	BossString1: или
 }
 
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"

@@ -1,5 +1,4 @@
 using ElementsAwoken.Content.Effects;
-using ElementsAwoken.Content.Projectiles.NPCProj.Wasteland;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI;
@@ -30,6 +29,14 @@ namespace ElementsAwoken
 {
     public class ElementsAwoken : Mod
     {
+        public const string Ancients = "ElementsAwoken:Ancients";
+        public const string Azana = "ElementsAwoken:Azana";
+        public const string VoidLeviathanHead = "ElementsAwoken:VoidLeviathanHead";
+        public const string Volcanox = "ElementsAwoken:Volcanox";
+        public const string TheGuardianFly = "ElementsAwoken:TheGuardianFly";
+        public const string Permafrost = "ElementsAwoken:Permafrost";
+        public const string Infernace = "ElementsAwoken:Infernace";
+
         public static string a = "";
         public static DynamicSpriteFont encounterFont;
 
@@ -117,15 +124,22 @@ namespace ElementsAwoken
             MyWorld.awakenedModeNoActive = true;
             if (!Main.dedServ)
             {
-                Filters.Scene["ElementsAwoken:VoidLeviathanHead"] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);
-                SkyManager.Instance["ElementsAwoken:VoidLeviathanHead"] = new EABiomeSky();
+                Filters.Scene[Ancients] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0f, 0.8f, 0.4f).UseOpacity(0.3f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Ancients] = new EABiomeSky();
+                Filters.Scene[Azana] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.2f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Azana] = new EABiomeSky();
+                Filters.Scene[VoidLeviathanHead] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                SkyManager.Instance[VoidLeviathanHead] = new EABiomeSky();
+                Filters.Scene[Volcanox] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1.0f, 0.2f, 0.55f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Volcanox] = new EABiomeSky();
+                Filters.Scene[TheGuardianFly] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[TheGuardianFly] = new EABiomeSky();
+                Filters.Scene[Infernace] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Infernace] = new EABiomeSky();
+                Filters.Scene[Permafrost] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.6f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                SkyManager.Instance[Permafrost] = new EABiomeSky();
                 //    Filters.Scene["ElementsAwoken:Aqueous"] = new Filter(new AqueousScreenShaderData("FilterMiniTower").UseColor(0.4f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    SkyManager.Instance["ElementsAwoken:AqueousSky"] = new AqueousSky();
-                //    Filters.Scene["ElementsAwoken:Infernace"] = new Filter(new InfernaceScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Permafrost"] = new Filter(new PermafrostScreenShaderData("FilterMiniTower").UseColor(0.6f, 0.7f, 1.0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:TheGuardianFly"] = new Filter(new TheGuardianScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Volcanox"] = new Filter(new TheGuardianScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:Azana"] = new Filter(new TheGuardianScreenShaderData("FilterMiniTower").UseColor(1f, 0.2f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
+                //    SkyManager.Instance["ElementsAwoken:AqueousSky"] = new AqueousSky();               
                 //    Filters.Scene["ElementsAwoken:Ancients"] = new Filter(new TheGuardianScreenShaderData("FilterMiniTower").UseColor(0f, 0.8f, 0.4f).UseOpacity(0.3f), EffectPriority.VeryHigh);
 
                 //    Filters.Scene["Blizzard"] = new Filter(new BlizzardShaderData("FilterBlizzardForeground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High);
@@ -153,13 +167,6 @@ namespace ElementsAwoken
                 //    Filters.Scene["ElementsAwoken:AshShader"] = new Filter(new InfernaceScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.2f), EffectPriority.VeryHigh);
 
                 //    Filters.Scene["ElementsAwoken:HeatDistortion"] = new Filter(new ScreenShaderData("FilterHeatDistortion").UseImage("Images/Misc/noise", 0, null).UseIntensity(4f), EffectPriority.Low);
-
-                //Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
-                //Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData("Shockwave"), EffectPriority.VeryHigh);
-                //Filters.Scene["Shockwave"].Load();
-                //Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
-                //Filters.Scene["ShockwaveEffect"] = new Filter(new ScreenShaderData("FilterMoonLord"), EffectPriority.VeryHigh);
-                //Filters.Scene["ShockwaveEffect"].Load();
                 Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
                 Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData(screenRef, "Shockwave"), EffectPriority.VeryHigh);
                 Filters.Scene["Shockwave"].Load();

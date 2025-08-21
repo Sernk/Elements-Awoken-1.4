@@ -28,6 +28,7 @@ using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
+using System;
 using System.Collections.Generic;
 using Terraria.ModLoader;
 
@@ -91,6 +92,49 @@ namespace ElementsAwoken.Utilities
         #region Bosses
         public static readonly List<int> BossName = [ModContent.NPCType<AncientWyrmHead>(), ModContent.NPCType<TheEye>(), ModContent.NPCType<Aqueous>(), ModContent.NPCType<AzanaEye>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Content.NPCs.Bosses.CosmicObserver.CosmicObserver>(), ModContent.NPCType<TheGuardian>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<Infernace>(), ModContent.NPCType<VoidLeviathanHead>(), ModContent.NPCType<Wasteland>(), ModContent.NPCType<ObsidiousHuman>(), ModContent.NPCType<Obsidious>(), ModContent.NPCType<Permafrost>(), ModContent.NPCType<RegarothHead>(), ModContent.NPCType<ScourgeFighter>(), ModContent.NPCType<ToySlime>(), ModContent.NPCType<Volcanox>(), ModContent.NPCType<Izaris>(), ModContent.NPCType<Kirvein>(), ModContent.NPCType<Krecheus>(), ModContent.NPCType<Xernon>(), ModContent.NPCType<ShardBase>()];
         #endregion;
+        #region UndownerTerraria
+        public static List<Func<bool>> BossFlagsGet = new()
+        {
+            () => MyWorld.downedAncients,
+            () => MyWorld.downedAncientWyrm,
+            () => MyWorld.downedAqueous,
+            () => MyWorld.downedAzana,
+            () => MyWorld.downedCosmicObserver,
+            () => MyWorld.downedEye,
+            () => MyWorld.downedGuardian,
+            () => MyWorld.downedInfernace,
+            () => MyWorld.downedObsidious,
+            () => MyWorld.downedPermafrost,
+            () => MyWorld.downedRadiantMaster,
+            () => MyWorld.downedRegaroth,
+            () => MyWorld.downedScourgeFighter,
+            () => MyWorld.downedShadeWyrm,
+            () => MyWorld.downedVoidLeviathan,
+            () => MyWorld.downedVolcanox,
+            () => MyWorld.downedWasteland
+        };
+
+        public static List<Action<bool>> BossFlagsSet = new()
+        {
+            v => MyWorld.downedAncients = v,
+            v => MyWorld.downedAncientWyrm = v,
+            v => MyWorld.downedAqueous = v,
+            v => MyWorld.downedAzana = v,
+            v => MyWorld.downedCosmicObserver = v,
+            v => MyWorld.downedEye = v,
+            v => MyWorld.downedGuardian = v,
+            v => MyWorld.downedInfernace = v,
+            v => MyWorld.downedObsidious = v,
+            v => MyWorld.downedPermafrost = v,
+            v => MyWorld.downedRadiantMaster = v,
+            v => MyWorld.downedRegaroth = v,
+            v => MyWorld.downedScourgeFighter = v,
+            v => MyWorld.downedShadeWyrm = v,
+            v => MyWorld.downedVoidLeviathan = v,
+            v => MyWorld.downedVolcanox = v,
+            v => MyWorld.downedWasteland = v
+        };
+        #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {
             ["melee"] = DamageClass.Melee,

@@ -1,10 +1,8 @@
 ﻿using ElementsAwoken.EASystem.UI.Tooltips;
-using System;
+using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
-using ElementsAwoken.Utilities;
 
 namespace ElementsAwoken.Content.Items
 {
@@ -22,16 +20,27 @@ namespace ElementsAwoken.Content.Items
             Item.useStyle = 4;
             Item.UseSound = SoundID.Item44;
         }
+        public override bool AltFunctionUse(Player player)
+        {
+            return true;
+        }
         public override bool CanUseItem(Player player)
         {
-            if (MyWorld.downedPermafrost)
+            if (Main.mouseLeft)
             {
-                Main.NewText($"{ModContent.GetInstance<EALocalization>().UndownerTerraria} {Convert.ToString(MyWorld.downedPermafrost)}", Color.Green);
-                return MyWorld.downedPermafrost = false;
+                foreach (var set in EAList.BossFlagsSet)
+                {
+                    set(false);
+                }      
+                Main.NewText("Все сброшено", EAColors.Purpal);
             }
-            else
+            else if (Main.mouseRight)
             {
-                Main.NewText($"{ModContent.GetInstance<EALocalization>().UndownerTerraria} {Convert.ToString(MyWorld.downedPermafrost)}", Color.Red);
+                foreach (var set in EAList.BossFlagsSet)
+                {
+                    set(true);
+                }
+                Main.NewText("Все босы были убиты", EAColors.Purpal);
             }
             return true;
         }

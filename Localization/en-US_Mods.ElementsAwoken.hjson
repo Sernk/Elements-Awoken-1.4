@@ -2978,6 +2978,12 @@ NPCs: {
 			HateCrowded: Я ненавижу то, как здесь людно.
 			LikeNPC_Princess: Мне нравится {NPCName}.
 			Princess_LovesNPC: Мне нравится {NPCName}.
+			LikeBiome: Мне нравится {BiomeName}.
+			DislikeBiome: Мне не нравится {BiomeName}.
+			HateBiome: Я ненавижу {BiomeName}.
+			LikeNPC: Мне нравится {NPCName}.
+			DislikeNPC: Мне не нравится {NPCName}.
+			HateNPC: Я ненавижу {NPCName}.
 		}
 
 		Name: {
@@ -3094,6 +3100,15 @@ NPCs: {
 			Chat29: You want help crafting? I'm a storyteller! I deal legends not knowledge.
 			Chat30: Why don't I kill the monsters myself? Uh, I'm awfully busy and you look like a strong young man.
 			Chat31: I despise cookies. They are way too sweet for me. Honestly, I prefer the spicy stuff.
+		}
+
+		Content_1_4: {
+			BossD: There are rumors of a giant humanoid single-eyed monster roving the everfrosen lands of the Tundra, who seems to have come from a different dimension. Not that i know much about it, but crafting a certain '
+			BossD_1: "'might lure it, probably."
+			BossQ: You definitely have seen the king of all slimes, have you? What if i tell you that there is a queen of all slimes, which might also have wings? I've heard about a '
+			BossQ_1: "' made of pure gelatin, try using it in the Hallow, who knows, maybe something will happen."
+			BossE: Do you know who's behind the Hallow and all of the bizarre stuff there? No one else than the infamous Empress of Light herself! And have you seen the weird, iridescent butterflies '
+			BossE_1: "' there? I wonder if are connected in some way..."
 		}
 	}
 
@@ -3601,6 +3616,11 @@ Bestiary: {
 		ScourgeFighterBoss: ""
 		ToySlime: ""
 		VolcanoxBoss: ""
+		IzarisBoss: ""
+		Kirvein: ""
+		Krecheus: ""
+		Xernon: ""
+		AncientAmalgam: ""
 	}
 
 	Enemies: {
@@ -3610,6 +3630,11 @@ Bestiary: {
 		RegarothMinion: ""
 		MiniToySlime: ""
 		Firefly: ""
+	}
+
+	TownNPCs: {
+		Storyteller: ???
+		Storyteller2: ""
 	}
 
 	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.

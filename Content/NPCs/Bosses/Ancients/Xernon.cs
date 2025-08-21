@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.Audio;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -60,6 +61,23 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 4;
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                CustomTexturePath = "ElementsAwoken/Extra/Bestiary/XernonBestiary"
+            };
+            value.Position.X += 0;
+            value.Position.Y -= 0f;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange([
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.Xernon"),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+            ]);
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {

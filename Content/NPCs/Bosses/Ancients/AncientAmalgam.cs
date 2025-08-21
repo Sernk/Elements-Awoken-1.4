@@ -1,12 +1,16 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients.Gores;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.Audio;
+using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.Events;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
@@ -66,11 +70,30 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
             {
                 NPC.buffImmune[num2] = true;
             }
-            //bossBag = mod.ItemType("AncientsBag");
         }
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 5;
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                // 0.n == уменшает изоброжения
+                CustomTexturePath = "ElementsAwoken/Extra/Bestiary/AncientAmalgamBestiary",
+                Scale = 0.8f, // Мини иконка в бестиарии 
+                PortraitScale = 0.8f, // При нажатии на иконку в бестиарии
+            };
+            value.Position.X += 0;
+            value.Position.Y -= 0;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange([
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.AncientAmalgam"),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+            ]);
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
@@ -107,42 +130,16 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
             if (NPC.ai[0] < 180 || NPC.alpha > 100) return false;
             return base.CanHitPlayer(target, ref cooldownSlot);
         }
-        //public override void NPCLoot()
-        //{
-        //    if (Main.rand.Next(10) == 0)
-        //    {
-        //        //Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("AncientsTrophy"));
-        //    }
-        //    if (Main.rand.Next(10) == 0)
-        //    {
-                
-        //        //Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("AncientsMask"));
-        //        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<ElderSignet>());
-        //    }
-        //    if (Main.expertMode)
-        //    {
-        //        npc.DropBossBags();
-
-        //    }
-        //    else
-        //    {
-        //        int choice = Main.rand.Next(3);
-        //        if (choice == 0)
-        //        {
-        //            Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Chromacast"));
-        //        }
-        //        if (choice == 1)
-        //        {
-        //            Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Shimmerspark"));
-        //        }
-        //        if (choice == 2)
-        //        {
-        //            Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TheFundamentals"));
-        //        }
-        //        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("CrystalAmalgamate"), 1);
-        //        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("AncientShard"), Main.rand.Next(5, 8));
-        //    }
-        //}
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AncLot]));
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<AncientsBag>(), 1));
+            npcLoot.Add(ItemDropRule.Common(ItemType<CrystalAmalgamate>(), minimumDropped:1, maximumDropped:1));
+            npcLoot.Add(ItemDropRule.Common(ItemType<AncientShard>(), minimumDropped:5, maximumDropped:8));
+            //npcLoot.Add(ItemDropRule.Common(ItemType<AncientsTrophy>(), 10));
+            //npcLoot.Add(ItemDropRule.Common(ItemType<ElderSignet>(), 10)); // 2 по цене одного
+            //npcLoot.Add(ItemDropRule.Common(ItemType<AncientsMask>(), 10));
+        }
         public override void BossLoot(ref int potionType)
         {
             potionType = ItemType<EpicHealingPotion>();

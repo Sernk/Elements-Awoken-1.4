@@ -1,10 +1,12 @@
-﻿using ElementsAwoken.Content.Buffs.Debuffs;
+﻿using CalamityMod.NPCs.Leviathan;
+using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
+using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;

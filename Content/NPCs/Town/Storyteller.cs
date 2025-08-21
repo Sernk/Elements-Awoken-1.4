@@ -1,5 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.BossSummons;
+using ElementsAwoken.Content.Items.Placeable.Drives;
 using ElementsAwoken.Content.Items.Storyteller;
+using ElementsAwoken.Content.NPCs.Bosses.Ancients;
 using ElementsAwoken.Content.Projectiles.Thrown;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
@@ -9,12 +11,13 @@ using System.Collections.Generic;
 using System.IO;
 using Terraria;
 using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.Personalities;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using static ElementsAwoken.ElementsAwoken;
 using static Terraria.ModLoader.ModContent;
-using ElementsAwoken.Content.Items.Placeable.Drives;
 
 namespace ElementsAwoken.Content.NPCs.Town
 {
@@ -32,30 +35,6 @@ namespace ElementsAwoken.Content.NPCs.Town
             {
                 return "ElementsAwoken/Content/NPCs/Town/Storyteller";
             }
-        }
-        public override void SetDefaults()
-        {
-            NPC.townNPC = true;
-            NPC.friendly = true;
-            NPC.width = 18;
-            NPC.height = 40;
-            NPC.aiStyle = 7;
-            NPC.damage = 10;
-            NPC.defense = 30;
-            NPC.lifeMax = 500;
-            NPC.HitSound = SoundID.NPCHit1;
-            NPC.DeathSound = SoundID.NPCDeath1;
-            NPC.knockBackResist = 0.5f;
-            NPCID.Sets.AttackFrameCount[NPC.type] = 4;
-            NPCID.Sets.DangerDetectRange[NPC.type] = 700;
-            NPCID.Sets.AttackType[NPC.type] = 0;
-            NPCID.Sets.AttackTime[NPC.type] = 90;
-            NPCID.Sets.AttackAverageChance[NPC.type] = 30;
-            AnimationType = NPCID.Merchant;
-        }
-        public override void SetStaticDefaults()
-        {
-            Main.npcFrameCount[NPC.type] = 25;
         }
         public override void Load()
         {
@@ -154,6 +133,68 @@ namespace ElementsAwoken.Content.NPCs.Town
             _ = this.GetLocalization("Chat.Chat29").Value;
             _ = this.GetLocalization("Chat.Chat30").Value;
             _ = this.GetLocalization("Chat.Chat31").Value;
+
+            _ = this.GetLocalization("Content_1_4.BossD").Value;
+            _ = this.GetLocalization("Content_1_4.BossD_1").Value;
+            _ = this.GetLocalization("Content_1_4.BossQ").Value;
+            _ = this.GetLocalization("Content_1_4.BossQ_1").Value;
+            _ = this.GetLocalization("Content_1_4.BossE").Value;
+            _ = this.GetLocalization("Content_1_4.BossE_1").Value;
+        }
+        public override void SetDefaults()
+        {
+            NPC.townNPC = true;
+            NPC.friendly = true;
+            NPC.width = 18;
+            NPC.height = 40;
+            NPC.aiStyle = 7;
+            NPC.damage = 10;
+            NPC.defense = 30;
+            NPC.lifeMax = 500;
+            NPC.HitSound = SoundID.NPCHit1;
+            NPC.DeathSound = SoundID.NPCDeath1;
+            NPC.knockBackResist = 0.5f;
+            NPCID.Sets.AttackFrameCount[NPC.type] = 4;
+            NPCID.Sets.DangerDetectRange[NPC.type] = 700;
+            NPCID.Sets.AttackType[NPC.type] = 0;
+            NPCID.Sets.AttackTime[NPC.type] = 90;
+            NPCID.Sets.AttackAverageChance[NPC.type] = 30;
+            AnimationType = NPCID.Merchant;
+        }
+        public override void SetStaticDefaults()
+        {
+            Main.npcFrameCount[NPC.type] = 25;
+            NPC.Happiness
+                .SetBiomeAffection<ForestBiome>(AffectionLevel.Like)
+                .SetBiomeAffection<OceanBiome>(AffectionLevel.Like)
+                .SetBiomeAffection<DesertBiome>(AffectionLevel.Like)
+                .SetBiomeAffection<JungleBiome>(AffectionLevel.Dislike)
+                .SetBiomeAffection<UndergroundBiome>(AffectionLevel.Hate)
+                .SetNPCAffection(NPCID.Guide, AffectionLevel.Like)
+                .SetNPCAffection(NPCID.Wizard, AffectionLevel.Dislike)
+                .SetNPCAffection(NPCID.Clothier, AffectionLevel.Dislike)
+                .SetNPCAffection(NPCID.Dryad, AffectionLevel.Dislike)
+                .SetNPCAffection(NPCID.Angler, AffectionLevel.Hate)
+                .SetNPCAffection(NPCID.Merchant, AffectionLevel.Hate)
+                .SetNPCAffection(NPCID.TaxCollector, AffectionLevel.Hate)
+                .SetNPCAffection(NPCID.Guide, AffectionLevel.Like);
+
+            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Velocity = -1f,
+                Direction = -1
+            };
+            NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
+            Main.npcCatchable[NPC.type] = true;
+            NPCID.Sets.CountsAsCritter[NPC.type] = true;
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
+            {
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.TownNPCs.Storyteller"),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+            });
         }
         public override bool CanTownNPCSpawn(int numTownNPCs)
         {
@@ -339,8 +380,10 @@ namespace ElementsAwoken.Content.NPCs.Town
                         bool eaterOrBrain = NPC.downedBoss2;
                         bool queenBee = NPC.downedQueenBee;
                         bool skeletron = NPC.downedBoss3;
+                        bool deerclops = NPC.downedDeerclops;
                         bool infernace = MyWorld.downedInfernace;
                         bool wallOfFlesh = Main.hardMode;
+                        bool queen = NPC.downedQueenSlime;
                         bool destroyer = NPC.downedMechBoss1;
                         bool twins = NPC.downedMechBoss2;
                         bool skeletronPrime = NPC.downedMechBoss3;
@@ -351,6 +394,7 @@ namespace ElementsAwoken.Content.NPCs.Town
                         bool permafrost = MyWorld.downedPermafrost;
                         bool obsidious = MyWorld.downedObsidious;
                         bool dukeFishron = NPC.downedFishron;
+                        bool empress = NPC.downedEmpressOfLight;
                         bool aqueous = MyWorld.downedAqueous;
                         bool theGuardian = MyWorld.downedGuardian;
                         bool cultist = NPC.downedAncientCultist;
@@ -416,6 +460,13 @@ namespace ElementsAwoken.Content.NPCs.Town
                             Main.npcChatText = q;
                             Main.npcChatCornerItem = ItemID.ClothierVoodooDoll;
                         }
+                        else if(!deerclops)
+                        {
+                            item.SetDefaults(ItemID.DeerThing);
+                            string q = this.GetLocalization("Content_1_4.BossD").Value + item.Name + this.GetLocalization("Content_1_4.BossD_1").Value;
+                            Main.npcChatText = q;
+                            Main.npcChatCornerItem = ItemID.DeerThing;
+                        }
                         else if (!infernace)
                         {
                             item.SetDefaults(ItemType<InfernaceSummon>());
@@ -428,6 +479,13 @@ namespace ElementsAwoken.Content.NPCs.Town
                             item.SetDefaults(ItemID.GuideVoodooDoll);
                             Main.npcChatText = this.GetLocalization("Story.Story8").Value;
                             Main.npcChatCornerItem = ItemID.GuideVoodooDoll;
+                        }
+                        else if (!queen)
+                        {
+                            item.SetDefaults(ItemID.QueenSlimeCrystal);
+                            string q = this.GetLocalization("Content_1_4.BossQ").Value + item.Name + this.GetLocalization("Content_1_4.BossQ_1").Value;
+                            Main.npcChatText = q;
+                            Main.npcChatCornerItem = ItemID.QueenSlimeCrystal;
                         }
                         else if (!twins)
                         {
@@ -501,6 +559,13 @@ namespace ElementsAwoken.Content.NPCs.Town
                             Main.npcChatText = q;
                             Main.npcChatCornerItem = ItemID.TruffleWorm;
                         }
+                        else if (!empress)
+                        {
+                            item.SetDefaults(ItemID.EmpressButterfly);
+                            string q = this.GetLocalization("Content_1_4.BossE").Value + item.Name + this.GetLocalization("Content_1_4.BossE_1").Value;
+                            Main.npcChatText = q;
+                            Main.npcChatCornerItem = ItemID.EmpressButterfly;
+                        }
                         else if (!aqueous)
                         {
                             item.SetDefaults(ItemType<AqueousSummon>());
@@ -547,7 +612,7 @@ namespace ElementsAwoken.Content.NPCs.Town
                     }
                     else
                     {
-                        string q = this.GetLocalization("Story.Story26").Value + Main.worldName + this.GetLocalization("Story.Story26_1").Value;
+                        string q = this.GetLocalization("Story.Story26").Value + " " + Main.worldName + " " + this.GetLocalization("Story.Story26_1").Value;
                         Main.npcChatText = q;
                         buttonMode = 1;
                     }
@@ -659,29 +724,30 @@ namespace ElementsAwoken.Content.NPCs.Town
         }
         private void SpawnAncients(Player player)
         {
-            //if (Main.netMode == NetmodeID.MultiplayerClient) return;
-            //if (Main.netMode == NetmodeID.SinglePlayer)
-            //{
-            //    npc.active = false;
-            //    NPC.SpawnOnPlayer(player.whoAmI,  ModContent.NPCType<Izaris>());
-            //    NPC.SpawnOnPlayer(player.whoAmI,ModContent.NPCType<Kirvein>());
-            //    NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<Krecheus>());
-            //    NPC.SpawnOnPlayer(player.whoAmI, ModContent.NPCType<Xernon>());
-            //    NPC.NewNPC((int)player.Center.X, (int)player.Center.Y - 300, ModContent.NPCType<ShardBase>(), 0, 0, 0, 0, 0, player.whoAmI);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Spawning Ancients");
-            //    npc.StrikeNPCNoInteraction(9999, 0f, 0, false, false, false);
+            var n = EAU.NPCs(NPC);
+            if (Main.netMode == NetmodeID.MultiplayerClient) return;
+            if (Main.netMode == NetmodeID.SinglePlayer)
+            {
+                NPC.active = false;
+                NPC.SpawnOnPlayer(player.whoAmI, NPCType<Izaris>());
+                NPC.SpawnOnPlayer(player.whoAmI, NPCType<Kirvein>());
+                NPC.SpawnOnPlayer(player.whoAmI, NPCType<Krecheus>());
+                NPC.SpawnOnPlayer(player.whoAmI, NPCType<Xernon>());
+                NPC.NewNPC(n, (int)player.Center.X, (int)player.Center.Y - 300, NPCType<ShardBase>(), 0, 0, 0, 0, 0, player.whoAmI);
+            }
+            else
+            {
+                Console.WriteLine("Spawning Ancients");
+                NPC.SimpleStrikeNPC(9999, 0, false, 0f, DamageClass.Default, false, 0, false);
 
-            //    NPC npc1 = Main.npc[NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y,  ModContent.NPCType<Izaris>(), 0, 0, 0, 0, 0, player.whoAmI)];
-            //    NPC npc2 = Main.npc[NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y,ModContent.NPCType<Kirvein>(), 0, 0, 0, 0, 0, player.whoAmI)];
-            //    NPC npc3 = Main.npc[NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<Krecheus>(), 0, 0, 0, 0, 0, player.whoAmI)];
-            //    NPC npc4 = Main.npc[NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<Xernon>(), 0, 0, 0, 0, 0, player.whoAmI)];
-            //    NPC npc5 = Main.npc[NPC.NewNPC((int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<ShardBase>(), 0, 0, 0, 0, 0, player.whoAmI)];
-            //    npc.netUpdate = true;
-            //    //Projectile.NewProjectile(player.Center.X, player.Center.Y - 300, 0f, 0f, mod.ProjectileType("ShardBase"), 0, 0f, Main.myPlayer, Main.myPlayer);
-            //}
+                NPC npc1 = Main.npc[NPC.NewNPC(n, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<Izaris>(), 0, 0, 0, 0, 0, player.whoAmI)];
+                NPC npc2 = Main.npc[NPC.NewNPC(n, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<Kirvein>(), 0, 0, 0, 0, 0, player.whoAmI)];
+                NPC npc3 = Main.npc[NPC.NewNPC(n, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<Kirvein>(), 0, 0, 0, 0, 0, player.whoAmI)];
+                NPC npc4 = Main.npc[NPC.NewNPC(n, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<Xernon>(), 0, 0, 0, 0, 0, player.whoAmI)];
+                NPC npc5 = Main.npc[NPC.NewNPC(n, (int)NPC.Center.X, (int)NPC.Center.Y, NPCType<ShardBase>(), 0, 0, 0, 0, 0, player.whoAmI)];
+                NPC.netUpdate = true;
+                //Projectile.NewProjectile(player.Center.X, player.Center.Y - 300, 0f, 0f, mod.ProjectileType("ShardBase"), 0, 0f, Main.myPlayer, Main.myPlayer);
+            }
         }
         public override string GetChat()
         {
@@ -744,7 +810,7 @@ namespace ElementsAwoken.Content.NPCs.Town
             }
             if (guide >= 0 && Main.rand.Next(5) == 0)
             {
-                return this.GetLocalization("Chat.Chat13").Value + " " + Main.npc[guide].GivenName + "" + this.GetLocalization("Chat.Chat13_1").Value;
+                return this.GetLocalization("Chat.Chat13").Value + " " + Main.npc[guide].GivenName + " " + this.GetLocalization("Chat.Chat13_1").Value;
             }
             if (ElementsAwoken.bossChecklistEnabled && Main.rand.Next(20) == 0)
             {

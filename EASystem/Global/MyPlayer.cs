@@ -381,7 +381,13 @@ namespace ElementsAwoken.EASystem.Global
         bool crit = false;
 
         #region Biomes
+        public bool useAncients = false;
+        public bool useAzana = false;
         public bool useLeviathan = false;
+        public bool useVolcanox = false;
+        public bool useGuardian = false;
+        public bool useInfernace = false;
+        public bool usePermafrost = false;
         #endregion
         public override void Initialize()
         {
@@ -2631,24 +2637,6 @@ namespace ElementsAwoken.EASystem.Global
         }
         //public override void UpdateBiomeVisuals()
         //{
-        //    bool useLeviathan = NPC.AnyNPCs(mod.NPCType("VoidLeviathanHead"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:VoidLeviathanHead", useLeviathan);
-
-        //    bool useInfernace = NPC.AnyNPCs(mod.NPCType("Infernace"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Infernace", useInfernace);
-
-        //    bool usePermafrost = NPC.AnyNPCs(mod.NPCType("Permafrost"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Permafrost", usePermafrost);
-
-        //    bool useGuardian = NPC.AnyNPCs(mod.NPCType("TheGuardianFly"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:TheGuardianFly", useGuardian);
-
-        //    bool useVolcanox = NPC.AnyNPCs(mod.NPCType("Volcanox"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Volcanox", useVolcanox);
-
-        //    bool useAzana = NPC.AnyNPCs(mod.NPCType("Azana"));
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Azana", useAzana);
-
         //    bool useAncients = NPC.AnyNPCs( ModContent.NPCType<Izaris>()) || NPC.AnyNPCs(mod.NPCType("Kirvein")) || NPC.AnyNPCs(ModContent.NPCType<Krecheus>()) || NPC.AnyNPCs(ModContent.NPCType<Xernon>()) || NPC.AnyNPCs(mod.NPCType("AncientAmalgam"));
         //    player.ManageSpecialBiomeVisuals("ElementsAwoken:Ancients", useAncients);
 

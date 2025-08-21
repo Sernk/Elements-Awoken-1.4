@@ -1,5 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.Permafrost;
+using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.Audio;
