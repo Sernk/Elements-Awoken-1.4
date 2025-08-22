@@ -6,7 +6,6 @@ using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
-using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
@@ -21,7 +20,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static ElementsAwoken.EASystem.EABiomes;
+using static ElementsAwoken.EASystem.Biome.EABiomes;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan

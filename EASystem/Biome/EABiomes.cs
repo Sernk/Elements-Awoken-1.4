@@ -11,7 +11,7 @@ using ElementsAwoken.EASystem.Global;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem
+namespace ElementsAwoken.EASystem.Biome
 {
     public class EABiomes : ModBiome
     {
@@ -133,6 +133,17 @@ namespace ElementsAwoken.EASystem
         public class Emptiness : EABiomes
         {
             public override string BackgroundPath => "";
+            public override SceneEffectPriority Priority => SceneEffectPriority.BiomeHigh;
+        }
+        public class RadiantRainBiome : ModBiome
+        {
+            public override string BestiaryIcon => "ElementsAwoken/Extra/Bestiary/RadiantRainIcon";
+            public override SceneEffectPriority Priority => SceneEffectPriority.BiomeHigh;
+        }
+        public class DOTVBiome : ModBiome
+        {
+            public override string BestiaryIcon => "ElementsAwoken/Extra/Bestiary/DawnOfTheVoidBestiary";
+            public override SceneEffectPriority Priority => SceneEffectPriority.BiomeHigh;
         }
     }
 }

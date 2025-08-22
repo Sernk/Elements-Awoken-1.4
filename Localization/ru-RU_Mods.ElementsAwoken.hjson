@@ -2490,6 +2490,11 @@ Items: {
 		Tooltip: Возрождает Древних при использовании
 		DisplayName: Знамя воскрешения
 	}
+
+	ShadeScale: {
+		// Tooltip: Seems coated with heavy projectile resistance material
+		// DisplayName: Shade Scale
+	}
 }
 
 Tiles: {
@@ -2941,8 +2946,8 @@ NPCs: {
 		DisplayName: Тенезмей
 
 		BossChecklistIntegration: {
-			// EntryName: Shade Wyrm
-			// SpawnInfo: The Shade Wyrm spawns during the Dawn of the Void after midnight
+			EntryName: Тенезмей
+			SpawnInfo: Спавнится сам по себе во второй фазе Рассвета Пустоты.
 		}
 	}
 
@@ -2952,8 +2957,8 @@ NPCs: {
 		#TODO: для ивента нужен обязательно npc
 		#Пусть это будет козлом отпущения
 		BossChecklistIntegration: {
-			// EntryName: Dawn of the Void
-			// SpawnInfo: Use a [i:ElementsAwoken/VoidEventSummon] at nighttime before 10pm. The item can be used during the day but the event wont start until night time, where it will start instantly.
+			EntryName: Рассвет Пустоты
+			SpawnInfo: Используй [i:ElementsAwoken/VoidEventSummon] днём или до 10 часов ночи. Рассвет Пустоты начинается только с наступлением ночи.
 		}
 	}
 
@@ -2966,8 +2971,8 @@ NPCs: {
 		DisplayName: Левиафан Пустоты
 
 		BossChecklistIntegration: {
-			// EntryName: Void Leviathan
-			// SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned using a [i:ElementsAwoken/RadiantRainSummon]
+			EntryName: Левиафан Пустоты
+			SpawnInfo: Используй [i:ElementsAwoken/VoidLeviathanSummon] где угодно ночью.
 		}
 	}
 
@@ -2982,8 +2987,8 @@ NPCs: {
 		DisplayName: Лучезарный мастер
 
 		BossChecklistIntegration: {
-			// EntryName: The Radiant Master
-			// SpawnInfo: Use a [i:ElementsAwoken/AzanaSummon] at nighttime.
+			EntryName: Лучезарный мастер
+			SpawnInfo: Спавнится сам по себе во время Лучезарного Дождя ближе к его концу.
 		}
 	}
 
@@ -2994,8 +2999,8 @@ NPCs: {
 		DisplayName: Пустошь
 
 		BossChecklistIntegration: {
-			// EntryName: Wasteland
-			// SpawnInfo: Catch and use a [i:ElementsAwoken/WastelandSummon] in the desert. They spawn naturally in the desert after the Eye of Cthulhu has been defeated
+			EntryName: Пустошь
+			SpawnInfo: Поймай сачком [i:ElementsAwoken/WastelandSummon] и используй его в Пустыне. Скорпионы-мутанты спавнятся сами по себе в Пустыне после победы над Глазом Ктулху.
 		}
 	}
 
@@ -3011,8 +3016,8 @@ NPCs: {
 		DisplayName: Око
 
 		BossChecklistIntegration: {
-			// EntryName: The Eye
-			// SpawnInfo: Use the [i:ElementsAwoken/AncientDragonSummon] at nighttime
+			EntryName: Око
+			SpawnInfo: Используй [i:ElementsAwoken/AncientDragonSummon] где угодно ночью.
 		}
 	}
 
@@ -3022,8 +3027,8 @@ NPCs: {
 		DisplayName: Аквеус
 
 		BossChecklistIntegration: {
-			// EntryName: Aqueous
-			// SpawnInfo: Use a [i:ElementsAwoken/AqueousSummon] in the ocean
+			EntryName: Аквеус
+			SpawnInfo: Используй [i:ElementsAwoken/AqueousSummon] в любое время в Океане.
 		}
 	}
 
@@ -3034,8 +3039,8 @@ NPCs: {
 		DisplayName: Азана
 
 		BossChecklistIntegration: {
-			// EntryName: Azana
-			// SpawnInfo: Use a [i:ElementsAwoken/AzanaSummon] at nighttime.
+			EntryName: Азана
+			SpawnInfo: Используй [i:ElementsAwoken/AzanaSummon] где угодно ночью.
 		}
 	}
 
@@ -3046,8 +3051,8 @@ NPCs: {
 		DisplayName: Космоблюдатель
 
 		BossChecklistIntegration: {
-			// EntryName: Cosmic Observer
-			// SpawnInfo: The Cosmic Observer spawns naturally in the sky in hardmode. Use a [i:ElementsAwoken/CosmicObserverSummon] to increase the chance of it spawning
+			EntryName: Космоблюдатель
+			SpawnInfo: Может заспавниться сам по себе высоко в небесах, в Хардмоде. Также [i:ElementsAwoken/CosmicObserverSummon] при использовании увеличивает шанс его спавна на 1 минуту.
 		}
 	}
 
@@ -3058,8 +3063,8 @@ NPCs: {
 		DisplayName: Стражник
 
 		BossChecklistIntegration: {
-			// EntryName: The Guardian
-			// SpawnInfo: Use the [i:ElementsAwoken/GuardianSummon] at nighttime
+			EntryName: Стражник
+			SpawnInfo: Используй [i:ElementsAwoken/GuardianSummon] где угодно ночью.
 		}
 	}
 
@@ -3071,8 +3076,8 @@ NPCs: {
 		DisplayName: Инфернейс
 
 		BossChecklistIntegration: {
-			// EntryName: Infernace
-			// SpawnInfo: "[i:ElementsAwoken/InfernaceSummon] in the underworld. An obsidian platform arena is reccomended on expert mode because of the lava slimes."
+			EntryName: Инфернейс
+			SpawnInfo: Используй [i:ElementsAwoken/InfernaceSummon] где угодно в Аду в любое время.
 		}
 	}
 
@@ -3085,8 +3090,8 @@ NPCs: {
 		DisplayName: Обсидиус
 
 		BossChecklistIntegration: {
-			// EntryName: Obsidious
-			// SpawnInfo: Use a [i:ElementsAwoken/ObsidiousSummon] at nighttime
+			EntryName: Обсидиус
+			SpawnInfo: Используй [i:ElementsAwoken/ObsidiousSummon] где угодно ночью.
 		}
 	}
 
@@ -3098,35 +3103,35 @@ NPCs: {
 		DisplayName: Пермафрост
 
 		BossChecklistIntegration: {
-			// EntryName: Permafrost
-			// SpawnInfo: Use an [i:ElementsAwoken/PermafrostSummon] in the snow
+			EntryName: Пермафрост
+			SpawnInfo: Используй [i:ElementsAwoken/PermafrostSummon] где угодно в Тундре в любое время.
 		}
 	}
 
 	PermaOrbital.DisplayName: Кружитель Пермафроста
-	RegarothBody.DisplayName: Громовёнок
+	RegarothBody.DisplayName: Регарот
 
 	RegarothHead: {
-		DisplayName: Громовёнок
+		DisplayName: Регарот
 
 		BossChecklistIntegration: {
-			// EntryName: Thunderling
-			// SpawnInfo: Use a [i:ElementsAwoken/RegarothSummon] on a sky island.
+			EntryName: Регарот
+			SpawnInfo: Используй [i:ElementsAwoken/RegarothSummon] где угодно высоко в небесах в любое время.
 		}
 	}
 
-	RegarothMinionBody.DisplayName: Регарот
-	RegarothMinionHead.DisplayName: Регарот
-	RegarothMinionTail.DisplayName: Регарот
-	RegarothTail.DisplayName: Громовёнок
+	RegarothMinionBody.DisplayName: Громовёнок
+	RegarothMinionHead.DisplayName: Громовёнок
+	RegarothMinionTail.DisplayName: Громовёнок
+	RegarothTail.DisplayName: Регарот
 	MiniFighter.DisplayName: Миниборец
 
 	ScourgeFighter: {
 		DisplayName: Бичеборец
 
 		BossChecklistIntegration: {
-			// EntryName: Scourge Fighter
-			// SpawnInfo: Use the [i:ElementsAwoken/ScourgeFighterSummon] at nighttime.
+			EntryName: Бичеборец
+			SpawnInfo: Используй [i:ElementsAwoken/ScourgeFighterSummon] где угодно ночью.
 		}
 	}
 
@@ -3139,8 +3144,8 @@ NPCs: {
 		DisplayName: Волканокс
 
 		BossChecklistIntegration: {
-			// EntryName: Volcanox
-			// SpawnInfo: Use a [i:ElementsAwoken/VolcanoxSummon] in the underworld
+			EntryName: Волканокс
+			SpawnInfo: Используй [i:ElementsAwoken/VolcanoxSummon] где угодно в Аду в любое время.
 		}
 	}
 
@@ -3162,9 +3167,9 @@ NPCs: {
 			LikeBiome: "{BiomeName} - я считаю, самое нормальное место."
 			DislikeBiome: Не нравится мне {BiomeName}, тут даже для меня слишком жарко.
 			HateBiome: Что я вообще делаю в {BiomeName}?
-			LikeNPC: Хоть я и говорил, что {NPCName} - никчёмный балбес, он всё равно хоть чем-то может быть полезен.
+			LikeNPC: Хоть я и говорил, что {NPCName} - никчёмный дурак, он всё равно хоть чем-то может быть полезен.
 			DislikeNPC: "{NPCName} слишком лезет не в свои дела."
-			HateNPC: Это какая-то шутка, что ты поселил меня с {NPCName}? Он меня бесит больше, чем кто-либо ещё здесь.
+			HateNPC: Это какая-то шутка, что ты поселил меня с {NPCName}? Он меня бесит ещё больше, чем кто-либо ещё здесь.
 		}
 
 		Name: {
@@ -3259,7 +3264,7 @@ NPCs: {
 			Chat11_1: ? Сколько я здесь был, ни разу ничего такого диковинного не видел...
 			Chat12: продаёт не оружия, а лишь жалкие пародии на реальные оружия.
 			Chat13: Хах, -
-			Chat13_1: никому не нужный балбес! Жаль он не понимает, что никому и даром не нужны его советы. Ничтожество...
+			Chat13_1: никому не нужный дурак! Жаль он не понимает, что никому и даром не нужны его советы. Ничтожество...
 			Chat14: Погоди, что? Boss Checklist? Я что, недостаточно хорош, по-твоему? Ну, в таком случае, я должен доказать тебе, что ты ошибаешься. Вот увидишь.
 			Chat15: Что-ж, Лунный Лорд пал... И теперь ты почти так же силён, как и я.
 			Chat16: Старик
@@ -3303,14 +3308,14 @@ NPCs: {
 	ShardBase.DisplayName: Основание осколка
 	Xernon.DisplayName: Ксернон
 	AncientAmalgamFist.DisplayName: Кулак Древнего Амальгамета
-	AncientAmalgamDeath.DisplayName: ""
+	AncientAmalgamDeath.DisplayName: Древний Амальгамет
 
 	AncientAmalgam: {
 		DisplayName: Древний Амальгамет
 
 		BossChecklistIntegration: {
-			// EntryName: The Ancient Amalgamate
-			// SpawnInfo: Speak to the storyteller or use a [i:ElementsAwoken/AncientsSummon]
+			EntryName: Древний Амальгамет
+			SpawnInfo: Нажми на кнопку "Вопрос", а затем "Сразиться" при диалоге с Рассказчиком после победы над Азаной. Для призыва после победы над Древними используй [i:ElementsAwoken/AncientsSummon] где угодно в любое время.
 		}
 	}
 }
@@ -3734,6 +3739,8 @@ Projectiles: {
 	AncientProjectionSwirl.DisplayName: Вихрь древней проекции
 	AncientProjection.DisplayName: Древняя проекция
 	AAHandOverlay.DisplayName: Оверлей руки древнего амальгамета
+	// RadiantMasterDeathExplosion.DisplayName: Radiant Master Death Explosion
+	// ShadeWyrmBolt.DisplayName: Shade Wyrm Bolt
 }
 
 Configs: {
@@ -3771,6 +3778,16 @@ Biomes: {
 	Emptiness: {
 		DisplayName: Пустота
 		TownNPCDialogueName: Пустота
+	}
+
+	RadiantRainBiome: {
+		// TownNPCDialogueName: the Radiant Rain Biome
+		// DisplayName: Radiant Rain Biome
+	}
+
+	DOTVBiome: {
+		// DisplayName: D O T V Biome
+		// TownNPCDialogueName: the D O T V Biome
 	}
 }
 
@@ -3810,6 +3827,7 @@ Bestiary: {
 		Krecheus: Кристальное чудище, рождённое тысячелетия назад в глубинах Террарии, движимое бесконечной жаждой силы, кого многие столетия назад лишил физической формы Абраксис. Ему пришлось принять форму дряхлого, немощного старика и ждать, пока не придёт герой, которого оно сможет использовать для того, чтобы вернуть свою былую форму.
 		Xernon: Кристальное чудище, рождённое тысячелетия назад в глубинах Террарии, движимое бесконечной жаждой силы, кого многие столетия назад лишил физической формы Абраксис. Ему пришлось принять форму дряхлого, немощного старика и ждать, пока не придёт герой, которого оно сможет использовать для того, чтобы вернуть свою былую форму.
 		AncientAmalgam: Благодаря герою, убившему многих великих чудовищ этого мира, Древние снова объеденены в одну единую оболочку, сильнее, чем когда-либо, и жаждя наконец поставить точку в истории не только Террарии, но и всей вселенной, чтобы стать единоличными владыками этого мира...
+		ShadeWyrm: Эти скрытные, но смертоносные змеи из глубин Пустоты - одни из главных оружий Рассвета. Если им дать достаточно времени, то они вполне могут эволюционировать до чего-то куда более могущественного и устрашающего...
 	}
 
 	Enemies: {
@@ -3945,6 +3963,11 @@ Tooltips: {
 AccInfo: {
 	NEB: Злые биомы поблизости
 	Nearby: поблизости
+	// BDPS: Buff Damage Per Second
+	// BDPS1: buff damage per second
+	// RainTime: Rain Time
+	// SR: seconds remaining
+	// Clear: Clear
 }
 
 Resurs: {
@@ -4034,7 +4057,7 @@ Said: {
 	Volcanox: Ты заплатишь за свои грехи!
 	Izaris: Твоё время вышло, смертный!
 	Izaris1: Ну что-ж, поехали по-новой...
-	ShardBase: Ты чё, серьёзно автопаузу используешь? ХАХАХА, лошара!
+	ShardBase: Ты чё, серьёзно, что-ли, автопаузу используешь? ХАХАХА, лошара!
 }
 
 LooTCondition: {
@@ -4047,6 +4070,38 @@ LooTCondition: {
 ShopCondition: {
 	BossString: После победы над
 	BossString1: или
+}
+
+Credits: {
+	// Credits: Hold 'Escape' to skip
+	// Credits1: Created by
+	// Credits2: Music by
+	// Credits3: Lore by
+	// Credits4: Sprites By
+	// Credits5: Donators
+	// Credits6: Helpers
+	// Credits7: Special Thanks To
+	// CreditsPort: Unofficial 1.4.4 Port
+	// CreditsPort1: Aeris - all code and everything code-related
+	// CreditsPort2: skyzephire - Russian translation, few idea suggestions, mod playtesting and some sprites
+	/* Credits8:
+		'''
+		ReLogic for creating the amazing Terraria
+		Jofairden, jopojelly & bluemagic for creating tModloader
+		Gameraiders101 for getting me into modding
+		FuryForged for showcasing the mod
+		ChippyGaming for showcasing the mod
+		Gameraiders101 again for showcasing the mod
+		''' */
+	// Credits9: Biggest Thanks
+	// Credits10: To YOU
+	/* Credits11:
+		'''
+		Seriously, thank you so much for playing Elements Awoken.
+		It means a lot to me and all of the dev team that you can enjoy
+		something we spent so much time on.
+		''' */
+	// Credits12: From- ThatOneJuicyOrange_ and the team <3
 }
 
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
@@ -4085,10 +4140,10 @@ MyPlayerLocalization: {
 		Prompts: {
 			# �� void 5 ���� �����
 			void5: Гид убит...
-			void4: Уйти
-			void3: Ты ещё не готов
-			void2: Неминуемая гибель грядёт...
-			void1: Левиафан Пустоты пробудился!
+			void4: Уходи.
+			void3: Ты ещё не готов.
+			void2: Грядёт неминуемая гибель...
+			void1: Пробудился Левиафан Пустоты!
 			void: Смерть поглотит всё и всех.
 		}
 
@@ -4099,7 +4154,7 @@ MyPlayerLocalization: {
 		}
 
 		ComputerText: {
-			Text17: раз-два-три, проверка звука!
+			Text17: Раз-два-три, проверка звука!
 			Text16:
 				'''
 				004: При исследовании стало понятно, что эти осколки
@@ -4238,7 +4293,7 @@ MyPlayerLocalization: {
 
 		Other: {
 			Other1: Недостаточно энергии
-			Other2: секунд осталось, пока Вспышку снова можно будет использовать
+			Other2: секунд осталось до того, как Вспышку снова можно будет использовать
 		}
 	}
 }
@@ -4267,8 +4322,13 @@ AwakenedModeNPCLocalization: {
 }
 
 BossChecklistIntegration: {
-	// DotvEvent.EntryName: Dotv Event
-	// ShadeWyrmEvent.EntryName: Shade Wyrm Event
-	// VolcanoxEvent.EntryName: Volcanox Event
-	// VleviEvent.EntryName: Vlevi Event
+	DotvEvent: {
+		EntryName: Рассвет Пустоты
+		SpawnInfo: Используй [i:ElementsAwoken/VoidEventSummon] днём или до 10 часов ночи. Рассвет Пустоты начинается только с наступлением ночи.
+	}
+
+	radiantRainEvent: {
+		EntryName: Лучезарный Дождь
+		SpawnInfo: Используй [i:ElementsAwoken/RadiantRainSummon] в любое время. Дождь также может начать идти сам по себе после победы над Азаной.
+	}
 }

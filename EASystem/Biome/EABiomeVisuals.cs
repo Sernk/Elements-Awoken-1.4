@@ -321,53 +321,53 @@ namespace ElementsAwoken.EASystem
             }
             #endregion
             #region ??SkyVisual
-            if (Leviathan.useDespair)
-            {
-                _DespairSkyVisual = true;
-            }
-            if (_DespairSkyVisual)
-            {
-                if (!Filters.Scene[ElementsAwoken.Despair].IsActive())
-                {
-                    Filters.Scene.Activate(ElementsAwoken.Despair, default);
-                }
-            }
-            else if (Filters.Scene[ElementsAwoken.Despair].IsActive())
-            {
-                Filters.Scene.Deactivate(ElementsAwoken.Despair);
-            }
+            //if (Leviathan.useDespair)
+            //{
+            //    _DespairSkyVisual = true;
+            //}
+            //if (_DespairSkyVisual)
+            //{
+            //    if (!Filters.Scene[ElementsAwoken.Despair].IsActive())
+            //    {
+            //        Filters.Scene.Activate(ElementsAwoken.Despair, default);
+            //    }
+            //}
+            //else if (Filters.Scene[ElementsAwoken.Despair].IsActive())
+            //{
+            //    Filters.Scene.Deactivate(ElementsAwoken.Despair);
+            //}
 
-            if (Leviathan.useblizzard)
-            {
-                _BlizzardSkyVisual = true;
-            }
-            if (_BlizzardSkyVisual)
-            {
-                if (!Filters.Scene[ElementsAwoken.Blizzard].IsActive())
-                {
-                    Filters.Scene.Activate(ElementsAwoken.Blizzard, default);
-                }
-            }
-            else if (Filters.Scene[ElementsAwoken.Blizzard].IsActive())
-            {
-                Filters.Scene.Deactivate(ElementsAwoken.Blizzard);
-            }
+            //if (Leviathan.useblizzard)
+            //{
+            //    _BlizzardSkyVisual = true;
+            //}
+            //if (_BlizzardSkyVisual)
+            //{
+            //    if (!Filters.Scene[ElementsAwoken.Blizzard].IsActive())
+            //    {
+            //        Filters.Scene.Activate(ElementsAwoken.Blizzard, default);
+            //    }
+            //}
+            //else if (Filters.Scene[ElementsAwoken.Blizzard].IsActive())
+            //{
+            //    Filters.Scene.Deactivate(ElementsAwoken.Blizzard);
+            //}
 
-            if (Leviathan.useInfWrath)
-            {
-                _InfernacesWrathSkyVisual = true;
-            }
-            if (_InfernacesWrathSkyVisual)
-            {
-                if (!Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
-                {
-                    Filters.Scene.Activate(ElementsAwoken.InfernacesWrath, default);
-                }
-            }
-            else if (Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
-            {
-                Filters.Scene.Deactivate(ElementsAwoken.InfernacesWrath);
-            }
+            //if (Leviathan.useInfWrath)
+            //{
+            //    _InfernacesWrathSkyVisual = true;
+            //}
+            //if (_InfernacesWrathSkyVisual)
+            //{
+            //    if (!Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
+            //    {
+            //        Filters.Scene.Activate(ElementsAwoken.InfernacesWrath, default);
+            //    }
+            //}
+            //else if (Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
+            //{
+            //    Filters.Scene.Deactivate(ElementsAwoken.InfernacesWrath);
+            //}
             #endregion
         }
     }

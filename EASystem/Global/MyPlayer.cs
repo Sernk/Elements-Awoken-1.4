@@ -1621,6 +1621,7 @@ namespace ElementsAwoken.EASystem.Global
                 if (ElementsAwoken.encounter == 1)
                 {
                     screenshakeAmount = 5f;
+                    UISystemSettings.VoidTime++;
                 }
                 if (ElementsAwoken.encounter >= 2)
                 {
@@ -1675,6 +1676,9 @@ namespace ElementsAwoken.EASystem.Global
                 else if (UISystemSettings.VoidTime == 1700)
                 {
                     encounterText = "";
+                    screenshakeAmount = 0;
+                    ElementsAwoken.encounter = 0;
+                    UISystemSettings.VoidTime = 0;
                 }
                 if (UISystemSettings.VoidTime > 300)
                 {
@@ -1693,7 +1697,6 @@ namespace ElementsAwoken.EASystem.Global
 
             if (MyWorld.credits)
             {
-                Player.immune = true;
                 Player.statLife = Player.statLifeMax2;
                 for (int i = 0; i < 22; i++)
                 {
@@ -2694,18 +2697,6 @@ namespace ElementsAwoken.EASystem.Global
                 damage = (int)(damage * scale);
             }
         }
-        //public override void ModifyDraswLayers(List<PlayerLayer> layers)
-        //{
-        //    MiscEffects.visible = true;
-        //    layers.Add(MiscEffects);
-        //    if ((MyWorld.credits && MyWorld.creditsCounter > screenTransDuration / 2) || wispForm)
-        //    {
-        //        foreach (PlayerLayer layer in layers)
-        //        {
-        //            layer.visible = false;
-        //        }
-        //    }
-        //}
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
         {
             PlayerUtils playerUtils = Player.GetModPlayer<PlayerUtils>();

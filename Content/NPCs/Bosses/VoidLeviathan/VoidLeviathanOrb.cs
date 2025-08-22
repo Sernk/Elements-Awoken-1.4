@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
-using static ElementsAwoken.EASystem.EABiomes;
+using static ElementsAwoken.EASystem.Biome.EABiomes;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
 {

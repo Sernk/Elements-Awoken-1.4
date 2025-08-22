@@ -30,6 +30,7 @@ namespace ElementsAwoken.Utilities
         public string TheEye => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheEye");
         public string AncientWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.AncientWyrm");
         public string TheGuardianFly => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.TheGuardianFly");
+        public string ShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ShadeWyrm");
         public string VoidLeviathan => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.VoidLeviathan");
         public string ElderShadeWyrm => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.ElderShadeWyrm");
         public string RadiantMaster => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster");
@@ -193,6 +194,11 @@ namespace ElementsAwoken.Utilities
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
         public string Nearby => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.Nearby");
+        public string BDPS => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.BDPS");
+        public string BDPS1 => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.BDPS1");
+        public string RainTime => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.RainTime");
+        public string SR => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.SR");
+        public string Clear => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.Clear");
         #endregion
         #region Said
         public string Wasteland => Language.GetTextValue("Mods.ElementsAwoken.Said.Wasteland");
@@ -266,6 +272,25 @@ namespace ElementsAwoken.Utilities
         #region ShopCondition
         public string BossString => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString");
         public string BossString1 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString1");
+        #endregion
+        #region Credits
+        public string Credits => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits");
+        public string Credits1 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits1");
+        public string Credits2 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits2");
+        public string Credits3 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits3");
+        public string Credits4 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits4");
+        public string Credits5 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits5");
+        public string Credits6 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits6");
+        public string Credits7 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits7");
+        public string CreditsPort => Language.GetTextValue("Mods.ElementsAwoken.Credits.CreditsPort");
+        public string CreditsPort1 => Language.GetTextValue("Mods.ElementsAwoken.Credits.CreditsPort1");
+        public string CreditsPort2 => Language.GetTextValue("Mods.ElementsAwoken.Credits.CreditsPort2");
+        public string Credits8 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits8");
+        public string Credits9 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits9");
+        public string Credits10 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits10");
+        public string Credits11 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits11");
+        public string Credits12 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits12");
+
         #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");

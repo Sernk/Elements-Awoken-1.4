@@ -2450,6 +2450,11 @@ Items: {
 		Tooltip: Summons The Ancients on use
 		DisplayName: Resurrection Sigil
 	}
+
+	ShadeScale: {
+		Tooltip: Seems coated with heavy projectile resistance material
+		DisplayName: Shade Scale
+	}
 }
 
 Tiles: {
@@ -2947,7 +2952,7 @@ NPCs: {
 
 		BossChecklistIntegration: {
 			EntryName: The Radiant Master
-			SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned using a [i:ElementsAwoken/RadiantRainSummon]
+			SpawnInfo: The Radiant Master spawns near the end of the Radiant Rain
 		}
 	}
 
@@ -3698,6 +3703,8 @@ Projectiles: {
 	AncientProjectionSwirl.DisplayName: Ancient Projection
 	AncientProjection.DisplayName: Ancient Projection
 	AAHandOverlay.DisplayName: Ancient Amalgamate
+	RadiantMasterDeathExplosion.DisplayName: Radiant Master Death Explosion
+	ShadeWyrmBolt.DisplayName: Shade Wyrm Bolt
 }
 
 Configs: {
@@ -3735,6 +3742,16 @@ Biomes: {
 	Emptiness: {
 		DisplayName: Emptiness
 		TownNPCDialogueName: the Emptiness
+	}
+
+	RadiantRainBiome: {
+		TownNPCDialogueName: the Radiant Rain Biome
+		DisplayName: Radiant Rain Biome
+	}
+
+	DOTVBiome: {
+		DisplayName: D O T V Biome
+		TownNPCDialogueName: the D O T V Biome
 	}
 }
 
@@ -3774,6 +3791,7 @@ Bestiary: {
 		Krecheus: ""
 		Xernon: ""
 		AncientAmalgam: ""
+		ShadeWyrm: ""
 	}
 
 	Enemies: {
@@ -3908,6 +3926,11 @@ Tooltips: {
 AccInfo: {
 	NEB: Nearby Evil Biomes
 	Nearby: nearby
+	BDPS: Buff Damage Per Second
+	BDPS1: buff damage per second
+	RainTime: Rain Time
+	SR: seconds remaining
+	Clear: Clear
 }
 
 Resurs: {
@@ -4010,6 +4033,38 @@ LooTCondition: {
 ShopCondition: {
 	BossString: After defeating the
 	BossString1: or
+}
+
+Credits: {
+	Credits: Hold 'Escape' to skip
+	Credits1: Created by
+	Credits2: Music by
+	Credits3: Lore by
+	Credits4: Sprites By
+	Credits5: Donators
+	Credits6: Helpers
+	Credits7: Special Thanks To
+	CreditsPort: Unofficial 1.4.4 Port
+	CreditsPort1: Aeris - all code and everything code-related
+	CreditsPort2: skyzephire - Russian translation, few idea suggestions, mod playtesting and some sprites
+	Credits8:
+		'''
+		ReLogic for creating the amazing Terraria
+		Jofairden, jopojelly & bluemagic for creating tModloader
+		Gameraiders101 for getting me into modding
+		FuryForged for showcasing the mod
+		ChippyGaming for showcasing the mod
+		Gameraiders101 again for showcasing the mod
+		'''
+	Credits9: Biggest Thanks
+	Credits10: To YOU
+	Credits11:
+		'''
+		Seriously, thank you so much for playing Elements Awoken.
+		It means a lot to me and all of the dev team that you can enjoy
+		something we spent so much time on.
+		'''
+	Credits12: From- ThatOneJuicyOrange_ and the team <3
 }
 
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
@@ -4226,8 +4281,13 @@ AwakenedModeNPCLocalization: {
 }
 
 BossChecklistIntegration: {
-	DotvEvent.EntryName: Dotv Event
-	ShadeWyrmEvent.EntryName: Shade Wyrm Event
-	VolcanoxEvent.EntryName: Volcanox Event
-	VleviEvent.EntryName: Vlevi Event
+	DotvEvent: {
+		EntryName: Dawn of the Void
+		SpawnInfo: Use a [i:ElementsAwoken/VoidEventSummon] at nighttime before 10pm. The item can be used during the day but the event wont start until night time, where it will start instantly.
+	}
+
+	radiantRainEvent: {
+		EntryName: Radiant Rain
+		SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned using a [i:ElementsAwoken/RadiantRainSummon]
+	}
 }

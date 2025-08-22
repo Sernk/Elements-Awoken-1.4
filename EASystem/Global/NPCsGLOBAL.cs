@@ -247,6 +247,15 @@ namespace ElementsAwoken.EASystem.Global
         }
         public override void EditSpawnRate(Player player, ref int spawnRate, ref int maxSpawns)
         {
+            foreach (NPC npc in Main.npc)
+            {
+                if (npc.boss)
+                {
+                    spawnRate = 0;
+                    maxSpawns = 0;
+                    break;
+                }
+            }
             if (player.FindBuffIndex(BuffType<CalamityPotionBuff>()) != -1)
             {
                 spawnRate = (int)(spawnRate / 12.5f);

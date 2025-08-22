@@ -1,4 +1,14 @@
 using ElementsAwoken.Content.Effects;
+using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
+using ElementsAwoken.Content.NPCs.Bosses.Infernace;
+using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
+using ElementsAwoken.Content.NPCs.Bosses.Regaroth;
+using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
+using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
+using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
+using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
+using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
+using ElementsAwoken.Content.NPCs.Projectiles;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI;
@@ -16,7 +26,6 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.Chat;
 using Terraria.GameContent;
-using Terraria.GameContent.Shaders;
 using Terraria.GameInput;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
@@ -102,6 +111,8 @@ namespace ElementsAwoken
         public static int encounterShakeTimer = 0;
 
         public const int bossPromptDelay = 108000;
+
+        int b = 0;
         public ElementsAwoken()
         {
             ContentAutoloadingEnabled = true;
@@ -184,13 +195,13 @@ namespace ElementsAwoken
                 Filters.Scene[Encounter3] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Encounter3] = new EABiomeSky();
 
-                Filters.Scene[Despair] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
-                SkyManager.Instance[Despair] = new EABiomeSky();
-                Filters.Scene[Blizzard] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 0.3f).UseOpacity(0.4f), EffectPriority.VeryHigh);
-                Overlays.Scene[Blizzard] = new SimpleOverlay("Images/Misc/noise", new BlizzardShaderData("FilterBlizzardBackground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High, RenderLayers.Landscape);
-                SkyManager.Instance[Blizzard] = new EABiomeSky();
-                Filters.Scene[InfernacesWrath] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.0f, 0.0f, 0f).UseIntensity(0.0f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
-                SkyManager.Instance[InfernacesWrath] = new InfernacesWrathSky();
+                //Filters.Scene[Despair] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
+                //SkyManager.Instance[Despair] = new EABiomeSky();
+                //Filters.Scene[Blizzard] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 0.3f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                //Overlays.Scene[Blizzard] = new SimpleOverlay("Images/Misc/noise", new BlizzardShaderData("FilterBlizzardBackground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High, RenderLayers.Landscape);
+                //SkyManager.Instance[Blizzard] = new EABiomeSky();
+                //Filters.Scene[InfernacesWrath] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.0f, 0.0f, 0f).UseIntensity(0.0f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
+                //SkyManager.Instance[InfernacesWrath] = new InfernacesWrathSky();
                 //    Overlays.Scene["ElementsAwoken:AshParticles"] = new AshOverlay(EffectPriority.VeryHigh);
                 //    Filters.Scene["ElementsAwoken:AshBlizzardEffect"] = new Filter((new BlizzardShaderData("FilterBlizzardForeground")).UseColor(0.2f, 0.2f, 0.2f).UseSecondaryColor(0.05f, 0.05f, 0.05f).UseImage("Images/Misc/noise", 0, null).UseOpacity(0.04f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High);
                 //    Filters.Scene["ElementsAwoken:AshShader"] = new Filter(new InfernaceScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.2f), EffectPriority.VeryHigh);
@@ -345,32 +356,32 @@ namespace ElementsAwoken
             instakillImmune.Add(NPCID.RainbowSlime);
             instakillImmune.Add(NPCID.PirateCaptain);
             instakillImmune.Add(NPCID.TargetDummy);
-            //instakillImmune.Add(ModContent.NPCType<CosmicObserver>());
-            //instakillImmune.Add(ModContent.NPCType<ToySlime>());
-            //instakillImmune.Add(ModContent.NPCType<AncientWyrmArms>());
-            //instakillImmune.Add(ModContent.NPCType<AncientWyrmBody>());
-            //instakillImmune.Add(ModContent.NPCType<AncientWyrmHead>());
-            //instakillImmune.Add(ModContent.NPCType<AncientWyrmTail>());
+            instakillImmune.Add(ModContent.NPCType<Content.NPCs.Bosses.CosmicObserver.CosmicObserver>());
+            instakillImmune.Add(ModContent.NPCType<ToySlime>());
+            instakillImmune.Add(ModContent.NPCType<AncientWyrmArms>());
+            instakillImmune.Add(ModContent.NPCType<AncientWyrmBody>());
+            instakillImmune.Add(ModContent.NPCType<AncientWyrmHead>());
+            instakillImmune.Add(ModContent.NPCType<AncientWyrmTail>());
             //instakillImmune.Add(ModContent.NPCType<AndromedaHead>());
             //instakillImmune.Add(ModContent.NPCType<AndromedaBody>());
             //instakillImmune.Add(ModContent.NPCType<AndromedaTail>());
-            //instakillImmune.Add(ModContent.NPCType<BarrenSoul>());
-            //instakillImmune.Add(ModContent.NPCType<Furosia>());
-            //instakillImmune.Add(ModContent.NPCType<ObsidiousHand>());
-            //instakillImmune.Add(ModContent.NPCType<RegarothHead>());
-            //instakillImmune.Add(ModContent.NPCType<RegarothBody>());
-            //instakillImmune.Add(ModContent.NPCType<RegarothTail>());
-            //instakillImmune.Add(ModContent.NPCType<ShadeWyrmHead>());
-            //instakillImmune.Add(ModContent.NPCType<ShadeWyrmBody>());
-            //instakillImmune.Add(ModContent.NPCType<ShadeWyrmTail>());
-            //instakillImmune.Add(ModContent.NPCType<SolarFragment>());
-            //instakillImmune.Add(ModContent.NPCType<SoulOfInfernace>());
-            //instakillImmune.Add(ModContent.NPCType<VoidLeviathanHead>());
-            //instakillImmune.Add(ModContent.NPCType<VoidLeviathanBody>());
+            instakillImmune.Add(ModContent.NPCType<BarrenSoul>());
+            instakillImmune.Add(ModContent.NPCType<Furosia>());
+            instakillImmune.Add(ModContent.NPCType<ObsidiousHand>());
+            instakillImmune.Add(ModContent.NPCType<RegarothHead>());
+            instakillImmune.Add(ModContent.NPCType<RegarothBody>());
+            instakillImmune.Add(ModContent.NPCType<RegarothTail>());
+            instakillImmune.Add(ModContent.NPCType<ShadeWyrmHead>());
+            instakillImmune.Add(ModContent.NPCType<ShadeWyrmBody>());
+            instakillImmune.Add(ModContent.NPCType<ShadeWyrmTail>());
+            instakillImmune.Add(ModContent.NPCType<SolarFragment>());
+            instakillImmune.Add(ModContent.NPCType<SoulOfInfernace>());
+            instakillImmune.Add(ModContent.NPCType<VoidLeviathanHead>());
+            instakillImmune.Add(ModContent.NPCType<VoidLeviathanBody>());
             //instakillImmune.Add(ModContent.NPCType<VoidLeviathanBodyWeak>());
-            //instakillImmune.Add(ModContent.NPCType<VoidLeviathanTail>());
-            //instakillImmune.Add(ModContent.NPCType<VolcanoxHook>());
-            //instakillImmune.Add(ModContent.NPCType<VolcanoxTentacle>());
+            instakillImmune.Add(ModContent.NPCType<VoidLeviathanTail>());
+            instakillImmune.Add(ModContent.NPCType<VolcanoxHook>());
+            instakillImmune.Add(ModContent.NPCType<VolcanoxTentacle>());
             #endregion
         }
         public override void Unload()
@@ -834,10 +845,10 @@ namespace ElementsAwoken
                 {
                     if ((!modPlayer.hideEAInfo[0] || Main.playerInventory))
                     {
-                        hoverText = "Buff Damage Per Second";
+                        hoverText = EALocalization.BDPS;
                         whichInfoDrawing = infoNum;
 
-                        text2 = modPlayer.buffDPS + " buff damage per second";
+                        text2 = modPlayer.buffDPS + " " + EALocalization.BDPS1;
                         if (modPlayer.buffDPS <= 0)
                         {
                             text2 = Language.GetTextValue("GameUI.NoDPS");
@@ -868,11 +879,11 @@ namespace ElementsAwoken
                 {
                     if ((!modPlayer.hideEAInfo[2] || Main.playerInventory))
                     {
-                        hoverText = "Rain Time";
+                        hoverText = EALocalization.RainTime;
                         whichInfoDrawing = infoNum;
 
-                        text2 = Main.rainTime / 60 + " seconds remaining";
-                        if (Main.rainTime == 0) text2 = "Clear";
+                        text2 = Main.rainTime / 60 + " " + EALocalization.SR;
+                        if (Main.rainTime == 0) text2 = EALocalization.Clear;
                     }
                     amountOfInfoEquipped++;
                     if (!modPlayer.hideEAInfo[2])
@@ -1183,10 +1194,12 @@ namespace ElementsAwoken
         #endregion
         public void Credits()
         {
+            var EALocalization = ModContent.GetInstance<EALocalization>();
             Vector2 monitorScale = new Vector2((float)Main.screenWidth / 1920f, (float)Main.screenHeight / 1080f);
             var mod = ModLoader.GetMod("ElementsAwoken");
             var player = Main.player[Main.myPlayer].GetModPlayer<MyPlayer>();
-            if (MyWorld.creditsCounter > player.screenDuration * 2) DrawStringOutlined(Main.spriteBatch, "Hold 'Escape' to skip", new Vector2(Main.screenWidth - 220 * monitorScale.X, Main.screenHeight - 35 * monitorScale.Y), Color.White * (player.escHeldTimer > 0 ? 1 : 0.4f), 0.5f * monitorScale.Y);
+            b = 1;
+            if(b == 1)DrawStringOutlined(Main.spriteBatch, EALocalization.Credits, new Vector2(Main.screenWidth - 220 * monitorScale.X, Main.screenHeight - 35 * monitorScale.Y), Color.White * (player.escHeldTimer > 0 ? 1 : 0.4f), 0.5f * monitorScale.Y);
             if (MyWorld.creditsCounter > 180 && MyWorld.creditsCounter < 480)
             {
                 var logo = ModContent.Request<Texture2D>("ElementsAwoken/Extra/ElementsAwoken").Value;
@@ -1197,7 +1210,7 @@ namespace ElementsAwoken
             #region slide 1
             if (MyWorld.creditsCounter == player.screenDuration + 60)
             {
-                string text = "Created by ThatOneJuicyOrange_";
+                string text = EALocalization.Credits1 + " " + "ThatOneJuicyOrange_";
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 300 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1215,7 +1228,7 @@ namespace ElementsAwoken
             #region slide 2
             if (MyWorld.creditsCounter == player.screenDuration * 2 + 60)
             {
-                string text = "Music by";
+                string text = EALocalization.Credits2;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1254,7 +1267,7 @@ namespace ElementsAwoken
             #region slide 3
             if (MyWorld.creditsCounter == player.screenDuration * 3 + 60)
             {
-                string text = "Lore by";
+                string text = EALocalization.Credits3;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1276,7 +1289,7 @@ namespace ElementsAwoken
             if (MyWorld.creditsCounter > player.screenDuration * 3 + statueOffset && MyWorld.creditsCounter < player.screenDuration * 4 - statueOffset)
             {
                 var statue = ModContent.Request<Texture2D>("ElementsAwoken/Extra/Credits/BurstStatue").Value;
-                var statue2 = ModContent.Request<Texture2D>("TextureAssets/Extra/Credits/AmadisStatue").Value;
+                var statue2 = ModContent.Request<Texture2D>("ElementsAwoken/Extra/Credits/AmadisStatue").Value;
                 float scale = 1.5f * monitorScale.Y;
                 Color color = Color.White * GetFadeAlpha(MyWorld.creditsCounter - player.screenDuration * 3 - statueOffset, statueDuration);
                 Main.spriteBatch.Draw(statue, new Vector2(Main.screenWidth - 200 * monitorScale.X - (MyWorld.creditsCounter - player.screenDuration * 3) / 2 - ((statue.Width * scale) / 2), Main.screenHeight / 2 - ((statue.Height * scale) / 2)), null, color, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
@@ -1286,7 +1299,7 @@ namespace ElementsAwoken
             #region slide 4
             if (MyWorld.creditsCounter == player.screenDuration * 4 + 60)
             {
-                string text = "Sprites By";
+                string text = EALocalization.Credits4;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1309,7 +1322,7 @@ namespace ElementsAwoken
             #region slide 5
             if (MyWorld.creditsCounter == player.screenDuration * 5 + 60)
             {
-                string text = "Sprites By";
+                string text = EALocalization.Credits4;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1336,7 +1349,7 @@ namespace ElementsAwoken
             #region slide 6
             if (MyWorld.creditsCounter == player.screenDuration * 6 + 60)
             {
-                string text = "Sprites By";
+                string text = EALocalization.Credits4;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1388,7 +1401,7 @@ namespace ElementsAwoken
             #region slide 7
             if (MyWorld.creditsCounter == player.screenDuration * 7 + 60)
             {
-                string text = "Donators";
+                string text = EALocalization.Credits5;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1416,7 +1429,7 @@ namespace ElementsAwoken
             #region slide 8
             if (MyWorld.creditsCounter == player.screenDuration * 8 + 60)
             {
-                string text = "Helpers";
+                string text = EALocalization.Credits6;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
@@ -1435,55 +1448,64 @@ namespace ElementsAwoken
                 DrawScreenText(text, 7 * 60 - 60, scale, pos);
             }
             #endregion
-            #region slide 9
-            if (MyWorld.creditsCounter == player.screenDuration * 9 + 60)
+            #region 1.4
+            if (MyWorld.creditsCounter == player.screenDuration * 8 + 450)
             {
-                string text = "Special Thanks To";
+                string textHeder = EALocalization.CreditsPort;
+                float scaleHeder = 1.3f * monitorScale.Y;
+                Vector2 posHeder = new Vector2(FindTextCenterX(textHeder, scaleHeder), Main.screenHeight / 2 - 330 * monitorScale.Y);
+                DrawScreenText(textHeder, 7 * 60, scaleHeder, posHeder);
+                string text = $"{EALocalization.CreditsPort1}  \n{EALocalization.CreditsPort2}";
+                float scale = 1f * monitorScale.Y;
+                Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 220 * monitorScale.Y);
+                DrawScreenText(text, 7 * 60 - 60, scale, pos);
+            }
+            #endregion
+            #region slide 9
+            if (MyWorld.creditsCounter == player.screenDuration * 9 + 230)
+            {
+                string text = EALocalization.Credits7;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 330 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60, scale, pos);
             }
-            if (MyWorld.creditsCounter == player.screenDuration * 9 + 90)
+            if (MyWorld.creditsCounter == player.screenDuration * 9 + 270)
             {
-                string text = "ReLogic for creating the amazing Terraria\n" +
-                    "Jofairden, jopojelly & bluemagic for creating tModloader\n" +
-                    "Gameraiders101 for getting me into modding\n" +
-                    "FuryForged for showcasing the mod\n" +
-                    "ChippyGaming for showcasing the mod\n" +
-                    "Gameraiders101 again for showcasing the mod";
+                string text = EALocalization.Credits8;
                 float scale = 1f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale) + 60, Main.screenHeight / 2 - 220 * monitorScale.Y);
                 DrawScreenText(text, 7 * 60 - 60, scale, pos);
             }
             #endregion
             #region slide 10
-            if (MyWorld.creditsCounter == player.screenDuration * 10 + 60)
+            if (MyWorld.creditsCounter == player.screenDuration * 10 + 220)
             {
-                string text = "Biggest Thanks";
+                string text = EALocalization.Credits9;
                 float scale = 1.3f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 360 * monitorScale.Y);
                 DrawScreenText(text, 12 * 60, scale, pos);
             }
-            if (MyWorld.creditsCounter == player.screenDuration * 10 + 90)
+            if (MyWorld.creditsCounter == player.screenDuration * 10 + 260)
             {
-                string text = "To YOU";
+                string text = EALocalization.Credits10;
                 float scale = 1.4f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 290 * monitorScale.Y);
                 DrawScreenText(text, 12 * 60 - 60, scale, pos);
             }
-            if (MyWorld.creditsCounter == player.screenDuration * 10 + 120)
+            if (MyWorld.creditsCounter == player.screenDuration * 10 + 290)
             {
-                string text = "Seriously, thank you so much for playing Elements Awoken.\nIt means a lot to me and all of the dev team that you can enjoy\nsomething we spent so much time on.";
+                string text = EALocalization.Credits11;
                 float scale = 1f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale), Main.screenHeight / 2 - 220 * monitorScale.Y);
                 DrawScreenText(text, 12 * 60 - 90, scale, pos);
             }
-            if (MyWorld.creditsCounter == player.screenDuration * 10 + 180)
+            if (MyWorld.creditsCounter == player.screenDuration * 10 + 310)
             {
-                string text = "From- ThatOneJuicyOrange_ and the team <3";
+                string text = EALocalization.Credits12;
                 float scale = 1f * monitorScale.Y;
                 Vector2 pos = new Vector2(FindTextCenterX(text, scale) + 300, Main.screenHeight / 2 + 40 * monitorScale.Y);
                 DrawScreenText(text, 10 * 60, scale, pos);
+                b = 0;
             }
             #endregion
         }

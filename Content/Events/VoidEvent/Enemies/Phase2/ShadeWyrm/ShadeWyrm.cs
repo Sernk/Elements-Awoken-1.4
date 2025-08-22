@@ -1,11 +1,18 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.Content.Items.VoidEventItems;
+using ElementsAwoken.Content.Projectiles.NPCProj;
+using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.Loot;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.Biome.EABiomes;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
@@ -19,76 +26,61 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
         public override void SetDefaults()
         {
             base.SetDefaults();
-
             NPC.width = 64;
             NPC.height = 80;
-
             NPC.value = Item.buyPrice(0, 5, 0, 0);
+            SpawnModBiomes = new int[1] { GetInstance<DOTVBiome>().Type };
         }
-
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.ShadeWyrm"),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+            });
+        }
+        public override void SetStaticDefaults()
+        {
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Scale = 0.8f,
+                PortraitScale = 0.8f,
+                CustomTexturePath = "ElementsAwoken/Extra/Bestiary/ShadeWyrmBestiary"
+            };
+            value.Position.X += 15f;
+            value.Position.Y += 15f;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
+        }
         public override void Init()
         {
             base.Init();
             head = true;
         }
-
-        /*int attackCounter = 0;
-        public override void SendExtraAI(BinaryWriter writer)
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            writer.Write(attackCounter);
+            var AwakenedMode = new LeadingConditionRule(new EAIDRC.DropAwakened());
+            var ExpertMod = new LeadingConditionRule(new EAIDRC.DropExpert());
+            var NormalMod = new LeadingConditionRule(new EAIDRC.DropNormal());
+
+            AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<ShadeScale>(), minimumDropped: 16, maximumDropped: 26));
+            npcLoot.Add(AwakenedMode);
+            ExpertMod.OnSuccess(ItemDropRule.Common(ItemType<ShadeScale>(), minimumDropped: 12, maximumDropped: 19));
+            npcLoot.Add(ExpertMod);
+            NormalMod.OnSuccess(ItemDropRule.Common(ItemType<ShadeScale>(), minimumDropped: 8, maximumDropped: 12));
+            npcLoot.Add(NormalMod);
         }
-
-        public override void ReceiveExtraAI(BinaryReader reader)
+        public override void OnKill()
         {
-            attackCounter = reader.ReadInt32();
+            MyWorld.downedShadeWyrm = true;
+            if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData); // Immediately inform clients of new world state.
         }
-
-        public override void CustomBehavior()
-        {
-            if (Main.netMode != NetmodeID.MultiplayerClient)
-            {
-                if (attackCounter > 0)
-                    attackCounter--;
-                Player target = Main.player[npc.target];
-                if (attackCounter <= 0 && Vector2.Distance(npc.Center, target.Center) < 200 && Collision.CanHit(npc.Center, 1, 1, target.Center, 1, 1))
-                {
-                    Vector2 direction = (target.Center - npc.Center).SafeNormalize(Vector2.UnitX);
-                    direction = direction.RotatedByRandom(MathHelper.ToRadians(10));
-
-                    int projectile = Projectile.NewProjectile(npc.Center, direction * 1, ProjectileID.ShadowBeamHostile, 5, 0, Main.myPlayer);
-                    Main.projectile[projectile].timeLeft = 300;
-                    attackCounter = 500;
-                    npc.netUpdate = true;
-                }
-            }
-        }*/
-        //public override void NPCLoot()
-        //{
-        //    int numScales = 0;
-        //    for (int i = 0; i < Main.player.Length; i++)
-        //    {
-        //        if (Main.player[i].active)
-        //        {
-        //            if (MyWorld.awakenedMode) numScales += Main.rand.Next(16, 26);
-        //            else if (Main.expertMode) numScales = Main.rand.Next(12, 19);
-        //            else numScales += Main.rand.Next(8, 12);
-        //        }
-        //    }
-        //        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("ShadeScale"), numScales);
-            
-        //    MyWorld.downedShadeWyrm = true;
-        //    if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData); // Immediately inform clients of new world state.
-        //}
-        //public override void BossLoot(ref string name, ref int potionType)
-        //{
-        //    potionType = mod.ItemType("EpicHealingPotion");
-        //}
         public override bool CheckActive()
         {
             return false;
         }
     }
-
     class ShadeWyrmBody : ShadeWyrm
     {
         public override string Texture { get { return "ElementsAwoken/Content/Events/VoidEvent/Enemies/Phase2/ShadeWyrm/ShadeWyrmBody"; } }
@@ -129,8 +121,8 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
                             projSpeed.Normalize();
                             projSpeed *= speedMult;
 
-                            //Projectile bolt = Main.projectile[Projectile.NewProjectile(npc.Center, projSpeed, mod.ProjectileType("ShadeWyrmBolt"), projDamage, 0f, 0)];
-                            //bolt.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                            Projectile bolt = Main.projectile[Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center, projSpeed, ProjectileType<ShadeWyrmBolt>(), projDamage, 0f, 0)];
+                            bolt.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                         }
                         SoundEngine.PlaySound(SoundID.Item12, NPC.position);
                     }
@@ -150,10 +142,8 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
         public override void SetDefaults()
         {
             base.SetDefaults();
-
             NPC.width = 40;
             NPC.height = 30;
-
             NPC.value = Item.buyPrice(0, 5, 0, 0);
         }
 
@@ -172,28 +162,26 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
     {
         public override void SetDefaults()
         {
+            NPC.boss = true;
             NPC.lifeMax = 22000;
             NPC.defense = 40;
             NPC.damage = 100;
             NPC.knockBackResist = 0f;
-
             NPC.aiStyle = -1;
-
             NPC.lavaImmune = true;
             NPC.noGravity = true;
             NPC.noTileCollide = true;
             NPC.behindTiles = true;
             NPC.HitSound = SoundID.NPCHit4;
             NPC.DeathSound = SoundID.NPCDeath14;
-
             for (int k = 0; k < NPC.buffImmune.Length; k++)
             {
                 NPC.buffImmune[k] = true;
             }
 
-            //npc.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
+            NPC.GetGlobalNPC<AwakenedModeNPC>().dontExtraScale = true;
         }
-        public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)/* tModPorter Note: bossLifeScale -> balance (bossAdjustment is different, see the docs for details) */
+        public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
             NPC.lifeMax = 50000;
             NPC.damage = 150;
@@ -749,15 +737,15 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
         {
             return head ? (bool?)null : false;
         }
-        //public override void ModifyHitByProjectile(Projectile projectile, ref NPC.HitModifiers modifiers)
-        //{
-        //    if (projectile.type == ProjectileID.LastPrismLaser && GetInstance<Config>().vItemChangesDisabled) damage = (int)(damage * 0.1f);
-        //    else if (projectile.type == ProjectileID.LastPrismLaser && !GetInstance<Config>().vItemChangesDisabled) damage = (int)(damage * 0.3f);
-        //    else if (projectile.penetrate == -1 && ProjectileID.Sets.YoyosMaximumRange[projectile.type] == 0) damage = (int)(damage * 0.3f);
-        //    else if (projectile.maxPenetrate > 10)damage = (int)(damage * 0.3f);
-        //    else if (projectile.maxPenetrate > 6) damage = (int)(damage * 0.5f);
-        //    else if (projectile.maxPenetrate > 3) damage = (int)(damage * 0.8f);
-        //}
+        public override void ModifyHitByProjectile(Projectile projectile, ref NPC.HitModifiers modifiers)
+        {
+            if (projectile.type == ProjectileID.LastPrismLaser && GetInstance<Config>().vItemChangesDisabled) modifiers.SourceDamage = (modifiers.SourceDamage * 0.1f);
+            else if (projectile.type == ProjectileID.LastPrismLaser && !GetInstance<Config>().vItemChangesDisabled) modifiers.SourceDamage = (modifiers.SourceDamage * 0.3f);
+            else if (projectile.penetrate == -1 && ProjectileID.Sets.YoyosMaximumRange[projectile.type] == 0) modifiers.SourceDamage = (modifiers.SourceDamage * 0.3f);
+            else if (projectile.maxPenetrate > 10) modifiers.SourceDamage = (modifiers.SourceDamage * 0.3f);
+            else if (projectile.maxPenetrate > 6) modifiers.SourceDamage = (modifiers.SourceDamage * 0.5f);
+            else if (projectile.maxPenetrate > 3) modifiers.SourceDamage = (modifiers.SourceDamage * 0.8f);
+        }
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
         {
             Texture2D texture = TextureAssets.Npc[NPC.type].Value;

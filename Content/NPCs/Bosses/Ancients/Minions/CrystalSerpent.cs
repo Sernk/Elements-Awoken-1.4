@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
+using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
@@ -31,6 +32,28 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients.Minions
             {
                 NPC.buffImmune[k] = true;
             }
+        }
+        public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
+        {
+            bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[] {
+                new BossBestiaryInfoElement(),
+                new FlavorTextBestiaryInfoElement(""),
+                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
+            });
+        }
+        public override void SetStaticDefaults()
+        {
+            NPCID.Sets.BossBestiaryPriority.Add(Type);
+            NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers()
+            {
+                Scale = 1.5f,
+                PortraitScale = 1.5f,
+                CustomTexturePath = "ElementsAwoken/Extra/Bestiary/CrystalSerpentBestiary"
+            };
+            value.Position.X += 40f;
+            value.Position.Y += 10f;
+            NPCID.Sets.NPCBestiaryDrawOffset[Type] = value;
+            NPCID.Sets.MPAllowedEnemies[Type] = true;
         }
         public override void Init()
         {

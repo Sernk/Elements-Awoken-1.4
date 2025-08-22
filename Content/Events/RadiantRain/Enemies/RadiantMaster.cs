@@ -1,22 +1,20 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Items.BossDrops.RadiantMaster;
+using ElementsAwoken.Content.Items.ItemSets.Radia;
+using ElementsAwoken.Content.Projectiles.Explosions;
 using ElementsAwoken.Content.Projectiles.NPCProj.RadiantMaster;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EASystem.Loot;
 using Microsoft.Xna.Framework;
 using System;
 using System.IO;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static ElementsAwoken.EASystem.Biome.EABiomes;
 using static Terraria.ModLoader.ModContent;
-//using ElementsAwoken.Projectiles.NPCProj;
-//using ElementsAwoken.Projectiles.GlobalProjectiles;
-//using ElementsAwoken.Items.ItemSets.Radia;
-//using ElementsAwoken.Buffs.Debuffs;
-//using ElementsAwoken.Projectiles.NPCProj.RadiantMaster;
-//using ElementsAwoken.Projectiles.Explosions;
-//using ElementsAwoken.Items.BossDrops.RadiantMaster;
 
 namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
 {
@@ -78,6 +76,7 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
             NPC.DeathSound = SoundID.NPCDeath6;
             NPC.value = Item.buyPrice(0, 3, 0, 0);
             NPC.knockBackResist = 0f;
+            SpawnModBiomes = new int[1] { GetInstance<RadiantRainBiome>().Type };
         }
         public override void SetStaticDefaults()
         {
@@ -95,8 +94,7 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
         {
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
             {
-                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster"),
-                BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.TheHallow,
+                new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Bosses.RadiantMaster")
             });
         }
         public override void OnHitPlayer(Player target, Player.HurtInfo hurtInfo)
@@ -115,10 +113,10 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
                 NPC.defense = 65;
             }
         }
-        //public override void BossLoot(ref string name, ref int potionType)
-        //{
-        //    potionType = ItemType<Items.Consumable.Potions.EpicHealingPotion>();
-        //}
+        public override void BossLoot(ref int potionType)
+        {
+            potionType = ItemType<Items.Consumable.Potions.EpicHealingPotion>();
+        }
         public override void FindFrame(int frameHeight)
         {
             NPC.spriteDirection = NPC.direction;
@@ -133,24 +131,25 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
                 NPC.frame.Y = 0;
             }
         }
-        //public override void NPCLoot()
-        //{
-        //    Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<Radia>(), Main.rand.Next(4, 21));
-        //    if (MyWorld.awakenedMode) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<RadiantCrown>());
-        //    int choice = Main.rand.Next(4);
-        //    if (choice == 0) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<Majesty>());
-        //    else if (choice == 1) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<RadiantBomb>());
-        //    else if (choice == 2) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<RadiantBow>());
-        //    else if (choice == 3) Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, ItemType<RadiantSword>());
-        //    MyWorld.downedRadiantMaster = true;
-        //    for (int l = 0; l < 6; l++)
-        //    {
-        //        Projectile.NewProjectile(npc.Center + Main.rand.NextVector2Square(-npc.width, npc.width), new Vector2(Main.rand.NextFloat(-2, 2), Main.rand.NextFloat(3)), ProjectileType<RadiantFireball>(), 0, 0, Main.myPlayer,1);
-        //        Projectile.NewProjectile(npc.Center + Main.rand.NextVector2Square(-npc.width, npc.width), Vector2.Zero, ProjectileType<RadiantMasterDeathExplosion>(), 0, 0, Main.myPlayer);
-        //        Main.PlaySound(SoundID.Item14, npc.Center);
-        //    }
-        //    if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
-        //}
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
+            npcLoot.Add(ItemDropRule.OneFromOptions(1, ItemType<Majesty>(), ItemType<RadiantBomb>(), ItemType<RadiantBow>(), ItemType<RadiantSword>()));
+            npcLoot.Add(ItemDropRule.Common(ItemType<Radia>(), minimumDropped: 4, maximumDropped: 21));
+            _AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<RadiantCrown>()));
+            npcLoot.Add(_AwakenedMode);
+        }
+        public override void OnKill()
+        {
+            MyWorld.downedRadiantMaster = true;
+            for (int l = 0; l < 6; l++)
+            {
+                Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center + Main.rand.NextVector2Square(-NPC.width, NPC.width), new Vector2(Main.rand.NextFloat(-2, 2), Main.rand.NextFloat(3)), ProjectileType<RadiantFireball>(), 0, 0, Main.myPlayer, 1);
+                Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center + Main.rand.NextVector2Square(-NPC.width, NPC.width), Vector2.Zero, ProjectileType<RadiantMasterDeathExplosion>(), 0, 0, Main.myPlayer);
+                SoundEngine.PlaySound(SoundID.Item14, NPC.Center);
+            }
+            if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
+        }
         public override bool CheckActive()
         {
             return false;
