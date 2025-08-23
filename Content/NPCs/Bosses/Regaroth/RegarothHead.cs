@@ -99,13 +99,19 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Regaroth
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.RegLoot]));
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
 
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegarothTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RegarothMask>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.RegLoot]));
 
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<RegarothBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<SkyEssence>(), minimumDropped: 5, maximumDropped: 25));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<RegarothTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<RegarothMask>(), 10));
+
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<RegarothBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<SkyEssence>(), minimumDropped: 5, maximumDropped: 25));
+
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
 
             var DropArmor = new LeadingConditionRule(new EAIDRC.DropArmor());
             DropArmor.OnSuccess(ItemDropRule.Common(ModContent.ItemType<EnergyWeaversHelm>()));

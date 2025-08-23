@@ -1,5 +1,7 @@
-﻿using CalamityMod.NPCs.Leviathan;
+﻿using CalamityMod;
+using CalamityMod.NPCs.Leviathan;
 using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Items.Essence;
@@ -88,20 +90,22 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         {            
             var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
             var _AwakenedModeEssence = new LeadingConditionRule(new EAIDRC.DropAwakened());
-            var _AwakenedModeExpert = new LeadingConditionRule(new EAIDRC.DropExpert());
+            var _DropExpert = new LeadingConditionRule(new EAIDRC.DropExpert());
+            var _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
 
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [..EAList.LeviLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
-            npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ItemType<VoidLeviathanHeart>()));
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [..EAList.LeviLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<VoidLeviathanHeart>()));
+            npcLoot.Add(_DropNormal);
 
             _AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<AbyssalMatter>()));
             npcLoot.Add(_AwakenedMode);
             _AwakenedModeEssence.OnSuccess(ItemDropRule.Common(ItemType<VoidEssence>(), minimumDropped: 8, maximumDropped: 20));
-            npcLoot.Add(_AwakenedModeEssence);            
-            _AwakenedModeExpert.OnSuccess(ItemDropRule.Common(ItemType<VoidEssence>(), minimumDropped: 5, maximumDropped: 13));
-            npcLoot.Add(_AwakenedModeExpert);
+            npcLoot.Add(_AwakenedModeEssence);
+            _DropExpert.OnSuccess(ItemDropRule.Common(ItemType<VoidEssence>(), minimumDropped: 5, maximumDropped: 13));
+            npcLoot.Add(_DropExpert);
         }
         public override void OnKill()
         {

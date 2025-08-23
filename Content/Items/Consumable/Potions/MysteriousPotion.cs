@@ -127,7 +127,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
                 }
                 if (line2.Mod == "Terraria" && line2.Name.Contains("ItemName"))
                 {
-                    line2.Text = name + " Potion";
+                    line2.Text = name + " " + EALocalization.MysteriousPotion22;
                 }
             }
         }

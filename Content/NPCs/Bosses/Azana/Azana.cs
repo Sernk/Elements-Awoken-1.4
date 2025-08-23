@@ -2,6 +2,7 @@
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Projectiles.NPCProj.Azana;
 using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -143,42 +144,53 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AzaLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<AzanaBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<EntropicCoating>(), 7));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AzanaTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<AzanaMask>(), 10));
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.AzaLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<AzanaBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<EntropicCoating>(), 7));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<AzanaTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<AzanaMask>(), 10));
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
         }
         public void SaveLifeForAzana()
         {
             var p = Main.LocalPlayer;
             var ns = EAU.NPCs(NPC);
-            int item = Main.rand.Next(5);
+            int item = Main.rand.Next(6);
             int r7 = Main.rand.Next(1, 8);
             int r10 = Main.rand.Next(1, 11);
-            switch (item)
-            {
-                case 0: item = ModContent.ItemType<Anarchy>(); break;
-                case 1: item = ModContent.ItemType<PurgeRifle>(); break;
-                case 2: item = ModContent.ItemType<ChaoticImpaler>(); break;
-                case 3: item = ModContent.ItemType<Pandemonium>(); break;
-                case 4: item = ModContent.ItemType<Pandemonium>(); break;
-                case 5: item = ModContent.ItemType<AzanaMinionStaff>(); break;
-                default: item = ItemID.DirtBlock; break;
-            }
-            Item.NewItem(ns, NPC.Hitbox, item);
             if (Main.expertMode)
             {
-                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaBag>());
+                if (Main.expertMode)
+                {
+                    Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaBag>());
+                }
             }
-            if (r7 == 7)
+            else
             {
-                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<EntropicCoating>());
-            }
-            if (r10 == 10)
-            {
-                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaMask>());
-                Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaTrophy>());
+                item = item switch
+                {
+                    0 => ModContent.ItemType<Anarchy>(),
+                    1 => ModContent.ItemType<PurgeRifle>(),
+                    2 => ModContent.ItemType<ChaoticImpaler>(),
+                    3 => ModContent.ItemType<Pandemonium>(),
+                    4 => ModContent.ItemType<Pandemonium>(),
+                    5 => ModContent.ItemType<AzanaMinionStaff>(),
+                    _ => ItemID.DirtBlock,
+                };
+                Item.NewItem(ns, NPC.Hitbox, item);
+                if (r7 == 7)
+                {
+                    Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<EntropicCoating>());
+                }
+                if (r10 == 10)
+                {
+                    Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaMask>());
+                    Item.NewItem(ns, NPC.Hitbox, ModContent.ItemType<AzanaTrophy>());
+                }
             }
         }
         public override void OnKill()

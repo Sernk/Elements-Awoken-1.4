@@ -109,6 +109,7 @@ namespace ElementsAwoken.Utilities
         public string MysteriousPotion19 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.MysteriousPotion19");
         public string MysteriousPotion20 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.MysteriousPotion20");
         public string MysteriousPotion21 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.MysteriousPotion21");
+        public string MysteriousPotion22 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.MysteriousPotion22");
         #endregion
         #region HoneyCocoon
         public string HoneyCocoon => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.HoneyCocoon");

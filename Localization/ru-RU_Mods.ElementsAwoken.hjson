@@ -2492,8 +2492,197 @@ Items: {
 	}
 
 	ShadeScale: {
-		// Tooltip: Seems coated with heavy projectile resistance material
-		// DisplayName: Shade Scale
+		Tooltip: Она, судя по всему, покрыта веществом с хорошими снарядо-отталкивающими свойствами
+		DisplayName: Тенечешуйка
+	}
+
+	Salve: {
+		// Tooltip: Heal 50 health over 10 seconds
+		// DisplayName: Salve
+	}
+
+	NanowrapBandage: {
+		// Tooltip: Heal 100 health over 10 seconds
+		// DisplayName: Nanowrap Bandage
+	}
+
+	Bandage: {
+		// Tooltip: Heal 75 health over 10 seconds
+		// DisplayName: Bandage
+	}
+
+	BullseyePotion: {
+		// DisplayName: Bullseye Potion
+		/* Tooltip:
+			'''
+			Critical strike chance increased by 15%
+			25% increased ranged damage
+			''' */
+	}
+
+	CalamityPotion: {
+		// DisplayName: Calamity Potion
+		// Tooltip: Increases spawn rates by 12.5x for 3 minutes
+	}
+
+	CelestialEmpowerment: {
+		// DisplayName: Celestial Empowerment
+		/* Tooltip:
+			'''
+			Increase defense by 8
+			15% increased damage
+			''' */
+	}
+
+	ChaosPotion: {
+		// DisplayName: Chaos Potion
+		// Tooltip: Increases spawn rates by 7.5x for 3 minutes
+	}
+
+	HavocPotion: {
+		// DisplayName: Havoc Potion
+		// Tooltip: Increases spawn rates by 4x for 3 minutes
+	}
+
+	DemonPhilter: {
+		/* Tooltip:
+			'''
+			Increase defense by 3
+			10% increased movement speed and melee speed
+			''' */
+		// DisplayName: Philter of the Demon
+	}
+
+	DiscordantPotion: {
+		// DisplayName: Chaosporidic Brew
+		/* Tooltip:
+			'''
+			Decreases the duration of 'Chaos State' by 25%
+			CURRENTLY UNOBTAINABLE
+			''' */
+	}
+
+	FlaskOfExtinction: {
+		// DisplayName: Flask Of Extinction
+		// Tooltip: Melee attacks inflict Extinction Curse
+	}
+
+	PinkJelly: {
+		/* Tooltip:
+			'''
+			Very sweet
+			50% increased movement speed
+			Life regen increased by 5
+			''' */
+		// DisplayName: Pink Jelly
+	}
+
+	HellFury: {
+		/* Tooltip:
+			'''
+			For 30 seconds, damage is increased by 20% but you take double damage
+			You inflict fire on attack
+			''' */
+		// DisplayName: Hell Fury
+	}
+
+	EmptyVessel: {
+		// DisplayName: Empty Vessel
+		/* Tooltip:
+			'''
+			Your body is at its limits trying to contain your life force, adding a bit of extra space in your soul might fix this
+			Fighters of The Calamity need not apply
+			Permanently increases maximum life by 10
+			Adding to favorites  changes your health
+			''' */
+	}
+
+	VoidStone: {
+		// DisplayName: Void Stone
+		// Tooltip: It emits a strange energy
+	}
+
+	VoidCompressor: {
+		/* Tooltip:
+			'''
+			Made to refine and compress your inner darkness into the ultimate void
+			Allows you to change the appearance of your void hearts, but nothing else
+			Fighters of The Calamity need not apply
+			Adding to favorites  changes your health
+			''' */
+		// DisplayName: Void Compressor
+	}
+
+	ChaosHeart: {
+		// DisplayName: Chaosporidic Heart
+		/* Tooltip:
+			'''
+			Fighters of The Calamity need not apply
+			Permanently increases maximum life by 10
+			Adding to favorites  changes your health
+			''' */
+	}
+
+	LunarStar: {
+		/* Tooltip:
+			'''
+			Condense your mana with raw lunar power
+			Fighters of The Calamity need not apply
+			Increases mana by 100
+			''' */
+		// DisplayName: Lunar Star
+	}
+
+	ExtraAcc: {
+		/* Tooltip:
+			'''
+			The Demon Heart allowed you to resist more of the conflicting energy in accessories, this strange fruit embraces it
+			Allows you to survive wearing a 7th accessory
+			Fighters of The Calamity need not apply
+			''' */
+		// DisplayName: Infernal Fruit
+	}
+
+	Stellorite: {
+		// Tooltip: It harnesses the stellar energies
+		// DisplayName: Stellorite
+	}
+
+	StellariumBar: {
+		// Tooltip: It harnesses the stellar energies
+		// DisplayName: Stellarium Bar
+	}
+
+	MortemiteDust: {
+		// Tooltip: It sucks the warmth out of you
+		// DisplayName: Mortemite Dust
+	}
+
+	BladeOfThePrince: {
+		/* Tooltip:
+			'''
+			Shoots a purple energy blast that rains homing sparkles when it hits an enemy
+			It is tainted with the raging blood of an long slain raven demon
+			An undescribeable desire for chaos and destruction dwells within your heart, feeling as it would darken by every passing second...
+			Burst's developer weapon
+			''' */
+		// DisplayName: Blade of the Raven Prince
+	}
+
+	AeroflakGun: {
+		/* Tooltip:
+			'''
+			Wait a minute, tiers are back?
+			Explodes when in range of a flying enemy
+			Hitting multiple flying enemies in a short period of time will deal extra damage
+			Mayhemm's developer weapon
+			''' */
+		// DisplayName: Hyperlight Sentinel
+	}
+
+	Armageddon: {
+		// DisplayName: Armageddon
+		// Tooltip: Shoots out blades of destruction
 	}
 }
 
@@ -2544,6 +2733,7 @@ Tiles: {
 	VolcanoxTrophy.MapEntry: Трофей Вулканокса
 	WastelandTrophy.MapEntry: Трофей Пустоши
 	Darkstone.MapEntry: Мракамень
+	// VoidStone.MapEntry: Void Stone
 }
 
 Buffs: {
@@ -2553,7 +2743,7 @@ Buffs: {
 	}
 
 	Bloodbath: {
-		DisplayName: РЕЗНЯ
+		DisplayName: Резня
 		Description: Наносимый урон увеличен на 20%
 	}
 
@@ -2936,6 +3126,69 @@ Buffs: {
 	AcidBurn: {
 		DisplayName: Кислогорение
 		Description: ААААААААААААААААААААААААА!!!!!!!!!!!!!!
+	}
+
+	SalveBuff: {
+		// Description: Healing 50 health over 10 seconds
+		// DisplayName: Healing
+	}
+
+	NanowrapBuff: {
+		// Description: Healing 100 health over 10 seconds
+		// DisplayName: Healing
+	}
+
+	MedicineCooldown: {
+		// Description: You cannot use Medicinal Items
+		// DisplayName: Medicine Cooldown
+	}
+
+	BandageBuff: {
+		// Description: Healing 75 health over 10 seconds
+		// DisplayName: Healing
+	}
+
+	BullseyeBuff: {
+		// DisplayName: Bullseye
+		/* Description:
+			'''
+			Critical Strike chance increased by 15%
+			Ranged damage increased by 25%
+			''' */
+	}
+
+	LuminiteBuff: {
+		// DisplayName: Celestial Empowerment
+		/* Description:
+			'''
+			Gain the strength of the Moon Lord
+			Increased defense by 8, Damage increased by 15%
+			''' */
+	}
+
+	ExtinctionCurseImbue: {
+		// Description: Melee attacks inflict Extinction Curse
+		// DisplayName: Weapon Imbue: Extinction Curse
+	}
+
+	DiscordantBuff: {
+		// Description: Your body finds a way to embrace the Discord
+		// DisplayName: Discord
+	}
+
+	DemonSkinBuff: {
+		// Description: Increased defense by 3, 10% increased movement and melee speed
+		// DisplayName: Demon Skin
+	}
+
+	HellFuryBuff: {
+		// Description: Damage is increased by 20% but doubles damage taken
+		// DisplayName: Hell Fury
+	}
+
+	Energized: {
+		// Description: 50% increased movement speed\nLife regen increased by 5
+		// DisplayName: Energized
 	}
 }
 
@@ -3739,8 +3992,15 @@ Projectiles: {
 	AncientProjectionSwirl.DisplayName: Вихрь древней проекции
 	AncientProjection.DisplayName: Древняя проекция
 	AAHandOverlay.DisplayName: Оверлей руки древнего амальгамета
-	// RadiantMasterDeathExplosion.DisplayName: Radiant Master Death Explosion
-	// ShadeWyrmBolt.DisplayName: Shade Wyrm Bolt
+	RadiantMasterDeathExplosion.DisplayName: Взрыв анимации смерти Лучезарного мастера
+	ShadeWyrmBolt.DisplayName: Выстрел Тенезмея
+	// RavenPrince.DisplayName: Raven
+	// PrinceStrike.DisplayName: Prince Strike
+	// PrinceRain.DisplayName: Prince Rain
+	// PrinceAura.DisplayName: Prince Aura
+	// AeroflakExplosion.DisplayName: Explosion
+	// AeroflakP.DisplayName: Star
+	// ArmageddonBlade.DisplayName: Armageddon
 }
 
 Configs: {
@@ -3781,13 +4041,13 @@ Biomes: {
 	}
 
 	RadiantRainBiome: {
-		// TownNPCDialogueName: the Radiant Rain Biome
-		// DisplayName: Radiant Rain Biome
+		TownNPCDialogueName: Лучезарный Дождь
+		DisplayName: Лучезарный Дождь
 	}
 
 	DOTVBiome: {
-		// DisplayName: D O T V Biome
-		// TownNPCDialogueName: the D O T V Biome
+		DisplayName: Рассвет Пустоты
+		TownNPCDialogueName: Рассвет Пустоты
 	}
 }
 
@@ -3892,6 +4152,7 @@ Tooltips: {
 	MysteriousPotion19: Молниеносное
 	MysteriousPotion20: Заставляет тебя носиться неконтролируемо быстро
 	MysteriousPotion21: пил неосторожно и ему попало не в то горло
+	// MysteriousPotion22: Potion
 	# Не трогай HoneyCocoon!!!!
 	HoneyCocoon: <Special Ability Unbound>
 	HoneyCocoon1: Нажатие на кнопку специальной возможности
@@ -3963,11 +4224,11 @@ Tooltips: {
 AccInfo: {
 	NEB: Злые биомы поблизости
 	Nearby: поблизости
-	// BDPS: Buff Damage Per Second
-	// BDPS1: buff damage per second
-	// RainTime: Rain Time
-	// SR: seconds remaining
-	// Clear: Clear
+	BDPS: урона в секунду от дебаффов
+	BDPS1: урона от баффов в секунду
+	RainTime: До прекращения дождя
+	SR: осталось секунд
+	Clear: Дождя нет
 }
 
 Resurs: {
@@ -4073,35 +4334,41 @@ ShopCondition: {
 }
 
 Credits: {
-	// Credits: Hold 'Escape' to skip
-	// Credits1: Created by
-	// Credits2: Music by
-	// Credits3: Lore by
-	// Credits4: Sprites By
-	// Credits5: Donators
-	// Credits6: Helpers
-	// Credits7: Special Thanks To
-	// CreditsPort: Unofficial 1.4.4 Port
-	// CreditsPort1: Aeris - all code and everything code-related
-	// CreditsPort2: skyzephire - Russian translation, few idea suggestions, mod playtesting and some sprites
-	/* Credits8:
+	Credits: Зажми 'Escape', чтобы пропустить титры
+	Credits1: Мод создан
+	Credits2: Музыка написана
+	Credits3: Лор придуман
+	Credits4: Спрайты сделаны
+	Credits5: Донатеры
+	Credits6: Помощники
+	Credits7: Специальная благодарность
+	CreditsPort: Неофициальный порт на 1.4.4
+	CreditsPort1: Aeris - весь кодинг и всё остальное, связанное с кодом
+	CreditsPort2:
 		'''
-		ReLogic for creating the amazing Terraria
-		Jofairden, jopojelly & bluemagic for creating tModloader
-		Gameraiders101 for getting me into modding
-		FuryForged for showcasing the mod
-		ChippyGaming for showcasing the mod
-		Gameraiders101 again for showcasing the mod
-		''' */
-	// Credits9: Biggest Thanks
-	// Credits10: To YOU
-	/* Credits11:
+		skyzephire - Русский перевод, 
+		несколько предложений по улучшению оригинального мода, 
+		все записи в бестиарии у модовых существ, 
+		плейтест порта и все новые спрайты тут
 		'''
-		Seriously, thank you so much for playing Elements Awoken.
-		It means a lot to me and all of the dev team that you can enjoy
-		something we spent so much time on.
-		''' */
-	// Credits12: From- ThatOneJuicyOrange_ and the team <3
+	Credits8:
+		'''
+		Re-Logic за создание такой прекрасной игры, как Terraria
+		Jofairden, jopojelly и bluemagic за создание tModLoader
+		Gameraiders101 за вдохновление меня заняться моддингом этой игры
+		FuryForged за показ мода
+		ChippyGaming за показ мода
+		Gameraiders101, снова, за показ мода
+		'''
+	Credits9: Главная благодарность
+	Credits10: ТЕБЕ
+	Credits11:
+		'''
+		Реально, огромное спасибо, что поиграл в Elements Awoken.
+		И я, и вся команда разработчиков ценят то, что ты оценил
+		то, на что мы потратили столько времени и сил.
+		'''
+	Credits12: С уважением - ThatOneJuicyOrange_ и вся команда разработчиков <3
 }
 
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
@@ -4329,6 +4596,6 @@ BossChecklistIntegration: {
 
 	radiantRainEvent: {
 		EntryName: Лучезарный Дождь
-		SpawnInfo: Используй [i:ElementsAwoken/RadiantRainSummon] в любое время. Дождь также может начать идти сам по себе после победы над Азаной.
+		SpawnInfo: Используй [i:ElementsAwoken/RadiantRainSummon] в любое время. Дождь также может начаться сам по себе после победы над Азаной.
 	}
 }

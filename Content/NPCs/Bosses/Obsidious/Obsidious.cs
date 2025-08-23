@@ -155,11 +155,16 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.ObsiLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<ObsidiousBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ObsidiousTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<CrystallineCluster>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ObsidiousWings>(), 10));
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.ObsiLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<ObsidiousBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<CrystallineCluster>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousWings>(), 10));
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
 
             var RobeDrop = new LeadingConditionRule(new EAIDRC.DropRobe());
             RobeDrop.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousMask>()));

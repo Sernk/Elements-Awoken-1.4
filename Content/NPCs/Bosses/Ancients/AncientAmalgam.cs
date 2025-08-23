@@ -3,6 +3,7 @@ using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients.Gores;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System;
@@ -132,10 +133,16 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.AncLot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<AncientsBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ItemType<CrystalAmalgamate>(), minimumDropped:1, maximumDropped:1));
-            npcLoot.Add(ItemDropRule.Common(ItemType<AncientShard>(), minimumDropped:5, maximumDropped:8));
+            var _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            var _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<AncientsBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<CrystalAmalgamate>(), minimumDropped:1, maximumDropped:1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<AncientShard>(), minimumDropped:5, maximumDropped:8));
+            npcLoot.Add(_DropExpert);
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.AncLot]));
+            npcLoot.Add(_DropNormal);
             //npcLoot.Add(ItemDropRule.Common(ItemType<AncientsTrophy>(), 10));
             //npcLoot.Add(ItemDropRule.Common(ItemType<ElderSignet>(), 10)); // 2 по цене одного
             //npcLoot.Add(ItemDropRule.Common(ItemType<AncientsMask>(), 10));

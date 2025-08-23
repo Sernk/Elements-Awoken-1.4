@@ -1,7 +1,9 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.Volcanox;
+using ElementsAwoken.Content.Items.Consumable.StatIncreases;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Projectiles.NPCProj.Volcanox;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System;
@@ -101,12 +103,22 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.VolLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<VolcanoxBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<VolcanoxTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<VolcanoxMask>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<Pyroplasm>(), minimumDropped: 5, maximumDropped: 40));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<VolcanicStone>(), minimumDropped: 6, maximumDropped: 20));
+            LeadingConditionRule _DropNormal = new(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new(new EAIDRC.DropAwakened());
+            LeadingConditionRule _DropFruit =  new(new EAIDRC.AwakenedModeActive());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.VolLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<VolcanoxBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<VolcanoxTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<VolcanoxMask>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<Pyroplasm>(), minimumDropped: 5, maximumDropped: 40));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<VolcanicStone>(), minimumDropped: 6, maximumDropped: 20));
+
+            _DropFruit.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ExtraAcc>()));
+
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
+            npcLoot.Add(_DropFruit);
         }
         public override void OnKill()
         {

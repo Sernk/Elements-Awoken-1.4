@@ -11,7 +11,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
         {
             Item.width = 28;
             Item.height = 18;
-            Item.maxStack = 30;
+            Item.maxStack = 9999;
             Item.useAnimation = 17;
             Item.useTime = 17;
             Item.useStyle = ItemUseStyleID.DrinkLiquid;

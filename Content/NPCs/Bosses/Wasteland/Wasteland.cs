@@ -225,12 +225,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.WasLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<WastelandBag>()));
-            npcLoot.Add(ItemDropRule.Common(ItemType<WastelandTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ItemType<WastelandMask>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ItemType<DesertEssence>(), minimumDropped: 5, maximumDropped: 20));
+            LeadingConditionRule _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.WasLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<WastelandBag>()));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<WastelandTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<WastelandMask>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<DesertEssence>(), minimumDropped: 5, maximumDropped: 20));
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
 
             _AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<TheAntidote>()));
             npcLoot.Add(_AwakenedMode);

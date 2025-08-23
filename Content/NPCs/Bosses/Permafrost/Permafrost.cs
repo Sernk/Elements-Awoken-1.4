@@ -2,6 +2,7 @@
 using ElementsAwoken.Content.Items.BossDrops.Permafrost;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.NPCProj.Permafrost;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -143,11 +144,16 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Permafrost
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.PermLoot]));
-            npcLoot.Add(ItemDropRule.Common(ItemType<PermafrostTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ItemType<PermafrostMask>(), 10));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<PermafrostBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ItemType<FrostEssence>(), minimumDropped: 5, maximumDropped: 25));
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.PermLoot]));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<PermafrostTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<PermafrostMask>(), 10));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<PermafrostBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<FrostEssence>(), minimumDropped: 5, maximumDropped: 25));
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
         }
         public override void OnKill()
         {

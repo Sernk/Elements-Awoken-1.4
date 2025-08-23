@@ -4,6 +4,7 @@ using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Prompts;
 using ElementsAwoken.Content.Projectiles.NPCProj.Infernace;
 using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -214,8 +215,13 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.InfeLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<InfernaceBag>(), 1));
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.InfeLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<InfernaceBag>(), 1));
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
             npcLoot.Add(ItemDropRule.Common(ItemType<FireEssence>(), 1, 5, 22));
         }
         public override void OnKill()

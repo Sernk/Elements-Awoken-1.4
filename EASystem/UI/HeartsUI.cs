@@ -25,17 +25,17 @@ namespace ElementsAwoken.EASystem.UI
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
             var modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
 
-            if (modPlayer.chaosHeartLife > 0)
+            if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual)
             {
                 return folder + "Heart4";
             }
-            if (modPlayer.voidHeartLife > 0)
+            if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual)
             {
-                if (modPlayer2.voidCompressor)
-                {
-                    return folder + "Heart3Alt";
-                }
                 return folder + "Heart3";
+            }
+            if (modPlayer.CompressorVisual)
+            {
+                return folder + "Heart3Alt";
             }
             if (modPlayer.shieldLife > 0)
             {
@@ -43,7 +43,17 @@ namespace ElementsAwoken.EASystem.UI
             }
             return string.Empty;
         }
-
+        public string ManaTexturePath()
+        {
+            string folder = $"{baseFolder}MP";
+            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
+            MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+            if (modPlayer2.lunarStarsUsed > 1)
+            {
+                return folder + "Mana2";
+            }
+            return string.Empty;
+        }
         public override void PostDrawResource(ResourceOverlayDrawContext context)
         {
             Asset<Texture2D> asset = context.texture;
@@ -65,8 +75,20 @@ namespace ElementsAwoken.EASystem.UI
                 context.Draw();
             }
 
+            if (ManaTexturePath() != string.Empty)
+            {
+                if (asset == TextureAssets.Mana || CompareAssets(asset, fancyFolder + "Star_Fill"))
+                {
+                    context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Star");
+                    context.Draw();
+                }
+                else if (CompareAssets(asset, barsFolder + "MP_Fill"))
+                {
+                    context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Bar");
+                    context.Draw();
+                }
+            }
         }
-
         public override void PostDrawResourceDisplay(PlayerStatsSnapshot snapshot, IPlayerResourcesDisplaySet displaySet, bool drawingLife, Color textColor, bool drawText)
         {
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();

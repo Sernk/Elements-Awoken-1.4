@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
+using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.Utilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
@@ -117,7 +118,7 @@ namespace ElementsAwoken.EASystem.Loot
         {
             public bool CanDrop(DropAttemptInfo info)
             {
-                if (MyWorld.awakenedMode)
+                if (Main.expertMode || MyWorld.awakenedMode)
                 {
                     return true;
                 }
@@ -125,7 +126,7 @@ namespace ElementsAwoken.EASystem.Loot
             }
             public bool CanShowItemDropInUI()
             {
-                if (MyWorld.awakenedMode)
+                if (Main.expertMode || MyWorld.awakenedMode)
                 {
                     return true;
                 }
@@ -205,5 +206,19 @@ namespace ElementsAwoken.EASystem.Loot
             public bool CanShowItemDropInUI() => true;
             public string GetConditionDescription() => null;
         }
+        //public class DropFruit : IItemDropRuleCondition
+        //{
+        //    //public bool CanDrop(DropAttemptInfo info)
+        //    //{
+        //    //    if (info.player.GetModPlayer<MyPlayer>().extraAccSlot == false && MyWorld.awakenedMode) return true;
+        //    //    return false;
+        //    //}
+        //    //public bool CanShowItemDropInUI()
+        //    //{
+        //    //    if (Main.LocalPlayer.GetModPlayer<MyPlayer>().extraAccSlot && MyWorld.awakenedMode) return false;
+        //    //    return true;
+        //    //}
+        //    //public string GetConditionDescription() => "Выпадает лишь один раз";
+        //}
     }
 }

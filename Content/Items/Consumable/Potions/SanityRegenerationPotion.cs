@@ -12,7 +12,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
         {
             Item.width = 20;
             Item.height = 28;
-            Item.maxStack = 30;
+            Item.maxStack = 9999;
             Item.consumable = true;
             Item.useTurn = true;
             Item.UseSound = SoundID.Item3;

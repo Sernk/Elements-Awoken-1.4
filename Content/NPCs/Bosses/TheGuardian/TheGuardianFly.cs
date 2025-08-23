@@ -1,6 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.TheGuardian;
 using ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian;
+using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -128,10 +129,15 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.OneFromOptions(1, [.. EAList.TGuaLoot]));
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<GuardianBag>(), 1));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuardianTrophy>(), 10));
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TheGuardianMask>(), 10));
+            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.TGuaLoot]));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<GuardianBag>(), 1));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<TheGuardianTrophy>(), 10));
+            _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<TheGuardianMask>(), 10));
+            npcLoot.Add(_DropNormal);
+            npcLoot.Add(_DropExpert);
         }
         public override void OnKill()
         {
