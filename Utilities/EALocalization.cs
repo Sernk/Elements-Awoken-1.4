@@ -190,6 +190,10 @@ namespace ElementsAwoken.Utilities
         public string AncientsSummon9 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon9");
         public string AncientsSummon10 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.AncientsSummon10");
         #endregion
+        #region EoitesWrath
+        public string EoitesWrath => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.EoitesWrath");
+        public string EoitesWrath1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.EoitesWrath1");
+        #endregion
         public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion
         #region AccInfo
@@ -263,6 +267,11 @@ namespace ElementsAwoken.Utilities
         public string VoidWalkersHelm => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersHelm");
         public string VoidWalkersGreatmask => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidWalkersGreatmask");
         public string EnergyWeaversHelm => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.EnergyWeaversHelm");
+        public string MechSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.MechSetBonus");
+        public string ForgedSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ForgedSetBonus");
+        public string CrowsSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.CrowsSetBonus");
+        public string EoitesSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.EoitesSetBonus");
+        public string AwokenWoodBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AwokenWoodBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");

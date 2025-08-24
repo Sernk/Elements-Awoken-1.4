@@ -19,7 +19,6 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
             Item.value = Item.sellPrice(0, 25, 0, 0);
             Item.defense = 45;
             Item.GetGlobalItem<ArmorSetBonusToolTips>().IsHelmet = true;
-            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsVoidWalkersGreatmask = true;
         }
         public override void Load()
         {

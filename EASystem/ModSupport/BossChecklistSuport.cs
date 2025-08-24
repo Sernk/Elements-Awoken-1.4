@@ -109,7 +109,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "ScourgeFighterBoss",
-               weight = 11.3f,
+               weight = 10.3f,
                downed = () => MyWorld.downedScourgeFighter,
                bossType = NPCType<ScourgeFighter>(),
                new Dictionary<string, object>()
@@ -122,7 +122,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "RegarothBoss",
-               weight = 10.4f,
+               weight = 11.4f,
                downed = () => MyWorld.downedRegaroth,
                bossType = NPCType<RegarothHead>(),
                new Dictionary<string, object>()
@@ -174,7 +174,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "KeepersBoss",
-               weight = 17.1f,
+               weight = 18.1f,
                downed = () => (MyWorld.downedAncientWyrm && MyWorld.downedEye),
                bossType = NPCType<TheEye>(),
                new Dictionary<string, object>()
@@ -187,7 +187,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "GuardianBoss",
-               weight = 17.2f,
+               weight = 18.2f,
                downed = () => MyWorld.downedGuardian,
                bossType = NPCType<TheGuardian>(),
                new Dictionary<string, object>()
@@ -200,7 +200,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogEvent",
                Mod,
                internalName = "DotvEvent",
-               weight = 17.4f,
+               weight = 18.4f,
                downed = () => MyWorld.downedVoidEvent,
                bossType = NPCType<ShadeWyrmTail>(),
                new Dictionary<string, object>()
@@ -212,7 +212,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogEvent",
                Mod,
                internalName = "radiantRainEvent",
-               weight = 19.75f,
+               weight = 18.75f,
                downed = () => MyWorld.downedRadiantMaster,
                bossType = NPCType<RadiantMaster>(),
                new Dictionary<string, object>()
@@ -224,7 +224,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogMiniBoss",
                Mod,
                internalName = "RadiantMasterBoss",
-               weight = 19.76f,
+               weight = 18.76f,
                downed = () => MyWorld.downedRadiantMaster,
                bossType = NPCType<RadiantMaster>(),
                new Dictionary<string, object>()
@@ -237,7 +237,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "ShadeWyrmEvent",
-               weight = 17.4f,
+               weight = 18.5f,
                downed = () => MyWorld.downedShadeWyrm,
                bossType = NPCType<ShadeWyrmHead>(),
                new Dictionary<string, object>()
@@ -249,7 +249,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "VolcanoxEvent",
-               weight = 15.5f,
+               weight = 18.5f,
                downed = () => MyWorld.downedVolcanox,
                bossType = NPCType<Volcanox>(),
                new Dictionary<string, object>()
@@ -261,7 +261,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "VleviEvent",
-               weight = 19f,
+               weight = 18.6f,
                downed = () => MyWorld.downedVoidLeviathan,
                bossType = NPCType<VoidLeviathanHead>(),
                new Dictionary<string, object>()
@@ -273,7 +273,7 @@ namespace ElementsAwoken.EASystem.ModSupport
                "LogBoss",
                Mod,
                internalName = "AzanaBoss",
-               weight = 19.5f,
+               weight = 18.7f,
                downed = () => MyWorld.downedAzana,
                bossType = NPCType<Azana>(),
                new Dictionary<string, object>()
@@ -285,7 +285,7 @@ namespace ElementsAwoken.EASystem.ModSupport
             "LogBoss",
                Mod,
                internalName = "ancientsBoss",
-               weight = 20f,
+               weight = 18.8f,
                downed = () => MyWorld.downedAncients,
                bossType = NPCType<AncientAmalgam>(),
                new Dictionary<string, object>()

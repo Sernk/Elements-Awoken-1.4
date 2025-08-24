@@ -2,10 +2,6 @@
 using ElementsAwoken.Content.Projectiles;
 using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -20,7 +16,6 @@ namespace ElementsAwoken.Content.Mounts
         {
             MountData.spawnDust = 15;
             MountData.buff = ModContent.BuffType<ElementalDragonBunnyBuff>();
-
             MountData.heightBoost = 20;
             MountData.flightTimeMax = 0;
             MountData.fallDamage = 0.8f;
@@ -30,11 +25,9 @@ namespace ElementsAwoken.Content.Mounts
             MountData.jumpHeight = 30;
             MountData.jumpSpeed = 9f;
             MountData.totalFrames = 7;
-
             MountData.blockExtraJumps = false;
             MountData.totalFrames = 7;
             MountData.constantJump = true;
-
             int[] array = new int[MountData.totalFrames];
             for (int k = 0; k < array.Length; k++)
             {
@@ -49,23 +42,18 @@ namespace ElementsAwoken.Content.Mounts
             MountData.bodyFrame = 3;
             MountData.yOffset = 4;
             MountData.playerHeadOffset = 22;
-
             MountData.standingFrameCount = 1;
             MountData.standingFrameDelay = 12;
             MountData.standingFrameStart = 0;
-
             MountData.runningFrameCount = 7;
             MountData.runningFrameDelay = 12;
             MountData.runningFrameStart = 0;
-
             MountData.flyingFrameCount = 6;
             MountData.flyingFrameDelay = 6;
             MountData.flyingFrameStart = 1;
-
             MountData.inAirFrameCount = 1;
             MountData.inAirFrameDelay = 12;
             MountData.inAirFrameStart = 5;
-
             MountData.idleFrameCount = 0;
             MountData.idleFrameDelay = 0;
             MountData.idleFrameStart = 0;

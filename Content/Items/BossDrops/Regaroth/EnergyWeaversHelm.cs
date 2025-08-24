@@ -18,7 +18,6 @@ namespace ElementsAwoken.Content.Items.BossDrops.Regaroth
             Item.rare = 6;
             Item.defense = 21;
             Item.GetGlobalItem<ArmorSetBonusToolTips>().IsHelmet = true;
-            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsEnergyWeaversHelm = true;
         }
         public override void UpdateEquip(Player player)
         {

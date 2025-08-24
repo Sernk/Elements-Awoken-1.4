@@ -18,7 +18,6 @@ namespace ElementsAwoken.Content.Items.BossDrops.CosmicObserver
             Item.rare = 4;
             Item.defense = 11;
             Item.GetGlobalItem<ArmorSetBonusToolTips>().IsHelmet = true;
-            Item.GetGlobalItem<ArmorSetBonusToolTips>().IsCosmicalusVisor = true;
         }
         public override void Load()
         {

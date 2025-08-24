@@ -2567,7 +2567,6 @@ Items: {
 			'''
 			Made to refine and compress your inner darkness into the ultimate void
 			Allows you to change the appearance of your void hearts, but nothing else
-			Fighters of The Calamity need not apply
 			Adding to favorites  changes your health
 			'''
 		DisplayName: Void Compressor
@@ -2577,7 +2576,6 @@ Items: {
 		DisplayName: Chaosporidic Heart
 		Tooltip:
 			'''
-			Fighters of The Calamity need not apply
 			Permanently increases maximum life by 10
 			Adding to favorites  changes your health
 			'''
@@ -2587,7 +2585,6 @@ Items: {
 		Tooltip:
 			'''
 			Condense your mana with raw lunar power
-			Fighters of The Calamity need not apply
 			Increases mana by 100
 			'''
 		DisplayName: Lunar Star
@@ -2643,6 +2640,407 @@ Items: {
 	Armageddon: {
 		DisplayName: Armageddon
 		Tooltip: Shoots out blades of destruction
+	}
+
+	DiscordantStaff: {
+		Tooltip:
+			'''
+			Control the discord
+			Shoots as fast as you can click
+			Oinites's developer weapon
+			'''
+		DisplayName: Discordant Staff
+	}
+
+	BugBasher: {
+		Tooltip:
+			'''
+			Crush the pests of Terraria
+			Data Crusader's developer weapon
+			'''
+		DisplayName: Bug Basher
+	}
+
+	Asterox: {
+		Tooltip:
+			'''
+			Grants immunity to knockback.
+			12 defense
+			Increased armor penetration and life regen
+			Creates a damaging shield around the player
+			20% increased movement speed
+			'''
+		DisplayName: Asterox
+	}
+
+	PurpleTearstoneRing: {
+		Tooltip:
+			'''
+			When under 15% life:
+			Damage is increased by 20%
+			Defence is increased by 50%
+			AmadisLFE's developer accessory
+			'''
+		DisplayName: Purple Tearstone Ring
+	}
+
+	Neovirtuo: {
+		Tooltip:
+			'''
+			Press Z to summon a portal at the cursor
+			Occasionally fires homing projectiles from the player
+			The lower your health the less damage you take
+			Mana increased by 100\nMagic damage increased by 15%
+			16% increased movement speed\nImmunity to most debuffs
+			Creates a swirling galaxy
+			12 defence
+			Asterox effects
+			Ranipla's developer item
+			'''
+		DisplayName: Neovirtuo
+	}
+
+	ViridiumGreatsword: {
+		Tooltip:
+			'''
+			The greatsword is constantly brimming with energy
+			Maybe it's because of the strange material it is made out of.
+			The blade seems to glow brighter whenever one is moving at high speed.
+			AmadisLFE's developer weapon
+			'''
+		DisplayName: Viridium Greatsword
+	}
+
+	TimeGun: {
+		Tooltip:
+			'''
+			Break laws, ascend reality
+			Shoots as fast as you can click
+			Genih Wat's developer weapon
+			'''
+		DisplayName: The Gun That Shot Time
+	}
+
+	TheEqualizer: {
+		Tooltip: ""
+		DisplayName: The Equalizer
+	}
+
+	AegidaTempestas: {
+		Tooltip:
+			'''
+			50% chance not to consume ammo
+			Aegida's donator item
+			'''
+		DisplayName: Aegida Tempestas
+	}
+
+	MechMask: {
+		Tooltip:
+			'''
+			19% increased ranged damage
+			9% increased ranged critical strike chance
+			An experimental helmet made by the scientists for its elite rangers
+			Aegida's donator item
+			'''
+		DisplayName: Mech Mask
+	}
+
+	MechLeggings: {
+		Tooltip:
+			'''
+			11% increased ranged damage
+			10% increased movement speed
+			An experimental piece of armour made by the scientists for its elite rangers
+			Aegida's donator item
+			'''
+		DisplayName: Mech Leggings
+	}
+
+	MechBreastplate: {
+		Tooltip:
+			'''
+			16% increased ranged damage
+			16% increased ranged critical strike chance
+			33% increased chance to not consume ammo
+			An experimental breastplate made by the scientists for its elite rangers
+			Aegida's donator item
+			'''
+		DisplayName: Mech Breastplate
+	}
+
+	SonicArm: {
+		Tooltip:
+			'''
+			Whips occasionally crack, releasing a sonic wave
+			The Buildmonger's donator item
+			'''
+		DisplayName: Sonic Arm
+	}
+
+	ForgedMask: {
+		Tooltip:
+			'''
+			12% increased melee damage
+			Melee attacks set enemies on fire
+			The Buildmonger's donator item
+			'''
+		DisplayName: Forged Mask
+	}
+
+	ForgedIronBar: {
+		Tooltip: ""
+		DisplayName: Forged Iron Bar
+	}
+
+	ForgedGreaves: {
+		Tooltip:
+			'''
+			6 increased armour penetration
+			The Buildmonger's donator item
+			'''
+		DisplayName: Forged Greaves
+	}
+
+	ForgedBreastplate: {
+		Tooltip:
+			'''
+			10% increased melee and movement speed
+			The Buildmonger's donator item
+			'''
+		DisplayName: Forged Breastplate
+	}
+
+	BioReactor: {
+		Tooltip:
+			'''
+			Uses jungle spores as ammunition
+			The Buildmonger's donator item
+			'''
+		DisplayName: Bio Reactor
+	}
+
+	PinkShoe: {
+		Tooltip:
+			'''
+			Summons a baby wyvern
+			Chamcham's donator item
+			'''
+		DisplayName: Pink Shoe
+	}
+
+	BohBait: {
+		Tooltip: Chamcham's donator item
+		DisplayName: Boh Bait
+	}
+
+	CrematedChaos: {
+		DisplayName: Cremated Chaos
+		Tooltip: Crow's donator item
+	}
+
+	CrowsGreathelm: {
+		DisplayName: Crow's Greathelm
+		Tooltip:
+			'''
+			The ultimate sorcerer armor
+			15% increased magic damage
+			Reduces mana usage by 20%
+			Crow's donator item
+			'''
+	}
+
+	CrowsGreatpants: {
+		DisplayName: Crow's Greatpants
+		Tooltip:
+			'''
+			The ultimate sorcerer armor
+			15% increased magic damage
+			15% increased movement speed
+			Crow's donator item
+			'''
+	}
+
+	CrowsGreatplate: {
+		DisplayName: Crow's Greatplate
+		Tooltip:
+			'''
+			The ultimate sorcerer armor
+			Damage taken reduced by 5%
+			15% increased magic critical strike chance
+			Mana increased by 30
+			Crow's donator item
+			'''
+	}
+
+	FeatheredGoggles: {
+		DisplayName: Feathered Goggles
+		Tooltip:
+			'''
+			Summons a ridable crow mount
+			Crow's donator item
+			'''
+	}
+
+	SWRL: {
+		DisplayName: S.W.R.L
+		Tooltip:
+			'''
+			Turns normal projectiles into S.W.Rs
+			50% chance not to consume ammo
+			Crow's donator item
+			'''
+	}
+
+	EoitesBlade: {
+		DisplayName: MurrAwAves
+		Tooltip:
+			'''
+			When in Doubt, go for speed - Weeb Streamer
+			Eoite's donator item
+			'''
+	}
+
+	EoitesWrath: {
+		Tooltip:
+			'''
+			Magenta beams strike your foes
+			Right Click to switch modes
+			Eoite's donator item
+			'''
+		DisplayName: Eoite's Wrath
+	}
+
+	EoitesWings: {
+		Tooltip:
+			'''
+			Allows flight and slow fall
+			Eoite's donator item
+			'''
+		DisplayName: Eoite's Wings
+	}
+
+	EoitesRobes: {
+		Tooltip:
+			'''
+			The robes of a weeb streamer
+			Damage taken reduced by 18%
+			5% increased magic damage
+			Eoite's donator item
+			'''
+		DisplayName: Eoite's Robes
+	}
+
+	EoitesPickaxe: {
+		Tooltip:
+			'''
+			Swing it like you mean it
+			Eoite's donator item
+			'''
+		DisplayName: Meaningful Weeb
+	}
+
+	EoitesLeggings: {
+		Tooltip:
+			'''
+			The leggings of a weeb streamer
+			5% increased magic damage
+			Eoite's donator item
+			'''
+		DisplayName: Eoite's Leggings
+	}
+
+	EoitesHood: {
+		Tooltip:
+			'''
+			The hood of a weeb streamer
+			10% increased magic damage
+			Eoite's donator item
+			'''
+		DisplayName: Eoite's Hood
+	}
+
+	SufferWithMe: {
+		Tooltip:
+			'''
+			You took a part of me, so I'll take a part of you
+			Grants immunity to Chaotic Necrosis
+			Attacks have a 25% to inflict Chaotic Necrosis
+			Increases armor penetration by 10
+			Lantard's donator item
+			'''
+		DisplayName: Suffer With Me
+	}
+
+	StrangeUkulele: {
+		Tooltip:
+			'''
+			"'And his music was electric'"
+			Upon striking an enemy, lightning may arc to nearby enemies dealing 50% of the weapons damage
+			Lantard's donator item
+			'''
+		DisplayName: Strange Ukulele
+	}
+
+	DarknersScarf: {
+		Tooltip:
+			'''
+			Whoever had this before you didn’t like fighting, but they did anything to help
+			Can also be worn as a vanity
+			Lantard's donator item
+			'''
+		DisplayName: Darkners Scarf
+	}
+
+	BreathOfTheStars: {
+		Tooltip:
+			'''
+			Fires 4 homing lunar stars
+			Lantard's donator item
+			'''
+		DisplayName: Breath of the Stars
+	}
+
+	TheBelt: {
+		DisplayName: The Belt
+		Tooltip:
+			'''
+			"That'll teach 'em"
+			Lantard's donator item
+			'''
+	}
+
+	AwokenWoodHelmet: {
+		Tooltip:
+			'''
+			10% increased damage
+			Increases maximum mana by 50
+			Something so simple has become so powerful... As have you
+			Lantard's donator item
+			'''
+		DisplayName: Awoken Wooden Helmet
+	}
+
+	AwokenWoodGreaves: {
+		Tooltip:
+			'''
+			6% increased damage
+			10% increased movement speed
+			Something so simple has become so powerful... As have you
+			Lantard's donator item
+			'''
+		DisplayName: Awoken Wooden Greaves
+	}
+
+	AwokenWoodBreastplate: {
+		Tooltip:
+			'''
+			12% increased damage
+			Increases your max number of minions by 2
+			Something so simple has become so powerful... As have you
+			Lantard's donator item
+			'''
+		DisplayName: Awoken Wooden Breastplate
 	}
 }
 
@@ -3153,6 +3551,21 @@ Buffs: {
 	Energized: {
 		Description: 50% increased movement speed\nLife regen increased by 5
 		DisplayName: Energized
+	}
+
+	WyvernPetBuff: {
+		Description: It playfully whizzes around you
+		DisplayName: Wyvern
+	}
+
+	ChamchamRatBuff: {
+		Description: ""
+		DisplayName: Chamcham Rat
+	}
+
+	CrowBuff: {
+		DisplayName: Crow
+		Description: Gracefully soar through the skies
 	}
 }
 
@@ -3965,6 +4378,33 @@ Projectiles: {
 	AeroflakExplosion.DisplayName: Explosion
 	AeroflakP.DisplayName: Star
 	ArmageddonBlade.DisplayName: Armageddon
+	DiscordantToxin.DisplayName: Discord Toxin
+	DiscordantBolt.DisplayName: Discordant Bolt
+	BugToxin.DisplayName: BugToxin
+	BugBasherP.DisplayName: Mjolnir
+	NeovirtuoShieldSwirl2.DisplayName: Neovirtuo
+	NeovirtuoShieldSwirl.DisplayName: Neovirtuo
+	NeovirtuoShieldBase.DisplayName: Neovirtuo
+	ViridiumLightningPassive.DisplayName: Lightning
+	ViridiumLightning.DisplayName: Viridium Lightning
+	ViridiumExplosion.DisplayName: Explosion
+	TimeRocket.DisplayName: Time Rocket
+	TimecleaverRound.DisplayName: Timecleaver Round
+	BioLightning.DisplayName: Bio Lightning
+	ChamchamRat.DisplayName: Chamcham Rat
+	WyvernBody.DisplayName: Worm
+	WyvernHead.DisplayName: Worm
+	WyvernTail.DisplayName: Worm
+	PoisonFire.DisplayName: Cremated Chaos
+	SWRLRocket.DisplayName: Rocket
+	EoiteWave.DisplayName: EoiteWave
+	EoiteBlast.DisplayName: Eoite Blast
+	EoiteBeam2.DisplayName: Eoite Beam
+	EoiteBeam.DisplayName: Eoite Beam
+	DarknersScarfP.DisplayName: Darkners Scarf
+	StarLunarFragment.DisplayName: Wyvern Breath
+	StarLunar.DisplayName: Star
+	TheBeltP.DisplayName: Darkners Scarf
 }
 
 Configs: {
@@ -4182,6 +4622,8 @@ Tooltips: {
 	AncientsSummon8: Lunatic.
 	AncientsSummon9: I just don't think you are cut out to do this... Go find some other hobby.
 	AncientsSummon10: You bring me back to this awful land... Why?
+	EoitesWrath: Beams
+	EoitesWrath1: Blasts
 }
 
 AccInfo: {
@@ -4227,6 +4669,35 @@ SetBonus: {
 		The psychosis aura confuses enemies and inflicts extinction curse
 		'''
 	EnergyWeaversHelm: You charge up energy and release it at nearby enemies
+	MechSetBonus:
+		'''
+		10% increased damage
+		35% increased movement speed
+		17% increased chance not to consume ammo
+		When you get hit, you release electrical arcs
+		'''
+	ForgedSetBonus:
+		'''
+		Double tap down to shackle yourself in place
+		Tap down again to fling yourself back to the center
+		'''
+	CrowsSetBonus:
+		'''
+		When an enemy is hit, green lightning strikes down from above them
+		The lightning heals the player
+		'''
+	EoitesSetBonus:
+		'''
+		15% increased magic damage
+		Damage reduced by a further 10%
+		'''
+	AwokenWoodBonus:
+		'''
+		Greatly increases life regeneration after being hit
+		Shoots leaves at nearby enemies
+		Enemies are less likely to target you
+		Double tap down to activate 'Life's Aura' which heals your team mates and friendly NPCs when inside
+		'''
 }
 
 Said: {
