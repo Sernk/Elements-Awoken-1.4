@@ -72,7 +72,9 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
                 }
                 if (eaRarity.betatest)
                 {
-                    tooltips.Add(new TooltipLine(Mod, "Elements Awoken:AwakenedTip", EALocalization.Betatest) { OverrideColor = new Color?(new Color(220, 50, Main.DiscoB)) });
+                    TooltipLine tip = new TooltipLine(Mod, "Elements Awoken:Tooltip", EALocalization.Betatest);
+                    tip.OverrideColor = new Color?(new Color(220, 50, Main.DiscoB));
+                    tooltips.Insert(1, tip);
                 }
             }
             if (ModContent.GetInstance<Config>().debugMode)

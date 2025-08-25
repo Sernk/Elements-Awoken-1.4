@@ -2683,404 +2683,681 @@ Items: {
 	}
 
 	DiscordantStaff: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Control the discord
-			Shoots as fast as you can click
-			Oinites's developer weapon
-			''' */
-		// DisplayName: Discordant Staff
+			Контролируй сам раздор
+			Стреляет настолько быстро, насколько ты можешь дрочить кнопку
+			Предмет разработчика Oinites
+			'''
+		DisplayName: Посох диссонанса
 	}
 
 	BugBasher: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Crush the pests of Terraria
-			Data Crusader's developer weapon
-			''' */
-		// DisplayName: Bug Basher
+			Сокруши всех паразитов Террарии!
+			Предмет разработчика Data Crusader
+			'''
+		DisplayName: Разжучиватель
 	}
 
 	Asterox: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Grants immunity to knockback.
-			12 defense
-			Increased armor penetration and life regen
-			Creates a damaging shield around the player
-			20% increased movement speed
-			''' */
-		// DisplayName: Asterox
+			Даёт неуязвимость к отбрасыванию
+			Даёт 12 защиты
+			Усиляет пробивание брони и регенерацию жизни
+			Создаёт вокруг игрока щит, наносящий урон врагам, касающимся его
+			Увеличивает скорость передвижения на 20%
+			'''
+		DisplayName: Астерокс
 	}
 
 	PurpleTearstoneRing: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			When under 15% life:
-			Damage is increased by 20%
-			Defence is increased by 50%
-			AmadisLFE's developer accessory
-			''' */
-		// DisplayName: Purple Tearstone Ring
+			Когда у тебя остаётся меньше 15% от максимального здоровья, ты получаешь:
+			увеличение всего урона на 20%
+			увеличение защиты на 50%.
+			Аксессуар разработчика AmadisLFE
+			'''
+		DisplayName: Кольцо с фиолетовым слезокамнем
 	}
 
 	Neovirtuo: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Press Z to summon a portal at the cursor
-			Occasionally fires homing projectiles from the player
-			The lower your health the less damage you take
-			Mana increased by 100\nMagic damage increased by 15%
-			16% increased movement speed\nImmunity to most debuffs
-			Creates a swirling galaxy
-			12 defence
-			Asterox effects
-			Ranipla's developer item
-			''' */
-		// DisplayName: Neovirtuo
+			Нажми Z, чтобы создать портал на позиции курсора
+			Время от времени игрок выпускает самонаводящиеся снаряды
+			Чем меньше у тебя остаётся здоровья, тем меньше урона ты получаешь
+			Увеличивает максимальную ману на 100 и магический урон на 15%
+			Увеличивает скорость передвижения на 16% и даёт неуязвимость к большинству дебаффов
+			Создаёт вращающуюся галактику
+			Даёт 12 защиты
+			Дополнительно даёт все эффекты Астерокса
+			Аксессуар разработчика Ranipla
+			'''
+		DisplayName: Неовиртуо
 	}
 
 	ViridiumGreatsword: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The greatsword is constantly brimming with energy
-			Maybe it's because of the strange material it is made out of.
-			The blade seems to glow brighter whenever one is moving at high speed.
-			AmadisLFE's developer weapon
-			''' */
-		// DisplayName: Viridium Greatsword
+			Этот меч переполнен энергией...
+			Наверное это из-за странного материала, из которого он изготовлен.
+			Клинок, кажется, начинает сиять ярче, чем быстрее движется его владелец.
+			Оружие разработчика AmadisLFE's
+			'''
+		DisplayName: Виридиевый великомеч
 	}
 
 	TimeGun: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Break laws, ascend reality
-			Shoots as fast as you can click
-			Genih Wat's developer weapon
-			''' */
-		// DisplayName: The Gun That Shot Time
+			Ломай законы, выйди за пределы реальности.
+			Стреляет настолько быстро, насколько ты можешь нажимать кнопку
+			Оружие разработчика Genih Wat
+			'''
+		DisplayName: Пушка, застрелившая время
 	}
 
 	TheEqualizer: {
-		// Tooltip: ""
-		// DisplayName: The Equalizer
+		Tooltip: долбит нормально
+		DisplayName: Эквалайзер
 	}
 
 	AegidaTempestas: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			50% chance not to consume ammo
-			Aegida's donator item
-			''' */
-		// DisplayName: Aegida Tempestas
+			Имеет 50% шанс не потратить аммуницию при выстреле
+			Предмет донатера Aegida
+			'''
+		DisplayName: Эгидобуря
 	}
 
 	MechMask: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			19% increased ranged damage
-			9% increased ranged critical strike chance
-			An experimental helmet made by the scientists for its elite rangers
-			Aegida's donator item
-			''' */
-		// DisplayName: Mech Mask
+			Увеличивает стрелковый урон на 19%
+			Увеличивает шанс стрелкового критического удара на 9%
+			Экспериментальный шлем, созданный группой учёных для отряда элитных стрелков
+			Предмет донатера Aegida
+			'''
+		DisplayName: Меха-маска
 	}
 
 	MechLeggings: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			11% increased ranged damage
-			10% increased movement speed
-			An experimental piece of armour made by the scientists for its elite rangers
-			Aegida's donator item
-			''' */
-		// DisplayName: Mech Leggings
+			Увеличивает стрелковый урон на 11%
+			Увеличивает скорость передвижения на 10%
+			Эксперементальная часть доспеха, созданная группой учёных для отряда элитных стрелков
+			Предмет донатера Aegida
+			'''
+		DisplayName: Меха-поножи
 	}
 
 	MechBreastplate: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			16% increased ranged damage
-			16% increased ranged critical strike chance
-			33% increased chance to not consume ammo
-			An experimental breastplate made by the scientists for its elite rangers
-			Aegida's donator item
-			''' */
-		// DisplayName: Mech Breastplate
+			Увеличивает стрелковый урон на 16%
+			Увеличивает шанс стрелкового критического удара на 16%
+			Увеличивает шанс не потратить аммуницию при выстреле на 33%
+			Эксперементальный нагрудник, созданный группой учёных для отряда элитных стрелков
+			Предмет донатера Aegida
+			'''
+		DisplayName: Меха-нагрудник
 	}
 
 	SonicArm: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Whips occasionally crack, releasing a sonic wave
-			The Buildmonger's donator item
-			''' */
-		// DisplayName: Sonic Arm
+			Хлысты иногда совершают дополнительный удар, выпуская звуковую волну
+			Предмет донатера Buildmonger
+			'''
+		DisplayName: Звукодлань
 	}
 
 	ForgedMask: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			12% increased melee damage
-			Melee attacks set enemies on fire
-			The Buildmonger's donator item
-			''' */
-		// DisplayName: Forged Mask
+			Увеличивает ближний урон на 12%
+			Все атаки ближних оружий накладывают на врагов дебафф "В огне!"
+			Предмет донатера Buildmonger
+			'''
+		DisplayName: Кованая маска
 	}
 
 	ForgedIronBar: {
-		// Tooltip: ""
-		// DisplayName: Forged Iron Bar
+		Tooltip: очень осмысленное название
+		DisplayName: Слиток кованого железа
 	}
 
 	ForgedGreaves: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			6 increased armour penetration
-			The Buildmonger's donator item
-			''' */
-		// DisplayName: Forged Greaves
+			Увеличивает пробивание брони на 6
+			Предмет донатера Buildmonger
+			'''
+		DisplayName: Кованые башмаки
 	}
 
 	ForgedBreastplate: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased melee and movement speed
-			The Buildmonger's donator item
-			''' */
-		// DisplayName: Forged Breastplate
+			Увеличивает ближний урон и скорость передвижения на 10%
+			Предмет донатера Buildmonger
+			'''
+		DisplayName: Кованый нагрудник
 	}
 
 	BioReactor: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Uses jungle spores as ammunition
-			The Buildmonger's donator item
-			''' */
-		// DisplayName: Bio Reactor
+			Использует джунглевые споры вместо патронов
+			Предмет донатера Buildmonger
+			'''
+		DisplayName: Биореактор
 	}
 
 	PinkShoe: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Summons a baby wyvern
-			Chamcham's donator item
-			''' */
-		// DisplayName: Pink Shoe
+			Призывает вивернёнка
+			Предмет донатера Chamcham
+			'''
+		DisplayName: Розовый ботинок
 	}
 
 	BohBait: {
-		// Tooltip: Chamcham's donator item
-		// DisplayName: Boh Bait
+		Tooltip: Предмет донатера Chamcham
+		DisplayName: Наживка на Боха
 	}
 
 	CrematedChaos: {
-		// DisplayName: Cremated Chaos
-		// Tooltip: Crow's donator item
+		DisplayName: Кремированный хаос
+		Tooltip: Предмет донатера Crow
 	}
 
 	CrowsGreathelm: {
-		// DisplayName: Crow's Greathelm
-		/* Tooltip:
+		DisplayName: Вороной великошлем
+		Tooltip:
 			'''
-			The ultimate sorcerer armor
-			15% increased magic damage
-			Reduces mana usage by 20%
-			Crow's donator item
-			''' */
+			Броня высшего мага
+			Увеличивает магический урон на 15%
+			Уменьшает использование маны предметами на 20%
+			Предмет донатера Crow
+			'''
 	}
 
 	CrowsGreatpants: {
-		// DisplayName: Crow's Greatpants
-		/* Tooltip:
+		DisplayName: Вороные великошаровары
+		Tooltip:
 			'''
-			The ultimate sorcerer armor
-			15% increased magic damage
-			15% increased movement speed
-			Crow's donator item
-			''' */
+			Броня высшего мага
+			Увеличивает магический урон на 15%
+			Увеличивает скорость передвижения на 15%
+			Предмет донатера Crow
+			'''
 	}
 
 	CrowsGreatplate: {
-		// DisplayName: Crow's Greatplate
-		/* Tooltip:
+		DisplayName: Вороной великогрудник
+		Tooltip:
 			'''
-			The ultimate sorcerer armor
-			Damage taken reduced by 5%
-			15% increased magic critical strike chance
-			Mana increased by 30
-			Crow's donator item
-			''' */
+			Броня высшего мага
+			Уменьшает получаемый урон на 5%
+			Увеличивает шанс магического критического удара на 15%
+			Увеличивает максимальную ману на 30 (это прикол что-ли какой-то?)
+			Предмет донатера Crow
+			'''
 	}
 
 	FeatheredGoggles: {
-		// DisplayName: Feathered Goggles
-		/* Tooltip:
+		DisplayName: Оперённые очки
+		Tooltip:
 			'''
-			Summons a ridable crow mount
-			Crow's donator item
-			''' */
+			Призывает ездового ворона
+			Предмет донатера Crow
+			'''
 	}
 
 	SWRL: {
-		// DisplayName: S.W.R.L
-		/* Tooltip:
+		DisplayName: Р.М.К.К
+		Tooltip:
 			'''
-			Turns normal projectiles into S.W.Rs
-			50% chance not to consume ammo
-			Crow's donator item
-			''' */
+			Превращает обычные ракеты в космические киторакеты
+			Имеет 50% шанс не потратить ракету при выстреле
+			Предмет донатера Crow
+			'''
 	}
 
 	EoitesBlade: {
-		// DisplayName: MurrAwAves
-		/* Tooltip:
+		DisplayName: Мурроволны
+		Tooltip:
 			'''
-			When in Doubt, go for speed - Weeb Streamer
-			Eoite's donator item
-			''' */
+			Если сомневаешься в чём-то, гонись за скоростью - стример-анимешник (чё он несёт сука?)
+			Предмет донатера Eoite
+			'''
 	}
 
 	EoitesWrath: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Magenta beams strike your foes
-			Right Click to switch modes
-			Eoite's donator item
-			''' */
-		// DisplayName: Eoite's Wrath
+			Сражай врагов своих пурпурными лучами
+			<right>, чтобы переключить режим стрельбы
+			Прердмет донатера Eoite
+			'''
+		DisplayName: Ярость Eoite
 	}
 
 	EoitesWings: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Allows flight and slow fall
-			Eoite's donator item
-			''' */
-		// DisplayName: Eoite's Wings
+			Позволяет летать и замедлять падение
+			Предмет донатера Eoite
+			'''
+		DisplayName: Крылья Eoite
 	}
 
 	EoitesRobes: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The robes of a weeb streamer
-			Damage taken reduced by 18%
-			5% increased magic damage
-			Eoite's donator item
-			''' */
-		// DisplayName: Eoite's Robes
+			Халат стримера-анимешника
+			Уменьшает получаемый урон на 18%
+			Увеличивает магический урон на 5%
+			Предмет донатера Eoite
+			'''
+		DisplayName: Халат Eoite
 	}
 
 	EoitesPickaxe: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Swing it like you mean it
-			Eoite's donator item
-			''' */
-		// DisplayName: Meaningful Weeb
+			Махай, как вздумается
+			Предмет донатера Eoite
+			'''
+		DisplayName: Многозначительный анимешник (чё)
 	}
 
 	EoitesLeggings: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The leggings of a weeb streamer
-			5% increased magic damage
-			Eoite's donator item
-			''' */
-		// DisplayName: Eoite's Leggings
+			Штаны стримера-анимешника
+			Увеличивает магический урон на 5%
+			Предмет донатера Eoite
+			'''
+		DisplayName: Штаны Eoite
 	}
 
 	EoitesHood: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The hood of a weeb streamer
-			10% increased magic damage
-			Eoite's donator item
-			''' */
-		// DisplayName: Eoite's Hood
+			Капюшон стримера-анимешника
+			Увеличивает магический урон на 10%
+			Предмет донатера Eoite
+			'''
+		DisplayName: Капюшон Eoite
 	}
 
 	SufferWithMe: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			You took a part of me, so I'll take a part of you
-			Grants immunity to Chaotic Necrosis
-			Attacks have a 25% to inflict Chaotic Necrosis
-			Increases armor penetration by 10
-			Lantard's donator item
-			''' */
-		// DisplayName: Suffer With Me
+			Ты взял частичку меня, а я заберу частичку тебя
+			Даёт неуязвимость к дебаффу "Хаотический некроз"
+			Все атаки имеют 25% шанс наложить на врага дебафф "Хаотический некроз"
+			Увеличивает пробивание брони на 10
+			Предмет донатера Lantard
+			'''
+		DisplayName: Страдай со мной
 	}
 
 	StrangeUkulele: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			"'And his music was electric'"
-			Upon striking an enemy, lightning may arc to nearby enemies dealing 50% of the weapons damage
-			Lantard's donator item
-			''' */
-		// DisplayName: Strange Ukulele
+			"'Его музыку бы оценили электрики.'"
+			При ударе по врагу есть небольшой шанс, что появится скачущая молния, наносящая 50% от урона оружия
+			Предмет донатера Lantard
+			'''
+		DisplayName: Странное укулеле
 	}
 
 	DarknersScarf: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Whoever had this before you didn’t like fighting, but they did anything to help
-			Can also be worn as a vanity
-			Lantard's donator item
-			''' */
-		// DisplayName: Darkners Scarf
+			Тот, кто его носил до этого, хоть и явно не любил драться, но всё равно пытался помочь всеми силами
+			Шарф также можно носить в качестве украшения
+			Предмет донатера Lantard
+			'''
+		DisplayName: Шарф темняка
 	}
 
 	BreathOfTheStars: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Fires 4 homing lunar stars
-			Lantard's donator item
-			''' */
-		// DisplayName: Breath of the Stars
+			Стреляет четырьмя самонаводящимися звёздами
+			Предмет донатера Lantard
+			'''
+		DisplayName: Звездыханье
 	}
 
 	TheBelt: {
-		// DisplayName: The Belt
-		/* Tooltip:
+		DisplayName: Тот самый ремень
+		Tooltip:
 			'''
-			"That'll teach 'em"
-			Lantard's donator item
-			''' */
+			"'Покажи им, кто здесь батя.'"
+			Предмет донатера Lantard
+			'''
 	}
 
 	AwokenWoodHelmet: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased damage
-			Increases maximum mana by 50
-			Something so simple has become so powerful... As have you
-			Lantard's donator item
-			''' */
-		// DisplayName: Awoken Wooden Helmet
+			Увеличивает весь урон на 10%
+			Увеличивает максимальную ману на 50
+			Удивительно, как что-то настолько примитивное стало настолько могучим... Прям как ты.
+			Предмет донатера Lantard
+			'''
+		DisplayName: Пробуждённый деревянный шлем
 	}
 
 	AwokenWoodGreaves: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			6% increased damage
-			10% increased movement speed
-			Something so simple has become so powerful... As have you
-			Lantard's donator item
-			''' */
-		// DisplayName: Awoken Wooden Greaves
+			Увеличивает весь урон на 6%
+			Увеличивает скорость передвижения на 10%
+			Удивительно, как что-то настолько примитивное стало настолько могучим... Прям как ты.
+			Предмет донатера Lantard
+			'''
+		DisplayName: Пробуждённые деревянные поножи
 	}
 
 	AwokenWoodBreastplate: {
+		Tooltip:
+			'''
+			Увеличивает весь урон на 12%
+			Увеличивает количество миньон-слотов на 2
+			Удивительно, как что-то настолько примитивное стало настолько могучим... Прям как ты.
+			Предмет донатера Lantard
+			'''
+		DisplayName: Пробуждённый деревянный нагрудник
+	}
+
+	CoalescedOrbStaff: {
+		DisplayName: Посох сплавосферы
+		Tooltip:
+			'''
+			Призывает сплавосферу на твою защиту
+			Каждая такая сфера занимает 3 миньон-слота
+			Предмет донатера Superbaseball101
+			'''
+	}
+
+	FireDemonsBreastplate: {
+		DisplayName: Нагрудник Огнедемона
+		Tooltip:
+			'''
+			Увеличивает призывательский урон на 10%
+			Броня донатера Superbaseball101
+			'''
+	}
+
+	FireDemonsHelm: {
+		DisplayName: Шлем Огнедемона
+		Tooltip:
+			'''
+			Увеличивает призывательский урон и отбрасывание от миньонов на 5%
+			Броня донатера Superbaseball101
+			'''
+	}
+
+	FireDemonsLeggings: {
+		DisplayName: Поножи Огнедемона
+		Tooltip:
+			'''
+			Увеличивает количество миньон-слотов на 1
+			Броня донатера Superbaseball101
+			'''
+	}
+
+	HeartContainer: {
+		DisplayName: Ящик с сердцем
+		Tooltip:
+			'''
+			Увеличивает количество миньон-слотов на 1
+			Ближние атаки миньонов имеют маленький шанс восполнить здоровье игрока
+			Предмет донатера Superbaseball101
+			'''
+	}
+
+	AncientIchorFlagon: {
+		DisplayName: Бутыль с древним ихором
+		Tooltip: Предмет донатера Yukki-Kun
+	}
+
+	GelticArrow: {
+		DisplayName: Склизкая стрела
+		Tooltip:
+			'''
+			Имеет шанс наложить на врага дебаффы "Отравление" и "Замедление" при попадании
+			Предмет донатера Yukki-Kun
+			'''
+	}
+
+	GelticConquerorBreastplate: {
+		DisplayName: Нагрудник склизкого захватчика
+		Tooltip: Броня донатера Yukki-Kun
+	}
+
+	GelticConquerorHelmet: {
+		DisplayName: Шлем склизкого захватчика
+		Tooltip: Броня донатера Yukki-Kun
+	}
+
+	GelticConquerorLeggings: {
+		DisplayName: Поножи склизкого захватчика
+		Tooltip: Броня донатера Yukki-Kun
+	}
+
+	TheSpeedyStar: {
+		DisplayName: Скорая звезда
+		Tooltip:
+			'''
+			Попадание по всем выпущенным звёздам восстановит всю ману, израсходованную при выстреле
+			Предмет донатера Yukki-Kun
+			'''
+	}
+
+	AridBreastplate: {
+		DisplayName: Песчаный нагрудник
+		Tooltip:
+			'''
+			Увеличивает весь шанс критического удара на 3%
+			Увеличивает количество кадров неуязвимости после получения урона
+			'''
+	}
+
+	AridFalconHelm: {
+		DisplayName: Шлем сокола пустыни
+		Tooltip:
+			'''
+			Увеличивает стрелковый урон на 4%
+			Увеличивает стрелковый шанс критического удара на 3%
+			Даёт 8% шанс не потратить аммуницию при стрельбе
+			'''
+	}
+
+	AridHat: {
+		DisplayName: Песчаная шляпа
+		Tooltip:
+			'''
+			Увеличивает магический урон на 4%
+			Увеличивает магический шанс критического удара на 3%
+			Увеличивает максимальную ману на 40
+			'''
+	}
+
+	AridHeadgear: {
+		DisplayName: Песчаный головной убор
+		Tooltip:
+			'''
+			Увеличивает призывательский урон на 4%
+			Увеличивает отбрасывание от атак миньонов на 5%
+			Увеличивает количество миньон-слотов на 1
+			'''
+	}
+
+	AridHood: {
+		DisplayName: Песчаный капюшон
+		Tooltip:
+			'''
+			Увеличивает метательный урон на 4%
+			Увеличивает метательный шанс критического удара на 3%
+			Увеличивает скорость полёта метательных оружий на 15%
+			'''
+	}
+
+	AridLeggings: {
+		DisplayName: Песчаные поножи
+		Tooltip:
+			'''
+			Увеличивает скорость передвижения на 10%
+			Увеличивает скорость копания на 5%
+			'''
+	}
+
+	SandSprayer: {
 		/* Tooltip:
 			'''
-			12% increased damage
-			Increases your max number of minions by 2
-			Something so simple has become so powerful... As have you
-			Lantard's donator item
+			Sprays coarse sand at your enemies... Useful
+			20% chance to not consume ammo
 			''' */
-		// DisplayName: Awoken Wooden Breastplate
+		// DisplayName: Sand Sprayer
+	}
+
+	Sandshot: {
+		// Tooltip: ""
+		// DisplayName: Sandshot
+	}
+
+	Sandball: {
+		// Tooltip: I don't like sand. It's coarse and rough and irritating and it gets everywhere
+		// DisplayName: Sandball
+	}
+
+	DesertShield: {
+		/* Tooltip:
+			'''
+			Allows the player to perform a dash
+			Dashing throws a sand tornado the way you dashed
+			''' */
+		// DisplayName: Shield of The Desert
+	}
+
+	DesertNeck: {
+		/* Tooltip:
+			'''
+			Harness the power of the desert winds
+			25% increased movement and melee speed
+			''' */
+		// DisplayName: Badge of the Desert
+	}
+
+	DesertGun: {
+		// Tooltip: ""
+		// DisplayName: Desert Eagle
+	}
+
+	AridWarriorMask: {
+		/* Tooltip:
+			'''
+			4% increased melee damage
+			3% increased melee critical strike chance
+			10% increased melee speed
+			''' */
+		// DisplayName: Arid Warrior Mask
+	}
+
+	SandstormStone: {
+		// DisplayName: Sandstorm Stone
+		/* Tooltip:
+			'''
+			Toggles the sandstorm
+			Only usable inside of the desert
+			''' */
+	}
+
+	SandstormTome: {
+		// DisplayName: Sandstorm Tome
+		// Tooltip: Summons sand to rain down from the sky
+	}
+
+	SandySpear: {
+		// DisplayName: Sandy Spear
+		// Tooltip: ""
+	}
+
+	SolitaryStorm: {
+		// DisplayName: Solitary Storm
+		// Tooltip: Shoots a sand tornado at your enemies
+	}
+
+	StaffOfTheSandstorm: {
+		// DisplayName: Staff of the Sandstorm
+		// Tooltip: Summons a mini sandstorm to fight for you
+	}
+
+	TheGrit: {
+		// DisplayName: The Grit
+		// Tooltip: ""
+	}
+
+	TheVulture: {
+		// DisplayName: The Vulture
+		// Tooltip: The Vulture
+	}
+
+	Andromeda: {
+		// DisplayName: Andromeda
+		// Tooltip: ""
+	}
+
+	Cerulean: {
+		// DisplayName: Cerulean
+		/* Tooltip:
+			'''
+			Increases critical strike chance by 5%
+			The lower your health the less damage you take
+			5 defense
+			Mana increased by 100
+			Magic damage increased by 15%
+			16% increased movement speed
+			Immunity to most debuffs
+			While under half health:
+			Reduces mana cost greatly
+			Reduces damage taken
+			Damage increased by 10%
+			''' */
+	}
+
+	Cosmicus: {
+		// DisplayName: Cosmicus
+		// Tooltip: ""
+	}
+
+	Dusksong: {
+		// DisplayName: Dusksong
+		// Tooltip: ""
+	}
+
+	ElementalBurst: {
+		// DisplayName: Elemental Burst
+		// Tooltip: ""
+	}
+
+	Equinox: {
+		// DisplayName: Equinox
+		// Tooltip: ""
 	}
 }
 
@@ -3147,7 +3424,7 @@ Buffs: {
 
 	ChaosShield: {
 		DisplayName: Щит хаоса
-		Description: прикольно, наверное...
+		Description: ебануться блять
 	}
 
 	BoostDriveCD: {
@@ -3243,7 +3520,7 @@ Buffs: {
 		DisplayName: Гнев Инфернейса
 		Description:
 			'''
-			Метеориты падают с небес
+			Метеориты падают с небес, аки град
 			Приближаясь к Аду, стражники Инфернейса могут появиться и атаковать игрока
 			Победи Инфернейса, чтобы убрать эти эффекты
 			Или отключи их в конфиге мода
@@ -3263,7 +3540,7 @@ Buffs: {
 	}
 
 	StormSurge: {
-		DisplayName: Штормовой всплеск
+		DisplayName: Штормовсплеск
 		Description:
 			'''
 			Водонадо могут спонтанно появиться из-под земли
@@ -3594,18 +3871,28 @@ Buffs: {
 	}
 
 	WyvernPetBuff: {
-		// Description: It playfully whizzes around you
-		// DisplayName: Wyvern
+		Description: Он весело резвится рядом с тобой
+		DisplayName: Вивернёнок
 	}
 
 	ChamchamRatBuff: {
-		// Description: ""
-		// DisplayName: Chamcham Rat
+		Description: знать бы ещё чё это за шиза
+		DisplayName: Крыса Chamcham
 	}
 
 	CrowBuff: {
-		// DisplayName: Crow
-		// Description: Gracefully soar through the skies
+		DisplayName: Ворон
+		Description: Борозди небеса с птичьей грацией
+	}
+
+	CoalescedOrbBuff: {
+		DisplayName: Сплавосфера
+		Description: Материя, сплавленная в один бдящий глаз
+	}
+
+	MiniSandstormBuff: {
+		// DisplayName: Miniature Sandstorm
+		// Description: This strange entity will protect you
 	}
 }
 
@@ -4418,33 +4705,56 @@ Projectiles: {
 	AeroflakExplosion.DisplayName: Взрыв воздухартиллерии
 	AeroflakP.DisplayName: Проджектайл воздухартиллерии
 	ArmageddonBlade.DisplayName: Клинок Армагеддона
-	// DiscordantToxin.DisplayName: Discord Toxin
-	// DiscordantBolt.DisplayName: Discordant Bolt
-	// BugToxin.DisplayName: BugToxin
-	// BugBasherP.DisplayName: Mjolnir
-	// NeovirtuoShieldSwirl2.DisplayName: Neovirtuo
-	// NeovirtuoShieldSwirl.DisplayName: Neovirtuo
-	// NeovirtuoShieldBase.DisplayName: Neovirtuo
-	// ViridiumLightningPassive.DisplayName: Lightning
-	// ViridiumLightning.DisplayName: Viridium Lightning
-	// ViridiumExplosion.DisplayName: Explosion
-	// TimeRocket.DisplayName: Time Rocket
-	// TimecleaverRound.DisplayName: Timecleaver Round
-	// BioLightning.DisplayName: Bio Lightning
-	// ChamchamRat.DisplayName: Chamcham Rat
-	// WyvernBody.DisplayName: Worm
-	// WyvernHead.DisplayName: Worm
-	// WyvernTail.DisplayName: Worm
-	// PoisonFire.DisplayName: Cremated Chaos
-	// SWRLRocket.DisplayName: Rocket
-	// EoiteWave.DisplayName: EoiteWave
-	// EoiteBlast.DisplayName: Eoite Blast
-	// EoiteBeam2.DisplayName: Eoite Beam
-	// EoiteBeam.DisplayName: Eoite Beam
-	// DarknersScarfP.DisplayName: Darkners Scarf
-	// StarLunarFragment.DisplayName: Wyvern Breath
-	// StarLunar.DisplayName: Star
-	// TheBeltP.DisplayName: Darkners Scarf
+	DiscordantToxin.DisplayName: Дискордовский токсин
+	DiscordantBolt.DisplayName: Дискордовский выстрел
+	BugToxin.DisplayName: Жукотоксин
+	BugBasherP.DisplayName: Проджектайл жукобийцы
+	NeovirtuoShieldSwirl2.DisplayName: Вихрь щита Неовиртуо2
+	NeovirtuoShieldSwirl.DisplayName: Вихрь щита Неовиртуо
+	NeovirtuoShieldBase.DisplayName: Основа щита Неовиртуо
+	ViridiumLightningPassive.DisplayName: Пассивная виридиумовая молния
+	ViridiumLightning.DisplayName: Виридиумовая молния
+	ViridiumExplosion.DisplayName: Виридиумовый взрыв
+	TimeRocket.DisplayName: Времеракета
+	TimecleaverRound.DisplayName: Патрон времекола
+	BioLightning.DisplayName: Биомолния
+	ChamchamRat.DisplayName: Крыса Chamcham
+	WyvernBody.DisplayName: Тело вивернёнка
+	WyvernHead.DisplayName: Башка вивернёнка
+	WyvernTail.DisplayName: Хвост вивернёнка
+	PoisonFire.DisplayName: Отравогонь
+	SWRLRocket.DisplayName: РМККета
+	EoiteWave.DisplayName: Волна Eiote
+	EoiteBlast.DisplayName: Взрыв Eiote
+	EoiteBeam2.DisplayName: Луч2 Eiote
+	EoiteBeam.DisplayName: Луч Eiote
+	DarknersScarfP.DisplayName: Проджектайл шарфа темняка
+	StarLunarFragment.DisplayName: Звездолунный фрагмент
+	StarLunar.DisplayName: Звездолуна
+	TheBeltP.DisplayName: Батин ремень
+	CoalescedBolt.DisplayName: Сплавленный выстрел
+	CoalescedOrb.DisplayName: Сплавосфера
+	GelticArrow.DisplayName: Склизкая стрела
+	Speedstar.DisplayName: Спидозвезда
+	AncientIchorFlagonP.DisplayName: Проджектайл банки с древней ссаниной
+	// Sandball.DisplayName: Sandball
+	// Shieldnado.DisplayName: Shieldnado
+	// SandSpray.DisplayName: Sand Spray
+	// Skysand.DisplayName: Skysand
+	// Sandnado.DisplayName: Sandnado
+	// SandySpearP.DisplayName: Sandy Spear
+	// MiniatureSandstorm.DisplayName: Miniature Sandstorm
+	// TheGritP.DisplayName: The Grit
+	// AndromedaBase.DisplayName: AAndromeda
+	// AndromedaBlast.DisplayName: Andromeda
+	// AndromedaStar.DisplayName: Ancient Star
+	// AndromedaSwirl.DisplayName: Andromeda
+	// ElementalArrow.DisplayName: Elemental Arrow
+	// ElementalBolt.DisplayName: Elemental Bolt
+	// CosmicusP.DisplayName: Cosmicus P
+	// ElementalBurst.DisplayName: Elemental Burst
+	// EquinoxBase.DisplayName: Equinox Base
+	// EquinoxSwirl.DisplayName: Equinox Swirl
 }
 
 Configs: {
@@ -4663,8 +4973,10 @@ Tooltips: {
 	AncientsSummon8: Да у тебя, браток, не все дома, я смотрю.
 	AncientsSummon9: По-моему, тебе это не по зубам, малой. Иди лучше в роблокс играй, или типа того.
 	AncientsSummon10: Ты вернул меня в эти поганые земли... Нахрена?
-	// EoitesWrath: Beams
-	// EoitesWrath1: Blasts
+	EoitesWrath: Лучи
+	EoitesWrath1: Взрывы
+	// SandstormStone: The sand storm settles...
+	// SandstormStone1: The desert winds pick up!
 }
 
 AccInfo: {
@@ -4710,35 +5022,44 @@ SetBonus: {
 		Эта аура наносит дебаффы "Замешательство" и "Заклятье вымирания" на ближайших врагов
 		'''
 	EnergyWeaversHelm: В тебе заряжается энергия, которую ты можешь выпустить во врагов
-	/* MechSetBonus:
+	MechSetBonus:
 		'''
-		10% increased damage
-		35% increased movement speed
-		17% increased chance not to consume ammo
-		When you get hit, you release electrical arcs
-		''' */
-	/* ForgedSetBonus:
+		Весь урон увеличен на 10%
+		Скорость передвижения увеличена на 35%
+		Шанс не потратить аммуницию при выстреле увеличен на 17%
+		При ударе ты выпускаешь скачущие молнии
 		'''
-		Double tap down to shackle yourself in place
-		Tap down again to fling yourself back to the center
-		''' */
-	/* CrowsSetBonus:
+	ForgedSetBonus:
 		'''
-		When an enemy is hit, green lightning strikes down from above them
-		The lightning heals the player
-		''' */
-	/* EoitesSetBonus:
+		Нажми ВНИЗ дважды, чтобы приковать себя к месту
+		Нажми ВНИЗ снова, чтобы вернуть себя на место
 		'''
-		15% increased magic damage
-		Damage reduced by a further 10%
-		''' */
-	/* AwokenWoodBonus:
+	CrowsSetBonus:
 		'''
-		Greatly increases life regeneration after being hit
-		Shoots leaves at nearby enemies
-		Enemies are less likely to target you
-		Double tap down to activate 'Life's Aura' which heals your team mates and friendly NPCs when inside
-		''' */
+		При ударе по врагу с небес по ним бьет зелёная молния
+		Эта молния восполнит немного твоего здоровья
+		'''
+	EoitesSetBonus:
+		'''
+		Увеличивает магический урон на 15%
+		Уменьшает получаемый урон ещё на 10%
+		'''
+	AwokenWoodSetBonus:
+		'''
+		Значительно усиляет регенерацию жизни после получения урона
+		Ты запускаешь острые, как бритвы листья во врагов
+		Уменьшает агрессивность врагов
+		Нажми ВНИЗ дважды, чтобы создать "Ауру жизни", которая исцеляет союзников и дружественных НПС, которые находятся в ней
+		'''
+	FireDemonsSetBonus: Призывает демона рвать твоих врагов в пух и прах
+	GelticConquerorSetBonus:
+		'''
+		Увеличивает скорость прыжка
+		Поглощает 75% урона от падения
+		Ты немного подпрыгиваешь при приземлении
+		Нажми ВНИЗ, чтобы отменить этот эффект, но тогда ты получишь весь урон от падения
+		'''
+	AridSetBonus: Позволяет слегка левитировать над землёй при нажатии кнопки прыжка
 }
 
 Said: {
@@ -4809,7 +5130,7 @@ ShopCondition: {
 }
 
 Credits: {
-	Credits: Зажми 'Escape', чтобы пропустить титры
+	Credits: Зажми 'Esc' для пропуска
 	Credits1: Мод создан
 	Credits2: Музыка написана
 	Credits3: Лор придуман
@@ -4839,13 +5160,18 @@ Credits: {
 	Credits10: ТЕБЕ
 	Credits11:
 		'''
-		Реально, огромное спасибо, что поиграл в Elements Awoken.
-		И я, и вся команда разработчиков ценят то, что ты оценил
+		Серьёзно, огромное спасибо, что поиграл в Elements Awoken.
+		И я, и вся команда разработчиков очень рады, что ты оценил
 		то, на что мы потратили столько времени и сил.
 		'''
-	Credits12: С уважением - ThatOneJuicyOrange_ и вся команда разработчиков <3
+	Credits12:
+		'''
+		С уважением - ThatOneJuicyOrange_ и вся 
+		команда разработчиков <3
+		'''
 }
 
+AwakenedModeActive2: "[c/b523d2:Пробуждённого режима]"
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
 AwakenedSummonItem: Не расходуется в Пробуждённом режиме
@@ -4868,11 +5194,11 @@ MyPlayerLocalization: {
 		Encounter: {
 			Said: Всё ясно.
 			Said1: ...Но кто же ты такой?
-			Said2: Ты ведь ищешь силу...
+			Said2: Очевидно, ты ищешь силу.
 			Said3: Восходит новый боец.
 			Said4: Простая ли потерянная душа?
-			Said5: Но ты не думал - зачем.
-			Said6: Тебе всё ещё предстоит долгий путь.
+			Said5: Но спрашивал ли ты себя когда-нибудь - зачем?
+			Said6: Тебе предстоит ещё долгий путь.
 			Said7: Впереди долгая дорога.
 			Said8: ...Имеет ли это значение вообще?
 			Said9: Ты всё ближе.
@@ -5045,7 +5371,7 @@ MyWorldLocalization: {
 		voidInvasio: Тьма проникает в твои вены...
 		voidInvasio1: Смех разносится эхом по миру...
 		voidInvasio2: Смех разносится эхом по миру...
-		Azana1: Лучезарный дождь рассеивается...
+		Azana1: Лучезарный Дождь рассеивается...
 		Azana: Дождь блистает неизвестной магией...
 	}
 }

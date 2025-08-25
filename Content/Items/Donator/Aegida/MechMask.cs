@@ -27,8 +27,8 @@ namespace ElementsAwoken.Content.Items.Donator.Aegida
         }
         public override void UpdateEquip(Player player)
         {
-            player.GetDamage(DamageClass.Ranged) *= 1.19f;
-            player.GetCritChance(DamageClass.Ranged) += 9;
+            player.GetDamage(DamageClass.Ranged) *= 1.20f;
+            player.GetCritChance(DamageClass.Ranged) += 10;
         }
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {

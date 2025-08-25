@@ -2738,8 +2738,8 @@ Items: {
 	MechMask: {
 		Tooltip:
 			'''
-			19% increased ranged damage
-			9% increased ranged critical strike chance
+			20% increased ranged damage
+			10% increased ranged critical strike chance
 			An experimental helmet made by the scientists for its elite rangers
 			Aegida's donator item
 			'''
@@ -3041,6 +3041,283 @@ Items: {
 			Lantard's donator item
 			'''
 		DisplayName: Awoken Wooden Breastplate
+	}
+
+	CoalescedOrbStaff: {
+		DisplayName: Staff of the Coalesced Orb
+		Tooltip:
+			'''
+			Summons a Coalesced Orb to protect you
+			Orbs take 3 minion slots
+			Superbaseball101's donator item
+			'''
+	}
+
+	FireDemonsBreastplate: {
+		DisplayName: Fire Demons Breastplate
+		Tooltip:
+			'''
+			10% increased minion damage
+			Superbaseball101's donator armor
+			'''
+	}
+
+	FireDemonsHelm: {
+		DisplayName: Fire Demon's Helm
+		Tooltip:
+			'''
+			5% increased minion damage and knockback
+			Superbaseball101's donator armor
+			'''
+	}
+
+	FireDemonsLeggings: {
+		DisplayName: Fire Demon's Leggings
+		Tooltip:
+			'''
+			Max minions increased by 1
+			Superbaseball101's donator armor
+			'''
+	}
+
+	HeartContainer: {
+		DisplayName: Heart Container
+		Tooltip:
+			'''
+			Increases your max number of minions by 1
+			Minions melee attacks have a small chance to steal health from enemies
+			Superbaseball101's donator item
+			'''
+	}
+
+	AncientIchorFlagon: {
+		DisplayName: Ancient Ichor Flagon
+		Tooltip: Yukki-Kun's donator item
+	}
+
+	GelticArrow: {
+		DisplayName: Geltic Arrow
+		Tooltip:
+			'''
+			Has a chance to inflict poison or slow
+			Yukki-Kun's donator item
+			'''
+	}
+
+	GelticConquerorBreastplate: {
+		DisplayName: Geltic Conqueror Breastplate
+		Tooltip: Yukki-Kun's donator armor
+	}
+
+	GelticConquerorHelmet: {
+		DisplayName: Geltic Conqueror Helmet
+		Tooltip: Yukki-Kun's donator armor
+	}
+
+	GelticConquerorLeggings: {
+		DisplayName: Geltic Conqueror Leggings
+		Tooltip: Yukki-Kun's donator armor
+	}
+
+	TheSpeedyStar: {
+		DisplayName: The Speedy Star
+		Tooltip:
+			'''
+			Hitting all the stars restores all the mana consumed in that shot
+			Yukki-Kun's donator item
+			'''
+	}
+
+	AridBreastplate: {
+		DisplayName: Arid Breastplate
+		Tooltip:
+			'''
+			3% increased critical strike chance
+			Increases invincibility time after hit
+			'''
+	}
+
+	AridFalconHelm: {
+		DisplayName: Arid Falcon Helm
+		Tooltip:
+			'''
+			4% increased ranged damage
+			3% increased ranged critical strike chance
+			8% chance not to consume ammo
+			'''
+	}
+
+	AridHat: {
+		DisplayName: Arid Hat
+		Tooltip:
+			'''
+			4% increased magic damage
+			3% increased magic critical strike chance
+			Increases maximum mana by 40
+			'''
+	}
+
+	AridHeadgear: {
+		DisplayName: Arid Headgear
+		Tooltip:
+			'''
+			4% increased summon damage
+			5% increased minion knockback
+			+1 maximum minion capacity
+			'''
+	}
+
+	AridHood: {
+		DisplayName: Arid Hood
+		Tooltip:
+			'''
+			4% increased throwing damage
+			3% increased throwing critical strike chance
+			15% increased throwing velocity
+			'''
+	}
+
+	AridLeggings: {
+		DisplayName: Arid Leggings
+		Tooltip:
+			'''
+			10% increased movement speed
+			5% increased pick speed
+			'''
+	}
+
+	SandSprayer: {
+		Tooltip:
+			'''
+			Sprays coarse sand at your enemies... Useful
+			20% chance to not consume ammo
+			'''
+		DisplayName: Sand Sprayer
+	}
+
+	Sandshot: {
+		Tooltip: ""
+		DisplayName: Sandshot
+	}
+
+	Sandball: {
+		Tooltip: I don't like sand. It's coarse and rough and irritating and it gets everywhere
+		DisplayName: Sandball
+	}
+
+	DesertShield: {
+		Tooltip:
+			'''
+			Allows the player to perform a dash
+			Dashing throws a sand tornado the way you dashed
+			'''
+		DisplayName: Shield of The Desert
+	}
+
+	DesertNeck: {
+		Tooltip:
+			'''
+			Harness the power of the desert winds
+			25% increased movement and melee speed
+			'''
+		DisplayName: Badge of the Desert
+	}
+
+	DesertGun: {
+		Tooltip: ""
+		DisplayName: Desert Eagle
+	}
+
+	AridWarriorMask: {
+		Tooltip:
+			'''
+			4% increased melee damage
+			3% increased melee critical strike chance
+			10% increased melee speed
+			'''
+		DisplayName: Arid Warrior Mask
+	}
+
+	SandstormStone: {
+		DisplayName: Sandstorm Stone
+		Tooltip:
+			'''
+			Toggles the sandstorm
+			Only usable inside of the desert
+			'''
+	}
+
+	SandstormTome: {
+		DisplayName: Sandstorm Tome
+		Tooltip: Summons sand to rain down from the sky
+	}
+
+	SandySpear: {
+		DisplayName: Sandy Spear
+		Tooltip: ""
+	}
+
+	SolitaryStorm: {
+		DisplayName: Solitary Storm
+		Tooltip: Shoots a sand tornado at your enemies
+	}
+
+	StaffOfTheSandstorm: {
+		DisplayName: Staff of the Sandstorm
+		Tooltip: Summons a mini sandstorm to fight for you
+	}
+
+	TheGrit: {
+		DisplayName: The Grit
+		Tooltip: ""
+	}
+
+	TheVulture: {
+		DisplayName: The Vulture
+		Tooltip: The Vulture
+	}
+
+	Andromeda: {
+		DisplayName: Andromeda
+		Tooltip: ""
+	}
+
+	Cerulean: {
+		DisplayName: Cerulean
+		Tooltip:
+			'''
+			Increases critical strike chance by 5%
+			The lower your health the less damage you take
+			5 defense
+			Mana increased by 100
+			Magic damage increased by 15%
+			16% increased movement speed
+			Immunity to most debuffs
+			While under half health:
+			Reduces mana cost greatly
+			Reduces damage taken
+			Damage increased by 10%
+			'''
+	}
+
+	Cosmicus: {
+		DisplayName: Cosmicus
+		Tooltip: ""
+	}
+
+	Dusksong: {
+		DisplayName: Dusksong
+		Tooltip: ""
+	}
+
+	ElementalBurst: {
+		DisplayName: Elemental Burst
+		Tooltip: Fire a short ranged wave of high damaging bursts
+	}
+
+	Equinox: {
+		DisplayName: Equinox
+		Tooltip: Turns normal arrows into 3 elemental arrows
 	}
 }
 
@@ -3566,6 +3843,16 @@ Buffs: {
 	CrowBuff: {
 		DisplayName: Crow
 		Description: Gracefully soar through the skies
+	}
+
+	CoalescedOrbBuff: {
+		DisplayName: Coalesced Orb
+		Description: Matter combined to make one staring eye
+	}
+
+	MiniSandstormBuff: {
+		DisplayName: Miniature Sandstorm
+		Description: This strange entity will protect you
 	}
 }
 
@@ -4405,6 +4692,29 @@ Projectiles: {
 	StarLunarFragment.DisplayName: Wyvern Breath
 	StarLunar.DisplayName: Star
 	TheBeltP.DisplayName: Darkners Scarf
+	CoalescedBolt.DisplayName: Coalesced Bolt
+	CoalescedOrb.DisplayName: Coalesced Orb
+	GelticArrow.DisplayName: Geltic Arrow
+	Speedstar.DisplayName: Speedstar
+	AncientIchorFlagonP.DisplayName: Ancient Ichor Flagon
+	Sandball.DisplayName: Sandball
+	Shieldnado.DisplayName: Shieldnado
+	SandSpray.DisplayName: Sand Spray
+	Skysand.DisplayName: Skysand
+	Sandnado.DisplayName: Sandnado
+	SandySpearP.DisplayName: Sandy Spear
+	MiniatureSandstorm.DisplayName: Miniature Sandstorm
+	TheGritP.DisplayName: The Grit
+	AndromedaBase.DisplayName: AAndromeda
+	AndromedaBlast.DisplayName: Andromeda
+	AndromedaStar.DisplayName: Ancient Star
+	AndromedaSwirl.DisplayName: Andromeda
+	ElementalArrow.DisplayName: Elemental Arrow
+	ElementalBolt.DisplayName: Elemental Bolt
+	CosmicusP.DisplayName: Cosmicus P
+	ElementalBurst.DisplayName: Elemental Burst
+	EquinoxBase.DisplayName: Fireweaver
+	EquinoxSwirl.DisplayName: Fireweaver
 }
 
 Configs: {
@@ -4624,6 +4934,8 @@ Tooltips: {
 	AncientsSummon10: You bring me back to this awful land... Why?
 	EoitesWrath: Beams
 	EoitesWrath1: Blasts
+	SandstormStone: The sand storm settles...
+	SandstormStone1: The desert winds pick up!
 }
 
 AccInfo: {
@@ -4691,13 +5003,22 @@ SetBonus: {
 		15% increased magic damage
 		Damage reduced by a further 10%
 		'''
-	AwokenWoodBonus:
+	AwokenWoodSetBonus:
 		'''
 		Greatly increases life regeneration after being hit
 		Shoots leaves at nearby enemies
 		Enemies are less likely to target you
 		Double tap down to activate 'Life's Aura' which heals your team mates and friendly NPCs when inside
 		'''
+	FireDemonsSetBonus: Summons a demon to destroy your foes
+	GelticConquerorSetBonus:
+		'''
+		Increases jump height
+		Negates 75% of fall damage
+		You bounce when you land
+		Press down to stop bouncing- this will also not negate fall damage
+		'''
+	AridSetBonus: Allows weak levitation by holding jump
 }
 
 Said: {
@@ -4799,6 +5120,7 @@ Credits: {
 	Credits12: From- ThatOneJuicyOrange_ and the team <3
 }
 
+AwakenedModeActive2: "[c/973999:in Awakened mode]"
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
 AwakenedMode: "[c/973999:Awakened Mode Active]"
 AwakenedSummonItem: Not consumed in Awakened Mode

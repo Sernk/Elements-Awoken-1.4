@@ -3,8 +3,10 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Enums;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ElementsAwoken.Content.Tiles.Crafting;
 
 namespace ElementsAwoken
 {
@@ -13,6 +15,7 @@ namespace ElementsAwoken
     /// </summary>
     public class EAU
     {
+        public static int ElementalForge => ModContent.TileType<ElementalForge>();
         public static SpriteBatch Sb => Main.spriteBatch;
         public static int PinkFlame => DustID.Firework_Pink;
         public static void SetSoul(int type)

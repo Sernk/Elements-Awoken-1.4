@@ -1,6 +1,7 @@
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI.Tooltips;
+using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
@@ -41,7 +42,7 @@ namespace ElementsAwoken.Content.Items.Donator.Lantard
         public override void UpdateArmorSet(Player player)
         {
             Lighting.AddLight((int)(player.Center.X / 16f), (int)(player.Center.Y / 16f), 0.05f , 0.5f, 0.2f);
-            player.setBonus = "Greatly increases life regeneration after being hit\nShoots leaves at nearby enemies\nEnemies are less likely to target you\nDouble tap down to activate 'Life's Aura' which heals your team mates and friendly NPCs when inside";
+            player.setBonus = GetInstance<EALocalization>().AwokenWoodSetBonus;
             player.aggro -= 400;
             player.GetModPlayer<MyPlayer>().awokenWood = true;
 

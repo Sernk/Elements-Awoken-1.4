@@ -1,5 +1,6 @@
 using ElementsAwoken.Content.Effects;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
+using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.NPCs.Bosses.Infernace;
 using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
 using ElementsAwoken.Content.NPCs.Bosses.Regaroth;
@@ -16,10 +17,12 @@ using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoMod.Cil;
+using Newtonsoft.Json;
 using ReLogic.Content;
 using ReLogic.Graphics;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.IO;
 using System.Reflection;
 using Terraria;
@@ -34,6 +37,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 using Terraria.UI.Chat;
+
 
 namespace ElementsAwoken
 {
@@ -67,6 +71,8 @@ namespace ElementsAwoken
         public const string AshParticles = "ElementsAwoken:AshParticles";
 
         public static string a = "";
+        public static ItemJson itemList;
+
         public static DynamicSpriteFont encounterFont;
 
         internal UserInterface AlchemistUserInterface;
@@ -118,6 +124,13 @@ namespace ElementsAwoken
             ContentAutoloadingEnabled = true;
             GoreAutoloadingEnabled = true;
             MusicAutoloadingEnabled = true;
+        }
+        public override void PostSetupContent()
+        {
+            using var stream = ModContent.GetInstance<ElementsAwoken>().GetFileStream("ItemList.json");
+            using var reader = new StreamReader(stream);
+            string json = reader.ReadToEnd();
+            itemList = JsonConvert.DeserializeObject<ItemJson>(json);
         }
         public static void PremultiplyTexture(Texture2D texture)
         {
@@ -1539,8 +1552,6 @@ namespace ElementsAwoken
             else return 1f;
         }
         //boss checklist
-        public override void PostSetupContent()
-        {
             //float wasteland = 2.5f;
             //float toySlime = 5.1f;
             //float infernace = 5.5f;
@@ -1709,7 +1720,7 @@ namespace ElementsAwoken
         //        censusMod.Call("TownNPCCondition", NPCType("Storyteller"), "Always available");
         //    }
 
-        }
+        
         public static void ApplyScreenShakeToAll(float amount)
         {
             for (int i = 0; i < Main.player.Length; i++)

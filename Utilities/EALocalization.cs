@@ -194,6 +194,10 @@ namespace ElementsAwoken.Utilities
         public string EoitesWrath => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.EoitesWrath");
         public string EoitesWrath1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.EoitesWrath1");
         #endregion
+        #region SandstormStone
+        public string SandstormStone => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.SandstormStone");
+        public string SandstormStone1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.SandstormStone1");
+        #endregion
         public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion
         #region AccInfo
@@ -271,7 +275,10 @@ namespace ElementsAwoken.Utilities
         public string ForgedSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ForgedSetBonus");
         public string CrowsSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.CrowsSetBonus");
         public string EoitesSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.EoitesSetBonus");
-        public string AwokenWoodBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AwokenWoodBonus");
+        public string AwokenWoodSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AwokenWoodSetBonus");
+        public string FireDemonsSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.FireDemonsSetBonus");
+        public string GelticConquerorSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.GelticConquerorSetBonus");
+        public string AridSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AridSetBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");
@@ -307,6 +314,7 @@ namespace ElementsAwoken.Utilities
         public string AwakenedSummonItem => Language.GetTextValue("Mods.ElementsAwoken.AwakenedSummonItem");
         public string IsSummon => Language.GetTextValue("Mods.ElementsAwoken.IsSummon");
         public string AwakenedMode => Language.GetTextValue("Mods.ElementsAwoken.AwakenedMode");
+        public string AwakenedModeActive2 => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeActive2");
         public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         #endregion
         #region BossNAME
