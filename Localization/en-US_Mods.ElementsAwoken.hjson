@@ -3319,6 +3319,139 @@ Items: {
 		DisplayName: Equinox
 		Tooltip: Turns normal arrows into 3 elemental arrows
 	}
+
+	Fusion: {
+		Tooltip: ""
+		DisplayName: Fusion
+	}
+
+	PhantomBane: {
+		DisplayName: Phantom Bane
+		Tooltip: ""
+	}
+
+	Singularity: {
+		DisplayName: Singularity
+		Tooltip: ""
+	}
+
+	Voxus: {
+		Tooltip: ""
+		DisplayName: Voxus
+	}
+
+	TheValkyrie: {
+		Tooltip: "'The end is nigh'"
+		DisplayName: The Valkyrie
+	}
+
+	EAZenith: {
+		Tooltip: ""
+		DisplayName: Zenith
+	}
+
+	ElementalMask: {
+		Tooltip:
+			'''
+			35% increased critical strike chance
+			+5 max minions
+			'''
+		DisplayName: Elemental Mask
+	}
+
+	ElementalLeggings: {
+		Tooltip:
+			'''
+			20% increased movement and melee speed
+			Enemies are more likely to target you
+			'''
+		DisplayName: Elemental Leggings
+	}
+
+	ElementalBreastplate: {
+		Tooltip:
+			'''
+			20% increased damage
+			Increased max life and mana by 100
+			10% damage endurance
+			'''
+		DisplayName: Elemental Breastplate
+	}
+
+	BlazeFury: {
+		DisplayName: Blaze Fury
+		Tooltip: ""
+	}
+
+	BonfirePummel: {
+		DisplayName: Bonfire Pummel
+		Tooltip: Fires fireball that explodes into sparks on impact
+	}
+
+	DragonsBreath: {
+		DisplayName: Dragon's Breath
+		Tooltip: 50% chance to not consume ammo
+	}
+
+	FireKnives: {
+		DisplayName: Fire Knives
+		Tooltip: Throws three exploding fire daggers
+	}
+
+	Firelash: {
+		DisplayName: Hellstorm
+		Tooltip: ""
+	}
+
+	FireNeck: {
+		DisplayName: Band of Inferno
+		Tooltip:
+			'''
+			Unleash the power of flames upon your enemies
+			Double tap down to create a small explosion that launches the player into the air
+			Melee attacks have flames
+			2% increased damage
+			'''
+	}
+
+	FireScythe: {
+		DisplayName: Scythe of Eternal Flame
+		Tooltip: ""
+	}
+
+	FireShield: {
+		DisplayName: Inferno Bulwark
+		Tooltip: Grants immunity to knockback, fire blocks, and On Fire
+	}
+
+	FireStorm: {
+		DisplayName: Fire Storm
+		Tooltip:
+			'''
+			Fires a burst of 3 bullets
+			The last bullet deals 50% more damage and inflicts on fire
+			'''
+	}
+
+	FireTrisword: {
+		DisplayName: Blazing Trisword
+		Tooltip: Forged inside of an eternal fire
+	}
+
+	Incinerator: {
+		DisplayName: Incinerator
+		Tooltip: ""
+	}
+
+	InfernoLance: {
+		DisplayName: Inferno Lance
+		Tooltip: ""
+	}
+
+	InfurnicesesMinionStaff: {
+		DisplayName: Fire Spirit Scepter
+		Tooltip: Summons a fire spirit to serve you
+	}
 }
 
 Tiles: {
@@ -3853,6 +3986,16 @@ Buffs: {
 	MiniSandstormBuff: {
 		DisplayName: Miniature Sandstorm
 		Description: This strange entity will protect you
+	}
+
+	PhantomHookBuff: {
+		DisplayName: Phantom Hook
+		Description: Dont get caught in the crossfire
+	}
+
+	FireElementalBuff: {
+		DisplayName: Fire Spirit
+		Description: It will keep you warm on the cold nights
 	}
 }
 
@@ -4715,6 +4858,45 @@ Projectiles: {
 	ElementalBurst.DisplayName: Elemental Burst
 	EquinoxBase.DisplayName: Fireweaver
 	EquinoxSwirl.DisplayName: Fireweaver
+	FusionP.DisplayName: Void Inferno
+	FusionOrb6.DisplayName: Fusion
+	FusionOrb5.DisplayName: Fusion
+	FusionOrb4.DisplayName: Fusion
+	FusionOrb3.DisplayName: Fusion
+	FusionOrb2.DisplayName: Fusion
+	FusionOrb1.DisplayName: Fusion
+	PhantomHook.DisplayName: Phantom Hook
+	SingularityBeam.DisplayName: Singularity
+	SingularityBolt.DisplayName: Singularity
+	SingularityP.DisplayName: Singularity
+	ZenithOrb4.DisplayName: Zenith Orb4
+	ZenithOrb3.DisplayName: Zenith Orb3
+	ZenithOrb2.DisplayName: Zenith Orb2
+	ZenithOrb1.DisplayName: Zenith Orb1
+	ZenithBeam4.DisplayName: Zenith Beam4
+	ZenithBeam3.DisplayName: Zenith Beam3
+	ZenithBeam2.DisplayName: Zenith Beam2
+	ZenithBeam1.DisplayName: Zenith Beam1
+	ValkyrieChain.DisplayName: Valkyrie Chain
+	VoxusP.DisplayName: Voxus
+	Voxus4.DisplayName: Voxus
+	Voxus3.DisplayName: Voxus
+	Voxus2.DisplayName: Voxus
+	Voxus1.DisplayName: Voxus
+	ValkyrieBolt.DisplayName: The Valkyrie
+	RainbowExplosion.DisplayName: Explosion
+	DragonFire.DisplayName: Dragon's Breath
+	FireBall.DisplayName: Fire Ball
+	FireKnifeBolt.DisplayName: Fire Bolt
+	FireKnife.DisplayName: Fire Knife
+	FireScytheProj.DisplayName: Scythe of Eternal Flame
+	FirestormShot.DisplayName: Firestorm
+	TriswordBlade.DisplayName: Blazing Trisword
+	TriswordSlash.DisplayName: Blazing Trisword
+	FirelashP.DisplayName: Firelash
+	FireBolt.DisplayName: Fire Bolt
+	FireElemental.DisplayName: Fire Elemental
+	InfernoLanceP.DisplayName: Inferno Lance P
 }
 
 Configs: {
@@ -5019,6 +5201,11 @@ SetBonus: {
 		Press down to stop bouncing- this will also not negate fall damage
 		'''
 	AridSetBonus: Allows weak levitation by holding jump
+	ElementalSetBonus:
+		'''
+		If you are killed, you are revived back to half health
+		45 second cooldown
+		'''
 }
 
 Said: {

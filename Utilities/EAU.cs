@@ -1,12 +1,12 @@
 ﻿using ElementsAwoken.Content.Dusts.Ancients;
+using ElementsAwoken.Content.Items.Essence;
+using ElementsAwoken.Content.Tiles.Crafting;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
-using Terraria.Enums;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.Content.Tiles.Crafting;
 
 namespace ElementsAwoken
 {
@@ -15,47 +15,27 @@ namespace ElementsAwoken
     /// </summary>
     public class EAU
     {
+        public static int FireEssence => ModContent.ItemType<FireEssence>();
         public static int ElementalForge => ModContent.TileType<ElementalForge>();
         public static SpriteBatch Sb => Main.spriteBatch;
         public static int PinkFlame => DustID.Firework_Pink;
-        public static void SetSoul(int type)
-        {
-            ItemID.Sets.AnimatesAsSoul[type] = true;
-        }
-        public static void Longer(int type)
-        {
-            BuffID.Sets.LongerExpertDebuff[type] = true;
-        }
-        public static void CanBeCleared(int type)
-        {
-            BuffID.Sets.NurseCannotRemoveDebuff[type] = true;
-        }
-        public static void DSCursor(int type)
-        {
-            TileID.Sets.DisableSmartCursor[type] = true;
-        }
-        public static IEntitySource Proj(Projectile projectile)
-        {
-            return projectile.GetSource_FromThis();
-        }
-        public static IEntitySource NPCs(NPC npc)
-        {
-            return npc.GetSource_FromThis();
-        }
-        public static IEntitySource Play(Player player)
-        {
-            return player.GetSource_FromThis();
-        }
+        public static void SetSoul(int type) => ItemID.Sets.AnimatesAsSoul[type] = true;
+        public static void Longer(int type) => BuffID.Sets.LongerExpertDebuff[type] = true;
+        public static void CanBeCleared(int type) => BuffID.Sets.NurseCannotRemoveDebuff[type] = true;
+        public static void DSCursor(int type) => TileID.Sets.DisableSmartCursor[type] = true;
+        public static IEntitySource Proj(Projectile projectile) => projectile.GetSource_FromThis();
+        public static IEntitySource NPCs(NPC npc) => npc.GetSource_FromThis();
+        public static IEntitySource Play(Player player) => player.GetSource_FromThis();
         public static int GetDustID()
         {
-            switch (Main.rand.Next(4))
+            return Main.rand.Next(4) switch
             {
-                case 0: return ModContent.DustType<AncientRed>();   
-                case 1: return ModContent.DustType<AncientGreen>();   
-                case 2: return ModContent.DustType<AncientBlue>();  
-                case 3: return ModContent.DustType<AncientPink>();
-                default: return ModContent.DustType<AncientRed>();
-            }
+                0 => ModContent.DustType<AncientRed>(),
+                1 => ModContent.DustType<AncientGreen>(),
+                2 => ModContent.DustType<AncientBlue>(),
+                3 => ModContent.DustType<AncientPink>(),
+                _ => ModContent.DustType<AncientRed>(),
+            };
         }
         public static List<int> VanillaOreIDs()
         {

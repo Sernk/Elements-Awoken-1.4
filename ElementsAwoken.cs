@@ -1,6 +1,5 @@
 using ElementsAwoken.Content.Effects;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
-using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.NPCs.Bosses.Infernace;
 using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
 using ElementsAwoken.Content.NPCs.Bosses.Regaroth;
@@ -22,7 +21,6 @@ using ReLogic.Content;
 using ReLogic.Graphics;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.IO;
 using System.Reflection;
 using Terraria;

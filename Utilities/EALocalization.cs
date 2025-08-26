@@ -279,6 +279,7 @@ namespace ElementsAwoken.Utilities
         public string FireDemonsSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.FireDemonsSetBonus");
         public string GelticConquerorSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.GelticConquerorSetBonus");
         public string AridSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AridSetBonus");
+        public string ElementalSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ElementalSetBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");

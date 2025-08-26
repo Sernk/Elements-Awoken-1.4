@@ -3227,137 +3227,270 @@ Items: {
 	}
 
 	SandSprayer: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Sprays coarse sand at your enemies... Useful
-			20% chance to not consume ammo
-			''' */
-		// DisplayName: Sand Sprayer
+			Стреляет струёй крупного песка во врагов... Как полезно
+			Имеет 20% шанс не потратить аммуницию при выстреле
+			'''
+		DisplayName: Пескомёт
 	}
 
 	Sandshot: {
-		// Tooltip: ""
-		// DisplayName: Sandshot
+		Tooltip: ""
+		DisplayName: Пескострел
 	}
 
 	Sandball: {
-		// Tooltip: I don't like sand. It's coarse and rough and irritating and it gets everywhere
-		// DisplayName: Sandball
+		Tooltip: Не люблю песок. Он слишком грубый, раздражающий и попадает куда только можно и нельзя
+		DisplayName: Пескошар
 	}
 
 	DesertShield: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Allows the player to perform a dash
-			Dashing throws a sand tornado the way you dashed
-			''' */
-		// DisplayName: Shield of The Desert
+			Позволяет совершать рывок
+			При рывке из тебя вылетит песчаное торнадо в направление рывка
+			'''
+		DisplayName: Щит пустыни
 	}
 
 	DesertNeck: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Harness the power of the desert winds
-			25% increased movement and melee speed
-			''' */
-		// DisplayName: Badge of the Desert
+			Впитай силу пустынных ветров
+			Увеличивает скорость передвижения и ближних оружий на 25%
+			'''
+		DisplayName: Знак песков
 	}
 
 	DesertGun: {
-		// Tooltip: ""
-		// DisplayName: Desert Eagle
+		Tooltip: это вам чё контр страйк какой-то что-ли?
+		DisplayName: Орёл пустыни
 	}
 
 	AridWarriorMask: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			4% increased melee damage
-			3% increased melee critical strike chance
-			10% increased melee speed
-			''' */
-		// DisplayName: Arid Warrior Mask
+			Увеличивает ближний урон на 4%
+			Увеличивает шанс ближнего шанса критического удара на 3%
+			Увеличивает скорость ближних оружий на 10%
+			'''
+		DisplayName: Маска воина пустыни
 	}
 
 	SandstormStone: {
-		// DisplayName: Sandstorm Stone
-		/* Tooltip:
+		DisplayName: Камень пескобури
+		Tooltip:
 			'''
-			Toggles the sandstorm
-			Only usable inside of the desert
-			''' */
+			Вызывает песчаную бурю при использовании
+			Может быть использован только в Пустыне
+			'''
 	}
 
 	SandstormTome: {
-		// DisplayName: Sandstorm Tome
-		// Tooltip: Summons sand to rain down from the sky
+		DisplayName: Фолиант пескобури
+		Tooltip: Да прольётся с небес песок, аки дождь!
 	}
 
 	SandySpear: {
-		// DisplayName: Sandy Spear
-		// Tooltip: ""
+		DisplayName: Пескопьё
+		Tooltip: ""
 	}
 
 	SolitaryStorm: {
-		// DisplayName: Solitary Storm
-		// Tooltip: Shoots a sand tornado at your enemies
+		DisplayName: Одношторм
+		Tooltip: Выпускает песчаные торнадо во врагов
 	}
 
 	StaffOfTheSandstorm: {
-		// DisplayName: Staff of the Sandstorm
-		// Tooltip: Summons a mini sandstorm to fight for you
+		DisplayName: Посох пескобури
+		Tooltip: Призывает мини-пескобурю на твою защиту
 	}
 
 	TheGrit: {
-		// DisplayName: The Grit
-		// Tooltip: ""
+		DisplayName: Тот самый песок
+		Tooltip: грит... чзх, данкподс референс?
 	}
 
 	TheVulture: {
-		// DisplayName: The Vulture
-		// Tooltip: The Vulture
+		DisplayName: Гриф
+		Tooltip: Он самый, ага.
 	}
 
 	Andromeda: {
-		// DisplayName: Andromeda
-		// Tooltip: ""
+		DisplayName: Андромеда
+		Tooltip: ""
 	}
 
 	Cerulean: {
-		// DisplayName: Cerulean
-		/* Tooltip:
+		DisplayName: Лазурь
+		Tooltip:
 			'''
-			Increases critical strike chance by 5%
-			The lower your health the less damage you take
-			5 defense
-			Mana increased by 100
-			Magic damage increased by 15%
-			16% increased movement speed
-			Immunity to most debuffs
-			While under half health:
-			Reduces mana cost greatly
-			Reduces damage taken
-			Damage increased by 10%
-			''' */
+			Увеличивает весь шанс критического удара на 5%
+			Чем меньше у тебя остаётся здоровья, тем меньше урона ты получаешь
+			Даёт 5 защиты
+			Увеличивает максимальную ману на 100
+			Увеличивает магический урон на 15%
+			Увеличивает скорость передвижения на 16%
+			Даёт неуязвимость к большинству дебаффов
+			Когда у тебя остаётся меньше половины здоровья, ты получаешь:
+			Сильно уменьшенное потребление маны
+			Уменьшенный получаемый урон
+			Увеличенный на 10% наносимый урон
+			'''
 	}
 
 	Cosmicus: {
-		// DisplayName: Cosmicus
-		// Tooltip: ""
+		DisplayName: Космос
+		Tooltip: не переводить же мне его как космический, в самом-то деле.
 	}
 
 	Dusksong: {
-		// DisplayName: Dusksong
-		// Tooltip: ""
+		DisplayName: Мракопеснь
+		Tooltip: я почему-то про холлов книгхт подумал
 	}
 
 	ElementalBurst: {
-		// DisplayName: Elemental Burst
-		// Tooltip: ""
+		DisplayName: Элементальный взрыв
+		Tooltip: Стреляет на короткую дистанцию взрывами, наносящими огромный урон
 	}
 
 	Equinox: {
-		// DisplayName: Equinox
+		DisplayName: Равноденствие
+		Tooltip: Превращает обычные стрелы в три элементальные стрелы при каждом выстреле
+	}
+
+	Fusion: {
+		Tooltip: ""
+		DisplayName: Слияние
+	}
+
+	PhantomBane: {
+		DisplayName: Духогибель
+		Tooltip: не ебу, как это правильно перевести
+	}
+
+	Singularity: {
+		DisplayName: Сингулярность
+		Tooltip: ""
+	}
+
+	Voxus: {
+		Tooltip: если подумать, то это и на инглише тоже не особенно осмысленное название
+		DisplayName: Глас элементов
+	}
+
+	TheValkyrie: {
+		Tooltip: "'Конец всё ближе...'"
+		DisplayName: Валькирия
+	}
+
+	EAZenith: {
+		Tooltip: прикол, в ЕА придумали зенит задолго до релоджиков в 1.4, лол
+		DisplayName: Элементо-Зенит
+	}
+
+	ElementalMask: {
+		Tooltip:
+			'''
+			Увеличивает весь шанс критического удара на 35%
+			Увеличивает количество миньон-слотов на 5
+			'''
+		DisplayName: Элементо-маска
+	}
+
+	ElementalLeggings: {
+		Tooltip:
+			'''
+			Увеличивает скорость передвижения и ближних оружий на 20%
+			Увеличивает агрессивность врагов
+			'''
+		DisplayName: Элементо-поножи
+	}
+
+	ElementalBreastplate: {
+		Tooltip:
+			'''
+			Увеличивает весь урон на 20%
+			Увеличивает максимальное здоровье и ману на 100
+			Уменьшает получаемый урон на 10%
+			'''
+		DisplayName: Элементо-нагрудник
+	}
+
+	BlazeFury: {
+		// DisplayName: Blaze Fury
 		// Tooltip: ""
+	}
+
+	BonfirePummel: {
+		// DisplayName: Bonfire Pummel
+		// Tooltip: Fires fireball that explodes into sparks on impact
+	}
+
+	DragonsBreath: {
+		// DisplayName: Dragon's Breath
+		// Tooltip: 50% chance to not consume ammo
+	}
+
+	FireKnives: {
+		// DisplayName: Fire Knives
+		// Tooltip: Throws three exploding fire daggers
+	}
+
+	Firelash: {
+		// DisplayName: Hellstorm
+		// Tooltip: ""
+	}
+
+	FireNeck: {
+		// DisplayName: Band of Inferno
+		/* Tooltip:
+			'''
+			Unleash the power of flames upon your enemies
+			Double tap down to create a small explosion that launches the player into the air
+			Melee attacks have flames
+			2% increased damage
+			''' */
+	}
+
+	FireScythe: {
+		// DisplayName: Scythe of Eternal Flame
+		// Tooltip: ""
+	}
+
+	FireShield: {
+		// DisplayName: Inferno Bulwark
+		// Tooltip: Grants immunity to knockback, fire blocks, and On Fire
+	}
+
+	FireStorm: {
+		// DisplayName: Fire Storm
+		/* Tooltip:
+			'''
+			Fires a burst of 3 bullets
+			The last bullet deals 50% more damage and inflicts on fire
+			''' */
+	}
+
+	FireTrisword: {
+		// DisplayName: Blazing Trisword
+		// Tooltip: Forged inside of an eternal fire
+	}
+
+	Incinerator: {
+		// DisplayName: Incinerator
+		// Tooltip: ""
+	}
+
+	InfernoLance: {
+		// DisplayName: Inferno Lance
+		// Tooltip: ""
+	}
+
+	InfurnicesesMinionStaff: {
+		// DisplayName: Fire Spirit Scepter
+		// Tooltip: Summons a fire spirit to serve you
 	}
 }
 
@@ -3891,8 +4024,18 @@ Buffs: {
 	}
 
 	MiniSandstormBuff: {
-		// DisplayName: Miniature Sandstorm
-		// Description: This strange entity will protect you
+		DisplayName: Мини-пескобуря
+		Description: Это диковинное создание защищает тебя
+	}
+
+	PhantomHookBuff: {
+		DisplayName: Духокрюк
+		Description: Только сам не попади под горячую крюку
+	}
+
+	FireElementalBuff: {
+		// DisplayName: Fire Spirit
+		// Description: It will keep you warm on the cold nights
 	}
 }
 
@@ -4737,24 +4880,63 @@ Projectiles: {
 	GelticArrow.DisplayName: Склизкая стрела
 	Speedstar.DisplayName: Спидозвезда
 	AncientIchorFlagonP.DisplayName: Проджектайл банки с древней ссаниной
-	// Sandball.DisplayName: Sandball
-	// Shieldnado.DisplayName: Shieldnado
-	// SandSpray.DisplayName: Sand Spray
-	// Skysand.DisplayName: Skysand
-	// Sandnado.DisplayName: Sandnado
-	// SandySpearP.DisplayName: Sandy Spear
-	// MiniatureSandstorm.DisplayName: Miniature Sandstorm
-	// TheGritP.DisplayName: The Grit
-	// AndromedaBase.DisplayName: AAndromeda
-	// AndromedaBlast.DisplayName: Andromeda
-	// AndromedaStar.DisplayName: Ancient Star
-	// AndromedaSwirl.DisplayName: Andromeda
-	// ElementalArrow.DisplayName: Elemental Arrow
-	// ElementalBolt.DisplayName: Elemental Bolt
-	// CosmicusP.DisplayName: Cosmicus P
-	// ElementalBurst.DisplayName: Elemental Burst
-	// EquinoxBase.DisplayName: Equinox Base
-	// EquinoxSwirl.DisplayName: Equinox Swirl
+	Sandball.DisplayName: Пескожок
+	Shieldnado.DisplayName: Щиторнадо
+	SandSpray.DisplayName: Песчаный спрей
+	Skysand.DisplayName: Небесок
+	Sandnado.DisplayName: Песконадо
+	SandySpearP.DisplayName: Проджектайл пескопья
+	MiniatureSandstorm.DisplayName: Мини-пескобуря
+	TheGritP.DisplayName: НеДанкподсовский грит
+	AndromedaBase.DisplayName: Основание андромеды
+	AndromedaBlast.DisplayName: Взрыв андромеды
+	AndromedaStar.DisplayName: Звезда андромеды
+	AndromedaSwirl.DisplayName: Вихрь андромеды
+	ElementalArrow.DisplayName: Элементо-стрела
+	ElementalBolt.DisplayName: Элементальный выстрел
+	CosmicusP.DisplayName: Проджектайл космикуса
+	ElementalBurst.DisplayName: Элементальный бюрст
+	EquinoxBase.DisplayName: Основание равноденствия
+	EquinoxSwirl.DisplayName: Вихрь равноденствия
+	FusionP.DisplayName: Проджектайл слияния
+	FusionOrb6.DisplayName: Шар слияния6
+	FusionOrb5.DisplayName: Шар слияния5
+	FusionOrb4.DisplayName: Шар слияния4
+	FusionOrb3.DisplayName: Шар слияния3
+	FusionOrb2.DisplayName: Шар слияния2
+	FusionOrb1.DisplayName: Шар слияния
+	PhantomHook.DisplayName: Духокрюк
+	SingularityBeam.DisplayName: Луч сингулярности
+	SingularityBolt.DisplayName: Выстрел сингулярности
+	SingularityP.DisplayName: Проджектайл сингулярности
+	ZenithOrb4.DisplayName: Шар зенита4
+	ZenithOrb3.DisplayName: Шар зенита3
+	ZenithOrb2.DisplayName: Шар зенита2
+	ZenithOrb1.DisplayName: Шар зенита
+	ZenithBeam4.DisplayName: Луч зенита4
+	ZenithBeam3.DisplayName: Луч зенит3
+	ZenithBeam2.DisplayName: Луч зенита2
+	ZenithBeam1.DisplayName: Луч зенита
+	ValkyrieChain.DisplayName: Цепь валькирии
+	VoxusP.DisplayName: Проджектайл воксуса
+	Voxus4.DisplayName: Воксус4
+	Voxus3.DisplayName: Воксус3
+	Voxus2.DisplayName: Воксус2
+	Voxus1.DisplayName: Воксус1
+	ValkyrieBolt.DisplayName: Выстрел валькирии
+	RainbowExplosion.DisplayName: Радуговзрыв
+	// DragonFire.DisplayName: Dragon's Breath
+	// FireBall.DisplayName: Fire Ball
+	// FireKnifeBolt.DisplayName: Fire Bolt
+	// FireKnife.DisplayName: Fire Knife
+	// FireScytheProj.DisplayName: Scythe of Eternal Flame
+	// FirestormShot.DisplayName: Firestorm
+	// TriswordBlade.DisplayName: Blazing Trisword
+	// TriswordSlash.DisplayName: Blazing Trisword
+	// FirelashP.DisplayName: Firelash
+	// FireBolt.DisplayName: Fire Bolt
+	// FireElemental.DisplayName: Fire Elemental
+	// InfernoLanceP.DisplayName: Inferno Lance P
 }
 
 Configs: {
@@ -4822,7 +5004,7 @@ Bestiary: {
 		RadiantMaster: Всё, что осталось от тех магов, кто поддался воле Лучезарного Дождя - лишь бездушные оболочки их былого величия, единственная цель существования которых теперь состоит лишь в том, чтобы оберегать существование Дождя и дальше.
 		WastelandBoss: Скорпион, ставший жертвой эксперимента, в котором всё пошло не по плану. Пустошь должна была стать живым оружием, способным уничтожить всё и всех на своём пути, но в итоге энергия, которую вживляли в её тело начала брать контроль над её разумом, заставляя существо сойти с ума.
 		TheEye: Одна из двух частей, на которые раскололся Стражник, из-за давления от сосуда энергии, созданного Яхщерами во время битвы с ними. Око - это сосуд, в котором содержатся голос и разум Стражника.
-		AncientWyrm: Лидер древнего вида Драконов, что появились в огненных глубинах Террарии, что был разбит надвое из-за огромного давления от сосуда энергии, созданного Яхщерами во время битвы с ними.
+		AncientWyrm: Одна из двух частей, на которые раскололся Стражник, из-за давления от сосуда энергии, созданного Яхщерами во время битвы с ними. Змей воплощает в себе разрушительную природу Стражника.
 		AqueousBoss: Теперь всего лишь пустая оболочка былой себя, Аквеус когда-то была одним из сильнейших воинов, когда-либо живших в Террарийском океане. Она служила короне короля морей, мутанта Герцога Рыброна, пока его не убили. И, уж поверь, она точно сделает всё возможное, чтобы отомстить убийце своего короля...
 		AzanaEyeBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
 		AzanaBestiary: Неудачливый учёный, отчаянно искавший что-либо достаточно мощное, способное покончить с тиранией Абраксиса. Скоро, возможный вариант был найден - частицы Хаотрона, обладавшие уникальным потенциалом. Усиленный этими частицами механический костюм был создан, но, увы, этот же костюм в конечном итоге и поглотил своего создателя.
@@ -4975,15 +5157,15 @@ Tooltips: {
 	AncientsSummon10: Ты вернул меня в эти поганые земли... Нахрена?
 	EoitesWrath: Лучи
 	EoitesWrath1: Взрывы
-	// SandstormStone: The sand storm settles...
-	// SandstormStone1: The desert winds pick up!
+	SandstormStone: Песчаная буря рассеивается...
+	SandstormStone1: Ветры пустыни поднимаются!
 }
 
 AccInfo: {
 	NEB: Злые биомы поблизости
 	Nearby: поблизости
 	BDPS: урона в секунду от дебаффов
-	BDPS1: урона от баффов в секунду
+	BDPS1: урона в секунду от баффов
 	RainTime: До прекращения дождя
 	SR: осталось секунд
 	Clear: Дождя нет
@@ -5060,6 +5242,11 @@ SetBonus: {
 		Нажми ВНИЗ, чтобы отменить этот эффект, но тогда ты получишь весь урон от падения
 		'''
 	AridSetBonus: Позволяет слегка левитировать над землёй при нажатии кнопки прыжка
+	ElementalSetBonus:
+		'''
+		При получении фатального урона ты возродишься с частью здоровья
+		Откат способности - 45 секунд
+		'''
 }
 
 Said: {
@@ -5130,7 +5317,7 @@ ShopCondition: {
 }
 
 Credits: {
-	Credits: Зажми 'Esc' для пропуска
+	Credits: "'Esc' для пропуска"
 	Credits1: Мод создан
 	Credits2: Музыка написана
 	Credits3: Лор придуман

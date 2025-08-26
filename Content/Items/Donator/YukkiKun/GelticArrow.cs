@@ -13,7 +13,7 @@ namespace ElementsAwoken.Content.Items.Donator.YukkiKun
             Item.damage = 7;
             Item.consumable = true;
             Item.DamageType = DamageClass.Ranged;
-            Item.maxStack = 999;
+            Item.maxStack = 9999;
             Item.knockBack = 1.5f;
             Item.value = 10;
             Item.rare = 1;
