@@ -53,18 +53,16 @@ namespace ElementsAwoken.EASystem.Global
         }
         public override void ModifyHitPlayer(Projectile projectile, Player target, ref Player.HurtModifiers modifiers)
         {
-            float damage = modifiers.SourceDamage.Base;
             if (Main.expertMode && dontScaleDamage && projectile.hostile)
             {
-                damage = (int)(damage * 0.5f);
+                modifiers.SourceDamage.Base = (int)(modifiers.SourceDamage.Base * 0.5f);
             }
         }
         public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
         {
-            float damage = modifiers.SourceDamage.Base;
             if (target.GetGlobalNPC<NPCsGLOBAL>().impishCurse)
             {
-                damage = (int)(damage * 1.75f);
+                modifiers.SourceDamage.Base = (int)(modifiers.SourceDamage.Base * 1.75f);
             }
         }
         public override void AI(Projectile projectile)

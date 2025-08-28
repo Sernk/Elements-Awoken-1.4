@@ -3492,6 +3492,116 @@ Items: {
 		// DisplayName: Fire Spirit Scepter
 		// Tooltip: Summons a fire spirit to serve you
 	}
+
+	FrostNeck: {
+		/* Tooltip:
+			'''
+			Harness the power of frost
+			Immunity to chilled and frozen
+			Upon entering snow:
+			5% increased damage
+			5% increased melee speed and throwing velocity
+			''' */
+		// DisplayName: Pendant of Frost
+	}
+
+	FrostBlade: {
+		// Tooltip: Throws two icy blades that return to the player
+		// DisplayName: Frost Blade
+	}
+
+	FrostBattleaxe: {
+		// Tooltip: Summons an ice axe to fight for you
+		// DisplayName: Floe Breaker
+	}
+
+	FreezeRay: {
+		// Tooltip: Shoots ice beams that completely freeze enemies
+		// DisplayName: Freeze Ray
+	}
+
+	FloeBreaker: {
+		/* Tooltip:
+			'''
+			Creates a shockwave upon impact with the ground
+			InstaFiz's donator item
+			''' */
+		// DisplayName: Hoarfrost Crusher
+	}
+
+	FrostPulse: {
+		// DisplayName: Frost Pulse Rifle
+		// Tooltip: Fires an icy pulse
+	}
+
+	FrostShield: {
+		// DisplayName: Frost Buckler
+		/* Tooltip:
+			'''
+			Grants immunity to knockback
+			30 increased maximum life
+			If the player is in the snow:
+			5 defense
+			30 increased maximum life
+			10% increased damage
+			''' */
+	}
+
+	GlacialBlitz: {
+		// DisplayName: Glacial Blitz
+		// Tooltip: ""
+	}
+
+	GlacierBreaker: {
+		// DisplayName: Glacier Breaker
+		// Tooltip: ""
+	}
+
+	TheThaw: {
+		/* Tooltip:
+			'''
+			Turns normal arrows into frostburn arrows
+			Occasionally shoots an exploding ice blade
+			''' */
+		// DisplayName: The Thaw
+	}
+
+	Snowstorm: {
+		// Tooltip: Turns normal arrows into frostburn arrows
+		// DisplayName: Snowstorm
+	}
+
+	SnowflakeStaff: {
+		// Tooltip: Shoots a magical snowflake that follows the cursor
+		// DisplayName: Snowflake Staff
+	}
+
+	Snower: {
+		/* Tooltip:
+			'''
+			Sprays cold white snow onto your enemies
+			75% chance to not consume ammo
+			''' */
+		// DisplayName: Snower
+	}
+
+	Icicle: {
+		/* Tooltip:
+			'''
+			Fires three icicles that impale enemies
+			Right Click to rapidly stab while firing a volley of icy bolts
+			''' */
+		// DisplayName: Icicle
+	}
+
+	Hailgun: {
+		/* Tooltip:
+			'''
+			"'It's raining snowballs, from out of the sky'"
+			90% chance not to consume ammo
+			''' */
+		// DisplayName: Hailgun
+	}
 }
 
 Tiles: {
@@ -4036,6 +4146,11 @@ Buffs: {
 	FireElementalBuff: {
 		// DisplayName: Fire Spirit
 		// Description: It will keep you warm on the cold nights
+	}
+
+	IceAxeBuff: {
+		// Description: It slices anything in its path
+		// DisplayName: Ice Axe
 	}
 }
 
@@ -4937,6 +5052,20 @@ Projectiles: {
 	// FireBolt.DisplayName: Fire Bolt
 	// FireElemental.DisplayName: Fire Elemental
 	// InfernoLanceP.DisplayName: Inferno Lance P
+	// FrostBladeP.DisplayName: Frost Blade P
+	// IceAxe.DisplayName: Ice Axe
+	// IceWaveCheck.DisplayName: Ice Wave Check
+	// IceWave.DisplayName: Shockwave
+	// FreezeBeam.DisplayName: Freeze Ray
+	// FrostPulse.DisplayName: Frost Pulse
+	// IcicleProj.DisplayName: Icicle Proj
+	// GlacierBreakerP.DisplayName: Glacier Breaker
+	// BlitzP.DisplayName: Glacial Blitz
+	// YoyoSnowball.DisplayName: Glacial Blitz
+	// SnowSpray.DisplayName: Snow Spray
+	// Snowflake.DisplayName: Snowflake
+	// IcicleShot.DisplayName: Ice Bolt
+	// IceBlade.DisplayName: Ice Blade
 }
 
 Configs: {
