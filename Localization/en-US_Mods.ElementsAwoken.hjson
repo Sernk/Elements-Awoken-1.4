@@ -3562,6 +3562,160 @@ Items: {
 			'''
 		DisplayName: Hailgun
 	}
+
+	SkylineWings: {
+		Tooltip: Allows flight and slow fall
+		DisplayName: Skyline Wings
+	}
+
+	SkyFury: {
+		Tooltip:
+			'''
+			Strike with the wrath of the sky
+			Summons rain from the sky
+			'''
+		DisplayName: Sky Fury
+	}
+
+	HappyLittleCloud: {
+		Tooltip: Summons a Happy Little Cloud to protect you from the happy little mistakes
+		DisplayName: Happy Little Cloud Staff
+	}
+
+	FeatherFall: {
+		Tooltip: Turns normal arrows into feathers that rain down more feathers on enemy hits
+		DisplayName: Feather Fall
+	}
+
+	Aurora: {
+		Tooltip: ""
+		DisplayName: Aurora
+	}
+
+	SkyShield: {
+		Tooltip:
+			'''
+			The clouds accept you
+			Grants immunity to knockback
+			Allows double jump
+			Increases wing time
+			When in the sky:
+			10 defense
+			'''
+		DisplayName: Sky Shield
+	}
+
+	SkyScraper: {
+		Tooltip: ""
+		DisplayName: Sky Scraper
+	}
+
+	SkyNeck: {
+		Tooltip:
+			'''
+			The wind blesses you
+			Inceased wingtime
+			Greatly increased movement speed
+			When in space:
+			5% increased damage
+			8 defense
+			'''
+		DisplayName: Badge of the Sky
+	}
+
+	Starlight: {
+		DisplayName: Starlight
+		Tooltip: Turns normal arrows into piercing feathers
+	}
+
+	Stormsky: {
+		DisplayName: Stormsky
+		Tooltip: Fires a storm of feathers
+	}
+
+	TheLauncher: {
+		DisplayName: The Launcher
+		Tooltip: Randomly fires bolts that knock enemies around
+	}
+
+	Windfall: {
+		Tooltip: 50% chance to not consume ammo
+		DisplayName: Windfall
+	}
+
+	TimeToken: {
+		Tooltip: Switches the time between day and night
+		DisplayName: Hourglass of Eternity
+	}
+
+	ThorsHammer: {
+		Tooltip: Pure energy in the palm of your hand
+		DisplayName: Storm Hammer
+	}
+
+	EmpyreanVisage: {
+		Tooltip:
+			'''
+			10% increased thrown damage
+			7% increased thrown critical strike chance
+			'''
+		DisplayName: Empyrean Visage
+	}
+
+	EmpyreanPlate: {
+		Tooltip:
+			'''
+			10% increased critical strike chance
+			Flight time increased by 30
+			'''
+		DisplayName: Empyrean Breastplate
+	}
+
+	EmpyreanMask: {
+		Tooltip:
+			'''
+			10% increased melee damage
+			7% increased melee critical strike chance
+			'''
+		DisplayName: Empyrean Mask
+	}
+
+	EmpyreanLeggings: {
+		Tooltip:
+			'''
+			20% increased movement speed
+			10% increased swing speed
+			'''
+		DisplayName: Empyrean Leggings
+	}
+
+	EmpyreanHelmet: {
+		Tooltip:
+			'''
+			10% increased ranged damage
+			7% increased ranged critical strike chance
+			'''
+		DisplayName: Empyrean Helmet
+	}
+
+	EmpyreanHeadgear: {
+		Tooltip:
+			'''
+			10% increased minion damage
+			Increases your maximum number of minions by 1
+			10% increased minion knockback
+			'''
+		DisplayName: Empyrean Headgear
+	}
+
+	EmpyreanHat: {
+		Tooltip:
+			'''
+			10% increased magic damage
+			7% increased magic critical strike chance
+			'''
+		DisplayName: Empyrean Hat
+	}
 }
 
 Tiles: {
@@ -4111,6 +4265,11 @@ Buffs: {
 	IceAxeBuff: {
 		Description: It slices anything in its path
 		DisplayName: Ice Axe
+	}
+
+	HappyCloudBuff: {
+		Description: Bob Ross
+		DisplayName: Happy Little Cloud
 	}
 }
 
@@ -5026,6 +5185,21 @@ Projectiles: {
 	Snowflake.DisplayName: Snowflake
 	IcicleShot.DisplayName: Ice Bolt
 	IceBlade.DisplayName: Ice Blade
+	SkyFuryRain.DisplayName: Rain
+	HappyCloud.DisplayName: Happy Little Cloud
+	CloudBolt.DisplayName: Lightning Bolt
+	Feather3.DisplayName: Feather
+	Feather2.DisplayName: Feather
+	Feather1.DisplayName: Feather
+	CloudBlast.DisplayName: Sky Fury
+	SkyScraperP.DisplayName: SkyScraper
+	FeatherFast.DisplayName: Feather Fast
+	TheLauncherBolt.DisplayName: The Launcher
+	TheLauncherP.DisplayName: The Launcher
+	WindfallFire.DisplayName: Windfall
+	ThorsHammerP.DisplayName: Storm Hammer
+	ThorLightning.DisplayName: Thors Hammer
+	AeroLightning.DisplayName: Lightning
 }
 
 Configs: {
@@ -5247,6 +5421,7 @@ Tooltips: {
 	EoitesWrath1: Blasts
 	SandstormStone: The sand storm settles...
 	SandstormStone1: The desert winds pick up!
+	TimeToken: You cant escape from the void
 }
 
 AccInfo: {
@@ -5335,6 +5510,7 @@ SetBonus: {
 		If you are killed, you are revived back to half health
 		45 second cooldown
 		'''
+	EmpyreanSetBonus: Storms brew around you
 }
 
 Said: {

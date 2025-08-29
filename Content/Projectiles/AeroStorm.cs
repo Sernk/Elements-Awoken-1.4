@@ -47,7 +47,7 @@ namespace ElementsAwoken.Content.Projectiles
             }
             if (Projectile.ai[1] <= 0)
             {
-                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X + Main.rand.Next(-spawnWidth / 2, spawnWidth / 2), Projectile.position.Y + Projectile.height, Main.rand.NextFloat(-2, 2), 10, Mod.Find<ModProjectile>("AeroLightning").Type, Projectile.damage * 2, 0, Projectile.owner);
+                Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X + Main.rand.Next(-spawnWidth / 2, spawnWidth / 2), Projectile.position.Y + Projectile.height, Main.rand.NextFloat(-2, 2), 10, ModContent.ProjectileType<AeroLightning>(), Projectile.damage * 2, 0, Projectile.owner);
                 Projectile.ai[1] = Main.rand.Next(60, 120);
                 Projectile.netUpdate = true;
             }

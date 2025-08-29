@@ -200,6 +200,9 @@ namespace ElementsAwoken.Utilities
         #endregion
         public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion
+        #region TimeToken
+        public string TimeToken => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.TimeToken");
+        #endregion
         #region AccInfo
         public string NEB => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.NEB");
         public string Nearby => Language.GetTextValue("Mods.ElementsAwoken.AccInfo.Nearby");
@@ -280,6 +283,7 @@ namespace ElementsAwoken.Utilities
         public string GelticConquerorSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.GelticConquerorSetBonus");
         public string AridSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AridSetBonus");
         public string ElementalSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ElementalSetBonus");
+        public static string EmpyreanSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.EmpyreanSetBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");

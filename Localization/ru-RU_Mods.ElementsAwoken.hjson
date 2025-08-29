@@ -3299,7 +3299,7 @@ Items: {
 
 	SolitaryStorm: {
 		DisplayName: Одношторм
-		Tooltip: Выпускает песчаные торнадо во врагов
+		Tooltip: Выпускает песчаные торнадо во врагов при взмахе
 	}
 
 	StaffOfTheSandstorm: {
@@ -3419,188 +3419,342 @@ Items: {
 	}
 
 	BlazeFury: {
-		// DisplayName: Blaze Fury
-		// Tooltip: ""
+		DisplayName: Огнеярость
+		Tooltip: ""
 	}
 
 	BonfirePummel: {
-		// DisplayName: Bonfire Pummel
-		// Tooltip: Fires fireball that explodes into sparks on impact
+		DisplayName: Костробой
+		Tooltip: Выпускает огнешар, который разрывается на искры при ударе по врагу
 	}
 
 	DragonsBreath: {
-		// DisplayName: Dragon's Breath
-		// Tooltip: 50% chance to not consume ammo
+		DisplayName: Драконье дыхание
+		Tooltip: Имеет 50% шанс не потратить аммуницию при выстреле
 	}
 
 	FireKnives: {
-		// DisplayName: Fire Knives
-		// Tooltip: Throws three exploding fire daggers
+		DisplayName: Огне-ножи
+		Tooltip: Метает три огненных ножа при использовании
 	}
 
 	Firelash: {
-		// DisplayName: Hellstorm
-		// Tooltip: ""
+		DisplayName: Адошторм
+		Tooltip: ""
 	}
 
 	FireNeck: {
-		// DisplayName: Band of Inferno
-		/* Tooltip:
+		DisplayName: Адская повязка
+		Tooltip:
 			'''
-			Unleash the power of flames upon your enemies
-			Double tap down to create a small explosion that launches the player into the air
-			Melee attacks have flames
-			2% increased damage
-			''' */
+			Обрушь на врагов своих необузданную силу огня
+			Нажми ВНИЗ дважды, чтобы создать небольшой взрыв, который подбросит игрока вверх
+			Все атаки ближними оружиями накладывают на врагов дебафф "В огне!"
+			Увеличивает весь урон на 2%
+			'''
 	}
 
 	FireScythe: {
-		// DisplayName: Scythe of Eternal Flame
-		// Tooltip: ""
+		DisplayName: Коса Вечногня
+		Tooltip: ""
 	}
 
 	FireShield: {
-		// DisplayName: Inferno Bulwark
-		// Tooltip: Grants immunity to knockback, fire blocks, and On Fire
+		DisplayName: Оплот Ада
+		Tooltip: Даёт неуязвимость к отбрасыванию, огненным блокам и дебаффу "В огне!"
 	}
 
 	FireStorm: {
-		// DisplayName: Fire Storm
-		/* Tooltip:
+		DisplayName: Огненная буря
+		Tooltip:
 			'''
-			Fires a burst of 3 bullets
-			The last bullet deals 50% more damage and inflicts on fire
-			''' */
+			Выстреливает тремя пулями за раз
+			Последняя из этих трёх пуль наносит на 50% больше урона и накладывает на врага дебафф "В огне!"
+			'''
 	}
 
 	FireTrisword: {
-		// DisplayName: Blazing Trisword
-		// Tooltip: Forged inside of an eternal fire
+		DisplayName: Огненное троелезвие
+		Tooltip: Сковано самим вечным пламенем
 	}
 
 	Incinerator: {
-		// DisplayName: Incinerator
-		// Tooltip: ""
+		DisplayName: Испепелитель
+		Tooltip: ""
 	}
 
 	InfernoLance: {
-		// DisplayName: Inferno Lance
-		// Tooltip: ""
+		DisplayName: Адскопьё
+		Tooltip: ""
 	}
 
 	InfurnicesesMinionStaff: {
-		// DisplayName: Fire Spirit Scepter
-		// Tooltip: Summons a fire spirit to serve you
+		DisplayName: Скипетр духа огня
+		Tooltip: Призывает огненного духа на твою защиту
 	}
 
 	FrostNeck: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Harness the power of frost
-			Immunity to chilled and frozen
-			Upon entering snow:
-			5% increased damage
-			5% increased melee speed and throwing velocity
-			''' */
-		// DisplayName: Pendant of Frost
+			Почувствуй силу лютого мороза
+			Даёт неуязвимость к дебаффам "Озноб" и "Заморозка"
+			При нахождении в Тундре ты получаешь:
+			Увеличенный на 5% весь урон
+			Увеличенные на 5% скорость ближних оружий и полёта метательных оружий
+			'''
+		DisplayName: Морозоберег
 	}
 
 	FrostBlade: {
-		// Tooltip: Throws two icy blades that return to the player
-		// DisplayName: Frost Blade
+		Tooltip: Выпускает два ледзвия-бумеранга при использовании
+		DisplayName: Ледзвие
 	}
 
 	FrostBattleaxe: {
-		// Tooltip: Summons an ice axe to fight for you
-		// DisplayName: Floe Breaker
+		Tooltip: Создаёт ударную волну при ударе по земле
+		DisplayName: Изморозитель
 	}
 
 	FreezeRay: {
-		// Tooltip: Shoots ice beams that completely freeze enemies
-		// DisplayName: Freeze Ray
+		Tooltip: Стреляет ледяными лучами, замораживающими врагов при попадании
+		DisplayName: Замораживающий луч
 	}
 
 	FloeBreaker: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Creates a shockwave upon impact with the ground
-			InstaFiz's donator item
-			''' */
-		// DisplayName: Hoarfrost Crusher
+			Призывает ледяной топор на твою защиту
+			Предмет донатера InstaFiz
+			'''
+		DisplayName: Ледокол
 	}
 
 	FrostPulse: {
-		// DisplayName: Frost Pulse Rifle
-		// Tooltip: Fires an icy pulse
+		DisplayName: Пульсовая морозовинтовка
+		Tooltip: Стреляет ледопульсом, взрывающимся при контакте с врагами или блоками
 	}
 
 	FrostShield: {
-		// DisplayName: Frost Buckler
-		/* Tooltip:
+		DisplayName: Морозный щит
+		Tooltip:
 			'''
-			Grants immunity to knockback
-			30 increased maximum life
-			If the player is in the snow:
-			5 defense
-			30 increased maximum life
-			10% increased damage
-			''' */
+			Даёт неуязвимость к отбрасыванию
+			Увеличивает максимальное здоровье на 30
+			При нахождении в Тундре ты получаешь:
+			Увеличенную на 5 защиту
+			Увеличенное на 30 максимальное здоровье
+			Увеличенный на 10% весь урон
+			'''
 	}
 
 	GlacialBlitz: {
-		// DisplayName: Glacial Blitz
-		// Tooltip: ""
+		DisplayName: Заледенитель
+		Tooltip: ""
 	}
 
 	GlacierBreaker: {
-		// DisplayName: Glacier Breaker
-		// Tooltip: ""
+		DisplayName: Ледникол
+		Tooltip: ""
 	}
 
 	TheThaw: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Turns normal arrows into frostburn arrows
-			Occasionally shoots an exploding ice blade
-			''' */
-		// DisplayName: The Thaw
+			Превращает обычные стрелы в морозогненные стрелы
+			Время от времени также стреляет взрывным ледзвием
+			'''
+		DisplayName: Оттепель
 	}
 
 	Snowstorm: {
-		// Tooltip: Turns normal arrows into frostburn arrows
-		// DisplayName: Snowstorm
+		Tooltip: Превращает обычные стрелы в морозогненные стрелы
+		DisplayName: Метель
 	}
 
 	SnowflakeStaff: {
-		// Tooltip: Shoots a magical snowflake that follows the cursor
-		// DisplayName: Snowflake Staff
+		Tooltip: Создаёт магическую снежинку, следующую за курсором
+		DisplayName: Снежинковый посох
 	}
 
 	Snower: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Sprays cold white snow onto your enemies
-			75% chance to not consume ammo
-			''' */
-		// DisplayName: Snower
+			Окутывает твоих врагов обморожительным снегом
+			Имеет 75% шанс не потратить аммуницию при выстреле
+			'''
+		DisplayName: Оснежитель
 	}
 
 	Icicle: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Fires three icicles that impale enemies
-			Right Click to rapidly stab while firing a volley of icy bolts
-			''' */
-		// DisplayName: Icicle
+			Стреляет тремя прознающими врагов сосульками
+			<right>, чтобы одновременно стрелять ледяными выстрелами и колоть, как кинжалом
+			'''
+		DisplayName: Сосулька
 	}
 
 	Hailgun: {
+		Tooltip:
+			'''
+			"'С небес падают снежки, прямо оттуда!'"
+			Имеет 90% шанс не потратить аммуницию при выстреле
+			'''
+		DisplayName: Градельсотрон
+	}
+
+	SkylineWings: {
+		Tooltip: Позволяет летать и замедлять падение
+		DisplayName: Крылья небосвода
+	}
+
+	SkyFury: {
+		Tooltip:
+			'''
+			Сражай врагов своих силой небес
+			Заставляет облака проливать дождь
+			'''
+		DisplayName: Ярость небес
+	}
+
+	HappyLittleCloud: {
+		Tooltip: Призывает милое-малое облачко защищать тебя от милых-малых ошибочек
+		DisplayName: Посох милого-малого облачка
+	}
+
+	FeatherFall: {
+		Tooltip: Превращает обычные стрелы в перья, которые призывают ещё больше перьев сверху
+		DisplayName: Перопадение
+	}
+
+	Aurora: {
+		Tooltip: чвапирмотьлбдю
+		DisplayName: Северное сияние
+	}
+
+	SkyShield: {
 		/* Tooltip:
 			'''
-			"'It's raining snowballs, from out of the sky'"
-			90% chance not to consume ammo
+			The clouds accept you
+			Grants immunity to knockback
+			Allows double jump
+			Increases wing time
+			When in the sky:
+			10 defense
 			''' */
-		// DisplayName: Hailgun
+		// DisplayName: Sky Shield
+	}
+
+	SkyScraper: {
+		// Tooltip: ""
+		// DisplayName: Sky Scraper
+	}
+
+	SkyNeck: {
+		/* Tooltip:
+			'''
+			The wind blesses you
+			Inceased wingtime
+			Greatly increased movement speed
+			When in space:
+			5% increased damage
+			8 defense
+			''' */
+		// DisplayName: Badge of the Sky
+	}
+
+	Starlight: {
+		// DisplayName: Starlight
+		// Tooltip: Turns normal arrows into piercing feathers
+	}
+
+	Stormsky: {
+		// DisplayName: Stormsky
+		// Tooltip: Fires a storm of feathers
+	}
+
+	TheLauncher: {
+		// DisplayName: The Launcher
+		// Tooltip: Randomly fires bolts that knock enemies around
+	}
+
+	Windfall: {
+		// Tooltip: 50% chance to not consume ammo
+		// DisplayName: Windfall
+	}
+
+	TimeToken: {
+		// Tooltip: Switches the time between day and night
+		// DisplayName: Hourglass of Eternity
+	}
+
+	ThorsHammer: {
+		// Tooltip: Pure energy in the palm of your hand
+		// DisplayName: Storm Hammer
+	}
+
+	EmpyreanVisage: {
+		/* Tooltip:
+			'''
+			10% increased thrown damage
+			7% increased thrown critical strike chance
+			''' */
+		// DisplayName: Empyrean Visage
+	}
+
+	EmpyreanPlate: {
+		/* Tooltip:
+			'''
+			10% increased critical strike chance
+			Flight time increased by 30
+			''' */
+		// DisplayName: Empyrean Breastplate
+	}
+
+	EmpyreanMask: {
+		/* Tooltip:
+			'''
+			10% increased melee damage
+			7% increased melee critical strike chance
+			''' */
+		// DisplayName: Empyrean Mask
+	}
+
+	EmpyreanLeggings: {
+		/* Tooltip:
+			'''
+			20% increased movement speed
+			10% increased swing speed
+			''' */
+		// DisplayName: Empyrean Leggings
+	}
+
+	EmpyreanHelmet: {
+		/* Tooltip:
+			'''
+			10% increased ranged damage
+			7% increased ranged critical strike chance
+			''' */
+		// DisplayName: Empyrean Helmet
+	}
+
+	EmpyreanHeadgear: {
+		/* Tooltip:
+			'''
+			10% increased minion damage
+			Increases your maximum number of minions by 1
+			10% increased minion knockback
+			''' */
+		// DisplayName: Empyrean Headgear
+	}
+
+	EmpyreanHat: {
+		/* Tooltip:
+			'''
+			10% increased magic damage
+			7% increased magic critical strike chance
+			''' */
+		// DisplayName: Empyrean Hat
 	}
 }
 
@@ -4144,13 +4298,18 @@ Buffs: {
 	}
 
 	FireElementalBuff: {
-		// DisplayName: Fire Spirit
-		// Description: It will keep you warm on the cold nights
+		DisplayName: Огненный дух
+		Description: Он согреет тебя холодными ночами
 	}
 
 	IceAxeBuff: {
-		// Description: It slices anything in its path
-		// DisplayName: Ice Axe
+		Description: Можно сказать, он всегда рубит с плеча
+		DisplayName: Ледяной топор
+	}
+
+	HappyCloudBuff: {
+		Description: спасибо за отсылки на то, что я не ебу как правильно перевести без потери смысла, так как я не шарю за амерскую культуру...
+		DisplayName: Милое-малое облачко
 	}
 }
 
@@ -5040,32 +5199,47 @@ Projectiles: {
 	Voxus1.DisplayName: Воксус1
 	ValkyrieBolt.DisplayName: Выстрел валькирии
 	RainbowExplosion.DisplayName: Радуговзрыв
-	// DragonFire.DisplayName: Dragon's Breath
-	// FireBall.DisplayName: Fire Ball
-	// FireKnifeBolt.DisplayName: Fire Bolt
-	// FireKnife.DisplayName: Fire Knife
-	// FireScytheProj.DisplayName: Scythe of Eternal Flame
-	// FirestormShot.DisplayName: Firestorm
-	// TriswordBlade.DisplayName: Blazing Trisword
-	// TriswordSlash.DisplayName: Blazing Trisword
-	// FirelashP.DisplayName: Firelash
-	// FireBolt.DisplayName: Fire Bolt
-	// FireElemental.DisplayName: Fire Elemental
-	// InfernoLanceP.DisplayName: Inferno Lance P
-	// FrostBladeP.DisplayName: Frost Blade P
-	// IceAxe.DisplayName: Ice Axe
-	// IceWaveCheck.DisplayName: Ice Wave Check
-	// IceWave.DisplayName: Shockwave
-	// FreezeBeam.DisplayName: Freeze Ray
-	// FrostPulse.DisplayName: Frost Pulse
-	// IcicleProj.DisplayName: Icicle Proj
-	// GlacierBreakerP.DisplayName: Glacier Breaker
-	// BlitzP.DisplayName: Glacial Blitz
-	// YoyoSnowball.DisplayName: Glacial Blitz
-	// SnowSpray.DisplayName: Snow Spray
-	// Snowflake.DisplayName: Snowflake
-	// IcicleShot.DisplayName: Ice Bolt
-	// IceBlade.DisplayName: Ice Blade
+	DragonFire.DisplayName: Дракогонь
+	FireBall.DisplayName: ОгнеШар
+	FireKnifeBolt.DisplayName: Выстрел огненожа
+	FireKnife.DisplayName: Огненож
+	FireScytheProj.DisplayName: Проджектайл огнекосы
+	FirestormShot.DisplayName: Выстрел огнешторма
+	TriswordBlade.DisplayName: Лезвие троелезвия
+	TriswordSlash.DisplayName: Взмах троелезвия
+	FirelashP.DisplayName: Проджектайл огнеплети
+	FireBolt.DisplayName: Огневыстрел
+	FireElemental.DisplayName: Огнелементаль
+	InfernoLanceP.DisplayName: Проджектайл пеклопья
+	FrostBladeP.DisplayName: Проджектайл ледзвия
+	IceAxe.DisplayName: Ледопор
+	IceWaveCheck.DisplayName: Чекалка ледоволны
+	IceWave.DisplayName: Ледоволна
+	FreezeBeam.DisplayName: Замораживающий луч
+	FrostPulse.DisplayName: Ледопульс
+	IcicleProj.DisplayName: Проджектайл сосу льки
+	GlacierBreakerP.DisplayName: Проджектайл ледникола
+	BlitzP.DisplayName: Проджектайл блицкрига
+	YoyoSnowball.DisplayName: Йо-йошный снежок
+	SnowSpray.DisplayName: Снегоспрей
+	Snowflake.DisplayName: Снежинка
+	IcicleShot.DisplayName: Выстрел сосу льки
+	IceBlade.DisplayName: Ледзвие
+	SkyFuryRain.DisplayName: Дождь небоярости
+	HappyCloud.DisplayName: Милое-малое облачко
+	CloudBolt.DisplayName: Выстрел облачка
+	Feather3.DisplayName: Перо3
+	Feather2.DisplayName: Перо2
+	Feather1.DisplayName: Перо
+	CloudBlast.DisplayName: Другой выстрел облачка
+	// SkyScraperP.DisplayName: SkyScraper
+	// FeatherFast.DisplayName: Feather Fast
+	// TheLauncherBolt.DisplayName: The Launcher
+	// TheLauncherP.DisplayName: The Launcher
+	// WindfallFire.DisplayName: Windfall
+	// ThorsHammerP.DisplayName: Storm Hammer
+	// ThorLightning.DisplayName: Thors Hammer
+	// AeroLightning.DisplayName: Lightning
 }
 
 Configs: {
@@ -5288,6 +5462,7 @@ Tooltips: {
 	EoitesWrath1: Взрывы
 	SandstormStone: Песчаная буря рассеивается...
 	SandstormStone1: Ветры пустыни поднимаются!
+	// TimeToken: You cant escape from the void
 }
 
 AccInfo: {
@@ -5376,6 +5551,7 @@ SetBonus: {
 		При получении фатального урона ты возродишься с частью здоровья
 		Откат способности - 45 секунд
 		'''
+	// EmpyreanSetBonus: Storms brew around you
 }
 
 Said: {

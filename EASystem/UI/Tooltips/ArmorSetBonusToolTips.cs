@@ -10,6 +10,7 @@ using ElementsAwoken.Content.Items.Donator.Superbaseball101;
 using ElementsAwoken.Content.Items.Donator.YukkiKun;
 using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Elements.Elemental;
+using ElementsAwoken.Content.Items.Elements.Sky;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
@@ -20,6 +21,8 @@ namespace ElementsAwoken.EASystem.UI.Tooltips;
 public class ArmorSetBonusToolTips : GlobalItem
 {
     public bool IsHelmet;
+    public List<int> Arid = [ModContent.ItemType<AridFalconHelm>(), ModContent.ItemType<AridHat>(), ModContent.ItemType<AridHeadgear>(), ModContent.ItemType<AridHood>(), ModContent.ItemType<AridWarriorMask>(),];
+    public List<int> Empyrean = [ModContent.ItemType<EmpyreanMask>(), ModContent.ItemType<EmpyreanHat>(), ModContent.ItemType<EmpyreanHeadgear>(), ModContent.ItemType<EmpyreanHelmet>(), ModContent.ItemType<EmpyreanVisage>()];
     public ArmorSetBonusToolTips()
     {
         IsHelmet = false;
@@ -57,8 +60,9 @@ public class ArmorSetBonusToolTips : GlobalItem
                 if (item.type == ModContent.ItemType<AwokenWoodHelmet>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.AwokenWoodSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<FireDemonsHelm>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.FireDemonsSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<GelticConquerorHelmet>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.GelticConquerorSetBonus) { OverrideColor = Gray });
-                if (item.type == ModContent.ItemType<AridFalconHelm>() || item.type == ModContent.ItemType<AridHat>() || item.type == ModContent.ItemType<AridHeadgear>() || item.type == ModContent.ItemType<AridHood>() || item.type == ModContent.ItemType<AridWarriorMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.AridSetBonus) { OverrideColor = Gray });
+                if (Arid.Contains(item.type)) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.AridSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<ElementalMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.ElementalSetBonus) { OverrideColor = Gray });
+                if (Empyrean.Contains(item.type)) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", EALocalization.EmpyreanSetBonus) { OverrideColor = Gray });
             }
         }
     }
