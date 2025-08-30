@@ -1,5 +1,6 @@
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Items.Materials;
+using ElementsAwoken.EASystem.UI;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;
@@ -20,12 +21,8 @@ namespace ElementsAwoken.Content.Items.Elements.Elemental
         }
         public override void UpdateEquip(Player player)
         {
-            player.GetDamage(DamageClass.Throwing) *= 1.2f;
-            player.GetDamage(DamageClass.Melee) *= 1.2f;
-            player.GetDamage(DamageClass.Magic) *= 1.2f;
-            player.GetDamage(DamageClass.Ranged) *= 1.2f;
-            player.GetDamage(DamageClass.Summon) *= 1.2f;
-            player.statLifeMax2 += 100;
+            player.GetModPlayer<HeartsPlayers>().HPBonus += 100;
+            player.GetDamage(DamageClass.Generic) *= 1.2f;
             player.statManaMax2 += 150;
             player.endurance += 0.1f;
         }

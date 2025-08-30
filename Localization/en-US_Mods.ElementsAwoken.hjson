@@ -2316,6 +2316,15 @@ Items: {
 			'''
 	}
 
+	Scourge: {
+		DisplayName: Scourge
+		Tooltip:
+			'''
+			Melt your enemies
+			75% chance to not consume ammo
+			'''
+	}
+
 	SlimeRainSummon: {
 		DisplayName: Energized Gel
 		Tooltip:
@@ -3716,6 +3725,107 @@ Items: {
 			'''
 		DisplayName: Empyrean Hat
 	}
+
+	EACalamity: {
+		#EA было добавлено чтобы избежать проблем из-за одинаковый имен
+		Tooltip: Throws 2 bouncing chakrams that explode on impact
+		DisplayName: Calamity
+	}
+
+	Cataclysm: {
+		Tooltip: ""
+		DisplayName: Cataclysm
+	}
+
+	Eradication: {
+		Tooltip: ""
+		DisplayName: Eradication
+	}
+
+	CrimsonSky: {
+		Tooltip: ""
+		DisplayName: Crimson Sky
+	}
+
+	EyeofAnnihilation: {
+		DisplayName: The Eye of Annihilation
+		Tooltip: ""
+	}
+
+	HealingIcon: {
+		DisplayName: Icon of Healing
+		Tooltip: Constantly heals the player when under 250 life
+	}
+
+	InfinityTome: {
+		DisplayName: Tome of Infinity
+		Tooltip: The void hungers for life. It pulls in anything it touches
+	}
+
+	VoidBlaster: {
+		DisplayName: Void Blaster
+		Tooltip: Unleash a storm of homing void blasts
+	}
+
+	VoidShield: {
+		Tooltip:
+			'''
+			Grants immunity to knockback
+			The more defense you have the more health and damage you deal
+			'''
+		DisplayName: Somber Bulwark
+	}
+
+	VoidNeck: {
+		Tooltip:
+			'''
+			25% increased damage
+			Life regen increased by 4
+			'''
+		DisplayName: Idol of Darkness
+	}
+
+	VoidSpiritStaff: {
+		DisplayName: Abyss Cultist Staff
+		Tooltip:
+			'''
+			Summons an Abyss Cultist to protect you
+			Cultists take 5 minion slots
+			'''
+	}
+
+	VoidSword: {
+		DisplayName: Blade of the Depths
+		Tooltip: The edge of the blade gleams with red light
+	}
+
+	VoidBreastplate: {
+		DisplayName: Gloomhandler Breastplate
+		Tooltip:
+			'''
+			12% increased damage
+			Increased max life and mana by 75
+			'''
+	}
+
+	VoidGreaves: {
+		DisplayName: Gloomhandler Greaves
+		Tooltip:
+			'''
+			10% increased melee speed
+			Greater speed when low health
+			'''
+	}
+
+	VoidHelmet: {
+		DisplayName: Gloomhandler Helmet
+		Tooltip:
+			'''
+			Immune to cursed inferno, fire, chilled and cursed debuffs
+			+2 max minions
+			5% reduced damage
+			'''
+	}
 }
 
 Tiles: {
@@ -4270,6 +4380,11 @@ Buffs: {
 	HappyCloudBuff: {
 		Description: Bob Ross
 		DisplayName: Happy Little Cloud
+	}
+
+	AbyssCultistBuff: {
+		DisplayName: Abyss Cultist
+		Description: Praise the dark one...
 	}
 }
 
@@ -5200,6 +5315,19 @@ Projectiles: {
 	ThorsHammerP.DisplayName: Storm Hammer
 	ThorLightning.DisplayName: Thors Hammer
 	AeroLightning.DisplayName: Lightning
+	CalamityP.DisplayName: Cataclysm
+	CataclysmP.DisplayName: Cataclysm
+	CataclysmTip.DisplayName: Cataclysm
+	CataclysmicLaser.DisplayName: Cataclysmic Laser
+	VoidBlast.DisplayName: Void Blast
+	CrimsonSkyLaser.DisplayName: Crimson Sky
+	VoidArrow.DisplayName: Void Arrow
+	ScourgeFire.DisplayName: Scourge Fire
+	VoidTentacle.DisplayName: Void Tentacle
+	TheEyeP.DisplayName: The Eye Of Annihilation
+	AbyssCultistBolt.DisplayName: Abyss Cultist
+	AbyssCultist.DisplayName: Abyss Cultist
+	VoidSwordProj.DisplayName: Holocaust
 }
 
 Configs: {
@@ -5511,6 +5639,7 @@ SetBonus: {
 		45 second cooldown
 		'''
 	EmpyreanSetBonus: Storms brew around you
+	VoidSetBonus: All projectiles have a chance of healing you slightly
 }
 
 Said: {

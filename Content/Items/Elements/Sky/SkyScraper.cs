@@ -20,14 +20,14 @@ namespace ElementsAwoken.Content.Items.Elements.Sky
             Item.useTurn = true;
             Item.noUseGraphic = true;
             Item.autoReuse = true;
-            Item.useAnimation = 12;
-            Item.useTime = 12;
+            Item.useAnimation = 19;
+            Item.useTime = 19;
             Item.useStyle = 5;
             Item.UseSound = SoundID.Item1;
             Item.value = Item.buyPrice(0, 25, 0, 0);
             Item.rare = 6;
             Item.shoot = ModContent.ProjectileType<SkyScraperP>();
-            Item.shootSpeed = 12f;
+            Item.shootSpeed = 11f;
         }
         public override bool CanUseItem(Player player)
         {

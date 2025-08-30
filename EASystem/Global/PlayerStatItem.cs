@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.Items.Consumable.StatIncreases;
+using ElementsAwoken.Content.Items.Elements.Elemental;
 using ElementsAwoken.EASystem.UI;
 using Terraria;
 using Terraria.GameContent.Achievements;

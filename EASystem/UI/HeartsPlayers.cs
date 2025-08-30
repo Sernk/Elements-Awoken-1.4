@@ -1,4 +1,6 @@
-﻿using Terraria.ModLoader;
+﻿using ElementsAwoken.Content.Items.Elements.Elemental;
+using Terraria;
+using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
 namespace ElementsAwoken.EASystem.UI
@@ -10,6 +12,8 @@ namespace ElementsAwoken.EASystem.UI
         public int voidHeartLife;
         public int shieldLife;
 
+        public int HPBonus;
+
         public int Mana = 0;
 
         public int CountUseEmptyVessel = 0;
@@ -20,13 +24,18 @@ namespace ElementsAwoken.EASystem.UI
         public bool CompressorVisual = false;
         public bool EmptyVesselVisual = false;
         public bool CombilityEfects = false;
-
+        public override void ResetEffects()
+        {
+            HPBonus = 0; 
+        }
         public override void SaveData(TagCompound tag)
         {
             tag["emptyVesselHeartLife"] = emptyVesselHeartLife;
             tag["chaosHeartLife"] = chaosHeartLife;
             tag["voidHeartLife"] = voidHeartLife;
             tag["shieldLife"] = shieldLife;
+
+            tag["HPBonus"] = HPBonus;
 
             tag["Mana"] = Mana;
 
@@ -46,6 +55,8 @@ namespace ElementsAwoken.EASystem.UI
             voidHeartLife = tag.GetInt("voidHeartLife");
             shieldLife = tag.GetInt("shieldLife");
 
+            HPBonus = tag.GetInt("HPBonus");
+
             Mana = tag.GetInt("Mana");
 
             CountUseEmptyVessel = tag.GetInt("CountUseEmptyVessel");
@@ -59,26 +70,16 @@ namespace ElementsAwoken.EASystem.UI
         }
         public override void ModifyMaxStats(out StatModifier health, out StatModifier mana)
         {
-            int totalBonusHP = (CountUsechaosHear * 10);
-            int totalBonusHP2 = (CountUseEmptyVessel * 10);
-            int totalBonusMana = (Mana * 10);
-            if (CountUsechaosHear == 10)
-            {
-                health = new StatModifier(1f, 1f, totalBonusHP + totalBonusHP2, 0);
-            }
-            else
-            {
-                health = new StatModifier(1f, 1f, totalBonusHP, 0);
-            }
+            int hpBonus = 0;
+
+            hpBonus += CountUsechaosHear * 10;
+            if (CountUsechaosHear == 10)hpBonus += CountUseEmptyVessel * 10;
+            if (Player.armor[1].type == ModContent.ItemType<ElementalBreastplate>()) hpBonus += 100;
+
+            HPBonus = hpBonus;
+
+            health = new StatModifier(1f, 1f, hpBonus, 0);
             mana = new StatModifier(1f, 1f, Mana, 0);
-            if (CountUsechaosHear > 0)
-            {
-                chaosHeartLife = 1;
-            }
-            if (CountUseEmptyVessel > 0)
-            {
-                emptyVesselHeartLife = 1;
-            }
         }
     }
 }

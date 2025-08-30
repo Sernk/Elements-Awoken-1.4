@@ -11,6 +11,7 @@ using ElementsAwoken.Content.Items.Donator.YukkiKun;
 using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Elements.Elemental;
 using ElementsAwoken.Content.Items.Elements.Sky;
+using ElementsAwoken.Content.Items.Elements.Void;
 using ElementsAwoken.Utilities;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
@@ -63,6 +64,7 @@ public class ArmorSetBonusToolTips : GlobalItem
                 if (Arid.Contains(item.type)) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.AridSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<ElementalMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.ElementalSetBonus) { OverrideColor = Gray });
                 if (Empyrean.Contains(item.type)) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", EALocalization.EmpyreanSetBonus) { OverrideColor = Gray });
+                if (item.type == ModContent.ItemType<VoidHelmet>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", EALocalization.VoidSetBonus) { OverrideColor = Gray });
             }
         }
     }

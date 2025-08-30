@@ -2347,6 +2347,15 @@ Items: {
 			'''
 	}
 
+	Scourge: {
+		// DisplayName: Scourge
+		/* Tooltip:
+			'''
+			Melt your enemies
+			75% chance to not consume ammo
+			''' */
+	}
+
 	SlimeRainSummon: {
 		DisplayName: Заряжённый гель
 		Tooltip:
@@ -3633,128 +3642,229 @@ Items: {
 	}
 
 	SkyShield: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The clouds accept you
-			Grants immunity to knockback
-			Allows double jump
-			Increases wing time
-			When in the sky:
-			10 defense
-			''' */
-		// DisplayName: Sky Shield
+			Небеса приняли тебя
+			Даёт неуязвимость к отбрасыванию
+			Позволяет совершать двойной прыжок
+			Увеличивает время полёта у крыльев
+			При нахождении в небесах ты получаешь:
+			Увеличенную на 10 защиту
+			'''
+		DisplayName: Щит небес
 	}
 
 	SkyScraper: {
-		// Tooltip: ""
-		// DisplayName: Sky Scraper
+		Tooltip: буквально, это ведь тыкалка
+		DisplayName: Небоскрёб
 	}
 
 	SkyNeck: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The wind blesses you
-			Inceased wingtime
-			Greatly increased movement speed
-			When in space:
-			5% increased damage
-			8 defense
-			''' */
-		// DisplayName: Badge of the Sky
+			Ветер благословляет тебя
+			Увеличивает время полёта у крыльев
+			Значительно увеличивает скорость передвижения
+			При нахождении в небесах ты получаешь:
+			Увеличенный на 5% весь урон
+			Увеличенную на 8 защиту
+			'''
+		DisplayName: Небесный значок
 	}
 
 	Starlight: {
-		// DisplayName: Starlight
-		// Tooltip: Turns normal arrows into piercing feathers
+		DisplayName: Звездосвет
+		Tooltip: Превращает обычные стрелы в пронзающие перья
 	}
 
 	Stormsky: {
-		// DisplayName: Stormsky
-		// Tooltip: Fires a storm of feathers
+		DisplayName: Буря небесная
+		Tooltip: Стреляет потоком перьев
 	}
 
 	TheLauncher: {
-		// DisplayName: The Launcher
-		// Tooltip: Randomly fires bolts that knock enemies around
+		DisplayName: Небострел
+		Tooltip: Рандомдно стреляет воздушными выстрелами, отталкивающими врагов
 	}
 
 	Windfall: {
-		// Tooltip: 50% chance to not consume ammo
-		// DisplayName: Windfall
+		Tooltip: Имеет 50% шанс не потратить аммуницию при выстреле
+		DisplayName: Бурелом
 	}
 
 	TimeToken: {
-		// Tooltip: Switches the time between day and night
-		// DisplayName: Hourglass of Eternity
+		Tooltip: При использовании переключает день на ночь, а ночь на день
+		DisplayName: Нетленные песочные часы
 	}
 
 	ThorsHammer: {
-		// Tooltip: Pure energy in the palm of your hand
-		// DisplayName: Storm Hammer
+		Tooltip: Чистая энергия покоится в руках твоих
+		DisplayName: Штормолот
 	}
 
 	EmpyreanVisage: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased thrown damage
-			7% increased thrown critical strike chance
-			''' */
-		// DisplayName: Empyrean Visage
+			Увеличивает метательный урон на 10%
+			Увеличивает метательный шанс критического удара на 7%
+			'''
+		DisplayName: Заоблачная личина
 	}
 
 	EmpyreanPlate: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased critical strike chance
-			Flight time increased by 30
-			''' */
-		// DisplayName: Empyrean Breastplate
+			Увеличивает весь шанс критического удара на 10%
+			Увеличивает время полёта крыльев на полсекунды
+			'''
+		DisplayName: Заоблачный нагрудник
 	}
 
 	EmpyreanMask: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased melee damage
-			7% increased melee critical strike chance
-			''' */
-		// DisplayName: Empyrean Mask
+			Увеличивает ближний урон на 10%
+			Увеличивает ближний шанс критического удара на 7%
+			'''
+		DisplayName: Заоблачная маска
 	}
 
 	EmpyreanLeggings: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			20% increased movement speed
-			10% increased swing speed
-			''' */
-		// DisplayName: Empyrean Leggings
+			Увеличивает скорость передвижения на 20%
+			Увеличивает скорость ближних оружий на 10%
+			'''
+		DisplayName: Заоблачные поножи
 	}
 
 	EmpyreanHelmet: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased ranged damage
-			7% increased ranged critical strike chance
-			''' */
-		// DisplayName: Empyrean Helmet
+			Увеличивает стрелковый урон на 10%
+			Увеличивает стрелковый шанс критического удара на 7%
+			'''
+		DisplayName: Заоблачный шелом
 	}
 
 	EmpyreanHeadgear: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased minion damage
-			Increases your maximum number of minions by 1
-			10% increased minion knockback
-			''' */
-		// DisplayName: Empyrean Headgear
+			Увеличивает призывательский урон на 10%
+			Увеличивает количество миньон-слотов на 1
+			Увеличивает отбрасывание от атак миньонов на 10%
+			'''
+		DisplayName: Заоблачный головной убор
 	}
 
 	EmpyreanHat: {
+		Tooltip:
+			'''
+			Увеличивает магический урон на 10%
+			Увеличивает магический шанс критического удара на 7%
+			'''
+		DisplayName: Заоблачная шляпа
+	}
+
+	EACalamity: {
+		#EA было добавлено чтобы избежать проблем из-за одинаковый имен
+		// Tooltip: Throws 2 bouncing chakrams that explode on impact
+		// DisplayName: Calamity
+	}
+
+	Cataclysm: {
+		// Tooltip: ""
+		// DisplayName: Cataclysm
+	}
+
+	Eradication: {
+		// Tooltip: ""
+		// DisplayName: Eradication
+	}
+
+	CrimsonSky: {
+		// Tooltip: ""
+		// DisplayName: Crimson Sky
+	}
+
+	EyeofAnnihilation: {
+		// DisplayName: The Eye of Annihilation
+		// Tooltip: ""
+	}
+
+	HealingIcon: {
+		// DisplayName: Icon of Healing
+		// Tooltip: Constantly heals the player when under 250 life
+	}
+
+	InfinityTome: {
+		// DisplayName: Tome of Infinity
+		// Tooltip: The void hungers for life. It pulls in anything it touches
+	}
+
+	VoidBlaster: {
+		// DisplayName: Void Blaster
+		// Tooltip: Unleash a storm of homing void blasts
+	}
+
+	VoidShield: {
 		/* Tooltip:
 			'''
-			10% increased magic damage
-			7% increased magic critical strike chance
+			Grants immunity to knockback
+			The more defense you have the more health and damage you deal
 			''' */
-		// DisplayName: Empyrean Hat
+		// DisplayName: Somber Bulwark
+	}
+
+	VoidNeck: {
+		/* Tooltip:
+			'''
+			25% increased damage
+			Life regen increased by 4
+			''' */
+		// DisplayName: Idol of Darkness
+	}
+
+	VoidSpiritStaff: {
+		// DisplayName: Abyss Cultist Staff
+		/* Tooltip:
+			'''
+			Summons an Abyss Cultist to protect you
+			Cultists take 5 minion slots
+			''' */
+	}
+
+	VoidSword: {
+		// DisplayName: Blade of the Depths
+		// Tooltip: The edge of the blade gleams with red light
+	}
+
+	VoidBreastplate: {
+		// DisplayName: Gloomhandler Breastplate
+		/* Tooltip:
+			'''
+			12% increased damage
+			Increased max life and mana by 75
+			''' */
+	}
+
+	VoidGreaves: {
+		// DisplayName: Gloomhandler Greaves
+		/* Tooltip:
+			'''
+			10% increased melee speed
+			Greater speed when low health
+			''' */
+	}
+
+	VoidHelmet: {
+		// DisplayName: Gloomhandler Helmet
+		/* Tooltip:
+			'''
+			Immune to cursed inferno, fire, chilled and cursed debuffs
+			+2 max minions
+			5% reduced damage
+			''' */
 	}
 }
 
@@ -4310,6 +4420,11 @@ Buffs: {
 	HappyCloudBuff: {
 		Description: спасибо за отсылки на то, что я не ебу как правильно перевести без потери смысла, так как я не шарю за амерскую культуру...
 		DisplayName: Милое-малое облачко
+	}
+
+	AbyssCultistBuff: {
+		// DisplayName: Abyss Cultist
+		// Description: Praise the dark one...
 	}
 }
 
@@ -5232,14 +5347,27 @@ Projectiles: {
 	Feather2.DisplayName: Перо2
 	Feather1.DisplayName: Перо
 	CloudBlast.DisplayName: Другой выстрел облачка
-	// SkyScraperP.DisplayName: SkyScraper
-	// FeatherFast.DisplayName: Feather Fast
-	// TheLauncherBolt.DisplayName: The Launcher
-	// TheLauncherP.DisplayName: The Launcher
-	// WindfallFire.DisplayName: Windfall
-	// ThorsHammerP.DisplayName: Storm Hammer
-	// ThorLightning.DisplayName: Thors Hammer
-	// AeroLightning.DisplayName: Lightning
+	SkyScraperP.DisplayName: НебоскрЁб
+	FeatherFast.DisplayName: Перо быстро (чё)
+	TheLauncherBolt.DisplayName: Выстрел пусковой установки
+	TheLauncherP.DisplayName: Проджектайл пусковой установки
+	WindfallFire.DisplayName: Огонь ветропада
+	ThorsHammerP.DisplayName: Проджектайл молота Тора
+	ThorLightning.DisplayName: Молния Тора
+	AeroLightning.DisplayName: Аэромолния
+	// CalamityP.DisplayName: Cataclysm
+	// CataclysmP.DisplayName: Cataclysm
+	// CataclysmTip.DisplayName: Cataclysm
+	// CataclysmicLaser.DisplayName: Cataclysmic Laser
+	// VoidBlast.DisplayName: Void Blast
+	// CrimsonSkyLaser.DisplayName: Crimson Sky
+	// VoidArrow.DisplayName: Void Arrow
+	// ScourgeFire.DisplayName: Scourge Fire
+	// VoidTentacle.DisplayName: Void Tentacle
+	// TheEyeP.DisplayName: The Eye Of Annihilation
+	// AbyssCultistBolt.DisplayName: Abyss Cultist
+	// AbyssCultist.DisplayName: Abyss Cultist
+	// VoidSwordProj.DisplayName: Holocaust
 }
 
 Configs: {
@@ -5462,7 +5590,7 @@ Tooltips: {
 	EoitesWrath1: Взрывы
 	SandstormStone: Песчаная буря рассеивается...
 	SandstormStone1: Ветры пустыни поднимаются!
-	// TimeToken: You cant escape from the void
+	TimeToken: Из Пустоты не получится сбежать...
 }
 
 AccInfo: {
@@ -5551,7 +5679,8 @@ SetBonus: {
 		При получении фатального урона ты возродишься с частью здоровья
 		Откат способности - 45 секунд
 		'''
-	// EmpyreanSetBonus: Storms brew around you
+	EmpyreanSetBonus: Бури назревают вокруг тебя, призывая грозовое облако на твою защиту
+	// VoidSetBonus: All projectiles have a chance of healing you slightly
 }
 
 Said: {

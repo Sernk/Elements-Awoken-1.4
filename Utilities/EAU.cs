@@ -7,18 +7,22 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ElementsAwoken.Content.Buffs.Debuffs;
 
 namespace ElementsAwoken
 {
     /// <summary>
+    /// Elements Awoken Utilities
     /// TODO
     /// </summary>
     public class EAU
     {
         public static int FireEssence => ModContent.ItemType<FireEssence>();
+        public static int VoidEssence => ModContent.ItemType<VoidEssence>();
         public static int ElementalForge => ModContent.TileType<ElementalForge>();
-        public static SpriteBatch Sb => Main.spriteBatch;
         public static int PinkFlame => DustID.Firework_Pink;
+        public static int HandsOfDespair => ModContent.BuffType<HandsOfDespair>();
+        public static SpriteBatch Sb => Main.spriteBatch;
         public static void SetSoul(int type) => ItemID.Sets.AnimatesAsSoul[type] = true;
         public static void Longer(int type) => BuffID.Sets.LongerExpertDebuff[type] = true;
         public static void CanBeCleared(int type) => BuffID.Sets.NurseCannotRemoveDebuff[type] = true;
@@ -30,17 +34,15 @@ namespace ElementsAwoken
         {
             return Main.rand.Next(4) switch
             {
-                0 => ModContent.DustType<AncientRed>(),
-                1 => ModContent.DustType<AncientGreen>(),
-                2 => ModContent.DustType<AncientBlue>(),
-                3 => ModContent.DustType<AncientPink>(),
+                0 => ModContent.DustType<AncientRed>(), 1 => ModContent.DustType<AncientGreen>(),
+                2 => ModContent.DustType<AncientBlue>(), 3 => ModContent.DustType<AncientPink>(),
                 _ => ModContent.DustType<AncientRed>(),
             };
         }
         public static List<int> VanillaOreIDs()
         {
-            List<int> idList = new List<int>()
-            {
+            List<int> idList =
+            [
                 ItemID.CopperOre,
                 ItemID.TinOre,
                 ItemID.IronOre,
@@ -61,7 +63,7 @@ namespace ElementsAwoken
                 ItemID.TitaniumOre,
                 ItemID.ChlorophyteOre,
                 ItemID.LunarOre,
-            };
+            ];
             return idList;
         }
     }

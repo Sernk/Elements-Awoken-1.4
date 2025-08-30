@@ -284,6 +284,7 @@ namespace ElementsAwoken.Utilities
         public string AridSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.AridSetBonus");
         public string ElementalSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ElementalSetBonus");
         public static string EmpyreanSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.EmpyreanSetBonus");
+        public static string VoidSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.VoidSetBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");
