@@ -4,7 +4,7 @@ using ElementsAwoken.Content.Items.Consumable.StatIncreases;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Projectiles.NPCProj.Volcanox;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

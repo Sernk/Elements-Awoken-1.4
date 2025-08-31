@@ -12,7 +12,8 @@ using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Elements.Elemental;
 using ElementsAwoken.Content.Items.Elements.Sky;
 using ElementsAwoken.Content.Items.Elements.Void;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.Content.Items.Elements.Water;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using Terraria;
@@ -65,6 +66,7 @@ public class ArmorSetBonusToolTips : GlobalItem
                 if (item.type == ModContent.ItemType<ElementalMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.ElementalSetBonus) { OverrideColor = Gray });
                 if (Empyrean.Contains(item.type)) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", EALocalization.EmpyreanSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<VoidHelmet>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", EALocalization.VoidSetBonus) { OverrideColor = Gray });
+                if (item.type == ModContent.ItemType<OceanicVisage>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.OceanicSetBonus) { OverrideColor = Gray });
             }
         }
     }

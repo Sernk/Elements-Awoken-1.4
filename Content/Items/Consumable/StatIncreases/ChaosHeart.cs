@@ -24,28 +24,6 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
             Item.rare = ModContent.RarityType<EARarity.Rarity13>();
             Item.value = Item.sellPrice(0, 2, 0, 0);
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Chaosporidic Heart");
-            // Tooltip.SetDefault("Fighters of The Calamity need not apply\nPermanently increases maximum life by 10");
-        }
-        //public override bool CanUseItem(Player player)
-        //{
-        //    bool calamityEnabled = ModLoader.GetMod("CalamityMod") != null;
-        //    return !calamityEnabled && player.GetModPlayer<MyPlayer>().voidHeartsUsed == 10 && player.GetModPlayer<MyPlayer>().chaosHeartsUsed < 10;
-        //}
-
-        //public override bool UseItem(Player player)
-        //{
-        //    player.statLifeMax2 += 10;
-        //    player.statLife += 10;
-        //    if (Main.myPlayer == player.whoAmI)
-        //    {
-        //        player.HealEffect(10, true);
-        //    }
-        //    player.GetModPlayer<MyPlayer>().chaosHeartsUsed += 1;
-        //    return true;
-        //}
         public override void UpdateInventory(Player player)
         {
             HeartsPlayers HeartsPlayers = player.GetModPlayer<HeartsPlayers>();
@@ -55,7 +33,9 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
                 if (HeartsPlayers.CountUseEmptyVessel == 10)
                 {
                     HeartsPlayers.emptyVesselHeartLife = 0;
+                    HeartsPlayers.HPTier_0 = false;
                 }
+                HeartsPlayers.HPTier_0 = false;
                 HeartsPlayers.ChaosHeartVisual = false;
                 HeartsPlayers.CompressorVisual = true;
                 HeartsPlayers.chaosHeartLife = 0;
@@ -65,14 +45,16 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
             }
             else
             {
+                HeartsPlayers.HPTier_0 = false;
                 if (HeartsPlayers.CountUseEmptyVessel == 10)
                 {
                     HeartsPlayers.emptyVesselHeartLife = 0;
                 }
                 HeartsPlayers.EmptyVesselVisual = false;
             }
-            if (HeartsPlayers.CountUseEmptyVessel > 1 && HeartsPlayers.CountUsechaosHear == 10)
+            if (HeartsPlayers.CountUseEmptyVessel > 0 && HeartsPlayers.CountUsechaosHear == 10)
             {
+                HeartsPlayers.HPTier_0 = false;
                 HeartsPlayers.EmptyVesselVisual = true;
             }
         }

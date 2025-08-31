@@ -12,7 +12,7 @@ using ElementsAwoken.Content.NPCs.Projectiles;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.UI;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoMod.Cil;

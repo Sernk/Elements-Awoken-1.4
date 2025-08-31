@@ -5,7 +5,7 @@ using ElementsAwoken.Content.NPCs.Prompts;
 using ElementsAwoken.Content.Projectiles.NPCProj.Infernace;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

@@ -1,7 +1,7 @@
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;

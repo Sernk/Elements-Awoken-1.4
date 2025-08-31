@@ -10,7 +10,7 @@ using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

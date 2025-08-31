@@ -71,7 +71,7 @@ namespace ElementsAwoken.EASystem.UI
         {
             CalculatedStyle innerDimensions = GetInnerDimensions();
 
-            var EALocalization = GetInstance<Utilities.EALocalization>();
+            var EALocalization = GetInstance<EAUtilities.EALocalization>();
 
             float uiX = innerDimensions.X;
             float uiY = innerDimensions.Y;

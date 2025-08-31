@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.Content.Projectiles.Arrows;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;

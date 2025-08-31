@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using MonoMod.RuntimeDetour;
 using System.Reflection;
 using Terraria;

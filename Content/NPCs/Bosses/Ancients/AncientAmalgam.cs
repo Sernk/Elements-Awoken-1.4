@@ -4,7 +4,7 @@ using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients.Gores;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

@@ -6,7 +6,7 @@ using System.Linq;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using ElementsAwoken.EASystem.Global;
 
 namespace ElementsAwoken.Content.Items.Artifacts

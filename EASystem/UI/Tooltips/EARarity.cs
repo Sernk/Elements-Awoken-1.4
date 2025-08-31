@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Items.BossDrops.Azana;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;

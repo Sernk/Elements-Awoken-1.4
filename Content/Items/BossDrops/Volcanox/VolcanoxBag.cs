@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;

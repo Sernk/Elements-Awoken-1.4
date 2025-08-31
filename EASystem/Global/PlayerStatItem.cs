@@ -1,8 +1,8 @@
 ﻿using ElementsAwoken.Content.Items.Consumable.StatIncreases;
-using ElementsAwoken.Content.Items.Elements.Elemental;
 using ElementsAwoken.EASystem.UI;
 using Terraria;
 using Terraria.GameContent.Achievements;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.EASystem.Global
@@ -12,7 +12,6 @@ namespace ElementsAwoken.EASystem.Global
         public override bool? UseItem(Item item, Player player)
         {
             HeartsPlayers HeartsPlayers = player.GetModPlayer<HeartsPlayers>();
-            MyPlayer M = player.GetModPlayer<MyPlayer>();
             if (item.type == ModContent.ItemType<EmptyVessel>())
             {
                 if (HeartsPlayers.CountUsechaosHear >= 10)
@@ -24,6 +23,8 @@ namespace ElementsAwoken.EASystem.Global
                 HeartsPlayers.CountUsechaosHear++;
                 player.HealEffect(10, true);
                 AchievementsHelper.HandleSpecialEvent(player, 2);
+                HeartsPlayers.HPTier_0 = false;
+                return HeartsPlayers.ChaosHeartVisual = true;
             }
             if (item.type == ModContent.ItemType<VoidCompressor>())
             {
@@ -43,12 +44,22 @@ namespace ElementsAwoken.EASystem.Global
                 player.HealEffect(10, true);
                 AchievementsHelper.HandleSpecialEvent(player, 2);
                 HeartsPlayers.CountUseEmptyVessel++;
+                HeartsPlayers.HPTier_0 = false;
+                HeartsPlayers.ChaosHeartVisual = false;
+                return HeartsPlayers.EmptyVesselVisual = true;
             }
             if (item.type == ModContent.ItemType<LunarStar>())
             {
                 HeartsPlayers.Mana = 100;
                 if (Main.myPlayer == player.whoAmI) { player.ManaEffect(100); }
+                player.itemTime = (int)((float)item.useTime / player.GetAttackSpeed(item.DamageType));
                 player.GetModPlayer<MyPlayer>().lunarStarsUsed += 1;
+                return HeartsPlayers.ManaBonus = true;
+            }
+            if (item.type == ItemID.LifeFruit)
+            {
+                player.itemTime = (int)((float)item.useTime / player.GetAttackSpeed(item.DamageType));
+                return HeartsPlayers.HPTier_0 = true;
             }
             return base.UseItem(item, player);
         }
@@ -58,37 +69,19 @@ namespace ElementsAwoken.EASystem.Global
             if (item.type == ModContent.ItemType<EmptyVessel>())
             {
                 item.consumable = true;
-                if (player.statLifeMax >= 500 && HeartsPlayers.CountUsechaosHear < 10)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                if (player.statLifeMax >= 500 && HeartsPlayers.CountUsechaosHear < 10) return true;
+                else return false;
             }
             if (item.type == ModContent.ItemType<ChaosHeart>())
             {
                 item.consumable = true;
-                if (player.statLifeMax >= 600 && HeartsPlayers.CountUseEmptyVessel < 10)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                if (player.statLifeMax >= 600 && HeartsPlayers.CountUseEmptyVessel < 10) return true;
+                else return false;
             }
             if (item.type == ModContent.ItemType<LunarStar>())
             {
-                if (player.statManaMax == 200 && player.GetModPlayer<MyPlayer>().lunarStarsUsed < 1)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                if (player.statManaMax == 200 && player.GetModPlayer<MyPlayer>().lunarStarsUsed < 1) return true;
+                else return false;
             }
             return base.CanUseItem(item, player);
         }

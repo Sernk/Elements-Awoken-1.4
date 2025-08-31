@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.Content.Projectiles.NPCProj.Azana;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

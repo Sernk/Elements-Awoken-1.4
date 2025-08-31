@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.BossDrops.Permafrost;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.NPCProj.Permafrost;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

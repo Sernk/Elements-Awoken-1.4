@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

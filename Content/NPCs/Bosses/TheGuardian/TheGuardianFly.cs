@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Items.BossDrops.TheGuardian;
 using ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 

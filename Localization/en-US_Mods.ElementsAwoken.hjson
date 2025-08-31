@@ -3826,6 +3826,127 @@ Items: {
 			5% reduced damage
 			'''
 	}
+
+	BubbleFlood: {
+		DisplayName: Typhos
+		Tooltip: ""
+	}
+
+	BubblePack: {
+		DisplayName: Bubble Pack
+		Tooltip:
+			'''
+			Allows flight and slow fall
+			Propel yourself with killer bubbles
+			'''
+	}
+
+	BubbleStaff: {
+		DisplayName: Bubble Staff
+		Tooltip: Summons kamikaze bubbles to attack your enemies
+	}
+
+	ChakramOfTheDuke: {
+		DisplayName: Chakram of the Duke
+		Tooltip: Tear your enemies to pieces
+	}
+
+	TheUrchin: {
+		Tooltip: ""
+		DisplayName: The Urchin
+	}
+
+	SeaViper: {
+		Tooltip: ""
+		DisplayName: Sea Viper
+	}
+
+	RainSigil: {
+		Tooltip:
+			'''
+			Toggles the rain
+			Rain will start or stop shortly after use
+			'''
+		DisplayName: Rain Sigil
+	}
+
+	TrueWaterBolt: {
+		DisplayName: Wavebolt
+		Tooltip: ""
+	}
+
+	WaterNeck: {
+		DisplayName: Emblem of the Ocean
+		Tooltip:
+			'''
+			Become one with the ocean
+			Upon entering water:
+			20% increased damage
+			20% increased melee speed and throwing velocity
+			Grants effects of the Magic Cuffs
+			Increased movement speed
+			10 increased defense
+			'''
+	}
+
+	WaterShield: {
+		DisplayName: Great Barrier Reef
+		Tooltip:
+			'''
+			The creatures of the ocean accept you
+			Turns you into a merfolk when in the water
+			Ocean monsters won't attack you
+			Grants immunity to knockback
+			'''
+	}
+
+	Watershot: {
+		DisplayName: Water Shot
+		Tooltip: ""
+	}
+
+	WaterSword: {
+		DisplayName: Forever Tide
+		Tooltip: ""
+	}
+
+	WaterYoyo: {
+		DisplayName: Aqua Marine
+		Tooltip: ""
+	}
+
+	Wavelash: {
+		DisplayName: Wavebreaker
+		Tooltip: ""
+	}
+
+	OceanicVisage: {
+		Tooltip:
+			'''
+			Can move quickly through liquids
+			+1 max minions
+			10% increased critical strike chance
+			'''
+		DisplayName: Oceanic Visage
+	}
+
+	OceanicPlateMail: {
+		Tooltip:
+			'''
+			6% increased damage
+			Flight time increased by 25
+			'''
+		DisplayName: Oceanic Plate Mail
+	}
+
+	OceanicLeggings: {
+		Tooltip:
+			'''
+			10% increased movement speed
+			Grants defence boosts as health lowers
+			'''
+		DisplayName: Oceanic Leggings
+	}
 }
 
 Tiles: {
@@ -4386,6 +4507,11 @@ Buffs: {
 		DisplayName: Abyss Cultist
 		Description: Praise the dark one...
 	}
+
+	BubbleBuff: {
+		DisplayName: Bubble
+		Description: I like bubbles!
+	}
 }
 
 NPCs: {
@@ -4918,6 +5044,7 @@ Projectiles: {
 	Waterball.DisplayName: Aqueous
 	BrinyBusterP.DisplayName: Briny Buster
 	BubblePopperP.DisplayName: Bubble Popper
+	Bubble.DisplayName: Bubble
 	HighTideP.DisplayName: High Tide
 	AquaticArrow.DisplayName: Aquatic Arrow
 	AquaticArrow2.DisplayName: Aquatic Arrow
@@ -5328,6 +5455,14 @@ Projectiles: {
 	AbyssCultistBolt.DisplayName: Abyss Cultist
 	AbyssCultist.DisplayName: Abyss Cultist
 	VoidSwordProj.DisplayName: Holocaust
+	DukeChakramProj.DisplayName: Chakram of the Duke
+	TheUrchinUrchin.DisplayName: The Urchin
+	TheUrchinSpike.DisplayName: The Urchin Spike
+	TheUrchinP.DisplayName: The Urchin
+	WatershotP.DisplayName: Watershot
+	WaterSwordP.DisplayName: Forever Tide
+	WaterYoyoWater.DisplayName: Armageddon
+	WaterYoyoP.DisplayName: Aqua Marine
 }
 
 Configs: {
@@ -5550,6 +5685,9 @@ Tooltips: {
 	SandstormStone: The sand storm settles...
 	SandstormStone1: The desert winds pick up!
 	TimeToken: You cant escape from the void
+	RainSigil: You dont yet have the power to dissipate the radiance...
+	RainSigil1: Clear
+	RainSigil2: Raining
 }
 
 AccInfo: {
@@ -5565,6 +5703,12 @@ AccInfo: {
 Resurs: {
 	Sanity: Sanity
 	Energy: Energy
+	# без описания не как, можешь по рофлу или навсегда оставить
+	LifeFruit: ""
+	EmptyHeart: ""
+	ChaosHeart: ""
+	CompressorHeart: ""
+	LunarStarMana: ""
 }
 
 SetBonus: {
@@ -5640,6 +5784,7 @@ SetBonus: {
 		'''
 	EmpyreanSetBonus: Storms brew around you
 	VoidSetBonus: All projectiles have a chance of healing you slightly
+	OceanicSetBonus: Taking more then 25 damage causes toxic water to spray
 }
 
 Said: {

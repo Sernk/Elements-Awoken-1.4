@@ -14,6 +14,9 @@ namespace ElementsAwoken.EASystem.UI
 
         public int HPBonus;
 
+        public bool HPTier_0 = false;
+        public bool ManaBonus = false;
+
         public int Mana = 0;
 
         public int CountUseEmptyVessel = 0;
@@ -28,6 +31,13 @@ namespace ElementsAwoken.EASystem.UI
         {
             HPBonus = 0; 
         }
+        public override void PreSavePlayer()
+        {
+            if (HPTier_0) HPTier_0 = true;
+            if (ManaBonus) ManaBonus = true;
+            if (ChaosHeartVisual) ChaosHeartVisual = true;
+            if (EmptyVesselVisual) EmptyVesselVisual = true;
+        }
         public override void SaveData(TagCompound tag)
         {
             tag["emptyVesselHeartLife"] = emptyVesselHeartLife;
@@ -37,15 +47,30 @@ namespace ElementsAwoken.EASystem.UI
 
             tag["HPBonus"] = HPBonus;
 
+            if (HPTier_0)
+            {
+                tag["HPTier_0"] = true;
+            }
+            if (ManaBonus)
+            {
+                tag["ManaBonus"] = true;
+            }
+            if (ChaosHeartVisual)
+            {
+                tag["ChaosHeartVisual"] = true;
+            }
+            if (EmptyVesselVisual)
+            {
+                tag["EmptyVesselVisual"] = true;
+            }
+
             tag["Mana"] = Mana;
 
             tag["CountUseEmptyVessel"] = CountUseEmptyVessel;
             tag["CountUsechaosHear"] = CountUsechaosHear;
             tag["CountUseCompressor"] = CountUseCompressor;
 
-            tag["ChaosHeartVisual"] = ChaosHeartVisual;
             tag["VoidHeartVisual"] = CompressorVisual;
-            tag["EmptyVesselVisual"] = EmptyVesselVisual;
             tag["CombilityEfects"] = CombilityEfects;
         }
         public override void LoadData(TagCompound tag)
@@ -56,6 +81,9 @@ namespace ElementsAwoken.EASystem.UI
             shieldLife = tag.GetInt("shieldLife");
 
             HPBonus = tag.GetInt("HPBonus");
+
+            HPTier_0 = tag.GetBool("HPTier_0");
+            ManaBonus = tag.GetBool("ManaBonus");
 
             Mana = tag.GetInt("Mana");
 
@@ -73,7 +101,7 @@ namespace ElementsAwoken.EASystem.UI
             int hpBonus = 0;
 
             hpBonus += CountUsechaosHear * 10;
-            if (CountUsechaosHear == 10)hpBonus += CountUseEmptyVessel * 10;
+            if (CountUsechaosHear == 10) hpBonus += CountUseEmptyVessel * 10;
             if (Player.armor[1].type == ModContent.ItemType<ElementalBreastplate>()) hpBonus += 100;
 
             HPBonus = hpBonus;

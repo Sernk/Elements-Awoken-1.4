@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.BossDrops.TheTempleKeepers;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

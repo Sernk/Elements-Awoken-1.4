@@ -53,7 +53,7 @@ namespace ElementsAwoken.Content.Items.Accessories
         }
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe(this.Type);
+            Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemID.FallenStar, 5);
             recipe.AddRecipeGroup(EARecipeGroups.SilverSword);
             recipe.AddTile(TileID.Anvils);

@@ -5,7 +5,7 @@ using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.NPCProj.Aqueous;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using System.IO;

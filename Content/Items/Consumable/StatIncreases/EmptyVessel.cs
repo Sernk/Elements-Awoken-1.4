@@ -36,6 +36,7 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
                 HeartsPlayers.emptyVesselHeartLife = 0;
                 HeartsPlayers.EmptyVesselVisual = false;
                 HeartsPlayers.ChaosHeartVisual = true;
+                HeartsPlayers.HPTier_0 = false;
                 if (HeartsPlayers.CountUsechaosHear == 10)
                 {
                     HeartsPlayers.chaosHeartLife = 0;
@@ -43,15 +44,17 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
             }
             else
             {
+                HeartsPlayers.HPTier_0 = false;
                 HeartsPlayers.ChaosHeartVisual = false;
                 if (HeartsPlayers.CountUsechaosHear == 10)
                 {
                     HeartsPlayers.chaosHeartLife = 0;
                 }
             }
-            if (HeartsPlayers.CountUsechaosHear > 1 && HeartsPlayers.EmptyVesselVisual == false)
+            if (HeartsPlayers.CountUsechaosHear > 0 && HeartsPlayers.EmptyVesselVisual == false)
             {
                 HeartsPlayers.ChaosHeartVisual = true;
+                HeartsPlayers.HPTier_0 = false;
             }
         }
         public override void AddRecipes()

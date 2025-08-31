@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Effects;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Tiles;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;

@@ -43,10 +43,12 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
                 HeartsPlayers.emptyVesselHeartLife = 0;
                 HeartsPlayers.EmptyVesselVisual = false;
                 HeartsPlayers.ChaosHeartVisual = false;
+                HeartsPlayers.HPTier_0 = false;
             }
             else
             {
                 HeartsPlayers.CompressorVisual = false;
+                HeartsPlayers.HPTier_0 = true;
             }
         }
 

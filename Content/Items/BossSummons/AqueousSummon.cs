@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
 using ElementsAwoken.EASystem.UI.Tooltips;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;

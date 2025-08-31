@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.Utilities;
+﻿using ElementsAwoken.EAUtilities;
 using System.IO;
 using Terraria;
 using Terraria.GameContent.Bestiary;

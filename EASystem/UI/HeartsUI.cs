@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -48,7 +48,7 @@ namespace ElementsAwoken.EASystem.UI
             string folder = $"{baseFolder}MP";
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
             MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
-            if (modPlayer2.lunarStarsUsed > 1)
+            if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus)
             {
                 return folder + "Mana2";
             }
@@ -75,18 +75,15 @@ namespace ElementsAwoken.EASystem.UI
                 context.Draw();
             }
 
-            if (ManaTexturePath() != string.Empty)
+            if (asset == TextureAssets.Mana || CompareAssets(asset, fancyFolder + "Star_Fill"))
             {
-                if (asset == TextureAssets.Mana || CompareAssets(asset, fancyFolder + "Star_Fill"))
-                {
-                    context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Star");
-                    context.Draw();
-                }
-                else if (CompareAssets(asset, barsFolder + "MP_Fill"))
-                {
-                    context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Bar");
-                    context.Draw();
-                }
+                context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Star");
+                context.Draw();
+            }
+            else if (CompareAssets(asset, barsFolder + "MP_Fill"))
+            {
+                context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Bar");
+                context.Draw();
             }
         }
         public override void PostDrawResourceDisplay(PlayerStatsSnapshot snapshot, IPlayerResourcesDisplaySet displaySet, bool drawingLife, Color textColor, bool drawText)

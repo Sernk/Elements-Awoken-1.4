@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.EASystem;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.GameContent.Events;
 using Terraria.ID;

@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.Utilities;
+﻿using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;

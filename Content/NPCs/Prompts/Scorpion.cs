@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.GameContent.Bestiary;
 using Terraria.ID;

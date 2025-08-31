@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.Placeable.Drives;
 using ElementsAwoken.Content.Items.Storyteller;
 using ElementsAwoken.Content.NPCs.Bosses.Ancients;
 using ElementsAwoken.Content.Projectiles.Thrown;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

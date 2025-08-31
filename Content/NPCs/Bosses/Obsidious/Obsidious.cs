@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Items.BossDrops.Obsidious;
 using ElementsAwoken.Content.Projectiles.NPCProj.Obsidious;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

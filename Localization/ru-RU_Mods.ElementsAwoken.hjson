@@ -2348,12 +2348,12 @@ Items: {
 	}
 
 	Scourge: {
-		// DisplayName: Scourge
-		/* Tooltip:
+		DisplayName: Бич
+		Tooltip:
 			'''
-			Melt your enemies
-			75% chance to not consume ammo
-			''' */
+			Сжигай своих врагов
+			Имеет 75% шанс не потратить аммуницию при использовании
+			'''
 	}
 
 	SlimeRainSummon: {
@@ -3768,103 +3768,224 @@ Items: {
 
 	EACalamity: {
 		#EA было добавлено чтобы избежать проблем из-за одинаковый имен
-		// Tooltip: Throws 2 bouncing chakrams that explode on impact
-		// DisplayName: Calamity
+		Tooltip: Выпускает два взрывающихся чакрама, отскакивающих от блоков
+		DisplayName: Бедствие
 	}
 
 	Cataclysm: {
-		// Tooltip: ""
-		// DisplayName: Cataclysm
+		Tooltip: ""
+		DisplayName: Катаклизм
 	}
 
 	Eradication: {
-		// Tooltip: ""
-		// DisplayName: Eradication
+		Tooltip: ""
+		DisplayName: Истребление
 	}
 
 	CrimsonSky: {
-		// Tooltip: ""
-		// DisplayName: Crimson Sky
+		Tooltip: ""
+		DisplayName: Багряные небеса
 	}
 
 	EyeofAnnihilation: {
-		// DisplayName: The Eye of Annihilation
-		// Tooltip: ""
+		DisplayName: Око уничтожения
+		Tooltip: максимально пафосные названия, в то время как сами оружия крайне генериковские...
 	}
 
 	HealingIcon: {
-		// DisplayName: Icon of Healing
-		// Tooltip: Constantly heals the player when under 250 life
+		DisplayName: Икона исцеления
+		Tooltip: Постоянно исцеляет игрока, если у него остаётся меньше 250 здоровья
 	}
 
 	InfinityTome: {
-		// DisplayName: Tome of Infinity
-		// Tooltip: The void hungers for life. It pulls in anything it touches
+		DisplayName: Фолиант бесконечности
+		Tooltip: Пустота изголодалась по жизненной энергии. Она пожирает всё, чего касается...
 	}
 
 	VoidBlaster: {
-		// DisplayName: Void Blaster
-		// Tooltip: Unleash a storm of homing void blasts
+		DisplayName: Пустолет
+		Tooltip: Выпускает бурю самонаводящихся снарядов пустоты
 	}
 
 	VoidShield: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Grants immunity to knockback
-			The more defense you have the more health and damage you deal
-			''' */
-		// DisplayName: Somber Bulwark
+			Даёт неуязвимость к отбрасыванию
+			Чем больше у тебя защиты, тем больше увеличивается твоё здоровье и наносимый урон
+			'''
+		DisplayName: Оплот мрака
 	}
 
 	VoidNeck: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			25% increased damage
-			Life regen increased by 4
-			''' */
-		// DisplayName: Idol of Darkness
+			Увеличивает весь урон на 25%
+			Увеличивает регенерацию здоровья на 4
+			'''
+		DisplayName: Идол тьмы
 	}
 
 	VoidSpiritStaff: {
-		// DisplayName: Abyss Cultist Staff
-		/* Tooltip:
+		DisplayName: Посох культиста Бездны
+		Tooltip:
 			'''
-			Summons an Abyss Cultist to protect you
-			Cultists take 5 minion slots
-			''' */
+			Призывает культиста Бездны на твою защиту
+			Каждый такой культист занимает 5 миньон-слотов
+			'''
 	}
 
 	VoidSword: {
-		// DisplayName: Blade of the Depths
-		// Tooltip: The edge of the blade gleams with red light
+		DisplayName: Лезвие глубин
+		Tooltip: Кончик лезвия сверкает красным цветом...
 	}
 
 	VoidBreastplate: {
-		// DisplayName: Gloomhandler Breastplate
-		/* Tooltip:
+		DisplayName: Кольчуга мраконосца
+		Tooltip:
 			'''
-			12% increased damage
-			Increased max life and mana by 75
-			''' */
+			Увеличивает весь урон на 12%
+			Увеличивает максимальное здоровье и ману на 75
+			'''
 	}
 
 	VoidGreaves: {
-		// DisplayName: Gloomhandler Greaves
-		/* Tooltip:
+		DisplayName: Поножи мраконосца
+		Tooltip:
 			'''
-			10% increased melee speed
-			Greater speed when low health
-			''' */
+			Увеличивает скорость ближних оружий на 10%
+			Значительно увеличивает скорость передвижения, если у тебя остаётся мало здоровья
+			'''
 	}
 
 	VoidHelmet: {
-		// DisplayName: Gloomhandler Helmet
+		DisplayName: Шелом мраконосца
+		Tooltip:
+			'''
+			Даёт неуязвимость к дебаффам "Проклятый огонь", "В огне!", "Озноб" и "Проклят"
+			Увеличивает количество миньон-слотов на 2
+			Уменьшает получаемый урон на 5%
+			'''
+	}
+
+	BubbleFlood: {
+		// DisplayName: Typhos
+		// Tooltip: ""
+	}
+
+	BubblePack: {
+		// DisplayName: Bubble Pack
 		/* Tooltip:
 			'''
-			Immune to cursed inferno, fire, chilled and cursed debuffs
-			+2 max minions
-			5% reduced damage
+			Allows flight and slow fall
+			Propel yourself with killer bubbles
 			''' */
+	}
+
+	BubbleStaff: {
+		// DisplayName: Bubble Staff
+		// Tooltip: Summons kamikaze bubbles to attack your enemies
+	}
+
+	ChakramOfTheDuke: {
+		// DisplayName: Chakram of the Duke
+		// Tooltip: Tear your enemies to pieces
+	}
+
+	TheUrchin: {
+		// Tooltip: ""
+		// DisplayName: The Urchin
+	}
+
+	SeaViper: {
+		// Tooltip: ""
+		// DisplayName: Sea Viper
+	}
+
+	RainSigil: {
+		/* Tooltip:
+			'''
+			Toggles the rain
+			Rain will start or stop shortly after use
+			''' */
+		// DisplayName: Rain Sigil
+	}
+
+	TrueWaterBolt: {
+		// DisplayName: Wavebolt
+		// Tooltip: ""
+	}
+
+	WaterNeck: {
+		// DisplayName: Emblem of the Ocean
+		/* Tooltip:
+			'''
+			Become one with the ocean
+			Upon entering water:
+			20% increased damage
+			20% increased melee speed and throwing velocity
+			Grants effects of the Magic Cuffs
+			Increased movement speed
+			10 increased defense
+			''' */
+	}
+
+	WaterShield: {
+		// DisplayName: Great Barrier Reef
+		/* Tooltip:
+			'''
+			The creatures of the ocean accept you
+			Turns you into a merfolk when in the water
+			Ocean monsters won't attack you
+			Grants immunity to knockback
+			''' */
+	}
+
+	Watershot: {
+		// DisplayName: Water Shot
+		// Tooltip: ""
+	}
+
+	WaterSword: {
+		// DisplayName: Forever Tide
+		// Tooltip: ""
+	}
+
+	WaterYoyo: {
+		// DisplayName: Aqua Marine
+		// Tooltip: ""
+	}
+
+	Wavelash: {
+		// DisplayName: Wavebreaker
+		// Tooltip: ""
+	}
+
+	OceanicVisage: {
+		/* Tooltip:
+			'''
+			Can move quickly through liquids
+			+1 max minions
+			10% increased critical strike chance
+			''' */
+		// DisplayName: Oceanic Visage
+	}
+
+	OceanicPlateMail: {
+		/* Tooltip:
+			'''
+			6% increased damage
+			Flight time increased by 25
+			''' */
+		// DisplayName: Oceanic Plate Mail
+	}
+
+	OceanicLeggings: {
+		/* Tooltip:
+			'''
+			10% increased movement speed
+			Grants defence boosts as health lowers
+			''' */
+		// DisplayName: Oceanic Leggings
 	}
 }
 
@@ -4423,8 +4544,13 @@ Buffs: {
 	}
 
 	AbyssCultistBuff: {
-		// DisplayName: Abyss Cultist
-		// Description: Praise the dark one...
+		DisplayName: Культист Бездны
+		Description: Чествуйте негра...
+	}
+
+	BubbleBuff: {
+		// DisplayName: Bubble
+		// Description: I like bubbles!
 	}
 }
 
@@ -4958,6 +5084,7 @@ Projectiles: {
 	Waterball.DisplayName: Водошар
 	BrinyBusterP.DisplayName: Солоноватая попойка
 	BubblePopperP.DisplayName: Проджектайл пузырькострела
+	// Bubble.DisplayName: Bubble
 	HighTideP.DisplayName: Проджектайл прилива
 	AquaticArrow.DisplayName: Акватическая стрела
 	AquaticArrow2.DisplayName: Aкватическая стрела
@@ -5355,19 +5482,27 @@ Projectiles: {
 	ThorsHammerP.DisplayName: Проджектайл молота Тора
 	ThorLightning.DisplayName: Молния Тора
 	AeroLightning.DisplayName: Аэромолния
-	// CalamityP.DisplayName: Cataclysm
-	// CataclysmP.DisplayName: Cataclysm
-	// CataclysmTip.DisplayName: Cataclysm
-	// CataclysmicLaser.DisplayName: Cataclysmic Laser
-	// VoidBlast.DisplayName: Void Blast
-	// CrimsonSkyLaser.DisplayName: Crimson Sky
-	// VoidArrow.DisplayName: Void Arrow
-	// ScourgeFire.DisplayName: Scourge Fire
-	// VoidTentacle.DisplayName: Void Tentacle
-	// TheEyeP.DisplayName: The Eye Of Annihilation
-	// AbyssCultistBolt.DisplayName: Abyss Cultist
-	// AbyssCultist.DisplayName: Abyss Cultist
-	// VoidSwordProj.DisplayName: Holocaust
+	CalamityP.DisplayName: Проджектайл каламимити
+	CataclysmP.DisplayName: Проджектайл катаклизма
+	CataclysmTip.DisplayName: Кончик катаклизма
+	CataclysmicLaser.DisplayName: Ката клизмический лазер
+	VoidBlast.DisplayName: Пустрел
+	CrimsonSkyLaser.DisplayName: Лазер с багряных небес
+	VoidArrow.DisplayName: Пустрела
+	ScourgeFire.DisplayName: Бичогонь
+	VoidTentacle.DisplayName: Щупальце пустоты
+	TheEyeP.DisplayName: Проджектайл ока
+	AbyssCultistBolt.DisplayName: Выстрел культиста Бездны
+	AbyssCultist.DisplayName: Культист Бездны
+	VoidSwordProj.DisplayName: Проджектайл пустомеча
+	// DukeChakramProj.DisplayName: Chakram of the Duke
+	// TheUrchinUrchin.DisplayName: The Urchin
+	// TheUrchinSpike.DisplayName: The Urchin Spike
+	// TheUrchinP.DisplayName: The Urchin
+	// WatershotP.DisplayName: Watershot
+	// WaterSwordP.DisplayName: Forever Tide
+	// WaterYoyoWater.DisplayName: Armageddon
+	// WaterYoyoP.DisplayName: Aqua Marine
 }
 
 Configs: {
@@ -5591,6 +5726,9 @@ Tooltips: {
 	SandstormStone: Песчаная буря рассеивается...
 	SandstormStone1: Ветры пустыни поднимаются!
 	TimeToken: Из Пустоты не получится сбежать...
+	// RainSigil: You dont yet have the power to dissipate the radiance...
+	// RainSigil1: Clear
+	// RainSigil2: Raining
 }
 
 AccInfo: {
@@ -5606,6 +5744,12 @@ AccInfo: {
 Resurs: {
 	Sanity: Здравомыслие
 	Energy: Энергия
+	# без описания не как, можешь по рофлу или навсегда оставить
+	// LifeFruit: ""
+	// EmptyHeart: ""
+	// ChaosHeart: ""
+	// CompressorHeart: ""
+	// LunarStarMana: ""
 }
 
 SetBonus: {
@@ -5680,7 +5824,8 @@ SetBonus: {
 		Откат способности - 45 секунд
 		'''
 	EmpyreanSetBonus: Бури назревают вокруг тебя, призывая грозовое облако на твою защиту
-	// VoidSetBonus: All projectiles have a chance of healing you slightly
+	VoidSetBonus: Все вражеские снаряды имеют маленький шанс исцелить тебя
+	// OceanicSetBonus: Taking more then 25 damage causes toxic water to spray
 }
 
 Said: {

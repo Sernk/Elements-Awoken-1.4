@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.BossDrops.Regaroth;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.EASystem.Global;
 using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

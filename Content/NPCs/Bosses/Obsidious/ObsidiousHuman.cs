@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Projectiles.NPCProj.Obsidious;
 using ElementsAwoken.Content.Projectiles.NPCProj.Obsidious.Human;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using System.IO;

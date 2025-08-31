@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
+using ElementsAwoken.EASystem.UI;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -20,28 +21,18 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
             Item.rare = 10;
             Item.value = Item.sellPrice(0, 2, 0, 0);
         }
-        //public override void SetStaticDefaults()
-        //{
-        //    DisplayName.SetDefault("Lunar Star");
-        //    Tooltip.SetDefault("Condense your mana with raw lunar power\nFighters of The Calamity need not apply\nIncreases mana by 100");
-        //}
-        //public override bool CanUseItem(Player player)
-        //{
-        //    bool calamityEnabled = ModLoader.GetMod("CalamityMod") != null;
-        //    return !calamityEnabled && player.statManaMax == 200 && player.GetModPlayer<MyPlayer>().lunarStarsUsed < 1;
-        //}
-
-        //public override bool UseItem(Player player)
-        //{
-        //    player.statManaMax2 += 100;
-        //    player.statMana += 100;
-        //    if (Main.myPlayer == player.whoAmI)
-        //    {
-        //        player.ManaEffect(100);
-        //    }
-        //    player.GetModPlayer<MyPlayer>().lunarStarsUsed += 1;
-        //    return true;
-        //}
+        public override void UpdateInventory(Player player)
+        {
+            HeartsPlayers hearts = player.GetModPlayer<HeartsPlayers>();
+            if (Item.favorited)
+            {
+                hearts.ManaBonus = true;
+            }
+            else
+            {
+                hearts.ManaBonus = false;
+            }
+        }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();

@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;

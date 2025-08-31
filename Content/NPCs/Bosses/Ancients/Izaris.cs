@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Dusts.Ancients;
 using ElementsAwoken.Content.NPCs.Bosses.Ancients.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.Ancients.Gores;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

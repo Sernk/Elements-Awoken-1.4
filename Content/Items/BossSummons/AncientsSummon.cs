@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.BossDrops.Azana;
 using ElementsAwoken.Content.Items.Chaos;
 using ElementsAwoken.Content.NPCs.Bosses.Ancients;
 using ElementsAwoken.EASystem.UI.Tooltips;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;

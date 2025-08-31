@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.Content.Projectiles.NPCProj;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;

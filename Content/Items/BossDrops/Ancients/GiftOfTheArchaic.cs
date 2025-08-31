@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.Cooldowns;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using Terraria;

@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.GameContent.Bestiary;

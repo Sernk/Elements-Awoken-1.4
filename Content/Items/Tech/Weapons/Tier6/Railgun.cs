@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Items.Tech.Weapons.Tier2;
 using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.Utilities;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
