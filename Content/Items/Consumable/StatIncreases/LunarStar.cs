@@ -24,14 +24,8 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
         public override void UpdateInventory(Player player)
         {
             HeartsPlayers hearts = player.GetModPlayer<HeartsPlayers>();
-            if (Item.favorited)
-            {
-                hearts.ManaBonus = true;
-            }
-            else
-            {
-                hearts.ManaBonus = false;
-            }
+            if (Item.favorited) hearts.ManaBonus = true;
+            else hearts.ManaBonus = false;
         }
         public override void AddRecipes()
         {

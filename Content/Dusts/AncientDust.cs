@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -13,7 +12,6 @@ namespace ElementsAwoken.Content.Dusts
 			dust.velocity.X *= 0.3f;
 			dust.scale *= 0.7f;
 		}
-
 		public override bool MidUpdate(Dust dust)
 		{
 			if (!dust.noGravity)
@@ -31,7 +29,6 @@ namespace ElementsAwoken.Content.Dusts
 			}
 			return true;
 		}
-
 		public override Color? GetAlpha(Dust dust, Color lightColor)
 		{
 			return new Color(lightColor.R, lightColor.G, lightColor.B, 25);

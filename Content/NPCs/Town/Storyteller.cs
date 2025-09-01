@@ -453,19 +453,19 @@ namespace ElementsAwoken.Content.NPCs.Town
                             Main.npcChatText = q;
                             Main.npcChatCornerItem = ItemID.Abeemination;
                         }
+                        else if (!deerclops)
+                        {
+                            item.SetDefaults(ItemID.DeerThing);
+                            string q = this.GetLocalization("Content_1_4.BossD").Value + item.Name + this.GetLocalization("Content_1_4.BossD_1").Value;
+                            Main.npcChatText = q;
+                            Main.npcChatCornerItem = ItemID.DeerThing;
+                        }
                         else if (!skeletron)
                         {
                             item.SetDefaults(ItemID.ClothierVoodooDoll);
                             string q = this.GetLocalization("Story.Story6").Value + item.Name + this.GetLocalization("Story.Story6_1").Value;
                             Main.npcChatText = q;
                             Main.npcChatCornerItem = ItemID.ClothierVoodooDoll;
-                        }
-                        else if(!deerclops)
-                        {
-                            item.SetDefaults(ItemID.DeerThing);
-                            string q = this.GetLocalization("Content_1_4.BossD").Value + item.Name + this.GetLocalization("Content_1_4.BossD_1").Value;
-                            Main.npcChatText = q;
-                            Main.npcChatCornerItem = ItemID.DeerThing;
                         }
                         else if (!infernace)
                         {

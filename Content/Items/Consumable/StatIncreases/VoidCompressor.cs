@@ -23,16 +23,6 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
             Item.rare = ModContent.RarityType<EARarity.Rarity13>();
             Item.value = Item.sellPrice(0, 2, 0, 0);
         }
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Void Compressor");
-            // Tooltip.SetDefault("Made to refine and compress your inner darkness into the ultimate void\nAllows you to change the appearance of your void hearts, but nothing else\nFighters of The Calamity need not apply");
-        }
-        //public override bool CanUseItem(Player player)
-        //{
-        //    bool calamityEnabled = ModLoader.GetMod("CalamityMod") != null;
-        //    return !calamityEnabled;
-        //}
         public override void UpdateInventory(Player player)
         {
             HeartsPlayers HeartsPlayers = player.GetModPlayer<HeartsPlayers>();
@@ -51,7 +41,6 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
                 HeartsPlayers.HPTier_0 = true;
             }
         }
-
         public override bool? UseItem(Player player)
         {
             MyPlayer mPlayer = player.GetModPlayer<MyPlayer>();

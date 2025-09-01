@@ -209,6 +209,24 @@ namespace ElementsAwoken.EAUtilities
         public string RainSigil1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.RainSigil1");
         public string RainSigil2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.RainSigil2");
         #endregion
+        #region InfinityStone
+        public string InfinityStone => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityStone");
+        #endregion
+        #region InfinityGauntlet
+        public string InfinityGauntlet => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet");
+        public string InfinityGauntlet1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet1");
+        public string InfinityGauntlet2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet2");
+        public string InfinityGauntlet3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet3");
+        public string InfinityGauntlet4 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet4");
+        public string InfinityGauntlet5 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet5");
+        public string InfinityGauntlet6 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet6");
+        public string InfinityGauntlet7 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet7");
+        public string InfinityGauntlet8 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet8");
+        public string InfinityGauntlet9 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet9");
+        public string InfinityGauntlet10 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet10");
+        public string InfinityGauntlet11 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet11");
+        public string InfinityGauntlet12 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.InfinityGauntlet12");
+        #endregion
         public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion
         #region TimeToken

@@ -54,7 +54,7 @@ namespace ElementsAwoken.EASystem.Global
                 if (Main.myPlayer == player.whoAmI) { player.ManaEffect(100); }
                 player.itemTime = (int)((float)item.useTime / player.GetAttackSpeed(item.DamageType));
                 player.GetModPlayer<MyPlayer>().lunarStarsUsed += 1;
-                return HeartsPlayers.ManaBonus = true;
+                HeartsPlayers.ManaBonus = true;
             }
             if (item.type == ItemID.LifeFruit)
             {

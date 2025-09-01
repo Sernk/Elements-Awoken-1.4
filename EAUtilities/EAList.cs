@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Items.Artifacts;
+﻿using ElementsAwoken.Content.Dusts;
+using ElementsAwoken.Content.Items.Artifacts;
 using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
 using ElementsAwoken.Content.Items.BossDrops.Azana;
@@ -134,6 +135,9 @@ namespace ElementsAwoken.EAUtilities
             v => MyWorld.downedVolcanox = v,
             v => MyWorld.downedWasteland = v
         };
+        #endregion
+        #region DustID
+        public static readonly List<int> DustIDs = [62, 64, 59, 61, 64, 60, 63];
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

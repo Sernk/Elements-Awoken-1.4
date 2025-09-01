@@ -25,22 +25,10 @@ namespace ElementsAwoken.EASystem.UI
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
             var modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
 
-            if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual)
-            {
-                return folder + "Heart4";
-            }
-            if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual)
-            {
-                return folder + "Heart3";
-            }
-            if (modPlayer.CompressorVisual)
-            {
-                return folder + "Heart3Alt";
-            }
-            if (modPlayer.shieldLife > 0)
-            {
-                return folder + "ShieldHeart";
-            }
+            if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual) return folder + "Heart4";
+            if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual) return folder + "Heart3";
+            if (modPlayer.CompressorVisual) return folder + "Heart3Alt";
+            if (modPlayer.shieldLife > 0) return folder + "ShieldHeart";
             return string.Empty;
         }
         public string ManaTexturePath()
@@ -48,10 +36,7 @@ namespace ElementsAwoken.EASystem.UI
             string folder = $"{baseFolder}MP";
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
             MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
-            if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus)
-            {
-                return folder + "Mana2";
-            }
+            if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus) return folder + "Mana2";
             return string.Empty;
         }
         public override void PostDrawResource(ResourceOverlayDrawContext context)
@@ -60,30 +45,30 @@ namespace ElementsAwoken.EASystem.UI
             string fancyFolder = "Images/UI/PlayerResourceSets/FancyClassic/";
             string barsFolder = "Images/UI/PlayerResourceSets/HorizontalBars/";
 
-            if (LifeTexturePath() == string.Empty)
-                return;
-
+            if (LifeTexturePath() == string.Empty) return;
+                
             if (asset == TextureAssets.Heart || asset == TextureAssets.Heart2 || CompareAssets(asset, fancyFolder + "Heart_Fill") || CompareAssets(asset, fancyFolder + "Heart_Fill_B"))
             {
                 context.texture = ModContent.Request<Texture2D>(LifeTexturePath() + "Heart");
                 context.Draw();
             }
-
             else if (CompareAssets(asset, barsFolder + "HP_Fill") || CompareAssets(asset, barsFolder + "HP_Fill_Honey"))
             {
                 context.texture = ModContent.Request<Texture2D>(LifeTexturePath() + "Bar");
                 context.Draw();
             }
-
-            if (asset == TextureAssets.Mana || CompareAssets(asset, fancyFolder + "Star_Fill"))
+            if (ManaTexturePath() != string.Empty)
             {
-                context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Star");
-                context.Draw();
-            }
-            else if (CompareAssets(asset, barsFolder + "MP_Fill"))
-            {
-                context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Bar");
-                context.Draw();
+                if (asset == TextureAssets.Mana || CompareAssets(asset, fancyFolder + "Star_Fill"))
+                {
+                    context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Star");
+                    context.Draw();
+                }
+                else if (CompareAssets(asset, barsFolder + "MP_Fill"))
+                {
+                    context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Bar");
+                    context.Draw();
+                }
             }
         }
         public override void PostDrawResourceDisplay(PlayerStatsSnapshot snapshot, IPlayerResourcesDisplaySet displaySet, bool drawingLife, Color textColor, bool drawText)

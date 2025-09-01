@@ -47,22 +47,10 @@ namespace ElementsAwoken.EASystem.UI
 
             tag["HPBonus"] = HPBonus;
 
-            if (HPTier_0)
-            {
-                tag["HPTier_0"] = true;
-            }
-            if (ManaBonus)
-            {
-                tag["ManaBonus"] = true;
-            }
-            if (ChaosHeartVisual)
-            {
-                tag["ChaosHeartVisual"] = true;
-            }
-            if (EmptyVesselVisual)
-            {
-                tag["EmptyVesselVisual"] = true;
-            }
+            if (HPTier_0) tag["HPTier_0"] = true;
+            if (ManaBonus) tag["ManaBonus"] = true;
+            if (ChaosHeartVisual) tag["ChaosHeartVisual"] = true;
+            if (EmptyVesselVisual) tag["EmptyVesselVisual"] = true;
 
             tag["Mana"] = Mana;
 
@@ -102,6 +90,7 @@ namespace ElementsAwoken.EASystem.UI
 
             hpBonus += CountUsechaosHear * 10;
             if (CountUsechaosHear == 10) hpBonus += CountUseEmptyVessel * 10;
+            if (Mana > 0) ManaBonus = true;
             if (Player.armor[1].type == ModContent.ItemType<ElementalBreastplate>()) hpBonus += 100;
 
             HPBonus = hpBonus;

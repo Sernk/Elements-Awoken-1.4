@@ -3947,6 +3947,211 @@ Items: {
 			'''
 		DisplayName: Oceanic Leggings
 	}
+
+	#Нету в игре от этого предмета идут все остальный не переводь
+	GemLasersClass: {
+		DisplayName: Gem Laser Class
+		Tooltip: My class since the original they differed only by 3 lines each subject has only 3 most needed lines place 50 useless
+	}
+
+	AmethystPistol: {
+		Tooltip: Charges musket balls with violet light
+		DisplayName: Amethyst Pistol
+	}
+
+	AmberPistol: {
+		Tooltip: Charges musket balls with amber light
+		DisplayName: Amber Pistol
+	}
+
+	TopazPistol: {
+		Tooltip: Charges musket balls with golden light
+		DisplayName: Topaz Pistol
+	}
+
+	SapphirePistol: {
+		Tooltip: Charges musket balls with cerulean light
+		DisplayName: Sapphire Pistol
+	}
+
+	RubyPistol: {
+		Tooltip: Charges musket balls with crimson light
+		DisplayName: Ruby Pistol
+	}
+
+	EmeraldPistol: {
+		Tooltip: Charges musket balls with emerald light
+		DisplayName: Emerald Pistol
+	}
+
+	DiamondPistol: {
+		Tooltip: Charges musket balls with white light
+		DisplayName: Diamond Pistol
+	}
+
+	AmberRifle: {
+		DisplayName: Amber Rifle
+		Tooltip: Charges musket balls with amber light
+	}
+
+	AmethystRifle: {
+		DisplayName: Amethyst Rifle
+		Tooltip: Charges musket balls with violet light
+	}
+
+	DiamondRifle: {
+		DisplayName: Diamond Rifle
+		Tooltip: Charges musket balls with white light
+	}
+
+	EmeraldRifle: {
+		DisplayName: Emerald Rifle
+		Tooltip: Charges musket balls with emerald light
+	}
+
+	RubyRifle: {
+		DisplayName: Ruby Rifle
+		Tooltip: Charges musket balls with crimson light
+	}
+
+	SapphireRifle: {
+		DisplayName: Sapphire Rifle
+		Tooltip: Charges musket balls with cerulean light
+	}
+
+	TopazRifle: {
+		DisplayName: Topaz Rifle
+		Tooltip: Charges musket balls with golden light
+	}
+
+	EmeraldBlaster: {
+		Tooltip: Charges musket balls with emerald light
+		DisplayName: Emerald Blaster
+	}
+
+	DiamondBlaster: {
+		Tooltip: Charges musket balls with white light
+		DisplayName: Diamond Blaster
+	}
+
+	AmethystBlaster: {
+		Tooltip: Charges musket balls with violet light
+		DisplayName: Amethyst Blaster
+	}
+
+	AmberBlaster: {
+		Tooltip: Charges musket balls with amber light
+		DisplayName: Amber Blaster
+	}
+
+	RubyBlaster: {
+		DisplayName: Ruby Blaster
+		Tooltip: Charges musket balls with crimson light
+	}
+
+	SapphireBlaster: {
+		DisplayName: Sapphire Blaster
+		Tooltip: Charges musket balls with cerulean light
+	}
+
+	TopazBlaster: {
+		DisplayName: Topaz Blaster
+		Tooltip: Charges musket balls with golden light
+	}
+
+	PrismGlow: {
+		Tooltip: Charges musket balls with mystical light
+		DisplayName: Prism Glow
+	}
+
+	PyroStone: {
+		Tooltip:
+			'''
+			While in your inventory:
+			Nearby enemies catch fire
+			5% increased damage
+			You cannot hold more than one infinity stone
+			'''
+		DisplayName: Pyro Stone
+	}
+
+	MoonStone: {
+		Tooltip:
+			'''
+			While in your inventory:
+			Incresed flight speed and time
+			Every 5 seconds, minor enemies are pushed away
+			You cannot hold more than one infinity stone
+			'''
+		DisplayName: Moon Stone
+	}
+
+	InfinityGauntlet: {
+		Tooltip: ""
+		DisplayName: Infinity Gauntlet
+	}
+
+	FrigidStone: {
+		Tooltip:
+			'''
+			While in your inventory:
+			Nearby enemies are frostburned
+			5 increased critical strike chance
+			You cannot hold more than one infinity stone
+			'''
+		DisplayName: Frigid Stone
+	}
+
+	DeathStone: {
+		Tooltip:
+			'''
+			While in your inventory:
+			50 increased maximum health
+			Occasionally kills minor enemies
+			You cannot hold more than one infinity stone
+			'''
+		DisplayName: Death Stone
+	}
+
+	AridStone: {
+		Tooltip:
+			'''
+			While in your inventory:
+			Immunity to strong winds
+			10% increased movement speed
+			You cannot hold more than one infinity stone
+			'''
+		DisplayName: Arid Stone
+	}
+
+	AquaticStone: {
+		DisplayName: Aquatic Stone
+		Tooltip:
+			'''
+			While in your inventory:
+			Grants uninhibited water movement
+			50 increased max mana
+			You cannot hold more than one infinity stone
+			'''
+	}
+
+	Blightfire: {
+		Tooltip:
+			'''
+			Everything burns if you get it hot enough.
+			Made by throwing concerntrated pyroplasm and putrid ore into lava
+			'''
+		DisplayName: Blightfire
+	}
+
+	BlightedBuster: {
+		Tooltip:
+			'''
+			Turns normal bullets into a tight cluster of blighted bullets
+			Right Click to shoot a wider spread
+			'''
+		DisplayName: Blighted Buster
+	}
 }
 
 Tiles: {
@@ -4511,6 +4716,26 @@ Buffs: {
 	BubbleBuff: {
 		DisplayName: Bubble
 		Description: I like bubbles!
+	}
+
+	InfinityBubbleCooldown: {
+		DisplayName: Projectile Bubbler Cooldown
+		Description: You cannot turn projectiles into bubbles
+	}
+
+	InfinityPortalCooldown: {
+		DisplayName: Portal Cooldown
+		Description: You cannot create a portal
+	}
+
+	InfinityVoidCooldown: {
+		DisplayName: Void Cooldown
+		Description: You cannot erase life... yet
+	}
+
+	Corroding: {
+		Description: It feels like liquid fire.
+		DisplayName: Corroding
 	}
 }
 
@@ -5463,6 +5688,16 @@ Projectiles: {
 	WaterSwordP.DisplayName: Forever Tide
 	WaterYoyoWater.DisplayName: Armageddon
 	WaterYoyoP.DisplayName: Aqua Marine
+	GemLaser.DisplayName: Gem Laser
+	GemRay.DisplayName: Gem Ray
+	GemLaserHoming.DisplayName: Gem Laser
+	InfinityFireTentacle.DisplayName: Fire Tentacle
+	InfinityFireball.DisplayName: Fireball
+	InfinityBubble.DisplayName: Bubble
+	FirePortal.DisplayName: Fire Portal
+	DesertCrystal.DisplayName: Desert Crystal
+	BlightedBulletP.DisplayName: Blighted Bullet
+	BlightCloud.DisplayName: Blight Cloud
 }
 
 Configs: {
@@ -5688,6 +5923,25 @@ Tooltips: {
 	RainSigil: You dont yet have the power to dissipate the radiance...
 	RainSigil1: Clear
 	RainSigil2: Raining
+	InfinityStone: Your feeble body cannot contain the power of more than one infinity stone!
+	InfinityGauntlet: Desert
+	InfinityGauntlet1: Fire
+	InfinityGauntlet2: Sky
+	InfinityGauntlet3: Frost
+	InfinityGauntlet4: Water
+	InfinityGauntlet5: Void
+	InfinityGauntlet6:
+		'''
+		The forces of the elements combined...
+		Has the effects of all the infinity stones
+		Right Click to switch modes
+		'''
+	InfinityGauntlet7: Desert: Rains desert shards
+	InfinityGauntlet8: Fire: Fires a fireball
+	InfinityGauntlet9: Sky: Teleport to a discovered location on the map
+	InfinityGauntlet10: Water: Turns projectiles into bubbles
+	InfinityGauntlet11: Frost: Summons a shield around the player
+	InfinityGauntlet12: Void: Kills half of all non boss monsters with under 10000 life
 }
 
 AccInfo: {

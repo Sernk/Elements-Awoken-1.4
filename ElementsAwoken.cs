@@ -23,6 +23,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Chat;
@@ -143,7 +144,7 @@ namespace ElementsAwoken
         public override void Load()
         {
             //Main.OnTick -= Update;
-
+            //EAList.DustIDs.Add(EAU.PinkFlame);
             Terraria.IL_Player.Update += RemoveManaCap;
 
             DateTime now = DateTime.Today;

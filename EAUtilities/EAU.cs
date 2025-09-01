@@ -8,6 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.EAUtilities;
 
 namespace ElementsAwoken
 {
@@ -38,6 +39,14 @@ namespace ElementsAwoken
                 2 => ModContent.DustType<AncientBlue>(), 3 => ModContent.DustType<AncientPink>(),
                 _ => ModContent.DustType<AncientRed>(),
             };
+        }
+        public static int GetDustIDForAI(Projectile projectile)
+        {
+            int index = (int)projectile.ai[0];
+
+            if (index >= 0 && index < EAList.DustIDs.Count) return EAList.DustIDs[index];
+
+            return EAList.DustIDs[0];
         }
         public static List<int> VanillaOreIDs()
         {
