@@ -1,5 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;

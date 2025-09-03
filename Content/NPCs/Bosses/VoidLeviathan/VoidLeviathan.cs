@@ -8,7 +8,7 @@ using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.ElderShadeWyrm;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;

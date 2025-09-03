@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Items.Weapons.Melee;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;

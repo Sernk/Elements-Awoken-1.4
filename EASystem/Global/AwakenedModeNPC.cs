@@ -5,7 +5,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem.Global
+namespace ElementsAwoken.EASystem.EAPlayer
 {
     public class AwakenedModeNPC : GlobalNPC, ILocalizedModType
     {

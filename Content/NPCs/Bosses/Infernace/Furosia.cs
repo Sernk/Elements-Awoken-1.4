@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Projectiles.NPCProj.Infernace;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using System;
 using System.IO;

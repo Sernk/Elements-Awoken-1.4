@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.BossDrops.Azana;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Projectiles.NPCProj.Azana;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;

@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem.Global
+namespace ElementsAwoken.EASystem.EAPlayer
 {
     public class ItemEnergy : GlobalItem
     {

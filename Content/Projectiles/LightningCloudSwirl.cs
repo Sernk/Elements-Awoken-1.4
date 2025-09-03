@@ -2,7 +2,7 @@
 using System;
 using Terraria;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 namespace ElementsAwoken.Content.Projectiles
 {
     public class LightningCloudSwirl : ModProjectile

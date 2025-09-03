@@ -3868,124 +3868,124 @@ Items: {
 	}
 
 	BubbleFlood: {
-		// DisplayName: Typhos
-		// Tooltip: ""
+		DisplayName: Тифус
+		Tooltip: так-то это тиф, но да похуй.
 	}
 
 	BubblePack: {
-		// DisplayName: Bubble Pack
-		/* Tooltip:
+		DisplayName: Пузырьковый ранец
+		Tooltip:
 			'''
-			Allows flight and slow fall
-			Propel yourself with killer bubbles
-			''' */
+			Позволяет летать и замедлять падение
+			Взлетай на пузырях-убийцах (чё?)
+			'''
 	}
 
 	BubbleStaff: {
-		// DisplayName: Bubble Staff
-		// Tooltip: Summons kamikaze bubbles to attack your enemies
+		DisplayName: Пузырный посох
+		Tooltip: Призывает одноразовые пузыри, летящие во врагов
 	}
 
 	ChakramOfTheDuke: {
-		// DisplayName: Chakram of the Duke
-		// Tooltip: Tear your enemies to pieces
+		DisplayName: Герцогский чаркам
+		Tooltip: Рви врагов, как тузик грелку!
 	}
 
 	TheUrchin: {
-		// Tooltip: ""
-		// DisplayName: The Urchin
+		Tooltip: ""
+		DisplayName: Морской ёж
 	}
 
 	SeaViper: {
-		// Tooltip: ""
-		// DisplayName: Sea Viper
+		Tooltip: ахуенное название
+		DisplayName: Водная гадюка
 	}
 
 	RainSigil: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Toggles the rain
-			Rain will start or stop shortly after use
-			''' */
-		// DisplayName: Rain Sigil
+			Включает или выключает дождь при использовании
+			После использования дождь начнётся или закончится спустя несколько секунд
+			'''
+		DisplayName: Символ дождя
 	}
 
 	TrueWaterBolt: {
-		// DisplayName: Wavebolt
-		// Tooltip: ""
+		DisplayName: Волнострел
+		Tooltip: истинный водяной выстрел лол
 	}
 
 	WaterNeck: {
-		// DisplayName: Emblem of the Ocean
-		/* Tooltip:
+		DisplayName: Окиянская эмблема
+		Tooltip:
 			'''
-			Become one with the ocean
-			Upon entering water:
-			20% increased damage
-			20% increased melee speed and throwing velocity
-			Grants effects of the Magic Cuffs
-			Increased movement speed
-			10 increased defense
-			''' */
+			Стань единым целым с морем-окияном
+			При погружении в воду ты получаешь:
+			Увеличенную на 10 защиту
+			Увеличенный на 20% весь урон
+			Увеличенную на 20% скорость ближних оружий и скорость полёта метательных оружий
+			Увеличенную скорость передвижения
+			Даёт эффекты аксессуара "Магические оковы"
+			'''
 	}
 
 	WaterShield: {
-		// DisplayName: Great Barrier Reef
-		/* Tooltip:
+		DisplayName: Великий барьерный риф
+		Tooltip:
 			'''
-			The creatures of the ocean accept you
-			Turns you into a merfolk when in the water
-			Ocean monsters won't attack you
-			Grants immunity to knockback
-			''' */
+			Создания окиянския принимают тебя
+			Превращает тебя в водяного при погружении в воду
+			Океанические враги больше тебя не атакуют
+			Даёт неуязвимость к отбрасыванию
+			'''
 	}
 
 	Watershot: {
-		// DisplayName: Water Shot
-		// Tooltip: ""
+		DisplayName: Водострел
+		Tooltip: ""
 	}
 
 	WaterSword: {
-		// DisplayName: Forever Tide
-		// Tooltip: ""
+		DisplayName: Приливечность
+		Tooltip: ватер сворд лучше звучит тбх
 	}
 
 	WaterYoyo: {
-		// DisplayName: Aqua Marine
-		// Tooltip: ""
+		DisplayName: Аквамарин
+		Tooltip: это вам чё ториум что-ли?
 	}
 
 	Wavelash: {
-		// DisplayName: Wavebreaker
-		// Tooltip: ""
+		DisplayName: Волнорез
+		Tooltip: ""
 	}
 
 	OceanicVisage: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Can move quickly through liquids
-			+1 max minions
-			10% increased critical strike chance
-			''' */
-		// DisplayName: Oceanic Visage
+			Позволяет двигаться в ЖИДкостях быстрее
+			Увеличивает количество миньон-слотов на 1
+			Увеличивает весь шанс критического удара на 10%
+			'''
+		DisplayName: Личина океанская
 	}
 
 	OceanicPlateMail: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			6% increased damage
-			Flight time increased by 25
-			''' */
-		// DisplayName: Oceanic Plate Mail
+			Увеличивает весь урон на 6%
+			Увеличивает время полёта у крыльев на полсекунды
+			'''
+		DisplayName: Кираса океанская
 	}
 
 	OceanicLeggings: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			10% increased movement speed
-			Grants defence boosts as health lowers
-			''' */
-		// DisplayName: Oceanic Leggings
+			Увеличивает скорость передвижения на 10%
+			Даёт различные баффы к статам при понижении твоего здоровья
+			'''
+		DisplayName: Поножи океанские
 	}
 
 	#Нету в игре от этого предмета идут все остальный не переводь
@@ -3995,202 +3995,460 @@ Items: {
 	}
 
 	AmethystPistol: {
-		// Tooltip: Charges musket balls with violet light
-		// DisplayName: Amethyst Pistol
+		Tooltip: Превращает обычные пули в аметистовые лазеры
+		DisplayName: Аметистовый пистолет
 	}
 
 	AmberPistol: {
-		// Tooltip: Charges musket balls with amber light
-		// DisplayName: Amber Pistol
+		Tooltip: Превращает обычные пули в янтарные лазеры
+		DisplayName: Янтарный пистолет
 	}
 
 	TopazPistol: {
-		// Tooltip: Charges musket balls with golden light
-		// DisplayName: Topaz Pistol
+		Tooltip: Превращает обычные пули в топазовые лазеры
+		DisplayName: Топазовый пистолет
 	}
 
 	SapphirePistol: {
-		// Tooltip: Charges musket balls with cerulean light
-		// DisplayName: Sapphire Pistol
+		Tooltip: Превращает обычные пули в сапфировые лазеры
+		DisplayName: Сапфировый пистолет
 	}
 
 	RubyPistol: {
-		// Tooltip: Charges musket balls with crimson light
-		// DisplayName: Ruby Pistol
+		Tooltip: Превращает обычные пули в рубиновые лазеры
+		DisplayName: Рубиновый пистолет
 	}
 
 	EmeraldPistol: {
-		// Tooltip: Charges musket balls with emerald light
-		// DisplayName: Emerald Pistol
+		Tooltip: Превращает обычные пули в изумрудные лазеры
+		DisplayName: Изумрудный пистолет
 	}
 
 	DiamondPistol: {
-		// Tooltip: Charges musket balls with white light
-		// DisplayName: Diamond Pistol
+		Tooltip: Превращает обычные пули в алмазные лазеры
+		DisplayName: Алмазный пистолет
 	}
 
 	AmberRifle: {
-		// DisplayName: Amber Rifle
-		// Tooltip: Charges musket balls with amber light
+		DisplayName: Янтарное ружьё
+		Tooltip: Стреляет янтарным лазером, пронзающим до четырёх врагов
 	}
 
 	AmethystRifle: {
-		// DisplayName: Amethyst Rifle
-		// Tooltip: Charges musket balls with violet light
+		DisplayName: Аметистовое ружьё
+		Tooltip: Стреляет аметистовым лазером, пронзающим до четырёх врагов
 	}
 
 	DiamondRifle: {
-		// DisplayName: Diamond Rifle
-		// Tooltip: Charges musket balls with white light
+		DisplayName: Алмазное ружьё
+		Tooltip: Стреляет алмазным лазером, пронзающим до четырёх врагов
 	}
 
 	EmeraldRifle: {
-		// DisplayName: Emerald Rifle
-		// Tooltip: Charges musket balls with emerald light
+		DisplayName: Изумрудное ружьё
+		Tooltip: Стреляет изумрудным лазером, пронзающим до четырёх врагов
 	}
 
 	RubyRifle: {
-		// DisplayName: Ruby Rifle
-		// Tooltip: Charges musket balls with crimson light
+		DisplayName: Рубиновое ружьё
+		Tooltip: Стреляет рубиновым лазером, пронзающим до четырёх врагов
 	}
 
 	SapphireRifle: {
-		// DisplayName: Sapphire Rifle
-		// Tooltip: Charges musket balls with cerulean light
+		DisplayName: Сапфировое ружьё
+		Tooltip: Стреляет сапфировым лазером, пронзающим до четырёх врагов
 	}
 
 	TopazRifle: {
-		// DisplayName: Topaz Rifle
-		// Tooltip: Charges musket balls with golden light
+		DisplayName: Топазовое ружьё
+		Tooltip: Стреляет топазовым лазером, пронзающим до четырёх врагов
 	}
 
 	EmeraldBlaster: {
-		// Tooltip: Charges musket balls with emerald light
-		// DisplayName: Emerald Blaster
+		Tooltip: Стреляет изумрудным лазером, пронзающим до пяти врагов
+		DisplayName: Изумрудная пушка
 	}
 
 	DiamondBlaster: {
-		// Tooltip: Charges musket balls with white light
-		// DisplayName: Diamond Blaster
+		Tooltip: Стреляет алмазным лазером, пронзающим до пяти врагов
+		DisplayName: Алмазная пушка
 	}
 
 	AmethystBlaster: {
-		// Tooltip: Charges musket balls with violet light
-		// DisplayName: Amethyst Blaster
+		Tooltip: Стреляет аметистовым лазером, пронзающим до пяти врагов
+		DisplayName: Аметистовая пушка
 	}
 
 	AmberBlaster: {
-		// Tooltip: Charges musket balls with amber light
-		// DisplayName: Amber Blaster
+		Tooltip: Стреляет янтарным лазером, пронзающим до пяти врагов
+		DisplayName: Янтарная пушка
 	}
 
 	RubyBlaster: {
-		// DisplayName: Ruby Blaster
-		// Tooltip: Charges musket balls with crimson light
+		DisplayName: Рубиновая пушка
+		Tooltip: Стреляет рубиновым лазером, пронзающим до пяти врагов
 	}
 
 	SapphireBlaster: {
-		// DisplayName: Sapphire Blaster
-		// Tooltip: Charges musket balls with cerulean light
+		DisplayName: Сапфировая пушка
+		Tooltip: Стреляет сапфировым лазером, пронзающим до пяти врагов
 	}
 
 	TopazBlaster: {
-		// DisplayName: Topaz Blaster
-		// Tooltip: Charges musket balls with golden light
+		DisplayName: Топазовая пушка
+		Tooltip: Стреляет топазовым лазером, пронзающим до пяти врагов
 	}
 
 	PrismGlow: {
-		// Tooltip: Charges musket balls with mystical light
-		// DisplayName: Prism Glow
+		Tooltip: Cтреляет самонаводящимися разноцветными лазерами
+		DisplayName: Призмосвет
 	}
 
 	PyroStone: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			While in your inventory:
-			Nearby enemies catch fire
-			5% increased damage
-			You cannot hold more than one infinity stone
-			''' */
-		// DisplayName: Pyro Stone
+			Пока находится в инвентаре:
+			Поджигает ближайших врагов
+			Увеличивает весь урон на 5%
+			Больше одного камня бесконечности в инвентаре работать не будет
+			'''
+		DisplayName: Пламекамень
 	}
 
 	MoonStone: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			While in your inventory:
-			Incresed flight speed and time
-			Every 5 seconds, minor enemies are pushed away
-			You cannot hold more than one infinity stone
-			''' */
-		// DisplayName: Moon Stone
+			Пока находится в инвентаре:
+			Увеличивает скорость и время полёта у крыльев
+			Каждые пять секунд создаёт волны, отбрасывающие обычных врагов
+			Больше одного камня бесконечности в инвентаре работать не будет
+			'''
+		DisplayName: Лунокамень
 	}
 
 	InfinityGauntlet: {
-		// Tooltip: ""
-		// DisplayName: Infinity Gauntlet
+		Tooltip: перчатка бес конечностей
+		DisplayName: Рукавица бесконечности
 	}
 
 	FrigidStone: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			While in your inventory:
-			Nearby enemies are frostburned
-			5 increased critical strike chance
-			You cannot hold more than one infinity stone
-			''' */
-		// DisplayName: Frigid Stone
+			Пока находится в инвентаре:
+			Ледобжигает ближайших врагов
+			Увеличивает весь шанс критического удара на 5%
+			Больше одного камня бесконечности в инвентаре работать не будет
+			'''
+		DisplayName: Мразокамень
 	}
 
 	DeathStone: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			While in your inventory:
-			50 increased maximum health
-			Occasionally kills minor enemies
-			You cannot hold more than one infinity stone
-			''' */
-		// DisplayName: Death Stone
+			Пока находится в инвентаре:
+			Увеличивает максимальное здоровье на 50
+			Время от времени убивает обычных врагов вокруг игрока
+			Больше одного камня бесконечности в инвентаре работать не будет
+			'''
+		DisplayName: Смертокамень
 	}
 
 	AridStone: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			While in your inventory:
-			Immunity to strong winds
-			10% increased movement speed
-			You cannot hold more than one infinity stone
-			''' */
-		// DisplayName: Arid Stone
+			Пока находится в инвентаре:
+			Даёт неуязвимость к дебаффу "Могучий ветер"
+			Увеличивает скорость передвижения на 10%
+			Больше одного камня бесконечности в инвентаре работать не будет
+			'''
+		DisplayName: Пустынокамень
 	}
 
 	AquaticStone: {
-		// DisplayName: Aquatic Stone
-		/* Tooltip:
+		DisplayName: Аквамень
+		Tooltip:
 			'''
-			While in your inventory:
-			Grants uninhibited water movement
-			50 increased max mana
-			You cannot hold more than one infinity stone
-			''' */
+			Пока находится в инвентаре:
+			Позволяет двигаться в воде, как рыба в воде
+			Увеличивает максимальную ману на 50
+			Больше одного камня бесконечности в инвентаре работать не будет
+			'''
 	}
 
 	Blightfire: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Everything burns if you get it hot enough.
-			Made by throwing concerntrated pyroplasm and putrid ore into lava
-			''' */
-		// DisplayName: Blightfire
+			Горит всё, что хорошо нагреть можно.
+			Дабы получить его, кинь порченную руду и концентрированную огнеплазму в лаву
+			'''
+		DisplayName: Гнилогонь
 	}
 
 	BlightedBuster: {
+		Tooltip:
+			'''
+			Превращает обычные пули в узкий поток гнилопуль
+			<right>, чтобы выстрелить более широким потоком
+			'''
+		DisplayName: Гнилострел
+	}
+
+	TheHarvester: {
+		// Tooltip: Throws a life-stealing scythe
+		// DisplayName: The Harvester
+	}
+
+	Deteriorator: {
+		// Tooltip: Rapidly throws three waves of corrosive daggers
+		// DisplayName: Deteriorator
+	}
+
+	CorroderStaff: {
 		/* Tooltip:
 			'''
-			Turns normal bullets into a tight cluster of blighted bullets
-			Right Click to shoot a wider spread
+			Summons a corroder to protect you
+			Each corroders only takes 0.75 minion slots
 			''' */
-		// DisplayName: Blighted Buster
+		// DisplayName: Corroder Staff
+	}
+
+	BlightLobber: {
+		/* Tooltip:
+			'''
+			Fires a bouncing Blight Ring
+			Right Click to throw fast returning rings
+			''' */
+		// DisplayName: Blight Lobber
+	}
+
+	BlightfirePickaxe: {
+		// Tooltip: ""
+		// DisplayName: Blightfire Pickaxe
+	}
+
+	BlightfireHamaxe: {
+		// Tooltip: ""
+		// DisplayName: Blightfire Hamaxe
+	}
+
+	PebleerEggCooked: {
+		/* Tooltip:
+			'''
+			Minor improvements to all stats
+			Heals the player 20 life over 10 seconds
+			''' */
+		// DisplayName: Cooked Pebleer Egg
+	}
+
+	PebleerEgg: {
+		// Tooltip: ""
+		// DisplayName: Pebleer Egg
+	}
+
+	CarapaceWand: {
+		// Tooltip: Shoots a carapace shard that deals additional damage to enemies it hits
+		// DisplayName: Carapace Wand
+	}
+
+	CarapaceSlicer: {
+		// Tooltip: Throws a boomrang that can stick to enemies
+		// DisplayName: Carapace Slicer
+	}
+
+	CarapaceShiv: {
+		// Tooltip: Right Click leap towards the cursor
+		// DisplayName: Carapace Shiv
+	}
+
+	CarapaceItem: {
+		// Tooltip: Nature's armor
+		// DisplayName: Carapace
+	}
+
+	CarapaceCrusher: {
+		// Tooltip: Mines a 3x3 area
+		// DisplayName: Carapace Crusher
+	}
+
+	CarapaceCannon: {
+		// Tooltip: Shoots a rolling carapace ball
+		// DisplayName: Carapace Cannon
+	}
+
+	CreditsSetup: {
+		// DisplayName: Credits
+		// Tooltip: ""
+	}
+
+	BlossomBoomer: {
+		// DisplayName: Blossom Boomer
+		// Tooltip: ""
+	}
+
+	BudKunai: {
+		// DisplayName: Bud Kunai
+		// Tooltip: ""
+	}
+
+	FlowerPower: {
+		// DisplayName: Flower Power
+		// Tooltip: Unleash a wave of low damaging petals
+	}
+
+	Petal: {
+		// DisplayName: Petal
+		// Tooltip: Smells nice
+	}
+
+	PetalBattleaxe: {
+		// DisplayName: Petal Battleaxe
+		// Tooltip: ""
+	}
+
+	PetalHamaxe: {
+		// DisplayName: Petal Hamaxe
+		// Tooltip: ""
+	}
+
+	PetalPickaxe: {
+		// DisplayName: Petal Pickaxe
+		// Tooltip: ""
+	}
+
+	PetalPike: {
+		// DisplayName: Petal Pike
+		// Tooltip: ""
+	}
+
+	PetalPopper: {
+		// DisplayName: Petal Popper
+		// Tooltip: ""
+	}
+
+	DrakonitePickaxe: {
+		// Tooltip: ""
+		// DisplayName: Drakonite Pickaxe
+	}
+
+	DrakoniteKnife: {
+		// Tooltip: ""
+		// DisplayName: Drakonite Knife
+	}
+
+	DrakoniteHamaxe: {
+		// Tooltip: ""
+		// DisplayName: Drakonite Hamaxe
+	}
+
+	DrakoniteBlade: {
+		// Tooltip: Unleash the power of dragons upon hitting an enemy
+		// DisplayName: Drakonite Blade
+	}
+
+	DragonShot: {
+		// Tooltip: Turns normal arrows into drakonite arrows
+		// DisplayName: Dragon Shot
+	}
+
+	DragonFury: {
+		// Tooltip: ""
+		// DisplayName: Dragon Fury
+	}
+
+	DragonmailLeggings: {
+		/* Tooltip:
+			'''
+			9% increased movement speed
+			12% increased melee speed
+			Life regen increased by 1
+			''' */
+		// DisplayName: Dragonmail Leggings
+	}
+
+	DragonmailHood: {
+		/* Tooltip:
+			'''
+			Increases maximum mana by 80
+			Reduces mana usage by 15%
+			7% increased magic damage
+			5% increased magic critical strike chance
+			''' */
+		// DisplayName: Dragonmail Hood
+	}
+
+	DragonmailGreathelm: {
+		/* Tooltip:
+			'''
+			8% increased melee damage
+			10% increased melee critical strike chance
+			Damage taken reduced by 6%
+			''' */
+		// DisplayName: Dragonmail Greathelm
+	}
+
+	DragonmailChestpiece: {
+		/* Tooltip:
+			'''
+			5% increased damage
+			Immunity to On Fire
+			Your body glows
+			5% increased mining speed
+			''' */
+		// DisplayName: Dragonmail Chestpiece
+	}
+
+	Dragonfire: {
+		/* Tooltip:
+			'''
+			Turns musketballs into dragonfire bullets
+			20% chance to not consume ammo
+			''' */
+		// DisplayName: Dragonfire
+	}
+
+	DragonFang: {
+		// Tooltip: ""
+		// DisplayName: Dragon Fang
+	}
+
+	DragonEmber: {
+		// Tooltip: ""
+		// DisplayName: Dragon Ember
+	}
+
+	DragonBreathStaff: {
+		// Tooltip: Summons a mini dragon to protect you
+		// DisplayName: Dragon Breath Staff
+	}
+
+	DragonmailMask: {
+		// DisplayName: Dragonmail Mask
+		/* Tooltip:
+			'''
+			10% increased summon damage
+			Increased minion knockback
+			+2 max minions
+			''' */
+	}
+
+	DragonmailVisage: {
+		// DisplayName: Dragonmail Visage
+		/* Tooltip:
+			'''
+			20% chance to not consume ammo
+			9% increased ranged damage
+			10% increased ranged critical strike chance
+			''' */
+	}
+
+	DragonTalon: {
+		// DisplayName: Dragon Talon
+		// Tooltip: ""
+	}
+
+	DrakoniteDrill: {
+		// DisplayName: Drakonite Drill
+		// Tooltip: ""
 	}
 }
 
@@ -4754,28 +5012,43 @@ Buffs: {
 	}
 
 	BubbleBuff: {
-		// DisplayName: Bubble
-		// Description: I like bubbles!
+		DisplayName: Пузырь
+		Description: Люблю пузырьки!
 	}
 
 	InfinityBubbleCooldown: {
-		// DisplayName: Projectile Bubbler Cooldown
-		// Description: You cannot turn projectiles into bubbles
+		DisplayName: Откат снарядопузырителя
+		Description: Ты пока не можешь обращать вражеские снаряды в пузырьки
 	}
 
 	InfinityPortalCooldown: {
-		// DisplayName: Portal Cooldown
-		// Description: You cannot create a portal
+		DisplayName: Откат портала
+		Description: Ты пока не можешь создать портал
 	}
 
 	InfinityVoidCooldown: {
-		// DisplayName: Void Cooldown
-		// Description: You cannot erase life... yet
+		DisplayName: Откат пустоты
+		Description: Ты пока не можешь уничтожать жизнь... ключевое слово - пока.
 	}
 
 	Corroding: {
-		// Description: It feels like liquid fire.
-		// DisplayName: Corroding
+		Description: Словно жидкий огонь.
+		DisplayName: Коррозия
+	}
+
+	CorroderBuff: {
+		// Description: Don't try pet it.
+		// DisplayName: Corroder
+	}
+
+	HeartyMeal: {
+		// Description: Heals 20 health over 10 seconds
+		// DisplayName: Hearty Meal
+	}
+
+	MiniDragonBuff: {
+		// Description: Its cute and scary at the same time
+		// DisplayName: Mini Dragon
 	}
 }
 
@@ -5309,7 +5582,7 @@ Projectiles: {
 	Waterball.DisplayName: Водошар
 	BrinyBusterP.DisplayName: Солоноватая попойка
 	BubblePopperP.DisplayName: Проджектайл пузырькострела
-	// Bubble.DisplayName: Bubble
+	Bubble.DisplayName: Пузырь
 	HighTideP.DisplayName: Проджектайл прилива
 	AquaticArrow.DisplayName: Акватическая стрела
 	AquaticArrow2.DisplayName: Aкватическая стрела
@@ -5720,24 +5993,54 @@ Projectiles: {
 	AbyssCultistBolt.DisplayName: Выстрел культиста Бездны
 	AbyssCultist.DisplayName: Культист Бездны
 	VoidSwordProj.DisplayName: Проджектайл пустомеча
-	// DukeChakramProj.DisplayName: Chakram of the Duke
-	// TheUrchinUrchin.DisplayName: The Urchin
-	// TheUrchinSpike.DisplayName: The Urchin Spike
-	// TheUrchinP.DisplayName: The Urchin
-	// WatershotP.DisplayName: Watershot
-	// WaterSwordP.DisplayName: Forever Tide
-	// WaterYoyoWater.DisplayName: Armageddon
-	// WaterYoyoP.DisplayName: Aqua Marine
-	// GemLaser.DisplayName: Gem Laser
-	// GemRay.DisplayName: Gem Ray
-	// GemLaserHoming.DisplayName: Gem Laser
-	// InfinityFireTentacle.DisplayName: Fire Tentacle
-	// InfinityFireball.DisplayName: Fireball
-	// InfinityBubble.DisplayName: Bubble
-	// FirePortal.DisplayName: Fire Portal
-	// DesertCrystal.DisplayName: Desert Crystal
-	// BlightedBulletP.DisplayName: Blighted Bullet
-	// BlightCloud.DisplayName: Blight Cloud
+	DukeChakramProj.DisplayName: Проджектайл герцокрама
+	TheUrchinUrchin.DisplayName: Морскоёжоёж
+	TheUrchinSpike.DisplayName: Шип морскоежа
+	TheUrchinP.DisplayName: Проджектайл морскоежа
+	WatershotP.DisplayName: Проджектайл водострела
+	WaterSwordP.DisplayName: Проджектайл водомеча
+	WaterYoyoWater.DisplayName: Вода водного йо-йо
+	WaterYoyoP.DisplayName: Проджектайл водного йо-йо
+	GemLaser.DisplayName: Самоцветолазер
+	GemRay.DisplayName: Самоцветолуч
+	GemLaserHoming.DisplayName: Самонаводящийся самоцветолуч
+	InfinityFireTentacle.DisplayName: Огненное щупальце бесконечности
+	InfinityFireball.DisplayName: Огнешар бесконечности
+	InfinityBubble.DisplayName: Пузырь бесконечности
+	FirePortal.DisplayName: Огнепортал
+	DesertCrystal.DisplayName: Кристалл пустыни
+	BlightedBulletP.DisplayName: Проджектайл гнилопули
+	BlightCloud.DisplayName: Гнилоблако
+	// DeterioratorKnife.DisplayName: Fire Knife
+	// CorroderMinion.DisplayName: Energy Spirit
+	// HarvesterScythe.DisplayName: Harvester
+	// CorroderSpit.DisplayName: Corroder Spit
+	// BlightRing.DisplayName: Blight Ring
+	// BlightRang.DisplayName: Blight Rang
+	// CarapaceSlicerP.DisplayName: Carapace Slicer P
+	// CarapaceSlice.DisplayName: Carapace Slice
+	// CarapaceShard.DisplayName: Carapace Shard
+	// CarapaceBall.DisplayName: Carapace Ball
+	// BlossomSpore.DisplayName: Blossom Spore
+	// FlowerPowerProj.DisplayName: Petal
+	// PetalPikeStem.DisplayName: Petal Pike
+	// PetalPikeTip.DisplayName: Petal Pike
+	// PetalPikeP.DisplayName: Petal Pike
+	// BlossomBoomerP.DisplayName: Blossom Boomer
+	// BudKunaiP.DisplayName: Bud Kunai
+	// DrakoniteKnifeP.DisplayName: DrakoniteKnife
+	// DrakoniteFireball.DisplayName: Drakonite Fireball
+	// DrakoniteEruption.DisplayName: Drakonite Eruption
+	// DragonBladeBlast.DisplayName: Dragon Blade Blast
+	// DrakoniteArrow.DisplayName: Drakonite Arrow
+	// DragonEmberBall.DisplayName: Dragon Ember Ball
+	// DragonEmberSeeker.DisplayName: Dragon Ember Seeker
+	// DragonFangShadow.DisplayName: Dragon Fang Shadow
+	// DragonfireBullet.DisplayName: Dragonfire Bullet
+	// DragonTalonBall.DisplayName: Dragon Talon Ball
+	// DrakoniteDrill.DisplayName: Drakonite Drill
+	// MiniDragon.DisplayName: Mini Dragon
+	// DragonFangP.DisplayName: Dragon Fang
 }
 
 Configs: {
@@ -5961,28 +6264,30 @@ Tooltips: {
 	SandstormStone: Песчаная буря рассеивается...
 	SandstormStone1: Ветры пустыни поднимаются!
 	TimeToken: Из Пустоты не получится сбежать...
-	// RainSigil: You dont yet have the power to dissipate the radiance...
-	// RainSigil1: Clear
-	// RainSigil2: Raining
-	// InfinityStone: Your feeble body cannot contain the power of more than one infinity stone!
-	// InfinityGauntlet: Desert
-	// InfinityGauntlet1: Fire
-	// InfinityGauntlet2: Sky
-	// InfinityGauntlet3: Frost
-	// InfinityGauntlet4: Water
-	// InfinityGauntlet5: Void
-	/* InfinityGauntlet6:
+	RainSigil: У тебя пока нет мощи, дабы рассеять силу самого Лучезария...
+	RainSigil1: Ясно
+	RainSigil2: Идёт дожль
+	InfinityStone: Твоё немощное тело не может обуздать силу больше чем одного камня бесконечности!
+	InfinityGauntlet: Пустынный камень
+	InfinityGauntlet1: Огненный камень
+	InfinityGauntlet2: Небесный камень
+	InfinityGauntlet3: Морозный камень
+	InfinityGauntlet4: Водный камень
+	InfinityGauntlet5: Пустотный камень
+	InfinityGauntlet6:
 		'''
-		The forces of the elements combined...
-		Has the effects of all the infinity stones
-		Right Click to switch modes
-		''' */
-	// InfinityGauntlet7: Desert: Rains desert shards
-	// InfinityGauntlet8: Fire: Fires a fireball
-	// InfinityGauntlet9: Sky: Teleport to a discovered location on the map
-	// InfinityGauntlet10: Water: Turns projectiles into bubbles
-	// InfinityGauntlet11: Frost: Summons a shield around the player
-	// InfinityGauntlet12: Void: Kills half of all non boss monsters with under 10000 life
+		Сила всех элементов, в одной маленькой рукавице...
+		Имеет эффекты всех камней бесконечности
+		<right>, чтобы переключаться между эффектами камней
+		'''
+	InfinityGauntlet7: Пустынный камень: Создаёт с небес песчаные осколки
+	InfinityGauntlet8: Огненный камень: Выпускает огнешар
+	InfinityGauntlet9: Небесный камень: Позволяет телепортироваться в любую исследованную часть карты
+	InfinityGauntlet10: Водный камень: Позволяет превращать вражеские снаряды в пузырьки
+	InfinityGauntlet11: Морозный камень: Создаёт вокруг игрока щит
+	InfinityGauntlet12: Пустотный камень: Позволяет убить половину обычных врагов на экране, если их максимальное здоровье ниже 10000
+	// CreditsSetup: credits off
+	// CreditsSetup1: credits on
 }
 
 AccInfo: {
@@ -5999,15 +6304,15 @@ Resurs: {
 	Sanity: Здравомыслие
 	Energy: Энергия
 	# без описания не как, можешь по рофлу или навсегда оставить
-	// LifeFruit: ""
-	// EmptyHeart: ""
-	// ChaosHeart: ""
-	// CompressorHeart: ""
-	// LunarStarMana: ""
+	LifeFruit: "[c/c66760: Жизнефрукт]"
+	EmptyHeart: "[c/ab5b9b: Пустосердце]"
+	ChaosHeart: "[c/5859a4: Хаосердце]"
+	CompressorHeart: "[c/ffacb9: Скомпрессированное сердце]"
+	LunarStarMana: "[c/5f65c9: Луннозвёздная мана]"
 }
 
 SetBonus: {
-	SetBonusToolTips: Нажми Q, чтобы увидеть сет бонус брони
+	SetBonusToolTips: Зажми {0}, чтобы увидеть сет бонус брони
 	CosmicalusVisor:
 		'''
 		Создаёт космическое кольцо, стреляющее во врагов
@@ -6079,7 +6384,27 @@ SetBonus: {
 		'''
 	EmpyreanSetBonus: Бури назревают вокруг тебя, призывая грозовое облако на твою защиту
 	VoidSetBonus: Все вражеские снаряды имеют маленький шанс исцелить тебя
-	// OceanicSetBonus: Taking more then 25 damage causes toxic water to spray
+	OceanicSetBonus: При получении больше 25 урона ты выстреливаешь токсичной водицей во врагов
+	/* DragonmailGreathelmSetBonus:
+		'''
+		Melee attacks and projectiles inflict Dragonfire
+		Maximum life increased by 50
+		''' */
+	/* DragonmailHoodSetBonus:
+		'''
+		Magic projectiles inflict Dragonfire
+		Magic damage increases as life lowers
+		''' */
+	/* DragonmailMaskSetBonus:
+		'''
+		Minions inflict Dragonfire
+		Damage reduced with more minions
+		''' */
+	/* DragonmailVisageSetBonus:
+		'''
+		Ranged projectiles inflict Dragonfire
+		Ranged attacks have a chance to explode into Dragonfire
+		''' */
 }
 
 Said: {
@@ -6191,6 +6516,7 @@ Credits: {
 		'''
 }
 
+// Unbound: the key is not bound
 AwakenedModeActive2: "[c/b523d2:Пробуждённого режима]"
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"

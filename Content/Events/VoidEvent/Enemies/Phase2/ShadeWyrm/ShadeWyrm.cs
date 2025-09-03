@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.VoidEventItems;
 using ElementsAwoken.Content.Projectiles.NPCProj;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

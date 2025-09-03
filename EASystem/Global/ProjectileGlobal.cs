@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem.Global
+namespace ElementsAwoken.EASystem.EAPlayer
 {
     public class ProjectileGlobal : GlobalProjectile
     {

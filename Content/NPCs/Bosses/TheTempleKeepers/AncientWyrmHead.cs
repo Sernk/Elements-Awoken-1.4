@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.TheTempleKeepers;
 using ElementsAwoken.Content.Projectiles.NPCProj;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;

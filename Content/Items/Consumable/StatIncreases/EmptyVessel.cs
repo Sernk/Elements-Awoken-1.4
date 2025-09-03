@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
-using ElementsAwoken.EASystem.UI;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

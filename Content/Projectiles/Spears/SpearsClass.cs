@@ -17,7 +17,7 @@ namespace ElementsAwoken.Content.Projectiles.Spears
 
         /// <summary>
         /// <para/> If sprite = 62  x  64, HoldoutRangeMax =  80f
-        /// <para/> If sprite = 110 x 110, HoldoutRangeMax = 140f
+        /// <para/> If sprite = 90  x  90, HoldoutRangeMax = 140f
         /// <para/> If sprite = 110 x 110, HoldoutRangeMax = 160f
         /// <para/> If sprite = 120 x 120, HoldoutRangeMax = 170f
         /// </summary>

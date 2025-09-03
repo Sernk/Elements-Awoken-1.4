@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Items.Accessories;
 using ElementsAwoken.Content.Items.BossDrops.Azana;
 using ElementsAwoken.Content.Items.Essence;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ModLoader;

@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
             Item.useTime = 45;
             Item.useStyle = 4;
             Item.UseSound = SoundID.Item44;
-            Item.GetGlobalItem<EABossSummon>().AwakenedSummonItem = true;
+            Item.GetGlobalItem<EABossSummonToolTips>().AwakenedSummonItem = true;
         }
         public override bool CanUseItem(Player player)
         {

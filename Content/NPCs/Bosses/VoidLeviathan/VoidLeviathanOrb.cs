@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;

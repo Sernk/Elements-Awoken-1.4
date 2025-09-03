@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.MinionBuffs;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAMinion;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

@@ -6,7 +6,7 @@ using ElementsAwoken.Content.Items.ItemSets.Stellarium;
 using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Items.Tech.Weapons.Tier6;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Microsoft.Xna.Framework;
 using Terraria;

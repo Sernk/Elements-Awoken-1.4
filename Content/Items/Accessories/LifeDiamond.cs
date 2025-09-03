@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;

@@ -1,5 +1,5 @@
-﻿using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+﻿using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

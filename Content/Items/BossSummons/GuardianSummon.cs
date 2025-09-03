@@ -25,7 +25,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
             Item.UseSound = SoundID.Item44;
             Item.maxStack = 9999;
             //item.shoot = ModContent.ProjectileType<TheGuardianSpawn>();
-            Item.GetGlobalItem<EABossSummon>().AwakenedSummonItem = true;
+            Item.GetGlobalItem<EABossSummonToolTips>().AwakenedSummonItem = true;
         }
         public override bool? UseItem(Player player)
         {

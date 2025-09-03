@@ -1,5 +1,5 @@
-﻿using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+﻿using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -23,12 +23,12 @@ namespace ElementsAwoken.Content.Items.BossSummons
             Item.useTime = 45;
             Item.useStyle = 4;
             Item.UseSound = SoundID.Item44;
-            Item.GetGlobalItem<EABossSummon>().AwakenedSummonItem = true;
-            EABossSummon.TimeToSummon = true;
+            Item.GetGlobalItem<EABossSummonToolTips>().AwakenedSummonItem = true;
+            EABossSummonToolTips.TimeToSummon = true;
         }
         public override bool CanUseItem(Player player)
         {
-            if (EABossSummon.TimeToSummonNextUses <= 0)
+            if (EABossSummonToolTips.TimeToSummonNextUses <= 0)
             {
                 return true;
             }
@@ -38,7 +38,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
         {
             if (MyWorld.awakenedMode)
             {
-                EABossSummon.TimeToSummonNextUses = 6000;
+                EABossSummonToolTips.TimeToSummonNextUses = 6000;
             }
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
             modPlayer.toySlimeChanceTimer = 3600;
@@ -46,11 +46,11 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override void PostDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale)
         {
-            if (EABossSummon.TimeToSummonNextUses > 0)
+            if (EABossSummonToolTips.TimeToSummonNextUses > 0)
             {
                 for (var j = 0; j < 10; ++j)
                 {
-                    string text = "" + EABossSummon.TimeToSummonNextUses / 60;
+                    string text = "" + EABossSummonToolTips.TimeToSummonNextUses / 60;
                     Vector2 textScale = new Vector2(Main.hotbarScale[j], Main.hotbarScale[j]);
                     Item otherItem = Main.player[Main.myPlayer].inventory[j];
                     if (otherItem == Item)
@@ -62,9 +62,9 @@ namespace ElementsAwoken.Content.Items.BossSummons
         }
         public override void UpdateInventory(Player player)
         {
-            if (EABossSummon.TimeToSummonNextUses > 0)
+            if (EABossSummonToolTips.TimeToSummonNextUses > 0)
             {
-                EABossSummon.TimeToSummonNextUses--;
+                EABossSummonToolTips.TimeToSummonNextUses--;
             }
         }
         public override void AddRecipes()

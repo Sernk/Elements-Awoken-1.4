@@ -1,9 +1,9 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
-using ElementsAwoken.EASystem;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ElementsAwoken.Content.Projectiles;
+using ElementsAwoken.EASystem.EARecipeSystem;
 
 namespace ElementsAwoken.Content.Items.Elements.Desert
 {

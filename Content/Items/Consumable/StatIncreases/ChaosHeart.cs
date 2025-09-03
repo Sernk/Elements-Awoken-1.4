@@ -1,10 +1,10 @@
 ﻿using ElementsAwoken.Content.Items.BossDrops.Azana;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.EASystem.UI.Tooltips;
-using ElementsAwoken.EASystem.UI;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ElementsAwoken.EASystem.EAPlayer;
 
 namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
 {

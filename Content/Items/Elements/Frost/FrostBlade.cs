@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.Thrown;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;

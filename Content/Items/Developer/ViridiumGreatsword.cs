@@ -2,7 +2,7 @@
 using ElementsAwoken.Content.Items.BossDrops.zVanilla;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Microsoft.Xna.Framework;
 using System;

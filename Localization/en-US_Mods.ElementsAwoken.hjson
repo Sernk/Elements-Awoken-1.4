@@ -4152,6 +4152,264 @@ Items: {
 			'''
 		DisplayName: Blighted Buster
 	}
+
+	TheHarvester: {
+		Tooltip: Throws a life-stealing scythe
+		DisplayName: The Harvester
+	}
+
+	Deteriorator: {
+		Tooltip: Rapidly throws three waves of corrosive daggers
+		DisplayName: Deteriorator
+	}
+
+	CorroderStaff: {
+		Tooltip:
+			'''
+			Summons a corroder to protect you
+			Each corroders only takes 0.75 minion slots
+			'''
+		DisplayName: Corroder Staff
+	}
+
+	BlightLobber: {
+		Tooltip:
+			'''
+			Fires a bouncing Blight Ring
+			Right Click to throw fast returning rings
+			'''
+		DisplayName: Blight Lobber
+	}
+
+	BlightfirePickaxe: {
+		Tooltip: ""
+		DisplayName: Blightfire Pickaxe
+	}
+
+	BlightfireHamaxe: {
+		Tooltip: ""
+		DisplayName: Blightfire Hamaxe
+	}
+
+	PebleerEggCooked: {
+		Tooltip:
+			'''
+			Minor improvements to all stats
+			Heals the player 20 life over 10 seconds
+			'''
+		DisplayName: Cooked Pebleer Egg
+	}
+
+	PebleerEgg: {
+		Tooltip: ""
+		DisplayName: Pebleer Egg
+	}
+
+	CarapaceWand: {
+		Tooltip: Shoots a carapace shard that deals additional damage to enemies it hits
+		DisplayName: Carapace Wand
+	}
+
+	CarapaceSlicer: {
+		Tooltip: Throws a boomrang that can stick to enemies
+		DisplayName: Carapace Slicer
+	}
+
+	CarapaceShiv: {
+		Tooltip: Right Click leap towards the cursor
+		DisplayName: Carapace Shiv
+	}
+
+	CarapaceItem: {
+		Tooltip: Nature's armor
+		DisplayName: Carapace
+	}
+
+	CarapaceCrusher: {
+		Tooltip: Mines a 3x3 area
+		DisplayName: Carapace Crusher
+	}
+
+	CarapaceCannon: {
+		Tooltip: Shoots a rolling carapace ball
+		DisplayName: Carapace Cannon
+	}
+
+	CreditsSetup: {
+		DisplayName: Credits
+		Tooltip: ""
+	}
+
+	BlossomBoomer: {
+		DisplayName: Blossom Boomer
+		Tooltip: ""
+	}
+
+	BudKunai: {
+		DisplayName: Bud Kunai
+		Tooltip: ""
+	}
+
+	FlowerPower: {
+		DisplayName: Flower Power
+		Tooltip: Unleash a wave of low damaging petals
+	}
+
+	Petal: {
+		DisplayName: Petal
+		Tooltip: Smells nice
+	}
+
+	PetalBattleaxe: {
+		DisplayName: Petal Battleaxe
+		Tooltip: ""
+	}
+
+	PetalHamaxe: {
+		DisplayName: Petal Hamaxe
+		Tooltip: ""
+	}
+
+	PetalPickaxe: {
+		DisplayName: Petal Pickaxe
+		Tooltip: ""
+	}
+
+	PetalPike: {
+		DisplayName: Petal Pike
+		Tooltip: ""
+	}
+
+	PetalPopper: {
+		DisplayName: Petal Popper
+		Tooltip: ""
+	}
+
+	DrakonitePickaxe: {
+		Tooltip: ""
+		DisplayName: Drakonite Pickaxe
+	}
+
+	DrakoniteKnife: {
+		Tooltip: ""
+		DisplayName: Drakonite Knife
+	}
+
+	DrakoniteHamaxe: {
+		Tooltip: ""
+		DisplayName: Drakonite Hamaxe
+	}
+
+	DrakoniteBlade: {
+		Tooltip: Unleash the power of dragons upon hitting an enemy
+		DisplayName: Drakonite Blade
+	}
+
+	DragonShot: {
+		Tooltip: Turns normal arrows into drakonite arrows
+		DisplayName: Dragon Shot
+	}
+
+	DragonFury: {
+		Tooltip: ""
+		DisplayName: Dragon Fury
+	}
+
+	DragonmailLeggings: {
+		Tooltip:
+			'''
+			9% increased movement speed
+			12% increased melee speed
+			Life regen increased by 1
+			'''
+		DisplayName: Dragonmail Leggings
+	}
+
+	DragonmailHood: {
+		Tooltip:
+			'''
+			Increases maximum mana by 80
+			Reduces mana usage by 15%
+			7% increased magic damage
+			5% increased magic critical strike chance
+			'''
+		DisplayName: Dragonmail Hood
+	}
+
+	DragonmailGreathelm: {
+		Tooltip:
+			'''
+			8% increased melee damage
+			10% increased melee critical strike chance
+			Damage taken reduced by 6%
+			'''
+		DisplayName: Dragonmail Greathelm
+	}
+
+	DragonmailChestpiece: {
+		Tooltip:
+			'''
+			5% increased damage
+			Immunity to On Fire
+			Your body glows
+			5% increased mining speed
+			'''
+		DisplayName: Dragonmail Chestpiece
+	}
+
+	Dragonfire: {
+		Tooltip:
+			'''
+			Turns musketballs into dragonfire bullets
+			20% chance to not consume ammo
+			'''
+		DisplayName: Dragonfire
+	}
+
+	DragonFang: {
+		Tooltip: ""
+		DisplayName: Dragon Fang
+	}
+
+	DragonEmber: {
+		Tooltip: ""
+		DisplayName: Dragon Ember
+	}
+
+	DragonBreathStaff: {
+		Tooltip: Summons a mini dragon to protect you
+		DisplayName: Dragon Breath Staff
+	}
+
+	DragonmailMask: {
+		DisplayName: Dragonmail Mask
+		Tooltip:
+			'''
+			10% increased summon damage
+			Increased minion knockback
+			+2 max minions
+			'''
+	}
+
+	DragonmailVisage: {
+		DisplayName: Dragonmail Visage
+		Tooltip:
+			'''
+			20% chance to not consume ammo
+			9% increased ranged damage
+			10% increased ranged critical strike chance
+			'''
+	}
+
+	DragonTalon: {
+		DisplayName: Dragon Talon
+		Tooltip: ""
+	}
+
+	DrakoniteDrill: {
+		DisplayName: Drakonite Drill
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -4736,6 +4994,21 @@ Buffs: {
 	Corroding: {
 		Description: It feels like liquid fire.
 		DisplayName: Corroding
+	}
+
+	CorroderBuff: {
+		Description: Don't try pet it.
+		DisplayName: Corroder
+	}
+
+	HeartyMeal: {
+		Description: Heals 20 health over 10 seconds
+		DisplayName: Hearty Meal
+	}
+
+	MiniDragonBuff: {
+		Description: Its cute and scary at the same time
+		DisplayName: Mini Dragon
 	}
 }
 
@@ -5698,6 +5971,36 @@ Projectiles: {
 	DesertCrystal.DisplayName: Desert Crystal
 	BlightedBulletP.DisplayName: Blighted Bullet
 	BlightCloud.DisplayName: Blight Cloud
+	DeterioratorKnife.DisplayName: Fire Knife
+	CorroderMinion.DisplayName: Energy Spirit
+	HarvesterScythe.DisplayName: Harvester
+	CorroderSpit.DisplayName: Corroder Spit
+	BlightRing.DisplayName: Blight Ring
+	BlightRang.DisplayName: Blight Rang
+	CarapaceSlicerP.DisplayName: Carapace Slicer P
+	CarapaceSlice.DisplayName: Carapace Slice
+	CarapaceShard.DisplayName: Carapace Shard
+	CarapaceBall.DisplayName: Carapace Ball
+	BlossomSpore.DisplayName: Blossom Spore
+	FlowerPowerProj.DisplayName: Petal
+	PetalPikeStem.DisplayName: Petal Pike
+	PetalPikeTip.DisplayName: Petal Pike
+	PetalPikeP.DisplayName: Petal Pike
+	BlossomBoomerP.DisplayName: Blossom Boomer
+	BudKunaiP.DisplayName: Bud Kunai
+	DrakoniteKnifeP.DisplayName: DrakoniteKnife
+	DrakoniteFireball.DisplayName: Drakonite Fireball
+	DrakoniteEruption.DisplayName: Drakonite Eruption
+	DragonBladeBlast.DisplayName: Dragon Blade Blast
+	DrakoniteArrow.DisplayName: Drakonite Arrow
+	DragonEmberBall.DisplayName: Dragon Ember Ball
+	DragonEmberSeeker.DisplayName: Dragon Ember Seeker
+	DragonFangShadow.DisplayName: Dragon Fang Shadow
+	DragonfireBullet.DisplayName: Dragonfire Bullet
+	DragonTalonBall.DisplayName: Dragon Talon Ball
+	DrakoniteDrill.DisplayName: Drakonite Drill
+	MiniDragon.DisplayName: Mini Dragon
+	DragonFangP.DisplayName: Dragon Fang
 }
 
 Configs: {
@@ -5942,6 +6245,8 @@ Tooltips: {
 	InfinityGauntlet10: Water: Turns projectiles into bubbles
 	InfinityGauntlet11: Frost: Summons a shield around the player
 	InfinityGauntlet12: Void: Kills half of all non boss monsters with under 10000 life
+	CreditsSetup: credits off
+	CreditsSetup1: credits on
 }
 
 AccInfo: {
@@ -5966,7 +6271,7 @@ Resurs: {
 }
 
 SetBonus: {
-	SetBonusToolTips: Press Q to see the armor bonus set
+	SetBonusToolTips: Hold down the {0} to see the armor bonus set
 	CosmicalusVisor:
 		'''
 		Summons a cosmic ring to shoot at nearby enemies
@@ -6039,6 +6344,26 @@ SetBonus: {
 	EmpyreanSetBonus: Storms brew around you
 	VoidSetBonus: All projectiles have a chance of healing you slightly
 	OceanicSetBonus: Taking more then 25 damage causes toxic water to spray
+	DragonmailGreathelmSetBonus:
+		'''
+		Melee attacks and projectiles inflict Dragonfire
+		Maximum life increased by 50
+		'''
+	DragonmailHoodSetBonus:
+		'''
+		Magic projectiles inflict Dragonfire
+		Magic damage increases as life lowers
+		'''
+	DragonmailMaskSetBonus:
+		'''
+		Minions inflict Dragonfire
+		Damage reduced with more minions
+		'''
+	DragonmailVisageSetBonus:
+		'''
+		Ranged projectiles inflict Dragonfire
+		Ranged attacks have a chance to explode into Dragonfire
+		'''
 }
 
 Said: {
@@ -6140,6 +6465,7 @@ Credits: {
 	Credits12: From- ThatOneJuicyOrange_ and the team <3
 }
 
+Unbound: the key is not bound
 AwakenedModeActive2: "[c/973999:in Awakened mode]"
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
 AwakenedMode: "[c/973999:Awakened Mode Active]"

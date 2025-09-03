@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.EASystem.ModSupport;
+﻿using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.ModSupport;
 using ElementsAwoken.EAUtilities;
 using Luminance.Common.Utilities;
 using Luminance.Core.Hooking;
@@ -245,7 +246,7 @@ public abstract class InfoUIManagers : ModType
 {
     public virtual IEnumerable<PlayerInfoIcon> GetPlayerInfoIcons()
     {
-        return Array.Empty<PlayerInfoIcon>();
+        return [];
     }
     public virtual IEnumerable<WorldInfoIcon> GetWorldInfoIcons()
     {
@@ -379,7 +380,7 @@ public class LuminanceAddonMana : ModSystem, IExistingDetourProvider
     }
     private static void DrawIcons(SpriteBatch spriteBatch, CalculatedStyle elementInnerDimensions, float currentX, int maxToDraw, int count, float idealIconSize, float iconPadding, IEnumerable<IInfoIcon> activeIcons)
     {
-        var panelDrawPosition = new Vector2(elementInnerDimensions.X + currentX + 52.8f, elementInnerDimensions.Y + elementInnerDimensions.Height - 55.2f);
+        var panelDrawPosition = new Vector2(elementInnerDimensions.X + currentX + 52.8f, elementInnerDimensions.Y + elementInnerDimensions.Height - 54.7f);
 
         DrawPanel(spriteBatch, panelDrawPosition, (maxToDraw + (count > maxToDraw ? 1 : 0)) * (idealIconSize + iconPadding) + 2f);
 

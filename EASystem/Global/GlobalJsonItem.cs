@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem.Global
+namespace ElementsAwoken.EASystem.EAPlayer
 {
     public class GlobalJsonItem : GlobalItem
     {

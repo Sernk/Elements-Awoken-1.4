@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using System;
 using Terraria;
 using Terraria.Audio;

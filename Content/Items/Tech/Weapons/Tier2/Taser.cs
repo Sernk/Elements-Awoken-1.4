@@ -1,8 +1,8 @@
 ﻿using CalamityMod.Items.Weapons.Ranged;
 using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Microsoft.Xna.Framework;
 using Terraria;

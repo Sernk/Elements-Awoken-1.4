@@ -1,5 +1,5 @@
 using ElementsAwoken.Content.Dusts.Ancients;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

@@ -1,6 +1,6 @@
 using ElementsAwoken.Content.Items.Essence;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.ID;

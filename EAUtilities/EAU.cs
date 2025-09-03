@@ -1,14 +1,14 @@
-﻿using ElementsAwoken.Content.Dusts.Ancients;
+﻿using ElementsAwoken.Content.Buffs.Debuffs;
+using ElementsAwoken.Content.Dusts.Ancients;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Tiles.Crafting;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.Content.Buffs.Debuffs;
-using ElementsAwoken.EAUtilities;
 
 namespace ElementsAwoken
 {
@@ -23,6 +23,8 @@ namespace ElementsAwoken
         public static int ElementalForge => ModContent.TileType<ElementalForge>();
         public static int PinkFlame => DustID.Firework_Pink;
         public static int HandsOfDespair => ModContent.BuffType<HandsOfDespair>();
+        public static int Dragonfire => ModContent.BuffType<Dragonfire>();
+        public static int BaffsTime(int seconds = 0, int minutes = 0, int hours = 0) { int result = 0; result += seconds * 60; result += minutes * 60 * 60; result += hours * 60 * 60 * 60; return result; }
         public static SpriteBatch Sb => Main.spriteBatch;
         public static void SetSoul(int type) => ItemID.Sets.AnimatesAsSoul[type] = true;
         public static void Longer(int type) => BuffID.Sets.LongerExpertDebuff[type] = true;

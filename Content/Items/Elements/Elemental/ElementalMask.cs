@@ -1,6 +1,6 @@
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using ElementsAwoken.EAUtilities;
 using Terraria;

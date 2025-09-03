@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;

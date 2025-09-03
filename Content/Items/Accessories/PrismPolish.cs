@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.BossDrops.Volcanox;
 using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

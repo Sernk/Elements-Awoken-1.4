@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.Content.Projectiles.Spears;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;

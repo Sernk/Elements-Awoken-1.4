@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.MinionBuffs;
 using ElementsAwoken.Content.Projectiles.Minions.MinionProj;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAMinion;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;

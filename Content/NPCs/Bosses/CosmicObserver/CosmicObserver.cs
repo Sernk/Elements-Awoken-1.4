@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.CosmicObserver;
 using ElementsAwoken.Content.Projectiles.NPCProj.CosmicObserver;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

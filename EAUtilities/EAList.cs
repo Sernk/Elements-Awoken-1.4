@@ -29,8 +29,10 @@ using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.EAUtilities
@@ -138,6 +140,9 @@ namespace ElementsAwoken.EAUtilities
         #endregion
         #region DustID
         public static readonly List<int> DustIDs = [62, 64, 59, 61, 64, 60, 63];
+        #endregion
+        #region VanilaBossBag
+        public static readonly List<int> VBB = [ItemID.BossBagBetsy, ItemID.BossBagDarkMage, ItemID.BossBagOgre, ItemID.BrainOfCthulhuBossBag, ItemID.CultistBossBag, ItemID.DeerclopsBossBag, ItemID.EaterOfWorldsBossBag, ItemID.EyeOfCthulhuBossBag, ItemID.FairyQueenBossBag, ItemID.FishronBossBag, ItemID.GolemBossBag, ItemID.KingSlimeBossBag, ItemID.MoonLordBossBag, ItemID.PlanteraBossBag, ItemID.QueenBeeBossBag, ItemID.QueenSlimeBossBag, ItemID.SkeletronBossBag, ItemID.SkeletronPrimeBossBag, ItemID.TwinsBossBag, ItemID.WallOfFleshBossBag];
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

@@ -21,7 +21,7 @@ namespace ElementsAwoken.Content.Items.BossSummons
             Item.useStyle = 4;
             Item.UseSound = SoundID.Item44;
             Item.maxStack = 9999;
-            Item.GetGlobalItem<EABossSummon>().AwakenedSummonItem = true;
+            Item.GetGlobalItem<EABossSummonToolTips>().AwakenedSummonItem = true;
         }
         public override bool CanUseItem(Player player)
         {

@@ -3,7 +3,7 @@ using ElementsAwoken.Content.Items.BossDrops.Infernace;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.NPCs.Prompts;
 using ElementsAwoken.Content.Projectiles.NPCProj.Infernace;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;

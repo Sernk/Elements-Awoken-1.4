@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.MinionBuffs;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAMinion;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

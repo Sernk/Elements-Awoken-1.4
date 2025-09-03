@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles.Arrows;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;

@@ -1,7 +1,7 @@
 using ElementsAwoken.Content.Projectiles.Minions;
 using Terraria;
 using Terraria.ModLoader;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 
 namespace ElementsAwoken.Content.Buffs.MinionBuffs
 {

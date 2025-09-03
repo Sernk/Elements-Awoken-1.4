@@ -1,4 +1,4 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.EASystem.EARecipeSystem;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Tech.Materials;
 using ElementsAwoken.Content.Projectiles;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;

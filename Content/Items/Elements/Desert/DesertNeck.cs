@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Terraria;
 using Terraria.ModLoader;
 

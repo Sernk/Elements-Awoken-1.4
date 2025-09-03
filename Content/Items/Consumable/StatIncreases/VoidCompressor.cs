@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.BossDrops.TheGuardian;
-using ElementsAwoken.EASystem.Global;
-using ElementsAwoken.EASystem.UI;
+using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ID;

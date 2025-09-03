@@ -1,6 +1,5 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
-using ElementsAwoken.EASystem;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -9,6 +8,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Audio;
+using ElementsAwoken.EASystem.EARecipeSystem;
 
 namespace ElementsAwoken.Content.Items.Consumable
 {

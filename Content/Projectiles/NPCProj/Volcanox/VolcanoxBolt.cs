@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;

@@ -7,14 +7,15 @@ namespace ElementsAwoken.Content.Projectiles.Spears
 {
     public class NihongoP : ModProjectile
     {
+        protected virtual float HoldoutRangeMin => 84f;
+        protected virtual float HoldoutRangeMax => 160;
+        readonly float shootSpeed = 10f;
+
         public override void SetDefaults()
         {
             Projectile.DamageType = DamageClass.Melee;
             Projectile.CloneDefaults(ProjectileID.Spear);
         }
-        protected virtual float HoldoutRangeMin => 84f;
-        protected virtual float HoldoutRangeMax => 160;
-        float shootSpeed = 10f;
         public override bool PreAI()
         {
             Player player = Main.player[Projectile.owner];

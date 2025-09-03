@@ -1,6 +1,6 @@
 ﻿using ElementsAwoken.Content.Items.ItemSets.ToySlime;
 using ElementsAwoken.Content.Projectiles.NPCProj.ToySlime;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

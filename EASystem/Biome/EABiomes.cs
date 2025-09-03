@@ -7,7 +7,7 @@ using ElementsAwoken.Content.NPCs.Bosses.Regaroth;
 using ElementsAwoken.Content.NPCs.Bosses.TheGuardian;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.ModLoader;
 

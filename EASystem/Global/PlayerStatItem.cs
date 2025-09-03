@@ -1,11 +1,11 @@
 ﻿using ElementsAwoken.Content.Items.Consumable.StatIncreases;
-using ElementsAwoken.EASystem.UI;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.GameContent.Achievements;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem.Global
+namespace ElementsAwoken.EASystem.EAPlayer
 {
     public class PlayerStatItem : GlobalItem
     {

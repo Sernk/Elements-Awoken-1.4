@@ -1,7 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.Content.Items.Storyteller;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;

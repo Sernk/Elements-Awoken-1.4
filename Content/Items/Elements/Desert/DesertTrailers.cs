@@ -4,7 +4,7 @@ using ElementsAwoken.Content.Items.Elements.Sky;
 using ElementsAwoken.Content.Items.Elements.Void;
 using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.Items.Essence;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

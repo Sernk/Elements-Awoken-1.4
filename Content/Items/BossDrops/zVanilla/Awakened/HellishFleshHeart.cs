@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles.Minions;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ModLoader;

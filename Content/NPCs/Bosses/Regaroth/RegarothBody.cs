@@ -1,7 +1,7 @@
 using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.NPCs.Bosses.Regaroth.RegarothMinion;
 using ElementsAwoken.Content.Projectiles.NPCProj.RegarothP;
-using ElementsAwoken.EASystem.Global;
+using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;

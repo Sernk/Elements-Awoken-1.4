@@ -1,5 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles.Minions;
-using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
