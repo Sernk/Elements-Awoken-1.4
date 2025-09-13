@@ -323,6 +323,8 @@ namespace ElementsAwoken.EAUtilities
         public string DragonmailHoodSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.DragonmailHoodSetBonus");
         public string DragonmailMaskSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.DragonmailMaskSetBonus");
         public string DragonmailVisageSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.DragonmailVisageSetBonus");
+        public string ComfySetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ComfySetBonus");
+        public string PutridSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.PutridSetBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");
@@ -352,6 +354,11 @@ namespace ElementsAwoken.EAUtilities
         public string Credits11 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits11");
         public string Credits12 => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits12");
 
+        #endregion
+        #region SanityBook
+        public string SanityBookOnCraft => Language.GetTextValue("Mods.ElementsAwoken.SanityBook.SanityBookOnCraft");
+        public string SanityRegens => Language.GetTextValue("Mods.ElementsAwoken.SanityBook.SanityRegens");
+        public string SanityDrains => Language.GetTextValue("Mods.ElementsAwoken.SanityBook.SanityDrains");
         #endregion
         #region Other
         public string Prompt => Language.GetTextValue("Mods.ElementsAwoken.Prompt");

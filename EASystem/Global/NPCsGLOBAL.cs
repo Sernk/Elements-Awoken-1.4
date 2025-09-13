@@ -249,7 +249,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
         {
             foreach (NPC npc in Main.npc)
             {
-                if (npc.boss)
+                if (npc.active && npc.boss)
                 {
                     spawnRate = 0;
                     maxSpawns = 0;

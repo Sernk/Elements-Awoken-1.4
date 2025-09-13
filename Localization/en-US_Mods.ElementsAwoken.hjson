@@ -4410,6 +4410,307 @@ Items: {
 		DisplayName: Drakonite Drill
 		Tooltip: ""
 	}
+
+	MagesFocus: {
+		DisplayName: Mages Focus
+		Tooltip:
+			'''
+			10% increased magic damage, critical strike chance
+			+50 max mana
+			15% reduced mana usage
+			'''
+	}
+
+	ManaBlaster: {
+		DisplayName: Mana Blaster
+		Tooltip: ""
+	}
+
+	ManaRifle: {
+		DisplayName: Mana Rifle
+		Tooltip: ""
+	}
+
+	Manashard: {
+		DisplayName: Manashard
+		Tooltip: It resonates gently
+	}
+
+	ManashardBattleaxe: {
+		DisplayName: Manashard Battleaxe
+		Tooltip: ""
+	}
+
+	ManashardDagger: {
+		DisplayName: Manashard Dagger
+		Tooltip: ""
+	}
+
+	ManashardLongsword: {
+		DisplayName: Manashard Longsword
+		Tooltip: ""
+	}
+
+	ManashardPike: {
+		DisplayName: Manashard Pike
+		Tooltip: ""
+	}
+
+	ManashardWhip: {
+		DisplayName: Manashard Whip
+		Tooltip: ""
+	}
+
+	WyvernBreath: {
+		DisplayName: Wyvern Breath
+		Tooltip: ""
+	}
+
+	SpaceWand: {
+		Tooltip: Hold down to charge an exploding meteor burst
+		DisplayName: Space Wand
+	}
+
+	SpaceStaff: {
+		Tooltip: Fires a short burst of meteoric bolts
+		DisplayName: Space Staff
+	}
+
+	MeteoricPendant: {
+		Tooltip: Reduces the use time of magic weapons by 20%
+		DisplayName: Meteoric Pendant
+	}
+
+	Necrosis: {
+		Tooltip: Rapidly throw exploding mortemite daggers
+		DisplayName: Necrosis
+	}
+
+	Downfall: {
+		Tooltip:
+			'''
+			Occasionally fires a mortemite blade that does double damage
+			50% chance to not consume ammo
+			'''
+		DisplayName: Downfall
+	}
+
+	Demise: {
+		Tooltip: ""
+		DisplayName: Demise
+	}
+
+	Decease: {
+		Tooltip: ""
+		DisplayName: Decease
+	}
+
+	Decay: {
+		Tooltip: ""
+		DisplayName: Decay
+	}
+
+	SanityBook: {
+		Tooltip:
+			'''
+			Your mind throbs
+			Shows all the players sanity regeneration
+			Right Click in the inventory to open and close
+			'''
+		DisplayName: Book of Shadows
+	}
+
+	SilkenSword: {
+		Tooltip: ""
+		DisplayName: Silken Sword
+	}
+
+	PuffTorch: {
+		Tooltip: ""
+		DisplayName: Puff Torch
+	}
+
+	Puffball: {
+		Tooltip: It is unbelievably soft
+		DisplayName: Puffball
+	}
+
+	FluffyStaff: {
+		Tooltip: I wonder what it does?
+		DisplayName: Fluffy Staff
+	}
+
+	ComfyShirt: {
+		Tooltip: Feels really nice
+		DisplayName: Comfy Shirt
+	}
+
+	ComfyPants: {
+		Tooltip:
+			'''
+			Padded with pure fluff
+			Falling damage is halved
+			'''
+		DisplayName: Comfy Pants
+	}
+
+	ComfyHood: {
+		Tooltip: Increases maximum minions by 1
+		DisplayName: Comfy Hood
+	}
+
+	SilkySerum: {
+		DisplayName: Silky Serum
+		Tooltip:
+			'''
+			Reduces contact damage
+			Cuts fall damage in half
+			'''
+	}
+
+	VelvetShot: {
+		DisplayName: Velvet Shot
+		Tooltip: ""
+	}
+
+	AcridSabre: {
+		DisplayName: Acrid Sabre
+		Tooltip: Shoots acrid skulls in all directions
+	}
+
+	FetidBlades: {
+		DisplayName: Fetid Blades
+		Tooltip:
+			'''
+			Throws multiple sticking fetid blades
+			Right click to make all blades explode into damaging goop
+			'''
+	}
+
+	PutridBar: {
+		DisplayName: Putrid Bar
+		Tooltip: It is covered in slime
+	}
+
+	PutridBreastplate: {
+		DisplayName: Rotted Reaper Breastplate
+		Tooltip:
+			'''
+			10% increased minion damage
+			Increases your max number of minions
+			'''
+	}
+
+	PutridLeggings: {
+		DisplayName: Rotted Reaper Leggings
+		Tooltip:
+			'''
+			10% increased minion damage
+			Increases your max number of minions
+			You leave a toxic trail
+			'''
+	}
+
+	PutridMask: {
+		DisplayName: Rotted Reaper Mask
+		Tooltip:
+			'''
+			30% increased minion knockback
+			15% increased minion damage
+			Increases your max number of minions
+			'''
+	}
+
+	PutridOre: {
+		DisplayName: Putrid Ore
+		Tooltip:
+			'''
+			It smells awful
+			Created by throwing iron ore and sun fragments into a 'Putrifier'
+			'''
+	}
+
+	PutridRipperTome: {
+		DisplayName: Putrid Ripper Tome
+		Tooltip:
+			'''
+			Summons a putrid ripper to protect you
+			Each putrid ripper's takes up 1.5 minion slots
+			'''
+	}
+
+	RancidHamaxe: {
+		DisplayName: Rancid Hamaxe
+		Tooltip: ""
+	}
+
+	RottedBow: {
+		DisplayName: Rotted Bow
+		Tooltip:
+			'''
+			Turns normal arrows into putrid arrows
+			Putrid arrows have a chance to splatter into poisonous goop
+			'''
+	}
+
+	TaintedPickaxe: {
+		DisplayName: Tainted Pickaxe
+		Tooltip: ""
+	}
+
+	WretchedStaff: {
+		DisplayName: Wretched Staff
+		Tooltip: ""
+	}
+
+	FrostMine: {
+		Tooltip: Exploding frost mines appear around you
+		DisplayName: Frost Mine
+	}
+
+	RadiantMortar: {
+		Tooltip:
+			'''
+			Lights up the skies with high damaging mortars
+			Disable visuals to turn off this effect
+			2% increased movement speed
+			'''
+		DisplayName: Radiant Mortar
+	}
+
+	RadiantKatana: {
+		Tooltip: Right Click slash towards the cursor
+		DisplayName: Radiant Katana
+	}
+
+	RadiantGlove: {
+		Tooltip: Throws Radiant Stars
+		DisplayName: Amaranth Hand
+	}
+
+	RadiantConcentrator: {
+		Tooltip: Shoots a deathray that makes enemies explode into highly damaging stars
+		DisplayName: Radiant Concentrator
+	}
+
+	LightMine: {
+		Tooltip: Homing radiant stars appear around you
+		DisplayName: Cerise Curtains
+	}
+
+	GlobuleStaff: {
+		Tooltip:
+			'''
+			Summons a rare Starlight Globule variant to fight for you
+			Starlight Globules take 2 minion slots
+			'''
+		DisplayName: Starlight Crook
+	}
+
+	GlobuleCannon: {
+		Tooltip: Shoots a cluster of radiant goop
+		DisplayName: Globule Cannon
+	}
 }
 
 Tiles: {
@@ -4460,6 +4761,7 @@ Tiles: {
 	WastelandTrophy.MapEntry: Wasteland Trophy
 	Darkstone.MapEntry: Darkstone
 	VoidStone.MapEntry: Void Stone
+	PuffTorch.MapEntry: Torch
 }
 
 Buffs: {
@@ -5010,6 +5312,31 @@ Buffs: {
 		Description: Its cute and scary at the same time
 		DisplayName: Mini Dragon
 	}
+
+	SilkySerumBuff: {
+		Description: Reduces contact damage and cuts fall damage in half
+		DisplayName: Silky Serum
+	}
+
+	BabyPuffBuff: {
+		Description: This cute puffball will defend you!
+		DisplayName: Baby Puff!
+	}
+
+	Cuddled: {
+		Description: You feel warm inside, melee attacks are decreased by 20% but life regen is increased
+		DisplayName: Cuddled
+	}
+
+	PutridRipperBuff: {
+		DisplayName: Putrid Ripper
+		Description: Claws like knives, spit like acid
+	}
+
+	GlobuleMinionBuff: {
+		Description: It shimmers
+		DisplayName: Starlight Globule
+	}
 }
 
 NPCs: {
@@ -5391,6 +5718,9 @@ NPCs: {
 			SpawnInfo: Speak to the storyteller or use a [i:ElementsAwoken/AncientsSummon]
 		}
 	}
+
+	Puff.DisplayName: Puff
+	SpikedPuff.DisplayName: Spiked Puff
 }
 
 Projectiles: {
@@ -6001,6 +6331,48 @@ Projectiles: {
 	DrakoniteDrill.DisplayName: Drakonite Drill
 	MiniDragon.DisplayName: Mini Dragon
 	DragonFangP.DisplayName: Dragon Fang
+	ManashardWhipP.DisplayName: Manashard Whip
+	ManaBolt.DisplayName: Mana Bolt
+	ManaRound.DisplayName: Mana Round
+	Manashatter.DisplayName: Manaspike
+	Manaspike.DisplayName: Manaspike
+	ManashardPikeP.DisplayName: Manashard Pike
+	ManashardDaggerP.DisplayName: Manashard Dagger
+	WyvernBreath1.DisplayName: Wyvern Breath
+	WyvernBreath2.DisplayName: Wyvern Breath
+	MeteoricFireball.DisplayName: Meteoric Fireball
+	MeteoricBolt.DisplayName: Meteoric Bolt
+	SpaceWand.DisplayName: Space Wand
+	DecayP.DisplayName: Decay
+	NecrosisP.DisplayName: Necrosis
+	MortemiteWave.DisplayName: Mortemite Wave
+	MortemiteFlames.DisplayName: Mortemite Flames
+	MortemiteBlade.DisplayName: Mortemite Blade
+	BabyPuffSpike.DisplayName: Baby Puff Spike
+	BabyPuff.DisplayName: Baby Puff
+	PuffSpike.DisplayName: Puff Spike
+	PutridArrow.DisplayName: Putrid Arrow
+	BlightfireSpawner.DisplayName: Blightfire Spawner
+	WretchedStaffHeld.DisplayName: Wretched Staff Held
+	PutridVomit.DisplayName: Putrid Vomit
+	PutridRipper.DisplayName: Putrid Ripper
+	PutridGoop.DisplayName: Putrid Goop
+	PutridSkull.DisplayName: Putrid Skull
+	PutridSpike.DisplayName: Putrid Spike
+	PutridTrail.DisplayName: Putrid Trail
+	FetidBladeP.DisplayName: Energy Fork
+	RadiantBeam.DisplayName: Radiant Beam
+	GlobuleMinionSmall.DisplayName: Starlight Globule
+	GlobuleMinion.DisplayName: Starlight Globule
+	FrostMine.DisplayName: Frost Mine
+	RadiantBeamFocused.DisplayName: Radiant Beam
+	RadiantGlobule.DisplayName: Radiant Globule
+	RadiantKatanaSlash.DisplayName: Radiant Katana
+	RadiantKatanaStar.DisplayName: Radiant Star
+	RadiantStarMine.DisplayName: Radiant Star
+	RadiantStarMortar.DisplayName: Radiant Star
+	RadiantStarSmall.DisplayName: Radiant Star
+	RadiantStarThrown.DisplayName: Radiant Star
 }
 
 Configs: {
@@ -6364,6 +6736,14 @@ SetBonus: {
 		Ranged projectiles inflict Dragonfire
 		Ranged attacks have a chance to explode into Dragonfire
 		'''
+	ComfySetBonus: Puffs no longer deal damage to you
+	PutridSetBonus:
+		'''
+		You create a toxic aura
+		Not moving makes more auras spawn
+		Increases your max number of minions
+		Minions have a chance to inflict a fast acting poison
+		'''
 }
 
 Said: {
@@ -6465,6 +6845,38 @@ Credits: {
 	Credits12: From- ThatOneJuicyOrange_ and the team <3
 }
 
+SanityBook: {
+	SanityBookOnCraft: Enable Awakened Mode for this book to have any functionality
+	SanityRegens: Regens:
+	SanityDrains: Drains:
+}
+
+Sanity: {
+	AwakenedPlayer: {
+		Sanity: {
+			Sanity18: Mining
+			Sanity17: In a Town
+			Sanity16: Voidite
+			Sanity15: Nearby {0}
+			Sanity14: Planter Box
+			Sanity13: Sunflower
+			Sanity12: Firefly in a Bottle
+			Sanity11: Fireplace
+			Sanity10: Campfire
+			Sanity9: Nice Object
+			Sanity8: Pet
+			Sanity7: Mining For Too Long
+			Sanity6: In Space
+			Sanity5: In Hell
+			Sanity4: Dawn of the Void
+			Sanity3: Dark Moon
+			Sanity2: Blood Moon
+			Sanity1: Darkness
+			Sanity: Low Health
+		}
+	}
+}
+
 Unbound: the key is not bound
 AwakenedModeActive2: "[c/973999:in Awakened mode]"
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode not Active]"
@@ -6482,6 +6894,7 @@ MyPlayerLocalization: {
 			Crimson: Crimson
 			andCrimson: and Crimson
 			Corruption: Corruption
+			NE: No evil
 		}
 
 		MasterSwordCharge.Discharged: Discharged

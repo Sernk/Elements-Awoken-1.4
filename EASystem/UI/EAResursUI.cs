@@ -1,5 +1,4 @@
 ﻿using ElementsAwoken.EASystem.EAPlayer;
-using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,16 +14,15 @@ using Terraria.UI.Chat;
 
 namespace ElementsAwoken.EASystem.UI
 {
-    public class HeartsUI : ModResourceOverlay
+    public class EAResursUI : ModResourceOverlay
     {
-        private Dictionary<string, Asset<Texture2D>> vanillaAssetCache = new();
+        private readonly Dictionary<string, Asset<Texture2D>> vanillaAssetCache = [];
         public string baseFolder = "ElementsAwoken/Extra/";
 
         public string LifeTexturePath()
         {
             string folder = $"{baseFolder}HP";
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
-            var modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
 
             if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual) return folder + "Heart4";
             if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual) return folder + "Heart3";
@@ -74,16 +72,8 @@ namespace ElementsAwoken.EASystem.UI
         }
         public override void PostDrawResourceDisplay(PlayerStatsSnapshot snapshot, IPlayerResourcesDisplaySet displaySet, bool drawingLife, Color textColor, bool drawText)
         {
-            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
-            var player = Main.LocalPlayer;
-
-            if (!drawingLife || player.ghost)
-                return;
-
-            int totalHearts = snapshot.AmountOfLifeHearts;
-            float lifePerHeart = snapshot.LifePerSegment;
-            int currentLife = snapshot.Life;
-            int maxLife = snapshot.LifeMax;
+            Player player = Main.LocalPlayer;
+            if (!drawingLife || player.ghost) return;
 
             Vector2 basePosition = displaySet.NameKey switch
             {
@@ -97,11 +87,8 @@ namespace ElementsAwoken.EASystem.UI
             };
 
             // === Отображение Sanity ===
-            var awakenedPlayer = player.GetModPlayer<AwakenedPlayer>();
-            if (!MyWorld.awakenedMode || player.ghost || awakenedPlayer.sanityMax <= 0)
-            {
-                return;
-            }
+            AwakenedPlayer awakenedPlayer = player.GetModPlayer<AwakenedPlayer>();
+            if (!MyWorld.awakenedMode || player.ghost || awakenedPlayer.sanityMax <= 0) return;
 
             Texture2D sanityTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityUIIcon").Value;
             Texture2D arrowTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/SanityArrow").Value;
@@ -111,7 +98,9 @@ namespace ElementsAwoken.EASystem.UI
             int maxEyes = (int)Math.Ceiling(awakenedPlayer.sanityMax / sanityPerEye);
             int currentSanity = awakenedPlayer.sanity;
 
-            Vector2 sanityBasePos = basePosition - new Vector2(160, 12);
+            Vector2 sanityBasePos;
+            if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") sanityBasePos = basePosition - new Vector2(400, 7);
+            else sanityBasePos = basePosition - new Vector2(160, 12);
             Vector2 eyeSize = new Vector2(sanityTex.Width, sanityTex.Height);
             float eyeSpacing = 26f;
 
@@ -121,8 +110,7 @@ namespace ElementsAwoken.EASystem.UI
                 float fill = Math.Clamp((currentSanity - i * sanityPerEye) / sanityPerEye, 0f, 1f);
 
                 float scale = isPartial ? fill / 4f + 0.75f : 1f;
-                if (isPartial)
-                    scale += Main.cursorScale - 1f;
+                if (isPartial) scale += Main.cursorScale - 1f;    
 
                 int intensity = (int)(30f + 225f * fill);
                 int alpha = (int)(intensity * 0.9f);
@@ -170,9 +158,8 @@ namespace ElementsAwoken.EASystem.UI
             }
             // === Отображение Energy ===
             var energyPlayer = player.GetModPlayer<PlayerEnergy>();
-            if (player.ghost || energyPlayer.maxEnergy <= 0)
-                return;
-
+            if (player.ghost || energyPlayer.maxEnergy <= 0) return;
+               
             Texture2D energyTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyUIIcon").Value;
 
             int totalOrbs = 10;
@@ -187,9 +174,8 @@ namespace ElementsAwoken.EASystem.UI
                 float fill = Math.Clamp((energyPlayer.energy - i * energyPerOrb) / energyPerOrb, 0f, 1f);
 
                 float scale = isPartial ? fill / 4f + 0.75f : 1f;
-                if (isPartial)
-                    scale += Main.cursorScale - 1f;
-
+                if (isPartial) scale += Main.cursorScale - 1f;
+                    
                 int intensity = (int)(30f + 225f * fill);
                 intensity = Math.Clamp(intensity, 30, 255);
                 int alpha = (int)(intensity * 0.9f);
@@ -199,17 +185,7 @@ namespace ElementsAwoken.EASystem.UI
                 Vector2 pos = energyBasePos + new Vector2(xOffset, yOffset);
                 Vector2 origin = orbSize / 2f;
 
-                Main.spriteBatch.Draw(
-                    energyTex,
-                    pos + origin,
-                    null,
-                    new Color(intensity, intensity, intensity, alpha),
-                    0f,
-                    origin,
-                    scale,
-                    SpriteEffects.None,
-                    0f
-                );
+                Main.spriteBatch.Draw(energyTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);
             }
 
             // === Текстовое значение Energy ===
@@ -226,14 +202,10 @@ namespace ElementsAwoken.EASystem.UI
                 string tooltip = $"{energyPlayer.energy}/{energyPlayer.maxEnergy}";
                 ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, font, tooltip, new Vector2(Main.mouseX + 17, Main.mouseY + 17), new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One, -1f, 2f);
             }
-
         }
-
         private bool CompareAssets(Asset<Texture2D> currentAsset, string compareAssetPath)
         {
-            if (!vanillaAssetCache.TryGetValue(compareAssetPath, out var asset))
-                asset = vanillaAssetCache[compareAssetPath] = Main.Assets.Request<Texture2D>(compareAssetPath);
-
+            if (!vanillaAssetCache.TryGetValue(compareAssetPath, out var asset)) asset = vanillaAssetCache[compareAssetPath] = Main.Assets.Request<Texture2D>(compareAssetPath);
             return currentAsset == asset;
         }
     }

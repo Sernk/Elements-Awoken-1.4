@@ -21,6 +21,7 @@ using ElementsAwoken.Content.Projectiles.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Projectiles.Other;
 using ElementsAwoken.EASystem.UI.UIIIII;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -285,7 +286,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
         public int aegisDashDir = 1;
         // computer
         public bool inComputer = false;
-        public Vector2 computerPos = new Vector2();
+        public Vector2 computerPos = new ();
         public int computerTextNo = 0;
         public int guardianEntryNo = 0;
         public int azanaEntryNo = 0;
@@ -321,7 +322,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
         public bool alchemistTimer = false;
         public bool[] hideEAInfo = new bool[3];
         public bool dryadsRadar = false;
-        public string nearbyEvil = "No evil";
+        public string nearbyEvil =  "";
         public bool rainMeter = false;
         //encounters
         public string encounterText = "";
@@ -637,6 +638,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
             _ = this.GetLocalization("Worold.Allevils").Value;
             _ = this.GetLocalization("Worold.andHallowed").Value;
             _ = this.GetLocalization("Worold.Hallowed").Value;
+            _ = this.GetLocalization("Worold.NE").Value;
 
             _ = this.GetLocalization("MasterSwordCharge.Discharged").Value;
 
@@ -1095,6 +1097,10 @@ namespace ElementsAwoken.EASystem.EAPlayer
                     {
                         nearbyEvil = Hallowed;
                     }
+                }
+                else
+                {
+                    nearbyEvil = this.GetLocalization("Worold.NE").Value;
                 }
             }
             if (forgedShackled > 0)

@@ -103,24 +103,6 @@ namespace ElementsAwoken.EASystem.UI.UIIIII
             spriteBatch.DrawString(FontAssets.DeathText.Value, text, new Vector2(position.X, position.Y), color, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
             return "";
         }
-        //public void DrawEncounterText(SpriteBatch spriteBatch)
-        //{
-        //    var mod = ModLoader.GetMod("ElementsAwoken");
-        //    var player = Main.player[Main.myPlayer].GetModPlayer<MyPlayer>();
-        //    string text = player.encounterText;
-        //    if (player.encounterTextTimer > 0)
-        //    {
-        //        Vector2 textSize = FontAssets.DeathText.Value.MeasureString(text);
-        //        float textPositionLeft = Main.screenWidth / 2 - textSize.X / 2;
-
-        //        Vector2 pos = new Vector2(textPositionLeft, Main.screenHeight / 2 - 200);
-        //        float rand = player.finalText ? 3.5f : 2f;
-        //        pos.X += Main.rand.NextFloat(-rand, rand);
-        //        pos.Y += Main.rand.NextFloat(-rand, rand);
-        //        Color color = player.finalText ? new Color(player.encounterTextAlpha, 0, 0, player.encounterTextAlpha) : new Color(player.encounterTextAlpha, player.encounterTextAlpha, player.encounterTextAlpha, player.encounterTextAlpha);
-        //        DrawStringOutlined(spriteBatch, text, pos, color, 1f);
-        //    }
-        //}
         public override void UpdateUI(GameTime gameTime)
         {
             _lastUpdateUiGameTime = gameTime;

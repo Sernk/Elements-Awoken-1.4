@@ -817,7 +817,7 @@ namespace ElementsAwoken
             var background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBookUI").Value;
             Main.spriteBatch.Draw(background, new Rectangle(Main.screenWidth - 350, Main.screenHeight - 250, background.Width, background.Height), null, Color.White, 0f, Vector2.Zero, SpriteEffects.None, 0f);
             // draw the positive
-            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, "Regens:", Main.screenWidth - 330, Main.screenHeight - 220, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, ModContent.GetInstance<EALocalization>().SanityRegens, Main.screenWidth - 330, Main.screenHeight - 220, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
             for (int i = 0; i < awakenedPlayer.sanityRegens.Count; i++)
             {
                 string text = awakenedPlayer.sanityRegensName[i] + ": " + awakenedPlayer.sanityRegens[i];
@@ -825,7 +825,7 @@ namespace ElementsAwoken
                 Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth - 330, yPos, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
             }
             // draw the negative
-            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, "Drains:", Main.screenWidth - 150, Main.screenHeight - 220, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, ModContent.GetInstance<EALocalization>().SanityDrains, Main.screenWidth - 150, Main.screenHeight - 220, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
             for (int i = 0; i < awakenedPlayer.sanityDrains.Count; i++)
             {
                 string text = awakenedPlayer.sanityDrainsName[i] + ": " + awakenedPlayer.sanityDrains[i];
@@ -895,7 +895,7 @@ namespace ElementsAwoken
                         hoverText = EALocalization.RainTime;
                         whichInfoDrawing = infoNum;
 
-                        text2 = Main.rainTime / 60 + " " + EALocalization.SR;
+                        text2 = (int)(Main.rainTime / 60) + " " + EALocalization.SR;
                         if (Main.rainTime == 0) text2 = EALocalization.Clear;
                     }
                     amountOfInfoEquipped++;

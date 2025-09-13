@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Items.Ancient;
+﻿using ElementsAwoken.Content.Items;
+using ElementsAwoken.Content.Items.Ancient;
 using ElementsAwoken.Content.Items.BossDrops.Azana;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Materials;
@@ -15,58 +16,37 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
         public class Rarity12 : ModRarity
         {
             public override Color RarityColor => EAColors.RarityMagenta;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
         }
         public class Rarity13 : ModRarity
         {
             public override Color RarityColor => EAColors.RarityDarkRed;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<Anarchy>()] = true;
-            }
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<Anarchy>()] = true;
         }
         public class Rarity14 : ModRarity
         {
             public override Color RarityColor => EAColors.RarityDarkBlue;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<Content.Items.BossDrops.Ancients.AncientShard>()] = true;
-            }
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<Content.Items.BossDrops.Ancients.AncientShard>()] = true;
         }
         public class Rarity15 : ModRarity
         {
             public override Color RarityColor => EAColors.RarityBrightGreen;
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
-            }
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<VoiditeBar>()] = true;
         }
         public class Awakened : ModRarity
         {
-            public override Color RarityColor => new Color(220, 50, Main.DiscoB);
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<AbyssalMatter>()] = true;
-            }
+            public override Color RarityColor => new(220, 50, Main.DiscoB);
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<AbyssalMatter>()] = true;
         }
         public class Mystic : ModRarity
         {
             public override Color RarityColor => EARaritySettings.GetAnimatedItemColor();
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<MysticGemstone>()] = true;
-            }
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<MysticGemstone>()] = true;
         }
         public class BETATEST : ModRarity
         {
             public override Color RarityColor => EARaritySettings.GetAnimatedItemColorTets();
-            public override void SetStaticDefaults()
-            {
-                ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<MysticGemstone>()] = true;
-            }
+            public override void SetStaticDefaults() => ItemID.Sets.IsLavaImmuneRegardlessOfRarity[ModContent.ItemType<UndownerTerraria>()] = true;
         }
     }
 }

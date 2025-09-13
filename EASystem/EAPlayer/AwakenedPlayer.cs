@@ -14,51 +14,65 @@ using Terraria.ModLoader.IO;
 
 namespace ElementsAwoken.EASystem
 {
-    public class AwakenedPlayer : ModPlayer
+    public class AwakenedPlayer : ModPlayer, ILocalizedModType
     {
-        public bool openSanityBook = false;
+        public string LocalizationCategory => "Sanity";
 
+        public bool openSanityBook = false;
         public int sanity = 30;
         public int sanityMax = 150;
         public int sanityIncreaser = 150;
-
         public int sanityRegen = 0;
         public int sanityRegenCount = 0;
         public int sanityRegenTime = 0;
-
         public int craftWeaponCooldown = 0;
-
         public int sanityArrow = 0;
         public int sanityArrowFrame = 0;
-
         public int sanityGlitch = 0;
         public int sanityGlitchCooldown = 0;
         public int sanityGlitchFrame = 0;
-
-        public List<int> sanityDrains = new List<int>();
-        public List<string> sanityDrainsName = new List<string>();
-        public List<int> sanityRegens = new List<int>();
-        public List<string> sanityRegensName = new List<string>();
-
+        public List<int> sanityDrains = [];
+        public List<string> sanityDrainsName = [];
+        public List<int> sanityRegens = [];
+        public List<string> sanityRegensName = [];
         public int bossIncreaseSanityCD = 0;
-
         public int mineTileCooldown = 0;
         public int mineTileCooldownMax = 3600 * 3;
         public int miningCounter = 0;
-
         public int nurseCooldown = 0;
-
         public int aleCD = 0;
+
+        public override void Load()
+        {
+            _ = this.GetLocalization("Sanity.Sanity").Value;
+            _ = this.GetLocalization("Sanity.Sanity1").Value;
+            _ = this.GetLocalization("Sanity.Sanity2").Value;
+            _ = this.GetLocalization("Sanity.Sanity3").Value;
+            _ = this.GetLocalization("Sanity.Sanity4").Value;
+            _ = this.GetLocalization("Sanity.Sanity5").Value;
+            _ = this.GetLocalization("Sanity.Sanity6").Value;
+            _ = this.GetLocalization("Sanity.Sanity7").Value;
+            _ = this.GetLocalization("Sanity.Sanity8").Value;
+            _ = this.GetLocalization("Sanity.Sanity9").Value;
+            _ = this.GetLocalization("Sanity.Sanity10").Value;
+            _ = this.GetLocalization("Sanity.Sanity11").Value;
+            _ = this.GetLocalization("Sanity.Sanity12").Value;
+            _ = this.GetLocalization("Sanity.Sanity13").Value;
+            _ = this.GetLocalization("Sanity.Sanity14").Value;
+            _ = this.GetLocalization("Sanity.Sanity15").Value;
+            _ = this.GetLocalization("Sanity.Sanity16").Value;
+            _ = this.GetLocalization("Sanity.Sanity17").Value;
+            _ = this.GetLocalization("Sanity.Sanity18").Value;
+        }
+
         public override void ResetEffects()
         {
             sanityIncreaser = 150;
-
             sanityRegen = 0;
-
-            sanityDrains = new List<int>();
-            sanityDrainsName = new List<string>();
-            sanityRegens = new List<int>();
-            sanityRegensName = new List<string>();
+            sanityDrains = [];
+            sanityDrainsName = [];
+            sanityRegens = [];
+            sanityRegensName = [];
         }
         public override void PostUpdateMiscEffects()
         {
@@ -67,6 +81,7 @@ namespace ElementsAwoken.EASystem
             {
                 sanity = sanityMax;
             }
+
             PlayerUtils playerUtils = Player.GetModPlayer<PlayerUtils>();
             MyPlayer modPlayer = Player.GetModPlayer<MyPlayer>();
 
@@ -82,7 +97,7 @@ namespace ElementsAwoken.EASystem
                         int sanityRegenLoss = (int)Math.Round(MathHelper.Lerp(4, 1, Player.statLife / (Player.statLifeMax2 * 0.25f)));
                         sanityRegen -= sanityRegenLoss;
 
-                        AddSanityDrain(sanityRegenLoss, "Low Health");
+                        AddSanityDrain(sanityRegenLoss, this.GetLocalization("Sanity.Sanity").Value);
                     }
                     // in the dark
                     if (playerUtils.playerLight < 0.2)
@@ -90,39 +105,39 @@ namespace ElementsAwoken.EASystem
                         int sanityRegenLoss = (int)Math.Round(MathHelper.Lerp(3, 1, playerUtils.playerLight / 0.2f));
                         sanityRegen -= sanityRegenLoss;
 
-                        AddSanityDrain(sanityRegenLoss, "Darkness");
+                        AddSanityDrain(sanityRegenLoss, this.GetLocalization("Sanity.Sanity1").Value);
                     }
                     if (Main.bloodMoon)
                     {
                         sanityRegen--;
-                        AddSanityDrain(1, "Blood Moon");
+                        AddSanityDrain(1, this.GetLocalization("Sanity.Sanity2").Value);
                     }
                     if (MyWorld.darkMoon)
                     {
                         sanityRegen -= 2;
-                        AddSanityDrain(2, "Dark Moon");
+                        AddSanityDrain(2, this.GetLocalization("Sanity.Sanity3").Value);
                     }
                     if (MyWorld.voidInvasionUp && Main.time >= 16220 && !Main.dayTime)
                     {
                         sanityRegen -= 3;
-                        AddSanityDrain(2, "Dawn of the Void");
+                        AddSanityDrain(2, this.GetLocalization("Sanity.Sanity4").Value);
                     }
                     if (Player.ZoneUnderworldHeight)
                     {
                         sanityRegen -= 2;
-                        AddSanityDrain(2, "In Hell");
+                        AddSanityDrain(2, this.GetLocalization("Sanity.Sanity5").Value);
                     }
                     if (Player.ZoneSkyHeight && !modPlayer.cosmicalusArmor)
                     {
                         sanityRegen -= 1;
-                        AddSanityDrain(1, "In Space");
+                        AddSanityDrain(1, this.GetLocalization("Sanity.Sanity6").Value);
                     }
                     if (miningCounter > 3600 * 10)
                     {
                         if (mineTileCooldown > mineTileCooldownMax - 300)
                         {
                             sanityRegen -= 3;// first 5 seconds after mining a tile reduces sanity
-                            AddSanityDrain(3, "Mining For Too Long");
+                            AddSanityDrain(3, this.GetLocalization("Sanity.Sanity7").Value);
                         }
                     }
                     if (NPC.AnyNPCs(NPCID.MoonLordCore))
@@ -136,7 +151,7 @@ namespace ElementsAwoken.EASystem
                         if (Main.vanityPet[Player.buffType[i]])
                         {
                             sanityRegen++;
-                            AddSanityRegen(1, "Pet");
+                            AddSanityRegen(1, this.GetLocalization("Sanity.Sanity8").Value);
                             break;
                         }
                     }
@@ -196,34 +211,35 @@ namespace ElementsAwoken.EASystem
                     {
                         int amount = (int)Math.Round(MathHelper.Lerp(3, 1, Vector2.Distance(closestPos, Player.Center) / distance));
                         sanityRegen += amount;
-                        string type = "Nice Object";
+                        string type = this.GetLocalization("Sanity.Sanity9").Value;
+                        string text = string.Format(this.GetLocalization("Sanity.Sanity15").Value, type);
                         if (closest.TileType == TileID.Campfire)
                         {
-                            type = "Campfire";
+                            type = this.GetLocalization("Sanity.Sanity10").Value;
                         }
                         if (closest.TileType == TileID.Fireplace)
                         {
-                            type = "Fireplace";
+                            type = this.GetLocalization("Sanity.Sanity11").Value;
                         }
                         if (closest.TileType == TileID.FireflyinaBottle)
                         {
-                            type = "Firefly in a Bottle";
+                            type = this.GetLocalization("Sanity.Sanity12").Value;
                         }
                         if (closest.TileType == TileID.Sunflower)
                         {
-                            type = "Sunflower";
+                            type = this.GetLocalization("Sanity.Sanity13").Value;
                         }
                         if (closest.TileType == TileID.PlanterBox)
                         {
-                            type = "Planter Box";
+                            type = this.GetLocalization("Sanity.Sanity14").Value;
                         }
-                        AddSanityRegen(amount, "Nearby " + type);
+                        AddSanityRegen(amount, text);
                     }
                     if (Vector2.Distance(voiditePos, Player.Center) < distance && closestVoidite != null)
                     {
                         int amount = (int)Math.Round(MathHelper.Lerp(5, 1, Vector2.Distance(voiditePos, Player.Center) / distance));
                         sanityRegen -= amount;
-                        AddSanityDrain(amount, "Voidite");
+                        AddSanityDrain(amount, this.GetLocalization("Sanity.Sanity16").Value);
                     }
                     #endregion
 
@@ -237,7 +253,7 @@ namespace ElementsAwoken.EASystem
                     if (townSanityRegen > 0)
                     {
                         sanityRegen += townSanityRegen;
-                        AddSanityRegen(townSanityRegen, "In a Town");
+                        AddSanityRegen(townSanityRegen, this.GetLocalization("Sanity.Sanity17").Value);
                     }
 
                     if (miningCounter < 3600 * 10)
@@ -245,7 +261,7 @@ namespace ElementsAwoken.EASystem
                         if (mineTileCooldown > mineTileCooldownMax - 300)
                         {
                             sanityRegen += 3;
-                            AddSanityRegen(3, "Mining");
+                            AddSanityRegen(3, this.GetLocalization("Sanity.Sanity18").Value);
                         }
                     }
                 }

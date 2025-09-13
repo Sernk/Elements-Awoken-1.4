@@ -8,40 +8,37 @@ using ElementsAwoken.Content.Items.Donator.Eoite;
 using ElementsAwoken.Content.Items.Donator.Lantard;
 using ElementsAwoken.Content.Items.Donator.Superbaseball101;
 using ElementsAwoken.Content.Items.Donator.YukkiKun;
-using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Elements.Elemental;
-using ElementsAwoken.Content.Items.Elements.Sky;
 using ElementsAwoken.Content.Items.Elements.Void;
 using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.Items.ItemSets.Drakonite.Refined;
+using ElementsAwoken.Content.Items.ItemSets.Puff;
+using ElementsAwoken.Content.Items.ItemSets.Putrid;
 using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
-using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
+using static ElementsAwoken.EAUtilities.EAColors;
+using static ElementsAwoken.EAUtilities.EAList;
 
 namespace ElementsAwoken.EASystem.UI.Tooltips;
 
 public class ArmorSetBonusToolTips : GlobalItem
 {
     public bool IsHelmet;
-    public List<int> Arid = [ModContent.ItemType<AridFalconHelm>(), ModContent.ItemType<AridHat>(), ModContent.ItemType<AridHeadgear>(), ModContent.ItemType<AridHood>(), ModContent.ItemType<AridWarriorMask>(),];
-    public List<int> Empyrean = [ModContent.ItemType<EmpyreanMask>(), ModContent.ItemType<EmpyreanHat>(), ModContent.ItemType<EmpyreanHeadgear>(), ModContent.ItemType<EmpyreanHelmet>(), ModContent.ItemType<EmpyreanVisage>()];
 
-    public ArmorSetBonusToolTips() {IsHelmet = false; }
-    public override bool InstancePerEntity {get { return true; } }
+    public ArmorSetBonusToolTips() { IsHelmet = false; }
+    public override bool InstancePerEntity { get { return true; } }
     public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
     {
-        Color Gray = new(128, 128, 128);
-        ArmorSetBonusPlayer ASBTPlayer = Main.LocalPlayer.GetModPlayer<ArmorSetBonusPlayer>();
         EALocalization LEA = ModContent.GetInstance<EALocalization>();
         if (IsHelmet)
         {
             List<string> keys = ElementsAwoken.ASBT.GetAssignedKeys();
             string keyName = keys.Count > 0 ? keys[0] : LEA.Unbound;
             string text = string.Format(LEA.SetBonusToolTips, keyName);
-            if (!ASBTPlayer.SetBonus) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", text) { OverrideColor = Gray });
+            if (!Main.LocalPlayer.GetModPlayer<ArmorSetBonusPlayer>().SetBonus) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", text) { OverrideColor = Gray });
             else
             {
                 if (item.type == ModContent.ItemType<CosmicalusVisor>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.CosmicalusVisor) { OverrideColor = Gray });
@@ -66,6 +63,8 @@ public class ArmorSetBonusToolTips : GlobalItem
                 if (item.type == ModContent.ItemType<DragonmailHood>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.DragonmailHoodSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<DragonmailMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.DragonmailMaskSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<DragonmailVisage>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.DragonmailVisageSetBonus) { OverrideColor = Gray });
+                if (item.type == ModContent.ItemType<ComfyHood>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.ComfySetBonus) { OverrideColor = Gray });
+                if (item.type == ModContent.ItemType<PutridMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.PutridSetBonus) { OverrideColor = Gray });
             }
         }
     }

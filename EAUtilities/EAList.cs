@@ -1,5 +1,4 @@
-﻿using ElementsAwoken.Content.Dusts;
-using ElementsAwoken.Content.Items.Artifacts;
+﻿using ElementsAwoken.Content.Items.Artifacts;
 using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
 using ElementsAwoken.Content.Items.BossDrops.Azana;
@@ -15,6 +14,8 @@ using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.BossDrops.Volcanox;
 using ElementsAwoken.Content.Items.BossDrops.Wasteland;
 using ElementsAwoken.Content.Items.BossSummons;
+using ElementsAwoken.Content.Items.Elements.Desert;
+using ElementsAwoken.Content.Items.Elements.Sky;
 using ElementsAwoken.Content.NPCs.Bosses.Ancients;
 using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
 using ElementsAwoken.Content.NPCs.Bosses.Azana;
@@ -29,7 +30,6 @@ using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
-using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using Terraria.ID;
@@ -140,6 +140,10 @@ namespace ElementsAwoken.EAUtilities
         #endregion
         #region DustID
         public static readonly List<int> DustIDs = [62, 64, 59, 61, 64, 60, 63];
+        #endregion
+        #region ArrmorSet
+        public static readonly List<int> Arid = [ModContent.ItemType<AridFalconHelm>(), ModContent.ItemType<AridHat>(), ModContent.ItemType<AridHeadgear>(), ModContent.ItemType<AridHood>(), ModContent.ItemType<AridWarriorMask>(),];
+        public static readonly List<int> Empyrean = [ModContent.ItemType<EmpyreanMask>(), ModContent.ItemType<EmpyreanHat>(), ModContent.ItemType<EmpyreanHeadgear>(), ModContent.ItemType<EmpyreanHelmet>(), ModContent.ItemType<EmpyreanVisage>()];
         #endregion
         #region VanilaBossBag
         public static readonly List<int> VBB = [ItemID.BossBagBetsy, ItemID.BossBagDarkMage, ItemID.BossBagOgre, ItemID.BrainOfCthulhuBossBag, ItemID.CultistBossBag, ItemID.DeerclopsBossBag, ItemID.EaterOfWorldsBossBag, ItemID.EyeOfCthulhuBossBag, ItemID.FairyQueenBossBag, ItemID.FishronBossBag, ItemID.GolemBossBag, ItemID.KingSlimeBossBag, ItemID.MoonLordBossBag, ItemID.PlanteraBossBag, ItemID.QueenBeeBossBag, ItemID.QueenSlimeBossBag, ItemID.SkeletronBossBag, ItemID.SkeletronPrimeBossBag, ItemID.TwinsBossBag, ItemID.WallOfFleshBossBag];

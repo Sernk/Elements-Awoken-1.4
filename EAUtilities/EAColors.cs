@@ -5,16 +5,17 @@ namespace ElementsAwoken.EAUtilities
 {
     public class EAColors
     {
-        public static readonly Color RarityMagenta = new Color(239, 65, 255);
-        public static readonly Color RarityDarkRed = new Color(135, 14, 14);
-        public static readonly Color RarityDarkBlue = new Color(22, 68, 132);
-        public static readonly Color RarityBrightGreen = new Color(48, 255, 179);
+        public static readonly Color Gray = new(128, 128, 128);
+        public static readonly Color RarityMagenta = new(239, 65, 255);
+        public static readonly Color RarityDarkRed = new(135, 14, 14);
+        public static readonly Color RarityDarkBlue = new(22, 68, 132);
+        public static readonly Color RarityBrightGreen = new(48, 255, 179);
 
         //Mystic
-        public static readonly Color Blue = new Color(92, 194, 180);
-        public static readonly Color Orange = new Color(255, 163, 93);
-        public static readonly Color Green = new Color(82, 184, 117);
-        public static readonly Color Purpal = new Color(156, 37, 131);
+        public static readonly Color Blue = new(92, 194, 180);
+        public static readonly Color Orange = new(255, 163, 93);
+        public static readonly Color Green = new(82, 184, 117);
+        public static readonly Color Purpal = new(156, 37, 131);
 
         //BetaTest
         public static readonly Color DarkRed = Color.DarkRed;
@@ -23,23 +24,7 @@ namespace ElementsAwoken.EAUtilities
         public static readonly Color Orage = Color.Orange;
         public static readonly Color Yelow = Color.Yellow;
 
-        public static readonly Color[] AnimatedColors = new Color[]
-        {
-            Blue,
-            Orange,
-            Green,
-            Purpal,
-            Main.DiscoColor
-        };
-        public static readonly Color[] BetaTestColors = new Color[]
-        {
-            DarkRed,
-            Red,
-            DarkOrange,
-            Orage,
-            Yelow,
-            Green,
-            //Main.DiscoColor
-        };
+        public static readonly Color[] AnimatedColors = [Blue, Orange, Green, Purpal, Main.DiscoColor];
+        public static readonly Color[] BetaTestColors = [DarkRed, Red, DarkOrange, Orage, Yelow, Green, /*Main.DiscoColor*/ ];
     }
 }

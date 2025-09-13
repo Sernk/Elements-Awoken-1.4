@@ -21,7 +21,7 @@ namespace ElementsAwoken.EASystem.UI.UIIIII
         public UIDisplay UIDisplay;
         public override void OnInitialize()
         {
-            DraggableUIPanel panel = new DraggableUIPanel();
+            DraggableUIPanel panel = new();
             panel.SetPadding(0);
 
             panel.Left.Set(Main.screenWidth / 2 - uiWidth / 2, 0f);
@@ -54,6 +54,10 @@ namespace ElementsAwoken.EASystem.UI.UIIIII
             SoundEngine.PlaySound(SoundID.MenuClose);
             UISystemSettings.Panel = false;
         }
+    }
+    public class DrawSanityBook : UIState
+    {
+        // //
     }
     public class DraggableUIPanel : UIPanel
     {

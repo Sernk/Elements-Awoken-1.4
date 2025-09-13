@@ -20,26 +20,17 @@ namespace ElementsAwoken.Content.Items
             Item.useStyle = 4;
             Item.UseSound = SoundID.Item44;
         }
-        public override bool AltFunctionUse(Player player)
-        {
-            return true;
-        }
+        public override bool AltFunctionUse(Player player) => true;
         public override bool CanUseItem(Player player)
         {
             if (Main.mouseLeft)
             {
-                foreach (var set in EAList.BossFlagsSet)
-                {
-                    set(false);
-                }      
+                foreach (var set in EAList.BossFlagsSet) { set(false); } 
                 Main.NewText("Все сброшено", EAColors.Purpal);
             }
             else if (Main.mouseRight)
             {
-                foreach (var set in EAList.BossFlagsSet)
-                {
-                    set(true);
-                }
+                foreach (var set in EAList.BossFlagsSet) { set(true); }
                 Main.NewText("Все босы были убиты", EAColors.Purpal);
             }
             return true;
