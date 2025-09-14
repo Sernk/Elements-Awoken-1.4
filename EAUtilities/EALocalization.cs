@@ -325,12 +325,15 @@ namespace ElementsAwoken.EAUtilities
         public string DragonmailVisageSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.DragonmailVisageSetBonus");
         public string ComfySetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ComfySetBonus");
         public string PutridSetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.PutridSetBonus");
+        public string ToySetBonus => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.ToySetBonus");
         #endregion
         #region LooTCondition 
         public string AwakenedModeActive => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AwakenedModeActive");
         public string ScourgeLootCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.ScourgeLootCondition");
         public string AncientWyrmHeadDeath => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AncientWyrmHeadDeath");
         public string TheEyeCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.TheEye");
+        public string BIDRC => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.BIDRC");
+        public string BiomeConditions => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.BiomeConditions");
         #endregion
         #region ShopCondition
         public string BossString => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString");
@@ -368,6 +371,13 @@ namespace ElementsAwoken.EAUtilities
         public string AwakenedModeActive2 => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeActive2");
         public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         public string Unbound => Language.GetTextValue("Mods.ElementsAwoken.Unbound");
+        #endregion
+        #region BiomeName
+        public string Desert => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Desert");
+        public string Sky => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Sky");
+        public string Hell => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Hell");
+        public string Frost => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Frost");
+        public string Beach => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Beach");
         #endregion
         #region BossNAME
         public static string BossName(int BossProgres)

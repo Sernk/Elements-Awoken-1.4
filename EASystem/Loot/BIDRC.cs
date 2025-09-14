@@ -1,6 +1,8 @@
+using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace ElementsAwoken.EASystem.Loot
 {
@@ -34,10 +36,10 @@ namespace ElementsAwoken.EASystem.Loot
             Custom,
         }
 
-        private readonly BossType bossType;
-        private readonly int customBossID;
-        private readonly bool requireDefeated;
-        private readonly string description;
+        public BossType boss_Type;
+        public int custom_BossID;
+        public bool require_Defeated;
+        public string Description;
 
         /// <summary>
         /// Creates a condition that checks if a specific boss has been defeated or not.
@@ -47,35 +49,32 @@ namespace ElementsAwoken.EASystem.Loot
         /// <param name="customBossID">Only used when bossType is Custom</param>
         public BIDRC(BossType bossType, bool requireDefeated = true, int customBossID = -1)
         {
-            this.bossType = bossType;
-            this.requireDefeated = requireDefeated;
-            this.customBossID = customBossID;
-
+            boss_Type = bossType;
+            require_Defeated = requireDefeated;
+            custom_BossID = customBossID;
             string bossName = GetBossName();
-            this.description = requireDefeated
-                ? $"Drops after {bossName} has been defeated"
+            string text = string.Format(ModContent.GetInstance<EALocalization>().BIDRC, bossName);
+            Description = requireDefeated
+                ? text
                 : $"Drops before {bossName} has been defeated";
         }
-
         public bool CanDrop(DropAttemptInfo info)
         {
             bool isDefeated = IsBossDefeated();
-            return requireDefeated ? isDefeated : !isDefeated;
+            return require_Defeated ? isDefeated : !isDefeated;
         }
-
         public bool CanShowItemDropInUI()
         {
-            return true;
+            bool isDefeated = IsBossDefeated();
+            return require_Defeated ? isDefeated : !isDefeated;
         }
-
         public string GetConditionDescription()
         {
-            return description;
+            return Description;
         }
-
-        private bool IsBossDefeated()
+        public bool IsBossDefeated()
         {
-            return bossType switch
+            return boss_Type switch
             {
                 BossType.KingSlime => NPC.downedSlimeKing,
                 BossType.EyeOfCthulhu => NPC.downedBoss1,
@@ -96,12 +95,11 @@ namespace ElementsAwoken.EASystem.Loot
                 BossType.QueenSlime => NPC.downedQueenSlime,
                 BossType.Deerclops => NPC.downedDeerclops,
                 BossType.EmpressOfLight => NPC.downedEmpressOfLight,
-                BossType.Custom => IsBossDefeatedByID(customBossID),
+                BossType.Custom => IsBossDefeatedByID(custom_BossID),
                 _ => false,
             };
         }
-
-        private bool IsBossDefeatedByID(int bossID)
+        public bool IsBossDefeatedByID(int bossID)
         {
             return bossID switch
             {
@@ -127,35 +125,34 @@ namespace ElementsAwoken.EASystem.Loot
                 _ => false,
             };
         }
-
-        private string GetBossName()
+        public string GetBossName()
         {
-            return bossType switch
+            return boss_Type switch
             {
                 BossType.KingSlime => "King Slime",
-                BossType.EyeOfCthulhu => "Eye of Cthulhu",
+                BossType.EyeOfCthulhu => Lang.GetNPCNameValue(NPCID.EyeofCthulhu),
                 BossType.EaterOfWorlds => "Eater of Worlds",
                 BossType.BrainOfCthulhu => "Brain of Cthulhu",
                 BossType.QueenBee => "Queen Bee",
-                BossType.Skeletron => "Skeletron",
+                BossType.Skeletron => Lang.GetNPCNameValue(NPCID.SkeletronHead),
                 BossType.WallOfFlesh => "Wall of Flesh",
-                BossType.Destroyer => "The Destroyer",
-                BossType.Twins => "The Twins",
-                BossType.SkeletronPrime => "Skeletron Prime",
-                BossType.Plantera => "Plantera",
+                BossType.Destroyer => Lang.GetNPCNameValue(NPCID.TheDestroyer),
+                BossType.Twins => Lang.GetNPCNameValue(NPCID.Retinazer) + " " + Lang.GetNPCNameValue(NPCID.Spazmatism),
+                BossType.SkeletronPrime => Lang.GetNPCNameValue(NPCID.SkeletronPrime),
+                BossType.Plantera => Lang.GetNPCNameValue(NPCID.Plantera),
                 BossType.Golem => "Golem",
-                BossType.DukeFishron => "Duke Fishron",
+                BossType.DukeFishron => Lang.GetNPCNameValue(NPCID.DukeFishron),
                 BossType.LunaticCultist => "Lunatic Cultist",
                 BossType.MoonLord => "Moon Lord",
                 BossType.QueenSlime => "Queen Slime",
                 BossType.Deerclops => "Deerclops",
                 BossType.EmpressOfLight => "Empress of Light",
                 BossType.BothEvilBosses => "Both Evil Bosses",
-                BossType.Custom => GetBossNameByID(customBossID),
+                BossType.Custom => GetBossNameByID(custom_BossID),
                 _ => "Unknown Boss",
             };
         }
-        private string GetBossNameByID(int bossID)
+        public string GetBossNameByID(int bossID)
         {
             return bossID switch
             {

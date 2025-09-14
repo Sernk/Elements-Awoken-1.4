@@ -3887,7 +3887,7 @@ Items: {
 	}
 
 	ChakramOfTheDuke: {
-		DisplayName: Герцогский чаркам
+		DisplayName: Чакрам Герцога
 		Tooltip: Рви врагов, как тузик грелку!
 	}
 
@@ -4452,304 +4452,492 @@ Items: {
 	}
 
 	MagesFocus: {
-		// DisplayName: Mages Focus
-		/* Tooltip:
+		DisplayName: Маго-фокус
+		Tooltip:
 			'''
-			10% increased magic damage, critical strike chance
-			+50 max mana
-			15% reduced mana usage
-			''' */
+			Увеличивает магический урон и шанс критического удара на 10%
+			Увеличивает максимальную ману на 50
+			Уменьшает расход маны на 15%
+			'''
 	}
 
 	ManaBlaster: {
-		// DisplayName: Mana Blaster
-		// Tooltip: ""
+		DisplayName: Манастрел
+		Tooltip: ""
 	}
 
 	ManaRifle: {
-		// DisplayName: Mana Rifle
-		// Tooltip: ""
+		DisplayName: Маноружьё
+		Tooltip: ""
 	}
 
 	Manashard: {
-		// DisplayName: Manashard
-		// Tooltip: It resonates gently
+		DisplayName: Маносколок
+		Tooltip: Он тихо гудит
 	}
 
 	ManashardBattleaxe: {
-		// DisplayName: Manashard Battleaxe
-		// Tooltip: ""
+		DisplayName: Маносколочный боетопор
+		Tooltip: ""
 	}
 
 	ManashardDagger: {
-		// DisplayName: Manashard Dagger
-		// Tooltip: ""
+		DisplayName: Маносколочный кинжал
+		Tooltip: ""
 	}
 
 	ManashardLongsword: {
-		// DisplayName: Manashard Longsword
-		// Tooltip: ""
+		DisplayName: Маносколочный меч
+		Tooltip: ""
 	}
 
 	ManashardPike: {
-		// DisplayName: Manashard Pike
-		// Tooltip: ""
+		DisplayName: Маносколочное копьё
+		Tooltip: ""
 	}
 
 	ManashardWhip: {
-		// DisplayName: Manashard Whip
-		// Tooltip: ""
+		DisplayName: Маносколочный хлыст
+		Tooltip: ""
 	}
 
 	WyvernBreath: {
-		// DisplayName: Wyvern Breath
-		// Tooltip: ""
+		DisplayName: Дыханье виверны
+		Tooltip: ""
 	}
 
 	SpaceWand: {
-		// Tooltip: Hold down to charge an exploding meteor burst
-		// DisplayName: Space Wand
+		Tooltip: Зажми ВНИЗ, чтобы зарядить метеоритный выстрел, взрывающийся при контакте с блоком
+		DisplayName: Косможезл
 	}
 
 	SpaceStaff: {
-		// Tooltip: Fires a short burst of meteoric bolts
-		// DisplayName: Space Staff
+		Tooltip: Выпускает несколько метеоритных выстрелов
+		DisplayName: Космопосох
 	}
 
 	MeteoricPendant: {
-		// Tooltip: Reduces the use time of magic weapons by 20%
-		// DisplayName: Meteoric Pendant
+		Tooltip: Уменьшает время использования магических оружий на 20%
+		DisplayName: Метеороберег
 	}
 
 	Necrosis: {
-		// Tooltip: Rapidly throw exploding mortemite daggers
-		// DisplayName: Necrosis
+		Tooltip: Быстро кидает взрывные смерто-ножи
+		DisplayName: Некроз
 	}
 
 	Downfall: {
-		/* Tooltip:
+		Tooltip:
 			'''
 			Occasionally fires a mortemite blade that does double damage
 			50% chance to not consume ammo
-			''' */
-		// DisplayName: Downfall
+			'''
+		DisplayName: Кончина
 	}
 
 	Demise: {
-		// Tooltip: ""
-		// DisplayName: Demise
+		Tooltip: ""
+		DisplayName: Погибель
 	}
 
 	Decease: {
-		// Tooltip: ""
-		// DisplayName: Decease
+		Tooltip: ""
+		DisplayName: Гибель
 	}
 
 	Decay: {
-		// Tooltip: ""
-		// DisplayName: Decay
+		Tooltip: обожаю эти крайне осмысленные названия
+		DisplayName: Распад
 	}
 
 	SanityBook: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Your mind throbs
-			Shows all the players sanity regeneration
-			Right Click in the inventory to open and close
-			''' */
-		// DisplayName: Book of Shadows
+			Твой разум содрогается...
+			Показывает регенерацию здравомыслия
+			<right> по книге в инвентаре, чтобы открыть или закрыть её
+			'''
+		DisplayName: Кинга здравомыслия
 	}
 
 	SilkenSword: {
-		// Tooltip: ""
-		// DisplayName: Silken Sword
+		Tooltip: очередные недоступные предметы, которые наш товарищ зачем-то портировал...
+		DisplayName: Шелкомеч
 	}
 
 	PuffTorch: {
-		// Tooltip: ""
+		Tooltip: DisplayName: Пушистый факел
 		// DisplayName: Puff Torch
 	}
 
 	Puffball: {
-		// Tooltip: It is unbelievably soft
-		// DisplayName: Puffball
+		Tooltip: Какой же он пушистый...
+		DisplayName: Пухошар
 	}
 
 	FluffyStaff: {
-		// Tooltip: I wonder what it does?
-		// DisplayName: Fluffy Staff
+		Tooltip: Интересно, что он делает? вообще не понятно, тултипа-то, блять, нет.
+		DisplayName: Мягкий посох
 	}
 
 	ComfyShirt: {
-		// Tooltip: Feels really nice
-		// DisplayName: Comfy Shirt
+		Tooltip: Сидит, как влитая
+		DisplayName: Удобная рубашка
 	}
 
 	ComfyPants: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Padded with pure fluff
-			Falling damage is halved
-			''' */
-		// DisplayName: Comfy Pants
+			Отделаны чистым пухом
+			Снижает урон от падения на 50%
+			'''
+		DisplayName: Удобные шаровары
 	}
 
 	ComfyHood: {
-		// Tooltip: Increases maximum minions by 1
-		// DisplayName: Comfy Hood
+		Tooltip: Увеличивает количество миньон-слотов на 1
+		DisplayName: Удобный капюшон
 	}
 
 	SilkySerum: {
-		// DisplayName: Silky Serum
-		/* Tooltip:
+		DisplayName: Шекловарево
+		Tooltip:
 			'''
-			Reduces contact damage
-			Cuts fall damage in half
-			''' */
+			Снижает контактный урон от врагов
+			Снижает урон от падения на 50%
+			'''
 	}
 
 	VelvetShot: {
-		// DisplayName: Velvet Shot
-		// Tooltip: ""
+		DisplayName: Бархатный лук
+		Tooltip: ""
 	}
 
 	AcridSabre: {
-		// DisplayName: Acrid Sabre
-		// Tooltip: Shoots acrid skulls in all directions
+		DisplayName: Едкомеч
+		Tooltip: Запускает кислотные черепа во все стороны
 	}
 
 	FetidBlades: {
-		// DisplayName: Fetid Blades
-		/* Tooltip:
+		DisplayName: Гнилолезвия
+		Tooltip:
 			'''
-			Throws multiple sticking fetid blades
-			Right click to make all blades explode into damaging goop
-			''' */
+			Метает гнилолезвия, прилипающие ко врагам
+			<right>, чтобы взорвать все существующие лезвия
+			'''
 	}
 
 	PutridBar: {
-		// DisplayName: Putrid Bar
-		// Tooltip: It is covered in slime
+		DisplayName: Гнилослиток
+		Tooltip: Фу, он весь покрыт слизью.
 	}
 
 	PutridBreastplate: {
-		// DisplayName: Rotted Reaper Breastplate
-		/* Tooltip:
+		DisplayName: Кольчуга гниложнеца
+		Tooltip:
 			'''
-			10% increased minion damage
-			Increases your max number of minions
-			''' */
+			Увеличивает призывательский урон на 10%
+			Увеличивает количество миньон-слотов на 1
+			'''
 	}
 
 	PutridLeggings: {
-		// DisplayName: Rotted Reaper Leggings
-		/* Tooltip:
+		DisplayName: Башмаки гниложнеца
+		Tooltip:
 			'''
-			10% increased minion damage
-			Increases your max number of minions
-			You leave a toxic trail
-			''' */
+			Увеличивает призывательский урон на 10%
+			Увеличивает количество миньон-слотов на 1
+			За тобой остаётся токсичный след при движении
+			'''
 	}
 
 	PutridMask: {
-		// DisplayName: Rotted Reaper Mask
-		/* Tooltip:
+		DisplayName: Личина гниложнеца
+		Tooltip:
 			'''
-			30% increased minion knockback
-			15% increased minion damage
-			Increases your max number of minions
-			''' */
+			Увеличивает отбрасывание от атак миньонов на 30%
+			Увеличивает призывательский урон на 15%
+			Увеличивает количество миньон-слотов на 1
+			'''
 	}
 
 	PutridOre: {
-		// DisplayName: Putrid Ore
-		/* Tooltip:
+		DisplayName: Гнилоруда
+		Tooltip:
 			'''
-			It smells awful
-			Created by throwing iron ore and sun fragments into a 'Putrifier'
-			''' */
+			Жутко воняет
+			Крафтится путём кидания железной руды и фрагментов солнца в Загниватель
+			'''
 	}
 
 	PutridRipperTome: {
-		// DisplayName: Putrid Ripper Tome
-		/* Tooltip:
+		DisplayName: Фолиант гнилопотрошителя
+		Tooltip:
 			'''
-			Summons a putrid ripper to protect you
-			Each putrid ripper's takes up 1.5 minion slots
-			''' */
+			Призывает гнилопотрошителя на твою защиту
+			Каждый такой гнилопотрошитель занимает 1.5 миньон-слота.
+			'''
 	}
 
 	RancidHamaxe: {
-		// DisplayName: Rancid Hamaxe
-		// Tooltip: ""
+		DisplayName: Прогорклый молотопор
+		Tooltip: ""
 	}
 
 	RottedBow: {
-		// DisplayName: Rotted Bow
-		/* Tooltip:
+		DisplayName: Гнилук
+		Tooltip:
 			'''
-			Turns normal arrows into putrid arrows
-			Putrid arrows have a chance to splatter into poisonous goop
-			''' */
+			Превращает обычные стрелы в поганые стрелы
+			Поганые стрелы имеют шанс разлететься на слизь при попадании по врагу
+			'''
 	}
 
 	TaintedPickaxe: {
-		// DisplayName: Tainted Pickaxe
-		// Tooltip: ""
+		DisplayName: Поганая кирка
+		Tooltip: ""
 	}
 
 	WretchedStaff: {
-		// DisplayName: Wretched Staff
-		// Tooltip: ""
+		DisplayName: Загаженный посох
+		Tooltip: обосранный вообще
 	}
 
 	FrostMine: {
-		// Tooltip: Exploding frost mines appear around you
-		// DisplayName: Frost Mine
+		Tooltip: При использовании создаёт вокруг тебя взрывоопасные морозомины
+		DisplayName: Морозомина
 	}
 
 	RadiantMortar: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Lights up the skies with high damaging mortars
-			Disable visuals to turn off this effect
-			2% increased movement speed
-			''' */
-		// DisplayName: Radiant Mortar
+			Освещает небо мощными лучезарными зарядами
+			Выключи видимость аксессуара, чтобы убрать этот эффект
+			Увеличивает скорость передвижения на 2% (серьёзно?)
+			'''
+		DisplayName: Лучезарный миномёт
 	}
 
 	RadiantKatana: {
-		// Tooltip: Right Click slash towards the cursor
-		// DisplayName: Radiant Katana
+		Tooltip: <right>, чтобы совершить рывок в сторону курсора
+		DisplayName: Лучезарная катана
 	}
 
 	RadiantGlove: {
-		// Tooltip: Throws Radiant Stars
-		// DisplayName: Amaranth Hand
+		Tooltip: Запускает лучезвёзды
+		DisplayName: Амарантова длань
 	}
 
 	RadiantConcentrator: {
-		// Tooltip: Shoots a deathray that makes enemies explode into highly damaging stars
-		// DisplayName: Radiant Concentrator
+		Tooltip: Выпускает смертолуч, заставляющий врагов взрываться во множество лучезвёзд при смерти
+		DisplayName: Лучезаромёт
 	}
 
 	LightMine: {
-		// Tooltip: Homing radiant stars appear around you
-		// DisplayName: Cerise Curtains
+		Tooltip: При использовании создаёт самонаводящие лучезвёзды вокруг тебя
+		DisplayName: Вишнёвая завеса
 	}
 
 	GlobuleStaff: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Summons a rare Starlight Globule variant to fight for you
-			Starlight Globules take 2 minion slots
-			''' */
-		// DisplayName: Starlight Crook
+			Призывает крупый шарик звездосвета на твою защиту
+			Каждый такой шарик занимает 2 миньон-слота
+			'''
+		DisplayName: Трость звездосвета
 	}
 
 	GlobuleCannon: {
-		// Tooltip: Shoots a cluster of radiant goop
-		// DisplayName: Globule Cannon
+		Tooltip: Стреляет кластерами лучезарослизи
+		DisplayName: Шарикострел
+	}
+
+	StellariumScepter: {
+		// Tooltip: ""
+		// DisplayName: Stellarium Scepter
+	}
+
+	StellariumPickaxe: {
+		// Tooltip: ""
+		// DisplayName: Stellarium Pickaxe
+	}
+
+	StellariumHamaxe: {
+		// Tooltip: ""
+		// DisplayName: Stellarium Hamaxe
+	}
+
+	StellariumGreatsword: {
+		// Tooltip: ""
+		// DisplayName: Stellarium Greatsword
+	}
+
+	StellariumBow: {
+		// Tooltip: Turns normal arrows into stellar arrows
+		// DisplayName: Stellarium Bow
+	}
+
+	ToyWand: {
+		// Tooltip: Shoots a cluster of puzzle pieces
+		// DisplayName: Toy Wand
+	}
+
+	ToyRobotControlRod: {
+		// Tooltip: ""
+		// DisplayName: Toy Robot Control Rod
+	}
+
+	ToyPickaxe: {
+		// Tooltip: ""
+		// DisplayName: Toy Pickaxe
+	}
+
+	ToyLeggings: {
+		/* Tooltip:
+			'''
+			5% increased movement speed
+			2% increased damage
+			Reduces damage taken by 2%
+			''' */
+		// DisplayName: Toy Leggings
+	}
+
+	ToyHelm: {
+		/* Tooltip:
+			'''
+			4% increased critical strike chance
+			Reduces damage taken by 1%
+			''' */
+		// DisplayName: Toy Helm
+	}
+
+	ToyBreastplate: {
+		// Tooltip: Reduces damage taken by 4%
+		// DisplayName: Toy Breastplate
+	}
+
+	ToyBow: {
+		// Tooltip: Turns normal arrows into suction arrows
+		// DisplayName: Toy Bow
+	}
+
+	ToyBlade: {
+		/* Tooltip:
+			'''
+			The blade has a chance to break into pieces upon hitting an enemy
+			These pieces stay on the ground dealing damage
+			Don't worry, your blade magically restores itself
+			''' */
+		// DisplayName: Toy Blade
+	}
+
+	GlassHeart: {
+		// DisplayName: Fragile Heart
+		/* Tooltip:
+			'''
+			Causes you to die if you take damage but bosses drop 2x loot
+			Only needs to be in the inventory
+			''' */
+	}
+
+	Tomato: {
+		// DisplayName: Tomato
+		/* Tooltip:
+			'''
+			you have a tomato now, what are you going to do with it?
+			probably nothing
+			''' */
+	}
+
+	AzanaChibi: {
+		// DisplayName: Chaos Tomato
+		/* Tooltip:
+			'''
+			now you have a slightly angry tomato, what of it?
+			Will be replaced with a different item later
+			''' */
+	}
+
+	LilOrangeItem: {
+		// Tooltip: Summons a little Orange to follow you
+		// DisplayName: Lil' Orange
+	}
+
+	EldritchKeepsake: {
+		/* Tooltip:
+			'''
+			'A relic composed of four lost souls'
+			Summons a Fallen Stargazer to follow you around
+			''' */
+		// DisplayName: Eldritch Keepsake
+	}
+
+	ElderSignet: {
+		// Tooltip: Summons an ancient stellate to dance around you
+		// DisplayName: Elder Signet
+	}
+
+	DynastyWhistle: {
+		// Tooltip: Summons a Turbo Doge to follow you
+		// DisplayName: Dynasty Whistle
+	}
+
+	Awakener: {
+		// Tooltip: Calls upon a ???
+		// DisplayName: Awakener
+	}
+
+	VoidCrystal: {
+		// DisplayName: Void Crystal
+		// Tooltip: Summons a Void Crawler
+	}
+
+	Altar: {
+		// DisplayName: Altar
+		// Tooltip: Acts as a demon altar
+	}
+
+	AutoDriller: {
+		// DisplayName: Auto Driller
+		/* Tooltip:
+			'''
+			Digs a 3 block wide tunnel underneath it
+			Consumes 3 energy from the nearest player for each dig
+			''' */
+	}
+
+	CrystalContainer: {
+		// DisplayName: Crystal Container
+		// Tooltip: ""
+	}
+
+	CrystalCracker: {
+		// DisplayName: Crystal Cracker
+		// Tooltip: ""
+	}
+
+	DeadScientist: {
+		// DisplayName: Dead Scientist
+		// Tooltip: Dead Scientist (UNOBTAINABLE)
+	}
+
+	Desk: {
+		// DisplayName: Desk
+		// Tooltip: It's a desk... Not much else to say
+	}
+
+	SolarGeneratorIV: {
+		// DisplayName: Solar Generator MKIV
+		/* Tooltip:
+			'''
+			Generates power during the day
+			Generates more power the higher the sun is in the sky
+			''' */
+	}
+
+	ChaoticEnergyCapacitor: {
+		// DisplayName: Chaotic Energy Capacitors
+		// Tooltip: Increases the players maximum energy by 1750
 	}
 }
 
@@ -4801,7 +4989,8 @@ Tiles: {
 	WastelandTrophy.MapEntry: Трофей Пустоши
 	Darkstone.MapEntry: Мракамень
 	VoidStone.MapEntry: Пустокамень
-	// PuffTorch.MapEntry: Torch
+	PuffTorch.MapEntry: Факел
+	// Altar.MapEntry: Altar
 }
 
 Buffs: {
@@ -5354,28 +5543,68 @@ Buffs: {
 	}
 
 	SilkySerumBuff: {
-		// Description: Reduces contact damage and cuts fall damage in half
-		// DisplayName: Silky Serum
+		Description: Уменьшает контактный урон и снижает урон от падения на 50%
+		DisplayName: Шелковарево
 	}
 
 	BabyPuffBuff: {
-		// Description: This cute puffball will defend you!
-		// DisplayName: Baby Puff!
+		Description: Этот милый пушистик защитит тебя!
+		DisplayName: Пушистик!
 	}
 
 	Cuddled: {
-		// Description: You feel warm inside, melee attacks are decreased by 20% but life regen is increased
-		// DisplayName: Cuddled
+		Description: Тебе тепло... Урон от ближних оружий уменьшен на 20%, но усилена регенерация жизни
+		DisplayName: Уютненько
 	}
 
 	PutridRipperBuff: {
-		// DisplayName: Putrid Ripper
-		// Description: Claws like knives, spit like acid
+		DisplayName: Гниложнец
+		Description: Когти аки ножи, плевки аки яд
 	}
 
 	GlobuleMinionBuff: {
-		// Description: It shimmers
-		// DisplayName: Starlight Globule
+		Description: Он сверкает...
+		DisplayName: Шарик звездосвета
+	}
+
+	ToyRobotBuff: {
+		// Description: It winds itself up!
+		// DisplayName: Toy Robot
+	}
+
+	BrokenToyBlade: {
+		// Description: You cannot use the Toy Blade
+		// DisplayName: Broken Toy Blade
+	}
+
+	VoidCrawler: {
+		// Description: Don't get cut by the blades when it nuzzles you
+		// DisplayName: Void Crawler
+	}
+
+	TurboDogeBuff: {
+		// Description: Nyoooom
+		// DisplayName: Turbo Doge
+	}
+
+	LilOrange: {
+		// Description: A little orange follows you closely
+		// DisplayName: Lil Orange
+	}
+
+	CelestialWatcherBuff: {
+		// Description: A fallen stargazer stares through you.
+		// DisplayName: Fallen Stargazer
+	}
+
+	AwakenedBuff: {
+		// Description: It has ascended
+		// DisplayName: Woke
+	}
+
+	AncientStellateBuff: {
+		// Description: It shimmers brightly
+		// DisplayName: Ancient Stellate
 	}
 }
 
@@ -5759,8 +5988,8 @@ NPCs: {
 		}
 	}
 
-	// Puff.DisplayName: Puff
-	// SpikedPuff.DisplayName: Spiked Puff
+	Puff.DisplayName: Пушистик
+	SpikedPuff.DisplayName: Шипушистик
 }
 
 Projectiles: {
@@ -6371,48 +6600,65 @@ Projectiles: {
 	DrakoniteDrill.DisplayName: Драконитовая дрель
 	MiniDragon.DisplayName: Дракончик
 	DragonFangP.DisplayName: Проджектайл дракоклыка
-	// ManashardWhipP.DisplayName: Manashard Whip
-	// ManaBolt.DisplayName: Mana Bolt
-	// ManaRound.DisplayName: Mana Round
-	// Manashatter.DisplayName: Manaspike
-	// Manaspike.DisplayName: Manaspike
-	// ManashardPikeP.DisplayName: Manashard Pike
-	// ManashardDaggerP.DisplayName: Manashard Dagger
-	// WyvernBreath1.DisplayName: Wyvern Breath
-	// WyvernBreath2.DisplayName: Wyvern Breath
-	// MeteoricFireball.DisplayName: Meteoric Fireball
-	// MeteoricBolt.DisplayName: Meteoric Bolt
-	// SpaceWand.DisplayName: Space Wand
-	// DecayP.DisplayName: Decay
-	// NecrosisP.DisplayName: Necrosis
-	// MortemiteWave.DisplayName: Mortemite Wave
-	// MortemiteFlames.DisplayName: Mortemite Flames
-	// MortemiteBlade.DisplayName: Mortemite Blade
-	// BabyPuffSpike.DisplayName: Baby Puff Spike
-	// BabyPuff.DisplayName: Baby Puff
-	// PuffSpike.DisplayName: Puff Spike
-	// PutridArrow.DisplayName: Putrid Arrow
-	// BlightfireSpawner.DisplayName: Blightfire Spawner
-	// WretchedStaffHeld.DisplayName: Wretched Staff Held
-	// PutridVomit.DisplayName: Putrid Vomit
-	// PutridRipper.DisplayName: Putrid Ripper
-	// PutridGoop.DisplayName: Putrid Goop
-	// PutridSkull.DisplayName: Putrid Skull
-	// PutridSpike.DisplayName: Putrid Spike
-	// PutridTrail.DisplayName: Putrid Trail
-	// FetidBladeP.DisplayName: Energy Fork
-	// RadiantBeam.DisplayName: Radiant Beam
-	// GlobuleMinionSmall.DisplayName: Starlight Globule
-	// GlobuleMinion.DisplayName: Starlight Globule
-	// FrostMine.DisplayName: Frost Mine
-	// RadiantBeamFocused.DisplayName: Radiant Beam
-	// RadiantGlobule.DisplayName: Radiant Globule
-	// RadiantKatanaSlash.DisplayName: Radiant Katana
-	// RadiantKatanaStar.DisplayName: Radiant Star
-	// RadiantStarMine.DisplayName: Radiant Star
-	// RadiantStarMortar.DisplayName: Radiant Star
-	// RadiantStarSmall.DisplayName: Radiant Star
-	// RadiantStarThrown.DisplayName: Radiant Star
+	ManashardWhipP.DisplayName: Проджектайл маносколочного хлыста
+	ManaBolt.DisplayName: Мановыстрел
+	ManaRound.DisplayName: Манострела
+	Manashatter.DisplayName: Маносколок
+	Manaspike.DisplayName: Маношип
+	ManashardPikeP.DisplayName: Проджектайл маносколочного копья
+	ManashardDaggerP.DisplayName: Проджектайл маносколочного кинжала
+	WyvernBreath1.DisplayName: Дыханье виверны1
+	WyvernBreath2.DisplayName: Дыханье виверны2
+	MeteoricFireball.DisplayName: Метеорный огнешар
+	MeteoricBolt.DisplayName: Метеорный выстрел
+	SpaceWand.DisplayName: Космопалка
+	DecayP.DisplayName: Проджектайл распада
+	NecrosisP.DisplayName: Проджектайл некроза
+	MortemiteWave.DisplayName: Смерть-волна
+	MortemiteFlames.DisplayName: Смертогонь
+	MortemiteBlade.DisplayName: Смертолезвие
+	BabyPuffSpike.DisplayName: Шип пушистика
+	BabyPuff.DisplayName: Пушистик
+	PuffSpike.DisplayName: Пухошип
+	PutridArrow.DisplayName: Поганая стрела
+	BlightfireSpawner.DisplayName: Проджектайл спавнера гнилогня
+	WretchedStaffHeld.DisplayName: Холдаут сраного посоха
+	PutridVomit.DisplayName: Блевотина
+	PutridRipper.DisplayName: Гниложнец
+	PutridGoop.DisplayName: Гнилослизь
+	PutridSkull.DisplayName: Поганый череп
+	PutridSpike.DisplayName: Поганый шип
+	PutridTrail.DisplayName: Поганый след
+	FetidBladeP.DisplayName: Проджектайл гнилезвия
+	RadiantBeam.DisplayName: Лучезаролуч
+	GlobuleMinionSmall.DisplayName: Миньон маленького звездосветного шарика
+	GlobuleMinion.DisplayName: Миньон звездосветного шарика
+	FrostMine.DisplayName: Морозомина
+	RadiantBeamFocused.DisplayName: Сфокусированный лучезаролуч
+	RadiantGlobule.DisplayName: Лучезарошарик
+	RadiantKatanaSlash.DisplayName: Слэш лучезарной катаны
+	RadiantKatanaStar.DisplayName: Звезда лучезарной катаны
+	RadiantStarMine.DisplayName: Мина лучезвезды
+	RadiantStarMortar.DisplayName: Лучезвезда миномёта
+	RadiantStarSmall.DisplayName: Малая лучезвезда
+	RadiantStarThrown.DisplayName: Запущенная лучезвезда
+	// StellarPortal.DisplayName: Stellar Portal
+	// StellarMeteor.DisplayName: Stellar Meteor
+	// StellariumBolt2.DisplayName: Stellarium Scepter
+	// StellariumBolt.DisplayName: Stellarium Scepter
+	// StellarArrow.DisplayName: Stellar Arrow
+	// SuctionArrow.DisplayName: Suction Arrow
+	// ToyRobot.DisplayName: Toy Robot
+	// PuzzlePiece.DisplayName: Charge Rifle
+	// ChaosTomatoP.DisplayName: Chaos Tomato
+	// TomatoP.DisplayName: Tomato
+	// AncientStellate.DisplayName: Ancient Stellate
+	// CelestialWatcher.DisplayName: Celestial Watcher
+	// LilOrange.DisplayName: Lil Orange
+	// TurboDoge.DisplayName: Turbo Doge
+	// VoidCrawler.DisplayName: Void Crawler
+	// WOKE.DisplayName: WOKE
+	// AutoDrillBeam.DisplayName: Dubstep Beam
 }
 
 Configs: {
@@ -6757,34 +7003,35 @@ SetBonus: {
 	EmpyreanSetBonus: Бури назревают вокруг тебя, призывая грозовое облако на твою защиту
 	VoidSetBonus: Все вражеские снаряды имеют маленький шанс исцелить тебя
 	OceanicSetBonus: При получении больше 25 урона ты выстреливаешь токсичной водицей во врагов
-	/* DragonmailGreathelmSetBonus:
+	DragonmailGreathelmSetBonus:
 		'''
-		Melee attacks and projectiles inflict Dragonfire
-		Maximum life increased by 50
-		''' */
-	/* DragonmailHoodSetBonus:
+		Все оружия ближнего боя накладывают на врагов дебафф "Драконье пламя"
+		Увеличивает максимальное здоровье на 50
 		'''
-		Magic projectiles inflict Dragonfire
-		Magic damage increases as life lowers
-		''' */
-	/* DragonmailMaskSetBonus:
+	DragonmailHoodSetBonus:
 		'''
-		Minions inflict Dragonfire
-		Damage reduced with more minions
-		''' */
-	/* DragonmailVisageSetBonus:
+		Все магические оружия накладывают на врагов дебафф "Драконье пламя"
+		Чем меньше у тебя остаётся здоровья, тем больше увеличивается твой магический урон
 		'''
-		Ranged projectiles inflict Dragonfire
-		Ranged attacks have a chance to explode into Dragonfire
-		''' */
-	// ComfySetBonus: Puffs no longer deal damage to you
-	/* PutridSetBonus:
+	DragonmailMaskSetBonus:
 		'''
-		You create a toxic aura
-		Not moving makes more auras spawn
-		Increases your max number of minions
-		Minions have a chance to inflict a fast acting poison
-		''' */
+		Все атаки миньонов накладывают на врагов дебафф "Драконье пламя"
+		Урон уменьшается при большом количестве миньонов
+		'''
+	DragonmailVisageSetBonus:
+		'''
+		Все стрелковые оружия накладывают на врагов дебафф "Драконье пламя"
+		Выстрелы имеют шанс взорваться в дракогонь
+		'''
+	ComfySetBonus: Пухи больше не наносят урона тебе
+	PutridSetBonus:
+		'''
+		Ты создаёшь вокруг себя поганую ауру
+		Аура усиливается, когда ты не двигаешься
+		Увеличивает количество миньон-слотов
+		Атаки миньонов имеют шанс отравить врагов сильнодействующим ядом
+		'''
+	// ToySetBonus: You drop lego bricks when hit
 }
 
 Said: {
@@ -6847,6 +7094,17 @@ LooTCondition: {
 	ScourgeLootCondition: Шанс дропа 1/3
 	AncientWyrmHeadDeath: Если в битве первым был убит Древний Змей
 	TheEye: Если в битве первым было убито Око
+	// BIDRC: Drops after {0} has been defeated
+	// BiomeConditions: If you are in a biome {0}
+}
+
+BiomeName: {
+	// Desert: Desert
+	// Sky: Sky
+	#Выбери одно из двух
+	// Hell: Underworld or Hell
+	// Frost: Frost
+	// Beach: Beach
 }
 
 ShopCondition: {
@@ -6897,33 +7155,33 @@ Credits: {
 }
 
 SanityBook: {
-	// SanityBookOnCraft: Enable Awakened Mode for this book to have any functionality
-	// SanityRegens: Regens:
-	// SanityDrains: Drains:
+	SanityBookOnCraft: Этой книгой можно воспользоваться только в Пробуждённом режиме
+	SanityRegens: Восстанавливает:
+	SanityDrains: Теряет:
 }
 
 Sanity: {
 	AwakenedPlayer: {
 		Sanity: {
-			// Sanity18: Mining
-			// Sanity17: In a Town
-			// Sanity16: Voidite
-			// Sanity15: Nearby {0}
-			// Sanity14: Planter Box
-			// Sanity13: Sunflower
-			// Sanity12: Firefly in a Bottle
-			// Sanity11: Fireplace
-			// Sanity10: Campfire
-			// Sanity9: Nice Object
-			// Sanity8: Pet
-			// Sanity7: Mining For Too Long
-			// Sanity6: In Space
-			// Sanity5: In Hell
-			// Sanity4: Dawn of the Void
-			// Sanity3: Dark Moon
-			// Sanity2: Blood Moon
-			// Sanity1: Darkness
-			// Sanity: Low Health
+			Sanity18: Копает
+			Sanity17: В городе
+			Sanity16: Пустоний
+			Sanity15: Рядом с {0}
+			Sanity14: Рассадник
+			Sanity13: Подсолнух
+			Sanity12: Светлячок в банке
+			Sanity11: Камин
+			Sanity10: Костёр
+			Sanity9: Милая штука
+			Sanity8: Питомец
+			Sanity7: Копает слишком долго
+			Sanity6: В небесах
+			Sanity5: В Аду
+			Sanity4: Рассвет Пустоты
+			Sanity3: Новолуние
+			Sanity2: Кровавая луна
+			Sanity1: Тьма
+			Sanity: Осталось мало здоровья
 		}
 	}
 }

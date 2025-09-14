@@ -1,6 +1,7 @@
 ﻿using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
 using ElementsAwoken.EAUtilities;
 using MonoMod.RuntimeDetour;
+using System.Collections.Generic;
 using System.Reflection;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
@@ -8,37 +9,77 @@ using Terraria.ModLoader;
 
 namespace ElementsAwoken.EASystem.Loot;
 
-public class InMultipleCondition : IItemDropRuleCondition
+public class InMultipleConditionByMode : IItemDropRuleCondition
 {
-    private readonly IItemDropRuleCondition[] conditions;
-    private readonly string description;
-
-    public InMultipleCondition(params IItemDropRuleCondition[] conditions)
+    public enum Mode
     {
-        this.conditions = conditions;
-        this.description = "S";
+        All,
+        Normal,
+        Expert,
+        Awakened
     }
-    public InMultipleCondition(string customDescription, params IItemDropRuleCondition[] conditions)
+
+    private readonly IItemDropRuleCondition[] conditions;
+    private readonly string customDescription;
+    private readonly Mode mode;
+
+    public InMultipleConditionByMode(Mode mode, params IItemDropRuleCondition[] conditions)
     {
+        this.mode = mode;
         this.conditions = conditions;
-        this.description = customDescription;
+    }
+    public InMultipleConditionByMode(Mode mode, string customDescription, params IItemDropRuleCondition[] conditions)
+    {
+        this.mode = mode;
+        this.conditions = conditions;
+        this.customDescription = customDescription;
     }
     public bool CanDrop(DropAttemptInfo info)
     {
+        bool isCorrectMode = mode switch
+        {
+            Mode.Normal => !Main.expertMode && !MyWorld.awakenedMode,
+            Mode.Expert => Main.expertMode && !MyWorld.awakenedMode,
+            Mode.Awakened => MyWorld.awakenedMode,
+            Mode.All => !Main.expertMode || !MyWorld.awakenedMode || Main.expertMode || !MyWorld.awakenedMode || MyWorld.awakenedMode,
+            _ => false
+        };
+
+        if (!isCorrectMode) return false;
+            
         foreach (var condition in conditions)
         {
-            if (!condition.CanDrop(info))
-                return false;
+            if (condition == null) continue;
+            if (!condition.CanDrop(info)) return false;
         }
+
         return true;
     }
-    public bool CanShowItemDropInUI()
+    public bool CanShowItemDropInUI() => IsCorrectMode();
+    private bool IsCorrectMode()
     {
-        return true;
+        return mode switch
+        {
+            Mode.Normal => !Main.expertMode && !MyWorld.awakenedMode,
+            Mode.Expert => Main.expertMode && !MyWorld.awakenedMode,
+            Mode.Awakened => MyWorld.awakenedMode, 
+            _ => false
+        };
     }
+
     public string GetConditionDescription()
     {
-        return description;
+        if (!string.IsNullOrWhiteSpace(customDescription)) return customDescription;
+
+        List<string> parts = [];
+
+        foreach (var condition in conditions)
+        {
+            if (condition == null) continue;
+            string d = condition.GetConditionDescription();
+            if (!string.IsNullOrWhiteSpace(d)) parts.Add(d.Trim());
+        }
+        return parts.Count > 0 ? string.Join(" & ", parts) : "Unknown condition";
     }
 }
 /// <summary>
@@ -89,28 +130,19 @@ public class EAIDRC
         private bool Drop(Orig_GetDropSettings orig, Conditions.IsMasterMode self, DropAttemptInfo info)
         {
             bool originalResult = orig(self, info);
-            if (Main.masterMode || MyWorld.awakenedMode)
-            {
-                return true;
-            }
+            if (Main.masterMode || MyWorld.awakenedMode) return true;
             return originalResult;
         }
         private bool Show(Orig_GetShowSettings orig, Conditions.IsMasterMode self)
         {
             bool originalResult = orig(self);
-            if (Main.masterMode || MyWorld.awakenedMode)
-            {
-                return true;
-            }
+            if (Main.masterMode || MyWorld.awakenedMode) return true;
             return originalResult;
         }
         private string Description(Orig_GetDescriptionSettings orig, Conditions.IsMasterMode self)
         {
             string originalResult = orig(self);
-            if (Main.masterMode || MyWorld.awakenedMode)
-            {
-                return $"{originalResult} {ModContent.GetInstance<EALocalization>().BossString1} {ModContent.GetInstance<EALocalization>().AwakenedModeActive2}";
-            }
+            if (Main.masterMode || MyWorld.awakenedMode) return $"{originalResult} {ModContent.GetInstance<EALocalization>().BossString1} {ModContent.GetInstance<EALocalization>().AwakenedModeActive2}";
             return originalResult;
         }
     }
@@ -118,14 +150,8 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (info.player == null)
-            {
-                return false;
-            }
-            if (Main.rand.Next(4) == 3)
-            {
-                return true;
-            }
+            if (info.player == null) return false;
+            if (Main.rand.Next(4) == 3) return true;
             return false;
         }
         public bool CanShowItemDropInUI() => true;
@@ -135,10 +161,7 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {      
-            if (MyWorld.awakenedMode)
-            {
-                return true;
-            }
+            if (MyWorld.awakenedMode) return true;
             return false;
         }
         public bool CanShowItemDropInUI() => true;
@@ -149,10 +172,7 @@ public class EAIDRC
         public bool CanDrop(DropAttemptInfo info) => true;
         public bool CanShowItemDropInUI()
         {
-            if (IDropSettings.AncItemId1 == ModContent.ItemType<ModItem>())
-            {
-                return false;
-            }
+            if (IDropSettings.AncItemId1 == ModContent.ItemType<ModItem>()) return false;
             return true;
         }
         public string GetConditionDescription() => null;
@@ -162,10 +182,7 @@ public class EAIDRC
         public bool CanDrop(DropAttemptInfo info) => true;
         public bool CanShowItemDropInUI()
         {
-            if (IDropSettings.AncItemId2 == ModContent.ItemType<ModItem>())
-            {
-                return false;
-            }
+            if (IDropSettings.AncItemId2 == ModContent.ItemType<ModItem>()) return false;
             return true;
         }
         public string GetConditionDescription() => null;
@@ -175,10 +192,7 @@ public class EAIDRC
         public bool CanDrop(DropAttemptInfo info) => true;
         public bool CanShowItemDropInUI()
         {
-            if (IDropSettings.AncItemId3 == ModContent.ItemType<ModItem>())
-            {
-                return false;
-            }
+            if (IDropSettings.AncItemId3 == ModContent.ItemType<ModItem>()) return false;
             return true;
         }
         public string GetConditionDescription() => null;
@@ -188,10 +202,7 @@ public class EAIDRC
         public bool CanDrop(DropAttemptInfo info) => true;
         public bool CanShowItemDropInUI()
         {
-            if (IDropSettings.AncItemId4 == ModContent.ItemType<ModItem>())
-            {
-                return false;
-            }
+            if (IDropSettings.AncItemId4 == ModContent.ItemType<ModItem>()) return false;
             return true;
         }
         public string GetConditionDescription() => null;
@@ -200,18 +211,12 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (Main.expertMode && MyWorld.awakenedMode == false)
-            {
-                return true;
-            }
+            if (Main.expertMode && MyWorld.awakenedMode == false) return true;
             return false;
         }
         public bool CanShowItemDropInUI()
         {
-            if (Main.expertMode && MyWorld.awakenedMode == false)
-            {
-                return true;
-            }
+            if (Main.expertMode && MyWorld.awakenedMode == false) return true;
             return false;
         }
         public string GetConditionDescription() => null;
@@ -220,18 +225,12 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (Main.expertMode || MyWorld.awakenedMode)
-            {
-                return true;
-            }
+            if (Main.expertMode || MyWorld.awakenedMode) return true;
             return false;
         }
         public bool CanShowItemDropInUI()
         {
-            if (Main.expertMode || MyWorld.awakenedMode)
-            {
-                return true;
-            }
+            if (Main.expertMode || MyWorld.awakenedMode) return true;
             return false;
         }
         public string GetConditionDescription() => null;
@@ -240,18 +239,12 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (Main.expertMode == false)
-            {
-                return true;
-            }
+            if (Main.expertMode == false) return true;
             return false;
         }
         public bool CanShowItemDropInUI()
         {
-            if (Main.expertMode == false)
-            {
-                return true;
-            }
+            if (Main.expertMode == false) return true;
             return false;
         }
         public string GetConditionDescription() => null;
@@ -260,10 +253,7 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (!NPC.AnyNPCs(ModContent.NPCType<AncientWyrmHead>()))
-            {
-                return true;
-            }
+            if (!NPC.AnyNPCs(ModContent.NPCType<AncientWyrmHead>())) return true;
             return false;
         }
         public bool CanShowItemDropInUI() => true;
@@ -273,10 +263,7 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (!NPC.AnyNPCs(ModContent.NPCType<TheEye>()))
-            {
-                return true;
-            }
+            if (!NPC.AnyNPCs(ModContent.NPCType<TheEye>())) return true;
             return false;
         }
         public bool CanShowItemDropInUI() => true;
@@ -286,10 +273,7 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (Main.rand.Next(10) == 0)
-            {
-                return true;
-            }
+            if (Main.rand.Next(10) == 0) return true;
             return false;
         }
         public bool CanShowItemDropInUI() => true;
@@ -299,27 +283,20 @@ public class EAIDRC
     {
         public bool CanDrop(DropAttemptInfo info)
         {
-            if (Main.rand.Next(5) == 0)
-            {
-                return true;
-            }
+            if (Main.rand.Next(5) == 0) return true;
             return false;
         }
         public bool CanShowItemDropInUI() => true;
         public string GetConditionDescription() => null;
     }
-    //public class DropFruit : IItemDropRuleCondition
-    //{
-    //    //public bool CanDrop(DropAttemptInfo info)
-    //    //{
-    //    //    if (info.player.GetModPlayer<MyPlayer>().extraAccSlot == false && MyWorld.awakenedMode) return true;
-    //    //    return false;
-    //    //}
-    //    //public bool CanShowItemDropInUI()
-    //    //{
-    //    //    if (Main.LocalPlayer.GetModPlayer<MyPlayer>().extraAccSlot && MyWorld.awakenedMode) return false;
-    //    //    return true;
-    //    //}
-    //    //public string GetConditionDescription() => "Выпадает лишь один раз";
-    //}
+    public class NPCSpawnedFromStatue : IItemDropRuleCondition
+    {
+        public bool CanDrop(DropAttemptInfo info)
+        {
+            if (info.npc.SpawnedFromStatue) return false;
+            return true;
+        }
+        public bool CanShowItemDropInUI() => false;
+        public string GetConditionDescription() => null;
+    }
 }

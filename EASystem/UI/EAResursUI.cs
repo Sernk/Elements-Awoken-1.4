@@ -164,9 +164,12 @@ namespace ElementsAwoken.EASystem.UI
 
             int totalOrbs = 10;
             float energyPerOrb = energyPlayer.maxEnergy / (float)totalOrbs;
-            Vector2 energyBasePos = basePosition - new Vector2(400, 12); // смещаем ещё левее от Sanity
-            Vector2 orbSize = new Vector2(energyTex.Width, energyTex.Height);
+            Vector2 energyBasePos;
+            Vector2 orbSize = new(energyTex.Width, energyTex.Height);
             float orbSpacing = 26f;
+
+            if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") energyBasePos = basePosition - new Vector2(650, 7);
+            else energyBasePos = basePosition - new Vector2(400, 12); // смещения левее от Sanity
 
             for (int i = 0; i < totalOrbs; i++)
             {
@@ -191,7 +194,7 @@ namespace ElementsAwoken.EASystem.UI
             // === Текстовое значение Energy ===
             string energyText = $"{EALocalization.Energy}: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
             Vector2 energyTextSize = font.MeasureString(energyText);
-            Vector2 energyTextPos = energyBasePos + new Vector2(totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f, -20);
+            Vector2 energyTextPos = energyBasePos + new Vector2((totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f) - 50, -20);
 
             Main.spriteBatch.DrawString(font, energyText, energyTextPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
 

@@ -1,233 +1,77 @@
+using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem.Loot
+namespace ElementsAwoken.EASystem.Loot;
+public class BiomeConditions : IItemDropRuleCondition
 {
-    /// <summary>
-    /// Conditions for checking if the player is in specific biomes or zones
-    /// </summary>
-    public class BiomeConditions
+    private readonly BiomeID biomeType;
+    private readonly int customBiome;
+    private readonly string nearbyDescription;
+
+    private Player player => Main.LocalPlayer;
+
+    public enum BiomeID
     {
-
-        /// <summary>
-        /// Condition that checks if the player in the sky
-        /// </summary>
-        public class Sky : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneSkyHeight;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player in Underworld
-        /// </summary>
-        public class Underworld : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneUnderworldHeight;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in the Nebula Pillar zone
-        /// </summary>
-        public class InNebulaTowerZone : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneTowerNebula;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in the Blood moon
-        /// </summary>
-        public class InbloodMoon : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return Main.bloodMoon;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in the Solar Pillar zone
-        /// </summary>
-        public class InSolarTowerZone : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneTowerSolar;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in the Vortex Pillar zone
-        /// </summary>
-        public class InVortexTowerZone : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneTowerVortex;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in the Stardust Pillar zone
-        /// </summary>
-        public class InStardustTowerZone : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneTowerStardust;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is at the beach
-        /// </summary>
-        public class InBeach : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneBeach;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in the dungeon
-        /// </summary>
-        public class InDungeon : IItemDropRuleCondition
-        {
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.ZoneDungeon;
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
-
-        /// <summary>
-        /// Condition that checks if the player is in a custom mod biome
-        /// </summary>
-        /// <typeparam name="T">The type of the mod biome</typeparam>
-        public class InModBiome<T> : IItemDropRuleCondition where T : ModBiome
-        {
-            private readonly string biomeName;
-
-            public InModBiome()
-            {
-                // Try to get a nice display name for the biome
-                T biome = ModContent.GetInstance<T>();
-                biomeName = biome?.DisplayName.Value ?? typeof(T).Name;
-            }
-
-            public bool CanDrop(DropAttemptInfo info)
-            {
-                return info.player.InModBiome<T>();
-            }
-
-            public bool CanShowItemDropInUI()
-            {
-                return true;
-            }
-
-            public string GetConditionDescription()
-            {
-                return "S";
-            }
-        }
+        Desert,
+        Sky,
+        Underworld,
+        InBeach,
+        Frost,
+        InDungeon,
+        InNebulaTowerZone,
+        InSolarTowerZone,
+        InVortexTowerZone,
+        InStardustTowerZone,
+        InbloodMoon,
     }
+
+    public BiomeConditions(BiomeID biomeType, int customBiomeID = -1)
+    {
+        this.biomeType = biomeType;
+        this.customBiome = customBiomeID;
+        string biomeName = GetBiomeName();
+        string text = string.Format(ModContent.GetInstance<EALocalization>().BiomeConditions, biomeName);
+        this.nearbyDescription = text;
+    }
+    public string GetBiomeName()
+    {
+        return biomeType switch
+        {
+            BiomeID.Desert => ModContent.GetInstance<EALocalization>().Desert,
+            BiomeID.Sky => ModContent.GetInstance<EALocalization>().Sky,
+            BiomeID.Underworld => ModContent.GetInstance<EALocalization>().Hell,
+            BiomeID.Frost => ModContent.GetInstance<EALocalization>().Frost,
+            BiomeID.InBeach => ModContent.GetInstance<EALocalization>().Beach,
+            BiomeID.InNebulaTowerZone => "Nebula Tower",
+            BiomeID.InSolarTowerZone => "Solar Tower",
+            BiomeID.InVortexTowerZone => "Vortex Tower",
+            BiomeID.InStardustTowerZone => "Stardust Tower",
+            BiomeID.InbloodMoon => "Blood Moon",
+            BiomeID.InDungeon => "Dungeon",
+            _ => "Unknown Biome",
+        };
+    }
+    public bool GetBiomeNearby()
+    {
+        return biomeType switch
+        {
+            BiomeID.Desert => player.ZoneDesert,
+            BiomeID.Sky => player.ZoneSkyHeight,
+            BiomeID.Underworld => player.ZoneUnderworldHeight,
+            BiomeID.Frost => player.ZoneSnow,
+            BiomeID.InNebulaTowerZone => player.ZoneTowerNebula,
+            BiomeID.InSolarTowerZone => player.ZoneTowerSolar,
+            BiomeID.InVortexTowerZone => player.ZoneTowerVortex,
+            BiomeID.InStardustTowerZone => player.ZoneTowerStardust,
+            BiomeID.InbloodMoon => Main.bloodMoon,
+            BiomeID.InBeach => player.ZoneBeach,
+            BiomeID.InDungeon => player.ZoneDungeon,
+            _ => false,
+        };
+    }
+    public bool CanDrop(DropAttemptInfo info) => GetBiomeNearby();
+    public bool CanShowItemDropInUI() => true;
+    public string GetConditionDescription() => nearbyDescription;
 }

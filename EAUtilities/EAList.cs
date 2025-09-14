@@ -34,6 +34,7 @@ using System;
 using System.Collections.Generic;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ID.NPCID;
 
 namespace ElementsAwoken.EAUtilities
 {
@@ -147,6 +148,24 @@ namespace ElementsAwoken.EAUtilities
         #endregion
         #region VanilaBossBag
         public static readonly List<int> VBB = [ItemID.BossBagBetsy, ItemID.BossBagDarkMage, ItemID.BossBagOgre, ItemID.BrainOfCthulhuBossBag, ItemID.CultistBossBag, ItemID.DeerclopsBossBag, ItemID.EaterOfWorldsBossBag, ItemID.EyeOfCthulhuBossBag, ItemID.FairyQueenBossBag, ItemID.FishronBossBag, ItemID.GolemBossBag, ItemID.KingSlimeBossBag, ItemID.MoonLordBossBag, ItemID.PlanteraBossBag, ItemID.QueenBeeBossBag, ItemID.QueenSlimeBossBag, ItemID.SkeletronBossBag, ItemID.SkeletronPrimeBossBag, ItemID.TwinsBossBag, ItemID.WallOfFleshBossBag];
+        #endregion
+        #region Biome
+        #region Desert
+        public static readonly List<int> DeserNPC = [Mummy, DarkMummy, LightMummy, BloodMummy, Antlion, GiantFlyingAntlion, FlyingAntlion, GiantWalkingAntlion, LarvaeAntlion, WalkingAntlion, DuneSplicerHead, DuneSplicerBody, DuneSplicerTail, TombCrawlerHead, TombCrawlerBody, TombCrawlerTail, DesertGhoul, DesertGhoulCorruption, DesertGhoulCrimson, DesertGhoulHallow, DesertLamiaLight, DesertLamiaDark, DesertScorpionWalk, DesertScorpionWall, DesertBeast, DesertDjinn, SandElemental, SandShark, SandsharkCorrupt, SandsharkCrimson, SandsharkHallow, Tumbleweed, Vulture];
+        #endregion
+        #region Hell
+        public static readonly List<int> HellNPC = [FireImp, LavaSlime, Hellbat, Demon, VoodooDemon, WallofFleshEye, TheHungry, TheHungryII, LeechHead, LeechBody, LeechTail, WallofFlesh, Lavabat, RedDevil, DemonTaxCollector];
+        #endregion
+        #region Sky
+        public static readonly List<int> SkyNPC = [Harpy];
+        #endregion
+        #region Frost
+        public static readonly List<int> FrostNPC = [IceSlime, Penguin, PenguinBlack, Wolf, ZombieEskimo, CorruptPenguin, IceElemental, IceGolem, Deerclops];
+        public static readonly List<int> FrostNPC_2 = [SnowmanGangsta, MisterStabby, SnowBalla, IceBat, IceTortoise, UndeadViking, PigronCorruption, PigronHallow, SpikedIceSlime, SnowFlinx, IcyMerman, IceMimic];
+        #endregion
+        #region Beach
+        public static readonly List<int> BeachNPC = [BlueJellyfish, PinkJellyfish, Shark, Crab, GreenJellyfish, SeaSnail, Squid, DukeFishron, Sharkron, Sharkron2];
+        #endregion
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
         {

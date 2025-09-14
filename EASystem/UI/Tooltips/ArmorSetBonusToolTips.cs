@@ -14,6 +14,7 @@ using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.Items.ItemSets.Drakonite.Refined;
 using ElementsAwoken.Content.Items.ItemSets.Puff;
 using ElementsAwoken.Content.Items.ItemSets.Putrid;
+using ElementsAwoken.Content.Items.ItemSets.ToySlime;
 using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
 using System.Collections.Generic;
@@ -65,6 +66,7 @@ public class ArmorSetBonusToolTips : GlobalItem
                 if (item.type == ModContent.ItemType<DragonmailVisage>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.DragonmailVisageSetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<ComfyHood>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.ComfySetBonus) { OverrideColor = Gray });
                 if (item.type == ModContent.ItemType<PutridMask>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.PutridSetBonus) { OverrideColor = Gray });
+                if (item.type == ModContent.ItemType<ToyHelm>()) tooltips.Add(new TooltipLine(Mod, "SetBonus:AwakenedTip", LEA.ToySetBonus) { OverrideColor = Gray });
             }
         }
     }

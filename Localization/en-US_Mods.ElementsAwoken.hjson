@@ -4711,6 +4711,194 @@ Items: {
 		Tooltip: Shoots a cluster of radiant goop
 		DisplayName: Globule Cannon
 	}
+
+	StellariumScepter: {
+		Tooltip: ""
+		DisplayName: Stellarium Scepter
+	}
+
+	StellariumPickaxe: {
+		Tooltip: ""
+		DisplayName: Stellarium Pickaxe
+	}
+
+	StellariumHamaxe: {
+		Tooltip: ""
+		DisplayName: Stellarium Hamaxe
+	}
+
+	StellariumGreatsword: {
+		Tooltip: ""
+		DisplayName: Stellarium Greatsword
+	}
+
+	StellariumBow: {
+		Tooltip: Turns normal arrows into stellar arrows
+		DisplayName: Stellarium Bow
+	}
+
+	ToyWand: {
+		Tooltip: Shoots a cluster of puzzle pieces
+		DisplayName: Toy Wand
+	}
+
+	ToyRobotControlRod: {
+		Tooltip: ""
+		DisplayName: Toy Robot Control Rod
+	}
+
+	ToyPickaxe: {
+		Tooltip: ""
+		DisplayName: Toy Pickaxe
+	}
+
+	ToyLeggings: {
+		Tooltip:
+			'''
+			5% increased movement speed
+			2% increased damage
+			Reduces damage taken by 2%
+			'''
+		DisplayName: Toy Leggings
+	}
+
+	ToyHelm: {
+		Tooltip:
+			'''
+			4% increased critical strike chance
+			Reduces damage taken by 1%
+			'''
+		DisplayName: Toy Helm
+	}
+
+	ToyBreastplate: {
+		Tooltip: Reduces damage taken by 4%
+		DisplayName: Toy Breastplate
+	}
+
+	ToyBow: {
+		Tooltip: Turns normal arrows into suction arrows
+		DisplayName: Toy Bow
+	}
+
+	ToyBlade: {
+		Tooltip:
+			'''
+			The blade has a chance to break into pieces upon hitting an enemy
+			These pieces stay on the ground dealing damage
+			Don't worry, your blade magically restores itself
+			'''
+		DisplayName: Toy Blade
+	}
+
+	GlassHeart: {
+		DisplayName: Fragile Heart
+		Tooltip:
+			'''
+			Causes you to die if you take damage but bosses drop 2x loot
+			Only needs to be in the inventory
+			'''
+	}
+
+	Tomato: {
+		DisplayName: Tomato
+		Tooltip:
+			'''
+			you have a tomato now, what are you going to do with it?
+			probably nothing
+			'''
+	}
+
+	AzanaChibi: {
+		DisplayName: Chaos Tomato
+		Tooltip:
+			'''
+			now you have a slightly angry tomato, what of it?
+			Will be replaced with a different item later
+			'''
+	}
+
+	LilOrangeItem: {
+		Tooltip: Summons a little Orange to follow you
+		DisplayName: Lil' Orange
+	}
+
+	EldritchKeepsake: {
+		Tooltip:
+			'''
+			'A relic composed of four lost souls'
+			Summons a Fallen Stargazer to follow you around
+			'''
+		DisplayName: Eldritch Keepsake
+	}
+
+	ElderSignet: {
+		Tooltip: Summons an ancient stellate to dance around you
+		DisplayName: Elder Signet
+	}
+
+	DynastyWhistle: {
+		Tooltip: Summons a Turbo Doge to follow you
+		DisplayName: Dynasty Whistle
+	}
+
+	Awakener: {
+		Tooltip: Calls upon a ???
+		DisplayName: Awakener
+	}
+
+	VoidCrystal: {
+		DisplayName: Void Crystal
+		Tooltip: Summons a Void Crawler
+	}
+
+	Altar: {
+		DisplayName: Altar
+		Tooltip: Acts as a demon altar
+	}
+
+	AutoDriller: {
+		DisplayName: Auto Driller
+		Tooltip:
+			'''
+			Digs a 3 block wide tunnel underneath it
+			Consumes 3 energy from the nearest player for each dig
+			'''
+	}
+
+	CrystalContainer: {
+		DisplayName: Crystal Container
+		Tooltip: ""
+	}
+
+	CrystalCracker: {
+		DisplayName: Crystal Cracker
+		Tooltip: ""
+	}
+
+	DeadScientist: {
+		DisplayName: Dead Scientist
+		Tooltip: Dead Scientist (UNOBTAINABLE)
+	}
+
+	Desk: {
+		DisplayName: Desk
+		Tooltip: It's a desk... Not much else to say
+	}
+
+	SolarGeneratorIV: {
+		DisplayName: Solar Generator MKIV
+		Tooltip:
+			'''
+			Generates power during the day
+			Generates more power the higher the sun is in the sky
+			'''
+	}
+
+	ChaoticEnergyCapacitor: {
+		DisplayName: Chaotic Energy Capacitors
+		Tooltip: Increases the players maximum energy by 1750
+	}
 }
 
 Tiles: {
@@ -4762,6 +4950,7 @@ Tiles: {
 	Darkstone.MapEntry: Darkstone
 	VoidStone.MapEntry: Void Stone
 	PuffTorch.MapEntry: Torch
+	Altar.MapEntry: Altar
 }
 
 Buffs: {
@@ -5336,6 +5525,46 @@ Buffs: {
 	GlobuleMinionBuff: {
 		Description: It shimmers
 		DisplayName: Starlight Globule
+	}
+
+	ToyRobotBuff: {
+		Description: It winds itself up!
+		DisplayName: Toy Robot
+	}
+
+	BrokenToyBlade: {
+		Description: You cannot use the Toy Blade
+		DisplayName: Broken Toy Blade
+	}
+
+	VoidCrawler: {
+		Description: Don't get cut by the blades when it nuzzles you
+		DisplayName: Void Crawler
+	}
+
+	TurboDogeBuff: {
+		Description: Nyoooom
+		DisplayName: Turbo Doge
+	}
+
+	LilOrange: {
+		Description: A little orange follows you closely
+		DisplayName: Lil Orange
+	}
+
+	CelestialWatcherBuff: {
+		Description: A fallen stargazer stares through you.
+		DisplayName: Fallen Stargazer
+	}
+
+	AwakenedBuff: {
+		Description: It has ascended
+		DisplayName: Woke
+	}
+
+	AncientStellateBuff: {
+		Description: It shimmers brightly
+		DisplayName: Ancient Stellate
 	}
 }
 
@@ -6373,6 +6602,23 @@ Projectiles: {
 	RadiantStarMortar.DisplayName: Radiant Star
 	RadiantStarSmall.DisplayName: Radiant Star
 	RadiantStarThrown.DisplayName: Radiant Star
+	StellarPortal.DisplayName: Stellar Portal
+	StellarMeteor.DisplayName: Stellar Meteor
+	StellariumBolt2.DisplayName: Stellarium Scepter
+	StellariumBolt.DisplayName: Stellarium Scepter
+	StellarArrow.DisplayName: Stellar Arrow
+	SuctionArrow.DisplayName: Suction Arrow
+	ToyRobot.DisplayName: Toy Robot
+	PuzzlePiece.DisplayName: Charge Rifle
+	ChaosTomatoP.DisplayName: Chaos Tomato
+	TomatoP.DisplayName: Tomato
+	AncientStellate.DisplayName: Ancient Stellate
+	CelestialWatcher.DisplayName: Celestial Watcher
+	LilOrange.DisplayName: Lil Orange
+	TurboDoge.DisplayName: Turbo Doge
+	VoidCrawler.DisplayName: Void Crawler
+	WOKE.DisplayName: WOKE
+	AutoDrillBeam.DisplayName: Dubstep Beam
 }
 
 Configs: {
@@ -6744,6 +6990,7 @@ SetBonus: {
 		Increases your max number of minions
 		Minions have a chance to inflict a fast acting poison
 		'''
+	ToySetBonus: You drop lego bricks when hit
 }
 
 Said: {
@@ -6806,6 +7053,17 @@ LooTCondition: {
 	ScourgeLootCondition: Drop chance 1/3
 	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
 	TheEye: if The Eye was killed first
+	BIDRC: Drops after {0} has been defeated
+	BiomeConditions: If you are in a biome {0}
+}
+
+BiomeName: {
+	Desert: Desert
+	Sky: Sky
+	#Выбери одно из двух
+	Hell: Underworld or Hell
+	Frost: Frost
+	Beach: Beach
 }
 
 ShopCondition: {
