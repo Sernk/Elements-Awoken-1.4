@@ -54,7 +54,7 @@ public class DropNPCs : GlobalNPC
         }
         if (SkyNPC.Contains(npc.type))
         {
-            conds = [new BiomeConditions(BiomeConditions.BiomeID.Sky), new NPCSpawnedFromStatue(), new BIDRC(BIDRC.BossType.Destroyer, true), new BIDRC(BIDRC.BossType.Twins, true), new BIDRC(BIDRC.BossType.SkeletronPrime, true)];
+            conds = [new BiomeConditions(BiomeConditions.BiomeID.Sky), new NPCSpawnedFromStatue(), new BIDRC(BIDRC.BossType.AllMechs, true)];
             Awakened = new(new InMultipleConditionByMode(Mode.Awakened, conds));
             Expert = new(new InMultipleConditionByMode(Mode.Expert, conds));
             Normal = new(new InMultipleConditionByMode(Mode.Normal, conds));

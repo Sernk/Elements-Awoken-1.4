@@ -25,6 +25,7 @@ namespace ElementsAwoken.EASystem.Loot
             Destroyer,
             Twins,
             SkeletronPrime,
+            AllMechs,
             Plantera,
             Golem,
             DukeFishron,
@@ -58,6 +59,10 @@ namespace ElementsAwoken.EASystem.Loot
                 ? text
                 : $"Drops before {bossName} has been defeated";
         }
+        public BIDRC(BossType bossType)
+        {
+            boss_Type = bossType;
+        }
         public bool CanDrop(DropAttemptInfo info)
         {
             bool isDefeated = IsBossDefeated();
@@ -87,6 +92,7 @@ namespace ElementsAwoken.EASystem.Loot
                 BossType.Destroyer => NPC.downedMechBoss1,
                 BossType.Twins => NPC.downedMechBoss2,
                 BossType.SkeletronPrime => NPC.downedMechBoss3,
+                BossType.AllMechs => NPC.downedMechBoss1 && NPC.downedMechBoss2 && NPC.downedMechBoss3,
                 BossType.Plantera => NPC.downedPlantBoss,
                 BossType.Golem => NPC.downedGolemBoss,
                 BossType.DukeFishron => NPC.downedFishron,
@@ -127,6 +133,7 @@ namespace ElementsAwoken.EASystem.Loot
         }
         public string GetBossName()
         {
+            string BossName = ModContent.GetInstance<EALocalization>().AllMechs;
             return boss_Type switch
             {
                 BossType.KingSlime => "King Slime",
@@ -139,6 +146,7 @@ namespace ElementsAwoken.EASystem.Loot
                 BossType.Destroyer => Lang.GetNPCNameValue(NPCID.TheDestroyer),
                 BossType.Twins => Lang.GetNPCNameValue(NPCID.Retinazer) + " " + Lang.GetNPCNameValue(NPCID.Spazmatism),
                 BossType.SkeletronPrime => Lang.GetNPCNameValue(NPCID.SkeletronPrime),
+                BossType.AllMechs => string.Format(BossName, Lang.GetNPCNameValue(NPCID.TheDestroyer), Lang.GetNPCNameValue(NPCID.Retinazer), Lang.GetNPCNameValue(NPCID.Spazmatism), Lang.GetNPCNameValue(NPCID.SkeletronPrime)),
                 BossType.Plantera => Lang.GetNPCNameValue(NPCID.Plantera),
                 BossType.Golem => "Golem",
                 BossType.DukeFishron => Lang.GetNPCNameValue(NPCID.DukeFishron),

@@ -231,6 +231,13 @@ namespace ElementsAwoken.EAUtilities
         public string CreditsSetup => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.CreditsSetup");
         public string CreditsSetup1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.CreditsSetup1");
         #endregion
+        #region Statues
+        public string Statues => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Statues");
+        #endregion
+        #region
+        public string Generator => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Generator");
+        public string Generator1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Generator1");
+        #endregion
         public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion
         #region TimeToken
@@ -333,6 +340,7 @@ namespace ElementsAwoken.EAUtilities
         public string AncientWyrmHeadDeath => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AncientWyrmHeadDeath");
         public string TheEyeCondition => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.TheEye");
         public string BIDRC => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.BIDRC");
+        public string AllMechs => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.AllMechs");
         public string BiomeConditions => Language.GetTextValue("Mods.ElementsAwoken.LooTCondition.BiomeConditions");
         #endregion
         #region ShopCondition

@@ -1,12 +1,10 @@
 ﻿using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Items.Tech.Generators
@@ -28,12 +26,6 @@ namespace ElementsAwoken.Content.Items.Tech.Generators
             Item.rare = ModContent.RarityType<EARarity.Rarity12>();
             Item.maxStack = 1;
         }
-
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Solar Generator MKIV");
-            // Tooltip.SetDefault("Generates power during the day\nGenerates more power the higher the sun is in the sky");
-        }
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             Player player = Main.LocalPlayer;
@@ -41,14 +33,16 @@ namespace ElementsAwoken.Content.Items.Tech.Generators
 
             float powerPerSec = (float)producePowerCooldownMax / 60f;
             string ppsString = powerPerSec.ToString("n1");
-            TooltipLine powerOutput = new TooltipLine(Mod, "Elements Awoken:Tooltip", "Power Output: " + productionAmount + " energy every " + ppsString + " seconds");
+            string G = ModContent.GetInstance<EALocalization>().Generator;
+            string GL = String.Format(G, productionAmount, ppsString);
+            TooltipLine powerOutput = new(Mod, "Elements Awoken:Tooltip", GL);
             if (Main.dayTime)
             {
-                powerOutput = new TooltipLine(Mod, "Elements Awoken:Tooltip", "Power Output: " + productionAmount + " energy every " + ppsString + " seconds");
+                powerOutput = new TooltipLine(Mod, "Elements Awoken:Tooltip", GL);
             }
             else if (!Main.dayTime || modPlayer.energy >= modPlayer.maxEnergy)
             {
-                powerOutput = new TooltipLine(Mod, "Elements Awoken:Tooltip", "Inactive");
+                powerOutput = new TooltipLine(Mod, "Elements Awoken:Tooltip", ModContent.GetInstance<EALocalization>().Generator1);
             }
             tooltips.Insert(1, powerOutput);
         }

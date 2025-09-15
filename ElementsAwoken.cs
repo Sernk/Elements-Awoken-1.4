@@ -11,7 +11,6 @@ using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
 using ElementsAwoken.Content.NPCs.Projectiles;
 using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.EAPlayer;
-using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
@@ -24,7 +23,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Security.Cryptography.X509Certificates;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Chat;
@@ -89,6 +87,7 @@ namespace ElementsAwoken
         public static ElementsAwoken instance;
 
         public static bool calamityEnabled;
+        public static bool recipebrowser;
         public static bool bossChecklistEnabled;
         public static bool ancientsAwakenedEnabled;
         public static bool eaMusicEnabled;
@@ -151,7 +150,8 @@ namespace ElementsAwoken
             DateTime now = DateTime.Today;
             if (now.Day == 1 && now.Month == 4) aprilFools = true;
 
-            calamityEnabled = ModLoader.TryGetMod("CalamityMod", out Mod CalamityMod); 
+            calamityEnabled = ModLoader.TryGetMod("CalamityMod", out Mod CalamityMod);
+            recipebrowser = ModLoader.TryGetMod("RecipeBrowser", out Mod RecipeBrowser);
             //bossChecklistEnabled = ModLoader.GetMod("BossChecklist") != null;
             //ancientsAwakenedEnabled = ModLoader.GetMod("AncientsAwakened") != null;
             //eaMusicEnabled = ModLoader.GetMod("EAMusic") != null;

@@ -6,6 +6,7 @@ namespace ElementsAwoken.EAUtilities
     public class EAColors
     {
         public static readonly Color Gray = new(128, 128, 128);
+        public static readonly Color White = Color.White;
         public static readonly Color RarityMagenta = new(239, 65, 255);
         public static readonly Color RarityDarkRed = new(135, 14, 14);
         public static readonly Color RarityDarkBlue = new(22, 68, 132);

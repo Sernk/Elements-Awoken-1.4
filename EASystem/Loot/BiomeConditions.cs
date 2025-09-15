@@ -35,6 +35,10 @@ public class BiomeConditions : IItemDropRuleCondition
         string text = string.Format(ModContent.GetInstance<EALocalization>().BiomeConditions, biomeName);
         this.nearbyDescription = text;
     }
+    public BiomeConditions(BiomeID biomeType)
+    {
+        this.biomeType = biomeType;
+    }
     public string GetBiomeName()
     {
         return biomeType switch

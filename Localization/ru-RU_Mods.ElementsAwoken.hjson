@@ -4567,7 +4567,7 @@ Items: {
 
 	PuffTorch: {
 		Tooltip: DisplayName: Пушистый факел
-		// DisplayName: Puff Torch
+		DisplayName: Puff Torch
 	}
 
 	Puffball: {
@@ -4753,191 +4753,457 @@ Items: {
 	}
 
 	StellariumScepter: {
-		// Tooltip: ""
-		// DisplayName: Stellarium Scepter
+		Tooltip: ""
+		DisplayName: Звездониевый жезл
 	}
 
 	StellariumPickaxe: {
-		// Tooltip: ""
-		// DisplayName: Stellarium Pickaxe
+		Tooltip: ""
+		DisplayName: Звездониевая кирка
 	}
 
 	StellariumHamaxe: {
-		// Tooltip: ""
-		// DisplayName: Stellarium Hamaxe
+		Tooltip: ""
+		DisplayName: Звездониевый молотопор
 	}
 
 	StellariumGreatsword: {
-		// Tooltip: ""
-		// DisplayName: Stellarium Greatsword
+		Tooltip: ""
+		DisplayName: Звездониевый великомеч
 	}
 
 	StellariumBow: {
-		// Tooltip: Turns normal arrows into stellar arrows
-		// DisplayName: Stellarium Bow
+		Tooltip: Превращает обычные стрелы в звёздные стрелы
+		DisplayName: Звездониевый лук
 	}
 
 	ToyWand: {
-		// Tooltip: Shoots a cluster of puzzle pieces
-		// DisplayName: Toy Wand
+		Tooltip: Стреляет кусочками пазлов
+		DisplayName: Игрушечный посох
 	}
 
 	ToyRobotControlRod: {
-		// Tooltip: ""
-		// DisplayName: Toy Robot Control Rod
+		Tooltip: ""
+		DisplayName: Жезл управления игрушечным роботом
 	}
 
 	ToyPickaxe: {
-		// Tooltip: ""
-		// DisplayName: Toy Pickaxe
+		Tooltip: как она вообще блоки копать может???
+		DisplayName: Игрушечная кирка
 	}
 
 	ToyLeggings: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			5% increased movement speed
-			2% increased damage
-			Reduces damage taken by 2%
-			''' */
-		// DisplayName: Toy Leggings
+			Увеличивает скорость передвижения на 5%
+			Увеличивает весь урон на 2%
+			Уменьшает получаемый урон на 2%
+			'''
+		DisplayName: Игрушечные поножи
 	}
 
 	ToyHelm: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			4% increased critical strike chance
-			Reduces damage taken by 1%
-			''' */
-		// DisplayName: Toy Helm
+			Увеличивает весь шанс критического удара на 4%
+			Уменьшает получаемый урон на 1%
+			'''
+		DisplayName: Игрушечный шлем
 	}
 
 	ToyBreastplate: {
-		// Tooltip: Reduces damage taken by 4%
-		// DisplayName: Toy Breastplate
+		Tooltip: Уменьшает получаемый урон на 4%
+		DisplayName: Игрушечный нагрудник
 	}
 
 	ToyBow: {
-		// Tooltip: Turns normal arrows into suction arrows
-		// DisplayName: Toy Bow
+		Tooltip: Превращает обычные стрелы в стрелы-присоски
+		DisplayName: Игрушечный лук
 	}
 
 	ToyBlade: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			The blade has a chance to break into pieces upon hitting an enemy
-			These pieces stay on the ground dealing damage
-			Don't worry, your blade magically restores itself
-			''' */
-		// DisplayName: Toy Blade
+			Меч может сломаться на несколько осколков при ударе по врагу
+			Эти осколки остаются на земле и наносят урон прикасающимся к ним врагам
+			Не ссы, меч каким-то волшебным образом всегда сам восстанавливается после этого.
+			'''
+		DisplayName: Игрушечный меч
 	}
 
 	GlassHeart: {
-		// DisplayName: Fragile Heart
-		/* Tooltip:
+		DisplayName: Хрупкое сердце
+		Tooltip:
 			'''
-			Causes you to die if you take damage but bosses drop 2x loot
-			Only needs to be in the inventory
-			''' */
+			Весь урон становится для тебя фатальным, но зато с боссов падает вдвое больше лута.
+			Работает, находясь в инвентаре
+			'''
 	}
 
 	Tomato: {
-		// DisplayName: Tomato
-		/* Tooltip:
+		DisplayName: П(ом)идор
+		Tooltip:
 			'''
-			you have a tomato now, what are you going to do with it?
-			probably nothing
-			''' */
+			Поздравляю, у тебя теперь есть помидор!
+			Только не стоит у него в названии убирать буквы "ом".
+			'''
 	}
 
 	AzanaChibi: {
-		// DisplayName: Chaos Tomato
-		/* Tooltip:
+		DisplayName: Помидор хаоса
+		Tooltip:
 			'''
-			now you have a slightly angry tomato, what of it?
-			Will be replaced with a different item later
-			''' */
+			Поздравляю, у тебя теперь есть злобный помидор!
+			Потом заменить бы на что-то другое его надо бы, но мне лень, да и мод сдох нахуй уже, поэтому кого это ебёт вообще?
+			- скорее всего, ТхатОнеЖуйсиОранге
+			'''
 	}
 
 	LilOrangeItem: {
-		// Tooltip: Summons a little Orange to follow you
-		// DisplayName: Lil' Orange
+		Tooltip: Призывает апельсинчика, бегающего за тобой (мне похуй, что имя оранжа не переводится, я так захотел).
+		DisplayName: Апельсинчик
 	}
 
 	EldritchKeepsake: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			'A relic composed of four lost souls'
-			Summons a Fallen Stargazer to follow you around
-			''' */
-		// DisplayName: Eldritch Keepsake
+			'Реликвия, скованная из четырёх потерянных душ'
+			Призывает Падшего Звездочёта, дабы составить тебе компанию
+			'''
+		DisplayName: Жуткий сувенир
 	}
 
 	ElderSignet: {
-		// Tooltip: Summons an ancient stellate to dance around you
-		// DisplayName: Elder Signet
+		Tooltip: Призывает звёздочку, танцующую вокруг тебя
+		DisplayName: Старопечать
 	}
 
 	DynastyWhistle: {
-		// Tooltip: Summons a Turbo Doge to follow you
-		// DisplayName: Dynasty Whistle
+		Tooltip: Призывает турбопсину, бегающую рядом с тобой
+		DisplayName: Свисток династии
 	}
 
 	Awakener: {
-		// Tooltip: Calls upon a ???
-		// DisplayName: Awakener
+		Tooltip: Взывает к ???
+		DisplayName: Пробуждатель
 	}
 
 	VoidCrystal: {
-		// DisplayName: Void Crystal
-		// Tooltip: Summons a Void Crawler
+		DisplayName: Кристалл Пустоты
+		Tooltip: Призывает пустолзуна
 	}
 
 	Altar: {
-		// DisplayName: Altar
-		// Tooltip: Acts as a demon altar
+		DisplayName: Алтарь
+		Tooltip: Работает также, как и демонический/кровавый алтарь
 	}
 
 	AutoDriller: {
-		// DisplayName: Auto Driller
-		/* Tooltip:
+		DisplayName: Автобур
+		Tooltip:
 			'''
-			Digs a 3 block wide tunnel underneath it
-			Consumes 3 energy from the nearest player for each dig
-			''' */
+			Копает туннель шириной в 3 блока под собой
+			При каждом вскапывании расходует 3 энергии у любого ближайшего игрока
+			'''
 	}
 
 	CrystalContainer: {
-		// DisplayName: Crystal Container
-		// Tooltip: ""
+		DisplayName: Кристальный ящик
+		Tooltip: ""
 	}
 
 	CrystalCracker: {
-		// DisplayName: Crystal Cracker
-		// Tooltip: ""
+		DisplayName: Открыстатель
+		Tooltip: ""
 	}
 
 	DeadScientist: {
-		// DisplayName: Dead Scientist
-		// Tooltip: Dead Scientist (UNOBTAINABLE)
+		DisplayName: Труп учёного
+		Tooltip: нахуя было его портировать, если это недоступный предмет?
 	}
 
 	Desk: {
-		// DisplayName: Desk
-		// Tooltip: It's a desk... Not much else to say
+		DisplayName: Компьютерный стол
+		Tooltip: Ну, компьютерный стол как компьютерный стол... Чё тут ещё скажешь?
 	}
 
 	SolarGeneratorIV: {
-		// DisplayName: Solar Generator MKIV
-		/* Tooltip:
+		DisplayName: Солнечная батарея MKIV
+		Tooltip:
 			'''
-			Generates power during the day
-			Generates more power the higher the sun is in the sky
-			''' */
+			Генерирует энергию днём
+			Чем выше солнце в небе, тем больше энергии она генерирует
+			'''
 	}
 
 	ChaoticEnergyCapacitor: {
-		// DisplayName: Chaotic Energy Capacitors
-		// Tooltip: Increases the players maximum energy by 1750
+		DisplayName: Конденсаторы хаотической энергии
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 1750.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
+	}
+
+	EnergyPickup: {
+		// Tooltip: ""
+		// DisplayName: Battery
+	}
+
+	LabLight: {
+		// Tooltip: ""
+		// DisplayName: Lab Light (Broken)
+	}
+
+	LabBench: {
+		// Tooltip: ""
+		// DisplayName: Lab Bench
+	}
+
+	ItemMagnetTile: {
+		/* Tooltip:
+			'''
+			Sucks nearby items towards it
+			If there is a chest next to it, items will be placed in the chest
+			''' */
+		// DisplayName: Item Magnet
+	}
+
+	GoldenDucky: {
+		// Tooltip: It's cute
+		// DisplayName: Golden Ducky
+	}
+
+	FirebrickItem: {
+		// Tooltip: ""
+		// DisplayName: Firebrick
+	}
+
+	LabLightFunctional: {
+		// DisplayName: Lab Light
+		// Tooltip: ""
+	}
+
+	OfficeChair: {
+		// DisplayName: Office Chair
+		// Tooltip: Don't sit down or you wont stop swiveling
+	}
+
+	PowerCell: {
+		// DisplayName: Power Cell
+		// Tooltip: ""
+	}
+
+	Putrifier: {
+		// DisplayName: Putrifier
+		/* Tooltip:
+			'''
+			Throw iron ore and sun fragments in
+			Dont throw too many in at once or it will fully digest it
+			''' */
+	}
+
+	ScorpionPod: {
+		// DisplayName: Scorpion Pod
+		// Tooltip: ""
+	}
+
+	ScorpionPodFull: {
+		// DisplayName: Scorpion Pod Full
+		// Tooltip: ""
+	}
+
+	ScorpionPodLarge: {
+		// DisplayName: Scorpion Pod Large
+		// Tooltip: ""
+	}
+
+	StatMirror: {
+		// DisplayName: Stat Mirror
+		// Tooltip: ""
+	}
+
+	TruffleCage: {
+		// DisplayName: Truffle Cage
+		// Tooltip: ""
+	}
+
+	DarkstoneDoor: {
+		// Tooltip: ""
+		// DisplayName: Darkstone Door
+	}
+
+	DarkstoneChandelier: {
+		// Tooltip: ""
+		// DisplayName: Darkstone Chandelier
+	}
+
+	DarkstoneChair: {
+		// Tooltip: ""
+		// DisplayName: Darkstone Chair
+	}
+
+	DarkstoneCandle: {
+		// Tooltip: ""
+		// DisplayName: Darkstone Candle
+	}
+
+	DarkstoneBrick: {
+		// Tooltip: ""
+		// DisplayName: Darkstone Brick
+	}
+
+	DarkstoneBed: {
+		// Tooltip: ""
+		// DisplayName: Darkstone Bed
+	}
+
+	DarkstoneLamp: {
+		// DisplayName: Darkstone Lamp
+		// Tooltip: ""
+	}
+
+	DarkstoneLantern: {
+		// DisplayName: Darkstone Lantern
+		// Tooltip: ""
+	}
+
+	DarkstonePiano: {
+		// DisplayName: Darkstone Piano
+		// Tooltip: ""
+	}
+
+	DarkstonePlatform: {
+		// DisplayName: Darkstone Platform
+		// Tooltip: ""
+	}
+
+	DarkstoneSofa: {
+		// DisplayName: Darkstone Sofa
+		// Tooltip: ""
+	}
+
+	DarkstoneTable: {
+		// DisplayName: Darkstone Table
+		// Tooltip: ""
+	}
+
+	DarkstoneWorkBench: {
+		// DisplayName: Darkstone Work Bench
+		// Tooltip: ""
+	}
+
+	CalamityBannerItem: {
+		// DisplayName: Calamity Banner
+		// Tooltip: Increases spawn rates by 7.5x
+	}
+
+	ChaosBannerItem: {
+		// DisplayName: Chaos Banner
+		// Tooltip: Increases spawn rates by 5x
+	}
+
+	HavocBannerItem: {
+		// DisplayName: Havoc Banner
+		// Tooltip: Increases spawn rates by 2x
+	}
+
+	AmadisBuffStatue: {
+		// DisplayName: Statue of the Accursed
+		/* Tooltip:
+			'''
+			Odd, you feel your lifeforce lessened, but your melee and movement abilities enhanced.
+			15% increased melee damage and speed
+			30% reduced health
+			''' */
+	}
+
+	AmadisStatue: {
+		// DisplayName: Amadis Statue
+		// Tooltip: Statue representing AmadisLFE, although the character shown is called Randal, so he says.
+	}
+
+	BurstBuffStatue: {
+		// DisplayName: Statue of the Story Spinner
+		/* Tooltip:
+			'''
+			I am not really creative with tooltips, y'know. I do not even know if I exist.
+			Maybe I am even just an illusion? Oh my god, my whole life was a lie!
+			15% increased ranged damage
+			15% decreased movement speed
+			''' */
+	}
+
+	BurstStatue: {
+		// DisplayName: Burst Statue
+		// Tooltip: The statue of the one who spins the story of this mod...
+	}
+
+	GenihWatBuffStatue: {
+		// DisplayName: Vulgar Bard Statue
+		/* Tooltip:
+			'''
+			'Yes, THIS is what I want to look like when you carve my statue to look like!
+			NO, I don't CARE how hard it is to 'sprite' or whatever!!' - Da Gweat Genih Wat
+			15% increased magic damage and increased Mana Regen by 5
+			Enemies are more aggressive and spawn more frequently
+			Swearing can be disabled by right clicking the statue
+			''' */
+	}
+
+	GenihWatStatue: {
+		// DisplayName: GenihWat Statue
+		/* Tooltip:
+			'''
+			In honor of the 'WEESH GRUNTING GENIH WAT'...whatever that means
+			Few know what it actually looks like
+			''' */
+	}
+
+	OiniteBuffStatue: {
+		// DisplayName: Balancer Statue
+		/* Tooltip:
+			'''
+			Fun isn't something one considers when balancing the universe. But this... does put a smile on my face.
+			Doubles all buff and debuff duration
+			''' */
+	}
+
+	OiniteStatue: {
+		// DisplayName: Oinite Statue
+		// Tooltip: Why does this one look different from the others?
+	}
+
+	RaniplaBuffStatue: {
+		// DisplayName: Arctic Roamer Statue
+		/* Tooltip:
+			'''
+			Underground, overground, Wombling free. The Wombles of Wimbledon Common are we.
+			25% increased speed
+			15% increased summon damage
+			25% reduced jump height and wingtime
+			''' */
+	}
+
+	RaniplaStatue: {
+		// DisplayName: Ranipla Statue
+		// Tooltip: How do I give my character long hair without making it look like a &^$%#*! trap!?
+	}
+
+	ThatOneJuicyOrangeBuffStatue: {
+		// DisplayName: Golden ThatOneJuicyOrange_ Statue
+		/* Tooltip:
+			'''
+			Definitely narcissistic
+			15% increased damage
+			50% increased damage taken
+			Increases the cooldown of healing potions
+			''' */
+	}
+
+	ThatOneJuicyOrangeStatue: {
+		// DisplayName: ThatOneJuicyOrange_ Statue
+		// Tooltip: Slightly narcissistic
 	}
 }
 
@@ -4990,7 +5256,41 @@ Tiles: {
 	Darkstone.MapEntry: Мракамень
 	VoidStone.MapEntry: Пустокамень
 	PuffTorch.MapEntry: Факел
-	// Altar.MapEntry: Altar
+	Altar.MapEntry: Алтарь
+	// Firebrick.MapEntry: Voidite
+	// Putrifier.MapEntry: Putrifier
+	// LabLightFunctional.MapEntry: Lab Light Functional
+	// OfficeChairPlayer.MapEntry: Office Chair
+
+	StatMirror: {
+		Stat: {
+			// Melee: Melee boosts: Damage: {0} Crit chance: {1}%
+			// Magic: Magic boosts: Damage: {0} Crit chance: {1}%
+			// Ranged: Ranged boosts: Damage: {0} Crit chance: {1}%
+			// Thrown: Thrown boosts: Damage: {0} Crit chance: {1}%
+			// Summoner: Summoner boosts: Damage: {0}
+			// MaxMinions: Max amount of: Minions: {0} Sentries: {1}
+			// SwingSpeed: Swing speed: {0}%
+			// MovementSpeed: Movement speed: {0}%
+			// DamageReduction: Damage reduction: {0}%
+			// MAXHP: Max life: {0}
+			// MAXMP: Max mana: {0}
+			// HPRegen: Current life regen: {0}
+		}
+	}
+
+	// ScorpionPodFull.MapEntry: Scorpion Pod Full
+	// TruffleCageTile.MapEntry: Truffle Cage Tile
+	// DarkstoneWorkBench.MapEntry: Darkstone Work Bench
+	// DarkstoneTable.MapEntry: Darkstone Table
+	// DarkstoneSofa.MapEntry: Darkstone Sofa
+	// DarkstoneLantern.MapEntry: Darkstone Lantern
+	// DarkstoneDoorOpen.MapEntry: Darkstone Door
+	// DarkstoneDoorClosed.MapEntry: Darkstone Door
+	// DarkstoneChandelier.MapEntry: Darkstone Chandelier
+	// DarkstoneChair.MapEntry: Darkstone Chair
+	// DarkstoneCandle.MapEntry: Darkstone Candle
+	// DarkstoneBed.MapEntry: Darkstone Bed
 }
 
 Buffs: {
@@ -5568,43 +5868,91 @@ Buffs: {
 	}
 
 	ToyRobotBuff: {
-		// Description: It winds itself up!
-		// DisplayName: Toy Robot
+		Description: Не требует ручной заводки!
+		DisplayName: Игрушечный робот
 	}
 
 	BrokenToyBlade: {
-		// Description: You cannot use the Toy Blade
-		// DisplayName: Broken Toy Blade
+		Description: Игрушечный меч пока нельзя использовать
+		DisplayName: Сломанный игрушечный меч
 	}
 
 	VoidCrawler: {
-		// Description: Don't get cut by the blades when it nuzzles you
-		// DisplayName: Void Crawler
+		Description: Смотри не порежься о его лезвия, когда он резвится вокруг тебя
+		DisplayName: Пустолзун
 	}
 
 	TurboDogeBuff: {
-		// Description: Nyoooom
-		// DisplayName: Turbo Doge
+		Description: Интересно, не тот самый ДОГЕ, случайно?
+		DisplayName: Турбопсина
 	}
 
 	LilOrange: {
-		// Description: A little orange follows you closely
-		// DisplayName: Lil Orange
+		Description: Апельсинчик следует за тобой по пятам
+		DisplayName: Апельсинчик
 	}
 
 	CelestialWatcherBuff: {
-		// Description: A fallen stargazer stares through you.
-		// DisplayName: Fallen Stargazer
+		Description: Он как будто тебе прямо в душу смотрит...
+		DisplayName: Падший Звездочёт
 	}
 
 	AwakenedBuff: {
-		// Description: It has ascended
-		// DisplayName: Woke
+		Description: Оно не просто взошло, а поразило почти всё, к сожалению...
+		DisplayName: Воук
 	}
 
 	AncientStellateBuff: {
-		// Description: It shimmers brightly
-		// DisplayName: Ancient Stellate
+		Description: Ярко сияет.
+		DisplayName: Древняя звёздочка
+	}
+
+	StatueBuffAmadis: {
+		// DisplayName: Amadis Presence
+		/* Description:
+			'''
+			15% increased melee damage and speed
+			30% reduced health
+			''' */
+	}
+
+	StatueBuffBurst: {
+		// DisplayName: Burst Presence
+		/* Description:
+			'''
+			15% increased ranged damage
+			15% decreased movement speed
+			''' */
+	}
+
+	StatueBuffOinite: {
+		// DisplayName: Oinite's Presence
+		/* Description:
+			'''
+			Perfectly balanced, like all things should be
+			Doubles all buff and debuff duration
+			''' */
+	}
+
+	StatueBuffOrange: {
+		// DisplayName: ThatOneJuicyOrange_ Presence
+		/* Description:
+			'''
+			15% increased damage
+			50% increased damage taken
+			Increases the cooldown of healing potions
+			''' */
+	}
+
+	StatueBuffRanipla: {
+		// DisplayName: Ranipla's Presence
+		/* Description:
+			'''
+			Worth is irrelevant, just do it.
+			25% increased speed
+			15% increased summon damage
+			25% reduced jump height and wingtime
+			''' */
 	}
 }
 
@@ -6642,23 +6990,23 @@ Projectiles: {
 	RadiantStarMortar.DisplayName: Лучезвезда миномёта
 	RadiantStarSmall.DisplayName: Малая лучезвезда
 	RadiantStarThrown.DisplayName: Запущенная лучезвезда
-	// StellarPortal.DisplayName: Stellar Portal
-	// StellarMeteor.DisplayName: Stellar Meteor
-	// StellariumBolt2.DisplayName: Stellarium Scepter
-	// StellariumBolt.DisplayName: Stellarium Scepter
-	// StellarArrow.DisplayName: Stellar Arrow
-	// SuctionArrow.DisplayName: Suction Arrow
-	// ToyRobot.DisplayName: Toy Robot
-	// PuzzlePiece.DisplayName: Charge Rifle
-	// ChaosTomatoP.DisplayName: Chaos Tomato
-	// TomatoP.DisplayName: Tomato
-	// AncientStellate.DisplayName: Ancient Stellate
-	// CelestialWatcher.DisplayName: Celestial Watcher
-	// LilOrange.DisplayName: Lil Orange
-	// TurboDoge.DisplayName: Turbo Doge
-	// VoidCrawler.DisplayName: Void Crawler
-	// WOKE.DisplayName: WOKE
-	// AutoDrillBeam.DisplayName: Dubstep Beam
+	StellarPortal.DisplayName: Зведортал
+	StellarMeteor.DisplayName: Звездетеорит
+	StellariumBolt2.DisplayName: Звездонитовый выстрел2
+	StellariumBolt.DisplayName: Звездонитовый выстрел
+	StellarArrow.DisplayName: Звёздострела
+	SuctionArrow.DisplayName: Отсострела
+	ToyRobot.DisplayName: Игрушечный робот
+	PuzzlePiece.DisplayName: Кусочек пазла
+	ChaosTomatoP.DisplayName: Проджектайл хаотомата
+	TomatoP.DisplayName: Проджектайл п ом идора
+	AncientStellate.DisplayName: Древняя звёздочка
+	CelestialWatcher.DisplayName: Звездовидец
+	LilOrange.DisplayName: Апельсинчик
+	TurboDoge.DisplayName: Турбопёсик
+	VoidCrawler.DisplayName: Пустолзун
+	WOKE.DisplayName: Воук-пропаганда
+	AutoDrillBeam.DisplayName: Луч автодрели
 }
 
 Configs: {
@@ -6685,6 +7033,8 @@ Config: {
 	Reduces: Сильно ограничивает количество частиц, которые могут существовать одновременно
 	EnterDebug: Режим дебага
 	Shows: вполне возможно, что эта хуйня вообще в принципе не работает.
+	// RecipeBrows: Recipe Browser
+	// RecipeBrowsTooltips: Shows hints for some items
 }
 
 Biomes: {
@@ -6906,6 +7256,9 @@ Tooltips: {
 	InfinityGauntlet12: Пустотный камень: Позволяет убить половину обычных врагов на экране, если их максимальное здоровье ниже 10000
 	CreditsSetup: Титры выключены
 	CreditsSetup1: Титры включены
+	// Generator: Power Output: {0} energy every {1} seconds
+	// Generator1: Inactive
+	// Statues: You cant stack buff statues!
 }
 
 AccInfo: {
@@ -7031,7 +7384,7 @@ SetBonus: {
 		Увеличивает количество миньон-слотов
 		Атаки миньонов имеют шанс отравить врагов сильнодействующим ядом
 		'''
-	// ToySetBonus: You drop lego bricks when hit
+	ToySetBonus: При получении урона из тебя падают кубики лего (копирайт инфринжемент бай зэ вэй)
 }
 
 Said: {
@@ -7094,17 +7447,18 @@ LooTCondition: {
 	ScourgeLootCondition: Шанс дропа 1/3
 	AncientWyrmHeadDeath: Если в битве первым был убит Древний Змей
 	TheEye: Если в битве первым было убито Око
-	// BIDRC: Drops after {0} has been defeated
-	// BiomeConditions: If you are in a biome {0}
+	BIDRC: Падает, если {0} был побеждён(а)
+	// AllMechs: Drops after {0}, {1}, {2} and {3} have been defeated
+	BiomeConditions: Если ты находишься в {0}
 }
 
 BiomeName: {
-	// Desert: Desert
-	// Sky: Sky
+	Desert: Пустыня
+	Sky: Небеса
 	#Выбери одно из двух
-	// Hell: Underworld or Hell
-	// Frost: Frost
-	// Beach: Beach
+	Hell: Ад
+	Frost: Тундра
+	Beach: Океан
 }
 
 ShopCondition: {
@@ -7156,32 +7510,32 @@ Credits: {
 
 SanityBook: {
 	SanityBookOnCraft: Этой книгой можно воспользоваться только в Пробуждённом режиме
-	SanityRegens: Восстанавливает:
-	SanityDrains: Теряет:
+	SanityRegens: Восстанавливаешь от:
+	SanityDrains: Теряешь от:
 }
 
 Sanity: {
 	AwakenedPlayer: {
 		Sanity: {
-			Sanity18: Копает
-			Sanity17: В городе
-			Sanity16: Пустоний
-			Sanity15: Рядом с {0}
-			Sanity14: Рассадник
-			Sanity13: Подсолнух
-			Sanity12: Светлячок в банке
-			Sanity11: Камин
-			Sanity10: Костёр
-			Sanity9: Милая штука
-			Sanity8: Питомец
-			Sanity7: Копает слишком долго
-			Sanity6: В небесах
-			Sanity5: В Аду
-			Sanity4: Рассвет Пустоты
-			Sanity3: Новолуние
-			Sanity2: Кровавая луна
-			Sanity1: Тьма
-			Sanity: Осталось мало здоровья
+			Sanity18: Копания
+			Sanity17: Нахождения в городе
+			Sanity16: Пустония
+			Sanity15: Нахождения рядом с {0}
+			Sanity14: Рядом с рассадой
+			Sanity13: Подсолнухв
+			Sanity12: Светлячков в банке
+			Sanity11: Камина
+			Sanity10: Костра
+			Sanity9: Милого объекта
+			Sanity8: Наличия питомца
+			Sanity7: Слишком долгого копания
+			Sanity6: Нахождения в небесах
+			Sanity5: Нахождения в аду
+			Sanity4: Рассвета Пустоты
+			Sanity3: Новолуния
+			Sanity2: Кровавой луны
+			Sanity1: Нахождения во тьме
+			Sanity: Низкого здоровья
 		}
 	}
 }
@@ -7203,7 +7557,7 @@ MyPlayerLocalization: {
 			Crimson: Кримзон
 			andCrimson: и Кримзон
 			Corruption: Искажение
-			NE: Нету зла
+			NE: Нет зла
 		}
 
 		MasterSwordCharge.Discharged: Разряжен

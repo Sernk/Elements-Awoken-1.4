@@ -1,5 +1,5 @@
 displayName = Elements Awoken
 author = ThatOneJuicyOrange_ , Gs_qs
 version = 0.1
-weakReferences = CalamityMod
+weakReferences = CalamityMod,RecipeBrowser
 modReferences = Luminance

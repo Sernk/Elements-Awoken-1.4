@@ -1,3 +1,4 @@
+using ElementsAwoken.EASystem.Loot;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -22,9 +23,6 @@ namespace ElementsAwoken.Content.Items.Essence
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(8, 5));
             ItemID.Sets.AnimatesAsSoul[Type] = true;
         }
-        public override Color? GetAlpha(Color lightColor)
-        {
-            return Color.White;
-        }
+        public override Color? GetAlpha(Color lightColor) => Color.White;
     }
 }

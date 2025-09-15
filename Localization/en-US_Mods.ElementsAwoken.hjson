@@ -4899,6 +4899,267 @@ Items: {
 		DisplayName: Chaotic Energy Capacitors
 		Tooltip: Increases the players maximum energy by 1750
 	}
+
+	EnergyPickup: {
+		Tooltip: ""
+		DisplayName: Battery
+	}
+
+	LabLight: {
+		Tooltip: ""
+		DisplayName: Lab Light (Broken)
+	}
+
+	LabBench: {
+		Tooltip: ""
+		DisplayName: Lab Bench
+	}
+
+	ItemMagnetTile: {
+		Tooltip:
+			'''
+			Sucks nearby items towards it
+			If there is a chest next to it, items will be placed in the chest
+			'''
+		DisplayName: Item Magnet
+	}
+
+	GoldenDucky: {
+		Tooltip: It's cute
+		DisplayName: Golden Ducky
+	}
+
+	FirebrickItem: {
+		Tooltip: ""
+		DisplayName: Firebrick
+	}
+
+	LabLightFunctional: {
+		DisplayName: Lab Light
+		Tooltip: ""
+	}
+
+	OfficeChair: {
+		DisplayName: Office Chair
+		Tooltip: Don't sit down or you wont stop swiveling
+	}
+
+	PowerCell: {
+		DisplayName: Power Cell
+		Tooltip: ""
+	}
+
+	Putrifier: {
+		DisplayName: Putrifier
+		Tooltip:
+			'''
+			Throw iron ore and sun fragments in
+			Dont throw too many in at once or it will fully digest it
+			'''
+	}
+
+	ScorpionPod: {
+		DisplayName: Scorpion Pod
+		Tooltip: ""
+	}
+
+	ScorpionPodFull: {
+		DisplayName: Scorpion Pod Full
+		Tooltip: ""
+	}
+
+	ScorpionPodLarge: {
+		DisplayName: Scorpion Pod Large
+		Tooltip: ""
+	}
+
+	StatMirror: {
+		DisplayName: Stat Mirror
+		Tooltip: ""
+	}
+
+	TruffleCage: {
+		DisplayName: Truffle Cage
+		Tooltip: ""
+	}
+
+	DarkstoneDoor: {
+		Tooltip: ""
+		DisplayName: Darkstone Door
+	}
+
+	DarkstoneChandelier: {
+		Tooltip: ""
+		DisplayName: Darkstone Chandelier
+	}
+
+	DarkstoneChair: {
+		Tooltip: ""
+		DisplayName: Darkstone Chair
+	}
+
+	DarkstoneCandle: {
+		Tooltip: ""
+		DisplayName: Darkstone Candle
+	}
+
+	DarkstoneBrick: {
+		Tooltip: ""
+		DisplayName: Darkstone Brick
+	}
+
+	DarkstoneBed: {
+		Tooltip: ""
+		DisplayName: Darkstone Bed
+	}
+
+	DarkstoneLamp: {
+		DisplayName: Darkstone Lamp
+		Tooltip: ""
+	}
+
+	DarkstoneLantern: {
+		DisplayName: Darkstone Lantern
+		Tooltip: ""
+	}
+
+	DarkstonePiano: {
+		DisplayName: Darkstone Piano
+		Tooltip: ""
+	}
+
+	DarkstonePlatform: {
+		DisplayName: Darkstone Platform
+		Tooltip: ""
+	}
+
+	DarkstoneSofa: {
+		DisplayName: Darkstone Sofa
+		Tooltip: ""
+	}
+
+	DarkstoneTable: {
+		DisplayName: Darkstone Table
+		Tooltip: ""
+	}
+
+	DarkstoneWorkBench: {
+		DisplayName: Darkstone Work Bench
+		Tooltip: ""
+	}
+
+	CalamityBannerItem: {
+		DisplayName: Calamity Banner
+		Tooltip: Increases spawn rates by 7.5x
+	}
+
+	ChaosBannerItem: {
+		DisplayName: Chaos Banner
+		Tooltip: Increases spawn rates by 5x
+	}
+
+	HavocBannerItem: {
+		DisplayName: Havoc Banner
+		Tooltip: Increases spawn rates by 2x
+	}
+
+	AmadisBuffStatue: {
+		DisplayName: Statue of the Accursed
+		Tooltip:
+			'''
+			Odd, you feel your lifeforce lessened, but your melee and movement abilities enhanced.
+			15% increased melee damage and speed
+			30% reduced health
+			'''
+	}
+
+	AmadisStatue: {
+		DisplayName: Amadis Statue
+		Tooltip: Statue representing AmadisLFE, although the character shown is called Randal, so he says.
+	}
+
+	BurstBuffStatue: {
+		DisplayName: Statue of the Story Spinner
+		Tooltip:
+			'''
+			I am not really creative with tooltips, y'know. I do not even know if I exist.
+			Maybe I am even just an illusion? Oh my god, my whole life was a lie!
+			15% increased ranged damage
+			15% decreased movement speed
+			'''
+	}
+
+	BurstStatue: {
+		DisplayName: Burst Statue
+		Tooltip: The statue of the one who spins the story of this mod...
+	}
+
+	GenihWatBuffStatue: {
+		DisplayName: Vulgar Bard Statue
+		Tooltip:
+			'''
+			'Yes, THIS is what I want to look like when you carve my statue to look like!
+			NO, I don't CARE how hard it is to 'sprite' or whatever!!' - Da Gweat Genih Wat
+			15% increased magic damage and increased Mana Regen by 5
+			Enemies are more aggressive and spawn more frequently
+			Swearing can be disabled by right clicking the statue
+			'''
+	}
+
+	GenihWatStatue: {
+		DisplayName: GenihWat Statue
+		Tooltip:
+			'''
+			In honor of the 'WEESH GRUNTING GENIH WAT'...whatever that means
+			Few know what it actually looks like
+			'''
+	}
+
+	OiniteBuffStatue: {
+		DisplayName: Balancer Statue
+		Tooltip:
+			'''
+			Fun isn't something one considers when balancing the universe. But this... does put a smile on my face.
+			Doubles all buff and debuff duration
+			'''
+	}
+
+	OiniteStatue: {
+		DisplayName: Oinite Statue
+		Tooltip: Why does this one look different from the others?
+	}
+
+	RaniplaBuffStatue: {
+		DisplayName: Arctic Roamer Statue
+		Tooltip:
+			'''
+			Underground, overground, Wombling free. The Wombles of Wimbledon Common are we.
+			25% increased speed
+			15% increased summon damage
+			25% reduced jump height and wingtime
+			'''
+	}
+
+	RaniplaStatue: {
+		DisplayName: Ranipla Statue
+		Tooltip: How do I give my character long hair without making it look like a &^$%#*! trap!?
+	}
+
+	ThatOneJuicyOrangeBuffStatue: {
+		DisplayName: Golden ThatOneJuicyOrange_ Statue
+		Tooltip:
+			'''
+			Definitely narcissistic
+			15% increased damage
+			50% increased damage taken
+			Increases the cooldown of healing potions
+			'''
+	}
+
+	ThatOneJuicyOrangeStatue: {
+		DisplayName: ThatOneJuicyOrange_ Statue
+		Tooltip: Slightly narcissistic
+	}
 }
 
 Tiles: {
@@ -4951,6 +5212,40 @@ Tiles: {
 	VoidStone.MapEntry: Void Stone
 	PuffTorch.MapEntry: Torch
 	Altar.MapEntry: Altar
+	Firebrick.MapEntry: Voidite
+	Putrifier.MapEntry: Putrifier
+	LabLightFunctional.MapEntry: Lab Light Functional
+	OfficeChairPlayer.MapEntry: Office Chair
+
+	StatMirror: {
+		Stat: {
+			Melee: Melee boosts: Damage: {0} Crit chance: {1}%
+			Magic: Magic boosts: Damage: {0} Crit chance: {1}%
+			Ranged: Ranged boosts: Damage: {0} Crit chance: {1}%
+			Thrown: Thrown boosts: Damage: {0} Crit chance: {1}%
+			Summoner: Summoner boosts: Damage: {0}
+			MaxMinions: Max amount of: Minions: {0} Sentries: {1}
+			SwingSpeed: Swing speed: {0}%
+			MovementSpeed: Movement speed: {0}%
+			DamageReduction: Damage reduction: {0}%
+			MAXHP: Max life: {0}
+			MAXMP: Max mana: {0}
+			HPRegen: Current life regen: {0}
+		}
+	}
+
+	ScorpionPodFull.MapEntry: Scorpion Pod Full
+	TruffleCageTile.MapEntry: Truffle Cage Tile
+	DarkstoneWorkBench.MapEntry: Darkstone Work Bench
+	DarkstoneTable.MapEntry: Darkstone Table
+	DarkstoneSofa.MapEntry: Darkstone Sofa
+	DarkstoneLantern.MapEntry: Darkstone Lantern
+	DarkstoneDoorOpen.MapEntry: Darkstone Door
+	DarkstoneDoorClosed.MapEntry: Darkstone Door
+	DarkstoneChandelier.MapEntry: Darkstone Chandelier
+	DarkstoneChair.MapEntry: Darkstone Chair
+	DarkstoneCandle.MapEntry: Darkstone Candle
+	DarkstoneBed.MapEntry: Darkstone Bed
 }
 
 Buffs: {
@@ -5565,6 +5860,54 @@ Buffs: {
 	AncientStellateBuff: {
 		Description: It shimmers brightly
 		DisplayName: Ancient Stellate
+	}
+
+	StatueBuffAmadis: {
+		DisplayName: Amadis Presence
+		Description:
+			'''
+			15% increased melee damage and speed
+			30% reduced health
+			'''
+	}
+
+	StatueBuffBurst: {
+		DisplayName: Burst Presence
+		Description:
+			'''
+			15% increased ranged damage
+			15% decreased movement speed
+			'''
+	}
+
+	StatueBuffOinite: {
+		DisplayName: Oinite's Presence
+		Description:
+			'''
+			Perfectly balanced, like all things should be
+			Doubles all buff and debuff duration
+			'''
+	}
+
+	StatueBuffOrange: {
+		DisplayName: ThatOneJuicyOrange_ Presence
+		Description:
+			'''
+			15% increased damage
+			50% increased damage taken
+			Increases the cooldown of healing potions
+			'''
+	}
+
+	StatueBuffRanipla: {
+		DisplayName: Ranipla's Presence
+		Description:
+			'''
+			Worth is irrelevant, just do it.
+			25% increased speed
+			15% increased summon damage
+			25% reduced jump height and wingtime
+			'''
 	}
 }
 
@@ -6645,6 +6988,8 @@ Config: {
 	Reduces: Reduces the amount of dust created by NPCs, projectiles and more (WARNING: only applied to certain objects)
 	EnterDebug: Enter Debug Mode
 	Shows: Shows information for testing (Mainly for Mod Devs)
+	RecipeBrows: Recipe Browser
+	RecipeBrowsTooltips: Shows hints for some items
 }
 
 Biomes: {
@@ -6865,6 +7210,9 @@ Tooltips: {
 	InfinityGauntlet12: Void: Kills half of all non boss monsters with under 10000 life
 	CreditsSetup: credits off
 	CreditsSetup1: credits on
+	Generator: Power Output: {0} energy every {1} seconds
+	Generator1: Inactive
+	Statues: You cant stack buff statues!
 }
 
 AccInfo: {
@@ -7054,6 +7402,7 @@ LooTCondition: {
 	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
 	TheEye: if The Eye was killed first
 	BIDRC: Drops after {0} has been defeated
+	AllMechs: Drops after {0}, {1}, {2} and {3} have been defeated
 	BiomeConditions: If you are in a biome {0}
 }
 

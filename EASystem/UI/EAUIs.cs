@@ -126,16 +126,8 @@ namespace ElementsAwoken.EASystem.UI
                     var BarState = new LegacyGameInterfaceLayer("ElementsAwoken: UI",
                         delegate
                         {
-                            if (ModContent.GetInstance<Config>().resourceBars)
-                            {
-                                ElementsAwoken.DrawEnergyBar();
-                                ElementsAwoken.DrawInsanityBar();
-                            }
-                            else
-                            {
-                                ElementsAwoken.DrawEnergyUI();
-                                ElementsAwoken.DrawInsanityUI();
-                            }
+                            ElementsAwoken.DrawEnergyUI();
+                            ElementsAwoken.DrawInsanityUI();
                             return true;
                         },
                         InterfaceScaleType.UI);

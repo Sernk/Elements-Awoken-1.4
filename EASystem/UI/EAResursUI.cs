@@ -73,7 +73,13 @@ namespace ElementsAwoken.EASystem.UI
         public override void PostDrawResourceDisplay(PlayerStatsSnapshot snapshot, IPlayerResourcesDisplaySet displaySet, bool drawingLife, Color textColor, bool drawText)
         {
             Player player = Main.LocalPlayer;
-            if (!drawingLife || player.ghost) return;
+            AwakenedPlayer awakenedPlayer = player.GetModPlayer<AwakenedPlayer>();
+            PlayerEnergy energyPlayer = player.GetModPlayer<PlayerEnergy>();
+            EALocalization EALocalization = ModContent.GetInstance<EALocalization>();
+
+            DynamicSpriteFont font = FontAssets.MouseText.Value;
+
+            if (player.ghost || !drawingLife) return;
 
             Vector2 basePosition = displaySet.NameKey switch
             {
@@ -85,125 +91,122 @@ namespace ElementsAwoken.EASystem.UI
                 "HorizontalBars" => new Vector2(Main.screenWidth - 60, 24),
                 _ => Vector2.Zero
             };
-
             // === Отображение Sanity ===
-            AwakenedPlayer awakenedPlayer = player.GetModPlayer<AwakenedPlayer>();
-            if (!MyWorld.awakenedMode || player.ghost || awakenedPlayer.sanityMax <= 0) return;
-
-            Texture2D sanityTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityUIIcon").Value;
-            Texture2D arrowTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/SanityArrow").Value;
-            DynamicSpriteFont font = FontAssets.MouseText.Value;
-
-            float sanityPerEye = 30f;
-            int maxEyes = (int)Math.Ceiling(awakenedPlayer.sanityMax / sanityPerEye);
-            int currentSanity = awakenedPlayer.sanity;
-
-            Vector2 sanityBasePos;
-            if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") sanityBasePos = basePosition - new Vector2(400, 7);
-            else sanityBasePos = basePosition - new Vector2(160, 12);
-            Vector2 eyeSize = new Vector2(sanityTex.Width, sanityTex.Height);
-            float eyeSpacing = 26f;
-
-            for (int i = 0; i < maxEyes; i++)
+            if (MyWorld.awakenedMode && ModContent.GetInstance<Config>().resourceBars == false)
             {
-                bool isPartial = currentSanity > i * sanityPerEye && currentSanity < (i + 1) * sanityPerEye;
-                float fill = Math.Clamp((currentSanity - i * sanityPerEye) / sanityPerEye, 0f, 1f);
+                Texture2D sanityTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityUIIcon").Value;
+                Texture2D arrowTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/SanityArrow").Value;
+              
+                float sanityPerEye = 30f;
+                int maxEyes = (int)Math.Ceiling(awakenedPlayer.sanityMax / sanityPerEye);
+                int currentSanity = awakenedPlayer.sanity;
 
-                float scale = isPartial ? fill / 4f + 0.75f : 1f;
-                if (isPartial) scale += Main.cursorScale - 1f;    
+                Vector2 sanityBasePos;
+                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") sanityBasePos = basePosition - new Vector2(400, 7);
+                else sanityBasePos = basePosition - new Vector2(160, 12);
+                Vector2 eyeSize = new Vector2(sanityTex.Width, sanityTex.Height);
+                float eyeSpacing = 26f;
 
-                int intensity = (int)(30f + 225f * fill);
-                int alpha = (int)(intensity * 0.9f);
-                intensity = Math.Clamp(intensity, 30, 255);
-
-                int xOffset = (i % 5) * (int)eyeSpacing;
-                int yOffset = (i / 5) * ((int)eyeSpacing + 4);
-                Vector2 pos = sanityBasePos + new Vector2(xOffset, yOffset);
-
-                // Санити глитчи
-                if (awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.4f && awakenedPlayer.sanityGlitchFrame != 0)
+                for (int i = 0; i < maxEyes; i++)
                 {
-                    int amount = awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.1f ? 4 : awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.2f ? 3 : awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.3f ? 2 : 1;         
-                    pos += new Vector2(Main.rand.Next(-amount, amount), Main.rand.Next(-amount, amount));
+                    bool isPartial = currentSanity > i * sanityPerEye && currentSanity < (i + 1) * sanityPerEye;
+                    float fill = Math.Clamp((currentSanity - i * sanityPerEye) / sanityPerEye, 0f, 1f);
+
+                    float scale = isPartial ? fill / 4f + 0.75f : 1f;
+                    if (isPartial) scale += Main.cursorScale - 1f;
+
+                    int intensity = (int)(30f + 225f * fill);
+                    int alpha = (int)(intensity * 0.9f);
+                    intensity = Math.Clamp(intensity, 30, 255);
+
+                    int xOffset = (i % 5) * (int)eyeSpacing;
+                    int yOffset = (i / 5) * ((int)eyeSpacing + 4);
+                    Vector2 pos = sanityBasePos + new Vector2(xOffset, yOffset);
+
+                    // Санити глитчи
+                    if (awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.4f && awakenedPlayer.sanityGlitchFrame != 0)
+                    {
+                        int amount = awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.1f ? 4 : awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.2f ? 3 : awakenedPlayer.sanity < awakenedPlayer.sanityMax * 0.3f ? 2 : 1;
+                        pos += new Vector2(Main.rand.Next(-amount, amount), Main.rand.Next(-amount, amount));
+                    }
+
+                    Vector2 origin = eyeSize / 2f;
+                    Main.spriteBatch.Draw(sanityTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);
+                }
+                // === Текстовое значение ===
+                string sanityText = $"{EALocalization.Sanity}: {awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
+                Vector2 textSize = font.MeasureString(sanityText);
+                Vector2 textPos = sanityBasePos + new Vector2(maxEyes * eyeSpacing / 2 - textSize.X / 2f, -20);
+                Main.spriteBatch.DrawString(font, sanityText, textPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
+
+                // === Tooltip при наведении ===
+                Rectangle sanityBounds = new((int)sanityBasePos.X, (int)sanityBasePos.Y, (int)(eyeSpacing * 5), (int)(eyeSize.Y * 2));
+                if (!Main.mouseText && sanityBounds.Contains(Main.MouseScreen.ToPoint()))
+                {
+                    string mouseText = $"{awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
+                    ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, font, mouseText, new Vector2(Main.mouseX + 17, Main.mouseY + 17), new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One);
                 }
 
-                Vector2 origin = eyeSize / 2f;
-                Main.spriteBatch.Draw(sanityTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);                   
-            }
-            var EALocalization = ModContent.GetInstance<EALocalization>();
-            // === Текстовое значение ===
-            string sanityText = $"{EALocalization.Sanity}: {awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
-            Vector2 textSize = font.MeasureString(sanityText);
-            Vector2 textPos = sanityBasePos + new Vector2(maxEyes * eyeSpacing / 2 - textSize.X / 2f, -20);
-            Main.spriteBatch.DrawString(font, sanityText, textPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
+                // === Индикатор восстановления ===
+                if (awakenedPlayer.sanityRegen != 0)
+                {
+                    int arrowFrame = awakenedPlayer.sanityArrowFrame;
+                    int arrowHeight = 26;
+                    Rectangle source = new Rectangle(0, arrowHeight * arrowFrame, arrowTex.Width, arrowHeight);
+                    SpriteEffects flip = awakenedPlayer.sanityRegen < 0 ? SpriteEffects.None : SpriteEffects.FlipVertically;
 
-            // === Tooltip при наведении ===
-            Rectangle sanityBounds = new((int)sanityBasePos.X, (int)sanityBasePos.Y, (int)(eyeSpacing * 5), (int)(eyeSize.Y * 2));
-            if (!Main.mouseText && sanityBounds.Contains(Main.MouseScreen.ToPoint()))
-            {
-                string mouseText = $"{awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
-                ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, font, mouseText, new Vector2(Main.mouseX + 17, Main.mouseY + 17), new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One);
-            }
-
-            // === Индикатор восстановления ===
-            if (awakenedPlayer.sanityRegen != 0)
-            {
-                int arrowFrame = awakenedPlayer.sanityArrowFrame;
-                int arrowHeight = 26;
-                Rectangle source = new Rectangle(0, arrowHeight * arrowFrame, arrowTex.Width, arrowHeight);
-                SpriteEffects flip = awakenedPlayer.sanityRegen < 0 ? SpriteEffects.None : SpriteEffects.FlipVertically;
-
-                Vector2 arrowPos = textPos + new Vector2(textSize.X + 8, arrowHeight / 2);
-                Main.spriteBatch.Draw(arrowTex, arrowPos, source, Color.White, 0f, new Vector2(arrowTex.Width / 2, arrowHeight / 2), 1f, flip, 0f);
+                    Vector2 arrowPos = textPos + new Vector2(textSize.X + 8, arrowHeight / 2);
+                    Main.spriteBatch.Draw(arrowTex, arrowPos, source, Color.White, 0f, new Vector2(arrowTex.Width / 2, arrowHeight / 2), 1f, flip, 0f);
+                }
             }
             // === Отображение Energy ===
-            var energyPlayer = player.GetModPlayer<PlayerEnergy>();
-            if (player.ghost || energyPlayer.maxEnergy <= 0) return;
-               
-            Texture2D energyTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyUIIcon").Value;
-
-            int totalOrbs = 10;
-            float energyPerOrb = energyPlayer.maxEnergy / (float)totalOrbs;
-            Vector2 energyBasePos;
-            Vector2 orbSize = new(energyTex.Width, energyTex.Height);
-            float orbSpacing = 26f;
-
-            if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") energyBasePos = basePosition - new Vector2(650, 7);
-            else energyBasePos = basePosition - new Vector2(400, 12); // смещения левее от Sanity
-
-            for (int i = 0; i < totalOrbs; i++)
+            if (energyPlayer.maxEnergy >= 1 && ModContent.GetInstance<Config>().resourceBars == false)
             {
-                bool isPartial = energyPlayer.energy > i * energyPerOrb && energyPlayer.energy < (i + 1) * energyPerOrb;
-                float fill = Math.Clamp((energyPlayer.energy - i * energyPerOrb) / energyPerOrb, 0f, 1f);
+                Texture2D energyTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyUIIcon").Value;
 
-                float scale = isPartial ? fill / 4f + 0.75f : 1f;
-                if (isPartial) scale += Main.cursorScale - 1f;
-                    
-                int intensity = (int)(30f + 225f * fill);
-                intensity = Math.Clamp(intensity, 30, 255);
-                int alpha = (int)(intensity * 0.9f);
+                int totalOrbs = 10;
+                float energyPerOrb = energyPlayer.maxEnergy / (float)totalOrbs;
+                Vector2 energyBasePos;
+                Vector2 orbSize = new(energyTex.Width, energyTex.Height);
+                float orbSpacing = 26f;
 
-                int xOffset = (i % 5) * (int)orbSpacing;
-                int yOffset = (i / 5) * ((int)orbSpacing + 4);
-                Vector2 pos = energyBasePos + new Vector2(xOffset, yOffset);
-                Vector2 origin = orbSize / 2f;
+                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") energyBasePos = basePosition - new Vector2(650, 7);
+                else energyBasePos = basePosition - new Vector2(400, 12); // смещения левее от Sanity
 
-                Main.spriteBatch.Draw(energyTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);
-            }
+                for (int i = 0; i < totalOrbs; i++)
+                {
+                    bool isPartial = energyPlayer.energy > i * energyPerOrb && energyPlayer.energy < (i + 1) * energyPerOrb;
+                    float fill = Math.Clamp((energyPlayer.energy - i * energyPerOrb) / energyPerOrb, 0f, 1f);
 
-            // === Текстовое значение Energy ===
-            string energyText = $"{EALocalization.Energy}: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
-            Vector2 energyTextSize = font.MeasureString(energyText);
-            Vector2 energyTextPos = energyBasePos + new Vector2((totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f) - 50, -20);
+                    float scale = isPartial ? fill / 4f + 0.75f : 1f;
+                    if (isPartial) scale += Main.cursorScale - 1f;
 
-            Main.spriteBatch.DrawString(font, energyText, energyTextPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
+                    int intensity = (int)(30f + 225f * fill);
+                    intensity = Math.Clamp(intensity, 30, 255);
+                    int alpha = (int)(intensity * 0.9f);
 
-            // === Tooltip при наведении ===
-            Rectangle energyBounds = new((int)energyBasePos.X, (int)energyBasePos.Y, (int)(orbSpacing * 5), (int)(orbSize.Y * 2));
-            if (!Main.mouseText && energyBounds.Contains(Main.MouseScreen.ToPoint()))
-            {
-                string tooltip = $"{energyPlayer.energy}/{energyPlayer.maxEnergy}";
-                ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, font, tooltip, new Vector2(Main.mouseX + 17, Main.mouseY + 17), new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One, -1f, 2f);
+                    int xOffset = (i % 5) * (int)orbSpacing;
+                    int yOffset = (i / 5) * ((int)orbSpacing + 4);
+                    Vector2 pos = energyBasePos + new Vector2(xOffset, yOffset);
+                    Vector2 origin = orbSize / 2f;
+
+                    Main.spriteBatch.Draw(energyTex, pos + origin, null, new Color(intensity, intensity, intensity, alpha), 0f, origin, scale, SpriteEffects.None, 0f);
+                }
+
+                // === Текстовое значение Energy ===
+                string energyText = $"{EALocalization.Energy}: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
+                Vector2 energyTextSize = font.MeasureString(energyText);
+                Vector2 energyTextPos = energyBasePos + new Vector2((totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f) - 50, -20);
+
+                Main.spriteBatch.DrawString(font, energyText, energyTextPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
+
+                // === Tooltip при наведении ===
+                Rectangle energyBounds = new((int)energyBasePos.X, (int)energyBasePos.Y, (int)(orbSpacing * 5), (int)(orbSize.Y * 2));
+                if (!Main.mouseText && energyBounds.Contains(Main.MouseScreen.ToPoint()))
+                {
+                    string tooltip = $"{energyPlayer.energy}/{energyPlayer.maxEnergy}";
+                    ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, font, tooltip, new Vector2(Main.mouseX + 17, Main.mouseY + 17), new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One, -1f, 2f);
+                }
             }
         }
         private bool CompareAssets(Asset<Texture2D> currentAsset, string compareAssetPath)
