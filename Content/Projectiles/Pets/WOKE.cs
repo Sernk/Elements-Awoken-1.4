@@ -21,6 +21,10 @@ namespace ElementsAwoken.Content.Projectiles.Pets
             Projectile.penetrate = -1;
             Projectile.timeLeft *= 5;
         }
+        public override void SetStaticDefaults()
+        {
+            Main.projPet[Projectile.type] = true;
+        }
         public override void AI()
         {
             Player player = Main.player[Projectile.owner];

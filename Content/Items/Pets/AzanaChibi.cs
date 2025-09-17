@@ -9,6 +9,7 @@ namespace ElementsAwoken.Content.Items.Pets
     {
         public override void SetDefaults()
         {
+            Item.CloneDefaults(ItemID.ZephyrFish);
             Item.width = 18;
             Item.height = 20;
             Item.noMelee = true;

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.UI.ResourceSets;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
@@ -16,6 +17,7 @@ namespace ElementsAwoken.EASystem.UI
 {
     public class EAResursUI : ModResourceOverlay
     {
+        Asset<Texture2D> MiniHP;
         private readonly Dictionary<string, Asset<Texture2D>> vanillaAssetCache = [];
         public string baseFolder = "ElementsAwoken/Extra/";
 
@@ -35,6 +37,27 @@ namespace ElementsAwoken.EASystem.UI
             string folder = $"{baseFolder}MP";
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
             MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+
+            if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus) return folder + "Mana2";
+            return string.Empty;
+        }
+        public string MiniLifeTexturePath()
+        {
+            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
+            string folder = $"{baseFolder}MiniHP";
+
+            if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual) return folder + "Heart4";
+            if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual) return folder + "Heart3";
+            if (modPlayer.CompressorVisual) return folder + "Heart3Alt";
+            if (modPlayer.shieldLife > 0) return folder + "ShieldHeart";
+            return string.Empty;
+        }
+        public string MiniManaTexturePath()
+        {
+            string folder = $"{baseFolder}MiniMP";
+            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
+            MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+
             if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus) return folder + "Mana2";
             return string.Empty;
         }
@@ -45,7 +68,7 @@ namespace ElementsAwoken.EASystem.UI
             string barsFolder = "Images/UI/PlayerResourceSets/HorizontalBars/";
 
             if (LifeTexturePath() == string.Empty) return;
-                
+
             if (asset == TextureAssets.Heart || asset == TextureAssets.Heart2 || CompareAssets(asset, fancyFolder + "Heart_Fill") || CompareAssets(asset, fancyFolder + "Heart_Fill_B"))
             {
                 context.texture = ModContent.Request<Texture2D>(LifeTexturePath() + "Heart");
@@ -68,6 +91,20 @@ namespace ElementsAwoken.EASystem.UI
                     context.texture = ModContent.Request<Texture2D>(ManaTexturePath() + "Bar");
                     context.Draw();
                 }
+            }
+            if (CompareAssets(asset, barsFolder + "HP_Panel_Right"))
+            {
+                Texture2D tex = ModContent.Request<Texture2D>(MiniLifeTexturePath() + "HeartMini").Value;
+                Vector2 pos = context.position;
+                pos += new Vector2(20.25f, 11.5f);
+                Main.spriteBatch.Draw(tex, pos, Color.White);
+            }
+            if (CompareAssets(asset, barsFolder + "MP_Panel_Right"))
+            {
+                Texture2D tex = ModContent.Request<Texture2D>(MiniManaTexturePath() + "ManaMini").Value;
+                Vector2 pos = context.position;
+                pos += new Vector2(20.30f, 4f);
+                Main.spriteBatch.Draw(tex, pos, Color.White);
             }
         }
         public override void PostDrawResourceDisplay(PlayerStatsSnapshot snapshot, IPlayerResourcesDisplaySet displaySet, bool drawingLife, Color textColor, bool drawText)
@@ -102,9 +139,9 @@ namespace ElementsAwoken.EASystem.UI
                 int currentSanity = awakenedPlayer.sanity;
 
                 Vector2 sanityBasePos;
-                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") sanityBasePos = basePosition - new Vector2(400, 7);
+                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") sanityBasePos = basePosition - new Vector2(377, 6);
                 else sanityBasePos = basePosition - new Vector2(160, 12);
-                Vector2 eyeSize = new Vector2(sanityTex.Width, sanityTex.Height);
+                Vector2 eyeSize = new(sanityTex.Width, sanityTex.Height);
                 float eyeSpacing = 26f;
 
                 for (int i = 0; i < maxEyes; i++)
@@ -170,7 +207,7 @@ namespace ElementsAwoken.EASystem.UI
                 Vector2 orbSize = new(energyTex.Width, energyTex.Height);
                 float orbSpacing = 26f;
 
-                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") energyBasePos = basePosition - new Vector2(650, 7);
+                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") energyBasePos = basePosition - new Vector2(640, 7);
                 else energyBasePos = basePosition - new Vector2(400, 12); // смещения левее от Sanity
 
                 for (int i = 0; i < totalOrbs; i++)
@@ -196,7 +233,12 @@ namespace ElementsAwoken.EASystem.UI
                 // === Текстовое значение Energy ===
                 string energyText = $"{EALocalization.Energy}: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
                 Vector2 energyTextSize = font.MeasureString(energyText);
-                Vector2 energyTextPos = energyBasePos + new Vector2((totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f) - 50, -20);
+                int a; int b;
+
+                if (Language.ActiveCulture.Name == "ru-RU") { a = 55; b = 20; }
+                else { a = 70;  b = 20;}
+
+                Vector2 energyTextPos = energyBasePos + new Vector2((totalOrbs * orbSpacing / 2 - energyTextSize.X / 2f) - a, - b);
 
                 Main.spriteBatch.DrawString(font, energyText, energyTextPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
 

@@ -8,7 +8,7 @@ using Terraria.ObjectData;
 
 namespace ElementsAwoken.Content.Tiles
 {
-    public abstract class DorCloseClass : ModTile
+    public abstract class DoorCloseClass : ModTile
     {
         public virtual int DustID { get; }
         public abstract int ColorR { get; }

@@ -10,6 +10,7 @@ namespace ElementsAwoken.Content.Buffs.PetBuffs
         public override int ProjType => ModContent.ProjectileType<TurboDoge>();
         public override void Update(Player player, ref int buffIndex)
         {
+            base.Update(player, ref buffIndex);
             player.GetModPlayer<MyPlayer>().turboDoge = true;
         }
     }

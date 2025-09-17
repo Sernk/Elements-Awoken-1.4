@@ -234,9 +234,29 @@ namespace ElementsAwoken.EAUtilities
         #region Statues
         public string Statues => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Statues");
         #endregion
-        #region
+        #region BoostDrive
+        public string BoostDrive => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.BoostDrive");
+        #endregion
+        #region GravityCore
+        public string GravityCore => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GravityCore");
+        public string GravityCore1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GravityCore1");
+        public string GravityCore2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GravityCore2");
+        public string GravityCore3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.GravityCore3");
+        #endregion
+        #region HyperDrive
+        public string HyperDrive => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.HyperDrive");
+        #endregion
+        #region Generator
         public string Generator => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Generator");
         public string Generator1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.Generator1");
+        public string BiofuelBurner => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.BiofuelBurner");
+        public string BiofuelBurner1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.BiofuelBurner1");
+        public string BiofuelBurner2 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.BiofuelBurner2");
+        public string BiofuelBurner3 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.BiofuelBurner3");
+        public string LifeforceBurner => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.LifeforceBurner");
+        public string LifeforceBurner1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.LifeforceBurner1");
+        public string WindGenerator => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.WindGenerator");
+        public string WindGenerator1 => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.WindGenerator1");
         #endregion
         public string UndownerTerraria => Language.GetTextValue("Mods.ElementsAwoken.Tooltips.UndownerTerraria");
         #endregion

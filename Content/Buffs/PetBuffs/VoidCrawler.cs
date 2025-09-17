@@ -9,6 +9,7 @@ namespace ElementsAwoken.Content.Buffs.PetBuffs
         public override int ProjType => ProjectileType<Projectiles.Pets.VoidCrawler>();
         public override void Update(Player player, ref int buffIndex)
         {
+            base.Update(player, ref buffIndex);
             player.GetModPlayer<MyPlayer>().voidCrawler = true;
         }
     }

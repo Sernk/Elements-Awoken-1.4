@@ -1,4 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using ElementsAwoken.Content.Items.Placeable.Darkstone;
+using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
@@ -8,7 +10,7 @@ using Terraria.ObjectData;
 
 namespace ElementsAwoken.Content.Tiles
 {
-    public abstract class DorOpenClass : ModTile
+    public abstract class DoorOpenClass : ModTile
     {
         public virtual int DustID { get; }
         public abstract int ColorR { get; }
@@ -16,6 +18,7 @@ namespace ElementsAwoken.Content.Tiles
         public abstract int ColorB { get; }
         public abstract int DorCloseType { get; }
         public abstract int Icon { get; }
+        public abstract int DropItem { get; }
 
         public override void SetStaticDefaults()
         {
@@ -81,5 +84,7 @@ namespace ElementsAwoken.Content.Tiles
             player.cursorItemIconEnabled = true;
             player.cursorItemIconID = Icon;
         }
+        public override bool CanDrop(int i, int j) => true;
+        public override IEnumerable<Item> GetItemDrops(int i, int j) { yield return new Item(DropItem); }
     }
 }

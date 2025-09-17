@@ -1,12 +1,17 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.Content.Items.Materials;
+using ElementsAwoken.Content.Items.Tech.Materials;
+using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
+
+//T+;
 namespace ElementsAwoken.Content.Items.Tech.Generators
 {
     public class SolarGeneratorIV : ModItem
@@ -15,10 +20,7 @@ namespace ElementsAwoken.Content.Items.Tech.Generators
         public int producePowerCooldown = 0;
         public int producePowerCooldownMax = 60;
 
-        protected override bool CloneNewInstances
-        {
-            get { return true; }
-        }
+        protected override bool CloneNewInstances { get { return true; } }
         public override void SetDefaults()
         {
             Item.width = 26;
@@ -63,17 +65,16 @@ namespace ElementsAwoken.Content.Items.Tech.Generators
                 }
             }
         }
-        //public override void AddRecipes()
-        //{
-        //    ModRecipe recipe = new ModRecipe(mod);
-        //    recipe.AddIngredient(null, "SolarGeneratorIII", 1);
-        //    recipe.AddIngredient(ItemID.LunarBar, 12);
-        //    recipe.AddIngredient(null, "VoiditeBar", 4);
-        //    recipe.AddIngredient(null, "Microcontroller", 1);
-        //    recipe.AddIngredient(null, "Transformer", 1);
-        //    recipe.AddTile(TileID.LunarCraftingStation);
-        //    recipe.SetResult(this);
-        //    recipe.AddRecipe();
-        //}
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<SolarGeneratorIII>(), 1);
+            recipe.AddIngredient(ItemID.LunarBar, 12);
+            recipe.AddIngredient(ModContent.ItemType<VoiditeBar>(), 4);
+            recipe.AddIngredient(ModContent.ItemType<Microcontroller>(), 1);
+            recipe.AddIngredient(ModContent.ItemType<Transformer>(), 1);
+            recipe.AddTile(TileID.LunarCraftingStation);
+            recipe.Register();
+        }
     }
 }

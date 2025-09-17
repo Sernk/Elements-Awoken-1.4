@@ -4936,6 +4936,15 @@ Items: {
 			'''
 	}
 
+	SolarGeneratorI: {
+		// DisplayName: Solar Generator MKI
+		/* Tooltip:
+			'''
+			Generates power during the day
+			Generates more power the higher the sun is in the sky
+			''' */
+	}
+
 	ChaoticEnergyCapacitor: {
 		DisplayName: Конденсаторы хаотической энергии
 		Tooltip:
@@ -4946,264 +4955,556 @@ Items: {
 	}
 
 	EnergyPickup: {
-		// Tooltip: ""
-		// DisplayName: Battery
+		Tooltip: хотя бы и отсюда тоже отсебятину убирать не придётся...
+		DisplayName: Батарейка
 	}
 
 	LabLight: {
-		// Tooltip: ""
-		// DisplayName: Lab Light (Broken)
+		Tooltip: он работал... пока ты не решил его спиздить.
+		DisplayName: Лабораторный светильник (сломанный)
 	}
 
 	LabBench: {
-		// Tooltip: ""
-		// DisplayName: Lab Bench
+		Tooltip: только вот не подсудимых
+		DisplayName: Лабораторная скамья
 	}
 
 	ItemMagnetTile: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Sucks nearby items towards it
-			If there is a chest next to it, items will be placed in the chest
-			''' */
-		// DisplayName: Item Magnet
+			Притягивает к себе ближайшие предметы, лежащие на земле.
+			Если рядом с магнитом стоит сундук, то предметы будут сразу отправляться в него.
+			'''
+		DisplayName: Предметный магнит
 	}
 
 	GoldenDucky: {
-		// Tooltip: It's cute
-		// DisplayName: Golden Ducky
+		Tooltip: Какая прелесть...
+		DisplayName: Золотая уточка
 	}
 
 	FirebrickItem: {
-		// Tooltip: ""
-		// DisplayName: Firebrick
+		Tooltip: ""
+		DisplayName: Огнерпич
 	}
 
 	LabLightFunctional: {
-		// DisplayName: Lab Light
-		// Tooltip: ""
+		DisplayName: Лабораторный светильник
+		Tooltip: ""
 	}
 
 	OfficeChair: {
-		// DisplayName: Office Chair
-		// Tooltip: Don't sit down or you wont stop swiveling
+		DisplayName: Офисное кресло
+		Tooltip: Не садись, а то начнёшь крутиться на нём, и тебя не оторвать от этого будет.
 	}
 
 	PowerCell: {
-		// DisplayName: Power Cell
-		// Tooltip: ""
+		DisplayName: Энергоячейка
+		Tooltip: хз как по-другому перевести, не силовая ячейка ведь.
 	}
 
 	Putrifier: {
-		// DisplayName: Putrifier
-		/* Tooltip:
+		DisplayName: Загниватель
+		Tooltip:
 			'''
-			Throw iron ore and sun fragments in
-			Dont throw too many in at once or it will fully digest it
-			''' */
+			Кинь в него железную руду и фрагменты солнца, чтобы получить гнилоруду
+			Только не кидай слишком много за раз, а то эта шайтан-машина их полностью переварит
+			'''
 	}
 
 	ScorpionPod: {
-		// DisplayName: Scorpion Pod
-		// Tooltip: ""
+		DisplayName: Клетка со скорпионом
+		Tooltip: йоу ВИЛЛ ливе ин а под, еат тхе бугс, овн нотхинг анд бе хаппи!
 	}
 
 	ScorpionPodFull: {
-		// DisplayName: Scorpion Pod Full
-		// Tooltip: ""
+		DisplayName: Заполненная клетка со скорпионами
+		Tooltip: (мандатори сойспеак референсе)
 	}
 
 	ScorpionPodLarge: {
-		// DisplayName: Scorpion Pod Large
-		// Tooltip: ""
+		DisplayName: Большая клетка со скорпионом
+		Tooltip: всё, мне надоело писать инглиш слова кириллицей, это дебильно выглядит.
 	}
 
 	StatMirror: {
-		// DisplayName: Stat Mirror
-		// Tooltip: ""
+		DisplayName: Статозеркало
+		Tooltip: ""
 	}
 
 	TruffleCage: {
-		// DisplayName: Truffle Cage
-		// Tooltip: ""
+		DisplayName: Клетка с трюфелем
+		Tooltip: "'Ты ахуел, сука!' -Трюфель, наверное."
 	}
 
 	DarkstoneDoor: {
-		// Tooltip: ""
-		// DisplayName: Darkstone Door
+		Tooltip: ""
+		DisplayName: Мракаменная дверь
 	}
 
 	DarkstoneChandelier: {
-		// Tooltip: ""
-		// DisplayName: Darkstone Chandelier
+		Tooltip: ""
+		DisplayName: Мракаменный кандеблядбр
 	}
 
 	DarkstoneChair: {
-		// Tooltip: ""
-		// DisplayName: Darkstone Chair
+		Tooltip: не ссы, ни пик точёных, ни хуёв дрочёных на нём нет.
+		DisplayName: Мракаменный стул
 	}
 
 	DarkstoneCandle: {
-		// Tooltip: ""
-		// DisplayName: Darkstone Candle
+		Tooltip: ""
+		DisplayName: Мракаменная свечка
 	}
 
 	DarkstoneBrick: {
-		// Tooltip: ""
-		// DisplayName: Darkstone Brick
+		Tooltip: ""
+		DisplayName: Мракаменный кирпич
 	}
 
 	DarkstoneBed: {
-		// Tooltip: ""
-		// DisplayName: Darkstone Bed
+		Tooltip: наверное, спя на ней одни только кошмары и снятся...
+		DisplayName: Мракаменная кровать
 	}
 
 	DarkstoneLamp: {
-		// DisplayName: Darkstone Lamp
-		// Tooltip: ""
+		DisplayName: Мракаменная лампа
+		Tooltip: ""
 	}
 
 	DarkstoneLantern: {
-		// DisplayName: Darkstone Lantern
-		// Tooltip: ""
+		DisplayName: Мракаменный фонарь
+		Tooltip: ""
 	}
 
 	DarkstonePiano: {
-		// DisplayName: Darkstone Piano
-		// Tooltip: ""
+		DisplayName: Мракаменное пианино
+		Tooltip: ""
 	}
 
 	DarkstonePlatform: {
-		// DisplayName: Darkstone Platform
-		// Tooltip: ""
+		DisplayName: Мракаменная платформа
+		Tooltip: ""
 	}
 
 	DarkstoneSofa: {
-		// DisplayName: Darkstone Sofa
-		// Tooltip: ""
+		DisplayName: Мракаменный диван
+		Tooltip: боюсь даже представить, какие клопы в нём водиться могут...
 	}
 
 	DarkstoneTable: {
-		// DisplayName: Darkstone Table
-		// Tooltip: ""
+		DisplayName: Мракаменный стол
+		Tooltip: ""
 	}
 
 	DarkstoneWorkBench: {
-		// DisplayName: Darkstone Work Bench
-		// Tooltip: ""
+		DisplayName: Мракаменный верстак
+		Tooltip: ""
 	}
 
 	CalamityBannerItem: {
-		// DisplayName: Calamity Banner
-		// Tooltip: Increases spawn rates by 7.5x
+		DisplayName: Баннер бедствия
+		Tooltip: Увеличивает спавнрейт врагов на 750%
 	}
 
 	ChaosBannerItem: {
-		// DisplayName: Chaos Banner
-		// Tooltip: Increases spawn rates by 5x
+		DisplayName: Баннер хаоса
+		Tooltip: Увеличивает спавнрейт врагов на 500%
 	}
 
 	HavocBannerItem: {
-		// DisplayName: Havoc Banner
-		// Tooltip: Increases spawn rates by 2x
+		DisplayName: Баннер суматохи
+		Tooltip: Увеличивает спавнрейт на 200%
 	}
 
 	AmadisBuffStatue: {
-		// DisplayName: Statue of the Accursed
-		/* Tooltip:
+		DisplayName: Проклятая статуя
+		Tooltip:
 			'''
-			Odd, you feel your lifeforce lessened, but your melee and movement abilities enhanced.
-			15% increased melee damage and speed
-			30% reduced health
-			''' */
+			Как странно, ты чувствуешь, как находясь рядом с этой статуей ты слабеешь, но твои навыки ближнего боя, наоборот, усиливаются...
+			Увеличивает урон и скорость ближних оружий на 15%
+			Уменьшает максимальное здоровье на 30% (вы ебанулись?)
+			'''
 	}
 
 	AmadisStatue: {
-		// DisplayName: Amadis Statue
-		// Tooltip: Statue representing AmadisLFE, although the character shown is called Randal, so he says.
+		DisplayName: Статуя Amadis
+		Tooltip: Статуя самого AmadisLFE, собственной персоной... Хотя на самом деле изображённого на ней персонажа зовут Рандал, по его словам.
 	}
 
 	BurstBuffStatue: {
-		// DisplayName: Statue of the Story Spinner
-		/* Tooltip:
+		DisplayName: Статуя ткача истории
+		Tooltip:
 			'''
-			I am not really creative with tooltips, y'know. I do not even know if I exist.
-			Maybe I am even just an illusion? Oh my god, my whole life was a lie!
-			15% increased ranged damage
-			15% decreased movement speed
-			''' */
+			Вообще хз, что тут писать, прикинь? В душе не чаю, существую я вообще или нет.
+			Может, я просто плод воображения чьей-то больной головушки? Етижи-пассатижи, всю жизнь я жил во лжи, оказывается!
+			Увеличивает стрелковый урон на 15%
+			Уменьшает скорость передвижения на 15%
+			'''
 	}
 
 	BurstStatue: {
-		// DisplayName: Burst Statue
-		// Tooltip: The statue of the one who spins the story of this mod...
+		DisplayName: Статуя Burst
+		Tooltip: Статуя никого иного, как ткача всей истории мода...
 	}
 
 	GenihWatBuffStatue: {
-		// DisplayName: Vulgar Bard Statue
-		/* Tooltip:
+		DisplayName: Статуя барда-матершинника
+		Tooltip:
 			'''
-			'Yes, THIS is what I want to look like when you carve my statue to look like!
-			NO, I don't CARE how hard it is to 'sprite' or whatever!!' - Da Gweat Genih Wat
-			15% increased magic damage and increased Mana Regen by 5
-			Enemies are more aggressive and spawn more frequently
-			Swearing can be disabled by right clicking the statue
-			''' */
+			'Да, я хочу выглядеть на ней именно ТАК, когда ты эту статую будешь делать!
+			Мне НАСРАТЬ с высокой колокольни, насколько сложно это 'спрайтить'!!' - Он самый, пгхекрасный Genih Wat
+			Увеличивает магический урон на 15% и регенерацию маны на 5
+			Повышает агрессивность и спавнрейт врагов
+			<right> по поставленной статуе, чтобы отключить матершину
+			'''
 	}
 
 	GenihWatStatue: {
-		// DisplayName: GenihWat Statue
-		/* Tooltip:
+		DisplayName: Статуя GenihWat
+		Tooltip:
 			'''
-			In honor of the 'WEESH GRUNTING GENIH WAT'...whatever that means
-			Few know what it actually looks like
-			''' */
+			Посвящено его чести, 'ВУАЩЕ ГРНТГНГ GENIH WAT'...знать бы ещё только, чё это значит.
+			Лишь очень немногие знают на кого похожа эта статуя...
+			'''
 	}
 
 	OiniteBuffStatue: {
-		// DisplayName: Balancer Statue
-		/* Tooltip:
+		DisplayName: Статуя балансировщика
+		Tooltip:
 			'''
-			Fun isn't something one considers when balancing the universe. But this... does put a smile on my face.
-			Doubles all buff and debuff duration
-			''' */
+			Веселье - не то, о чём обычно задумываются при балансировке вселенной. Но эта статуя... заставляет меня улыбнуться.
+			Удваивает длительность как всех баффов, так и всех дебаффов
+			'''
 	}
 
 	OiniteStatue: {
-		// DisplayName: Oinite Statue
-		// Tooltip: Why does this one look different from the others?
+		DisplayName: Статуя Oinite
+		Tooltip: Погодите, а почему она отличается от всех других статуй?
 	}
 
 	RaniplaBuffStatue: {
-		// DisplayName: Arctic Roamer Statue
-		/* Tooltip:
+		DisplayName: Статуя арктическитальца
+		Tooltip:
 			'''
-			Underground, overground, Wombling free. The Wombles of Wimbledon Common are we.
-			25% increased speed
-			15% increased summon damage
-			25% reduced jump height and wingtime
-			''' */
+			Под землёй, над землёй, свободно шатаемся. Мы ведь Шатуны из Шатунска обыкновенного. (чё?)
+			Увеличивает скорость передвижения на 25%
+			Увеличивает призывательский урон на 15%
+			Уменьшает высоту прыжка и время полёта у крыльев на 25%
+			'''
 	}
 
 	RaniplaStatue: {
-		// DisplayName: Ranipla Statue
-		// Tooltip: How do I give my character long hair without making it look like a &^$%#*! trap!?
+		DisplayName: Статуя Ranipla
+		Tooltip: Интересно, как мне сделать так, чтобы у моего персонажа были длинные волосы, и при этом он не выглядел как #@$%!^& трап!?
 	}
 
 	ThatOneJuicyOrangeBuffStatue: {
-		// DisplayName: Golden ThatOneJuicyOrange_ Statue
-		/* Tooltip:
+		DisplayName: Золотая статуя ThatOneJuicyOrange_
+		Tooltip:
 			'''
-			Definitely narcissistic
-			15% increased damage
-			50% increased damage taken
-			Increases the cooldown of healing potions
-			''' */
+			Ладно, вот это уже не немного нарцистично...
+			Увеличивает весь урон на 15%
+			Увеличивает получаемый урон на 50%
+			Увеличивает длительность дебаффа "Послезельевая болезнь"
+			'''
 	}
 
 	ThatOneJuicyOrangeStatue: {
-		// DisplayName: ThatOneJuicyOrange_ Statue
-		// Tooltip: Slightly narcissistic
+		DisplayName: Статуя ThatOneJuicyOrange_
+		Tooltip: Немного нарцистично...
+	}
+
+	VoidBrick: {
+		// Tooltip: ""
+		// DisplayName: Void Brick
+	}
+
+	VoidBookshelf: {
+		// Tooltip: ""
+		// DisplayName: Void Bookshelf
+	}
+
+	VoidBed: {
+		// Tooltip: ""
+		// DisplayName: Void Bed
+	}
+
+	VoidBrickWall: {
+		// DisplayName: Void Brick Wall
+		// Tooltip: ""
+	}
+
+	VoidCandelabra: {
+		// DisplayName: Void Candelabra
+		// Tooltip: ""
+	}
+
+	VoidCandle: {
+		// DisplayName: Void Candle
+		// Tooltip: ""
+	}
+
+	VoidChair: {
+		// DisplayName: Void Chair
+		// Tooltip: ""
+	}
+
+	VoidChandelier: {
+		// DisplayName: Void Chandelier
+		// Tooltip: ""
+	}
+
+	VoidChest: {
+		// DisplayName: Void Chest
+		// Tooltip: ""
+	}
+
+	VoidClock: {
+		// DisplayName: Void Clock
+		// Tooltip: ""
+	}
+
+	VoidDoor: {
+		// DisplayName: Void Door
+		// Tooltip: ""
+	}
+
+	VoidDresser: {
+		// DisplayName: Void Dresser
+		// Tooltip: ""
+	}
+
+	VoidLamp: {
+		// DisplayName: Void Lamp
+		// Tooltip: ""
+	}
+
+	VoidLantern: {
+		// DisplayName: Void Lantern
+		// Tooltip: ""
+	}
+
+	VoidPiano: {
+		// DisplayName: Void Piano
+		// Tooltip: ""
+	}
+
+	VoidPlatform: {
+		// DisplayName: Void Platform
+		// Tooltip: ""
+	}
+
+	VoidSink: {
+		// DisplayName: Void Sink
+		// Tooltip: ""
+	}
+
+	VoidSofa: {
+		// DisplayName: Void Sofa
+		// Tooltip: ""
+	}
+
+	VoidTable: {
+		// DisplayName: Void Table
+		// Tooltip: ""
+	}
+
+	VoidWorkBench: {
+		// DisplayName: Void Work Bench
+		// Tooltip: ""
+	}
+
+	HyperDrive: {
+		// Tooltip: ""
+		// DisplayName: Hyper Drive
+	}
+
+	GravityCore: {
+		/* Tooltip:
+			'''
+			Allows the player to control the gravity
+			Use the arrow keys while hovering over the item to change strength
+			Press G on the item to reset gravity to normal
+			Right Click to turn on
+			''' */
+		// DisplayName: Gravity Core
+	}
+
+	BoostDrive: {
+		// Tooltip: ""
+		// DisplayName: Boost Drive
+	}
+
+	LunarEnergyHarnesser: {
+		// Tooltip: Increases the players maximum energy by 750
+		// DisplayName: Lunar Energy Harnesser
+	}
+
+	HellstoneCapacitor: {
+		// Tooltip: Increases the players maximum energy by 150
+		// DisplayName: Hellstone Capacitor
+	}
+
+	DemonicPowerBank: {
+		// Tooltip: Increases the players maximum energy by 60
+		// DisplayName: Demonic Power Bank
+	}
+
+	BioBattery: {
+		// Tooltip: Increases the players maximum energy by 350
+		// DisplayName: Bio-Battery
+	}
+
+	AABattery: {
+		// Tooltip: Increases the players maximum energy by 25
+		// DisplayName: AA Battery
+	}
+
+	WoodenAccumulator: {
+		// DisplayName: Wooden Accumulator
+		// Tooltip: Increases the players maximum energy by 10
+	}
+
+	BiofuelBurner: {
+		// DisplayName: Biofuel Burner Generator
+		/* Tooltip:
+			'''
+			Consumes certain plant materials in the inventory
+			Different plants have different power outputs
+			Right Click to turn on
+			''' */
+	}
+
+	BurnerGenerator: {
+		// DisplayName: Burner Generator
+		/* Tooltip:
+			'''
+			Consumes raw wood in the inventory to produce 1 energy per second
+			1 wood burns for 15 seconds
+			Right Click to turn on
+			''' */
+	}
+
+	Chlorobyte: {
+		// DisplayName: Chlorobyte
+		// Tooltip: Don't let it escape...
+	}
+
+	GelticBurner: {
+		// DisplayName: Geltic Burner Generator
+		/* Tooltip:
+			'''
+			Consumes gel in the inventory to produce 2 energy per second
+			1 gel burns for 15 seconds
+			Pink gel burns for 30 seconds
+			Right Click to turn on
+			''' */
+	}
+
+	GeothermalGenerator: {
+		// DisplayName: Geothermal Generator
+		/* Tooltip:
+			'''
+			Turns heat into energy
+			The closer the player is to a lava source the more energy is generated
+			''' */
+	}
+
+	HandCrank: {
+		// DisplayName: Hand Crank Generator
+		// Tooltip: Right Click in inventory to generate 1 energy
+	}
+
+	KineticConverter: {
+		// DisplayName: Kinetic Energy Converter Generator
+		/* Tooltip:
+			'''
+			Projectiles that hit the player are converted into energy
+			The more damage and speed the projectile has, the more energy is transformed
+			''' */
+	}
+
+	LifeforceBurner: {
+		// DisplayName: Lifeforce Burner
+		/* Tooltip:
+			'''
+			Turns life into energy
+			Use the arrow keys while hovering over the item to change amount
+			Right Click to turn on
+			''' */
+	}
+
+	LunarWaste: {
+		// DisplayName: Lunar Waste
+		/* Tooltip:
+			'''
+			Reduces life regen if too much builds up
+			Will start damaging the player
+			''' */
+	}
+
+	PortableFissionReactor: {
+		// DisplayName: Portable Fission Generator
+		/* Tooltip:
+			'''
+			Consumes 1 chlorophyte ore to generate power
+			Produces 10 seconds of power
+			Creates deadly chlorobytes which overflow and poison the player
+			Right Click to turn on
+			''' */
+	}
+
+	PortableFusionReactor: {
+		// DisplayName: Portable Fusion Generator
+		/* Tooltip:
+			'''
+			Consumes 2 luminite ore to generate power
+			Produces 15 seconds of power
+			Creates lunar waste which harms the player if it builds up too much
+			Right Click to turn on
+			''' */
+	}
+
+	SolarGeneratorII: {
+		// DisplayName: Solar Generator MKII
+		/* Tooltip:
+			'''
+			Generates power during the day
+			Generates more power the higher the sun is in the sky
+			''' */
+	}
+
+	SolarGeneratorIII: {
+		// DisplayName: Solar Generator MKIII
+		/* Tooltip:
+			'''
+			Generates power during the day
+			Generates more power the higher the sun is in the sky
+			''' */
+	}
+
+	SoulConverter: {
+		// DisplayName: Soul Converter
+		/* Tooltip:
+			'''
+			Allows enemies to drop batteries which charge the player
+			Batteries restore more energy with slain bosses
+			''' */
+	}
+
+	StarlightCrank: {
+		// DisplayName: Starlight Crank Generator
+		// Tooltip: Right Click in inventory to generate 3 energy
+	}
+
+	WindGenerator: {
+		// DisplayName: Wind Generator
+		/* Tooltip:
+			'''
+			Produces energy based on the wind speed
+			Right Click to turn on
+			''' */
 	}
 }
 
@@ -5226,7 +5527,7 @@ Tiles: {
 	VoidLeviathanDrive.MapEntry: Диск (Левиафан Пустоты)
 	VolcanoxDrive.MapEntry: Диск (Волканокс)
 	WastelandDrive.MapEntry: Диск (Пустошь)
-	LabLight.MapEntry: Лабораторная лампочка
+	LabLight.MapEntry: Лабораторный светильник
 	OfficeChair.MapEntry: Офисное кресло
 	ScorpionPod.MapEntry: Клетка со скорпионом
 	ScorpionPodLarge.MapEntry: Большая клетка со скорпионом
@@ -5257,40 +5558,60 @@ Tiles: {
 	VoidStone.MapEntry: Пустокамень
 	PuffTorch.MapEntry: Факел
 	Altar.MapEntry: Алтарь
-	// Firebrick.MapEntry: Voidite
-	// Putrifier.MapEntry: Putrifier
-	// LabLightFunctional.MapEntry: Lab Light Functional
-	// OfficeChairPlayer.MapEntry: Office Chair
+	Firebrick.MapEntry: Огнерпич
+	Putrifier.MapEntry: Загниватель
+	LabLightFunctional.MapEntry: Рабочий лабораторный светильник
+	OfficeChairPlayer.MapEntry: Офисное кресло
 
 	StatMirror: {
 		Stat: {
-			// Melee: Melee boosts: Damage: {0} Crit chance: {1}%
-			// Magic: Magic boosts: Damage: {0} Crit chance: {1}%
-			// Ranged: Ranged boosts: Damage: {0} Crit chance: {1}%
-			// Thrown: Thrown boosts: Damage: {0} Crit chance: {1}%
-			// Summoner: Summoner boosts: Damage: {0}
-			// MaxMinions: Max amount of: Minions: {0} Sentries: {1}
-			// SwingSpeed: Swing speed: {0}%
-			// MovementSpeed: Movement speed: {0}%
-			// DamageReduction: Damage reduction: {0}%
-			// MAXHP: Max life: {0}
-			// MAXMP: Max mana: {0}
-			// HPRegen: Current life regen: {0}
+			Melee: Усиления ближних статов: Урон: {0} Шанс критического удара: {1}%
+			Magic: Усиления магических статов: Урон: {0} Шанс критического удара: {1}%
+			Ranged: Усиления стрелковых статов: Урон: {0} Шанс критического удара: {1}%
+			Thrown: Усиления метательных статов: Урон: {0} Шанс критического удара: {1}%
+			Summoner: Усиления призывательских статов: Урон: {0}
+			MaxMinions: Максимальное количество слотов: Миньонов: {0} Турелей: {1}
+			SwingSpeed: Скорость атаки: {0}%
+			MovementSpeed: Скорость передвижения: {0}%
+			DamageReduction: Сопротивление урону: {0}%
+			MAXHP: Максимальное здоровье: {0}
+			MAXMP: Максимальная мана {0}
+			HPRegen: Регенерация здоровья сейчас: {0}
 		}
 	}
 
-	// ScorpionPodFull.MapEntry: Scorpion Pod Full
-	// TruffleCageTile.MapEntry: Truffle Cage Tile
-	// DarkstoneWorkBench.MapEntry: Darkstone Work Bench
-	// DarkstoneTable.MapEntry: Darkstone Table
-	// DarkstoneSofa.MapEntry: Darkstone Sofa
-	// DarkstoneLantern.MapEntry: Darkstone Lantern
-	// DarkstoneDoorOpen.MapEntry: Darkstone Door
-	// DarkstoneDoorClosed.MapEntry: Darkstone Door
-	// DarkstoneChandelier.MapEntry: Darkstone Chandelier
-	// DarkstoneChair.MapEntry: Darkstone Chair
-	// DarkstoneCandle.MapEntry: Darkstone Candle
-	// DarkstoneBed.MapEntry: Darkstone Bed
+	ScorpionPodFull.MapEntry: Заполненная клетка со скорпионами
+	TruffleCageTile.MapEntry: Клетка с трюфелем
+	DarkstoneWorkBench.MapEntry: Мракаменный верстак
+	DarkstoneTable.MapEntry: Мракаменный стол
+	DarkstoneSofa.MapEntry: Мракаменный диван
+	DarkstoneLantern.MapEntry: Мракаменная лампа
+	DarkstoneDoorOpen.MapEntry: Мракаменная дверь
+	DarkstoneDoorClosed.MapEntry: Мракаменная дверь
+	DarkstoneChandelier.MapEntry: Мракаменный канделябр
+	DarkstoneChair.MapEntry: Мракаменный стул
+	DarkstoneCandle.MapEntry: Мракаменная свечка
+	DarkstoneBed.MapEntry: Мракаменная кровать
+	// VoidWorkBench.MapEntry: Void Work Bench
+	// VoidTable.MapEntry: Void Table
+	// VoidSofa.MapEntry: Void Sofa
+	// VoidLantern.MapEntry: Void Lantern
+	// VoidDresser.MapEntry: Void Dresser
+	// VoidDoorOpen.MapEntry: Void Door
+	// VoidDoorClosed.MapEntry: Void Door
+	// VoidClock.MapEntry: Void Clock
+
+	VoidChest: {
+		// MapEntry1: Void Chest
+		// VoidChest: Void Chest
+	}
+
+	// VoidChandelier.MapEntry: Void Chandelier
+	// VoidChair.MapEntry: Void Chair
+	// VoidCandle.MapEntry: Void Candle
+	// VoidCandelabra.MapEntry: Void Candelabra
+	// VoidBookshelf.MapEntry: Void Bookshelf
+	// VoidBed.MapEntry: Void Bed
 }
 
 Buffs: {
@@ -5908,51 +6229,56 @@ Buffs: {
 	}
 
 	StatueBuffAmadis: {
-		// DisplayName: Amadis Presence
-		/* Description:
+		DisplayName: Присутствие Amadis
+		Description:
 			'''
-			15% increased melee damage and speed
-			30% reduced health
-			''' */
+			Увеличивает урон и скорость ближних оружий на 15%
+			Уменьшает максимальное здоровье на 30%
+			'''
 	}
 
 	StatueBuffBurst: {
-		// DisplayName: Burst Presence
-		/* Description:
+		DisplayName: Присутствие Burst
+		Description:
 			'''
-			15% increased ranged damage
-			15% decreased movement speed
-			''' */
+			Увеличивает стрелковый урон на 15%
+			Уменьшает скорость передвижения на 15%
+			'''
 	}
 
 	StatueBuffOinite: {
-		// DisplayName: Oinite's Presence
-		/* Description:
+		DisplayName: Присутствие Oinite
+		Description:
 			'''
-			Perfectly balanced, like all things should be
-			Doubles all buff and debuff duration
-			''' */
+			Пример идеального, вселенского баланса.
+			Удваивает длительности как баффов, так и дебаффов
+			'''
 	}
 
 	StatueBuffOrange: {
-		// DisplayName: ThatOneJuicyOrange_ Presence
-		/* Description:
+		DisplayName: Присутствие ThatOneJuicyOrange_
+		Description:
 			'''
-			15% increased damage
-			50% increased damage taken
-			Increases the cooldown of healing potions
-			''' */
+			Увеличивает весь урон на 15%
+			Увеличивает весь получаемый урон на 50%
+			Увеличивает длительность дебаффа "Послезельевая болезнь"
+			'''
 	}
 
 	StatueBuffRanipla: {
-		// DisplayName: Ranipla's Presence
-		/* Description:
+		DisplayName: Ranipla's Presence
+		Description:
 			'''
-			Worth is irrelevant, just do it.
-			25% increased speed
-			15% increased summon damage
-			25% reduced jump height and wingtime
-			''' */
+			Смысл не важен, просто сделай это уже.
+			Увеличивает скорость передвижения на 25%
+			Увеличивает призывательский урон на 15%
+			Уменьшает высоту прыжка и время полёта у крыльев на 25%
+			'''
+	}
+
+	Irradiated: {
+		// DisplayName: Irradiated
+		// Description: The buildup of radiation harms you
 	}
 }
 
@@ -7007,6 +7333,7 @@ Projectiles: {
 	VoidCrawler.DisplayName: Пустолзун
 	WOKE.DisplayName: Воук-пропаганда
 	AutoDrillBeam.DisplayName: Луч автодрели
+	// EscapedChlorobyte.DisplayName: Escaped Chlorobyte
 }
 
 Configs: {
@@ -7033,8 +7360,10 @@ Config: {
 	Reduces: Сильно ограничивает количество частиц, которые могут существовать одновременно
 	EnterDebug: Режим дебага
 	Shows: вполне возможно, что эта хуйня вообще в принципе не работает.
-	// RecipeBrows: Recipe Browser
-	// RecipeBrowsTooltips: Shows hints for some items
+	# У МЕНЯ БОЛЕЛА ГОЛОВА, А ЗАДУМКА БЫЛА КАК В МОДЕ "Quite Enough Recipes" Я ХОТЕЛ ЗДЕЛАТЬ ДЛЯ "Recipe Browser". НО НИЧЕГО НЕ ПОЛУЧИЛОСЬ.
+	# ПОЭТОМУ ПРОСТО ОСТАВЛЮ ЭТОТ КОММЕНТАРИЙ, ЧТОБЫ ПОТОМ НЕ ЗАБЫТЬ. УДАЛТЬ
+	RecipeBrows: Браузер рецептов
+	RecipeBrowsTooltips: Даёт подсказки по крафту некоторых предметов (а нахуя это нужно вообще?)
 }
 
 Biomes: {
@@ -7256,9 +7585,32 @@ Tooltips: {
 	InfinityGauntlet12: Пустотный камень: Позволяет убить половину обычных врагов на экране, если их максимальное здоровье ниже 10000
 	CreditsSetup: Титры выключены
 	CreditsSetup1: Титры включены
-	// Generator: Power Output: {0} energy every {1} seconds
-	// Generator1: Inactive
-	// Statues: You cant stack buff statues!
+	Generator: Производство энергии: {0} каждые {1} секунд
+	Generator1: Выключен
+	Statues: Э, ты чё, больше одной статуи в одном месте нельзя ставить!
+	/* BoostDrive:
+		'''
+		Pressing the special ability key {0} will speed up the player for 5 seconds
+		Activating it will take consume energy
+		''' */
+	// GravityCore: Gravity: {0}%
+	// GravityCore1: Enabled
+	// GravityCore2: Disabled
+	// GravityCore3: WARNING: At high gravity there may be undesired effects
+	/* HyperDrive:
+		'''
+		Pressing the special ability key {0} will greatly speed up the player for 5 seconds
+		WARNING: travelling at such high speeds can be damaging
+		Activating it will consume 150 energy
+		''' */
+	// BiofuelBurner: Produces {0} energy every {1} seconds
+	// BiofuelBurner1: Fuel Type: {0}
+	// BiofuelBurner2: Fuel: {0}
+	// BiofuelBurner3: Empty
+	// LifeforceBurner: Strength: {0}
+	// LifeforceBurner1: boiled away
+	// WindGenerator: Wind speed: {0}
+	// WindGenerator1: Production Rate: 1 energy every {0} seconds
 }
 
 AccInfo: {
@@ -7447,8 +7799,8 @@ LooTCondition: {
 	ScourgeLootCondition: Шанс дропа 1/3
 	AncientWyrmHeadDeath: Если в битве первым был убит Древний Змей
 	TheEye: Если в битве первым было убито Око
-	BIDRC: Падает, если {0} был побеждён(а)
-	// AllMechs: Drops after {0}, {1}, {2} and {3} have been defeated
+	BIDRC: Падает только после победы над {0}
+	AllMechs: Падает только после победы над {0}, {1}, {2} и {3}
 	BiomeConditions: Если ты находишься в {0}
 }
 

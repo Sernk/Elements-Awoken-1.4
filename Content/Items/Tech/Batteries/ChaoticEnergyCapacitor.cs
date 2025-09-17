@@ -1,7 +1,8 @@
-﻿using ElementsAwoken.EASystem;
+﻿using ElementsAwoken.Content.Items.BossDrops.Azana;
+using ElementsAwoken.Content.Items.Chaos;
+using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Items.Tech.Batteries
@@ -16,26 +17,19 @@ namespace ElementsAwoken.Content.Items.Tech.Batteries
             Item.value = Item.sellPrice(0, 20, 0, 0);
             Item.rare = ModContent.RarityType<EARarity.Rarity13>();
         }
-
-        public override void SetStaticDefaults()
-        {
-            //DisplayName.SetDefault("Chaotic Energy Capacitor");
-            //Tooltip.SetDefault("Increases the players maximum energy by 1750");
-        }
         public override void UpdateInventory(Player player)
         {
             PlayerEnergy modPlayer = player.GetModPlayer<PlayerEnergy>();
             modPlayer.batteryEnergy += 1750;
         }
-        //public override void AddRecipes()
-        //{
-        //    ModRecipe recipe = new ModRecipe(mod);
-        //    recipe.AddIngredient(null, "LunarEnergyHarnesser", 2);
-        //    recipe.AddIngredient(null, "DiscordantBar", 8);
-        //    recipe.AddIngredient(null, "ChaoticFlare", 4);
-        //    recipe.AddTile(null, "ChaoticCrucible");
-        //    recipe.SetResult(this);
-        //    recipe.AddRecipe();
-        //}
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ModContent.ItemType<LunarEnergyHarnesser>(), 2);
+            recipe.AddIngredient(ModContent.ItemType<DiscordantBar>(), 8);
+            recipe.AddIngredient(ModContent.ItemType<ChaoticFlare>(), 4);
+            recipe.AddTile(EAU.ChaoticCrucible);
+            recipe.Register();
+        }
     }
 }

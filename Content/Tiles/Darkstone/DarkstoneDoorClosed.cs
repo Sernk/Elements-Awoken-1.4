@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Tiles.Darkstone
 {
-    public class DarkstoneDoorClosed : DorCloseClass
+    public class DarkstoneDoorClosed : DoorCloseClass
     {
         public override int ColorR => 51;
         public override int ColorG => 51;
