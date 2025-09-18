@@ -175,5 +175,30 @@ namespace ElementsAwoken.EAUtilities
             ["magic"] = DamageClass.Magic,
             ["summon"] = DamageClass.Summon,
         };
+        public static readonly Dictionary<int, (int bar, int need)> Tier1 = new()
+        {
+            { ItemID.CopperOre,     (ItemID.CopperBar, 3) },
+            { ItemID.TinOre,        (ItemID.TinBar, 3) },
+            { ItemID.IronOre,       (ItemID.IronBar, 3) },
+            { ItemID.LeadOre,       (ItemID.LeadBar, 3) },
+            { ItemID.SilverOre,     (ItemID.SilverBar, 4) },
+            { ItemID.TungstenOre,   (ItemID.TungstenBar, 4) },
+            { ItemID.GoldOre,       (ItemID.GoldBar, 4) },
+            { ItemID.PlatinumOre,   (ItemID.PlatinumBar, 4) },
+            { ItemID.Meteorite,     (ItemID.MeteoriteBar, 3) },
+            { ItemID.DemoniteOre,   (ItemID.DemoniteBar, 3) },
+            { ItemID.CrimtaneOre,   (ItemID.CrimtaneBar, 3) },
+            { ItemID.CobaltOre,     (ItemID.CobaltBar, 3) },
+            { ItemID.PalladiumOre,  (ItemID.PalladiumBar, 3) },
+            { ItemID.MythrilOre,    (ItemID.MythrilBar, 4) },
+            { ItemID.OrichalcumOre, (ItemID.OrichalcumBar, 4) },
+        };
+        public static readonly Dictionary<int, (int bar, int need)> Tier2 = new()
+        {
+            { ItemID.AdamantiteOre, (ItemID.AdamantiteBar, 5) },
+            { ItemID.TitaniumOre,   (ItemID.TitaniumBar, 5) },
+            { ItemID.ChlorophyteOre,(ItemID.ChlorophyteBar, 6) },
+            { ItemID.LunarOre,      (ItemID.LunarBar, 4) },
+        };
     }
 }

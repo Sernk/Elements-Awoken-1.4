@@ -18,6 +18,9 @@ namespace ElementsAwoken
     /// </summary>
     public class EAU
     {
+        public const string ProjTexture = "ElementsAwoken/Content/Projectiles/Blank";
+        public static string ModifyProjTexture(string name) => $"ElementsAwoken/Content/Projectiles/{name}";
+        public static string SoundPath(string name) => $"ElementsAwoken/Sounds/Item/{name}";
         public static int FireEssence => ModContent.ItemType<FireEssence>();
         public static int VoidEssence => ModContent.ItemType<VoidEssence>();
         public static int ElementalForge => ModContent.TileType<ElementalForge>();
@@ -26,7 +29,7 @@ namespace ElementsAwoken
         public static int HandsOfDespair => ModContent.BuffType<HandsOfDespair>();
         public static int Dragonfire => ModContent.BuffType<Dragonfire>();
         /// <param name="seconds"></param>  <param name="minutes"> 1 minutes = 3600 2 minutes = 7200 3 minutes = 11800 </param> <param name="hours"></param>
-        public static int BaffsTime(int seconds = 0, int minutes = 0, int hours = 0) { int result = 0; result += seconds * 60; result += minutes * 60 * 60; result += hours * 60 * 60 * 60; return result; }
+        public static int BuffsTime(int seconds = 0, int minutes = 0, int hours = 0) { int result = 0; result += seconds * 60; result += minutes * 60 * 60; result += hours * 60 * 60 * 60; return result; }
         public static SpriteBatch Sb => Main.spriteBatch;
         public static void SetSoul(int type) => ItemID.Sets.AnimatesAsSoul[type] = true;
         public static void Longer(int type) => BuffID.Sets.LongerExpertDebuff[type] = true;

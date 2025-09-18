@@ -5461,6 +5461,316 @@ Items: {
 			Right Click to turn on
 			'''
 	}
+
+	AutoMiner: {
+		DisplayName: Auto Miner
+		Tooltip:
+			'''
+			Automatically mines nearby ores
+			Consumes energy to mine
+			Right Click to turn on
+			'''
+	}
+
+	AutoMinerMKII: {
+		DisplayName: Auto Miner MK II
+		Tooltip:
+			'''
+			Automatically mines nearby ores
+			Consumes energy to mine
+			Right Click to turn on
+			'''
+	}
+
+	AutoMinerMKIII: {
+		DisplayName: Auto Miner MK III
+		Tooltip:
+			'''
+			Automatically mines nearby ores
+			Consumes energy to mine
+			Right Click to turn on
+			'''
+	}
+
+	AutoSmelter: {
+		DisplayName: Auto Smelter
+		Tooltip:
+			'''
+			Automatically turns ores into bars
+			Consumes energy to smelt bars
+			Right Click to turn on
+			'''
+	}
+
+	AutoSmelterMKII: {
+		DisplayName: Auto Smelter MKII
+		Tooltip:
+			'''
+			Automatically turns ores into bars
+			Consumes energy to smelt bars
+			Right Click to turn on
+			'''
+	}
+
+	GravityGun: {
+		DisplayName: Gravity Gun MKI
+		Tooltip: Able to pick up items
+	}
+
+	GravityGunMKII: {
+		DisplayName: Gravity Gun MKII
+		Tooltip: Able to pick up items and enemies
+	}
+
+	LittleBuddy: {
+		DisplayName: Little Buddy
+		Tooltip: Fires a blue bolt that gains speed and damage each time it bounces
+	}
+
+	RifleSentrySummon: {
+		DisplayName: Rifle Sentry Summon
+		Tooltip:
+			'''
+			Summons a rifle sentry to defend you
+			The rifle sentry uses 1 energy every two seconds
+			'''
+	}
+
+	Zapmaster: {
+		Tooltip: Shoots an arcing electric bolt
+		DisplayName: Zapmaster 9000
+	}
+
+	Porter: {
+		Tooltip: Teleports minor enemies around
+		DisplayName: Porter
+	}
+
+	PlasmaThrower: {
+		Tooltip: Instantly heats a path in front of it
+		DisplayName: Plasma Thrower
+	}
+
+	Fizzler: {
+		Tooltip: Shoots a splitting fireball
+		DisplayName: Fizzler
+	}
+
+	ArcBlade: {
+		DisplayName: Arc Blade
+		Tooltip:
+			'''
+			Electrifies enemies
+			Requires 8 energy to electrify enemies
+			'''
+	}
+
+	Growinator: {
+		DisplayName: Growinator
+		Tooltip: Enlarges minor enemies
+	}
+
+	Imbalancer: {
+		DisplayName: Imbalancer
+		Tooltip:
+			'''
+			Shoots a charged mine
+			If the mine lands on the ground it will zap nearby enemies
+			If the mine lands on an enemy it will electrify them and explode
+			'''
+	}
+
+	PlasmaRifle: {
+		DisplayName: Plasma Rifle
+		Tooltip: Fires a burst of 3 plasma bolts
+	}
+
+	Shrinkinator: {
+		DisplayName: Shrinkinator
+		Tooltip: Shrinks minor enemies
+	}
+
+	Arcthrower: {
+		DisplayName: Arcthrower
+		Tooltip:
+			'''
+			Rapidly shoots arcing electric bolts
+			Uses 5 energy
+			'''
+	}
+
+	NapalmCannon: {
+		DisplayName: Napalm Cannon
+		Tooltip: Shoots a glob of sticky napalm
+	}
+
+	PrototypeX51: {
+		DisplayName: Prototype X-51
+		Tooltip: Fires an electrosphere
+	}
+
+	SizeManipulator: {
+		DisplayName: Size Manipulator
+		Tooltip:
+			'''
+			Left click to grow enemies
+			Right Click to shrink enemies
+			Only works on minor enemies
+			'''
+	}
+
+	DubstepGun: {
+		DisplayName: Dubstep Gun
+		Tooltip: ""
+	}
+
+	ParticleAccelerator: {
+		DisplayName: Particle Accelerator
+		Tooltip: Shoots a cloud of particles
+	}
+
+	Quantum: {
+		DisplayName: Quantum
+		Tooltip: Fires matrix lasers from the sky
+	}
+
+	DemonicMagnet: {
+		DisplayName: Demonic Magnet
+		Tooltip: ""
+	}
+
+	DimensionalManipulator: {
+		DisplayName: Dimensional Manipulator
+		Tooltip:
+			'''
+			Allows the wielder to adjust the time to their liking
+			Left click to change to the time
+			Right Click to set the desired time
+			'''
+	}
+
+	Hamaxe: {
+		DisplayName: Hamaxe
+		Tooltip: It reeks of rotten meat
+	}
+
+	MatterManipulator: {
+		DisplayName: Matter Manipulator
+		Tooltip: Right Click to change the area dug
+	}
+
+	ScrapplingHook: {
+		DisplayName: Scrappling Hook
+		Tooltip: Scrappling Hook
+	}
+
+	TinyPick: {
+		DisplayName: Tiny Pick
+		Tooltip: How is this even functional?
+	}
+
+	CastersCurse: {
+		DisplayName: Caster's Curse
+		Tooltip: ""
+	}
+
+	CrimsonShade: {
+		DisplayName: Crimson Shade
+		Tooltip: ""
+	}
+
+	LifesLament: {
+		DisplayName: Life's Lament
+		Tooltip: ""
+	}
+
+	ShadeEgg: {
+		DisplayName: Shade Egg
+		Tooltip: Summons a Baby Shade Wyrm
+	}
+
+	VoidJelly: {
+		DisplayName: Void Jelly
+		Tooltip:
+			'''
+			It looks like congealed blood...
+			15% increased damage
+			'''
+	}
+
+	VoidLanternAcc: {
+		DisplayName: Void Lantern
+		Tooltip:
+			'''
+			Increases the brightness during the Dawn of the Void
+			Works in inventory
+			'''
+	}
+
+	BlinkrootWand: {
+		DisplayName: Blinkroot Wand
+		Tooltip: ""
+	}
+
+	DaybloomWand: {
+		DisplayName: Daybloom Wand
+		Tooltip: ""
+	}
+
+	DeathweedWand: {
+		DisplayName: Deathweed Wand
+		Tooltip: ""
+	}
+
+	FireblossomWand: {
+		DisplayName: Fireblossom Wand
+		Tooltip: ""
+	}
+
+	MoonglowWand: {
+		DisplayName: Moonglow Wand
+		Tooltip: ""
+	}
+
+	ShiverthornWand: {
+		DisplayName: Shiverthorn Wand
+		Tooltip: ""
+	}
+
+	WaterleafWand: {
+		DisplayName: Waterleaf Wand
+		Tooltip: ""
+	}
+
+	AdamantiteStaff: {
+		DisplayName: Adamantite Beamer
+		Tooltip: Shoots an adamantite laser
+	}
+
+	CobaltStaff: {
+		DisplayName: Cobalt Scythe
+		Tooltip: Fires a cobalt scythe
+	}
+
+	MythrilStaff: {
+		DisplayName: Mythril Bomber
+		Tooltip: Shoots an exploding mythril ball
+	}
+
+	OrichalcumStaff: {
+		DisplayName: Orichalcum Barrage
+		Tooltip: Fires a barrage of petals
+	}
+
+	PalladiumStaff: {
+		DisplayName: Palladium Sparkler
+		Tooltip: Shoots burning sparks
+	}
+
+	TitaniumStaff: {
+		DisplayName: Titanium Slicer
+		Tooltip: Fires a barrage of titanium spikes
+	}
 }
 
 Tiles: {
@@ -6234,6 +6544,21 @@ Buffs: {
 	Irradiated: {
 		DisplayName: Irradiated
 		Description: The buildup of radiation harms you
+	}
+
+	ElectrifiedNPC: {
+		DisplayName: Electrified
+		Description: ""
+	}
+
+	VoidJellyBuff: {
+		Description: Damage is increased by 15%
+		DisplayName: Void Jelly
+	}
+
+	BabyShadeWyrmBuff: {
+		Description: Unlike normal Shade Wyrms, it is not trying to trap you in the vast, endless void
+		DisplayName: Baby Shade Wyrm
 	}
 }
 
@@ -7289,6 +7614,48 @@ Projectiles: {
 	WOKE.DisplayName: WOKE
 	AutoDrillBeam.DisplayName: Dubstep Beam
 	EscapedChlorobyte.DisplayName: Escaped Chlorobyte
+	Blank.DisplayName: Blank
+	ElectricBolt.DisplayName: Electric Bolt
+	RifleSentry.DisplayName: Rifle Sentry
+	ZapMasterLightning.DisplayName: Strange Ukulele
+	PorterP.DisplayName: Porter
+	PlasmaThrowerBeam.DisplayName: Purge Beam
+	FizzlerP2.DisplayName: Fizzler
+	FizzlerP.DisplayName: Fizzler
+	GrowinatorP.DisplayName: Growinator
+	ImbalancerLightning.DisplayName: Strange Ukulele
+	ImbalancerMine.DisplayName: Imbalancer
+	ShrinkinatorP.DisplayName: Shrinkinator
+	NapalmCannonP.DisplayName: Napalm Cannon
+	DubstepBeam.DisplayName: Dubstep Beam
+	DubstepGunHeld.DisplayName: The Destroyer
+	DubstepPulse.DisplayName: Dubstep Pulse
+	DubstepWave.DisplayName: Dubstep
+	MatrixLaser.DisplayName: Matrix Laser
+	Particles.DisplayName: Particles
+	MatterManipulator.DisplayName: Matter Manipulator
+	ScrapplingHookP.DisplayName: Scrappling Hook
+	CrimsonShadeHoming.DisplayName: Crimson Shade Homing
+	CrimsonShadeP.DisplayName: Crimson Shade P
+	LifesLamentAxe.DisplayName: Lifes Lament Axe
+	BabyShadeWyrmBody.DisplayName: Baby Shade Wyrm Body
+	CastersCurseBoltBase.DisplayName: Casters Curse Bolt Base
+	CastersCurseBoltSwirl.DisplayName: Casters Curse Bolt Swirl
+	BabyShadeWyrmTail.DisplayName: Baby Shade Wyrm Tail
+	BlinkrootDirt.DisplayName: Blinkroot
+	DaybloomSun.DisplayName: Daybloom
+	DeathweedBall.DisplayName: Deathweed
+	FireblossomBall.DisplayName: Fireblossom
+	MoonglowLight.DisplayName: Moonglow
+	ShiverthornIcicle.DisplayName: Shiverthorn
+	WaterleafBall.DisplayName: Waterleaf
+	AdamantiteLaser.DisplayName: Adamantite Laser
+	CobaltScythe.DisplayName: Cobalt Scythe
+	MythrilBomb.DisplayName: Mythril Bomb
+	MythrilSpike.DisplayName: Mythril Bomb
+	OrichalcumPetal.DisplayName: Orichalcum Petal
+	PalladiumSpark.DisplayName: Palladium Spark
+	TitaniumSpike.DisplayName: Titanium Slice
 }
 
 Configs: {
@@ -7754,7 +8121,7 @@ LooTCondition: {
 	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
 	TheEye: if The Eye was killed first
 	BIDRC: Drops after {0} has been defeated
-	AllMechs: Drops after {0}, {1}, {2} and {3} have been defeated
+	AllMechs: "{0}, {1}, {2} and {3} have been defeated"
 	BiomeConditions: If you are in a biome {0}
 }
 

@@ -1,33 +1,87 @@
-﻿using ElementsAwoken.Content.Items.Essence;
-using ElementsAwoken.EASystem.Loot;
-using ElementsAwoken.EAUtilities;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Terraria;
+using Terraria.GameContent.ItemDropRules;
+using Terraria.ID;
 using Terraria.ModLoader;
-using static ElementsAwoken.EASystem.Loot.BIDRC;
-using static ElementsAwoken.EASystem.Loot.BiomeConditions;
-using static ElementsAwoken.EAUtilities.EAColors;
 
 namespace ElementsAwoken.EASystem.UI.Tooltips
 {
+    /// <summary>
+    /// Отображает условия выпадения предметов в подсказках, только в recipe browser.
+    /// </summary>
     public class ConditionsForRecipeBrowser : GlobalItem
     {
-        public static string GetConditionDescription(string BossName, string BiomeName)
-        {
-            string BossNametext = string.Format(ModContent.GetInstance<EALocalization>().BIDRC, BossName);
-            string BiomeNametext = string.Format(ModContent.GetInstance<EALocalization>().BiomeConditions, BiomeName);
-            return "Icon" + " " + "Recipe Browser:" + " " + BossNametext + " " + "&" + " " + BiomeNametext;
-        }
+        private static readonly Dictionary<int, List<TooltipLine>> _dropTooltipCache = [];
+
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (ElementsAwoken.recipebrowser && ModContent.GetInstance<Config>().RecipeBrowser == false)
+            if(ModContent.GetInstance<Config>().RecipeBrowser == false) return;
+            if (!_dropTooltipCache.TryGetValue(item.type, out var cachedLines))
             {
-                if (item.type == ModContent.ItemType<DesertEssence>()) tooltips.Add(new TooltipLine(Mod, "RecipeBrowser:Conditions", GetConditionDescription(new BIDRC(BossType.EyeOfCthulhu).GetBossName(), new BiomeConditions(BiomeID.Desert).GetBiomeName())) { OverrideColor = White });
-                if (item.type == ModContent.ItemType<FireEssence>()) tooltips.Add(new TooltipLine(Mod, "RecipeBrowser:Conditions", GetConditionDescription(new BIDRC(BossType.Skeletron).GetBossName(), new BiomeConditions(BiomeID.Underworld).GetBiomeName()))  { OverrideColor = White });
-                if (item.type == ModContent.ItemType<SkyEssence>()) tooltips.Add(new TooltipLine(Mod, "RecipeBrowser:Conditions", GetConditionDescription(new BIDRC(BossType.AllMechs).GetBossName(), new BiomeConditions(BiomeID.Sky).GetBiomeName())) { OverrideColor = White });
-                if (item.type == ModContent.ItemType<FrostEssence>()) tooltips.Add(new TooltipLine(Mod, "RecipeBrowser:Conditions", GetConditionDescription(new BIDRC(BossType.Plantera).GetBossName(), new BiomeConditions(BiomeID.Frost).GetBiomeName())) { OverrideColor = White });
-                if (item.type == ModContent.ItemType<WaterEssence>()) tooltips.Add(new TooltipLine(Mod, "RecipeBrowser:Conditions", GetConditionDescription(new BIDRC(BossType.DukeFishron).GetBossName(), new BiomeConditions(BiomeID.InBeach).GetBiomeName())) { OverrideColor = White });
+                cachedLines = [];
+
+                var conditionToNpcNames = new Dictionary<string, List<string>>();
+
+                foreach (var kvp in ContentSamples.NpcsByNetId)
+                {
+                    int npcNetId = kvp.Key;
+                    NPC npcSample = kvp.Value;
+
+                    var rules = Main.ItemDropsDB.GetRulesForNPCID(npcNetId, includeGlobalDrops: true);
+                    if (rules == null || rules.Count == 0) continue;
+
+                    foreach (IItemDropRule rule in rules)
+                    {
+                        var drops = new List<DropRateInfo>();
+                        rule.ReportDroprates(drops, new DropRateInfoChainFeed(1f));
+
+                        foreach (var dr in drops)
+                        {
+                            if (dr.itemId != item.type) continue;
+
+                            float chance = dr.dropRate;
+                            string conditionsText = "";
+
+                            if (dr.conditions != null)
+                            {
+                                foreach (var cond in dr.conditions)
+                                {
+                                    if (cond.CanShowItemDropInUI())
+                                    {
+                                        string desc = cond is IProvideItemConditionDescription prov ? prov.GetConditionDescription() : cond.ToString();
+
+                                        if (!string.IsNullOrEmpty(desc))
+                                        {
+                                            Player player = Main.LocalPlayer;
+                                            if (conditionsText.Length > 0) conditionsText += ", ";
+                                            conditionsText += desc;
+                                        }
+                                    }else continue;
+                                }
+                            }
+
+                            if (string.IsNullOrEmpty(conditionsText)) continue;
+
+                            string conditionLine = $" {conditionsText} ({chance * 100f:0.##}%)";
+
+                            if (!conditionToNpcNames.TryGetValue(conditionLine, out var npcList))
+                            {
+                                npcList = [];
+                                conditionToNpcNames[conditionLine] = npcList;
+                            }
+                            npcList.Add(npcSample.FullName);
+                        }
+                    }
+                }
+                foreach (var kv in conditionToNpcNames)
+                {
+                    string conditionLine = kv.Key;
+                    string text = $"[i:{item.type}] {conditionLine}";
+                    cachedLines.Add(new TooltipLine(Mod, $"TooltipNpcDrop_{item.type}_{conditionLine}", text));
+                }
+                _dropTooltipCache[item.type] = cachedLines;
             }
+            tooltips.AddRange(cachedLines);
         }
     }
 }

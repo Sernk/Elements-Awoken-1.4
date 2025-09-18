@@ -17,50 +17,34 @@ namespace ElementsAwoken.EASystem.UI
 {
     public class EAResursUI : ModResourceOverlay
     {
-        Asset<Texture2D> MiniHP;
         private readonly Dictionary<string, Asset<Texture2D>> vanillaAssetCache = [];
         public string baseFolder = "ElementsAwoken/Extra/";
 
-        public string LifeTexturePath()
+        public enum ResourceType { Life, Mana }
+        private string GetTexturePath(ResourceType type, bool isMini)
         {
-            string folder = $"{baseFolder}HP";
-            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
-
-            if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual) return folder + "Heart4";
-            if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual) return folder + "Heart3";
-            if (modPlayer.CompressorVisual) return folder + "Heart3Alt";
-            if (modPlayer.shieldLife > 0) return folder + "ShieldHeart";
-            return string.Empty;
-        }
-        public string ManaTexturePath()
-        {
-            string folder = $"{baseFolder}MP";
             HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
             MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
 
-            if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus) return folder + "Mana2";
-            return string.Empty;
-        }
-        public string MiniLifeTexturePath()
-        {
-            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
-            string folder = $"{baseFolder}MiniHP";
+            string folder = baseFolder;
 
-            if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual) return folder + "Heart4";
-            if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual) return folder + "Heart3";
-            if (modPlayer.CompressorVisual) return folder + "Heart3Alt";
-            if (modPlayer.shieldLife > 0) return folder + "ShieldHeart";
-            return string.Empty;
-        }
-        public string MiniManaTexturePath()
-        {
-            string folder = $"{baseFolder}MiniMP";
-            HeartsPlayers modPlayer = Main.LocalPlayer.GetModPlayer<HeartsPlayers>();
-            MyPlayer modPlayer2 = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+            if (type == ResourceType.Life) folder += isMini ? "MiniHP" : "HP";
+            else folder += isMini ? "MiniMP" : "MP";
 
-            if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus) return folder + "Mana2";
+            if (type == ResourceType.Life)
+            {
+                if (modPlayer.emptyVesselHeartLife > 0 || modPlayer.EmptyVesselVisual) return folder + "Heart4";
+                if (modPlayer.chaosHeartLife > 0 || modPlayer.ChaosHeartVisual) return folder + "Heart3";
+                if (modPlayer.CompressorVisual) return folder + "Heart3Alt";
+                if (modPlayer.shieldLife > 0) return folder + "ShieldHeart";
+            }
+            else { if (modPlayer2.lunarStarsUsed > 0 || modPlayer.ManaBonus) return folder + "Mana2"; }
             return string.Empty;
         }
+        public string LifeTexturePath() => GetTexturePath(ResourceType.Life, false);
+        public string ManaTexturePath() => GetTexturePath(ResourceType.Mana, false);
+        public string MiniLifeTexturePath() => GetTexturePath(ResourceType.Life, true);
+        public string MiniManaTexturePath() => GetTexturePath(ResourceType.Mana, true);
         public override void PostDrawResource(ResourceOverlayDrawContext context)
         {
             Asset<Texture2D> asset = context.texture;

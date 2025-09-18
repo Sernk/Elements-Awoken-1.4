@@ -21,7 +21,7 @@ namespace ElementsAwoken.Content.Items.ItemSets.Puff
             Item.value = 2500;
             Item.rare = 1;
             Item.buffType = ModContent.BuffType<SilkySerumBuff>();
-            Item.buffTime = EAU.BaffsTime(minutes: 4);
+            Item.buffTime = EAU.BuffsTime(minutes: 4);
             //item.potion = true;
             return;
         }

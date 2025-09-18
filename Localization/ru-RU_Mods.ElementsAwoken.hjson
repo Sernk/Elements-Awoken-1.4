@@ -4937,12 +4937,12 @@ Items: {
 	}
 
 	SolarGeneratorI: {
-		// DisplayName: Solar Generator MKI
-		/* Tooltip:
+		DisplayName: Солнечная батарея MKI
+		Tooltip:
 			'''
-			Generates power during the day
-			Generates more power the higher the sun is in the sky
-			''' */
+			Генерирует энергию днём
+			Чем выше солнце в небе, тем больше энергии она генерирует
+			'''
 	}
 
 	ChaoticEnergyCapacitor: {
@@ -5044,7 +5044,7 @@ Items: {
 
 	DarkstoneChandelier: {
 		Tooltip: ""
-		DisplayName: Мракаменный кандеблядбр
+		DisplayName: Мракаменная люстра
 	}
 
 	DarkstoneChair: {
@@ -5216,295 +5216,629 @@ Items: {
 	}
 
 	VoidBrick: {
-		// Tooltip: ""
-		// DisplayName: Void Brick
+		Tooltip: люблю объединять два слова в одно.
+		DisplayName: Пусторпич
 	}
 
 	VoidBookshelf: {
-		// Tooltip: ""
-		// DisplayName: Void Bookshelf
+		Tooltip: ""
+		DisplayName: Пустотный книжный шкаф
 	}
 
 	VoidBed: {
-		// Tooltip: ""
-		// DisplayName: Void Bed
+		Tooltip: ""
+		DisplayName: Пустотная кровать
 	}
 
 	VoidBrickWall: {
-		// DisplayName: Void Brick Wall
-		// Tooltip: ""
+		DisplayName: Пусторпичная стена
+		Tooltip: ""
 	}
 
 	VoidCandelabra: {
-		// DisplayName: Void Candelabra
-		// Tooltip: ""
+		DisplayName: Пустотный канделябр
+		Tooltip: ""
 	}
 
 	VoidCandle: {
-		// DisplayName: Void Candle
-		// Tooltip: ""
+		DisplayName: Пустотная свеча
+		Tooltip: ""
 	}
 
 	VoidChair: {
-		// DisplayName: Void Chair
-		// Tooltip: ""
+		DisplayName: Пустотный стул
+		Tooltip: ""
 	}
 
 	VoidChandelier: {
-		// DisplayName: Void Chandelier
-		// Tooltip: ""
+		DisplayName: Пустотная люстра
+		Tooltip: ""
 	}
 
 	VoidChest: {
-		// DisplayName: Void Chest
-		// Tooltip: ""
+		DisplayName: Пустотный сундук
+		Tooltip: ""
 	}
 
 	VoidClock: {
-		// DisplayName: Void Clock
-		// Tooltip: ""
+		DisplayName: Пустотные часы
+		Tooltip: ""
 	}
 
 	VoidDoor: {
-		// DisplayName: Void Door
-		// Tooltip: ""
+		DisplayName: Пустотная дверь
+		Tooltip: ""
 	}
 
 	VoidDresser: {
-		// DisplayName: Void Dresser
-		// Tooltip: ""
+		DisplayName: Пустотный комод
+		Tooltip: ""
 	}
 
 	VoidLamp: {
-		// DisplayName: Void Lamp
-		// Tooltip: ""
+		DisplayName: Пустотная лампа
+		Tooltip: ""
 	}
 
 	VoidLantern: {
-		// DisplayName: Void Lantern
-		// Tooltip: ""
+		DisplayName: Пустотный фонарь
+		Tooltip: ""
 	}
 
 	VoidPiano: {
-		// DisplayName: Void Piano
-		// Tooltip: ""
+		DisplayName: Пустотное пианино
+		Tooltip: ""
 	}
 
 	VoidPlatform: {
-		// DisplayName: Void Platform
-		// Tooltip: ""
+		DisplayName: Пустотная платформа
+		Tooltip: ""
 	}
 
 	VoidSink: {
-		// DisplayName: Void Sink
-		// Tooltip: ""
+		DisplayName: Пустотная раковина
+		Tooltip: ""
 	}
 
 	VoidSofa: {
-		// DisplayName: Void Sofa
-		// Tooltip: ""
+		DisplayName: Пустотный диван
+		Tooltip: ""
 	}
 
 	VoidTable: {
-		// DisplayName: Void Table
-		// Tooltip: ""
+		DisplayName: Пустотный стол
+		Tooltip: ""
 	}
 
 	VoidWorkBench: {
-		// DisplayName: Void Work Bench
-		// Tooltip: ""
+		DisplayName: Пустотный верстак
+		Tooltip: ""
 	}
 
 	HyperDrive: {
-		// Tooltip: ""
-		// DisplayName: Hyper Drive
+		Tooltip: ""
+		DisplayName: Гиперускоритель
 	}
 
 	GravityCore: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Allows the player to control the gravity
-			Use the arrow keys while hovering over the item to change strength
-			Press G on the item to reset gravity to normal
-			Right Click to turn on
-			''' */
-		// DisplayName: Gravity Core
+			Позволяет игроку контролировать гравитацию
+			Используй стрелки при наводе на предмет, чтобы изменять силу гравитации
+			Нажми G по предмету, чтобы сбросить гравитацию
+			<right>, чтобы включить ядро
+			'''
+		DisplayName: Ядро гравитации
 	}
 
 	BoostDrive: {
-		// Tooltip: ""
-		// DisplayName: Boost Drive
+		Tooltip: ""
+		DisplayName: Ускоритель
 	}
 
 	LunarEnergyHarnesser: {
-		// Tooltip: Increases the players maximum energy by 750
-		// DisplayName: Lunar Energy Harnesser
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 750.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
+		DisplayName: Сосуд лунной энергии
 	}
 
 	HellstoneCapacitor: {
-		// Tooltip: Increases the players maximum energy by 150
-		// DisplayName: Hellstone Capacitor
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 150.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
+		DisplayName: Адокаменный конденсатор
 	}
 
 	DemonicPowerBank: {
-		// Tooltip: Increases the players maximum energy by 60
-		// DisplayName: Demonic Power Bank
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 60.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
+		DisplayName: Демонический повербанк
 	}
 
 	BioBattery: {
-		// Tooltip: Increases the players maximum energy by 350
-		// DisplayName: Bio-Battery
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 350.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
+		DisplayName: Биобатарея
 	}
 
 	AABattery: {
-		// Tooltip: Increases the players maximum energy by 25
-		// DisplayName: AA Battery
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 25.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
+		DisplayName: AA Батарея
 	}
 
 	WoodenAccumulator: {
-		// DisplayName: Wooden Accumulator
-		// Tooltip: Increases the players maximum energy by 10
+		DisplayName: Деревянный аккумулятор
+		Tooltip:
+			'''
+			Увеличивает количество максимальной энергии на 10.
+			Не стакается со всеми остальными предметами, увеличивающими количество максимальной энергии.
+			'''
 	}
 
 	BiofuelBurner: {
-		// DisplayName: Biofuel Burner Generator
-		/* Tooltip:
+		DisplayName: Биотопливная горелка
+		Tooltip:
 			'''
-			Consumes certain plant materials in the inventory
-			Different plants have different power outputs
-			Right Click to turn on
-			''' */
+			Расходует растения, находящиеся у тебя в инвентаре
+			Разные растения дают разное количество энергии
+			<right>, чтобы включить горелку
+			'''
 	}
 
 	BurnerGenerator: {
-		// DisplayName: Burner Generator
-		/* Tooltip:
+		DisplayName: Горелка
+		Tooltip:
 			'''
-			Consumes raw wood in the inventory to produce 1 energy per second
-			1 wood burns for 15 seconds
-			Right Click to turn on
-			''' */
+			Расходует древесину, находящуюся у тебя в инвентаре, производя 1 энергии в секунду
+			1 единица древесины сгорает 15 секунд
+			<right>, чтобы включить горелку
+			'''
 	}
 
 	Chlorobyte: {
-		// DisplayName: Chlorobyte
-		// Tooltip: Don't let it escape...
+		DisplayName: Хлоробит
+		Tooltip: Только смотри, чтобы он не убежал никуда...
 	}
 
 	GelticBurner: {
-		// DisplayName: Geltic Burner Generator
-		/* Tooltip:
+		DisplayName: Гелевая горелка
+		Tooltip:
 			'''
-			Consumes gel in the inventory to produce 2 energy per second
-			1 gel burns for 15 seconds
-			Pink gel burns for 30 seconds
-			Right Click to turn on
-			''' */
+			Расходует гель, находящийся у тебя в инвентаре, производя 2 энергии в секунду
+			1 единица геля сгорает 15 секунд
+			1 единица розового геля сгорает 30 секунд
+			<right>, чтобы включить горелку
+			'''
 	}
 
 	GeothermalGenerator: {
-		// DisplayName: Geothermal Generator
-		/* Tooltip:
+		DisplayName: Геотермальный генератор
+		Tooltip:
 			'''
-			Turns heat into energy
-			The closer the player is to a lava source the more energy is generated
-			''' */
+			Превращает тепло в энергию
+			Чем ты ближе к лаве, тем больше энергии он будет генерировать
+			'''
 	}
 
 	HandCrank: {
-		// DisplayName: Hand Crank Generator
-		// Tooltip: Right Click in inventory to generate 1 energy
+		DisplayName: Генератор ручной заводки
+		Tooltip: <right> по нему в инвентаре, чтобы производить 1 единицу энергии
 	}
 
 	KineticConverter: {
-		// DisplayName: Kinetic Energy Converter Generator
-		/* Tooltip:
+		DisplayName: Преобразователь кинетической энергии
+		Tooltip:
 			'''
-			Projectiles that hit the player are converted into energy
-			The more damage and speed the projectile has, the more energy is transformed
-			''' */
+			Вражеские снаряды, попадающие по игроку превращаются в энергию
+			Чем сильнее и быстрее снаряд - тем в большее количество энергии он превратится
+			'''
 	}
 
 	LifeforceBurner: {
-		// DisplayName: Lifeforce Burner
-		/* Tooltip:
+		DisplayName: Жизнегорелка
+		Tooltip:
 			'''
-			Turns life into energy
-			Use the arrow keys while hovering over the item to change amount
-			Right Click to turn on
-			''' */
+			Превращает твою жизненную силу в энергию
+			Используй стрелки при наводке на предмет, чтобы изменять количество потребляемой жизни
+			<right>, чтобы включить горелку
+			'''
 	}
 
 	LunarWaste: {
-		// DisplayName: Lunar Waste
-		/* Tooltip:
+		DisplayName: Лунные отходы
+		Tooltip:
 			'''
-			Reduces life regen if too much builds up
-			Will start damaging the player
-			''' */
+			Если их станет слишком много, они будут урезать твою регенерацию жизни...
+			... А также начнут наносить тебе урон.
+			'''
 	}
 
 	PortableFissionReactor: {
-		// DisplayName: Portable Fission Generator
-		/* Tooltip:
+		DisplayName: Портативный расщепительный генератор
+		Tooltip:
 			'''
-			Consumes 1 chlorophyte ore to generate power
-			Produces 10 seconds of power
-			Creates deadly chlorobytes which overflow and poison the player
-			Right Click to turn on
-			''' */
+			Расходует хлорофитовую руду, находящуюся у тебя в инвентаре, производя энергию
+			Производит энергию на 10 секунд за 1 кусочек руды
+			Также создаёт смертоносные хлоробиты, наносящие урон и отравляющие игрока
+			<right>, чтобы включить генератор
+			'''
 	}
 
 	PortableFusionReactor: {
-		// DisplayName: Portable Fusion Generator
-		/* Tooltip:
+		DisplayName: Портативный слиятельный генератор
+		Tooltip:
 			'''
-			Consumes 2 luminite ore to generate power
-			Produces 15 seconds of power
-			Creates lunar waste which harms the player if it builds up too much
-			Right Click to turn on
-			''' */
+			Расходует люминитовую руду, находящуюся у тебя в инвентаре, производя энергию
+			Производит энергию на 15 секунд за 2 кусочка руды
+			Также создаёт лунные отходы, наносящие урон игроку, если их скапливается слишком много
+			<right>, чтобы включить генератор
+			'''
 	}
 
 	SolarGeneratorII: {
-		// DisplayName: Solar Generator MKII
-		/* Tooltip:
+		DisplayName: Солнечная батарея MKII
+		Tooltip:
 			'''
-			Generates power during the day
-			Generates more power the higher the sun is in the sky
-			''' */
+			Генерирует энергию днём
+			Чем выше солнце в небе, тем больше энергии она генерирует
+			'''
 	}
 
 	SolarGeneratorIII: {
-		// DisplayName: Solar Generator MKIII
-		/* Tooltip:
+		DisplayName: Солнечная батарея MKIII
+		Tooltip:
 			'''
-			Generates power during the day
-			Generates more power the higher the sun is in the sky
-			''' */
+			Генерирует энергию днём
+			Чем выше солнце в небе, тем больше энергии она генерирует
+			'''
 	}
 
 	SoulConverter: {
-		// DisplayName: Soul Converter
-		/* Tooltip:
+		DisplayName: Преобразователь духа
+		Tooltip:
 			'''
-			Allows enemies to drop batteries which charge the player
-			Batteries restore more energy with slain bosses
-			''' */
+			Заставляет убитых врагов оставлять батарейки, которые дают тебе энергию при подборе
+			Чем больше боссов ты убил, тем больше энергии эти батарейки будут давать
+			'''
 	}
 
 	StarlightCrank: {
-		// DisplayName: Starlight Crank Generator
-		// Tooltip: Right Click in inventory to generate 3 energy
+		DisplayName: Звездосветный заводной генератор
+		Tooltip: <right> по нему в инвентаре, чтобы производить 3 энергии
 	}
 
 	WindGenerator: {
-		// DisplayName: Wind Generator
+		DisplayName: Ветрогенератор
+		Tooltip:
+			'''
+			Чем сильнее ветер, тем больше энергии он производит
+			<right>, чтобы включить генератор
+			'''
+	}
+
+	AutoMiner: {
+		// DisplayName: Auto Miner
 		/* Tooltip:
 			'''
-			Produces energy based on the wind speed
+			Automatically mines nearby ores
+			Consumes energy to mine
 			Right Click to turn on
 			''' */
+	}
+
+	AutoMinerMKII: {
+		// DisplayName: Auto Miner MK II
+		/* Tooltip:
+			'''
+			Automatically mines nearby ores
+			Consumes energy to mine
+			Right Click to turn on
+			''' */
+	}
+
+	AutoMinerMKIII: {
+		// DisplayName: Auto Miner MK III
+		/* Tooltip:
+			'''
+			Automatically mines nearby ores
+			Consumes energy to mine
+			Right Click to turn on
+			''' */
+	}
+
+	AutoSmelter: {
+		// DisplayName: Auto Smelter
+		/* Tooltip:
+			'''
+			Automatically turns ores into bars
+			Consumes energy to smelt bars
+			Right Click to turn on
+			''' */
+	}
+
+	AutoSmelterMKII: {
+		// DisplayName: Auto Smelter MKII
+		/* Tooltip:
+			'''
+			Automatically turns ores into bars
+			Consumes energy to smelt bars
+			Right Click to turn on
+			''' */
+	}
+
+	GravityGun: {
+		// DisplayName: Gravity Gun MKI
+		// Tooltip: Able to pick up items
+	}
+
+	GravityGunMKII: {
+		// DisplayName: Gravity Gun MKII
+		// Tooltip: Able to pick up items and enemies
+	}
+
+	LittleBuddy: {
+		// DisplayName: Little Buddy
+		// Tooltip: Fires a blue bolt that gains speed and damage each time it bounces
+	}
+
+	RifleSentrySummon: {
+		// DisplayName: Rifle Sentry Summon
+		/* Tooltip:
+			'''
+			Summons a rifle sentry to defend you
+			The rifle sentry uses 1 energy every two seconds
+			''' */
+	}
+
+	Zapmaster: {
+		// Tooltip: Shoots an arcing electric bolt
+		// DisplayName: Zapmaster 9000
+	}
+
+	Porter: {
+		// Tooltip: Teleports minor enemies around
+		// DisplayName: Porter
+	}
+
+	PlasmaThrower: {
+		// Tooltip: Instantly heats a path in front of it
+		// DisplayName: Plasma Thrower
+	}
+
+	Fizzler: {
+		// Tooltip: Shoots a splitting fireball
+		// DisplayName: Fizzler
+	}
+
+	ArcBlade: {
+		// DisplayName: Arc Blade
+		/* Tooltip:
+			'''
+			Electrifies enemies
+			Requires 8 energy to electrify enemies
+			''' */
+	}
+
+	Growinator: {
+		// DisplayName: Growinator
+		// Tooltip: Enlarges minor enemies
+	}
+
+	Imbalancer: {
+		// DisplayName: Imbalancer
+		/* Tooltip:
+			'''
+			Shoots a charged mine
+			If the mine lands on the ground it will zap nearby enemies
+			If the mine lands on an enemy it will electrify them and explode
+			''' */
+	}
+
+	PlasmaRifle: {
+		// DisplayName: Plasma Rifle
+		// Tooltip: Fires a burst of 3 plasma bolts
+	}
+
+	Shrinkinator: {
+		// DisplayName: Shrinkinator
+		// Tooltip: Shrinks minor enemies
+	}
+
+	Arcthrower: {
+		// DisplayName: Arcthrower
+		/* Tooltip:
+			'''
+			Rapidly shoots arcing electric bolts
+			Uses 5 energy
+			''' */
+	}
+
+	NapalmCannon: {
+		// DisplayName: Napalm Cannon
+		// Tooltip: Shoots a glob of sticky napalm
+	}
+
+	PrototypeX51: {
+		// DisplayName: Prototype X-51
+		// Tooltip: Fires an electrosphere
+	}
+
+	SizeManipulator: {
+		// DisplayName: Size Manipulator
+		/* Tooltip:
+			'''
+			Left click to grow enemies
+			Right Click to shrink enemies
+			Only works on minor enemies
+			''' */
+	}
+
+	DubstepGun: {
+		// DisplayName: Dubstep Gun
+		// Tooltip: ""
+	}
+
+	ParticleAccelerator: {
+		// DisplayName: Particle Accelerator
+		// Tooltip: Shoots a cloud of particles
+	}
+
+	Quantum: {
+		// DisplayName: Quantum
+		// Tooltip: Fires matrix lasers from the sky
+	}
+
+	DemonicMagnet: {
+		// DisplayName: Demonic Magnet
+		// Tooltip: ""
+	}
+
+	DimensionalManipulator: {
+		// DisplayName: Dimensional Manipulator
+		/* Tooltip:
+			'''
+			Allows the wielder to adjust the time to their liking
+			Left click to change to the time
+			Right Click to set the desired time
+			''' */
+	}
+
+	Hamaxe: {
+		// DisplayName: Hamaxe
+		// Tooltip: It reeks of rotten meat
+	}
+
+	MatterManipulator: {
+		// DisplayName: Matter Manipulator
+		// Tooltip: Right Click to change the area dug
+	}
+
+	ScrapplingHook: {
+		// DisplayName: Scrappling Hook
+		// Tooltip: Scrappling Hook
+	}
+
+	TinyPick: {
+		// DisplayName: Tiny Pick
+		// Tooltip: How is this even functional?
+	}
+
+	CastersCurse: {
+		// DisplayName: Caster's Curse
+		// Tooltip: ""
+	}
+
+	CrimsonShade: {
+		// DisplayName: Crimson Shade
+		// Tooltip: ""
+	}
+
+	LifesLament: {
+		// DisplayName: Life's Lament
+		// Tooltip: ""
+	}
+
+	ShadeEgg: {
+		// DisplayName: Shade Egg
+		// Tooltip: Summons a Baby Shade Wyrm
+	}
+
+	VoidJelly: {
+		// DisplayName: Void Jelly
+		/* Tooltip:
+			'''
+			It looks like congealed blood...
+			15% increased damage
+			''' */
+	}
+
+	VoidLanternAcc: {
+		// DisplayName: Void Lantern
+		/* Tooltip:
+			'''
+			Increases the brightness during the Dawn of the Void
+			Works in inventory
+			''' */
+	}
+
+	BlinkrootWand: {
+		// DisplayName: Blinkroot Wand
+		// Tooltip: ""
+	}
+
+	DaybloomWand: {
+		// DisplayName: Daybloom Wand
+		// Tooltip: ""
+	}
+
+	DeathweedWand: {
+		// DisplayName: Deathweed Wand
+		// Tooltip: ""
+	}
+
+	FireblossomWand: {
+		// DisplayName: Fireblossom Wand
+		// Tooltip: ""
+	}
+
+	MoonglowWand: {
+		// DisplayName: Moonglow Wand
+		// Tooltip: ""
+	}
+
+	ShiverthornWand: {
+		// DisplayName: Shiverthorn Wand
+		// Tooltip: ""
+	}
+
+	WaterleafWand: {
+		// DisplayName: Waterleaf Wand
+		// Tooltip: ""
+	}
+
+	AdamantiteStaff: {
+		// DisplayName: Adamantite Beamer
+		// Tooltip: Shoots an adamantite laser
+	}
+
+	CobaltStaff: {
+		// DisplayName: Cobalt Scythe
+		// Tooltip: Fires a cobalt scythe
+	}
+
+	MythrilStaff: {
+		// DisplayName: Mythril Bomber
+		// Tooltip: Shoots an exploding mythril ball
+	}
+
+	OrichalcumStaff: {
+		// DisplayName: Orichalcum Barrage
+		// Tooltip: Fires a barrage of petals
+	}
+
+	PalladiumStaff: {
+		// DisplayName: Palladium Sparkler
+		// Tooltip: Shoots burning sparks
+	}
+
+	TitaniumStaff: {
+		// DisplayName: Titanium Slicer
+		// Tooltip: Fires a barrage of titanium spikes
 	}
 }
 
@@ -5588,30 +5922,30 @@ Tiles: {
 	DarkstoneLantern.MapEntry: Мракаменная лампа
 	DarkstoneDoorOpen.MapEntry: Мракаменная дверь
 	DarkstoneDoorClosed.MapEntry: Мракаменная дверь
-	DarkstoneChandelier.MapEntry: Мракаменный канделябр
+	DarkstoneChandelier.MapEntry: Мракаменная люстра
 	DarkstoneChair.MapEntry: Мракаменный стул
 	DarkstoneCandle.MapEntry: Мракаменная свечка
 	DarkstoneBed.MapEntry: Мракаменная кровать
-	// VoidWorkBench.MapEntry: Void Work Bench
-	// VoidTable.MapEntry: Void Table
-	// VoidSofa.MapEntry: Void Sofa
-	// VoidLantern.MapEntry: Void Lantern
-	// VoidDresser.MapEntry: Void Dresser
-	// VoidDoorOpen.MapEntry: Void Door
-	// VoidDoorClosed.MapEntry: Void Door
-	// VoidClock.MapEntry: Void Clock
+	VoidWorkBench.MapEntry: Пустотный верстак
+	VoidTable.MapEntry: Пустотный стол
+	VoidSofa.MapEntry: Пустотный диван
+	VoidLantern.MapEntry: Пустотный фонарь
+	VoidDresser.MapEntry: Пустотный комод
+	VoidDoorOpen.MapEntry: Пустотная дверь
+	VoidDoorClosed.MapEntry: Пустотная дверь
+	VoidClock.MapEntry: Пустотные часы
 
 	VoidChest: {
-		// MapEntry1: Void Chest
-		// VoidChest: Void Chest
+		MapEntry1: Пустотный сундук
+		VoidChest: Пустотный сундук
 	}
 
-	// VoidChandelier.MapEntry: Void Chandelier
-	// VoidChair.MapEntry: Void Chair
-	// VoidCandle.MapEntry: Void Candle
-	// VoidCandelabra.MapEntry: Void Candelabra
-	// VoidBookshelf.MapEntry: Void Bookshelf
-	// VoidBed.MapEntry: Void Bed
+	VoidChandelier.MapEntry: Пустотная люстра
+	VoidChair.MapEntry: Пустотный стул
+	VoidCandle.MapEntry: Пустотная свеча
+	VoidCandelabra.MapEntry: Пустотный канделябр
+	VoidBookshelf.MapEntry: Пустотный книжный шкаф
+	VoidBed.MapEntry: Пустотная кровать
 }
 
 Buffs: {
@@ -6277,8 +6611,23 @@ Buffs: {
 	}
 
 	Irradiated: {
-		// DisplayName: Irradiated
-		// Description: The buildup of radiation harms you
+		DisplayName: Облучение
+		Description: Ты умираешь от лучевой болезни
+	}
+
+	ElectrifiedNPC: {
+		// DisplayName: Electrified
+		// Description: ""
+	}
+
+	VoidJellyBuff: {
+		// Description: Damage is increased by 15%
+		// DisplayName: Void Jelly
+	}
+
+	BabyShadeWyrmBuff: {
+		// Description: Unlike normal Shade Wyrms, it is not trying to trap you in the vast, endless void
+		// DisplayName: Baby Shade Wyrm
 	}
 }
 
@@ -7333,7 +7682,49 @@ Projectiles: {
 	VoidCrawler.DisplayName: Пустолзун
 	WOKE.DisplayName: Воук-пропаганда
 	AutoDrillBeam.DisplayName: Луч автодрели
-	// EscapedChlorobyte.DisplayName: Escaped Chlorobyte
+	EscapedChlorobyte.DisplayName: Съебавшийся хлоробит
+	// Blank.DisplayName: Blank
+	// ElectricBolt.DisplayName: Electric Bolt
+	// RifleSentry.DisplayName: Rifle Sentry
+	// ZapMasterLightning.DisplayName: Strange Ukulele
+	// PorterP.DisplayName: Porter
+	// PlasmaThrowerBeam.DisplayName: Purge Beam
+	// FizzlerP2.DisplayName: Fizzler
+	// FizzlerP.DisplayName: Fizzler
+	// GrowinatorP.DisplayName: Growinator
+	// ImbalancerLightning.DisplayName: Strange Ukulele
+	// ImbalancerMine.DisplayName: Imbalancer
+	// ShrinkinatorP.DisplayName: Shrinkinator
+	// NapalmCannonP.DisplayName: Napalm Cannon
+	// DubstepBeam.DisplayName: Dubstep Beam
+	// DubstepGunHeld.DisplayName: The Destroyer
+	// DubstepPulse.DisplayName: Dubstep Pulse
+	// DubstepWave.DisplayName: Dubstep
+	// MatrixLaser.DisplayName: Matrix Laser
+	// Particles.DisplayName: Particles
+	// MatterManipulator.DisplayName: Matter Manipulator
+	// ScrapplingHookP.DisplayName: Scrappling Hook
+	// CrimsonShadeHoming.DisplayName: Crimson Shade Homing
+	// CrimsonShadeP.DisplayName: Crimson Shade P
+	// LifesLamentAxe.DisplayName: Lifes Lament Axe
+	// BabyShadeWyrmBody.DisplayName: Baby Shade Wyrm Body
+	// CastersCurseBoltBase.DisplayName: Casters Curse Bolt Base
+	// CastersCurseBoltSwirl.DisplayName: Casters Curse Bolt Swirl
+	// BabyShadeWyrmTail.DisplayName: Baby Shade Wyrm Tail
+	// BlinkrootDirt.DisplayName: Blinkroot
+	// DaybloomSun.DisplayName: Daybloom
+	// DeathweedBall.DisplayName: Deathweed
+	// FireblossomBall.DisplayName: Fireblossom
+	// MoonglowLight.DisplayName: Moonglow
+	// ShiverthornIcicle.DisplayName: Shiverthorn
+	// WaterleafBall.DisplayName: Waterleaf
+	// AdamantiteLaser.DisplayName: Adamantite Laser
+	// CobaltScythe.DisplayName: Cobalt Scythe
+	// MythrilBomb.DisplayName: Mythril Bomb
+	// MythrilSpike.DisplayName: Mythril Bomb
+	// OrichalcumPetal.DisplayName: Orichalcum Petal
+	// PalladiumSpark.DisplayName: Palladium Spark
+	// TitaniumSpike.DisplayName: Titanium Slice
 }
 
 Configs: {
@@ -7588,29 +7979,29 @@ Tooltips: {
 	Generator: Производство энергии: {0} каждые {1} секунд
 	Generator1: Выключен
 	Statues: Э, ты чё, больше одной статуи в одном месте нельзя ставить!
-	/* BoostDrive:
+	BoostDrive:
 		'''
-		Pressing the special ability key {0} will speed up the player for 5 seconds
-		Activating it will take consume energy
-		''' */
-	// GravityCore: Gravity: {0}%
-	// GravityCore1: Enabled
-	// GravityCore2: Disabled
-	// GravityCore3: WARNING: At high gravity there may be undesired effects
-	/* HyperDrive:
+		Нажав на кнопку {0}, ты ускоришься на 5 секунд
+		При активации ускоритель также потребляет энергию
 		'''
-		Pressing the special ability key {0} will greatly speed up the player for 5 seconds
-		WARNING: travelling at such high speeds can be damaging
-		Activating it will consume 150 energy
-		''' */
-	// BiofuelBurner: Produces {0} energy every {1} seconds
-	// BiofuelBurner1: Fuel Type: {0}
-	// BiofuelBurner2: Fuel: {0}
-	// BiofuelBurner3: Empty
-	// LifeforceBurner: Strength: {0}
-	// LifeforceBurner1: boiled away
-	// WindGenerator: Wind speed: {0}
-	// WindGenerator1: Production Rate: 1 energy every {0} seconds
+	GravityCore: Сила гравитации: {0}%
+	GravityCore1: Включено
+	GravityCore2: Выключено
+	GravityCore3: ВНИМАНИЕ: При слишком сильной гравитации возможны непредвиденные последствия!
+	HyperDrive:
+		'''
+		Нажав на кнопку {0}, ты сильно ускоришься на 5 секунд
+		ВНИМАНИЕ: Полет на такой скорости может быть вреден для здоровья!
+		Также при активации гиперускоритель потратит 150 энергии
+		'''
+	BiofuelBurner: Производит {0} энергии каждые {1} секунд
+	BiofuelBurner1: Вид топлива: {0}
+	BiofuelBurner2: Топливо: {0}
+	BiofuelBurner3: Пустая
+	LifeforceBurner: Сила: {0}
+	LifeforceBurner1: выкипела
+	WindGenerator: Скорость ветра: {0}
+	WindGenerator1: Темп производства: 1 единица энергии каждые {0} секунд
 }
 
 AccInfo: {
@@ -7800,7 +8191,7 @@ LooTCondition: {
 	AncientWyrmHeadDeath: Если в битве первым был убит Древний Змей
 	TheEye: Если в битве первым было убито Око
 	BIDRC: Падает только после победы над {0}
-	AllMechs: Падает только после победы над {0}, {1}, {2} и {3}
+	AllMechs: "{0}, {1}, {2} и {3}"
 	BiomeConditions: Если ты находишься в {0}
 }
 

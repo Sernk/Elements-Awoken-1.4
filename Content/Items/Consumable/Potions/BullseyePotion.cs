@@ -21,7 +21,7 @@ namespace ElementsAwoken.Content.Items.Consumable.Potions
             Item.value = 2500;
             Item.rare = 1;
             Item.buffType = ModContent.BuffType<BullseyeBuff>();
-            Item.buffTime = EAU.BaffsTime(minutes: 4);
+            Item.buffTime = EAU.BuffsTime(minutes: 4);
             //item.potion = true;
             return;
         }
