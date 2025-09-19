@@ -5439,6 +5439,11 @@ Items: {
 			'''
 	}
 
+	Sol: {
+		DisplayName: Sol
+		Tooltip: Has a strong gravitational pull
+	}
+
 	SoulConverter: {
 		DisplayName: Soul Converter
 		Tooltip:
@@ -5770,6 +5775,359 @@ Items: {
 	TitaniumStaff: {
 		DisplayName: Titanium Slicer
 		Tooltip: Fires a barrage of titanium spikes
+	}
+
+	StrangeWand4: {
+		Tooltip: ""
+		DisplayName: Strange Wand
+	}
+
+	StrangeWand3: {
+		Tooltip: ""
+		DisplayName: Strange Wand
+	}
+
+	StrangeWand2: {
+		Tooltip: ""
+		DisplayName: Strange Wand
+	}
+
+	StrangeWand1: {
+		Tooltip: ""
+		DisplayName: Strange Wand
+	}
+
+	StrangeStaff: {
+		Tooltip: ""
+		DisplayName: Strange Staff
+	}
+
+	FireballTome: {
+		DisplayName: Fireball Tome
+		Tooltip: ""
+	}
+
+	IceSpikeTome: {
+		DisplayName: Ice Spike Tome
+		Tooltip: ""
+	}
+
+	LightningTome: {
+		DisplayName: Lightning Tome
+		Tooltip: Shoots a bolt of lightning that has a chance to chain to a nearby enemy
+	}
+
+	Poltercast: {
+		DisplayName: Poltercast
+		Tooltip: ""
+	}
+
+	StarboltTome: {
+		DisplayName: Starbolt Tome
+		Tooltip: ""
+	}
+
+	StingerTome: {
+		DisplayName: Stinger Tome
+		Tooltip: ""
+	}
+
+	Nightfall: {
+		Tooltip: Time to go to sleep...
+		DisplayName: Nightfall
+	}
+
+	NeptunesRay: {
+		Tooltip: ""
+		DisplayName: Ocean's Ray
+	}
+
+	Neptune: {
+		DisplayName: Neptune
+		Tooltip: ""
+	}
+
+	ImpishWarhorn: {
+		Tooltip: Inflicts 'Impish Curse' on enemies, which increases damage taken
+		DisplayName: Impish Warhorn
+	}
+
+	IceStaff: {
+		Tooltip: ""
+		DisplayName: Ice Wand
+	}
+
+	GraniteEnergySplayer: {
+		Tooltip: Fires a short burst of granite energy
+		DisplayName: Granite Energy Splayer
+	}
+
+	ForceBarrier: {
+		Tooltip:
+			'''
+			Summons a magical barrier that pushes enemies away
+			Only 3 barriers can be active at once
+			'''
+		DisplayName: Force Barrier
+	}
+
+	Fireweaver: {
+		Tooltip: ""
+		DisplayName: Fireweaver
+	}
+
+	Earthcrusher: {
+		Tooltip: ""
+		DisplayName: Earthcrusher
+	}
+
+	Earth: {
+		DisplayName: Earth
+		Tooltip: ""
+	}
+
+	Deimos: {
+		Tooltip: ""
+		DisplayName: Deimos
+	}
+
+	CursedScepter: {
+		Tooltip: Fires a cursed flame ball that explodes into sparks upon contact
+		DisplayName: Cursed Scepter
+	}
+
+	SansHarp: {
+		DisplayName: Harp of Judgement
+		Tooltip:
+			'''
+			it's a beautiful day outside.
+			birds are singing, flowers are blooming...
+			on days like these, kids like you...
+			should be playing the harp. bing
+			'''
+	}
+
+	Thundersoul: {
+		DisplayName: Thundersoul
+		Tooltip: Shoots a bolt that electrocutes nearby enemies
+	}
+
+	Warhorn: {
+		DisplayName: Pushes enemies away
+		Tooltip: Nordic War Horn
+	}
+
+	Jupiter: {
+		DisplayName: Jupiter
+		Tooltip: Has a minor gravitational pull
+	}
+
+	Mars: {
+		DisplayName: Mars
+		Tooltip: ""
+	}
+
+	Mercury: {
+		DisplayName: Mercury
+		Tooltip: ""
+	}
+
+	Saturn: {
+		DisplayName: Saturn
+		Tooltip: ""
+	}
+
+	Uranus: {
+		DisplayName: Uranus
+		Tooltip: ""
+	}
+
+	Venus: {
+		DisplayName: Venus
+		Tooltip: ""
+	}
+
+	Bloodchain: {
+		DisplayName: Bloodchain
+		Tooltip: ""
+	}
+
+	Flarelash: {
+		DisplayName: Flarelash
+		Tooltip: ""
+	}
+
+	HallowedRadiance: {
+		DisplayName: Hallowed Radiance
+		Tooltip: ""
+	}
+
+	Nightbreaker: {
+		DisplayName: Nightbreaker
+		Tooltip: ""
+	}
+
+	ShadowsGrasp: {
+		DisplayName: Shadow's Grasp
+		Tooltip: ""
+	}
+
+	TerraBelter: {
+		DisplayName: Terra Belter
+		Tooltip: ""
+	}
+
+	TheSpine: {
+		DisplayName: The Spine
+		Tooltip: ""
+	}
+
+	TheTrueSpine: {
+		DisplayName: The True Spine
+		Tooltip: ""
+	}
+
+	TheVine: {
+		DisplayName: The Vine
+		Tooltip: ""
+	}
+
+	TrueHallowedRadiance: {
+		DisplayName: True Hallowed Radiance
+		Tooltip: ""
+	}
+
+	TrueNightbreaker: {
+		DisplayName: True Nightbreaker
+		Tooltip: ""
+	}
+
+	AssassinsKnife: {
+		DisplayName: Assassin's Knife
+		Tooltip: While holding the item, damage taken is doubled
+	}
+
+	AsuterosaberuDX: {
+		DisplayName: Asuterosaberu DX
+		Tooltip: Right Click to tear a hole in reality
+	}
+
+	AurumSaber: {
+		DisplayName: Aurum Saber
+		Tooltip: ""
+	}
+
+	Blazeguard: {
+		DisplayName: Blazeguard
+		Tooltip: Fires two exploding fireballs
+	}
+
+	CosmoStriker: {
+		DisplayName: Cosmo Striker
+		Tooltip: Forged in the heart of Terraria
+	}
+
+	Deathwarp: {
+		DisplayName: Deathwarp
+		Tooltip:
+			'''
+			Fires multiple death beams to annihilate your enemies
+			Right Click to activate the Deathwarp
+			'Ripple through time and space'
+			'''
+	}
+
+	DyingAzure: {
+		DisplayName: Dying Azure
+		Tooltip: Has a chance to annihilate enemies
+	}
+
+	EyeOfTheStorm: {
+		DisplayName: Eye of the Storm
+		Tooltip:
+			'''
+			Shoots a lightning bolt along with energy balls
+			Projectiles rain down from the sky
+			'''
+	}
+
+	FistsOfFury: {
+		DisplayName: Fists of Fury
+		Tooltip: ""
+	}
+
+	Galactica: {
+		DisplayName: Galactica
+		Tooltip: ""
+	}
+
+	Ghostbrand: {
+		DisplayName: Ghostbrand
+		Tooltip: ""
+	}
+
+	GustStrike: {
+		DisplayName: Gust Strike
+		Tooltip:
+			'''
+			Fires a blast of cloud and occasionally electrocutes enemies
+			The player moves faster after striking the enemy with the blade
+			'Harness the wind'
+			'''
+	}
+
+	HellKatana: {
+		DisplayName: Hell Katana
+		Tooltip: Pure hell
+	}
+
+	HopesEnd: {
+		DisplayName: Hope's End
+		Tooltip: Heals life on enemy hit
+	}
+
+	Infamy: {
+		DisplayName: Infamy
+		Tooltip: ""
+	}
+
+	KindleCrusher: {
+		DisplayName: Kindle Crusher
+		Tooltip: ""
+	}
+
+	LeashedHungry: {
+		DisplayName: Leashed Hungry
+		Tooltip: Heals the player on enemy hits
+	}
+
+	ManaBlade: {
+		DisplayName: Mana Blade
+		Tooltip: Consumes some mana and adds it to the damage
+	}
+
+	Popsickle: {
+		DisplayName: Popsickle
+		Tooltip: ""
+	}
+
+	Reign: {
+		DisplayName: Reign
+		Tooltip: Slow but strong
+	}
+
+	SolusKatana: {
+		DisplayName: Solus Katana
+		Tooltip:
+			'''
+			A weapon used by a feared cultist...
+			Right Click to shoot 3 solus kunais
+			'''
+	}
+
+	TheLeeched: {
+		DisplayName: The Leeched
+		Tooltip: Restores health on hitting an enemy
 	}
 }
 
@@ -6560,6 +6918,31 @@ Buffs: {
 		Description: Unlike normal Shade Wyrms, it is not trying to trap you in the vast, endless void
 		DisplayName: Baby Shade Wyrm
 	}
+
+	ImpishCurse: {
+		Description: ""
+		DisplayName: Impish Curse
+	}
+
+	AstralTearCooldown: {
+		DisplayName: Astral Tear Cooldown
+		Description: You cant use Astral Tear
+	}
+
+	DeathwarpCooldown: {
+		DisplayName: Deathwarp Cooldown
+		Description: You can't activate deathwarp
+	}
+
+	SolusKunaiCooldown: {
+		DisplayName: Solus Kunai Cooldown
+		Description: You cant use Solus Kunais
+	}
+
+	WindsBlessing: {
+		DisplayName: Winds Blessing
+		Description: The wind is behind you
+	}
 }
 
 NPCs: {
@@ -7203,6 +7586,7 @@ Projectiles: {
 	RetinasmP.DisplayName: Retinasm
 	SkeletronFistP.DisplayName: Skeletron Fist
 	LightningArc.DisplayName: Lightning
+	Lightning.DisplayName: Lightning Tome
 	ShockstormPortal.DisplayName: Shockstorm
 	SpinalEye.DisplayName: Giga Eye
 	Spine.DisplayName: Spine
@@ -7477,6 +7861,7 @@ Projectiles: {
 	SnowSpray.DisplayName: Snow Spray
 	Snowflake.DisplayName: Snowflake
 	IcicleShot.DisplayName: Ice Bolt
+	Icicle.DisplayName: Ice Spike
 	IceBlade.DisplayName: Ice Blade
 	SkyFuryRain.DisplayName: Rain
 	HappyCloud.DisplayName: Happy Little Cloud
@@ -7656,6 +8041,92 @@ Projectiles: {
 	OrichalcumPetal.DisplayName: Orichalcum Petal
 	PalladiumSpark.DisplayName: Palladium Spark
 	TitaniumSpike.DisplayName: Titanium Slice
+	StrangePlantBall6.DisplayName: Strange Orb
+	StrangePlantBall5.DisplayName: Strange Orb
+	StrangePlantBall4.DisplayName: Strange Orb
+	StrangePlantBall3.DisplayName: Strange Orb
+	StrangePlantBall2.DisplayName: Strange Orb
+	StrangePlantBall1.DisplayName: Strange Orb
+	FireballP.DisplayName: Fireball
+	PoltercastP.DisplayName: Poltercast
+	StingerP.DisplayName: Stinger
+	Barrier.DisplayName: Barrier
+	CursedBall.DisplayName: Cursed Ball
+	CursedFlame.DisplayName: Cursed Flame
+	DeimosAsteroid.DisplayName: Deimos Asteroid
+	EarthcrusherProj.DisplayName: Earthcrusher Proj
+	EarthcrusherSwirl.DisplayName: Earthcrusher Swirl
+	FireweaverProj.DisplayName: Fireweaver Proj
+	FireweaverSwirl.DisplayName: Fireweaver Swirl
+	GraniteEnergyShot.DisplayName: Granite Energy Shot
+	ImpishFireball.DisplayName: Impish Fireball
+	ImpishWave.DisplayName: Impish Wave
+	NeptuneRay.DisplayName: Neptune Ray
+	OceansSeashell.DisplayName: Oceans Seashell
+	SansNote.DisplayName: Sans Note
+	ThundersoulBolt.DisplayName: Thundersoul Bolt
+	ThundersoulBoltMinor.DisplayName: Thundersoul Bolt Minor
+	WarhornP.DisplayName: Warhorn
+	Nightball.DisplayName: Nightfall
+	Nightball2.DisplayName: Deathwarp
+	EarthP.DisplayName: Earth
+	JupiterGasOrbit.DisplayName: Jupiter
+	JupiterP.DisplayName: Jupiter
+	MarsP.DisplayName: Mars
+	MercuryP.DisplayName: Mercury
+	NeptuneP.DisplayName: Neptune
+	NeptuneWaterball.DisplayName: Neptune
+	SaturnP.DisplayName: Saturn
+	SaturnRing.DisplayName: Saturn Ring
+	SolOrbit.DisplayName: Sol
+	SolP.DisplayName: Sol
+	UranusP.DisplayName: Uranus
+	VenusP.DisplayName: Venus
+	BloodchainP.DisplayName: Bloodchain
+	FlarelashP.DisplayName: Flarelash
+	HallowedRadianceP.DisplayName: Hallowed Radiance
+	NightbreakerBall.DisplayName: Nightbreaker
+	NightbreakerBlade.DisplayName: Nightbreaker
+	NightbreakerP.DisplayName: Nightbreaker
+	ShadowsGraspP.DisplayName: Shadows Grasp
+	TerraBelterP.DisplayName: Terra Belter
+	TerraBolt.DisplayName: Belter
+	TerraOrb.DisplayName: Terra Orb
+	TheSpineP.DisplayName: The Spine
+	TheTrueSpineP.DisplayName: The True Spine
+	TheVineP.DisplayName: The Vine
+	TrueHallowedRadianceP.DisplayName: True Hallowed Radiance
+	TrueHallowedRadianceScythe.DisplayName: True Hallowed Radiance Scythe
+	TrueNightbreakerP.DisplayName: True Nightbreaker
+	TrueSpineBall.DisplayName: True Spine Ball
+	AstralTear.DisplayName: Astral Tear
+	AurumBall.DisplayName: Aurum Ball
+	BlazeguardWave.DisplayName: Blazeguard Wave
+	BlazeguardWave2.DisplayName: Blazeguard Wave2
+	BubbleBlue.DisplayName: Bubble
+	BubbleGreen.DisplayName: Bubble
+	BubblePurple.DisplayName: Bubble
+	BubbleRed.DisplayName: Bubble
+	ChaosFireball.DisplayName: Chaos Fireball
+	DeathwarpLaser.DisplayName: Deathwarp Laser
+	DeathwarpSpinner.DisplayName: Deathwarp Spinner
+	EyeOfTheStormBall.DisplayName: Eye Of The Storm Ball
+	EyeOfTheStormP.DisplayName: Eye Of The Storm
+	FistsOfFuryFire.DisplayName: Fists Of Fury Fire
+	FistsOfFuryP.DisplayName: Fists Of Fury
+	DyingAzureP.DisplayName: Dying Azure
+	HungryFlailP.DisplayName: Hungry Flail
+	KindleCrusherP.DisplayName: Kindle Crusher
+	KindleFireball.DisplayName: Kindle Fireball
+	GalacticaBlade.DisplayName: Galactica Blade
+	GalacticaBlade2.DisplayName: Galactica Blade2
+	GustStrikeCloud.DisplayName: Gust Strike Cloud
+	GustStrikeLightning.DisplayName: Gust Strike Lightning
+	LightningBolt.DisplayName: Lightning Bolt
+	ReignWave.DisplayName: Reign Wave
+	SolusKunai.DisplayName: Solus Kunai
+	DeathwarpP.DisplayName: Deathwarp
+	UniverseBall.DisplayName: Universe Ball
 }
 
 Configs: {
