@@ -235,14 +235,14 @@ namespace ElementsAwoken.EASystem.EAPlayer
             if (TileID.Sets.Platforms[Framing.GetTileSafely((int)platform.X, (int)platform.Y).TileType]) npc.noTileCollide = true;
             else npc.noTileCollide = false;
         }
-        public static int ReducePierceDamage(int damage, Projectile projectile)
+        public static StatModifier ReducePierceDamage(StatModifier damage, Projectile projectile)
         {
-            if (projectile.type == ProjectileID.LastPrismLaser && ModContent.GetInstance<Config>().vItemChangesDisabled) return (int)(damage * 0.1f);
-            else if (projectile.type == ProjectileID.LastPrismLaser && !ModContent.GetInstance<Config>().vItemChangesDisabled) return (int)(damage * 0.85f);
-            else if (projectile.maxPenetrate == -1 && ProjectileID.Sets.YoyosMaximumRange[projectile.type] == 0) return (int)(damage * 0.5f);
-            else if (projectile.maxPenetrate > 10) return (int)(damage * 0.5f);
-            else if (projectile.maxPenetrate > 6) return (int)(damage * 0.75f);
-            else if (projectile.maxPenetrate > 3) return (int)(damage * 0.9f);
+            if (projectile.type == ProjectileID.LastPrismLaser && ModContent.GetInstance<Config>().vItemChangesDisabled) return (damage * 0.1f);
+            else if (projectile.type == ProjectileID.LastPrismLaser && !ModContent.GetInstance<Config>().vItemChangesDisabled) return (damage * 0.85f);
+            else if (projectile.maxPenetrate == -1 && ProjectileID.Sets.YoyosMaximumRange[projectile.type] == 0) return (damage * 0.5f);
+            else if (projectile.maxPenetrate > 10) return (damage * 0.5f);
+            else if (projectile.maxPenetrate > 6) return (damage * 0.75f);
+            else if (projectile.maxPenetrate > 3) return (damage * 0.9f);
             else return damage;
         }
         public override void EditSpawnRate(Player player, ref int spawnRate, ref int maxSpawns)

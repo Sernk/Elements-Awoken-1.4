@@ -45,6 +45,7 @@ namespace ElementsAwoken.EAUtilities
         public string Scorpion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Scorpion");
         public string MiniToySlime => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.MiniToySlime");
         public string Furosia => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Furosia");
+        public string AbyssSkull => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.AbyssSkull");
         public string RegarothMinion => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.RegarothMinion");
         public string VoidLeviathanOrb => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.VoidLeviathanOrb");
         public string Firefly => Language.GetTextValue("Mods.ElementsAwoken.Bestiary.Enemies.Firefly");

@@ -1,10 +1,10 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
 using ElementsAwoken.EASystem.UI.Tooltips;
-using ElementsAwoken.Events.VoidEvent;
 using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ElementsAwoken.Content.Events.VoidEvent;
 
 namespace ElementsAwoken.Content.Items.BossSummons
 {

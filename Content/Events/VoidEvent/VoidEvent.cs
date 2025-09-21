@@ -1,48 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase1;
+using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2;
+using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
+using ElementsAwoken.Content.NPCs.Elementals;
 using Microsoft.Xna.Framework;
-
+using System.Collections.Generic;
 using Terraria;
 using Terraria.Chat;
-using Terraria.ID;
-using Terraria.ModLoader;
 using Terraria.Localization;
-using Terraria.GameContent.Events;
+using Terraria.ModLoader;
 
-namespace ElementsAwoken.Events.VoidEvent
+namespace ElementsAwoken.Content.Events.VoidEvent
 {
     public class VoidEvent
     {
-        public static List<int> phase1NPCs = new List<int>()
-        {
-            NPCID.EaterofSouls
-        };
-        public static List<int> phase2NPCs = new List<int>()
-        {
-            NPCID.EaterofSouls
-        };
-        //public static Mod mod = ModLoader.GetMod("ElementsAwoken");
-        //public static List<int> phase1NPCs = new List<int>() {
-        //    mod.NPCType("Immolator"),
-        //    mod.NPCType("ReaverSlime"),
-        //    mod.NPCType("VoidKnight"),
-        //    mod.NPCType("VoidElemental"),
-        //    mod.NPCType("AbyssSkull"),
-        //    mod.NPCType("AbyssSkullette"),
-        //    mod.NPCType("VoidFly"),
-        //    mod.NPCType("AccursedFlier"),
-        //    mod.NPCType("DimensionalHive"),
-        //    mod.NPCType("ZergCaster")
-        //};
-
-        //public static List<int> phase2NPCs = new List<int>() {
-        //    mod.NPCType("ShadeWyrmHead"),
-        //    mod.NPCType("ShadeWyrmBody"),
-        //    mod.NPCType("ShadeWyrmTail"),
-        //    mod.NPCType("EtherealHunter"),
-        //    mod.NPCType("VoidCrawler"),
-        //    mod.NPCType("VoidGolem")
-        //};
+        public static readonly List<int> phase1NPCs = [ModContent.NPCType<Immolator>(), ModContent.NPCType<ReaverSlime>(), ModContent.NPCType<VoidKnight>(), ModContent.NPCType<VoidElemental>(), ModContent.NPCType<AbyssSkull>(), ModContent.NPCType<AbyssSkullette>(), ModContent.NPCType<VoidFly>(), ModContent.NPCType<AccursedFlier>(), ModContent.NPCType<DimensionalHive>(), ModContent.NPCType<ZergCaster>()];
+        public static readonly List<int> phase2NPCs = [ModContent.NPCType<ShadeWyrmHead>(), ModContent.NPCType<ShadeWyrmBody>(), ModContent.NPCType<ShadeWyrmTail>(), ModContent.NPCType<EtherealHunter>(), ModContent.NPCType<VoidCrawler>(), ModContent.NPCType<VoidGolem>()];
         public static void StartInvasion()
         {
             //Set to no invasion

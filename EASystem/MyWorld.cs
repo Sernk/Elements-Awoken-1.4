@@ -10,7 +10,6 @@ using ElementsAwoken.Content.Items.Weapons.Melee.Whips;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Tiles;
 using ElementsAwoken.EASystem.EAPlayer;
-using ElementsAwoken.Events.VoidEvent;
 using ElementsAwoken.EAUtilities;
 using ElementsAwoken.EAUtilities.Structures;
 using Microsoft.Xna.Framework;
@@ -31,6 +30,7 @@ using Terraria.ModLoader.IO;
 using Terraria.WorldBuilding;
 using static ElementsAwoken.EASystem.Loot.EAIDRC;
 using static Terraria.ModLoader.ModContent;
+using ElementsAwoken.Content.Events.VoidEvent;
 
 namespace ElementsAwoken
 {

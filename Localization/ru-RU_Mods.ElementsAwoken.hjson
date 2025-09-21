@@ -4,6 +4,11 @@ Items: {
 		DisplayName: Пламя смертожеланья
 	}
 
+	Deathwish: {
+		// Tooltip: ""
+		// DisplayName: Deathwish
+	}
+
 	DemonicFleshClump: {
 		DisplayName: Демонический комок плоти
 		Tooltip: ""
@@ -5509,8 +5514,8 @@ Items: {
 	}
 
 	Sol: {
-		// DisplayName: Sol
-		// Tooltip: Has a strong gravitational pull
+		DisplayName: Сунце
+		Tooltip: Притягивает врагов к себе
 	}
 
 	SoulConverter: {
@@ -5847,356 +5852,579 @@ Items: {
 	}
 
 	StrangeWand4: {
-		// Tooltip: ""
-		// DisplayName: Strange Wand
+		Tooltip: ""
+		DisplayName: Посох странноцвета
 	}
 
 	StrangeWand3: {
-		// Tooltip: ""
-		// DisplayName: Strange Wand
+		Tooltip: ""
+		DisplayName: Посох странноцвета
 	}
 
 	StrangeWand2: {
-		// Tooltip: ""
-		// DisplayName: Strange Wand
+		Tooltip: ""
+		DisplayName: Посох странноцвета
 	}
 
 	StrangeWand1: {
-		// Tooltip: ""
-		// DisplayName: Strange Wand
+		Tooltip: ""
+		DisplayName: Посох странноцвета
 	}
 
 	StrangeStaff: {
-		// Tooltip: ""
-		// DisplayName: Strange Staff
+		Tooltip: совсем не блоат оружия
+		DisplayName: Посох странноцвета
 	}
 
 	FireballTome: {
-		// DisplayName: Fireball Tome
-		// Tooltip: ""
+		DisplayName: Огненный фолиант
+		Tooltip: ""
 	}
 
 	IceSpikeTome: {
-		// DisplayName: Ice Spike Tome
-		// Tooltip: ""
+		DisplayName: Том ледошипов
+		Tooltip: ""
 	}
 
 	LightningTome: {
-		// DisplayName: Lightning Tome
-		// Tooltip: Shoots a bolt of lightning that has a chance to chain to a nearby enemy
+		DisplayName: Молниеносный фолиант
+		Tooltip: Выпускает молнию, имеющую шанс отскочить от врагов при попадании
 	}
 
 	Poltercast: {
-		// DisplayName: Poltercast
-		// Tooltip: ""
+		DisplayName: Полтеркаст
+		Tooltip: как я вам блять по-другому это перевести могу?
 	}
 
 	StarboltTome: {
-		// DisplayName: Starbolt Tome
-		// Tooltip: ""
+		DisplayName: Книга звездострела
+		Tooltip: ""
 	}
 
 	StingerTome: {
-		// DisplayName: Stinger Tome
-		// Tooltip: ""
+		DisplayName: Жалящий том
+		Tooltip: ""
 	}
 
 	Nightfall: {
-		// Tooltip: Time to go to sleep...
-		// DisplayName: Nightfall
+		Tooltip: Пора идти спать...
+		DisplayName: Полночь
 	}
 
 	NeptunesRay: {
-		// Tooltip: ""
-		// DisplayName: Ocean's Ray
+		Tooltip: ""
+		DisplayName: Луч окиянский
 	}
 
 	Neptune: {
-		// DisplayName: Neptune
-		// Tooltip: ""
+		DisplayName: Нептун
+		Tooltip: жаль, что не Посейдон
 	}
 
 	ImpishWarhorn: {
-		// Tooltip: Inflicts 'Impish Curse' on enemies, which increases damage taken
-		// DisplayName: Impish Warhorn
+		Tooltip: Накладывает на врагов дебафф "Бесовское проклятье", увеличивающий твой урон по ним
+		DisplayName: Бесовский боевой рожок
 	}
 
 	IceStaff: {
-		// Tooltip: ""
-		// DisplayName: Ice Wand
+		Tooltip: ""
+		DisplayName: Ледожезл
 	}
 
 	GraniteEnergySplayer: {
-		// Tooltip: Fires a short burst of granite energy
-		// DisplayName: Granite Energy Splayer
+		Tooltip: Выпускает несколько сгустков гранитной энергии
+		DisplayName: Гранитовая энергострела
 	}
 
 	ForceBarrier: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Summons a magical barrier that pushes enemies away
-			Only 3 barriers can be active at once
-			''' */
-		// DisplayName: Force Barrier
+			Создаёт магический барьер, отталкивающий врагов, которые к нему прикасаются
+			Всего 3 барьера могут быть активны одновременно
+			'''
+		DisplayName: Магический барьер
 	}
 
 	Fireweaver: {
-		// Tooltip: ""
-		// DisplayName: Fireweaver
+		Tooltip: ""
+		DisplayName: Огнеткач
 	}
 
 	Earthcrusher: {
-		// Tooltip: ""
-		// DisplayName: Earthcrusher
+		Tooltip: ""
+		DisplayName: Землелом
 	}
 
 	Earth: {
-		// DisplayName: Earth
-		// Tooltip: ""
+		DisplayName: Земля
+		Tooltip: ""
 	}
 
 	Deimos: {
-		// Tooltip: ""
-		// DisplayName: Deimos
+		Tooltip: ""
+		DisplayName: Деймос
 	}
 
 	CursedScepter: {
-		// Tooltip: Fires a cursed flame ball that explodes into sparks upon contact
-		// DisplayName: Cursed Scepter
+		Tooltip: Создаёт проклятый огнешар, разлетающийся на искры при контакте с врагом
+		DisplayName: Проклятый скипетр
 	}
 
 	SansHarp: {
-		// DisplayName: Harp of Judgement
-		/* Tooltip:
+		DisplayName: Арфа правосудия
+		Tooltip:
 			'''
-			it's a beautiful day outside.
-			birds are singing, flowers are blooming...
-			on days like these, kids like you...
-			should be playing the harp. bing
-			''' */
+			Какой прекрасный денёк снаружи.
+			птички поют, цветочки расцветают...
+			в такие дни такие дети, как ты...
+			должны делать кринжовые отсылки на андертейл в моде на блять террарию.
+			'''
 	}
 
 	Thundersoul: {
-		// DisplayName: Thundersoul
-		// Tooltip: Shoots a bolt that electrocutes nearby enemies
+		DisplayName: Громодуша
+		Tooltip: Выпускает выстрел, бьющий врагов током при попадании
 	}
 
 	Warhorn: {
-		// DisplayName: Pushes enemies away
-		// Tooltip: Nordic War Horn
+		DisplayName: Отталкивает врагов
+		Tooltip: Нордический боевой рожок
 	}
 
 	Jupiter: {
-		// DisplayName: Jupiter
-		// Tooltip: Has a minor gravitational pull
+		DisplayName: Юпитер
+		Tooltip: Слабо притягивает врагов к себе
 	}
 
 	Mars: {
-		// DisplayName: Mars
-		// Tooltip: ""
+		DisplayName: Марс
+		Tooltip: нет, не батончик
 	}
 
 	Mercury: {
-		// DisplayName: Mercury
-		// Tooltip: ""
+		DisplayName: Меркурий
+		Tooltip: ""
 	}
 
 	Saturn: {
-		// DisplayName: Saturn
-		// Tooltip: ""
+		DisplayName: Сатурн
+		Tooltip: ""
 	}
 
 	Uranus: {
-		// DisplayName: Uranus
-		// Tooltip: ""
+		DisplayName: Уран
+		Tooltip: ур анус
 	}
 
 	Venus: {
-		// DisplayName: Venus
-		// Tooltip: ""
+		DisplayName: Венера
+		Tooltip: ""
 	}
 
 	Bloodchain: {
-		// DisplayName: Bloodchain
-		// Tooltip: ""
+		DisplayName: Кровоцеп
+		Tooltip: ""
 	}
 
 	Flarelash: {
-		// DisplayName: Flarelash
-		// Tooltip: ""
+		DisplayName: Вспыхоплеть
+		Tooltip: ""
 	}
 
 	HallowedRadiance: {
-		// DisplayName: Hallowed Radiance
-		// Tooltip: ""
+		DisplayName: Освящённое лучезарие
+		Tooltip: ""
 	}
 
 	Nightbreaker: {
-		// DisplayName: Nightbreaker
-		// Tooltip: ""
+		DisplayName: Ломоночь
+		Tooltip: ""
 	}
 
 	ShadowsGrasp: {
-		// DisplayName: Shadow's Grasp
-		// Tooltip: ""
+		DisplayName: Хватка тени
+		Tooltip: ""
 	}
 
 	TerraBelter: {
-		// DisplayName: Terra Belter
-		// Tooltip: ""
+		DisplayName: Терра-пояс
+		Tooltip: ""
 	}
 
 	TheSpine: {
-		// DisplayName: The Spine
-		// Tooltip: ""
+		DisplayName: Тот самый позвоночник
+		Tooltip: ""
 	}
 
 	TheTrueSpine: {
-		// DisplayName: The True Spine
-		// Tooltip: ""
+		DisplayName: Настоящий позвоночник
+		Tooltip: на самом деле нет
 	}
 
 	TheVine: {
-		// DisplayName: The Vine
-		// Tooltip: ""
+		DisplayName: Лоза
+		Tooltip: ""
 	}
 
 	TrueHallowedRadiance: {
-		// DisplayName: True Hallowed Radiance
-		// Tooltip: ""
+		DisplayName: Истинное освящённое лучезарие
+		Tooltip: трушное даже я бы сказал
 	}
 
 	TrueNightbreaker: {
-		// DisplayName: True Nightbreaker
-		// Tooltip: ""
+		DisplayName: Истинная ломоночь
+		Tooltip: ""
 	}
 
 	AssassinsKnife: {
-		// DisplayName: Assassin's Knife
-		// Tooltip: While holding the item, damage taken is doubled
+		DisplayName: Ассассинский нож
+		Tooltip: Держа его в руках ты получаешь вдвое больше урона (а нахуя это вообще нужно?)
 	}
 
 	AsuterosaberuDX: {
-		// DisplayName: Asuterosaberu DX
-		// Tooltip: Right Click to tear a hole in reality
+		DisplayName: Asuterosaberu DX
+		Tooltip: <right>, чтобы порвать ткань реальности, как тузик грелку
 	}
 
 	AurumSaber: {
-		// DisplayName: Aurum Saber
-		// Tooltip: ""
+		DisplayName: Ауросабля
+		Tooltip: ""
 	}
 
 	Blazeguard: {
-		// DisplayName: Blazeguard
-		// Tooltip: Fires two exploding fireballs
+		DisplayName: Огнестраж
+		Tooltip: Запускает два взрывающихся огнешара
 	}
 
 	CosmoStriker: {
-		// DisplayName: Cosmo Striker
-		// Tooltip: Forged in the heart of Terraria
+		DisplayName: Космострел
+		Tooltip: Скован в самом сердце Террарии
 	}
 
 	Deathwarp: {
-		// DisplayName: Deathwarp
-		/* Tooltip:
+		DisplayName: Смертискревление
+		Tooltip:
 			'''
-			Fires multiple death beams to annihilate your enemies
-			Right Click to activate the Deathwarp
-			'Ripple through time and space'
-			''' */
+			Стреляет смертолучами, уничтожающими всех на своём пути
+			<right>, чтобы активировать способность оружия
+			'Рви пространство и время, словно бумагу'
+			'''
 	}
 
 	DyingAzure: {
-		// DisplayName: Dying Azure
-		// Tooltip: Has a chance to annihilate enemies
+		DisplayName: Гибнущая лазурь
+		Tooltip: Имеет шанс мгновенно убить простых врагов
 	}
 
 	EyeOfTheStorm: {
-		// DisplayName: Eye of the Storm
-		/* Tooltip:
+		DisplayName: Око бури
+		Tooltip:
 			'''
-			Shoots a lightning bolt along with energy balls
-			Projectiles rain down from the sky
-			''' */
+			Выпускает молнии и молнешары
+			Снаряды льются с небес, яко дождь
+			'''
 	}
 
 	FistsOfFury: {
-		// DisplayName: Fists of Fury
-		// Tooltip: ""
+		DisplayName: Кулаки ярости
+		Tooltip: ""
 	}
 
 	Galactica: {
-		// DisplayName: Galactica
-		// Tooltip: ""
+		DisplayName: Галактика
+		Tooltip: ""
 	}
 
 	Ghostbrand: {
-		// DisplayName: Ghostbrand
-		// Tooltip: ""
+		DisplayName: Призраключ
+		Tooltip: ну а хули, это ведь апгрейд ключемеча
 	}
 
 	GustStrike: {
-		// DisplayName: Gust Strike
-		/* Tooltip:
+		DisplayName: Ветробой
+		Tooltip:
 			'''
-			Fires a blast of cloud and occasionally electrocutes enemies
-			The player moves faster after striking the enemy with the blade
-			'Harness the wind'
-			''' */
+			Выпускает облака, которые время от времени бьют врагов током
+			После удара самим мечом игрок получает бафф к скорости передвижения
+			'Обуздай силу ветра'
+			'''
 	}
 
 	HellKatana: {
-		// DisplayName: Hell Katana
-		// Tooltip: Pure hell
+		DisplayName: Адскатана
+		Tooltip: Полный пиздец
 	}
 
 	HopesEnd: {
-		// DisplayName: Hope's End
-		// Tooltip: Heals life on enemy hit
+		DisplayName: Кончина надежды
+		Tooltip: Исцеляет игрока при ударе по врагу
 	}
 
 	Infamy: {
-		// DisplayName: Infamy
-		// Tooltip: ""
+		DisplayName: Бесчестие
+		Tooltip: ""
 	}
 
 	KindleCrusher: {
-		// DisplayName: Kindle Crusher
-		// Tooltip: ""
+		DisplayName: Огнебой
+		Tooltip: ""
 	}
 
 	LeashedHungry: {
-		// DisplayName: Leashed Hungry
-		// Tooltip: Heals the player on enemy hits
+		DisplayName: Цепной голодный
+		Tooltip: Исцеляет игрока при ударе по врагу
 	}
 
 	ManaBlade: {
-		// DisplayName: Mana Blade
-		// Tooltip: Consumes some mana and adds it to the damage
+		DisplayName: Маномеч
+		Tooltip: Расходует ману при использовании, но также увеличивает и урон
 	}
 
 	Popsickle: {
-		// DisplayName: Popsickle
-		// Tooltip: ""
+		DisplayName: Эскимо-коса
+		Tooltip: вообще не ебу, как это перевести
 	}
 
 	Reign: {
-		// DisplayName: Reign
-		// Tooltip: Slow but strong
+		DisplayName: Властитель
+		Tooltip: Бьёт редко, но метко
 	}
 
 	SolusKatana: {
-		// DisplayName: Solus Katana
-		/* Tooltip:
+		DisplayName: Солнцекатана
+		Tooltip:
 			'''
-			A weapon used by a feared cultist...
-			Right Click to shoot 3 solus kunais
-			''' */
+			Личное оружие опасного культиста...
+			<right>, чтобы выпустить три солнцекуная
+			'''
 	}
 
 	TheLeeched: {
-		// DisplayName: The Leeched
-		// Tooltip: Restores health on hitting an enemy
+		DisplayName: Пиявка
+		Tooltip: Восстанавливает здоровье при ударе по врагу
+	}
+
+	ProcWand: {
+		// Tooltip: ""
+		// DisplayName: Wand
+	}
+
+	AstralBarrage: {
+		// DisplayName: Astral Barrage
+		/* Tooltip:
+			'''
+			Fires a volley of stars
+			75% chance to not consume ammo
+			''' */
+	}
+
+	BabyShark: {
+		// DisplayName: Baby Shark
+		/* Tooltip:
+			'''
+			Animal and child abuse, all in one
+			You monster...
+			''' */
+	}
+
+	ChargedBlasterRepeater: {
+		// DisplayName: Charged Blaster Repeater
+		// Tooltip: Turns wooden arrows into an explosive bolt
+	}
+
+	CrystalCannon: {
+		// DisplayName: Crystal Cannon
+		// Tooltip: Shoots a bouncing crystal shard
+	}
+
+	EternitysEnd: {
+		// DisplayName: Eternity's End
+		/* Tooltip:
+			'''
+			Turns normal arrows into eternity arrows
+			Has a chance to fire a laser
+			60% chance not to consume ammo
+			''' */
+	}
+
+	Shotstorm: {
+		/* Tooltip:
+			'''
+			Fires three supersonic darts that inflict a rapid acting poison
+			Uses darts as ammo
+			''' */
+		// DisplayName: Shotstorm
+	}
+
+	PrismaticFlamebuster: {
+		/* Tooltip:
+			'''
+			Fires rainbow flames
+			80% chance to not consume ammo
+			''' */
+		// DisplayName: Prismatic Flamebuster
+	}
+
+	MegaRocket: {
+		// Tooltip: Has a chance to fire a Mega Rocket
+		// DisplayName: Mega Rocket
+	}
+
+	Katagina: {
+		/* Tooltip:
+			'''
+			Fires 3 bullet streams
+			50% chance to not consume ammo
+			''' */
+		// DisplayName: Katagina
+	}
+
+	Kamikaze: {
+		// Tooltip: ""
+		// DisplayName: Kamikaze
+	}
+
+	TacticalStrike: {
+		// Tooltip: Calls a hallowed missile strike from the sky
+		// DisplayName: Tactical Strike
+	}
+
+	StormStrike: {
+		/* Tooltip:
+			'''
+			Fires a storm of homing rockets
+			Has a chance to fire a Mega Rocket
+			70% chance to not consume ammo
+			''' */
+		// DisplayName: Storm Strike
+	}
+
+	SixShooter: {
+		// Tooltip: Every 6th shot does 4x damage
+		// DisplayName: The Six Shooter
+	}
+
+	EnchantedStaff: {
+		// Tooltip: Summons an enchanted sword, cursed hammer and crimson axe to fight for you
+		// DisplayName: Enchanted Staff
+	}
+
+	Exliture: {
+		// DisplayName: Exliture
+		/* Tooltip:
+			'''
+			Shoots eyes that attack enemies
+			Also serves as a sword
+			''' */
+	}
+
+	KirovRemote: {
+		// DisplayName: Kirov Remote
+		// Tooltip: Summons a mini Kirov Airship to defend you
+	}
+
+	LightningRod: {
+		// DisplayName: Lightning Rod
+		// Tooltip: Summons an energy storm that fires lightning at enemies
+	}
+
+	SoulburnerStaff: {
+		// DisplayName: Soulburner Staff
+		// Tooltip: Summons a soul skull to burn your enemies
+	}
+
+	SupremeAwakener: {
+		// DisplayName: Supreme Awakener
+		// Tooltip: Summons the awakened to serve you
+	}
+
+	ThrowableBook: {
+		// Tooltip: Such magnificient tragedy written within this book! It really hurts you!
+		// DisplayName: Throwable Book
+	}
+
+	TheFrayedFeather: {
+		// Tooltip: Throws a burst of three feathers
+		// DisplayName: The Frayed Feather
+	}
+
+	ShadeOfLight: {
+		// Tooltip: ""
+		// DisplayName: Shade Of Light
+	}
+
+	Dictionary: {
+		// Tooltip: Sticks and stones may break my bones but words will never hurt me...
+		// DisplayName: Dictionary
+	}
+
+	DanceOfDarkness: {
+		// Tooltip: ""
+		// DisplayName: Dance Of Darkness
+	}
+
+	BalladOfBalance: {
+		// Tooltip: ""
+		// DisplayName: Ballad Of Balance
+	}
+
+	GnomesBane: {
+		// DisplayName: The Gnome's Bane
+		/* Tooltip:
+			'''
+			The weapon to end it all...
+			Gameraiders101's Youtuber item
+			''' */
+	}
+
+	PedguinsStaff: {
+		// DisplayName: Pedguin's Staff
+		/* Tooltip:
+			'''
+			Summons a corrupt penguin
+			Pedguin's magic allows it to fly!
+			Pedguin's Youtuber item
+			''' */
+	}
+
+	ImmolatorBanner: {
+		// DisplayName: Immolator Banner
+		// Tooltip: ""
+	}
+
+	ReaverSlimeBanner: {
+		// DisplayName: Reaver Slime Banner
+		// Tooltip: ""
+	}
+
+	VoidKnightBanner: {
+		// DisplayName: Void Knight Banner
+		// Tooltip: ""
+	}
+
+	ZergCasterBanner: {
+		// DisplayName: Zerg Caster Banner
+		// Tooltip: ""
+	}
+
+	VoidElementalBanner: {
+		// DisplayName: Void Elemental Banner
+		// Tooltip: ""
+	}
+
+	EtherealHunterBanner: {
+		// DisplayName: Ethereal Hunter Banner
+		// Tooltip: ""
+	}
+
+	VoidCrawlerBanner: {
+		// DisplayName: Void Crawler Banner
+		// Tooltip: ""
+	}
+
+	VoidGolemBanner: {
+		// DisplayName: Void Golem Banner
+		// Tooltip: ""
 	}
 }
 
@@ -6989,28 +7217,58 @@ Buffs: {
 	}
 
 	ImpishCurse: {
-		// Description: ""
-		// DisplayName: Impish Curse
+		Description: ""
+		DisplayName: Бесовское проклятье
 	}
 
 	AstralTearCooldown: {
-		// DisplayName: Astral Tear Cooldown
-		// Description: You cant use Astral Tear
+		DisplayName: Откат астральной слезы
+		Description: Ты пока не можешь использовать астральную слезу снова
 	}
 
 	DeathwarpCooldown: {
-		// DisplayName: Deathwarp Cooldown
-		// Description: You can't activate deathwarp
+		DisplayName: Откат смертискревления
+		Description: Ты пока не можешь использовать способность оружия снова
 	}
 
 	SolusKunaiCooldown: {
-		// DisplayName: Solus Kunai Cooldown
-		// Description: You cant use Solus Kunais
+		DisplayName: Откат солнцекуная
+		Description: Ты пока не можешь снова использовать солнцекунаи
 	}
 
 	WindsBlessing: {
-		// DisplayName: Winds Blessing
-		// Description: The wind is behind you
+		DisplayName: Ветрославление
+		Description: Ветры прикрывают твою жопу
+	}
+
+	SoulSkull: {
+		// Description: Ascended from the void, the skull breaths Soulfire that inflicts Soul Inferno
+		// DisplayName: Soulskull
+	}
+
+	KirovAirshipBuff: {
+		// Description: Bombardiers to your stations.
+		// DisplayName: Kirov Airship
+	}
+
+	EnchantedTrio: {
+		// Description: The enchanted weapons of Terraira defend you
+		// DisplayName: Enchanted Trio
+	}
+
+	DeathwatcherBuff: {
+		// Description: Just looking at it gives you chills
+		// DisplayName: Deathwatcher
+	}
+
+	AwakenedMinionBuff: {
+		// Description: They have ascended
+		// DisplayName: Woke
+	}
+
+	CorruptPenguinBuff: {
+		// DisplayName: Corrupt Penguin
+		// Description: Does bonus damage against the clothier
 	}
 }
 
@@ -7396,6 +7654,26 @@ NPCs: {
 
 	Puff.DisplayName: Пушистик
 	SpikedPuff.DisplayName: Шипушистик
+	// AbyssSkull.DisplayName: Abyss Skull
+	// AbyssSkullette.DisplayName: Abyss Skullette
+	// AccursedFlier.DisplayName: Accursed Flier
+	// DimensionalHive.DisplayName: Dimensional Hive
+	// Immolator.DisplayName: Immolator
+	// ReaverSlime.DisplayName: Reaver Slime
+	// VoidFly.DisplayName: Void Fly
+	// VoidKnight.DisplayName: Void Knight
+	// ZergCaster.DisplayName: Zerg Caster
+	// EtherealHunter.DisplayName: Ethereal Hunter
+	// VoidCrawler.DisplayName: Void Crawler
+	// VoidGolem.DisplayName: Void Golem
+	// VoidElemental.DisplayName: Void Elemental
+	// AllKnowerBody.DisplayName: All Knower Body
+	// AllKnowerHead.DisplayName: All Knower Head
+	// AllKnowerTail.DisplayName: All Knower Tail
+	// RadiantWarrior.DisplayName: Radiant Warrior
+	// SparklingSlime.DisplayName: Sparkling Slime
+	// StarlightGlobule.DisplayName: Starlight Globule
+	// StellarStarfish.DisplayName: Stellar Starfish
 }
 
 Projectiles: {
@@ -7655,7 +7933,7 @@ Projectiles: {
 	RetinasmP.DisplayName: Проджектайл ретиназма
 	SkeletronFistP.DisplayName: Проджектайл кулака скелетрона
 	LightningArc.DisplayName: Арка молнии
-	// Lightning.DisplayName: Lightning Tome
+	Lightning.DisplayName: Молния
 	ShockstormPortal.DisplayName: Шокоштормовой портал
 	SpinalEye.DisplayName: Око Спинала
 	Spine.DisplayName: Позвоночник
@@ -7930,7 +8208,7 @@ Projectiles: {
 	SnowSpray.DisplayName: Снегоспрей
 	Snowflake.DisplayName: Снежинка
 	IcicleShot.DisplayName: Выстрел сосу льки
-	// Icicle.DisplayName: Ice Spike
+	Icicle.DisplayName: Сосу лька
 	IceBlade.DisplayName: Ледзвие
 	SkyFuryRain.DisplayName: Дождь небоярости
 	HappyCloud.DisplayName: Милое-малое облачко
@@ -8050,6 +8328,7 @@ Projectiles: {
 	RadiantStarMortar.DisplayName: Лучезвезда миномёта
 	RadiantStarSmall.DisplayName: Малая лучезвезда
 	RadiantStarThrown.DisplayName: Запущенная лучезвезда
+	// RadiantStar.DisplayName: Radiant Star
 	StellarPortal.DisplayName: Зведортал
 	StellarMeteor.DisplayName: Звездетеорит
 	StellariumBolt2.DisplayName: Звездонитовый выстрел2
@@ -8110,92 +8389,137 @@ Projectiles: {
 	OrichalcumPetal.DisplayName: Орихалковый лепесток
 	PalladiumSpark.DisplayName: Палладиевая искра
 	TitaniumSpike.DisplayName: Титановый шип
-	// StrangePlantBall6.DisplayName: Strange Orb
-	// StrangePlantBall5.DisplayName: Strange Orb
-	// StrangePlantBall4.DisplayName: Strange Orb
-	// StrangePlantBall3.DisplayName: Strange Orb
-	// StrangePlantBall2.DisplayName: Strange Orb
-	// StrangePlantBall1.DisplayName: Strange Orb
-	// FireballP.DisplayName: Fireball
-	// PoltercastP.DisplayName: Poltercast
-	// StingerP.DisplayName: Stinger
-	// Barrier.DisplayName: Barrier
-	// CursedBall.DisplayName: Cursed Ball
-	// CursedFlame.DisplayName: Cursed Flame
-	// DeimosAsteroid.DisplayName: Deimos Asteroid
-	// EarthcrusherProj.DisplayName: Earthcrusher Proj
-	// EarthcrusherSwirl.DisplayName: Earthcrusher Swirl
-	// FireweaverProj.DisplayName: Fireweaver Proj
-	// FireweaverSwirl.DisplayName: Fireweaver Swirl
-	// GraniteEnergyShot.DisplayName: Granite Energy Shot
-	// ImpishFireball.DisplayName: Impish Fireball
-	// ImpishWave.DisplayName: Impish Wave
-	// NeptuneRay.DisplayName: Neptune Ray
-	// OceansSeashell.DisplayName: Oceans Seashell
-	// SansNote.DisplayName: Sans Note
-	// ThundersoulBolt.DisplayName: Thundersoul Bolt
-	// ThundersoulBoltMinor.DisplayName: Thundersoul Bolt Minor
-	// WarhornP.DisplayName: Warhorn
-	// Nightball.DisplayName: Nightfall
-	// Nightball2.DisplayName: Deathwarp
-	// EarthP.DisplayName: Earth
-	// JupiterGasOrbit.DisplayName: Jupiter
-	// JupiterP.DisplayName: Jupiter
-	// MarsP.DisplayName: Mars
-	// MercuryP.DisplayName: Mercury
-	// NeptuneP.DisplayName: Neptune
-	// NeptuneWaterball.DisplayName: Neptune
-	// SaturnP.DisplayName: Saturn
-	// SaturnRing.DisplayName: Saturn Ring
-	// SolOrbit.DisplayName: Sol
-	// SolP.DisplayName: Sol
-	// UranusP.DisplayName: Uranus
-	// VenusP.DisplayName: Venus
-	// BloodchainP.DisplayName: Bloodchain
-	// FlarelashP.DisplayName: Flarelash
-	// HallowedRadianceP.DisplayName: Hallowed Radiance
-	// NightbreakerBall.DisplayName: Nightbreaker
-	// NightbreakerBlade.DisplayName: Nightbreaker
-	// NightbreakerP.DisplayName: Nightbreaker
-	// ShadowsGraspP.DisplayName: Shadows Grasp
-	// TerraBelterP.DisplayName: Terra Belter
-	// TerraBolt.DisplayName: Belter
-	// TerraOrb.DisplayName: Terra Orb
-	// TheSpineP.DisplayName: The Spine
-	// TheTrueSpineP.DisplayName: The True Spine
-	// TheVineP.DisplayName: The Vine
-	// TrueHallowedRadianceP.DisplayName: True Hallowed Radiance
-	// TrueHallowedRadianceScythe.DisplayName: True Hallowed Radiance Scythe
-	// TrueNightbreakerP.DisplayName: True Nightbreaker
-	// TrueSpineBall.DisplayName: True Spine Ball
-	// AstralTear.DisplayName: Astral Tear
-	// AurumBall.DisplayName: Aurum Ball
-	// BlazeguardWave.DisplayName: Blazeguard Wave
-	// BlazeguardWave2.DisplayName: Blazeguard Wave2
-	// BubbleBlue.DisplayName: Bubble
-	// BubbleGreen.DisplayName: Bubble
-	// BubblePurple.DisplayName: Bubble
-	// BubbleRed.DisplayName: Bubble
-	// ChaosFireball.DisplayName: Chaos Fireball
-	// DeathwarpLaser.DisplayName: Deathwarp Laser
-	// DeathwarpSpinner.DisplayName: Deathwarp Spinner
-	// EyeOfTheStormBall.DisplayName: Eye Of The Storm Ball
-	// EyeOfTheStormP.DisplayName: Eye Of The Storm
-	// FistsOfFuryFire.DisplayName: Fists Of Fury Fire
-	// FistsOfFuryP.DisplayName: Fists Of Fury
-	// DyingAzureP.DisplayName: Dying Azure
-	// HungryFlailP.DisplayName: Hungry Flail
-	// KindleCrusherP.DisplayName: Kindle Crusher
-	// KindleFireball.DisplayName: Kindle Fireball
-	// GalacticaBlade.DisplayName: Galactica Blade
-	// GalacticaBlade2.DisplayName: Galactica Blade2
-	// GustStrikeCloud.DisplayName: Gust Strike Cloud
-	// GustStrikeLightning.DisplayName: Gust Strike Lightning
-	// LightningBolt.DisplayName: Lightning Bolt
-	// ReignWave.DisplayName: Reign Wave
-	// SolusKunai.DisplayName: Solus Kunai
-	// DeathwarpP.DisplayName: Deathwarp
-	// UniverseBall.DisplayName: Universe Ball
+	StrangePlantBall6.DisplayName: Шар страннороста6
+	StrangePlantBall5.DisplayName: Шар страннороста5
+	StrangePlantBall4.DisplayName: Шар страннороста4
+	StrangePlantBall3.DisplayName: Шар страннороста3
+	StrangePlantBall2.DisplayName: Шар страннороста2
+	StrangePlantBall1.DisplayName: Шар страннороста
+	FireballP.DisplayName: Проджектайл огнешара
+	PoltercastP.DisplayName: Проджектайл полтеркасты
+	StingerP.DisplayName: Проджектайл стингера
+	Barrier.DisplayName: Барьер
+	CursedBall.DisplayName: Проклятый шар
+	CursedFlame.DisplayName: Проклятогонь
+	DeimosAsteroid.DisplayName: Астероид деймоса
+	EarthcrusherProj.DisplayName: Проджектайл землелома
+	EarthcrusherSwirl.DisplayName: Вертушка землелома
+	FireweaverProj.DisplayName: Проджектайл огнеткача
+	FireweaverSwirl.DisplayName: Вертушка огнеткача
+	GraniteEnergyShot.DisplayName: Выстрел гранитной энергии
+	ImpishFireball.DisplayName: Огнешар бесовской
+	ImpishWave.DisplayName: Волная бесовская
+	NeptuneRay.DisplayName: Луч нептуна
+	OceansSeashell.DisplayName: Морскоракушка окиянская
+	SansNote.DisplayName: Санснота
+	ThundersoulBolt.DisplayName: Выстрел громодуши
+	ThundersoulBoltMinor.DisplayName: Минивыстрел громодуши
+	WarhornP.DisplayName: Проджектайл боерога
+	Nightball.DisplayName: Ночь
+	Nightball2.DisplayName: Ночь2
+	EarthP.DisplayName: Проджектайл земли
+	JupiterGasOrbit.DisplayName: Газовый летун юпитера
+	JupiterP.DisplayName: Проджектайл юпитера
+	MarsP.DisplayName: Проджектайл марса
+	MercuryP.DisplayName: Проджектайл меркурия
+	NeptuneP.DisplayName: Проджектайл нептуна
+	NeptuneWaterball.DisplayName: Водошар нептуна
+	SaturnP.DisplayName: Проджектайл сатурна
+	SaturnRing.DisplayName: Кольцо сатурна
+	SolOrbit.DisplayName: Орбита сунца
+	SolP.DisplayName: Проджектайл сунца
+	UranusP.DisplayName: Проджектайл юр ануса
+	VenusP.DisplayName: Проджектайл венеры
+	BloodchainP.DisplayName: Проджектайл кровоцепочки
+	FlarelashP.DisplayName: Проджектайл вспыхоплети
+	HallowedRadianceP.DisplayName: Проджектайл священного лучезария
+	NightbreakerBall.DisplayName: Шар ночелома
+	NightbreakerBlade.DisplayName: Лезвие ночелома
+	NightbreakerP.DisplayName: Проджектайл ночелома
+	ShadowsGraspP.DisplayName: Проджектайл тенехватки
+	TerraBelterP.DisplayName: Проджектайл террапояса
+	TerraBolt.DisplayName: Терравыстрел
+	TerraOrb.DisplayName: Террасфера
+	TheSpineP.DisplayName: Проджектайл позвоночника
+	TheTrueSpineP.DisplayName: Проджектайл истинного позвоночника
+	TheVineP.DisplayName: Проджектайл вина
+	TrueHallowedRadianceP.DisplayName: Проджектайл истинного священного лучезаря
+	TrueHallowedRadianceScythe.DisplayName: Коса истинного священного лучезария
+	TrueNightbreakerP.DisplayName: Проджектайл истинного ночелома
+	TrueSpineBall.DisplayName: Шар истинного позвоночника
+	AstralTear.DisplayName: Астральная стрела
+	AurumBall.DisplayName: Аурошар
+	BlazeguardWave.DisplayName: Волна огнещита
+	BlazeguardWave2.DisplayName: Волна огнещита2
+	BubbleBlue.DisplayName: Синий пузырь
+	BubbleGreen.DisplayName: Зелёный пузырь
+	BubblePurple.DisplayName: Фиолетовый пузырь
+	BubbleRed.DisplayName: Красный пузрь
+	ChaosFireball.DisplayName: Хаосогнешар
+	DeathwarpLaser.DisplayName: Лазер смертоварпа
+	DeathwarpSpinner.DisplayName: Крутилка смертоварпа
+	EyeOfTheStormBall.DisplayName: Шар ока шторма
+	EyeOfTheStormP.DisplayName: Проджектайл ока шторма
+	FistsOfFuryFire.DisplayName: Огонь кулаков ярости
+	FistsOfFuryP.DisplayName: Проджектайл кулаков ярости
+	DyingAzureP.DisplayName: Проджектайл гибнущей лазури
+	HungryFlailP.DisplayName: Проджектайл гладоцепи
+	KindleCrusherP.DisplayName: Проджектайл почкокрушителя
+	KindleFireball.DisplayName: Огнешар почки
+	GalacticaBlade.DisplayName: Лезвие галактики
+	GalacticaBlade2.DisplayName: Лезвие галактики2
+	GustStrikeCloud.DisplayName: Облако порывострела
+	GustStrikeLightning.DisplayName: Молния порывострела
+	LightningBolt.DisplayName: Болт молнии
+	ReignWave.DisplayName: Волна владыки
+	SolusKunai.DisplayName: Солнцекунай
+	DeathwarpP.DisplayName: Проджектайл смертоварпа
+	UniverseBall.DisplayName: Вселенский шар
+	// WandHeld.DisplayName: Wand Held
+	// EternityArrow.DisplayName: Eternity Arrow
+	// AstralRound.DisplayName: Astral Round
+	// AstralStar.DisplayName: Star
+	// BabySharkP.DisplayName: Baby Shark
+	// EternityBeam.DisplayName: Eternity Beam
+	// ExplosiveBolt.DisplayName: Explosive Bolt
+	// ShotstormDartStuck.DisplayName: Shotstorm Dart Stuck
+	// ShotstormDart.DisplayName: Shotstorm Dart
+	// PrismaticFire.DisplayName: Prismatic Fire
+	// MegaRocket.DisplayName: Mega Rocket
+	// HomingRocket.DisplayName: Homing Rocket
+	// HallowedRocket.DisplayName: Hallowed Rocket
+	// Deathwatcher.DisplayName: Deathwatcher
+	// DeathwatcherBolt.DisplayName: Void Blast
+	// EnchantedTrio0.DisplayName: Enchanted Trio
+	// EnchantedTrio1.DisplayName: Enchanted Trio
+	// EnchantedTrio2.DisplayName: Enchanted Trio
+	// EnergyStorm.DisplayName: Energy Storm
+	// ExlitureEye.DisplayName: Eye
+	// KirovAirship.DisplayName: Kirov Airship
+	// LightningBlast.DisplayName: Lightning
+	// Soulflames.DisplayName: Soul Flames
+	// SoulSkull.DisplayName: Soul Skull
+	// WokeBeam.DisplayName: WOKE
+	// WokeMinion.DisplayName: Celestial Watcher
+	// ThrowableBookP.DisplayName: Throwable Book
+	// ShadeOfLightP.DisplayName: Shade Of Light
+	// ShadeOfLightBall.DisplayName: Shade Of Light
+	// FrayedFeather.DisplayName: Frayed Feather
+	// DictionaryP.DisplayName: Dictionary
+	// DanceOfDarknessShade.DisplayName: Dance Of Darkness
+	// DanceOfDarknessP.DisplayName: Dance Of Darkness
+	// BalladOfBalanceP.DisplayName: Ballad Of Balance
+	// GiantGnome.DisplayName: Giant Gnome
+	// GnomeBolt.DisplayName: Astral Round
+	// GnomeSurfer.DisplayName: Gnome Surfer
+	// CorruptPenguin.DisplayName: Corrupt Penguin
+	// AccursedBreath.DisplayName: Accursed Fire
+	// ImmolatorBall.DisplayName: Immolator Blast
+	// ImmolatorBolt.DisplayName: Immolator Particle
+	// ReaverGlob.DisplayName: Reaver Glob
+	// VoidKnightOrb.DisplayName: Void Knight Orb
+	// ZergFireball.DisplayName: Zerg Caster
+	// WarriorSlice.DisplayName: Warrior Slice
 }
 
 Configs: {
@@ -8296,6 +8620,24 @@ Bestiary: {
 		RegarothMinion: Отпрыск грозового змея, призванный Регаротом для помощи ему в битве. Не стоит судить по его малому размеру, ведь он всё равно может представлять опасность.
 		MiniToySlime: Маленький слизень, отколовшийся от большого игрушечного слизня. И хотя по размеру они меньше оригинала, они по-прежнему могут представлять угрозу.
 		Firefly: Разгневанный дух, похожий на огромного светлячка, призванный Волканоксом. Будь уверен, оно сделает всё возможное, чтобы уничтожить что и кого угодно по приказу своего хозяина.
+		AbyssSkull: Обычные нападающие Рассвета Пустоты, яростно бросающиеся на любого, кто попадётся им на пути. Вокруг них постоянно кружатся их младшие сородичи.
+		AbyssSkullette: Крохотные черепки, кружащиеся вокруг своих старших братьев. Недооценивать их чисто из-за размера не стоит, так как они легко могут превзойти численностью любого неподготовленного.
+		AccursedFlier: Отвратительные летающие твари, служащие поддержкой с воздуха для других чудовищ Рассвета. У них в брюхе находится резервуар с неизвестной жидкостью.
+		DimensionalHive: В отличие от других созданий Рассвета, эти ульи не атакуют, а создают невидимую ауру, которая исцеляет других отродий Рассвета, находящихся поблизости.
+		Immolator: Летающие конструкты из Пустоты, имеющие в центре своего корпуса глаз, способный видеть на многие километры, также позволяющий им легко выслеживать любую цель.
+		ReaverSlime: Известно, что в Пустоте обитают всевозможные твари, и слизни также исключением не являются. Ну, и тут даже без объяснения понятно, что эти куда опаснее, чем все остальные Террарийские слизни...
+		VoidKnight: Безумные буяны Рассвета, которые могут призывать сферы Пустоты, кружащие вокруг них для дополнительной защиты.
+		VoidFly: Из-за своих крошечных размеров, эти проклятые мухи, атакуя свои цели, расчитывают исключительно на массовые налёты, чтобы просто числом завалить свою жертву.
+		ZergCaster: Так же как и со всеми остальными отродьями Пустоты, совсем неясно, что именно является источником их огромной силы.
+		EtherealHunter: Ужасающие призраки из глубин Пустоты, что точно не дадут уйти ни одному живому существу от их смертельных объятий.
+		VoidCrawler: Огромное многоногое паукообразное создание, носящее мешок с непонятной жидкостью на своей спине.
+		VoidGolem: Огромные амбалы, одетые в крайне прочную броню из Пустотного темнокамня, уничтожающие всё на своём пути. Их шаги тяжёлые настолько, что заставляют землю содрогаться, когда они идут.
+		VoidElemental: Рассвет Пустоты имеет и свой вид элементалей - элементалей Пустоты. Однако, в отличие от всех остальных Террарийских элементалей, никто точно не знает, каким образом они появились.
+		RadiantWarrior: Простые смертые со слабой волей, кто не смогли сопротивляться Лучезарному Дождю, были одними из первых, кто сошёл с ума и поддался его воле. Хотя Дождь и дал им невероятную силу, он также превратил их в своих рабов, лишённых всякого разума.
+		SparklingSlime: Даже слизни, несмотря на отсутствие у них какого-либо разума или воли, всё равно поддались Лучезарному Дождю. И теперь их тела состоят из одного лишь сверкающего порошка с невообразимым потенциалом.
+		StarlightGlobule: Странное существо, служащее хостом для большего количества существ поменьше, которые вылезают из него при смерти. Судя по всему, эти создания - творения самого Лучезарного Дождя, а не обычные существа, поддавшиеся ему.
+		AllKnower: Весьма своеобразные червеподобные существа с огромной силой, дарованной им Лучезарным Дождём, который, однако, взамен также исказил их до неузнаваемости.
+		StellarStarfish: Разумная масса, состоящая целиком из сверкающего порошка и похожая на морскую звезду. По-видимому, она была рождена из одной лишь эссенции Лучезарного Дождя.
 	}
 
 	TownNPCs: {

@@ -2,11 +2,11 @@
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Items.Placeable.Darkstone;
 using ElementsAwoken.EASystem.UI.Tooltips;
-using ElementsAwoken.Events.VoidEvent;
 using ElementsAwoken.EAUtilities;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ElementsAwoken.Content.Events.VoidEvent;
 
 namespace ElementsAwoken.Content.Items.BossSummons
 {

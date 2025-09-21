@@ -4,6 +4,11 @@ Items: {
 		DisplayName: Deathwish Flame
 	}
 
+	Deathwish: {
+		Tooltip: ""
+		DisplayName: Deathwish
+	}
+
 	DemonicFleshClump: {
 		DisplayName: Demonic Flesh Clump
 		Tooltip: ""
@@ -6129,6 +6134,229 @@ Items: {
 		DisplayName: The Leeched
 		Tooltip: Restores health on hitting an enemy
 	}
+
+	ProcWand: {
+		Tooltip: ""
+		DisplayName: Wand
+	}
+
+	AstralBarrage: {
+		DisplayName: Astral Barrage
+		Tooltip:
+			'''
+			Fires a volley of stars
+			75% chance to not consume ammo
+			'''
+	}
+
+	BabyShark: {
+		DisplayName: Baby Shark
+		Tooltip:
+			'''
+			Animal and child abuse, all in one
+			You monster...
+			'''
+	}
+
+	ChargedBlasterRepeater: {
+		DisplayName: Charged Blaster Repeater
+		Tooltip: Turns wooden arrows into an explosive bolt
+	}
+
+	CrystalCannon: {
+		DisplayName: Crystal Cannon
+		Tooltip: Shoots a bouncing crystal shard
+	}
+
+	EternitysEnd: {
+		DisplayName: Eternity's End
+		Tooltip:
+			'''
+			Turns normal arrows into eternity arrows
+			Has a chance to fire a laser
+			60% chance not to consume ammo
+			'''
+	}
+
+	Shotstorm: {
+		Tooltip:
+			'''
+			Fires three supersonic darts that inflict a rapid acting poison
+			Uses darts as ammo
+			'''
+		DisplayName: Shotstorm
+	}
+
+	PrismaticFlamebuster: {
+		Tooltip:
+			'''
+			Fires rainbow flames
+			80% chance to not consume ammo
+			'''
+		DisplayName: Prismatic Flamebuster
+	}
+
+	MegaRocket: {
+		Tooltip: Has a chance to fire a Mega Rocket
+		DisplayName: Mega Rocket
+	}
+
+	Katagina: {
+		Tooltip:
+			'''
+			Fires 3 bullet streams
+			50% chance to not consume ammo
+			'''
+		DisplayName: Katagina
+	}
+
+	Kamikaze: {
+		Tooltip: ""
+		DisplayName: Kamikaze
+	}
+
+	TacticalStrike: {
+		Tooltip: Calls a hallowed missile strike from the sky
+		DisplayName: Tactical Strike
+	}
+
+	StormStrike: {
+		Tooltip:
+			'''
+			Fires a storm of homing rockets
+			Has a chance to fire a Mega Rocket
+			70% chance to not consume ammo
+			'''
+		DisplayName: Storm Strike
+	}
+
+	SixShooter: {
+		Tooltip: Every 6th shot does 4x damage
+		DisplayName: The Six Shooter
+	}
+
+	EnchantedStaff: {
+		Tooltip: Summons an enchanted sword, cursed hammer and crimson axe to fight for you
+		DisplayName: Enchanted Staff
+	}
+
+	Exliture: {
+		DisplayName: Exliture
+		Tooltip:
+			'''
+			Shoots eyes that attack enemies
+			Also serves as a sword
+			'''
+	}
+
+	KirovRemote: {
+		DisplayName: Kirov Remote
+		Tooltip: Summons a mini Kirov Airship to defend you
+	}
+
+	LightningRod: {
+		DisplayName: Lightning Rod
+		Tooltip: Summons an energy storm that fires lightning at enemies
+	}
+
+	SoulburnerStaff: {
+		DisplayName: Soulburner Staff
+		Tooltip: Summons a soul skull to burn your enemies
+	}
+
+	SupremeAwakener: {
+		DisplayName: Supreme Awakener
+		Tooltip: Summons the awakened to serve you
+	}
+
+	ThrowableBook: {
+		Tooltip: Such magnificient tragedy written within this book! It really hurts you!
+		DisplayName: Throwable Book
+	}
+
+	TheFrayedFeather: {
+		Tooltip: Throws a burst of three feathers
+		DisplayName: The Frayed Feather
+	}
+
+	ShadeOfLight: {
+		Tooltip: ""
+		DisplayName: Shade Of Light
+	}
+
+	Dictionary: {
+		Tooltip: Sticks and stones may break my bones but words will never hurt me...
+		DisplayName: Dictionary
+	}
+
+	DanceOfDarkness: {
+		Tooltip: ""
+		DisplayName: Dance Of Darkness
+	}
+
+	BalladOfBalance: {
+		Tooltip: ""
+		DisplayName: Ballad Of Balance
+	}
+
+	GnomesBane: {
+		DisplayName: The Gnome's Bane
+		Tooltip:
+			'''
+			The weapon to end it all...
+			Gameraiders101's Youtuber item
+			'''
+	}
+
+	PedguinsStaff: {
+		DisplayName: Pedguin's Staff
+		Tooltip:
+			'''
+			Summons a corrupt penguin
+			Pedguin's magic allows it to fly!
+			Pedguin's Youtuber item
+			'''
+	}
+
+	ImmolatorBanner: {
+		DisplayName: Immolator Banner
+		Tooltip: ""
+	}
+
+	ReaverSlimeBanner: {
+		DisplayName: Reaver Slime Banner
+		Tooltip: ""
+	}
+
+	VoidKnightBanner: {
+		DisplayName: Void Knight Banner
+		Tooltip: ""
+	}
+
+	ZergCasterBanner: {
+		DisplayName: Zerg Caster Banner
+		Tooltip: ""
+	}
+
+	VoidElementalBanner: {
+		DisplayName: Void Elemental Banner
+		Tooltip: ""
+	}
+
+	EtherealHunterBanner: {
+		DisplayName: Ethereal Hunter Banner
+		Tooltip: ""
+	}
+
+	VoidCrawlerBanner: {
+		DisplayName: Void Crawler Banner
+		Tooltip: ""
+	}
+
+	VoidGolemBanner: {
+		DisplayName: Void Golem Banner
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -6943,6 +7171,36 @@ Buffs: {
 		DisplayName: Winds Blessing
 		Description: The wind is behind you
 	}
+
+	SoulSkull: {
+		Description: Ascended from the void, the skull breaths Soulfire that inflicts Soul Inferno
+		DisplayName: Soulskull
+	}
+
+	KirovAirshipBuff: {
+		Description: Bombardiers to your stations.
+		DisplayName: Kirov Airship
+	}
+
+	EnchantedTrio: {
+		Description: The enchanted weapons of Terraira defend you
+		DisplayName: Enchanted Trio
+	}
+
+	DeathwatcherBuff: {
+		Description: Just looking at it gives you chills
+		DisplayName: Deathwatcher
+	}
+
+	AwakenedMinionBuff: {
+		Description: They have ascended
+		DisplayName: Woke
+	}
+
+	CorruptPenguinBuff: {
+		DisplayName: Corrupt Penguin
+		Description: Does bonus damage against the clothier
+	}
 }
 
 NPCs: {
@@ -7327,6 +7585,26 @@ NPCs: {
 
 	Puff.DisplayName: Puff
 	SpikedPuff.DisplayName: Spiked Puff
+	AbyssSkull.DisplayName: Abyss Skull
+	AbyssSkullette.DisplayName: Abyss Skullette
+	AccursedFlier.DisplayName: Accursed Flier
+	DimensionalHive.DisplayName: Dimensional Hive
+	Immolator.DisplayName: Immolator
+	ReaverSlime.DisplayName: Reaver Slime
+	VoidFly.DisplayName: Void Fly
+	VoidKnight.DisplayName: Void Knight
+	ZergCaster.DisplayName: Zerg Caster
+	EtherealHunter.DisplayName: Ethereal Hunter
+	VoidCrawler.DisplayName: Void Crawler
+	VoidGolem.DisplayName: Void Golem
+	VoidElemental.DisplayName: Void Elemental
+	AllKnowerBody.DisplayName: All Knower
+	AllKnowerHead.DisplayName: All Knower
+	AllKnowerTail.DisplayName: All Knower
+	RadiantWarrior.DisplayName: Radiant Warrior
+	SparklingSlime.DisplayName: Sparkling Slime
+	StarlightGlobule.DisplayName: Starlight Globule
+	StellarStarfish.DisplayName: Stellar Starfish
 }
 
 Projectiles: {
@@ -7981,6 +8259,7 @@ Projectiles: {
 	RadiantStarMortar.DisplayName: Radiant Star
 	RadiantStarSmall.DisplayName: Radiant Star
 	RadiantStarThrown.DisplayName: Radiant Star
+	RadiantStar.DisplayName: Sparkle
 	StellarPortal.DisplayName: Stellar Portal
 	StellarMeteor.DisplayName: Stellar Meteor
 	StellariumBolt2.DisplayName: Stellarium Scepter
@@ -8127,6 +8406,51 @@ Projectiles: {
 	SolusKunai.DisplayName: Solus Kunai
 	DeathwarpP.DisplayName: Deathwarp
 	UniverseBall.DisplayName: Universe Ball
+	WandHeld.DisplayName: Wand Held
+	EternityArrow.DisplayName: Eternity Arrow
+	AstralRound.DisplayName: Astral Round
+	AstralStar.DisplayName: Star
+	BabySharkP.DisplayName: Baby Shark
+	EternityBeam.DisplayName: Eternity Beam
+	ExplosiveBolt.DisplayName: Explosive Bolt
+	ShotstormDartStuck.DisplayName: Shotstorm Dart Stuck
+	ShotstormDart.DisplayName: Shotstorm Dart
+	PrismaticFire.DisplayName: Prismatic Fire
+	MegaRocket.DisplayName: Mega Rocket
+	HomingRocket.DisplayName: Homing Rocket
+	HallowedRocket.DisplayName: Hallowed Rocket
+	Deathwatcher.DisplayName: Deathwatcher
+	DeathwatcherBolt.DisplayName: Void Blast
+	EnchantedTrio0.DisplayName: Enchanted Trio
+	EnchantedTrio1.DisplayName: Enchanted Trio
+	EnchantedTrio2.DisplayName: Enchanted Trio
+	EnergyStorm.DisplayName: Energy Storm
+	ExlitureEye.DisplayName: Eye
+	KirovAirship.DisplayName: Kirov Airship
+	LightningBlast.DisplayName: Lightning
+	Soulflames.DisplayName: Soul Flames
+	SoulSkull.DisplayName: Soul Skull
+	WokeBeam.DisplayName: WOKE
+	WokeMinion.DisplayName: Celestial Watcher
+	ThrowableBookP.DisplayName: Throwable Book
+	ShadeOfLightP.DisplayName: Shade Of Light
+	ShadeOfLightBall.DisplayName: Shade Of Light
+	FrayedFeather.DisplayName: Frayed Feather
+	DictionaryP.DisplayName: Dictionary
+	DanceOfDarknessShade.DisplayName: Dance Of Darkness
+	DanceOfDarknessP.DisplayName: Dance Of Darkness
+	BalladOfBalanceP.DisplayName: Ballad Of Balance
+	GiantGnome.DisplayName: Giant Gnome
+	GnomeBolt.DisplayName: Astral Round
+	GnomeSurfer.DisplayName: Gnome Surfer
+	CorruptPenguin.DisplayName: Corrupt Penguin
+	AccursedBreath.DisplayName: Accursed Fire
+	ImmolatorBall.DisplayName: Immolator Blast
+	ImmolatorBolt.DisplayName: Immolator Particle
+	ReaverGlob.DisplayName: Reaver Glob
+	VoidKnightOrb.DisplayName: Void Knight Orb
+	ZergFireball.DisplayName: Zerg Caster
+	WarriorSlice.DisplayName: Radiant Warrior
 }
 
 Configs: {
@@ -8227,6 +8551,24 @@ Bestiary: {
 		RegarothMinion: ""
 		MiniToySlime: ""
 		Firefly: ""
+		AbyssSkull: ""
+		AbyssSkullette: ""
+		AccursedFlier: ""
+		DimensionalHive: ""
+		Immolator: ""
+		ReaverSlime: ""
+		VoidKnight: ""
+		VoidFly: ""
+		ZergCaster: ""
+		EtherealHunter: ""
+		VoidCrawler: ""
+		VoidGolem: ""
+		VoidElemental: ""
+		RadiantWarrior: ""
+		SparklingSlime: ""
+		StarlightGlobule: ""
+		AllKnower: ""
+		StellarStarfish: ""
 	}
 
 	TownNPCs: {
