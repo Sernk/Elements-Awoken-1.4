@@ -5,8 +5,8 @@ Items: {
 	}
 
 	Deathwish: {
-		// Tooltip: ""
-		// DisplayName: Deathwish
+		Tooltip: ""
+		DisplayName: Смертожеланье
 	}
 
 	DemonicFleshClump: {
@@ -6205,225 +6205,320 @@ Items: {
 	}
 
 	ProcWand: {
-		// Tooltip: ""
-		// DisplayName: Wand
+		Tooltip: ну просто палка и всё. чё тут ещё говорить...
+		DisplayName: Жезл
 	}
 
 	AstralBarrage: {
-		// DisplayName: Astral Barrage
-		/* Tooltip:
+		DisplayName: Астробстрел
+		Tooltip:
 			'''
-			Fires a volley of stars
-			75% chance to not consume ammo
-			''' */
+			Стреляет множеством звёзд
+			Имеет 75% шанс не потратить аммуницию при выстреле
+			'''
 	}
 
 	BabyShark: {
-		// DisplayName: Baby Shark
-		/* Tooltip:
+		DisplayName: Акулёнок
+		Tooltip:
 			'''
-			Animal and child abuse, all in one
-			You monster...
-			''' */
+			Издевательство и над животными, и над детьми в одном флаконе...
+			Ну и ублюдок же ты.
+			'''
 	}
 
 	ChargedBlasterRepeater: {
-		// DisplayName: Charged Blaster Repeater
-		// Tooltip: Turns wooden arrows into an explosive bolt
+		DisplayName: Заряженный бластарбалет
+		Tooltip: Превращает стрелы во взрывоопасные выстрелы
 	}
 
 	CrystalCannon: {
-		// DisplayName: Crystal Cannon
-		// Tooltip: Shoots a bouncing crystal shard
+		DisplayName: Кристаллопушка
+		Tooltip: Стреляет отскакивающим от блоков осколком кристалла
 	}
 
 	EternitysEnd: {
-		// DisplayName: Eternity's End
-		/* Tooltip:
+		DisplayName: Кончина вечности
+		Tooltip:
 			'''
-			Turns normal arrows into eternity arrows
-			Has a chance to fire a laser
-			60% chance not to consume ammo
-			''' */
+			Превращает обычные стрелы в стрелы вечности
+			Имеет шанс выстрелить лазером вместо стрелы
+			Имеет 60% шанс не потратить аммуницию при выстреле
+			'''
 	}
 
 	Shotstorm: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Fires three supersonic darts that inflict a rapid acting poison
-			Uses darts as ammo
-			''' */
-		// DisplayName: Shotstorm
+			Стреляет тремя сверхзвуковыми дротиками, накладывающими на врагов сильнодействующий яд
+			Использует дротики в качестве аммуниции
+			'''
+		DisplayName: Стрелкобуря
 	}
 
 	PrismaticFlamebuster: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Fires rainbow flames
-			80% chance to not consume ammo
-			''' */
-		// DisplayName: Prismatic Flamebuster
+			Выпускает радужные огни
+			Имеет 80% шанс не потратить аммуницию при использовании
+			'''
+		DisplayName: Призмомёт
 	}
 
 	MegaRocket: {
-		// Tooltip: Has a chance to fire a Mega Rocket
-		// DisplayName: Mega Rocket
+		Tooltip: Имеет шанс выпустить мегаракету
+		DisplayName: Мегаракетомёт
 	}
 
 	Katagina: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Fires 3 bullet streams
-			50% chance to not consume ammo
-			''' */
-		// DisplayName: Katagina
+			Стреляет тремя потоками пуль
+			Имеет 50% шанс не потратить аммуницию при выстреле
+			'''
+		DisplayName: Катагина
 	}
 
 	Kamikaze: {
-		// Tooltip: ""
-		// DisplayName: Kamikaze
+		Tooltip: надеюсь, не Ди...
+		DisplayName: Камикадзе
 	}
 
 	TacticalStrike: {
-		// Tooltip: Calls a hallowed missile strike from the sky
-		// DisplayName: Tactical Strike
+		Tooltip: Призывает священный ракетный удар с небес
+		DisplayName: Тактическое оружие
 	}
 
 	StormStrike: {
-		/* Tooltip:
+		Tooltip:
 			'''
-			Fires a storm of homing rockets
-			Has a chance to fire a Mega Rocket
-			70% chance to not consume ammo
-			''' */
-		// DisplayName: Storm Strike
+			Стреляет бурей самонаводящихся ракет
+			Имеет шанс выстрелить мегаракетой
+			Имеет 70% шанс не потратить аммуницию при выстреле
+			'''
+		DisplayName: Штормострел
 	}
 
 	SixShooter: {
-		// Tooltip: Every 6th shot does 4x damage
-		// DisplayName: The Six Shooter
+		Tooltip: Каждый 6-й выстрел наносит в 4 раза больше урона
+		DisplayName: Шестёрка
 	}
 
 	EnchantedStaff: {
-		// Tooltip: Summons an enchanted sword, cursed hammer and crimson axe to fight for you
-		// DisplayName: Enchanted Staff
+		Tooltip: Призывает зачарованный меч, проклятый молот и кровавый топор на твою защиту
+		DisplayName: Зачарованный посох
 	}
 
 	Exliture: {
-		// DisplayName: Exliture
-		/* Tooltip:
+		DisplayName: Зеница ока
+		Tooltip:
 			'''
-			Shoots eyes that attack enemies
-			Also serves as a sword
-			''' */
+			Запускает глаза, атакующие врагов
+			Также может работать, как меч
+			'''
 	}
 
 	KirovRemote: {
-		// DisplayName: Kirov Remote
-		// Tooltip: Summons a mini Kirov Airship to defend you
+		DisplayName: Пульт управления "Кировом"
+		Tooltip: Призывает мини-дирижабль "Киров" на твою защиту
 	}
 
 	LightningRod: {
-		// DisplayName: Lightning Rod
-		// Tooltip: Summons an energy storm that fires lightning at enemies
+		DisplayName: Громоотвод
+		Tooltip: Призывает энергошторм, стреляющий молниями во врагов
 	}
 
 	SoulburnerStaff: {
-		// DisplayName: Soulburner Staff
-		// Tooltip: Summons a soul skull to burn your enemies
+		DisplayName: Посох духогня
+		Tooltip: Призывает духо-черепа, дабы сжигать твоих врагов
 	}
 
 	SupremeAwakener: {
-		// DisplayName: Supreme Awakener
-		// Tooltip: Summons the awakened to serve you
+		DisplayName: Высший пробуждатель
+		Tooltip: Призывает Пробуждённого на твою защиту.
 	}
 
 	ThrowableBook: {
-		// Tooltip: Such magnificient tragedy written within this book! It really hurts you!
-		// DisplayName: Throwable Book
+		Tooltip: В этой книге написана такая душераздирающая трагедия! Реально больно читать!
+		DisplayName: Метательная книга
 	}
 
 	TheFrayedFeather: {
-		// Tooltip: Throws a burst of three feathers
-		// DisplayName: The Frayed Feather
+		Tooltip: Метает 3 пера за раз
+		DisplayName: Покоцанное перо
 	}
 
 	ShadeOfLight: {
-		// Tooltip: ""
-		// DisplayName: Shade Of Light
+		Tooltip: или светотень, хуй знает
+		DisplayName: Светоттенок
 	}
 
 	Dictionary: {
-		// Tooltip: Sticks and stones may break my bones but words will never hurt me...
-		// DisplayName: Dictionary
+		Tooltip: Эти палки и камни ломают мои кости, но лишь слова не причинят мне боль... Правда?
+		DisplayName: Словарь
 	}
 
 	DanceOfDarkness: {
-		// Tooltip: ""
-		// DisplayName: Dance Of Darkness
+		Tooltip: ""
+		DisplayName: Танец тьмы
 	}
 
 	BalladOfBalance: {
-		// Tooltip: ""
-		// DisplayName: Ballad Of Balance
+		Tooltip: говном он был в оригинальном ЕА
+		DisplayName: Сказ о балансе
 	}
 
 	GnomesBane: {
-		// DisplayName: The Gnome's Bane
-		/* Tooltip:
+		DisplayName: Гноморез
+		Tooltip:
 			'''
-			The weapon to end it all...
-			Gameraiders101's Youtuber item
-			''' */
+			Уно, дос, трес, я достану гноморез!
+			Предмет ютубера Gameraiders101
+			'''
 	}
 
 	PedguinsStaff: {
-		// DisplayName: Pedguin's Staff
-		/* Tooltip:
+		DisplayName: Посох Педгвина
+		Tooltip:
 			'''
-			Summons a corrupt penguin
-			Pedguin's magic allows it to fly!
-			Pedguin's Youtuber item
-			''' */
+			Призывает порочного пингвина
+			Педгвинья магия даже позволяет ему летать!
+			Предмет ютубера Pedguin
+			'''
 	}
 
 	ImmolatorBanner: {
-		// DisplayName: Immolator Banner
-		// Tooltip: ""
+		DisplayName: Баннер жертвенника
+		Tooltip: последние предметы остались только... вроде.
 	}
 
 	ReaverSlimeBanner: {
-		// DisplayName: Reaver Slime Banner
-		// Tooltip: ""
+		DisplayName: Баннер слизня-разорителя
+		Tooltip: ""
 	}
 
 	VoidKnightBanner: {
-		// DisplayName: Void Knight Banner
-		// Tooltip: ""
+		DisplayName: Баннер пусторыцаря
+		Tooltip: ""
 	}
 
 	ZergCasterBanner: {
-		// DisplayName: Zerg Caster Banner
-		// Tooltip: ""
+		DisplayName: Баннер зерг-колдуна
+		Tooltip: ""
 	}
 
 	VoidElementalBanner: {
-		// DisplayName: Void Elemental Banner
-		// Tooltip: ""
+		DisplayName: Баннер элементаля пустоты
+		Tooltip: ""
 	}
 
 	EtherealHunterBanner: {
-		// DisplayName: Ethereal Hunter Banner
-		// Tooltip: ""
+		DisplayName: Баннер эфирного ловца
+		Tooltip: ""
 	}
 
 	VoidCrawlerBanner: {
-		// DisplayName: Void Crawler Banner
-		// Tooltip: ""
+		DisplayName: Баннер пустолзуна
+		Tooltip: ""
 	}
 
 	VoidGolemBanner: {
-		// DisplayName: Void Golem Banner
+		DisplayName: Баннер пустоголема
+		Tooltip: ""
+	}
+
+	WaterElementalBanner: {
+		// Tooltip: ""
+		// DisplayName: Water Elemental Banner
+	}
+
+	SkyElementalBanner: {
+		// Tooltip: ""
+		// DisplayName: Sky Elemental Banner
+	}
+
+	FrostElementalBanner: {
+		// Tooltip: ""
+		// DisplayName: Frost Elemental Banner
+	}
+
+	FireElementalBanner: {
+		// Tooltip: ""
+		// DisplayName: Fire Elemental Banner
+	}
+
+	DesertElementalBanner: {
+		// Tooltip: ""
+		// DisplayName: Desert Elemental Banner
+	}
+
+	VampireBatBanner: {
+		// Tooltip: ""
+		// DisplayName: Vampire Bat Banner
+	}
+
+	PebleerBanner: {
+		// Tooltip: ""
+		// DisplayName: Pebleer Banner
+	}
+
+	InfernoSpiritBanner: {
+		// Tooltip: ""
+		// DisplayName: Inferno Spirit Banner
+	}
+
+	DragonSlimeBanner: {
+		// DisplayName: Dragon Slime Banner
+		// Tooltip: ""
+	}
+
+	DragonBatBanner: {
+		// Tooltip: ""
+		// DisplayName: Dragon Bat Banner
+	}
+
+	DragonWarriorBanner: {
+		// DisplayName: Dragon Warrior Banner
+		// Tooltip: ""
+	}
+
+	DrakoniteElementalBanner: {
+		// DisplayName: Drakonite Elemental Banner
+		// Tooltip: ""
+	}
+
+	FlyingJawBanner: {
+		// DisplayName: Flying Jaw Banner
+		// Tooltip: ""
+	}
+
+	GiantTickBanner: {
+		// DisplayName: Giant Tick Banner
+		// Tooltip: ""
+	}
+
+	MortemWalkerBanner: {
+		// DisplayName: Mortem Walker Banner
+		// Tooltip: ""
+	}
+
+	SkyCrawlerBanner: {
+		// DisplayName: Sky Crawler Banner
+		// Tooltip: ""
+	}
+
+	PetalClasperBanner: {
+		// DisplayName: Petal Clasper Banner
+		// Tooltip: ""
+	}
+
+	StellarBatBanner: {
+		// DisplayName: Stellar Bat Banner
+		// Tooltip: ""
+	}
+
+	GiantVampireBatBanner: {
+		// DisplayName: Giant Vampire Bat Banner
 		// Tooltip: ""
 	}
 }
@@ -7242,33 +7337,38 @@ Buffs: {
 	}
 
 	SoulSkull: {
-		// Description: Ascended from the void, the skull breaths Soulfire that inflicts Soul Inferno
-		// DisplayName: Soulskull
+		Description: Вознёзшийся из Пустоты, духо-череп поражает врагов духогнём, накладывающим на врагов дебафф "Духогонь"
+		DisplayName: Духо-череп
 	}
 
 	KirovAirshipBuff: {
-		// Description: Bombardiers to your stations.
-		// DisplayName: Kirov Airship
+		Description: Дирижабль? Ага!
+		DisplayName: Дирижабль "Киров"
 	}
 
 	EnchantedTrio: {
-		// Description: The enchanted weapons of Terraira defend you
-		// DisplayName: Enchanted Trio
+		Description: Зачарованные оружия террарии защищают тебя
+		DisplayName: Зачарованное трио
 	}
 
 	DeathwatcherBuff: {
-		// Description: Just looking at it gives you chills
-		// DisplayName: Deathwatcher
+		Description: Тебе становится не по себе просто взглянув на него...
+		DisplayName: Смертовидец
 	}
 
 	AwakenedMinionBuff: {
-		// Description: They have ascended
-		// DisplayName: Woke
+		Description: Благодарите дерьмократическую партию за это.
+		DisplayName: Воук-пропаганда
 	}
 
 	CorruptPenguinBuff: {
-		// DisplayName: Corrupt Penguin
-		// Description: Does bonus damage against the clothier
+		DisplayName: Порочный пингвин
+		Description: Наносит больше урона портному (наверное...)
+	}
+
+	PsychologistSanity: {
+		// Description: Increases sanity regeneration
+		// DisplayName: Counselling Session
 	}
 }
 
@@ -7654,26 +7754,149 @@ NPCs: {
 
 	Puff.DisplayName: Пушистик
 	SpikedPuff.DisplayName: Шипушистик
-	// AbyssSkull.DisplayName: Abyss Skull
-	// AbyssSkullette.DisplayName: Abyss Skullette
-	// AccursedFlier.DisplayName: Accursed Flier
-	// DimensionalHive.DisplayName: Dimensional Hive
-	// Immolator.DisplayName: Immolator
-	// ReaverSlime.DisplayName: Reaver Slime
-	// VoidFly.DisplayName: Void Fly
-	// VoidKnight.DisplayName: Void Knight
-	// ZergCaster.DisplayName: Zerg Caster
-	// EtherealHunter.DisplayName: Ethereal Hunter
-	// VoidCrawler.DisplayName: Void Crawler
-	// VoidGolem.DisplayName: Void Golem
-	// VoidElemental.DisplayName: Void Elemental
-	// AllKnowerBody.DisplayName: All Knower Body
-	// AllKnowerHead.DisplayName: All Knower Head
-	// AllKnowerTail.DisplayName: All Knower Tail
-	// RadiantWarrior.DisplayName: Radiant Warrior
-	// SparklingSlime.DisplayName: Sparkling Slime
-	// StarlightGlobule.DisplayName: Starlight Globule
-	// StellarStarfish.DisplayName: Stellar Starfish
+	AbyssSkull.DisplayName: Череп Бездны
+	AbyssSkullette.DisplayName: Черепок Бездны
+	AccursedFlier.DisplayName: Клятый летун
+	DimensionalHive.DisplayName: Пространственный улей
+	Immolator.DisplayName: Жертвенник
+	ReaverSlime.DisplayName: Слизень-разоритель
+	VoidFly.DisplayName: Пустомуха
+	VoidKnight.DisplayName: Пусторыцарь
+	ZergCaster.DisplayName: Зерг-колдун
+	EtherealHunter.DisplayName: Эфирный ловец
+	VoidCrawler.DisplayName: Пустолзун
+	VoidGolem.DisplayName: Пустоголем
+	VoidElemental.DisplayName: Элементаль пустоты
+	AllKnowerBody.DisplayName: Всезнатель
+	AllKnowerHead.DisplayName: Всезнатель
+	AllKnowerTail.DisplayName: Всезнатель
+	RadiantWarrior.DisplayName: Лучезарный воин
+	SparklingSlime.DisplayName: Искролизень
+	StarlightGlobule.DisplayName: Шарик звездосвета
+	StellarStarfish.DisplayName: Звездозвёзд
+	// WaterElemental.DisplayName: Water Elemental
+	// SkyElemental.DisplayName: Sky Elemental
+	// FrostElemental.DisplayName: Frost Elemental
+	// FireElemental.DisplayName: Fire Elemental
+	// DesertElemental.DisplayName: Desert Elemental
+	// ArmoredTrencherTail.DisplayName: Armored Trencher
+	// ArmoredTrencherHead.DisplayName: Armored Trencher
+	// ArmoredTrencherBody.DisplayName: Armored Trencher
+	// Stoneer.DisplayName: Stoneer
+	// Pebleer.DisplayName: Pebleer
+	// InfernoSpirit.DisplayName: Inferno Spirit
+	// GiantVampireBat.DisplayName: Giant Vampire Bat
+	// DragonCharger.DisplayName: Dragon Charger
+	// GreaterDrakoniteGolem.DisplayName: Drakoknight
+	// MagmaSlime.DisplayName: Magma
+	// DragonBat.DisplayName: Dragon Bat
+	// DragonSlime.DisplayName: Dragon Slime
+	// DragonWarrior.DisplayName: Dragon Warrior
+	// DrakoniteElemental.DisplayName: Drakonite Elemental
+	// FlyingJaw.DisplayName: Flying Jaw
+	// PetalClasper.DisplayName: Petal Clasper
+	// GiantTick.DisplayName: Giant Tick
+	// MortemWalker.DisplayName: Mortem Walker
+	// SkyCrawler.DisplayName: Sky Crawler
+	// StellarBat.DisplayName: Stellar Bat
+	// StellarCenturion.DisplayName: Stellar Centurion
+	// StellarEntity.DisplayName: Stellar Entity
+	// MutatedScorpion.DisplayName: Mutated Scorpion
+	// InfernaceGuardian.DisplayName: Infernace's Guardian
+	// GiantToad.DisplayName: Giant Toad
+	// VampireBat.DisplayName: Vampire Bat
+
+	Alchemist: {
+		// DisplayName: Alchemist
+
+		TownNPCMood: {
+			// Content: Я довольный.
+			// NoHome: Терпеть не могу, когда у меня нет дома.
+			// FarFromHome: Я слишком далеко от дома.
+			// LoveSpace: Я люблю, когда так много пространства.
+			// DislikeCrowded: Мне не нравится то, как здесь людно.
+			// HateCrowded: Я ненавижу то, как здесь людно.
+			// LoveBiome: Я люблю {BiomeName}.
+			// LikeBiome: Мне нравится {BiomeName}.
+			// DislikeBiome: Мне не нравится {BiomeName}.
+			// LoveNPC: Я люблю {NPCName}.
+			// LikeNPC: Мне нравится {NPCName}.
+			// DislikeNPC: Мне не нравится {NPCName}.
+			// HateNPC: Я ненавижу {NPCName}.
+			// LikeNPC_Princess: Мне нравится {NPCName}.
+			// Princess_LovesNPC: Мне нравится {NPCName}.
+		}
+
+		Name: {
+			// Saul: Saul
+			// Darius: Darius
+			// Eliseo: Eliseo
+			// Cadmus: Cadmus
+		}
+
+		Chat: {
+			// Say: No matter how large the wound, healing potions shall fix it.
+			// Say1: All your potion needs, taken care of right here.
+			// Say2: I travel the world searching for ingredients for my potions, its not an easy task.
+			// Say3: I come from a dark world...
+			// Say4: Be careful out there, I hate fighting. I'd much rather talk my way out of it.
+			// Say5: Going truffle worm hunting? I suggest an invisibility potion.
+			// Say6: Health and Mana
+			// Say7: Combat
+			// Say8: Other
+			// Say9: Transmutation
+			// Say10: Shop:
+		}
+
+		ButtonName: {
+			// Name: Convert
+			// Name1: Next Shop
+			// Name2: Transmutation
+		}
+	}
+
+	Psychologist: {
+		TownNPCMood: {
+			// Princess_LovesNPC: Мне нравится {NPCName}.
+			// LikeNPC_Princess: Мне нравится {NPCName}.
+			// HateNPC: Я ненавижу {NPCName}.
+			// DislikeNPC: Мне не нравится {NPCName}.
+			// LikeNPC: Мне нравится {NPCName}.
+			// LoveNPC: Я люблю {NPCName}.
+			// DislikeBiome: Мне не нравится {BiomeName}.
+			// LikeBiome: Мне нравится {BiomeName}.
+			// LoveBiome: Я люблю {BiomeName}.
+			// HateCrowded: Я ненавижу то, как здесь людно.
+			// DislikeCrowded: Мне не нравится то, как здесь людно.
+			// LoveSpace: Я люблю, когда так много пространства.
+			// FarFromHome: Я слишком далеко от дома.
+			// NoHome: Терпеть не могу, когда у меня нет дома.
+			// Content: Я довольный.
+		}
+
+		// DisplayName: Psychologist
+		// Button: Counselling
+
+		Chat: {
+			// Say9: I'm doing fine. I'm ABSOLUTELY DOING FINE. NOW STOP ASKING!
+			// Say8: You took down a being said to make others grow insane with alone it's presence. Are you even human?
+			// Say7: The fact that we never sleep is extremely strange. Who coded us to be this way?
+			// Say6: Your sanity is pretty low...you should maybe see a psychologist. Oh, wait...
+			// Say5: The townspeople seem plagued by hallucinations...luckily I am not. Anyways, who's your zombie friend there?
+			// Say4: To be honest, I'm surprised by the fact that you don't have an trauma - considering you fought an gigantic wall made out of flesh...
+			// Say3: Did you see my glasses? I can't seem to find them...oh, there they are. What do you want?
+			// Say2: I am the best psychologist around...and most likely the only one.
+			// Say1: I hear there is a 'Book of Shadows' that shows what is affecting your sanity. I'm sure it isnt as effective as my services.
+			// Say: And, how are we feeling today?
+		}
+
+		Name: {
+			// Dan: Dan
+			// Alex: Alex
+			// Sam: Sam
+			// Drew: Drew
+		}
+	}
 }
 
 Projectiles: {
@@ -8328,7 +8551,7 @@ Projectiles: {
 	RadiantStarMortar.DisplayName: Лучезвезда миномёта
 	RadiantStarSmall.DisplayName: Малая лучезвезда
 	RadiantStarThrown.DisplayName: Запущенная лучезвезда
-	// RadiantStar.DisplayName: Radiant Star
+	RadiantStar.DisplayName: Лучезвезда
 	StellarPortal.DisplayName: Зведортал
 	StellarMeteor.DisplayName: Звездетеорит
 	StellariumBolt2.DisplayName: Звездонитовый выстрел2
@@ -8475,51 +8698,61 @@ Projectiles: {
 	SolusKunai.DisplayName: Солнцекунай
 	DeathwarpP.DisplayName: Проджектайл смертоварпа
 	UniverseBall.DisplayName: Вселенский шар
-	// WandHeld.DisplayName: Wand Held
-	// EternityArrow.DisplayName: Eternity Arrow
-	// AstralRound.DisplayName: Astral Round
-	// AstralStar.DisplayName: Star
-	// BabySharkP.DisplayName: Baby Shark
-	// EternityBeam.DisplayName: Eternity Beam
-	// ExplosiveBolt.DisplayName: Explosive Bolt
-	// ShotstormDartStuck.DisplayName: Shotstorm Dart Stuck
-	// ShotstormDart.DisplayName: Shotstorm Dart
-	// PrismaticFire.DisplayName: Prismatic Fire
-	// MegaRocket.DisplayName: Mega Rocket
-	// HomingRocket.DisplayName: Homing Rocket
-	// HallowedRocket.DisplayName: Hallowed Rocket
-	// Deathwatcher.DisplayName: Deathwatcher
-	// DeathwatcherBolt.DisplayName: Void Blast
-	// EnchantedTrio0.DisplayName: Enchanted Trio
-	// EnchantedTrio1.DisplayName: Enchanted Trio
-	// EnchantedTrio2.DisplayName: Enchanted Trio
-	// EnergyStorm.DisplayName: Energy Storm
-	// ExlitureEye.DisplayName: Eye
-	// KirovAirship.DisplayName: Kirov Airship
-	// LightningBlast.DisplayName: Lightning
-	// Soulflames.DisplayName: Soul Flames
-	// SoulSkull.DisplayName: Soul Skull
-	// WokeBeam.DisplayName: WOKE
-	// WokeMinion.DisplayName: Celestial Watcher
-	// ThrowableBookP.DisplayName: Throwable Book
-	// ShadeOfLightP.DisplayName: Shade Of Light
-	// ShadeOfLightBall.DisplayName: Shade Of Light
-	// FrayedFeather.DisplayName: Frayed Feather
-	// DictionaryP.DisplayName: Dictionary
-	// DanceOfDarknessShade.DisplayName: Dance Of Darkness
-	// DanceOfDarknessP.DisplayName: Dance Of Darkness
-	// BalladOfBalanceP.DisplayName: Ballad Of Balance
-	// GiantGnome.DisplayName: Giant Gnome
-	// GnomeBolt.DisplayName: Astral Round
-	// GnomeSurfer.DisplayName: Gnome Surfer
-	// CorruptPenguin.DisplayName: Corrupt Penguin
-	// AccursedBreath.DisplayName: Accursed Fire
-	// ImmolatorBall.DisplayName: Immolator Blast
-	// ImmolatorBolt.DisplayName: Immolator Particle
-	// ReaverGlob.DisplayName: Reaver Glob
-	// VoidKnightOrb.DisplayName: Void Knight Orb
-	// ZergFireball.DisplayName: Zerg Caster
-	// WarriorSlice.DisplayName: Warrior Slice
+	WandHeld.DisplayName: Холдаут палки
+	EternityArrow.DisplayName: Стрела вечности
+	AstralRound.DisplayName: Астральная пуля
+	AstralStar.DisplayName: Атсральная звезда
+	BabySharkP.DisplayName: Проджектайл акулёнка
+	EternityBeam.DisplayName: Луч вечности
+	ExplosiveBolt.DisplayName: Взрывной выстрел
+	ShotstormDartStuck.DisplayName: Застрявший дротик бурестрела
+	ShotstormDart.DisplayName: Дротик бурестрела
+	PrismaticFire.DisplayName: Призмогонь
+	MegaRocket.DisplayName: Мегаракета
+	HomingRocket.DisplayName: Самонаводящаяся ракета
+	HallowedRocket.DisplayName: Священная ракета
+	Deathwatcher.DisplayName: Смертовидец
+	DeathwatcherBolt.DisplayName: Выстрел смертовидца
+	EnchantedTrio0.DisplayName: Зачарованное три0
+	EnchantedTrio1.DisplayName: Зачарованное трио1
+	EnchantedTrio2.DisplayName: Зачарованное трио2
+	EnergyStorm.DisplayName: Энергобуря
+	ExlitureEye.DisplayName: Зеница ока
+	KirovAirship.DisplayName: Дирижабль
+	LightningBlast.DisplayName: Выстрел молнии
+	Soulflames.DisplayName: Душегонь
+	SoulSkull.DisplayName: Духочереп
+	WokeBeam.DisplayName: Воукнутый выстрел
+	WokeMinion.DisplayName: Воукнутый
+	ThrowableBookP.DisplayName: Проджектайл метательной книги
+	ShadeOfLightP.DisplayName: Проджектайл светоттенка
+	ShadeOfLightBall.DisplayName: Шар светоттенка
+	FrayedFeather.DisplayName: Покоцанное перо
+	DictionaryP.DisplayName: Проджектайл словника
+	DanceOfDarknessShade.DisplayName: Оттенок танца тьмы
+	DanceOfDarknessP.DisplayName: Проджектайл танца тьмы
+	BalladOfBalanceP.DisplayName: Проджектайл сказа о балансе
+	GiantGnome.DisplayName: Огромный гном
+	GnomeBolt.DisplayName: Гномовый выстрел
+	GnomeSurfer.DisplayName: Гном-сёрфер (А.Г. Дугин негодует)
+	CorruptPenguin.DisplayName: Порочный пингвин
+	AccursedBreath.DisplayName: Клятое дыханье
+	ImmolatorBall.DisplayName: Шар жертвенника
+	ImmolatorBolt.DisplayName: Выстрел жертвенника
+	ReaverGlob.DisplayName: Шарик расхитителя
+	VoidKnightOrb.DisplayName: Сфера пусторыцаря
+	ZergFireball.DisplayName: Огнешар зерголдуна
+	WarriorSlice.DisplayName: Слэш воина
+	// StoneerP.DisplayName: Stoneer Spike
+	// MagmaSlimeMagma.DisplayName: Magma Slime Magma
+	// DragonBatFireball.DisplayName: Dragon Bat Fireball
+	// DragonSlimeSpike.DisplayName: Dragon Slime Spike
+	// DrakoniteElementalBeam.DisplayName: Drakonic Beam
+	// StellarEntityOrbital.DisplayName: Stellar Entity
+	// InfernaceGuardianProj.DisplayName: Infernal Spell
+	// ToadTongue.DisplayName: Giant Toad
+	// ToadTongueTip.DisplayName: Giant Toad
+	// SuperStinkPotion.DisplayName: Super Stink Potion
 }
 
 Configs: {
@@ -8638,11 +8871,41 @@ Bestiary: {
 		StarlightGlobule: Странное существо, служащее хостом для большего количества существ поменьше, которые вылезают из него при смерти. Судя по всему, эти создания - творения самого Лучезарного Дождя, а не обычные существа, поддавшиеся ему.
 		AllKnower: Весьма своеобразные червеподобные существа с огромной силой, дарованной им Лучезарным Дождём, который, однако, взамен также исказил их до неузнаваемости.
 		StellarStarfish: Разумная масса, состоящая целиком из сверкающего порошка и похожая на морскую звезду. По-видимому, она была рождена из одной лишь эссенции Лучезарного Дождя.
+		ArmoredTrencher: Громадный червь из глубин мира, одетый в броню из очень прочных чешуек. Похоже, он появился только после того, как ложный Ктулху пал...
+		DesertElemental: Призрачное создание, рождённое из магической энергии засушливой пустыни. Оно похоже на павшего воина, пришедшего из далёкой пустоши.
+		FireElemental: Неупокоенный дух бывшего жителя Ада, бесцельно бродящий по его руинам. Раньше они были запечатаны с помощью сильной магии, но после того, как Скелетрон пал, они вышли на свободу и стали скитаться по руинам.
+		FrostElemental: Потревоженный дух вечномёрзлой Тундры. Оно определённо холодно примет любого глупца, решившегося вторгнуться в эту вечную мерзлоту.
+		SkyElemental: Один из многих элементалей Террарии, данный представитель их вида живёт почти в самых вышних слоях атмосферы, и уж точно не оставит без внимания всех, кто осмелится подняться так высоко.
+		WaterElemental: Водный дух, рождённый из магической энергии Террарийского океана, похожий на воина из давно потерянной цивилизации, которая когда-то была здесь.
+		GiantVampireBat: Благодаря древней энергии, высвобожденной после уничтожения древнего чудища в Аду, летучие мыши-вампиры теперь вполне легко могут вырастать до настолько угрожающих размеров, также заметно увеличивая свою смертоносность.
+		InfernoSpirit: Гневный дух какого-то бывшего обитателя Данжа, который стал сильнее, чем когда либо, благодаря энергии, высвобождённой в мир после смерти Лунного Лорда.
+		Pebleer: Крошечный жук, живущий в пещерах Террарии. Его панцирь напоминает гальку, что позволяет жуку сливаться с местностью, укрываясь от возможных хищников.
+		Stoneer: Крошечный жук, живущий в пещерах Террарии. Его панцирь похож на камень, что позволяет жуку сливаться с местностью, укрываясь от возможных хищников.
+		DragonCharger: Весьма могущественный огненный дух, одетый в оболочку из чистого Драконита. Как и многие другие существа, оно было выпущено на волю после уничтожения древнего чудовища в Аду.
+		GreaterDrakoniteGolem: Хоть оно и намного сильнее, чем Драконий воин, это, по сути, по-прежнему останки неизвестного давно мёртвого воина, возрождённого благодаря Дракониту, а теперь ещё и древней энергии.
+		MagmaSlime: Так как теперь эти слизни состоят не только из Драконита, но ещё и из лавы, они стали намного опаснее, чем когда-либо до этого.
+		DragonBat: Когда-то это была обычная пещерная летучая мышь, но много лет назад, неизвестно каким образом, в её тело попали осколки Драконита. Эти осколки, судя по всему, позволяют Дракономыши создавать шары огня.
+		DragonSlime: Очередное из многих существ, которые много лет назад неизвестно каким образом слились с Драконитом. Драконослизень покрыт не просто бритвенно острыми, но ещё и раскалённые шипами, и тому, кто до них дотронется, уж точно не позавидуешь...
+		DragonWarrior: Давно умерший воин, чьи останки были возрождены, судя по всему, благодаря Драконитовым осколкам, которые теперь выпирают из его брони.
+		DrakoniteElemental: В отличие от других пещерных существ, которые слились с Драконитом какое-то время назад, тело этого элементаля, судя по всему, состоит исключительно из него.
+		FlyingJaw: Хоть эти летающие создания внешне и похожи на Людоловов, обитающих как на поверхности, так и в глубине Джунглей, не похоже, что они на самом деле имеют к ним какое-то отношение.
+		PetalClasper: Удивительный вид пауков, живущий исключительно в Джунглях, которые, по сути, являются смешением флоры и фауны. На спине у них растут приятно пахнущие цветы.
+		GiantTick: Странное гигантское насекомое, похожее на клеща, с телом состоящим, судя по всему, исключительно из ещё более странной пурпурной пыльцы с неизвестными свойствами.
+		MortemWalker: Чудище, похожее на гуля, бесцельно бродящее по поверхности. При смерти оно рассыпается в пурпурную пыльцу, настолько же странную, как и само это создание.
+		SkyCrawler: Одно из многих непонятных существ, появившихся после падения великого Лорда Луны. При ударе из тела этого создания сыпется непонятная пурпурная пыльца.
+		StellarBat: Достаточно своеобразное летающее создание, внешне похожее на пещерную гигантскую летучую мышь. Похоже, тело этого создания состоит исключительно из странного звездорождённого металла...
+		StellarCenturion: Существо, появившееся неизвестно откуда и одетое в броню, очень похожую на вариант древних доспехов, которые носили воины одной из многих забытых цивилизаций на поверхности. Она скована полностью из непонятного звёздного металла.
+		StellarEntity: Диковинное создание, похожее на глаз и закованное в крайне прочную оболочку из точно такого же металла, как и некоторые другие существа в вышних слоях атмосферы.
+		InfernaceGuardian: Усиленные огненные элементали, которые служат посланниками Инфернейса, бывшего защитника Ада. И у них, мягко скажем, весьма вспыльчивый характер...
+		GiantToad: Хоть она и похожа на обычную жабу, коих полно в Джунглях, с этой, такое ощущение, словно что-то не так...
+		VampireBat: Один из ближайших родственников обычных пещерных летучих мышей. Но в отличие от обычных мышей, укусы мышей этого вида могут красть жизненную энергию у своих жертв.
 	}
 
 	TownNPCs: {
 		Storyteller: ???
 		Storyteller2: ???
+		Alchemist: Загадочный гость, пришедший издалека и имеющий огромные познания в области ботаники. Он также с радостью продаст тебе любые семена, которые только можно найти в Террарии.
+		Psychologist: Дипломированный специалист, который поможет тебе сохранить твой рассудок в добром здравии в этом безумном мире.
 	}
 
 	Critters.MysticBunny: Несмотря на то, что этот кролик визуально отличается от своих сородичей из остальных частей Террарии, вероятно, из-за воздействия сил Освящения, это всё равно представитель того же самого вида кроликов, которые водятся везде и в других частях мира.
@@ -8996,6 +9259,10 @@ Said: {
 	Izaris: Твоё время вышло, смертный!
 	Izaris1: Ну что-ж, поехали по-новой...
 	ShardBase: Ты чё, серьёзно, что-ли, автопаузу используешь? ХАХАХА, лошара!
+	// InfernaceGuardian: He awaits
+	// InfernaceGuardian1: Don't resist
+	// InfernaceGuardian2: You cant wait longer
+	// InfernaceGuardian3: His reign is forever
 }
 
 LooTCondition: {
@@ -9020,6 +9287,18 @@ BiomeName: {
 ShopCondition: {
 	BossString: После победы над
 	BossString1: или
+	// IfEnbleShop: If it was enabled in the config "{0}"
+	// Shop: If the store tab "{0}"
+	// ShopName0: Health and Mana
+	// ShopName1: Combat
+	// ShopName2: Other
+	// ShopName3: Transmutation
+	// downedMechBossAny: After any mechanical boss
+	// IWS: If {0} was saved
+	// IsWoroldCrimson: If in the world Crimson
+	// IsWoroldCorruption: If in the world Corruption
+	// MoonFull: If the moon phase is full
+	// BloodMoon: During the blood moon
 }
 
 Credits: {
@@ -9103,6 +9382,8 @@ AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"
 AwakenedSummonItem: Не расходуется в Пробуждённом режиме
 IsSummon: Призывалка не сработает, так как сейчас призван другой босс:
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
+// AlchemistUI: Place an item here to convert it into its
+// AlchemistUI1: counterpart
 
 MyPlayerLocalization: {
 	MyPlayer: {
@@ -9303,8 +9584,24 @@ MyWorldLocalization: {
 	}
 }
 
-# Текста больше но сейчас он не доступен
-NPCsGLOBALLocalization.NPCsGLOBAL.NoHit.Nohit: Безупречная победа!
+NPCsGLOBALLocalization: {
+	NPCsGLOBAL: {
+		NoHit.Nohit: Безупречная победа!
+
+		Chat: {
+			// Say9: Some townsfolk have been finding strange abandoned labs underground... I think some have been staying overnight
+			// Say8: "{0} seems to be the only person in this town that doesn't want to eat me. Does he eat at all?"
+			// Say7: Dont buy {0}'s weapons, something feels off about them..."
+			// Say6: "{0} keeps talking down my weapons! I'll teach him a lesson one day."
+			// Say5: All creatures deserve a chance to live. Live and be free...
+			// Say4: I feel her speaking to me... she’s afraid...
+			// Say3: That scorpion, 'Wasteland' as you call it, why do we fear her?
+			// Say2: How old is {0}? I seem to have memories of him from when I was a kid...
+			// Say1: Does {0} ever age? Everyone seems to be getting older but he stays the same
+			// Say: Dont trust {0}, he isn't as helpful as you may think.
+		}
+	}
+}
 
 AwakenedModeNPCLocalization: {
 	AwakenedModeNPC: {
@@ -9325,5 +9622,18 @@ BossChecklistIntegration: {
 	radiantRainEvent: {
 		EntryName: Лучезарный Дождь
 		SpawnInfo: Используй [i:ElementsAwoken/RadiantRainSummon] в любое время. Дождь также может начаться сам по себе после победы над Азаной.
+	}
+}
+
+EsseneceAlertsLocalization: {
+	EsseneceAlerts: {
+		OnKill: {
+			// Boss5: The depths of Terraria rumble...
+			// Boss4: The wrath of Aqueous stirs the ocean
+			// Boss3: You hear cracking coming from the ice...
+			// Boss2: The sky wind howls...
+			// Boss1: Roars echo from the underworld...
+			// Boss: The desert sands shift...
+		}
 	}
 }

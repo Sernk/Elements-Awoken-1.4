@@ -41,9 +41,5 @@ namespace ElementsAwoken
         [TooltipKey("$Mods.ElementsAwoken.Config.Shows")] // Shows information for testing (Mainly for Mod Devs)
 
         public bool debugMode { get; set; }
-
-        [LabelKey("$Mods.ElementsAwoken.Config.RecipeBrows")]
-        [TooltipKey("$Mods.ElementsAwoken.Config.RecipeBrowsTooltips")]
-        public bool RecipeBrowser { get; set; }
     }
 }

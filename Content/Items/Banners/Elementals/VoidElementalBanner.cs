@@ -9,7 +9,7 @@ namespace ElementsAwoken.Content.Items.Banners.Elementals
         {
             Item.width = 10;
             Item.height = 24;
-            Item.maxStack = 99;
+            Item.maxStack = 9999;
             Item.useTurn = true;
             Item.autoReuse = true;
             Item.useAnimation = 15;
@@ -18,7 +18,7 @@ namespace ElementsAwoken.Content.Items.Banners.Elementals
             Item.consumable = true;
             Item.rare = 1;
             Item.value = Item.buyPrice(0, 0, 10, 0);
-            //item.createTile = mod.TileType("MonsterBanner");
+                        Item.createTile = ModContent.TileType<Tiles.Banners.MonsterBanner>();
             Item.placeStyle = 17;		//Place style means which frame(Horizontally, starting from 0) of the tile should be placed
         }
     }

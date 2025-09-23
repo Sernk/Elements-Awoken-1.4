@@ -2,6 +2,13 @@
 using ElementsAwoken.Content.Buffs.Other;
 using ElementsAwoken.Content.Buffs.PotionBuffs;
 using ElementsAwoken.Content.Dusts;
+using ElementsAwoken.Content.Items.Accessories;
+using ElementsAwoken.Content.Items.Donator.Buildmonger;
+using ElementsAwoken.Content.Items.Donator.Crow;
+using ElementsAwoken.Content.Items.Weapons.Thrown;
+using ElementsAwoken.Content.NPCs.Town;
+using ElementsAwoken.EAUtilities;
+using ElementsAwoken.NPCs.Town;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
@@ -73,6 +80,16 @@ namespace ElementsAwoken.EASystem.EAPlayer
         public override void Load()
         {
             _ = this.GetLocalization("NoHit.Nohit").Value;
+            _ = this.GetLocalization("Chat.Say").Value;
+            _ = this.GetLocalization("Chat.Say1").Value;
+            _ = this.GetLocalization("Chat.Say2").Value;
+            _ = this.GetLocalization("Chat.Say3").Value;
+            _ = this.GetLocalization("Chat.Say4").Value;
+            _ = this.GetLocalization("Chat.Say5").Value;
+            _ = this.GetLocalization("Chat.Say6").Value;
+            _ = this.GetLocalization("Chat.Say7").Value;
+            _ = this.GetLocalization("Chat.Say8").Value;
+            _ = this.GetLocalization("Chat.Say9").Value;
         }
         public static void ImmuneAllEABuffs(NPC npc)
         {
@@ -297,7 +314,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
             if (modPlayer.glassHeart && npc.boss)
             {
-                CombatText.NewText(npc.getRect(), Color.Red, "No-hit!", true);
+                CombatText.NewText(npc.getRect(), Color.Red, this.GetLocalization("NoHit.Nohit").Value, true);
                 npc.NPCLoot();
             }
             return base.SpecialOnKill(npc);
@@ -446,7 +463,6 @@ namespace ElementsAwoken.EASystem.EAPlayer
                     CombatText.NewText(npc.getRect(), Color.Red, s, false, false);
                 }
             }
-
             if (impishCurse)
             {
                 if (!npc.ichor) drawColor = new Color(255, 80, 80);
@@ -454,7 +470,6 @@ namespace ElementsAwoken.EASystem.EAPlayer
                 Lighting.AddLight(npc.Center, 0.6f, 0.2f, 0.3f);
             }
         }
-
         public override void SetDefaults(NPC npc)
         {
             // all vanilla bosses + Deerclops, QueenSlimeBoss + [QueenSlimeMinionBlue, QueenSlimeMinionPink, QueenSlimeMinionPurple], HallowBoss
@@ -504,125 +519,102 @@ namespace ElementsAwoken.EASystem.EAPlayer
                 //npc.buffImmune[BuffType<LifeDrain>()] = true;
             }         
         }
-        //public override void SetupShop(int type, Chest shop, ref int nextSlot)
-        //{
-        //    if (type == NPCID.Merchant && NPC.downedBoss1)
-        //    {
-        //        shop.item[nextSlot].SetDefaults(ItemType<ThrowableBook>());
-        //        shop.item[nextSlot].shopCustomPrice = 80;
-        //        nextSlot++; 
-        //        shop.item[nextSlot].SetDefaults(ItemType<RainMeter>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0,5,0,0);
-        //        nextSlot++;
-        //    }
-        //    if (type == NPCID.Dryad && Main.bloodMoon)
-        //    {
-        //        shop.item[nextSlot].SetDefaults(ItemType<DryadsRadar>());
-        //        nextSlot++;
-        //    }
-        //    if (type == NPCID.Wizard)
-        //    {
-        //        if (Main.hardMode)
-        //        {
-        //            shop.item[nextSlot].SetDefaults(ItemType<Dictionary>());
-        //            shop.item[nextSlot].shopCustomPrice = 800;
-        //            nextSlot++;
-        //        }
-        //        if (MyWorld.downedAncients)
-        //        {
-        //            shop.item[nextSlot].SetDefaults(ItemType<CrystalAmalgamate>());
-        //            shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 25, 0, 0);
-        //            nextSlot++;
-        //        }
-        //    }
-        //    if (type == NPCID.Steampunker)
-        //    {
-        //        shop.item[nextSlot].SetDefaults(ItemType<SonicArm>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 25, 0, 0);
-        //        nextSlot++;
-        //        shop.item[nextSlot].SetDefaults(ItemType<FeatheredGoggles>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(2, 0, 0, 0);
-        //        nextSlot++;
-        //    }
-        //    if (type == NPCID.Cyborg)
-        //    {
-        //        shop.item[nextSlot].SetDefaults(ItemType<Computer>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 5, 0, 0);
-        //        nextSlot++;
-        //        shop.item[nextSlot].SetDefaults(ItemType<Desk>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 1, 50, 0);
-        //        nextSlot++;
-        //        shop.item[nextSlot].SetDefaults(ItemType<OfficeChair>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 1, 50, 0);
-        //        nextSlot++;
-        //        shop.item[nextSlot].SetDefaults(ItemType<LabLightFunctional>());
-        //        shop.item[nextSlot].shopCustomPrice = Item.buyPrice(0, 1, 50, 0);
-        //        nextSlot++;
-        //    }
-        //}
+        public override void ModifyShop(NPCShop shop)
+        {
+            Condition BossName1 = new(EALocalization.BossName(1), () => NPC.downedBoss1);
+            Condition BossName4 = new(EALocalization.BossName(1), () => Main.hardMode);
+            Condition MBossName = new(EALocalization.MBossName(12), () => MyWorld.downedAncients);
+            Condition BloodMoon = new(EALocalization.BloodMoon, () => Main.bloodMoon);
 
-        //public override void GetChat(NPC npc, ref string chat)
-        //{
-        //    int storyteller = NPC.FindFirstNPC(NPCType<Storyteller>());
-        //    int alchemist = NPC.FindFirstNPC(NPCType<Alchemist>());
-        //    if (npc.type == NPCID.Guide && storyteller >= 0)
-        //    {
-        //        if (Main.rand.Next(10) == 0)
-        //        {
-        //            chat = "Dont trust " + Main.npc[storyteller].GivenName + ", he isn't as helpful as you may think.";
-        //        }
-        //    }
-        //    if (npc.type == NPCID.Nurse && storyteller >= 0)
-        //    {
-        //        if (Main.rand.Next(10) == 0)
-        //        {
-        //            chat = "Does " + Main.npc[storyteller].GivenName + " ever age? Everyone seems to be getting older but he stays the same";
-        //        }
-        //    }
-        //    if (npc.type == NPCID.Dryad && storyteller >= 0)
-        //    {
-        //        if (Main.rand.Next(10) == 0)
-        //        {
-        //            chat = "How old is " + Main.npc[storyteller].GivenName + "? I seem to have memories of him from when I was a kid...";
-        //        }
-        //        if (NPC.downedBoss1 && !MyWorld.downedWasteland)
-        //        {
-        //            if (Main.rand.Next(5) == 0)
-        //            {
-        //                switch (Main.rand.Next(3))
-        //                {
-        //                    case 0: chat = "That scorpion, 'Wasteland' as you call it, why do we fear her?"; break;
-        //                    case 1: chat = "I feel her speaking to me... she’s afraid... "; break;
-        //                    case 2: chat = "All creatures deserve a chance to live. Live and be free..."; break;
-        //                }
-        //            }
-        //        }
-        //    }
-        //    if (npc.type == NPCID.ArmsDealer && storyteller >= 0)
-        //    {
-        //        if (Main.rand.Next(10) == 0)
-        //        {
-        //            chat = Main.npc[storyteller].GivenName + " keeps talking down my weapons! I'll teach him a lesson one day.";
-        //        }
-        //        if (Main.rand.Next(10) == 0)
-        //        {
-        //            chat = "Dont buy " + Main.npc[storyteller].GivenName + "'s weapons, something feels off about them...";
-        //        }
-        //    }
-        //    if (npc.type == NPCID.Truffle && storyteller >= 0)
-        //    {
-        //        if (Main.rand.Next(10) == 0)
-        //        {
-        //            chat = Main.npc[storyteller].GivenName + " seems to be the only person in this town that doesn't want to eat me. Does he eat at all?";
-        //        }
-        //    }
-        //    if (npc.type == NPCID.Cyborg)
-        //    {
-        //        if (Main.rand.Next(15) == 0)
-        //        {
-        //            chat = "Some townsfolk have been finding strange abandoned labs underground... I think some have been staying overnight ";
-        //        }
-        //    }
-        //}
+            if (shop.NpcType == NPCID.Merchant)
+            {
+                shop.Add(new Item(ItemType<ThrowableBook>()) { value = 80 }, BossName1);
+                shop.Add(new Item(ItemType<RainMeter>()) { value = Item.buyPrice(0, 5, 0, 0) }, BossName1);
+            }
+            if (shop.NpcType == NPCID.Dryad)
+            {
+                shop.Add(new Item(ItemType<DryadsRadar>()), BloodMoon);
+            }
+            if (shop.NpcType == NPCID.Wizard)
+            {
+                shop.Add(new Item(ItemType<Dictionary>()) { value = 800 }, BossName4);
+                shop.Add(new Item(ItemType<Dictionary>()) { value = Item.buyPrice(0, 25, 0, 0) }, MBossName);
+            }
+            if (shop.NpcType == NPCID.Steampunker)
+            {
+                shop.Add(new Item(ItemType<SonicArm>()) { value = Item.buyPrice(0, 25, 0, 0) });
+                shop.Add(new Item(ItemType<FeatheredGoggles>()) { value = Item.buyPrice(2, 0, 0, 0) });
+            }
+            if (shop.NpcType == NPCID.Cyborg)
+            {
+                shop.Add(new Item(ItemType<Content.Items.Placeable.Computer>()) { value = Item.buyPrice(0, 5, 0, 0) });
+                shop.Add(new Item(ItemType<Content.Items.Placeable.Desk>()) { value = Item.buyPrice(0, 1, 50, 0) });
+                shop.Add(new Item(ItemType<Content.Items.Placeable.OfficeChair>()) { value = Item.buyPrice(0, 1, 50, 0) });
+                shop.Add(new Item(ItemType<Content.Items.Placeable.LabLightFunctional>()) { value = Item.buyPrice(0, 1, 50, 0) });
+            }
+        }
+        public override void GetChat(NPC npc, ref string chat)
+        {
+            int storyteller = NPC.FindFirstNPC(NPCType<Storyteller>());
+            int alchemist = NPC.FindFirstNPC(NPCType<Alchemist>());
+            if (npc.type == NPCID.Guide && storyteller >= 0)
+            {
+                if (Main.rand.Next(10) == 0)
+                {
+                    chat = string.Format(this.GetLocalization("Chat.Say").Value, Main.npc[storyteller].GivenName);
+                }
+            }
+            if (npc.type == NPCID.Nurse && storyteller >= 0)
+            {
+                if (Main.rand.Next(10) == 0)
+                {
+                    chat = string.Format(this.GetLocalization("Chat.Say1").Value, Main.npc[storyteller].GivenName);
+                }
+            }
+            if (npc.type == NPCID.Dryad && storyteller >= 0)
+            {
+                if (Main.rand.Next(10) == 0)
+                {
+                    chat = string.Format(this.GetLocalization("Chat.Say2").Value, Main.npc[storyteller].GivenName);
+                }
+                if (NPC.downedBoss1 && !MyWorld.downedWasteland)
+                {
+                    if (Main.rand.Next(5) == 0)
+                    {
+                        switch (Main.rand.Next(3))
+                        {
+                            case 0: chat = this.GetLocalization("Chat.Say3").Value; break;
+                            case 1: chat = this.GetLocalization("Chat.Say4").Value; break;
+                            case 2: chat = this.GetLocalization("Chat.Say5").Value; break;
+                        }
+                    }
+                }
+            }
+            if (npc.type == NPCID.ArmsDealer && storyteller >= 0)
+            {
+                if (Main.rand.Next(10) == 0)
+                {
+                    chat = string.Format(this.GetLocalization("Chat.Say6").Value, Main.npc[storyteller].GivenName);
+                }
+                if (Main.rand.Next(10) == 0)
+                {
+                    chat = string.Format(this.GetLocalization("Chat.Say7").Value, Main.npc[storyteller].GivenName);
+                }
+            }
+            if (npc.type == NPCID.Truffle && storyteller >= 0)
+            {
+                if (Main.rand.Next(10) == 0)
+                {
+                    chat = string.Format(this.GetLocalization("Chat.Say8").Value, Main.npc[storyteller].GivenName);
+                }
+            }
+            if (npc.type == NPCID.Cyborg)
+            {
+                if (Main.rand.Next(15) == 0)
+                {
+                    chat = this.GetLocalization("Chat.Say9").Value;
+                }
+            }
+        }
     }
 }

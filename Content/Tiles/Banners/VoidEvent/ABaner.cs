@@ -9,10 +9,11 @@ namespace ElementsAwoken.Content.Tiles.Banners.VoidEvent
 {
     public abstract class ABaner : ModTile
     {
-        public abstract int ColorR { get; }
-        public abstract int ColorG { get; }
-        public abstract int ColorB { get; }
+        public virtual int ColorR => 13;
+        public virtual int ColorG => 88;
+        public virtual int ColorB => 130;
         public abstract int NPCType { get; }
+        public virtual int NPCType2 { get; }
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -33,6 +34,7 @@ namespace ElementsAwoken.Content.Tiles.Banners.VoidEvent
             if (closer)
             {
                 Main.SceneMetrics.NPCBannerBuff[NPCType] = true;
+                Main.SceneMetrics.NPCBannerBuff[NPCType2] = true;
                 Main.SceneMetrics.hasBanner = true;
             }
         }

@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
+﻿using ElementsAwoken.Content.NPCs.Bosses.Ancients;
+using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
 using ElementsAwoken.Content.NPCs.Bosses.Azana;
 using ElementsAwoken.Content.NPCs.Bosses.Infernace;
 using ElementsAwoken.Content.NPCs.Bosses.Obsidious;
@@ -326,6 +327,11 @@ namespace ElementsAwoken.EAUtilities
         public string Izaris => Language.GetTextValue("Mods.ElementsAwoken.Said.Izaris");
         public string Izaris1 => Language.GetTextValue("Mods.ElementsAwoken.Said.Izaris1");
         public string ShardBase => Language.GetTextValue("Mods.ElementsAwoken.Said.ShardBase");
+        public string InfernaceGuardian => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian");
+        public string InfernaceGuardian1 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian1");
+        public string InfernaceGuardian2 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian2");
+        public string InfernaceGuardian3 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian3");
+
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");
@@ -367,6 +373,18 @@ namespace ElementsAwoken.EAUtilities
         #region ShopCondition
         public string BossString => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString");
         public string BossString1 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BossString1");
+        public static string IfEnbleShop => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.IfEnbleShop");
+        public static string Shop => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.Shop");
+        public static string ShopName0 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.ShopName0");
+        public static string ShopName1 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.ShopName1");
+        public static string ShopName2 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.ShopName2");
+        public static string ShopName3 => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.ShopName3");
+        public static string DownedMechBossAny => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.downedMechBossAny");
+        public static string IWS => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.IWS");
+        public static string IsWoroldCrimson => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.IsWoroldCrimson");
+        public static string IsWoroldCorruption => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.IsWoroldCorruption");
+        public static string MoonFull => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.MoonFull");
+        public static string BloodMoon => Language.GetTextValue("Mods.ElementsAwoken.ShopCondition.BloodMoon");
         #endregion
         #region Credits
         public string Credits => Language.GetTextValue("Mods.ElementsAwoken.Credits.Credits");
@@ -400,6 +418,8 @@ namespace ElementsAwoken.EAUtilities
         public string AwakenedModeActive2 => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeActive2");
         public string AwakenedModeNonActive => Language.GetTextValue("Mods.ElementsAwoken.AwakenedModeNonActive");
         public string Unbound => Language.GetTextValue("Mods.ElementsAwoken.Unbound");
+        public string AlchemistUI => Language.GetTextValue("Mods.ElementsAwoken.AlchemistUI");
+        public string AlchemistUI1 => Language.GetTextValue("Mods.ElementsAwoken.AlchemistUI1");
         #endregion
         #region BiomeName
         public string Desert => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Desert");
@@ -425,6 +445,9 @@ namespace ElementsAwoken.EAUtilities
                 9 =>  $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.Golem)}",
                 10 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.DukeFishron)}",
                 11 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.MoonLordHead)}",
+                12 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.CultistBoss)}",
+                13 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.KingSlime)}",
+                14 => $"{e.BossString + " " + Lang.GetNPCNameValue(NPCID.QueenBee)}",
                 _ => "",
             };
         }
@@ -444,8 +467,26 @@ namespace ElementsAwoken.EAUtilities
                 9 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Volcanox>())}",
                 10 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<VoidLeviathanHead>())}",
                 11 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<Azana>())}",
+                12 => $"{e.BossString + " " + Lang.GetNPCNameValue(ModContent.NPCType<AncientAmalgam>())}",
                 _ => ""
             };
+        }
+        public static string ShopNeme()
+        {
+            return string.Format(IfEnbleShop, Language.GetTextValue("Mods.ElementsAwoken.Config.AlchemistPotionShop"));
+        }
+        public static string ShopNeme(int a)
+        {
+            string shop = "";
+            if (a == 0) shop = ShopName0;
+            if (a == 1) shop = ShopName1;
+            if (a == 2) shop = ShopName2;
+            if (a == 3) shop = ShopName3;
+            return string.Format(Shop, shop);
+        }
+        public static string IWSM()
+        {
+            return string.Format(IWS, Lang.GetNPCNameValue(NPCID.Angler));
         }
         #endregion
     }

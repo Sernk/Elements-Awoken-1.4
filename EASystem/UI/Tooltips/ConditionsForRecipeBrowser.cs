@@ -15,7 +15,7 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if(ModContent.GetInstance<Config>().RecipeBrowser == false) return;
+            if(ModContent.GetInstance<Config>().debugMode == false) return;
             if (!_dropTooltipCache.TryGetValue(item.type, out var cachedLines))
             {
                 cachedLines = [];
@@ -46,22 +46,13 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
                             {
                                 foreach (var cond in dr.conditions)
                                 {
-                                    if (cond.CanShowItemDropInUI())
-                                    {
-                                        string desc = cond is IProvideItemConditionDescription prov ? prov.GetConditionDescription() : cond.ToString();
-
-                                        if (!string.IsNullOrEmpty(desc))
-                                        {
-                                            Player player = Main.LocalPlayer;
-                                            if (conditionsText.Length > 0) conditionsText += ", ";
-                                            conditionsText += desc;
-                                        }
-                                    }else continue;
+                                    string desc = cond is IProvideItemConditionDescription prov ? prov.GetConditionDescription() : cond.ToString();
+                                    conditionsText += desc;
                                 }
                             }
 
                             if (string.IsNullOrEmpty(conditionsText)) continue;
-
+ 
                             string conditionLine = $" {conditionsText} ({chance * 100f:0.##}%)";
 
                             if (!conditionToNpcNames.TryGetValue(conditionLine, out var npcList))
