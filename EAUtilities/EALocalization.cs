@@ -420,6 +420,8 @@ namespace ElementsAwoken.EAUtilities
         public string Unbound => Language.GetTextValue("Mods.ElementsAwoken.Unbound");
         public string AlchemistUI => Language.GetTextValue("Mods.ElementsAwoken.AlchemistUI");
         public string AlchemistUI1 => Language.GetTextValue("Mods.ElementsAwoken.AlchemistUI1");
+        public string VoidEvent => Language.GetTextValue("Mods.ElementsAwoken.VoidEvent");
+        public string VoidEvent1 => Language.GetTextValue("Mods.ElementsAwoken.VoidEvent1");
         #endregion
         #region BiomeName
         public string Desert => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Desert");
@@ -427,6 +429,7 @@ namespace ElementsAwoken.EAUtilities
         public string Hell => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Hell");
         public string Frost => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Frost");
         public string Beach => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.Beach");
+        public string InVoid => Language.GetTextValue("Mods.ElementsAwoken.BiomeName.InVoid");
         #endregion
         #region BossNAME
         public static string BossName(int BossProgres)

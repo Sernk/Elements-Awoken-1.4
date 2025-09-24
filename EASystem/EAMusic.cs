@@ -16,7 +16,7 @@ namespace ElementsAwoken.EASystem
         public class VoidInvasionNightEffect : ModSceneEffect
         {
             public override int Music => MusicID.LunarBoss;
-            public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
+            public override SceneEffectPriority Priority => SceneEffectPriority.Event;
 
             public override bool IsSceneEffectActive(Player player)
             {

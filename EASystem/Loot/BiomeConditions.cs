@@ -25,15 +25,23 @@ public class BiomeConditions : IItemDropRuleCondition
         InVortexTowerZone,
         InStardustTowerZone,
         InbloodMoon,
+        InVoid
     }
 
-    public BiomeConditions(BiomeID biomeType, int customBiomeID = -1)
+    public BiomeConditions(BiomeID biomeType, int customBiomeID = -1, bool INVoid = false, string VoidText ="")
     {
         this.biomeType = biomeType;
         this.customBiome = customBiomeID;
         string biomeName = GetBiomeName();
-        string text = string.Format(ModContent.GetInstance<EALocalization>().BiomeConditions, biomeName);
-        this.nearbyDescription = text;
+        if (INVoid)
+        {
+            this.nearbyDescription = VoidText;
+        }
+        else
+        {
+            string text = string.Format(ModContent.GetInstance<EALocalization>().BiomeConditions, biomeName);
+            this.nearbyDescription = text;
+        }
     }
     public BiomeConditions(BiomeID biomeType)
     {
@@ -48,6 +56,7 @@ public class BiomeConditions : IItemDropRuleCondition
             BiomeID.Underworld => ModContent.GetInstance<EALocalization>().Hell,
             BiomeID.Frost => ModContent.GetInstance<EALocalization>().Frost,
             BiomeID.InBeach => ModContent.GetInstance<EALocalization>().Beach,
+            BiomeID.InVoid => ModContent.GetInstance<EALocalization>().InVoid,
             BiomeID.InNebulaTowerZone => "Nebula Tower",
             BiomeID.InSolarTowerZone => "Solar Tower",
             BiomeID.InVortexTowerZone => "Vortex Tower",
@@ -61,7 +70,7 @@ public class BiomeConditions : IItemDropRuleCondition
     {
         return biomeType switch
         {
-            BiomeID.Desert => player.ZoneDesert,
+            BiomeID.Desert => player.ZoneDesert && player.ZoneBeach == false,
             BiomeID.Sky => player.ZoneSkyHeight,
             BiomeID.Underworld => player.ZoneUnderworldHeight,
             BiomeID.Frost => player.ZoneSnow,
@@ -72,6 +81,7 @@ public class BiomeConditions : IItemDropRuleCondition
             BiomeID.InbloodMoon => Main.bloodMoon,
             BiomeID.InBeach => player.ZoneBeach,
             BiomeID.InDungeon => player.ZoneDungeon,
+            BiomeID.InVoid => MyWorld.voidInvasionUp,
             _ => false,
         };
     }

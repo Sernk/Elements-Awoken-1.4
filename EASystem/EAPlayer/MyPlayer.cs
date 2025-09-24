@@ -21,7 +21,6 @@ using ElementsAwoken.Content.Projectiles.Minions;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.Content.Projectiles.Other;
 using ElementsAwoken.EASystem.UI.UIIIII;
-using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -2644,21 +2643,6 @@ namespace ElementsAwoken.EASystem.EAPlayer
         {
             if (voidBlood && regen > 0) regen = 0;
         }
-        //public override void UpdateBiomeVisuals()
-        //{
-        //    player.ManageSpecialBiomeVisuals("ElementsAwoken:AshBlizzardEffect", useInfWrath && player.position.Y / 16 < Main.worldSurface);
-        //    if (useInfWrath)
-        //    {
-        //        SkyManager.Instance.Activate("ElementsAwoken:InfernacesWrath", player.Center);
-        //        if (!GetInstance<Config>().lowDust) Overlays.Scene.Activate("ElementsAwoken:AshParticles", player.Center);
-        //    }
-        //    else
-        //    {
-        //        SkyManager.Instance.Deactivate("ElementsAwoken:InfernacesWrath");
-        //        Overlays.Scene.Deactivate("ElementsAwoken:AshParticles");
-        //    }
-        //    if (GetInstance<Config>().lowDust) Overlays.Scene.Deactivate("ElementsAwoken:AshParticles");
-        //}
         public bool ActiveBoss()
         {
             for (int i = 0; i < Main.npc.Length; ++i)
@@ -2672,11 +2656,9 @@ namespace ElementsAwoken.EASystem.EAPlayer
         }
         public override void ModifyHitNPCWithItem(Item item, NPC target, ref NPC.HitModifiers modifiers)
         {
-            float damage = modifiers.SourceDamage.Base;
-
             if (target.GetGlobalNPC<NPCsGLOBAL>().impishCurse)
             {
-                damage = (int)(damage * 1.75f);
+                modifiers.SourceDamage *= 1.75f;
             }
             if (fadedCloth)
             {
@@ -2684,7 +2666,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
                 if (Main.hardMode) scale = 1.75f;
                 if (NPC.downedPlantBoss) scale = 2f;
                 if (NPC.downedMoonlord) scale = 4f;
-                damage = (int)(damage * scale);
+                modifiers.SourceDamage *= scale;
             }
         }
         public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
@@ -2908,11 +2890,10 @@ namespace ElementsAwoken.EASystem.EAPlayer
         }
         public override void ModifyHitByNPC(NPC npc, ref Player.HurtModifiers modifiers)
         {
-            float damage = modifiers.SourceDamage.Base;
             if (greatLensTimer > 0)
             {
-                Player.ApplyDamageToNPC(npc, (int)(damage * 0.2f), 2f, Math.Sign(Player.Center.X - npc.Center.X), false);
-                damage = (int)(damage * 0.8f);
+                Player.ApplyDamageToNPC(npc, (int)(modifiers.SourceDamage.Additive * 0.2f), 2f, Math.Sign(Player.Center.X - npc.Center.X), false);
+                modifiers.SourceDamage *= 0.8f;
             }
             if (honeyCocooned > 0)
             {
@@ -2923,10 +2904,9 @@ namespace ElementsAwoken.EASystem.EAPlayer
         }
         public override void ModifyHitByProjectile(Projectile proj, ref Player.HurtModifiers modifiers)
         {
-            float damage = modifiers.SourceDamage.Base;
             if (greatLensTimer > 0)
             {
-                damage = (int)(damage * 0.8f);
+                modifiers.SourceDamage *= 0.8f;
             }
         }
         public override void ModifyHurt(ref Player.HurtModifiers modifiers)
@@ -3135,15 +3115,13 @@ namespace ElementsAwoken.EASystem.EAPlayer
         }
         public override void PostHurt(Player.HurtInfo info)
         {
-            var source = Main.LocalPlayer.GetSource_FromThis();
-            float damage = info.Damage;
             if (vleviAegis)
             {
-                vleviAegisDamage += (int)damage;
+                vleviAegisDamage += (int)info.Damage;
             }
             if (abyssalMatter && abyssalRage <= 0)
             {
-                if (damage > Player.statLifeMax2 * 0.4f)
+                if (info.Damage > Player.statLifeMax2 * 0.4f)
                 {
                     abyssalRage = 600;
                 }
@@ -3152,11 +3130,11 @@ namespace ElementsAwoken.EASystem.EAPlayer
             {
                 for (int i = 0; i < Main.rand.Next(1, 4); i++)
                 {
-                    Projectile brick = Main.projectile[Projectile.NewProjectile(source, Player.Center.X, Player.Center.Y, Main.rand.NextFloat(-6, 6), Main.rand.NextFloat(-3, -1), ProjectileType<LegoBrickFriendly>(), 25, 0, Player.whoAmI)];
+                    Projectile brick = Main.projectile[Projectile.NewProjectile(EAU.Play(Player),Player.Center.X, Player.Center.Y, Main.rand.NextFloat(-6, 6), Main.rand.NextFloat(-3, -1), ProjectileType<LegoBrickFriendly>(), 25, 0, Player.whoAmI)];
                 }
                 toyArmorCooldown = 60;
             }
-            if (voidWalkerChest && damage > Player.statLifeMax2 / 2)
+            if (voidWalkerChest && info.Damage > Player.statLifeMax2 / 2)
             {
                 voidWalkerRegen = 180;
             }
@@ -3171,7 +3149,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
                 if (NPC.downedAncientCultist) bloodDamage = 40;
                 if (NPC.downedMoonlord) bloodDamage = 60; for (int i = 0; i < 3; i++)
                 {
-                    Projectile proj = Main.projectile[Projectile.NewProjectile(source, Player.Center.X, Player.Center.Y, Main.rand.NextFloat(-3f, 3f), Main.rand.NextFloat(-3f, 3f), ProjectileType<VoidBlood>(), bloodDamage, 0f, Main.myPlayer, 0f, 0f)];
+                    Projectile proj = Main.projectile[Projectile.NewProjectile(EAU.Play(Player), Player.Center.X, Player.Center.Y, Main.rand.NextFloat(-3f, 3f), Main.rand.NextFloat(-3f, 3f), Mod.Find<ModProjectile>("VoidBlood").Type, bloodDamage, 0f, Main.myPlayer, 0f, 0f)];
                 }
             }
             if (slimeBooster)
@@ -3183,7 +3161,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
                     vector2.Y *= 1f + (float)Main.rand.Next(-50, 51) * 0.005f;
                     vector2.Normalize();
                     vector2 *= 4f + (float)Main.rand.Next(-50, 51) * 0.01f;
-                    Projectile proj = Main.projectile[Projectile.NewProjectile(source, Player.Top.X, Player.Top.Y, vector2.X, vector2.Y, ProjectileID.SpikedSlimeSpike, 30, 0f, Main.myPlayer, 0f, 0f)];
+                    Projectile proj = Main.projectile[Projectile.NewProjectile(EAU.Play(Player), Player.Top.X, Player.Top.Y, vector2.X, vector2.Y, ProjectileID.SpikedSlimeSpike, 30, 0f, Main.myPlayer, 0f, 0f)];
                     proj.friendly = true;
                     proj.hostile = false;
                 }

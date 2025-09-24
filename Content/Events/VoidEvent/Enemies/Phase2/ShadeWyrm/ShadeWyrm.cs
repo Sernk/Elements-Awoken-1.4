@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
 {
     [AutoloadBossHead]
 
-    class ShadeWyrmHead : ShadeWyrm
+    public class ShadeWyrmHead : ShadeWyrm
     {
         public override string Texture { get { return "ElementsAwoken/Content/Events/VoidEvent/Enemies/Phase2/ShadeWyrm/ShadeWyrmHead"; } }
 
@@ -366,7 +366,7 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
             if (!collision && head)
             {
                 Rectangle rectangle = new Rectangle((int)NPC.position.X, (int)NPC.position.Y, NPC.width, NPC.height);
-                int num186 = 1000;
+                int num186 = 1999999999;
                 bool flag19 = true;
                 for (int num187 = 0; num187 < 255; num187++)
                 {

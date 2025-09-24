@@ -1,5 +1,4 @@
-﻿using ElementsAwoken.Content.Buffs.Prompts;
-using ElementsAwoken.EASystem.EAPlayer;
+﻿using ElementsAwoken.EASystem.EAPlayer;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -7,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
-namespace ElementsAwoken.EASystem
+namespace ElementsAwoken.EASystem.Biome
 {
     public class EABiomeVisuals : ModSystem
     {
@@ -51,7 +50,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.VoidLeviathanHead);
             }
-
             if (Leviathan.useInfernace)
             {
                 _InfernaceSkyVisual = true;
@@ -67,7 +65,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Infernace);
             }
-
             if (Leviathan.usePermafrost)
             {
                 _PermafrostSkyVisual = true;
@@ -83,7 +80,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Permafrost);
             }
-
             if (Leviathan.useGuardian)
             {
                 _TheGuardianFlySkyVisual = true;
@@ -99,8 +95,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.TheGuardianFly);
             }
-
-
             if (Leviathan.useVolcanox)
             {
                 _VolcanoxSkyVisual = true;
@@ -116,7 +110,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Volcanox);
             }
-
             if (Leviathan.useAzana)
             {
                 _AzanaSkyVisual = true;
@@ -132,7 +125,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Azana);
             }
-
             if (Leviathan.useAncients)
             {
                 _AncientsSkyVisual = true;
@@ -148,7 +140,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Ancients);
             }
-
             if (Leviathan.useAqueous)
             {
                 _AqueousSkyVisual = true;
@@ -164,7 +155,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Aqueous);
             }
-
             #region Event
             if (Leviathan.useVoidEvent)
             {
@@ -181,7 +171,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.VoidEvent);
             }
-
             if (Leviathan.useVoidEventDark)
             {
                 _VoidEventDarkSkyVisual = true;
@@ -197,7 +186,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.VoidEventDark);
             }
-
             if (Leviathan.useRadRain)
             {
                 _RadiantRainSkyVisual = true;
@@ -226,7 +214,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Regaroth);
             }
-
             if (Leviathan.useRegaroth == 2)
             {
                 if (!Filters.Scene[ElementsAwoken.Regaroth2].IsActive())
@@ -238,7 +225,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Regaroth2);
             }
-
             if (Leviathan.useRegaroth == 3)
             {
                 if (!Filters.Scene[ElementsAwoken.RegarothIntense].IsActive())
@@ -250,7 +236,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.RegarothIntense);
             }
-
             if (Leviathan.useRegaroth == 4)
             {
                 if (!Filters.Scene[ElementsAwoken.Regaroth2Intense].IsActive())
@@ -262,7 +247,6 @@ namespace ElementsAwoken.EASystem
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Regaroth2Intense);
             }
-
             if (Leviathan.useRegaroth == 0)
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Regaroth);
@@ -321,53 +305,52 @@ namespace ElementsAwoken.EASystem
             }
             #endregion
             #region ??SkyVisual
-            //if (Leviathan.useDespair)
-            //{
-            //    _DespairSkyVisual = true;
-            //}
-            //if (_DespairSkyVisual)
-            //{
-            //    if (!Filters.Scene[ElementsAwoken.Despair].IsActive())
-            //    {
-            //        Filters.Scene.Activate(ElementsAwoken.Despair, default);
-            //    }
-            //}
-            //else if (Filters.Scene[ElementsAwoken.Despair].IsActive())
-            //{
-            //    Filters.Scene.Deactivate(ElementsAwoken.Despair);
-            //}
+            if (Leviathan.useDespair)
+            {
+                _DespairSkyVisual = true;
+            }
+            if (_DespairSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Despair].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Despair, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Despair].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Despair);
+            }
 
-            //if (Leviathan.useblizzard)
-            //{
-            //    _BlizzardSkyVisual = true;
-            //}
-            //if (_BlizzardSkyVisual)
-            //{
-            //    if (!Filters.Scene[ElementsAwoken.Blizzard].IsActive())
-            //    {
-            //        Filters.Scene.Activate(ElementsAwoken.Blizzard, default);
-            //    }
-            //}
-            //else if (Filters.Scene[ElementsAwoken.Blizzard].IsActive())
-            //{
-            //    Filters.Scene.Deactivate(ElementsAwoken.Blizzard);
-            //}
-
-            //if (Leviathan.useInfWrath)
-            //{
-            //    _InfernacesWrathSkyVisual = true;
-            //}
-            //if (_InfernacesWrathSkyVisual)
-            //{
-            //    if (!Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
-            //    {
-            //        Filters.Scene.Activate(ElementsAwoken.InfernacesWrath, default);
-            //    }
-            //}
-            //else if (Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
-            //{
-            //    Filters.Scene.Deactivate(ElementsAwoken.InfernacesWrath);
-            //}
+            if (Leviathan.useblizzard)
+            {
+                _BlizzardSkyVisual = true;
+            }
+            if (_BlizzardSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.Blizzard].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.Blizzard, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.Blizzard].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.Blizzard);
+            }
+            if (Leviathan.useInfWrath)
+            {
+                _InfernacesWrathSkyVisual = true;
+            }
+            if (_InfernacesWrathSkyVisual)
+            {
+                if (!Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
+                {
+                    Filters.Scene.Activate(ElementsAwoken.InfernacesWrath, default);
+                }
+            }
+            else if (Filters.Scene[ElementsAwoken.InfernacesWrath].IsActive())
+            {
+                Filters.Scene.Deactivate(ElementsAwoken.InfernacesWrath);
+            }
             #endregion
         }
     }

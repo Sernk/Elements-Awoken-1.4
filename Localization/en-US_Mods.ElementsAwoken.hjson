@@ -7784,6 +7784,8 @@ NPCs: {
 			Name1: Next Shop
 			Name2: Transmutation
 		}
+
+		Census.SpawnCondition: Defeat the Brain of Cthulhu or Eater of Worlds
 	}
 
 	Psychologist: {
@@ -7827,6 +7829,8 @@ NPCs: {
 			Sam: Sam
 			Drew: Drew
 		}
+
+		Census.SpawnCondition: After killing the toy slime and in awakening mode
 	}
 }
 
@@ -8710,10 +8714,6 @@ Config: {
 	Reduces: Reduces the amount of dust created by NPCs, projectiles and more (WARNING: only applied to certain objects)
 	EnterDebug: Enter Debug Mode
 	Shows: Shows information for testing (Mainly for Mod Devs)
-	# У МЕНЯ БОЛЕЛА ГОЛОВА, А ЗАДУМКА БЫЛА КАК В МОДЕ "Quite Enough Recipes" Я ХОТЕЛ ЗДЕЛАТЬ ДЛЯ "Recipe Browser". НО НИЧЕГО НЕ ПОЛУЧИЛОСЬ.
-	# ПОЭТОМУ ПРОСТО ОСТАВЛЮ ЭТОТ КОММЕНТАРИЙ, ЧТОБЫ ПОТОМ НЕ ЗАБЫТЬ. УДАЛТЬ
-	RecipeBrows: Recipe Browser
-	RecipeBrowsTooltips: Shows hints for some items
 }
 
 Biomes: {
@@ -8888,7 +8888,6 @@ Tooltips: {
 	MysteriousPotion20: Makes you move at uncontrollable speeds
 	MysteriousPotion21: had a bad swig
 	MysteriousPotion22: Potion
-	# Не трогай HoneyCocoon!!!!
 	HoneyCocoon: <Special Ability Unbound>
 	HoneyCocoon1: Pressing the special ability key
 	HoneyCocoon2:
@@ -9212,6 +9211,7 @@ BiomeName: {
 	Hell: Underworld or Hell
 	Frost: Frost
 	Beach: Beach
+	InVoid: During the dawn of emptiness
 }
 
 ShopCondition: {
@@ -9304,6 +9304,8 @@ IsSummon: It is impossible to summon because the boss has already been summoned:
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 AlchemistUI: Place an item here to convert it into its
 AlchemistUI1: counterpart
+VoidEvent: The dawn of the void has started!
+VoidEvent1: The void retreats back into the shadows...
 
 MyPlayerLocalization: {
 	MyPlayer: {
@@ -9550,6 +9552,28 @@ EsseneceAlertsLocalization: {
 			Boss2: The sky wind howls...
 			Boss1: Roars echo from the underworld...
 			Boss: The desert sands shift...
+		}
+	}
+}
+
+LocalizationEARecipeGroups: {
+	EARecipeGroups: {
+		RecipeGroups: {
+			Name: Wings
+			Name1: Lunar Wings
+			Name2: Silver or Tungsten Sword
+			Name3: Sand
+			Name4: Sandstone
+			Name5: Ice Block
+			Name6: Copper Bar
+			Name7: Iron Bar
+			Name8: Silver Bar
+			Name9: Gold Bar
+			Name10: Evil Bar
+			Name11: Evil Ore
+			Name12: Cobalt Bar
+			Name13: Mythril Bar
+			Name14: Adamantite Bar
 		}
 	}
 }

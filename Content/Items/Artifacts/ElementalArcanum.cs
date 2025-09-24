@@ -1,13 +1,11 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI.Tooltips;
+using ElementsAwoken.EAUtilities;
 using Terraria;
-using System;
-using System.Linq;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ElementsAwoken.EAUtilities;
-using ElementsAwoken.EASystem.EAPlayer;
 
 namespace ElementsAwoken.Content.Items.Artifacts
 {

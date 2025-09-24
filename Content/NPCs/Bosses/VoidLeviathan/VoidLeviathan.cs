@@ -28,7 +28,7 @@ using static Terraria.ModLoader.ModContent;
 namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
 {
     [AutoloadBossHead]
-    class VoidLeviathanHead : VoidLeviathan
+    public class VoidLeviathanHead : VoidLeviathan
     {
         public override string Texture { get { return "ElementsAwoken/Content/NPCs/Bosses/VoidLeviathan/VoidLeviathanHead"; } }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)

@@ -22,7 +22,6 @@ public class InMultipleConditionByMode : IItemDropRuleCondition
     private readonly IItemDropRuleCondition[] conditions;
     private readonly string customDescription;
     private readonly Mode mode;
-
     public InMultipleConditionByMode(Mode mode, params IItemDropRuleCondition[] conditions)
     {
         this.mode = mode;
@@ -296,7 +295,21 @@ public class EAIDRC
             if (info.npc.SpawnedFromStatue) return false;
             return true;
         }
-        public bool CanShowItemDropInUI() => false;
+        public bool CanShowItemDropInUI() => true;
+        public string GetConditionDescription() => null;
+    }
+    public class NoHardMode : IItemDropRuleCondition
+    {
+        public bool CanDrop(DropAttemptInfo info)
+        {
+            if (Main.hardMode) return false;
+            else return true;
+        }
+        public bool CanShowItemDropInUI()
+        {
+            if (Main.hardMode) return false;
+            else return true;
+        }
         public string GetConditionDescription() => null;
     }
 }

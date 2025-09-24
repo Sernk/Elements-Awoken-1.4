@@ -2,6 +2,7 @@
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
 using ElementsAwoken.Content.NPCs.Elementals;
+using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using Terraria;
@@ -48,11 +49,11 @@ namespace ElementsAwoken.Content.Events.VoidEvent
             string text = "";
             if (Main.invasionX == Main.spawnTileX)
             {
-                text = "The dawn of the void has started!";
+                text = ModContent.GetInstance<EALocalization>().VoidEvent;
             }
             if (Main.dayTime)
             {
-                text = "The void retreats back into the shadows...";
+                text = ModContent.GetInstance<EALocalization>().VoidEvent1;
             }
             if (Main.netMode == 0)
             {

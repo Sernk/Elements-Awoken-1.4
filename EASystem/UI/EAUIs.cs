@@ -85,41 +85,6 @@ namespace ElementsAwoken.EASystem.UI
                             InterfaceScaleType.UI);
                         layers.Insert(heartLayer, heartState);
                     }
-
-
-
-
-                    //                // hearts & mana
-                    //                //if (!calamityEnabled)
-                    //                //{
-                    //                //    var heartLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
-                    //                //    var heartState = new LegacyGameInterfaceLayer("ElementsAwoken: UI2",
-                    //                //        delegate
-                    //                //        {
-                    //                //            ElementsAwoken.DrawHearts();
-                    //                //            return true;
-                    //                //        },
-                    //                //        InterfaceScaleType.UI);
-                    //                //    layers.Insert(heartLayer, heartState);
-
-                    //                //    // to stop hearts being underneath
-                    //                //    if (modPlayer.voidHeartsUsed == 10)
-                    //                //    {
-                    //                //        Main.heart2Texture = GetTexture("Extra/Blank");
-                    //                //    }
-                    //                //    else
-                    //                //    {
-                    //                //        Main.heart2Texture = GetTexture("Extra/Heart2");
-                    //                //    }
-                    //                //    if (modPlayer.lunarStarsUsed == 1)
-                    //                //    {
-                    //                //        Main.manaTexture = GetTexture("Extra/Mana2");
-                    //                //    }
-                    //                //    else
-                    //                //    {
-                    //                //        Main.manaTexture = Main.instance.OurLoad<Texture2D>("Images" + Path.DirectorySeparatorChar.ToString() + "Mana");
-                    //                //    }
-                    //                //}
                     #region energy & insanity UI
 
                     var BarLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
@@ -198,17 +163,14 @@ namespace ElementsAwoken.EASystem.UI
                         TextureAssets.Rain = ModContent.Request<Texture2D>("Terraria/Images" + Path.DirectorySeparatorChar.ToString() + "Rain");
                     }
                     // infernace clouds
-                    if (MyWorld.firePrompt > ElementsAwoken.bossPromptDelay)
-                    {
-                        for (int cloud = 0; cloud < 22; cloud++)
-                        {
-                            TextureAssets.Cloud[cloud] = ModContent.Request<Texture2D>(string.Concat(new object[] { "Terraria/Images", Path.DirectorySeparatorChar.ToString(), "Cloud_", cloud }));
-                        }
-                    }
-                    else
-                    {
-                        ElementsAwoken.ResetCloudTexture();
-                    }
+                    //if (MyWorld.firePrompt > ElementsAwoken.bossPromptDelay)
+                    //{
+                    //    CloudSystem.SetCustomClouds(); 
+                    //}
+                    //else
+                    //{
+                    //    CloudSystem.ResetCloudTexture();
+                    //}
                 }
 
                 var textLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));

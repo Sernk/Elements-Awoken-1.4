@@ -10,6 +10,7 @@ using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
 using ElementsAwoken.Content.NPCs.Projectiles;
 using ElementsAwoken.EASystem;
+using ElementsAwoken.EASystem.Biome;
 using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.UI;
 using ElementsAwoken.EAUtilities;
@@ -35,7 +36,6 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 using Terraria.UI.Chat;
-
 
 namespace ElementsAwoken
 {
@@ -92,6 +92,7 @@ namespace ElementsAwoken
         public static bool ancientsAwakenedEnabled;
         public static bool eaMusicEnabled;
         public static bool eaRetroMusicEnabled;
+        public static bool WikithisEnabled;
 
         public static int[] screenTextTimer = new int[10];
         public static int[] screenTextDuration = new int[10];
@@ -134,17 +135,18 @@ namespace ElementsAwoken
         public static void PremultiplyTexture(Texture2D texture)
         {
             //Color[] buffer = new Color[texture.Width * texture.Height];
-            //texture.GetData(buffer);
-            //for (int i = 0; i < buffer.Length; i++)
+            //if (texture != null)
             //{
-            //    buffer[i] = Color.FromNonPremultiplied(buffer[i].R, buffer[i].G, buffer[i].B, buffer[i].A);
+            //    texture.GetData(buffer);
+            //    for (int i = 0; i < buffer.Length; i++)
+            //    {
+            //        buffer[i] = Color.FromNonPremultiplied(buffer[i].R, buffer[i].G, buffer[i].B, buffer[i].A);
+            //    }
+            //    texture.SetData(buffer);
             //}
-            //texture.SetData(buffer);
         }
         public override void Load()
         {
-            //Main.OnTick -= Update;
-            //EAList.DustIDs.Add(EAU.PinkFlame);
             Terraria.IL_Player.Update += RemoveManaCap;
 
             DateTime now = DateTime.Today;
@@ -156,6 +158,12 @@ namespace ElementsAwoken
             //ancientsAwakenedEnabled = ModLoader.GetMod("AncientsAwakened") != null;
             //eaMusicEnabled = ModLoader.GetMod("EAMusic") != null;
             //eaRetroMusicEnabled = ModLoader.GetMod("EARetroMusic") != null;
+            WikithisEnabled = ModLoader.TryGetMod("Wikithis", out Mod wikithis);
+            if (wikithis != null && !Main.dedServ)
+            {
+                wikithis.Call(0, this, "https://elementsawoken.fandom.com/{}");
+                wikithis.Call("AddWikiTexture", this, ModContent.Request<Texture2D>("ElementsAwoken/icon_small"));
+            }
 
             instance = this;
 
@@ -184,14 +192,12 @@ namespace ElementsAwoken
                 SkyManager.Instance[Permafrost] = new EABiomeSky();
                 Filters.Scene[Infernace] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Infernace] = new EABiomeSky();
-
                 Filters.Scene[VoidEvent] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.8f, 0.2f, 0.0f).UseOpacity(0.3f), EffectPriority.VeryHigh);
                 SkyManager.Instance[VoidEvent] = new EABiomeSky();
                 Filters.Scene[VoidEventDark] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[VoidEventDark] = new EABiomeSky();
                 Filters.Scene[RadiantRain] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.4f), EffectPriority.VeryHigh);
                 SkyManager.Instance[RadiantRain] = new EABiomeSky();
-
                 Filters.Scene[Regaroth] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.4f, 0.7f).UseOpacity(0.3f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Regaroth] = new EABiomeSky();
                 Filters.Scene[Regaroth2] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.3f), EffectPriority.VeryHigh);
@@ -200,41 +206,28 @@ namespace ElementsAwoken
                 SkyManager.Instance[RegarothIntense] = new EABiomeSky();
                 Filters.Scene[Regaroth2Intense] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.9f, 0.3f, 0.7f).UseOpacity(0.75f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Regaroth2Intense] = new EABiomeSky();
-
                 Filters.Scene[Encounter1] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 0.2f, 0.3f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Encounter1] = new EABiomeSky();
                 Filters.Scene[Encounter2] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.1f, 0.1f, 0.3f).UseOpacity(0.2f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Encounter2] = new EABiomeSky();
                 Filters.Scene[Encounter3] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.0f, 0.0f, 0.2f).UseOpacity(0.5f), EffectPriority.VeryHigh);
                 SkyManager.Instance[Encounter3] = new EABiomeSky();
-
-                //Filters.Scene[Despair] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
-                //SkyManager.Instance[Despair] = new EABiomeSky();
-                //Filters.Scene[Blizzard] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 0.3f).UseOpacity(0.4f), EffectPriority.VeryHigh);
-                //Overlays.Scene[Blizzard] = new SimpleOverlay("Images/Misc/noise", new BlizzardShaderData("FilterBlizzardBackground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High, RenderLayers.Landscape);
-                //SkyManager.Instance[Blizzard] = new EABiomeSky();
-                //Filters.Scene[InfernacesWrath] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.0f, 0.0f, 0f).UseIntensity(0.0f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
-                //SkyManager.Instance[InfernacesWrath] = new InfernacesWrathSky();
-                //    Overlays.Scene["ElementsAwoken:AshParticles"] = new AshOverlay(EffectPriority.VeryHigh);
-                //    Filters.Scene["ElementsAwoken:AshBlizzardEffect"] = new Filter((new BlizzardShaderData("FilterBlizzardForeground")).UseColor(0.2f, 0.2f, 0.2f).UseSecondaryColor(0.05f, 0.05f, 0.05f).UseImage("Images/Misc/noise", 0, null).UseOpacity(0.04f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High);
-                //    Filters.Scene["ElementsAwoken:AshShader"] = new Filter(new InfernaceScreenShaderData("FilterMiniTower").UseColor(1f, 0.4f, 0f).UseOpacity(0.2f), EffectPriority.VeryHigh);
-
-                //    Filters.Scene["ElementsAwoken:HeatDistortion"] = new Filter(new ScreenShaderData("FilterHeatDistortion").UseImage("Images/Misc/noise", 0, null).UseIntensity(4f), EffectPriority.Low);
+                Filters.Scene[Despair] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.VeryHigh);
+                SkyManager.Instance[Despair] = new EABiomeSky();
+                Filters.Scene[Blizzard] = new Filter(new ScreenShaderData("FilterMiniTower").UseColor(0.2f, 0.0f, 0.3f).UseOpacity(0.4f), EffectPriority.VeryHigh);
+                Overlays.Scene["Blizzard"] = new SimpleOverlay("Images/Misc/noise", new ScreenShaderData("FilterBlizzardBackground").UseColor(1f, 1f, 1f).UseSecondaryColor(0.7f, 0.7f, 1f).UseImage("Images/Misc/noise", 0, null).UseIntensity(0.4f).UseImageScale(new Vector2(3f, 0.75f), 0), EffectPriority.High, RenderLayers.Landscape);
+                SkyManager.Instance["Blizzard"] = new EABiomeSky();
+                Filters.Scene[InfernacesWrath] = new Filter( new ScreenShaderData("FilterBloodMoon") .UseColor(1f, 0.3f, 0.3f).UseIntensity(0.7f), EffectPriority.VeryHigh);
+                SkyManager.Instance[InfernacesWrath] = new EABiomeSky();
+                Filters.Scene["ElementsAwoken:HeatDistortion"] = new Filter(new ScreenShaderData("FilterHeatDistortion").UseImage("Images/Misc/noise", 0, null).UseIntensity(4f), EffectPriority.Low);
                 Ref<Effect> screenRef = new(Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value);
                 Filters.Scene["Shockwave"] = new Filter(new ScreenShaderData(screenRef, "Shockwave"), EffectPriority.VeryHigh);
                 Filters.Scene["Shockwave"].Load();
 
                 Effect effect = Assets.Request<Effect>("Effects/ShockwaveEffect", AssetRequestMode.ImmediateLoad).Value;
 
-                Main.QueueMainThreadAction(() =>
-                {
-                    AADeathBall = ModContent.Request<Texture2D>(
-                        "ElementsAwoken/Content/Projectiles/NPCProj/Ancients/Gores/LightBall",
-                        AssetRequestMode.ImmediateLoad
-                    ).Value;
+                Main.QueueMainThreadAction(() => { AADeathBall = ModContent.Request<Texture2D>("ElementsAwoken/Content/Projectiles/NPCProj/Ancients/Gores/LightBall", AssetRequestMode.ImmediateLoad).Value; PremultiplyTexture(AADeathBall); });
 
-                    PremultiplyTexture(AADeathBall);
-                });
                 insanityTex = ModContent.Request<Texture2D>("ElementsAwoken/Effects/Insanity").Value;
                 PremultiplyTexture(insanityTex);
                 heartGlowTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/HeartGlow").Value;
@@ -247,28 +240,8 @@ namespace ElementsAwoken
                 PromptInfoUserInterface = new UserInterface();
                 PromptInfoUserInterface.SetState(PromptUI);
 
-                TileID.Sets.Platforms = TileID.Sets.Factory.CreateBoolSet(new int[]
-                {
-                    19,
-                    427,
-                    435,
-                    436,
-                    437,
-                    438,
-                    439,
-                    TileID.PlanterBox
-                });
+                TileID.Sets.Platforms = TileID.Sets.Factory.CreateBoolSet([19, 427, 435, 436, 437, 438, 439, TileID.PlanterBox]);
             }
-
-            //Mod yabhb = ModLoader.GetMod("FKBossHealthBar");
-            //if (yabhb != null)
-            //{
-            //    // Set up a normal Small health bar
-            //    Call("RegisterHealthBarMini", ModContent.NPCType<VoidLeviathanOrb>());
-            //    //Call("RegisterHealthBarMini", NPCType("ElderShadeWyrmHead"));
-            //}
-
-            // go away null
             for (int i = 0; i < screenText.Length; i++)
             {
                 if (screenText[i] == null)
@@ -375,9 +348,6 @@ namespace ElementsAwoken
             instakillImmune.Add(ModContent.NPCType<AncientWyrmBody>());
             instakillImmune.Add(ModContent.NPCType<AncientWyrmHead>());
             instakillImmune.Add(ModContent.NPCType<AncientWyrmTail>());
-            //instakillImmune.Add(ModContent.NPCType<AndromedaHead>());
-            //instakillImmune.Add(ModContent.NPCType<AndromedaBody>());
-            //instakillImmune.Add(ModContent.NPCType<AndromedaTail>());
             instakillImmune.Add(ModContent.NPCType<BarrenSoul>());
             instakillImmune.Add(ModContent.NPCType<Furosia>());
             instakillImmune.Add(ModContent.NPCType<ObsidiousHand>());
@@ -391,7 +361,6 @@ namespace ElementsAwoken
             instakillImmune.Add(ModContent.NPCType<SoulOfInfernace>());
             instakillImmune.Add(ModContent.NPCType<VoidLeviathanHead>());
             instakillImmune.Add(ModContent.NPCType<VoidLeviathanBody>());
-            //instakillImmune.Add(ModContent.NPCType<VoidLeviathanBodyWeak>());
             instakillImmune.Add(ModContent.NPCType<VoidLeviathanTail>());
             instakillImmune.Add(ModContent.NPCType<VolcanoxHook>());
             instakillImmune.Add(ModContent.NPCType<VolcanoxTentacle>());
@@ -400,19 +369,6 @@ namespace ElementsAwoken
         public override void Unload()
         {
             MyWorld.awakenedModeNoActive = false;
-        }
-        public static bool prevMenuState;
-        public static void Update()
-        {
-            if (Main.gameMenu != prevMenuState)
-            {
-                if (Main.gameMenu)
-                {
-                    //Load on menu
-                    ResetCloudTexture();
-                }
-                prevMenuState = Main.gameMenu;
-            }
         }
         public static void DebugModeText(object text, int r = 255, int g = 255, int b = 255)
         {
@@ -439,212 +395,10 @@ namespace ElementsAwoken
                 CombatText.NewText(rect, color, text, true, false);
             }
         }    
-        public static void ResetCloudTexture()
-        {
-            for (int num25 = 0; num25 < 22; num25++)
-            {
-                TextureAssets.Cloud[num25] = ModContent.Request<Texture2D>(string.Concat(new object[] { "Terraria/Images", Path.DirectorySeparatorChar.ToString(), "Cloud_", num25 }));
-            }
-        }
         #region draw methods
-        public static void DrawHearts()
-        {
-            Mod mod = ModLoader.GetMod("ElementsAwoken");
-
-            Player player = Main.player[Main.myPlayer];
-            HeartsPlayers heartsPlayers = ModContent.GetInstance<HeartsPlayers>();
-
-            var modPlayer = player.GetModPlayer<MyPlayer>();
-
-            float lifePerHeart = 10f;
-            if (Main.LocalPlayer.ghost)
-            {
-                return;
-            }
-
-            int lifeForHeart = player.statLifeMax / 20;
-
-            heartsPlayers.voidHeartLife = modPlayer.voidHeartsUsed * 2;
-            if (heartsPlayers.voidHeartLife < 0)
-            {
-                heartsPlayers.voidHeartLife = 0;
-            }
-            if (heartsPlayers.voidHeartLife > 0)
-            {
-                lifeForHeart = player.statLifeMax / (20 + heartsPlayers.voidHeartLife / 4);
-                lifePerHeart = player.statLifeMax / 20f;
-            }
-
-            heartsPlayers.chaosHeartLife = modPlayer.chaosHeartsUsed * 2;
-            if (heartsPlayers.chaosHeartLife < 0)
-            {
-                heartsPlayers.chaosHeartLife = 0;
-            }
-            if (heartsPlayers.chaosHeartLife > 0)
-            {
-                lifeForHeart = player.statLifeMax / (20 + heartsPlayers.chaosHeartLife / 4);
-                lifePerHeart = player.statLifeMax / 20f;
-            }
-
-            int playerLife = player.statLifeMax2 - player.statLifeMax;
-            if (lifeForHeart == 0) lifeForHeart = 1;
-            lifePerHeart += playerLife / lifeForHeart;
-
-            var info = typeof(Main).GetField("UI_ScreenAnchorX", BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
-            int screenAnchorX = (int)info.GetValue(null);
-
-            for (int heartNum = 1; heartNum < (int)(player.statLifeMax2 / lifePerHeart) + 1; heartNum++)
-            {
-                float scale = 1f;
-                bool lastHeart = false;
-                int lifeStat;
-                if (player.statLife >= heartNum * lifePerHeart)
-                {
-                    lifeStat = 255;
-                    if (player.statLife == heartNum * lifePerHeart)
-                    {
-                        lastHeart = true;
-                    }
-                }
-                else
-                {
-                    float num7 = (player.statLife - (heartNum - 1) * lifePerHeart) / lifePerHeart;
-                    lifeStat = (int)(30f + 225f * num7);
-                    if (lifeStat < 30)
-                    {
-                        lifeStat = 30;
-                    }
-                    scale = num7 / 4f + 0.75f;
-                    if (scale < 0.75)
-                    {
-                        scale = 0.75f;
-                    }
-                    if (num7 > 0f)
-                    {
-                        lastHeart = true;
-                    }
-                }
-                if (lastHeart)
-                {
-                    scale += Main.cursorScale - 1f;
-                }
-                int xPos = 0;
-                int yPos = 0;
-                if (heartNum > 10)
-                {
-                    xPos -= 260;
-                    yPos += 26;
-                }
-                if (heartNum > 20)
-                {
-                    xPos = 0;
-                    yPos = 0;
-                }
-                int a = (int)(lifeStat * 0.9f);
-                if (!player.ghost)
-                {
-                    if (heartsPlayers.chaosHeartLife > 0)
-                    {
-                        heartsPlayers.chaosHeartLife--;                       
-                    }
-                    else if (heartsPlayers.voidHeartLife > 0)
-                    {
-                        heartsPlayers.voidHeartLife--;
-                        if (modPlayer.voidCompressor)
-                        {
-
-                        }
-                        else
-                        {
-
-                        }
-                    }
-                }
-            }
-        }
         public static void DrawVoidBloodGlow() { }
-        public static void DrawEnergyBar()
-        {
-            Mod mod = ModLoader.GetMod("ElementsAwoken");
-            Player player = Main.player[Main.myPlayer];
-            var modPlayer = player.GetModPlayer<PlayerEnergy>();
-            if (Main.LocalPlayer.ghost)
-            {
-                return;
-            }
-            if (!player.ghost && modPlayer.maxEnergy > 0)
-            {
-                var info = typeof(Main).GetField("UI_ScreenAnchorX", BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
-                int screenAnchorX = (int)info.GetValue(null);
-
-                Texture2D backgroundTexture = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyUI").Value;
-                int barPosLeft = 415 + screenAnchorX + (MyWorld.awakenedMode ? -134 : 0);
-                Main.spriteBatch.Draw(backgroundTexture, new Rectangle(barPosLeft, 48, backgroundTexture.Width, backgroundTexture.Height), null, Color.White, 0f, new Vector2(backgroundTexture.Width / 2, backgroundTexture.Height / 2), SpriteEffects.None, 0f);
-
-                Texture2D barTexture = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyBar").Value;
-                Rectangle barDest = new Rectangle(barPosLeft + 10, 48, (int)(barTexture.Width * ((float)modPlayer.energy / (float)modPlayer.maxEnergy)), barTexture.Height);
-                Rectangle barLength = new Rectangle(0, 0, (int)(barTexture.Width * ((float)modPlayer.energy / (float)modPlayer.maxEnergy)), barTexture.Height);
-                Main.spriteBatch.Draw(barTexture, barDest, barLength, Color.White, 0f, new Vector2(barTexture.Width / 2, barTexture.Height / 2), SpriteEffects.None, 0f);
-
-                DynamicSpriteFont fontType = FontAssets.MouseText.Value;
-                string text = "Energy: " + modPlayer.energy + "/" + modPlayer.maxEnergy;
-                Vector2 textSize = fontType.MeasureString(text);
-                float textPositionLeft = barPosLeft - textSize.X / 2;
-                DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, fontType, text, new Vector2(textPositionLeft, 6f), new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-            }
-        }
         public static void DrawInsanityUI() { }
         public static void DrawEnergyUI() { }
-        public static void DrawInsanityBar()
-        {
-            Mod mod = ModLoader.GetMod("ElementsAwoken");
-            Player player = Main.player[Main.myPlayer];
-            var modPlayer = player.GetModPlayer<AwakenedPlayer>();
-            if (Main.LocalPlayer.ghost)
-            {
-                return;
-            }
-            if (!player.ghost && MyWorld.awakenedMode)
-            {
-                var info = typeof(Main).GetField("UI_ScreenAnchorX", BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Static);
-                int screenAnchorX = (int)info.GetValue(null);
-
-                Texture2D backgroundTexture = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityUI").Value;
-                int barPosLeft = 415 + screenAnchorX;
-                Main.spriteBatch.Draw(backgroundTexture, new Rectangle(barPosLeft, 48, backgroundTexture.Width, backgroundTexture.Height), null, Color.White, 0f, new Vector2(backgroundTexture.Width / 2, backgroundTexture.Height / 2), SpriteEffects.None, 0f);
-
-                // above 40% sanity
-                if (modPlayer.sanity >= modPlayer.sanityMax * 0.4f)
-                {
-                    Texture2D barTexture = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBar").Value;
-                    Rectangle barDest = new Rectangle(barPosLeft + 11, 48, (int)(barTexture.Width * ((float)modPlayer.sanity / (float)modPlayer.sanityMax)), barTexture.Height);
-                    Rectangle barLength = new Rectangle(0, 0, (int)(barTexture.Width * ((float)modPlayer.sanity / (float)modPlayer.sanityMax)), barTexture.Height);
-                    Main.spriteBatch.Draw(barTexture, barDest, barLength, Color.White, 0f, new Vector2(barTexture.Width / 2, barTexture.Height / 2), SpriteEffects.None, 0f);
-                }
-                else
-                {
-                    Texture2D barTexture = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBarDistorted").Value;
-                    int barHeight = 28;
-                    Rectangle barDest = new Rectangle(barPosLeft + 11, 48, (int)(barTexture.Width * ((float)modPlayer.sanity / (float)modPlayer.sanityMax)), barHeight);
-                    Rectangle barLength = new Rectangle(0, barHeight * modPlayer.sanityGlitchFrame, (int)(barTexture.Width * ((float)modPlayer.sanity / (float)modPlayer.sanityMax)), barHeight);
-                    Main.spriteBatch.Draw(barTexture, barDest, barLength, Color.White, 0f, new Vector2(barTexture.Width / 2, barHeight / 2), SpriteEffects.None, 0f);
-                }
-                if (modPlayer.sanityRegen != 0)
-                {
-                    Texture2D arrowTexture = ModContent.Request<Texture2D>("ElementsAwoken/Extra/SanityArrow").Value;
-                    int arrowHeight = 26;
-                    Rectangle barDest = new Rectangle(barPosLeft + 74, 46, arrowTexture.Width, arrowHeight);
-                    Rectangle barLength = new Rectangle(0, arrowHeight * modPlayer.sanityArrowFrame, arrowTexture.Width, arrowHeight);
-                    SpriteEffects doFlip = modPlayer.sanityRegen < 0 ? SpriteEffects.None : SpriteEffects.FlipVertically;
-                    Main.spriteBatch.Draw(arrowTexture, barDest, barLength, Color.White, 0f, new Vector2(arrowTexture.Width / 2, arrowHeight / 2), doFlip, 0f);
-                }
-                DynamicSpriteFont fontType = FontAssets.MouseText.Value;
-                string text = "Sanity: " + modPlayer.sanity + "/" + modPlayer.sanityMax;
-                Vector2 textSize = fontType.MeasureString(text);
-                float textPositionLeft = barPosLeft - textSize.X / 2;
-                DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, fontType, text, new Vector2(textPositionLeft, 6f), new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), 0f, default(Vector2), 1f, SpriteEffects.None, 0f);
-            }
-        }
         public static void DrawInsanityOverlay()
         {
             Mod mod = ModLoader.GetMod("ElementsAwoken");
@@ -953,9 +707,10 @@ namespace ElementsAwoken
                             }
                         }
                         if (whichInfoDrawing >= 0)
-                        {
+                        {                   
+                            //иконки
                             Texture2D tex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EAInfo" + whichInfoDrawing).Value;
-                            Vector2 vector = new Vector2((float)iconPosX, (float)(iconPosY + 74 + distBetweenInfo * amountOfInfoActive + 52));
+                            Vector2 vector = new Vector2((float)iconPosX - 50, (float)(iconPosY + 78 + distBetweenInfo * amountOfInfoActive + 52));
 
                             Color white = Color.White;
                             bool flag14 = false;
@@ -1041,12 +796,11 @@ namespace ElementsAwoken
                                 {
                                     black = new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor);
                                 }
-                                /*if (i > num2 && i < num2 + 2)
-                                {
-                                    black = new Color((int)(black.R / 3), (int)(black.G / 3), (int)(black.B / 3), (int)(black.A / 3));
-                                }*/
 
-                                DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, text2, new Vector2((float)(iconPosX + num32), (float)(iconPosY + 74 + distBetweenInfo * amountOfInfoActive + num33 + 48)), black, 0f, default(Vector2), vector2, SpriteEffects.None, 0f);
+                                int offsetX = -47;
+                                int offsetY = 6;
+                                // текст
+                                DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, text2, new Vector2(iconPosX + num32 + offsetX, iconPosY + 74 + distBetweenInfo * amountOfInfoActive + num33 + 48 + offsetY), black, 0f, default(Vector2), vector2, SpriteEffects.None, 0f);
                             }
                         }
                         if (!string.IsNullOrEmpty(text))
@@ -1060,8 +814,10 @@ namespace ElementsAwoken
                             {
                                 drawTextPos.X -= FontAssets.MouseText.Value.MeasureString(text).X; // to stop it drawing off the side
                             }
-
-                            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, text, drawTextPos.X, drawTextPos.Y, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), Color.Black, new Vector2());
+                            int offsetX = -0;
+                            int offsetY = -0;
+                            // при наводке
+                            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, text, drawTextPos.X + offsetX, drawTextPos.Y + offsetY, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), Color.Black, new Vector2());
                         }
                     }
                 }
@@ -1071,109 +827,36 @@ namespace ElementsAwoken
         {
             Player player = Main.player[Main.myPlayer];
             int num = 0;
-            if (!player.hideInfo[0] && player.accWatch > 0)
-            {
-                num++;
-            }
-            if (!player.hideInfo[1] && player.accWeatherRadio)
-            {
-                num++;
-            }
-            if (!player.hideInfo[2] && player.accFishFinder)
-            {
-                num++;
-            }
-            if (!player.hideInfo[3] && player.accCompass > 0)
-            {
-                num++;
-            }
-            if (!player.hideInfo[4] && player.accDepthMeter > 0)
-            {
-                num++;
-            }
-            if (!player.hideInfo[5] && player.accThirdEye)
-            {
-                num++;
-            }
-            if (!player.hideInfo[6] && player.accJarOfSouls)
-            {
-                num++;
-            }
-            if (!player.hideInfo[7] && player.accCalendar)
-            {
-                num++;
-            }
-            // where tf is 8?
-            if (!player.hideInfo[9] && player.accStopwatch)
-            {
-                num++;
-            }
-            if (!player.hideInfo[10] && player.accOreFinder)
-            {
-                num++;
-            }
-            if (!player.hideInfo[11] && player.accCritterGuide)
-            {
-                num++;
-            }
-            if (!player.hideInfo[12] && player.accDreamCatcher)
-            {
-                num++;
-            }
+            if (!player.hideInfo[0] && player.accWatch > 0) num++;
+            if (!player.hideInfo[1] && player.accWeatherRadio) num++;
+            if (!player.hideInfo[2] && player.accFishFinder)  num++;
+            if (!player.hideInfo[3] && player.accCompass > 0) num++;
+            if (!player.hideInfo[4] && player.accDepthMeter > 0)num++;
+            if (!player.hideInfo[5] && player.accThirdEye) num++;
+            if (!player.hideInfo[6] && player.accJarOfSouls) num++;
+            if (!player.hideInfo[7] && player.accCalendar) num++;
+            if (!player.hideInfo[9] && player.accStopwatch) num++;
+            if (!player.hideInfo[10] && player.accOreFinder)num++;
+            if (!player.hideInfo[11] && player.accCritterGuide) num++;
+            if (!player.hideInfo[12] && player.accDreamCatcher) num++;
             return num;
         }
         private int CountEquippedInfo()
         {
             Player player = Main.player[Main.myPlayer];
             int num = 0;
-            if (player.accWatch > 0)
-            {
-                num++;
-            }
-            if (player.accWeatherRadio)
-            {
-                num++;
-            }
-            if (player.accFishFinder)
-            {
-                num++;
-            }
-            if (player.accCompass > 0)
-            {
-                num++;
-            }
-            if (player.accDepthMeter > 0)
-            {
-                num++;
-            }
-            if (player.accThirdEye)
-            {
-                num++;
-            }
-            if (player.accJarOfSouls)
-            {
-                num++;
-            }
-            if (player.accCalendar)
-            {
-                num++;
-            }
-            if (player.accStopwatch)
-            {
-                num++;
-            }
-            if (player.accOreFinder)
-            {
-                num++;
-            }
-            if (player.accCritterGuide)
-            {
-                num++;
-            }
-            if (player.accDreamCatcher)
-            {
-                num++;
-            }
+            if (player.accWatch > 0) num++;
+            if (player.accWeatherRadio) num++;
+            if (player.accFishFinder) num++;
+            if (player.accCompass > 0) num++;
+            if (player.accDepthMeter > 0) num++;
+            if (player.accThirdEye) num++;
+            if (player.accJarOfSouls) num++;
+            if (player.accCalendar) num++;
+            if (player.accStopwatch) num++;
+            if (player.accOreFinder) num++;
+            if (player.accCritterGuide) num++;
+            if (player.accDreamCatcher) num++;
             return num;
         }
         internal static void DrawStringOutlined(SpriteBatch spriteBatch, string text, Vector2 position, Color color, float scale)
@@ -1551,139 +1234,6 @@ namespace ElementsAwoken
             else if (timer > duration - (duration / 8)) return 1 - (timer - (duration - duration / 8f)) / (duration / 8f); // probably a better way to do this
             else return 1f;
         }
-        //boss checklist
-            //float wasteland = 2.5f;
-            //float toySlime = 5.1f;
-            //float infernace = 5.5f;
-            //float observer = 6.1f;
-            //float scourge = 9.3f;
-            //float regaroth = 9.4f;
-            ////float celestials = 10.99f;
-            //float permafrost = 11.1f;
-            //float obsidious = 11.2f;
-            //float aqueous = 12.1f;
-            //float keepers = 14.1f;
-            //float guardian = 14.2f;
-            //float dotv = 14.4f;
-            //float shadeWyrm = 14.4f;
-            //float volcanox = 14.5f;
-            //float vlevi = 15f;
-            //float azana = 15.5f;
-            //float radiantRain = 15.75f;
-            //float ancients = 16f;
-        //    Mod bossChecklist = ModLoader.GetMod("BossChecklist");
-        //    if (bossChecklist != null)
-        //    {
-        //        /*bossChecklist.Call("AddMiniBoss", toySlime, NPCType("ToySlime"), this, "Toy Slime", (Func<bool>)(() => MyWorld.downedToySlime), ItemType("ToySlimeSummon"), 
-        //            default,
-        //            "The Toy Slime spawns naturally if it has not been defeated already and the player has atleast 140 life and 7 defence. Use a[i: " + ItemType("ToySlimeSummon") + "] to increase the chance of it spawning",
-        //            "The Toy Slime hops away.", default, default, true);*/
-
-        //        bossChecklist.Call("AddBoss", wasteland, NPCType("Wasteland"), this, "Wasteland", (Func<bool>)(() => MyWorld.downedWasteland), ItemType("WastelandSummon"),
-        //            "Wasteland burrows back into the sand...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", infernace, NPCType("Infernace"), this, "Infernace", (Func<bool>)(() => MyWorld.downedInfernace), ItemType("InfernaceSummon"),
-        //            "Infernace fades into the heatwaves...", default, default, true);
-
-        //        bossChecklist.Call("AddMiniBoss", observer, NPCType("CosmicObserver"), this, "Cosmic Observer", (Func<bool>)(() => MyWorld.downedCosmicObserver), ItemType("CosmicObserverSummon"),
-        //            "The Cosmic Observer retreats into the clouds...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", scourge, NPCType("ScourgeFighter"), this, "Scourge Fighter", (Func<bool>)(() => MyWorld.downedScourgeFighter), ItemType("ScourgeFighterSummon"),
-        //            new List<int>() { ItemType("ScourgeFighterTrophy") },
-        //            new List<int>() { ItemType("ScourgeDrive"), ItemType("ScourgeSword"), ItemType("ScourgeFighterMachineGun"), ItemType("ScourgeFighterRocketLauncher"), ItemType("SignalBooster"), ItemType("ScourgeFighterBag") },
-        //            "Use the [i:" + ItemType("ScourgeFighterSummon") + "] at nighttime.",
-        //            "The Scourge Fighter flies into the night...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", regaroth, NPCType("RegarothHead"), this, "Regaroth", (Func<bool>)(() => MyWorld.downedRegaroth), ItemType("RegarothSummon"),
-        //            new List<int>() { ItemType("RegarothMask"), ItemType("RegarothTrophy") },
-        //            new List<int>() { ItemType("EnergyStaff"), ItemType("EyeOfRegaroth"), ItemType("Starstruck"), ItemType("StoneOfHope"), ItemType("EnergyWeaversHelm"), ItemType("EnergyWeaversBreastplate"), ItemType("EnergyWeaversLeggings"), ItemType("RegarothBag") },
-        //            "Use a [i:" + ItemType("RegarothSummon") + "] on a sky island",
-        //            "Regaroth retreats into the clouds", default, default, true);
-
-        //        /*bossChecklist.Call("AddBoss", celestials, NPCType("Astra"), this, "The Celestials", (Func<bool>)(() => MyWorld.downedCelestial), ItemType("CelestialSummon"),
-        //            new List<int>() { ItemType("CelestialsMask"), ItemType("TheCelestialTrophy"), ItemType("CelestialCrown") },
-        //            new List<int>() { ItemType("Celestia"), ItemType("CelestialInferno"), ItemType("EyeballStaff"), ItemType("Solus"), ItemType("CelestialFlame"), ItemType("RegarothBag") },
-        //            "Use an [i:" + ItemType("CelestialSummon") + "] at nighttime",
-        //            "The Celestials dissapate into energy...", default, default, true);*/
-
-        //        bossChecklist.Call("AddBoss", obsidious, NPCType("Obsidious"), this, "Obsidious", (Func<bool>)(() => MyWorld.downedObsidious), ItemType("ObsidiousSummon"),
-        //            new List<int>() { ItemType("ObsidiousMask"), ItemType("ObsidiousTrophy"), ItemType("ObsidiousRobes"), ItemType("ObsidiousPants") },
-        //            new List<int>() { ItemType("ObsidiousWings"), ItemType("Magmarox"), ItemType("TerreneScepter"), ItemType("Ultramarine"), ItemType("VioletEdge"), ItemType("SacredCrystal"), ItemType("ObsidiousBag") },
-        //            "Use an [i:" + ItemType("ObsidiousSummon") + "] at nighttime",
-        //            "Obsidious siezes the crystal...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", permafrost, NPCType("Permafrost"), this, "Permafrost", (Func<bool>)(() => MyWorld.downedPermafrost), ItemType("PermafrostSummon"),
-        //            new List<int>() { ItemType("PermafrostMask"), ItemType("PermafrostTrophy") },
-        //            new List<int>() { ItemType("Flurry"), ItemType("Frigidblaster"), ItemType("IceReaver"), ItemType("IceWrath"), ItemType("Snowdrift"), ItemType("SoulOfTheFrost"), ItemType("PermafrostBag") },
-        //            "Use an[i: " + ItemType("PermafrostSummon") + "] in the snow",
-        //            "Permafrost fades into a blizzard...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", aqueous, NPCType("Aqueous"), this, "Aqueous", (Func<bool>)(() => MyWorld.downedAqueous), ItemType("AqueousSummon"),
-        //            new List<int>() { ItemType("AqueousTrophy") },
-        //            new List<int>() { ItemType("BrinyBuster"), ItemType("BubblePopper"), ItemType("HighTide"), ItemType("OceansRazor"), ItemType("TheWave"), ItemType("Varee"), ItemType("AqueousMask"), ItemType("AqueousBag") },
-        //            "Use a [i:" + ItemType("AqueousSummon") + "] in the ocean",
-        //            "Aqueous sinks deep into the ocean...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", keepers, new List<int>() { NPCType("TheEye"), NPCType("AncientWyrmHead") }, this, "Temple Keepers", (Func<bool>)(() => (MyWorld.downedAncientWyrm && MyWorld.downedEye)), ItemType("AncientDragonSummon"),
-        //            default,
-        //            new List<int>() { ItemType("TemplesCrystal"), ItemType("TheAllSeer"), ItemType("WyrmClaw"), ItemType("GazeOfInferno"), ItemType("Flare"), ItemType("TempleKeepersBag") },
-        //            "Use the [i:" + ItemType("AncientDragonSummon") + "] at nighttime",
-        //            default, default, default, true);
-
-        //        bossChecklist.Call("AddBoss", guardian, new List<int>() { NPCType("TheGuardian"), NPCType("TheGuardianFly") }, this, "The Guardian", (Func<bool>)(() => MyWorld.downedGuardian), ItemType("GuardianSummon"),
-        //            new List<int>() { ItemType("TheGuardianMask"), ItemType("TheGuardianTrophy") },
-        //            new List<int>() { ItemType("Godslayer"), ItemType("InfernoStorm"), ItemType("TemplesWrath"), ItemType("FieryCore"), ItemType("GuardianBag") },
-        //            "Use an [i:" + ItemType("GuardianSummon") + "] at nighttime",
-        //            "The Guardian vanishes in a scene of flames", default, default, true);
-
-        //        bossChecklist.Call("AddEvent", dotv, new List<int>() { NPCType("Immolator"), NPCType("ReaverSlime"), NPCType("ZergCaster"), NPCType("VoidKnight"), NPCType("EtherealHunter"), NPCType("VoidCrawler"), NPCType("VoidGolem") },
-        //            this, "Dawn of the Void", (Func<bool>)(() => MyWorld.downedVoidEvent), ItemType("VoidEventSummon"), ItemType("ShadeEgg"), new List<int>() { ItemType("CastersCurse"), ItemType("CrimsonShade"), ItemType("LifesLament"), ItemType("CrimsonShade"), ItemType("VoidJelly") },
-        //            "Use a [i:" + ItemType("VoidEventSummon") + "] at nighttime before 10pm. The item can be used during the day but the event wont start until night time, where it will start instantly.",
-        //            default, default, /*"ElementsAwoken/NPCs/VoidEventEnemies/Phase2/ShadeWyrm/ShadeWyrmHead_Head_Boss"*/default, default);
-
-
-        //        bossChecklist.Call("AddMiniBoss", shadeWyrm, NPCType("ShadeWyrmHead"), this, "Shade Wyrm", (Func<bool>)(() => MyWorld.downedShadeWyrm), ItemType("VoidEventSummon"),
-        //            ItemType("ShadeEgg"),
-        //            new List<int>() { ItemType("LifesLament"), ItemType("CrimsonShade") },
-        //            "The Shade Wyrm spawns during the Dawn of the Void after midnight",
-        //            default, default, default, true);
-
-        //        bossChecklist.Call("AddBoss", volcanox, NPCType("Volcanox"), this, "Volcanox", (Func<bool>)(() => MyWorld.downedVolcanox), ItemType("VolcanoxSummon"),
-        //            new List<int>() { ItemType("VolcanoxMask"), ItemType("VolcanoxTrophy") },
-        //            new List<int>() { ItemType("Combustia"), ItemType("EmberBurst"), ItemType("FatesFlame"), ItemType("FirestarterStaff"), ItemType("Hearth"), ItemType("CharredInsignia"), ItemType("VolcanoxBag") },
-        //            "Use a [i:" + ItemType("VolcanoxSummon") + "] in the underworld",
-        //            "Volcanox sinks into the lava...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", vlevi, NPCType("VoidLeviathanHead"), this, "Void Leviathan", (Func<bool>)(() => MyWorld.downedVoidLeviathan), ItemType("VoidLeviathanSummon"),
-        //            new List<int>() { ItemType("VoidLeviathanMask"), ItemType("VoidLeviathanTrophy") },
-        //            new List<int>() { ItemType("BladeOfTheNight"), ItemType("BreathOfDarkness"), ItemType("CosmicWrath"), ItemType("EndlessAbyssBlaster"), ItemType("ExtinctionBow"), ItemType("LightsAffliction"), ItemType("PikeOfEternalDespair"), ItemType("Reaperstorm"), ItemType("VoidLeviathansAegis"), ItemType("AmuletOfDestruction"), ItemType("VoidLeviathanBag"), ItemType("VoidWalkersGreatmask"), ItemType("VoidWalkersHelm"), ItemType("VoidWalkersVisage"), ItemType("VoidWalkersHood"), ItemType("VoidWalkersBreastplate"), ItemType("VoidWalkersLeggings") },
-        //            "Use a [i:" + ItemType("VoidLeviathanSummon") + "] at nighttime",
-        //            "The Void Leviathan descends into shadows...", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", azana, new List<int>() { NPCType("Azana"), NPCType("AzanaEye") }, this, "Azana", (Func<bool>)(() => (MyWorld.downedAzana || MyWorld.sparedAzana)), ItemType("AzanaSummon"),
-        //            new List<int>() { ItemType("AzanaMask"), ItemType("AzanaTrophy") },
-        //            new List<int>() { ItemType("Anarchy"), ItemType("ChaoticGaze"), ItemType("ChaoticImpaler"), ItemType("EntropicCoating"), ItemType("GleamOfAnnhialation"), ItemType("Pandemonium"), ItemType("PurgeRifle"), ItemType("RingOfChaos") },
-        //            "Use a [i:" + ItemType("AzanaSummon") + "] in at nighttime",
-        //            default, default, default, true);
-
-        //        bossChecklist.Call("AddEvent", radiantRain, new List<int>() { },
-        //           this, "Radiant Rain", (Func<bool>)(() => MyWorld.completedRadiantRain), ModContent.ItemType<RadiantRainSummon>(), default, new List<int>() { },
-        //           "Has a 25% chance to occur instead of rain or can be summoned using a [i:" + ModContent.ItemType<RadiantRainSummon>() + "]",
-        //           default, default, default, default);
-
-        //        bossChecklist.Call("AddMiniBoss", radiantRain, ModContent.NPCType<RadiantMaster>(), this, "Radiant Master", (Func<bool>)(() => MyWorld.downedRadiantMaster), default,
-        //            default,
-        //            new List<int>() { },
-        //            "The Radiant Master spawns near the end of the Radiant Rain",
-        //            "The Radiant Master bursts into stars", default, default, true);
-
-        //        bossChecklist.Call("AddBoss", ancients, new List<int>() { NPCType("AncientAmalgam"), NPCType("Izaris"), NPCType("Kirvein"), NPCType("Xernon"), NPCType("Krecheus") }, this, "The Ancients", (Func<bool>)(() => MyWorld.downedAncients), ItemType("AncientsSummon"),
-        //            default,
-        //            new List<int>() { ItemType("GiftOfTheArchaic"), ItemType("Chromacast"), ItemType("Shimmerspark"), ItemType("TheFundamentals"), ItemType("CrystallineLocket"), ItemType("AncientsBag") },
-        //            "Speak to the storyteller or use a [i:" + ItemType("AncientsSummon") + "]",
-        //            "The Ancients return to their slumber", default, default, true);
-
-        //    }
         //    Mod fargos = ModLoader.GetMod("Fargowiltas");
         //    if (fargos != null)
         //    {
@@ -1774,12 +1324,6 @@ namespace ElementsAwoken
                     int energy = reader.ReadInt32();
                     energyPlayer.energy = energy;
                     break;
-                //case ElementsAwokenMessageType.Storyteller:
-                //    if (Main.npc[reader.ReadInt32()].ModNPC is Storyteller townNPC && townNPC.npc.active)
-                //    {
-                //        townNPC.HandlePacket(reader);
-                //    }
-                //    break;
                 default:
                     Logger.WarnFormat("Elements Awoken: Unknown Message type: {0}", msgType);
                     break;

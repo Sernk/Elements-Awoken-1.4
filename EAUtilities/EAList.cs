@@ -1,4 +1,7 @@
-﻿using ElementsAwoken.Content.Items.Artifacts;
+﻿using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase1;
+using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2;
+using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
+using ElementsAwoken.Content.Items.Artifacts;
 using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
 using ElementsAwoken.Content.Items.BossDrops.Azana;
@@ -29,6 +32,7 @@ using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
+using ElementsAwoken.Content.NPCs.Elementals;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
 using System;
 using System.Collections.Generic;
@@ -149,6 +153,9 @@ namespace ElementsAwoken.EAUtilities
         #region VanilaBossBag
         public static readonly List<int> VBB = [ItemID.BossBagBetsy, ItemID.BossBagDarkMage, ItemID.BossBagOgre, ItemID.BrainOfCthulhuBossBag, ItemID.CultistBossBag, ItemID.DeerclopsBossBag, ItemID.EaterOfWorldsBossBag, ItemID.EyeOfCthulhuBossBag, ItemID.FairyQueenBossBag, ItemID.FishronBossBag, ItemID.GolemBossBag, ItemID.KingSlimeBossBag, ItemID.MoonLordBossBag, ItemID.PlanteraBossBag, ItemID.QueenBeeBossBag, ItemID.QueenSlimeBossBag, ItemID.SkeletronBossBag, ItemID.SkeletronPrimeBossBag, ItemID.TwinsBossBag, ItemID.WallOfFleshBossBag];
         #endregion
+        #region VanilaBoss
+        public static readonly List<int> VB = [EyeofCthulhu, EaterofWorldsHead, EaterofWorldsBody, EaterofWorldsTail, BrainofCthulhu, SkeletronHead, QueenBee, KingSlime, WallofFlesh, TheDestroyer, Retinazer, Spazmatism, SkeletronPrime, Plantera, Golem, GolemHead, DukeFishron, QueenSlimeBoss, HallowBoss, Deerclops, CultistBoss, MoonLordCore];
+        #endregion
         #region Biome
         #region Desert
         public static readonly List<int> DeserNPC = [Mummy, DarkMummy, LightMummy, BloodMummy, Antlion, GiantFlyingAntlion, FlyingAntlion, GiantWalkingAntlion, LarvaeAntlion, WalkingAntlion, DuneSplicerHead, DuneSplicerBody, DuneSplicerTail, TombCrawlerHead, TombCrawlerBody, TombCrawlerTail, DesertGhoul, DesertGhoulCorruption, DesertGhoulCrimson, DesertGhoulHallow, DesertLamiaLight, DesertLamiaDark, DesertScorpionWalk, DesertScorpionWall, DesertBeast, DesertDjinn, SandElemental, SandShark, SandsharkCorrupt, SandsharkCrimson, SandsharkHallow, Tumbleweed, Vulture];
@@ -165,6 +172,9 @@ namespace ElementsAwoken.EAUtilities
         #endregion
         #region Beach
         public static readonly List<int> BeachNPC = [BlueJellyfish, PinkJellyfish, Shark, Crab, GreenJellyfish, SeaSnail, Squid, DukeFishron, Sharkron, Sharkron2];
+        #endregion
+        #region Void
+        public static readonly List<int> VoidNPC = [ModContent.NPCType<Immolator>(), ModContent.NPCType<ReaverSlime>(), ModContent.NPCType<VoidKnight>(), ModContent.NPCType<VoidElemental>(), ModContent.NPCType<AbyssSkull>(), ModContent.NPCType<AbyssSkullette>(), ModContent.NPCType<VoidFly>(), ModContent.NPCType<AccursedFlier>(), ModContent.NPCType<DimensionalHive>(), ModContent.NPCType<ZergCaster>(), ModContent.NPCType<ShadeWyrmHead>(), ModContent.NPCType<ShadeWyrmBody>(), ModContent.NPCType<ShadeWyrmTail>(), ModContent.NPCType<EtherealHunter>(), ModContent.NPCType<VoidCrawler>(), ModContent.NPCType<VoidGolem>()];
         #endregion
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()
