@@ -44,14 +44,6 @@ namespace ElementsAwoken.Content.Items.Elements.Desert
         }
         public override void AddRecipes()
         {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemType<DesertEssence>(), 4);
-            recipe.AddRecipeGroup(EARecipeGroups.SandGroup, 25);
-            recipe.AddRecipeGroup(EARecipeGroups.SandstoneGroup, 10);
-            recipe.AddIngredient(ItemID.LightningBoots);
-            recipe.AddTile(TileType<Tiles.Crafting.ElementalForge>());
-            recipe.Register();
-
             Recipe recipe1 = CreateRecipe();
             recipe1.AddIngredient(ItemType<DesertEssence>(), 4);
             recipe1.AddRecipeGroup(EARecipeGroups.SandGroup, 25);

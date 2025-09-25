@@ -73,6 +73,7 @@ namespace ElementsAwoken.Content.Items.Accessories
             player.lavaImmune = true;
             player.noFallDmg = true;
             player.blackBelt = true;
+            player.shimmerImmune = true;
         }
         public override void UpdateVanity(Player player)
         {

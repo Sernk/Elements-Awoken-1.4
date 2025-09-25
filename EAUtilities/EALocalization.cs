@@ -70,7 +70,6 @@ namespace ElementsAwoken.EAUtilities
         public static string ChaosHeart => Language.GetTextValue("Mods.ElementsAwoken.Resurs.ChaosHeart");
         public static string CompressorHeart => Language.GetTextValue("Mods.ElementsAwoken.Resurs.CompressorHeart");
         public static string LunarStarMana => Language.GetTextValue("Mods.ElementsAwoken.Resurs.LunarStarMana");
-
         #endregion
         #region Tooltips
         #region ItemEnergy
@@ -331,7 +330,6 @@ namespace ElementsAwoken.EAUtilities
         public string InfernaceGuardian1 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian1");
         public string InfernaceGuardian2 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian2");
         public string InfernaceGuardian3 => Language.GetTextValue("Mods.ElementsAwoken.Said.InfernaceGuardian3");
-
         #endregion
         #region SetBonus
         public string SetBonusToolTips => Language.GetTextValue("Mods.ElementsAwoken.SetBonus.SetBonusToolTips");

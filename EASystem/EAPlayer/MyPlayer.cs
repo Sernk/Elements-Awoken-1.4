@@ -2241,14 +2241,14 @@ namespace ElementsAwoken.EASystem.EAPlayer
 
         private bool InstalledPack()
         {
-            //if (ElementsAwoken.eaMusicEnabled)
-            //{
-            //    return true;
-            //}
-            //if (ElementsAwoken.eaRetroMusicEnabled)
-            //{
-            //    return true;
-            //}
+            if (ElementsAwoken.eaMusicEnabled)
+            {
+                return true;
+            }
+            if (ElementsAwoken.eaRetroMusicEnabled)
+            {
+                return true;
+            }
             return false;
         }
         public override void PostItemCheck()

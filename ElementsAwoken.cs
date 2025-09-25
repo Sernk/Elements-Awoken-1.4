@@ -154,10 +154,8 @@ namespace ElementsAwoken
 
             calamityEnabled = ModLoader.TryGetMod("CalamityMod", out Mod CalamityMod);
             recipebrowser = ModLoader.TryGetMod("RecipeBrowser", out Mod RecipeBrowser);
-            //bossChecklistEnabled = ModLoader.GetMod("BossChecklist") != null;
-            //ancientsAwakenedEnabled = ModLoader.GetMod("AncientsAwakened") != null;
-            //eaMusicEnabled = ModLoader.GetMod("EAMusic") != null;
-            //eaRetroMusicEnabled = ModLoader.GetMod("EARetroMusic") != null;
+            eaRetroMusicEnabled = ModLoader.TryGetMod("EARetroMusic", out Mod EARetroMusic);
+            eaMusicEnabled = ModLoader.TryGetMod("EAMusic", out Mod EAMusic);
             WikithisEnabled = ModLoader.TryGetMod("Wikithis", out Mod wikithis);
             if (wikithis != null && !Main.dedServ)
             {

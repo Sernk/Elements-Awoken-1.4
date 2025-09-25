@@ -1,5 +1,7 @@
 ﻿using ElementsAwoken.Content.Items.Accessories.Emblems;
+using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Materials;
+using System.Linq;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -14,6 +16,18 @@ namespace ElementsAwoken.EASystem.EARecipeSystem
             {
                 recipe.AddOnCraftCallback(EAOnCraft.SanityUPOnCraft);
             }
+            foreach (var recipe in Main.recipe.ToList())
+            {
+                if (recipe.createItem.type == ItemID.TerrasparkBoots)
+                {
+                    recipe.DisableRecipe();
+                }
+            }
+            Recipe srecipe = Recipe.Create(ItemID.TerrasparkBoots);
+            srecipe.AddIngredient(ModContent.ItemType<DesertTrailers>());
+            srecipe.AddIngredient(ItemID.LavaCharm);
+            srecipe.AddTile(TileID.TinkerersWorkbench);
+            srecipe.Register();
         }
         public override void AddRecipes()
         {

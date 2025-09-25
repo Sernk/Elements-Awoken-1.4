@@ -51,6 +51,7 @@ namespace ElementsAwoken.Content.Items.Elements.Frost
             player.noFallDmg = true;
             player.lavaMax += 420;
             player.wingTimeMax = 180;
+            player.shimmerImmune = true;
         }
         public override void AddRecipes()
         {

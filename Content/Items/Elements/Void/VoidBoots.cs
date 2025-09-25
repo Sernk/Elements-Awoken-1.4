@@ -58,6 +58,7 @@ namespace ElementsAwoken.Content.Items.Elements.Void
             player.blackBelt = true;
             player.spikedBoots = 2;
             player.wingTimeMax = 220;
+            player.shimmerImmune = true;
             modPlayer.voidBoots = !hideVisual;
         }
         public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising, ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend)        

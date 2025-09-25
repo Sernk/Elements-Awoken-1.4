@@ -50,6 +50,7 @@ namespace ElementsAwoken.Content.Items.Elements.Water
             player.noFallDmg = true;
             player.fireWalk = true;
             player.lavaMax += 420;
+            player.shimmerImmune = true;
             player.wingTimeMax = 180;
         }
         public override void AddRecipes()

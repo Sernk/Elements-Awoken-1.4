@@ -42,14 +42,14 @@ namespace ElementsAwoken.Content.Items.Elements.Fire
             player.rocketBoots = 1;
             player.fireWalk = true;
             player.lavaMax += 420;
+            player.shimmerImmune = true;
         }
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
             recipe.AddIngredient(ItemType<FireEssence>(), 5);
             recipe.AddIngredient(ItemID.HellstoneBar, 10);
-            recipe.AddIngredient(ItemID.LavaCharm);
-            recipe.AddIngredient(ItemType<DesertTrailers>(), 1);
+            recipe.AddIngredient(ItemID.TerrasparkBoots);
             recipe.AddTile(TileType<Tiles.Crafting.ElementalForge>());
             recipe.Register();
         }

@@ -52,6 +52,7 @@ namespace ElementsAwoken.Content.Items.Elements.Sky
             player.wingTimeMax = 160;
             player.noFallDmg = true;
             player.fireWalk = true;
+            player.shimmerImmune = true;
         }
         public override void UpdateVanity(Player player)
         {
