@@ -32,6 +32,7 @@ using Terraria.GameInput;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
+using Terraria.IO;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
@@ -708,7 +709,10 @@ namespace ElementsAwoken
                         {                   
                             //иконки
                             Texture2D tex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EAInfo" + whichInfoDrawing).Value;
-                            Vector2 vector = new Vector2((float)iconPosX - 50, (float)(iconPosY + 78 + distBetweenInfo * amountOfInfoActive + 52));
+                            int a = 0; int b;
+                            if ((Language.ActiveCulture.Name == "ru-RU")) { a = 50; b = 78; }
+                            else { a += 0; b = 78; }
+                            Vector2 vector = new((float)iconPosX - a, (float)(iconPosY + b + distBetweenInfo * amountOfInfoActive + 52));
 
                             Color white = Color.White;
                             bool flag14 = false;
@@ -794,9 +798,10 @@ namespace ElementsAwoken
                                 {
                                     black = new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor);
                                 }
-
-                                int offsetX = -47;
-                                int offsetY = 6;
+                                int offsetX = 0;
+                                int offsetY = 0;
+                                if ((Language.ActiveCulture.Name == "ru-RU")) { offsetX = -47; offsetY = 6; }
+                                else { offsetX += 0; offsetY = 6; }
                                 // текст
                                 DynamicSpriteFontExtensionMethods.DrawString(Main.spriteBatch, FontAssets.MouseText.Value, text2, new Vector2(iconPosX + num32 + offsetX, iconPosY + 74 + distBetweenInfo * amountOfInfoActive + num33 + 48 + offsetY), black, 0f, default(Vector2), vector2, SpriteEffects.None, 0f);
                             }

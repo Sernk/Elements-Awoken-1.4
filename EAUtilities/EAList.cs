@@ -1,6 +1,7 @@
 ﻿using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase1;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
+using ElementsAwoken.Content.Items.Accessories;
 using ElementsAwoken.Content.Items.Artifacts;
 using ElementsAwoken.Content.Items.BossDrops.Ancients;
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
@@ -18,7 +19,11 @@ using ElementsAwoken.Content.Items.BossDrops.Volcanox;
 using ElementsAwoken.Content.Items.BossDrops.Wasteland;
 using ElementsAwoken.Content.Items.BossSummons;
 using ElementsAwoken.Content.Items.Elements.Desert;
+using ElementsAwoken.Content.Items.Elements.Fire;
+using ElementsAwoken.Content.Items.Elements.Frost;
 using ElementsAwoken.Content.Items.Elements.Sky;
+using ElementsAwoken.Content.Items.Elements.Void;
+using ElementsAwoken.Content.Items.Elements.Water;
 using ElementsAwoken.Content.NPCs.Bosses.Ancients;
 using ElementsAwoken.Content.NPCs.Bosses.Aqueous;
 using ElementsAwoken.Content.NPCs.Bosses.Azana;
@@ -36,9 +41,11 @@ using ElementsAwoken.Content.NPCs.Elementals;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
 using System;
 using System.Collections.Generic;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ID.NPCID;
+using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.EAUtilities
 {
@@ -100,6 +107,10 @@ namespace ElementsAwoken.EAUtilities
         #region Bosses
         public static readonly List<int> BossName = [ModContent.NPCType<AncientWyrmHead>(), ModContent.NPCType<TheEye>(), ModContent.NPCType<Aqueous>(), ModContent.NPCType<AzanaEye>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Azana>(), ModContent.NPCType<Content.NPCs.Bosses.CosmicObserver.CosmicObserver>(), ModContent.NPCType<TheGuardian>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<TheGuardianFly>(), ModContent.NPCType<Infernace>(), ModContent.NPCType<VoidLeviathanHead>(), ModContent.NPCType<Wasteland>(), ModContent.NPCType<ObsidiousHuman>(), ModContent.NPCType<Obsidious>(), ModContent.NPCType<Permafrost>(), ModContent.NPCType<RegarothHead>(), ModContent.NPCType<ScourgeFighter>(), ModContent.NPCType<ToySlime>(), ModContent.NPCType<Volcanox>(), ModContent.NPCType<Izaris>(), ModContent.NPCType<Kirvein>(), ModContent.NPCType<Krecheus>(), ModContent.NPCType<Xernon>(), ModContent.NPCType<ShardBase>()];
         #endregion;
+        #region EABoots
+        public static readonly List<int> EABoots = [ItemType<DesertTrailers>(), ItemType<FireTreads>(), ItemType<SkylineWhirlwind>(), ItemType<FrostWalkers>(), ItemType<AqueousWaders>(), ItemType<VoidBoots>(), ItemType<DesertTrailers>(), ItemType<NyanBoots>()];
+        public static readonly List<int> VBoots = [ItemID.HermesBoots, ItemID.SpectreBoots, ItemID.LightningBoots, ItemID.FrostsparkBoots, ItemID.SandBoots, ItemID.TerrasparkBoots];
+        #endregion
         #region UndownerTerraria
         public static List<Func<bool>> BossFlagsGet = new()
         {

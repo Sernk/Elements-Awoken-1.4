@@ -22,7 +22,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
         }
         public override void SetStaticDefaults()
         {
-            ArmorIDs.Head.Sets.DrawHead[Item.headSlot] = false;
+            ArmorIDs.Head.Sets.DrawHead[Item.headSlot] = true;
             ArmorIDs.Head.Sets.DrawFullHair[Item.headSlot] = true;
         }
         public override void Load()

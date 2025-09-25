@@ -1,14 +1,15 @@
 ﻿using ElementsAwoken.Content.Items.Materials;
+using ElementsAwoken.EASystem;
 using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.EARecipeSystem;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Terraria.Audio;
-using ElementsAwoken.EASystem.EARecipeSystem;
 
 namespace ElementsAwoken.Content.Items.Consumable
 {
@@ -35,17 +36,28 @@ namespace ElementsAwoken.Content.Items.Consumable
             }
             if (Main.expertMode)
             {
+                var modPlayer = player.GetModPlayer<AwakenedPlayer>();
+
                 if (MyWorld.awakenedMode)
                 {
                     Main.NewText(EALocalization.ElementalCapsule1, Color.DeepPink);
                     MyWorld.awakenedMode = false;
                     MyWorld.awakenedModeNoActive = true;
+
+                    modPlayer.storedSanity = modPlayer.sanity;
+                    modPlayer.sanity = modPlayer.sanityMax;
                 }
                 else
                 {
                     Main.NewText(EALocalization.ElementalCapsule2, Color.DeepPink);
                     MyWorld.awakenedMode = true;
                     MyWorld.awakenedModeNoActive = false;
+
+                    if (modPlayer.storedSanity >= 0)
+                    {
+                        modPlayer.sanity = modPlayer.storedSanity;
+                        modPlayer.storedSanity = -1;
+                    }
                 }
                 if (Main.netMode == NetmodeID.Server) NetMessage.SendData(MessageID.WorldData);
                 return true;

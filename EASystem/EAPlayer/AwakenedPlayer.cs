@@ -41,6 +41,7 @@ namespace ElementsAwoken.EASystem
         public int miningCounter = 0;
         public int nurseCooldown = 0;
         public int aleCD = 0;
+        public int storedSanity = -1;
 
         public override void Load()
         {
@@ -67,6 +68,7 @@ namespace ElementsAwoken.EASystem
 
         public override void ResetEffects()
         {
+            sanityIncreaser = 150;
             sanityIncreaser = 150;
             sanityRegen = 0;
             sanityDrains = [];

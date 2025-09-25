@@ -13,7 +13,7 @@ namespace ElementsAwoken.Content.Projectiles.Pets
             Projectile.height = 20;
             Projectile.width = 34;
             AIType = ProjectileID.Penguin;
-            Main.projFrames[Projectile.type] = 4;
+            Main.projFrames[Projectile.type] = 6;
             Main.projPet[Projectile.type] = true;
         }
         public override bool PreAI()
