@@ -4,23 +4,13 @@ using Terraria.ModLoader;
 
 namespace ElementsAwoken.Content.Buffs.PetBuffs
 {
-    public class LilOrange : ModBuff
+    public class LilOrange : PetBuffsClass
     {
-        public override void SetStaticDefaults()
-        {
-            Main.buffNoTimeDisplay[Type] = true;
-            Main.vanityPet[Type] = true;
-        }
+        public override int ProjType => ModContent.ProjectileType<Projectiles.Pets.LilOrange>();
         public override void Update(Player player, ref int buffIndex)
         {
-            MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
-            if (player.ownedProjectileCounts[ModContent.ProjectileType<Projectiles.Pets.LilOrange>()] > 0) modPlayer.lilOrange = true;
-            if (!modPlayer.lilOrange)
-            {
-                player.DelBuff(buffIndex);
-                buffIndex--;
-            }
-            else player.buffTime[buffIndex] = 18000;
+            base.Update(player, ref buffIndex);
+            player.GetModPlayer<MyPlayer>().lilOrange = true;
         }
     }
 }

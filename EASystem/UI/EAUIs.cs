@@ -134,22 +134,6 @@ namespace ElementsAwoken.EASystem.UI
                         InterfaceScaleType.UI);
                     layers.Insert(infoLayer, infoState);
                     #endregion
-                    //if (player.HeldItem.type == ModContent.ItemType<Railgun>())
-                    //{
-                    //    var heatBarLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
-                    //    var heatBarState = new LegacyGameInterfaceLayer("ElementsAwoken: UI2",
-                    //        delegate
-                    //        {
-                    //            ElementsAwoken.DrawHeatBar(player.HeldItem);
-                    //            return true;
-                    //        },
-                    //        InterfaceScaleType.UI);
-                    //    layers.Insert(heatBarLayer, heatBarState);
-                    //}
-
-
-
-                    // rain texture
                     if (encounter == 3)
                     {
                         TextureAssets.Rain = ModContent.Request<Texture2D>("ElementsAwoken/Extra/Rain3");
@@ -162,15 +146,6 @@ namespace ElementsAwoken.EASystem.UI
                     {
                         TextureAssets.Rain = ModContent.Request<Texture2D>("Terraria/Images" + Path.DirectorySeparatorChar.ToString() + "Rain");
                     }
-                    // infernace clouds
-                    //if (MyWorld.firePrompt > ElementsAwoken.bossPromptDelay)
-                    //{
-                    //    CloudSystem.SetCustomClouds(); 
-                    //}
-                    //else
-                    //{
-                    //    CloudSystem.ResetCloudTexture();
-                    //}
                 }
 
                 var textLayer = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Inventory"));
