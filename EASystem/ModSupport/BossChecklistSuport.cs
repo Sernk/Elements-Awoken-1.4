@@ -15,8 +15,11 @@ using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
 using ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan;
 using ElementsAwoken.Content.NPCs.Bosses.Volcanox;
 using ElementsAwoken.Content.NPCs.Bosses.Wasteland;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using Terraria;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
@@ -30,35 +33,8 @@ namespace ElementsAwoken.EASystem.ModSupport
         }
         private void DoBossChecklistIntegration()
         {
-            /* 
-            Boss Progress
-            SlimeKing = 1f;
-            EyeOfCthulhu = 2f;
-            EaterOfWorlds = 3f;
-            QueenBee = 4f;
-            Skeletron = 5f;
-            1.4_1 = 6f  
-            WallOfFlesh = 7f;
-            1.4_2 = 8f  
-            TheTwins = 9f;
-            TheDestroyer = 10f;
-            SkeletronPrime = 11f;
-            Plantera = 12f;
-            Golem = 13f;
-            DukeFishron = 14f;
-            1.4_3 = 15f  
-            LunaticCultist = 16f;
-            Moonlord = 17f;*/
-
-            if (!ModLoader.TryGetMod("BossChecklist", out Mod bossChecklistMod))
-            {
-                return;
-            }
-
-            if (bossChecklistMod.Version < new Version(1, 6))
-            {
-                return;
-            }
+            if (!ModLoader.TryGetMod("BossChecklist", out Mod bossChecklistMod)) {return; }
+            if (bossChecklistMod.Version < new Version(1, 6)) { return; }
 
             string internalName = "WastelandBoss";
             float weight = 2.5f;
@@ -67,134 +43,30 @@ namespace ElementsAwoken.EASystem.ModSupport
             int spawnItem;
             List<int> collectibles = [];
 
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName,
-               weight,
-               downed,
-               bossType,
-               new Dictionary<string, object>()
-               {
-               }
-            );
+            string OverrideHeadTextures(string name)
+            {
+                return $"ElementsAwoken/Extra/Bestiary/{name}";
+            }
 
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "InfernaceBoss",
-               weight = 6.5f,
-               downed = () => MyWorld.downedInfernace,
-               bossType = NPCType<Infernace>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<InfernaceSummon>()
-               }
-            );
+            Action<SpriteBatch, Rectangle, Color> CustomPortrait(string name)
+            {
+                return (sb, rect, color) => { Texture2D texture = Request<Texture2D>($"ElementsAwoken/Extra/BossCheckList/{name}").Value; Vector2 centered = new(rect.X + (rect.Width / 2) - (texture.Width / 2), rect.Y + (rect.Height / 2) - (texture.Height / 2)); sb.Draw(texture, centered, color); };
+            }
+            Action<SpriteBatch, Rectangle, Color> CustomPortraitVoid()
+            {
+                return (sb, rect, color) => { Texture2D texture = Request<Texture2D>("ElementsAwoken/Extra/BossCheckList/Void_Leviathan").Value; Vector2 centered = new(rect.X + rect.Width / 2f, rect.Y + rect.Height / 2f); sb.Draw(texture, centered, null, color, 0f, texture.Size() / 2f, 0.7f, SpriteEffects.None, 0f); };
+            }
 
-            bossChecklistMod.Call(
-               "LogMiniBoss",
-               Mod,
-               internalName = "CosmicObserverBoss",
-               weight = 8.1f,
-               downed = () => MyWorld.downedCosmicObserver,
-               bossType = NPCType<CosmicObserver>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<CosmicObserverSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "ScourgeFighterBoss",
-               weight = 10.3f,
-               downed = () => MyWorld.downedScourgeFighter,
-               bossType = NPCType<ScourgeFighter>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<ScourgeFighterSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "RegarothBoss",
-               weight = 11.4f,
-               downed = () => MyWorld.downedRegaroth,
-               bossType = NPCType<RegarothHead>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<RegarothSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "PermafrostBoss",
-               weight = 12.4f,
-               downed = () => MyWorld.downedPermafrost,
-               bossType = NPCType<Permafrost>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<PermafrostSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "ObsidiousBoss",
-               weight = 12.5f,
-               downed = () => MyWorld.downedObsidious,
-               bossType = NPCType<Obsidious>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<ObsidiousSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "AqueousBoss",
-               weight = 13.1f,
-               downed = () => MyWorld.downedAqueous,
-               bossType = NPCType<Aqueous>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<AqueousSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "KeepersBoss",
-               weight = 18.1f,
-               downed = () => (MyWorld.downedAncientWyrm && MyWorld.downedEye),
-               bossType = NPCType<TheEye>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<AncientDragonSummon>()
-               }
-            );
-
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "GuardianBoss",
-               weight = 18.2f,
-               downed = () => MyWorld.downedGuardian,
-               bossType = NPCType<TheGuardian>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<GuardianSummon>()
-               }
-            );
+            bossChecklistMod.Call("LogBoss", Mod, internalName, weight, downed, bossType, new Dictionary<string, object>() { });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "InfernaceBoss", weight = 6.5f, downed = () => MyWorld.downedInfernace, bossType = NPCType<Infernace>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<InfernaceSummon>() });
+            bossChecklistMod.Call("LogMiniBoss", Mod, internalName = "CosmicObserverBoss", weight = 8.1f, downed = () => MyWorld.downedCosmicObserver, bossType = NPCType<CosmicObserver>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<CosmicObserverSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "ScourgeFighterBoss", weight = 10.3f, downed = () => MyWorld.downedScourgeFighter, bossType = NPCType<ScourgeFighter>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<ScourgeFighterSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "RegarothBoss", weight = 11.4f, downed = () => MyWorld.downedRegaroth, bossType = NPCType<RegarothHead>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<RegarothSummon>(), ["customPortrait"] = CustomPortrait("Regaroth") });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "PermafrostBoss", weight = 12.4f, downed = () => MyWorld.downedPermafrost, bossType = NPCType<Permafrost>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<PermafrostSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "ObsidiousBoss", weight = 12.5f, downed = () => MyWorld.downedObsidious, bossType = NPCType<Obsidious>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<ObsidiousSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "AqueousBoss", weight = 13.1f, downed = () => MyWorld.downedAqueous, bossType = NPCType<Aqueous>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<AqueousSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "KeepersBoss", weight = 18.1f, downed = () => (MyWorld.downedAncientWyrm && MyWorld.downedEye), bossType = NPCType<TheEye>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<AncientDragonSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "GuardianBoss", weight = 18.2f, downed = () => MyWorld.downedGuardian, bossType = NPCType<TheGuardian>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<GuardianSummon>() });
             // EVENT 
             bossChecklistMod.Call(
                "LogEvent",
@@ -205,7 +77,8 @@ namespace ElementsAwoken.EASystem.ModSupport
                bossType = NPCType<ShadeWyrmTail>(),
                new Dictionary<string, object>()
                {
-                   ["spawnItems"] = spawnItem = ItemType<VoidEventSummon>()
+                   ["spawnItems"] = spawnItem = ItemType<VoidEventSummon>(),
+                   ["overrideHeadTextures"] = OverrideHeadTextures("DawnOfTheVoidBestiary")
                }
             );
             bossChecklistMod.Call(
@@ -217,82 +90,17 @@ namespace ElementsAwoken.EASystem.ModSupport
                bossType = NPCType<RadiantMaster>(),
                new Dictionary<string, object>()
                {
-                   ["spawnItems"] = spawnItem = ItemType<RadiantRainSummon>()
-               }
-            );
-            bossChecklistMod.Call(
-               "LogMiniBoss",
-               Mod,
-               internalName = "RadiantMasterBoss",
-               weight = 18.76f,
-               downed = () => MyWorld.downedRadiantMaster,
-               bossType = NPCType<RadiantMaster>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<RadiantRainSummon>()
+                   ["spawnItems"] = spawnItem = ItemType<RadiantRainSummon>(),
+                   ["overrideHeadTextures"] = OverrideHeadTextures("RadiantRainIcon")
                }
             );
             // END EVENT
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "ShadeWyrmEvent",
-               weight = 18.5f,
-               downed = () => MyWorld.downedShadeWyrm,
-               bossType = NPCType<ShadeWyrmHead>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<VoidEventSummon>()
-               }
-            );
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "VolcanoxEvent",
-               weight = 18.5f,
-               downed = () => MyWorld.downedVolcanox,
-               bossType = NPCType<Volcanox>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<VolcanoxSummon>()
-               }
-            );
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "VleviEvent",
-               weight = 18.6f,
-               downed = () => MyWorld.downedVoidLeviathan,
-               bossType = NPCType<VoidLeviathanHead>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<VoidLeviathanSummon>()
-               }
-            );
-            bossChecklistMod.Call(
-               "LogBoss",
-               Mod,
-               internalName = "AzanaBoss",
-               weight = 18.7f,
-               downed = () => MyWorld.downedAzana,
-               bossType = NPCType<Azana>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<AzanaSummon>()
-               }
-            );
-            bossChecklistMod.Call(
-            "LogBoss",
-               Mod,
-               internalName = "ancientsBoss",
-               weight = 18.8f,
-               downed = () => MyWorld.downedAncients,
-               bossType = NPCType<AncientAmalgam>(),
-               new Dictionary<string, object>()
-               {
-                   ["spawnItems"] = spawnItem = ItemType<AncientsSummon>()
-               }
-            );
+            bossChecklistMod.Call("LogMiniBoss", Mod, internalName = "RadiantMasterBoss", weight = 18.76f, downed = () => MyWorld.downedRadiantMaster, bossType = NPCType<RadiantMaster>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<RadiantRainSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "ShadeWyrmEvent", weight = 18.5f, downed = () => MyWorld.downedShadeWyrm, bossType = NPCType<ShadeWyrmHead>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<VoidEventSummon>(), ["customPortrait"] = CustomPortrait("Shade_Wyrm") });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "VolcanoxEvent", weight = 18.5f, downed = () => MyWorld.downedVolcanox, bossType = NPCType<Volcanox>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<VolcanoxSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "VleviEvent", weight = 18.6f, downed = () => MyWorld.downedVoidLeviathan, bossType = NPCType<VoidLeviathanHead>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<VoidLeviathanSummon>(), ["customPortrait"] = CustomPortraitVoid() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "AzanaBoss", weight = 18.7f, downed = () => MyWorld.downedAzana, bossType = NPCType<Azana>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<AzanaSummon>() });
+            bossChecklistMod.Call("LogBoss", Mod, internalName = "ancientsBoss", weight = 18.8f, downed = () => MyWorld.downedAncients, bossType = NPCType<AncientAmalgam>(), new Dictionary<string, object>() { ["spawnItems"] = spawnItem = ItemType<AncientsSummon>() });
         }
     }
 }

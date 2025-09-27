@@ -8,11 +8,12 @@ namespace ElementsAwoken.Content.EAClouds
     public abstract class EACloud : ModCloud
     {
         bool IsRareCloud = true;
+		
         public override bool RareCloud => IsRareCloud;
         public override float SpawnChance()
         {
             if (!Main.gameMenu && MyWorld.firePrompt > ElementsAwoken.bossPromptDelay) { IsRareCloud = false; return 15f; }
-            else { return -1f; }
+            else { IsRareCloud = true; return -1f; }
         }
         public override void OnSpawn(Cloud cloud)
         {
@@ -30,16 +31,16 @@ namespace ElementsAwoken.Content.EAClouds
             return true;
         }
     }
-    public class EACloud0 : EACloud { }
-    public class EACloud1 : EACloud { }
-    public class EACloud2 : EACloud { }
-    public class EACloud3 : EACloud { }
-    public class EACloud4 : EACloud { }
-    public class EACloud5 : EACloud { }
-    public class EACloud6 : EACloud { }
-    public class EACloud7 : EACloud { }
-    public class EACloud8 : EACloud { }
-    public class EACloud9 : EACloud { }
+    public class EACloud0  : EACloud { }
+    public class EACloud1  : EACloud { }
+    public class EACloud2  : EACloud { }
+    public class EACloud3  : EACloud { }
+    public class EACloud4  : EACloud { }
+    public class EACloud5  : EACloud { }
+    public class EACloud6  : EACloud { }
+    public class EACloud7  : EACloud { }
+    public class EACloud8  : EACloud { }
+    public class EACloud9  : EACloud { }
     public class EACloud10 : EACloud { }
     public class EACloud11 : EACloud { }
     public class EACloud12 : EACloud { }
