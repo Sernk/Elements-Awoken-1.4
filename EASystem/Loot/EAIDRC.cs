@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers;
+using ElementsAwoken.EASystem.UI;
 using ElementsAwoken.EAUtilities;
 using MonoMod.RuntimeDetour;
 using System.Collections.Generic;

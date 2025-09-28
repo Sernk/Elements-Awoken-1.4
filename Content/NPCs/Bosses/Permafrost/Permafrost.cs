@@ -146,6 +146,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Permafrost
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<PermafrostMask>(), 10));
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<PermafrostBag>(), 1));
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<FrostEssence>(), minimumDropped: 5, maximumDropped: 25));
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ItemType<PermafrostRelicItem>()));
             npcLoot.Add(_DropNormal);
             npcLoot.Add(_DropExpert);
         }
@@ -192,7 +193,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Permafrost
             Lighting.AddLight(NPC.Center, 1f, 1f, 1f);
 
             Player P = Main.player[NPC.target];
-            // despawn
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 9;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 28;
+                else projectileBaseDamage = 26;
+            }
+            else projectileBaseDamage = 36;
             if (!P.active || P.dead)
             {
                 NPC.TargetClosest(true);
@@ -274,7 +285,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Permafrost
                     for (int i = 0; i < numberProjectiles; i++)
                     {
                         Vector2 perturbedSpeed = Vector2.One.RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * speed;
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ProjectileType<IceMagic>(), (int)(projectileBaseDamage * 1.2f), 2f, Main.myPlayer);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ProjectileType<IceMagic>(), projectileBaseDamage, 2f, Main.myPlayer);
                     }
                 }
                 state = aiTimer;

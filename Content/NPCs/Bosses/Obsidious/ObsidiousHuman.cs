@@ -191,6 +191,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
         {
             Player P = Main.player[NPC.target];
             Lighting.AddLight(NPC.Center, 0.5f, 0.5f, 0.5f);
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 7;
+                else projectileBaseDamage = 6;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 26;
+                else projectileBaseDamage = 24;
+            }
+            else projectileBaseDamage = 34;
             Despawn(P);
 
             //teleport code- takes 20 ticks to return to full alpha
@@ -263,7 +274,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
                         SoundEngine.PlaySound(SoundID.Item8, NPC.position);
                         Vector2 tpTarget = P.Center + offset.RotatedBy(spinAI * (Math.PI * 2 / 8));
                         Teleport(tpTarget.X, tpTarget.Y);
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, 0f, 0f, ModContent.ProjectileType<ObsidiousFireCrystalStationary>(), projectileBaseDamage - 10, 0f, Main.myPlayer, 0f, NPC.whoAmI);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, 0f, 0f, ModContent.ProjectileType<ObsidiousFireCrystalStationary>(), projectileBaseDamage - 2, 0f, Main.myPlayer, 0f, NPC.whoAmI);
                         shootTimer = 25;
                     }
                 }
@@ -291,7 +302,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
                     SoundEngine.PlaySound(SoundID.Item69, NPC.position);
                     float speed = 8f;
                     float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), ModContent.ProjectileType<ObsidiousRockLarge>(), projectileBaseDamage + 20, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), ModContent.ProjectileType<ObsidiousRockLarge>(), projectileBaseDamage + 2, 0f, Main.myPlayer);
                     shootTimer = 40;
                 }
             }
@@ -386,7 +397,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
                     SoundEngine.PlaySound(SoundID.Item8, NPC.position);
                     float speed = 8f;
                     float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), ModContent.ProjectileType<ObsidiousHomingBall>(), projectileBaseDamage - 10, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1), ModContent.ProjectileType<ObsidiousHomingBall>(), projectileBaseDamage - 2, 0f, Main.myPlayer);
                     //npc.netUpdate = true;
                 }
                 if (shootTimer <= 0)

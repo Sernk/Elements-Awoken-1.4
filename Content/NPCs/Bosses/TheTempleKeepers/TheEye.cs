@@ -18,6 +18,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
     [AutoloadBossHead]
     public class TheEye : ModNPC
     {
+        int projectileBaseDamage = 0;
+
         public override void SetDefaults()
         {
             NPC.width = 66;
@@ -113,6 +115,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         public override void AI()
         {
             Player P = Main.player[NPC.target];
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 9;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 29;
+                else projectileBaseDamage = 27;
+            }
+            else projectileBaseDamage = 37;
             #region despawning
             if (!P.active || P.dead)
             {
@@ -186,7 +199,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
                     float Speed = 17f;
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                     float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<GuardianShot>(), 60, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<GuardianShot>(), projectileBaseDamage + 3, 0f, Main.myPlayer);
                     if (NPC.life > NPC.lifeMax * 0.75f)
                     {
                         NPC.ai[0] = Main.rand.Next(30, 120);

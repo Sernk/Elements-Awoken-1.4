@@ -32,7 +32,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
         public float homingMove = 0f;
         public float napalmMove = 0f;
 
-        public int projectileBaseDamage = 40;
+        public int projectileBaseDamage = 0;
 
         int rocketDirection = 1;
 
@@ -123,6 +123,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
             weaponDrop.OnSuccess(ItemDropRule.Common(ItemID.RocketI, 1, 50, 150));
             npcLoot.Add(weaponDrop);
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<ScourgeFighterRelicItem>(), 10));
             //npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterMask>(), 10));
 
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<ScourgeFighterBag>(), 1));
@@ -143,6 +144,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
         {
             bool dayTime = Main.dayTime;
             Player P = Main.player[NPC.target];
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 5;
+                else projectileBaseDamage = 4;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 20;
+                else projectileBaseDamage = 18;
+            }
+            else projectileBaseDamage = 28;
             NPC.rotation = (float)Math.Atan2(NPC.velocity.Y, NPC.velocity.X) + 1.57f;
             #region despawning
             if (!P.active || P.dead)

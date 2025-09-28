@@ -14,7 +14,6 @@ using Terraria.GameContent.Events;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.UI;
 using static Terraria.ModLoader.ModContent;
 
 namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
@@ -231,6 +230,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<WastelandTrophy>(), 10));
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<WastelandMask>(), 10));
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<DesertEssence>(), minimumDropped: 5, maximumDropped: 20));
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ItemType<WastelandRelicItem>()));
             npcLoot.Add(_DropNormal);
             npcLoot.Add(_DropExpert);
 

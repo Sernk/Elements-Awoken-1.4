@@ -68,6 +68,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Regaroth
         {
             bool expertMode = Main.expertMode;
             Player P = Main.player[NPC.target];
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 7;
+                else projectileBaseDamage = 6;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 24;
+                else projectileBaseDamage = 22;
+            }
+            else projectileBaseDamage = 32;
             if (NPC.ai[3] > 0)
                 NPC.realLife = (int)NPC.ai[3];
             if (NPC.target < 0 || NPC.target == byte.MaxValue || Main.player[NPC.target].dead)

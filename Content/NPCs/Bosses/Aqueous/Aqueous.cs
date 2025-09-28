@@ -23,7 +23,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
     {
         public bool enraged = false;
         public float[] spinAI = new float[2];
-        const int projectileBaseDamage = 55;
+        int projectileBaseDamage = 0;
         Vector2 staffCenter;
         public override void SendExtraAI(BinaryWriter writer)
         {
@@ -148,7 +148,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
         {
             Player P = Main.player[NPC.target];
             NPC.TargetClosest(true);
-
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 9;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 29;
+                else projectileBaseDamage = 27;
+            }
+            else projectileBaseDamage = 37;
             enraged = false;
             staffCenter = new Vector2(NPC.Center.X + 52 * -NPC.direction, NPC.Center.Y - 80);
 
@@ -211,7 +221,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
                     {
                         if (Main.netMode != NetmodeID.MultiplayerClient)
                         {
-                            AquaticBolts(P, 14f, projectileBaseDamage + 10);
+                            AquaticBolts(P, 14f, projectileBaseDamage + 2);
 
                             NPC.ai[1] = enraged ? 10 : 30;
                             NPC.ai[1] += Main.rand.Next(1, 20);
@@ -273,7 +283,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
                     {
                         if (Main.netMode != NetmodeID.MultiplayerClient)
                         {
-                            HomingKnives(P, 6f, projectileBaseDamage - 15);
+                            HomingKnives(P, 6f, projectileBaseDamage - 2);
                             NPC.ai[1] = enraged ? 20 : 80;
 
                             NPC.ai[1] += Main.rand.Next(10, 35);
@@ -304,7 +314,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
                 {
                     if (NPC.ai[1] <= 0)
                     {
-                        AquaticBolts(P, 14f, projectileBaseDamage + 10);
+                        AquaticBolts(P, 14f, projectileBaseDamage + 2);
 
                         NPC.ai[1] = enraged ? 10 : 30;
                         if (Main.netMode != NetmodeID.MultiplayerClient)
@@ -322,7 +332,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
                 }
                 if (NPC.ai[2] <= 0)
                 {
-                    int damage = Main.expertMode ? projectileBaseDamage + 40 : projectileBaseDamage + 10;
+                    int damage = projectileBaseDamage;
                     Aquanados(damage);
 
                     NPC.ai[2] = enraged ? 100 : (Main.expertMode ? 450 : 600);

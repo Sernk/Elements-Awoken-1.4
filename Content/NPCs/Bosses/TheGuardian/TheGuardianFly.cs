@@ -19,7 +19,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
     [AutoloadBossHead]
     public class TheGuardianFly : ModNPC
     {
-        private int projectileBaseDamage = 65;
+        private int projectileBaseDamage = 0;
         private int moveAI = 1;
         private float shootTimer
         {
@@ -160,6 +160,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                 NPC.active = false;
             }
             #endregion
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 10;
+                else projectileBaseDamage = 9;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 32;
+                else projectileBaseDamage = 30;
+            }
+            else projectileBaseDamage = 40;
             shootTimer--; 
             minionTimer--;
             aiTimer++;
@@ -261,7 +272,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                 if (shootTimer <= 0)
                 {
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
-                    Bolts(P, 18f, projectileBaseDamage - 20, Main.rand.Next(4, 6), 13);
+                    Bolts(P, 18f, projectileBaseDamage - 2, Main.rand.Next(4, 6), 13);
                     shootTimer = Main.rand.Next(30, 80);
                 }
             }
@@ -278,7 +289,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                     {
                         float speed = 16 + Main.rand.NextFloat(-2, 2);
                         Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1)).RotatedByRandom(MathHelper.ToRadians(5));
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianFireball>(), projectileBaseDamage - 10, 0f, 0);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianFireball>(), projectileBaseDamage - 1, 0f, 0);
                     }
                     shootTimer = 50;
                 }
@@ -293,7 +304,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                     float Speed = 20f;
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                     float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<GuardianStrike>(), projectileBaseDamage + 20, 0f, Main.myPlayer, 0, 1);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<GuardianStrike>(), projectileBaseDamage + 2, 0f, Main.myPlayer, 0, 1);
                     shootTimer = 100;
                 }
             }
@@ -329,7 +340,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                         default: break;
                     }
                     float speed = 12f;
-                    int damage = projectileBaseDamage - 20;
+                    int damage = projectileBaseDamage - 2;
                     for (int i = 0; i < 3; i++)
                     {
                         Projectile.NewProjectile(EAU.NPCs(NPC), P.Center.X - 1300 * direction + i * 50, P.Center.Y - i * 200, speed * direction, 0f, ModContent.ProjectileType<GuardianInfernoball>(), damage, 0f, Main.myPlayer);
@@ -358,7 +369,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                     {
                         vectorY = -minDist;
                     }
-                    Projectile.NewProjectile(EAU.NPCs(NPC), P.Center.X + vectorX, P.Center.Y + vectorY, 0f, 0f, ModContent.ProjectileType<GuardianPortal>(), projectileBaseDamage * 2, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), P.Center.X + vectorX, P.Center.Y + vectorY, 0f, 0f, ModContent.ProjectileType<GuardianPortal>(), projectileBaseDamage + 4, 0f, Main.myPlayer);
                     shootTimer2 = 400;
                 }
             }

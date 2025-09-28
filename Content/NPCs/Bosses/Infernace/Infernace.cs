@@ -25,7 +25,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
     public class Infernace : ModNPC
     {
         private const int tpDuration = 30;
-        private int projectileBaseDamage = 37;
+        private int projectileBaseDamage = 0;
 
         private int furosiaState = 0;
         private int dropNum = 0;
@@ -210,13 +210,12 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
-            LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+            LeadingConditionRule _DropNormal = new(new EAIDRC.DropNormal());
+            LeadingConditionRule _DropExpert = new(new EAIDRC.DropAwakened());
 
-            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.InfeLoot]));
-            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<InfernaceBag>(), 1));
-            npcLoot.Add(_DropNormal);
-            npcLoot.Add(_DropExpert);
+            _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.InfeLoot])); npcLoot.Add(_DropNormal);
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<InfernaceBag>(), 1)); npcLoot.Add(_DropExpert);
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ItemType<InfernaceRelicItem>()));
             npcLoot.Add(ItemDropRule.Common(ItemType<FireEssence>(), 1, 5, 22));
         }
         public override void OnKill()
@@ -276,6 +275,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
         {
             Player P = Main.player[NPC.target];
             var e = GetInstance<EALocalization>();
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 3;
+                else projectileBaseDamage = 2;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 17;
+                else projectileBaseDamage = 13;
+            }
+            else projectileBaseDamage = 23;
             if (tpAlphaChangeTimer > 0)
             {
                 tpAlphaChangeTimer--;

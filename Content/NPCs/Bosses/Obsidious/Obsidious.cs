@@ -212,6 +212,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
             Lighting.AddLight(NPC.Center, 0.5f, 0.5f, 0.5f);
             Player P = Main.player[NPC.target];
             var e = ModContent.GetInstance<EALocalization>();
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 9;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 28;
+                else projectileBaseDamage = 26;
+            }
+            else projectileBaseDamage = 36;
             Despawn(P);
 
             if (NPC.localAI[1] == 0)
@@ -327,7 +338,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
                                     for (int i = 0; i < numberProjectiles; i++)
                                     {
                                         Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * 12f) * -1), (float)((Math.Sin(rotation) * 12f) * -1)).RotatedByRandom(MathHelper.ToRadians(10));
-                                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<ObsidiousFireBeam>(), projectileBaseDamage + 30, 0f, Main.myPlayer, 0f, 0f);
+                                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<ObsidiousFireBeam>(), projectileBaseDamage + 3, 0f, Main.myPlayer, 0f, 0f);
                                     }
                                 }
                             }

@@ -6523,6 +6523,26 @@ Items: {
 		DisplayName: Баннер гигантской летучей мыши-вампира
 		Tooltip: ""
 	}
+
+	InfernaceRelicItem: {
+		// DisplayName: Infernace Relic Item
+		// Tooltip: ""
+	}
+
+	WastelandRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Wasteland Relic Item
+	}
+
+	ScourgeFighterRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Scourge Fighter Relic Item
+	}
+
+	PermafrostRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Permafrost Relic Item
+	}
 }
 
 Tiles: {
