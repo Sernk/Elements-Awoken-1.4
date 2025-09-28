@@ -41,7 +41,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         private int acidBallTimer = 200;
         private int jumpSpikeTimer = 0;
 
-        private int projectileBaseDamage = 25;
+        private int projectileBaseDamage = 0;
 
         public override void SendExtraAI(BinaryWriter writer)
         {
@@ -133,7 +133,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = (int)EAU.BalanceHP(4300, balance, bossAdjustment, 7500, roundTo: 1000);
+            NPC.lifeMax = (int)EAU.BalanceHP(4300, balance, bossAdjustment, 7500, roundTo: 100);
+            NPC.damage = (int)EAU.BalanceDamage(40, balance, bossAdjustment, 80);
             NPC.defense = EAU.BalanceDefense(15, 20);
         }
         public override void FindFrame(int frameHeight)
@@ -275,6 +276,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         {
             Player P = Main.player[NPC.target];
             NPC.TargetClosest(true);
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 2;
+                else projectileBaseDamage = 1;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 15;
+                else projectileBaseDamage = 10;
+            }
+            else projectileBaseDamage = 25;
             if (aiTimer < 0)
             {
                 NPC.immortal = true;
@@ -413,7 +425,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
                             {
                                 for (int k = 0; k < 3; k++)
                                 {
-                                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, Main.rand.NextFloat(-6, 6), Main.rand.NextFloat(-12, -2), ProjectileType<WastelandStormBolt>(), 6, 0f, Main.myPlayer);
+                                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, Main.rand.NextFloat(-6, 6), Main.rand.NextFloat(-12, -2), ProjectileType<WastelandStormBolt>(), projectileBaseDamage, 0f, Main.myPlayer);
                                 }
                                 stormTimer = 1800;
                                 if (enraged) stormTimer -= 300;
@@ -494,7 +506,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
                                 for (int i = 0; i < numberProjectiles; i++)
                                 {
                                     Vector2 perturbedSpeed = new Vector2(projSpeed, projSpeed).RotatedByRandom(MathHelper.ToRadians(360));
-                                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ProjectileType<WastelandStinger>(), projectileBaseDamage - 5, 2f, Main.myPlayer);
+                                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ProjectileType<WastelandStinger>(), projectileBaseDamage, 2f, Main.myPlayer);
                                 }
                                 SoundEngine.PlaySound(SoundID.Item17, NPC.position);
                             }

@@ -26,10 +26,11 @@ namespace ElementsAwoken.EASystem.UI.Tooltips
             if (EAList.BossSummonList.Contains(item.type))
             {
                 foreach (NPC npc in Main.npc) { if (npc.active && EAList.BossName.Contains(npc.type)) return false; }
-                if (MyWorld.awakenedMode) { }
+                if (MyWorld.awakenedMode) { item.consumable = false; }
                 else item.consumable = true;
+                return true;
             }
-            return true;
+            return base.CanUseItem(item, player);
         }
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {

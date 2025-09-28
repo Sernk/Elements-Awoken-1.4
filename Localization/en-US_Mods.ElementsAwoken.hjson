@@ -9295,6 +9295,7 @@ Sanity: {
 }
 
 Unbound: KEY NOT BOUND
+IsHard: "[c/973999:Not recommended if you want to make a fair and balanced playthrough]"
 AwakenedModeActive2: "[c/973999:in Awakened Mode]"
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode isn't Active]"
 AwakenedMode: "[c/973999:Awakened Mode is active]"

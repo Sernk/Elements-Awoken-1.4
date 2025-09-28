@@ -2,6 +2,7 @@
 using ElementsAwoken.Content.Dusts.Ancients;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Tiles.Crafting;
+using ElementsAwoken.EASystem.UI;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -38,22 +39,40 @@ namespace ElementsAwoken
         public static IEntitySource Proj(Projectile projectile) => projectile.GetSource_FromThis();
         public static IEntitySource NPCs(NPC npc) => npc.GetSource_FromThis();
         public static IEntitySource Play(Player player) => player.GetSource_FromThis();
-        public static float BalanceHP(float Base, float Scale, float ScaleMaster, int AwakenedHP, float FactorScale = 1.25f, float FactorMaster = 1.25f, int roundTo = 10000)
+        public static float BalanceHP(float Base, float Scale, float ScaleMaster, int AwakenedHP, float FactorScale = 1.25f, float FactorMaster = 1.50f, float FactorForAwakened = 0.15f, int roundTo = 10000)
         {
-            if (MyWorld.awakenedMode) return AwakenedHP;
-            float value = Base * Scale * FactorScale * ScaleMaster * FactorMaster;
+            float value = Base * Scale * FactorScale;
+
+            if (Main.masterMode)value *= ScaleMaster * FactorMaster;       
+            else if (Main.expertMode) value *= ScaleMaster;
+            if (MyWorld.awakenedMode) value += AwakenedHP * FactorForAwakened;
+
             return (float)(Math.Round(value / roundTo) * roundTo);
+        }
+        public static int BalanceHP2(int Base, int Expert, int Master, int Awakened, int AwakenedMaster)
+        {
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) return AwakenedMaster;
+                else return Master;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) return Awakened;
+                else return Expert;
+            }
+            else return Base;
         }
         public static float BalanceDamage(int Base, float Scale, float ScaleMaster, int AwakenedDamage, float FactorScale = 1.25f, float FactorMaster = 1.25f)
         {
             float value = Base * Scale * FactorScale * ScaleMaster * FactorMaster;
             if (MyWorld.awakenedMode) return AwakenedDamage;
-            return value;
+            else return value;
         }
         public static int BalanceDefense(int Base, int AwakenedDefense)
         {
             if (MyWorld.awakenedMode) return AwakenedDefense;
-            return Base;
+            else return Base;
         }
         public static int GetDustID()
         {
