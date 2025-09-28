@@ -103,15 +103,9 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 250000;
-            NPC.damage = 220;
-            NPC.defense = 50;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 450000;
-                NPC.damage = 300;
-                NPC.defense = 65;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(175000, balance, bossAdjustment, 450000);
+            NPC.damage = (int)EAU.BalanceDamage(140, balance, bossAdjustment, 300);
+            NPC.defense = EAU.BalanceDefense(40, 65);
         }
         public override void BossLoot(ref int potionType)
         {

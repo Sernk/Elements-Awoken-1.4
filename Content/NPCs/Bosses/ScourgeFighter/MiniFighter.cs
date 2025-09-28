@@ -18,7 +18,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
             NPC.width = 30; //324
             NPC.height = 26; //216
             NPC.defense = 30;
-            NPC.lifeMax = 500;
+            NPC.lifeMax = 750;
             NPC.knockBackResist = 0f;
             NPC.lavaImmune = true;
             NPC.noGravity = true;
@@ -40,14 +40,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 40;
-            NPC.lifeMax = 750;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 1000;
-                NPC.damage = 60;
-                NPC.defense = 45;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(500, balance, bossAdjustment, 1000, roundTo: 100);
+            NPC.damage = (int)EAU.BalanceDamage(30, numPlayers, balance, 60);
+            NPC.defense = EAU.BalanceDefense(30, 45);
         }
         public override void AI()
         {

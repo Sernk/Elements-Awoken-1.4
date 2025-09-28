@@ -52,7 +52,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
             NPC.width = 92;
             NPC.height = 152;
             NPC.aiStyle = -1;
-            NPC.lifeMax = 40000;
+            NPC.lifeMax = 50000;
             NPC.damage = 120;
             NPC.defense = 35;
             NPC.knockBackResist = 0f;
@@ -98,14 +98,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 50000;
-            NPC.damage = 140;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 75000;
-                NPC.damage = 160;
-                NPC.defense = 45;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(40000, balance, bossAdjustment, 75000);
+            NPC.damage = (int)EAU.BalanceDamage(120, numPlayers, balance, 160);
+            NPC.defense = EAU.BalanceDefense(35, 45);
         }
         public override void FindFrame(int frameHeight)
         {

@@ -64,14 +64,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Regaroth
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 140;
-            NPC.lifeMax = 100000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 100000;
-                NPC.damage = 160;
-                NPC.defense = 30;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(75000, balance, bossAdjustment, 100000);
+            NPC.damage = (int)EAU.BalanceDamage(75, balance, bossAdjustment, 160);
+            NPC.defense = EAU.BalanceDefense(20, 30);
         }
         public override void SetStaticDefaults()
         {

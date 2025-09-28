@@ -64,7 +64,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
             NPC.width = 48;
             NPC.height = 48;
             NPC.aiStyle = -1;
-            NPC.lifeMax = 40000;
+            NPC.lifeMax = 50000;
             NPC.damage = 40;
             NPC.defense = 30;
             NPC.knockBackResist = 0f;
@@ -103,14 +103,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 75;
-            NPC.lifeMax = 50000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 75000;
-                NPC.damage = 90;
-                NPC.defense = 40;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(40000, balance, bossAdjustment, 75000);
+            NPC.damage = (int)EAU.BalanceDamage(40, numPlayers, balance, 90);
+            NPC.defense = EAU.BalanceDefense(30, 40);
         }
         public override void FindFrame(int frameHeight)
         {

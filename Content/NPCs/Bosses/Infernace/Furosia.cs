@@ -58,7 +58,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
             NPC.width = 188;
             NPC.height = 190;
             NPC.aiStyle = -1;
-            NPC.lifeMax = 2000;
+            NPC.lifeMax = 3000;
             NPC.damage = 15;
             NPC.defense = 6;
             NPC.knockBackResist = 0f;
@@ -101,14 +101,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Infernace
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 30;
-            NPC.lifeMax = 3000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 5000;
-                NPC.damage = 45;
-                NPC.defense = 10;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(2000, balance, bossAdjustment, 5000, roundTo: 1000);
+            NPC.damage = (int)EAU.BalanceDamage(15, numPlayers, balance, 45);
+            NPC.defense = EAU.BalanceDefense(6, 10);
         }
         public override void FindFrame(int frameHeight)
         {

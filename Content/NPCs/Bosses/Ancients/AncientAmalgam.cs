@@ -44,7 +44,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
             NPC.width = 140;
             NPC.height = 144;
             NPC.aiStyle = -1;
-            NPC.lifeMax = 1200000;
+            NPC.lifeMax = 1500000;
             NPC.damage = 200;
             NPC.defense = 90;
             NPC.knockBackResist = 0f;
@@ -98,15 +98,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 1500000;
-            NPC.damage = 250;
-            NPC.defense = 120;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 1750000;
-                NPC.damage = 300;
-                NPC.defense = 130;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(1200000, balance, bossAdjustment, 1750000);
+            NPC.damage = (int)EAU.BalanceDamage(200, numPlayers, balance, 300);
+            NPC.defense = EAU.BalanceDefense(90, 130);
         }
         public override void FindFrame(int frameHeight)
         {

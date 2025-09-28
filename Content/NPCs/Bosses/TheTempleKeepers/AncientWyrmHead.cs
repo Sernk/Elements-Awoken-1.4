@@ -29,7 +29,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         {
             NPC.width = 30;
             NPC.height = 28;
-            NPC.lifeMax = 150000;
+            NPC.lifeMax = 200000;
             NPC.damage = 150;
             NPC.defense = 45;
             NPC.knockBackResist = 0f;
@@ -78,14 +78,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 200000;
-            NPC.damage = 200;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 250000;
-                NPC.damage = 250;
-                NPC.defense = 60;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(150000, balance, bossAdjustment, 250000);
+            NPC.damage = (int)EAU.BalanceDamage(150, balance, bossAdjustment, 250);
+            NPC.defense = EAU.BalanceDefense(45, 60);
         }
         public override bool CheckActive()
         {

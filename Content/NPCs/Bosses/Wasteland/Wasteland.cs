@@ -94,7 +94,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
             NPC.aiStyle = -1;
             NPC.damage = 0;
             NPC.defense = 15;
-            NPC.lifeMax = 4300;          
+            NPC.lifeMax = 5000;          
             NPC.knockBackResist = 0f;
             NPC.value = Item.buyPrice(0, 5, 0, 0);
             NPC.HitSound = SoundID.NPCHit1;
@@ -133,12 +133,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 5000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 7500;
-                NPC.defense = 20;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(4300, balance, bossAdjustment, 7500, roundTo: 1000);
+            NPC.defense = EAU.BalanceDefense(15, 20);
         }
         public override void FindFrame(int frameHeight)
         {

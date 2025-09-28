@@ -67,7 +67,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Permafrost
         {
             NPC.width = 152;
             NPC.height = 158;
-            NPC.lifeMax = 40000;
+            NPC.lifeMax = 65000;
             NPC.damage = 80;
             NPC.defense = 36;
             NPC.knockBackResist = 0f;
@@ -115,15 +115,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Permafrost
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 65000;
-            NPC.damage = 160;
-            NPC.defense = 38;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 80000;
-                NPC.damage = 190;
-                NPC.defense = 42;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(40000, balance, bossAdjustment, 85000);
+            NPC.damage = (int)EAU.BalanceDamage(80, numPlayers, balance, 190);
+            NPC.defense = EAU.BalanceDefense(36, 42);
         }
         public override void FindFrame(int frameHeight)
         {

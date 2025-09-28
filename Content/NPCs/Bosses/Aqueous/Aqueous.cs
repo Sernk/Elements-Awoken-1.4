@@ -47,7 +47,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
         {
             NPC.width = 132;
             NPC.height = 184;
-            NPC.lifeMax = 75000;
+            NPC.lifeMax = 100000;
             NPC.damage = 75;
             NPC.defense = 52;
             NPC.knockBackResist = 0f;
@@ -72,14 +72,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 90;
-            NPC.lifeMax = 100000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 125000;
-                NPC.damage = 110;
-                NPC.defense = 65;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(75000, balance, bossAdjustment, 125000);
+            NPC.damage = (int)EAU.BalanceDamage(75, numPlayers, balance, 110);
+            NPC.defense = EAU.BalanceDefense(52, 65);
         }
         public override void FindFrame(int frameHeight)
         {

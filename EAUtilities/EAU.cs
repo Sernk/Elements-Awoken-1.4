@@ -4,6 +4,7 @@ using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Tiles.Crafting;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
@@ -14,7 +15,6 @@ namespace ElementsAwoken
 {
     /// <summary>
     /// Elements Awoken Utilities
-    /// TODO
     /// </summary>
     public class EAU
     {
@@ -38,6 +38,23 @@ namespace ElementsAwoken
         public static IEntitySource Proj(Projectile projectile) => projectile.GetSource_FromThis();
         public static IEntitySource NPCs(NPC npc) => npc.GetSource_FromThis();
         public static IEntitySource Play(Player player) => player.GetSource_FromThis();
+        public static float BalanceHP(float Base, float Scale, float ScaleMaster, int AwakenedHP, float FactorScale = 1.25f, float FactorMaster = 1.25f, int roundTo = 10000)
+        {
+            if (MyWorld.awakenedMode) return AwakenedHP;
+            float value = Base * Scale * FactorScale * ScaleMaster * FactorMaster;
+            return (float)(Math.Round(value / roundTo) * roundTo);
+        }
+        public static float BalanceDamage(int Base, float Scale, float ScaleMaster, int AwakenedDamage, float FactorScale = 1.25f, float FactorMaster = 1.25f)
+        {
+            float value = Base * Scale * FactorScale * ScaleMaster * FactorMaster;
+            if (MyWorld.awakenedMode) return AwakenedDamage;
+            return value;
+        }
+        public static int BalanceDefense(int Base, int AwakenedDefense)
+        {
+            if (MyWorld.awakenedMode) return AwakenedDefense;
+            return Base;
+        }
         public static int GetDustID()
         {
             return Main.rand.Next(4) switch

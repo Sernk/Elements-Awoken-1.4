@@ -60,9 +60,11 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             base.SetDefaults();
             NPC.width = 108;
             NPC.height = 134;
-            NPC.damage = 250;
             NPC.knockBackResist = 0f;
             NPC.boss = true;
+            NPC.lifeMax = 700000;
+            NPC.damage = 350;
+            NPC.defense = 56;
             NPC.lavaImmune = true;
             NPC.noGravity = true;
             NPC.noTileCollide = true;
@@ -76,15 +78,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = 700000;
-            NPC.damage = 350;
-            NPC.defense = 56;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 850000;
-                NPC.damage = 450;
-                NPC.defense = 67;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(700000, balance, bossAdjustment, 850000);
+            NPC.damage = (int)EAU.BalanceDamage(350, balance, bossAdjustment, 450);
+            NPC.defense = EAU.BalanceDefense(56, 67);
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {            

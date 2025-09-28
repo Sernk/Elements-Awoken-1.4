@@ -92,14 +92,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 175;
-            NPC.lifeMax = 350000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 450000;
-                NPC.damage = 200;
-                NPC.defense = 90;
-            }
+            NPC.lifeMax = (int)EAU.BalanceHP(200000, balance, bossAdjustment, 450000);
+            NPC.damage = (int)EAU.BalanceDamage(130, balance, bossAdjustment, 200);
+            NPC.defense = EAU.BalanceDefense(75, 90);
         }
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
