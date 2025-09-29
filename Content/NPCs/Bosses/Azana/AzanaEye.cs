@@ -20,6 +20,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
     [AutoloadBossHead]
     public class AzanaEye : ModNPC
     {
+        int projectileBaseDamage = 0;
         private float dashAI
         {
             get => NPC.ai[0];
@@ -81,14 +82,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.damage = 200;
-            NPC.lifeMax = 450000;
-            if (MyWorld.awakenedMode)
-            {
-                NPC.lifeMax = 600000;
-                NPC.damage = 300;
-                NPC.defense = 75;
-            }
+            NPC.damage = (int)EAU.BalanceDamage(150, balance, bossAdjustment, 300);
+            NPC.lifeMax = (int)EAU.BalanceHP(300000, balance, bossAdjustment, 600000);
+            NPC.defense = EAU.BalanceDefense(60, 75);
         }
         public override bool CheckDead()
         {
@@ -166,6 +162,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
         {
             var e = ModContent.GetInstance<EALocalization>();
             Player P = Main.player[NPC.target];
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 11;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 53;
+                else projectileBaseDamage = 50;
+            }
+            else projectileBaseDamage = 60;
             NPC.TargetClosest(true);
              if (!ElementsAwoken.aprilFools)   Lighting.AddLight(NPC.Center, ((255 - NPC.alpha) * 0.9f) / 255f, ((255 - NPC.alpha) * 0.1f) / 255f, ((255 - NPC.alpha) * 0f) / 255f);
             else Lighting.AddLight(NPC.Center, ((255 - NPC.alpha) * 0.9f) / 255f, ((255 - NPC.alpha) * 0.9f) / 255f, ((255 - NPC.alpha) * 0.9f) / 255f);
@@ -198,7 +205,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
                         Vector2 vel = NPC.Center - pos;
                         vel.Normalize();
                         vel *= 12f;
-                        Projectile.NewProjectile(EAU.NPCs(NPC), pos, vel, ProjectileType<AzanaBlood>(), 0, 0f, Main.myPlayer);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), pos, vel, ProjectileType<AzanaBlood>(), 0, projectileBaseDamage, Main.myPlayer);
                     }
                 }
             }
@@ -373,7 +380,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
                             SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                             Vector2 vector8 = new Vector2(NPC.position.X + (NPC.width / 2), NPC.position.Y + (NPC.height / 2));
                             int type = ProjectileType<AzanaMiniBlast>();
-                            int damage = Main.expertMode ? 75 : 100;
+                            int damage = projectileBaseDamage;
                             float Speed = 14f;
                             float rotation = (float)Math.Atan2(vector8.Y - (P.position.Y + (P.height * 0.5f)), vector8.X - (P.position.X + (P.width * 0.5f)));
                             for (int i = 0; i < numberProjectiles; i++)

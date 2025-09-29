@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.Content.Projectiles.NPCProj.VoidLeviathan;
+using ElementsAwoken.EASystem.EAPlayer;
 using System;
 using Terraria;
 using Terraria.Audio;
@@ -9,6 +10,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions
 {
     public class BarrenSoul : ModNPC
     {
+        int projectileBaseDamage = 0;
         public override void SetDefaults()
         {
             NPC.width = 38;
@@ -34,6 +36,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions
         public override void AI()
         {
             Player P = Main.player[NPC.target];
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 22;
+                else projectileBaseDamage = 16;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 64;
+                else projectileBaseDamage = 64;
+            }
+            else projectileBaseDamage = 70;
             Lighting.AddLight(NPC.Center, 1f, 0.2f, 0.55f);
             NPC.ai[2]++;
             int minAlpha = 50;
@@ -50,8 +63,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions
                     float Speed = 10f;
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                     float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                    Projectile beam = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<BarrenBeam>(), projDamage, 0f, 0)];
-                    //beam.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                    Projectile beam = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<BarrenBeam>(), projectileBaseDamage, 0f, 0)];
+                    beam.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                 }
                 else
                 {
@@ -66,8 +79,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan.Minions
                     float Speed = 10f;
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                     float rotation = (float)Math.Atan2(NPC.Center.Y - NPC.ai[1], NPC.Center.X - NPC.ai[0]);
-                    Projectile blast = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), Mod.Find<ModProjectile>("ExtinctionBlast").Type, projDamage, 0f, 0)];
-                    //blast.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
+                    Projectile blast = Main.projectile[Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), Mod.Find<ModProjectile>("ExtinctionBlast").Type, projectileBaseDamage, 0f, 0)];
+                    blast.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
                 }
             }
             else if (NPC.ai[2] > 180)

@@ -71,6 +71,10 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
             NormalMod.OnSuccess(ItemDropRule.Common(ItemType<ShadeScale>(), minimumDropped: 8, maximumDropped: 12));
             npcLoot.Add(NormalMod);
         }
+        public override void BossLoot(ref int potionType)
+        {
+            potionType = ItemType<Items.Consumable.Potions.EpicHealingPotion>();
+        }
         public override void OnKill()
         {
             MyWorld.downedShadeWyrm = true;
@@ -240,7 +244,6 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
         {
             aiTimer = reader.ReadSingle();
         }
-
         public override void AI()
         {
             NPC.ReflectProjectiles(NPC.Hitbox);

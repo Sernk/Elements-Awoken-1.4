@@ -20,7 +20,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
     [AutoloadBossHead]
     public class Azana : ModNPC
     {
-        private int projectileBaseDamage = 100;
+        private int projectileBaseDamage = 0;
         private float circleNum = 0;
         private float targetPosX = 0;
         private float targetPosY = 0;
@@ -76,16 +76,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
-            NPC.lifeMax = (int)(NPC.lifeMax * balance * 0.5f * bossAdjustment);
-            NPC.damage = 290;
-            NPC.defense = 110;
-            if (MyWorld.awakenedMode)
-            {
-                // после               // до
-                NPC.lifeMax = 1300000; // 1500000 
-                NPC.damage = 350;      // 350
-                NPC.defense = 120;     // 130
-            }
+            NPC.damage = (int)EAU.BalanceDamage(200, balance, bossAdjustment, 350);
+            NPC.lifeMax = (int)EAU.BalanceHP(1000000, balance, bossAdjustment, 1500000);
+            NPC.defense = EAU.BalanceDefense(100, 120);
         }
         public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
         {
@@ -221,6 +214,18 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
             Player P = Main.player[NPC.target];
             NPC.TargetClosest(true);
             Lighting.AddLight(NPC.Center, (255 - NPC.alpha) * 0.9f / 255f, (255 - NPC.alpha) * 0.1f / 255f, (255 - NPC.alpha) * 0f / 255f);
+
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 15;
+                else projectileBaseDamage = 11;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 56;
+                else projectileBaseDamage = 56;
+            }
+            else projectileBaseDamage = 67;
 
             if (!P.active || P.dead)
             {
@@ -790,7 +795,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
                     {
                         float speed = 8 + Main.rand.NextFloat(-2, 2);
                         Vector2 perturbedSpeed = new Vector2((float)(Math.Cos(rotation) * speed * -1), (float)(Math.Sin(rotation) * speed * -1)).RotatedByRandom(MathHelper.ToRadians(5));
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<AzanaMiniBlastAccelerate>(), projectileBaseDamage - 10, 0f, 0);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<AzanaMiniBlastAccelerate>(), projectileBaseDamage - 1, 0f, 0);
                     }
                     shootTimer = 50;
                 }
@@ -952,10 +957,10 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
                     SoundEngine.PlaySound(SoundID.Item90, NPC.Center);
                     float speed = aiTimer >= aiHalf ? -5 : 5;
                     Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center, new Vector2(0, speed), ModContent.ProjectileType<AzanaBeamQuick>(), projectileBaseDamage, 0f, Main.myPlayer);
-                    Projectile.NewProjectile(EAU.NPCs(NPC), new Vector2(targetPosX, targetPosY), new Vector2(0, 5), ModContent.ProjectileType<AzanaBeamQuick>(), (int)(projectileBaseDamage * 1.5f), 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), new Vector2(targetPosX, targetPosY), new Vector2(0, 5), ModContent.ProjectileType<AzanaBeamQuick>(), projectileBaseDamage + 6, 0f, Main.myPlayer);
                     if (P.Center.X < targetPosX && aiTimer < aiHalf || P.Center.X > targetPosX && aiTimer >= aiHalf)
                     {
-                        Projectile.NewProjectile(EAU.NPCs(NPC), new Vector2(P.Center.X, targetPosY), new Vector2(0, 5), ModContent.ProjectileType<AzanaBeamQuick>(), (int)(projectileBaseDamage * 2f), 0f, Main.myPlayer);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), new Vector2(P.Center.X, targetPosY), new Vector2(0, 5), ModContent.ProjectileType<AzanaBeamQuick>(), projectileBaseDamage + 6, 0f, Main.myPlayer);
                     }
                     shootTimer = shootDelay;
                 }

@@ -34,7 +34,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
 
         public bool enraged = false;
 
-        public int projectileBaseDamage = 100;
+        public int projectileBaseDamage = 0;
         public override void SetDefaults()
         {
             NPC.width = 120;
@@ -184,6 +184,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
         public override void AI()
         {
             Player P = Main.player[NPC.target];
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 11;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 48;
+                else projectileBaseDamage = 48;
+            }
+            else projectileBaseDamage = 60;
             if (!P.ZoneUnderworldHeight)
             {
                 enraged = true;
@@ -369,13 +380,12 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
             strikeTimer--;
             if (strikeTimer <= 0)
             {
-                int damage = projectileBaseDamage;
                 float posX = P.Center.X + Main.rand.Next(-20, 20);
                 float posY = P.Center.Y + 1000;
-                Projectile.NewProjectile(EAU.NPCs(NPC), posX, posY, 0f, -15f, ModContent.ProjectileType<VolcanicDemon>(), damage, 0f, Main.myPlayer);
+                Projectile.NewProjectile(EAU.NPCs(NPC), posX, posY, 0f, -15f, ModContent.ProjectileType<VolcanicDemon>(), projectileBaseDamage, 0f, Main.myPlayer);
                 float posX2 = P.Center.X + Main.rand.Next(-20, 20);
                 float posY2 = P.Center.Y - 1000;
-                Projectile.NewProjectile(EAU.NPCs(NPC), posX2, posY2, 0f, 15f, ModContent.ProjectileType<VolcanicDemon>(), damage, 0f, Main.myPlayer);
+                Projectile.NewProjectile(EAU.NPCs(NPC), posX2, posY2, 0f, 15f, ModContent.ProjectileType<VolcanicDemon>(), projectileBaseDamage, 0f, Main.myPlayer);
                 strikeTimer = 100;
             }
             if (NPC.life > NPC.lifeMax / 2)
@@ -398,7 +408,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
                     if (Collision.CanHit(NPC.position, NPC.width, NPC.height, Main.player[NPC.target].position, Main.player[NPC.target].width, Main.player[NPC.target].height))
                     {
                         float Speed = 15f;
-                        int damage = projectileBaseDamage;
                         if (Main.expertMode)
                         {
                             Speed += 2f;
@@ -406,7 +415,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
                         int type = ModContent.ProjectileType<VolcanoxBolt>();
                         SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                         float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                        int proj = Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), type, damage, 0f, Main.myPlayer);
+                        int proj = Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), type, projectileBaseDamage, 0f, Main.myPlayer);
                     }
                     shootTimer = 0f;
                 }
@@ -422,7 +431,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
                 if (Main.netMode != NetmodeID.MultiplayerClient && burstTimer <= 0f && shootCooldown <= 30)
                 {
                     float projSpeed = 10f;
-                    int damage = projectileBaseDamage - 20;
+                    int damage = projectileBaseDamage - 2;
                     int type = ModContent.ProjectileType<VolcanoxBolt>();
                     if (Main.expertMode)
                     {

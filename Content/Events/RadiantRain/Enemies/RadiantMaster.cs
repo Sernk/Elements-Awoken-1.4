@@ -172,6 +172,17 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
             NPC.TargetClosest(false);
             Player P = Main.player[NPC.target];
             Lighting.AddLight(NPC.Center, 1f, 0.2f, 0.5f);
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 15;
+                else projectileBaseDamage = 11;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 56;
+                else projectileBaseDamage = 56;
+            }
+            else projectileBaseDamage = 67;
             if (deathTimer > 0)
             {
                 NPC.rotation = 0;
@@ -307,7 +318,7 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
                         float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
                         Vector2 projSpeed = new Vector2((float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1));
                         projSpeed = projSpeed.RotatedByRandom(MathHelper.ToRadians(10));
-                        Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center, projSpeed, ProjectileType<RadiantWhirlwind>(), projectileBaseDamage * 2, 0f, Main.myPlayer);
+                        Projectile.NewProjectile(NPC.GetSource_FromThis(), NPC.Center, projSpeed, ProjectileType<RadiantWhirlwind>(), projectileBaseDamage + 4, 0f, Main.myPlayer);
                         shootTimer = 360;
                     }
                     if (aiTimer > 1100)

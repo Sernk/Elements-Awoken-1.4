@@ -154,7 +154,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
             NPC.TargetClosest(true);
             Player P = Main.player[NPC.target];
             Lighting.AddLight(NPC.Center, 1f, 1f, 1f);
-
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 17;
+                else projectileBaseDamage = 13;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 60;
+                else projectileBaseDamage = 60;
+            }
+            else projectileBaseDamage = 70;
             // despawn if no players
             if (!P.active || P.dead)
             {
@@ -310,7 +320,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
                     }
                     if (shootTimer[0] <= 0 && shootTimer[1] <= 42)
                     {
-                        int projDamage = Main.expertMode ? (int)(projectileBaseDamage * 0.75f) : projectileBaseDamage;
+                        int projDamage = projectileBaseDamage;
                         float rotation = MathHelper.ToRadians(360);
                         for (int i = 0; i < numRadialProj; i++)
                         {

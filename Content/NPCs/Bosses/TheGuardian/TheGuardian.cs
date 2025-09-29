@@ -146,15 +146,15 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
             Player P = Main.player[NPC.target];
             if (Main.masterMode)
             {
-                if (MyWorld.awakenedMode) projectileBaseDamage = 10;
-                else projectileBaseDamage = 9;
+                if (MyWorld.awakenedMode) projectileBaseDamage = 12;
+                else projectileBaseDamage = 11;
             }
             if (Main.expertMode)
             {
-                if (MyWorld.awakenedMode) projectileBaseDamage = 32;
-                else projectileBaseDamage = 30;
+                if (MyWorld.awakenedMode) projectileBaseDamage = 34;
+                else projectileBaseDamage = 32;
             }
-            else projectileBaseDamage = 40;
+            else projectileBaseDamage = 42;
 
             #region despawning
             if (Main.dayTime) despawnTimer++;
@@ -254,7 +254,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                         float Speed = 17f;
                         SoundEngine.PlaySound(SoundID.Item20, NPC.position);
                         float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<GuardianShot>(), projectileBaseDamage, 0f, Main.myPlayer);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * Speed) * -1), (float)((Math.Sin(rotation) * Speed) * -1), ModContent.ProjectileType<GuardianShot>(), projectileBaseDamage + 4, 0f, Main.myPlayer);
                         shootTimer = 50;
                     }
                     if (aiTimer >= 500)

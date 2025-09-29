@@ -162,15 +162,15 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
             #endregion
             if (Main.masterMode)
             {
-                if (MyWorld.awakenedMode) projectileBaseDamage = 10;
-                else projectileBaseDamage = 9;
+                if (MyWorld.awakenedMode) projectileBaseDamage = 18;
+                else projectileBaseDamage = 14;
             }
             if (Main.expertMode)
             {
-                if (MyWorld.awakenedMode) projectileBaseDamage = 32;
-                else projectileBaseDamage = 30;
+                if (MyWorld.awakenedMode) projectileBaseDamage = 44;
+                else projectileBaseDamage = 40;
             }
-            else projectileBaseDamage = 40;
+            else projectileBaseDamage = 55;
             shootTimer--; 
             minionTimer--;
             aiTimer++;
@@ -210,7 +210,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                 if (Main.netMode != NetmodeID.MultiplayerClient && shootTimer <= 25 && shootTimer % 5 == 0)
                 {
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
-                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, 0f, 0f, ModContent.ProjectileType<GuardianOrb>(), projectileBaseDamage, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, 0f, 0f, ModContent.ProjectileType<GuardianOrb>(), projectileBaseDamage + 2, 0f, Main.myPlayer);
                 }
                 if (shootTimer <= 0) shootTimer = 75;
             }
@@ -224,7 +224,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                     if (shootTimer <= 0 && Main.netMode != NetmodeID.MultiplayerClient)
                     {
                         //Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 1);
-                        int proj = Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, Main.rand.NextFloat(-2, 2), 8f, ModContent.ProjectileType<GuardianFire>(), projectileBaseDamage, 0f, Main.myPlayer);
+                        int proj = Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, Main.rand.NextFloat(-2, 2), 8f, ModContent.ProjectileType<GuardianFire>(), projectileBaseDamage + 2, 0f, Main.myPlayer);
                         Projectile fire = Main.projectile[proj];
                         fire.timeLeft = 120;
                         shootTimer = 12;
@@ -250,7 +250,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                         SoundEngine.PlaySound(SoundID.Item122, NPC.position);
                         for (int i = 0; i < 6; i++)
                         {
-                            int proj = Projectile.NewProjectile(EAU.NPCs(NPC), NPC.position.X + 140 + 6.6f * i, NPC.Bottom.Y, 0f, 9f, ModContent.ProjectileType<GuardianBeam>(), projectileBaseDamage, 0f, Main.myPlayer);
+                            int proj = Projectile.NewProjectile(EAU.NPCs(NPC), NPC.position.X + 140 + 6.6f * i, NPC.Bottom.Y, 0f, 9f, ModContent.ProjectileType<GuardianBeam>(), projectileBaseDamage + 2, 0f, Main.myPlayer);
                             Projectile Beam = Main.projectile[proj];
                             Beam.timeLeft = 75;
                         }
@@ -272,7 +272,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                 if (shootTimer <= 0)
                 {
                     SoundEngine.PlaySound(SoundID.Item20, NPC.position);
-                    Bolts(P, 18f, projectileBaseDamage - 2, Main.rand.Next(4, 6), 13);
+                    Bolts(P, 18f, projectileBaseDamage, Main.rand.Next(4, 6), 13);
                     shootTimer = Main.rand.Next(30, 80);
                 }
             }
@@ -289,7 +289,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                     {
                         float speed = 16 + Main.rand.NextFloat(-2, 2);
                         Vector2 perturbedSpeed = new Vector2((float)((Math.Cos(rotation) * speed) * -1), (float)((Math.Sin(rotation) * speed) * -1)).RotatedByRandom(MathHelper.ToRadians(5));
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianFireball>(), projectileBaseDamage - 1, 0f, 0);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianFireball>(), projectileBaseDamage, 0f, 0);
                     }
                     shootTimer = 50;
                 }
@@ -317,7 +317,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                 if (shootTimer <= 0 && Main.netMode != NetmodeID.MultiplayerClient)
                 {
                     Vector2 perturbedSpeed = new Vector2(4f, 4f).RotatedByRandom(MathHelper.ToRadians(360));
-                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianShot>(), projectileBaseDamage, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianShot>(), projectileBaseDamage + 2, 0f, Main.myPlayer);
                     shootTimer = 5;
                 }
             }
@@ -340,7 +340,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                         default: break;
                     }
                     float speed = 12f;
-                    int damage = projectileBaseDamage - 2;
+                    int damage = projectileBaseDamage;
                     for (int i = 0; i < 3; i++)
                     {
                         Projectile.NewProjectile(EAU.NPCs(NPC), P.Center.X - 1300 * direction + i * 50, P.Center.Y - i * 200, speed * direction, 0f, ModContent.ProjectileType<GuardianInfernoball>(), damage, 0f, Main.myPlayer);
@@ -381,7 +381,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
                 {
                     float posX = P.Center.X + Main.rand.Next(5000) - 3000;
                     float posY = P.Center.Y + 1000;
-                    Projectile.NewProjectile(EAU.NPCs(NPC), posX, posY, 0f, -10f, ModContent.ProjectileType<GuardianStrike>(), projectileBaseDamage, 0f, Main.myPlayer);
+                    Projectile.NewProjectile(EAU.NPCs(NPC), posX, posY, 0f, -10f, ModContent.ProjectileType<GuardianStrike>(), projectileBaseDamage + 2, 0f, Main.myPlayer);
                 }
             }
 

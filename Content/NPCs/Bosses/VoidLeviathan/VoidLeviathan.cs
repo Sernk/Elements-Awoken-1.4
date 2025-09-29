@@ -1,7 +1,4 @@
-﻿using CalamityMod;
-using CalamityMod.NPCs.Leviathan;
-using ElementsAwoken.Content.Buffs.Debuffs;
-using ElementsAwoken.Content.Items.BossDrops.Ancients;
+﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Items.Consumable.Potions;
 using ElementsAwoken.Content.Items.Essence;
@@ -89,8 +86,9 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             var _DropExpert = new LeadingConditionRule(new EAIDRC.DropExpert());
             var _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
+
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [..EAList.LeviLoot]));
-            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ItemType<VoidLeviathanBag>(), 1));
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<VoidLeviathanMask>(), 7));
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<VoidLeviathanTrophy>(), 10));
             _DropNormal.OnSuccess(ItemDropRule.Common(ItemType<VoidLeviathanHeart>()));
@@ -173,6 +171,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     NPC.active = false;
                 }
             }
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 11;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 48;
+                else projectileBaseDamage = 48;
+            }
+            else projectileBaseDamage = 60;
             roarTimer--;
             if (roarTimer <= 0)
             {
@@ -226,8 +235,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                     numProj = 16;
                     dist = 1200;
                 }
-                int projDamage = Main.expertMode ? (int)(projectileBaseDamage * 1.5f) : projectileBaseDamage;
-                if (MyWorld.awakenedMode) projDamage = (int)(projectileBaseDamage * 1.8f);
+                int projDamage = projectileBaseDamage + 1;
+                if (MyWorld.awakenedMode) projDamage = projectileBaseDamage + 2;
                 for (float l = 0; l < numProj; l++)
                 {
                     Vector2 projPos = P.Center + new Vector2(0, dist).RotatedBy(l * (Math.PI * 2f / numProj));
@@ -263,8 +272,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
                 if (aiTimer % 45 == 0)
                 {
                     SoundEngine.PlaySound(SoundID.Item8, NPC.position);
-                    int projDamage = Main.expertMode ? (int)(projectileBaseDamage * 1.5f) : projectileBaseDamage;
-                    if (MyWorld.awakenedMode) projDamage = (int)(projectileBaseDamage * 2f);
+                    int projDamage = projectileBaseDamage + 1;
+                    if (MyWorld.awakenedMode) projDamage = projectileBaseDamage + 2;
 
                     Projectile rune = Main.projectile[Projectile.NewProjectile(s, P.Center.X + Main.rand.Next(-600, 600), P.Center.Y + Main.rand.Next(-600, 600), Main.rand.NextFloat(-2f, 2f), Main.rand.NextFloat(-2f, 2f), ProjectileType<VoidRunes>(), projDamage, 6f, Main.myPlayer)];
                     rune.GetGlobalProjectile<ProjectileGlobal>().dontScaleDamage = true;
@@ -380,12 +389,23 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
             NPC headNPC = Main.npc[(int)NPC.ai[3]];
             int num = Main.expertMode ? 3 : 5;
             if (MyWorld.awakenedMode) num = 2;
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 11;
+                else projectileBaseDamage = 8;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 48;
+                else projectileBaseDamage = 48;
+            }
+            else projectileBaseDamage = 60;
             if (bodyNum % num == 0 && headNPC.life > headNPC.lifeMax * 0.3f)
             {
                 if (aiTimer == 1440 + betweenShots * bodyNum && Main.netMode != NetmodeID.MultiplayerClient)
                 {
-                    int projDamage = Main.expertMode ? (int)(projectileBaseDamage * 1.3f) : projectileBaseDamage;
-                    if (MyWorld.awakenedMode) projDamage = (int)(projectileBaseDamage * 1.5f);
+                    int projDamage = projectileBaseDamage + 1;
+                    if (MyWorld.awakenedMode) projDamage = projectileBaseDamage + 2;
 
                     float speedMult = Main.expertMode ? 8f : 6f;
                     if (MyWorld.awakenedMode) speedMult = 10f;
@@ -449,6 +469,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.VoidLeviathan
         }
         public override void CustomBehavior()
         {
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 14;
+                else projectileBaseDamage = 10;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 53;
+                else projectileBaseDamage = 53;
+            }
+            else projectileBaseDamage = 65;
             Player P = Main.player[NPC.target];
 
             if (Vector2.Distance(P.Center, NPC.Center) < 600)

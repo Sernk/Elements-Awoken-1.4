@@ -6459,23 +6459,23 @@ Items: {
 	}
 
 	InfernaceRelicItem: {
-		DisplayName: Infernace Relic Item
+		DisplayName: Infernace Relic
 		Tooltip: ""
 	}
 
 	WastelandRelicItem: {
 		Tooltip: ""
-		DisplayName: Wasteland Relic Item
+		DisplayName: Wasteland Relic
 	}
 
 	ScourgeFighterRelicItem: {
 		Tooltip: ""
-		DisplayName: Scourge Fighter Relic Item
+		DisplayName: Scourge Fighter Relic
 	}
 
 	PermafrostRelicItem: {
 		Tooltip: ""
-		DisplayName: Permafrost Relic Item
+		DisplayName: Permafrost Relic
 	}
 }
 
@@ -9315,7 +9315,7 @@ Sanity: {
 }
 
 Unbound: KEY NOT BOUND
-IsHard: "[c/973999:Not recommended if you want to make a fair and balanced playthrough]"
+IsHard: "[c/973999:Not recommended if you want to do a fair and balanced playthrough]"
 AwakenedModeActive2: "[c/973999:in Awakened Mode]"
 AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode isn't Active]"
 AwakenedMode: "[c/973999:Awakened Mode is active]"

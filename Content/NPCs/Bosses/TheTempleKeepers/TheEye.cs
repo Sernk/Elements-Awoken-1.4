@@ -70,7 +70,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         {
             var AncientWyrm = new LeadingConditionRule(new EAIDRC.DropAncientWyrmHeadDeath());
 
-            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TempleFragment>()));
+            AncientWyrm.OnSuccess(ItemDropRule.Common(ModContent.ItemType<TempleFragment>()));
 
             AncientWyrm.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.TempLoot]));
             AncientWyrm.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<TempleKeepersBag>(), 1));

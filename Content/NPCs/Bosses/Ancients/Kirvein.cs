@@ -18,7 +18,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
         public float originX = 0;
         public float originY = 0;
 
-        public int projectileBaseDamage = 100;
+        public int projectileBaseDamage = 0;
 
         public int specialTimer = 600;
         public override void SetDefaults()
@@ -140,7 +140,18 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
 
             Player P = Main.player[NPC.target];
             Lighting.AddLight(NPC.Center, 0, 1.5f, 0.5f);
-            // despawn if no players
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 16;
+                else projectileBaseDamage = 12;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 57;
+                else projectileBaseDamage = 57;
+            }
+            else projectileBaseDamage = 68;
+
             if (!Main.player[NPC.target].active || Main.player[NPC.target].dead)
             {
                 NPC.TargetClosest(true);
@@ -234,7 +245,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
                         SoundEngine.PlaySound(SoundID.Item21, NPC.position);
                         float projSpeed = 16f;
                         float rotation = (float)Math.Atan2(NPC.Center.Y - P.Center.Y, NPC.Center.X - P.Center.X);
-                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * projSpeed) * -1), (float)((Math.Sin(rotation) * projSpeed) * -1), ModContent.ProjectileType<KirveinExplosiveArrow>(), (int)(projectileBaseDamage * 1.2f), 5f, Main.myPlayer);
+                        Projectile.NewProjectile(EAU.NPCs(NPC), NPC.Center.X, NPC.Center.Y, (float)((Math.Cos(rotation) * projSpeed) * -1), (float)((Math.Sin(rotation) * projSpeed) * -1), ModContent.ProjectileType<KirveinExplosiveArrow>(), projectileBaseDamage + 3, 5f, Main.myPlayer);
                     }
                     else
                     {

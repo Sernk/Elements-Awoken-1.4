@@ -6525,23 +6525,23 @@ Items: {
 	}
 
 	InfernaceRelicItem: {
-		// DisplayName: Infernace Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Инфернейса
+		Tooltip: ""
 	}
 
 	WastelandRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Wasteland Relic Item
+		Tooltip: ""
+		DisplayName: Реликвия Пустоши
 	}
 
 	ScourgeFighterRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Scourge Fighter Relic Item
+		Tooltip: ""
+		DisplayName: Реликвия Бичеборца
 	}
 
 	PermafrostRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Permafrost Relic Item
+		Tooltip: ""
+		DisplayName: Реликвия Пермафроста
 	}
 }
 
@@ -8801,9 +8801,7 @@ Config: {
 	LowDust: Пониженное количество частиц
 	Reduces: Сильно ограничивает количество частиц, которые могут существовать одновременно
 	EnterDebug: Режим дебага
-	Shows: ???
-	// RecipeBrows: Recipe Browser
-	// RecipeBrowsTooltips: Shows hints for some items
+	Shows: Секрет (на самом деле нет).
 }
 
 Biomes: {
@@ -9392,7 +9390,7 @@ Sanity: {
 }
 
 Unbound: кнопка не назначена
-// IsHard: "[c/973999:Not recommended if you want to make a fair and balanced playthrough]"
+IsHard: "[c/973999:Не рекоммендуется, если ты хочешь сделать нормальное, сбалансированное прохождение.]"
 AwakenedModeActive2: "[c/b523d2:Пробуждённого режима]"
 AwakenedModeNotActive: "[c/7a7a7a: Пробуждённый режим выключен]"
 AwakenedMode: "[c/b523d2:Пробуждённый режим включён]"

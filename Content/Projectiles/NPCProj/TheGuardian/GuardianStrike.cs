@@ -11,6 +11,8 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian
 {
     public class GuardianStrike : ModProjectile
     {
+        private int projectileBaseDamage = 0;
+
         public override void SetDefaults()
         {
             Projectile.width = 14;
@@ -56,13 +58,24 @@ namespace ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian
         }
         public override void OnKill(int timeLeft)
         {
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 10;
+                else projectileBaseDamage = 9;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 32;
+                else projectileBaseDamage = 30;
+            }
+            else projectileBaseDamage = 40;
             if (Projectile.ai[1] == 1)
             {
                 ProjectileUtils.HostileExplosion(Projectile, 6);
                 for (int i = 0; i < 6; i++)
                 {
                     Vector2 perturbedSpeed = new Vector2(2f, 2f).RotatedByRandom(MathHelper.ToRadians(360));
-                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianFire>(), (int)(Projectile.damage * 0.75f), 0f, 0);
+                    Projectile.NewProjectile(EAU.Proj(Projectile), Projectile.Center.X, Projectile.Center.Y, perturbedSpeed.X, perturbedSpeed.Y, ModContent.ProjectileType<GuardianFire>(), projectileBaseDamage + 2, 0f, 0);
                 }
             }
         }

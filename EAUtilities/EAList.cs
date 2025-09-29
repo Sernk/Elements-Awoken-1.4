@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase1;
+﻿using ElementsAwoken.Content.Events.RadiantRain.Enemies;
+using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase1;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2;
 using ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm;
 using ElementsAwoken.Content.Items.Accessories;
@@ -41,7 +42,6 @@ using ElementsAwoken.Content.NPCs.Elementals;
 using ElementsAwoken.Content.NPCs.ItemSets.ToySlime;
 using System;
 using System.Collections.Generic;
-using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ID.NPCID;
@@ -186,6 +186,9 @@ namespace ElementsAwoken.EAUtilities
         #endregion
         #region Void
         public static readonly List<int> VoidNPC = [ModContent.NPCType<Immolator>(), ModContent.NPCType<ReaverSlime>(), ModContent.NPCType<VoidKnight>(), ModContent.NPCType<VoidElemental>(), ModContent.NPCType<AbyssSkull>(), ModContent.NPCType<AbyssSkullette>(), ModContent.NPCType<VoidFly>(), ModContent.NPCType<AccursedFlier>(), ModContent.NPCType<DimensionalHive>(), ModContent.NPCType<ZergCaster>(), ModContent.NPCType<ShadeWyrmHead>(), ModContent.NPCType<ShadeWyrmBody>(), ModContent.NPCType<ShadeWyrmTail>(), ModContent.NPCType<EtherealHunter>(), ModContent.NPCType<VoidCrawler>(), ModContent.NPCType<VoidGolem>()];
+        #endregion
+        #region RadiantRain
+        public static readonly List<int> RadiantRainNPC = [NPCType<SparklingSlime>(), NPCType<RadiantWarrior>(), NPCType<StellarStarfish>(), NPCType<AllKnowerHead>(), NPCType<StarlightGlobule>(), NPCType<RadiantMaster>()];
         #endregion
         #endregion
         public static readonly Dictionary<string, DamageClass> damageTypes = new()

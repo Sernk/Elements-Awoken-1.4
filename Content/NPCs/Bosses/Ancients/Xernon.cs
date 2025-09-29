@@ -18,7 +18,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
         public float originX = 0;
         public float originY = 0;
 
-        public int projectileBaseDamage = 100;
+        public int projectileBaseDamage = 0;
 
         public int specialType = 0;
         public bool attack2Inverse = false;
@@ -141,7 +141,17 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Ancients
             NPC.TargetClosest(true);
             Player P = Main.player[NPC.target];
             Lighting.AddLight(NPC.Center, 0.3f, 0f, 1.5f);
-
+            if (Main.masterMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 16;
+                else projectileBaseDamage = 12;
+            }
+            if (Main.expertMode)
+            {
+                if (MyWorld.awakenedMode) projectileBaseDamage = 57;
+                else projectileBaseDamage = 57;
+            }
+            else projectileBaseDamage = 68;
             // despawn if no players
             if (!Main.player[NPC.target].active || Main.player[NPC.target].dead)
             {

@@ -123,7 +123,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.ScourgeFighter
             weaponDrop.OnSuccess(ItemDropRule.Common(ItemID.RocketI, 1, 50, 150));
             npcLoot.Add(weaponDrop);
 
-            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<ScourgeFighterRelicItem>(), 10));
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<ScourgeFighterRelicItem>()));
             //npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<ScourgeFighterMask>(), 10));
 
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<ScourgeFighterBag>(), 1));
