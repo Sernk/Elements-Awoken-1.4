@@ -17,6 +17,24 @@ Donations are on the forum allowing you to get your own custom weapon, accessory
 Hope you enjoy playing my mod :)
 
 ----CHANGELOG----
+1.3.13.4
+- Important
+  - Unofficially the mod to 1.4.4
+- Additions
+  - Added Russian translation
+  - Added the mod's small icon
+  - Added bestiary entries for (most) of the mod's entities
+  - Added an Awakened Mode indicator to the world selection screen
+  - Added Relics for all bosses in Master Mode
+  - Added a couple new config options
+- Changes
+  - Hopefull boss balancing fixes in Expert and higher difficulties
+  - Clarified some item tooltips and fixed several typos
+  - Updated the Credits cutscene
+  - Updated the Boss Checklist support
+  - Small changes that are too small to be described here
+- Removals
+  - Removed Gnome
 1.3.13.1
 - Important
   - Made Planter Box's count as a platform: this could come with side effects, please report any

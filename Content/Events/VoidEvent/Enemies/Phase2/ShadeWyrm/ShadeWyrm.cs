@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Items.VoidEventItems;
+﻿using ElementsAwoken.Content.Items.BossDrops;
+using ElementsAwoken.Content.Items.VoidEventItems;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EASystem.Loot;
@@ -64,6 +65,7 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2.ShadeWyrm
             var ExpertMod = new LeadingConditionRule(new EAIDRC.DropExpert());
             var NormalMod = new LeadingConditionRule(new EAIDRC.DropNormal());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ItemType<ShadeWyrmRelicItem>()));
             AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<ShadeScale>(), minimumDropped: 16, maximumDropped: 26));
             npcLoot.Add(AwakenedMode);
             ExpertMod.OnSuccess(ItemDropRule.Common(ItemType<ShadeScale>(), minimumDropped: 12, maximumDropped: 19));

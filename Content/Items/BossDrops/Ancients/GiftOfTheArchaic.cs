@@ -1,5 +1,6 @@
 ﻿using ElementsAwoken.Content.Buffs.Cooldowns;
 using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -22,8 +23,8 @@ namespace ElementsAwoken.Content.Items.BossDrops.Ancients
             Item.value = Item.buyPrice(0, 50, 0, 0);
             Item.rare = 11;
             Item.accessory = true;
-            Item.expert = true;
             Item.rare = ModContent.RarityType<Awakened>();
+            Item.GetGlobalItem<EARaritySettings>().awakened = true;
         }
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         { 

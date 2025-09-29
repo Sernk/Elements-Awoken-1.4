@@ -105,6 +105,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         {
             var AncientWyrm = new LeadingConditionRule(new EAIDRC.DropTheEyeDeath());
 
+            AncientWyrm.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<AncientWyrmRelicItem>()));
+
             AncientWyrm.OnSuccess(ItemDropRule.Common(ModContent.ItemType<WyrmHeart>()));
 
             AncientWyrm.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.TempLoot]));

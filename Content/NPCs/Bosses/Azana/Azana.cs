@@ -140,6 +140,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Azana
             LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
             LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<AzanaRelicItem>()));
+
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.AzaLoot]));
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<AzanaBag>(), 1));
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<EntropicCoating>(), 7));

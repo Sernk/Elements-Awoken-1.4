@@ -16,7 +16,7 @@ namespace ElementsAwoken.Content.Items.ItemSets.ToySlime
             Item.value = Item.sellPrice(0, 2, 0, 0);
             Item.rare = ModContent.RarityType<EARarity.Awakened>();
             Item.accessory = true;
-            Item.expert = true;
+            Item.GetGlobalItem<EARaritySettings>().awakened = true;
         }
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {

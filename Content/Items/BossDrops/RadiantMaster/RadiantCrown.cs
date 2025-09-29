@@ -1,5 +1,6 @@
 ﻿using ElementsAwoken.Content.Projectiles;
 using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -20,6 +21,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.RadiantMaster
             Item.value = Item.sellPrice(0, 15, 0, 0);
             Item.accessory = true;
             Item.rare = RarityType<Awakened>();
+            Item.GetGlobalItem<EARaritySettings>().awakened = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {

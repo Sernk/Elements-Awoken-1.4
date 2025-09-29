@@ -130,6 +130,7 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
             var _AwakenedMode = new LeadingConditionRule(new EAIDRC.AwakenedModeActive());
             npcLoot.Add(ItemDropRule.OneFromOptions(1, ItemType<Majesty>(), ItemType<RadiantBomb>(), ItemType<RadiantBow>(), ItemType<RadiantSword>()));
             npcLoot.Add(ItemDropRule.Common(ItemType<Radia>(), minimumDropped: 4, maximumDropped: 21));
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ItemType<RadiantMasterRelicItem>()));
             _AwakenedMode.OnSuccess(ItemDropRule.Common(ItemType<RadiantCrown>()));
             npcLoot.Add(_AwakenedMode);
         }

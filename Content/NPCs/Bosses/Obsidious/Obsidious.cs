@@ -153,6 +153,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Obsidious
             LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
             LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<ObsidiousRelicItem>()));
+
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.ObsiLoot]));
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<ObsidiousBag>(), 1));
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<ObsidiousTrophy>(), 10));

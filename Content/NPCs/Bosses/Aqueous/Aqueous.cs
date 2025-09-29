@@ -1,5 +1,4 @@
-﻿using CalamityMod;
-using ElementsAwoken.Content.Buffs.Debuffs;
+﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.Aqueous;
 using ElementsAwoken.Content.Items.Essence;
 using ElementsAwoken.Content.Projectiles.NPCProj.Aqueous;
@@ -117,6 +116,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Aqueous
         {
             LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
             LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
+
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<AqueousRelicItem>()));
 
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.AquLoot]));
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<AqueousBag>(), 1));

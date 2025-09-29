@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ModLoader;
 using static ElementsAwoken.EASystem.UI.Tooltips.EARarity;
@@ -14,6 +15,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.VoidLeviathan
             Item.rare = ModContent.RarityType<Awakened>();
             Item.value = Item.sellPrice(0, 15, 0, 0);
             Item.accessory = true;
+            Item.GetGlobalItem<EARaritySettings>().awakened = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {

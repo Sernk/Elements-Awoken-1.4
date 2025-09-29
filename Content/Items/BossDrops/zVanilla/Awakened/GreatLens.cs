@@ -16,6 +16,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.zVanilla.Awakened
             Item.value = Item.sellPrice(0, 2, 50, 0);
             Item.accessory = true;
             Item.rare = ModContent.RarityType<EARarity.Awakened>();
+            Item.GetGlobalItem<EARaritySettings>().awakened = true;
         }
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {

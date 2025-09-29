@@ -6543,6 +6543,71 @@ Items: {
 		Tooltip: ""
 		DisplayName: Реликвия Пермафроста
 	}
+
+	AqueousRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Aqueous Relic Item
+	}
+
+	AncientsRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Ancients Relic Item
+	}
+
+	AzanaRelicItem: {
+		// DisplayName: Azana Relic Item
+		// Tooltip: ""
+	}
+
+	CosmicObserverRelicItem: {
+		// DisplayName: Cosmic Observer Relic Item
+		// Tooltip: ""
+	}
+
+	ObsidiousRelicItem: {
+		// DisplayName: Obsidious Relic Item
+		// Tooltip: ""
+	}
+
+	RegarothRelicItem: {
+		// DisplayName: Regaroth Relic Item
+		// Tooltip: ""
+	}
+
+	TheGuardianRelicItem: {
+		// DisplayName: The Guardian Relic Item
+		// Tooltip: ""
+	}
+
+	VolcanoxRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Volcanox Relic Item
+	}
+
+	VoidLeviathanRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Void Leviathan Relic Item
+	}
+
+	TheEyeRelicItem: {
+		// Tooltip: ""
+		// DisplayName: The Eye Relic Item
+	}
+
+	AncientWyrmRelicItem: {
+		// Tooltip: ""
+		// DisplayName: Ancient Wyrm Relic Item
+	}
+
+	RadiantMasterRelicItem: {
+		// DisplayName: Radiant Master Relic Item
+		// Tooltip: ""
+	}
+
+	ShadeWyrmRelicItem: {
+		// DisplayName: Shade Wyrm Relic Item
+		// Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -8802,6 +8867,8 @@ Config: {
 	Reduces: Сильно ограничивает количество частиц, которые могут существовать одновременно
 	EnterDebug: Режим дебага
 	Shows: Секрет (на самом деле нет).
+	// RecipeBrows: Recipe Browser
+	// RecipeBrowsTooltips: Shows hints for some items
 }
 
 Biomes: {
@@ -9399,6 +9466,8 @@ IsSummon: Призывалка не сработает, так как сейча
 Prompt: Ты активировал напоминания о боссах! С ними через 30 минут в мире начнут появляться различные неприятные эффекты. Их можно отключить следующим образом, если они слишком мешают: Настройки > Конфигурация мода > Elements Awoken.
 AlchemistUI: Положи предмет в слот, чтобы превратить его в
 AlchemistUI1: его альтернативу
+// VoidEvent: The dawn of the void has started!
+// VoidEvent1: The void retreats back into the shadows...
 
 MyPlayerLocalization: {
 	MyPlayer: {

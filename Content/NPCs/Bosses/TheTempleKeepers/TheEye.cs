@@ -1,6 +1,5 @@
 ﻿using ElementsAwoken.Content.Buffs.Debuffs;
 using ElementsAwoken.Content.Items.BossDrops.TheTempleKeepers;
-using ElementsAwoken.Content.Items.BossDrops.VoidLeviathan;
 using ElementsAwoken.Content.Projectiles.NPCProj.TheGuardian;
 using ElementsAwoken.EASystem.Loot;
 using ElementsAwoken.EAUtilities;
@@ -69,6 +68,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             var AncientWyrm = new LeadingConditionRule(new EAIDRC.DropAncientWyrmHeadDeath());
+
+            AncientWyrm.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<TheEyeRelicItem>()));
 
             AncientWyrm.OnSuccess(ItemDropRule.Common(ModContent.ItemType<TempleFragment>()));
 

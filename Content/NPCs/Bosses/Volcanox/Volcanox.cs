@@ -104,6 +104,7 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Volcanox
 
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.VolLoot]));
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<VolcanoxBag>(), 1));
+            _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<VolcanoxRelicItem>(), 1));
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<VolcanoxTrophy>(), 10));
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<VolcanoxMask>(), 10));
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<Pyroplasm>(), minimumDropped: 5, maximumDropped: 40));

@@ -127,6 +127,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheGuardian
             LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
             LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<TheGuardianRelicItem>()));
+
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.TGuaLoot]));
             _DropExpert.OnSuccess(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<GuardianBag>(), 1));
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<TheGuardianTrophy>(), 10));

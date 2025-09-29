@@ -36,16 +36,5 @@ namespace ElementsAwoken.Content.Items.Consumable.StatIncreases
             if (player.GetModPlayer<MyPlayer>().extraAccSlot) return false;
             else return true;
         }
-        //public override void AddRecipes()
-        //{
-        //    ModRecipe recipe = new ModRecipe(mod);
-        //    recipe.AddIngredient(ItemID.DemonHeart, 1);
-        //    recipe.AddIngredient(ModContent.ItemType<DiscordantBar>(), 25);
-        //    recipe.AddIngredient(null, "VoidAshes", 12);
-        //    recipe.AddIngredient(null, "VoidEssence", 15);
-        //    recipe.AddTile(null, "ChaoticCrucible");
-        //    recipe.SetResult(this);
-        //    //if (ModLoader.GetMod("CalamityMod") == null) recipe.AddRecipe();
-        //}
     }
 }

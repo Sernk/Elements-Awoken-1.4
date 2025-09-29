@@ -6477,6 +6477,71 @@ Items: {
 		Tooltip: ""
 		DisplayName: Permafrost Relic
 	}
+
+	AqueousRelicItem: {
+		Tooltip: ""
+		DisplayName: Aqueous Relic Item
+	}
+
+	AncientsRelicItem: {
+		Tooltip: ""
+		DisplayName: Ancients Relic Item
+	}
+
+	AzanaRelicItem: {
+		DisplayName: Azana Relic Item
+		Tooltip: ""
+	}
+
+	CosmicObserverRelicItem: {
+		DisplayName: Cosmic Observer Relic Item
+		Tooltip: ""
+	}
+
+	ObsidiousRelicItem: {
+		DisplayName: Obsidious Relic Item
+		Tooltip: ""
+	}
+
+	RegarothRelicItem: {
+		DisplayName: Regaroth Relic Item
+		Tooltip: ""
+	}
+
+	TheGuardianRelicItem: {
+		DisplayName: The Guardian Relic Item
+		Tooltip: ""
+	}
+
+	VolcanoxRelicItem: {
+		Tooltip: ""
+		DisplayName: Volcanox Relic Item
+	}
+
+	VoidLeviathanRelicItem: {
+		Tooltip: ""
+		DisplayName: Void Leviathan Relic Item
+	}
+
+	TheEyeRelicItem: {
+		Tooltip: ""
+		DisplayName: The Eye Relic Item
+	}
+
+	AncientWyrmRelicItem: {
+		Tooltip: ""
+		DisplayName: Ancient Wyrm Relic Item
+	}
+
+	RadiantMasterRelicItem: {
+		DisplayName: Radiant Master Relic Item
+		Tooltip: ""
+	}
+
+	ShadeWyrmRelicItem: {
+		DisplayName: Shade Wyrm Relic Item
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -9324,6 +9389,8 @@ IsSummon: Cannot be summoned because another boss is already alive:
 Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
 AlchemistUI: Place an item here to convert it into its
 AlchemistUI1: counterpart
+VoidEvent: The dawn of the void has started!
+VoidEvent1: The void retreats back into the shadows...
 
 MyPlayerLocalization: {
 	MyPlayer: {
@@ -9577,21 +9644,21 @@ EsseneceAlertsLocalization: {
 LocalizationEARecipeGroups: {
 	EARecipeGroups: {
 		RecipeGroups: {
-			Name: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name
-			Name1: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name1
-			Name2: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name2
-			Name3: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name3
-			Name4: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name4
-			Name5: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name5
-			Name6: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name6
-			Name7: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name7
-			Name8: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name8
-			Name9: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name9
-			Name10: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name10
-			Name11: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name11
-			Name12: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name12
-			Name13: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name13
-			Name14: Mods.ElementsAwoken.LocalizationEARecipeGroups.EARecipeGroups.RecipeGroups.Name14
+			Name: Wings
+			Name1: Lunar Wings
+			Name2: Silver or Tungsten Sword
+			Name3: Sand
+			Name4: Sandstone
+			Name5: Ice Block
+			Name6: Copper Bar
+			Name7: Silver Bar
+			Name8: Gold Bar
+			Name9: Evil Bar
+			Name10: Evil Ore
+			Name11: Cobalt Bar
+			Name12: Mythril Bar
+			Name13: Adamantite Bar
+			Name14: Adamantite Bar
 		}
 	}
 }

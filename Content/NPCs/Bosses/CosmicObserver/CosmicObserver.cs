@@ -158,6 +158,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.CosmicObserver
             var _AwakenedModeExpert = new LeadingConditionRule(new EAIDRC.DropExpert());
             var _AwakenedModeNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<CosmicObserverRelicItem>()));
+
             _AwakenedMode.OnSuccess(ItemDropRule.Common(ModContent.ItemType<CosmicGlass>()));
             npcLoot.Add(_AwakenedMode);
             _AwakenedModeEssence.OnSuccess(ItemDropRule.Common(ModContent.ItemType<CosmicShard>(), minimumDropped: 17, maximumDropped: 26));

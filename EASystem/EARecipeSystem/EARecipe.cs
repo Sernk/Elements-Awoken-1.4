@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Items.Accessories.Emblems;
+﻿using ElementsAwoken.Content.Items.Accessories;
+using ElementsAwoken.Content.Items.Accessories.Emblems;
 using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Materials;
 using System.Linq;
@@ -21,6 +22,12 @@ namespace ElementsAwoken.EASystem.EARecipeSystem
                 if (recipe.createItem.type == ItemID.TerrasparkBoots)
                 {
                     recipe.DisableRecipe();
+                }
+                if (recipe.createItem.type == ItemID.CellPhone)
+                {
+                    recipe.AddIngredient(ModContent.ItemType<AlchemistsTimer>());
+                    recipe.AddIngredient(ModContent.ItemType<DryadsRadar>());
+                    recipe.AddIngredient(ModContent.ItemType<RainMeter>());
                 }
             }
             Recipe srecipe = Recipe.Create(ItemID.TerrasparkBoots);

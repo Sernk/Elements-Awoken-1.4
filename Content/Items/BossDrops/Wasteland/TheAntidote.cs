@@ -1,4 +1,5 @@
 ﻿using ElementsAwoken.EASystem.EAPlayer;
+using ElementsAwoken.EASystem.UI.Tooltips;
 using Terraria;
 using Terraria.ModLoader;
 using static ElementsAwoken.EASystem.UI.Tooltips.EARarity;
@@ -14,6 +15,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Wasteland
             Item.value = Item.buyPrice(0, 5, 0, 0);
             Item.rare = ModContent.RarityType<Awakened>();
             Item.accessory = true;
+            Item.GetGlobalItem<EARaritySettings>().awakened = true;
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {

@@ -97,6 +97,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Regaroth
             LeadingConditionRule _DropNormal = new LeadingConditionRule(new EAIDRC.DropNormal());
             LeadingConditionRule _DropExpert = new LeadingConditionRule(new EAIDRC.DropAwakened());
 
+            npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<RegarothRelicItem>()));
+
             _DropNormal.OnSuccess(ItemDropRule.OneFromOptions(1, [.. EAList.RegLoot]));
 
             _DropNormal.OnSuccess(ItemDropRule.Common(ModContent.ItemType<RegarothTrophy>(), 10));
