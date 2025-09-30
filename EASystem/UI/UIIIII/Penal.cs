@@ -55,10 +55,6 @@ namespace ElementsAwoken.EASystem.UI.UIIIII
             UISystemSettings.Panel = false;
         }
     }
-    public class DrawSanityBook : UIState
-    {
-        // //
-    }
     public class DraggableUIPanel : UIPanel
     {
         private Vector2 offset;

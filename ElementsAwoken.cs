@@ -120,6 +120,10 @@ namespace ElementsAwoken
         public const int bossPromptDelay = 108000;
 
         int b = 0;
+        private bool isDragging;
+        private Vector2 dragOffset;
+        private Vector2 uiPosition = new Vector2(Main.screenWidth - 350, Main.screenHeight - 250);
+
         public ElementsAwoken()
         {
             ContentAutoloadingEnabled = true;
@@ -567,25 +571,67 @@ namespace ElementsAwoken
             Player player = Main.player[Main.myPlayer];
             AwakenedPlayer awakenedPlayer = player.GetModPlayer<AwakenedPlayer>();
 
-            var background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBookUI").Value;
-            Main.spriteBatch.Draw(background, new Rectangle(Main.screenWidth - 350, Main.screenHeight - 250, background.Width, background.Height), null, Color.White, 0f, Vector2.Zero, SpriteEffects.None, 0f);
-            // draw the positive
-            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, ModContent.GetInstance<EALocalization>().SanityRegens, Main.screenWidth - 330, Main.screenHeight - 220, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+            int SanityRegensX;
+            int SanityDrainsX;
+
+            Texture2D background;
+
+            if (Language.ActiveCulture.Name == "ru-RU")
+            {
+                background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBookUIRu").Value;
+                SanityRegensX = 15;
+                SanityDrainsX = 315;
+            }
+            else
+            {
+                background = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBookUI").Value;
+                SanityRegensX = 20;
+                SanityDrainsX = 200;
+            }
+
+            Rectangle bgRect = new((int)uiPosition.X, (int)uiPosition.Y, background.Width, background.Height);
+
+            if (Main.mouseLeft && bgRect.Contains(Main.mouseX, Main.mouseY) && !isDragging)
+            {
+                isDragging = true;
+                dragOffset = new Vector2(Main.mouseX, Main.mouseY) - uiPosition;
+                Main.LocalPlayer.mouseInterface = true;
+            }
+            if (isDragging)
+            {
+                if (Main.mouseLeftRelease)
+                {
+                    isDragging = false;
+                }
+                else
+                {
+                    uiPosition = new Vector2(Main.mouseX, Main.mouseY) - dragOffset;
+                    uiPosition.X = MathHelper.Clamp(uiPosition.X, 0, Main.screenWidth - background.Width);
+                    uiPosition.Y = MathHelper.Clamp(uiPosition.Y, 0, Main.screenHeight - background.Height);
+                    Main.LocalPlayer.mouseInterface = true;
+                }
+            }
+
+            Main.spriteBatch.Draw(background, bgRect, null, Color.White, 0f, Vector2.Zero, SpriteEffects.None, 0f);
+
+            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, ModContent.GetInstance<EALocalization>().SanityRegens, uiPosition.X + SanityRegensX, uiPosition.Y + 30, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+
             for (int i = 0; i < awakenedPlayer.sanityRegens.Count; i++)
             {
                 string text = awakenedPlayer.sanityRegensName[i] + ": " + awakenedPlayer.sanityRegens[i];
-                int yPos = Main.screenHeight - 200 + 25 * i;
-                Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, text, Main.screenWidth - 330, yPos, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+                int yPos = (int)uiPosition.Y + 50 + 25 * i;
+                Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, text, uiPosition.X + SanityRegensX, yPos, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
             }
-            // draw the negative
-            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, ModContent.GetInstance<EALocalization>().SanityDrains, Main.screenWidth - 150, Main.screenHeight - 220, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+
+            Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, ModContent.GetInstance<EALocalization>().SanityDrains, uiPosition.X + SanityDrainsX, uiPosition.Y + 30, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
+
             for (int i = 0; i < awakenedPlayer.sanityDrains.Count; i++)
             {
                 string text = awakenedPlayer.sanityDrainsName[i] + ": " + awakenedPlayer.sanityDrains[i];
                 int textLength = (int)FontAssets.MouseText.Value.MeasureString(text).X;
-                int xPos = Main.screenWidth - 150;
-                if (Main.screenWidth - 150 + textLength > Main.screenWidth) xPos = Main.screenWidth - textLength - 35;
-                int yPos = Main.screenHeight - 200 + 25 * i;
+                int xPos = (int)uiPosition.X + SanityDrainsX;
+                if (uiPosition.X + SanityDrainsX + textLength > Main.screenWidth) xPos = (int)uiPosition.X + background.Width - textLength - 35;
+                int yPos = (int)uiPosition.Y + 50 + 25 * i;
                 Utils.DrawBorderStringFourWay(Main.spriteBatch, FontAssets.MouseText.Value, text, xPos, yPos, new Color((int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor, (int)Main.mouseTextColor), Color.Black, new Vector2());
             }
         }
@@ -1237,43 +1283,6 @@ namespace ElementsAwoken
             else if (timer > duration - (duration / 8)) return 1 - (timer - (duration - duration / 8f)) / (duration / 8f); // probably a better way to do this
             else return 1f;
         }
-        //    Mod fargos = ModLoader.GetMod("Fargowiltas");
-        //    if (fargos != null)
-        //    {
-        //        // AddSummon, order or value in terms of vanilla bosses, your mod internal name, summon item internal name, inline method for retrieving downed value, price to sell for in copper
-        //        fargos.Call("AddSummon", wasteland, "ElementsAwoken", "WastelandSummon", (Func<bool>)(() => MyWorld.downedWasteland), Item.buyPrice(0, 10, 0, 0));
-        //        fargos.Call("AddSummon", toySlime, "ElementsAwoken", "ToySlimeSummon", (Func<bool>)(() => MyWorld.downedToySlime), Item.buyPrice(0, 2, 50, 0));
-        //        fargos.Call("AddSummon", infernace, "ElementsAwoken", "InfernaceSummon", (Func<bool>)(() => MyWorld.downedInfernace), Item.buyPrice(0, 17, 50, 0));
-        //        fargos.Call("AddSummon", observer, "ElementsAwoken", "CosmicObserverSummon", (Func<bool>)(() => MyWorld.downedCosmicObserver), Item.buyPrice(0, 20, 0, 0));
-        //        fargos.Call("AddSummon", scourge, "ElementsAwoken", "ScourgeFighterSummon", (Func<bool>)(() => MyWorld.downedScourgeFighter), Item.buyPrice(0, 45, 0, 0));
-        //        fargos.Call("AddSummon", regaroth, "ElementsAwoken", "RegarothSummon", (Func<bool>)(() => MyWorld.downedRegaroth), Item.buyPrice(0, 50, 0, 0));
-        //        //fargos.Call("AddSummon", celestials, "ElementsAwoken", "CelestialSummon", (Func<bool>)(() => MyWorld.downedCelestial), Item.buyPrice(0, 55, 0, 0));
-        //        fargos.Call("AddSummon", permafrost, "ElementsAwoken", "PermafrostSummon", (Func<bool>)(() => MyWorld.downedPermafrost), Item.buyPrice(0, 60, 0, 0));
-        //        fargos.Call("AddSummon", obsidious, "ElementsAwoken", "ObsidiousSummon", (Func<bool>)(() => MyWorld.downedObsidious), Item.buyPrice(0, 60, 0, 0));
-        //        fargos.Call("AddSummon", aqueous, "ElementsAwoken", "AqueousSummon", (Func<bool>)(() => MyWorld.downedAqueous), Item.buyPrice(0, 67, 50, 0));
-        //        fargos.Call("AddSummon", keepers, "ElementsAwoken", "AncientDragonSummon", (Func<bool>)(() => (MyWorld.downedAncientWyrm && MyWorld.downedEye)), Item.buyPrice(0, 80, 0, 0));
-        //        //fargos.Call("AddSummon", guardian, "ElementsAwoken", "GuardianSummon", (Func<bool>)(() => MyWorld.downedToySlime), Item.buyPrice(0, 2, 50, 0));
-        //        //fargos.Call("AddSummon", dotv, "ElementsAwoken", "VoidEventSummon", (Func<bool>)(() => MyWorld.downedToySlime), Item.buyPrice(0, 2, 50, 0));
-        //        fargos.Call("AddSummon", volcanox, "ElementsAwoken", "VolcanoxSummon", (Func<bool>)(() => MyWorld.downedVolcanox), Item.buyPrice(1, 0, 50, 0));
-        //        //fargos.Call("AddSummon", vlevi, "ElementsAwoken", "Summon", (Func<bool>)(() => MyWorld.downedToySlime), Item.buyPrice(0, 2, 50, 0));
-        //        //fargos.Call("AddSummon", azana, "ElementsAwoken", "Summon", (Func<bool>)(() => (MyWorld.downedAzana || MyWorld.sparedAzana)), Item.buyPrice(0, 2, 50, 0));
-        //        fargos.Call("AddSummon", ancients, "ElementsAwoken", "AncientsSummon", (Func<bool>)(() => MyWorld.downedAncients), Item.buyPrice(1, 25, 0, 0));
-
-        //    }
-        //    Mod mystaria = ModLoader.GetMod("Mystaria");
-        //    if (mystaria != null)
-        //    {
-        //        mystaria.Call("AddSpellCombo", ItemType("FrostMine"), 1, 1, 2, 2, 3, 1, 0, 0, 4, 2);
-        //    }
-        //    Mod censusMod = ModLoader.GetMod("Census");
-        //    if (censusMod != null)
-        //    {
-        //        //censusMod.Call("TownNPCCondition", NPCType("Example Person"), $"Have [i:{ItemType<Items.ExampleItem>()}] or [i:{ItemType<Items.Placeable.ExampleBlock>()}] in inventory and build a house out of [i:{ItemType<Items.Placeable.ExampleBlock>()}] and [i:{ItemType<Items.Placeable.ExampleWall>()}]");
-        //        censusMod.Call("TownNPCCondition", NPCType("Alchemist"), "Defeat the Brain of Cthulhu or Eater of Worlds");
-        //        censusMod.Call("TownNPCCondition", NPCType("Storyteller"), "Always available");
-        //    }
-
-        
         public static void ApplyScreenShakeToAll(float amount)
         {
             for (int i = 0; i < Main.player.Length; i++)
