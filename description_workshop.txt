@@ -1,1 +1,23 @@
+[b]NOTE: THIS IS AN UNOFFICIAL PORT AND THIS ISN'T AN OFFICIAL 1.4, THIS PORT ONLY CONTAINS PRACTICALLY UNCHANGED CONTENT FROM THE LATEST VERSION OF THE MOD ON TMODLOADER 1.3[/b]
+Mod's wiki (NOT Fandom's): https://terrariamods.wiki.gg/wiki/Elements_Awoken
+[h1]Elements Awoken[/h1]
+Elements Awoken aims to add to the experience playing Terraria.
+[h1] Additions [/h1]
+[list]
+[*]30+ new enemies and banners to collect
+[*]Almost 1000 new items
+[*]14 bosses in total, 2 of which are Pre-Hardmode, 5 are Hardmode and 7 are Post-Moonlord
+[*]3 mini-bosses in total, 2 of which are event-exclusive
+[*]Unique music tracks for each and every boss and event in the mod!
+[*]3 new town NPCs
+[*]2 new Post-Moonlord events
+[/list]
+Have any questions regarding the mod? Join the mod's discord server - [url=https://discord.gg/ETJ6NBV] here.[/url]
 
+Be sure to download the 'Elements Awoken Music' addon if you want the mods music or alternatively download 'EA Retro Music' addon for the old music.
+[b]Credits:[/b]
+[list]
+[*]ThatOneJuicyOrange and the original Elements Awoken Development Team - making the original mod.
+[*]Aeris - making the port itself and everything code-related.
+[*]skyzephire - reaching out to the dev team asking if an unofficial port is allowed in the first place, making the Russian translation and fixing the English localization, playtesting, writing all bestiary entries for the mod's entities, moving the mod's wiki from Fandom to the Terraria Mods Wiki on wiki.gg and few smaller miscellaneous things.
+[/list]

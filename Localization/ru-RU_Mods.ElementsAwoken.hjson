@@ -6545,68 +6545,68 @@ Items: {
 	}
 
 	AqueousRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Aqueous Relic Item
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
+		DisplayName: Реликвия Аквеус
 	}
 
 	AncientsRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Ancients Relic Item
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
+		DisplayName: Реликвия Древних
 	}
 
 	AzanaRelicItem: {
-		// DisplayName: Azana Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Азаны
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 
 	CosmicObserverRelicItem: {
-		// DisplayName: Cosmic Observer Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Космоблюдателя
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 
 	ObsidiousRelicItem: {
-		// DisplayName: Obsidious Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Обсидиуса
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 
 	RegarothRelicItem: {
-		// DisplayName: Regaroth Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Регарота
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 
 	TheGuardianRelicItem: {
-		// DisplayName: The Guardian Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Стражника
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 
 	VolcanoxRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Volcanox Relic Item
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
+		DisplayName: Реликвия Волканокса
 	}
 
 	VoidLeviathanRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Void Leviathan Relic Item
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
+		DisplayName: Реликвия Левиафана Пустоты
 	}
 
 	TheEyeRelicItem: {
-		// Tooltip: ""
-		// DisplayName: The Eye Relic Item
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
+		DisplayName: Реликвия Ока
 	}
 
 	AncientWyrmRelicItem: {
-		// Tooltip: ""
-		// DisplayName: Ancient Wyrm Relic Item
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
+		DisplayName: Реликвия Древнего Змея
 	}
 
 	RadiantMasterRelicItem: {
-		// DisplayName: Radiant Master Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Лучезарного Мастера
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 
 	ShadeWyrmRelicItem: {
-		// DisplayName: Shade Wyrm Relic Item
-		// Tooltip: ""
+		DisplayName: Реликвия Тенезмея
+		Tooltip: Временный спрайт, который будет заменён, когда нужный будет сделан.
 	}
 }
 

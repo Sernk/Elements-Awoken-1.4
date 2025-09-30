@@ -6479,68 +6479,68 @@ Items: {
 	}
 
 	AqueousRelicItem: {
-		Tooltip: ""
-		DisplayName: Aqueous Relic Item
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
+		DisplayName: Aqueous Relic
 	}
 
 	AncientsRelicItem: {
-		Tooltip: ""
-		DisplayName: Ancients Relic Item
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
+		DisplayName: Ancients Relic
 	}
 
 	AzanaRelicItem: {
-		DisplayName: Azana Relic Item
-		Tooltip: ""
+		DisplayName: Azana Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 
 	CosmicObserverRelicItem: {
-		DisplayName: Cosmic Observer Relic Item
-		Tooltip: ""
+		DisplayName: Cosmic Observer Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 
 	ObsidiousRelicItem: {
-		DisplayName: Obsidious Relic Item
-		Tooltip: ""
+		DisplayName: Obsidious Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 
 	RegarothRelicItem: {
-		DisplayName: Regaroth Relic Item
-		Tooltip: ""
+		DisplayName: Regaroth Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 
 	TheGuardianRelicItem: {
-		DisplayName: The Guardian Relic Item
-		Tooltip: ""
+		DisplayName: The Guardian Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 
 	VolcanoxRelicItem: {
-		Tooltip: ""
-		DisplayName: Volcanox Relic Item
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
+		DisplayName: Volcanox Relic
 	}
 
 	VoidLeviathanRelicItem: {
-		Tooltip: ""
-		DisplayName: Void Leviathan Relic Item
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
+		DisplayName: Void Leviathan Relic
 	}
 
 	TheEyeRelicItem: {
-		Tooltip: ""
-		DisplayName: The Eye Relic Item
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
+		DisplayName: The Eye Relic
 	}
 
 	AncientWyrmRelicItem: {
-		Tooltip: ""
-		DisplayName: Ancient Wyrm Relic Item
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
+		DisplayName: Ancient Wyrm Relic
 	}
 
 	RadiantMasterRelicItem: {
-		DisplayName: Radiant Master Relic Item
-		Tooltip: ""
+		DisplayName: Radiant Master Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 
 	ShadeWyrmRelicItem: {
-		DisplayName: Shade Wyrm Relic Item
-		Tooltip: ""
+		DisplayName: Shade Wyrm Relic
+		Tooltip: Placeholder, will be changed once the proper sprite is made.
 	}
 }
 
@@ -9023,10 +9023,10 @@ Tooltips: {
 	VoidEventSummon1: You cannot intensify the void...
 	VoidEventSummon2: Your head is already filled with screams...
 	VoidEventSummon3: You feel a wave of cold rush over you...
-	VoidEventSummon4: Your head throbs
+	VoidEventSummon4: Your head throbs...
 	VoidEventSummon5: The void retreats from the light
 	VoidEventSummon6: The shadows grow darker...
-	Betatest: --Item for testing mod--
+	Betatest: --Debug item--
 	UndownerTerraria: Permafrost was killed:
 	AncientsSummon: I've waited centuries for this!
 	AncientsSummon1: Back for more?
