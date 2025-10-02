@@ -1983,7 +1983,7 @@ Items: {
 	}
 
 	FatesFlame: {
-		DisplayName: Fates Flame
+		DisplayName: Fate's Flame
 		Tooltip: ""
 	}
 
@@ -2397,7 +2397,7 @@ Items: {
 	}
 
 	VolcanoxSummon: {
-		DisplayName: Volcanox Summon
+		DisplayName: Charred Core
 		Tooltip:
 			'''
 			Its eternal blaze burns your eyes
@@ -6562,6 +6562,11 @@ Items: {
 		Tooltip: ""
 		DisplayName: Heart2
 	}
+
+	StellarEntityBanner: {
+		DisplayName: Stellar Entity Banner
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -7939,6 +7944,9 @@ NPCs: {
 
 		Census.SpawnCondition: Conditions unknown
 	}
+
+	ChaosKnight.DisplayName: Chaos Knight
+	ChaosWraith.DisplayName: Chaos Wraith
 }
 
 Projectiles: {
@@ -8936,6 +8944,8 @@ Bestiary: {
 		StellarEntity: Enigmatic entity shaped akin to an eye, covered in a tough shell made of the same metal as some other beings in the outer layers of the atmosphere.
 		GiantToad: Despite looking like a normal toad that can be encountered in abundance in the Jungle, something feels off about this one...
 		VampireBat: Close relative to the common cavern bat. However, the bites of the bats of this species can leech the lifeforce off the victim.
+		ChaosKnight: Another corpse of an unknown long-dead warrior, revived thanks to the chaotic forces which were unleashed upon the land again, after the destruction of the beast from the Void.
+		ChaosWraith: Raging spirit, born purely out of chaotic particles released once again upon the world, with the fall of a Void Leviathan.
 	}
 
 	TownNPCs: {

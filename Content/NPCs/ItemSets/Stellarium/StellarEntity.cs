@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.Content.Items.ItemSets.Stellarium;
+﻿using ElementsAwoken.Content.Items.Banners;
+using ElementsAwoken.Content.Items.ItemSets.Stellarium;
 using ElementsAwoken.Content.Projectiles.NPCProj;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -24,6 +25,8 @@ namespace ElementsAwoken.Content.NPCs.ItemSets.Stellarium
             NPC.value = Item.buyPrice(0, 0, 20, 0);
             NPC.HitSound = SoundID.NPCHit54;
             NPC.DeathSound = SoundID.NPCDeath52;
+            Banner = NPC.type;
+            BannerItem = ModContent.ItemType<StellarEntityBanner>();
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {

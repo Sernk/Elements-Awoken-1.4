@@ -121,9 +121,9 @@ namespace ElementsAwoken.Content.Tiles.Banners
                 case 25:
                     item = ModContent.ItemType<StellarBatBanner>();
                     break;
-                //case 26:
-                //    item = ModContent.ItemType<StellarEntityBanner>();
-                //    break;
+                case 26:
+                    item = ModContent.ItemType<StellarEntityBanner>();
+                    break;
                 default:
                     return;
             }
