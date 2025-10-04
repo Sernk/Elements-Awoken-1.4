@@ -12,7 +12,8 @@ namespace ElementsAwoken.EASystem.Biome
     {
         public override void PostUpdateEverything()
         {
-            var Leviathan = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+            MyPlayer Leviathan = Main.LocalPlayer.GetModPlayer<MyPlayer>();
+            Player player = Main.LocalPlayer;
 
             bool _AncientsSkyVisual = false;
             bool _AzanaSkyVisual = false;
@@ -305,7 +306,7 @@ namespace ElementsAwoken.EASystem.Biome
             }
             #endregion
             #region ??SkyVisual
-            if (Leviathan.useDespair)
+            if (player.GetModPlayer<MyPlayer>().voidEnergyTimer > 0 || player.GetModPlayer<MyPlayer>().voidWalkerAura > 0)
             {
                 _DespairSkyVisual = true;
             }
@@ -321,7 +322,7 @@ namespace ElementsAwoken.EASystem.Biome
                 Filters.Scene.Deactivate(ElementsAwoken.Despair);
             }
 
-            if (Leviathan.useblizzard)
+            if (MyWorld.hailStormTime > 0 && player.ZoneOverworldHeight && !player.ZoneDesert && !player.GetModPlayer<MyPlayer>().ActiveBoss())
             {
                 _BlizzardSkyVisual = true;
             }
@@ -336,7 +337,7 @@ namespace ElementsAwoken.EASystem.Biome
             {
                 Filters.Scene.Deactivate(ElementsAwoken.Blizzard);
             }
-            if (Leviathan.useInfWrath)
+            if (MyWorld.firePrompt > ElementsAwoken.bossPromptDelay && !player.GetModPlayer<MyPlayer>().ActiveBoss())
             {
                 _InfernacesWrathSkyVisual = true;
             }

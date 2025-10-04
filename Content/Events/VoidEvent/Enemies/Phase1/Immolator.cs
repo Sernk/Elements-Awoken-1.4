@@ -61,7 +61,6 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase1
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
             Main.npcFrameCount[NPC.type] = 6;
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {

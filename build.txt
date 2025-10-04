@@ -1,6 +1,6 @@
 displayName = Elements Awoken
 author = ThatOneJuicyOrange_, Aeris, skyzephire 
-version = 1.3.13.5
+version = 1.3.13.9
 weakReferences = CalamityMod,RecipeBrowser
 modReferences = Luminance
 homepage = https://forums.terraria.org/index.php?threads/elements-awoken-wip.54553/

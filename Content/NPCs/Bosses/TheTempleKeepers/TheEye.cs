@@ -53,8 +53,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.TheTempleKeepers
                 Direction = -1
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            Main.npcCatchable[NPC.type] = true;
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {

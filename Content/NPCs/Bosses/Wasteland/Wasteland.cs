@@ -120,7 +120,6 @@ namespace ElementsAwoken.Content.NPCs.Bosses.Wasteland
             drawModifiers.Position.X += 0f;
             drawModifiers.Position.Y += 10f;
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {

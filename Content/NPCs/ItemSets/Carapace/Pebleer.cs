@@ -52,7 +52,6 @@ namespace ElementsAwoken.Content.NPCs.ItemSets.Carapace
                 Direction = -1
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
         }
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)
         {

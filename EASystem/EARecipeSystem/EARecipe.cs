@@ -39,7 +39,7 @@ namespace ElementsAwoken.EASystem.EARecipeSystem
         public override void AddRecipes()
         {
             Recipe fallenstar = Recipe.Create(ItemID.FallenStar);
-            fallenstar.AddIngredient(ModContent.ItemType<Stardust>());
+            fallenstar.AddIngredient(ModContent.ItemType<Stardust>(), 5);
             fallenstar.Register();
 
             Recipe avengeremblem = Recipe.Create(ItemID.AvengerEmblem);

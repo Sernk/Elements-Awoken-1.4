@@ -44,7 +44,6 @@ namespace ElementsAwoken.Content.NPCs.Elementals
                 Direction = -1
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 4;
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)

@@ -62,7 +62,6 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
                 Direction = -1
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 5;
         }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)

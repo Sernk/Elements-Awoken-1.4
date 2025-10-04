@@ -33,11 +33,6 @@ namespace ElementsAwoken.EASystem.Biome
         public bool _useEncounter1 = false;
         public bool _useEncounter2 = false;
         public bool _useEncounter3 = false;
-        // ??
-        public bool _useDespair = false;
-        public bool _useblizzard = false;
-        public bool _useInfWrath = false;
-        public bool _useInfWrath2 = false;
         // Biomes
         public bool _temple = false;
         public override bool IsBiomeActive(Player player)
@@ -113,17 +108,6 @@ namespace ElementsAwoken.EASystem.Biome
             if (player.GetModPlayer<MyPlayer>().useEncounter3 = _useEncounter3) return _useEncounter3;
             #endregion
 
-            #region ??
-            _useDespair = player.GetModPlayer<MyPlayer>().voidEnergyTimer > 0 || player.GetModPlayer<MyPlayer>().voidWalkerAura > 0;
-            _useblizzard = MyWorld.hailStormTime > 0 && player.ZoneOverworldHeight && !player.ZoneDesert && !player.GetModPlayer<MyPlayer>().ActiveBoss() && !ModContent.GetInstance<Config>().lowDust;
-            _useInfWrath = MyWorld.firePrompt > ElementsAwoken.bossPromptDelay && !player.GetModPlayer<MyPlayer>().ActiveBoss() && !ModContent.GetInstance<Config>().promptsDisabled;
-            _useInfWrath2 = MyWorld.firePrompt > ElementsAwoken.bossPromptDelay && !player.GetModPlayer<MyPlayer>().ActiveBoss() && !ModContent.GetInstance<Config>().promptsDisabled;
-
-            if (player.GetModPlayer<MyPlayer>().useDespair = _useDespair) return _useDespair;
-            if (player.GetModPlayer<MyPlayer>().useblizzard = _useblizzard) return _useblizzard;
-            if (player.GetModPlayer<MyPlayer>().useInfWrath = _useInfWrath) return _useInfWrath;
-            if (player.GetModPlayer<MyPlayer>().useInfWrath = _useInfWrath2 && player.position.Y / 16 < Main.worldSurface) return _useInfWrath2;
-            #endregion
 
             return false;
         }

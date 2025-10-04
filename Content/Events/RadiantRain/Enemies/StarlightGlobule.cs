@@ -40,10 +40,6 @@ namespace ElementsAwoken.Content.Events.RadiantRain.Enemies
         {
             bestiaryEntry.Info.AddRange([new FlavorTextBestiaryInfoElement("Mods.ElementsAwoken.Bestiary.Enemies.StarlightGlobule")]);
         }
-        public override void SetStaticDefaults()
-        {
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
-        }
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
             NPC.lifeMax = 15000;

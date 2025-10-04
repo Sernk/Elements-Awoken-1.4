@@ -79,7 +79,6 @@ namespace ElementsAwoken.Content.Events.VoidEvent.Enemies.Phase2
                 Direction = -1
             };
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
-            NPCID.Sets.CountsAsCritter[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 4;
         }
         public override void FindFrame(int frameHeight)
