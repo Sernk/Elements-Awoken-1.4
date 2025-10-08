@@ -1,4 +1,4 @@
-Items: {
+﻿Items: {
 	DeathwishFlame: {
 		Tooltip: ""
 		DisplayName: 死亡之愿焰
@@ -184,7 +184,7 @@ Items: {
 
 	HiveCrate: {
 		DisplayName: 蜂巢匣
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	MajesticHivefish: {
@@ -855,7 +855,7 @@ Items: {
 		Tooltip:
 			'''
 			将普通箭矢变为碎裂的水晶箭
-			<右键>发射一个在敌人间弹跳的圆盘
+			<right>发射一个在敌人间弹跳的圆盘
 			冷却时间显示在物品上
 			25%几率不消耗弹药
 			'''
@@ -867,7 +867,7 @@ Items: {
 			'''
 			将普通箭矢变为碎裂的水晶箭
 			50%几率不消耗弹药
-			<右键>切换模式
+			<right>切换模式
 			'''
 	}
 
@@ -877,7 +877,7 @@ Items: {
 			'''
 			将普通箭矢变为碎裂的水晶箭
 			70%几率不消耗弹药
-			<右键>切换模式
+			<right>切换模式
 			'''
 	}
 
@@ -906,7 +906,7 @@ Items: {
 			'''
 			随机发射滞留的水晶刀刃
 			每第四次攻击召唤水晶环绕玩家
-			按住<右键>发射一个蓄力箭，按住时间越长威力越大
+			按住<right>发射一个蓄力箭，按住时间越长威力越大
 			'''
 	}
 
@@ -916,7 +916,7 @@ Items: {
 			'''
 			随机发射滞留的水晶刀刃
 			每第八次攻击召唤水晶环绕玩家
-			按住<右键>发射一个蓄力箭，按住时间越长威力越大
+			按住<right>发射一个蓄力箭，按住时间越长威力越大
 			'''
 	}
 
@@ -1125,7 +1125,7 @@ Items: {
 		Tooltip:
 			'''
 			将普通箭矢变为灭绝箭
-			<右键>创建一个跟随光标的虚空传送门
+			<right>创建一个跟随光标的虚空传送门
 			每30秒只能创建一个传送门
 			'''
 	}
@@ -1249,7 +1249,7 @@ Items: {
 
 	VoidLeviathanBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	EpicHealingPotion: {
@@ -1282,7 +1282,7 @@ Items: {
 	}
 
 	Shimmerspark: {
-		Tooltip: 按住<左键>充能一次撕裂现实的爆炸
+		Tooltip: 按住<left>充能一次撕裂现实的爆炸
 		DisplayName: 微光火花
 	}
 
@@ -1292,7 +1292,7 @@ Items: {
 	}
 
 	AncientsBag: {
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 		DisplayName: 宝藏袋
 	}
 
@@ -1342,7 +1342,7 @@ Items: {
 
 	AqueousBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	HeatSink: {
@@ -1446,12 +1446,12 @@ Items: {
 
 	AzanaBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	ChargeRifle: {
 		DisplayName: 充能步枪
-		Tooltip: <右键>充能
+		Tooltip: <right>充能
 	}
 
 	CosmicCrusher: {
@@ -1577,7 +1577,7 @@ Items: {
 
 	InfernaceBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	CrystallineCluster: {
@@ -1622,7 +1622,7 @@ Items: {
 
 	ObsidiousBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	ObsidiousMask: {
@@ -1697,7 +1697,7 @@ Items: {
 
 	PermafrostBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	Majesty: {
@@ -1717,7 +1717,7 @@ Items: {
 
 	RadiantSword: {
 		DisplayName: 品红风暴
-		Tooltip: <右键>在玩家周围召唤有意识的刀刃
+		Tooltip: <right>在玩家周围召唤有意识的刀刃
 	}
 
 	RadiantCrown: {
@@ -1798,7 +1798,7 @@ Items: {
 
 	RegarothBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	ScourgeDrive: {
@@ -1843,7 +1843,7 @@ Items: {
 
 	ScourgeFighterBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	CelestialFlame: {
@@ -1877,7 +1877,7 @@ Items: {
 
 	TheCelestialBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	TheCelestialTrophy: {
@@ -1923,7 +1923,7 @@ Items: {
 
 	GuardianBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	GazeOfInferno: {
@@ -1958,7 +1958,7 @@ Items: {
 
 	TempleKeepersBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	CharredInsignia: {
@@ -2009,7 +2009,7 @@ Items: {
 
 	VolcanoxTrophy: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	ChitinStaff: {
@@ -2044,7 +2044,7 @@ Items: {
 
 	WastelandBag: {
 		DisplayName: 宝藏袋
-		Tooltip: <右键>打开
+		Tooltip: <right>打开
 	}
 
 	WastelandMask: {
@@ -2085,7 +2085,7 @@ Items: {
 
 	NinjaKatana: {
 		DisplayName: 忍者刀
-		Tooltip: <右键>冲刺
+		Tooltip: <right>冲刺
 	}
 
 	Retinasm: {
@@ -2124,7 +2124,7 @@ Items: {
 
 	TheDestroyer: {
 		DisplayName: 毁灭者
-		Tooltip: 按住<左键>充能激光
+		Tooltip: 按住<left>充能激光
 	}
 
 	TheEater: {
@@ -2391,8 +2391,8 @@ Items: {
 		Tooltip:
 			'''
 			调试物品
-			<左键>重置所有Boss为未击败
-			<右键>设置所有Boss为已击败
+			<left>重置所有Boss为未击败
+			<right>设置所有Boss为已击败
 			'''
 	}
 
@@ -2446,7 +2446,7 @@ Items: {
 
 	MasterSword: {
 		DisplayName: 大师之剑
-		Tooltip: 按住<右键>为剑刃充能
+		Tooltip: 按住<right>为剑刃充能
 	}
 
 	Gladiolus: {
@@ -2926,7 +2926,7 @@ Items: {
 		Tooltip:
 			'''
 			品红光束打击你的敌人
-			<右键>切换模式
+			<right>切换模式
 			Eoite的捐助者物品
 			'''
 		DisplayName: Eoite之怒
@@ -3570,7 +3570,7 @@ Items: {
 		Tooltip:
 			'''
 			发射三根穿刺敌人的冰锥
-			<右键>快速刺击，同时发射一连串冰箭
+			<right>快速刺击，同时发射一连串冰箭
 			'''
 		DisplayName: 冰锥
 	}
@@ -4158,7 +4158,7 @@ Items: {
 		Tooltip:
 			'''
 			将普通子弹变为一簇密集的枯萎子弹
-			<右键>射出更宽的散布
+			<right>射出更宽的散布
 			'''
 		DisplayName: 枯萎冲击枪
 	}
@@ -4186,7 +4186,7 @@ Items: {
 		Tooltip:
 			'''
 			发射一个弹跳的枯萎环
-			<右键>投掷快速返回的环
+			<right>投掷快速返回的环
 			'''
 		DisplayName: 枯萎投掷器
 	}
@@ -4226,7 +4226,7 @@ Items: {
 	}
 
 	CarapaceShiv: {
-		Tooltip: <右键>向光标处跳跃
+		Tooltip: <right>向光标处跳跃
 		DisplayName: 甲壳短刀
 	}
 
@@ -4525,7 +4525,7 @@ Items: {
 			'''
 			你的头脑在悸动
 			显示玩家所有的理智再生情况
-			在物品栏中<右键>打开和关闭
+			在物品栏中<right>打开和关闭
 			'''
 		DisplayName: 暗影之书
 	}
@@ -4593,7 +4593,7 @@ Items: {
 		Tooltip:
 			'''
 			投掷多个粘性的恶臭刀刃
-			<右键>使所有刀刃爆炸成伤害性粘液
+			<right>使所有刀刃爆炸成伤害性粘液
 			'''
 	}
 
@@ -4689,7 +4689,7 @@ Items: {
 	}
 
 	RadiantKatana: {
-		Tooltip: <右键>向光标方向斩击
+		Tooltip: <right>向光标方向斩击
 		DisplayName: 辐射武士刀
 	}
 
@@ -5124,7 +5124,7 @@ Items: {
 			- 伟大的Genih Wat
 			魔法伤害增加15%，法力再生增加5
 			敌人更具攻击性，生成更频繁
-			可以通过<右键>雕像禁用脏话
+			可以通过<right>雕像禁用脏话
 			'''
 	}
 
@@ -5295,7 +5295,7 @@ Items: {
 			允许玩家控制重力
 			在物品上悬停时使用箭头键改变强度
 			在物品上按G键重置重力为正常
-			<右键>开启
+			<right>开启
 			'''
 		DisplayName: 重力核心
 	}
@@ -5341,7 +5341,7 @@ Items: {
 			'''
 			消耗物品栏中的某些植物材料
 			不同植物有不同的功率输出
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5351,7 +5351,7 @@ Items: {
 			'''
 			消耗物品栏中的原木，每秒产生1点能量
 			1块木头燃烧15秒
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5367,7 +5367,7 @@ Items: {
 			消耗物品栏中的凝胶，每秒产生2点能量
 			1块凝胶燃烧15秒
 			粉凝胶燃烧30秒
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5382,7 +5382,7 @@ Items: {
 
 	HandCrank: {
 		DisplayName: 手摇发电机
-		Tooltip: 在物品栏中<右键>产生1点能量
+		Tooltip: 在物品栏中<right>产生1点能量
 	}
 
 	KineticConverter: {
@@ -5400,7 +5400,7 @@ Items: {
 			'''
 			将生命转化为能量
 			在物品上悬停时使用箭头键改变数量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5420,7 +5420,7 @@ Items: {
 			消耗1个叶绿矿发电
 			产生10秒的电力
 			产生致命的叶绿虫，溢出并毒害玩家
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5431,7 +5431,7 @@ Items: {
 			消耗2个夜明矿发电
 			产生15秒的电力
 			产生月亮废料，积累过多会伤害玩家
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5469,7 +5469,7 @@ Items: {
 
 	StarlightCrank: {
 		DisplayName: 星光手摇发电机
-		Tooltip: 在物品栏中<右键>产生3点能量
+		Tooltip: 在物品栏中<right>产生3点能量
 	}
 
 	WindGenerator: {
@@ -5477,7 +5477,7 @@ Items: {
 		Tooltip:
 			'''
 			根据风速产生能量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5487,7 +5487,7 @@ Items: {
 			'''
 			自动开采附近的矿石
 			开采消耗能量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5497,7 +5497,7 @@ Items: {
 			'''
 			自动开采附近的矿石
 			开采消耗能量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5507,7 +5507,7 @@ Items: {
 			'''
 			自动开采附近的矿石
 			开采消耗能量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5517,7 +5517,7 @@ Items: {
 			'''
 			自动将矿石熔炼成锭
 			熔炼消耗能量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5527,7 +5527,7 @@ Items: {
 			'''
 			自动将矿石熔炼成锭
 			熔炼消耗能量
-			<右键>开启
+			<right>开启
 			'''
 	}
 
@@ -5632,8 +5632,8 @@ Items: {
 		DisplayName: 大小操纵器
 		Tooltip:
 			'''
-			<左键>使敌人变大
-			<右键>使敌人变小
+			<left>使敌人变大
+			<right>使敌人变小
 			只对次要敌人有效
 			'''
 	}
@@ -5663,8 +5663,8 @@ Items: {
 		Tooltip:
 			'''
 			允许持有者随心所欲地调整时间
-			<左键>改变时间
-			<右键>设置所需时间
+			<left>改变时间
+			<right>设置所需时间
 			'''
 	}
 
@@ -5675,7 +5675,7 @@ Items: {
 
 	MatterManipulator: {
 		DisplayName: 物质操纵器
-		Tooltip: <右键>改变挖掘区域
+		Tooltip: <right>改变挖掘区域
 	}
 
 	ScrapplingHook: {
@@ -6024,7 +6024,7 @@ Items: {
 
 	AsuterosaberuDX: {
 		DisplayName: 星辰光剑DX
-		Tooltip: <右键>在现实中撕开一个洞
+		Tooltip: <right>在现实中撕开一个洞
 	}
 
 	AurumSaber: {
@@ -6047,7 +6047,7 @@ Items: {
 		Tooltip:
 			'''
 			发射多道死亡光束来消灭你的敌人
-			<右键>激活死亡扭曲
+			<right>激活死亡扭曲
 			“在时空中荡漾”
 			'''
 	}
@@ -6136,7 +6136,7 @@ Items: {
 		Tooltip:
 			'''
 			一个可怕的教徒使用的武器……
-			<右键>发射3个索鲁斯苦无
+			<right>发射3个索鲁斯苦无
 			'''
 	}
 
@@ -9093,7 +9093,7 @@ Tooltips: {
 		'''
 		元素之力合而为一……
 		拥有所有无限宝石的效果
-		<右键>切换模式
+		<right>切换模式
 		'''
 	InfinityGauntlet7: 沙漠：降下沙漠碎片雨
 	InfinityGauntlet8: 火焰：发射一个火球
@@ -9375,9 +9375,9 @@ Credits: {
 	Credits10: 献给你
 	Credits11:
 		'''
-		说真的，非常感谢你游玩EA觉醒元素。
+		说真的，非常感谢你游玩觉醒元素
 		你能享受我们花费如此多时间制作的东西，
-		这对我以及整个开发团队来说意义重大。
+		这对我以及整个开发团队来说意义重大
 		'''
 	Credits12: 来自- ThatOneJuicyOrange_ 及团队 <3
 }
@@ -9422,7 +9422,7 @@ AwakenedMode: "[c/973999:觉醒模式已激活]"
 AwakenedSummonItem: 在觉醒模式下不可消耗
 IsSummon: 无法召唤，因为另一个Boss已经存在：
 Prompt: 你已激活一个Boss提示！Boss提示会在你击败一个Boss后30分钟对你的世界产生影响。这些可以在EA配置中禁用（设置 > Mod配置 > EA觉醒元素）
-AlchemistUI: 在此处放置一个物品，将其转换为其
+AlchemistUI: "在此处放置一个物品，将其转换为: "
 AlchemistUI1: 对应物
 VoidEvent: 虚空黎明已经开始！
 VoidEvent1: 虚空退回到阴影中……
@@ -9442,27 +9442,26 @@ MyPlayerLocalization: {
 		MasterSwordCharge.Discharged: 已放电
 
 		Encounter: {
-			Said: 我现在明白了。
+			Said: 我现在明白了
 			Said1: 你到底是谁？
 			Said2: 你寻求力量……
-			Said3: 一个新的挑战者出现了。
+			Said3: 一个新的挑战者出现了
 			Said4: 一个简单的迷失灵魂？
-			Said5: 但你没有问为什么。
-			Said6: 你还有很长的路要走。
-			Said7: 前方的路还很长。
+			Said5: 但你没有问为什么
+			Said6: 你还有很长的路要走
+			Said7: 前方的路还很长
 			Said8: 这重要吗？
-			Said9: 你越来越近了。
-			Said10: 你就快到了。
+			Said9: 你越来越近了
+			Said10: 你就快到了
 		}
 
 		Prompts: {
-			# �� void 5 ���� �����
 			void5: 向导被杀了……
 			void4: 离开
 			void3: 你还没准备好
 			void2: 厄运在逼近……
 			void1: 虚空利维坦苏醒了！
-			void: 死亡将吞噬一切。
+			void: 死亡将吞噬一切
 		}
 
 		UponEnteringTheWorld: {
@@ -9476,7 +9475,7 @@ MyPlayerLocalization: {
 			Text16:
 				'''
 				004：经过进一步调查，这些碎片属于
-				一个被遗忘已久的种族，被认为已被消灭。
+				一个被遗忘已久的种族，被认为已被消灭
 				毫无疑问，他们可能带来比目前任何事物
 				都更大的混乱。而且有四名幸存者
 				给了我一种不祥的预感……
@@ -9528,7 +9527,7 @@ MyPlayerLocalization: {
 				'''
 			Text9:
 				'''
-				001：这种元素，龙裔，至少可以说相当有趣。
+				001：这种元素，龙裔，至少可以说相当有趣
 				我们把它的一块碎片带到我们的实验室进行
 				进一步研究。然而，我们应该为
 				这块碎片中潜藏的任何危险做好准备……
@@ -9538,7 +9537,7 @@ MyPlayerLocalization: {
 				潮水涨得相当高，而且最近
 				雨量也很大，频率还惊人地
 				一致。最重要的是，有多起
-				几乎完全由水组成的龙卷风的报告。
+				几乎完全由水组成的龙卷风的报告
 				海洋的愤怒可能很快就会降临到我们身上……
 				'''
 			Text7:
@@ -9547,7 +9546,7 @@ MyPlayerLocalization: {
 				我们派人去调查了，但
 				不幸的是，我们至今没有收到他们的消息……
 				我担心他因寒冷而被冻住了。毕竟，这些
-				土地相当严酷，独自一人难以应对。
+				土地相当严酷，独自一人难以应对
 				'''
 			Text6:
 				'''
@@ -9590,7 +9589,7 @@ MyPlayerLocalization: {
 				这个……野兽，它杀死了其他人，我听到它试图
 				打破我房间的门……它来找我了……
 				任何找到这张纸条的人，结束这场疯狂，
-				我求你了……哦不……是她-
+				我求你了……哦不……是她——
 				'''
 			Text: 错误-未找到驱动器
 		}
@@ -9602,7 +9601,7 @@ MyPlayerLocalization: {
 
 		NurseHeal: {
 			Heal1: 你没看见我正忙着给自己疗伤吗？
-			Heal: 对不起，在这种紧急情况下，我无法为你的血型做手术。
+			Heal: 对不起，在这种紧急情况下，我无法为你做手术
 		}
 
 		Other: {
@@ -9630,7 +9629,7 @@ NPCsGLOBALLocalization: {
 			Say9: 一些镇民在地下发现了奇怪的废弃实验室……我想有些人还在那里过夜
 			Say8: “{0}似乎是这个镇上唯一不想吃我的人。他到底吃不吃饭？”
 			Say7: 别买{0}的武器，感觉有些不对劲……”
-			Say6: “{0}一直在贬低我的武器！总有一天我会给他点教训。”
+			Say6: “{0}一直在贬低我的武器！总有一天我会给他点教训”
 			Say5: 所有生物都应该有生存的机会。自由地生活……
 			Say4: 我感觉到她在对我说话……她很害怕……
 			Say3: 那只蝎子，你们称之为"荒原"，我们为什么要害怕她？
