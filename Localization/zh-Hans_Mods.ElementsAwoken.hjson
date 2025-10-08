@@ -1,4 +1,4 @@
-Items: {
+﻿Items: {
 	DeathwishFlame: {
 		Tooltip: ""
 		DisplayName: 死亡之愿焰
@@ -7850,7 +7850,7 @@ NPCs: {
 	StellarCenturion.DisplayName: 恒星百夫长
 	StellarEntity.DisplayName: 恒星实体
 	MutatedScorpion.DisplayName: 突变蝎子
-	InfernaceGuardian.DisplayName: 炼狱魔匠的守卫
+	InfernaceGuardian.DisplayName: 魔狱守卫
 	GiantToad.DisplayName: 巨型蟾蜍
 	VampireBat.DisplayName: 吸血蝙蝠
 
