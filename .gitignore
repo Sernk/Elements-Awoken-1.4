@@ -5,3 +5,5 @@
 /obj
 /.vs/ElementsAwoken
 *.sln
+/bin/Debug/net8.0
+/ElementsAwoken.csproj
