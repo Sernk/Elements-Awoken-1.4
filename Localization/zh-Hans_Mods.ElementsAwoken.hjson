@@ -1,4 +1,4 @@
-﻿Items: {
+Items: {
 	DeathwishFlame: {
 		Tooltip: ""
 		DisplayName: 死亡之愿焰
@@ -9456,6 +9456,7 @@ MyPlayerLocalization: {
 		}
 
 		Prompts: {
+			# �� void 5 ���� �����
 			void5: 向导被杀了……
 			void4: 离开
 			void3: 你还没准备好
