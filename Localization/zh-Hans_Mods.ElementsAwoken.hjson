@@ -1,0 +1,9704 @@
+﻿Items: {
+	DeathwishFlame: {
+		Tooltip: ""
+		DisplayName: 死亡之愿焰
+	}
+
+	Deathwish: {
+		Tooltip: ""
+		DisplayName: 死亡之愿
+	}
+
+	DemonicFleshClump: {
+		DisplayName: 恶魔血肉块
+		Tooltip: ""
+	}
+
+	FleshClump: {
+		DisplayName: 血肉块
+		Tooltip: ""
+	}
+
+	ImpEar: {
+		DisplayName: 小恶魔耳朵
+		Tooltip: ""
+	}
+
+	InfinityCrys: {
+		DisplayName: 无限水晶
+		Tooltip: 一块冰冷的水晶……它能用来做什么？
+	}
+
+	LensFragment: {
+		DisplayName: 晶状体碎片
+		Tooltip: ""
+	}
+
+	NeutronFragment: {
+		DisplayName: 中子碎片
+		Tooltip: 坍缩星的力量蕴含在这块碎片中。请明智地使用它。
+	}
+
+	Pyroplasm: {
+		DisplayName: 火焰离子体
+		Tooltip: ""
+	}
+
+	Antibiotics: {
+		DisplayName: 抗生素
+		Tooltip: ""
+	}
+
+	BrokenHeroWhip: {
+		DisplayName: 破损英雄鞭
+		Tooltip: ""
+	}
+
+	CInfinityCrys: {
+		DisplayName: 裂纹无限水晶
+		Tooltip:
+			'''
+			你手中的这块水晶涌动着难以想象的力量
+			如何使用它，将由你来决定……
+			'''
+	}
+
+	ConcentratedPyroplasm: {
+		DisplayName: 浓缩火焰离子体
+		Tooltip: 用于制作枯萎之火
+	}
+
+	VoidAshes: {
+		DisplayName: 虚空灰烬
+		Tooltip: ""
+	}
+
+	VoidLeviathanHeart: {
+		DisplayName: 虚空利维坦之心
+		Tooltip: ""
+	}
+
+	MagicalHerbs: {
+		DisplayName: 魔法草药
+		Tooltip: 它们具有奇怪的治疗特性
+	}
+
+	MagmaCrystal: {
+		DisplayName: 岩浆水晶
+		Tooltip: ""
+	}
+
+	MysticLeaf: {
+		DisplayName: 生物物质
+		Tooltip: ""
+	}
+
+	PenguinFeather: {
+		DisplayName: 企鹅羽毛
+		Tooltip: ""
+	}
+
+	RoyalScale: {
+		DisplayName: 皇家鳞片
+		Tooltip: ""
+	}
+
+	Stardust: {
+		DisplayName: 星尘
+		Tooltip: ""
+	}
+
+	SunFragment: {
+		DisplayName: 太阳碎片
+		Tooltip: 它已被封印在这座神庙中数个世纪。
+	}
+
+	VoiditeBar: {
+		DisplayName: 虚空锭
+		Tooltip: ""
+	}
+
+	VoiditeOre: {
+		DisplayName: 虚空矿
+		Tooltip: ""
+	}
+
+	MysticGemstone: {
+		DisplayName: 神秘宝石
+		Tooltip: ""
+	}
+
+	KawaiiOrangesMask: {
+		DisplayName: 那颗多汁橙子的面具
+		Tooltip: 好可爱
+	}
+
+	OrangesBreastplate: {
+		DisplayName: 那颗多汁橙子的胸甲
+		Tooltip: ""
+	}
+
+	OrangesLeggings: {
+		DisplayName: 那颗多汁橙子的护胫
+		Tooltip: ""
+	}
+
+	OrangesMask: {
+		DisplayName: 那颗多汁橙子的面具
+		Tooltip: 那么多汁
+	}
+
+	VolcanicStone: {
+		DisplayName: 火山岩
+		Tooltip: 这些岩石似乎在不断地碎裂并燃起火焰
+	}
+
+	ElementalCapsule: {
+		DisplayName: 元素胶囊
+		Tooltip:
+			'''
+			力场在此胶囊周围扭曲……
+			只能在专家模式下使用
+			仅当你准备好迎接挑战时使用
+			激活 [c/f442aa:觉醒模式] 和理智 [i:ElementsAwoken/SanityChanger]
+			敌人增加75%的生命值、防御和伤害
+			强化Boss的属性和AI
+			'''
+	}
+
+	MysteriousPotion: {
+		DisplayName: 神秘药水
+		Tooltip: 它散发着一股恶臭
+	}
+
+	VoidbloodHeart: {
+		DisplayName: 虚空之血心脏
+		Tooltip:
+			'''
+			禁用所有自然生命再生
+			禁用治疗药水
+			护士的治疗费用增加3倍，且在受伤时和Boss战期间无法提供治疗
+			你在被击中和低生命值时会流出剧毒的虚空之血
+			'''
+	}
+
+	HiveCrate: {
+		DisplayName: 蜂巢匣
+		Tooltip: <右键>打开
+	}
+
+	MajesticHivefish: {
+		DisplayName: 雄伟蜂巢鱼
+		Tooltip: ""
+	}
+
+	DeathMirror: {
+		DisplayName: 地狱倒影
+		Tooltip:
+			'''
+			将玩家传送至上一个死亡地点
+			必须在30秒内传送回来
+			有5分钟冷却时间
+			'''
+	}
+
+	FireFlooder: {
+		DisplayName: 熔岩灌注器
+		Tooltip: 内含无尽的熔岩
+	}
+
+	LavaLeecher: {
+		DisplayName: 熔岩吸收器
+		Tooltip: 能够吸收无尽的熔岩
+	}
+
+	CrashingWave: {
+		DisplayName: 崩裂之波
+		Tooltip: ""
+	}
+
+	PiohsPresent: {
+		DisplayName: Pioh的礼物
+		Tooltip:
+			'''
+			召唤一只可骑乘的元素龙兔
+			BabeElena的Youtuber物品
+			'''
+	}
+
+	SkylineWhirlwind: {
+		DisplayName: 天际旋风
+		Tooltip:
+			'''
+			疯狂的速度！
+			免疫火块伤害
+			暂时免疫熔岩伤害
+			允许飞行和缓降
+			'''
+	}
+
+	Railgun: {
+		DisplayName: 轨道炮
+		Tooltip:
+			'''
+			喜爱蠕虫
+			使用该物品会积蓄热量
+			积蓄过多热量会伤害玩家并降低武器效果
+			'''
+	}
+
+	SanityChanger: {
+		DisplayName: 理智
+		Tooltip: ""
+	}
+
+	Computer: {
+		DisplayName: 电脑
+		Tooltip: 哔-啵
+	}
+
+	AncientsDrive: {
+		DisplayName: 古代驱动器
+		Tooltip: ""
+	}
+
+	AqueousDrive: {
+		DisplayName: 水域驱动器
+		Tooltip: ""
+	}
+
+	AzanaDrive: {
+		DisplayName: 阿扎娜驱动器
+		Tooltip: ""
+	}
+
+	CelestialDrive: {
+		DisplayName: 天界驱动器
+		Tooltip: ""
+	}
+
+	Celestia: {
+		DisplayName: 天穹
+		Tooltip: ""
+	}
+
+	GuardianDrive: {
+		DisplayName: 守护者驱动器
+		Tooltip: ""
+	}
+
+	InfernaceDrive: {
+		DisplayName: 炼狱驱动器
+		Tooltip: ""
+	}
+
+	ObsidiousDrive: {
+		DisplayName: 黑曜石驱动器
+		Tooltip: ""
+	}
+
+	PermafrostDrive: {
+		DisplayName: 永冻驱动器
+		Tooltip: ""
+	}
+
+	RegarothDrive: {
+		DisplayName: 雷加罗斯驱动器
+		Tooltip: ""
+	}
+
+	ScourgeFighterDrive: {
+		DisplayName: 灾械战机驱动器
+		Tooltip: ""
+	}
+
+	VoidLeviathanDrive: {
+		DisplayName: 虚空利维坦驱动器
+		Tooltip: ""
+	}
+
+	VolcanoxDrive: {
+		DisplayName: 火山监督驱动器
+		Tooltip: ""
+	}
+
+	WastelandDrive: {
+		DisplayName: 废土驱动器
+		Tooltip: ""
+	}
+
+	Locker: {
+		DisplayName: 储物柜
+		Tooltip: ""
+	}
+
+	CopperWire: {
+		DisplayName: 铜线
+		Tooltip: 用于科技制作
+	}
+
+	GoldWire: {
+		DisplayName: 金线
+		Tooltip: 用于科技制作
+	}
+
+	Coilgun: {
+		DisplayName: 线圈炮
+		Tooltip:
+			'''
+			发射高速高伤害的子弹
+			消耗子弹和能量
+			'''
+	}
+
+	Electrozzitron: {
+		DisplayName: 电击器
+		Tooltip:
+			'''
+			看起来随时都会电到你……
+			发射爆炸地雷
+			'''
+	}
+
+	TeslaRod: {
+		DisplayName: 特斯拉法杖
+		Tooltip: ""
+	}
+
+	BassBooster: {
+		DisplayName: 低音助推器
+		Tooltip: ""
+	}
+
+	Taser: {
+		DisplayName: 泰瑟枪
+		Tooltip: ""
+	}
+
+	RustedMechanism: {
+		DisplayName: 锈蚀机械
+		Tooltip:
+			'''
+			被击中时，你会射出大量你拥有的第一种弹药
+			使用时消耗3点能量
+			'''
+	}
+
+	Capacitor: {
+		DisplayName: 电容器
+		Tooltip: ""
+	}
+
+	ThrowerEmblem: {
+		DisplayName: 投手徽章
+		Tooltip: ""
+	}
+
+	SanityRegenerationPotion: {
+		DisplayName: 理智再生药水
+		Tooltip: ""
+	}
+
+	DesertTrailers: {
+		DisplayName: 沙漠行者
+		Tooltip: 速度不错！
+	}
+
+	DesertEssence: {
+		DisplayName: 沙漠精华
+		Tooltip: 来自狂沙之怒的精华
+	}
+
+	ElementalForge: {
+		DisplayName: 元素熔炉
+		Tooltip: 用于制作元素物品
+	}
+
+	FireTreads: {
+		DisplayName: 火焰之靴
+		Tooltip:
+			'''
+			很酷的速度！
+			免疫火块伤害
+			暂时免疫熔岩伤害
+			'''
+	}
+
+	FrostWalkers: {
+		DisplayName: 霜行者
+		Tooltip:
+			'''
+			超棒的速度！
+			在冰上具有更强的机动性
+			免疫火块伤害
+			暂时免疫熔岩伤害
+			允许飞行和缓降
+			'''
+	}
+
+	FireEssence: {
+		DisplayName: 火焰精华
+		Tooltip: 来自地狱守护者的精华
+	}
+
+	FrostEssence: {
+		DisplayName: 冰霜精华
+		Tooltip: 来自冰封废土的精华
+	}
+
+	NyanBoots: {
+		DisplayName: 彩虹猫之靴
+		Tooltip:
+			'''
+			有型地穿越时空！
+			在冰上具有更强的机动性
+			可在水和熔岩上行走
+			无限免疫熔岩伤害
+			允许飞行和缓降
+			允许攀爬墙壁和冲刺
+			有几率闪避攻击
+			'''
+	}
+
+	VoidBoots: {
+		DisplayName: 虚空之靴
+		Tooltip:
+			'''
+			疯狂的速度！
+			在冰上具有更强的机动性
+			可在水和熔岩上行走
+			无限免疫熔岩伤害
+			允许飞行和缓降
+			允许攀爬墙壁和冲刺
+			有几率闪避攻击
+			'''
+	}
+
+	AqueousWaders: {
+		DisplayName: 水域跋涉靴
+		Tooltip:
+			'''
+			荒谬的速度！
+			在冰上具有更强的机动性
+			可在水和熔岩上行走
+			暂时免疫熔岩伤害
+			允许飞行和缓降
+			'''
+	}
+
+	ElementalEssence: {
+		DisplayName: 元素精华
+		Tooltip: 泰拉瑞亚的精华
+	}
+
+	SkyEssence: {
+		DisplayName: 天空精华
+		Tooltip: 来自广阔虚空宇宙的精华
+	}
+
+	VoidEssence: {
+		DisplayName: 虚空精华
+		Tooltip: 来自泰拉瑞亚深处的精华
+	}
+
+	WaterEssence: {
+		DisplayName: 水之精华
+		Tooltip: 来自深海生物的精华
+	}
+
+	HoneyCocoon: {
+		DisplayName: 蜂蜜茧
+		Tooltip: ""
+	}
+
+	Honeycrest: {
+		DisplayName: 蜜冠
+		Tooltip:
+			'''
+			发射一根毒刺
+			用剑本身击中敌人会给予玩家“蜂蜜”增益
+			'''
+	}
+
+	Honeysuckle: {
+		DisplayName: 忍冬
+		Tooltip:
+			'''
+			生命和法力再生速度+1
+			增加“蜂蜜”增益的持续时间
+			最大生命值+10
+			'''
+	}
+
+	Microcontroller: {
+		DisplayName: 控制器
+		Tooltip: ""
+	}
+
+	SiliconBoard: {
+		DisplayName: 硅板
+		Tooltip: ""
+	}
+
+	NebulaEmblem: {
+		DisplayName: 星云徽章
+		Tooltip:
+			'''
+			增加22%魔法伤害
+			减少75%非魔法伤害
+			'''
+	}
+
+	SolarEmblem: {
+		DisplayName: 日耀徽章
+		Tooltip:
+			'''
+			增加22%近战伤害
+			减少75%非近战伤害
+			'''
+	}
+
+	StardustEmblem: {
+		DisplayName: 星尘徽章
+		Tooltip:
+			'''
+			增加22%召唤伤害
+			减少75%非召唤伤害
+			'''
+	}
+
+	VortexEmblem: {
+		DisplayName: 星旋徽章
+		Tooltip:
+			'''
+			增加22%远程伤害
+			减少75%非远程伤害
+			'''
+	}
+
+	DiggerTooth: {
+		DisplayName: 挖掘者之牙
+		Tooltip: 增加15%挖掘速度
+	}
+
+	TombCrawlerTooth: {
+		DisplayName: 沙丘撕裂者之牙
+		Tooltip: 增加25%挖掘速度
+	}
+
+	ToothCharm: {
+		DisplayName: 牙齿护符
+		Tooltip: 增加50%挖掘速度
+	}
+
+	AlchemistsTimer: {
+		DisplayName: 炼金术师计时器
+		Tooltip: 显示你的减益效果造成的每秒伤害
+	}
+
+	BalletShoes: {
+		DisplayName: 芭蕾舞鞋
+		Tooltip:
+			'''
+			跳跃速度增加40%
+			玩家跳跃时获得速度提升
+			'''
+	}
+
+	BloodDiamond: {
+		DisplayName: 鲜血钻石
+		Tooltip: 吸取周围生命值低于1000的敌人的生命
+	}
+
+	DryadsRadar: {
+		DisplayName: 树妖雷达
+		Tooltip: 探测附近的邪恶之地或神圣之地
+	}
+
+	FatalPendant: {
+		DisplayName: 致命吊坠
+		Tooltip:
+			'''
+			充满了受折磨生物的灵魂
+			随机给予玩家增益或减益
+			'''
+	}
+
+	IllusiveCharm: {
+		DisplayName: 幻象护符
+		Tooltip:
+			'''
+			法力值增加60
+			魔法伤害增加10%
+			'''
+	}
+
+	CoreCharm: {
+		DisplayName: 核心护符
+		Tooltip: 偶尔向附近敌人发射2个追踪火骷髅
+	}
+
+	EnergyGeode: {
+		DisplayName: 能量晶洞
+		Tooltip:
+			'''
+			法力值增加60
+			魔法伤害增加10%
+			移动速度增加8%
+			免疫大多数减益效果
+			'''
+	}
+
+	HellbatWing: {
+		DisplayName: 地狱蝙蝠翅膀
+		Tooltip:
+			'''
+			跳跃速度增加200%
+			暴击率增加5%
+			'''
+	}
+
+	ImmortalResolve: {
+		DisplayName: 不朽决心
+		Tooltip:
+			'''
+			极大增加生命再生
+			最大生命值增加50
+			站立不动增加生命再生
+			暴击会治疗玩家
+			武器暴击率越高，治疗量越少
+			'''
+	}
+
+	InfernalChalice: {
+		DisplayName: 炼狱圣杯
+		Tooltip: 任何走进这个环的人都会遭受痛苦的死亡
+	}
+
+	LifeDiamond: {
+		DisplayName: 生命钻石
+		Tooltip: 吸取周围生命值低于3000的敌人的生命
+	}
+
+	LightningCloud: {
+		DisplayName: 闪电云
+		Tooltip:
+			'''
+			一场风暴在你头顶酝酿，为你充电
+			被击中时，你会释放电流
+			'''
+	}
+
+	VoidDiamond: {
+		DisplayName: 虚空钻石
+		Tooltip: 吸取周围生命值低于10000的敌人的生命
+	}
+
+	LunarShell: {
+		DisplayName: 月亮贝壳
+		Tooltip:
+			'''
+			你的生命值越低，受到的伤害越少
+			5点防御
+			'''
+	}
+
+	ManaShield: {
+		DisplayName: 魔法之盾
+		Tooltip:
+			'''
+			真正法师的盾牌
+			受损时恢复法力
+			增加星星的拾取范围
+			需要时自动使用法力药水
+			'''
+	}
+
+	PrismPolish: {
+		DisplayName: 棱镜抛光剂
+		Tooltip: 使最终棱镜充能更快
+	}
+
+	RainMeter: {
+		DisplayName: 雨量计
+		Tooltip: 显示降雨还将持续多久
+	}
+
+	RingOfReplenishment: {
+		DisplayName: 补给之戒
+		Tooltip: 每次击杀后有几率恢复一些生命
+	}
+
+	SharktoothShackle: {
+		DisplayName: 鲨牙镣铐
+		Tooltip: 增加5点护甲穿透
+	}
+
+	SpikeBoots: {
+		DisplayName: 地牢行者之靴
+		Tooltip: 免疫尖刺
+	}
+
+	SteakShield: {
+		DisplayName: 肉盾
+		Tooltip:
+			'''
+			什么？
+			4点防御
+			敌人更容易攻击玩家
+			'''
+	}
+
+	StompingSoles: {
+		DisplayName: 跺脚鞋底
+		Tooltip:
+			'''
+			下落时会破坏玩家下方的方块
+			禁用可见性以禁用爆炸
+			'''
+	}
+
+	TempleSpikeBoots: {
+		DisplayName: 丛林神庙探险者之靴
+		Tooltip: 免疫木制尖刺
+	}
+
+	Swordstorm: {
+		DisplayName: 剑雨护符
+		Tooltip:
+			'''
+			被击中时射出剑
+			在困难模式和专家模式下，剑造成额外伤害
+			'''
+	}
+
+	Unity: {
+		DisplayName: 团结
+		Tooltip:
+			'''
+			你的生命值越低，受到的伤害越少
+			5点防御
+			法力值增加100
+			魔法伤害增加15%
+			移动速度增加16%
+			免疫大多数减益效果
+			'''
+	}
+
+	DiscordantArrow: {
+		DisplayName: 混沌箭
+		Tooltip:
+			'''
+			留下一道来自混沌维度的箭矢轨迹
+			其中一些箭矢会穿越维度射向敌人
+			同时会施加“混沌坏死”减益
+			'''
+	}
+
+	DiscordantBullet: {
+		DisplayName: 混沌子弹
+		Tooltip: 混乱使它们传送到生物附近
+	}
+
+	DiscordantBar: {
+		DisplayName: 混沌合金
+		Tooltip: 混沌粒子与泰拉矿石的危险混合物
+	}
+
+	DiscordantOre: {
+		DisplayName: 混沌矿石
+		Tooltip: 混沌粒子与泰拉矿石的危险混合物
+	}
+
+	ChaoticFlare: {
+		DisplayName: 混沌耀斑
+		Tooltip: 即使握着它，也能感受到贯穿身体的疼痛
+	}
+
+	ChaoticCrucible: {
+		DisplayName: 混沌熔炉
+		Tooltip: ""
+	}
+
+	DisarrayI: {
+		DisplayName: 混乱 I
+		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
+	}
+
+	DisarrayII: {
+		DisplayName: 混乱 II
+		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
+	}
+
+	DisarrayIII: {
+		DisplayName: 混乱 III
+		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
+	}
+
+	DisarrayIV: {
+		DisplayName: 混乱 IV
+		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
+	}
+
+	AncientShard: {
+		DisplayName: 远古碎片
+		Tooltip: ""
+	}
+
+	DesolationI: {
+		DisplayName: 荒芜 I
+		Tooltip: 将普通箭矢变为碎裂的水晶箭
+	}
+
+	DesolationII: {
+		DisplayName: 荒芜 II
+		Tooltip:
+			'''
+			将普通箭矢变为碎裂的水晶箭
+			<右键>发射一个在敌人间弹跳的圆盘
+			冷却时间显示在物品上
+			25%几率不消耗弹药
+			'''
+	}
+
+	DesolationIII: {
+		DisplayName: 荒芜 III
+		Tooltip:
+			'''
+			将普通箭矢变为碎裂的水晶箭
+			50%几率不消耗弹药
+			<右键>切换模式
+			'''
+	}
+
+	DesolationIV: {
+		DisplayName: 荒芜 IV
+		Tooltip:
+			'''
+			将普通箭矢变为碎裂的水晶箭
+			70%几率不消耗弹药
+			<右键>切换模式
+			'''
+	}
+
+	MysticBunny: {
+		DisplayName: 神秘兔子
+		Tooltip: ""
+	}
+
+	AtaxiaI: {
+		DisplayName: 共济失调 I
+		Tooltip: 每第五次攻击释放出滞留的水晶刀刃
+	}
+
+	AtaxiaII: {
+		DisplayName: 共济失调 II
+		Tooltip:
+			'''
+			随机发射滞留的水晶刀刃
+			每第四次攻击召唤水晶环绕玩家
+			'''
+	}
+
+	AtaxiaIII: {
+		DisplayName: 共济失调 III
+		Tooltip:
+			'''
+			随机发射滞留的水晶刀刃
+			每第四次攻击召唤水晶环绕玩家
+			按住<右键>发射一个蓄力箭，按住时间越长威力越大
+			'''
+	}
+
+	AtaxiaIV: {
+		DisplayName: 共济失调 IV
+		Tooltip:
+			'''
+			随机发射滞留的水晶刀刃
+			每第八次攻击召唤水晶环绕玩家
+			按住<右键>发射一个蓄力箭，按住时间越长威力越大
+			'''
+	}
+
+	LamentI: {
+		DisplayName: 哀悼 I
+		Tooltip: ""
+	}
+
+	LamentII: {
+		DisplayName: 哀悼 II
+		Tooltip: ""
+	}
+
+	LamentIII: {
+		DisplayName: 哀悼 III
+		Tooltip: ""
+	}
+
+	LamentIV: {
+		DisplayName: 哀悼 IV
+		Tooltip: ""
+	}
+
+	AxolotlMask: {
+		DisplayName: 墨西哥钝口螈面具
+		Tooltip: ""
+	}
+
+	GenihWatMask: {
+		DisplayName: Genih Wat的面具
+		Tooltip:
+			'''
+			实际上看起来不像Genih Wat，而是Wat崇拜的女神
+			Genih声称这位女神居住在一个叫做“超次元”的地方
+			'''
+	}
+
+	DiscordantAmber: {
+		DisplayName: 不稳定琥珀
+		Tooltip: ""
+	}
+
+	FieryJar: {
+		DisplayName: 炽热灰烬
+		Tooltip: ""
+	}
+
+	GlowingSlush: {
+		DisplayName: 发光泥浆
+		Tooltip: ""
+	}
+
+	OddWater: {
+		DisplayName: 奇异之水
+		Tooltip: ""
+	}
+
+	SoulOfPlight: {
+		DisplayName: 宇宙宝石
+		Tooltip: ""
+	}
+
+	StrangeTotem: {
+		DisplayName: 奇异神像
+		Tooltip: ""
+	}
+
+	ChaosFlameFlask: {
+		DisplayName: 混沌火焰瓶
+		Tooltip:
+			'''
+			攻击时造成火焰伤害
+			免疫火块伤害
+			跳跃速度增加200%
+			暴击率增加5%
+			'''
+	}
+
+	DiscordantSkull: {
+		DisplayName: 古者之颅
+		Tooltip:
+			'''
+			挖掘速度增加30%
+			伤害增加4%
+			受到的伤害减少5%
+			免疫击退
+			'''
+	}
+
+	ElementalArcanum: {
+		DisplayName: 元素奥秘
+		Tooltip:
+			'''
+			伤害增加35%
+			暴击率增加10%
+			最大法力值增加150
+			生命再生增加
+			挖掘速度增加30%
+			受到的伤害减少5%
+			拥有所有元素神器的效果
+			'''
+	}
+
+	EtherealShell: {
+		DisplayName: 以太贝壳
+		Tooltip:
+			'''
+			魔法伤害增加20%
+			法力值增加100
+			受到伤害时恢复法力
+			增加魔力星的拾取范围
+			需要时自动使用法力药水
+			在水下发光
+			'''
+	}
+
+	FrozenGauntlet: {
+		DisplayName: 冰冻护手
+		Tooltip:
+			'''
+			近战武器造成“寒冷”和“霜燃”减益
+			被击中时星星从天而降
+			被击中后获得更长的无敌时间
+			伤害增加15%
+			'''
+	}
+
+	GreatThunderTotem: {
+		DisplayName: 巨雷神像
+		Tooltip:
+			'''
+			移动速度增加50%
+			被击中后释放闪电
+			护甲穿透增加5
+			'''
+	}
+
+	Nanocore: {
+		DisplayName: 纳米核心
+		Tooltip:
+			'''
+			伤害增加20%
+			减少“药水病”减益的持续时间
+			生命再生增加
+			生命值低于50%时，伤害减免增加15%
+			夜晚将持有者变成狼人，入水时变成人鱼
+			'''
+	}
+
+	AbyssalMatter: {
+		DisplayName: 深渊物质
+		Tooltip:
+			'''
+			在玩家周围创建深渊传送门
+			如果玩家一次受到超过40%生命值的伤害，他们将进入深渊之怒，获得：
+			30%伤害增加
+			50%移动速度增加
+			'''
+	}
+
+	AmuletOfDestruction: {
+		DisplayName: 绝望护身符
+		Tooltip:
+			'''
+			毁灭激光从天而降
+			生命值低于20%时极大增加生命再生
+			免疫“灭绝诅咒”和“绝望之手”减益
+			你随时间充能虚空能量
+			当按下能力键时：
+			移动速度减少80%，伤害增加20%
+			向各个方向发射投射物
+			'''
+	}
+
+	BladeOfTheNight: {
+		DisplayName: 暗夜之刃
+		Tooltip:
+			'''
+			投射物存活时间越长，越不稳定
+			每挥动30次，释放虚空利维坦之魂撕裂你的敌人
+			每第10次真实近战命中造成10倍伤害
+			'''
+	}
+
+	BreathOfDarkness: {
+		DisplayName: 黑暗之息
+		Tooltip: 召唤一个微型虚空利维坦
+	}
+
+	CosmicWrath: {
+		DisplayName: 宇宙之怒
+		Tooltip:
+			'''
+			右键使所有长矛爆炸
+			暴击造成3倍伤害
+			'''
+	}
+
+	EndlessAbyssBlaster: {
+		DisplayName: 虚空奇点迫击炮
+		Tooltip: 创建虚空传送门。最多只能存在三个传送门。
+	}
+
+	ExtinctionBow: {
+		DisplayName: 灭绝之弓
+		Tooltip:
+			'''
+			将普通箭矢变为灭绝箭
+			<右键>创建一个跟随光标的虚空传送门
+			每30秒只能创建一个传送门
+			'''
+	}
+
+	LightsAffliction: {
+		DisplayName: 光之折磨
+		Tooltip: ""
+	}
+
+	PikeOfEternalDespair: {
+		DisplayName: 永恒绝望之矛
+		Tooltip: ""
+	}
+
+	Reaperstorm: {
+		DisplayName: 收割风暴
+		Tooltip: 从天而降的死亡冰雹！
+	}
+
+	VoidInferno: {
+		DisplayName: 虚空炼狱
+		Tooltip: ""
+	}
+
+	VoidLeviathanMask: {
+		DisplayName: 虚空利维坦面具
+		Tooltip: ""
+	}
+
+	VoidLeviathansAegis: {
+		DisplayName: 虚空利维坦之庇护
+		Tooltip: ""
+	}
+
+	VoidWalkersGreatmask: {
+		VoidWalkersGreatmaskSetBonus:
+			'''
+			按盔甲能力键激活精神病光环
+			精神病光环会迷惑敌人并施加“灭绝诅咒”减益
+			'''
+		DisplayName: 虚空行者巨盔
+		Tooltip:
+			'''
+			增加25%近战伤害
+			增加15%近战暴击率
+			增加20%近战速度，近战武器施加“灭绝诅咒”减益
+			'''
+	}
+
+	VoidWalkersHelm: {
+		VoidWalkersHelmSetBonus:
+			'''
+			按盔甲能力键激活精神病光环
+			精神病光环会迷惑敌人并施加“灭绝诅咒”减益
+			'''
+		DisplayName: 虚空行者头盔
+		Tooltip:
+			'''
+			增加40%仆从伤害
+			最大仆从数量增加6
+			极大增加仆从击退
+			仆从施加“灭绝诅咒”减益
+			'''
+	}
+
+	VoidWalkersHood: {
+		VoidWalkersHoodSetBonus:
+			'''
+			按盔甲能力键激活精神病光环
+			精神病光环会迷惑敌人并施加“灭绝诅咒”减益
+			'''
+		DisplayName: 虚空行者风帽
+		Tooltip:
+			'''
+			增加30%魔法伤害
+			增加10%魔法暴击率
+			减少20%法力消耗
+			增加100点法力值
+			魔法武器施加“灭绝诅咒”减益
+			'''
+	}
+
+	VoidWalkersVisage: {
+		VoidWalkersVisageSetBonus:
+			'''
+			按盔甲能力键激活精神病光环
+			精神病光环会迷惑敌人并施加“灭绝诅咒”减益
+			'''
+		DisplayName: 虚空行者面容
+		Tooltip:
+			'''
+			增加35%远程伤害
+			增加30%远程暴击率
+			25%几率不消耗弹药
+			远程武器施加“灭绝诅咒”减益
+			'''
+	}
+
+	VoidLeviathanTrophy: {
+		DisplayName: 虚空利维坦纪念章
+		Tooltip: ""
+	}
+
+	VoidWalkersBreastplate: {
+		DisplayName: 虚空行者胸甲
+		Tooltip:
+			'''
+			受到超过玩家一半生命值的伤害后，生命会迅速再生
+			受到的伤害减少8%
+			'''
+	}
+
+	VoidWalkersLeggings: {
+		DisplayName: 虚空行者护胫
+		Tooltip:
+			'''
+			移动速度增加20%
+			低生命值时速度更快
+			'''
+	}
+
+	VoidLeviathanBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	EpicHealingPotion: {
+		DisplayName: 宏伟治疗药水
+		Tooltip: ""
+	}
+
+	Chromacast: {
+		Tooltip:
+			'''
+			离敌人越近，伤害越高
+			不要离爆炸太近
+			'''
+		DisplayName: 色谱投射
+	}
+
+	GiftOfTheArchaic: {
+		Tooltip: ""
+		DisplayName: 古老之礼
+	}
+
+	CrystallineLocket: {
+		Tooltip: 按下特殊能力键使玩家在10秒内必定暴击
+		DisplayName: 水晶挂坠
+	}
+
+	CrystalAmalgamate: {
+		Tooltip: ""
+		DisplayName: 水晶融合体
+	}
+
+	Shimmerspark: {
+		Tooltip: 按住<左键>充能一次撕裂现实的爆炸
+		DisplayName: 微光火花
+	}
+
+	TheFundamentals: {
+		Tooltip: 手持武器10秒内不造成伤害，下一次攻击将造成8倍伤害
+		DisplayName: 基础法则
+	}
+
+	AncientsBag: {
+		Tooltip: <右键>打开
+		DisplayName: 宝藏袋
+	}
+
+	AqueousMask: {
+		DisplayName: 水域之晶
+		Tooltip:
+			'''
+			召唤水域的4个仆从为你防御
+			你身后会留下一串泡泡
+			'''
+	}
+
+	AqueousTrophy: {
+		DisplayName: 水域纪念章
+		Tooltip: ""
+	}
+
+	BrinyBuster: {
+		DisplayName: 盐水冲击
+		Tooltip: 用海洋的力量打击你的敌人
+	}
+
+	BubblePopper: {
+		DisplayName: 泡泡枪
+		Tooltip: 将子弹变为水箭，击中时爆炸成泡泡
+	}
+
+	HighTide: {
+		DisplayName: 涨潮
+		Tooltip: 投掷两个击中敌人时爆炸成泡泡的环刃
+	}
+
+	OceansRazor: {
+		DisplayName: 海洋剃刀
+		Tooltip: 发射三发爆炸性水弹
+	}
+
+	TheWave: {
+		DisplayName: 满溢
+		Tooltip: ""
+	}
+
+	Varee: {
+		DisplayName: 瓦里
+		Tooltip: 将普通箭矢变为分裂的水箭
+	}
+
+	AqueousBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	HeatSink: {
+		DisplayName: 散热器
+		Tooltip: ""
+	}
+
+	LRM: {
+		DisplayName: 激光折射矩阵
+		Tooltip: ""
+	}
+
+	Transformer: {
+		DisplayName: 变压器
+		Tooltip: ""
+	}
+
+	Transistor: {
+		DisplayName: 晶体管
+		Tooltip: ""
+	}
+
+	Anarchy: {
+		DisplayName: 污染
+		Tooltip: 向四面八方发射混沌箭，偶尔释放混沌波
+	}
+
+	AzanaMask: {
+		DisplayName: 阿扎娜面具
+		Tooltip: ""
+	}
+
+	AzanaMinionStaff: {
+		DisplayName: 疫病之誓
+		Tooltip: 召唤一个感染之口与你并肩作战
+	}
+
+	AzanaTrophy: {
+		DisplayName: 阿扎娜纪念章
+		Tooltip: ""
+	}
+
+	ChaoticGaze: {
+		DisplayName: 爆发
+		Tooltip:
+			'''
+			将普通子弹变为爆发飞镖，每次击中伤害增加，最高可达2倍
+			有几率发射一个造成3倍伤害的混沌吞噬者
+			50%几率不消耗弹药
+			'''
+	}
+
+	ChaoticImpaler: {
+		DisplayName: 混沌穿刺者
+		Tooltip:
+			'''
+			将箭矢充能为混沌激光
+			有几率发射高伤害的混沌放电
+			'''
+	}
+
+	EntropicCoating: {
+		DisplayName: 熵涂层
+		Tooltip: 免疫“混沌坏死”减益
+	}
+
+	GleamOfAnnhialation: {
+		DisplayName: 剧毒微光
+		Tooltip: ""
+	}
+
+	InfectionHeart: {
+		DisplayName: 感染之心
+		Tooltip:
+			'''
+			科技与魔法的悲惨融合……
+			使用物品重新激活
+			在附近扔矿石将其转化为混沌矿石
+			'''
+	}
+
+	Pandemonium: {
+		DisplayName: 喧嚣
+		Tooltip: ""
+	}
+
+	PurgeRifle: {
+		DisplayName: 混沌加速器
+		Tooltip: ""
+	}
+
+	RingOfChaos: {
+		DisplayName: 感染之印
+		Tooltip:
+			'''
+			按下能力键将在玩家周围创建一个吸收伤害的护盾，吸收伤害时会为玩家提供增益
+			增加10%暴击率
+			增加5%伤害
+			'''
+	}
+
+	AzanaBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	ChargeRifle: {
+		DisplayName: 充能步枪
+		Tooltip: <右键>充能
+	}
+
+	CosmicCrusher: {
+		DisplayName: 宇宙粉碎者
+		Tooltip: ""
+	}
+
+	CosmicShard: {
+		DisplayName: 宇宙碎片
+		Tooltip: 它略有共鸣
+	}
+
+	CosmicGlass: {
+		DisplayName: 宇宙玻璃
+		Tooltip:
+			'''
+			增加15%暴击率
+			暴击时向敌人发射一道宇宙光束
+			'''
+	}
+
+	CosmicObserverStaff: {
+		DisplayName: 宇宙观察者法杖
+		Tooltip: 召唤一个迷你宇宙观察者为你作战
+	}
+
+	Demolecularizer: {
+		DisplayName: 解分子器
+		Tooltip:
+			'''
+			将普通箭矢变为宇宙箭
+			有几率发射一道宇宙超光束
+			'''
+	}
+
+	EnergyFork: {
+		DisplayName: 能量叉
+		Tooltip: ""
+	}
+
+	OrionsBelt: {
+		DisplayName: 猎户座腰带
+		Tooltip: The Buildmonger的捐助者物品
+	}
+
+	PlanetaryWave: {
+		DisplayName: 行星波
+		Tooltip: ""
+	}
+
+	CosmicalusVisor: {
+		SetBonus:
+			'''
+			召唤一个宇宙环射击附近的敌人
+			在太空中阻止理智值下降
+			'''
+		DisplayName: 宇宙面甲
+		Tooltip:
+			'''
+			增加5%暴击率
+			增加一个额外的仆从位
+			'''
+	}
+
+	CosmicalusBreastplate: {
+		DisplayName: 宇宙胸甲
+		Tooltip: 增加10%伤害
+	}
+
+	CosmicalusLeggings: {
+		DisplayName: 宇宙护胫
+		Tooltip: 增加15%移动速度
+	}
+
+	FireBlaster: {
+		DisplayName: 火焰喷射器
+		Tooltip: ""
+	}
+
+	FireHarpyStaff: {
+		DisplayName: 温暖权杖
+		Tooltip:
+			'''
+			召唤一个壁炉为你防御
+			每个壁炉占用2个仆从位
+			'''
+	}
+
+	FireHeart: {
+		DisplayName: 炼狱之心
+		Tooltip:
+			'''
+			点燃附近的敌人
+			引爆附近低生命值的次要敌人
+			照亮区域
+			'''
+	}
+
+	FlareSword: {
+		DisplayName: 灰烬之刃
+		Tooltip: ""
+	}
+
+	Flare: {
+		DisplayName: 龙裔守卫
+		Tooltip: 按下能力键将在玩家周围创建一个推开敌人和投射物的护盾
+	}
+
+	InfernaceMask: {
+		DisplayName: 炼狱面具
+		Tooltip: ""
+	}
+
+	InfernaceTrophy: {
+		DisplayName: 炼狱纪念章
+		Tooltip: ""
+	}
+
+	InfernoVortex: {
+		DisplayName: 炼狱旋涡
+		Tooltip: ""
+	}
+
+	InfernaceBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	CrystallineCluster: {
+		DisplayName: 水晶簇
+		Tooltip: 召唤一只被附身的手
+	}
+
+	Magmarox: {
+		DisplayName: 熔岩石
+		Tooltip: ""
+	}
+
+	ObsidiousTrophy: {
+		DisplayName: 黑曜石纪念章
+		Tooltip: ""
+	}
+
+	ObsidiousWings: {
+		DisplayName: 黑曜石之翼
+		Tooltip: 允许飞行和缓降
+	}
+
+	SacredCrystal: {
+		DisplayName: 神圣水晶
+		Tooltip: 贪婪甚至能让最强大的心灵陷入疯狂
+	}
+
+	TerreneScepter: {
+		DisplayName: 陆地权杖
+		Tooltip: 召唤一个陆地迫击炮为你防御
+	}
+
+	Ultramarine: {
+		DisplayName: 群青
+		Tooltip: ""
+	}
+
+	VioletEdge: {
+		DisplayName: 紫罗兰之刃
+		Tooltip: ""
+	}
+
+	ObsidiousBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	ObsidiousMask: {
+		DisplayName: 黑曜石面具
+		Tooltip: ""
+	}
+
+	ObsidiousPants: {
+		DisplayName: 黑曜石裤子
+		Tooltip: ""
+	}
+
+	ObsidiousRobes: {
+		DisplayName: 黑曜石长袍
+		Tooltip: ""
+	}
+
+	Flurry: {
+		DisplayName: 飞雪
+		Tooltip: 召唤一个冰锥为你作战
+	}
+
+	Frigidblaster: {
+		DisplayName: 严寒喷射器
+		Tooltip: ""
+	}
+
+	IceReaver: {
+		DisplayName: 冰之掠夺者
+		Tooltip: ""
+	}
+
+	IceWrath: {
+		DisplayName: 冰之怒
+		Tooltip: ""
+	}
+
+	IcyHeart: {
+		DisplayName: 冰冷之心
+		Tooltip:
+			'''
+			玩家在10秒内未受伤害后会生成一个冰盾
+			需要20秒充能才能100%格挡伤害
+			'''
+	}
+
+	PermafrostMask: {
+		DisplayName: 永冻面具
+		Tooltip: ""
+	}
+
+	PermafrostTrophy: {
+		DisplayName: 永冻纪念章
+		Tooltip: ""
+	}
+
+	Snowdrift: {
+		DisplayName: 雪堆
+		Tooltip: ""
+	}
+
+	SoulOfTheFrost: {
+		DisplayName: 冰霜之魂
+		Tooltip:
+			'''
+			永冻的冰冷力量源泉
+			增加10%伤害
+			免疫“寒冷”、“冰冻”和“霜燃”减益
+			护甲穿透增加10
+			'''
+	}
+
+	PermafrostBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	Majesty: {
+		DisplayName: 威严
+		Tooltip: ""
+	}
+
+	RadiantBomb: {
+		DisplayName: 大师旋涡
+		Tooltip: ""
+	}
+
+	RadiantBow: {
+		DisplayName: 玫瑰天空
+		Tooltip: 将普通箭矢变为追踪的辐射星
+	}
+
+	RadiantSword: {
+		DisplayName: 品红风暴
+		Tooltip: <右键>在玩家周围召唤有意识的刀刃
+	}
+
+	RadiantCrown: {
+		DisplayName: 辐射之冠
+		Tooltip:
+			'''
+			双击“下”键将你传送到鼠标位置
+			在附近敌人周围制造一场辐射风暴
+			'''
+	}
+
+	EnergyStaff: {
+		DisplayName: 能量法杖
+		Tooltip: 召唤一个能量之灵为你作战
+	}
+
+	EyeOfRegaroth: {
+		DisplayName: 雷加罗斯之眼
+		Tooltip: ""
+	}
+
+	RegarothMask: {
+		DisplayName: 雷加罗斯面具
+		Tooltip: ""
+	}
+
+	RegarothTrophy: {
+		DisplayName: 雷加罗斯纪念章
+		Tooltip: ""
+	}
+
+	Starstruck: {
+		DisplayName: 惊雷回响
+		Tooltip: ""
+	}
+
+	StoneOfHope: {
+		DisplayName: 希望之石
+		Tooltip:
+			'''
+			雷加罗斯的遗物
+			你的生命值越低，防御和伤害越高
+			'''
+	}
+
+	TheSilencer: {
+		DisplayName: 寂静者
+		Tooltip: ""
+	}
+
+	EnergyWeaversBreastplate: {
+		DisplayName: 能量编织者胸甲
+		Tooltip:
+			'''
+			极大增加翅膀机动性
+			减少20%法力消耗
+			'''
+	}
+
+	EnergyWeaversHelm: {
+		DisplayName: 能量编织者头盔
+		Tooltip:
+			'''
+			越接近正午，伤害增加越多，最高可达30%
+			暴击率增加7%
+			'''
+	}
+
+	EnergyWeaversLeggings: {
+		DisplayName: 能量编织者护胫
+		Tooltip:
+			'''
+			越接近正午，伤害增加越多，最高可达5%
+			移动速度增加20%
+			你身后会留下一串能量粒子
+			'''
+	}
+
+	RegarothBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	ScourgeDrive: {
+		DisplayName: 灾械驱动器
+		Tooltip:
+			'''
+			极大增加移动速度
+			当玩家速度超过60英里/小时：
+			他们被击中时会爆炸
+			伤害增加25%
+			'''
+	}
+
+	ScourgeFighterMachineGun: {
+		DisplayName: 灾械战机机枪
+		Tooltip: 从灾械战机的残骸上拆下
+	}
+
+	ScourgeFighterRocketLauncher: {
+		DisplayName: 灾械火箭发射器
+		Tooltip:
+			'''
+			从灾械战机的残骸上拆下
+			将普通火箭变为灾械火箭
+			'''
+	}
+
+	ScourgeFighterTrophy: {
+		DisplayName: 灾械战机纪念章
+		Tooltip: ""
+	}
+
+	ScourgeSword: {
+		DisplayName: 赏金猎杀
+		Tooltip: ""
+	}
+
+	SignalBooster: {
+		DisplayName: 信号增强器
+		Tooltip: ""
+	}
+
+	ScourgeFighterBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	CelestialFlame: {
+		DisplayName: 阿斯特拉耀斑
+		Tooltip:
+			'''
+			增加10%暴击率
+			向附近的敌人发射激光
+			'''
+	}
+
+	CelestialInferno: {
+		DisplayName: 天光漩涡
+		Tooltip: ""
+	}
+
+	CelestialsMask: {
+		DisplayName: 天界使者面具
+		Tooltip: ""
+	}
+
+	EyeballStaff: {
+		DisplayName: 星光法杖
+		Tooltip: 召唤一个天界观察者为你服务
+	}
+
+	Solus: {
+		DisplayName: 索鲁斯
+		Tooltip: ""
+	}
+
+	TheCelestialBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	TheCelestialTrophy: {
+		DisplayName: 天界使者纪念章
+		Tooltip: ""
+	}
+
+	FieryCore: {
+		DisplayName: 炽热核心
+		Tooltip:
+			'''
+			古老神庙的火焰神器
+			在地狱时伤害增加10%
+			免疫“着火了！”和“燃烧”减益
+			你点燃附近的生物并在击中时施加“着火了！”减益
+			'''
+	}
+
+	Godslayer: {
+		DisplayName: 弑神者
+		Tooltip: ""
+	}
+
+	InfernoStorm: {
+		DisplayName: 炼狱风暴
+		Tooltip: ""
+	}
+
+	TemplesWrath: {
+		DisplayName: 神庙之怒
+		Tooltip: ""
+	}
+
+	TheGuardianMask: {
+		DisplayName: 守护者面具
+		Tooltip: ""
+	}
+
+	TheGuardianTrophy: {
+		DisplayName: 守护者纪念章
+		Tooltip: ""
+	}
+
+	GuardianBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	GazeOfInferno: {
+		DisplayName: 炼狱凝视
+		Tooltip: ""
+	}
+
+	WyrmHeart: {
+		Tooltip: ""
+		DisplayName: 巨龙之心
+	}
+
+	WyrmClaw: {
+		Tooltip: ""
+		DisplayName: 巨龙之爪
+	}
+
+	TheAllSeer: {
+		Tooltip: ""
+		DisplayName: 全视者
+	}
+
+	TemplesCrystal: {
+		Tooltip: ""
+		DisplayName: 神庙水晶
+	}
+
+	TempleFragment: {
+		Tooltip: ""
+		DisplayName: 神庙碎片
+	}
+
+	TempleKeepersBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	CharredInsignia: {
+		DisplayName: 焦黑徽章
+		Tooltip:
+			'''
+			点燃附近的敌人
+			伤害增加10%
+			暴击率增加6%
+			护甲穿透增加20
+			'''
+	}
+
+	Combustia: {
+		DisplayName: 燃尽
+		Tooltip: ""
+	}
+
+	EmberBurst: {
+		DisplayName: 烬爆
+		Tooltip: ""
+	}
+
+	FatesFlame: {
+		DisplayName: 命运之焰
+		Tooltip: ""
+	}
+
+	FirestarterStaff: {
+		DisplayName: 纵火者法杖
+		Tooltip: 召唤一个火山触手为你服务
+	}
+
+	Hearth: {
+		DisplayName: 壁炉
+		Tooltip: ""
+	}
+
+	VolcanoxBag: {
+		DisplayName: 火山监督袋
+		Tooltip: ""
+	}
+
+	VolcanoxMask: {
+		DisplayName: 火山监督面具
+		Tooltip: ""
+	}
+
+	VolcanoxTrophy: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	ChitinStaff: {
+		DisplayName: 母亲的魔法
+		Tooltip: 召唤一只蝎子为你作战
+	}
+
+	Pincer: {
+		DisplayName: 守护者回响
+		Tooltip: 将普通箭矢变为淬毒箭
+	}
+
+	ScorpionBlade: {
+		DisplayName: 保护者之刃
+		Tooltip: ""
+	}
+
+	Stinger: {
+		DisplayName: 受折磨者权杖
+		Tooltip: ""
+	}
+
+	TheAntidote: {
+		DisplayName: 解毒剂
+		Tooltip: 将持续伤害减益造成的生命损失减半
+	}
+
+	VenomSample: {
+		DisplayName: 毒腺
+		Tooltip: 攻击施加“毒液”和“中毒”减益
+	}
+
+	WastelandBag: {
+		DisplayName: 宝藏袋
+		Tooltip: <右键>打开
+	}
+
+	WastelandMask: {
+		DisplayName: 废土面具
+		Tooltip: ""
+	}
+
+	WastelandTrophy: {
+		DisplayName: 废土纪念章
+		Tooltip: ""
+	}
+
+	CelestialIdol: {
+		DisplayName: 天界神像
+		Tooltip:
+			'''
+			10点防御
+			被击中时远古星星从天而降
+			增加20%魔法伤害
+			击中时施加“远古衰变”减益
+			'''
+	}
+
+	Fireblast: {
+		DisplayName: 火焰冲击
+		Tooltip: 发射远古教徒的火球
+	}
+
+	Frosthail: {
+		DisplayName: 冰雹
+		Tooltip: 发射冰雾
+	}
+
+	GreekFire: {
+		DisplayName: 希腊火
+		Tooltip: ""
+	}
+
+	NinjaKatana: {
+		DisplayName: 忍者刀
+		Tooltip: <右键>冲刺
+	}
+
+	Retinasm: {
+		DisplayName: 视网膜激光枪
+		Tooltip: ""
+	}
+
+	Shockstorm: {
+		DisplayName: 电击风暴
+		Tooltip:
+			'''
+			召唤一个攻击附近敌人的闪电球
+			最多只能同时存在两个闪电球
+			'''
+	}
+
+	SkeletronFist: {
+		DisplayName: 骷髅王之拳
+		Tooltip: 用骷髅王的力量出拳
+	}
+
+	SpinalSplayer: {
+		DisplayName: 脊椎散播者
+		Tooltip: ""
+	}
+
+	Starthrower: {
+		DisplayName: 繁星投射者
+		Tooltip: 发射三颗追踪星
+	}
+
+	TearsOfSorrow: {
+		DisplayName: 悲伤之泪
+		Tooltip: 将普通箭矢变为能极大减速敌人的泪箭
+	}
+
+	TheDestroyer: {
+		DisplayName: 毁灭者
+		Tooltip: 按住<左键>充能激光
+	}
+
+	TheEater: {
+		DisplayName: 吞噬者
+		Tooltip: 咀嚼
+	}
+
+	BleedingHeart: {
+		DisplayName: 流血之心
+		Tooltip:
+			'''
+			冲刺时释放追踪投射物
+			10秒内击杀5个敌人会给予玩家“血浴”增益，伤害增加20%
+			'''
+	}
+
+	CorruptedFang: {
+		DisplayName: 腐化之牙
+		Tooltip:
+			'''
+			玩家生成飞向附近敌人的腐化之牙。
+			当牙齿击中时，玩家获得“邪恶之力”增益，增加他们的伤害并
+			使他们的攻击对敌人造成“毒液”和“中毒”减益。
+			'''
+	}
+
+	CrystalNectar: {
+		DisplayName: 水晶花蜜
+		Tooltip:
+			'''
+			使蜜蜂变得友好
+			在蜂蜜中会加快玩家的游泳速度，并使“蜂蜜”增益的持续时间加倍
+			增加友好蜜蜂的力量
+			'''
+	}
+
+	FadedCloth: {
+		DisplayName: 诅咒布料
+		Tooltip:
+			'''
+			向附近的敌人发射追踪骷髅
+			真实近战伤害增加：
+			任何时候：50%
+			血肉墙后：75%
+			世纪之花后：100%
+			月亮领主后：300%
+			'''
+	}
+
+	GreatLens: {
+		DisplayName: 巨型晶状体
+		Tooltip: ""
+	}
+
+	HellishFleshHeart: {
+		DisplayName: 血肉驱动器
+		Tooltip: 召唤3个饿鬼偷取敌人的生命
+	}
+
+	SlimeBooster: {
+		DisplayName: 史莱姆助推器
+		Tooltip:
+			'''
+			行走时留下一条酸性史莱姆轨迹
+			极大增加跳跃速度
+			当玩家被击中时，他们会射出史莱姆尖刺
+			'''
+	}
+
+	VoidLeviathanSummon: {
+		DisplayName: 存在之胚
+		Tooltip:
+			'''
+			只能在夜晚使用
+			召唤虚空利维坦
+			'''
+	}
+
+	WastelandSummon: {
+		DisplayName: 突变蝎子
+		Tooltip:
+			'''
+			它在你手中扭动
+			在沙漠中使用时召唤废土
+			'''
+	}
+
+	AncientDragonSummon: {
+		DisplayName: 火焰意志
+		Tooltip:
+			'''
+			只能在夜晚使用
+			使用时召唤神庙守护者
+			'''
+	}
+
+	RefinedDrakonite: {
+		DisplayName: 精炼龙矿石
+		Tooltip: 比普通水晶蕴含更强大的力量
+	}
+
+	Drakonite: {
+		DisplayName: 龙矿石碎片
+		Tooltip: 这块水晶散发着微弱的暖意
+	}
+
+	AqueousSummon: {
+		DisplayName: 奇怪的贝壳
+		Tooltip:
+			'''
+			它神秘地发光
+			在海洋中使用时召唤水域
+			'''
+	}
+
+	AzanaSummon: {
+		DisplayName: 感染微芯片
+		Tooltip:
+			'''
+			它闪烁着红光
+			使用时召唤阿扎娜
+			'''
+	}
+
+	CosmicObserverSummon: {
+		DisplayName: 异界水晶
+		Tooltip: 在1分钟内增加宇宙观察者在太空的生成几率
+	}
+
+	GuardianSummon: {
+		DisplayName: 远古符文
+		Tooltip:
+			'''
+			它布满灰尘
+			非消耗品
+			只能在夜晚使用
+			使用时召唤守护者
+			'''
+	}
+
+	InfernaceSummon: {
+		DisplayName: 火焰核心
+		Tooltip:
+			'''
+			它散发着灼热的热量
+			在地狱中使用时召唤炼狱
+			'''
+	}
+
+	ObsidiousSummon: {
+		DisplayName: 终极核心
+		Tooltip:
+			'''
+			[c/bc3a31:他]所寻求的力量
+			只能在夜晚使用
+			召唤黑曜石
+			'''
+	}
+
+	PermafrostSummon: {
+		DisplayName: 附魔冰晶
+		Tooltip:
+			'''
+			蕴含着巨大的冰魔法
+			在苔原中使用时召唤永冻
+			'''
+	}
+
+	RadiantRainSummon: {
+		DisplayName: 辐射星辰座
+		Tooltip: 用辐射为雨水附魔
+	}
+
+	Radia: {
+		DisplayName: 瑞迪娅
+		Tooltip: ""
+	}
+
+	RegarothSummon: {
+		DisplayName: 漩涡能量
+		Tooltip:
+			'''
+			使用时召唤雷加罗斯
+			只能在高空使用
+			'''
+	}
+
+	ScourgeFighterSummon: {
+		DisplayName: 灾械遥控器
+		Tooltip:
+			'''
+			只能在夜晚使用
+			使用时召唤灾械战机
+			'''
+	}
+
+	Scourge: {
+		DisplayName: 灾祸
+		Tooltip:
+			'''
+			融化你的敌人
+			75%几率不消耗弹药
+			'''
+	}
+
+	SlimeRainSummon: {
+		DisplayName: 充能凝胶
+		Tooltip:
+			'''
+			电荷使凝胶结晶
+			使用时召唤史莱姆雨
+			'''
+	}
+
+	ToySlimeMask: {
+		Tooltip: ""
+		DisplayName: 玩具史莱姆面具
+	}
+
+	ToySlimeClaw: {
+		Tooltip: ""
+		DisplayName: 粘滑玩具爪
+	}
+
+	BrokenToys: {
+		Tooltip: 对脚最有效
+		DisplayName: 破碎的玩具
+	}
+
+	ToySlimeSummon: {
+		Tooltip:
+			'''
+			它粘在你的手上
+			在1分钟内增加玩具史莱姆的生成几率
+			'''
+		DisplayName: 大型史莱姆球
+	}
+
+	VoidEventSummon: {
+		DisplayName: 黑暗珍珠
+		Tooltip:
+			'''
+			使用时召唤虚空黎明
+			只能在白天/晚上10点前使用
+			'''
+	}
+
+	VoidEventSummon2: {
+		DisplayName: 空虚徽记
+		Tooltip:
+			'''
+			使用时召唤虚空黎明的第二阶段
+			只能在午夜12点后使用
+			'''
+	}
+
+	Darkstone: {
+		DisplayName: 暗石
+		Tooltip: 触感冰冷
+	}
+
+	UndownerTerraria: {
+		DisplayName: 泰拉瑞亚重置器
+		Tooltip:
+			'''
+			调试物品
+			<左键>重置所有Boss为未击败
+			<右键>设置所有Boss为已击败
+			'''
+	}
+
+	VolcanoxSummon: {
+		DisplayName: 焦黑核心
+		Tooltip:
+			'''
+			它永恒的火焰灼伤你的眼睛
+			在地狱中使用时召唤火山监督
+			'''
+	}
+
+	Sanguine: {
+		DisplayName: 血腥
+		Tooltip: ""
+	}
+
+	Wormer: {
+		DisplayName: 蠕虫发射器
+		Tooltip:
+			'''
+			发射一只寄生蠕虫
+			50%几率不消耗弹药
+			'''
+	}
+
+	Soulsword: {
+		DisplayName: 灵魂之剑
+		Tooltip: 击中敌人时释放灵魂
+	}
+
+	Nihongo: {
+		DisplayName: 日本语
+		Tooltip: 日本的古老长矛
+	}
+
+	ForeverSword: {
+		DisplayName: 永恒之剑
+		Tooltip: 快速发射吸血箭
+	}
+
+	SearingBlaze: {
+		Tooltip:
+			'''
+			将普通箭矢变为灼热箭
+			箭矢碰撞时释放浓烟
+			50%几率不消耗弹药
+			'''
+		DisplayName: 灼热之焰
+	}
+
+	MasterSword: {
+		DisplayName: 大师之剑
+		Tooltip: 按住<右键>为剑刃充能
+	}
+
+	Gladiolus: {
+		Tooltip: 从世纪之花的种子中长出的剑刃
+		DisplayName: 唐菖蒲
+	}
+
+	Mjolnir: {
+		Tooltip: 向敌人发射闪电
+		DisplayName: 妙尔尼尔
+	}
+
+	PoseidonsTrident: {
+		DisplayName: 波塞冬的三叉戟
+		Tooltip: ""
+	}
+
+	EmptyGauntlet: {
+		DisplayName: 空手套
+		Tooltip: 这个手套上有一些奇怪的插槽……
+	}
+
+	AncientsSummon: {
+		Tooltip: 使用时召唤远古者
+		DisplayName: 复活符印
+	}
+
+	ShadeScale: {
+		Tooltip: 似乎涂有重型抗弹射物材料
+		DisplayName: 暗影鳞片
+	}
+
+	Salve: {
+		Tooltip: 10秒内恢复50点生命
+		DisplayName: 药膏
+	}
+
+	NanowrapBandage: {
+		Tooltip: 10秒内恢复100点生命
+		DisplayName: 纳米包裹绷带
+	}
+
+	Bandage: {
+		Tooltip: 10秒内恢复75点生命
+		DisplayName: 绷带
+	}
+
+	BullseyePotion: {
+		DisplayName: 靶心药水
+		Tooltip:
+			'''
+			暴击率增加15%
+			远程伤害增加25%
+			'''
+	}
+
+	CalamityPotion: {
+		DisplayName: 灾厄药水
+		Tooltip: 3分钟内生成率增加12.5倍
+	}
+
+	CelestialEmpowerment: {
+		DisplayName: 天界赋能
+		Tooltip:
+			'''
+			防御增加8
+			伤害增加15%
+			'''
+	}
+
+	ChaosPotion: {
+		DisplayName: 混乱药水
+		Tooltip: 3分钟内生成率增加7.5倍
+	}
+
+	HavocPotion: {
+		DisplayName: 浩劫药水
+		Tooltip: 3分钟内生成率增加4倍
+	}
+
+	DemonPhilter: {
+		Tooltip:
+			'''
+			防御增加3
+			移动和近战速度增加10%
+			'''
+		DisplayName: 恶魔药剂
+	}
+
+	DiscordantPotion: {
+		DisplayName: 混沌孢子酿
+		Tooltip:
+			'''
+			减少“混沌状态”持续时间25%
+			无法获取的物品
+			'''
+	}
+
+	FlaskOfExtinction: {
+		DisplayName: 灭绝药剂
+		Tooltip: 近战攻击施加“灭绝诅咒”减益
+	}
+
+	PinkJelly: {
+		Tooltip:
+			'''
+			非常甜
+			移动速度增加50%
+			生命再生增加5
+			'''
+		DisplayName: 粉色果冻
+	}
+
+	HellFury: {
+		Tooltip:
+			'''
+			30秒内，伤害增加20%，但受到的伤害加倍
+			你的攻击施加“着火了！”减益
+			'''
+		DisplayName: 地狱狂怒
+	}
+
+	EmptyVessel: {
+		DisplayName: 空容器
+		Tooltip:
+			'''
+			你的身体已达到极限，试图容纳你的生命力，在你的灵魂中增加一点额外空间可能会解决这个问题
+			永久增加最大生命值10点
+			“收藏”此物品以在[i:ElementsAwoken/Heart3]上改变你的生命值外观
+			'''
+	}
+
+	VoidStone: {
+		DisplayName: 虚空之石
+		Tooltip: 它散发着一种奇怪的能量
+	}
+
+	VoidCompressor: {
+		Tooltip:
+			'''
+			用于提炼和压缩你内心的黑暗，成为终极虚空
+			允许你改变虚空之心的外观，但仅此而已
+			“收藏”此物品以在[i:ElementsAwoken/Heart3Alt]上改变你的生命值外观
+			'''
+		DisplayName: 虚空压缩机
+	}
+
+	ChaosHeart: {
+		DisplayName: 混沌孢子之心
+		Tooltip:
+			'''
+			永久增加最大生命值10点
+			“收藏”此物品以在[i:ElementsAwoken/Heart4]上改变你的生命值外观
+			'''
+	}
+
+	LunarStar: {
+		Tooltip:
+			'''
+			用原始的月亮力量凝聚你的法力
+			法力值增加100
+			'''
+		DisplayName: 月亮之星
+	}
+
+	ExtraAcc: {
+		Tooltip:
+			'''
+			恶魔之心让你能抵抗更多饰品中的冲突能量，而这个奇异的果实拥抱了它
+			让你能佩戴第7个饰品并存活下来
+			'''
+		DisplayName: 虚空果实
+	}
+
+	Stellorite: {
+		Tooltip: 它驾驭着星辰的能量
+		DisplayName: 星陨石
+	}
+
+	StellariumBar: {
+		Tooltip: 它驾驭着星辰的能量
+		DisplayName: 星陨锭
+	}
+
+	MortemiteDust: {
+		Tooltip: 它吸走了你的温暖
+		DisplayName: 死亡尘埃
+	}
+
+	BladeOfThePrince: {
+		Tooltip:
+			'''
+			射出一道紫色能量爆炸，击中敌人时会降下追踪的闪光
+			它被一只早已被杀的乌鸦恶魔的狂暴之血所污染
+			一种难以描述的对混乱和毁灭的渴望在你心中滋生，感觉它每时每刻都在变暗……
+			Burst的开发者武器
+			'''
+		DisplayName: 乌鸦王子之刃
+	}
+
+	AeroflakGun: {
+		Tooltip:
+			'''
+			等一下，等级又回来了？
+			在飞行敌人范围内爆炸
+			短时间内击中多个飞行敌人会造成额外伤害
+			Mayhemm的开发者武器
+			'''
+		DisplayName: 超光哨兵
+	}
+
+	Armageddon: {
+		DisplayName: 末日决战
+		Tooltip: 射出毁灭之刃
+	}
+
+	DiscordantStaff: {
+		Tooltip:
+			'''
+			控制混乱
+			点击多快，射速多快
+			Oinites的开发者武器
+			'''
+		DisplayName: 混沌法杖
+	}
+
+	BugBasher: {
+		Tooltip:
+			'''
+			粉碎泰拉瑞亚的害虫！
+			Data Crusader的开发者武器
+			'''
+		DisplayName: 除虫锤
+	}
+
+	Asterox: {
+		Tooltip:
+			'''
+			免疫击退。
+			12点防御。
+			增加护甲穿透和生命再生。
+			在玩家周围创建一个伤害性护盾。
+			移动速度增加20%。
+			'''
+		DisplayName: 星岩
+	}
+
+	PurpleTearstoneRing: {
+		Tooltip:
+			'''
+			生命值低于15%时：
+			伤害增加20%
+			防御增加50%
+			AmadisLFE的开发者饰品
+			'''
+		DisplayName: 紫泪石戒指
+	}
+
+	Neovirtuo: {
+		Tooltip:
+			'''
+			按Z在光标处召唤一个传送门
+			偶尔从玩家处发射追踪投射物
+			你的生命值越低，受到的伤害越少
+			法力值增加100，魔法伤害增加15%
+			移动速度增加16%，免疫大多数减益
+			创建一个旋转的星系
+			12点防御
+			此外还提供星岩的效果
+			Ranipla的开发者物品
+			'''
+		DisplayName: 新维尔图
+	}
+
+	ViridiumGreatsword: {
+		Tooltip:
+			'''
+			这把巨剑总是充满能量。
+			也许是因为它是由奇怪的材料制成的。
+			当人高速移动时，剑刃似乎会发出更亮的光芒。
+			AmadisLFE的开发者武器
+			'''
+		DisplayName: 翠绿巨剑
+	}
+
+	TimeGun: {
+		Tooltip:
+			'''
+			打破法则，超越现实
+			点击多快，射速多快
+			Genih Wat的开发者武器
+			'''
+		DisplayName: 射穿时间的枪
+	}
+
+	TheEqualizer: {
+		Tooltip: ""
+		DisplayName: 平衡者
+	}
+
+	AegidaTempestas: {
+		Tooltip:
+			'''
+			50%几率不消耗弹药
+			Aegida的捐助者物品
+			'''
+		DisplayName: 埃癸斯风暴
+	}
+
+	MechMask: {
+		Tooltip:
+			'''
+			远程伤害增加20%
+			远程暴击率增加10%
+			科学家为其精英游骑兵制造的实验性头盔
+			Aegida的捐助者物品
+			'''
+		DisplayName: 机械面具
+	}
+
+	MechLeggings: {
+		Tooltip:
+			'''
+			远程伤害增加11%
+			移动速度增加10%
+			科学家为其精英游骑兵制造的实验性护甲
+			Aegida的捐助者物品
+			'''
+		DisplayName: 机械护胫
+	}
+
+	MechBreastplate: {
+		Tooltip:
+			'''
+			远程伤害增加16%
+			远程暴击率增加16%
+			不消耗弹药的几率增加33%
+			科学家为其精英游骑兵制造的实验性胸甲
+			Aegida的捐助者物品
+			'''
+		DisplayName: 机械胸甲
+	}
+
+	SonicArm: {
+		Tooltip:
+			'''
+			鞭子偶尔会发出爆响，释放一道音波
+			The Buildmonger的捐助者物品
+			'''
+		DisplayName: 音速臂
+	}
+
+	ForgedMask: {
+		Tooltip:
+			'''
+			近战伤害增加12%
+			近战攻击使敌人着火
+			The Buildmonger的捐助者物品
+			'''
+		DisplayName: 锻造面具
+	}
+
+	ForgedIronBar: {
+		Tooltip: ""
+		DisplayName: 锻造铁锭
+	}
+
+	ForgedGreaves: {
+		Tooltip:
+			'''
+			护甲穿透增加6
+			The Buildmonger的捐助者物品
+			'''
+		DisplayName: 锻造护胫
+	}
+
+	ForgedBreastplate: {
+		Tooltip:
+			'''
+			近战和移动速度增加10%
+			The Buildmonger的捐助者物品
+			'''
+		DisplayName: 锻造胸甲
+	}
+
+	BioReactor: {
+		Tooltip:
+			'''
+			使用丛林孢子作为弹药
+			The Buildmonger的捐助者物品
+			'''
+		DisplayName: 生物反应堆
+	}
+
+	PinkShoe: {
+		Tooltip:
+			'''
+			召唤一只幼年飞龙
+			Chamcham的捐助者物品
+			'''
+		DisplayName: 粉色鞋子
+	}
+
+	BohBait: {
+		Tooltip: Chamcham的捐助者物品
+		DisplayName: Boh诱饵
+	}
+
+	CrematedChaos: {
+		DisplayName: 火化混沌
+		Tooltip: Crow的捐助者物品
+	}
+
+	CrowsGreathelm: {
+		DisplayName: 乌鸦巨盔
+		Tooltip:
+			'''
+			终极巫师盔甲
+			魔法伤害增加15%
+			法力消耗减少20%
+			Crow的捐助者物品
+			'''
+	}
+
+	CrowsGreatpants: {
+		DisplayName: 乌鸦巨裤
+		Tooltip:
+			'''
+			终极巫师盔甲
+			魔法伤害增加15%
+			移动速度增加15%
+			Crow的捐助者物品
+			'''
+	}
+
+	CrowsGreatplate: {
+		DisplayName: 乌鸦巨甲
+		Tooltip:
+			'''
+			终极巫师盔甲
+			受到的伤害减少5%
+			魔法暴击率增加15%
+			法力值增加30
+			Crow的捐助者物品
+			'''
+	}
+
+	FeatheredGoggles: {
+		DisplayName: 羽毛护目镜
+		Tooltip:
+			'''
+			召唤一只可骑乘的乌鸦坐骑
+			Crow的捐助者物品
+			'''
+	}
+
+	SWRL: {
+		DisplayName: S.W.R.L
+		Tooltip:
+			'''
+			将普通投射物变为S.W.R
+			50%几率不消耗弹药
+			Crow的捐助者物品
+			'''
+	}
+
+	EoitesBlade: {
+		DisplayName: 村正波
+		Tooltip:
+			'''
+			当有疑问时，追求速度 - 宅男主播
+			Eoite的捐助者物品
+			'''
+	}
+
+	EoitesWrath: {
+		Tooltip:
+			'''
+			品红光束打击你的敌人
+			<右键>切换模式
+			Eoite的捐助者物品
+			'''
+		DisplayName: Eoite之怒
+	}
+
+	EoitesWings: {
+		Tooltip:
+			'''
+			允许飞行和缓降
+			Eoite的捐助者物品
+			'''
+		DisplayName: Eoite之翼
+	}
+
+	EoitesRobes: {
+		Tooltip:
+			'''
+			宅男主播的长袍
+			受到的伤害减少18%
+			魔法伤害增加5%
+			Eoite的捐助者物品
+			'''
+		DisplayName: Eoite的长袍
+	}
+
+	EoitesPickaxe: {
+		Tooltip:
+			'''
+			用力挥舞它
+			Eoite的捐助者物品
+			'''
+		DisplayName: 有意义的宅男
+	}
+
+	EoitesLeggings: {
+		Tooltip:
+			'''
+			宅男主播的护胫
+			魔法伤害增加5%
+			Eoite的捐助者物品
+			'''
+		DisplayName: Eoite的护胫
+	}
+
+	EoitesHood: {
+		Tooltip:
+			'''
+			宅男主播的风帽
+			魔法伤害增加10%
+			Eoite的捐助者物品
+			'''
+		DisplayName: Eoite的风帽
+	}
+
+	SufferWithMe: {
+		Tooltip:
+			'''
+			你夺走了我的一部分，所以我也要夺走你的一部分
+			免疫“混沌坏死”减益
+			攻击有25%几率施加“混沌坏死”减益
+			护甲穿透增加10
+			Lantard的捐助者物品
+			'''
+		DisplayName: 与我共苦
+	}
+
+	StrangeUkulele: {
+		Tooltip:
+			'''
+			‘他的音乐是电音’
+			击中敌人时，闪电可能弧向附近的敌人，造成所持武器50%的伤害
+			Lantard的捐助者物品
+			'''
+		DisplayName: 奇怪的尤克里里
+	}
+
+	DarknersScarf: {
+		Tooltip:
+			'''
+			拥有这条围巾的前主人不喜欢战斗，但他们会尽一切努力提供帮助
+			也可以作为时装佩戴
+			Lantard的捐助者物品
+			'''
+		DisplayName: 黑暗居民的围巾
+	}
+
+	BreathOfTheStars: {
+		Tooltip:
+			'''
+			发射4颗追踪的月亮星星
+			Lantard的捐助者物品
+			'''
+		DisplayName: 星辰之息
+	}
+
+	TheBelt: {
+		DisplayName: 皮带
+		Tooltip:
+			'''
+			“那会给他们一个教训”
+			Lantard的捐助者物品
+			'''
+	}
+
+	AwokenWoodHelmet: {
+		Tooltip:
+			'''
+			伤害增加10%
+			最大法力值增加50
+			如此简单的东西变得如此强大……正如你一样
+			Lantard的捐助者物品
+			'''
+		DisplayName: 觉醒木盔
+	}
+
+	AwokenWoodGreaves: {
+		Tooltip:
+			'''
+			伤害增加6%
+			移动速度增加10%
+			如此简单的东西变得如此强大……正如你一样
+			Lantard的捐助者物品
+			'''
+		DisplayName: 觉醒木胫甲
+	}
+
+	AwokenWoodBreastplate: {
+		Tooltip:
+			'''
+			伤害增加12%
+			最大仆从数量增加2
+			如此简单的东西变得如此强大……正如你一样
+			Lantard的捐助者物品
+			'''
+		DisplayName: 觉醒木胸甲
+	}
+
+	CoalescedOrbStaff: {
+		DisplayName: 聚结之球法杖
+		Tooltip:
+			'''
+			召唤一个聚结之球保护你
+			每个聚结之球占用3个仆从位
+			Superbaseball101的捐助者物品
+			'''
+	}
+
+	FireDemonsBreastplate: {
+		DisplayName: 火焰恶魔胸甲
+		Tooltip:
+			'''
+			仆从伤害增加10%
+			Superbaseball101的捐助者盔甲
+			'''
+	}
+
+	FireDemonsHelm: {
+		DisplayName: 火焰恶魔头盔
+		Tooltip:
+			'''
+			仆从伤害和击退增加5%
+			Superbaseball101的捐助者盔甲
+			'''
+	}
+
+	FireDemonsLeggings: {
+		DisplayName: 火焰恶魔护胫
+		Tooltip:
+			'''
+			最大仆从数量增加1
+			Superbaseball101的捐助者盔甲
+			'''
+	}
+
+	HeartContainer: {
+		DisplayName: 心之容器
+		Tooltip:
+			'''
+			最大仆从数量增加1
+			仆从的近战攻击有小几率从敌人身上偷取生命
+			Superbaseball101的捐助者物品
+			'''
+	}
+
+	AncientIchorFlagon: {
+		DisplayName: 远古灵液瓶
+		Tooltip: Yukki-Kun的捐助者物品
+	}
+
+	GelticArrow: {
+		DisplayName: 盖尔特箭
+		Tooltip:
+			'''
+			有几率在击中时施加“中毒”或“缓慢”减益
+			Yukki-Kun的捐助者物品
+			'''
+	}
+
+	GelticConquerorBreastplate: {
+		DisplayName: 盖尔特征服者胸甲
+		Tooltip: Yukki-Kun的捐助者盔甲
+	}
+
+	GelticConquerorHelmet: {
+		DisplayName: 盖尔特征服者头盔
+		Tooltip: Yukki-Kun的捐助者盔甲
+	}
+
+	GelticConquerorLeggings: {
+		DisplayName: 盖尔特征服者护胫
+		Tooltip: Yukki-Kun的捐助者盔甲
+	}
+
+	TheSpeedyStar: {
+		DisplayName: 疾速之星
+		Tooltip:
+			'''
+			击中所有星星会恢复该次射击消耗的所有法力
+			Yukki-Kun的捐助者物品
+			'''
+	}
+
+	AridBreastplate: {
+		DisplayName: 干旱胸甲
+		Tooltip:
+			'''
+			暴击率增加3%
+			增加被击中后的无敌时间
+			'''
+	}
+
+	AridFalconHelm: {
+		DisplayName: 干旱猎鹰盔
+		Tooltip:
+			'''
+			远程伤害增加4%
+			远程暴击率增加3%
+			8%几率不消耗弹药
+			'''
+	}
+
+	AridHat: {
+		DisplayName: 干旱帽
+		Tooltip:
+			'''
+			魔法伤害增加4%
+			魔法暴击率增加3%
+			最大法力值增加40
+			'''
+	}
+
+	AridHeadgear: {
+		DisplayName: 干旱头饰
+		Tooltip:
+			'''
+			召唤伤害增加4%
+			仆从击退增加5%
+			+1最大仆从容量
+			'''
+	}
+
+	AridHood: {
+		DisplayName: 干旱风帽
+		Tooltip:
+			'''
+			投掷伤害增加4%
+			投掷暴击率增加3%
+			投掷速度增加15%
+			'''
+	}
+
+	AridLeggings: {
+		DisplayName: 干旱护胫
+		Tooltip:
+			'''
+			移动速度增加10%
+			挖掘速度增加5%
+			'''
+	}
+
+	SandSprayer: {
+		Tooltip:
+			'''
+			向你的敌人喷洒粗砂……很有用
+			20%几率不消耗弹药
+			'''
+		DisplayName: 喷沙器
+	}
+
+	Sandshot: {
+		Tooltip: ""
+		DisplayName: 沙弹
+	}
+
+	Sandball: {
+		Tooltip: 我不喜欢沙子。它又粗又糙又烦人，还到处都是……
+		DisplayName: 沙球
+	}
+
+	DesertShield: {
+		Tooltip:
+			'''
+			允许玩家进行冲刺
+			冲刺时会向冲刺方向投掷一个沙尘龙卷风
+			'''
+		DisplayName: 沙漠之盾
+	}
+
+	DesertNeck: {
+		Tooltip:
+			'''
+			驾驭沙漠之风的力量
+			移动和近战速度增加25%
+			'''
+		DisplayName: 沙漠徽章
+	}
+
+	DesertGun: {
+		Tooltip: ""
+		DisplayName: 沙漠之鹰
+	}
+
+	AridWarriorMask: {
+		Tooltip:
+			'''
+			近战伤害增加4%
+			近战暴击率增加3%
+			近战速度增加10%
+			'''
+		DisplayName: 干旱战士面具
+	}
+
+	SandstormStone: {
+		DisplayName: 沙尘暴之石
+		Tooltip:
+			'''
+			切换沙尘暴
+			只能在沙漠中使用
+			'''
+	}
+
+	SandstormTome: {
+		DisplayName: 沙尘暴宝典
+		Tooltip: 召唤沙子从天而降
+	}
+
+	SandySpear: {
+		DisplayName: 沙矛
+		Tooltip: ""
+	}
+
+	SolitaryStorm: {
+		DisplayName: 孤独风暴
+		Tooltip: 向你的敌人发射一个沙尘龙卷风
+	}
+
+	StaffOfTheSandstorm: {
+		DisplayName: 沙尘暴法杖
+		Tooltip: 召唤一个迷你沙尘暴为你作战
+	}
+
+	TheGrit: {
+		DisplayName: 砂砾
+		Tooltip: ""
+	}
+
+	TheVulture: {
+		DisplayName: 秃鹫
+		Tooltip: ""
+	}
+
+	Andromeda: {
+		DisplayName: 仙女座
+		Tooltip: ""
+	}
+
+	Cerulean: {
+		DisplayName: 天蓝
+		Tooltip:
+			'''
+			暴击率增加5%
+			你的生命值越低，受到的伤害越少
+			5点防御
+			法力值增加100
+			魔法伤害增加15%
+			移动速度增加16%
+			免疫大多数减益
+			生命值低于一半时：
+			极大减少法力消耗
+			减少受到的伤害
+			伤害增加10%
+			'''
+	}
+
+	Cosmicus: {
+		DisplayName: 宇宙之光
+		Tooltip: ""
+	}
+
+	Dusksong: {
+		DisplayName: 暮歌
+		Tooltip: ""
+	}
+
+	ElementalBurst: {
+		DisplayName: 元素爆发
+		Tooltip: 发射一波短程高伤害的爆发
+	}
+
+	Equinox: {
+		DisplayName: 昼夜平分
+		Tooltip: 将普通箭矢变为3支元素箭
+	}
+
+	Fusion: {
+		Tooltip: ""
+		DisplayName: 融合
+	}
+
+	PhantomBane: {
+		DisplayName: 幻影之灾
+		Tooltip: ""
+	}
+
+	Singularity: {
+		DisplayName: 奇点
+		Tooltip: ""
+	}
+
+	Voxus: {
+		Tooltip: ""
+		DisplayName: 沃克斯
+	}
+
+	TheValkyrie: {
+		Tooltip: 末日将至
+		DisplayName: 女武神
+	}
+
+	EAZenith: {
+		Tooltip: ""
+		DisplayName: 天顶剑
+	}
+
+	ElementalMask: {
+		Tooltip:
+			'''
+			暴击率增加35%
+			+5最大仆从数
+			'''
+		DisplayName: 元素面具
+	}
+
+	ElementalLeggings: {
+		Tooltip:
+			'''
+			移动和近战速度增加20%
+			敌人更容易攻击你
+			'''
+		DisplayName: 元素护胫
+	}
+
+	ElementalBreastplate: {
+		Tooltip:
+			'''
+			伤害增加20%
+			最大生命和法力值增加100
+			伤害减免增加10%
+			'''
+		DisplayName: 元素胸甲
+	}
+
+	BlazeFury: {
+		DisplayName: 烈焰之怒
+		Tooltip: ""
+	}
+
+	BonfirePummel: {
+		DisplayName: 篝火重击
+		Tooltip: 发射一个击中时爆炸成火花的火球
+	}
+
+	DragonsBreath: {
+		DisplayName: 龙之息
+		Tooltip: 50%几率不消耗弹药
+	}
+
+	FireKnives: {
+		DisplayName: 火焰飞刀
+		Tooltip: 投掷三把爆炸火焰匕首
+	}
+
+	Firelash: {
+		DisplayName: 地狱风暴
+		Tooltip: ""
+	}
+
+	FireNeck: {
+		DisplayName: 炼狱饰带
+		Tooltip:
+			'''
+			向你的敌人释放火焰的力量
+			双击“下”键制造一个小爆炸，将玩家发射到空中
+			近战攻击施加“着火了！”减益
+			伤害增加2%
+			'''
+	}
+
+	FireScythe: {
+		DisplayName: 永恒之火镰刀
+		Tooltip: ""
+	}
+
+	FireShield: {
+		DisplayName: 炼狱壁垒
+		Tooltip: 免疫击退、火块和着火
+	}
+
+	FireStorm: {
+		DisplayName: 火焰风暴
+		Tooltip:
+			'''
+			发射一轮3发子弹
+			最后一发子弹造成50%额外伤害并施加“着火了！”减益
+			'''
+	}
+
+	FireTrisword: {
+		DisplayName: 烈焰三叉剑
+		Tooltip: 在永恒之火中锻造
+	}
+
+	Incinerator: {
+		DisplayName: 焚化炉
+		Tooltip: ""
+	}
+
+	InfernoLance: {
+		DisplayName: 炼狱长枪
+		Tooltip: ""
+	}
+
+	InfurnicesesMinionStaff: {
+		DisplayName: 火灵权杖
+		Tooltip: 召唤一个火灵为你服务
+	}
+
+	FrostNeck: {
+		Tooltip:
+			'''
+			驾驭冰霜的力量
+			免疫“寒冷”和“冰冻”减益
+			进入苔原时：
+			伤害增加5%
+			近战速度和投掷速度增加5%
+			'''
+		DisplayName: 冰霜吊坠
+	}
+
+	FrostBlade: {
+		Tooltip: 投掷两把会返回玩家身边的冰刃
+		DisplayName: 冰霜之刃
+	}
+
+	FrostBattleaxe: {
+		Tooltip: 召唤一把冰斧为你作战
+		DisplayName: 浮冰破坏者
+	}
+
+	FreezeRay: {
+		Tooltip: 发射能完全冻结敌人的冰束
+		DisplayName: 冰冻射线
+	}
+
+	FloeBreaker: {
+		Tooltip:
+			'''
+			与地面碰撞时产生冲击波
+			InstaFiz的捐助者物品
+			'''
+		DisplayName: 霜冻破碎者
+	}
+
+	FrostPulse: {
+		DisplayName: 冰霜脉冲步枪
+		Tooltip: 发射一道冰冷的脉冲
+	}
+
+	FrostShield: {
+		DisplayName: 冰霜圆盾
+		Tooltip:
+			'''
+			免疫击退
+			最大生命值增加30
+			如果玩家在苔原中：
+			5点防御
+			最大生命值增加30
+			伤害增加10%
+			'''
+	}
+
+	GlacialBlitz: {
+		DisplayName: 冰川闪击
+		Tooltip: ""
+	}
+
+	GlacierBreaker: {
+		DisplayName: 冰川破坏者
+		Tooltip: ""
+	}
+
+	TheThaw: {
+		Tooltip:
+			'''
+			将普通箭矢变为霜燃箭
+			偶尔发射一把爆炸性冰刃
+			'''
+		DisplayName: 融雪
+	}
+
+	Snowstorm: {
+		Tooltip: 将普通箭矢变为霜燃箭
+		DisplayName: 暴雪
+	}
+
+	SnowflakeStaff: {
+		Tooltip: 发射一个跟随光标的魔法雪花
+		DisplayName: 雪花法杖
+	}
+
+	Snower: {
+		Tooltip:
+			'''
+			向你的敌人喷洒冰冷的白雪
+			75%几率不消耗弹药
+			'''
+		DisplayName: 喷雪器
+	}
+
+	Icicle: {
+		Tooltip:
+			'''
+			发射三根穿刺敌人的冰锥
+			<右键>快速刺击，同时发射一连串冰箭
+			'''
+		DisplayName: 冰锥
+	}
+
+	Hailgun: {
+		Tooltip:
+			'''
+			“天上下雪球啦”
+			90%几率不消耗弹药
+			'''
+		DisplayName: 冰雹枪
+	}
+
+	SkylineWings: {
+		Tooltip: 允许飞行和缓降
+		DisplayName: 天际之翼
+	}
+
+	SkyFury: {
+		Tooltip:
+			'''
+			以天空之怒打击
+			从天而降雨水
+			'''
+		DisplayName: 天空之怒
+	}
+
+	HappyLittleCloud: {
+		Tooltip: 召唤一个快乐的小云朵保护你免受快乐的小错误
+		DisplayName: 快乐小云法杖
+	}
+
+	FeatherFall: {
+		Tooltip: 将普通箭矢变为羽毛，击中敌人时会降下更多羽毛
+		DisplayName: 羽落
+	}
+
+	Aurora: {
+		Tooltip: ""
+		DisplayName: 极光
+	}
+
+	SkyShield: {
+		Tooltip:
+			'''
+			云朵接纳了你
+			免疫击退
+			允许二段跳
+			增加翅膀飞行时间
+			在天空中时：
+			获得10点防御
+			'''
+		DisplayName: 天空之盾
+	}
+
+	SkyScraper: {
+		Tooltip: ""
+		DisplayName: 摩天楼
+	}
+
+	SkyNeck: {
+		Tooltip:
+			'''
+			风祝福你
+			增加翅膀飞行时间
+			极大增加移动速度
+			在天空中时：
+			获得5%伤害增加
+			获得8点防御
+			'''
+		DisplayName: 天空徽章
+	}
+
+	Starlight: {
+		DisplayName: 星光
+		Tooltip: 将普通箭矢变为穿透羽毛
+	}
+
+	Stormsky: {
+		DisplayName: 风暴天空
+		Tooltip: 发射一阵羽毛风暴
+	}
+
+	TheLauncher: {
+		DisplayName: 发射器
+		Tooltip: 随机发射能击退敌人的箭矢
+	}
+
+	Windfall: {
+		Tooltip: 50%几率不消耗弹药
+		DisplayName: 风落
+	}
+
+	TimeToken: {
+		Tooltip: 在白天和黑夜之间切换时间
+		DisplayName: 永恒沙漏
+	}
+
+	ThorsHammer: {
+		Tooltip: 纯粹的能量在你掌心
+		DisplayName: 雷神之锤
+	}
+
+	EmpyreanVisage: {
+		Tooltip:
+			'''
+			投掷伤害增加10%
+			投掷暴击率增加7%
+			'''
+		DisplayName: 天穹面容
+	}
+
+	EmpyreanPlate: {
+		Tooltip:
+			'''
+			暴击率增加10%
+			飞行时间增加30
+			'''
+		DisplayName: 天穹胸甲
+	}
+
+	EmpyreanMask: {
+		Tooltip:
+			'''
+			近战伤害增加10%
+			近战暴击率增加7%
+			'''
+		DisplayName: 天穹面具
+	}
+
+	EmpyreanLeggings: {
+		Tooltip:
+			'''
+			移动速度增加20%
+			挥舞速度增加10%
+			'''
+		DisplayName: 天穹护胫
+	}
+
+	EmpyreanHelmet: {
+		Tooltip:
+			'''
+			远程伤害增加10%
+			远程暴击率增加7%
+			'''
+		DisplayName: 天穹头盔
+	}
+
+	EmpyreanHeadgear: {
+		Tooltip:
+			'''
+			仆从伤害增加10%
+			最大仆从数量增加1
+			仆从击退增加10%
+			'''
+		DisplayName: 天穹头饰
+	}
+
+	EmpyreanHat: {
+		Tooltip:
+			'''
+			魔法伤害增加10%
+			魔法暴击率增加7%
+			'''
+		DisplayName: 天穹帽
+	}
+
+	EACalamity: {
+		Tooltip: 投掷2个击中时爆炸的弹跳环刃
+		DisplayName: 灾厄
+	}
+
+	Cataclysm: {
+		Tooltip: ""
+		DisplayName: 巨变
+	}
+
+	Eradication: {
+		Tooltip: ""
+		DisplayName: 根除
+	}
+
+	CrimsonSky: {
+		Tooltip: ""
+		DisplayName: 猩红天空
+	}
+
+	EyeofAnnihilation: {
+		DisplayName: 湮灭之眼
+		Tooltip: ""
+	}
+
+	HealingIcon: {
+		DisplayName: 治疗圣像
+		Tooltip: 当玩家生命值低于250时持续治疗
+	}
+
+	InfinityTome: {
+		DisplayName: 无限宝典
+		Tooltip: 虚空渴望生命。它会吸入它接触到的一切……
+	}
+
+	VoidBlaster: {
+		DisplayName: 虚空冲击波
+		Tooltip: 释放一阵追踪的虚空冲击波
+	}
+
+	VoidShield: {
+		Tooltip:
+			'''
+			免疫击退
+			你的防御越高，你的生命值和造成的伤害就越高
+			'''
+		DisplayName: 阴沉壁垒
+	}
+
+	VoidNeck: {
+		Tooltip:
+			'''
+			伤害增加25%
+			生命再生增加4
+			'''
+		DisplayName: 黑暗神像
+	}
+
+	VoidSpiritStaff: {
+		DisplayName: 深渊教徒法杖
+		Tooltip:
+			'''
+			召唤一个深渊教徒保护你
+			每个深渊教徒占用5个仆从位
+			'''
+	}
+
+	VoidSword: {
+		DisplayName: 深渊之刃
+		Tooltip: 剑刃闪烁着红光
+	}
+
+	VoidBreastplate: {
+		DisplayName: 幽光胸甲
+		Tooltip:
+			'''
+			伤害增加12%
+			最大生命和法力值增加75
+			'''
+	}
+
+	VoidGreaves: {
+		DisplayName: 幽光护胫
+		Tooltip:
+			'''
+			近战速度增加10%
+			低生命值时速度更快
+			'''
+	}
+
+	VoidHelmet: {
+		DisplayName: 幽光头盔
+		Tooltip:
+			'''
+			免疫“诅咒地狱”、“着火了！”、“寒冷”和“诅咒”减益
+			+2最大仆从数
+			伤害减免5%
+			'''
+	}
+
+	BubbleFlood: {
+		DisplayName: 堤丰
+		Tooltip: ""
+	}
+
+	BubblePack: {
+		DisplayName: 泡泡背包
+		Tooltip:
+			'''
+			允许飞行和缓降
+			用致命的泡泡推动自己！
+			'''
+	}
+
+	BubbleStaff: {
+		DisplayName: 泡泡法杖
+		Tooltip: 召唤神风泡泡攻击你的敌人
+	}
+
+	ChakramOfTheDuke: {
+		DisplayName: 猪鲨环刃
+		Tooltip: 把你的敌人撕成碎片
+	}
+
+	TheUrchin: {
+		Tooltip: ""
+		DisplayName: 海胆
+	}
+
+	SeaViper: {
+		Tooltip: ""
+		DisplayName: 海蛇
+	}
+
+	RainSigil: {
+		Tooltip:
+			'''
+			切换降雨
+			使用后不久雨会开始或停止
+			'''
+		DisplayName: 降雨符印
+	}
+
+	TrueWaterBolt: {
+		DisplayName: 波浪箭
+		Tooltip: ""
+	}
+
+	WaterNeck: {
+		DisplayName: 海洋徽章
+		Tooltip:
+			'''
+			与海洋合而为一
+			进入水中时：
+			获得20%伤害增加
+			获得20%近战速度和投掷速度增加
+			获得魔法手铐的效果
+			增加移动速度
+			防御增加10
+			'''
+	}
+
+	WaterShield: {
+		DisplayName: 大堡礁
+		Tooltip:
+			'''
+			海洋生物接纳了你
+			在水中时将你变为人鱼
+			海洋敌人不会攻击你
+			免疫击退
+			'''
+	}
+
+	Watershot: {
+		DisplayName: 水弹
+		Tooltip: ""
+	}
+
+	WaterSword: {
+		DisplayName: 永恒之潮
+		Tooltip: ""
+	}
+
+	WaterYoyo: {
+		DisplayName: 海蓝宝石
+		Tooltip: ""
+	}
+
+	Wavelash: {
+		DisplayName: 破浪者
+		Tooltip: ""
+	}
+
+	OceanicVisage: {
+		Tooltip:
+			'''
+			可以快速穿过液体
+			+1最大仆从数
+			暴击率增加10%
+			'''
+		DisplayName: 海洋面容
+	}
+
+	OceanicPlateMail: {
+		Tooltip:
+			'''
+			伤害增加6%
+			翅膀飞行时间增加25
+			'''
+		DisplayName: 海洋板甲
+	}
+
+	OceanicLeggings: {
+		Tooltip:
+			'''
+			移动速度增加10%
+			随着生命值降低，获得防御提升
+			'''
+		DisplayName: 海洋护胫
+	}
+
+	GemLasersClass: {
+		DisplayName: 宝石激光职业
+		Tooltip: 天哪！
+	}
+
+	AmethystPistol: {
+		Tooltip: 用紫罗兰光芒为火枪子弹充能
+		DisplayName: 紫水晶手枪
+	}
+
+	AmberPistol: {
+		Tooltip: 用琥珀光芒为火枪子弹充能
+		DisplayName: 琥珀手枪
+	}
+
+	TopazPistol: {
+		Tooltip: 用金色光芒为火枪子弹充能
+		DisplayName: 黄玉手枪
+	}
+
+	SapphirePistol: {
+		Tooltip: 用天蓝色光芒为火枪子弹充能
+		DisplayName: 蓝宝石手枪
+	}
+
+	RubyPistol: {
+		Tooltip: 用深红色光芒为火枪子弹充能
+		DisplayName: 红宝石手枪
+	}
+
+	EmeraldPistol: {
+		Tooltip: 用翠绿色光芒为火枪子弹充能
+		DisplayName: 绿宝石手枪
+	}
+
+	DiamondPistol: {
+		Tooltip: 用白色光芒为火枪子弹充能
+		DisplayName: 钻石手枪
+	}
+
+	AmberRifle: {
+		DisplayName: 琥珀步枪
+		Tooltip: 用琥珀光芒为火枪子弹充能
+	}
+
+	AmethystRifle: {
+		DisplayName: 紫水晶步枪
+		Tooltip: 用紫罗兰光芒为火枪子弹充能
+	}
+
+	DiamondRifle: {
+		DisplayName: 钻石步枪
+		Tooltip: 用白色光芒为火枪子弹充能
+	}
+
+	EmeraldRifle: {
+		DisplayName: 绿宝石步枪
+		Tooltip: 用翠绿色光芒为火枪子弹充能
+	}
+
+	RubyRifle: {
+		DisplayName: 红宝石步枪
+		Tooltip: 用深红色光芒为火枪子弹充能
+	}
+
+	SapphireRifle: {
+		DisplayName: 蓝宝石步枪
+		Tooltip: 用天蓝色光芒为火枪子弹充能
+	}
+
+	TopazRifle: {
+		DisplayName: 黄玉步枪
+		Tooltip: 用金色光芒为火枪子弹充能
+	}
+
+	EmeraldBlaster: {
+		Tooltip: 用翠绿色光芒为火枪子弹充能
+		DisplayName: 绿宝石冲击枪
+	}
+
+	DiamondBlaster: {
+		Tooltip: 用白色光芒为火枪子弹充能
+		DisplayName: 钻石冲击枪
+	}
+
+	AmethystBlaster: {
+		Tooltip: 用紫罗兰光芒为火枪子弹充能
+		DisplayName: 紫水晶冲击枪
+	}
+
+	AmberBlaster: {
+		Tooltip: 用琥珀光芒为火枪子弹充能
+		DisplayName: 琥珀冲击枪
+	}
+
+	RubyBlaster: {
+		DisplayName: 红宝石冲击枪
+		Tooltip: 用深红色光芒为火枪子弹充能
+	}
+
+	SapphireBlaster: {
+		DisplayName: 蓝宝石冲击枪
+		Tooltip: 用天蓝色光芒为火枪子弹充能
+	}
+
+	TopazBlaster: {
+		DisplayName: 黄玉冲击枪
+		Tooltip: 用金色光芒为火枪子弹充能
+	}
+
+	PrismGlow: {
+		Tooltip: 用神秘光芒为火枪子弹充能
+		DisplayName: 棱镜辉光
+	}
+
+	PyroStone: {
+		Tooltip:
+			'''
+			在你的物品栏中时：
+			对附近的敌人施加“着火了！”减益
+			获得5%伤害增加
+			你不能持有超过一个无限宝石
+			'''
+		DisplayName: 火焰之石
+	}
+
+	MoonStone: {
+		Tooltip:
+			'''
+			在你的物品栏中时：
+			增加翅膀飞行时间和速度
+			每5秒，次要敌人被推开
+			你不能持有超过一个无限宝石
+			'''
+		DisplayName: 月亮之石
+	}
+
+	InfinityGauntlet: {
+		Tooltip: ""
+		DisplayName: 无限手套
+	}
+
+	FrigidStone: {
+		Tooltip:
+			'''
+			在你的物品栏中时：
+			对附近的敌人施加“霜燃”减益
+			获得5%暴击率增加
+			你不能持有超过一个无限宝石
+			'''
+		DisplayName: 冰冷之石
+	}
+
+	DeathStone: {
+		Tooltip:
+			'''
+			在你的物品栏中时：
+			最大生命值增加50
+			偶尔击杀次要敌人
+			你不能持有超过一个无限宝石
+			'''
+		DisplayName: 死亡之石
+	}
+
+	AridStone: {
+		Tooltip:
+			'''
+			在你的物品栏中时：
+			免疫“强风”减益
+			移动速度增加10%
+			你不能持有超过一个无限宝石
+			'''
+		DisplayName: 干旱之石
+	}
+
+	AquaticStone: {
+		DisplayName: 水生之石
+		Tooltip:
+			'''
+			在你的物品栏中时：
+			获得无阻碍的水下移动
+			最大法力值增加50
+			你不能持有超过一个无限宝石
+			'''
+	}
+
+	Blightfire: {
+		Tooltip:
+			'''
+			只要温度够高，一切都会燃烧。
+			通过将浓缩火焰离子体和腐烂矿石扔进熔岩中制作
+			'''
+		DisplayName: 枯萎之火
+	}
+
+	BlightedBuster: {
+		Tooltip:
+			'''
+			将普通子弹变为一簇密集的枯萎子弹
+			<右键>射出更宽的散布
+			'''
+		DisplayName: 枯萎冲击枪
+	}
+
+	TheHarvester: {
+		Tooltip: 投掷一把吸血镰刀
+		DisplayName: 收割者
+	}
+
+	Deteriorator: {
+		Tooltip: 快速投掷三波腐蚀性匕首
+		DisplayName: 腐蚀者
+	}
+
+	CorroderStaff: {
+		Tooltip:
+			'''
+			召唤一个腐蚀者保护你
+			每个腐蚀者只占用0.75个仆从位
+			'''
+		DisplayName: 腐蚀者法杖
+	}
+
+	BlightLobber: {
+		Tooltip:
+			'''
+			发射一个弹跳的枯萎环
+			<右键>投掷快速返回的环
+			'''
+		DisplayName: 枯萎投掷器
+	}
+
+	BlightfirePickaxe: {
+		Tooltip: ""
+		DisplayName: 枯萎之火镐
+	}
+
+	BlightfireHamaxe: {
+		Tooltip: ""
+		DisplayName: 枯萎之火锤斧
+	}
+
+	PebleerEggCooked: {
+		Tooltip:
+			'''
+			所有属性微小提升
+			10秒内治疗玩家20点生命
+			'''
+		DisplayName: 熟鹅卵石甲虫蛋
+	}
+
+	PebleerEgg: {
+		Tooltip: ""
+		DisplayName: 鹅卵石甲虫蛋
+	}
+
+	CarapaceWand: {
+		Tooltip: 发射一块甲壳碎片，对其击中的敌人造成额外伤害
+		DisplayName: 甲壳魔棒
+	}
+
+	CarapaceSlicer: {
+		Tooltip: 投掷一个可以粘在敌人身上的回旋镖
+		DisplayName: 甲壳切割者
+	}
+
+	CarapaceShiv: {
+		Tooltip: <右键>向光标处跳跃
+		DisplayName: 甲壳短刀
+	}
+
+	CarapaceItem: {
+		Tooltip: 大自然的盔甲
+		DisplayName: 甲壳
+	}
+
+	CarapaceCrusher: {
+		Tooltip: 挖掘3x3区域
+		DisplayName: 甲壳破碎者
+	}
+
+	CarapaceCannon: {
+		Tooltip: 发射一个滚动的甲壳球
+		DisplayName: 甲壳加农炮
+	}
+
+	CreditsSetup: {
+		DisplayName: 制作人员名单测试
+		Tooltip: 调试物品
+	}
+
+	BlossomBoomer: {
+		DisplayName: 花开回旋镖
+		Tooltip: ""
+	}
+
+	BudKunai: {
+		DisplayName: 花蕾苦无
+		Tooltip: ""
+	}
+
+	FlowerPower: {
+		DisplayName: 花之力
+		Tooltip: 释放一波低伤害的花瓣
+	}
+
+	Petal: {
+		DisplayName: 花瓣
+		Tooltip: 闻起来很香……
+	}
+
+	PetalBattleaxe: {
+		DisplayName: 花瓣战斧
+		Tooltip: ""
+	}
+
+	PetalHamaxe: {
+		DisplayName: 花瓣锤斧
+		Tooltip: ""
+	}
+
+	PetalPickaxe: {
+		DisplayName: 花瓣镐
+		Tooltip: ""
+	}
+
+	PetalPike: {
+		DisplayName: 花瓣长矛
+		Tooltip: ""
+	}
+
+	PetalPopper: {
+		DisplayName: 花瓣爆裂枪
+		Tooltip: ""
+	}
+
+	DrakonitePickaxe: {
+		Tooltip: ""
+		DisplayName: 龙矿石镐
+	}
+
+	DrakoniteKnife: {
+		Tooltip: ""
+		DisplayName: 龙矿石刀
+	}
+
+	DrakoniteHamaxe: {
+		Tooltip: ""
+		DisplayName: 龙矿石锤斧
+	}
+
+	DrakoniteBlade: {
+		Tooltip: 击中敌人时释放龙的力量
+		DisplayName: 龙矿石之刃
+	}
+
+	DragonShot: {
+		Tooltip: 将普通箭矢变为龙矿石箭
+		DisplayName: 龙之射击
+	}
+
+	DragonFury: {
+		Tooltip: ""
+		DisplayName: 龙之怒
+	}
+
+	DragonmailLeggings: {
+		Tooltip:
+			'''
+			移动速度增加9%
+			近战速度增加12%
+			生命再生增加1
+			'''
+		DisplayName: 龙鳞护胫
+	}
+
+	DragonmailHood: {
+		Tooltip:
+			'''
+			最大法力值增加80
+			法力消耗减少15%
+			魔法伤害增加7%
+			魔法暴击率增加5%
+			'''
+		DisplayName: 龙鳞风帽
+	}
+
+	DragonmailGreathelm: {
+		Tooltip:
+			'''
+			近战伤害增加8%
+			近战暴击率增加10%
+			受到的伤害减少6%
+			'''
+		DisplayName: 龙鳞巨盔
+	}
+
+	DragonmailChestpiece: {
+		Tooltip:
+			'''
+			伤害增加5%
+			免疫“着火了！”减益
+			你的身体发光
+			挖掘速度增加5%
+			'''
+		DisplayName: 龙鳞胸甲
+	}
+
+	Dragonfire: {
+		Tooltip:
+			'''
+			将火枪子弹变为龙火子弹
+			20%几率不消耗弹药
+			'''
+		DisplayName: 龙火
+	}
+
+	DragonFang: {
+		Tooltip: ""
+		DisplayName: 龙牙
+	}
+
+	DragonEmber: {
+		Tooltip: ""
+		DisplayName: 龙烬
+	}
+
+	DragonBreathStaff: {
+		Tooltip: 召唤一个迷你龙保护你
+		DisplayName: 龙息法杖
+	}
+
+	DragonmailMask: {
+		DisplayName: 龙鳞面具
+		Tooltip:
+			'''
+			召唤伤害增加10%
+			增加仆从击退
+			+2最大仆从数
+			'''
+	}
+
+	DragonmailVisage: {
+		DisplayName: 龙鳞面容
+		Tooltip:
+			'''
+			20%几率不消耗弹药
+			远程伤害增加9%
+			远程暴击率增加10%
+			'''
+	}
+
+	DragonTalon: {
+		DisplayName: 龙爪
+		Tooltip: ""
+	}
+
+	DrakoniteDrill: {
+		DisplayName: 龙矿石钻头
+		Tooltip: ""
+	}
+
+	MagesFocus: {
+		DisplayName: 法师焦点
+		Tooltip:
+			'''
+			魔法伤害、暴击率增加10%
+			+50最大法力值
+			法力消耗减少15%
+			'''
+	}
+
+	ManaBlaster: {
+		DisplayName: 法力冲击枪
+		Tooltip: ""
+	}
+
+	ManaRifle: {
+		DisplayName: 法力步枪
+		Tooltip: ""
+	}
+
+	Manashard: {
+		DisplayName: 法力碎片
+		Tooltip: 它轻轻地共鸣
+	}
+
+	ManashardBattleaxe: {
+		DisplayName: 法力碎片战斧
+		Tooltip: ""
+	}
+
+	ManashardDagger: {
+		DisplayName: 法力碎片匕首
+		Tooltip: ""
+	}
+
+	ManashardLongsword: {
+		DisplayName: 法力碎片长剑
+		Tooltip: ""
+	}
+
+	ManashardPike: {
+		DisplayName: 法力碎片长矛
+		Tooltip: ""
+	}
+
+	ManashardWhip: {
+		DisplayName: 法力碎片鞭
+		Tooltip: ""
+	}
+
+	WyvernBreath: {
+		DisplayName: 飞龙之息
+		Tooltip: ""
+	}
+
+	SpaceWand: {
+		Tooltip: 按住“下”键充能一次爆炸性流星爆发
+		DisplayName: 太空魔棒
+	}
+
+	SpaceStaff: {
+		Tooltip: 发射一小阵流星箭
+		DisplayName: 太空法杖
+	}
+
+	MeteoricPendant: {
+		Tooltip: 减少魔法武器20%的使用时间
+		DisplayName: 陨石吊坠
+	}
+
+	Necrosis: {
+		Tooltip: 快速投掷爆炸性死亡匕首
+		DisplayName: 坏死
+	}
+
+	Downfall: {
+		Tooltip:
+			'''
+			偶尔发射一把造成双倍伤害的死亡之刃
+			50%几率不消耗弹药
+			'''
+		DisplayName: 衰败
+	}
+
+	Demise: {
+		Tooltip: ""
+		DisplayName: 灭亡
+	}
+
+	Decease: {
+		Tooltip: ""
+		DisplayName: 逝去
+	}
+
+	Decay: {
+		Tooltip: ""
+		DisplayName: 腐朽
+	}
+
+	SanityBook: {
+		Tooltip:
+			'''
+			你的头脑在悸动
+			显示玩家所有的理智再生情况
+			在物品栏中<右键>打开和关闭
+			'''
+		DisplayName: 暗影之书
+	}
+
+	SilkenSword: {
+		Tooltip: ""
+		DisplayName: 丝绸剑
+	}
+
+	PuffTorch: {
+		Tooltip: ""
+		DisplayName: 绒毛火把
+	}
+
+	Puffball: {
+		Tooltip: 它难以置信的柔软
+		DisplayName: 绒毛球
+	}
+
+	FluffyStaff: {
+		Tooltip: 我想知道它能做什么？
+		DisplayName: 蓬松法杖
+	}
+
+	ComfyShirt: {
+		Tooltip: 感觉真好
+		DisplayName: 舒适衬衫
+	}
+
+	ComfyPants: {
+		Tooltip:
+			'''
+			用纯绒毛填充
+			坠落伤害减半
+			'''
+		DisplayName: 舒适裤子
+	}
+
+	ComfyHood: {
+		Tooltip: 最大仆从数量增加1
+		DisplayName: 舒适风帽
+	}
+
+
+
+	SilkySerum: {
+		DisplayName: 丝滑血清
+		Tooltip:
+			'''
+			减少接触伤害
+			将坠落伤害减半
+			'''
+	}
+
+	VelvetShot: {
+		DisplayName: 丝绒射击
+		Tooltip: ""
+	}
+
+	AcridSabre: {
+		DisplayName: 辛辣军刀
+		Tooltip: 向所有方向发射辛辣骷髅
+	}
+
+	FetidBlades: {
+		DisplayName: 恶臭之刃
+		Tooltip:
+			'''
+			投掷多个粘性的恶臭刀刃
+			<右键>使所有刀刃爆炸成伤害性粘液
+			'''
+	}
+
+	PutridBar: {
+		DisplayName: 腐烂锭
+		Tooltip: 它被粘液覆盖
+	}
+
+	PutridBreastplate: {
+		DisplayName: 腐烂收割者胸甲
+		Tooltip:
+			'''
+			仆从伤害增加10%
+			增加你的最大仆从数量
+			'''
+	}
+
+	PutridLeggings: {
+		DisplayName: 腐烂收割者护胫
+		Tooltip:
+			'''
+			仆从伤害增加10%
+			增加你的最大仆从数量
+			你留下一条有毒的轨迹
+			'''
+	}
+
+	PutridMask: {
+		DisplayName: 腐烂收割者面具
+		Tooltip:
+			'''
+			仆从击退增加30%
+			仆从伤害增加15%
+			增加你的最大仆从数量
+			'''
+	}
+
+	PutridOre: {
+		DisplayName: 腐烂矿石
+		Tooltip:
+			'''
+			它闻起来很糟糕
+			通过将铁矿石和太阳碎片扔进“腐化器”中制作
+			'''
+	}
+
+	PutridRipperTome: {
+		DisplayName: 腐烂撕裂者宝典
+		Tooltip:
+			'''
+			召唤一个腐烂撕裂者保护你
+			每个腐烂撕裂者占用1.5个仆从位
+			'''
+	}
+
+	RancidHamaxe: {
+		DisplayName: 腐臭锤斧
+		Tooltip: ""
+	}
+
+	RottedBow: {
+		DisplayName: 腐烂之弓
+		Tooltip:
+			'''
+			将普通箭矢变为腐烂箭
+			腐烂箭有几率溅射成有毒粘液
+			'''
+	}
+
+	TaintedPickaxe: {
+		DisplayName: 污秽镐
+		Tooltip: ""
+	}
+
+	WretchedStaff: {
+		DisplayName: 悲惨法杖
+		Tooltip: ""
+	}
+
+	FrostMine: {
+		Tooltip: 爆炸性冰霜地雷在你周围出现
+		DisplayName: 冰霜地雷
+	}
+
+	RadiantMortar: {
+		Tooltip:
+			'''
+			用高伤害的迫击炮照亮天空
+			禁用饰品的可见性以关闭此效果
+			移动速度增加2%
+			'''
+		DisplayName: 辐射迫击炮
+	}
+
+	RadiantKatana: {
+		Tooltip: <右键>向光标方向斩击
+		DisplayName: 辐射武士刀
+	}
+
+	RadiantGlove: {
+		Tooltip: 投掷辐射星
+		DisplayName: 苋菜之手
+	}
+
+	RadiantConcentrator: {
+		Tooltip: 发射一道死亡射线，使敌人爆炸成高伤害的星星
+		DisplayName: 辐射集中器
+	}
+
+	LightMine: {
+		Tooltip: 追踪的辐射星在你周围出现
+		DisplayName: 樱桃帷幕
+	}
+
+	GlobuleStaff: {
+		Tooltip:
+			'''
+			召唤一个稀有的星光球变种为你作战
+			每个星光球占用2个仆从位
+			'''
+		DisplayName: 星光弯杖
+	}
+
+	GlobuleCannon: {
+		Tooltip: 发射一簇辐射粘液
+		DisplayName: 球炮
+	}
+
+	StellariumScepter: {
+		Tooltip: ""
+		DisplayName: 星陨权杖
+	}
+
+	StellariumPickaxe: {
+		Tooltip: ""
+		DisplayName: 星陨镐
+	}
+
+	StellariumHamaxe: {
+		Tooltip: ""
+		DisplayName: 星陨锤斧
+	}
+
+	StellariumGreatsword: {
+		Tooltip: ""
+		DisplayName: 星陨巨剑
+	}
+
+	StellariumBow: {
+		Tooltip: 将普通箭矢变为星辰箭
+		DisplayName: 星陨弓
+	}
+
+	ToyWand: {
+		Tooltip: 发射一簇拼图块
+		DisplayName: 玩具魔棒
+	}
+
+	ToyRobotControlRod: {
+		Tooltip: ""
+		DisplayName: 玩具机器人控制杆
+	}
+
+	ToyPickaxe: {
+		Tooltip: ""
+		DisplayName: 玩具镐
+	}
+
+	ToyLeggings: {
+		Tooltip:
+			'''
+			移动速度增加5%
+			伤害增加2%
+			受到的伤害减少2%
+			'''
+		DisplayName: 玩具护胫
+	}
+
+	ToyHelm: {
+		Tooltip:
+			'''
+			暴击率增加4%
+			受到的伤害减少1%
+			'''
+		DisplayName: 玩具头盔
+	}
+
+	ToyBreastplate: {
+		Tooltip: 受到的伤害减少4%
+		DisplayName: 玩具胸甲
+	}
+
+	ToyBow: {
+		Tooltip: 将普通箭矢变为吸盘箭
+		DisplayName: 玩具弓
+	}
+
+	ToyBlade: {
+		Tooltip:
+			'''
+			剑刃击中敌人时有几率碎裂
+			这些碎片会留在地上造成伤害
+			别担心，你的剑刃会魔法般地自我修复
+			'''
+		DisplayName: 玩具剑
+	}
+
+	GlassHeart: {
+		DisplayName: 脆弱之心
+		Tooltip:
+			'''
+			使你在受到伤害时死亡，但Boss掉落2倍战利品
+			只需要放在物品栏中即可
+			'''
+	}
+
+	Tomato: {
+		DisplayName: 番茄
+		Tooltip:
+			'''
+			你现在有一个番茄了，你打算用它做什么？
+			可能什么也不做
+			'''
+	}
+
+	AzanaChibi: {
+		DisplayName: 混沌番茄
+		Tooltip:
+			'''
+			现在你有一个有点生气的番茄，那又怎样？
+			稍后会换成别的物品（实际上并不会）
+			'''
+	}
+
+	LilOrangeItem: {
+		Tooltip: 召唤一个小橙子跟着你
+		DisplayName: 小橙子
+	}
+
+	EldritchKeepsake: {
+		Tooltip:
+			'''
+			‘一个由四个失落灵魂组成的遗物’
+			召唤一个堕落观星者跟在你身边
+			'''
+		DisplayName: 怪诞纪念品
+	}
+
+	ElderSignet: {
+		Tooltip: 召唤一个远古星辰在你周围跳舞
+		DisplayName: 长老印记
+	}
+
+	DynastyWhistle: {
+		Tooltip: 召唤一个涡轮总督跟着你
+		DisplayName: 王朝哨子
+	}
+
+	Awakener: {
+		Tooltip: 召唤一个？？？
+		DisplayName: 唤醒者
+	}
+
+	VoidCrystal: {
+		DisplayName: 虚空水晶
+		Tooltip: 召唤一个虚空爬行者
+	}
+
+	Altar: {
+		DisplayName: 祭坛
+		Tooltip: 作用类似于恶魔/猩红祭坛
+	}
+
+	AutoDriller: {
+		DisplayName: 自动钻探机
+		Tooltip:
+			'''
+			在其下方挖掘一个3格宽的隧道
+			每次挖掘消耗最近玩家3点能量
+			'''
+	}
+
+	CrystalContainer: {
+		DisplayName: 水晶容器
+		Tooltip: ""
+	}
+
+	CrystalCracker: {
+		DisplayName: 水晶破解器
+		Tooltip: ""
+	}
+
+	DeadScientist: {
+		DisplayName: 死去的科学家
+		Tooltip: 无法获取的物品
+	}
+
+	Desk: {
+		DisplayName: 书桌
+		Tooltip: 这是一张书桌……没什么好说的
+	}
+
+	SolarGeneratorIV: {
+		DisplayName: 太阳能发电机 MKIV
+		Tooltip:
+			'''
+			白天发电
+			太阳在空中越高，发电量越大
+			'''
+	}
+
+	SolarGeneratorI: {
+		DisplayName: 太阳能发电机 MKI
+		Tooltip:
+			'''
+			白天发电
+			太阳在空中越高，发电量越大
+			'''
+	}
+
+	ChaoticEnergyCapacitor: {
+		DisplayName: 混沌能量电容器
+		Tooltip: 增加玩家最大能量1750点。不与其他增加能量的物品叠加。
+	}
+
+	EnergyPickup: {
+		Tooltip: ""
+		DisplayName: 电池
+	}
+
+	LabLight: {
+		Tooltip: ""
+		DisplayName: 实验室灯（损坏）
+	}
+
+	LabBench: {
+		Tooltip: ""
+		DisplayName: 实验台
+	}
+
+	ItemMagnetTile: {
+		Tooltip:
+			'''
+			将附近的物品吸向它
+			如果磁铁旁边有箱子，物品将被放入箱子中
+			'''
+		DisplayName: 物品磁铁
+	}
+
+	GoldenDucky: {
+		Tooltip: 它很可爱
+		DisplayName: 金色小鸭
+	}
+
+	FirebrickItem: {
+		Tooltip: ""
+		DisplayName: 火砖
+	}
+
+	LabLightFunctional: {
+		DisplayName: 实验室灯
+		Tooltip: ""
+	}
+
+	OfficeChair: {
+		DisplayName: 办公椅
+		Tooltip: 别坐下，否则你会转个不停
+	}
+
+	PowerCell: {
+		DisplayName: 能量电池
+		Tooltip: ""
+	}
+
+	Putrifier: {
+		DisplayName: 腐化器
+		Tooltip:
+			'''
+			投入铁矿石和太阳碎片
+			不要一次投入太多，否则它会完全消化它们
+			'''
+	}
+
+	ScorpionPod: {
+		DisplayName: 蝎子荚
+		Tooltip: ""
+	}
+
+	ScorpionPodFull: {
+		DisplayName: 蝎子荚（满）
+		Tooltip: ""
+	}
+
+	ScorpionPodLarge: {
+		DisplayName: 蝎子荚（大）
+		Tooltip: ""
+	}
+
+	StatMirror: {
+		DisplayName: 状态镜
+		Tooltip: ""
+	}
+
+	TruffleCage: {
+		DisplayName: 松露笼
+		Tooltip: ""
+	}
+
+	DarkstoneDoor: {
+		Tooltip: ""
+		DisplayName: 暗石门
+	}
+
+	DarkstoneChandelier: {
+		Tooltip: ""
+		DisplayName: 暗石吊灯
+	}
+
+	DarkstoneChair: {
+		Tooltip: ""
+		DisplayName: 暗石椅
+	}
+
+	DarkstoneCandle: {
+		Tooltip: ""
+		DisplayName: 暗石蜡烛
+	}
+
+	DarkstoneBrick: {
+		Tooltip: ""
+		DisplayName: 暗石砖
+	}
+
+	DarkstoneBed: {
+		Tooltip: ""
+		DisplayName: 暗石床
+	}
+
+	DarkstoneLamp: {
+		DisplayName: 暗石灯
+		Tooltip: ""
+	}
+
+	DarkstoneLantern: {
+		DisplayName: 暗石灯笼
+		Tooltip: ""
+	}
+
+	DarkstonePiano: {
+		DisplayName: 暗石钢琴
+		Tooltip: ""
+	}
+
+	DarkstonePlatform: {
+		DisplayName: 暗石平台
+		Tooltip: ""
+	}
+
+	DarkstoneSofa: {
+		DisplayName: 暗石沙发
+		Tooltip: ""
+	}
+
+	DarkstoneTable: {
+		DisplayName: 暗石桌
+		Tooltip: ""
+	}
+
+	DarkstoneWorkBench: {
+		DisplayName: 暗石工作台
+		Tooltip: ""
+	}
+
+	CalamityBannerItem: {
+		DisplayName: 灾厄旗帜
+		Tooltip: 敌人生成率增加7.5倍
+	}
+
+	ChaosBannerItem: {
+		DisplayName: 混乱旗帜
+		Tooltip: 敌人生成率增加5倍
+	}
+
+	HavocBannerItem: {
+		DisplayName: 浩劫旗帜
+		Tooltip: 敌人生成率增加2倍
+	}
+
+	AmadisBuffStatue: {
+		DisplayName: 受诅者雕像
+		Tooltip:
+			'''
+			奇怪，你感觉自己的生命力减弱了，但你的近战和移动能力增强了。
+			近战伤害和速度增加15%。
+			生命值减少30%。
+			'''
+	}
+
+	AmadisStatue: {
+		DisplayName: 阿玛迪斯雕像
+		Tooltip: 代表AmadisLFE的雕像，尽管他声称所示角色名为兰德尔。
+	}
+
+	BurstBuffStatue: {
+		DisplayName: 故事纺织者雕像
+		Tooltip:
+			'''
+			我不太会写工具提示，你知道的。
+			我甚至不知道我是否存在。
+			也许我只是一个幻象？
+			天哪，我的整个人生都是一个谎言！
+			远程伤害增加15%。
+			移动速度减少15%。
+			'''
+	}
+
+	BurstStatue: {
+		DisplayName: 爆发雕像
+		Tooltip: 纺织这个模组故事的人的雕像……
+	}
+
+	GenihWatBuffStatue: {
+		DisplayName: 粗俗吟游诗人雕像
+		Tooltip:
+			'''
+			“是的，这就是我希望你雕刻我的雕像时的样子！
+			不，我不在乎‘制作精灵图’有多难！！”
+			- 伟大的Genih Wat
+			魔法伤害增加15%，法力再生增加5
+			敌人更具攻击性，生成更频繁
+			可以通过<右键>雕像禁用脏话
+			'''
+	}
+
+	GenihWatStatue: {
+		DisplayName: Genih Wat雕像
+		Tooltip:
+			'''
+			为了纪念“许愿的Genih Wat”……不管那是什么意思
+			很少有人知道它到底长什么样
+			'''
+	}
+
+	OiniteBuffStatue: {
+		DisplayName: 平衡者雕像
+		Tooltip:
+			'''
+			平衡宇宙时不会考虑乐趣。
+			但这个……确实让我露出了微笑。
+			所有增益和减益的持续时间加倍。
+			'''
+	}
+
+	OiniteStatue: {
+		DisplayName: Oinite雕像
+		Tooltip: 为什么这个和其他的看起来不一样？
+	}
+
+	RaniplaBuffStatue: {
+		DisplayName: 北极漫游者雕像
+		Tooltip:
+			'''
+			地下，地上，自由漫游。我们是温布尔登公地的漫游者。
+			速度增加25%。
+			召唤伤害增加15%。
+			跳跃高度和翅膀飞行时间减少25%。
+			'''
+	}
+
+	RaniplaStatue: {
+		DisplayName: 拉尼普拉雕像
+		Tooltip: 我怎么才能给我的角色留长发而又不让它看起来像个该死的伪娘！？
+	}
+
+	ThatOneJuicyOrangeBuffStatue: {
+		DisplayName: 金色多汁橙子雕像
+		Tooltip:
+			'''
+			绝对自恋
+			伤害增加15%
+			受到的伤害增加50%
+			增加“药水病”减益的持续时间
+			'''
+	}
+
+	ThatOneJuicyOrangeStatue: {
+		DisplayName: 那颗多汁橙子雕像
+		Tooltip: 有点自恋
+	}
+
+	VoidBrick: {
+		Tooltip: ""
+		DisplayName: 虚空砖
+	}
+
+	VoidBookshelf: {
+		Tooltip: ""
+		DisplayName: 虚空书架
+	}
+
+	VoidBed: {
+		Tooltip: ""
+		DisplayName: 虚空床
+	}
+
+	VoidBrickWall: {
+		DisplayName: 虚空砖墙
+		Tooltip: ""
+	}
+
+	VoidCandelabra: {
+		DisplayName: 虚空烛台
+		Tooltip: ""
+	}
+
+	VoidCandle: {
+		DisplayName: 虚空蜡烛
+		Tooltip: ""
+	}
+
+	VoidChair: {
+		DisplayName: 虚空椅
+		Tooltip: ""
+	}
+
+	VoidChandelier: {
+		DisplayName: 虚空吊灯
+		Tooltip: ""
+	}
+
+	VoidChest: {
+		DisplayName: 虚空箱
+		Tooltip: ""
+	}
+
+	VoidClock: {
+		DisplayName: 虚空钟
+		Tooltip: ""
+	}
+
+	VoidDoor: {
+		DisplayName: 虚空门
+		Tooltip: ""
+	}
+
+	VoidDresser: {
+		DisplayName: 虚空梳妆台
+		Tooltip: ""
+	}
+
+	VoidLamp: {
+		DisplayName: 虚空灯
+		Tooltip: ""
+	}
+
+	VoidLantern: {
+		DisplayName: 虚空灯笼
+		Tooltip: ""
+	}
+
+	VoidPiano: {
+		DisplayName: 虚空钢琴
+		Tooltip: ""
+	}
+
+	VoidPlatform: {
+		DisplayName: 虚空平台
+		Tooltip: ""
+	}
+
+	VoidSink: {
+		DisplayName: 虚空水槽
+		Tooltip: ""
+	}
+
+	VoidSofa: {
+		DisplayName: 虚空沙发
+		Tooltip: ""
+	}
+
+	VoidTable: {
+		DisplayName: 虚空桌
+		Tooltip: ""
+	}
+
+	VoidWorkBench: {
+		DisplayName: 虚空工作台
+		Tooltip: ""
+	}
+
+	HyperDrive: {
+		Tooltip: ""
+		DisplayName: 超光速驱动器
+	}
+
+	GravityCore: {
+		Tooltip:
+			'''
+			允许玩家控制重力
+			在物品上悬停时使用箭头键改变强度
+			在物品上按G键重置重力为正常
+			<右键>开启
+			'''
+		DisplayName: 重力核心
+	}
+
+	BoostDrive: {
+		Tooltip: ""
+		DisplayName: 助推驱动器
+	}
+
+	LunarEnergyHarnesser: {
+		Tooltip: 增加玩家最大能量750点。不与其他增加能量的物品叠加。
+		DisplayName: 月亮能量收集器
+	}
+
+	HellstoneCapacitor: {
+		Tooltip: 增加玩家最大能量150点。不与其他增加能量的物品叠加。
+		DisplayName: 地狱石电容器
+	}
+
+	DemonicPowerBank: {
+		Tooltip: 增加玩家最大能量60点。不与其他增加能量的物品叠加。
+		DisplayName: 恶魔充电宝
+	}
+
+	BioBattery: {
+		Tooltip: 增加玩家最大能量350点。不与其他增加能量的物品叠加。
+		DisplayName: 生物电池
+	}
+
+	AABattery: {
+		Tooltip: 增加玩家最大能量25点。不与其他增加能量的物品叠加。
+		DisplayName: AA电池
+	}
+
+	WoodenAccumulator: {
+		DisplayName: 木制蓄电池
+		Tooltip: 增加玩家最大能量10点。不与其他增加能量的物品叠加。
+	}
+
+	BiofuelBurner: {
+		DisplayName: 生物燃料燃烧发电机
+		Tooltip:
+			'''
+			消耗物品栏中的某些植物材料
+			不同植物有不同的功率输出
+			<右键>开启
+			'''
+	}
+
+	BurnerGenerator: {
+		DisplayName: 燃烧发电机
+		Tooltip:
+			'''
+			消耗物品栏中的原木，每秒产生1点能量
+			1块木头燃烧15秒
+			<右键>开启
+			'''
+	}
+
+	Chlorobyte: {
+		DisplayName: 叶绿虫
+		Tooltip: 别让它跑了……
+	}
+
+	GelticBurner: {
+		DisplayName: 凝胶燃烧发电机
+		Tooltip:
+			'''
+			消耗物品栏中的凝胶，每秒产生2点能量
+			1块凝胶燃烧15秒
+			粉凝胶燃烧30秒
+			<右键>开启
+			'''
+	}
+
+	GeothermalGenerator: {
+		DisplayName: 地热发电机
+		Tooltip:
+			'''
+			将热量转化为能量
+			玩家离熔岩源越近，产生的能量越多
+			'''
+	}
+
+	HandCrank: {
+		DisplayName: 手摇发电机
+		Tooltip: 在物品栏中<右键>产生1点能量
+	}
+
+	KineticConverter: {
+		DisplayName: 动能转换发电机
+		Tooltip:
+			'''
+			击中玩家的投射物被转化为能量
+			投射物的伤害和速度越高，转化的能量越多
+			'''
+	}
+
+	LifeforceBurner: {
+		DisplayName: 生命力燃烧器
+		Tooltip:
+			'''
+			将生命转化为能量
+			在物品上悬停时使用箭头键改变数量
+			<右键>开启
+			'''
+	}
+
+	LunarWaste: {
+		DisplayName: 月亮废料
+		Tooltip:
+			'''
+			积累过多会减少生命再生
+			这种情况下会开始伤害玩家
+			'''
+	}
+
+	PortableFissionReactor: {
+		DisplayName: 便携式裂变发电机
+		Tooltip:
+			'''
+			消耗1个叶绿矿发电
+			产生10秒的电力
+			产生致命的叶绿虫，溢出并毒害玩家
+			<右键>开启
+			'''
+	}
+
+	PortableFusionReactor: {
+		DisplayName: 便携式聚变发电机
+		Tooltip:
+			'''
+			消耗2个夜明矿发电
+			产生15秒的电力
+			产生月亮废料，积累过多会伤害玩家
+			<右键>开启
+			'''
+	}
+
+	SolarGeneratorII: {
+		DisplayName: 太阳能发电机 MKII
+		Tooltip:
+			'''
+			白天发电
+			太阳在空中越高，发电量越大
+			'''
+	}
+
+	SolarGeneratorIII: {
+		DisplayName: 太阳能发电机 MKIII
+		Tooltip:
+			'''
+			白天发电
+			太阳在空中越高，发电量越大
+			'''
+	}
+
+	Sol: {
+		DisplayName: 太阳
+		Tooltip: 具有强大的引力
+	}
+
+	SoulConverter: {
+		DisplayName: 灵魂转换器
+		Tooltip:
+			'''
+			允许敌人掉落电池，恢复玩家的能量
+			击杀Boss后电池恢复更多能量
+			'''
+	}
+
+	StarlightCrank: {
+		DisplayName: 星光手摇发电机
+		Tooltip: 在物品栏中<右键>产生3点能量
+	}
+
+	WindGenerator: {
+		DisplayName: 风力发电机
+		Tooltip:
+			'''
+			根据风速产生能量
+			<右键>开启
+			'''
+	}
+
+	AutoMiner: {
+		DisplayName: 自动采矿机
+		Tooltip:
+			'''
+			自动开采附近的矿石
+			开采消耗能量
+			<右键>开启
+			'''
+	}
+
+	AutoMinerMKII: {
+		DisplayName: 自动采矿机 MK II
+		Tooltip:
+			'''
+			自动开采附近的矿石
+			开采消耗能量
+			<右键>开启
+			'''
+	}
+
+	AutoMinerMKIII: {
+		DisplayName: 自动采矿机 MK III
+		Tooltip:
+			'''
+			自动开采附近的矿石
+			开采消耗能量
+			<右键>开启
+			'''
+	}
+
+	AutoSmelter: {
+		DisplayName: 自动熔炼机
+		Tooltip:
+			'''
+			自动将矿石熔炼成锭
+			熔炼消耗能量
+			<右键>开启
+			'''
+	}
+
+	AutoSmelterMKII: {
+		DisplayName: 自动熔炼机 MKII
+		Tooltip:
+			'''
+			自动将矿石熔炼成锭
+			熔炼消耗能量
+			<右键>开启
+			'''
+	}
+
+	GravityGun: {
+		DisplayName: 重力枪 MKI
+		Tooltip: 能够拾取物品
+	}
+
+	GravityGunMKII: {
+		DisplayName: 重力枪 MKII
+		Tooltip: 能够拾取物品和敌人
+	}
+
+	LittleBuddy: {
+		DisplayName: 小伙伴
+		Tooltip: 发射一颗蓝色箭矢，每次弹跳速度和伤害都会增加
+	}
+
+	RifleSentrySummon: {
+		DisplayName: 步枪哨兵召唤物
+		Tooltip:
+			'''
+			召唤一个步枪哨兵为你防御
+			步枪哨兵每两秒消耗1点能量
+			'''
+	}
+
+	Zapmaster: {
+		Tooltip: 发射一道弧形电箭
+		DisplayName: 电击大师9000
+	}
+
+	Porter: {
+		Tooltip: 传送附近的次要敌人
+		DisplayName: 传送者
+	}
+
+	PlasmaThrower: {
+		Tooltip: 瞬间加热前方路径
+		DisplayName: 等离子喷射器
+	}
+
+	Fizzler: {
+		Tooltip: 发射一个分裂的火球
+		DisplayName: 嘶嘶作响者
+	}
+
+	ArcBlade: {
+		DisplayName: 弧光刃
+		Tooltip:
+			'''
+			电击敌人
+			电击敌人需要8点能量
+			'''
+	}
+
+	Growinator: {
+		DisplayName: 增生器
+		Tooltip: 放大次要敌人
+	}
+
+	Imbalancer: {
+		DisplayName: 不平衡器
+		Tooltip:
+			'''
+			发射一颗充能地雷
+			如果地雷落在地上，它会电击附近的敌人
+			如果地雷落在敌人身上，它会电击他们并爆炸
+			'''
+	}
+
+	PlasmaRifle: {
+		DisplayName: 等离子步枪
+		Tooltip: 发射一轮3发等离子箭
+	}
+
+	Shrinkinator: {
+		DisplayName: 缩小器
+		Tooltip: 缩小次要敌人
+	}
+
+	Arcthrower: {
+		DisplayName: 电弧投射器
+		Tooltip:
+			'''
+			快速发射弧形电箭
+			消耗5点能量
+			'''
+	}
+
+	NapalmCannon: {
+		DisplayName: 凝固汽油炮
+		Tooltip: 发射一团粘性凝固汽油
+	}
+
+	PrototypeX51: {
+		DisplayName: 原型X-51
+		Tooltip: 发射一个电球
+	}
+
+	SizeManipulator: {
+		DisplayName: 大小操纵器
+		Tooltip:
+			'''
+			<左键>使敌人变大
+			<右键>使敌人变小
+			只对次要敌人有效
+			'''
+	}
+
+	DubstepGun: {
+		DisplayName: Dubstep枪
+		Tooltip: ""
+	}
+
+	ParticleAccelerator: {
+		DisplayName: 粒子加速器
+		Tooltip: 发射一团粒子云
+	}
+
+	Quantum: {
+		DisplayName: 量子
+		Tooltip: 从天空发射矩阵激光
+	}
+
+	DemonicMagnet: {
+		DisplayName: 恶魔磁铁
+		Tooltip: ""
+	}
+
+	DimensionalManipulator: {
+		DisplayName: 维度操纵器
+		Tooltip:
+			'''
+			允许持有者随心所欲地调整时间
+			<左键>改变时间
+			<右键>设置所需时间
+			'''
+	}
+
+	Hamaxe: {
+		DisplayName: 锤斧
+		Tooltip: 散发着腐肉的臭味
+	}
+
+	MatterManipulator: {
+		DisplayName: 物质操纵器
+		Tooltip: <右键>改变挖掘区域
+	}
+
+	ScrapplingHook: {
+		DisplayName: 废料钩
+		Tooltip: ""
+	}
+
+
+
+	TinyPick: {
+		DisplayName: 小镐子
+		Tooltip: 这玩意儿怎么还能用？
+	}
+
+	CastersCurse: {
+		DisplayName: 施法者之咒
+		Tooltip: ""
+	}
+
+	CrimsonShade: {
+		DisplayName: 猩红之影
+		Tooltip: ""
+	}
+
+	LifesLament: {
+		DisplayName: 生命的哀悼
+		Tooltip: ""
+	}
+
+	ShadeEgg: {
+		DisplayName: 暗影蛋
+		Tooltip: 召唤一只幼年暗影飞龙
+	}
+
+	VoidJelly: {
+		DisplayName: 虚空果冻
+		Tooltip:
+			'''
+			它看起来像凝固的血……
+			伤害增加15%
+			'''
+	}
+
+	VoidLanternAcc: {
+		DisplayName: 虚空灯笼
+		Tooltip:
+			'''
+			在虚空黎明期间增加亮度
+			在物品栏中有效
+			'''
+	}
+
+	BlinkrootWand: {
+		DisplayName: 闪耀根魔棒
+		Tooltip: ""
+	}
+
+	DaybloomWand: {
+		DisplayName: 太阳花魔棒
+		Tooltip: ""
+	}
+
+	DeathweedWand: {
+		DisplayName: 死亡草魔棒
+		Tooltip: ""
+	}
+
+	FireblossomWand: {
+		DisplayName: 火焰花魔棒
+		Tooltip: ""
+	}
+
+	MoonglowWand: {
+		DisplayName: 月光草魔棒
+		Tooltip: ""
+	}
+
+	ShiverthornWand: {
+		DisplayName: 寒颤棘魔棒
+		Tooltip: ""
+	}
+
+	WaterleafWand: {
+		DisplayName: 水草魔棒
+		Tooltip: ""
+	}
+
+	AdamantiteStaff: {
+		DisplayName: 精金光束枪
+		Tooltip: 发射精金激光
+	}
+
+	CobaltStaff: {
+		DisplayName: 钴蓝镰刀
+		Tooltip: 发射钴蓝镰刀
+	}
+
+	MythrilStaff: {
+		DisplayName: 秘银轰炸机
+		Tooltip: 发射爆炸性秘银球
+	}
+
+	OrichalcumStaff: {
+		DisplayName: 山铜弹幕
+		Tooltip: 发射一连串花瓣
+	}
+
+	PalladiumStaff: {
+		DisplayName: 钯金火花器
+		Tooltip: 发射燃烧的火花
+	}
+
+	TitaniumStaff: {
+		DisplayName: 钛金切割者
+		Tooltip: 发射一连串钛金尖刺
+	}
+
+	StrangeWand4: {
+		Tooltip: ""
+		DisplayName: 奇怪的魔棒
+	}
+
+	StrangeWand3: {
+		Tooltip: ""
+		DisplayName: 奇怪的魔棒
+	}
+
+	StrangeWand2: {
+		Tooltip: ""
+		DisplayName: 奇怪的魔棒
+	}
+
+	StrangeWand1: {
+		Tooltip: ""
+		DisplayName: 奇怪的魔棒
+	}
+
+	StrangeStaff: {
+		Tooltip: ""
+		DisplayName: 奇怪的法杖
+	}
+
+	FireballTome: {
+		DisplayName: 火球宝典
+		Tooltip: ""
+	}
+
+	IceSpikeTome: {
+		DisplayName: 冰刺宝典
+		Tooltip: ""
+	}
+
+	LightningTome: {
+		DisplayName: 闪电宝典
+		Tooltip: 发射一道闪电，有几率链式攻击到附近的敌人
+	}
+
+	Poltercast: {
+		DisplayName: 骚灵投射
+		Tooltip: ""
+	}
+
+	StarboltTome: {
+		DisplayName: 星矢宝典
+		Tooltip: ""
+	}
+
+	StingerTome: {
+		DisplayName: 毒刺宝典
+		Tooltip: ""
+	}
+
+	Nightfall: {
+		Tooltip: 该睡觉了……
+		DisplayName: 夜幕
+	}
+
+	NeptunesRay: {
+		Tooltip: ""
+		DisplayName: 海洋射线
+	}
+
+	Neptune: {
+		DisplayName: 海王星
+		Tooltip: ""
+	}
+
+	ImpishWarhorn: {
+		Tooltip: 对敌人施加“小恶魔诅咒”，增加受到的伤害
+		DisplayName: 小恶魔战号
+	}
+
+	IceStaff: {
+		Tooltip: ""
+		DisplayName: 冰魔棒
+	}
+
+	GraniteEnergySplayer: {
+		Tooltip: 发射一小阵花岗岩能量
+		DisplayName: 花岗岩能量散播器
+	}
+
+	ForceBarrier: {
+		Tooltip:
+			'''
+			召唤一个推开敌人的魔法屏障
+			最多只能同时存在3个屏障
+			'''
+		DisplayName: 力场屏障
+	}
+
+	Fireweaver: {
+		Tooltip: ""
+		DisplayName: 火焰编织者
+	}
+
+	Earthcrusher: {
+		Tooltip: ""
+		DisplayName: 大地破碎者
+	}
+
+	Earth: {
+		DisplayName: 地球
+		Tooltip: ""
+	}
+
+	Deimos: {
+		Tooltip: ""
+		DisplayName: 火卫二
+	}
+
+	CursedScepter: {
+		Tooltip: 发射一个接触时爆炸成火花的诅咒火焰球
+		DisplayName: 诅咒权杖
+	}
+
+	SansHarp: {
+		DisplayName: 审判竖琴
+		Tooltip:
+			'''
+			外面天气真好。
+			鸟儿在歌唱，花儿在绽放……
+			在这样的日子里，像你这样的孩子……
+			应该在弹竖琴。
+			叮
+			'''
+	}
+
+	Thundersoul: {
+		DisplayName: 雷魂
+		Tooltip: 发射一道电击附近敌人的箭矢
+	}
+
+	Warhorn: {
+		DisplayName: 推开敌人
+		Tooltip: 北欧战号
+	}
+
+	Jupiter: {
+		DisplayName: 木星
+		Tooltip: 有轻微的引力
+	}
+
+	Mars: {
+		DisplayName: 火星
+		Tooltip: ""
+	}
+
+	Mercury: {
+		DisplayName: 水星
+		Tooltip: ""
+	}
+
+	Saturn: {
+		DisplayName: 土星
+		Tooltip: ""
+	}
+
+	Uranus: {
+		DisplayName: 天王星
+		Tooltip: ""
+	}
+
+	Venus: {
+		DisplayName: 金星
+		Tooltip: ""
+	}
+
+	Bloodchain: {
+		DisplayName: 血链
+		Tooltip: ""
+	}
+
+	Flarelash: {
+		DisplayName: 耀斑鞭
+		Tooltip: ""
+	}
+
+	HallowedRadiance: {
+		DisplayName: 神圣光辉
+		Tooltip: ""
+	}
+
+	Nightbreaker: {
+		DisplayName: 破夜者
+		Tooltip: ""
+	}
+
+	ShadowsGrasp: {
+		DisplayName: 暗影之握
+		Tooltip: ""
+	}
+
+	TerraBelter: {
+		DisplayName: 泰拉腰带
+		Tooltip: ""
+	}
+
+	TheSpine: {
+		DisplayName: 脊柱
+		Tooltip: ""
+	}
+
+	TheTrueSpine: {
+		DisplayName: 真·脊柱
+		Tooltip: ""
+	}
+
+	TheVine: {
+		DisplayName: 藤蔓
+		Tooltip: ""
+	}
+
+	TrueHallowedRadiance: {
+		DisplayName: 真·神圣光辉
+		Tooltip: ""
+	}
+
+	TrueNightbreaker: {
+		DisplayName: 真·破夜者
+		Tooltip: ""
+	}
+
+	AssassinsKnife: {
+		DisplayName: 刺客之刃
+		Tooltip: 手持该物品时，受到的伤害加倍
+	}
+
+	AsuterosaberuDX: {
+		DisplayName: 星辰光剑DX
+		Tooltip: <右键>在现实中撕开一个洞
+	}
+
+	AurumSaber: {
+		DisplayName: 金光剑
+		Tooltip: ""
+	}
+
+	Blazeguard: {
+		DisplayName: 烈焰守卫
+		Tooltip: 发射两个爆炸性火球
+	}
+
+	CosmoStriker: {
+		DisplayName: 宇宙打击者
+		Tooltip: 在泰拉瑞亚的心脏中锻造
+	}
+
+	Deathwarp: {
+		DisplayName: 死亡扭曲
+		Tooltip:
+			'''
+			发射多道死亡光束来消灭你的敌人
+			<右键>激活死亡扭曲
+			“在时空中荡漾”
+			'''
+	}
+
+	DyingAzure: {
+		DisplayName: 垂死蔚蓝
+		Tooltip: 有几率立即杀死非Boss敌人
+	}
+
+	EyeOfTheStorm: {
+		DisplayName: 风暴之眼
+		Tooltip:
+			'''
+			发射一道闪电以及能量球
+			投射物从天而降
+			'''
+	}
+
+	FistsOfFury: {
+		DisplayName: 狂怒之拳
+		Tooltip: ""
+	}
+
+	Galactica: {
+		DisplayName: 银河
+		Tooltip: ""
+	}
+
+	Ghostbrand: {
+		DisplayName: 鬼烙
+		Tooltip: ""
+	}
+
+	GustStrike: {
+		DisplayName: 阵风打击
+		Tooltip:
+			'''
+			发射一阵云雾，偶尔电击敌人
+			用剑刃击中敌人后玩家移动速度加快
+			“驾驭风”
+			'''
+
+	}
+
+	HellKatana: {
+		DisplayName: 地狱武士刀
+		Tooltip: 纯粹的地狱
+	}
+
+	HopesEnd: {
+		DisplayName: 希望终结
+		Tooltip: 击中敌人时恢复生命
+	}
+
+	Infamy: {
+		DisplayName: 恶名
+		Tooltip: ""
+	}
+
+	KindleCrusher: {
+		DisplayName: 点燃破碎者
+		Tooltip: ""
+	}
+
+	LeashedHungry: {
+		DisplayName: 被束缚的饿鬼
+		Tooltip: 击中敌人时治疗玩家
+	}
+
+	ManaBlade: {
+		DisplayName: 法力之刃
+		Tooltip: 消耗法力并将其增加到剑的伤害中
+	}
+
+	Popsickle: {
+		DisplayName: 冰棍
+		Tooltip: ""
+	}
+
+	Reign: {
+		DisplayName: 统治
+		Tooltip: 缓慢但强大
+	}
+
+	SolusKatana: {
+		DisplayName: 索鲁斯武士刀
+		Tooltip:
+			'''
+			一个可怕的教徒使用的武器……
+			<右键>发射3个索鲁斯苦无
+			'''
+	}
+
+	TheLeeched: {
+		DisplayName: 被吸取者
+		Tooltip: 击中敌人时恢复生命
+	}
+
+	ProcWand: {
+		Tooltip: ""
+		DisplayName: 魔棒
+	}
+
+	AstralBarrage: {
+		DisplayName: 星界弹幕
+		Tooltip:
+			'''
+			发射一连串星星
+			75%几率不消耗弹药
+			'''
+	}
+
+	BabyShark: {
+		DisplayName: 幼鲨
+		Tooltip:
+			'''
+			虐待动物和儿童，集于一身
+			你这个怪物……
+			'''
+	}
+
+	ChargedBlasterRepeater: {
+		DisplayName: 充能爆破连发枪
+		Tooltip: 将木箭变为爆炸箭
+	}
+
+	CrystalCannon: {
+		DisplayName: 水晶加农炮
+		Tooltip: 发射一个弹跳的水晶碎片
+	}
+
+	EternitysEnd: {
+		DisplayName: 永恒终结
+		Tooltip:
+			'''
+			将普通箭矢变为永恒箭
+			有几率发射激光
+			60%几率不消耗弹药
+			'''
+	}
+
+	Shotstorm: {
+		Tooltip:
+			'''
+			发射三支造成快速作用毒素的超音速飞镖
+			使用飞镖作为弹药
+			'''
+		DisplayName: 弹幕风暴
+	}
+
+	PrismaticFlamebuster: {
+		Tooltip:
+			'''
+			发射彩虹火焰
+			80%几率不消耗弹药
+			'''
+		DisplayName: 棱彩火焰喷射器
+	}
+
+	MegaRocket: {
+		Tooltip: 有几率发射一枚巨型火箭
+		DisplayName: 巨型火箭
+	}
+
+	Katagina: {
+		Tooltip:
+			'''
+			发射3道子弹流
+			50%几率不消耗弹药
+			'''
+		DisplayName: 卡塔吉纳
+	}
+
+	Kamikaze: {
+		Tooltip: ""
+		DisplayName: 神风
+	}
+
+	TacticalStrike: {
+		Tooltip: 从天空召唤神圣导弹打击
+		DisplayName: 战术打击
+	}
+
+	StormStrike: {
+		Tooltip:
+			'''
+			发射一阵追踪火箭
+			有几率发射一枚巨型火箭
+			70%几率不消耗弹药
+			'''
+		DisplayName: 风暴打击
+	}
+
+	SixShooter: {
+		Tooltip: 每第6发子弹造成4倍伤害
+		DisplayName: 六连发手枪
+	}
+
+	EnchantedStaff: {
+		Tooltip: 召唤一把附魔剑、一把诅咒锤和一把猩红斧为你作战
+		DisplayName: 附魔法杖
+	}
+
+	Exliture: {
+		DisplayName: 视界之剑
+		Tooltip:
+			'''
+			发射攻击敌人的眼睛
+			也可用作剑
+			'''
+	}
+
+	KirovRemote: {
+		DisplayName: 基洛夫遥控器
+		Tooltip: 召唤一个迷你基洛夫飞艇为你防御
+	}
+
+	LightningRod: {
+		DisplayName: 避雷针
+		Tooltip: 召唤一个向敌人发射闪电的能量风暴
+	}
+
+	SoulburnerStaff: {
+		DisplayName: 灵魂燃烧者法杖
+		Tooltip: 召唤一个灵魂骷髅燃烧你的敌人
+	}
+
+	SupremeAwakener: {
+		DisplayName: 至高唤醒者
+		Tooltip: 召唤觉醒者为你服务
+	}
+
+	ThrowableBook: {
+		Tooltip: 这本书里写着如此宏伟的悲剧！它真的让你感到痛苦！
+		DisplayName: 可投掷的书
+	}
+
+	TheFrayedFeather: {
+		Tooltip: 投掷一阵三根羽毛
+		DisplayName: 磨损的羽毛
+	}
+
+	ShadeOfLight: {
+		Tooltip: ""
+		DisplayName: 光之影
+	}
+
+	Dictionary: {
+		Tooltip: 棍棒和石头可能会打断我的骨头，但言语永远伤害不了我……
+		DisplayName: 字典
+	}
+
+	DanceOfDarkness: {
+		Tooltip: ""
+		DisplayName: 黑暗之舞
+	}
+
+	BalladOfBalance: {
+		Tooltip: ""
+		DisplayName: 平衡之歌
+	}
+
+	GnomesBane: {
+		DisplayName: 侏儒之灾
+		Tooltip:
+			'''
+			终结一切的武器……
+			Gameraiders101的Youtuber物品
+			'''
+	}
+
+	PedguinsStaff: {
+		DisplayName: Pedguin的法杖
+		Tooltip:
+			'''
+			召唤一只腐化企鹅
+			Pedguin的魔法让它能飞！
+			Pedguin的Youtuber物品
+			'''
+	}
+
+	ImmolatorBanner: {
+		DisplayName: 献祭者旗帜
+		Tooltip: ""
+	}
+
+	ReaverSlimeBanner: {
+		DisplayName: 掠夺史莱姆旗帜
+		Tooltip: ""
+	}
+
+	VoidKnightBanner: {
+		DisplayName: 虚空骑士旗帜
+		Tooltip: ""
+	}
+
+	ZergCasterBanner: {
+		DisplayName: 异虫施法者旗帜
+		Tooltip: ""
+	}
+
+	VoidElementalBanner: {
+		DisplayName: 虚空元素旗帜
+		Tooltip: ""
+	}
+
+	EtherealHunterBanner: {
+		DisplayName: 以太猎人旗帜
+		Tooltip: ""
+	}
+
+	VoidCrawlerBanner: {
+		DisplayName: 虚空爬行者旗帜
+		Tooltip: ""
+	}
+
+	VoidGolemBanner: {
+		DisplayName: 虚空魔像旗帜
+		Tooltip: ""
+	}
+
+	WaterElementalBanner: {
+		Tooltip: ""
+		DisplayName: 水元素旗帜
+	}
+
+	SkyElementalBanner: {
+		Tooltip: ""
+		DisplayName: 天空元素旗帜
+	}
+
+	FrostElementalBanner: {
+		Tooltip: ""
+		DisplayName: 冰霜元素旗帜
+	}
+
+	FireElementalBanner: {
+		Tooltip: ""
+		DisplayName: 火焰元素旗帜
+	}
+
+	DesertElementalBanner: {
+		Tooltip: ""
+		DisplayName: 沙漠元素旗帜
+	}
+
+	VampireBatBanner: {
+		Tooltip: ""
+		DisplayName: 吸血蝙蝠旗帜
+	}
+
+	PebleerBanner: {
+		Tooltip: ""
+		DisplayName: 鹅卵石甲虫旗帜
+	}
+
+	InfernoSpiritBanner: {
+		Tooltip: ""
+		DisplayName: 炼狱之魂旗帜
+	}
+
+	DragonSlimeBanner: {
+		DisplayName: 龙史莱姆旗帜
+		Tooltip: ""
+	}
+
+	DragonBatBanner: {
+		Tooltip: ""
+		DisplayName: 龙蝙蝠旗帜
+	}
+
+	DragonWarriorBanner: {
+		DisplayName: 龙战士旗帜
+		Tooltip: ""
+	}
+
+	DrakoniteElementalBanner: {
+		DisplayName: 龙矿石元素旗帜
+		Tooltip: ""
+	}
+
+	FlyingJawBanner: {
+		DisplayName: 飞颚旗帜
+		Tooltip: ""
+	}
+
+	GiantTickBanner: {
+		DisplayName: 巨型蜱虫旗帜
+		Tooltip: ""
+	}
+
+	MortemWalkerBanner: {
+		DisplayName: 死亡行者旗帜
+		Tooltip: ""
+	}
+
+	SkyCrawlerBanner: {
+		DisplayName: 天空爬行者旗帜
+		Tooltip: ""
+	}
+
+	PetalClasperBanner: {
+		DisplayName: 花瓣抓握者旗帜
+		Tooltip: ""
+	}
+
+	StellarBatBanner: {
+		DisplayName: 星辰蝙蝠旗帜
+		Tooltip: ""
+	}
+
+	GiantVampireBatBanner: {
+		DisplayName: 巨型吸血蝙蝠旗帜
+		Tooltip: ""
+	}
+
+	InfernaceRelicItem: {
+		DisplayName: 炼狱圣物
+		Tooltip: ""
+	}
+
+	WastelandRelicItem: {
+		Tooltip: ""
+		DisplayName: 废土圣物
+	}
+
+	ScourgeFighterRelicItem: {
+		Tooltip: ""
+		DisplayName: 灾械战机圣物
+	}
+
+	PermafrostRelicItem: {
+		Tooltip: ""
+		DisplayName: 永冻圣物
+	}
+
+	AqueousRelicItem: {
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+		DisplayName: 水域圣物
+	}
+
+	AncientsRelicItem: {
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+		DisplayName: 远古圣物
+	}
+
+	AzanaRelicItem: {
+		DisplayName: 阿扎娜圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	CosmicObserverRelicItem: {
+		DisplayName: 宇宙观察者圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	ObsidiousRelicItem: {
+		DisplayName: 黑曜石圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	RegarothRelicItem: {
+		DisplayName: 雷加罗斯圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	TheGuardianRelicItem: {
+		DisplayName: 守护者圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	VolcanoxRelicItem: {
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+		DisplayName: 火山监督圣物
+	}
+
+	VoidLeviathanRelicItem: {
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+		DisplayName: 虚空利维坦圣物
+	}
+
+	TheEyeRelicItem: {
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+		DisplayName: 眼睛圣物
+	}
+
+	AncientWyrmRelicItem: {
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+		DisplayName: 远古飞龙圣物
+	}
+
+	RadiantMasterRelicItem: {
+		DisplayName: 辐射大师圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	ShadeWyrmRelicItem: {
+		DisplayName: 暗影飞龙圣物
+		Tooltip: 占位符，将在制作好正确的精灵图后更改。
+	}
+
+	Heart4: {
+		Tooltip: ""
+		DisplayName: 心脏4
+	}
+
+	Heart3Alt: {
+		Tooltip: ""
+		DisplayName: 心脏3备用
+	}
+
+	Heart3: {
+		Tooltip: ""
+		DisplayName: 心脏3
+	}
+
+	Heart2: {
+		Tooltip: ""
+		DisplayName: 心脏2
+	}
+
+	StellarEntityBanner: {
+		DisplayName: 星辰实体旗帜
+		Tooltip: ""
+	}
+}
+
+Tiles: {
+	CrystalCracker.MapEntry: 水晶破解器
+	Voidite.MapEntry: 虚空矿
+	Computer.MapEntry: 电脑
+	DeadScientist.MapEntry: 死去的科学家
+	Desk.MapEntry: 书桌
+	AncientsDrive.MapEntry: 远古驱动器
+	AqueousDrive.MapEntry: 水域驱动器
+	AzanaDrive.MapEntry: 阿扎娜驱动器
+	CelestialDrive.MapEntry: 天界驱动器
+	GuardianDrive.MapEntry: 守护者驱动器
+	InfernaceDrive.MapEntry: 炼狱驱动器
+	ObsidiousDrive.MapEntry: 黑曜石驱动器
+	PermafrostDrive.MapEntry: 永冻驱动器
+	RegarothDrive.MapEntry: 雷加罗斯驱动器
+	ScourgeFighterDrive.MapEntry: 灾械战机驱动器
+	VoidLeviathanDrive.MapEntry: 虚空利维坦驱动器
+	VolcanoxDrive.MapEntry: 火山监督驱动器
+	WastelandDrive.MapEntry: 废土驱动器
+	LabLight.MapEntry: 实验室灯
+	OfficeChair.MapEntry: 办公椅
+	ScorpionPod.MapEntry: 蝎子荚
+	ScorpionPodLarge.MapEntry: 蝎子荚（大）
+	CrystalContainer.MapEntry: 水晶容器
+	LabBench.MapEntry: 实验台
+
+	Locker: {
+		Locker: 储物柜
+		MapEntry1: 储物柜
+	}
+
+	ElementalForge.MapEntry: 元素熔炉
+	HiveCratePlaced.MapEntry: 蜂巢匣
+	ChaoticCrucible.MapEntry: 混沌熔炉
+	VoidLeviathanTrophy.MapEntry: 虚空利维坦纪念章
+	AqueousTrophy.MapEntry: 水域纪念章
+	AzanaTrophy.MapEntry: 阿扎娜纪念章
+	InfernaceTrophy.MapEntry: 炼狱纪念章
+	ObsidiousTrophy.MapEntry: 黑曜石纪念章
+	PermafrostTrophy.MapEntry: 永冻纪念章
+	RegarothTrophy.MapEntry: 雷加罗斯纪念章
+	ScourgeFighterTrophy.MapEntry: 灾械战机纪念章
+	TheCelestialTrophy.MapEntry: 天界使者纪念章
+	TheGuardianTrophy.MapEntry: 守护者纪念章
+	VolcanoxTrophy.MapEntry: 火山监督纪念章
+	WastelandTrophy.MapEntry: 废土纪念章
+	Darkstone.MapEntry: 暗石
+	VoidStone.MapEntry: 虚空之石
+	PuffTorch.MapEntry: 火把
+	Altar.MapEntry: 祭坛
+	Firebrick.MapEntry: 虚空矿
+	Putrifier.MapEntry: 腐化器
+	LabLightFunctional.MapEntry: 实验室灯（功能正常）
+	OfficeChairPlayer.MapEntry: 办公椅
+
+	StatMirror: {
+		Stat: {
+			Melee: 近战增益：伤害：{0} 暴击率：{1}%
+			Magic: 魔法增益：伤害：{0} 暴击率：{1}%
+			Ranged: 远程增益：伤害：{0} 暴击率：{1}%
+			Thrown: 投掷增益：伤害：{0} 暴击率：{1}%
+			Summoner: 召唤师增益：伤害：{0}
+			MaxMinions: 最大数量：仆从：{0} 哨兵：{1}
+			SwingSpeed: 挥舞速度：{0}%
+			MovementSpeed: 移动速度：{0}%
+			DamageReduction: 伤害减免：{0}%
+			MAXHP: 最大生命值：{0}
+			MAXMP: 最大法力值：{0}
+			HPRegen: 当前生命再生：{0}
+		}
+	}
+
+	ScorpionPodFull.MapEntry: 蝎子荚（满）
+	TruffleCageTile.MapEntry: 松露笼瓦片
+	DarkstoneWorkBench.MapEntry: 暗石工作台
+	DarkstoneTable.MapEntry: 暗石桌
+	DarkstoneSofa.MapEntry: 暗石沙发
+	DarkstoneLantern.MapEntry: 暗石灯笼
+	DarkstoneDoorOpen.MapEntry: 暗石门
+	DarkstoneDoorClosed.MapEntry: 暗石门
+	DarkstoneChandelier.MapEntry: 暗石吊灯
+	DarkstoneChair.MapEntry: 暗石椅
+	DarkstoneCandle.MapEntry: 暗石蜡烛
+	DarkstoneBed.MapEntry: 暗石床
+	VoidWorkBench.MapEntry: 虚空工作台
+	VoidTable.MapEntry: 虚空桌
+	VoidSofa.MapEntry: 虚空沙发
+	VoidLantern.MapEntry: 虚空灯笼
+	VoidDresser.MapEntry: 虚空梳妆台
+	VoidDoorOpen.MapEntry: 虚空门
+	VoidDoorClosed.MapEntry: 虚空门
+	VoidClock.MapEntry: 虚空钟
+
+	VoidChest: {
+		MapEntry1: 虚空箱
+		VoidChest: 虚空箱
+	}
+
+	VoidChandelier.MapEntry: 虚空吊灯
+	VoidChair.MapEntry: 虚空椅
+	VoidCandle.MapEntry: 虚空蜡烛
+	VoidCandelabra.MapEntry: 虚空烛台
+	VoidBookshelf.MapEntry: 虚空书架
+	VoidBed.MapEntry: 虚空床
+}
+
+Buffs: {
+	AwokenHealing: {
+		DisplayName: 觉醒治疗
+		Description: 你的生命在快速再生
+	}
+
+	Bloodbath: {
+		DisplayName: 血浴
+		Description: 伤害增加20
+	}
+
+	ChaosShield: {
+		DisplayName: 混沌护盾
+		Description: ""
+	}
+
+	BoostDriveCD: {
+		DisplayName: 助推驱动器冷却
+		Description: 你无法使用助推驱动器
+	}
+
+	ChaosShieldCooldown: {
+		DisplayName: 混沌护盾冷却
+		Description: 你无法创建混沌护盾
+	}
+
+	CrystallineLocketCD: {
+		DisplayName: 水晶挂坠冷却
+		Description: 你无法使用水晶挂坠
+	}
+
+	GreatLensCD: {
+		DisplayName: 巨型晶状体冷却
+		Description: 你无法使用巨型晶状体
+	}
+
+	HoneyCocoonCD: {
+		DisplayName: 蜂蜜茧冷却
+		Description: 你无法使用蜂蜜茧
+	}
+
+	AncientDecay: {
+		DisplayName: 远古衰变
+		Description: 你的灵魂正在磨损
+	}
+
+	ChaosBurn: {
+		DisplayName: 混沌坏死
+		Description: 你的细胞正在被撕成碎片
+	}
+
+	DeterioratingWings: {
+		DisplayName: 腐朽之翼
+		Description: 你的翅膀正在化为黑色的尘埃……
+	}
+
+	Dragonfire: {
+		DisplayName: 龙火
+		Description: 你的皮肤正在燃烧殆尽
+	}
+
+	ExtinctionCurse: {
+		DisplayName: 灭绝诅咒
+		Description: 深渊的力量将你拉得更深……
+	}
+
+	FastPoison: {
+		DisplayName: 快速中毒
+		Description: 迅速失去生命
+	}
+
+	ElementalArmorCooldown: {
+		DisplayName: 元素复活冷却
+		Description: 你的复活正在充能
+	}
+
+	NeovirtuoCooldown: {
+		DisplayName: 新维尔图冷却
+		Description: 你无法使用新维尔图
+	}
+
+	DarkenedSkies: {
+		DisplayName: 黑暗天空
+		Description:
+			'''
+			闪电从天而降
+			风暴发生得更频繁
+			击败雷加罗斯以停止此效果
+			在配置中禁用此效果
+			'''
+	}
+
+	Hypothermia: {
+		DisplayName: 低温症
+		Description:
+			'''
+			温度骤降
+			移动速度减少5%，并随机对玩家施加与冰相关的增益
+			频繁的冰雹
+			在营火或熔岩7格范围内可消除此效果
+			击败永冻以停止此效果
+			在配置中禁用此效果
+			'''
+	}
+
+	InfernacesWrath: {
+		DisplayName: 炼狱之怒
+		Description:
+			'''
+			流星从天而降
+			接近地狱时，炼狱的守护者可能会攻击玩家
+			击败炼狱以停止此效果
+			在配置中禁用此效果
+			'''
+	}
+
+	Psychosis: {
+		DisplayName: 精神病
+		Description:
+			'''
+			虚空的力量将你拖下
+			防御减少10，伤害减免减少5%
+			导致幻觉
+			击败虚空利维坦以停止此效果
+			在配置中禁用此效果
+			'''
+	}
+
+	StormSurge: {
+		DisplayName: 风暴潮
+		Description:
+			'''
+			水龙卷从地面喷涌而出
+			降雨发生得更频繁
+			击败水域以停止此效果
+			在配置中禁用此效果
+			'''
+	}
+
+	StatueBuffGenihWat: {
+		DisplayName: Genih Wat的存在
+		Description:
+			'''
+			魔法伤害增加15%
+			法力再生增加5
+			敌人更具攻击性，生成更频繁
+			'''
+	}
+
+	BehemothGaze: {
+		Description: 你注视着一个如此伟大的存在，以至于无法逃脱……
+		DisplayName: 巨兽凝视
+	}
+
+	ElementalDragonBunnyBuff: {
+		DisplayName: 元素龙兔
+		Description: 它快乐地跳来跳去
+	}
+
+	ScorpionBreakout: {
+		DisplayName: 蝎子爆发
+		Description:
+			'''
+			蝎子侵扰泰拉瑞亚
+			击败废土以停止此效果
+			在配置中禁用此效果
+			'''
+	}
+
+	Discord: {
+		DisplayName: 纷争
+		Description: 你身体的每一部分都在疼痛……
+	}
+
+	EndlessTears: {
+		DisplayName: 无尽之泪
+		Description: 悲伤将你拖下
+	}
+
+	HandsOfDespair: {
+		DisplayName: 绝望之手
+		Description: 它们抓住你的四肢，将你拉下
+	}
+
+	IceBound: {
+		DisplayName: 冰封
+		Description: 你的骨骼和关节都冻住了
+	}
+
+	SoulInferno: {
+		DisplayName: 灵魂炼狱
+		Description: 你散发着奇怪的辐射
+	}
+
+	CalamityBannerBuff: {
+		DisplayName: 灾厄旗帜
+		Description: 生成率增加7.5倍
+	}
+
+	ChaosBannerBuff: {
+		DisplayName: 混乱旗帜
+		Description: 生成率增加5倍
+	}
+
+	HavocBannerBuff: {
+		DisplayName: 浩劫旗帜
+		Description: 生成率增加2倍
+	}
+
+	CalamityPotionBuff: {
+		DisplayName: 灾厄
+		Description: 生成率增加12.5倍
+	}
+
+	ChaosPotionBuff: {
+		DisplayName: 混乱
+		Description: 生成率增加7.5倍
+	}
+
+	HavocPotionBuff: {
+		DisplayName: 浩劫
+		Description: 生成率增加4倍
+	}
+
+	FlareShield: {
+		DisplayName: 耀斑护盾
+		Description: ""
+	}
+
+	Starstruck: {
+		DisplayName: 星辰打击
+		Description:
+			'''
+			你的意志屈服于你的对手
+			每次被敌人击中，玩家受到的伤害都会增加
+			'''
+	}
+
+	FrostShield: {
+		DisplayName: 冰霜护盾
+		Description: ""
+	}
+
+	EldritchHorror: {
+		DisplayName: 怪诞恐怖
+		Description:
+			'''
+			你的头脑无法理解它的力量……
+			消耗理智
+			'''
+	}
+
+	SanityRegenerationBuff: {
+		DisplayName: 理智再生
+		Description: 增加理智再生
+	}
+
+	RottenHeart: {
+		DisplayName: 腐烂之心
+		Description: 你的生命值减少10%
+	}
+
+	SuperSlow: {
+		DisplayName: 超级缓慢
+		Description: 你几乎无法迈步
+	}
+
+	Glowing: {
+		DisplayName: 发光
+		Description:
+			'''
+			你释放出刺眼的光芒
+			每个怪物都能看到你
+			'''
+	}
+
+	GoldenWeapons: {
+		DisplayName: 黄金武器
+		Description: 你造成10%额外伤害
+	}
+
+	Invincibility: {
+		DisplayName: 无敌
+		Description: 你免疫伤害！
+	}
+
+	StrongHeart: {
+		DisplayName: 强壮之心
+		Description: 你的生命值增加10%
+	}
+
+	SuperSpeed: {
+		DisplayName: 超级速度
+		Description: 你以无法控制的速度移动
+	}
+
+	BurningHands: {
+		DisplayName: 燃烧之手
+		Description: 太热了！好痛！！！
+	}
+
+	VariableLifeRegen: {
+		DisplayName: 生命汲取
+		Description: 吸取你的生命。
+	}
+
+	CrystallineEntityBuff: {
+		DisplayName: 水晶实体
+		Description: 水晶散发出微弱的嗡嗡声
+	}
+
+	AncientsCurse: {
+		DisplayName: 远古诅咒
+		Description: ""
+	}
+
+	MiniVleviBuff: {
+		DisplayName: 微型虚空利维坦
+		Description: 这个虚空利维坦会保护你
+	}
+
+	ArchaicProtectionCD: {
+		Description: 你无法将自己包裹在水晶中
+		DisplayName: 古老保护冷却
+	}
+
+	AqueousMinions: {
+		DisplayName: 水域的仆从
+		Description: 水域的仆从在保护你
+	}
+
+	InfectionMouthBuff: {
+		DisplayName: 感染之口
+		Description: 不要吸入颗粒物
+	}
+
+	CosmicObserverBuff: {
+		DisplayName: 宇宙观察者
+		Description: 它的边缘异常锋利
+	}
+
+	HearthMinionBuff: {
+		DisplayName: 壁炉
+		Description: 它散发着柔和的暖意
+	}
+
+	PossessedHandBuff: {
+		DisplayName: 被附身的手
+		Description: 它没有身体
+	}
+
+	IcicleBuff: {
+		DisplayName: 冰锥
+		Description: 它永不融化
+	}
+
+	EnergySpiritBuff: {
+		DisplayName: 能量之灵
+		Description: 它亮得几乎无法直视
+	}
+
+	Eyeball: {
+		DisplayName: 眼球
+		Description: 天界使者的仆从跟着你
+	}
+
+	VolcanicTentacleBuff: {
+		DisplayName: 火山触手
+		Description: 它紧紧抓住你
+	}
+
+	ScorpionMinionBuff: {
+		DisplayName: 蝎子
+		Description: 咔嚓-咔嚓
+	}
+
+	DashCooldown: {
+		DisplayName: 忍者冲刺冷却
+		Description: 你的冲刺正在充能
+	}
+
+	VilePower: {
+		DisplayName: 邪恶之力
+		Description:
+			'''
+			伤害增加5%
+			攻击施加毒素和毒液
+			'''
+	}
+
+	AcidBurn: {
+		DisplayName: 酸灼伤
+		Description: 感觉像液体火焰。
+	}
+
+	SalveBuff: {
+		Description: 10秒内治疗50点生命
+		DisplayName: 治疗中
+	}
+
+	NanowrapBuff: {
+		Description: 10秒内治疗100点生命
+		DisplayName: 治疗中
+	}
+
+	MedicineCooldown: {
+		Description: 你无法使用医疗物品
+		DisplayName: 药物冷却
+	}
+
+	BandageBuff: {
+		Description: 10秒内治疗75点生命
+		DisplayName: 治疗中
+	}
+
+	BullseyeBuff: {
+		DisplayName: 靶心
+		Description:
+			'''
+			暴击率增加15%
+			远程伤害增加25%
+			'''
+	}
+
+	LuminiteBuff: {
+		DisplayName: 天界赋能
+		Description:
+			'''
+			获得月亮领主的力量
+			防御增加8
+			伤害增加15%
+			'''
+	}
+
+	ExtinctionCurseImbue: {
+		Description: 近战攻击施加“灭绝诅咒”减益
+		DisplayName: 武器附魔：灭绝诅咒
+	}
+
+	DiscordantBuff: {
+		Description: 你的身体找到了拥抱纷争的方式
+		DisplayName: 纷争
+	}
+
+	DemonSkinBuff: {
+		Description: 防御增加3，移动和近战速度增加10%
+		DisplayName: 恶魔皮肤
+	}
+
+	HellFuryBuff: {
+		Description: 伤害增加20%，但受到的伤害加倍
+		DisplayName: 地狱狂怒
+	}
+
+	Energized: {
+		Description: 移动速度增加50%，生命再生增加5
+		DisplayName: 充能
+	}
+
+	WyvernPetBuff: {
+		Description: 它在你周围嬉戏地飞舞
+		DisplayName: 飞龙
+	}
+
+	ChamchamRatBuff: {
+		Description: ""
+		DisplayName: Chamcham鼠
+	}
+
+	CrowBuff: {
+		DisplayName: 乌鸦
+		Description: 优雅地翱翔于天际
+	}
+
+	CoalescedOrbBuff: {
+		DisplayName: 聚结之球
+		Description: 物质结合成一个凝视的眼睛
+	}
+
+	MiniSandstormBuff: {
+		DisplayName: 微型沙尘暴
+		Description: 这个奇怪的实体会保护你
+	}
+
+	PhantomHookBuff: {
+		DisplayName: 幻影钩
+		Description: 别被卷入交火
+	}
+
+	FireElementalBuff: {
+		DisplayName: 火灵
+		Description: 它会在寒冷的夜晚为你保暖
+	}
+
+	IceAxeBuff: {
+		Description: 它能切开路径上的一切
+		DisplayName: 冰斧
+	}
+
+	HappyCloudBuff: {
+		Description: 鲍勃·鲁斯
+		DisplayName: 快乐小云
+	}
+
+	AbyssCultistBuff: {
+		DisplayName: 深渊教徒
+		Description: 赞美黑暗之主……
+	}
+
+	BubbleBuff: {
+		DisplayName: 泡泡
+		Description: 我喜欢泡泡！
+	}
+
+	InfinityBubbleCooldown: {
+		DisplayName: 投射物泡泡器冷却
+		Description: 你无法将投射物变为泡泡
+	}
+
+	InfinityPortalCooldown: {
+		DisplayName: 传送门冷却
+		Description: 你无法创建传送门
+	}
+
+	InfinityVoidCooldown: {
+		DisplayName: 虚空冷却
+		Description: 你还不能抹去生命……
+	}
+
+	Corroding: {
+		Description: 感觉像液体火焰。
+		DisplayName: 腐蚀中
+	}
+
+	CorroderBuff: {
+		Description: 别试着去摸它。
+		DisplayName: 腐蚀者
+	}
+
+	HeartyMeal: {
+		Description: 10秒内治疗20点生命
+		DisplayName: 丰盛的一餐
+	}
+
+	MiniDragonBuff: {
+		Description: 它既可爱又可怕……
+		DisplayName: 迷你龙
+	}
+
+	SilkySerumBuff: {
+		Description: 减少接触伤害并将坠落伤害减半
+		DisplayName: 丝滑血清
+	}
+
+	BabyPuffBuff: {
+		Description: 这个可爱的绒毛球会保护你！
+		DisplayName: 幼年绒毛球！
+	}
+
+	Cuddled: {
+		Description: 你内心感到温暖，近战攻击减少20%，但生命再生增加
+		DisplayName: 被拥抱
+	}
+
+	PutridRipperBuff: {
+		DisplayName: 腐烂撕裂者
+		Description: 爪如利刃，唾液如酸
+	}
+
+	GlobuleMinionBuff: {
+		Description: 它闪闪发光
+		DisplayName: 星光球
+	}
+
+	ToyRobotBuff: {
+		Description: 它自己上发条！
+		DisplayName: 玩具机器人
+	}
+
+	BrokenToyBlade: {
+		Description: 你无法使用玩具剑
+		DisplayName: 破碎的玩具剑
+	}
+
+	VoidCrawler: {
+		Description: 当它蹭你的时候，别被刀刃割到
+		DisplayName: 虚空爬行者
+	}
+
+	TurboDogeBuff: {
+		Description: 咻——
+		DisplayName: 涡轮总督
+	}
+
+	LilOrange: {
+		Description: 一个小橙子紧跟着你
+		DisplayName: 小橙子
+	}
+
+	CelestialWatcherBuff: {
+		Description: 一个堕落的观星者凝视着你。
+		DisplayName: 堕落观星者
+	}
+
+	AwakenedBuff: {
+		Description: 它已升华
+		DisplayName: 觉醒
+	}
+
+	AncientStellateBuff: {
+		Description: 它闪耀着明亮的光芒
+		DisplayName: 远古星辰
+	}
+
+	StatueBuffAmadis: {
+		DisplayName: 阿玛迪斯的存在
+		Description:
+			'''
+			近战伤害和速度增加15%
+			生命值减少30%
+			'''
+	}
+
+	StatueBuffBurst: {
+		DisplayName: 爆发的存在
+		Description:
+			'''
+			远程伤害增加15%
+			移动速度减少15%
+			'''
+	}
+
+	StatueBuffOinite: {
+		DisplayName: Oinite的存在
+		Description:
+			'''
+			完美平衡，万物皆应如此
+			所有增益和减益的持续时间加倍
+			'''
+	}
+
+	StatueBuffOrange: {
+		DisplayName: 那颗多汁橙子的存在
+		Description:
+			'''
+			伤害增加15%
+			受到的伤害增加50%
+			增加“药水病”减益的持续时间
+			'''
+	}
+
+	StatueBuffRanipla: {
+		DisplayName: 拉尼普拉的存在
+		Description:
+			'''
+			价值无关紧要，只管去做。
+			速度增加25%。
+			召唤伤害增加15%。
+			跳跃高度和翅膀飞行时间减少25%。
+			'''
+	}
+
+	Irradiated: {
+		DisplayName: 受辐射
+		Description: 辐射的积累会伤害你
+	}
+
+	ElectrifiedNPC: {
+		DisplayName: 带电
+		Description: ""
+	}
+
+	VoidJellyBuff: {
+		Description: 伤害增加15%
+		DisplayName: 虚空果冻
+	}
+
+	BabyShadeWyrmBuff: {
+		Description: 与普通的暗影飞龙不同，它不会试图将你困在广阔无垠的虚空中
+		DisplayName: 幼年暗影飞龙
+	}
+
+	ImpishCurse: {
+		Description: ""
+		DisplayName: 小恶魔诅咒
+	}
+
+	AstralTearCooldown: {
+		DisplayName: 星界之泪冷却
+		Description: 你无法使用星界之泪
+	}
+
+	DeathwarpCooldown: {
+		DisplayName: 死亡扭曲冷却
+		Description: 你无法激活死亡扭曲
+	}
+
+	SolusKunaiCooldown: {
+		DisplayName: 索鲁斯苦无冷却
+		Description: 你无法使用索鲁斯苦无
+	}
+
+	WindsBlessing: {
+		DisplayName: 风之祝福
+		Description: 风在你身后
+	}
+
+	SoulSkull: {
+		Description: 从虚空中升华，骷髅呼吸着灵魂之火，击中时会施加“灵魂炼狱”减益
+		DisplayName: 灵魂骷髅
+	}
+
+	KirovAirshipBuff: {
+		Description: 投弹手就位。
+		DisplayName: 基洛夫飞艇
+	}
+
+	EnchantedTrio: {
+		Description: 泰拉瑞亚的附魔武器在保护你
+		DisplayName: 附魔三重奏
+	}
+
+	DeathwatcherBuff: {
+		Description: 仅仅看着它就让你不寒而栗……
+		DisplayName: 死亡观察者
+	}
+
+	AwakenedMinionBuff: {
+		Description: 他们已升华
+		DisplayName: 觉醒
+	}
+
+	CorruptPenguinBuff: {
+		DisplayName: 腐化企鹅
+		Description: 对服装商造成额外伤害
+	}
+
+	PsychologistSanity: {
+		Description: 增加理智再生
+		DisplayName: 心理咨询
+	}
+}
+
+NPCs: {
+	ShadeWyrmBody.DisplayName: 暗影飞龙身体
+
+	ShadeWyrmHead: {
+		DisplayName: 暗影飞龙
+
+		BossChecklistIntegration: {
+			EntryName: 暗影飞龙
+			SpawnInfo: 在虚空黎明第二阶段自行生成。
+		}
+	}
+
+	ShadeWyrmTail: {
+		DisplayName: 暗影飞龙
+
+		BossChecklistIntegration: {
+			EntryName: 虚空黎明
+			SpawnInfo: 在白天或晚上10点前使用[i:ElementsAwoken/VoidEventSummon]。事件只会在夜晚开始时启动。
+		}
+	}
+
+	MysticBunny.DisplayName: 神秘兔子
+	SolarFragment.DisplayName: 太阳碎片
+	VoidLeviathanTail.DisplayName: 虚空利维坦
+	VoidLeviathanOrb.DisplayName: 虚空利维坦之球
+
+	VoidLeviathanHead: {
+		DisplayName: 虚空利维坦
+
+		BossChecklistIntegration: {
+			EntryName: 虚空利维坦
+			SpawnInfo: 在任何地方的夜晚使用一个[i:ElementsAwoken/VoidLeviathanSummon]。
+		}
+	}
+
+	VoidLeviathanBody.DisplayName: 虚空利维坦
+	BarrenSoul.DisplayName: 贫瘠之魂
+	BarrenOrbital.DisplayName: 贫瘠轨道体
+	ElderShadeWyrmTail.DisplayName: 远古暗影飞龙
+	ElderShadeWyrmHead.DisplayName: 远古暗影飞龙
+	ElderShadeWyrmBody.DisplayName: 远古暗影飞龙
+
+	RadiantMaster: {
+		DisplayName: 辐射大师
+
+		BossChecklistIntegration: {
+			EntryName: 辐射大师
+			SpawnInfo: 在辐射雨的最后2分钟自行生成。
+		}
+	}
+
+	RadiantMasterDeath.DisplayName: 辐射大师
+	Scorpion.DisplayName: 蝎子
+
+	Wasteland: {
+		DisplayName: 废土
+
+		BossChecklistIntegration: {
+			EntryName: 废土
+			SpawnInfo: 在沙漠中捕捉并使用一个[i:ElementsAwoken/WastelandSummon]。突变蝎子在击败克苏鲁之眼后会在沙漠中自行生成。
+		}
+	}
+
+	WastelandDeath.DisplayName: 废土
+	WastelandEgg.DisplayName: 蛋
+	WastelandMinion.DisplayName: 突变蝎子
+	AncientWyrmArms.DisplayName: 远古飞龙
+	AncientWyrmBody.DisplayName: 远古飞龙
+	AncientWyrmHead.DisplayName: 远古飞龙
+	AncientWyrmTail.DisplayName: 远古飞龙
+
+	TheEye: {
+		DisplayName: 眼睛
+
+		BossChecklistIntegration: {
+			EntryName: 眼睛
+			SpawnInfo: 在任何地方的夜晚使用[i:ElementsAwoken/AncientDragonSummon]。
+		}
+	}
+
+	AquaticReaper.DisplayName: 水域仆从
+
+	Aqueous: {
+		DisplayName: 水域
+
+		BossChecklistIntegration: {
+			EntryName: 水域
+			SpawnInfo: 在任何时间的海洋中使用一个[i:ElementsAwoken/AqueousSummon]。
+		}
+	}
+
+	AqueousMinion1.DisplayName: 水域仆从
+	AqueousMinion2.DisplayName: 水域仆从
+
+	Azana: {
+		DisplayName: Azana
+
+		BossChecklistIntegration: {
+			EntryName: Azana
+			SpawnInfo: Use an [i:ElementsAwoken/AzanaSummon] anywhere at any time of the day.
+		}
+	}
+
+	AzanaEye.DisplayName: Azana
+	InfectionMouth.DisplayName: Infection Mouth
+
+	CosmicObserver: {
+		DisplayName: Cosmic Observer
+
+		BossChecklistIntegration: {
+			EntryName: Cosmic Observer
+			SpawnInfo: Spawns on its own high in the skies in Hardmode. Use an [i:ElementsAwoken/CosmicObserverSummon] to increase the chance of it spawning for 1 minute.
+		}
+	}
+
+	CosmicObserverHand.DisplayName: Cosmic Observer Hand
+	GuardianProbe.DisplayName: Temple Guard
+
+	TheGuardian: {
+		DisplayName: The Guardian
+
+		BossChecklistIntegration: {
+			EntryName: The Guardian
+			SpawnInfo: Use the [i:ElementsAwoken/GuardianSummon] at nighttime anywhere.
+		}
+	}
+
+	TheGuardianFly.DisplayName: The Guardian
+	Furosia.DisplayName: Furosia
+	HealingHearth.DisplayName: Healing Hearth
+
+	Infernace: {
+		DisplayName: Infernace
+
+		BossChecklistIntegration: {
+			EntryName: Infernace
+			SpawnInfo: Use the [i:ElementsAwoken/InfernaceSummon] in the Underworld at any time.
+		}
+	}
+
+	RockLarge.DisplayName: Rock
+	RockMedium.DisplayName: Rock
+	RockSmall.DisplayName: Rock
+	InfernaceSpawner.DisplayName: Infernace's Guardian
+
+	Obsidious: {
+		DisplayName: Obsidious
+
+		BossChecklistIntegration: {
+			EntryName: Obsidious
+			SpawnInfo: Use the [i:ElementsAwoken/ObsidiousSummon] at nighttime anywhere.
+		}
+	}
+
+	ObsidiousHand.DisplayName: Obsidious Hand
+	ObsidiousHuman.DisplayName: Obsidious
+	ObsidiousTransition.DisplayName: Obsidious
+
+	Permafrost: {
+		DisplayName: Permafrost
+
+		BossChecklistIntegration: {
+			EntryName: Permafrost
+			SpawnInfo: Use an [i:ElementsAwoken/PermafrostSummon] in the Tundra at any time.
+		}
+	}
+
+	PermaOrbital.DisplayName: Permafrost Orbital
+	RegarothBody.DisplayName: Regaroth
+
+	RegarothHead: {
+		DisplayName: Regaroth
+
+		BossChecklistIntegration: {
+			EntryName: Thunderling
+			SpawnInfo: Use the [i:ElementsAwoken/RegarothSummon] high in the skies at any time.
+		}
+	}
+
+	RegarothMinionBody.DisplayName: Thunderling
+	RegarothMinionHead.DisplayName: Thunderling
+	RegarothMinionTail.DisplayName: Thunderling
+	RegarothTail.DisplayName: Regaroth
+	MiniFighter.DisplayName: Mini Fighter
+
+	ScourgeFighter: {
+		DisplayName: Scourge Fighter
+
+		BossChecklistIntegration: {
+			EntryName: Scourge Fighter
+			SpawnInfo: Use the [i:ElementsAwoken/ScourgeFighterSummon] at nighttime anywhere.
+		}
+	}
+
+	ToySlime.DisplayName: Toy Slime
+	MiniToySlime.DisplayName: Mini Toy Slime
+	Firefly.DisplayName: Firefly
+	SoulOfInfernace.DisplayName: Soul of Infernace
+
+	Volcanox: {
+		DisplayName: Volcanox
+
+		BossChecklistIntegration: {
+			EntryName: Volcanox
+			SpawnInfo: Use the [i:ElementsAwoken/VolcanoxSummon] in the Underworld at any time.
+		}
+	}
+
+	VolcanoxHook.DisplayName: Volcanox Hook
+	VolcanoxTentacle.DisplayName: Volcanox Tentacle
+
+	Storyteller: {
+		DisplayName: Storyteller
+
+		TownNPCMood: {
+			Content: Everything's fine, i guess.
+			NoHome: Don't you have a spare room in your house?
+			FarFromHome: Is it just me or i wandered too far from my home?
+			LoveSpace: Just perfect, nobody annoys me here. Almost.
+			DislikeCrowded: Can you find some another room for me? There are too many people for my liking.
+			HateCrowded: Get these puny humans away from me if you don't want me to do it first.
+			LikeNPC_Princess: I genuinely don't understand why everyone loves {NPCName} so much.
+			Princess_LovesNPC: Mhm... I think something is not right with {NPCName}...
+			LikeBiome: "{BiomeName} is the best place to live in for me."
+			DislikeBiome: I don't like {BiomeName}, it's too desolate even for me.
+			HateBiome: What am i even doing in {BiomeName}?
+			LikeNPC: Yeah, i've said before that {NPCName} is a worthless fool, but even he can be useful sometimes.
+			DislikeNPC: I didn't like {NPCName} being a little too nosy.
+			HateNPC: Is it some joke that i don't understand, you housing me with {NPCName}? He pisses me off way more than everyone else here!
+		}
+
+		Name: {
+			Amadis: Amadis
+			Neivirk: Neivirk
+			Herckeus: Herckeus
+			Nornex: Nornex
+			Zairis: Zairis
+			default: default
+		}
+
+		Census.SpawnCondition: At daytime
+
+		ButtonText: {
+			Text2: Fight
+			Text1: Question
+			Text: Story
+		}
+
+		Story: {
+			#TODO: Cтока не может быть начата с ' . , вызвет ошибку при компиляций мода
+			#пример Story1_1: ' исполузуй в начале ""
+			Story: The king of the slimes roams the fields with it's followers, causing earthquakes. A '
+			Story_1: may provoke him.
+			Story1: A giant eyeball is terrorizing the night, which hides sharp teeth underneath his lens. You found this '
+			Story1_1: "'...maybe it'll be just perfect for the eyeball to appear."
+			Story2: Dust is spreading out within the desert, storming. Scorpions suddenly arise from the sands. No doubt, it's Wasteland hunting it's next victim. Catch one of the '
+			Story2_1: "' with a net to get his attention."
+			Story3: A loud roar halled through the dead lands of the Crimson. It's guardian roams free again, it seems. Destroy three of these 'Crimson Hearts' within the caves. Alternatively, provoke it with a '
+			Story3_1: "'."
+			Story4: A loud roar halled through the dead lands of the Corruption. It's guardian roams free again, it seems. Destroy three of these 'Shadow Orbs' within the caves. Alternatively, provoke it with some '
+			Story4_1: "'"
+			Story5: The queen of all bees buzzes through the jungle, trying to build it's hives at every corner. Smash one of the hive's larva or use an '
+			Story5_1: "' to put an end to that madness."
+			Story6: An ancient curse has befallen the old man near the dungeon. This curse will cause a giant skull to emerge. Kill him with a '
+			Story6_1: "' or visit the halls of the dungeon to summon it."
+			Story7: After the skull has fallen, ash and fire rains down upon the lands. The fire lord Infernace seems to be enraged. Create a '
+			Story7_1: "' and use it within the underworld to get him to show up."
+			Story8: I've heared that the guide is fully aware of his fate and deems you challenging to fight the underworld's master. Heh, what a fool. Little does he know what it's defeat will bring over the world...
+			Story9: Do you remember that giant eyeball? Some group of scientists created an mechanical copy of him - and this time, there are two of them. Use a '
+			Story9_1: "'. As it's similiar to the eye you've made back then, it may cause them to appear."
+			Story10: You feel those earthquakes? They are way worse than the ones of the King Slime back then. Create an '
+			Story10_1: "' and use it, maybe the source of the earthquake will show up then."
+			Story11: The skull has been reborn as a four armed mechanoid. And he causes more havoc than ever before. A '
+			Story11_1: "' will cause it to appear."
+			Story12: A group of martians had created a powerful jet robot long ago dubbed the Scourge Fighter, with an AI to destroy whatever it comes across. If you can obtain a duplicate of his '
+			Story12_1: "', you may be able to signal it your coordinates."
+			Story13: The mechanical trio went rogue after shocking thunders hit them. It was caused by the cosmic thunder serpent, Regaroth. If you are able to get ahold of a piece of his '
+			Story13_1: "', he may come to reclaim it. Prepare for the worst."
+			Story14: Flowers are always pretty, however, not when they're giant and have tentacles and spikes. I'm talking about the jungle guardian Plantera. Destroy her bulb to awaken her.
+			Story15: The Golem is a ancient automaton within the depths of the jungle temple. Right now it's deactivated, but you can reactivate it by using one of it's '
+			Story15_1: "' at an Lihzahrd Altar."
+			Story16: The once friendly ice wizard Permafrost returned as a hatred filled spirit, taking revenge upon those who forgot him. An '
+			Story16_1: "' will call upon him."
+			Story17: Forbidden artifact only cause calamitous things, yet some do not want to listen. The resulted, obsidian-plated monster, Obsidious, can be summoned with a '
+			Story17_1: "'."
+			Story18: The king of the ocean, Duke Fishron recently scared me when I was looking for some fresh fish to have a nice dinner. He nearly devoured one of my arms. He is highly dangerous, so it's better to catch him with a '
+			Story18_1: "' and get rid of him."
+			Story19: No bad action remains unpunished. The knight of the ocean has come to take your life for taking Fishron's. Get ready for a tough battle. The knight will be further provoked by holding a '
+			Story19_1: "' at the ocean."
+			Story20: A group of cultists stand at the entrance of the dungeon, praising something that they shouldn't. You better take them out before they summon anything chaotic.
+			Story21: You've caused a great mess. Because of you, the moon lord and the 4 lunar pillars awaken in the land once more. This creature could mean the end of everything. Are you ready to take on him? If so, kill those pillars or use a '
+			Story21_1: "' to awake him for real."
+			Story22: The divine being of the underworld, Volcanox, has been freed from it's prison. To calm the underworld down once again, you will have to make sure that he will fall. A '
+			Story22_1: "' will be enough to unleash him."
+			Story23: The town is full of hallucinations and fatigue and the void glows with a sinister power - the Void Leviathan has returned from it's slumber. He is after your soul, so he can reach his full potenial once again. Take him down by summoning him with the '
+			Story23_1: "'"
+			Story24: A long forgotten chaotic infection has taken the control of a scientist, infusing her with a mechanical suit to create an mindless, horrifying abomination. If you use an '
+			Story24_1: "', you might be able to gain it's attention..."
+			Story25: Sorry, I'm all out of tales
+			Story26: You question my origin? I am a crystalline being, born within the depths of
+			Story26_1: For so long, you mindlessly did what I said, without questioning. You did your job well. Now, it's time for you to perish. I do not need you any longer.
+		}
+
+		Chat: {
+			Chat: The flare of chaos is now extinct... that such a great warrior did fall with ease is truly interesting...
+			Chat1: You did put the ex-goddess out of her misery, huh? I'm curious... what do you seek?
+			Chat2: Little do you know what power you've set free...you're just as foolish as you look...
+			Chat3: potaot
+			Chat4: Gah, perhaps I should just kill
+			Chat4_1: now. Oh! I didn't see you there
+			Chat4_2: ... You didn't hear anything did you?
+			Chat5: Say, is it really you who makes these decisions? Or is it the puppeteer behind the curtain who pulls your strings?
+			Chat6: What a great night to kill monsters. The red moon makes it even way more fun.
+			Chat7: I never could understand humanity's satisfaction at that time of the year. They clearly didn't see real monsters. And the beings of this Pumpkin Moon are nothing compared to true ones, either.
+			Chat8: At least this cold night ended in a good fight and not into an ice queen singing about her doubts. Ugh.
+			Chat9: Go tell
+			Chat9_1: to tone down the noise, I'm sick of her partying.
+			Chat10: calls herself old. She has barely been born.
+			Chat11: What on Earth is
+			Chat11_1: ? In all my time here, I have never seen a being so peculiar...
+			Chat12: "'s weapons are feeble little creations."
+			Chat13: Hah,
+			Chat13_1: is a useless fool! No one requires his little 'tips' he has. Petty...
+			Chat14: Really? Boss Checklist? Am I seriously not good enough... Well then, guess I'll have to prove I'm better. You'll see.
+			Chat15: Ah, the Moon Lord is defeated... Well done, you are almost as strong as I.
+			Chat16: Old
+			Chat16_1: is afraid of some puny eyeball! I would slay it in seconds if I believed it was even worth the effort. Hah!
+			Chat17: Argh! These damn scorpions keep getting in my house! I heard of a genetics lab meltdown after that giant eye was slain. Imbeciles cant even contain a scorpion!
+			Chat18: Strange floral creatures have started appearing in the jungle... I saw one with a shell made of petals!
+			Chat19: The skies brighten once more, creatures that harbour an ore of immense power reside up there now.
+			Chat20: Death spreads. The critters are looking sickly. I watched one get eaten from the inside out by a giant purple tick...
+			Chat21: Burning spirits have began to appear in the dungeon. I suspect that the lunar surge may have caused Volcanox to release them into the world.
+			Chat22: You look weary,
+			Chat22_1: ". Go pay a visit to "
+			Chat23: You look weary,
+			Chat23_1: . Go pay a visit to the nurse. Oh wait... We don't have one
+			Chat24: I wouldn't reccomend getting into a fight with me. I may be old but trust me, I have plenty of strength.
+			Chat25: The beasts of Terraria are rough, I'll sell you some nasty weapons to aid in your combat.
+			Chat26: These weapons are all made from 100% natural resources!
+			Chat27: Hope you enjoy what I'm selling. Who am I kidding, of course you will!
+			Chat28: Hmph. Sometimes standing around and mingling with all these people gets boring. I miss the days of war.
+			Chat29: You want help crafting? I'm a storyteller! I deal legends not knowledge.
+			Chat30: Why don't I kill the monsters myself? Uh, I'm awfully busy and you look like a strong young man.
+			Chat31: I despise cookies. They are way too sweet for me. Honestly, I prefer the spicy stuff.
+		}
+
+		Content_1_4: {
+			BossD: There are rumors of a giant humanoid single-eyed monster roving the everfrosen lands of the Tundra, who seems to have come from a different dimension. Not that i know much about it, but crafting a certain '
+			BossD_1: "'might lure it, probably."
+			BossQ: You definitely have seen the king of all slimes, have you not? What if i tell you that there is a queen of all slimes, which might also have wings? I've heard about a '
+			BossQ_1: "' made of pure gelatin, try using it in the Hallow, who knows, maybe something will happen."
+			BossE: Do you know who's behind the Hallow and all of the bizarre stuff there? No one else than the infamous Empress of Light herself! And have you seen the weird, iridescent '
+			BossE_1: "'s there? I wonder if are connected in some way."
+		}
+	}
+
+	CrystalSerpentTail.DisplayName: Crystal Serpent
+	CrystalSerpentHead.DisplayName: Crystal Serpent
+	CrystalSerpentBody.DisplayName: Crystal Serpent
+	Krecheus.DisplayName: Krecheus
+	Kirvein.DisplayName: Kirvein
+	Izaris.DisplayName: Izaris
+	EnergySeeker.DisplayName: Energy Seeker
+	ShardBase.DisplayName: ""
+	Xernon.DisplayName: Xernon
+	AncientAmalgamFist.DisplayName: Ancient Amalgamate Fist
+	AncientAmalgamDeath.DisplayName: The Ancient Amalgamate
+
+	AncientAmalgam: {
+		DisplayName: The Ancient Amalgamate
+
+		BossChecklistIntegration: {
+			EntryName: The Ancient Amalgamate
+			SpawnInfo: Talk to the Storyteller after defeating Azana. Use the [i:ElementsAwoken/AncientsSummon] at any time anywhere after defeating the Ancients for the first time.
+		}
+	}
+
+	Puff.DisplayName: Puff
+	SpikedPuff.DisplayName: Spiked Puff
+	AbyssSkull.DisplayName: Abyss Skull
+	AbyssSkullette.DisplayName: Abyss Skullette
+	AccursedFlier.DisplayName: Accursed Flier
+	DimensionalHive.DisplayName: Dimensional Hive
+	Immolator.DisplayName: Immolator
+	ReaverSlime.DisplayName: Reaver Slime
+	VoidFly.DisplayName: Void Fly
+	VoidKnight.DisplayName: Void Knight
+	ZergCaster.DisplayName: Zerg Caster
+	EtherealHunter.DisplayName: Ethereal Hunter
+	VoidCrawler.DisplayName: Void Crawler
+	VoidGolem.DisplayName: Void Golem
+	VoidElemental.DisplayName: Void Elemental
+	AllKnowerBody.DisplayName: All Knower
+	AllKnowerHead.DisplayName: All Knower
+	AllKnowerTail.DisplayName: All Knower
+	RadiantWarrior.DisplayName: Radiant Warrior
+	SparklingSlime.DisplayName: Sparkling Slime
+	StarlightGlobule.DisplayName: Starlight Globule
+	StellarStarfish.DisplayName: Stellar Starfish
+	WaterElemental.DisplayName: Water Elemental
+	SkyElemental.DisplayName: Sky Elemental
+	FrostElemental.DisplayName: Frost Elemental
+	FireElemental.DisplayName: Fire Elemental
+	DesertElemental.DisplayName: Desert Elemental
+	ArmoredTrencherTail.DisplayName: Armored Trencher
+	ArmoredTrencherHead.DisplayName: Armored Trencher
+	ArmoredTrencherBody.DisplayName: Armored Trencher
+	Stoneer.DisplayName: Stoneer
+	Pebleer.DisplayName: Pebleer
+	InfernoSpirit.DisplayName: Inferno Spirit
+	GiantVampireBat.DisplayName: Giant Vampire Bat
+	DragonCharger.DisplayName: Dragon Charger
+	GreaterDrakoniteGolem.DisplayName: Drakoknight
+	MagmaSlime.DisplayName: Magma
+	DragonBat.DisplayName: Dragon Bat
+	DragonSlime.DisplayName: Dragon Slime
+	DragonWarrior.DisplayName: Dragon Warrior
+	DrakoniteElemental.DisplayName: Drakonite Elemental
+	FlyingJaw.DisplayName: Flying Jaw
+	PetalClasper.DisplayName: Petal Clasper
+	GiantTick.DisplayName: Giant Tick
+	MortemWalker.DisplayName: Mortem Walker
+	SkyCrawler.DisplayName: Sky Crawler
+	StellarBat.DisplayName: Stellar Bat
+	StellarCenturion.DisplayName: Stellar Centurion
+	StellarEntity.DisplayName: Stellar Entity
+	MutatedScorpion.DisplayName: Mutated Scorpion
+	InfernaceGuardian.DisplayName: Infernace's Guardian
+	GiantToad.DisplayName: Giant Toad
+	VampireBat.DisplayName: Vampire Bat
+
+	Alchemist: {
+		DisplayName: Alchemist
+
+		TownNPCMood: {
+			Content: Ah, splendid. Thank you for such a nice house.
+			NoHome: Hmm, what a curious situation, i came from a faraway land... To become homeless?
+			FarFromHome: Ah, i wandered far from my home again... I hope, i remember the way back.
+			LoveSpace: I decided to wander around the world to find the serenity and peace... And i finally found it. Thank you dearly.
+			DislikeCrowded: I still like your home, it's very cozy, but i'd like it more if there weren't so many people in it.
+			HateCrowded: I'm deeply sorry, but how can i do my work, if there are so many people here?
+			LoveBiome: Ah, how pleasant it is to live in the {BiomeName}. Reminds me of the place i came from...
+			LikeBiome: I always liked going to the {BiomeName}. What a captivating sight over here, isn't it?
+			DislikeBiome: Don't get me wrong, i enjoy solitude... But {BiomeName} is way too desolate even for my liking.
+			LoveNPC: People like {NPCName} are exactly who i wanted to see in these curious lands. I'm always glad about encounters like these.
+			LikeNPC: I feel a kindred spirit in {NPCName}, and i can't help but like it!
+			DislikeNPC: I'm not a misantrophe, of course, but people like {NPCName} - are the ones i prefer to not cross roads with.
+			HateNPC: I decided to wander around the world, trying to find serenity, mostly because of ones like {NPCName}...
+			LikeNPC_Princess: "{NPCName} is a very nice child."
+			Princess_LovesNPC: I like {NPCName}, he knows a lot about plants and potion brewing!
+		}
+
+		Name: {
+			Saul: Saul
+			Darius: Darius
+			Eliseo: Eliseo
+			Cadmus: Cadmus
+		}
+
+		Chat: {
+			Say: No matter how large the wound, healing potions shall fix it.
+			Say1: All your potion needs, taken care of right here.
+			Say2: I travel the world searching for ingredients for my potions, its not an easy task.
+			Say3: I come from a dark world...
+			Say4: Be careful out there, I hate fighting. I'd much rather talk my way out of it.
+			Say5: Going truffle worm hunting? I suggest an invisibility potion.
+			Say6: Health and Mana
+			Say7: Combat
+			Say8: Other
+			Say9: Transmutation
+			Say10: Shop:
+		}
+
+		ButtonName: {
+			Name: Convert
+			Name1: Next Shop
+			Name2: Transmutation
+		}
+
+		Census.SpawnCondition: Conditions unknown
+	}
+
+	Psychologist: {
+		TownNPCMood: {
+			Princess_LovesNPC: "{NPCName} always helps me via good talk when i'm sad!"
+			LikeNPC_Princess: I've heard a lot about {NPCName} and now i finally have a chance to meet her myself! Thank you for such an opportunity.
+			HateNPC: "{NPCName} sometimes grinds even my gears..."
+			DislikeNPC: Of course, i understand human psychology, but i'm still struggling to understand what is {NPCName}'s problem.
+			LikeNPC: "{NPCName} is a very interesting person to talk with."
+			LoveNPC: Thanks for housing me with {NPCName}, i really appreciate it.
+			DislikeBiome: I wouldn't exactly say that i like living in {BiomeName}... But i can't complain anyway.
+			LikeBiome: I like {BiomeName}, there are a lot of peculiar and curious creatures.
+			LoveBiome: "{BiomeName} is one of my favourite places to be. So pleasant scenery..."
+			HateCrowded: I don't want to complain... But is it just me, or your house is a little overpopulated?
+			DislikeCrowded: Hmm, you have a pretty densely populated house, do you not?
+			LoveSpace: Great, there is quiet and little to no people here.
+			FarFromHome: Oh, it appears i wandered far from my house again...
+			NoHome: It seems that i have nowhere to live now... Do you happen to have a free room in your house?
+			Content: Everything's fine, thank you.
+		}
+
+		DisplayName: Psychologist
+		Button: Counselling
+
+		Chat: {
+			Say9: I'm doing fine. I'm ABSOLUTELY DOING FINE. NOW STOP ASKING!
+			Say8: You took down a being said to make others grow insane with alone it's presence. Are you even human?
+			Say7: The fact that we never sleep is extremely strange. Who coded us to be this way?
+			Say6: Your sanity is pretty low...you should maybe see a psychologist. Oh, wait...
+			Say5: The townspeople seem plagued by hallucinations...luckily I am not. Anyways, who's your zombie friend there?
+			Say4: To be honest, I'm surprised by the fact that you don't have an trauma - considering you fought an gigantic wall made out of flesh...
+			Say3: Did you see my glasses? I can't seem to find them...oh, there they are. What do you want?
+			Say2: I am the best psychologist around...and most likely the only one.
+			Say1: I hear there is a 'Book of Shadows' that shows what is affecting your sanity. I'm sure it isnt as effective as my services.
+			Say: And, how are we feeling today?
+		}
+
+		Name: {
+			Dan: Dan
+			Alex: Alex
+			Sam: Sam
+			Drew: Drew
+		}
+
+		Census.SpawnCondition: Conditions unknown
+	}
+
+	ChaosKnight.DisplayName: Chaos Knight
+	ChaosWraith.DisplayName: Chaos Wraith
+}
+
+Projectiles: {
+	AbyssalBall.DisplayName: Abyssal Ball
+	AbyssalPortal.DisplayName: Abyssal Portal
+	AbyssalTentacle.DisplayName: Abyssal Tentacle
+	AeroStorm.DisplayName: Aero Storm
+	ArchaicProtection.DisplayName: Archaic Protection
+	AsteroxShieldBase.DisplayName: Asterox Shield Base
+	AsteroxShieldSwirl.DisplayName: Asterox Shield Swirl
+	BloodbathDashP.DisplayName: Bloodbath Dash P
+	ChaosRingShield.DisplayName: Chaos Ring Shield
+	ChaosRingSwirl.DisplayName: Chaos Ring Swirl
+	ChargeRifleHalf.DisplayName: Charge Rifle Half
+	CrowLightning.DisplayName: Crow Lightning
+	CrowStorm.DisplayName: Crow Storm
+	EnergyWeaverBeam.DisplayName: Energy Weaver Beam
+	Explosion.DisplayName: Explosion
+	LegoBrickFriendly.DisplayName: Lego Brick Friendly
+	LegoBrick.DisplayName: Lego Brick
+	LifesAura.DisplayName: Lifes Aura
+	LightningCloud.DisplayName: Lightning Cloud
+	LightningCloudSwirl.DisplayName: Lightning Cloud Swirl
+	LightningExplosion.DisplayName: Lightning Explosion
+	MechLightning.DisplayName: Mech Lightning
+	Demon.DisplayName: Demon
+	NeovirtuoBolt.DisplayName: Neovirtuo Bolt
+	NeovirtuoHoming.DisplayName: Neovirtuo Homing
+	NeovirtuoPortal.DisplayName: Neovirtuo Portal
+	HailPellet.DisplayName: Hail Pellet
+	Waternado.DisplayName: Waternado
+	WaternadoBolt.DisplayName: Waternado Bolt
+	RadiantPTeleport.DisplayName: Radiant 'P Teleport
+	PoisonWater.DisplayName: Poison Water
+	PutridCloud.DisplayName: Putrid Cloud
+	ShackledBase.DisplayName: Shackled Base
+	SlimeClawBall.DisplayName: Slime Claw Ball
+	UkuleleArc.DisplayName: Ukulele Arc
+	ViridiumBomb.DisplayName: Viridium Bomb
+	VleviAegisSwirl.DisplayName: Vlevi Aegis Swirl
+	VoidBlood.DisplayName: Void Blood
+	VoidSinewave.DisplayName: Void Sinewave
+	CrashingWaveP.DisplayName: Crashing Wave 'P
+	VoidStrike.DisplayName: Void Strike
+	VoidSpine.DisplayName: Void Spine
+	VoidRunes.DisplayName: Void Runes
+	VoidOrbProj.DisplayName: Void Orb Proj
+	VoidOrbDestroyed.DisplayName: Void Orb Destroyed
+	VoidOrb.DisplayName: Void Orb
+	VoidBolt.DisplayName: Void Bolt
+	ExtinctionBlast.DisplayName: Extinction Blast
+	VoidRuneExplosion.DisplayName: Void Rune Explosion
+	BunnyBreath.DisplayName: Bunny Breath
+	HandsOfDespair.DisplayName: Hands Of Despair
+	FlareShield.DisplayName: Flare Shield
+	RadiantFireball.DisplayName: Radiant Fireball
+	RadiantMasterStar.DisplayName: Radiant Master Star
+	RadiantStasisField.DisplayName: Radiant Stasis Field
+	RadiantTeleport.DisplayName: Radiant Teleport
+	RadiantWhirlwind.DisplayName: Radiant Whirlwind
+	StarstruckP.DisplayName: Starstruck P
+	HeartContainerHeal.DisplayName: Heart Container Heal
+	FrostShield.DisplayName: Frost Shield
+	FrostShield2.DisplayName: Frost Shield2
+	RadiantStarRain.DisplayName: Radiant Star Rain
+	VoidHeal.DisplayName: Heal
+	WhipCrack.DisplayName: Whip Crack
+	CoilRound.DisplayName: Coil Round
+	ElectroniumMine.DisplayName: Electronium Mine
+	BassBoost.DisplayName: Bass Boost
+	TaserLightning.DisplayName: Taser Lightning
+	TeslaSpark.DisplayName: Tesla Spark
+	NyanBootsTrail.DisplayName: Nyan Boots Trail
+	HoneycrestStinger.DisplayName: Stinger
+	RailgunBeam.DisplayName: Railgun
+	HealProjBlood.DisplayName: Heal
+	FireSkull.DisplayName: Fire Skull
+	InfernalFury.DisplayName: Infernal Fury
+	HealProjLife.DisplayName: Heal
+	HealProjVoid.DisplayName: Heal
+	Sword.DisplayName: Sword
+	DiscordantArrow.DisplayName: Chaotron Arrow
+	DiscordantArrowChaos.DisplayName: Chaotron Arrow
+	DiscordantBulletP.DisplayName: Chaotron Bullet
+	DisarrayBeam.DisplayName: Disarray Beam
+	DisarrayBlast.DisplayName: Disarray Blast
+	DisarrayShard.DisplayName: Disarray Shard
+	DisarrayEntity.DisplayName: Crystalline Entity
+	DesolationArrow.DisplayName: Desolation Arrow
+	DesolationShard.DisplayName: Desolation Shard
+	DesolationDisc.DisplayName: Desolation Disc
+	DesolationCharge1.DisplayName: Desolation
+	DesolationCharge2.DisplayName: Desolation
+	DesolationCharge3.DisplayName: Desolation
+	DesolationCharge4.DisplayName: Desolation
+	DesolationIIIHeld.DisplayName: Desolation
+	DesolationExplosion.DisplayName: Desolation
+	DesolationIVHeld.DisplayName: Desolation
+	BarrenBeam.DisplayName: Barren Beam
+	AtaxiaBall.DisplayName: Ataxia
+	AtaxiaBlade.DisplayName: Ataxia
+	AtaxiaCrystal.DisplayName: Ataxia
+	AtaxiaBolt.DisplayName: Ataxia
+	AtaxiaWave.DisplayName: Ataxia
+	LamentBall.DisplayName: Lament
+	LamentBallExplosive.DisplayName: Lament
+	LamentExplosion.DisplayName: Lament
+	LamentPierce.DisplayName: Lament
+	LamentWave.DisplayName: Lament
+	LamentSuperPierce.DisplayName: Lament Super Pierce
+	AmuletProj.DisplayName: Amulet Proj
+	ExtinctionBall.DisplayName: Extinction Ball
+	BabyShadeWyrmHead.DisplayName: Worm
+	VoidLeviathanProjBody.DisplayName: Void Leviathan
+	VoidLeviathanProjHead.DisplayName: Void Leviathan
+	VoidLeviathanProjTail.DisplayName: Void Leviathan
+	VleviBody.DisplayName: Vlevi Body
+	VleviHead.DisplayName: Vlevi Head
+	VleviTail.DisplayName: Vlevi Tail
+	CosmicWrathExplosion.DisplayName: Explosion
+	CosmicWrathP.DisplayName: Cosmic Wrath
+	Blackhole.DisplayName: Blackhole
+	BlackholeCreator.DisplayName: Blackhole Creator
+	BlackholeOrbit.DisplayName: Blackhole Orbit
+	ExtinctionArrow.DisplayName: Extinction Arrow
+	VoidPortal.DisplayName: Void Portal
+	VoidPortalSinewave.DisplayName: Void Wave
+	LightsAfflictionExplosion.DisplayName: TheSpine
+	LightsAfflictionP.DisplayName: Lights Affliction
+	DespairBody.DisplayName: Pike of Eternal Despair
+	DespairTip.DisplayName: Gladiolus
+	PikeOfEternalDespairP.DisplayName: Pike of Eternal Despair
+	VoidExplosion.DisplayName: Explosion
+	ReaperstormProj.DisplayName: Reaperstorm
+	VoidInfernoBlast.DisplayName: Extinction Blast
+	VoidInfernoP.DisplayName: Void Inferno
+	BigExplosion.DisplayName: Explosion
+	ChromacastBall.DisplayName: Chromacast
+	ShimmersparkStrike.DisplayName: Shimmerspark
+	ShimmersparkHeld.DisplayName: Shimmerspark
+	ShimmerShrapnel.DisplayName: Shimmerspark
+	FundementalStrike.DisplayName: The Fundementals
+	AncientShard.DisplayName: Ancient Shard
+	AqueousMinionFriendly1.DisplayName: Aqueous Minion
+	AqueousMinionFriendly2.DisplayName: Aqueous Minion
+	AqueousMinionFriendly3.DisplayName: Aqueous Minion
+	AqueousMinionFriendly4.DisplayName: Aqueous Minion
+	WaterballFriendly.DisplayName: Waterball
+	Waterball.DisplayName: Aqueous
+	BrinyBusterP.DisplayName: Briny Buster
+	BubblePopperP.DisplayName: Bubble Popper
+	Bubble.DisplayName: Bubble
+	HighTideP.DisplayName: High Tide
+	AquaticArrow.DisplayName: Aquatic Arrow
+	AquaticArrow2.DisplayName: Aquatic Arrow
+	Watershot.DisplayName: Watershot
+	AnarchyLaser.DisplayName: Anarchy Laser
+	AnarchyWave.DisplayName: Anarchy Wave
+	AnarchyP.DisplayName: Anarchy
+	InfectionMouthMinion.DisplayName: Hungry
+	ExplosionHostile.DisplayName: Explosion
+	OutbreakDart.DisplayName: Outbreak Dart
+	ChaosGazer.DisplayName: Chaos Gazer
+	ChaosLaser.DisplayName: Chaos Laser
+	ChaosShard.DisplayName: Chaos Shard
+	ChaoticBlast.DisplayName: Chaotron Discharge
+	AzanaNanoBolt.DisplayName: Azana
+	InfectionHeart.DisplayName: Infection Heart
+	PandemoniumBlast.DisplayName: Pandemonium
+	PandemoniumFlame.DisplayName: Pandemonium
+	PurgeBeam.DisplayName: Purge Beam
+	ChargeRifleFull.DisplayName: Charge Rifle
+	ChargeRifleHeld.DisplayName: Charge Rifle
+	CosmicCrusherBlade.DisplayName: Cosmic Crusher
+	CosmicCrusherSpawner.DisplayName: Cosmic Crusher
+	CosmicArrow.DisplayName: Cosmic Arrow
+	CosmicMinionShot.DisplayName: The Guardian
+	DemolecularizerLaser.DisplayName: Demolecularizer
+	CosmicObserver.DisplayName: Cosmic Invader
+	OrionsBeltGalaxy.DisplayName: Orions Belt Galaxy
+	PlanetarySpike.DisplayName: Planetary Spike
+	PlanetaryWavePortal.DisplayName: Planetary Wave
+	EnergyFork.DisplayName: Energy Fork
+	EnergyFork2.DisplayName: Energy Fork
+	OrionsBeltP.DisplayName: Orion's Belt
+	CosmicalusRing.DisplayName: Cosmicalus
+	FireBlasterBolt.DisplayName: Fire Blaster
+	GreekFire.DisplayName: Greek Fire
+	HearthMinion.DisplayName: Hearth
+	HearthBeam.DisplayName: Hearth Beam
+	FireBlade.DisplayName: Fire Blade
+	SpinningFlame.DisplayName: Spinning Flame
+	MagmaroxMeteor.DisplayName: Solar Fragment
+	MagmaroxRock.DisplayName: Magmarox
+	PossessedHand.DisplayName: Possessed Hand
+	SacredCrystalLaser.DisplayName: Sacred Crystals
+	TerreneMortar.DisplayName: Terrene Mortar
+	TerreneRock.DisplayName: Terrene Rock
+	UltramarineBeam.DisplayName: Ultramarine
+	VioletEdgeBall.DisplayName: Violet Edge Ball
+	Frigidbullet.DisplayName: Frigidbullet
+	IcicleMinion.DisplayName: Bubble
+	IceWrathArrow.DisplayName: Ice Wrath
+	IceReaverP.DisplayName: Ice Reaver
+	IceWrathBeam.DisplayName: Ice Wrath
+	SnowdriftBomb.DisplayName: Snowdrift
+	RadiantStarHoming.DisplayName: Radiant Star
+	RadiantStarSpiral.DisplayName: Radiant Star
+	RadiantBombP.DisplayName: Master's Vortex
+	MajestyP.DisplayName: Majesty
+	RadiantBlade.DisplayName: Radiant Blade
+	RadiantStarBow.DisplayName: Radiant Star
+	RadiantStorm.DisplayName: Radiant Storm
+	EnergySpiritBolt.DisplayName: Energy Bolt
+	EnergySpirit.DisplayName: Energy Spirit
+	TheSilencerP.DisplayName: The Silencer
+	StarstruckArrow.DisplayName: Starstruck
+	StarstruckBeam.DisplayName: Starstruck
+	Star.DisplayName: Star
+	BountyP.DisplayName: Signal Booster
+	ScourgeRocketFriendly.DisplayName: Rocket
+	ScourgeRocket.DisplayName: Scourge Rocket
+	SignalBoost.DisplayName: Signal Booster
+	CelestiaArc.DisplayName: Lightning
+	CelestialBoltFriendly.DisplayName: Celestial Laser
+	CelestiaPortal.DisplayName: Celestia
+	CelestialInfernoSpin.DisplayName: Celestial Inferno Spin
+	EyeballMinion.DisplayName: Celestial Watcher
+	SolusP.DisplayName: Celestial Laser
+	TemplesWrathArrow.DisplayName: Temple's Wrath
+	GodslayerStrike.DisplayName: Godslayer
+	InfernoCloud.DisplayName: Inferno Storm
+	InfernoLightning.DisplayName: Inferno Storm
+	TemplesWrathSword.DisplayName: Temple's Wrath
+	InfernoEye.DisplayName: Fire Runes
+	InfernoShot.DisplayName: Inferno Shot
+	WyrmClawSlash.DisplayName: Wyrm Claw Slash
+	TempleBeam.DisplayName: Temple Beam
+	TempleBall.DisplayName: Temple Ball
+	RuneBlast.DisplayName: Rune Blast
+	FireRunes.DisplayName: Fire Runes
+	CombustiaWave.DisplayName: Combustia Wave
+	FirelashFlames.DisplayName: Firelash Flames
+	EmberBurstP.DisplayName: Ember Burst 'P
+	HearthBlade.DisplayName: Hearth Blade
+	HearthP.DisplayName: Hearth
+	VolcanicTentacle.DisplayName: Volcanic Tentacle
+	PincerArrow.DisplayName: Scorpion Arrow
+	ScorpionMinion.DisplayName: Scorpion
+	WastelandStingerFriendly.DisplayName: Stinger
+	WastelandStinger.DisplayName: Wasteland Stinger
+	AncientStar.DisplayName: Ancient Star
+	AncientStar2.DisplayName: Ancient Star
+	Fireblast.DisplayName: Fireblast
+	IceMist.DisplayName: Ice Mist
+	IceMistSpike.DisplayName: Frosthail
+	RetinasmP.DisplayName: Retinasm
+	SkeletronFistP.DisplayName: Skeletron Fist
+	LightningArc.DisplayName: Lightning
+	Lightning.DisplayName: Lightning Tome
+	ShockstormPortal.DisplayName: Shockstorm
+	SpinalEye.DisplayName: Giga Eye
+	Spine.DisplayName: Spine
+	TearArrow.DisplayName: Tear Arrow
+	DestroyerLaserFull.DisplayName: Charge Rifle
+	DestroyerLaserHalf.DisplayName: The Destroyer
+	MiniEaterOfSouls.DisplayName: Miniature Eater Of Souls
+	TheDestroyerHeld.DisplayName: The Destroyer
+	CorruptedFangP.DisplayName: Corrupted Fang
+	HungryMinion.DisplayName: Hungry
+	SkeleSkull.DisplayName: Skull
+	SlimeBoosterTrail.DisplayName: Slime
+	AcidAuraBase.DisplayName: Acid Aura
+	AcidBall.DisplayName: Acid Blob
+	Shockwave.DisplayName: Shockwave
+	WastelandDiggingProj.DisplayName: Wasteland
+	WastelandDiggingProjReal.DisplayName: Wasteland
+	WastelandDiggingSpout.DisplayName: Wasteland
+	WastelandDiggingSpoutReal.DisplayName: Wasteland
+	WastelandDryad.DisplayName: Wasteland Dryad
+	WastelandSnap.DisplayName: Wasteland's Pincers
+	WastelandStormBolt.DisplayName: Wasteland
+	GuardianShot.DisplayName: The Guardian
+	WyrmBreath.DisplayName: Wyrm's Breath
+	Aquanado.DisplayName: Aquanado
+	AquanadoBolt.DisplayName: Aquanado Bolt
+	AquaticBlast.DisplayName: Aquatic Blast
+	AquaticBolt.DisplayName: Aqueous
+	WaterKnife.DisplayName: Aqueous
+	WaterKnifeHoming.DisplayName: Aqueous
+	AzanaBlood.DisplayName: Azana Blood
+	AzanaBeam.DisplayName: Chaos Laser
+	AzanaBeamQuick.DisplayName: Chaos Laser
+	AzanaCloud.DisplayName: Spore Cloud
+	AzanaGiantCloud.DisplayName: Spore Cloud
+	AzanaGlob.DisplayName: Chaos Blast
+	AzanaInfection.DisplayName: Infection
+	AzanaInfectionPillar.DisplayName: Infection Pillar
+	AzanaInfectionPillarTip.DisplayName: Gladiolus
+	AzanaLaserWarning.DisplayName: Warning
+	AzanaMiniBlast.DisplayName: Chaos Blast
+	AzanaMiniBlastAccelerate.DisplayName: Chaos Blast
+	AzanaMiniBlastSpiral.DisplayName: Chaos Blast
+	AzanaMiniBlastWave.DisplayName: Chaos Blast
+	AzanaTarget.DisplayName: Target
+	AzanaWave.DisplayName: Azana
+	ObserverBeam.DisplayName: Observer Beam
+	ObserverFireball.DisplayName: Observer Fireball
+	ObserverShard.DisplayName: Observer Shard
+	ObserverSpell.DisplayName: Observer Shard
+	GuardianBeam.DisplayName: Guardian Beam
+	GuardianCircle.DisplayName: The Guardian
+	GuardianFire.DisplayName: Fire
+	GuardianFireball.DisplayName: The Guardian
+	GuardianInfernoball.DisplayName: The Guardian
+	GuardianOrb.DisplayName: The Guardian
+	GuardianPortal.DisplayName: Temples Vortex
+	GuardianPortalSwirl.DisplayName: The Guardian
+	GuardianStickyBolt.DisplayName: Guardian Sticky Bolt
+	GuardianStrike.DisplayName: The Guardian
+	GuardianTargeter.DisplayName: The Guardian
+	FurosiaSoul.DisplayName: Daughteru?
+	FurosiaSpike.DisplayName: Infernace
+	InfernaceFire.DisplayName: Fire
+	InfernaceSoul.DisplayName: Husbando
+	InfernaceWifeSoul.DisplayName: Waifu
+	InfernalMonolith.DisplayName: Infernal Monolith
+	InfernalMonolithSpawn.DisplayName: IInfernal Monolith
+	InfernaceSpike.DisplayName: Infernace
+	InfernaceWave.DisplayName: Infernace
+	GreekFireHostile.DisplayName: Fire
+	ObsidiousFireCrystal.DisplayName: Obsidious Fire Crystal
+	ObsidiousFireCrystalStationary.DisplayName: Obsidious Fire Crystal
+	ObsidiousHumanRockOrbital.DisplayName: Obsidious
+	ObsidiousIceBeam.DisplayName: Obsidious
+	ObsidiousIceBeamCrystal.DisplayName: Obsidious
+	ObsidiousIceCrystalSpin.DisplayName: Obsidious
+	ObsidiousIceCrystal.DisplayName: Obsidious
+	ObsidiousRitual.DisplayName: Obsidious
+	ObsidiousBeam.DisplayName: Obsidious
+	ObsidiousFireBeam.DisplayName: Obsidious
+	ObsidiousFirePortal.DisplayName: Fire Portal
+	ObsidiousHandOverlay.DisplayName: Obsidious
+	ObsidiousHandTrail.DisplayName: Obsidious
+	ObsidiousHomingBall.DisplayName: Obsidious Homing Ball
+	ObsidiousIceLaser.DisplayName: Obsidious
+	ObsidiousRockLarge.DisplayName: Obsidious
+	ObsidiousRockNoCollide.DisplayName: Obsidious
+	ObsidiousRockOrbital.DisplayName: Obsidious
+	ObsidiousTargetCrystal.DisplayName: Obsidious
+	ObsidiousTargetCrystalCenter.DisplayName: Obsidious
+	SolarFragmentProj.DisplayName: Solar Fragment
+	FrigidBreath.DisplayName: Accursed Fire
+	FrostExplosion.DisplayName: Frost Explosion
+	HomingIce.DisplayName: Enchanted Ice
+	IceMagic.DisplayName: Ice Magic
+	IceRain.DisplayName: Ice Rain
+	PermaDashWarn.DisplayName: Permafrost
+	PermafrostIcicle.DisplayName: Mystic Icicle
+	PermafrostTP.DisplayName: Permafrost
+	RegarothBolt.DisplayName: Regaroth Bolt
+	RegarothBomb.DisplayName: Regaroth Bomb
+	RegarothPortal.DisplayName: Regaroth Portal
+	Napalm.DisplayName: Scourge Napalm
+	ScourgeBeam.DisplayName: Mini Fighter
+	ScourgeBullet.DisplayName: Scourge Bullet
+	ScourgeHomingRocket.DisplayName: Homing Rocket
+	VolcanicBoom.DisplayName: Volcanic Boom
+	VolcanicDebris.DisplayName: Volcanox
+	VolcanicDemon.DisplayName: Volcanic Demon
+	VolcanoxBlast.DisplayName: Volcanox
+	VolcanoxBolt.DisplayName: Volcanox
+	VolcanoxExplosion.DisplayName: Explosion
+	CrystallineKunai.DisplayName: Crystalline Kunai
+	BloodshotP.DisplayName: Bloodshot
+	Worm.DisplayName: Worm
+	SoulswordSoul.DisplayName: Soulsword
+	SoulswordSoul2.DisplayName: Soulsword
+	NihongoPoint.DisplayName: Nihongo
+	NihongoP.DisplayName: Nihongo
+	ForeverBolt.DisplayName: Forever Bolt
+	ThickSmoke.DisplayName: Discord Toxin
+	SearingArrow.DisplayName: Searing Arrow
+	MasterSwordWave.DisplayName: Master Sword
+	GladiolusTip.DisplayName: Gladiolus
+	Gladiolus.DisplayName: Gladiolus
+	MjolnirP.DisplayName: Mjolnir
+	PoseidonsTridentP.DisplayName: Poseidons Trident
+	IzarisShard.DisplayName: Izaris' Shard
+	KirveinShard.DisplayName: Kirvein's Shard
+	KrecheusShard.DisplayName: Krecheus' Shard
+	XernonShard.DisplayName: Xernon's Shard
+	KirveinArrow.DisplayName: Kirvein
+	KirveinCrystalFragment.DisplayName: Kirvein
+	KirveinExplosion.DisplayName: Kirvein
+	KirveinExplosiveArrow.DisplayName: Kirvein
+	KirveinFragCrystal.DisplayName: Kirvein
+	KrecheusBlade.DisplayName: Krecheus
+	KrecheusBolt.DisplayName: Krecheus
+	KrecheusCircle.DisplayName: Krecheus
+	KrecheusPortal.DisplayName: Krecheus
+	KrecheusSide.DisplayName: Krecheus
+	KrecheusSpike.DisplayName: Krecheus
+	XernonBolt.DisplayName: Xernon
+	XernonBoltExplosive.DisplayName: Xernon
+	XernonBoltHoming.DisplayName: Xernon Bolt Homing
+	XernonBoltSuper.DisplayName: Xernon
+	XernonCrystal.DisplayName: Xernon
+	XernonExplosion.DisplayName: Xernon
+	CreditsStarter.DisplayName: Credits-triggering 'P
+	ShardBase.DisplayName: Shard Base
+	Lightbeam.DisplayName: Lightbeam
+	DeathShockwave.DisplayName: Death Shockwave
+	CrystallineShardHoming.DisplayName: Ancient Amalgamate
+	CrystallineShard.DisplayName: Ancient Amalgamate
+	CrystallineKunaiHostileNG.DisplayName: Ancient Amalgamate
+	CrystallineKunaiHostileExplosive.DisplayName: Ancient Amalgamate
+	CrystalFlower.DisplayName: Crystal Flower
+	CrystalCluster.DisplayName: Crystal Cluster
+	AncientProjectionSwirl2.DisplayName: Ancient Projection
+	AncientProjectionSwirl.DisplayName: Ancient Projection
+	AncientProjection.DisplayName: Ancient Projection
+	AAHandOverlay.DisplayName: Ancient Amalgamate
+	RadiantMasterDeathExplosion.DisplayName: Radiant Master Death Explosion
+	ShadeWyrmBolt.DisplayName: Shade Wyrm Bolt
+	RavenPrince.DisplayName: Raven
+	PrinceStrike.DisplayName: Prince Strike
+	PrinceRain.DisplayName: Prince Rain
+	PrinceAura.DisplayName: Prince Aura
+	AeroflakExplosion.DisplayName: Explosion
+	AeroflakP.DisplayName: Star
+	ArmageddonBlade.DisplayName: Armageddon
+	DiscordantToxin.DisplayName: Discord Toxin
+	DiscordantBolt.DisplayName: Discordant Bolt
+	BugToxin.DisplayName: BugToxin
+	BugBasherP.DisplayName: Mjolnir
+	NeovirtuoShieldSwirl2.DisplayName: Neovirtuo
+	NeovirtuoShieldSwirl.DisplayName: Neovirtuo
+	NeovirtuoShieldBase.DisplayName: Neovirtuo
+	ViridiumLightningPassive.DisplayName: Lightning
+	ViridiumLightning.DisplayName: Viridium Lightning
+	ViridiumExplosion.DisplayName: Explosion
+	TimeRocket.DisplayName: Time Rocket
+	TimecleaverRound.DisplayName: Timecleaver Round
+	BioLightning.DisplayName: Bio Lightning
+	ChamchamRat.DisplayName: Chamcham Rat
+	WyvernBody.DisplayName: Worm
+	WyvernHead.DisplayName: Worm
+	WyvernTail.DisplayName: Worm
+	PoisonFire.DisplayName: Cremated Chaos
+	SWRLRocket.DisplayName: Rocket
+	EoiteWave.DisplayName: EoiteWave
+	EoiteBlast.DisplayName: Eoite Blast
+	EoiteBeam2.DisplayName: Eoite Beam
+	EoiteBeam.DisplayName: Eoite Beam
+	DarknersScarfP.DisplayName: Darkners Scarf
+	StarLunarFragment.DisplayName: Wyvern Breath
+	StarLunar.DisplayName: Star
+	TheBeltP.DisplayName: Darkners Scarf
+	CoalescedBolt.DisplayName: Coalesced Bolt
+	CoalescedOrb.DisplayName: Coalesced Orb
+	GelticArrow.DisplayName: Geltic Arrow
+	Speedstar.DisplayName: Speedstar
+	AncientIchorFlagonP.DisplayName: Ancient Ichor Flagon
+	Sandball.DisplayName: Sandball
+	Shieldnado.DisplayName: Shieldnado
+	SandSpray.DisplayName: Sand Spray
+	Skysand.DisplayName: Skysand
+	Sandnado.DisplayName: Sandnado
+	SandySpearP.DisplayName: Sandy Spear
+	MiniatureSandstorm.DisplayName: Miniature Sandstorm
+	TheGritP.DisplayName: The Grit
+	AndromedaBase.DisplayName: AAndromeda
+	AndromedaBlast.DisplayName: Andromeda
+	AndromedaStar.DisplayName: Ancient Star
+	AndromedaSwirl.DisplayName: Andromeda
+	ElementalArrow.DisplayName: Elemental Arrow
+	ElementalBolt.DisplayName: Elemental Bolt
+	CosmicusP.DisplayName: Cosmicus 'P
+	ElementalBurst.DisplayName: Elemental Burst
+	EquinoxBase.DisplayName: Fireweaver
+	EquinoxSwirl.DisplayName: Fireweaver
+	FusionP.DisplayName: Void Inferno
+	FusionOrb6.DisplayName: Fusion
+	FusionOrb5.DisplayName: Fusion
+	FusionOrb4.DisplayName: Fusion
+	FusionOrb3.DisplayName: Fusion
+	FusionOrb2.DisplayName: Fusion
+	FusionOrb1.DisplayName: Fusion
+	PhantomHook.DisplayName: Phantom Hook
+	SingularityBeam.DisplayName: Singularity
+	SingularityBolt.DisplayName: Singularity
+	SingularityP.DisplayName: Singularity
+	ZenithOrb4.DisplayName: Zenith Orb4
+	ZenithOrb3.DisplayName: Zenith Orb3
+	ZenithOrb2.DisplayName: Zenith Orb2
+	ZenithOrb1.DisplayName: Zenith Orb1
+	ZenithBeam4.DisplayName: Zenith Beam4
+	ZenithBeam3.DisplayName: Zenith Beam3
+	ZenithBeam2.DisplayName: Zenith Beam2
+	ZenithBeam1.DisplayName: Zenith Beam1
+	ValkyrieChain.DisplayName: Valkyrie Chain
+	VoxusP.DisplayName: Voxus
+	Voxus4.DisplayName: Voxus
+	Voxus3.DisplayName: Voxus
+	Voxus2.DisplayName: Voxus
+	Voxus1.DisplayName: Voxus
+	ValkyrieBolt.DisplayName: The Valkyrie
+	RainbowExplosion.DisplayName: Explosion
+	DragonFire.DisplayName: Dragon's Breath
+	FireBall.DisplayName: Fire Ball
+	FireKnifeBolt.DisplayName: Fire Bolt
+	FireKnife.DisplayName: Fire Knife
+	FireScytheProj.DisplayName: Scythe of Eternal Flame
+	FirestormShot.DisplayName: Firestorm
+	TriswordBlade.DisplayName: Blazing Trisword
+	TriswordSlash.DisplayName: Blazing Trisword
+	FirelashP.DisplayName: Firelash
+	FireBolt.DisplayName: Fire Bolt
+	FireElemental.DisplayName: Fire Elemental
+	InfernoLanceP.DisplayName: Inferno Lance 'P
+	FrostBladeP.DisplayName: Frost Blade 'P
+	IceAxe.DisplayName: Ice Axe
+	IceWaveCheck.DisplayName: Ice Wave Check
+	IceWave.DisplayName: Shockwave
+	FreezeBeam.DisplayName: Freeze Ray
+	FrostPulse.DisplayName: Frost Pulse
+	IcicleProj.DisplayName: Icicle Proj
+	GlacierBreakerP.DisplayName: Glacier Breaker
+	BlitzP.DisplayName: Glacial Blitz
+	YoyoSnowball.DisplayName: Glacial Blitz
+	SnowSpray.DisplayName: Snow Spray
+	Snowflake.DisplayName: Snowflake
+	IcicleShot.DisplayName: Ice Bolt
+	Icicle.DisplayName: Ice Spike
+	IceBlade.DisplayName: Ice Blade
+	SkyFuryRain.DisplayName: Rain
+	HappyCloud.DisplayName: Happy Little Cloud
+	CloudBolt.DisplayName: Lightning Bolt
+	Feather3.DisplayName: Feather
+	Feather2.DisplayName: Feather
+	Feather1.DisplayName: Feather
+	CloudBlast.DisplayName: Sky Fury
+	SkyScraperP.DisplayName: SkyScraper
+	FeatherFast.DisplayName: Feather Fast
+	TheLauncherBolt.DisplayName: The Launcher
+	TheLauncherP.DisplayName: The Launcher
+	WindfallFire.DisplayName: Windfall
+	ThorsHammerP.DisplayName: Storm Hammer
+	ThorLightning.DisplayName: Thors Hammer
+	AeroLightning.DisplayName: Lightning
+	CalamityP.DisplayName: Cataclysm
+	CataclysmP.DisplayName: Cataclysm
+	CataclysmTip.DisplayName: Cataclysm
+	CataclysmicLaser.DisplayName: Cataclysmic Laser
+	VoidBlast.DisplayName: Void Blast
+	CrimsonSkyLaser.DisplayName: Crimson Sky
+	VoidArrow.DisplayName: Void Arrow
+	ScourgeFire.DisplayName: Scourge Fire
+	VoidTentacle.DisplayName: Void Tentacle
+	TheEyeP.DisplayName: The Eye Of Annihilation
+	AbyssCultistBolt.DisplayName: Abyss Cultist
+	AbyssCultist.DisplayName: Abyss Cultist
+	VoidSwordProj.DisplayName: Holocaust
+	DukeChakramProj.DisplayName: Chakram of the Duke
+	TheUrchinUrchin.DisplayName: The Urchin
+	TheUrchinSpike.DisplayName: The Urchin Spike
+	TheUrchinP.DisplayName: The Urchin
+	WatershotP.DisplayName: Watershot
+	WaterSwordP.DisplayName: Forever Tide
+	WaterYoyoWater.DisplayName: Armageddon
+	WaterYoyoP.DisplayName: Aqua Marine
+	GemLaser.DisplayName: Gem Laser
+	GemRay.DisplayName: Gem Ray
+	GemLaserHoming.DisplayName: Gem Laser
+	InfinityFireTentacle.DisplayName: Fire Tentacle
+	InfinityFireball.DisplayName: Fireball
+	InfinityBubble.DisplayName: Bubble
+	FirePortal.DisplayName: Fire Portal
+	DesertCrystal.DisplayName: Desert Crystal
+	BlightedBulletP.DisplayName: Blighted Bullet
+	BlightCloud.DisplayName: Blight Cloud
+	DeterioratorKnife.DisplayName: Fire Knife
+	CorroderMinion.DisplayName: Energy Spirit
+	HarvesterScythe.DisplayName: Harvester
+	CorroderSpit.DisplayName: Corroder Spit
+	BlightRing.DisplayName: Blight Ring
+	BlightRang.DisplayName: Blight Rang
+	CarapaceSlicerP.DisplayName: Carapace Slicer 'P
+	CarapaceSlice.DisplayName: Carapace Slice
+	CarapaceShard.DisplayName: Carapace Shard
+	CarapaceBall.DisplayName: Carapace Ball
+	BlossomSpore.DisplayName: Blossom Spore
+	FlowerPowerProj.DisplayName: Petal
+	PetalPikeStem.DisplayName: Petal Pike
+	PetalPikeTip.DisplayName: Petal Pike
+	PetalPikeP.DisplayName: Petal Pike
+	BlossomBoomerP.DisplayName: Blossom Boomer
+	BudKunaiP.DisplayName: Bud Kunai
+	DrakoniteKnifeP.DisplayName: DrakoniteKnife
+	DrakoniteFireball.DisplayName: Drakonite Fireball
+	DrakoniteEruption.DisplayName: Drakonite Eruption
+	DragonBladeBlast.DisplayName: Dragon Blade Blast
+	DrakoniteArrow.DisplayName: Drakonite Arrow
+	DragonEmberBall.DisplayName: Dragon Ember Ball
+	DragonEmberSeeker.DisplayName: Dragon Ember Seeker
+	DragonFangShadow.DisplayName: Dragon Fang Shadow
+	DragonfireBullet.DisplayName: Dragonfire Bullet
+	DragonTalonBall.DisplayName: Dragon Talon Ball
+	DrakoniteDrill.DisplayName: Drakonite Drill
+	MiniDragon.DisplayName: Mini Dragon
+	DragonFangP.DisplayName: Dragon Fang
+	ManashardWhipP.DisplayName: Manashard Whip
+	ManaBolt.DisplayName: Mana Bolt
+	ManaRound.DisplayName: Mana Round
+	Manashatter.DisplayName: Manaspike
+	Manaspike.DisplayName: Manaspike
+	ManashardPikeP.DisplayName: Manashard Pike
+	ManashardDaggerP.DisplayName: Manashard Dagger
+	WyvernBreath1.DisplayName: Wyvern Breath
+	WyvernBreath2.DisplayName: Wyvern Breath
+	MeteoricFireball.DisplayName: Meteoric Fireball
+	MeteoricBolt.DisplayName: Meteoric Bolt
+	SpaceWand.DisplayName: Space Wand
+	DecayP.DisplayName: Decay
+	NecrosisP.DisplayName: Necrosis
+	MortemiteWave.DisplayName: Mortemite Wave
+	MortemiteFlames.DisplayName: Mortemite Flames
+	MortemiteBlade.DisplayName: Mortemite Blade
+	BabyPuffSpike.DisplayName: Baby Puff Spike
+	BabyPuff.DisplayName: Baby Puff
+	PuffSpike.DisplayName: Puff Spike
+	PutridArrow.DisplayName: Putrid Arrow
+	BlightfireSpawner.DisplayName: Blightfire Spawner
+	WretchedStaffHeld.DisplayName: Wretched Staff Held
+	PutridVomit.DisplayName: Putrid Vomit
+	PutridRipper.DisplayName: Putrid Ripper
+	PutridGoop.DisplayName: Putrid Goop
+	PutridSkull.DisplayName: Putrid Skull
+	PutridSpike.DisplayName: Putrid Spike
+	PutridTrail.DisplayName: Putrid Trail
+	FetidBladeP.DisplayName: Energy Fork
+	RadiantBeam.DisplayName: Radiant Beam
+	GlobuleMinionSmall.DisplayName: Starlight Globule
+	GlobuleMinion.DisplayName: Starlight Globule
+	FrostMine.DisplayName: Frost Mine
+	RadiantBeamFocused.DisplayName: Radiant Beam
+	RadiantGlobule.DisplayName: Radiant Globule
+	RadiantKatanaSlash.DisplayName: Radiant Katana
+	RadiantKatanaStar.DisplayName: Radiant Star
+	RadiantStarMine.DisplayName: Radiant Star
+	RadiantStarMortar.DisplayName: Radiant Star
+	RadiantStarSmall.DisplayName: Radiant Star
+	RadiantStarThrown.DisplayName: Radiant Star
+	RadiantStar.DisplayName: Sparkle
+	StellarPortal.DisplayName: Stellar Portal
+	StellarMeteor.DisplayName: Stellar Meteor
+	StellariumBolt2.DisplayName: Stellarium Scepter
+	StellariumBolt.DisplayName: Stellarium Scepter
+	StellarArrow.DisplayName: Stellar Arrow
+	SuctionArrow.DisplayName: Suction Arrow
+	ToyRobot.DisplayName: Toy Robot
+	PuzzlePiece.DisplayName: Charge Rifle
+	ChaosTomatoP.DisplayName: Chaos Tomato
+	TomatoP.DisplayName: Tomato
+	AncientStellate.DisplayName: Ancient Stellate
+	CelestialWatcher.DisplayName: Celestial Watcher
+	LilOrange.DisplayName: Lil Orange
+	TurboDoge.DisplayName: Turbo Doge
+	VoidCrawler.DisplayName: Void Crawler
+	WOKE.DisplayName: WOKE
+	AutoDrillBeam.DisplayName: Dubstep Beam
+	EscapedChlorobyte.DisplayName: Escaped Chlorobyte
+	Blank.DisplayName: Blank
+	ElectricBolt.DisplayName: Electric Bolt
+	RifleSentry.DisplayName: Rifle Sentry
+	ZapMasterLightning.DisplayName: Strange Ukulele
+	PorterP.DisplayName: Porter
+	PlasmaThrowerBeam.DisplayName: Purge Beam
+	FizzlerP2.DisplayName: Fizzler
+	FizzlerP.DisplayName: Fizzler
+	GrowinatorP.DisplayName: Growinator
+	ImbalancerLightning.DisplayName: Strange Ukulele
+	ImbalancerMine.DisplayName: Imbalancer
+	ShrinkinatorP.DisplayName: Shrinkinator
+	NapalmCannonP.DisplayName: Napalm Cannon
+	DubstepBeam.DisplayName: Dubstep Beam
+	DubstepGunHeld.DisplayName: The Destroyer
+	DubstepPulse.DisplayName: Dubstep Pulse
+	DubstepWave.DisplayName: Dubstep
+	MatrixLaser.DisplayName: Matrix Laser
+	Particles.DisplayName: Particles
+	MatterManipulator.DisplayName: Matter Manipulator
+	ScrapplingHookP.DisplayName: Scrappling Hook
+	CrimsonShadeHoming.DisplayName: Crimson Shade Homing
+	CrimsonShadeP.DisplayName: Crimson Shade 'P
+	LifesLamentAxe.DisplayName: Lifes Lament Axe
+	BabyShadeWyrmBody.DisplayName: Baby Shade Wyrm Body
+	CastersCurseBoltBase.DisplayName: Casters Curse Bolt Base
+	CastersCurseBoltSwirl.DisplayName: Casters Curse Bolt Swirl
+	BabyShadeWyrmTail.DisplayName: Baby Shade Wyrm Tail
+	BlinkrootDirt.DisplayName: Blinkroot
+	DaybloomSun.DisplayName: Daybloom
+	DeathweedBall.DisplayName: Deathweed
+	FireblossomBall.DisplayName: Fireblossom
+	MoonglowLight.DisplayName: Moonglow
+	ShiverthornIcicle.DisplayName: Shiverthorn
+	WaterleafBall.DisplayName: Waterleaf
+	AdamantiteLaser.DisplayName: Adamantite Laser
+	CobaltScythe.DisplayName: Cobalt Scythe
+	MythrilBomb.DisplayName: Mythril Bomb
+	MythrilSpike.DisplayName: Mythril Bomb
+	OrichalcumPetal.DisplayName: Orichalcum Petal
+	PalladiumSpark.DisplayName: Palladium Spark
+	TitaniumSpike.DisplayName: Titanium Slice
+	StrangePlantBall6.DisplayName: Strange Orb
+	StrangePlantBall5.DisplayName: Strange Orb
+	StrangePlantBall4.DisplayName: Strange Orb
+	StrangePlantBall3.DisplayName: Strange Orb
+	StrangePlantBall2.DisplayName: Strange Orb
+	StrangePlantBall1.DisplayName: Strange Orb
+	FireballP.DisplayName: Fireball
+	PoltercastP.DisplayName: Poltercast
+	StingerP.DisplayName: Stinger
+	Barrier.DisplayName: Barrier
+	CursedBall.DisplayName: Cursed Ball
+	CursedFlame.DisplayName: Cursed Flame
+	DeimosAsteroid.DisplayName: Deimos Asteroid
+	EarthcrusherProj.DisplayName: Earthcrusher Proj
+	EarthcrusherSwirl.DisplayName: Earthcrusher Swirl
+	FireweaverProj.DisplayName: Fireweaver Proj
+	FireweaverSwirl.DisplayName: Fireweaver Swirl
+	GraniteEnergyShot.DisplayName: Granite Energy Shot
+	ImpishFireball.DisplayName: Impish Fireball
+	ImpishWave.DisplayName: Impish Wave
+	NeptuneRay.DisplayName: Neptune Ray
+	OceansSeashell.DisplayName: Oceans Seashell
+	SansNote.DisplayName: Sans Note
+	ThundersoulBolt.DisplayName: Thundersoul Bolt
+	ThundersoulBoltMinor.DisplayName: Thundersoul Bolt Minor
+	WarhornP.DisplayName: Warhorn
+	Nightball.DisplayName: Nightfall
+	Nightball2.DisplayName: Deathwarp
+	EarthP.DisplayName: Earth
+	JupiterGasOrbit.DisplayName: Jupiter
+	JupiterP.DisplayName: Jupiter
+	MarsP.DisplayName: Mars
+	MercuryP.DisplayName: Mercury
+	NeptuneP.DisplayName: Neptune
+	NeptuneWaterball.DisplayName: Neptune
+	SaturnP.DisplayName: Saturn
+	SaturnRing.DisplayName: Saturn Ring
+	SolOrbit.DisplayName: Sol
+	SolP.DisplayName: Sol
+	UranusP.DisplayName: Ur Anus
+	VenusP.DisplayName: Venus
+	BloodchainP.DisplayName: Bloodchain
+	FlarelashP.DisplayName: Flarelash
+	HallowedRadianceP.DisplayName: Hallowed Radiance
+	NightbreakerBall.DisplayName: Nightbreaker
+	NightbreakerBlade.DisplayName: Nightbreaker
+	NightbreakerP.DisplayName: Nightbreaker
+	ShadowsGraspP.DisplayName: Shadows Grasp
+	TerraBelterP.DisplayName: Terra Belter
+	TerraBolt.DisplayName: Belter
+	TerraOrb.DisplayName: Terra Orb
+	TheSpineP.DisplayName: The Spine
+	TheTrueSpineP.DisplayName: The True Spine
+	TheVineP.DisplayName: The Vine
+	TrueHallowedRadianceP.DisplayName: True Hallowed Radiance
+	TrueHallowedRadianceScythe.DisplayName: True Hallowed Radiance Scythe
+	TrueNightbreakerP.DisplayName: True Nightbreaker
+	TrueSpineBall.DisplayName: True Spine Ball
+	AstralTear.DisplayName: Astral Tear
+	AurumBall.DisplayName: Aurum Ball
+	BlazeguardWave.DisplayName: Blazeguard Wave
+	BlazeguardWave2.DisplayName: Blazeguard Wave2
+	BubbleBlue.DisplayName: Bubble
+	BubbleGreen.DisplayName: Bubble
+	BubblePurple.DisplayName: Bubble
+	BubbleRed.DisplayName: Bubble
+	ChaosFireball.DisplayName: Chaos Fireball
+	DeathwarpLaser.DisplayName: Deathwarp Laser
+	DeathwarpSpinner.DisplayName: Deathwarp Spinner
+	EyeOfTheStormBall.DisplayName: Eye Of The Storm Ball
+	EyeOfTheStormP.DisplayName: Eye Of The Storm
+	FistsOfFuryFire.DisplayName: Fists Of Fury Fire
+	FistsOfFuryP.DisplayName: Fists Of Fury
+	DyingAzureP.DisplayName: Dying Azure
+	HungryFlailP.DisplayName: Hungry Flail
+	KindleCrusherP.DisplayName: Kindle Crusher
+	KindleFireball.DisplayName: Kindle Fireball
+	GalacticaBlade.DisplayName: Galactica Blade
+	GalacticaBlade2.DisplayName: Galactica Blade2
+	GustStrikeCloud.DisplayName: Gust Strike Cloud
+	GustStrikeLightning.DisplayName: Gust Strike Lightning
+	LightningBolt.DisplayName: Lightning Bolt
+	ReignWave.DisplayName: Reign Wave
+	SolusKunai.DisplayName: Solus Kunai
+	DeathwarpP.DisplayName: Deathwarp
+	UniverseBall.DisplayName: Universe Ball
+	WandHeld.DisplayName: Wand Held
+	EternityArrow.DisplayName: Eternity Arrow
+	AstralRound.DisplayName: Astral Round
+	AstralStar.DisplayName: Star
+	BabySharkP.DisplayName: Baby Shark
+	EternityBeam.DisplayName: Eternity Beam
+	ExplosiveBolt.DisplayName: Explosive Bolt
+	ShotstormDartStuck.DisplayName: Shotstorm Dart Stuck
+	ShotstormDart.DisplayName: Shotstorm Dart
+	PrismaticFire.DisplayName: Prismatic Fire
+	MegaRocket.DisplayName: Mega Rocket
+	HomingRocket.DisplayName: Homing Rocket
+	HallowedRocket.DisplayName: Hallowed Rocket
+	Deathwatcher.DisplayName: Deathwatcher
+	DeathwatcherBolt.DisplayName: Void Blast
+	EnchantedTrio0.DisplayName: Enchanted Trio
+	EnchantedTrio1.DisplayName: Enchanted Trio
+	EnchantedTrio2.DisplayName: Enchanted Trio
+	EnergyStorm.DisplayName: Energy Storm
+	ExlitureEye.DisplayName: Eye
+	KirovAirship.DisplayName: Kirov Airship
+	LightningBlast.DisplayName: Lightning
+	Soulflames.DisplayName: Soul Flames
+	SoulSkull.DisplayName: Soul Skull
+	WokeBeam.DisplayName: Woke Agenda
+	WokeMinion.DisplayName: Celestial Watcher
+	ThrowableBookP.DisplayName: Throwable Book
+	ShadeOfLightP.DisplayName: Shade Of Light
+	ShadeOfLightBall.DisplayName: Shade Of Light
+	FrayedFeather.DisplayName: Frayed Feather
+	DictionaryP.DisplayName: Dictionary
+	DanceOfDarknessShade.DisplayName: Dance Of Darkness
+	DanceOfDarknessP.DisplayName: Dance Of Darkness
+	BalladOfBalanceP.DisplayName: Ballad Of Balance
+	GiantGnome.DisplayName: Giant Gnome
+	GnomeBolt.DisplayName: Astral Round
+	GnomeSurfer.DisplayName: Gnome Surfer
+	CorruptPenguin.DisplayName: Corrupt Penguin
+	AccursedBreath.DisplayName: Accursed Fire
+	ImmolatorBall.DisplayName: Immolator Blast
+	ImmolatorBolt.DisplayName: Immolator Particle
+	ReaverGlob.DisplayName: Reaver Glob
+	VoidKnightOrb.DisplayName: Void Knight Orb
+	ZergFireball.DisplayName: Zerg Caster
+	WarriorSlice.DisplayName: Radiant Warrior
+	StoneerP.DisplayName: Stoneer Spike
+	MagmaSlimeMagma.DisplayName: Magma Slime Magma
+	DragonBatFireball.DisplayName: Dragon Bat Fireball
+	DragonSlimeSpike.DisplayName: Dragon Slime Spike
+	DrakoniteElementalBeam.DisplayName: Drakonic Beam
+	StellarEntityOrbital.DisplayName: Stellar Entity
+	InfernaceGuardianProj.DisplayName: Infernal Spell
+	ToadTongue.DisplayName: Giant Toad
+	ToadTongueTip.DisplayName: Giant Toad
+	SuperStinkPotion.DisplayName: Super Stink Potion
+}
+
+Configs: {
+	Config: {
+		DisplayName: Elements Awoken Config
+		screenshakeDisabled.Tooltip: ""
+	}
+}
+
+Config: {
+	ElementsAwokenConfig: Elements Awoken Config
+	AlchemistPotionShop: Enable Alchemist's Potion Shop
+	EnablesShop: Enables the Alchemist's potion shop, replacing the potion materials shop
+	ResourceBars: Resource Bars
+	TurnsUI: Turns the Energy and Insanity UI into bars
+	DisableLabs: Disable Lab Generation
+	StopsLabs: Stops Labs from generating underground during the world generation
+	DisableBoss: Disable Boss Prompts
+	Disablestheeffects: Disables the negative effects that happen in the world 30 minutes after beating a boss
+	ItemChanges: Disable Vanilla Item Changes
+	vanillaitems: Disables all changes to vanilla items, like new recipes for previously uncraftable items
+	Screenshake: Disable Screenshake
+	LowDust: Low Dust Mode
+	Reduces: Reduces the amount of dust created by NPCs, projectiles and more (WARNING: only applied to certain objects)
+	EnterDebug: Enter Debug Mode
+	Shows: Shows information for testing (Mainly for Mod Devs)
+	RecipeBrows: Recipe Browser
+	RecipeBrowsTooltips: Shows hints for some items
+}
+
+Biomes: {
+	EABiomes: {
+		DisplayName: EA Biomes
+		TownNPCDialogueName: the EA Biomes
+	}
+
+	Emptiness: {
+		DisplayName: Void
+		TownNPCDialogueName: the Void
+	}
+
+	RadiantRainBiome: {
+		TownNPCDialogueName: Radiant Rain
+		DisplayName: Radiant Rain
+	}
+
+	DOTVBiome: {
+		DisplayName: Dawn of the Void
+		TownNPCDialogueName: Dawn of the Void
+	}
+}
+
+Keybinds: {
+	Neovirtuo.DisplayName: Neovirtuo
+	"Special Ability.DisplayName": Special Ability
+	"Armor Ability.DisplayName": Armor Ability
+	"Secondary Dash.DisplayName": Secondary Dash
+	"Armor Set Bonus ToolTips.DisplayName": Armor Set Bonus Tooltips
+}
+
+Bestiary: {
+	Bosses: {
+		VoidLeviathan: A serpentine beast from the depths of the Void, feared across all of Terraria. It hungers for a soul strong enough to reinforce its power even further...
+		ElderShadeWyrm: An elder specimen of the Shade Wyrms, serpents from the depths of the Void, which have been granted enough time to evolve and grow to such enormous sizes and unpredictable power.
+		RadiantMaster: What remained of the magicians succumbed to the relevations of the Radiant Rain now are mere soulless shells of what they used to be, existing for the sole purpose of protecting the Rain's further existence.
+		WastelandBoss: Victim of an experiment gone terribly wrong, this scorpion was supposed to be a living weapon, able to smite all and everything in its path. The energy injected in its body began to take control of its brain, making the scorpion lose its mind.
+		TheEye: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Eye is imbued with the Guardian's mind and voice.
+		AncientWyrm: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Wyrm represents the Guardian's destructive nature.
+		AqueousBoss: Now merely a shell of her former self, Aqueous once was one of the mightiest warriors to ever live in the Terran ocean, serving to the crown of the Sea King, the mutant known as Duke Fishron, before its murder. Rest assured, she will do whatever it takes to strike down whoever had slain her King...
+		AzanaEyeBestiary: An unfortunate scientist, desperate to find a key to something powerful enough to end the Abraxis' tyrannical reign over Terraria, who discovered the Chaotron particles. This led to the creation of a full mechanical suit powered by these particles, which eventually consumed its creator.
+		AzanaBestiary: An unfortunate scientist, desperate to find a key to something powerful enough to end the Abraxis' tyrannical reign over Terraria, who discovered the Chaotron particles. This led to the creation of a full mechanical suit powered by these particles, which eventually consumed its creator.
+		CosmicObserverBestiary: After the ancient energies were released with the fall of a flesh abomination in the Underworld, some of this energy imbued the stones flying in the atmosphere, granting life to the Cosmic Observers.
+		TheGuardian: The leader of the ancient species of Drakons, emerging from the vast depths of Terraria, who has been split into two parts through great pressure from an energized vessel created by Lihzahrds during their battle.
+		TheGuardianFly: The leader of the ancient species of Drakons, emerging from the vast depths of Terraria, who has been split into two parts through great pressure from an energized vessel created by Lihzahrds during their battle.
+		InfernaceBestiary: In the times long past, there was a civilization in the Depths of the Underworld, guarded by Infernace and his daughter, Furosia. However, while the civilization was razed to the ground aeons ago, Infernace still keeps his duty, despite being severely weakened.
+		ObsidiousBoss: Originally an average mortal, Obsidious was a seeker of artifacts known to be mostly motivated by greed. In the end, his own greed, however, spelled doom upon him, when an ancient gemstone he coveted so much eventually caused him to get forever bound in stone.
+		Permafrost: Virtually unrivalved spirit of frost and ice, Permafrost ruled his kingdom kindheartedly... Until one fateful day, when a race from the depths of the Void has invaded the Tundra, demolishing everything and everyone on their path, annihilating everything that Permafrost held dear, turning him vengeful.
+		Regaroth: Believed to be the manifestation of lightning, Regaroth was created using essences of an entire army of Sky Elementals, with Abraxis empowering him even further, shaping it into the form it has now, a guardian of the upper layers of the atmosphere.
+		ScourgeFighterBoss: Machine created by a team of Martian scientists who hoped to create their own equivalent of the mechanical beasts, in order to help them in the invasion of the Terrarian lands. Little did they know what could it eventually lead to...
+		ToySlime: Originally created to be a harmless children's toy, it gained sentience and began wreaking havoc accross the land, thanks to the malevolent energies of the Frost Moon that rose at one fateful night.
+		VolcanoxBoss: Ancient god of the Underworld, a primordial manifestation of fire, ash and magma, Volcanox created many of the terrors within the depths, such as the Wall of Flesh and Infernace.
+		IzarisBoss: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
+		Kirvein: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
+		Krecheus: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
+		Xernon: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
+		AncientAmalgam: Thanks to the hero who had slain many of the great beasts of these lands, the Ancients are now fused again, stronger than ever before and hungering to seal the dark fate of not only Terraria, but the universe itself, becoming the unquestionable gods of this world...
+		ShadeWyrm: Silent, albeit deadly, these serpents from the depths of the Void are one of the Dawn's main weapons. Given enough time, these beings may evolve into something much more powerful and intimidating...
+	}
+
+	Enemies: {
+		Scorpion: This specimen of already unusually venomous desert scorpions was used in an experiment in order to turn it into a living weapon. Unleashing one in the sands of the desert might have detrimental consequences...
+		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
+		Furosia: Daughter of the Infernace, once serving as a guardian of the civilization residing in the Depths, which has been razed to the ground many eons ago.
+		RegarothMinion: Juvenile thunder serpent summoned by Regaroth to aid it in the battle. Do not be fooled by its sizes, for it can still be dangerous.
+		MiniToySlime: Smaller version of a toy slime, which has broken away from a bigger one. It might still be dangerous despite its smaller size.
+		Firefly: Blazing with unrestrained rage, this spirit with a shape reminiscent of a giant firefly will give it all to raze anyone and anything its master will command it to.
+		AbyssSkull: Ambushers of the Dawn of the Void, furiously charging at any living being in their sight. They have their smaller brethren constantly orbiting them.
+		AbyssSkullette: Tiny skulls orbiting their bigger brethren. Do not underestimate them simply because of their size, for they can outnumber anyone unprepared.
+		AccursedFlier: Atrocious flying abominations, serving as an air support for other beasts of the Dawn. They have a reservoir of unknown fluid in their abdomens...
+		DimensionalHive: Unlike all other Dawn's creatures, these hives don't attack on their own, but instead create an invisible aura that heals the Dawn's other hellspawns that are close enough to it.
+		Immolator: Flying constructs born in the Void, having an eye with excellent perception capabilities in the middle of their frame that helps them easily track down any target.
+		ReaverSlime: The Void has to offer a very wide array of monstrosities, and the slimes aren't the exception too. Needless to say, they are far more deadly than the other specimen of slimes...
+		VoidKnight: Mindless rampagers of the Dawn, being able to conjure Void orbs around them as an additional mean of protection.
+		VoidFly: Due their tiny sizes, these twisted insects rely exclusively on their sheer numbers, hoping to overwhelm their target.
+		ZergCaster: Akin to all other beasts emerged from the Void, it is unknown what exactly is the source of their immense abilities.
+		EtherealHunter: Terrifying wraiths from the dephts of the Void that will not leave any living creature safe from their deadly grip.
+		VoidCrawler: Giant, many-legged spider-like creature that has a sack containing unknown liquid on its back.
+		VoidGolem: Gargantuan brutes clad in a tough armor of Void's darkstone that smite everything that gets in their way. Their steps are so heavy that make the ground beneath them tremble as they move.
+		VoidElemental: Dawn of the Void has to offer its own type of Elementals. However, unlike all other Elementals inhabiting Terraria, it is unknown how exactly these have emerged.
+		RadiantWarrior: Mere mortals with will weak enough were one of the first beings to lose their minds and succumb to the Radiant Rain, which granted them immense abilities, but in return transformed them into its mindless slaves.
+		SparklingSlime: Slimes were no exception to the revelations of the Radiant Rain, despite them not having any mind or will. Their bodies now consist of nothing but radiant powder with unimaginable potential.
+		StarlightGlobule: Odd creature serving as a host to few smaller entities that will erupt from it, once the host is dead. Rather than being creatures assimilated by the Radiant Rain, they seem to be born from the Rain itself.
+		AllKnower: Peculiar burrowing creatures, possessing great strength granted to them by the Radiant Rain, which also twisted them beyond comprehension.
+		StellarStarfish: Sentient blobs of radiant powder, shaped akin to the ocean's starfishes, these entities seem to be born entirely out of the essence of the Radiant Rain.
+		ArmoredTrencher: A cavern-dwelling worm of enormous sizes, clad in armor made of very tough scales, which seems to only have emerged after the fall of the false Cthulhu...
+		DesertElemental: A being born out of the arcane energies of the sun-scorched desert, bearing a resemblance to a fallen warrior of the arid wastes.
+		FireElemental: Fire Elemental - A restless spirit of the former inhabitant of the Underworld, roaming its ruins. They were sealed before, but once the Skeletron has fallen, they started to aimlessly roam the Underworld.
+		FrostElemental: Disturbed spirit of the everfrozen Tundra that will give a chilly greeting to anyone daring to set foot in these frozen lands.
+		SkyElemental: One of the many elementals, this one dwelling almost in the outer layers of the atmosphere, and will not hesitate to attack anyone they see as a threat.
+		WaterElemental: Water spirit born out of the magical energies of the Terran ocean, shaped akin to a warrior from a long-lost civilization that once lived there.
+		GiantVampireBat: With the ancient energies unleashed after the destruction of the ancient flesh amalgamation in the Underworld, vampire bats now can easily grow to enormous sizes, greatly increasing their deadliness.
+		InfernoSpirit: A wrathful spirit of a previous inhabitant of the Dungneon, it became stronger than ever before with the fall of the Lord of the Moon.
+		Pebleer: A tiny beetle, native to the Terrarian caverns. The shell on its back, resembling a pebble, helps it to blend with the surroundings, hiding itself from possible predators.
+		Stoneer: A tiny beetle, native to the Terrarian caverns. The shell on its back, resembling a stone, helps it to blend with the surroundings, hiding itself from possible predators.
+		DragonCharger: Powerful, blazing Drakonite-clad spirit that was unleashed after the destruction of an ancient flesh amalgamation in the Underworld.
+		GreaterDrakoniteGolem: Despite being significantly more poweful than the Dragon Warrior, essentially this is still a remnant of the long-dead warrior, being brought back to life by Drakonite and the ancient energies now too.
+		MagmaSlime: Now being a molten mix of lava and Drakonite, these slimes became dramatically more deadly and dangerous than ever before.
+		DragonBat: Once a common cavern bat, this one got infused with Drakonite many years ago, under conditions unknown. The Drakonite shards in its body seem to allow it to utilize fire magic, in the form of fireballs.
+		DragonSlime: One of the many creatures that under unclear circumstances got infused with Drakonite. This slime is covered in not only razor-sharp, but also blazing spikes, and getting hit with these is definitely going to hurt...
+		DragonWarrior: Remnants of an unknown warrior, brought back to life seemingly by Drakonite shards that stick out of its armor like thorns.
+		DrakoniteElemental: Unlike other cavern-dwelling creatures that were infused with Drakonite, the body of this one seems to consist solely of it.
+		FlyingJaw: While visually similar to the Man Eaters, inhabiting both surface and underground Jungle, these flying creatures do not seem to actually be their relatives.
+		PetalClasper: Spiders of these species, native to the Jungle, are a curious blend of flora and fauna. They bear a flower that emits a pleasant aroma on their backs.
+		GiantTick: Cryptic giant insect with many eyes. Its body is made of even more enigmatic purple dust you have never seen before.
+		MortemWalker: Enigmatic beast roving the lands. Upon dying it crumbles into purple dust which is as enigmatic as this creature itself.
+		SkyCrawler: One of the incomprehensible entities which have emerged after the fall of the Moon's great Lord. Whenever it's damaged, its body pours strange purple dust.
+		StellarBat: Peculiar winged creature, visually resembling a giant cavern bat. Its body seems to consist entirely out of a starborne metal...
+		StellarCenturion: A being of unknown origin, clad in armor bearing a striking resemlbance to an archaic armor worn by warriors of some forgotten civilization, the armor being forged entirely out of a bizarre stellar metal.
+		StellarEntity: Enigmatic entity shaped akin to an eye, covered in a tough shell made of the same metal as some other beings in the outer layers of the atmosphere.
+		GiantToad: Despite looking like a normal toad that can be encountered in abundance in the Jungle, something feels off about this one...
+		VampireBat: Close relative to the common cavern bat. However, the bites of the bats of this species can leech the lifeforce off the victim.
+		ChaosKnight: Another corpse of an unknown long-dead warrior, revived thanks to the chaotic forces which were unleashed upon the land again, after the destruction of the beast from the Void.
+		ChaosWraith: Raging spirit, born purely out of chaotic particles released once again upon the world, with the fall of a Void Leviathan.
+	}
+
+	TownNPCs: {
+		Storyteller: ???
+		Storyteller2: ???
+		Alchemist: A mysterious guest from a faraway land, knowing a lot about alchemy and botany. He will also gladly sell you all sorts of potions Terraria can offer.
+		Psychologist: Certified specialist who will help you keep your sanity in this insane world.
+	}
+
+	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
+}
+
+Ore: {
+	Voidite: The world has been cursed with Voidite...
+	Luminite: The world has been blessed with Luminite!
+}
+
+Nurse: {
+	Said: Sorry, I'm still preparing my stuff. Come back in
+	Said1: seconds
+}
+
+Tooltips: {
+	ItemEnergy: Uses
+	ItemEnergy1: energy
+	Awakened: Awakened
+	Youtuber: -Youtuber Item-
+	Developer: -Developer Item-
+	Artifact: -Artifact Item-
+	Donator: -Donator Item-
+	ElementalCapsule: couldn't withstand the power.
+	ElementalCapsule1: The forces of the world settle.
+	ElementalCapsule2: The forces of the world get twisted beyond imagination...
+	VoidbloodHeart: Your veins return to normal.
+	VoidbloodHeart1: Your veins turn black.
+	MysteriousPotion: It has a foul smell about it
+	MysteriousPotion1: Instant Health
+	MysteriousPotion2: Heals you for 20% of your total health
+	MysteriousPotion3: Instant Damage
+	MysteriousPotion4: Damages you for 20% of your total health
+	MysteriousPotion5: Toxic
+	MysteriousPotion6: Reduces your maximum health by 10%
+	MysteriousPotion7: Healthy
+	MysteriousPotion8: Increases your maximum health by 10%
+	MysteriousPotion9: Invincibility
+	MysteriousPotion10: Makes you invincible for 10 seconds
+	MysteriousPotion11: Intensity
+	MysteriousPotion12: Increases damage by 10%
+	MysteriousPotion13: Bright
+	MysteriousPotion14: Makes you release blinding light
+	MysteriousPotion15: Poison
+	MysteriousPotion16: Poisons you
+	MysteriousPotion17: Snail
+	MysteriousPotion18: Makes you move very slowly
+	MysteriousPotion19: Lightning
+	MysteriousPotion20: Makes you move at uncontrollable speeds
+	MysteriousPotion21: had a bad swig
+	MysteriousPotion22: Potion
+	# Не трогай HoneyCocoon!!!!
+	HoneyCocoon: <Special Ability Unbound>
+	HoneyCocoon1: Pressing the special ability key
+	HoneyCocoon2:
+		'''
+		will encase the player in a honey cocoon for 15 seconds
+		The cocoon can absorb up to 100 damage before breaking
+		Press <Special Ability Unbound> again to get out
+		Being in the cocoon prevents movement
+		1 minute cooldown
+		'''
+	DeathMirror: The reflection is still too dim...
+	DeathMirror1: seconds remain
+	Railgun: burnt their face off
+	Desolation: Wave
+	Desolation1: Charge
+	Desolation2: Disc
+	Desolation3: Rapid
+	VoidLeviathansAegis: <Dash Unbound>
+	VoidLeviathansAegis1: Life increased by 50
+	VoidLeviathansAegis2: When under half health, defense is increased by 5%
+	VoidLeviathansAegis3: Allows the player to perform a secondary dash using the
+	VoidLeviathansAegis4: key
+	VoidLeviathansAegis5: For 15 seconds after taking 500 total damage:
+	VoidLeviathansAegis6: 40% increased movement speed
+	VoidLeviathansAegis7: 20% increased damage
+	GiftOfTheArchaic: Press
+	GiftOfTheArchaic1:
+		'''
+		to encase the player in a crystal that knocks enemies away from the player and prevents damage
+		Hover over the item while equipped and press Ctrl + Key to rebind
+		'''
+	GreatLens: <Special Ability Unbound>
+	GreatLens1: Pressing the special ability key
+	GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
+	GreatLens3: If the player is hit by an enemy the damage is reflected to them
+	AqueousSummon: Time for your reign to end, murderer
+	InfernaceSummon: You arrive, at last.
+	RadiantRainSummon: The rain glistens with unknown magic...
+	SlimeRainSummon: A sticky drop appears on your shoulder.
+	ToySlimeClaw: <Special Ability Unbound>
+	ToySlimeClaw1: Allows the ability to slide down walls
+	ToySlimeClaw2: Pressing the special ability key
+	ToySlimeClaw3: key will throw slime at the cursor
+	ToySlimeClaw4: If it is thrown down, the player will get launched up into the air and throw multiple projectiles down
+	VoidEventSummon: It is too late to call upon the void...
+	VoidEventSummon1: You cannot intensify the void...
+	VoidEventSummon2: Your head is already filled with screams...
+	VoidEventSummon3: You feel a wave of cold rush over you...
+	VoidEventSummon4: Your head throbs...
+	VoidEventSummon5: The void retreats from the light
+	VoidEventSummon6: The shadows grow darker...
+	Betatest: --Debug item--
+	UndownerTerraria: Permafrost was killed:
+	AncientsSummon: I've waited centuries for this!
+	AncientsSummon1: Back for more?
+	AncientsSummon2: I could do this all day!
+	AncientsSummon3: You should have gone for the head...
+	AncientsSummon4: Really? Still trying?
+	AncientsSummon5: Give up already.
+	AncientsSummon6: Are you seriously gonna keep dying?
+	AncientsSummon7: As much fun slaying you is, there are better things to do with both our lives.
+	AncientsSummon8: Lunatic.
+	AncientsSummon9: I just don't think you are cut out to do this... Go find some other hobby.
+	AncientsSummon10: You bring me back to this awful land... Why?
+	EoitesWrath: Beams
+	EoitesWrath1: Blasts
+	SandstormStone: The sand storm settles...
+	SandstormStone1: The desert winds pick up!
+	TimeToken: You cant escape from the void
+	RainSigil: You dont yet have the power to dissipate the radiance...
+	RainSigil1: Clear
+	RainSigil2: Raining
+	InfinityStone: Your feeble body cannot contain the power of more than one infinity stone!
+	InfinityGauntlet: Desert
+	InfinityGauntlet1: Fire
+	InfinityGauntlet2: Sky
+	InfinityGauntlet3: Frost
+	InfinityGauntlet4: Water
+	InfinityGauntlet5: Void
+	InfinityGauntlet6:
+		'''
+		The forces of the elements combined...
+		Has the effects of all the infinity stones
+		<right> to switch modes
+		'''
+	InfinityGauntlet7: Desert: Rains desert shards
+	InfinityGauntlet8: Fire: Fires a fireball
+	InfinityGauntlet9: Sky: Teleport to a discovered location on the map
+	InfinityGauntlet10: Water: Turns projectiles into bubbles
+	InfinityGauntlet11: Frost: Summons a shield around the player
+	InfinityGauntlet12: Void: Kills half of all non boss monsters with under 10000 life
+	CreditsSetup: credits off
+	CreditsSetup1: credits on
+	Generator: Power Output: {0} energy every {1} seconds
+	Generator1: Inactive
+	Statues: You cant stack buff statues!
+	BoostDrive:
+		'''
+		Pressing the special ability key {0} will speed up the player for 5 seconds
+		Activating it will take consume energy
+		'''
+	GravityCore: Gravity: {0}%
+	GravityCore1: Enabled
+	GravityCore2: Disabled
+	GravityCore3: WARNING: At high gravity there may be undesired effects
+	HyperDrive:
+		'''
+		Pressing the special ability key {0} will greatly speed up the player for 5 seconds
+		WARNING: travelling at such high speeds can be damaging
+		Activating it will consume 150 energy
+		'''
+	BiofuelBurner: Produces {0} energy every {1} seconds
+	BiofuelBurner1: Fuel Type: {0}
+	BiofuelBurner2: Fuel: {0}
+	BiofuelBurner3: Empty
+	LifeforceBurner: Strength: {0}
+	LifeforceBurner1: boiled away
+	WindGenerator: Wind speed: {0}
+	WindGenerator1: Production Rate: 1 energy every {0} seconds
+}
+
+AccInfo: {
+	NEB: Nearby Evil Biomes
+	Nearby: nearby
+	BDPS: Buff Damage Per Second
+	BDPS1: buff damage per second
+	RainTime: Rain Time
+	SR: seconds remaining
+	Clear: Clear
+}
+
+Resurs: {
+	Sanity: Sanity
+	Energy: Energy
+	LifeFruit: "[c/c66760: Life Fruit]"
+	EmptyHeart: "[c/ab5b9b:  Empty Heart]"
+	ChaosHeart: "[c/5859a4: Chaos Heart]"
+	CompressorHeart: "[c/ffacb9: Compressor Heart]"
+	LunarStarMana: "[c/5f65c9: Lunar Star]"
+}
+
+SetBonus: {
+	SetBonusToolTips: Hold down the {0} to see the armor bonus set
+	CosmicalusVisor:
+		'''
+		Summons a cosmic ring to shoot at nearby enemies
+		Stops sanity from being drained in space
+		'''
+	VoidWalkersVisage:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	VoidWalkersHood:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	VoidWalkersHelm:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	VoidWalkersGreatmask:
+		'''
+		Press the armour ability key to activate psychosis aura
+		The psychosis aura confuses enemies and inflicts extinction curse
+		'''
+	EnergyWeaversHelm: You charge up energy and release it at nearby enemies
+	MechSetBonus:
+		'''
+		10% increased damage
+		35% increased movement speed
+		17% increased chance not to consume ammo
+		When you get hit, you release electrical arcs
+		'''
+	ForgedSetBonus:
+		'''
+		Double tap down to shackle yourself in place
+		Tap down again to fling yourself back to the center
+		'''
+	CrowsSetBonus:
+		'''
+		When an enemy is hit, green lightning strikes down from above them
+		The lightning heals the player
+		'''
+	EoitesSetBonus:
+		'''
+		15% increased magic damage
+		Damage reduced by a further 10%
+		'''
+	AwokenWoodSetBonus:
+		'''
+		Greatly increases life regeneration after being hit
+		Shoots leaves at nearby enemies
+		Enemies are less likely to target you
+		Double tap down to activate 'Life's Aura' which heals your team mates and friendly NPCs when inside
+		'''
+	FireDemonsSetBonus: Summons a demon to destroy your foes
+	GelticConquerorSetBonus:
+		'''
+		Increases jump height
+		Negates 75% of fall damage
+		You bounce when you land
+		Press down to stop bouncing- this will also not negate fall damage
+		'''
+	AridSetBonus: Allows weak levitation by holding jump
+	ElementalSetBonus:
+		'''
+		If you are killed, you are revived back to half health
+		45 second cooldown
+		'''
+	EmpyreanSetBonus: Storms brew around you
+	VoidSetBonus: All projectiles have a chance of healing you slightly
+	OceanicSetBonus: Taking more then 25 damage causes toxic water to spray
+	DragonmailGreathelmSetBonus:
+		'''
+		Melee attacks and projectiles inflict Dragonfire
+		Maximum life increased by 50
+		'''
+	DragonmailHoodSetBonus:
+		'''
+		Magic projectiles inflict Dragonfire
+		Magic damage increases as life lowers
+		'''
+	DragonmailMaskSetBonus:
+		'''
+		Minions inflict Dragonfire
+		Damage reduced with more minions
+		'''
+	DragonmailVisageSetBonus:
+		'''
+		Ranged projectiles inflict Dragonfire
+		Ranged attacks have a chance to explode into Dragonfire
+		'''
+	ComfySetBonus: Puffs no longer deal damage to you
+	PutridSetBonus:
+		'''
+		You create a toxic aura
+		Not moving makes more auras spawn
+		Increases your max number of minions
+		Minions have a chance to inflict a fast acting poison
+		'''
+	ToySetBonus: You drop lego bricks when hit
+}
+
+Said: {
+	Wasteland: Wasteland sinks back into the sand
+	WastelandDryad: Wait! Stop!
+	WastelandDryad1: I can handle this!
+	VoidLeviathanHead: Infection overcomes the world...
+	Aqueous: I understand why my king perished at your hands...
+	Aqueous1: Enough! You destroyed my lord, I will not let you cast the same fate upon me!
+	AzanaEye: PAKURGH ULURADOK
+	AzanaEye1: REKAHED PHORLOSPI
+	Azana: Ah, the spores cannot withstand these godly powers...
+	Azana1: But nothing satisfies your bloodlust...
+	Azana2: NEW VESSEL
+	Azana3: NEKTOZ AXLKA
+	Azana4: WE HUNGER
+	Azana5: KROLP UMULEK
+	Azana6: YOU CAN'T RESIST
+	Azana7: VAKEZ WAKTI
+	Azana8: PAIN IS MORTAL
+	Azana9: XANZE MOAKZ
+	Azana10: DON'T Hel-p me
+	Azana11: NOU HEHLP
+	Azana12: End this...
+	Azana13: ECHnd it
+	Azana14: PLEase stop...
+	Azana15: You're... You're not attacking me?
+	Azana16: Maybe there is good in you...
+	Azana17: Salvation...
+	TheGuardian: This is only the beginning!
+	Infernace: I will kill you in my dying breaths!
+	Infernace1: Furosia, help me rid of this pest!
+	Infernace2: My daughter... I will be your downfall, monster!
+	InfernaceWifeSoul: Welcome home...
+	InfernaceWifeSoul1: It's been a while.
+	InfernaceWifeSoul2: I'm sorry it had to end this way.
+	InfernaceWifeSoul3: Be safe, Furosia
+	Obsidious: Easy, you do not deserve such power.
+	Obsidious1: I tried to warn you, kid.
+	Obsidious2: You have something I require...
+	Obsidious3: Come on kid, hand it over and I'll spare you the pain.
+	Obsidious4: I didn't want to have to do this...
+	Obsidious5: You put up a good fight, but alas, it had to be this way.
+	Obsidious6: You forced me to do this.
+	Obsidious7: You put up a good fight for a mere Terrarian...
+	Obsidious8: I didn't sacrifice my life for nothing, the core will be mine!
+	Obsidious9: No... my crystal is too powerful! I can't die... It's impossible...
+	Obsidious10: Ah, my crystal... crumbling... You still aren't... strong enough for him...
+	ScourgeFighter: FATAL ERROR DETECTED. SYSTEM WILL NOW SHUT DOWN IMMEDIATELY.
+	ScourgeFighter1: Homing Missiles Firing
+	ScourgeFighter2: Missile Strike Incoming
+	Volcanox: You will pay for what you've done!
+	Izaris: Your time has come, mortal!
+	Izaris1: I guess we are doing this again...
+	ShardBase: Using autopause, huh? What a wimp!
+	InfernaceGuardian: He awaits...
+	InfernaceGuardian1: Don't resist...
+	InfernaceGuardian2: You cannot wait longer...
+	InfernaceGuardian3: His reign is forever...
+}
+
+LooTCondition: {
+	AwakenedModeActive: "[c/973999:Exclusively in Awakened Mode]"
+	ScourgeLootCondition: Drop chance 1/3
+	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
+	TheEye: if The Eye has been defeated first
+	BIDRC: Drops after {0} has been defeated
+	AllMechs: After {0}, {1}, {2} and {3} have been defeated
+	BiomeConditions: If you are in the {0} biome
+}
+
+BiomeName: {
+	Desert: Desert
+	Sky: Sky
+	Hell: Underworld
+	Frost: Frost
+	Beach: Beach
+}
+
+ShopCondition: {
+	BossString: After defeating the
+	BossString1: or
+	IfEnbleShop: If "{0}" config option is enabled
+	Shop: In the "{0}" shop tab
+	ShopName0: Health and Mana
+	ShopName1: Combat
+	ShopName2: Other
+	ShopName3: Transmutation
+	downedMechBossAny: After defeating any mechanical boss
+	IWS: If {0} was found
+	IsWoroldCrimson: If the world has Crimson
+	IsWoroldCorruption: If the world has Corruption
+	MoonFull: During the Full Moon
+	BloodMoon: During the Blood Moon
+}
+
+Credits: {
+	Credits: Hold 'Escape' to skip
+	Credits1: Created by
+	Credits2: Music by
+	Credits3: Lore by
+	Credits4: Sprites By
+	Credits5: Donators
+	Credits6: Helpers
+	Credits7: Special Thanks To
+	CreditsPort: Unofficial 1.4.4 Port
+	CreditsPort1: Aeris - all code and everything code-related
+	CreditsPort2: skyzephire - Russian translation, few idea suggestions, mod playtesting and some sprites
+	Credits8:
+		'''
+		ReLogic for creating the amazing Terraria
+		Jofairden, jopojelly & bluemagic for creating tModloader
+		Gameraiders101 for getting me into modding
+		FuryForged for showcasing the mod
+		ChippyGaming for showcasing the mod
+		Gameraiders101 again for showcasing the mod
+		'''
+	Credits9: Biggest Thanks
+	Credits10: To YOU
+	Credits11:
+		'''
+		Seriously, thank you so much for playing Elements Awoken.
+		It means a lot to me and all of the dev team that you can enjoy
+		something we spent so much time on.
+		'''
+	Credits12: From- ThatOneJuicyOrange_ and the team <3
+}
+
+SanityBook: {
+	SanityBookOnCraft: Enable Awakened Mode for this book to have any functionality
+	SanityRegens: Regens:
+	SanityDrains: Drains:
+}
+
+Sanity: {
+	AwakenedPlayer: {
+		Sanity: {
+			Sanity18: Mining
+			Sanity17: In a Town
+			Sanity16: Voidite
+			Sanity15: Nearby {0}
+			Sanity14: Planter Box
+			Sanity13: Sunflower
+			Sanity12: Firefly in a Bottle
+			Sanity11: Fireplace
+			Sanity10: Campfire
+			Sanity9: Nice Object
+			Sanity8: Pet
+			Sanity7: Mining For Too Long
+			Sanity6: In Space
+			Sanity5: In Hell
+			Sanity4: Dawn of the Void
+			Sanity3: Dark Moon
+			Sanity2: Blood Moon
+			Sanity1: Darkness
+			Sanity: Low Health
+		}
+	}
+}
+
+Unbound: KEY NOT BOUND
+IsHard: "[c/973999:Not recommended if you want to do a fair and balanced playthrough]"
+AwakenedModeActive2: "[c/973999:in Awakened Mode]"
+AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode isn't Active]"
+AwakenedMode: "[c/973999:Awakened Mode is active]"
+AwakenedSummonItem: Not consumable in Awakened Mode
+IsSummon: Cannot be summoned because another boss is already alive:
+Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
+AlchemistUI: Place an item here to convert it into its
+AlchemistUI1: counterpart
+VoidEvent: The dawn of the void has started!
+VoidEvent1: The void retreats back into the shadows...
+
+MyPlayerLocalization: {
+	MyPlayer: {
+		Worold: {
+			Hallowed: The Hallow
+			andHallowed: and the Hallow
+			Allevils: All Evils
+			Crimson: Crimson
+			andCrimson: and Crimson
+			Corruption: Corruption
+			NE: No Evils detected
+		}
+
+		MasterSwordCharge.Discharged: Discharged
+
+		Encounter: {
+			Said: I see it now.
+			Said1: Who are you really?
+			Said2: You seek power...
+			Said3: A new challenger rises.
+			Said4: A simple lost soul?
+			Said5: But you haven't asked why.
+			Said6: You have a long way to go.
+			Said7: The path ahead is long.
+			Said8: Does it matter?
+			Said9: You are getting closer.
+			Said10: You are almost there.
+		}
+
+		Prompts: {
+			# �� void 5 ���� �����
+			void5: the Guide was slain...
+			void4: Leave
+			void3: You're not ready for this
+			void2: Impending doom approaches...
+			void1: Void Leviathan has awoken!
+			void: Death will consume all.
+		}
+
+		UponEnteringTheWorld: {
+			Music: You dont have a music pack enabled! All EA bosses will have vanilla music themes. Consider installing:
+			Music1: Elements Awoken Music
+			Music2: EA Retro Music
+		}
+
+		ComputerText: {
+			Text17: muffins
+			Text16:
+				'''
+				004: Upon further investigation, the shards belong to
+				a long forgotten race, thought to be eliminated.
+				No doubt, they could bring more chaos than anything
+				currently ever could. And that there are four survivors
+				gives me an awful feeling...
+				'''
+			Text15:
+				'''
+				003: We just witnissed something dangerous...some old
+				man entered our laboratory and split into four crystalline
+				monsters, which roamed the entire place. Almost the
+				entirety of our team is missing and all we found was some
+				crystal shards on the ground. We have to make some tests.
+				'''
+			Text14:
+				'''
+				002: Whoever finds this...I beg of you, do not make the
+				same mistakes as we did...Do not..
+				'''
+			Text13:
+				'''
+				001: This is going to be my final entry...
+				I've lost everything. I had, all my colleagues... everything
+				is gone and I'm alone. The chaos ravages the lands, and I
+				am unable to do anything. There is no reason for me to
+				live anymore...
+				'''
+			Text12:
+				'''
+				My colleagues have been constantly hallucinating, and were
+				showing signs of sickness, as well as being easily
+				tired. They are barely able to breathe. I am trying to find
+				some way to save them, however... I feel this will hit
+				me as well. I need to get this cure done -at all costs!
+				'''
+			Text11:
+				'''
+				After extensive research via our machines, we came to the
+				conclusion that, if the moon lord were to be felled,
+				the underworld would burst out in extreme heat, and even 
+				the most fire resistant gear would not last long... What 
+				sort of a being could withstand this heatwave?
+				'''
+			Text10:
+				'''
+				002: The drakonite shard, it had quite the reaction to lava
+				and then right before us, a giant...thing began to
+				build up. It was entirely made of drakonite! However it
+				was not friendly, we had to quickly evacuate to save
+				ourselves.
+				'''
+			Text9:
+				'''
+				001: This element, drakonite, is rather interesting to say
+				the least. We've taken a shard of it into our lab for
+				further research. However, we should be prepared for
+				whatever danger lurks within this shard...
+				'''
+			Text8:
+				'''
+				The tides have risen rather high, and there have been
+				rather heavy amounts of rain lately, with terrifying
+				consistency no less. On top of that, there are multiple
+				reports of tornados composed almost entirely of water.
+				The wrath of the ocean may be upon us soon..
+				'''
+			Text7:
+				'''
+				There appear to be signs of magic in the coldest parts of
+				the land, we have sent someone to look into it, but
+				unfortunately we have not heard from them as of yet...
+				I fear he has been frozen due to the cold. After all, these
+				lands are rather, harsh, to take on alone.
+				'''
+			Text6:
+				'''
+				We've heard of some, artifact lost in the underworld but
+				never bothered to look for it. Recently we checked and it
+				was gone. I suppose someone else found it first, ah well...
+				'''
+			Text5:
+				'''
+				When we attempted to find a source for the cultists to
+				relay celestial power from, we stumbled across an
+				imperfect reflection of the celestial forces... However, it
+				will be hard to find a source of power from that creature.
+				'''
+			Text4:
+				'''
+				A massive amount of energy surged through one of our
+				machines, overloading it and causing it to blow up. The
+				energy readings were... outstanding, to say the least,
+				almost supernatural. It has probably to do with that
+				thunder serpent, far up in the skies...
+				'''
+			Text3:
+				'''
+				Our other team managed to lose control of the 4 robots
+				they've built. Seems like some people are better off being
+				fired. Those things now roam the surface, I am not sure
+				of what will happen...
+				'''
+			Text2:
+				'''
+				My colleagues found something very interesting within the
+				deepest part of this world. A sentient being controlling fire
+				at will...unfortunately, we can't go down there, as it may
+				kill us if we approach it, but...we will continue watching it.
+				'''
+			Text1:
+				'''
+				What is this monstrosity, what have we created?!
+				This... beast, it has killed the others, I hear it trying to 
+				break the door to my room... Its coming for me... 
+				Anybody who finds this note, END THIS MADNESS, 
+				I beg of you... Oh no.. Its her-
+				'''
+			Text: ERROR- DRIVE NOT LOCATED
+		}
+
+		PlayerDeath: {
+			Death: shattered
+			Death1: became one with the stars
+		}
+
+		NurseHeal: {
+			Heal1: Cant you see I'm a little busy fixing myself up?
+			Heal: I'm sorry, I cant operate on your bloodtype under such urgent conditions.
+		}
+
+		Other: {
+			Other1: Insufficient Energy
+			Other2: seconds left until you can use Flare
+		}
+	}
+}
+
+MyWorldLocalization: {
+	MyWorld: {
+		voidInvasio: Darkness seeps through your veins...
+		voidInvasio1: Laughs echo throughout the world
+		voidInvasio2: Laughs echo throughout the world
+		Azana1: The radiant rain dissipates...
+		Azana: The rain glistens with unknown magic...
+	}
+}
+
+NPCsGLOBALLocalization: {
+	NPCsGLOBAL: {
+		NoHit.Nohit: No-hit!
+
+		Chat: {
+			Say9: Some townsfolk have been finding strange abandoned labs underground... I think some have been staying overnight
+			Say8: "{0} seems to be the only person in this town that doesn't want to eat me. Does he eat at all?"
+			Say7: Dont buy {0}'s weapons, something feels off about them..."
+			Say6: "{0} keeps talking down my weapons! I'll teach him a lesson one day."
+			Say5: All creatures deserve a chance to live. Live and be free...
+			Say4: I feel her speaking to me... she’s afraid...
+			Say3: That scorpion, 'Wasteland' as you call it, why do we fear her?
+			Say2: How old is {0}? I seem to have memories of him from when I was a kid...
+			Say1: Does {0} ever age? Everyone seems to be getting older but he stays the same
+			Say: Dont trust {0}, he isn't as helpful as you may think.
+		}
+	}
+}
+
+AwakenedModeNPCLocalization: {
+	AwakenedModeNPC: {
+		Name4: Poisonous
+		Name3: Shielded
+		Name2: Electrifying
+		Name1: Frozen
+		Name: Blazing
+	}
+}
+
+BossChecklistIntegration: {
+	DotvEvent: {
+		EntryName: Dawn of the Void
+		SpawnInfo: Use the [i:ElementsAwoken/VoidEventSummon] during the day or before 10 PM. The event will start only with the beginning of the night.
+	}
+
+	radiantRainEvent: {
+		EntryName: Radiant Rain
+		SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned manually using the [i:ElementsAwoken/RadiantRainSummon] at any time.
+	}
+}
+
+EsseneceAlertsLocalization: {
+	EsseneceAlerts: {
+		OnKill: {
+			Boss5: The depths of Terraria rumble...
+			Boss4: The wrath of Aqueous stirs the ocean
+			Boss3: You hear cracking coming from the ice...
+			Boss2: The sky wind howls...
+			Boss1: Roars echo from the underworld...
+			Boss: The desert sands shift...
+		}
+	}
+}
+
+LocalizationEARecipeGroups: {
+	EARecipeGroups: {
+		RecipeGroups: {
+			Name: Wings
+			Name1: Lunar Wings
+			Name2: Silver or Tungsten Sword
+			Name3: Sand
+			Name4: Sandstone
+			Name5: Ice Block
+			Name6: Copper Bar
+			Name7: Silver Bar
+			Name8: Gold Bar
+			Name9: Evil Bar
+			Name10: Evil Ore
+			Name11: Cobalt Bar
+			Name12: Mythril Bar
+			Name13: Adamantite Bar
+			Name14: Adamantite Bar
+		}
+	}
+}
