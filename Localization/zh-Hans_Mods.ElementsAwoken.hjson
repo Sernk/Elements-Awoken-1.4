@@ -7962,1723 +7962,1723 @@ NPCs: {
 }
 
 Projectiles: {
-	AbyssalBall.DisplayName: Abyssal Ball
-	AbyssalPortal.DisplayName: Abyssal Portal
-	AbyssalTentacle.DisplayName: Abyssal Tentacle
-	AeroStorm.DisplayName: Aero Storm
-	ArchaicProtection.DisplayName: Archaic Protection
-	AsteroxShieldBase.DisplayName: Asterox Shield Base
-	AsteroxShieldSwirl.DisplayName: Asterox Shield Swirl
-	BloodbathDashP.DisplayName: Bloodbath Dash P
-	ChaosRingShield.DisplayName: Chaos Ring Shield
-	ChaosRingSwirl.DisplayName: Chaos Ring Swirl
-	ChargeRifleHalf.DisplayName: Charge Rifle Half
-	CrowLightning.DisplayName: Crow Lightning
-	CrowStorm.DisplayName: Crow Storm
-	EnergyWeaverBeam.DisplayName: Energy Weaver Beam
-	Explosion.DisplayName: Explosion
-	LegoBrickFriendly.DisplayName: Lego Brick Friendly
-	LegoBrick.DisplayName: Lego Brick
-	LifesAura.DisplayName: Lifes Aura
-	LightningCloud.DisplayName: Lightning Cloud
-	LightningCloudSwirl.DisplayName: Lightning Cloud Swirl
-	LightningExplosion.DisplayName: Lightning Explosion
-	MechLightning.DisplayName: Mech Lightning
-	Demon.DisplayName: Demon
-	NeovirtuoBolt.DisplayName: Neovirtuo Bolt
-	NeovirtuoHoming.DisplayName: Neovirtuo Homing
-	NeovirtuoPortal.DisplayName: Neovirtuo Portal
-	HailPellet.DisplayName: Hail Pellet
-	Waternado.DisplayName: Waternado
-	WaternadoBolt.DisplayName: Waternado Bolt
-	RadiantPTeleport.DisplayName: Radiant 'P Teleport
-	PoisonWater.DisplayName: Poison Water
-	PutridCloud.DisplayName: Putrid Cloud
-	ShackledBase.DisplayName: Shackled Base
-	SlimeClawBall.DisplayName: Slime Claw Ball
-	UkuleleArc.DisplayName: Ukulele Arc
-	ViridiumBomb.DisplayName: Viridium Bomb
-	VleviAegisSwirl.DisplayName: Vlevi Aegis Swirl
-	VoidBlood.DisplayName: Void Blood
-	VoidSinewave.DisplayName: Void Sinewave
-	CrashingWaveP.DisplayName: Crashing Wave 'P
-	VoidStrike.DisplayName: Void Strike
-	VoidSpine.DisplayName: Void Spine
-	VoidRunes.DisplayName: Void Runes
-	VoidOrbProj.DisplayName: Void Orb Proj
-	VoidOrbDestroyed.DisplayName: Void Orb Destroyed
-	VoidOrb.DisplayName: Void Orb
-	VoidBolt.DisplayName: Void Bolt
-	ExtinctionBlast.DisplayName: Extinction Blast
-	VoidRuneExplosion.DisplayName: Void Rune Explosion
-	BunnyBreath.DisplayName: Bunny Breath
-	HandsOfDespair.DisplayName: Hands Of Despair
-	FlareShield.DisplayName: Flare Shield
-	RadiantFireball.DisplayName: Radiant Fireball
-	RadiantMasterStar.DisplayName: Radiant Master Star
-	RadiantStasisField.DisplayName: Radiant Stasis Field
-	RadiantTeleport.DisplayName: Radiant Teleport
-	RadiantWhirlwind.DisplayName: Radiant Whirlwind
-	StarstruckP.DisplayName: Starstruck P
-	HeartContainerHeal.DisplayName: Heart Container Heal
-	FrostShield.DisplayName: Frost Shield
-	FrostShield2.DisplayName: Frost Shield2
-	RadiantStarRain.DisplayName: Radiant Star Rain
-	VoidHeal.DisplayName: Heal
-	WhipCrack.DisplayName: Whip Crack
-	CoilRound.DisplayName: Coil Round
-	ElectroniumMine.DisplayName: Electronium Mine
-	BassBoost.DisplayName: Bass Boost
-	TaserLightning.DisplayName: Taser Lightning
-	TeslaSpark.DisplayName: Tesla Spark
-	NyanBootsTrail.DisplayName: Nyan Boots Trail
-	HoneycrestStinger.DisplayName: Stinger
-	RailgunBeam.DisplayName: Railgun
-	HealProjBlood.DisplayName: Heal
-	FireSkull.DisplayName: Fire Skull
-	InfernalFury.DisplayName: Infernal Fury
-	HealProjLife.DisplayName: Heal
-	HealProjVoid.DisplayName: Heal
-	Sword.DisplayName: Sword
-	DiscordantArrow.DisplayName: Chaotron Arrow
-	DiscordantArrowChaos.DisplayName: Chaotron Arrow
-	DiscordantBulletP.DisplayName: Chaotron Bullet
-	DisarrayBeam.DisplayName: Disarray Beam
-	DisarrayBlast.DisplayName: Disarray Blast
-	DisarrayShard.DisplayName: Disarray Shard
-	DisarrayEntity.DisplayName: Crystalline Entity
-	DesolationArrow.DisplayName: Desolation Arrow
-	DesolationShard.DisplayName: Desolation Shard
-	DesolationDisc.DisplayName: Desolation Disc
-	DesolationCharge1.DisplayName: Desolation
-	DesolationCharge2.DisplayName: Desolation
-	DesolationCharge3.DisplayName: Desolation
-	DesolationCharge4.DisplayName: Desolation
-	DesolationIIIHeld.DisplayName: Desolation
-	DesolationExplosion.DisplayName: Desolation
-	DesolationIVHeld.DisplayName: Desolation
-	BarrenBeam.DisplayName: Barren Beam
-	AtaxiaBall.DisplayName: Ataxia
-	AtaxiaBlade.DisplayName: Ataxia
-	AtaxiaCrystal.DisplayName: Ataxia
-	AtaxiaBolt.DisplayName: Ataxia
-	AtaxiaWave.DisplayName: Ataxia
-	LamentBall.DisplayName: Lament
-	LamentBallExplosive.DisplayName: Lament
-	LamentExplosion.DisplayName: Lament
-	LamentPierce.DisplayName: Lament
-	LamentWave.DisplayName: Lament
-	LamentSuperPierce.DisplayName: Lament Super Pierce
-	AmuletProj.DisplayName: Amulet Proj
-	ExtinctionBall.DisplayName: Extinction Ball
-	BabyShadeWyrmHead.DisplayName: Worm
-	VoidLeviathanProjBody.DisplayName: Void Leviathan
-	VoidLeviathanProjHead.DisplayName: Void Leviathan
-	VoidLeviathanProjTail.DisplayName: Void Leviathan
-	VleviBody.DisplayName: Vlevi Body
-	VleviHead.DisplayName: Vlevi Head
-	VleviTail.DisplayName: Vlevi Tail
-	CosmicWrathExplosion.DisplayName: Explosion
-	CosmicWrathP.DisplayName: Cosmic Wrath
-	Blackhole.DisplayName: Blackhole
-	BlackholeCreator.DisplayName: Blackhole Creator
-	BlackholeOrbit.DisplayName: Blackhole Orbit
-	ExtinctionArrow.DisplayName: Extinction Arrow
-	VoidPortal.DisplayName: Void Portal
-	VoidPortalSinewave.DisplayName: Void Wave
-	LightsAfflictionExplosion.DisplayName: TheSpine
-	LightsAfflictionP.DisplayName: Lights Affliction
-	DespairBody.DisplayName: Pike of Eternal Despair
-	DespairTip.DisplayName: Gladiolus
-	PikeOfEternalDespairP.DisplayName: Pike of Eternal Despair
-	VoidExplosion.DisplayName: Explosion
-	ReaperstormProj.DisplayName: Reaperstorm
-	VoidInfernoBlast.DisplayName: Extinction Blast
-	VoidInfernoP.DisplayName: Void Inferno
-	BigExplosion.DisplayName: Explosion
-	ChromacastBall.DisplayName: Chromacast
-	ShimmersparkStrike.DisplayName: Shimmerspark
-	ShimmersparkHeld.DisplayName: Shimmerspark
-	ShimmerShrapnel.DisplayName: Shimmerspark
-	FundementalStrike.DisplayName: The Fundementals
-	AncientShard.DisplayName: Ancient Shard
-	AqueousMinionFriendly1.DisplayName: Aqueous Minion
-	AqueousMinionFriendly2.DisplayName: Aqueous Minion
-	AqueousMinionFriendly3.DisplayName: Aqueous Minion
-	AqueousMinionFriendly4.DisplayName: Aqueous Minion
-	WaterballFriendly.DisplayName: Waterball
-	Waterball.DisplayName: Aqueous
-	BrinyBusterP.DisplayName: Briny Buster
-	BubblePopperP.DisplayName: Bubble Popper
-	Bubble.DisplayName: Bubble
-	HighTideP.DisplayName: High Tide
-	AquaticArrow.DisplayName: Aquatic Arrow
-	AquaticArrow2.DisplayName: Aquatic Arrow
-	Watershot.DisplayName: Watershot
-	AnarchyLaser.DisplayName: Anarchy Laser
-	AnarchyWave.DisplayName: Anarchy Wave
-	AnarchyP.DisplayName: Anarchy
-	InfectionMouthMinion.DisplayName: Hungry
-	ExplosionHostile.DisplayName: Explosion
-	OutbreakDart.DisplayName: Outbreak Dart
-	ChaosGazer.DisplayName: Chaos Gazer
-	ChaosLaser.DisplayName: Chaos Laser
-	ChaosShard.DisplayName: Chaos Shard
-	ChaoticBlast.DisplayName: Chaotron Discharge
-	AzanaNanoBolt.DisplayName: Azana
-	InfectionHeart.DisplayName: Infection Heart
-	PandemoniumBlast.DisplayName: Pandemonium
-	PandemoniumFlame.DisplayName: Pandemonium
-	PurgeBeam.DisplayName: Purge Beam
-	ChargeRifleFull.DisplayName: Charge Rifle
-	ChargeRifleHeld.DisplayName: Charge Rifle
-	CosmicCrusherBlade.DisplayName: Cosmic Crusher
-	CosmicCrusherSpawner.DisplayName: Cosmic Crusher
-	CosmicArrow.DisplayName: Cosmic Arrow
-	CosmicMinionShot.DisplayName: The Guardian
-	DemolecularizerLaser.DisplayName: Demolecularizer
-	CosmicObserver.DisplayName: Cosmic Invader
-	OrionsBeltGalaxy.DisplayName: Orions Belt Galaxy
-	PlanetarySpike.DisplayName: Planetary Spike
-	PlanetaryWavePortal.DisplayName: Planetary Wave
-	EnergyFork.DisplayName: Energy Fork
-	EnergyFork2.DisplayName: Energy Fork
-	OrionsBeltP.DisplayName: Orion's Belt
-	CosmicalusRing.DisplayName: Cosmicalus
-	FireBlasterBolt.DisplayName: Fire Blaster
-	GreekFire.DisplayName: Greek Fire
-	HearthMinion.DisplayName: Hearth
-	HearthBeam.DisplayName: Hearth Beam
-	FireBlade.DisplayName: Fire Blade
-	SpinningFlame.DisplayName: Spinning Flame
-	MagmaroxMeteor.DisplayName: Solar Fragment
-	MagmaroxRock.DisplayName: Magmarox
-	PossessedHand.DisplayName: Possessed Hand
-	SacredCrystalLaser.DisplayName: Sacred Crystals
-	TerreneMortar.DisplayName: Terrene Mortar
-	TerreneRock.DisplayName: Terrene Rock
-	UltramarineBeam.DisplayName: Ultramarine
-	VioletEdgeBall.DisplayName: Violet Edge Ball
-	Frigidbullet.DisplayName: Frigidbullet
-	IcicleMinion.DisplayName: Bubble
-	IceWrathArrow.DisplayName: Ice Wrath
-	IceReaverP.DisplayName: Ice Reaver
-	IceWrathBeam.DisplayName: Ice Wrath
-	SnowdriftBomb.DisplayName: Snowdrift
-	RadiantStarHoming.DisplayName: Radiant Star
-	RadiantStarSpiral.DisplayName: Radiant Star
-	RadiantBombP.DisplayName: Master's Vortex
-	MajestyP.DisplayName: Majesty
-	RadiantBlade.DisplayName: Radiant Blade
-	RadiantStarBow.DisplayName: Radiant Star
-	RadiantStorm.DisplayName: Radiant Storm
-	EnergySpiritBolt.DisplayName: Energy Bolt
-	EnergySpirit.DisplayName: Energy Spirit
-	TheSilencerP.DisplayName: The Silencer
-	StarstruckArrow.DisplayName: Starstruck
-	StarstruckBeam.DisplayName: Starstruck
-	Star.DisplayName: Star
-	BountyP.DisplayName: Signal Booster
-	ScourgeRocketFriendly.DisplayName: Rocket
-	ScourgeRocket.DisplayName: Scourge Rocket
-	SignalBoost.DisplayName: Signal Booster
-	CelestiaArc.DisplayName: Lightning
-	CelestialBoltFriendly.DisplayName: Celestial Laser
-	CelestiaPortal.DisplayName: Celestia
-	CelestialInfernoSpin.DisplayName: Celestial Inferno Spin
-	EyeballMinion.DisplayName: Celestial Watcher
-	SolusP.DisplayName: Celestial Laser
-	TemplesWrathArrow.DisplayName: Temple's Wrath
-	GodslayerStrike.DisplayName: Godslayer
-	InfernoCloud.DisplayName: Inferno Storm
-	InfernoLightning.DisplayName: Inferno Storm
-	TemplesWrathSword.DisplayName: Temple's Wrath
-	InfernoEye.DisplayName: Fire Runes
-	InfernoShot.DisplayName: Inferno Shot
-	WyrmClawSlash.DisplayName: Wyrm Claw Slash
-	TempleBeam.DisplayName: Temple Beam
-	TempleBall.DisplayName: Temple Ball
-	RuneBlast.DisplayName: Rune Blast
-	FireRunes.DisplayName: Fire Runes
-	CombustiaWave.DisplayName: Combustia Wave
-	FirelashFlames.DisplayName: Firelash Flames
-	EmberBurstP.DisplayName: Ember Burst 'P
-	HearthBlade.DisplayName: Hearth Blade
-	HearthP.DisplayName: Hearth
-	VolcanicTentacle.DisplayName: Volcanic Tentacle
-	PincerArrow.DisplayName: Scorpion Arrow
-	ScorpionMinion.DisplayName: Scorpion
-	WastelandStingerFriendly.DisplayName: Stinger
-	WastelandStinger.DisplayName: Wasteland Stinger
-	AncientStar.DisplayName: Ancient Star
-	AncientStar2.DisplayName: Ancient Star
-	Fireblast.DisplayName: Fireblast
-	IceMist.DisplayName: Ice Mist
-	IceMistSpike.DisplayName: Frosthail
-	RetinasmP.DisplayName: Retinasm
-	SkeletronFistP.DisplayName: Skeletron Fist
-	LightningArc.DisplayName: Lightning
-	Lightning.DisplayName: Lightning Tome
-	ShockstormPortal.DisplayName: Shockstorm
-	SpinalEye.DisplayName: Giga Eye
-	Spine.DisplayName: Spine
-	TearArrow.DisplayName: Tear Arrow
-	DestroyerLaserFull.DisplayName: Charge Rifle
-	DestroyerLaserHalf.DisplayName: The Destroyer
-	MiniEaterOfSouls.DisplayName: Miniature Eater Of Souls
-	TheDestroyerHeld.DisplayName: The Destroyer
-	CorruptedFangP.DisplayName: Corrupted Fang
-	HungryMinion.DisplayName: Hungry
-	SkeleSkull.DisplayName: Skull
-	SlimeBoosterTrail.DisplayName: Slime
-	AcidAuraBase.DisplayName: Acid Aura
-	AcidBall.DisplayName: Acid Blob
-	Shockwave.DisplayName: Shockwave
-	WastelandDiggingProj.DisplayName: Wasteland
-	WastelandDiggingProjReal.DisplayName: Wasteland
-	WastelandDiggingSpout.DisplayName: Wasteland
-	WastelandDiggingSpoutReal.DisplayName: Wasteland
-	WastelandDryad.DisplayName: Wasteland Dryad
-	WastelandSnap.DisplayName: Wasteland's Pincers
-	WastelandStormBolt.DisplayName: Wasteland
-	GuardianShot.DisplayName: The Guardian
-	WyrmBreath.DisplayName: Wyrm's Breath
-	Aquanado.DisplayName: Aquanado
-	AquanadoBolt.DisplayName: Aquanado Bolt
-	AquaticBlast.DisplayName: Aquatic Blast
-	AquaticBolt.DisplayName: Aqueous
-	WaterKnife.DisplayName: Aqueous
-	WaterKnifeHoming.DisplayName: Aqueous
-	AzanaBlood.DisplayName: Azana Blood
-	AzanaBeam.DisplayName: Chaos Laser
-	AzanaBeamQuick.DisplayName: Chaos Laser
-	AzanaCloud.DisplayName: Spore Cloud
-	AzanaGiantCloud.DisplayName: Spore Cloud
-	AzanaGlob.DisplayName: Chaos Blast
-	AzanaInfection.DisplayName: Infection
-	AzanaInfectionPillar.DisplayName: Infection Pillar
-	AzanaInfectionPillarTip.DisplayName: Gladiolus
-	AzanaLaserWarning.DisplayName: Warning
-	AzanaMiniBlast.DisplayName: Chaos Blast
-	AzanaMiniBlastAccelerate.DisplayName: Chaos Blast
-	AzanaMiniBlastSpiral.DisplayName: Chaos Blast
-	AzanaMiniBlastWave.DisplayName: Chaos Blast
-	AzanaTarget.DisplayName: Target
-	AzanaWave.DisplayName: Azana
-	ObserverBeam.DisplayName: Observer Beam
-	ObserverFireball.DisplayName: Observer Fireball
-	ObserverShard.DisplayName: Observer Shard
-	ObserverSpell.DisplayName: Observer Shard
-	GuardianBeam.DisplayName: Guardian Beam
-	GuardianCircle.DisplayName: The Guardian
-	GuardianFire.DisplayName: Fire
-	GuardianFireball.DisplayName: The Guardian
-	GuardianInfernoball.DisplayName: The Guardian
-	GuardianOrb.DisplayName: The Guardian
-	GuardianPortal.DisplayName: Temples Vortex
-	GuardianPortalSwirl.DisplayName: The Guardian
-	GuardianStickyBolt.DisplayName: Guardian Sticky Bolt
-	GuardianStrike.DisplayName: The Guardian
-	GuardianTargeter.DisplayName: The Guardian
-	FurosiaSoul.DisplayName: Daughteru?
-	FurosiaSpike.DisplayName: Infernace
-	InfernaceFire.DisplayName: Fire
-	InfernaceSoul.DisplayName: Husbando
-	InfernaceWifeSoul.DisplayName: Waifu
-	InfernalMonolith.DisplayName: Infernal Monolith
-	InfernalMonolithSpawn.DisplayName: IInfernal Monolith
-	InfernaceSpike.DisplayName: Infernace
-	InfernaceWave.DisplayName: Infernace
-	GreekFireHostile.DisplayName: Fire
-	ObsidiousFireCrystal.DisplayName: Obsidious Fire Crystal
-	ObsidiousFireCrystalStationary.DisplayName: Obsidious Fire Crystal
-	ObsidiousHumanRockOrbital.DisplayName: Obsidious
-	ObsidiousIceBeam.DisplayName: Obsidious
-	ObsidiousIceBeamCrystal.DisplayName: Obsidious
-	ObsidiousIceCrystalSpin.DisplayName: Obsidious
-	ObsidiousIceCrystal.DisplayName: Obsidious
-	ObsidiousRitual.DisplayName: Obsidious
-	ObsidiousBeam.DisplayName: Obsidious
-	ObsidiousFireBeam.DisplayName: Obsidious
-	ObsidiousFirePortal.DisplayName: Fire Portal
-	ObsidiousHandOverlay.DisplayName: Obsidious
-	ObsidiousHandTrail.DisplayName: Obsidious
-	ObsidiousHomingBall.DisplayName: Obsidious Homing Ball
-	ObsidiousIceLaser.DisplayName: Obsidious
-	ObsidiousRockLarge.DisplayName: Obsidious
-	ObsidiousRockNoCollide.DisplayName: Obsidious
-	ObsidiousRockOrbital.DisplayName: Obsidious
-	ObsidiousTargetCrystal.DisplayName: Obsidious
-	ObsidiousTargetCrystalCenter.DisplayName: Obsidious
-	SolarFragmentProj.DisplayName: Solar Fragment
-	FrigidBreath.DisplayName: Accursed Fire
-	FrostExplosion.DisplayName: Frost Explosion
-	HomingIce.DisplayName: Enchanted Ice
-	IceMagic.DisplayName: Ice Magic
-	IceRain.DisplayName: Ice Rain
-	PermaDashWarn.DisplayName: Permafrost
-	PermafrostIcicle.DisplayName: Mystic Icicle
-	PermafrostTP.DisplayName: Permafrost
-	RegarothBolt.DisplayName: Regaroth Bolt
-	RegarothBomb.DisplayName: Regaroth Bomb
-	RegarothPortal.DisplayName: Regaroth Portal
-	Napalm.DisplayName: Scourge Napalm
-	ScourgeBeam.DisplayName: Mini Fighter
-	ScourgeBullet.DisplayName: Scourge Bullet
-	ScourgeHomingRocket.DisplayName: Homing Rocket
-	VolcanicBoom.DisplayName: Volcanic Boom
-	VolcanicDebris.DisplayName: Volcanox
-	VolcanicDemon.DisplayName: Volcanic Demon
-	VolcanoxBlast.DisplayName: Volcanox
-	VolcanoxBolt.DisplayName: Volcanox
-	VolcanoxExplosion.DisplayName: Explosion
-	CrystallineKunai.DisplayName: Crystalline Kunai
-	BloodshotP.DisplayName: Bloodshot
-	Worm.DisplayName: Worm
-	SoulswordSoul.DisplayName: Soulsword
-	SoulswordSoul2.DisplayName: Soulsword
-	NihongoPoint.DisplayName: Nihongo
-	NihongoP.DisplayName: Nihongo
-	ForeverBolt.DisplayName: Forever Bolt
-	ThickSmoke.DisplayName: Discord Toxin
-	SearingArrow.DisplayName: Searing Arrow
-	MasterSwordWave.DisplayName: Master Sword
-	GladiolusTip.DisplayName: Gladiolus
-	Gladiolus.DisplayName: Gladiolus
-	MjolnirP.DisplayName: Mjolnir
-	PoseidonsTridentP.DisplayName: Poseidons Trident
-	IzarisShard.DisplayName: Izaris' Shard
-	KirveinShard.DisplayName: Kirvein's Shard
-	KrecheusShard.DisplayName: Krecheus' Shard
-	XernonShard.DisplayName: Xernon's Shard
-	KirveinArrow.DisplayName: Kirvein
-	KirveinCrystalFragment.DisplayName: Kirvein
-	KirveinExplosion.DisplayName: Kirvein
-	KirveinExplosiveArrow.DisplayName: Kirvein
-	KirveinFragCrystal.DisplayName: Kirvein
-	KrecheusBlade.DisplayName: Krecheus
-	KrecheusBolt.DisplayName: Krecheus
-	KrecheusCircle.DisplayName: Krecheus
-	KrecheusPortal.DisplayName: Krecheus
-	KrecheusSide.DisplayName: Krecheus
-	KrecheusSpike.DisplayName: Krecheus
-	XernonBolt.DisplayName: Xernon
-	XernonBoltExplosive.DisplayName: Xernon
-	XernonBoltHoming.DisplayName: Xernon Bolt Homing
-	XernonBoltSuper.DisplayName: Xernon
-	XernonCrystal.DisplayName: Xernon
-	XernonExplosion.DisplayName: Xernon
-	CreditsStarter.DisplayName: Credits-triggering 'P
-	ShardBase.DisplayName: Shard Base
-	Lightbeam.DisplayName: Lightbeam
-	DeathShockwave.DisplayName: Death Shockwave
-	CrystallineShardHoming.DisplayName: Ancient Amalgamate
-	CrystallineShard.DisplayName: Ancient Amalgamate
-	CrystallineKunaiHostileNG.DisplayName: Ancient Amalgamate
-	CrystallineKunaiHostileExplosive.DisplayName: Ancient Amalgamate
-	CrystalFlower.DisplayName: Crystal Flower
-	CrystalCluster.DisplayName: Crystal Cluster
-	AncientProjectionSwirl2.DisplayName: Ancient Projection
-	AncientProjectionSwirl.DisplayName: Ancient Projection
-	AncientProjection.DisplayName: Ancient Projection
-	AAHandOverlay.DisplayName: Ancient Amalgamate
-	RadiantMasterDeathExplosion.DisplayName: Radiant Master Death Explosion
-	ShadeWyrmBolt.DisplayName: Shade Wyrm Bolt
-	RavenPrince.DisplayName: Raven
-	PrinceStrike.DisplayName: Prince Strike
-	PrinceRain.DisplayName: Prince Rain
-	PrinceAura.DisplayName: Prince Aura
-	AeroflakExplosion.DisplayName: Explosion
-	AeroflakP.DisplayName: Star
-	ArmageddonBlade.DisplayName: Armageddon
-	DiscordantToxin.DisplayName: Discord Toxin
-	DiscordantBolt.DisplayName: Discordant Bolt
-	BugToxin.DisplayName: BugToxin
-	BugBasherP.DisplayName: Mjolnir
-	NeovirtuoShieldSwirl2.DisplayName: Neovirtuo
-	NeovirtuoShieldSwirl.DisplayName: Neovirtuo
-	NeovirtuoShieldBase.DisplayName: Neovirtuo
-	ViridiumLightningPassive.DisplayName: Lightning
-	ViridiumLightning.DisplayName: Viridium Lightning
-	ViridiumExplosion.DisplayName: Explosion
-	TimeRocket.DisplayName: Time Rocket
-	TimecleaverRound.DisplayName: Timecleaver Round
-	BioLightning.DisplayName: Bio Lightning
-	ChamchamRat.DisplayName: Chamcham Rat
-	WyvernBody.DisplayName: Worm
-	WyvernHead.DisplayName: Worm
-	WyvernTail.DisplayName: Worm
-	PoisonFire.DisplayName: Cremated Chaos
-	SWRLRocket.DisplayName: Rocket
-	EoiteWave.DisplayName: EoiteWave
-	EoiteBlast.DisplayName: Eoite Blast
-	EoiteBeam2.DisplayName: Eoite Beam
-	EoiteBeam.DisplayName: Eoite Beam
-	DarknersScarfP.DisplayName: Darkners Scarf
-	StarLunarFragment.DisplayName: Wyvern Breath
-	StarLunar.DisplayName: Star
-	TheBeltP.DisplayName: Darkners Scarf
-	CoalescedBolt.DisplayName: Coalesced Bolt
-	CoalescedOrb.DisplayName: Coalesced Orb
-	GelticArrow.DisplayName: Geltic Arrow
-	Speedstar.DisplayName: Speedstar
-	AncientIchorFlagonP.DisplayName: Ancient Ichor Flagon
-	Sandball.DisplayName: Sandball
-	Shieldnado.DisplayName: Shieldnado
-	SandSpray.DisplayName: Sand Spray
-	Skysand.DisplayName: Skysand
-	Sandnado.DisplayName: Sandnado
-	SandySpearP.DisplayName: Sandy Spear
-	MiniatureSandstorm.DisplayName: Miniature Sandstorm
-	TheGritP.DisplayName: The Grit
-	AndromedaBase.DisplayName: AAndromeda
-	AndromedaBlast.DisplayName: Andromeda
-	AndromedaStar.DisplayName: Ancient Star
-	AndromedaSwirl.DisplayName: Andromeda
-	ElementalArrow.DisplayName: Elemental Arrow
-	ElementalBolt.DisplayName: Elemental Bolt
-	CosmicusP.DisplayName: Cosmicus 'P
-	ElementalBurst.DisplayName: Elemental Burst
-	EquinoxBase.DisplayName: Fireweaver
-	EquinoxSwirl.DisplayName: Fireweaver
-	FusionP.DisplayName: Void Inferno
-	FusionOrb6.DisplayName: Fusion
-	FusionOrb5.DisplayName: Fusion
-	FusionOrb4.DisplayName: Fusion
-	FusionOrb3.DisplayName: Fusion
-	FusionOrb2.DisplayName: Fusion
-	FusionOrb1.DisplayName: Fusion
-	PhantomHook.DisplayName: Phantom Hook
-	SingularityBeam.DisplayName: Singularity
-	SingularityBolt.DisplayName: Singularity
-	SingularityP.DisplayName: Singularity
-	ZenithOrb4.DisplayName: Zenith Orb4
-	ZenithOrb3.DisplayName: Zenith Orb3
-	ZenithOrb2.DisplayName: Zenith Orb2
-	ZenithOrb1.DisplayName: Zenith Orb1
-	ZenithBeam4.DisplayName: Zenith Beam4
-	ZenithBeam3.DisplayName: Zenith Beam3
-	ZenithBeam2.DisplayName: Zenith Beam2
-	ZenithBeam1.DisplayName: Zenith Beam1
-	ValkyrieChain.DisplayName: Valkyrie Chain
-	VoxusP.DisplayName: Voxus
-	Voxus4.DisplayName: Voxus
-	Voxus3.DisplayName: Voxus
-	Voxus2.DisplayName: Voxus
-	Voxus1.DisplayName: Voxus
-	ValkyrieBolt.DisplayName: The Valkyrie
-	RainbowExplosion.DisplayName: Explosion
-	DragonFire.DisplayName: Dragon's Breath
-	FireBall.DisplayName: Fire Ball
-	FireKnifeBolt.DisplayName: Fire Bolt
-	FireKnife.DisplayName: Fire Knife
-	FireScytheProj.DisplayName: Scythe of Eternal Flame
-	FirestormShot.DisplayName: Firestorm
-	TriswordBlade.DisplayName: Blazing Trisword
-	TriswordSlash.DisplayName: Blazing Trisword
-	FirelashP.DisplayName: Firelash
-	FireBolt.DisplayName: Fire Bolt
-	FireElemental.DisplayName: Fire Elemental
-	InfernoLanceP.DisplayName: Inferno Lance 'P
-	FrostBladeP.DisplayName: Frost Blade 'P
-	IceAxe.DisplayName: Ice Axe
-	IceWaveCheck.DisplayName: Ice Wave Check
-	IceWave.DisplayName: Shockwave
-	FreezeBeam.DisplayName: Freeze Ray
-	FrostPulse.DisplayName: Frost Pulse
-	IcicleProj.DisplayName: Icicle Proj
-	GlacierBreakerP.DisplayName: Glacier Breaker
-	BlitzP.DisplayName: Glacial Blitz
-	YoyoSnowball.DisplayName: Glacial Blitz
-	SnowSpray.DisplayName: Snow Spray
-	Snowflake.DisplayName: Snowflake
-	IcicleShot.DisplayName: Ice Bolt
-	Icicle.DisplayName: Ice Spike
-	IceBlade.DisplayName: Ice Blade
-	SkyFuryRain.DisplayName: Rain
-	HappyCloud.DisplayName: Happy Little Cloud
-	CloudBolt.DisplayName: Lightning Bolt
-	Feather3.DisplayName: Feather
-	Feather2.DisplayName: Feather
-	Feather1.DisplayName: Feather
-	CloudBlast.DisplayName: Sky Fury
-	SkyScraperP.DisplayName: SkyScraper
-	FeatherFast.DisplayName: Feather Fast
-	TheLauncherBolt.DisplayName: The Launcher
-	TheLauncherP.DisplayName: The Launcher
-	WindfallFire.DisplayName: Windfall
-	ThorsHammerP.DisplayName: Storm Hammer
-	ThorLightning.DisplayName: Thors Hammer
-	AeroLightning.DisplayName: Lightning
-	CalamityP.DisplayName: Cataclysm
-	CataclysmP.DisplayName: Cataclysm
-	CataclysmTip.DisplayName: Cataclysm
-	CataclysmicLaser.DisplayName: Cataclysmic Laser
-	VoidBlast.DisplayName: Void Blast
-	CrimsonSkyLaser.DisplayName: Crimson Sky
-	VoidArrow.DisplayName: Void Arrow
-	ScourgeFire.DisplayName: Scourge Fire
-	VoidTentacle.DisplayName: Void Tentacle
-	TheEyeP.DisplayName: The Eye Of Annihilation
-	AbyssCultistBolt.DisplayName: Abyss Cultist
-	AbyssCultist.DisplayName: Abyss Cultist
-	VoidSwordProj.DisplayName: Holocaust
-	DukeChakramProj.DisplayName: Chakram of the Duke
-	TheUrchinUrchin.DisplayName: The Urchin
-	TheUrchinSpike.DisplayName: The Urchin Spike
-	TheUrchinP.DisplayName: The Urchin
-	WatershotP.DisplayName: Watershot
-	WaterSwordP.DisplayName: Forever Tide
-	WaterYoyoWater.DisplayName: Armageddon
-	WaterYoyoP.DisplayName: Aqua Marine
-	GemLaser.DisplayName: Gem Laser
-	GemRay.DisplayName: Gem Ray
-	GemLaserHoming.DisplayName: Gem Laser
-	InfinityFireTentacle.DisplayName: Fire Tentacle
-	InfinityFireball.DisplayName: Fireball
-	InfinityBubble.DisplayName: Bubble
-	FirePortal.DisplayName: Fire Portal
-	DesertCrystal.DisplayName: Desert Crystal
-	BlightedBulletP.DisplayName: Blighted Bullet
-	BlightCloud.DisplayName: Blight Cloud
-	DeterioratorKnife.DisplayName: Fire Knife
-	CorroderMinion.DisplayName: Energy Spirit
-	HarvesterScythe.DisplayName: Harvester
-	CorroderSpit.DisplayName: Corroder Spit
-	BlightRing.DisplayName: Blight Ring
-	BlightRang.DisplayName: Blight Rang
-	CarapaceSlicerP.DisplayName: Carapace Slicer 'P
-	CarapaceSlice.DisplayName: Carapace Slice
-	CarapaceShard.DisplayName: Carapace Shard
-	CarapaceBall.DisplayName: Carapace Ball
-	BlossomSpore.DisplayName: Blossom Spore
-	FlowerPowerProj.DisplayName: Petal
-	PetalPikeStem.DisplayName: Petal Pike
-	PetalPikeTip.DisplayName: Petal Pike
-	PetalPikeP.DisplayName: Petal Pike
-	BlossomBoomerP.DisplayName: Blossom Boomer
-	BudKunaiP.DisplayName: Bud Kunai
-	DrakoniteKnifeP.DisplayName: DrakoniteKnife
-	DrakoniteFireball.DisplayName: Drakonite Fireball
-	DrakoniteEruption.DisplayName: Drakonite Eruption
-	DragonBladeBlast.DisplayName: Dragon Blade Blast
-	DrakoniteArrow.DisplayName: Drakonite Arrow
-	DragonEmberBall.DisplayName: Dragon Ember Ball
-	DragonEmberSeeker.DisplayName: Dragon Ember Seeker
-	DragonFangShadow.DisplayName: Dragon Fang Shadow
-	DragonfireBullet.DisplayName: Dragonfire Bullet
-	DragonTalonBall.DisplayName: Dragon Talon Ball
-	DrakoniteDrill.DisplayName: Drakonite Drill
-	MiniDragon.DisplayName: Mini Dragon
-	DragonFangP.DisplayName: Dragon Fang
-	ManashardWhipP.DisplayName: Manashard Whip
-	ManaBolt.DisplayName: Mana Bolt
-	ManaRound.DisplayName: Mana Round
-	Manashatter.DisplayName: Manaspike
-	Manaspike.DisplayName: Manaspike
-	ManashardPikeP.DisplayName: Manashard Pike
-	ManashardDaggerP.DisplayName: Manashard Dagger
-	WyvernBreath1.DisplayName: Wyvern Breath
-	WyvernBreath2.DisplayName: Wyvern Breath
-	MeteoricFireball.DisplayName: Meteoric Fireball
-	MeteoricBolt.DisplayName: Meteoric Bolt
-	SpaceWand.DisplayName: Space Wand
-	DecayP.DisplayName: Decay
-	NecrosisP.DisplayName: Necrosis
-	MortemiteWave.DisplayName: Mortemite Wave
-	MortemiteFlames.DisplayName: Mortemite Flames
-	MortemiteBlade.DisplayName: Mortemite Blade
-	BabyPuffSpike.DisplayName: Baby Puff Spike
-	BabyPuff.DisplayName: Baby Puff
-	PuffSpike.DisplayName: Puff Spike
-	PutridArrow.DisplayName: Putrid Arrow
-	BlightfireSpawner.DisplayName: Blightfire Spawner
-	WretchedStaffHeld.DisplayName: Wretched Staff Held
-	PutridVomit.DisplayName: Putrid Vomit
-	PutridRipper.DisplayName: Putrid Ripper
-	PutridGoop.DisplayName: Putrid Goop
-	PutridSkull.DisplayName: Putrid Skull
-	PutridSpike.DisplayName: Putrid Spike
-	PutridTrail.DisplayName: Putrid Trail
-	FetidBladeP.DisplayName: Energy Fork
-	RadiantBeam.DisplayName: Radiant Beam
-	GlobuleMinionSmall.DisplayName: Starlight Globule
-	GlobuleMinion.DisplayName: Starlight Globule
-	FrostMine.DisplayName: Frost Mine
-	RadiantBeamFocused.DisplayName: Radiant Beam
-	RadiantGlobule.DisplayName: Radiant Globule
-	RadiantKatanaSlash.DisplayName: Radiant Katana
-	RadiantKatanaStar.DisplayName: Radiant Star
-	RadiantStarMine.DisplayName: Radiant Star
-	RadiantStarMortar.DisplayName: Radiant Star
-	RadiantStarSmall.DisplayName: Radiant Star
-	RadiantStarThrown.DisplayName: Radiant Star
-	RadiantStar.DisplayName: Sparkle
-	StellarPortal.DisplayName: Stellar Portal
-	StellarMeteor.DisplayName: Stellar Meteor
-	StellariumBolt2.DisplayName: Stellarium Scepter
-	StellariumBolt.DisplayName: Stellarium Scepter
-	StellarArrow.DisplayName: Stellar Arrow
-	SuctionArrow.DisplayName: Suction Arrow
-	ToyRobot.DisplayName: Toy Robot
-	PuzzlePiece.DisplayName: Charge Rifle
-	ChaosTomatoP.DisplayName: Chaos Tomato
-	TomatoP.DisplayName: Tomato
-	AncientStellate.DisplayName: Ancient Stellate
-	CelestialWatcher.DisplayName: Celestial Watcher
-	LilOrange.DisplayName: Lil Orange
-	TurboDoge.DisplayName: Turbo Doge
-	VoidCrawler.DisplayName: Void Crawler
+	AbyssalBall.DisplayName: 深渊之球
+	AbyssalPortal.DisplayName: 深渊传送门
+	AbyssalTentacle.DisplayName: 深渊触手
+	AeroStorm.DisplayName: 气动风暴
+	ArchaicProtection.DisplayName: 古代守护
+	AsteroxShieldBase.DisplayName: 陨星盾基座
+	AsteroxShieldSwirl.DisplayName: 陨星盾漩涡
+	BloodbathDashP.DisplayName: 杀戮冲刺
+	ChaosRingShield.DisplayName: 混沌环盾
+	ChaosRingSwirl.DisplayName: 混沌环漩涡
+	ChargeRifleHalf.DisplayName: 充能步枪半充能
+	CrowLightning.DisplayName: 乌鸦闪电
+	CrowStorm.DisplayName: 乌鸦风暴
+	EnergyWeaverBeam.DisplayName: 能量编织者光束
+	Explosion.DisplayName: 爆炸
+	LegoBrickFriendly.DisplayName: 友方乐高积木
+	LegoBrick.DisplayName: 乐高积木
+	LifesAura.DisplayName: 生命光环
+	LightningCloud.DisplayName: 闪电云
+	LightningCloudSwirl.DisplayName: 闪电云漩涡
+	LightningExplosion.DisplayName: 闪电爆炸
+	MechLightning.DisplayName: 机械闪电
+	Demon.DisplayName: 恶魔
+	NeovirtuoBolt.DisplayName: 尼奥之箭
+	NeovirtuoHoming.DisplayName: 尼奥追踪箭
+	NeovirtuoPortal.DisplayName: 尼奥传送门
+	HailPellet.DisplayName: 冰雹
+	Waternado.DisplayName: 水龙卷
+	WaternadoBolt.DisplayName: 水龙卷弹
+	RadiantPTeleport.DisplayName: 辉耀传送
+	PoisonWater.DisplayName: 毒水
+	PutridCloud.DisplayName: 腐败云
+	ShackledBase.DisplayName: 束缚基座
+	SlimeClawBall.DisplayName: 史莱姆爪球
+	UkuleleArc.DisplayName: 尤克里里电弧
+	ViridiumBomb.DisplayName: 翠绿炸弹
+	VleviAegisSwirl.DisplayName: 虚空神盾漩涡
+	VoidBlood.DisplayName: 虚空之血
+	VoidSinewave.DisplayName: 虚空正弦波
+	CrashingWaveP.DisplayName: 碎浪
+	VoidStrike.DisplayName: 虚空打击
+	VoidSpine.DisplayName: 虚空尖刺
+	VoidRunes.DisplayName: 虚空符文
+	VoidOrbProj.DisplayName: 虚空法球投射物
+	VoidOrbDestroyed.DisplayName: 破碎的虚空法球
+	VoidOrb.DisplayName: 虚空法球
+	VoidBolt.DisplayName: 虚空箭
+	ExtinctionBlast.DisplayName: 灭绝爆破
+	VoidRuneExplosion.DisplayName: 虚空符文爆炸
+	BunnyBreath.DisplayName: 兔兔吐息
+	HandsOfDespair.DisplayName: 绝望之手
+	FlareShield.DisplayName: 闪耀护盾
+	RadiantFireball.DisplayName: 辉耀火球
+	RadiantMasterStar.DisplayName: 辉耀大师之星
+	RadiantStasisField.DisplayName: 辉耀静滞场
+	RadiantTeleport.DisplayName: 辉耀传送
+	RadiantWhirlwind.DisplayName: 辉耀旋风
+	StarstruckP.DisplayName: 追星
+	HeartContainerHeal.DisplayName: 心形容器治疗
+	FrostShield.DisplayName: 冰霜护盾
+	FrostShield2.DisplayName: 冰霜护盾2
+	RadiantStarRain.DisplayName: 辉耀星雨
+	VoidHeal.DisplayName: 治疗
+	WhipCrack.DisplayName: 鞭笞
+	CoilRound.DisplayName: 线圈弹
+	ElectroniumMine.DisplayName: 电子地雷
+	BassBoost.DisplayName: 低音增幅
+	TaserLightning.DisplayName: 电击枪闪电
+	TeslaSpark.DisplayName: 特斯拉火花
+	NyanBootsTrail.DisplayName: 彩虹猫之靴轨迹
+	HoneycrestStinger.DisplayName: 蜜冠毒刺
+	RailgunBeam.DisplayName: 磁轨炮
+	HealProjBlood.DisplayName: 治疗
+	FireSkull.DisplayName: 火焰骷髅
+	InfernalFury.DisplayName: 炼狱之怒
+	HealProjLife.DisplayName: 治疗
+	HealProjVoid.DisplayName: 治疗
+	Sword.DisplayName: 剑
+	DiscordantArrow.DisplayName: 混沌电子箭
+	DiscordantArrowChaos.DisplayName: 混沌电子箭
+	DiscordantBulletP.DisplayName: 混沌电子弹
+	DisarrayBeam.DisplayName: 混乱光束
+	DisarrayBlast.DisplayName: 混乱爆破
+	DisarrayShard.DisplayName: 混乱碎片
+	DisarrayEntity.DisplayName: 晶状实体
+	DesolationArrow.DisplayName: 荒芜之箭
+	DesolationShard.DisplayName: 荒芜碎片
+	DesolationDisc.DisplayName: 荒芜飞盘
+	DesolationCharge1.DisplayName: 荒芜
+	DesolationCharge2.DisplayName: 荒芜
+	DesolationCharge3.DisplayName: 荒芜
+	DesolationCharge4.DisplayName: 荒芜
+	DesolationIIIHeld.DisplayName: 荒芜
+	DesolationExplosion.DisplayName: 荒芜
+	DesolationIVHeld.DisplayName: 荒芜
+	BarrenBeam.DisplayName: 贫瘠光束
+	AtaxiaBall.DisplayName: 共济失调
+	AtaxiaBlade.DisplayName: 共济失调
+	AtaxiaCrystal.DisplayName: 共济失调
+	AtaxiaBolt.DisplayName: 共济失调
+	AtaxiaWave.DisplayName: 共济失调
+	LamentBall.DisplayName: 哀悼
+	LamentBallExplosive.DisplayName: 哀悼
+	LamentExplosion.DisplayName: 哀悼
+	LamentPierce.DisplayName: 哀悼
+	LamentWave.DisplayName: 哀悼
+	LamentSuperPierce.DisplayName: 哀悼超级穿刺
+	AmuletProj.DisplayName: 护身符投射物
+	ExtinctionBall.DisplayName: 灭绝之球
+	BabyShadeWyrmHead.DisplayName: 蠕虫
+	VoidLeviathanProjBody.DisplayName: 虚空利维坦
+	VoidLeviathanProjHead.DisplayName: 虚空利维坦
+	VoidLeviathanProjTail.DisplayName: 虚空利维坦
+	VleviBody.DisplayName: 维利之躯
+	VleviHead.DisplayName: 维利之首
+	VleviTail.DisplayName: 维利之尾
+	CosmicWrathExplosion.DisplayName: 爆炸
+	CosmicWrathP.DisplayName: 宇宙之怒
+	Blackhole.DisplayName: 黑洞
+	BlackholeCreator.DisplayName: 黑洞生成器
+	BlackholeOrbit.DisplayName: 黑洞轨道
+	ExtinctionArrow.DisplayName: 灭绝之箭
+	VoidPortal.DisplayName: 虚空传送门
+	VoidPortalSinewave.DisplayName: 虚空波
+	LightsAfflictionExplosion.DisplayName: 脊柱
+	LightsAfflictionP.DisplayName: 光之折磨
+	DespairBody.DisplayName: 永恒绝望之矛
+	DespairTip.DisplayName: 唐菖蒲
+	PikeOfEternalDespairP.DisplayName: 永恒绝望之矛
+	VoidExplosion.DisplayName: 爆炸
+	ReaperstormProj.DisplayName: 收割风暴
+	VoidInfernoBlast.DisplayName: 灭绝爆破
+	VoidInfernoP.DisplayName: 虚空炼狱
+	BigExplosion.DisplayName: 大爆炸
+	ChromacastBall.DisplayName: 色彩投射
+	ShimmersparkStrike.DisplayName: 微光火花打击
+	ShimmersparkHeld.DisplayName: 微光火花
+	ShimmerShrapnel.DisplayName: 微光火花
+	FundementalStrike.DisplayName: 基础打击
+	AncientShard.DisplayName: 远古碎片
+	AqueousMinionFriendly1.DisplayName: 水之仆从
+	AqueousMinionFriendly2.DisplayName: 水之仆从
+	AqueousMinionFriendly3.DisplayName: 水之仆从
+	AqueousMinionFriendly4.DisplayName: 水之仆从
+	WaterballFriendly.DisplayName: 友方水球
+	Waterball.DisplayName: 水之
+	BrinyBusterP.DisplayName: 盐水冲击枪
+	BubblePopperP.DisplayName: 泡泡枪
+	Bubble.DisplayName: 泡泡
+	HighTideP.DisplayName: 涨潮
+	AquaticArrow.DisplayName: 水生箭
+	AquaticArrow2.DisplayName: 水生箭
+	Watershot.DisplayName: 水枪
+	AnarchyLaser.DisplayName: 无政府激光
+	AnarchyWave.DisplayName: 无政府波
+	AnarchyP.DisplayName: 无政府
+	InfectionMouthMinion.DisplayName: 饥饿
+	ExplosionHostile.DisplayName: 爆炸
+	OutbreakDart.DisplayName: 爆发飞镖
+	ChaosGazer.DisplayName: 混沌凝视者
+	ChaosLaser.DisplayName: 混沌激光
+	ChaosShard.DisplayName: 混沌碎片
+	ChaoticBlast.DisplayName: 混沌电子放电
+	AzanaNanoBolt.DisplayName: 阿扎娜
+	InfectionHeart.DisplayName: 感染之心
+	PandemoniumBlast.DisplayName: 群魔殿
+	PandemoniumFlame.DisplayName: 群魔殿
+	PurgeBeam.DisplayName: 清洗光束
+	ChargeRifleFull.DisplayName: 充能步枪
+	ChargeRifleHeld.DisplayName: 充能步枪
+	CosmicCrusherBlade.DisplayName: 宇宙粉碎者
+	CosmicCrusherSpawner.DisplayName: 宇宙粉碎者
+	CosmicArrow.DisplayName: 宇宙之箭
+	CosmicMinionShot.DisplayName: 守护者
+	DemolecularizerLaser.DisplayName: 分解射线
+	CosmicObserver.DisplayName: 宇宙入侵者
+	OrionsBeltGalaxy.DisplayName: 猎户腰带星系
+	PlanetarySpike.DisplayName: 行星尖刺
+	PlanetaryWavePortal.DisplayName: 行星波传送门
+	EnergyFork.DisplayName: 能量分叉
+	EnergyFork2.DisplayName: 能量分叉
+	OrionsBeltP.DisplayName: 猎户腰带
+	CosmicalusRing.DisplayName: 宇宙环
+	FireBlasterBolt.DisplayName: 火焰冲击波
+	GreekFire.DisplayName: 希腊火
+	HearthMinion.DisplayName: 炉火
+	HearthBeam.DisplayName: 炉火光束
+	FireBlade.DisplayName: 火焰之刃
+	SpinningFlame.DisplayName: 旋转火焰
+	MagmaroxMeteor.DisplayName: 日曜碎片
+	MagmaroxRock.DisplayName: 熔岩岩石
+	PossessedHand.DisplayName: 附身之手
+	SacredCrystalLaser.DisplayName: 神圣水晶激光
+	TerreneMortar.DisplayName: 陆地迫击炮
+	TerreneRock.DisplayName: 陆地岩石
+	UltramarineBeam.DisplayName: 群青光束
+	VioletEdgeBall.DisplayName: 紫罗兰刀锋球
+	Frigidbullet.DisplayName: 寒冷子弹
+	IcicleMinion.DisplayName: 泡泡
+	IceWrathArrow.DisplayName: 冰之怒
+	IceReaverP.DisplayName: 冰之掠夺者
+	IceWrathBeam.DisplayName: 冰之怒
+	SnowdriftBomb.DisplayName: 吹雪
+	RadiantStarHoming.DisplayName: 辉耀之星
+	RadiantStarSpiral.DisplayName: 辉耀之星
+	RadiantBombP.DisplayName: 大师漩涡
+	MajestyP.DisplayName: 雄伟
+	RadiantBlade.DisplayName: 辉耀之刃
+	RadiantStarBow.DisplayName: 辉耀星弓
+	RadiantStorm.DisplayName: 辉耀风暴
+	EnergySpiritBolt.DisplayName: 能量箭
+	EnergySpirit.DisplayName: 能量之魂
+	TheSilencerP.DisplayName: 消音器
+	StarstruckArrow.DisplayName: 追星
+	StarstruckBeam.DisplayName: 追星
+	Star.DisplayName: 星星
+	BountyP.DisplayName: 信号增强器
+	ScourgeRocketFriendly.DisplayName: 火箭
+	ScourgeRocket.DisplayName: 灾厄火箭
+	SignalBoost.DisplayName: 信号增强器
+	CelestiaArc.DisplayName: 闪电
+	CelestialBoltFriendly.DisplayName: 天界激光
+	CelestiaPortal.DisplayName: 天界
+	CelestialInfernoSpin.DisplayName: 天界炼狱旋转
+	EyeballMinion.DisplayName: 天界观察者
+	SolusP.DisplayName: 天界激光
+	TemplesWrathArrow.DisplayName: 神庙之怒
+	GodslayerStrike.DisplayName: 弑神
+	InfernoCloud.DisplayName: 炼狱风暴
+	InfernoLightning.DisplayName: 炼狱风暴
+	TemplesWrathSword.DisplayName: 神庙之怒
+	InfernoEye.DisplayName: 火焰符文
+	InfernoShot.DisplayName: 炼狱射击
+	WyrmClawSlash.DisplayName: 龙爪斩
+	TempleBeam.DisplayName: 神庙光束
+	TempleBall.DisplayName: 神庙球
+	RuneBlast.DisplayName: 符文爆破
+	FireRunes.DisplayName: 火焰符文
+	CombustiaWave.DisplayName: 燃烧波
+	FirelashFlames.DisplayName: 火鞭烈焰
+	EmberBurstP.DisplayName: 灰烬爆发
+	HearthBlade.DisplayName: 炉火之刃
+	HearthP.DisplayName: 炉火
+	VolcanicTentacle.DisplayName: 火山触手
+	PincerArrow.DisplayName: 蝎子箭
+	ScorpionMinion.DisplayName: 蝎子
+	WastelandStingerFriendly.DisplayName: 毒刺
+	WastelandStinger.DisplayName: 荒原毒刺
+	AncientStar.DisplayName: 远古之星
+	AncientStar2.DisplayName: 远古之星
+	Fireblast.DisplayName: 火焰冲击
+	IceMist.DisplayName: 冰雾
+	IceMistSpike.DisplayName: 霜雹
+	RetinasmP.DisplayName: 魔焰眼
+	SkeletronFistP.DisplayName: 骷髅王之拳
+	LightningArc.DisplayName: 闪电
+	Lightning.DisplayName: 闪电宝典
+	ShockstormPortal.DisplayName: 电击风暴
+	SpinalEye.DisplayName: 巨眼
+	Spine.DisplayName: 脊柱
+	TearArrow.DisplayName: 泪珠箭
+	DestroyerLaserFull.DisplayName: 充能步枪
+	DestroyerLaserHalf.DisplayName: 毁灭者
+	MiniEaterOfSouls.DisplayName: 小噬魂者
+	TheDestroyerHeld.DisplayName: 毁灭者
+	CorruptedFangP.DisplayName: 腐化尖牙
+	HungryMinion.DisplayName: 饥饿
+	SkeleSkull.DisplayName: 骷髅头
+	SlimeBoosterTrail.DisplayName: 史莱姆
+	AcidAuraBase.DisplayName: 酸性光环
+	AcidBall.DisplayName: 酸液球
+	Shockwave.DisplayName: 冲击波
+	WastelandDiggingProj.DisplayName: 荒原
+	WastelandDiggingProjReal.DisplayName: 荒原
+	WastelandDiggingSpout.DisplayName: 荒原
+	WastelandDiggingSpoutReal.DisplayName: 荒原
+	WastelandDryad.DisplayName: 荒原树妖
+	WastelandSnap.DisplayName: 荒原之钳
+	WastelandStormBolt.DisplayName: 荒原
+	GuardianShot.DisplayName: 守护者
+	WyrmBreath.DisplayName: 龙之吐息
+	Aquanado.DisplayName: 水龙卷
+	AquanadoBolt.DisplayName: 水龙卷弹
+	AquaticBlast.DisplayName: 水生爆破
+	AquaticBolt.DisplayName: 水之
+	WaterKnife.DisplayName: 水之
+	WaterKnifeHoming.DisplayName: 水之
+	AzanaBlood.DisplayName: 阿扎娜之血
+	AzanaBeam.DisplayName: 混沌激光
+	AzanaBeamQuick.DisplayName: 混沌激光
+	AzanaCloud.DisplayName: 孢子云
+	AzanaGiantCloud.DisplayName: 孢子云
+	AzanaGlob.DisplayName: 混沌爆破
+	AzanaInfection.DisplayName: 感染
+	AzanaInfectionPillar.DisplayName: 感染之柱
+	AzanaInfectionPillarTip.DisplayName: 唐菖蒲
+	AzanaLaserWarning.DisplayName: 警告
+	AzanaMiniBlast.DisplayName: 混沌爆破
+	AzanaMiniBlastAccelerate.DisplayName: 混沌爆破
+	AzanaMiniBlastSpiral.DisplayName: 混沌爆破
+	AzanaMiniBlastWave.DisplayName: 混沌爆破
+	AzanaTarget.DisplayName: 目标
+	AzanaWave.DisplayName: 阿扎娜
+	ObserverBeam.DisplayName: 观察者光束
+	ObserverFireball.DisplayName: 观察者火球
+	ObserverShard.DisplayName: 观察者碎片
+	ObserverSpell.DisplayName: 观察者碎片
+	GuardianBeam.DisplayName: 守护者光束
+	GuardianCircle.DisplayName: 守护者
+	GuardianFire.DisplayName: 火焰
+	GuardianFireball.DisplayName: 守护者
+	GuardianInfernoball.DisplayName: 守护者
+	GuardianOrb.DisplayName: 守护者
+	GuardianPortal.DisplayName: 神庙漩涡
+	GuardianPortalSwirl.DisplayName: 守护者
+	GuardianStickyBolt.DisplayName: 守护者粘性箭
+	GuardianStrike.DisplayName: 守护者
+	GuardianTargeter.DisplayName: 守护者
+	FurosiaSoul.DisplayName: 女儿？
+	FurosiaSpike.DisplayName: 炼狱魔匠
+	InfernaceFire.DisplayName: 火焰
+	InfernaceSoul.DisplayName: 丈夫
+	InfernaceWifeSoul.DisplayName: 妻子
+	InfernalMonolith.DisplayName: 炼狱巨石
+	InfernalMonolithSpawn.DisplayName: 炼狱巨石
+	InfernaceSpike.DisplayName: 炼狱魔匠
+	InfernaceWave.DisplayName: 炼狱魔匠
+	GreekFireHostile.DisplayName: 火焰
+	ObsidiousFireCrystal.DisplayName: 黑曜魔骑士火焰水晶
+	ObsidiousFireCrystalStationary.DisplayName: 黑曜魔骑士火焰水晶
+	ObsidiousHumanRockOrbital.DisplayName: 黑曜魔骑士
+	ObsidiousIceBeam.DisplayName: 黑曜魔骑士
+	ObsidiousIceBeamCrystal.DisplayName: 黑曜魔骑士
+	ObsidiousIceCrystalSpin.DisplayName: 黑曜魔骑士
+	ObsidiousIceCrystal.DisplayName: 黑曜魔骑士
+	ObsidiousRitual.DisplayName: 黑曜魔骑士
+	ObsidiousBeam.DisplayName: 黑曜魔骑士
+	ObsidiousFireBeam.DisplayName: 黑曜魔骑士
+	ObsidiousFirePortal.DisplayName: 火焰传送门
+	ObsidiousHandOverlay.DisplayName: 黑曜魔骑士
+	ObsidiousHandTrail.DisplayName: 黑曜魔骑士
+	ObsidiousHomingBall.DisplayName: 黑曜魔骑士追踪球
+	ObsidiousIceLaser.DisplayName: 黑曜魔骑士
+	ObsidiousRockLarge.DisplayName: 黑曜魔骑士
+	ObsidiousRockNoCollide.DisplayName: 黑曜魔骑士
+	ObsidiousRockOrbital.DisplayName: 黑曜魔骑士
+	ObsidiousTargetCrystal.DisplayName: 黑曜魔骑士
+	ObsidiousTargetCrystalCenter.DisplayName: 黑曜魔骑士
+	SolarFragmentProj.DisplayName: 日曜碎片
+	FrigidBreath.DisplayName: 诅咒之火
+	FrostExplosion.DisplayName: 冰霜爆炸
+	HomingIce.DisplayName: 附魔冰块
+	IceMagic.DisplayName: 冰魔法
+	IceRain.DisplayName: 冰雨
+	PermaDashWarn.DisplayName: 永冻之霜
+	PermafrostIcicle.DisplayName: 神秘冰锥
+	PermafrostTP.DisplayName: 永冻之霜
+	RegarothBolt.DisplayName: 雷加罗斯之箭
+	RegarothBomb.DisplayName: 雷加罗斯炸弹
+	RegarothPortal.DisplayName: 雷加罗斯传送门
+	Napalm.DisplayName: 灾厄凝固汽油
+	ScourgeBeam.DisplayName: 迷你战机
+	ScourgeBullet.DisplayName: 灾厄子弹
+	ScourgeHomingRocket.DisplayName: 追踪火箭
+	VolcanicBoom.DisplayName: 火山爆轰
+	VolcanicDebris.DisplayName: 沃尔坎诺斯
+	VolcanicDemon.DisplayName: 火山恶魔
+	VolcanoxBlast.DisplayName: 沃尔坎诺斯
+	VolcanoxBolt.DisplayName: 沃尔坎诺斯
+	VolcanoxExplosion.DisplayName: 爆炸
+	CrystallineKunai.DisplayName: 晶状苦无
+	BloodshotP.DisplayName: 血丝
+	Worm.DisplayName: 蠕虫
+	SoulswordSoul.DisplayName: 魂剑
+	SoulswordSoul2.DisplayName: 魂剑
+	NihongoPoint.DisplayName: 日本语
+	NihongoP.DisplayName: 日本语
+	ForeverBolt.DisplayName: 永恒之箭
+	ThickSmoke.DisplayName: 纷争毒素
+	SearingArrow.DisplayName: 灼热之箭
+	MasterSwordWave.DisplayName: 大师之剑
+	GladiolusTip.DisplayName: 唐菖蒲
+	Gladiolus.DisplayName: 唐菖蒲
+	MjolnirP.DisplayName: 妙尔尼尔
+	PoseidonsTridentP.DisplayName: 波塞冬的三叉戟
+	IzarisShard.DisplayName: 伊扎里斯的碎片
+	KirveinShard.DisplayName: 柯文的碎片
+	KrecheusShard.DisplayName: 克雷修斯的碎片
+	XernonShard.DisplayName: 泽农的碎片
+	KirveinArrow.DisplayName: 柯文
+	KirveinCrystalFragment.DisplayName: 柯文
+	KirveinExplosion.DisplayName: 柯文
+	KirveinExplosiveArrow.DisplayName: 柯文
+	KirveinFragCrystal.DisplayName: 柯文
+	KrecheusBlade.DisplayName: 克雷修斯
+	KrecheusBolt.DisplayName: 克雷修斯
+	KrecheusCircle.DisplayName: 克雷修斯
+	KrecheusPortal.DisplayName: 克雷修斯
+	KrecheusSide.DisplayName: 克雷修斯
+	KrecheusSpike.DisplayName: 克雷修斯
+	XernonBolt.DisplayName: 泽农
+	XernonBoltExplosive.DisplayName: 泽农
+	XernonBoltHoming.DisplayName: 泽农追踪箭
+	XernonBoltSuper.DisplayName: 泽农
+	XernonCrystal.DisplayName: 泽农
+	XernonExplosion.DisplayName: 泽农
+	CreditsStarter.DisplayName: 制作人员名单触发器
+	ShardBase.DisplayName: 碎片基座
+	Lightbeam.DisplayName: 光束
+	DeathShockwave.DisplayName: 死亡冲击波
+	CrystallineShardHoming.DisplayName: 远古混合体
+	CrystallineShard.DisplayName: 远古混合体
+	CrystallineKunaiHostileNG.DisplayName: 远古混合体
+	CrystallineKunaiHostileExplosive.DisplayName: 远古混合体
+	CrystalFlower.DisplayName: 水晶花
+	CrystalCluster.DisplayName: 水晶簇
+	AncientProjectionSwirl2.DisplayName: 远古投影
+	AncientProjectionSwirl.DisplayName: 远古投影
+	AncientProjection.DisplayName: 远古投影
+	AAHandOverlay.DisplayName: 远古混合体
+	RadiantMasterDeathExplosion.DisplayName: 辉耀大师死亡爆炸
+	ShadeWyrmBolt.DisplayName: 暗影龙之箭
+	RavenPrince.DisplayName: 乌鸦
+	PrinceStrike.DisplayName: 王子打击
+	PrinceRain.DisplayName: 王子之雨
+	PrinceAura.DisplayName: 王子光环
+	AeroflakExplosion.DisplayName: 爆炸
+	AeroflakP.DisplayName: 星星
+	ArmageddonBlade.DisplayName: 末日之刃
+	DiscordantToxin.DisplayName: 纷争毒素
+	DiscordantBolt.DisplayName: 纷争之箭
+	BugToxin.DisplayName: 虫毒素
+	BugBasherP.DisplayName: 妙尔尼尔
+	NeovirtuoShieldSwirl2.DisplayName: 尼奥
+	NeovirtuoShieldSwirl.DisplayName: 尼奥
+	NeovirtuoShieldBase.DisplayName: 尼奥
+	ViridiumLightningPassive.DisplayName: 闪电
+	ViridiumLightning.DisplayName: 翠绿闪电
+	ViridiumExplosion.DisplayName: 爆炸
+	TimeRocket.DisplayName: 时间火箭
+	TimecleaverRound.DisplayName: 时间劈刀弹
+	BioLightning.DisplayName: 生物闪电
+	ChamchamRat.DisplayName: 仓鼠
+	WyvernBody.DisplayName: 蠕虫
+	WyvernHead.DisplayName: 蠕虫
+	WyvernTail.DisplayName: 蠕虫
+	PoisonFire.DisplayName: 火葬混沌
+	SWRLRocket.DisplayName: 火箭
+	EoiteWave.DisplayName: 永恒波
+	EoiteBlast.DisplayName: 永恒爆破
+	EoiteBeam2.DisplayName: 永恒光束
+	EoiteBeam.DisplayName: 永恒光束
+	DarknersScarfP.DisplayName: 暗裔围巾
+	StarLunarFragment.DisplayName: 飞龙吐息
+	StarLunar.DisplayName: 星星
+	TheBeltP.DisplayName: 暗裔围巾
+	CoalescedBolt.DisplayName: 聚变之箭
+	CoalescedOrb.DisplayName: 聚变法球
+	GelticArrow.DisplayName: 盖尔特之箭
+	Speedstar.DisplayName: 速度之星
+	AncientIchorFlagonP.DisplayName: 远古脓血瓶
+	Sandball.DisplayName: 沙球
+	Shieldnado.DisplayName: 护盾龙卷
+	SandSpray.DisplayName: 沙喷
+	Skysand.DisplayName: 天空沙
+	Sandnado.DisplayName: 沙龙卷
+	SandySpearP.DisplayName: 沙之矛
+	MiniatureSandstorm.DisplayName: 微型沙暴
+	TheGritP.DisplayName: 沙砾
+	AndromedaBase.DisplayName: 仙女座
+	AndromedaBlast.DisplayName: 仙女座
+	AndromedaStar.DisplayName: 远古之星
+	AndromedaSwirl.DisplayName: 仙女座
+	ElementalArrow.DisplayName: 元素箭
+	ElementalBolt.DisplayName: 元素弹
+	CosmicusP.DisplayName: 宇宙
+	ElementalBurst.DisplayName: 元素爆发
+	EquinoxBase.DisplayName: 火焰编织者
+	EquinoxSwirl.DisplayName: 火焰编织者
+	FusionP.DisplayName: 虚空炼狱
+	FusionOrb6.DisplayName: 聚变
+	FusionOrb5.DisplayName: 聚变
+	FusionOrb4.DisplayName: 聚变
+	FusionOrb3.DisplayName: 聚变
+	FusionOrb2.DisplayName: 聚变
+	FusionOrb1.DisplayName: 聚变
+	PhantomHook.DisplayName: 幻影钩
+	SingularityBeam.DisplayName: 奇点
+	SingularityBolt.DisplayName: 奇点
+	SingularityP.DisplayName: 奇点
+	ZenithOrb4.DisplayName: 天顶法球4
+	ZenithOrb3.DisplayName: 天顶法球3
+	ZenithOrb2.DisplayName: 天顶法球2
+	ZenithOrb1.DisplayName: 天顶法球1
+	ZenithBeam4.DisplayName: 天顶光束4
+	ZenithBeam3.DisplayName: 天顶光束3
+	ZenithBeam2.DisplayName: 天顶光束2
+	ZenithBeam1.DisplayName: 天顶光束1
+	ValkyrieChain.DisplayName: 女武神链
+	VoxusP.DisplayName: 沃克斯
+	Voxus4.DisplayName: 沃克斯
+	Voxus3.DisplayName: 沃克斯
+	Voxus2.DisplayName: 沃克斯
+	Voxus1.DisplayName: 沃克斯
+	ValkyrieBolt.DisplayName: 女武神
+	RainbowExplosion.DisplayName: 爆炸
+	DragonFire.DisplayName: 龙之吐息
+	FireBall.DisplayName: 火球
+	FireKnifeBolt.DisplayName: 火焰弹
+	FireKnife.DisplayName: 火焰刀
+	FireScytheProj.DisplayName: 永恒之火镰刀
+	FirestormShot.DisplayName: 火焰风暴
+	TriswordBlade.DisplayName: 烈焰三相剑
+	TriswordSlash.DisplayName: 烈焰三相剑
+	FirelashP.DisplayName: 火鞭
+	FireBolt.DisplayName: 火焰弹
+	FireElemental.DisplayName: 火元素
+	InfernoLanceP.DisplayName: 炼狱长枪
+	FrostBladeP.DisplayName: 冰霜之刃
+	IceAxe.DisplayName: 冰斧
+	IceWaveCheck.DisplayName: 冰浪检查
+	IceWave.DisplayName: 冲击波
+	FreezeBeam.DisplayName: 冰冻射线
+	FrostPulse.DisplayName: 冰霜脉冲
+	IcicleProj.DisplayName: 冰锥投射物
+	GlacierBreakerP.DisplayName: 碎冰者
+	BlitzP.DisplayName: 冰川突击
+	YoyoSnowball.DisplayName: 冰川突击
+	SnowSpray.DisplayName: 雪喷
+	Snowflake.DisplayName: 雪花
+	IcicleShot.DisplayName: 冰弹
+	Icicle.DisplayName: 冰刺
+	IceBlade.DisplayName: 冰刃
+	SkyFuryRain.DisplayName: 雨
+	HappyCloud.DisplayName: 快乐小云
+	CloudBolt.DisplayName: 闪电箭
+	Feather3.DisplayName: 羽毛
+	Feather2.DisplayName: 羽毛
+	Feather1.DisplayName: 羽毛
+	CloudBlast.DisplayName: 天空之怒
+	SkyScraperP.DisplayName: 摩天楼
+	FeatherFast.DisplayName: 迅捷羽毛
+	TheLauncherBolt.DisplayName: 发射器
+	TheLauncherP.DisplayName: 发射器
+	WindfallFire.DisplayName: 风落
+	ThorsHammerP.DisplayName: 雷神之锤
+	ThorLightning.DisplayName: 雷神之锤
+	AeroLightning.DisplayName: 闪电
+	CalamityP.DisplayName: 灾变
+	CataclysmP.DisplayName: 灾变
+	CataclysmTip.DisplayName: 灾变
+	CataclysmicLaser.DisplayName: 灾变激光
+	VoidBlast.DisplayName: 虚空爆破
+	CrimsonSkyLaser.DisplayName: 猩红天空
+	VoidArrow.DisplayName: 虚空之箭
+	ScourgeFire.DisplayName: 灾厄之火
+	VoidTentacle.DisplayName: 虚空触手
+	TheEyeP.DisplayName: 湮灭之眼
+	AbyssCultistBolt.DisplayName: 深渊教徒
+	AbyssCultist.DisplayName: 深渊教徒
+	VoidSwordProj.DisplayName: 大屠杀
+	DukeChakramProj.DisplayName: 公爵环刃
+	TheUrchinUrchin.DisplayName: 海胆
+	TheUrchinSpike.DisplayName: 海胆尖刺
+	TheUrchinP.DisplayName: 海胆
+	WatershotP.DisplayName: 水枪
+	WaterSwordP.DisplayName: 永恒之潮
+	WaterYoyoWater.DisplayName: 末日
+	WaterYoyoP.DisplayName: 海蓝
+	GemLaser.DisplayName: 宝石激光
+	GemRay.DisplayName: 宝石射线
+	GemLaserHoming.DisplayName: 宝石激光
+	InfinityFireTentacle.DisplayName: 火焰触手
+	InfinityFireball.DisplayName: 火球
+	InfinityBubble.DisplayName: 泡泡
+	FirePortal.DisplayName: 火焰传送门
+	DesertCrystal.DisplayName: 沙漠水晶
+	BlightedBulletP.DisplayName: 枯萎子弹
+	BlightCloud.DisplayName: 枯萎云
+	DeterioratorKnife.DisplayName: 火焰刀
+	CorroderMinion.DisplayName: 能量之魂
+	HarvesterScythe.DisplayName: 收割者
+	CorroderSpit.DisplayName: 腐蚀者唾液
+	BlightRing.DisplayName: 枯萎之环
+	BlightRang.DisplayName: 枯萎回旋镖
+	CarapaceSlicerP.DisplayName: 甲壳切片器
+	CarapaceSlice.DisplayName: 甲壳切片
+	CarapaceShard.DisplayName: 甲壳碎片
+	CarapaceBall.DisplayName: 甲壳球
+	BlossomSpore.DisplayName: 花开孢子
+	FlowerPowerProj.DisplayName: 花瓣
+	PetalPikeStem.DisplayName: 花瓣长矛
+	PetalPikeTip.DisplayName: 花瓣长矛
+	PetalPikeP.DisplayName: 花瓣长矛
+	BlossomBoomerP.DisplayName: 花开回旋镖
+	BudKunaiP.DisplayName: 花苞苦无
+	DrakoniteKnifeP.DisplayName: 龙裔刀
+	DrakoniteFireball.DisplayName: 龙裔火球
+	DrakoniteEruption.DisplayName: 龙裔喷发
+	DragonBladeBlast.DisplayName: 龙刃爆破
+	DrakoniteArrow.DisplayName: 龙裔箭
+	DragonEmberBall.DisplayName: 龙烬球
+	DragonEmberSeeker.DisplayName: 龙烬追踪者
+	DragonFangShadow.DisplayName: 龙牙之影
+	DragonfireBullet.DisplayName: 龙火子弹
+	DragonTalonBall.DisplayName: 龙爪球
+	DrakoniteDrill.DisplayName: 龙裔钻头
+	MiniDragon.DisplayName: 迷你龙
+	DragonFangP.DisplayName: 龙牙
+	ManashardWhipP.DisplayName: 魔力碎片鞭
+	ManaBolt.DisplayName: 魔力箭
+	ManaRound.DisplayName: 魔力弹
+	Manashatter.DisplayName: 魔力尖刺
+	Manaspike.DisplayName: 魔力尖刺
+	ManashardPikeP.DisplayName: 魔力碎片矛
+	ManashardDaggerP.DisplayName: 魔力碎片匕首
+	WyvernBreath1.DisplayName: 飞龙吐息
+	WyvernBreath2.DisplayName: 飞龙吐息
+	MeteoricFireball.DisplayName: 陨石火球
+	MeteoricBolt.DisplayName: 陨石箭
+	SpaceWand.DisplayName: 太空魔杖
+	DecayP.DisplayName: 腐朽
+	NecrosisP.DisplayName: 坏死
+	MortemiteWave.DisplayName: 死亡波
+	MortemiteFlames.DisplayName: 死亡火焰
+	MortemiteBlade.DisplayName: 死亡之刃
+	BabyPuffSpike.DisplayName: 幼年河豚尖刺
+	BabyPuff.DisplayName: 幼年河豚
+	PuffSpike.DisplayName: 河豚尖刺
+	PutridArrow.DisplayName: 腐烂之箭
+	BlightfireSpawner.DisplayName: 枯萎火生成器
+	WretchedStaffHeld.DisplayName: 恶劣法杖
+	PutridVomit.DisplayName: 腐烂呕吐物
+	PutridRipper.DisplayName: 腐烂开膛手
+	PutridGoop.DisplayName: 腐烂粘液
+	PutridSkull.DisplayName: 腐烂骷髅
+	PutridSpike.DisplayName: 腐烂尖刺
+	PutridTrail.DisplayName: 腐烂轨迹
+	FetidBladeP.DisplayName: 能量分叉
+	RadiantBeam.DisplayName: 辉耀光束
+	GlobuleMinionSmall.DisplayName: 星光小球
+	GlobuleMinion.DisplayName: 星光球
+	FrostMine.DisplayName: 冰霜地雷
+	RadiantBeamFocused.DisplayName: 辉耀光束
+	RadiantGlobule.DisplayName: 辉耀球
+	RadiantKatanaSlash.DisplayName: 辉耀武士刀
+	RadiantKatanaStar.DisplayName: 辉耀之星
+	RadiantStarMine.DisplayName: 辉耀之星
+	RadiantStarMortar.DisplayName: 辉耀之星
+	RadiantStarSmall.DisplayName: 辉耀之星
+	RadiantStarThrown.DisplayName: 辉耀之星
+	RadiantStar.DisplayName: 闪光
+	StellarPortal.DisplayName: 恒星传送门
+	StellarMeteor.DisplayName: 恒星陨石
+	StellariumBolt2.DisplayName: 恒星权杖
+	StellariumBolt.DisplayName: 恒星权杖
+	StellarArrow.DisplayName: 恒星之箭
+	SuctionArrow.DisplayName: 吸力箭
+	ToyRobot.DisplayName: 玩具机器人
+	PuzzlePiece.DisplayName: 充能步枪
+	ChaosTomatoP.DisplayName: 混沌番茄
+	TomatoP.DisplayName: 番茄
+	AncientStellate.DisplayName: 远古星状体
+	CelestialWatcher.DisplayName: 天界观察者
+	LilOrange.DisplayName: 小橘子
+	TurboDoge.DisplayName: 涡轮神烦狗
+	VoidCrawler.DisplayName: 虚空爬行者
 	WOKE.DisplayName: WOKE
-	AutoDrillBeam.DisplayName: Dubstep Beam
-	EscapedChlorobyte.DisplayName: Escaped Chlorobyte
-	Blank.DisplayName: Blank
-	ElectricBolt.DisplayName: Electric Bolt
-	RifleSentry.DisplayName: Rifle Sentry
-	ZapMasterLightning.DisplayName: Strange Ukulele
-	PorterP.DisplayName: Porter
-	PlasmaThrowerBeam.DisplayName: Purge Beam
-	FizzlerP2.DisplayName: Fizzler
-	FizzlerP.DisplayName: Fizzler
-	GrowinatorP.DisplayName: Growinator
-	ImbalancerLightning.DisplayName: Strange Ukulele
-	ImbalancerMine.DisplayName: Imbalancer
-	ShrinkinatorP.DisplayName: Shrinkinator
-	NapalmCannonP.DisplayName: Napalm Cannon
-	DubstepBeam.DisplayName: Dubstep Beam
-	DubstepGunHeld.DisplayName: The Destroyer
-	DubstepPulse.DisplayName: Dubstep Pulse
-	DubstepWave.DisplayName: Dubstep
-	MatrixLaser.DisplayName: Matrix Laser
-	Particles.DisplayName: Particles
-	MatterManipulator.DisplayName: Matter Manipulator
-	ScrapplingHookP.DisplayName: Scrappling Hook
-	CrimsonShadeHoming.DisplayName: Crimson Shade Homing
-	CrimsonShadeP.DisplayName: Crimson Shade 'P
-	LifesLamentAxe.DisplayName: Lifes Lament Axe
-	BabyShadeWyrmBody.DisplayName: Baby Shade Wyrm Body
-	CastersCurseBoltBase.DisplayName: Casters Curse Bolt Base
-	CastersCurseBoltSwirl.DisplayName: Casters Curse Bolt Swirl
-	BabyShadeWyrmTail.DisplayName: Baby Shade Wyrm Tail
-	BlinkrootDirt.DisplayName: Blinkroot
-	DaybloomSun.DisplayName: Daybloom
-	DeathweedBall.DisplayName: Deathweed
-	FireblossomBall.DisplayName: Fireblossom
-	MoonglowLight.DisplayName: Moonglow
-	ShiverthornIcicle.DisplayName: Shiverthorn
-	WaterleafBall.DisplayName: Waterleaf
-	AdamantiteLaser.DisplayName: Adamantite Laser
-	CobaltScythe.DisplayName: Cobalt Scythe
-	MythrilBomb.DisplayName: Mythril Bomb
-	MythrilSpike.DisplayName: Mythril Bomb
-	OrichalcumPetal.DisplayName: Orichalcum Petal
-	PalladiumSpark.DisplayName: Palladium Spark
-	TitaniumSpike.DisplayName: Titanium Slice
-	StrangePlantBall6.DisplayName: Strange Orb
-	StrangePlantBall5.DisplayName: Strange Orb
-	StrangePlantBall4.DisplayName: Strange Orb
-	StrangePlantBall3.DisplayName: Strange Orb
-	StrangePlantBall2.DisplayName: Strange Orb
-	StrangePlantBall1.DisplayName: Strange Orb
-	FireballP.DisplayName: Fireball
-	PoltercastP.DisplayName: Poltercast
-	StingerP.DisplayName: Stinger
-	Barrier.DisplayName: Barrier
-	CursedBall.DisplayName: Cursed Ball
-	CursedFlame.DisplayName: Cursed Flame
-	DeimosAsteroid.DisplayName: Deimos Asteroid
-	EarthcrusherProj.DisplayName: Earthcrusher Proj
-	EarthcrusherSwirl.DisplayName: Earthcrusher Swirl
-	FireweaverProj.DisplayName: Fireweaver Proj
-	FireweaverSwirl.DisplayName: Fireweaver Swirl
-	GraniteEnergyShot.DisplayName: Granite Energy Shot
-	ImpishFireball.DisplayName: Impish Fireball
-	ImpishWave.DisplayName: Impish Wave
-	NeptuneRay.DisplayName: Neptune Ray
-	OceansSeashell.DisplayName: Oceans Seashell
-	SansNote.DisplayName: Sans Note
-	ThundersoulBolt.DisplayName: Thundersoul Bolt
-	ThundersoulBoltMinor.DisplayName: Thundersoul Bolt Minor
-	WarhornP.DisplayName: Warhorn
-	Nightball.DisplayName: Nightfall
-	Nightball2.DisplayName: Deathwarp
-	EarthP.DisplayName: Earth
-	JupiterGasOrbit.DisplayName: Jupiter
-	JupiterP.DisplayName: Jupiter
-	MarsP.DisplayName: Mars
-	MercuryP.DisplayName: Mercury
-	NeptuneP.DisplayName: Neptune
-	NeptuneWaterball.DisplayName: Neptune
-	SaturnP.DisplayName: Saturn
-	SaturnRing.DisplayName: Saturn Ring
-	SolOrbit.DisplayName: Sol
-	SolP.DisplayName: Sol
-	UranusP.DisplayName: Ur Anus
-	VenusP.DisplayName: Venus
-	BloodchainP.DisplayName: Bloodchain
-	FlarelashP.DisplayName: Flarelash
-	HallowedRadianceP.DisplayName: Hallowed Radiance
-	NightbreakerBall.DisplayName: Nightbreaker
-	NightbreakerBlade.DisplayName: Nightbreaker
-	NightbreakerP.DisplayName: Nightbreaker
-	ShadowsGraspP.DisplayName: Shadows Grasp
-	TerraBelterP.DisplayName: Terra Belter
-	TerraBolt.DisplayName: Belter
-	TerraOrb.DisplayName: Terra Orb
-	TheSpineP.DisplayName: The Spine
-	TheTrueSpineP.DisplayName: The True Spine
-	TheVineP.DisplayName: The Vine
-	TrueHallowedRadianceP.DisplayName: True Hallowed Radiance
-	TrueHallowedRadianceScythe.DisplayName: True Hallowed Radiance Scythe
-	TrueNightbreakerP.DisplayName: True Nightbreaker
-	TrueSpineBall.DisplayName: True Spine Ball
-	AstralTear.DisplayName: Astral Tear
-	AurumBall.DisplayName: Aurum Ball
-	BlazeguardWave.DisplayName: Blazeguard Wave
-	BlazeguardWave2.DisplayName: Blazeguard Wave2
-	BubbleBlue.DisplayName: Bubble
-	BubbleGreen.DisplayName: Bubble
-	BubblePurple.DisplayName: Bubble
-	BubbleRed.DisplayName: Bubble
-	ChaosFireball.DisplayName: Chaos Fireball
-	DeathwarpLaser.DisplayName: Deathwarp Laser
-	DeathwarpSpinner.DisplayName: Deathwarp Spinner
-	EyeOfTheStormBall.DisplayName: Eye Of The Storm Ball
-	EyeOfTheStormP.DisplayName: Eye Of The Storm
-	FistsOfFuryFire.DisplayName: Fists Of Fury Fire
-	FistsOfFuryP.DisplayName: Fists Of Fury
-	DyingAzureP.DisplayName: Dying Azure
-	HungryFlailP.DisplayName: Hungry Flail
-	KindleCrusherP.DisplayName: Kindle Crusher
-	KindleFireball.DisplayName: Kindle Fireball
-	GalacticaBlade.DisplayName: Galactica Blade
-	GalacticaBlade2.DisplayName: Galactica Blade2
-	GustStrikeCloud.DisplayName: Gust Strike Cloud
-	GustStrikeLightning.DisplayName: Gust Strike Lightning
-	LightningBolt.DisplayName: Lightning Bolt
-	ReignWave.DisplayName: Reign Wave
-	SolusKunai.DisplayName: Solus Kunai
-	DeathwarpP.DisplayName: Deathwarp
-	UniverseBall.DisplayName: Universe Ball
-	WandHeld.DisplayName: Wand Held
-	EternityArrow.DisplayName: Eternity Arrow
-	AstralRound.DisplayName: Astral Round
-	AstralStar.DisplayName: Star
-	BabySharkP.DisplayName: Baby Shark
-	EternityBeam.DisplayName: Eternity Beam
-	ExplosiveBolt.DisplayName: Explosive Bolt
-	ShotstormDartStuck.DisplayName: Shotstorm Dart Stuck
-	ShotstormDart.DisplayName: Shotstorm Dart
-	PrismaticFire.DisplayName: Prismatic Fire
-	MegaRocket.DisplayName: Mega Rocket
-	HomingRocket.DisplayName: Homing Rocket
-	HallowedRocket.DisplayName: Hallowed Rocket
-	Deathwatcher.DisplayName: Deathwatcher
-	DeathwatcherBolt.DisplayName: Void Blast
-	EnchantedTrio0.DisplayName: Enchanted Trio
-	EnchantedTrio1.DisplayName: Enchanted Trio
-	EnchantedTrio2.DisplayName: Enchanted Trio
-	EnergyStorm.DisplayName: Energy Storm
-	ExlitureEye.DisplayName: Eye
-	KirovAirship.DisplayName: Kirov Airship
-	LightningBlast.DisplayName: Lightning
-	Soulflames.DisplayName: Soul Flames
-	SoulSkull.DisplayName: Soul Skull
-	WokeBeam.DisplayName: Woke Agenda
-	WokeMinion.DisplayName: Celestial Watcher
-	ThrowableBookP.DisplayName: Throwable Book
-	ShadeOfLightP.DisplayName: Shade Of Light
-	ShadeOfLightBall.DisplayName: Shade Of Light
-	FrayedFeather.DisplayName: Frayed Feather
-	DictionaryP.DisplayName: Dictionary
-	DanceOfDarknessShade.DisplayName: Dance Of Darkness
-	DanceOfDarknessP.DisplayName: Dance Of Darkness
-	BalladOfBalanceP.DisplayName: Ballad Of Balance
-	GiantGnome.DisplayName: Giant Gnome
-	GnomeBolt.DisplayName: Astral Round
-	GnomeSurfer.DisplayName: Gnome Surfer
-	CorruptPenguin.DisplayName: Corrupt Penguin
-	AccursedBreath.DisplayName: Accursed Fire
-	ImmolatorBall.DisplayName: Immolator Blast
-	ImmolatorBolt.DisplayName: Immolator Particle
-	ReaverGlob.DisplayName: Reaver Glob
-	VoidKnightOrb.DisplayName: Void Knight Orb
-	ZergFireball.DisplayName: Zerg Caster
-	WarriorSlice.DisplayName: Radiant Warrior
-	StoneerP.DisplayName: Stoneer Spike
-	MagmaSlimeMagma.DisplayName: Magma Slime Magma
-	DragonBatFireball.DisplayName: Dragon Bat Fireball
-	DragonSlimeSpike.DisplayName: Dragon Slime Spike
-	DrakoniteElementalBeam.DisplayName: Drakonic Beam
-	StellarEntityOrbital.DisplayName: Stellar Entity
-	InfernaceGuardianProj.DisplayName: Infernal Spell
-	ToadTongue.DisplayName: Giant Toad
-	ToadTongueTip.DisplayName: Giant Toad
-	SuperStinkPotion.DisplayName: Super Stink Potion
+	AutoDrillBeam.DisplayName: 电子乐光束
+	EscapedChlorobyte.DisplayName: 逃逸的叶绿子
+	Blank.DisplayName: 空白
+	ElectricBolt.DisplayName: 电弧箭
+	RifleSentry.DisplayName: 步枪哨兵
+	ZapMasterLightning.DisplayName: 奇特的尤克里里
+	PorterP.DisplayName: 搬运者
+	PlasmaThrowerBeam.DisplayName: 清洗光束
+	FizzlerP2.DisplayName: 嘶嘶作响
+	FizzlerP.DisplayName: 嘶嘶作响
+	GrowinatorP.DisplayName: 生长器
+	ImbalancerLightning.DisplayName: 奇特的尤克里里
+	ImbalancerMine.DisplayName: 失衡器
+	ShrinkinatorP.DisplayName: 收缩器
+	NapalmCannonP.DisplayName: 凝固汽油炮
+	DubstepBeam.DisplayName: 电子乐光束
+	DubstepGunHeld.DisplayName: 毁灭者
+	DubstepPulse.DisplayName: 电子乐脉冲
+	DubstepWave.DisplayName: 电子乐
+	MatrixLaser.DisplayName: 矩阵激光
+	Particles.DisplayName: 粒子
+	MatterManipulator.DisplayName: 物质操纵器
+	ScrapplingHookP.DisplayName: 废料钩
+	CrimsonShadeHoming.DisplayName: 猩红之影追踪
+	CrimsonShadeP.DisplayName: 猩红之影
+	LifesLamentAxe.DisplayName: 生命哀悼之斧
+	BabyShadeWyrmBody.DisplayName: 幼年暗影龙之躯
+	CastersCurseBoltBase.DisplayName: 施法者诅咒箭基座
+	CastersCurseBoltSwirl.DisplayName: 施法者诅咒箭漩涡
+	BabyShadeWyrmTail.DisplayName: 幼年暗影龙之尾
+	BlinkrootDirt.DisplayName: 闪耀根
+	DaybloomSun.DisplayName: 太阳花
+	DeathweedBall.DisplayName: 死亡草
+	FireblossomBall.DisplayName: 火焰花
+	MoonglowLight.DisplayName: 月光草
+	ShiverthornIcicle.DisplayName: 寒颤棘
+	WaterleafBall.DisplayName: 幌菊
+	AdamantiteLaser.DisplayName: 精金激光
+	CobaltScythe.DisplayName: 钴镰刀
+	MythrilBomb.DisplayName: 秘银炸弹
+	MythrilSpike.DisplayName: 秘银炸弹
+	OrichalcumPetal.DisplayName: 山铜花瓣
+	PalladiumSpark.DisplayName: 钯金火花
+	TitaniumSpike.DisplayName: 钛金切片
+	StrangePlantBall6.DisplayName: 奇异法球
+	StrangePlantBall5.DisplayName: 奇异法球
+	StrangePlantBall4.DisplayName: 奇异法球
+	StrangePlantBall3.DisplayName: 奇异法球
+	StrangePlantBall2.DisplayName: 奇异法球
+	StrangePlantBall1.DisplayName: 奇异法球
+	FireballP.DisplayName: 火球
+	PoltercastP.DisplayName: 骚灵投射
+	StingerP.DisplayName: 毒刺
+	Barrier.DisplayName: 屏障
+	CursedBall.DisplayName: 诅咒球
+	CursedFlame.DisplayName: 咒火
+	DeimosAsteroid.DisplayName: 火卫二小行星
+	EarthcrusherProj.DisplayName: 碎地者投射物
+	EarthcrusherSwirl.DisplayName: 碎地者漩涡
+	FireweaverProj.DisplayName: 火焰编织者投射物
+	FireweaverSwirl.DisplayName: 火焰编织者漩涡
+	GraniteEnergyShot.DisplayName: 花岗岩能量射击
+	ImpishFireball.DisplayName: 顽童火球
+	ImpishWave.DisplayName: 顽童波
+	NeptuneRay.DisplayName: 海王星射线
+	OceansSeashell.DisplayName: 海洋贝壳
+	SansNote.DisplayName: Sans音符
+	ThundersoulBolt.DisplayName: 雷魂箭
+	ThundersoulBoltMinor.DisplayName: 雷魂箭（弱）
+	WarhornP.DisplayName: 战号
+	Nightball.DisplayName: 夜幕
+	Nightball2.DisplayName: 死亡扭曲
+	EarthP.DisplayName: 地球
+	JupiterGasOrbit.DisplayName: 木星
+	JupiterP.DisplayName: 木星
+	MarsP.DisplayName: 火星
+	MercuryP.DisplayName: 水星
+	NeptuneP.DisplayName: 海王星
+	NeptuneWaterball.DisplayName: 海王星
+	SaturnP.DisplayName: 土星
+	SaturnRing.DisplayName: 土星环
+	SolOrbit.DisplayName: 太阳
+	SolP.DisplayName: 太阳
+	UranusP.DisplayName: 天王星
+	VenusP.DisplayName: 金星
+	BloodchainP.DisplayName: 血链
+	FlarelashP.DisplayName: 闪耀鞭
+	HallowedRadianceP.DisplayName: 神圣光辉
+	NightbreakerBall.DisplayName: 破夜者
+	NightbreakerBlade.DisplayName: 破夜者
+	NightbreakerP.DisplayName: 破夜者
+	ShadowsGraspP.DisplayName: 暗影之握
+	TerraBelterP.DisplayName: 泰拉带
+	TerraBolt.DisplayName: 带
+	TerraOrb.DisplayName: 泰拉法球
+	TheSpineP.DisplayName: 脊柱
+	TheTrueSpineP.DisplayName: 真·脊柱
+	TheVineP.DisplayName: 藤蔓
+	TrueHallowedRadianceP.DisplayName: 真·神圣光辉
+	TrueHallowedRadianceScythe.DisplayName: 真·神圣光辉镰刀
+	TrueNightbreakerP.DisplayName: 真·破夜者
+	TrueSpineBall.DisplayName: 真·脊柱球
+	AstralTear.DisplayName: 星界之泪
+	AurumBall.DisplayName: 金色之球
+	BlazeguardWave.DisplayName: 烈焰守卫波
+	BlazeguardWave2.DisplayName: 烈焰守卫波2
+	BubbleBlue.DisplayName: 泡泡
+	BubbleGreen.DisplayName: 泡泡
+	BubblePurple.DisplayName: 泡泡
+	BubbleRed.DisplayName: 泡泡
+	ChaosFireball.DisplayName: 混沌火球
+	DeathwarpLaser.DisplayName: 死亡扭曲激光
+	DeathwarpSpinner.DisplayName: 死亡扭曲旋转体
+	EyeOfTheStormBall.DisplayName: 风暴之眼球
+	EyeOfTheStormP.DisplayName: 风暴之眼
+	FistsOfFuryFire.DisplayName: 狂怒之拳火焰
+	FistsOfFuryP.DisplayName: 狂怒之拳
+	DyingAzureP.DisplayName: 垂死蔚蓝
+	HungryFlailP.DisplayName: 饥饿连枷
+	KindleCrusherP.DisplayName: 点燃粉碎者
+	KindleFireball.DisplayName: 点燃火球
+	GalacticaBlade.DisplayName: 银河之刃
+	GalacticaBlade2.DisplayName: 银河之刃2
+	GustStrikeCloud.DisplayName: 阵风打击云
+	GustStrikeLightning.DisplayName: 阵风打击闪电
+	LightningBolt.DisplayName: 闪电箭
+	ReignWave.DisplayName: 统治波
+	SolusKunai.DisplayName: 索鲁斯苦无
+	DeathwarpP.DisplayName: 死亡扭曲
+	UniverseBall.DisplayName: 宇宙之球
+	WandHeld.DisplayName: 魔杖
+	EternityArrow.DisplayName: 永恒之箭
+	AstralRound.DisplayName: 星界弹
+	AstralStar.DisplayName: 星星
+	BabySharkP.DisplayName: 幼鲨
+	EternityBeam.DisplayName: 永恒光束
+	ExplosiveBolt.DisplayName: 爆炸箭
+	ShotstormDartStuck.DisplayName: 射击风暴飞镖
+	ShotstormDart.DisplayName: 射击风暴飞镖
+	PrismaticFire.DisplayName: 棱彩之火
+	MegaRocket.DisplayName: 巨型火箭
+	HomingRocket.DisplayName: 追踪火箭
+	HallowedRocket.DisplayName: 神圣火箭
+	Deathwatcher.DisplayName: 死亡观察者
+	DeathwatcherBolt.DisplayName: 虚空爆破
+	EnchantedTrio0.DisplayName: 附魔三重奏
+	EnchantedTrio1.DisplayName: 附魔三重奏
+	EnchantedTrio2.DisplayName: 附魔三重奏
+	EnergyStorm.DisplayName: 能量风暴
+	ExlitureEye.DisplayName: 眼睛
+	KirovAirship.DisplayName: 基洛夫飞艇
+	LightningBlast.DisplayName: 闪电
+	Soulflames.DisplayName: 灵魂之火
+	SoulSkull.DisplayName: 灵魂骷髅
+	WokeBeam.DisplayName: Woke议程
+	WokeMinion.DisplayName: 天界观察者
+	ThrowableBookP.DisplayName: 可投掷的书
+	ShadeOfLightP.DisplayName: 光之影
+	ShadeOfLightBall.DisplayName: 光之影
+	FrayedFeather.DisplayName: 磨损的羽毛
+	DictionaryP.DisplayName: 词典
+	DanceOfDarknessShade.DisplayName: 黑暗之舞
+	DanceOfDarknessP.DisplayName: 黑暗之舞
+	BalladOfBalanceP.DisplayName: 平衡之歌
+	GiantGnome.DisplayName: 巨型侏儒
+	GnomeBolt.DisplayName: 星界弹
+	GnomeSurfer.DisplayName: 侏儒冲浪者
+	CorruptPenguin.DisplayName: 腐化企鹅
+	AccursedBreath.DisplayName: 诅咒之火
+	ImmolatorBall.DisplayName: 献祭者爆破
+	ImmolatorBolt.DisplayName: 献祭者粒子
+	ReaverGlob.DisplayName: 掠夺者粘液
+	VoidKnightOrb.DisplayName: 虚空骑士法球
+	ZergFireball.DisplayName: 虫群施法者
+	WarriorSlice.DisplayName: 辉耀战士
+	StoneerP.DisplayName: 投石怪尖刺
+	MagmaSlimeMagma.DisplayName: 岩浆史莱姆岩浆
+	DragonBatFireball.DisplayName: 龙裔蝙蝠火球
+	DragonSlimeSpike.DisplayName: 龙裔史莱姆尖刺
+	DrakoniteElementalBeam.DisplayName: 龙裔光束
+	StellarEntityOrbital.DisplayName: 恒星实体
+	InfernaceGuardianProj.DisplayName: 炼狱法术
+	ToadTongue.DisplayName: 巨型蟾蜍
+	ToadTongueTip.DisplayName: 巨型蟾蜍
+	SuperStinkPotion.DisplayName: 超级臭气药水
 }
 
 Configs: {
 	Config: {
-		DisplayName: Elements Awoken Config
+		DisplayName: EA觉醒元素 配置
 		screenshakeDisabled.Tooltip: ""
 	}
 }
 
 Config: {
-	ElementsAwokenConfig: Elements Awoken Config
-	AlchemistPotionShop: Enable Alchemist's Potion Shop
-	EnablesShop: Enables the Alchemist's potion shop, replacing the potion materials shop
-	ResourceBars: Resource Bars
-	TurnsUI: Turns the Energy and Insanity UI into bars
-	DisableLabs: Disable Lab Generation
-	StopsLabs: Stops Labs from generating underground during the world generation
-	DisableBoss: Disable Boss Prompts
-	Disablestheeffects: Disables the negative effects that happen in the world 30 minutes after beating a boss
-	ItemChanges: Disable Vanilla Item Changes
-	vanillaitems: Disables all changes to vanilla items, like new recipes for previously uncraftable items
-	Screenshake: Disable Screenshake
-	LowDust: Low Dust Mode
-	Reduces: Reduces the amount of dust created by NPCs, projectiles and more (WARNING: only applied to certain objects)
-	EnterDebug: Enter Debug Mode
-	Shows: Shows information for testing (Mainly for Mod Devs)
-	RecipeBrows: Recipe Browser
-	RecipeBrowsTooltips: Shows hints for some items
+	ElementsAwokenConfig: EA觉醒元素 配置
+	AlchemistPotionShop: 启用炼金术士的药水商店
+	EnablesShop: 启用炼金术士的药水商店，替换药水材料商店
+	ResourceBars: 资源条
+	TurnsUI: 将能量和理智UI变成条状
+	DisableLabs: 禁用实验室生成
+	StopsLabs: 在世界生成期间停止地下实验室的生成
+	DisableBoss: 禁用Boss提示
+	Disablestheeffects: 禁用在击败Boss后30分钟内世界上发生的负面效果
+	ItemChanges: 禁用原版物品改动
+	vanillaitems: 禁用对原版物品的所有改动，例如为以前无法制作的物品添加新配方
+	Screenshake: 禁用屏幕震动
+	LowDust: 低尘模式
+	Reduces: 减少NPC、投射物等产生的尘埃数量（警告：仅适用于某些对象）
+	EnterDebug: 进入调试模式
+	Shows: 显示用于测试的信息（主要供Mod开发者使用）
+	RecipeBrows: 配方浏览器
+	RecipeBrowsTooltips: 显示某些物品的提示
 }
 
 Biomes: {
 	EABiomes: {
-		DisplayName: EA Biomes
-		TownNPCDialogueName: the EA Biomes
+		DisplayName: EA生物群落
+		TownNPCDialogueName: EA生物群落
 	}
 
 	Emptiness: {
-		DisplayName: Void
-		TownNPCDialogueName: the Void
+		DisplayName: 虚空
+		TownNPCDialogueName: 虚空
 	}
 
 	RadiantRainBiome: {
-		TownNPCDialogueName: Radiant Rain
-		DisplayName: Radiant Rain
+		TownNPCDialogueName: 辉耀之雨
+		DisplayName: 辉耀之雨
 	}
 
 	DOTVBiome: {
-		DisplayName: Dawn of the Void
-		TownNPCDialogueName: Dawn of the Void
+		DisplayName: 虚空黎明
+		TownNPCDialogueName: 虚空黎明
 	}
 }
 
 Keybinds: {
-	Neovirtuo.DisplayName: Neovirtuo
-	"Special Ability.DisplayName": Special Ability
-	"Armor Ability.DisplayName": Armor Ability
-	"Secondary Dash.DisplayName": Secondary Dash
-	"Armor Set Bonus ToolTips.DisplayName": Armor Set Bonus Tooltips
+	Neovirtuo.DisplayName: 尼奥
+	"Special Ability.DisplayName": 特殊能力
+	"Armor Ability.DisplayName": 护甲能力
+	"Secondary Dash.DisplayName": 次要冲刺
+	"Armor Set Bonus ToolTips.DisplayName": 护甲套装奖励提示
 }
 
 Bestiary: {
 	Bosses: {
-		VoidLeviathan: A serpentine beast from the depths of the Void, feared across all of Terraria. It hungers for a soul strong enough to reinforce its power even further...
-		ElderShadeWyrm: An elder specimen of the Shade Wyrms, serpents from the depths of the Void, which have been granted enough time to evolve and grow to such enormous sizes and unpredictable power.
-		RadiantMaster: What remained of the magicians succumbed to the relevations of the Radiant Rain now are mere soulless shells of what they used to be, existing for the sole purpose of protecting the Rain's further existence.
-		WastelandBoss: Victim of an experiment gone terribly wrong, this scorpion was supposed to be a living weapon, able to smite all and everything in its path. The energy injected in its body began to take control of its brain, making the scorpion lose its mind.
-		TheEye: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Eye is imbued with the Guardian's mind and voice.
-		AncientWyrm: One of the two parts split from the Guardian with the help of an energized vessel created by Lihzahrds during their battle, the Wyrm represents the Guardian's destructive nature.
-		AqueousBoss: Now merely a shell of her former self, Aqueous once was one of the mightiest warriors to ever live in the Terran ocean, serving to the crown of the Sea King, the mutant known as Duke Fishron, before its murder. Rest assured, she will do whatever it takes to strike down whoever had slain her King...
-		AzanaEyeBestiary: An unfortunate scientist, desperate to find a key to something powerful enough to end the Abraxis' tyrannical reign over Terraria, who discovered the Chaotron particles. This led to the creation of a full mechanical suit powered by these particles, which eventually consumed its creator.
-		AzanaBestiary: An unfortunate scientist, desperate to find a key to something powerful enough to end the Abraxis' tyrannical reign over Terraria, who discovered the Chaotron particles. This led to the creation of a full mechanical suit powered by these particles, which eventually consumed its creator.
-		CosmicObserverBestiary: After the ancient energies were released with the fall of a flesh abomination in the Underworld, some of this energy imbued the stones flying in the atmosphere, granting life to the Cosmic Observers.
-		TheGuardian: The leader of the ancient species of Drakons, emerging from the vast depths of Terraria, who has been split into two parts through great pressure from an energized vessel created by Lihzahrds during their battle.
-		TheGuardianFly: The leader of the ancient species of Drakons, emerging from the vast depths of Terraria, who has been split into two parts through great pressure from an energized vessel created by Lihzahrds during their battle.
-		InfernaceBestiary: In the times long past, there was a civilization in the Depths of the Underworld, guarded by Infernace and his daughter, Furosia. However, while the civilization was razed to the ground aeons ago, Infernace still keeps his duty, despite being severely weakened.
-		ObsidiousBoss: Originally an average mortal, Obsidious was a seeker of artifacts known to be mostly motivated by greed. In the end, his own greed, however, spelled doom upon him, when an ancient gemstone he coveted so much eventually caused him to get forever bound in stone.
-		Permafrost: Virtually unrivalved spirit of frost and ice, Permafrost ruled his kingdom kindheartedly... Until one fateful day, when a race from the depths of the Void has invaded the Tundra, demolishing everything and everyone on their path, annihilating everything that Permafrost held dear, turning him vengeful.
-		Regaroth: Believed to be the manifestation of lightning, Regaroth was created using essences of an entire army of Sky Elementals, with Abraxis empowering him even further, shaping it into the form it has now, a guardian of the upper layers of the atmosphere.
-		ScourgeFighterBoss: Machine created by a team of Martian scientists who hoped to create their own equivalent of the mechanical beasts, in order to help them in the invasion of the Terrarian lands. Little did they know what could it eventually lead to...
-		ToySlime: Originally created to be a harmless children's toy, it gained sentience and began wreaking havoc accross the land, thanks to the malevolent energies of the Frost Moon that rose at one fateful night.
-		VolcanoxBoss: Ancient god of the Underworld, a primordial manifestation of fire, ash and magma, Volcanox created many of the terrors within the depths, such as the Wall of Flesh and Infernace.
-		IzarisBoss: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
-		Kirvein: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
-		Krecheus: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
-		Xernon: Crystalline terrors born many millenia ago in the depths of Terraria, driven by an insatiable thirst for power, who were stripped from their physical form centuries ago by Abraxis, having to instead take a form of a feeble, infirm old man, waiting for the hero to arrive.
-		AncientAmalgam: Thanks to the hero who had slain many of the great beasts of these lands, the Ancients are now fused again, stronger than ever before and hungering to seal the dark fate of not only Terraria, but the universe itself, becoming the unquestionable gods of this world...
-		ShadeWyrm: Silent, albeit deadly, these serpents from the depths of the Void are one of the Dawn's main weapons. Given enough time, these beings may evolve into something much more powerful and intimidating...
+		VoidLeviathan: 一只来自虚空深处的蛇形巨兽，整个泰拉瑞亚都为之恐惧。它渴望一个足够强大的灵魂来进一步增强其力量……
+		ElderShadeWyrm: 暗影龙的年长标本，来自虚空深处的蛇，它们有足够的时间进化和成长到如此巨大的体型和不可预测的力量。
+		RadiantMaster: 那些屈服于辉耀之雨启示的法师们所剩下的，如今只是他们过去样子的无魂空壳，其存在的唯一目的就是保护雨的继续存在。
+		WastelandBoss: 一项实验严重出错的受害者，这只蝎子本应成为一种活体武器，能够摧毁其路径上的一切。注入其体内的能量开始控制其大脑，使蝎子失去了理智。
+		TheEye: 在与丛林蜥蜴的战斗中，借助他们创造的充能容器，从守护者身上分裂出的两部分之一，眼睛被赋予了守护者的思想和声音。
+		AncientWyrm: 在与丛林蜥蜴的战斗中，借助他们创造的充能容器，从守护者身上分裂出的两部分之一，巨龙代表了守护者的破坏性。
+		AqueousBoss: 如今只是她昔日自我的一个空壳，水之女神曾经是泰拉瑞亚海洋中最强大的战士之一，服务于海洋之王的王冠，即被称为猪鲨公爵的突变体，直到他被谋杀。请放心，她会不惜一切代价击倒杀死她国王的任何人……
+		AzanaEyeBestiary: 一位不幸的科学家，急于找到一把足以终结阿布拉西斯对泰拉瑞亚暴政的强大钥匙，她发现了混沌电子粒子。这导致了一套由这些粒子驱动的完整机械套装的诞生，最终吞噬了它的创造者。
+		AzanaBestiary: 一位不幸的科学家，急于找到一把足以终结阿布拉西斯对泰拉瑞亚暴政的强大钥匙，她发现了混沌电子粒子。这导致了一套由这些粒子驱动的完整机械套装的诞生，最终吞噬了它的创造者。
+		CosmicObserverBestiary: 随着地狱中一个血肉憎恶的倒下，远古能量被释放出来，其中一些能量注入了大气中飞行的石头，赋予了宇宙观察者生命。
+		TheGuardian: 远古龙族的首领，从泰拉瑞亚的广阔深处出现，在与丛林蜥蜴的战斗中，通过一个由他们创造的充能容器的巨大压力分裂成了两部分。
+		TheGuardianFly: 远古龙族的首领，从泰拉瑞亚的广阔深处出现，在与丛林蜥蜴的战斗中，通过一个由他们创造的充能容器的巨大压力分裂成了两部分。
+		InfernaceBestiary: 在很久以前，地狱深处有一个文明，由炼狱魔匠和他的女儿弗洛西亚守护。然而，虽然这个文明在万古之前就被夷为平地，但炼狱魔匠仍然坚守着他的职责，尽管他已严重削弱。
+		ObsidiousBoss: 最初是一个普通凡人，黑曜魔骑士是一个以贪婪著称的文物搜寻者。然而，最终他自己的贪婪给他带来了厄运，当他觊觎的一颗远古宝石最终导致他被永远束缚在石头中。
+		Permafrost: 几乎无与伦比的冰霜与寒冰之魂，永冻之霜仁慈地统治着他的王国……直到一个命运攸关的日子，一个来自虚空深处的种族入侵了雪原，摧毁了他们路径上的一切和每个人，消灭了永冻之霜珍视的一切，使他变得复仇心切。
+		Regaroth: 被认为是闪电的化身，雷加罗斯是利用整支天空元素大军的精华创造的，阿布拉西斯进一步增强了他，将其塑造成现在的形态，一个大气层上层的守护者。
+		ScourgeFighterBoss: 由一群火星科学家创造的机器，他们希望创造出自己的机械巨兽等价物，以帮助他们入侵泰拉瑞亚的土地。他们几乎不知道这最终会导致什么……
+		ToySlime: 最初被设计成一个无害的儿童玩具，在一个 fateful 的夜晚，由于霜月的邪恶能量，它获得了知觉并开始在大陆上肆虐。
+		VolcanoxBoss: 远古的地狱之神，火焰、灰烬和岩浆的原始化身，沃尔坎诺斯创造了深处的许多恐怖，如血肉之墙和炼狱魔匠。
+		IzarisBoss: 数千年前诞生于泰拉瑞亚深处的晶状恐怖，被永不满足的权力渴望所驱动，几个世纪前被阿布拉西斯剥夺了物理形态，不得不以一个虚弱、体弱的老人的形态出现，等待英雄的到来。
+		Kirvein: 数千年前诞生于泰拉瑞亚深处的晶状恐怖，被永不满足的权力渴望所驱动，几个世纪前被阿布拉西斯剥夺了物理形态，不得不以一个虚弱、体弱的老人的形态出现，等待英雄的到来。
+		Krecheus: 数千年前诞生于泰拉瑞亚深处的晶状恐怖，被永不满足的权力渴望所驱动，几个世纪前被阿布拉西斯剥夺了物理形态，不得不以一个虚弱、体弱的老人的形态出现，等待英雄的到来。
+		Xernon: 数千年前诞生于泰拉瑞亚深处的晶状恐怖，被永不满足的权力渴望所驱动，几个世纪前被阿布拉西斯剥夺了物理形态，不得不以一个虚弱、体弱的老人的形态出现，等待英雄的到来。
+		AncientAmalgam: 感谢那位斩杀了这片土地上许多巨兽的英雄，远古三王现在再次融合，比以往任何时候都更强大，并渴望封印不仅泰拉瑞亚，而且整个宇宙的黑暗命运，成为这个世界无可置疑的神……
+		ShadeWyrm: 寂静而致命，这些来自虚空深处的蛇是黎明的主要武器之一。假以时日，这些生物可能会进化成更强大、更令人生畏的东西……
 	}
 
 	Enemies: {
-		Scorpion: This specimen of already unusually venomous desert scorpions was used in an experiment in order to turn it into a living weapon. Unleashing one in the sands of the desert might have detrimental consequences...
-		VoidLeviathanOrb: A giant, bizarre orb, created by the Void Leviathan using its immense abilities. Inexplicably, the mere presence of such orb makes the serpent invulnerable to any physical attacks...
-		Furosia: Daughter of the Infernace, once serving as a guardian of the civilization residing in the Depths, which has been razed to the ground many eons ago.
-		RegarothMinion: Juvenile thunder serpent summoned by Regaroth to aid it in the battle. Do not be fooled by its sizes, for it can still be dangerous.
-		MiniToySlime: Smaller version of a toy slime, which has broken away from a bigger one. It might still be dangerous despite its smaller size.
-		Firefly: Blazing with unrestrained rage, this spirit with a shape reminiscent of a giant firefly will give it all to raze anyone and anything its master will command it to.
-		AbyssSkull: Ambushers of the Dawn of the Void, furiously charging at any living being in their sight. They have their smaller brethren constantly orbiting them.
-		AbyssSkullette: Tiny skulls orbiting their bigger brethren. Do not underestimate them simply because of their size, for they can outnumber anyone unprepared.
-		AccursedFlier: Atrocious flying abominations, serving as an air support for other beasts of the Dawn. They have a reservoir of unknown fluid in their abdomens...
-		DimensionalHive: Unlike all other Dawn's creatures, these hives don't attack on their own, but instead create an invisible aura that heals the Dawn's other hellspawns that are close enough to it.
-		Immolator: Flying constructs born in the Void, having an eye with excellent perception capabilities in the middle of their frame that helps them easily track down any target.
-		ReaverSlime: The Void has to offer a very wide array of monstrosities, and the slimes aren't the exception too. Needless to say, they are far more deadly than the other specimen of slimes...
-		VoidKnight: Mindless rampagers of the Dawn, being able to conjure Void orbs around them as an additional mean of protection.
-		VoidFly: Due their tiny sizes, these twisted insects rely exclusively on their sheer numbers, hoping to overwhelm their target.
-		ZergCaster: Akin to all other beasts emerged from the Void, it is unknown what exactly is the source of their immense abilities.
-		EtherealHunter: Terrifying wraiths from the dephts of the Void that will not leave any living creature safe from their deadly grip.
-		VoidCrawler: Giant, many-legged spider-like creature that has a sack containing unknown liquid on its back.
-		VoidGolem: Gargantuan brutes clad in a tough armor of Void's darkstone that smite everything that gets in their way. Their steps are so heavy that make the ground beneath them tremble as they move.
-		VoidElemental: Dawn of the Void has to offer its own type of Elementals. However, unlike all other Elementals inhabiting Terraria, it is unknown how exactly these have emerged.
-		RadiantWarrior: Mere mortals with will weak enough were one of the first beings to lose their minds and succumb to the Radiant Rain, which granted them immense abilities, but in return transformed them into its mindless slaves.
-		SparklingSlime: Slimes were no exception to the revelations of the Radiant Rain, despite them not having any mind or will. Their bodies now consist of nothing but radiant powder with unimaginable potential.
-		StarlightGlobule: Odd creature serving as a host to few smaller entities that will erupt from it, once the host is dead. Rather than being creatures assimilated by the Radiant Rain, they seem to be born from the Rain itself.
-		AllKnower: Peculiar burrowing creatures, possessing great strength granted to them by the Radiant Rain, which also twisted them beyond comprehension.
-		StellarStarfish: Sentient blobs of radiant powder, shaped akin to the ocean's starfishes, these entities seem to be born entirely out of the essence of the Radiant Rain.
-		ArmoredTrencher: A cavern-dwelling worm of enormous sizes, clad in armor made of very tough scales, which seems to only have emerged after the fall of the false Cthulhu...
-		DesertElemental: A being born out of the arcane energies of the sun-scorched desert, bearing a resemblance to a fallen warrior of the arid wastes.
-		FireElemental: Fire Elemental - A restless spirit of the former inhabitant of the Underworld, roaming its ruins. They were sealed before, but once the Skeletron has fallen, they started to aimlessly roam the Underworld.
-		FrostElemental: Disturbed spirit of the everfrozen Tundra that will give a chilly greeting to anyone daring to set foot in these frozen lands.
-		SkyElemental: One of the many elementals, this one dwelling almost in the outer layers of the atmosphere, and will not hesitate to attack anyone they see as a threat.
-		WaterElemental: Water spirit born out of the magical energies of the Terran ocean, shaped akin to a warrior from a long-lost civilization that once lived there.
-		GiantVampireBat: With the ancient energies unleashed after the destruction of the ancient flesh amalgamation in the Underworld, vampire bats now can easily grow to enormous sizes, greatly increasing their deadliness.
-		InfernoSpirit: A wrathful spirit of a previous inhabitant of the Dungneon, it became stronger than ever before with the fall of the Lord of the Moon.
-		Pebleer: A tiny beetle, native to the Terrarian caverns. The shell on its back, resembling a pebble, helps it to blend with the surroundings, hiding itself from possible predators.
-		Stoneer: A tiny beetle, native to the Terrarian caverns. The shell on its back, resembling a stone, helps it to blend with the surroundings, hiding itself from possible predators.
-		DragonCharger: Powerful, blazing Drakonite-clad spirit that was unleashed after the destruction of an ancient flesh amalgamation in the Underworld.
-		GreaterDrakoniteGolem: Despite being significantly more poweful than the Dragon Warrior, essentially this is still a remnant of the long-dead warrior, being brought back to life by Drakonite and the ancient energies now too.
-		MagmaSlime: Now being a molten mix of lava and Drakonite, these slimes became dramatically more deadly and dangerous than ever before.
-		DragonBat: Once a common cavern bat, this one got infused with Drakonite many years ago, under conditions unknown. The Drakonite shards in its body seem to allow it to utilize fire magic, in the form of fireballs.
-		DragonSlime: One of the many creatures that under unclear circumstances got infused with Drakonite. This slime is covered in not only razor-sharp, but also blazing spikes, and getting hit with these is definitely going to hurt...
-		DragonWarrior: Remnants of an unknown warrior, brought back to life seemingly by Drakonite shards that stick out of its armor like thorns.
-		DrakoniteElemental: Unlike other cavern-dwelling creatures that were infused with Drakonite, the body of this one seems to consist solely of it.
-		FlyingJaw: While visually similar to the Man Eaters, inhabiting both surface and underground Jungle, these flying creatures do not seem to actually be their relatives.
-		PetalClasper: Spiders of these species, native to the Jungle, are a curious blend of flora and fauna. They bear a flower that emits a pleasant aroma on their backs.
-		GiantTick: Cryptic giant insect with many eyes. Its body is made of even more enigmatic purple dust you have never seen before.
-		MortemWalker: Enigmatic beast roving the lands. Upon dying it crumbles into purple dust which is as enigmatic as this creature itself.
-		SkyCrawler: One of the incomprehensible entities which have emerged after the fall of the Moon's great Lord. Whenever it's damaged, its body pours strange purple dust.
-		StellarBat: Peculiar winged creature, visually resembling a giant cavern bat. Its body seems to consist entirely out of a starborne metal...
-		StellarCenturion: A being of unknown origin, clad in armor bearing a striking resemlbance to an archaic armor worn by warriors of some forgotten civilization, the armor being forged entirely out of a bizarre stellar metal.
-		StellarEntity: Enigmatic entity shaped akin to an eye, covered in a tough shell made of the same metal as some other beings in the outer layers of the atmosphere.
-		GiantToad: Despite looking like a normal toad that can be encountered in abundance in the Jungle, something feels off about this one...
-		VampireBat: Close relative to the common cavern bat. However, the bites of the bats of this species can leech the lifeforce off the victim.
-		ChaosKnight: Another corpse of an unknown long-dead warrior, revived thanks to the chaotic forces which were unleashed upon the land again, after the destruction of the beast from the Void.
-		ChaosWraith: Raging spirit, born purely out of chaotic particles released once again upon the world, with the fall of a Void Leviathan.
+		Scorpion: 这只本已异常剧毒的沙漠蝎子标本被用于一项实验，目的是将其变成活体武器。在沙漠的沙地中释放一只可能会带来毁灭性的后果……
+		VoidLeviathanOrb: 一个巨大的、奇异的球体，由虚空利维坦利用其巨大的能力创造。莫名其妙的是，仅仅是这样一个球体的存在就使这条蛇对任何物理攻击都刀枪不入……
+		Furosia: 炼狱魔匠的女儿，曾是居住在深处的文明的守护者，这个文明在许多万古之前就被夷为平地。
+		RegarothMinion: 由雷加罗斯召唤来协助其战斗的幼年雷蛇。不要被它的体型所迷惑，因为它仍然可能很危险。
+		MiniToySlime: 玩具史莱姆的较小版本，从一个较大的史莱姆上分裂出来的。尽管体型较小，它仍然可能很危险。
+		Firefly: 燃烧着无法抑制的愤怒，这个形状酷似巨大萤火虫的灵魂将倾其所有，夷平其主人命令它摧毁的任何人或物。
+		AbyssSkull: 虚空黎明的伏击者，疯狂地冲向视线内的任何生物。它们有较小的同类不断地围绕着它们。
+		AbyssSkullette: 围绕着它们较大大哥的小骷髅。不要因为它们的大小而低估它们，因为它们可以数量上压倒任何没有准备的人。
+		AccursedFlier: 凶残的飞行憎恶，作为黎明其他野兽的空中支援。它们的腹部有一个未知液体的储藏室……
+		DimensionalHive: 与所有其他黎明的生物不同，这些蜂巢不会主动攻击，而是创造一个隐形的光环，治疗足够靠近它的黎明其他地狱产物。
+		Immolator: 诞生于虚空的飞行构造体，其框架中央有一只具有出色感知能力的眼睛，帮助它们轻松追踪任何目标。
+		ReaverSlime: 虚空提供了非常广泛的怪物，史莱姆也不例外。不用说，它们比其他史莱姆标本要致命得多……
+		VoidKnight: 黎明的无脑狂暴者，能够在周围召唤虚空法球作为额外的保护手段。
+		VoidFly: 由于体型微小，这些扭曲的昆虫完全依赖于它们的绝对数量，希望能压倒它们的目标。
+		ZergCaster: 与所有其他从虚空中出现的野兽一样，它们巨大能力的来源究竟是什么仍然是未知的。
+		EtherealHunter: 来自虚空深处的可怕幽灵，不会让任何生物安全地逃脱它们致命的掌控。
+		VoidCrawler: 巨大的、多腿的蜘蛛状生物，背上有一个装有未知液体的囊。
+		VoidGolem: 穿着坚硬的虚空黑石盔甲的巨大野蛮人，它们摧毁任何挡在它们路上的东西。它们的步伐如此沉重，以至于它们脚下的地面都随之颤抖。
+		VoidElemental: 虚空黎明提供了自己类型的元素。然而，与所有其他居住在泰拉瑞亚的元素不同，这些元素究竟是如何出现的仍然是未知的。
+		RadiantWarrior: 意志薄弱的凡人是最先失去理智并屈服于辉耀之雨的生物之一，这赋予了他们巨大的能力，但作为回报，将他们变成了其无脑的奴隶。
+		SparklingSlime: 史莱姆也未能幸免于辉耀之雨的启示，尽管它们没有任何思想或意志。它们的身体现在只由具有难以想象潜力的辉耀粉末组成。
+		StarlightGlobule: 奇怪的生物，作为一些较小实体的宿主，一旦宿主死亡，这些实体就会从中爆发出来。它们似乎并非被辉耀之雨同化的生物，而是由雨本身诞生的。
+		AllKnower: 奇特的穴居生物，拥有辉耀之雨赋予它们的巨大力量，这也将它们扭曲得面目全非。
+		StellarStarfish: 有知觉的辉耀粉末团，形状酷似海洋的海星，这些实体似乎完全由辉耀之雨的精华诞生。
+		ArmoredTrencher: 一种巨大体型的洞穴蠕虫，穿着由非常坚韧的鳞片制成的盔甲，似乎只在伪克苏鲁倒下后才出现……
+		DesertElemental: 诞生于烈日炙烤的沙漠的奥术能量的生物，外形酷似干旱废土的堕落战士。
+		FireElemental: 火元素 - 前地狱居民的不安灵魂，在其废墟中游荡。它们以前被封印，但一旦骷髅王倒下，它们就开始漫无目的地在地狱游荡。
+		FrostElemental: 永冻雪原的受扰灵魂，会给任何敢于踏入这片冰封土地的人一个寒冷的问候。
+		SkyElemental: 众多元素之一，这一个居住在几乎大气的外层，并且会毫不犹豫地攻击任何它们视为威胁的人。
+		WaterElemental: 诞生于泰拉瑞亚海洋魔法能量的水之魂，形状酷似一个曾经居住在那里的失落文明的战士。
+		GiantVampireBat: 随着地狱中古代血肉混合体被摧毁后古老能量的释放，吸血蝙蝠现在可以轻易地长到巨大的体型，大大增加了它们的致命性。
+		InfernoSpirit: 地牢前居民的愤怒灵魂，随着月亮领主的倒下，它变得比以往任何时候都更强大。
+		Pebleer: 一种原产于泰拉瑞亚洞穴的小甲虫。它背上的壳酷似卵石，帮助它与周围环境融为一体，躲避可能的捕食者。
+		Stoneer: 一种原产于泰拉瑞亚洞穴的小甲虫。它背上的壳酷似石头，帮助它与周围环境融为一体，躲避可能的捕食者。
+		DragonCharger: 强大的、燃烧的龙裔盔甲灵魂，在地狱中古代血肉混合体被摧毁后被释放。
+		GreaterDrakoniteGolem: 尽管比龙战士强大得多，但这本质上仍然是一个早已死去的战士的残余，被龙裔和现在的古代能量复活了。
+		MagmaSlime: 现在是熔岩和龙裔的熔融混合物，这些史莱姆变得比以往任何时候都更加致命和危险。
+		DragonBat: 曾经是普通的洞穴蝙蝠，这只在许多年前在未知条件下被注入了龙裔。它体内的龙裔碎片似乎允许它利用火焰魔法，以火球的形式。
+		DragonSlime: 在不清楚的情况下被注入龙裔的众多生物之一。这只史莱姆不仅覆盖着锋利的，而且还燃烧着尖刺，被这些东西击中肯定会很痛……
+		DragonWarrior: 未知战士的残余，似乎是被从其盔甲中像荆棘一样伸出的龙裔碎片复活的。
+		DrakoniteElemental: 与其他被注入龙裔的洞穴生物不同，这一个的身体似乎完全由龙裔构成。
+		FlyingJaw: 虽然在视觉上与居住在地面和地下丛林的食人花相似，但这些飞行生物似乎实际上不是它们的亲戚。
+		PetalClasper: 这些原产于丛林的蜘蛛物种是植物和动物的奇特混合体。它们背上有一朵散发着宜人香气的花。
+		GiantTick: 具有许多眼睛的神秘巨型昆虫。它的身体由你从未见过的更神秘的紫色尘埃制成。
+		MortemWalker: 在大地上游荡的神秘野兽。死后它会碎成紫色尘埃，这与这个生物本身一样神秘。
+		SkyCrawler: 在月亮大领主倒下后出现的不可理解的实体之一。每当它受到伤害时，它的身体就会流出奇怪的紫色尘埃。
+		StellarBat: 奇特的有翼生物，在视觉上酷似巨大的洞穴蝙蝠。它的身体似乎完全由一种星辰金属构成……
+		StellarCenturion: 一个未知来源的生物，穿着与某个被遗忘的文明的战士所穿的古代盔甲惊人相似的盔甲，这件盔甲完全由一种奇异的恒星金属锻造而成。
+		StellarEntity: 形状酷似眼睛的神秘实体，覆盖着由与大气外层其他一些生物相同的金属制成的坚硬外壳。
+		GiantToad: 尽管看起来像一只在丛林中随处可见的普通蟾蜍，但这只蟾蜍总感觉有些不对劲……
+		VampireBat: 普通洞穴蝙蝠的近亲。然而，这种蝙蝠的咬伤可以从受害者身上吸取生命力。
+		ChaosKnight: 又一具不知名的早已死去的战士的尸体，由于虚空野兽被摧毁后再次被释放到这片土地上的混乱力量而复活。
+		ChaosWraith: 愤怒的灵魂，纯粹由虚空利维坦倒下后再次释放到世界上的混乱粒子诞生。
 	}
 
 	TownNPCs: {
 		Storyteller: ???
 		Storyteller2: ???
-		Alchemist: A mysterious guest from a faraway land, knowing a lot about alchemy and botany. He will also gladly sell you all sorts of potions Terraria can offer.
-		Psychologist: Certified specialist who will help you keep your sanity in this insane world.
+		Alchemist: 一位来自遥远土地的神秘客人，对炼金术和植物学了如指掌。他也很乐意向你出售泰拉瑞亚能提供的各种药水。
+		Psychologist: 一位认证专家，将帮助你在这个疯狂的世界中保持理智。
 	}
 
-	Critters.MysticBunny: Although visually altered, possibly by the forces of the Hallow, this is still a normal bunny of the same species as ones inhabiting the rest of the Terrarian lands.
+	Critters.MysticBunny: 虽然外观有所改变，可能是由于神圣之地的力量，但这仍然是一只与居住在泰拉瑞亚其他地区的兔子同种的普通兔子。
 }
 
 Ore: {
-	Voidite: The world has been cursed with Voidite...
-	Luminite: The world has been blessed with Luminite!
+	Voidite: 世界已被虚空矿诅咒……
+	Luminite: 世界已被夜明矿祝福！
 }
 
 Nurse: {
-	Said: Sorry, I'm still preparing my stuff. Come back in
-	Said1: seconds
+	Said: 抱歉，我还在准备我的东西。请在
+	Said1: 秒后回来
 }
 
 Tooltips: {
-	ItemEnergy: Uses
-	ItemEnergy1: energy
-	Awakened: Awakened
-	Youtuber: -Youtuber Item-
-	Developer: -Developer Item-
-	Artifact: -Artifact Item-
-	Donator: -Donator Item-
-	ElementalCapsule: couldn't withstand the power.
-	ElementalCapsule1: The forces of the world settle.
-	ElementalCapsule2: The forces of the world get twisted beyond imagination...
-	VoidbloodHeart: Your veins return to normal.
-	VoidbloodHeart1: Your veins turn black.
-	MysteriousPotion: It has a foul smell about it
-	MysteriousPotion1: Instant Health
-	MysteriousPotion2: Heals you for 20% of your total health
-	MysteriousPotion3: Instant Damage
-	MysteriousPotion4: Damages you for 20% of your total health
-	MysteriousPotion5: Toxic
-	MysteriousPotion6: Reduces your maximum health by 10%
-	MysteriousPotion7: Healthy
-	MysteriousPotion8: Increases your maximum health by 10%
-	MysteriousPotion9: Invincibility
-	MysteriousPotion10: Makes you invincible for 10 seconds
-	MysteriousPotion11: Intensity
-	MysteriousPotion12: Increases damage by 10%
-	MysteriousPotion13: Bright
-	MysteriousPotion14: Makes you release blinding light
-	MysteriousPotion15: Poison
-	MysteriousPotion16: Poisons you
-	MysteriousPotion17: Snail
-	MysteriousPotion18: Makes you move very slowly
-	MysteriousPotion19: Lightning
-	MysteriousPotion20: Makes you move at uncontrollable speeds
-	MysteriousPotion21: had a bad swig
-	MysteriousPotion22: Potion
-	# Не трогай HoneyCocoon!!!!
-	HoneyCocoon: <Special Ability Unbound>
-	HoneyCocoon1: Pressing the special ability key
+	ItemEnergy: 消耗
+	ItemEnergy1: 能量
+	Awakened: 已觉醒
+	Youtuber: -Youtuber 物品-
+	Developer: -开发者物品-
+	Artifact: -神器-
+	Donator: -捐赠者物品-
+	ElementalCapsule: 无法承受这股力量。
+	ElementalCapsule1: 世界的力量归于平静。
+	ElementalCapsule2: 世界的力量被扭曲得超乎想象……
+	VoidbloodHeart: 你的血管恢复正常。
+	VoidbloodHeart1: 你的血管变黑。
+	MysteriousPotion: 它有一股难闻的气味
+	MysteriousPotion1: 瞬间治疗
+	MysteriousPotion2: 治疗你总生命值的20%
+	MysteriousPotion3: 瞬间伤害
+	MysteriousPotion4: 对你造成总生命值20%的伤害
+	MysteriousPotion5: 有毒
+	MysteriousPotion6: 减少你的最大生命值10%
+	MysteriousPotion7: 健康
+	MysteriousPotion8: 增加你的最大生命值10%
+	MysteriousPotion9: 无敌
+	MysteriousPotion10: 使你无敌10秒
+	MysteriousPotion11: 强度
+	MysteriousPotion12: 增加10%的伤害
+	MysteriousPotion13: 明亮
+	MysteriousPotion14: 使你释放出致盲的光芒
+	MysteriousPotion15: 中毒
+	MysteriousPotion16: 使你中毒
+	MysteriousPotion17: 蜗牛
+	MysteriousPotion18: 使你移动非常缓慢
+	MysteriousPotion19: 闪电
+	MysteriousPotion20: 使你以无法控制的速度移动
+	MysteriousPotion21: 喝了一口坏东西
+	MysteriousPotion22: 药水
+	# 不要动HoneyCocoon!!!!
+	HoneyCocoon: <特殊能力 未绑定>
+	HoneyCocoon1: 按下特殊能力键
 	HoneyCocoon2:
 		'''
-		will encase the player in a honey cocoon for 15 seconds
-		The cocoon can absorb up to 100 damage before breaking
-		Press <Special Ability Unbound> again to get out
-		Being in the cocoon prevents movement
-		1 minute cooldown
+		将玩家包裹在一个蜂蜜茧中，持续15秒
+		茧在破裂前最多可吸收100点伤害
+		再次按 <特殊能力 未绑定> 即可出来
+		在茧中无法移动
+		1分钟冷却时间
 		'''
-	DeathMirror: The reflection is still too dim...
-	DeathMirror1: seconds remain
-	Railgun: burnt their face off
-	Desolation: Wave
-	Desolation1: Charge
-	Desolation2: Disc
-	Desolation3: Rapid
-	VoidLeviathansAegis: <Dash Unbound>
-	VoidLeviathansAegis1: Life increased by 50
-	VoidLeviathansAegis2: When under half health, defense is increased by 5%
-	VoidLeviathansAegis3: Allows the player to perform a secondary dash using the
-	VoidLeviathansAegis4: key
-	VoidLeviathansAegis5: For 15 seconds after taking 500 total damage:
-	VoidLeviathansAegis6: 40% increased movement speed
-	VoidLeviathansAegis7: 20% increased damage
-	GiftOfTheArchaic: Press
+	DeathMirror: 倒影仍然太暗……
+	DeathMirror1: 还剩 秒
+	Railgun: 烧掉了他们的脸
+	Desolation: 波
+	Desolation1: 充能
+	Desolation2: 飞盘
+	Desolation3: 快速
+	VoidLeviathansAegis: <冲刺 未绑定>
+	VoidLeviathansAegis1: 生命值增加50
+	VoidLeviathansAegis2: 生命值低于一半时，防御增加5%
+	VoidLeviathansAegis3: 允许玩家使用
+	VoidLeviathansAegis4: 键进行二次冲刺
+	VoidLeviathansAegis5: 受到总计500点伤害后的15秒内：
+	VoidLeviathansAegis6: 移动速度增加40%
+	VoidLeviathansAegis7: 伤害增加20%
+	GiftOfTheArchaic: 按下
 	GiftOfTheArchaic1:
 		'''
-		to encase the player in a crystal that knocks enemies away from the player and prevents damage
-		Hover over the item while equipped and press Ctrl + Key to rebind
+		将玩家包裹在一个水晶中，将敌人从玩家身边推开并防止伤害
+		装备时将鼠标悬停在物品上，然后按 Ctrl + 键 重新绑定
 		'''
-	GreatLens: <Special Ability Unbound>
-	GreatLens1: Pressing the special ability key
-	GreatLens2: will encase the player in a giant lens which reflects 20% of the damage from projectiles and enemies
-	GreatLens3: If the player is hit by an enemy the damage is reflected to them
-	AqueousSummon: Time for your reign to end, murderer
-	InfernaceSummon: You arrive, at last.
-	RadiantRainSummon: The rain glistens with unknown magic...
-	SlimeRainSummon: A sticky drop appears on your shoulder.
-	ToySlimeClaw: <Special Ability Unbound>
-	ToySlimeClaw1: Allows the ability to slide down walls
-	ToySlimeClaw2: Pressing the special ability key
-	ToySlimeClaw3: key will throw slime at the cursor
-	ToySlimeClaw4: If it is thrown down, the player will get launched up into the air and throw multiple projectiles down
-	VoidEventSummon: It is too late to call upon the void...
-	VoidEventSummon1: You cannot intensify the void...
-	VoidEventSummon2: Your head is already filled with screams...
-	VoidEventSummon3: You feel a wave of cold rush over you...
-	VoidEventSummon4: Your head throbs...
-	VoidEventSummon5: The void retreats from the light
-	VoidEventSummon6: The shadows grow darker...
-	Betatest: --Debug item--
-	UndownerTerraria: Permafrost was killed:
-	AncientsSummon: I've waited centuries for this!
-	AncientsSummon1: Back for more?
-	AncientsSummon2: I could do this all day!
-	AncientsSummon3: You should have gone for the head...
-	AncientsSummon4: Really? Still trying?
-	AncientsSummon5: Give up already.
-	AncientsSummon6: Are you seriously gonna keep dying?
-	AncientsSummon7: As much fun slaying you is, there are better things to do with both our lives.
-	AncientsSummon8: Lunatic.
-	AncientsSummon9: I just don't think you are cut out to do this... Go find some other hobby.
-	AncientsSummon10: You bring me back to this awful land... Why?
-	EoitesWrath: Beams
-	EoitesWrath1: Blasts
-	SandstormStone: The sand storm settles...
-	SandstormStone1: The desert winds pick up!
-	TimeToken: You cant escape from the void
-	RainSigil: You dont yet have the power to dissipate the radiance...
-	RainSigil1: Clear
-	RainSigil2: Raining
-	InfinityStone: Your feeble body cannot contain the power of more than one infinity stone!
-	InfinityGauntlet: Desert
-	InfinityGauntlet1: Fire
-	InfinityGauntlet2: Sky
-	InfinityGauntlet3: Frost
-	InfinityGauntlet4: Water
-	InfinityGauntlet5: Void
+	GreatLens: <特殊能力 未绑定>
+	GreatLens1: 按下特殊能力键
+	GreatLens2: 将玩家包裹在一个巨大的透镜中，该透镜可反射来自投射物和敌人20%的伤害
+	GreatLens3: 如果玩家被敌人击中，伤害将被反射给他们
+	AqueousSummon: 你的统治该结束了，凶手
+	InfernaceSummon: 你终于来了。
+	RadiantRainSummon: 雨水闪烁着未知的魔法……
+	SlimeRainSummon: 一滴黏糊糊的东西落在了你的肩膀上。
+	ToySlimeClaw: <特殊能力 未绑定>
+	ToySlimeClaw1: 允许沿着墙壁滑下
+	ToySlimeClaw2: 按下特殊能力键
+	ToySlimeClaw3: 将向光标处投掷史莱姆
+	ToySlimeClaw4: 如果向下投掷，玩家将被向上发射到空中并向下投掷多个投射物
+	VoidEventSummon: 现在呼唤虚空已经太晚了……
+	VoidEventSummon1: 你无法强化虚空……
+	VoidEventSummon2: 你的脑海已经充满了尖叫……
+	VoidEventSummon3: 你感到一股寒意袭来……
+	VoidEventSummon4: 你的头在悸动……
+	VoidEventSummon5: 虚空从光明中退去
+	VoidEventSummon6: 阴影变得更深……
+	Betatest: --调试物品--
+	UndownerTerraria: 永冻之霜被击杀：
+	AncientsSummon: 我为此等待了几个世纪！
+	AncientsSummon1: 又来送死了？
+	AncientsSummon2: 我可以这样打一整天！
+	AncientsSummon3: 你本该瞄准头的……
+	AncientsSummon4: 真的吗？还在尝试？
+	AncientsSummon5: 放弃吧。
+	AncientsSummon6: 你真的要一直死下去吗？
+	AncientsSummon7: 尽管杀你很有趣，但我们俩的生活还有更好的事情可做。
+	AncientsSummon8: 疯子。
+	AncientsSummon9: 我只是觉得你不适合做这个……去找点别的爱好吧。
+	AncientsSummon10: 你把我带回这片糟糕的土地……为什么？
+	EoitesWrath: 光束
+	EoitesWrath1: 爆破
+	SandstormStone: 沙尘暴平息了……
+	SandstormStone1: 沙漠的风刮起来了！
+	TimeToken: 你无法逃离虚空
+	RainSigil: 你还没有力量驱散这光辉……
+	RainSigil1: 晴朗
+	RainSigil2: 下雨
+	InfinityStone: 你虚弱的身体无法容纳超过一颗无限宝石的力量！
+	InfinityGauntlet: 沙漠
+	InfinityGauntlet1: 火焰
+	InfinityGauntlet2: 天空
+	InfinityGauntlet3: 冰霜
+	InfinityGauntlet4: 水
+	InfinityGauntlet5: 虚空
 	InfinityGauntlet6:
 		'''
-		The forces of the elements combined...
-		Has the effects of all the infinity stones
-		<right> to switch modes
+		元素之力合而为一……
+		拥有所有无限宝石的效果
+		<右键>切换模式
 		'''
-	InfinityGauntlet7: Desert: Rains desert shards
-	InfinityGauntlet8: Fire: Fires a fireball
-	InfinityGauntlet9: Sky: Teleport to a discovered location on the map
-	InfinityGauntlet10: Water: Turns projectiles into bubbles
-	InfinityGauntlet11: Frost: Summons a shield around the player
-	InfinityGauntlet12: Void: Kills half of all non boss monsters with under 10000 life
-	CreditsSetup: credits off
-	CreditsSetup1: credits on
-	Generator: Power Output: {0} energy every {1} seconds
-	Generator1: Inactive
-	Statues: You cant stack buff statues!
+	InfinityGauntlet7: 沙漠：降下沙漠碎片雨
+	InfinityGauntlet8: 火焰：发射一个火球
+	InfinityGauntlet9: 天空：传送到地图上已发现的位置
+	InfinityGauntlet10: 水：将投射物变成泡泡
+	InfinityGauntlet11: 冰霜：在玩家周围召唤一个护盾
+	InfinityGauntlet12: 虚空：杀死所有生命值低于10000的非Boss怪物的一半
+	CreditsSetup: 制作人员名单关闭
+	CreditsSetup1: 制作人员名单开启
+	Generator: 功率输出：每{1}秒{0}能量
+	Generator1: 未激活
+	Statues: 你不能堆叠增益雕像！
 	BoostDrive:
 		'''
-		Pressing the special ability key {0} will speed up the player for 5 seconds
-		Activating it will take consume energy
+		按下特殊能力键{0}将使玩家加速5秒
+		激活它会消耗能量
 		'''
-	GravityCore: Gravity: {0}%
-	GravityCore1: Enabled
-	GravityCore2: Disabled
-	GravityCore3: WARNING: At high gravity there may be undesired effects
+	GravityCore: 重力：{0}%
+	GravityCore1: 已启用
+	GravityCore2: 已禁用
+	GravityCore3: 警告：在高重力下可能会有不良影响
 	HyperDrive:
 		'''
-		Pressing the special ability key {0} will greatly speed up the player for 5 seconds
-		WARNING: travelling at such high speeds can be damaging
-		Activating it will consume 150 energy
+		按下特殊能力键{0}将使玩家大幅加速5秒
+		警告：以如此高的速度行进可能会造成伤害
+		激活它会消耗150能量
 		'''
-	BiofuelBurner: Produces {0} energy every {1} seconds
-	BiofuelBurner1: Fuel Type: {0}
-	BiofuelBurner2: Fuel: {0}
-	BiofuelBurner3: Empty
-	LifeforceBurner: Strength: {0}
-	LifeforceBurner1: boiled away
-	WindGenerator: Wind speed: {0}
-	WindGenerator1: Production Rate: 1 energy every {0} seconds
+	BiofuelBurner: 每{1}秒产生{0}能量
+	BiofuelBurner1: 燃料类型：{0}
+	BiofuelBurner2: 燃料：{0}
+	BiofuelBurner3: 空
+	LifeforceBurner: 强度：{0}
+	LifeforceBurner1: 被蒸发了
+	WindGenerator: 风速：{0}
+	WindGenerator1: 生产率：每{0}秒1能量
 }
 
 AccInfo: {
-	NEB: Nearby Evil Biomes
-	Nearby: nearby
-	BDPS: Buff Damage Per Second
-	BDPS1: buff damage per second
-	RainTime: Rain Time
-	SR: seconds remaining
-	Clear: Clear
+	NEB: 附近的邪恶生物群落
+	Nearby: 附近
+	BDPS: 每秒增益伤害
+	BDPS1: 每秒增益伤害
+	RainTime: 下雨时间
+	SR: 剩余秒数
+	Clear: 晴朗
 }
 
 Resurs: {
-	Sanity: Sanity
-	Energy: Energy
-	LifeFruit: "[c/c66760: Life Fruit]"
-	EmptyHeart: "[c/ab5b9b:  Empty Heart]"
-	ChaosHeart: "[c/5859a4: Chaos Heart]"
-	CompressorHeart: "[c/ffacb9: Compressor Heart]"
-	LunarStarMana: "[c/5f65c9: Lunar Star]"
+	Sanity: 理智
+	Energy: 能量
+	LifeFruit: "[c/c66760:生命果]"
+	EmptyHeart: "[c/ab5b9b:  空心]"
+	ChaosHeart: "[c/5859a4: 混沌之心]"
+	CompressorHeart: "[c/ffacb9: 压缩之心]"
+	LunarStarMana: "[c/5f65c9: 月亮星]"
 }
 
 SetBonus: {
-	SetBonusToolTips: Hold down the {0} to see the armor bonus set
+	SetBonusToolTips: 按住{0}查看护甲套装奖励
 	CosmicalusVisor:
 		'''
-		Summons a cosmic ring to shoot at nearby enemies
-		Stops sanity from being drained in space
+		召唤一个宇宙环攻击附近的敌人
+		在太空中阻止理智值的下降
 		'''
 	VoidWalkersVisage:
 		'''
-		Press the armour ability key to activate psychosis aura
-		The psychosis aura confuses enemies and inflicts extinction curse
+		按护甲能力键激活精神病光环
+		精神病光环会使敌人混乱并施加灭绝诅咒
 		'''
 	VoidWalkersHood:
 		'''
-		Press the armour ability key to activate psychosis aura
-		The psychosis aura confuses enemies and inflicts extinction curse
+		按护甲能力键激活精神病光环
+		精神病光环会使敌人混乱并施加灭绝诅咒
 		'''
 	VoidWalkersHelm:
 		'''
-		Press the armour ability key to activate psychosis aura
-		The psychosis aura confuses enemies and inflicts extinction curse
+		按护甲能力键激活精神病光环
+		精神病光环会使敌人混乱并施加灭绝诅咒
 		'''
 	VoidWalkersGreatmask:
 		'''
-		Press the armour ability key to activate psychosis aura
-		The psychosis aura confuses enemies and inflicts extinction curse
+		按护甲能力键激活精神病光环
+		精神病光环会使敌人混乱并施加灭绝诅咒
 		'''
-	EnergyWeaversHelm: You charge up energy and release it at nearby enemies
+	EnergyWeaversHelm: 你积蓄能量并向附近的敌人释放
 	MechSetBonus:
 		'''
-		10% increased damage
-		35% increased movement speed
-		17% increased chance not to consume ammo
-		When you get hit, you release electrical arcs
+		增加10%的伤害
+		增加35%的移动速度
+		增加17%的几率不消耗弹药
+		当你被击中时，你会释放电弧
 		'''
 	ForgedSetBonus:
 		'''
-		Double tap down to shackle yourself in place
-		Tap down again to fling yourself back to the center
+		双击下方向键将自己固定在原地
+		再次点击下方向键将自己弹回中心
 		'''
 	CrowsSetBonus:
 		'''
-		When an enemy is hit, green lightning strikes down from above them
-		The lightning heals the player
+		当敌人被击中时，绿色闪电会从他们上方劈下
+		闪电会治疗玩家
 		'''
 	EoitesSetBonus:
 		'''
-		15% increased magic damage
-		Damage reduced by a further 10%
+		增加15%的魔法伤害
+		伤害进一步减少10%
 		'''
 	AwokenWoodSetBonus:
 		'''
-		Greatly increases life regeneration after being hit
-		Shoots leaves at nearby enemies
-		Enemies are less likely to target you
-		Double tap down to activate 'Life's Aura' which heals your team mates and friendly NPCs when inside
+		被击中后大幅增加生命再生
+		向附近的敌人发射树叶
+		敌人不太可能以你为目标
+		双击下方向键激活“生命光环”，在光环内治疗你的队友和友方NPC
 		'''
-	FireDemonsSetBonus: Summons a demon to destroy your foes
+	FireDemonsSetBonus: 召唤一个恶魔来摧毁你的敌人
 	GelticConquerorSetBonus:
 		'''
-		Increases jump height
-		Negates 75% of fall damage
-		You bounce when you land
-		Press down to stop bouncing- this will also not negate fall damage
+		增加跳跃高度
+		抵消75%的坠落伤害
+		落地时你会反弹
+		按下来停止反弹-这也会取消坠落伤害的抵消
 		'''
-	AridSetBonus: Allows weak levitation by holding jump
+	AridSetBonus: 按住跳跃键可进行微弱的悬浮
 	ElementalSetBonus:
 		'''
-		If you are killed, you are revived back to half health
-		45 second cooldown
+		如果你被杀死，你将以半血复活
+		45秒冷却时间
 		'''
-	EmpyreanSetBonus: Storms brew around you
-	VoidSetBonus: All projectiles have a chance of healing you slightly
-	OceanicSetBonus: Taking more then 25 damage causes toxic water to spray
+	EmpyreanSetBonus: 风暴在你周围酝酿
+	VoidSetBonus: 所有投射物都有几率少量治疗你
+	OceanicSetBonus: 受到超过25点伤害会导致有毒的水喷出
 	DragonmailGreathelmSetBonus:
 		'''
-		Melee attacks and projectiles inflict Dragonfire
-		Maximum life increased by 50
+		近战攻击和投射物会施加龙火
+		最大生命值增加50
 		'''
 	DragonmailHoodSetBonus:
 		'''
-		Magic projectiles inflict Dragonfire
-		Magic damage increases as life lowers
+		魔法投射物会施加龙火
+		魔法伤害随着生命值的降低而增加
 		'''
 	DragonmailMaskSetBonus:
 		'''
-		Minions inflict Dragonfire
-		Damage reduced with more minions
+		仆从会施加龙火
+		伤害随着仆从数量的增多而降低
 		'''
 	DragonmailVisageSetBonus:
 		'''
-		Ranged projectiles inflict Dragonfire
-		Ranged attacks have a chance to explode into Dragonfire
+		远程投射物会施加龙火
+		远程攻击有几率爆炸成龙火
 		'''
-	ComfySetBonus: Puffs no longer deal damage to you
+	ComfySetBonus: 河豚不再对你造成伤害
 	PutridSetBonus:
 		'''
-		You create a toxic aura
-		Not moving makes more auras spawn
-		Increases your max number of minions
-		Minions have a chance to inflict a fast acting poison
+		你创造一个有毒的光环
+		不动会产生更多的光环
+		增加你的最大仆从数量
+		仆从有几率施加一种速效毒药
 		'''
-	ToySetBonus: You drop lego bricks when hit
+	ToySetBonus: 被击中时你会掉落乐高积木
 }
 
 Said: {
-	Wasteland: Wasteland sinks back into the sand
-	WastelandDryad: Wait! Stop!
-	WastelandDryad1: I can handle this!
-	VoidLeviathanHead: Infection overcomes the world...
-	Aqueous: I understand why my king perished at your hands...
-	Aqueous1: Enough! You destroyed my lord, I will not let you cast the same fate upon me!
+	Wasteland: 荒原沉回沙中
+	WastelandDryad: 等等！停下！
+	WastelandDryad1: 我能处理这个！
+	VoidLeviathanHead: 感染席卷了世界……
+	Aqueous: 我明白为什么我的王会死在你手上了……
+	Aqueous1: 够了！你摧毁了我的主，我不会让你对我施加同样的命运！
 	AzanaEye: PAKURGH ULURADOK
 	AzanaEye1: REKAHED PHORLOSPI
-	Azana: Ah, the spores cannot withstand these godly powers...
-	Azana1: But nothing satisfies your bloodlust...
-	Azana2: NEW VESSEL
+	Azana: 啊，孢子无法承受这些神圣的力量……
+	Azana1: 但没有什么能满足你的嗜血……
+	Azana2: 新的容器
 	Azana3: NEKTOZ AXLKA
-	Azana4: WE HUNGER
+	Azana4: 我们渴望
 	Azana5: KROLP UMULEK
-	Azana6: YOU CAN'T RESIST
+	Azana6: 你无法抵抗
 	Azana7: VAKEZ WAKTI
-	Azana8: PAIN IS MORTAL
+	Azana8: 痛苦是凡人的
 	Azana9: XANZE MOAKZ
-	Azana10: DON'T Hel-p me
-	Azana11: NOU HEHLP
-	Azana12: End this...
-	Azana13: ECHnd it
-	Azana14: PLEase stop...
-	Azana15: You're... You're not attacking me?
-	Azana16: Maybe there is good in you...
-	Azana17: Salvation...
-	TheGuardian: This is only the beginning!
-	Infernace: I will kill you in my dying breaths!
-	Infernace1: Furosia, help me rid of this pest!
-	Infernace2: My daughter... I will be your downfall, monster!
-	InfernaceWifeSoul: Welcome home...
-	InfernaceWifeSoul1: It's been a while.
-	InfernaceWifeSoul2: I'm sorry it had to end this way.
-	InfernaceWifeSoul3: Be safe, Furosia
-	Obsidious: Easy, you do not deserve such power.
-	Obsidious1: I tried to warn you, kid.
-	Obsidious2: You have something I require...
-	Obsidious3: Come on kid, hand it over and I'll spare you the pain.
-	Obsidious4: I didn't want to have to do this...
-	Obsidious5: You put up a good fight, but alas, it had to be this way.
-	Obsidious6: You forced me to do this.
-	Obsidious7: You put up a good fight for a mere Terrarian...
-	Obsidious8: I didn't sacrifice my life for nothing, the core will be mine!
-	Obsidious9: No... my crystal is too powerful! I can't die... It's impossible...
-	Obsidious10: Ah, my crystal... crumbling... You still aren't... strong enough for him...
-	ScourgeFighter: FATAL ERROR DETECTED. SYSTEM WILL NOW SHUT DOWN IMMEDIATELY.
-	ScourgeFighter1: Homing Missiles Firing
-	ScourgeFighter2: Missile Strike Incoming
-	Volcanox: You will pay for what you've done!
-	Izaris: Your time has come, mortal!
-	Izaris1: I guess we are doing this again...
-	ShardBase: Using autopause, huh? What a wimp!
-	InfernaceGuardian: He awaits...
-	InfernaceGuardian1: Don't resist...
-	InfernaceGuardian2: You cannot wait longer...
-	InfernaceGuardian3: His reign is forever...
+	Azana10: 别-帮-我
+	Azana11: 别帮
+	Azana12: 结束这一切……
+	Azana13: 结-束-它
+	Azana14: 请停下……
+	Azana15: 你……你没有攻击我？
+	Azana16: 也许你心中还有善意……
+	Azana17: 救赎……
+	TheGuardian: 这仅仅是个开始！
+	Infernace: 我会在我垂死之际杀了你！
+	Infernace1: 弗洛西亚，帮我除掉这个害虫！
+	Infernace2: 我的女儿……我将成为你的末日，怪物！
+	InfernaceWifeSoul: 欢迎回家……
+	InfernaceWifeSoul1: 好久不见。
+	InfernaceWifeSoul2: 很抱歉事情会以这种方式结束。
+	InfernaceWifeSoul3: 注意安全，弗洛西亚
+	Obsidious: 小子，你不配拥有这样的力量。
+	Obsidious1: 我试过警告你了，孩子。
+	Obsidious2: 你有我需要的东西……
+	Obsidious3: 来吧孩子，把它交出来，我就免你皮肉之苦。
+	Obsidious4: 我本不想这么做的……
+	Obsidious5: 你打得很好，但可惜，事情必须这样。
+	Obsidious6: 是你逼我这么做的。
+	Obsidious7: 对一个区区泰拉瑞亚人来说，你打得不错……
+	Obsidious8: 我不是白白牺牲我的生命的，核心将是我的！
+	Obsidious9: 不……我的水晶太强大了！我不可能死……这不可能……
+	Obsidious10: 啊，我的水晶……正在崩塌……你还……不够强大，无法对抗他……
+	ScourgeFighter: 检测到致命错误。系统即将立即关闭。
+	ScourgeFighter1: 追踪导弹正在发射
+	ScourgeFighter2: 导弹打击来袭
+	Volcanox: 你将为你的所作所为付出代价！
+	Izaris: 你的死期到了，凡人！
+	Izaris1: 我猜我们又得来一次了……
+	ShardBase: 用自动暂停，嗯？真是个懦夫！
+	InfernaceGuardian: 他在等待……
+	InfernaceGuardian1: 不要抵抗……
+	InfernaceGuardian2: 你不能再等了……
+	InfernaceGuardian3: 他的统治是永恒的……
 }
 
 LooTCondition: {
-	AwakenedModeActive: "[c/973999:Exclusively in Awakened Mode]"
-	ScourgeLootCondition: Drop chance 1/3
-	AncientWyrmHeadDeath: if the Ancient Wyrm was killed first
-	TheEye: if The Eye has been defeated first
-	BIDRC: Drops after {0} has been defeated
-	AllMechs: After {0}, {1}, {2} and {3} have been defeated
-	BiomeConditions: If you are in the {0} biome
+	AwakenedModeActive: "[c/973999:仅在觉醒模式下]"
+	ScourgeLootCondition: 掉落几率1/3
+	AncientWyrmHeadDeath: 如果远古巨龙被先杀死
+	TheEye: 如果眼睛被先击败
+	BIDRC: 在击败{0}后掉落
+	AllMechs: 在{0}、{1}、{2}和{3}都被击败后
+	BiomeConditions: 如果你在{0}生物群落
 }
 
 BiomeName: {
-	Desert: Desert
-	Sky: Sky
-	Hell: Underworld
-	Frost: Frost
-	Beach: Beach
+	Desert: 沙漠
+	Sky: 天空
+	Hell: 地狱
+	Frost: 冰霜
+	Beach: 海滩
 }
 
 ShopCondition: {
-	BossString: After defeating the
-	BossString1: or
-	IfEnbleShop: If "{0}" config option is enabled
-	Shop: In the "{0}" shop tab
-	ShopName0: Health and Mana
-	ShopName1: Combat
-	ShopName2: Other
-	ShopName3: Transmutation
-	downedMechBossAny: After defeating any mechanical boss
-	IWS: If {0} was found
-	IsWoroldCrimson: If the world has Crimson
-	IsWoroldCorruption: If the world has Corruption
-	MoonFull: During the Full Moon
-	BloodMoon: During the Blood Moon
+	BossString: 击败
+	BossString1: 或
+	IfEnbleShop: 如果“{0}”配置选项已启用
+	Shop: 在“{0}”商店标签页
+	ShopName0: 生命与魔力
+	ShopName1: 战斗
+	ShopName2: 其他
+	ShopName3: 转化
+	downedMechBossAny: 击败任何机械Boss后
+	IWS: 如果找到了{0}
+	IsWoroldCrimson: 如果世界有猩红之地
+	IsWoroldCorruption: 如果世界有腐化之地
+	MoonFull: 在满月期间
+	BloodMoon: 在血月期间
 }
 
 Credits: {
-	Credits: Hold 'Escape' to skip
-	Credits1: Created by
-	Credits2: Music by
-	Credits3: Lore by
-	Credits4: Sprites By
-	Credits5: Donators
-	Credits6: Helpers
-	Credits7: Special Thanks To
-	CreditsPort: Unofficial 1.4.4 Port
-	CreditsPort1: Aeris - all code and everything code-related
-	CreditsPort2: skyzephire - Russian translation, few idea suggestions, mod playtesting and some sprites
+	Credits: 按住“Esc”跳过
+	Credits1: 制作人
+	Credits2: 音乐
+	Credits3: 传说
+	Credits4: 美术
+	Credits5: 捐赠者
+	Credits6: 协助者
+	Credits7: 特别感谢
+	CreditsPort: 非官方1.4.4移植版
+	CreditsPort1: Aeris - 所有代码及代码相关的一切
+	CreditsPort2: skyzephire - 俄语翻译，一些想法建议，Mod游戏测试和一些美术
 	Credits8:
 		'''
-		ReLogic for creating the amazing Terraria
-		Jofairden, jopojelly & bluemagic for creating tModloader
-		Gameraiders101 for getting me into modding
-		FuryForged for showcasing the mod
-		ChippyGaming for showcasing the mod
-		Gameraiders101 again for showcasing the mod
+		ReLogic 创造了不起的泰拉瑞亚
+		Jofairden, jopojelly & bluemagic 创造了tModloader
+		Gameraiders101 带我进入Mod制作
+		FuryForged 展示了本Mod
+		ChippyGaming 展示了本Mod
+		Gameraiders101 再次展示了本Mod
 		'''
-	Credits9: Biggest Thanks
-	Credits10: To YOU
+	Credits9: 最诚挚的感谢
+	Credits10: 献给你
 	Credits11:
 		'''
-		Seriously, thank you so much for playing Elements Awoken.
-		It means a lot to me and all of the dev team that you can enjoy
-		something we spent so much time on.
+		说真的，非常感谢你游玩EA觉醒元素。
+		你能享受我们花费如此多时间制作的东西，
+		这对我以及整个开发团队来说意义重大。
 		'''
-	Credits12: From- ThatOneJuicyOrange_ and the team <3
+	Credits12: 来自- ThatOneJuicyOrange_ 及团队 <3
 }
 
 SanityBook: {
-	SanityBookOnCraft: Enable Awakened Mode for this book to have any functionality
-	SanityRegens: Regens:
-	SanityDrains: Drains:
+	SanityBookOnCraft: 启用觉醒模式才能使这本书有任何功能
+	SanityRegens: 再生：
+	SanityDrains: 消耗：
 }
 
 Sanity: {
 	AwakenedPlayer: {
 		Sanity: {
-			Sanity18: Mining
-			Sanity17: In a Town
-			Sanity16: Voidite
-			Sanity15: Nearby {0}
-			Sanity14: Planter Box
-			Sanity13: Sunflower
-			Sanity12: Firefly in a Bottle
-			Sanity11: Fireplace
-			Sanity10: Campfire
-			Sanity9: Nice Object
-			Sanity8: Pet
-			Sanity7: Mining For Too Long
-			Sanity6: In Space
-			Sanity5: In Hell
-			Sanity4: Dawn of the Void
-			Sanity3: Dark Moon
-			Sanity2: Blood Moon
-			Sanity1: Darkness
-			Sanity: Low Health
+			Sanity18: 挖矿
+			Sanity17: 在城镇中
+			Sanity16: 虚空矿
+			Sanity15: 附近有{0}
+			Sanity14: 花盆
+			Sanity13: 向日葵
+			Sanity12: 瓶中萤火虫
+			Sanity11: 壁炉
+			Sanity10: 篝火
+			Sanity9: 精致的物品
+			Sanity8: 宠物
+			Sanity7: 挖矿太久
+			Sanity6: 在太空中
+			Sanity5: 在地狱
+			Sanity4: 虚空黎明
+			Sanity3: 暗月
+			Sanity2: 血月
+			Sanity1: 黑暗
+			Sanity: 低生命值
 		}
 	}
 }
 
-Unbound: KEY NOT BOUND
-IsHard: "[c/973999:Not recommended if you want to do a fair and balanced playthrough]"
-AwakenedModeActive2: "[c/973999:in Awakened Mode]"
-AwakenedModeNotActive: "[c/7a7a7a: Awakened Mode isn't Active]"
-AwakenedMode: "[c/973999:Awakened Mode is active]"
-AwakenedSummonItem: Not consumable in Awakened Mode
-IsSummon: Cannot be summoned because another boss is already alive:
-Prompt: You have activated a boss prompt! Boss prompts cause effects on your world after 30 minutes after defeating a boss. These can be disabled in the EA Config (Settings > Mod Configurations > Elements Awoken)
-AlchemistUI: Place an item here to convert it into its
-AlchemistUI1: counterpart
-VoidEvent: The dawn of the void has started!
-VoidEvent1: The void retreats back into the shadows...
+Unbound: 键位未绑定
+IsHard: "[c/973999:如果你想进行一次公平和平衡的游戏，不推荐此项]"
+AwakenedModeActive2: "[c/973999:在觉醒模式下]"
+AwakenedModeNotActive: "[c/7a7a7a: 觉醒模式未激活]"
+AwakenedMode: "[c/973999:觉醒模式已激活]"
+AwakenedSummonItem: 在觉醒模式下不可消耗
+IsSummon: 无法召唤，因为另一个Boss已经存在：
+Prompt: 你已激活一个Boss提示！Boss提示会在你击败一个Boss后30分钟对你的世界产生影响。这些可以在EA配置中禁用（设置 > Mod配置 > EA觉醒元素）
+AlchemistUI: 在此处放置一个物品，将其转换为其
+AlchemistUI1: 对应物
+VoidEvent: 虚空黎明已经开始！
+VoidEvent1: 虚空退回到阴影中……
 
 MyPlayerLocalization: {
 	MyPlayer: {
 		Worold: {
-			Hallowed: The Hallow
-			andHallowed: and the Hallow
-			Allevils: All Evils
-			Crimson: Crimson
-			andCrimson: and Crimson
-			Corruption: Corruption
-			NE: No Evils detected
+			Hallowed: 神圣之地
+			andHallowed: 和神圣之地
+			Allevils: 所有邪恶
+			Crimson: 猩红之地
+			andCrimson: 和猩红之地
+			Corruption: 腐化之地
+			NE: 未检测到邪恶
 		}
 
-		MasterSwordCharge.Discharged: Discharged
+		MasterSwordCharge.Discharged: 已放电
 
 		Encounter: {
-			Said: I see it now.
-			Said1: Who are you really?
-			Said2: You seek power...
-			Said3: A new challenger rises.
-			Said4: A simple lost soul?
-			Said5: But you haven't asked why.
-			Said6: You have a long way to go.
-			Said7: The path ahead is long.
-			Said8: Does it matter?
-			Said9: You are getting closer.
-			Said10: You are almost there.
+			Said: 我现在明白了。
+			Said1: 你到底是谁？
+			Said2: 你寻求力量……
+			Said3: 一个新的挑战者出现了。
+			Said4: 一个简单的迷失灵魂？
+			Said5: 但你没有问为什么。
+			Said6: 你还有很长的路要走。
+			Said7: 前方的路还很长。
+			Said8: 这重要吗？
+			Said9: 你越来越近了。
+			Said10: 你就快到了。
 		}
 
 		Prompts: {
-			# �� void 5 ���� �����
-			void5: the Guide was slain...
-			void4: Leave
-			void3: You're not ready for this
-			void2: Impending doom approaches...
-			void1: Void Leviathan has awoken!
-			void: Death will consume all.
+			# 虚空5 相关的文本
+			void5: 向导被杀了……
+			void4: 离开
+			void3: 你还没准备好
+			void2: 厄运在逼近……
+			void1: 虚空利维坦苏醒了！
+			void: 死亡将吞噬一切。
 		}
 
 		UponEnteringTheWorld: {
-			Music: You dont have a music pack enabled! All EA bosses will have vanilla music themes. Consider installing:
-			Music1: Elements Awoken Music
-			Music2: EA Retro Music
+			Music: 你没有启用音乐包！所有EA的Boss都将使用原版音乐主题。考虑安装：
+			Music1: EA觉醒元素音乐
+			Music2: EA觉醒元素复古音乐
 		}
 
 		ComputerText: {
-			Text17: muffins
+			Text17: 玛芬
 			Text16:
 				'''
-				004: Upon further investigation, the shards belong to
-				a long forgotten race, thought to be eliminated.
-				No doubt, they could bring more chaos than anything
-				currently ever could. And that there are four survivors
-				gives me an awful feeling...
+				004：经过进一步调查，这些碎片属于
+				一个被遗忘已久的种族，被认为已被消灭。
+				毫无疑问，他们可能带来比目前任何事物
+				都更大的混乱。而且有四名幸存者
+				给了我一种不祥的预感……
 				'''
 			Text15:
 				'''
-				003: We just witnissed something dangerous...some old
-				man entered our laboratory and split into four crystalline
-				monsters, which roamed the entire place. Almost the
-				entirety of our team is missing and all we found was some
-				crystal shards on the ground. We have to make some tests.
+				003：我们刚刚目睹了一些危险的事情……某个老
+				人进入了我们的实验室，并分裂成四个水晶
+				怪物，它们在整个地方游荡。我们几乎
+				整个团队都失踪了，我们只在地上找到了一些
+				水晶碎片。我们必须做些测试。
 				'''
 			Text14:
 				'''
-				002: Whoever finds this...I beg of you, do not make the
-				same mistakes as we did...Do not..
+				002：无论谁找到这个……我求你，不要犯
+				和我们同样的错误……不要……
 				'''
 			Text13:
 				'''
-				001: This is going to be my final entry...
-				I've lost everything. I had, all my colleagues... everything
-				is gone and I'm alone. The chaos ravages the lands, and I
-				am unable to do anything. There is no reason for me to
-				live anymore...
+				001：这将是我的最后一篇记录……
+				我失去了一切。我曾经拥有的一切，我所有的同事……一切
+				都消失了，我孤身一人。混乱肆虐着这片土地，而我
+				无能为力。我再也没有理由
+				活下去了……
 				'''
 			Text12:
 				'''
-				My colleagues have been constantly hallucinating, and were
-				showing signs of sickness, as well as being easily
-				tired. They are barely able to breathe. I am trying to find
-				some way to save them, however... I feel this will hit
-				me as well. I need to get this cure done -at all costs!
+				我的同事们一直在出现幻觉，并且表现出
+				生病的迹象，也很容易
+				感到疲惫。他们几乎无法呼吸。我正在努力寻找
+				某种方法来拯救他们，但是……我感觉这也会
+				降临到我身上。我必须不惜一切代价完成这个治疗！
 				'''
 			Text11:
 				'''
-				After extensive research via our machines, we came to the
-				conclusion that, if the moon lord were to be felled,
-				the underworld would burst out in extreme heat, and even 
-				the most fire resistant gear would not last long... What 
-				sort of a being could withstand this heatwave?
+				通过我们的机器进行广泛研究后，我们得出
+				结论，如果月亮领主被击败，
+				地狱将爆发极热，即使是
+				最耐火的装备也撑不了多久……什么样的
+				生物能承受这种热浪？
 				'''
 			Text10:
 				'''
-				002: The drakonite shard, it had quite the reaction to lava
-				and then right before us, a giant...thing began to
-				build up. It was entirely made of drakonite! However it
-				was not friendly, we had to quickly evacuate to save
-				ourselves.
+				002：那块龙裔碎片，它对熔岩有相当大的反应，
+				然后在我们眼前，一个巨大的……东西开始
+				形成。它完全由龙裔构成！但它
+				并不友好，我们不得不迅速撤离以保全
+				自己。
 				'''
 			Text9:
 				'''
-				001: This element, drakonite, is rather interesting to say
-				the least. We've taken a shard of it into our lab for
-				further research. However, we should be prepared for
-				whatever danger lurks within this shard...
+				001：这种元素，龙裔，至少可以说相当有趣。
+				我们把它的一块碎片带到我们的实验室进行
+				进一步研究。然而，我们应该为
+				这块碎片中潜藏的任何危险做好准备……
 				'''
 			Text8:
 				'''
-				The tides have risen rather high, and there have been
-				rather heavy amounts of rain lately, with terrifying
-				consistency no less. On top of that, there are multiple
-				reports of tornados composed almost entirely of water.
-				The wrath of the ocean may be upon us soon..
+				潮水涨得相当高，而且最近
+				雨量也很大，频率还惊人地
+				一致。最重要的是，有多起
+				几乎完全由水组成的龙卷风的报告。
+				海洋的愤怒可能很快就会降临到我们身上……
 				'''
 			Text7:
 				'''
-				There appear to be signs of magic in the coldest parts of
-				the land, we have sent someone to look into it, but
-				unfortunately we have not heard from them as of yet...
-				I fear he has been frozen due to the cold. After all, these
-				lands are rather, harsh, to take on alone.
+				在这片土地最冷的地方似乎有魔法的迹象，
+				我们派人去调查了，但
+				不幸的是，我们至今没有收到他们的消息……
+				我担心他因寒冷而被冻住了。毕竟，这些
+				土地相当严酷，独自一人难以应对。
 				'''
 			Text6:
 				'''
-				We've heard of some, artifact lost in the underworld but
-				never bothered to look for it. Recently we checked and it
-				was gone. I suppose someone else found it first, ah well...
+				我们听说过一些，在地狱丢失的神器，但
+				从未费心去寻找。最近我们检查了一下，它
+				不见了。我想是别人先找到了吧，啊好吧……
 				'''
 			Text5:
 				'''
-				When we attempted to find a source for the cultists to
-				relay celestial power from, we stumbled across an
-				imperfect reflection of the celestial forces... However, it
-				will be hard to find a source of power from that creature.
+				当我们试图为邪教徒找到一个可以
+				中继天界力量的源头时，我们偶然发现了一个
+				天界力量的不完美反映……然而，
+				要从那个生物那里找到力量来源会很困难。
 				'''
 			Text4:
 				'''
-				A massive amount of energy surged through one of our
-				machines, overloading it and causing it to blow up. The
-				energy readings were... outstanding, to say the least,
-				almost supernatural. It has probably to do with that
-				thunder serpent, far up in the skies...
+				一股巨大的能量涌入我们的一台
+				机器，使其过载并爆炸。
+				能量读数……至少可以说，是惊人的，
+				几乎是超自然的。这可能与那条
+				雷蛇有关，它远在天际……
 				'''
 			Text3:
 				'''
-				Our other team managed to lose control of the 4 robots
-				they've built. Seems like some people are better off being
-				fired. Those things now roam the surface, I am not sure
-				of what will happen...
+				我们的另一个团队设法失去了对他们制造的4个机器人
+				的控制。看来有些人最好被
+				解雇。那些东西现在在地面上游荡，我不确定
+				会发生什么……
 				'''
 			Text2:
 				'''
-				My colleagues found something very interesting within the
-				deepest part of this world. A sentient being controlling fire
-				at will...unfortunately, we can't go down there, as it may
-				kill us if we approach it, but...we will continue watching it.
+				我的同事们在这个世界最深处
+				发现了一些非常有趣的东西。一个能随意控制火焰的
+				有知觉的生物……不幸的是，我们不能下去，因为它
+				可能会在我们靠近时杀死我们，但是……我们会继续观察它。
 				'''
 			Text1:
 				'''
-				What is this monstrosity, what have we created?!
-				This... beast, it has killed the others, I hear it trying to 
-				break the door to my room... Its coming for me... 
-				Anybody who finds this note, END THIS MADNESS, 
-				I beg of you... Oh no.. Its her-
+				这是什么怪物，我们创造了什么？！
+				这个……野兽，它杀死了其他人，我听到它试图
+				打破我房间的门……它来找我了……
+				任何找到这张纸条的人，结束这场疯狂，
+				我求你了……哦不……是她-
 				'''
-			Text: ERROR- DRIVE NOT LOCATED
+			Text: 错误-未找到驱动器
 		}
 
 		PlayerDeath: {
-			Death: shattered
-			Death1: became one with the stars
+			Death: 被粉碎了
+			Death1: 与星辰融为一体
 		}
 
 		NurseHeal: {
-			Heal1: Cant you see I'm a little busy fixing myself up?
-			Heal: I'm sorry, I cant operate on your bloodtype under such urgent conditions.
+			Heal1: 你没看见我正忙着给自己疗伤吗？
+			Heal: 对不起，在这种紧急情况下，我无法为你的血型做手术。
 		}
 
 		Other: {
-			Other1: Insufficient Energy
-			Other2: seconds left until you can use Flare
+			Other1: 能量不足
+			Other2: 还剩 秒才能使用闪耀
 		}
 	}
 }
 
 MyWorldLocalization: {
 	MyWorld: {
-		voidInvasio: Darkness seeps through your veins...
-		voidInvasio1: Laughs echo throughout the world
-		voidInvasio2: Laughs echo throughout the world
-		Azana1: The radiant rain dissipates...
-		Azana: The rain glistens with unknown magic...
+		voidInvasio: 黑暗渗透你的血管……
+		voidInvasio1: 笑声回荡在整个世界
+		voidInvasio2: 笑声回荡在整个世界
+		Azana1: 辉耀之雨消散了……
+		Azana: 雨水闪烁着未知的魔法……
 	}
 }
 
 NPCsGLOBALLocalization: {
 	NPCsGLOBAL: {
-		NoHit.Nohit: No-hit!
+		NoHit.Nohit: 无伤！
 
 		Chat: {
-			Say9: Some townsfolk have been finding strange abandoned labs underground... I think some have been staying overnight
-			Say8: "{0} seems to be the only person in this town that doesn't want to eat me. Does he eat at all?"
-			Say7: Dont buy {0}'s weapons, something feels off about them..."
-			Say6: "{0} keeps talking down my weapons! I'll teach him a lesson one day."
-			Say5: All creatures deserve a chance to live. Live and be free...
-			Say4: I feel her speaking to me... she’s afraid...
-			Say3: That scorpion, 'Wasteland' as you call it, why do we fear her?
-			Say2: How old is {0}? I seem to have memories of him from when I was a kid...
-			Say1: Does {0} ever age? Everyone seems to be getting older but he stays the same
-			Say: Dont trust {0}, he isn't as helpful as you may think.
+			Say9: 一些镇民在地下发现了奇怪的废弃实验室……我想有些人还在那里过夜
+			Say8: “{0}似乎是这个镇上唯一不想吃我的人。他到底吃不吃饭？”
+			Say7: 别买{0}的武器，感觉有些不对劲……”
+			Say6: “{0}一直在贬低我的武器！总有一天我会给他点教训。”
+			Say5: 所有生物都应该有生存的机会。自由地生活……
+			Say4: 我感觉到她在对我说话……她很害怕……
+			Say3: 那只蝎子，你们称之为‘荒原’，我们为什么要害怕她？
+			Say2: {0}多大了？我好像有他小时候的记忆……
+			Say1: {0}会变老吗？大家似乎都在变老，但他却保持不变
+			Say: 别相信{0}，他不像你想象的那么有帮助。
 		}
 	}
 }
 
 AwakenedModeNPCLocalization: {
 	AwakenedModeNPC: {
-		Name4: Poisonous
-		Name3: Shielded
-		Name2: Electrifying
-		Name1: Frozen
-		Name: Blazing
+		Name4: 剧毒的
+		Name3: 护盾的
+		Name2: 带电的
+		Name1: 冰冻的
+		Name: 燃烧的
 	}
 }
 
 BossChecklistIntegration: {
 	DotvEvent: {
-		EntryName: Dawn of the Void
-		SpawnInfo: Use the [i:ElementsAwoken/VoidEventSummon] during the day or before 10 PM. The event will start only with the beginning of the night.
+		EntryName: 虚空黎明
+		SpawnInfo: 在白天或晚上10点前使用[i:ElementsAwoken/VoidEventSummon]。事件只会在夜晚开始时启动。
 	}
 
 	radiantRainEvent: {
-		EntryName: Radiant Rain
-		SpawnInfo: Has a 25% chance to occur instead of rain or can be summoned manually using the [i:ElementsAwoken/RadiantRainSummon] at any time.
+		EntryName: 辉耀之雨
+		SpawnInfo: 有25%的几率代替雨天发生，或者可以在任何时候使用[i:ElementsAwoken/RadiantRainSummon]手动召唤。
 	}
 }
 
 EsseneceAlertsLocalization: {
 	EsseneceAlerts: {
 		OnKill: {
-			Boss5: The depths of Terraria rumble...
-			Boss4: The wrath of Aqueous stirs the ocean
-			Boss3: You hear cracking coming from the ice...
-			Boss2: The sky wind howls...
-			Boss1: Roars echo from the underworld...
-			Boss: The desert sands shift...
+			Boss5: 泰拉瑞亚的深处在隆隆作响……
+			Boss4: 水之女神的愤怒搅动着海洋
+			Boss3: 你听到冰层传来破裂声……
+			Boss2: 天空的风在咆哮……
+			Boss1: 咆哮声从地狱回荡……
+			Boss: 沙漠的沙在移动……
 		}
 	}
 }
@@ -9686,21 +9686,21 @@ EsseneceAlertsLocalization: {
 LocalizationEARecipeGroups: {
 	EARecipeGroups: {
 		RecipeGroups: {
-			Name: Wings
-			Name1: Lunar Wings
-			Name2: Silver or Tungsten Sword
-			Name3: Sand
-			Name4: Sandstone
-			Name5: Ice Block
-			Name6: Copper Bar
-			Name7: Silver Bar
-			Name8: Gold Bar
-			Name9: Evil Bar
-			Name10: Evil Ore
-			Name11: Cobalt Bar
-			Name12: Mythril Bar
-			Name13: Adamantite Bar
-			Name14: Adamantite Bar
+			Name: 翅膀
+			Name1: 月亮翅膀
+			Name2: 银剑或钨剑
+			Name3: 沙块
+			Name4: 砂岩块
+			Name5: 冰雪块
+			Name6: 铜锭
+			Name7: 银锭
+			Name8: 金锭
+			Name9: 邪恶锭
+			Name10: 邪恶矿石
+			Name11: 钴锭
+			Name12: 秘银锭
+			Name13: 精金锭
+			Name14: 精金锭
 		}
 	}
 }
