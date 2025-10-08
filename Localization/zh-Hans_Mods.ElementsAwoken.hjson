@@ -7523,440 +7523,442 @@ NPCs: {
 	AqueousMinion2.DisplayName: 水域仆从
 
 	Azana: {
-		DisplayName: Azana
+		DisplayName: 阿扎娜
 
 		BossChecklistIntegration: {
-			EntryName: Azana
-			SpawnInfo: Use an [i:ElementsAwoken/AzanaSummon] anywhere at any time of the day.
+			EntryName: 阿扎娜
+			SpawnInfo: 在一天中的任何时间、任何地点使用 [i:ElementsAwoken/AzanaSummon] 。
 		}
 	}
 
-	AzanaEye.DisplayName: Azana
-	InfectionMouth.DisplayName: Infection Mouth
+	AzanaEye.DisplayName: 阿扎娜
+	InfectionMouth.DisplayName: 感染巨口
 
 	CosmicObserver: {
-		DisplayName: Cosmic Observer
+		DisplayName: 宇宙观察者
 
 		BossChecklistIntegration: {
-			EntryName: Cosmic Observer
-			SpawnInfo: Spawns on its own high in the skies in Hardmode. Use an [i:ElementsAwoken/CosmicObserverSummon] to increase the chance of it spawning for 1 minute.
+			EntryName: 宇宙观察者
+			SpawnInfo: 在困难模式下会独自生成于高空。使用 [i:ElementsAwoken/CosmicObserverSummon] 可以在1分钟内提高其生成几率。
 		}
 	}
 
-	CosmicObserverHand.DisplayName: Cosmic Observer Hand
-	GuardianProbe.DisplayName: Temple Guard
+	CosmicObserverHand.DisplayName: 宇宙观察者之手
+	GuardianProbe.DisplayName: 神殿守卫
 
 	TheGuardian: {
-		DisplayName: The Guardian
+		DisplayName: 守护者
 
 		BossChecklistIntegration: {
-			EntryName: The Guardian
-			SpawnInfo: Use the [i:ElementsAwoken/GuardianSummon] at nighttime anywhere.
+			EntryName: 守护者
+			SpawnInfo: 在夜间的任何地方使用 [i:ElementsAwoken/GuardianSummon] 。
 		}
 	}
 
-	TheGuardianFly.DisplayName: The Guardian
-	Furosia.DisplayName: Furosia
-	HealingHearth.DisplayName: Healing Hearth
+	TheGuardianFly.DisplayName: 守护者
+	Furosia.DisplayName: 弗洛西亚
+	HealingHearth.DisplayName: 治愈之心
 
 	Infernace: {
-		DisplayName: Infernace
+		DisplayName: 炼狱魔匠
 
 		BossChecklistIntegration: {
-			EntryName: Infernace
-			SpawnInfo: Use the [i:ElementsAwoken/InfernaceSummon] in the Underworld at any time.
+			EntryName: 炼狱魔匠
+			SpawnInfo: 在任何时候于地狱使用 [i:ElementsAwoken/InfernaceSummon] 。
 		}
 	}
 
-	RockLarge.DisplayName: Rock
-	RockMedium.DisplayName: Rock
-	RockSmall.DisplayName: Rock
-	InfernaceSpawner.DisplayName: Infernace's Guardian
+	RockLarge.DisplayName: 岩石
+	RockMedium.DisplayName: 岩石
+	RockSmall.DisplayName: 岩石
+	InfernaceSpawner.DisplayName: 炼狱魔匠的守卫
 
 	Obsidious: {
-		DisplayName: Obsidious
+		DisplayName: 黑曜魔骑士
 
 		BossChecklistIntegration: {
-			EntryName: Obsidious
-			SpawnInfo: Use the [i:ElementsAwoken/ObsidiousSummon] at nighttime anywhere.
+			EntryName: 黑曜魔骑士
+			SpawnInfo: 在夜间的任何地方使用 [i:ElementsAwoken/ObsidiousSummon] 。
 		}
 	}
 
-	ObsidiousHand.DisplayName: Obsidious Hand
-	ObsidiousHuman.DisplayName: Obsidious
-	ObsidiousTransition.DisplayName: Obsidious
+	ObsidiousHand.DisplayName: 黑曜魔骑士之手
+	ObsidiousHuman.DisplayName: 黑曜魔骑士
+	ObsidiousTransition.DisplayName: 黑曜魔骑士
 
 	Permafrost: {
-		DisplayName: Permafrost
+		DisplayName: 永冻之霜
 
 		BossChecklistIntegration: {
-			EntryName: Permafrost
-			SpawnInfo: Use an [i:ElementsAwoken/PermafrostSummon] in the Tundra at any time.
+			EntryName: 永冻之霜
+			SpawnInfo: 在任何时候于雪原生物群落使用 [i:ElementsAwoken/PermafrostSummon] 。
 		}
 	}
 
-	PermaOrbital.DisplayName: Permafrost Orbital
-	RegarothBody.DisplayName: Regaroth
+	PermaOrbital.DisplayName: 永冻霜环
+	RegarothBody.DisplayName: 雷加罗斯
 
 	RegarothHead: {
-		DisplayName: Regaroth
+		DisplayName: 雷加罗斯
 
 		BossChecklistIntegration: {
-			EntryName: Thunderling
-			SpawnInfo: Use the [i:ElementsAwoken/RegarothSummon] high in the skies at any time.
+			EntryName: 雷霆幼龙
+			SpawnInfo: 在任何时候于高空使用 [i:ElementsAwoken/RegarothSummon] 。
 		}
 	}
 
-	RegarothMinionBody.DisplayName: Thunderling
-	RegarothMinionHead.DisplayName: Thunderling
-	RegarothMinionTail.DisplayName: Thunderling
-	RegarothTail.DisplayName: Regaroth
-	MiniFighter.DisplayName: Mini Fighter
+	RegarothMinionBody.DisplayName: 雷霆幼龙
+	RegarothMinionHead.DisplayName: 雷霆幼龙
+	RegarothMinionTail.DisplayName: 雷霆幼龙
+	RegarothTail.DisplayName: 雷加罗斯
+	MiniFighter.DisplayName: 迷你战机
 
 	ScourgeFighter: {
-		DisplayName: Scourge Fighter
+		DisplayName: 灾厄战机
 
 		BossChecklistIntegration: {
-			EntryName: Scourge Fighter
-			SpawnInfo: Use the [i:ElementsAwoken/ScourgeFighterSummon] at nighttime anywhere.
+			EntryName: 灾厄战机
+			SpawnInfo: 在夜间的任何地方使用 [i:ElementsAwoken/ScourgeFighterSummon] 。
 		}
 	}
 
-	ToySlime.DisplayName: Toy Slime
-	MiniToySlime.DisplayName: Mini Toy Slime
-	Firefly.DisplayName: Firefly
-	SoulOfInfernace.DisplayName: Soul of Infernace
+	ToySlime.DisplayName: 玩具史莱姆
+	MiniToySlime.DisplayName: 迷你玩具史莱姆
+	Firefly.DisplayName: 萤火虫
+	SoulOfInfernace.DisplayName: 炼狱魔匠之魂
 
 	Volcanox: {
-		DisplayName: Volcanox
+		DisplayName: 沃尔坎诺斯
 
 		BossChecklistIntegration: {
-			EntryName: Volcanox
-			SpawnInfo: Use the [i:ElementsAwoken/VolcanoxSummon] in the Underworld at any time.
+			EntryName: 沃尔坎诺斯
+			SpawnInfo: 在任何时候于地狱使用 [i:ElementsAwoken/VolcanoxSummon] 。
 		}
 	}
 
-	VolcanoxHook.DisplayName: Volcanox Hook
-	VolcanoxTentacle.DisplayName: Volcanox Tentacle
+	VolcanoxHook.DisplayName: 沃尔坎诺斯之钩
+	VolcanoxTentacle.DisplayName: 沃尔坎诺斯触手
 
 	Storyteller: {
-		DisplayName: Storyteller
+		DisplayName: 故事大王
 
 		TownNPCMood: {
-			Content: Everything's fine, i guess.
-			NoHome: Don't you have a spare room in your house?
-			FarFromHome: Is it just me or i wandered too far from my home?
-			LoveSpace: Just perfect, nobody annoys me here. Almost.
-			DislikeCrowded: Can you find some another room for me? There are too many people for my liking.
-			HateCrowded: Get these puny humans away from me if you don't want me to do it first.
-			LikeNPC_Princess: I genuinely don't understand why everyone loves {NPCName} so much.
-			Princess_LovesNPC: Mhm... I think something is not right with {NPCName}...
-			LikeBiome: "{BiomeName} is the best place to live in for me."
-			DislikeBiome: I don't like {BiomeName}, it's too desolate even for me.
-			HateBiome: What am i even doing in {BiomeName}?
-			LikeNPC: Yeah, i've said before that {NPCName} is a worthless fool, but even he can be useful sometimes.
-			DislikeNPC: I didn't like {NPCName} being a little too nosy.
-			HateNPC: Is it some joke that i don't understand, you housing me with {NPCName}? He pisses me off way more than everyone else here!
+			Content: 一切都还好，我猜。
+			NoHome: 你家没有多余的房间了吗？
+			FarFromHome: 是我走得太远了，还是我的房子长腿跑了？
+			LoveSpace: 完美，这里没人烦我。嗯，差不多吧。
+			DislikeCrowded: 你能给我找个别的房间吗？这里人太多了，我不喜欢。
+			HateCrowded: 在我动手之前，把这些渺小的人类从我身边弄走！
+			LikeNPC_Princess: 我真的不明白为什么每个人都那么喜欢{NPCName}。
+			Princess_LovesNPC: 嗯……我觉得{NPCName}有点不对劲……
+			LikeBiome: “{BiomeName}对我来说是最好的居住地。”
+			DislikeBiome: 我不喜欢{BiomeName}，这里对我来说都显得太过荒凉了。
+			HateBiome: 我到底在{BiomeName}干嘛？
+			LikeNPC: 是的，我以前说过{NPCName}是个没用的傻瓜，但有时连他也能派上用场。
+			DislikeNPC: 我不喜欢{NPCName}那副爱管闲事的样子。
+			HateNPC: 你把我跟{NPCName}安排在一起，是什么我不懂的笑话吗？他比这里所有人都更让我火大！
 		}
 
 		Name: {
-			Amadis: Amadis
-			Neivirk: Neivirk
-			Herckeus: Herckeus
-			Nornex: Nornex
-			Zairis: Zairis
+			Amadis: 阿马迪斯
+			Neivirk: 内维克
+			Herckeus: 赫尔修斯
+			Nornex: 诺内克斯
+			Zairis: 扎里斯
 			default: default
 		}
 
-		Census.SpawnCondition: At daytime
+		Census.SpawnCondition: 白天时
 
 		ButtonText: {
-			Text2: Fight
-			Text1: Question
-			Text: Story
+			Text2: 战斗
+			Text1: 提问
+			Text: 故事
 		}
 
+
+
 		Story: {
-			#TODO: Cтока не может быть начата с ' . , вызвет ошибку при компиляций мода
-			#пример Story1_1: ' исполузуй в начале ""
-			Story: The king of the slimes roams the fields with it's followers, causing earthquakes. A '
-			Story_1: may provoke him.
-			Story1: A giant eyeball is terrorizing the night, which hides sharp teeth underneath his lens. You found this '
-			Story1_1: "'...maybe it'll be just perfect for the eyeball to appear."
-			Story2: Dust is spreading out within the desert, storming. Scorpions suddenly arise from the sands. No doubt, it's Wasteland hunting it's next victim. Catch one of the '
-			Story2_1: "' with a net to get his attention."
-			Story3: A loud roar halled through the dead lands of the Crimson. It's guardian roams free again, it seems. Destroy three of these 'Crimson Hearts' within the caves. Alternatively, provoke it with a '
-			Story3_1: "'."
-			Story4: A loud roar halled through the dead lands of the Corruption. It's guardian roams free again, it seems. Destroy three of these 'Shadow Orbs' within the caves. Alternatively, provoke it with some '
-			Story4_1: "'"
-			Story5: The queen of all bees buzzes through the jungle, trying to build it's hives at every corner. Smash one of the hive's larva or use an '
-			Story5_1: "' to put an end to that madness."
-			Story6: An ancient curse has befallen the old man near the dungeon. This curse will cause a giant skull to emerge. Kill him with a '
-			Story6_1: "' or visit the halls of the dungeon to summon it."
-			Story7: After the skull has fallen, ash and fire rains down upon the lands. The fire lord Infernace seems to be enraged. Create a '
-			Story7_1: "' and use it within the underworld to get him to show up."
-			Story8: I've heared that the guide is fully aware of his fate and deems you challenging to fight the underworld's master. Heh, what a fool. Little does he know what it's defeat will bring over the world...
-			Story9: Do you remember that giant eyeball? Some group of scientists created an mechanical copy of him - and this time, there are two of them. Use a '
-			Story9_1: "'. As it's similiar to the eye you've made back then, it may cause them to appear."
-			Story10: You feel those earthquakes? They are way worse than the ones of the King Slime back then. Create an '
-			Story10_1: "' and use it, maybe the source of the earthquake will show up then."
-			Story11: The skull has been reborn as a four armed mechanoid. And he causes more havoc than ever before. A '
-			Story11_1: "' will cause it to appear."
-			Story12: A group of martians had created a powerful jet robot long ago dubbed the Scourge Fighter, with an AI to destroy whatever it comes across. If you can obtain a duplicate of his '
-			Story12_1: "', you may be able to signal it your coordinates."
-			Story13: The mechanical trio went rogue after shocking thunders hit them. It was caused by the cosmic thunder serpent, Regaroth. If you are able to get ahold of a piece of his '
-			Story13_1: "', he may come to reclaim it. Prepare for the worst."
-			Story14: Flowers are always pretty, however, not when they're giant and have tentacles and spikes. I'm talking about the jungle guardian Plantera. Destroy her bulb to awaken her.
-			Story15: The Golem is a ancient automaton within the depths of the jungle temple. Right now it's deactivated, but you can reactivate it by using one of it's '
-			Story15_1: "' at an Lihzahrd Altar."
-			Story16: The once friendly ice wizard Permafrost returned as a hatred filled spirit, taking revenge upon those who forgot him. An '
-			Story16_1: "' will call upon him."
-			Story17: Forbidden artifact only cause calamitous things, yet some do not want to listen. The resulted, obsidian-plated monster, Obsidious, can be summoned with a '
-			Story17_1: "'."
-			Story18: The king of the ocean, Duke Fishron recently scared me when I was looking for some fresh fish to have a nice dinner. He nearly devoured one of my arms. He is highly dangerous, so it's better to catch him with a '
-			Story18_1: "' and get rid of him."
-			Story19: No bad action remains unpunished. The knight of the ocean has come to take your life for taking Fishron's. Get ready for a tough battle. The knight will be further provoked by holding a '
-			Story19_1: "' at the ocean."
-			Story20: A group of cultists stand at the entrance of the dungeon, praising something that they shouldn't. You better take them out before they summon anything chaotic.
-			Story21: You've caused a great mess. Because of you, the moon lord and the 4 lunar pillars awaken in the land once more. This creature could mean the end of everything. Are you ready to take on him? If so, kill those pillars or use a '
-			Story21_1: "' to awake him for real."
-			Story22: The divine being of the underworld, Volcanox, has been freed from it's prison. To calm the underworld down once again, you will have to make sure that he will fall. A '
-			Story22_1: "' will be enough to unleash him."
-			Story23: The town is full of hallucinations and fatigue and the void glows with a sinister power - the Void Leviathan has returned from it's slumber. He is after your soul, so he can reach his full potenial once again. Take him down by summoning him with the '
-			Story23_1: "'"
-			Story24: A long forgotten chaotic infection has taken the control of a scientist, infusing her with a mechanical suit to create an mindless, horrifying abomination. If you use an '
-			Story24_1: "', you might be able to gain it's attention..."
-			Story25: Sorry, I'm all out of tales
-			Story26: You question my origin? I am a crystalline being, born within the depths of
-			Story26_1: For so long, you mindlessly did what I said, without questioning. You did your job well. Now, it's time for you to perish. I do not need you any longer.
+			#TODO: 字符串不能以 ' 开头，否则会在模组编译时引发错误
+			#例如 Story1_1: ' 应该在开头使用 ""
+			Story: 史莱姆之王正带着它的随从在田野上游荡，引发地震。一个'
+			Story_1: '或许能激怒它。'
+			Story1: 一只巨大的眼球正在恐吓着黑夜，它的晶状体下隐藏着锋利的牙齿。你找到了这个'
+			Story1_1: "'……也许这正好能引诱那只眼球出现。"
+			Story2: 沙尘在沙漠中弥漫，风暴肆虐。蝎子突然从沙中钻出。毫无疑问，是荒原在寻找它的下一个受害者。用网捕捉一只'
+			Story2_1: "'来吸引它的注意。"
+			Story3: 一声巨吼响彻猩红之地的死亡领域。看来它的守护者又重获自由了。摧毁洞穴中的三颗“猩红之心”。或者，用一个'
+			Story3_1: "'来激怒它。"
+			Story4: 一声巨吼响彻腐化之地的死亡领域。看来它的守护者又重获自由了。摧毁洞穴中的三个“暗影珠”。或者，用一些'
+			Story4_1: "'来激怒它。"
+			Story5: 所有蜜蜂的女王在丛林中嗡嗡作响，试图在每个角落建造蜂巢。砸碎一个蜂巢的幼虫，或者使用'
+			Story5_1: "'来结束这场疯狂。"
+			Story6: 一个古老的诅咒降临在地牢附近的老人身上。这个诅咒会召唤出一个巨大的骷髅头。用'
+			Story6_1: "'干掉他，或者去地牢大厅召唤它。"
+			Story7: 在骷髅头倒下后，灰烬与火焰如雨般降临在这片土地上。火之领主炼狱魔匠似乎被激怒了。制作一个'
+			Story7_1: "'并在地狱使用，好让他现身。"
+			Story8: 我听说向导完全清楚自己的命运，并认为你有能力挑战地狱的主宰。呵，真是个傻瓜。他根本不知道击败它会给这个世界带来什么……
+			Story9: 你还记得那个巨大的眼球吗？一群科学家制造了它的机械复制品——而且这次，有两个。使用一个'
+			Story9_1: "'. 这东西和你以前做的那个眼球很像，或许能引它们出现。"
+			Story10: 你感觉到那些地震了吗？它们比当初史莱姆之王造成的要严重得多。制作一个'
+			Story10_1: "'并使用它，也许地震的源头就会出现。"
+			Story11: 那个骷髅头已经重生为一个四臂机械人。他造成的破坏比以往任何时候都大。一个'
+			Story11_1: "'会让他出现。"
+			Story12: 很久以前，一群火星人创造了一个强大的喷气机器人，名为灾厄战机，它的人工智能会摧毁它遇到的一切。如果你能得到一个它的'
+			Story12_1: "'的复制品，你也许能向它发送你的坐标。"
+			Story13: 在被雷电击中后，机械三巨头失控了。那是宇宙雷蛇雷加罗斯干的。如果你能弄到一块它的'
+			Story13_1: "'，它可能会回来取回。做好最坏的打算吧。"
+			Story14: 花总是很美的，但是，当它们巨大无比还长着触手和尖刺时就不是了。我说的就是丛林守护者，世纪之花。摧毁她的花苞来唤醒她。
+			Story15: 石巨人是丛林神庙深处的一个古老自动机器。它现在是关闭状态，但你可以在丛林蜥蜴祭坛上使用它的'
+			Story15_1: "'来重新激活它。"
+			Story16: 曾经友善的冰雪巫师永冻之霜，如今作为一个充满仇恨的灵魂归来，向那些遗忘他的人复仇。一个'
+			Story16_1: "'会召唤他。"
+			Story17: 禁忌的造物只会带来灾难，但总有人不听劝。由此产生的黑曜石板怪物，黑曜魔骑士，可以用一个'
+			Story17_1: "'来召唤。"
+			Story18: 海洋之王，猪鲨公爵，最近在我找些鲜鱼当晚餐时吓了我一跳。他差点吞了我一条胳膊。他非常危险，最好用'
+			Story18_1: "'抓住他并除掉他。"
+			Story19: 没有恶行会不受惩罚。海洋骑士前来取你的性命，因为你夺走了猪鲨的生命。准备好迎接一场艰苦的战斗吧。在海洋手持一个'
+			Story19_1: "'会进一步激怒骑士。"
+			Story20: 一群邪教徒站在地牢入口，赞美着不该赞美的东西。你最好在他们召唤出什么混乱的东西之前干掉他们。
+			Story21: 你惹了大麻烦。因为你，月亮领主和四个天界柱再次在这片土地上苏醒。这个生物可能意味着一切的终结。你准备好挑战他了吗？如果准备好了，就去摧毁那些柱子，或者使用一个'
+			Story21_1: "'来真正唤醒他。"
+			Story22: 地狱的神圣存在，沃尔坎诺斯，已经从它的监狱中被释放。为了让地狱再次恢复平静，你必须确保他会倒下。一个'
+			Story22_1: "'就足以释放他。"
+			Story23: 镇上充满了幻觉和疲惫，虚空闪烁着邪恶的力量——虚空利维坦已经从沉睡中苏醒。他为了你的灵魂而来，这样他就能再次发挥全部潜力。用'
+			Story23_1: "'召唤他并将他击倒。"
+			Story24: 一种被遗忘已久的混乱感染控制了一位科学家，将她与一套机械服融合，创造出一个没有思想、恐怖的怪物。如果你使用一个'
+			Story24_1: "'，你也许能引起它的注意……"
+			Story25: 抱歉，我的故事讲完了。
+			Story26: 你问我的来历？我是一个水晶生命，诞生于深处。
+			Story26_1: 这么长时间以来，你都毫无疑问地照我说的做。你干得很好。现在，是你灭亡的时候了。我不再需要你了。
 		}
 
 		Chat: {
-			Chat: The flare of chaos is now extinct... that such a great warrior did fall with ease is truly interesting...
-			Chat1: You did put the ex-goddess out of her misery, huh? I'm curious... what do you seek?
-			Chat2: Little do you know what power you've set free...you're just as foolish as you look...
-			Chat3: potaot
-			Chat4: Gah, perhaps I should just kill
-			Chat4_1: now. Oh! I didn't see you there
-			Chat4_2: ... You didn't hear anything did you?
-			Chat5: Say, is it really you who makes these decisions? Or is it the puppeteer behind the curtain who pulls your strings?
-			Chat6: What a great night to kill monsters. The red moon makes it even way more fun.
-			Chat7: I never could understand humanity's satisfaction at that time of the year. They clearly didn't see real monsters. And the beings of this Pumpkin Moon are nothing compared to true ones, either.
-			Chat8: At least this cold night ended in a good fight and not into an ice queen singing about her doubts. Ugh.
-			Chat9: Go tell
-			Chat9_1: to tone down the noise, I'm sick of her partying.
-			Chat10: calls herself old. She has barely been born.
-			Chat11: What on Earth is
-			Chat11_1: ? In all my time here, I have never seen a being so peculiar...
-			Chat12: "'s weapons are feeble little creations."
-			Chat13: Hah,
-			Chat13_1: is a useless fool! No one requires his little 'tips' he has. Petty...
-			Chat14: Really? Boss Checklist? Am I seriously not good enough... Well then, guess I'll have to prove I'm better. You'll see.
-			Chat15: Ah, the Moon Lord is defeated... Well done, you are almost as strong as I.
-			Chat16: Old
-			Chat16_1: is afraid of some puny eyeball! I would slay it in seconds if I believed it was even worth the effort. Hah!
-			Chat17: Argh! These damn scorpions keep getting in my house! I heard of a genetics lab meltdown after that giant eye was slain. Imbeciles cant even contain a scorpion!
-			Chat18: Strange floral creatures have started appearing in the jungle... I saw one with a shell made of petals!
-			Chat19: The skies brighten once more, creatures that harbour an ore of immense power reside up there now.
-			Chat20: Death spreads. The critters are looking sickly. I watched one get eaten from the inside out by a giant purple tick...
-			Chat21: Burning spirits have began to appear in the dungeon. I suspect that the lunar surge may have caused Volcanox to release them into the world.
-			Chat22: You look weary,
-			Chat22_1: ". Go pay a visit to "
-			Chat23: You look weary,
-			Chat23_1: . Go pay a visit to the nurse. Oh wait... We don't have one
-			Chat24: I wouldn't reccomend getting into a fight with me. I may be old but trust me, I have plenty of strength.
-			Chat25: The beasts of Terraria are rough, I'll sell you some nasty weapons to aid in your combat.
-			Chat26: These weapons are all made from 100% natural resources!
-			Chat27: Hope you enjoy what I'm selling. Who am I kidding, of course you will!
-			Chat28: Hmph. Sometimes standing around and mingling with all these people gets boring. I miss the days of war.
-			Chat29: You want help crafting? I'm a storyteller! I deal legends not knowledge.
-			Chat30: Why don't I kill the monsters myself? Uh, I'm awfully busy and you look like a strong young man.
-			Chat31: I despise cookies. They are way too sweet for me. Honestly, I prefer the spicy stuff.
+			Chat: 混沌的火焰现已熄灭……如此伟大的战士竟能轻易倒下，真是有趣……
+			Chat1: 你让那位前女神摆脱了痛苦，是吗？我很好奇……你在寻求什么？
+			Chat2: 你根本不知道自己释放了何等的力量……你和你看起来一样愚蠢……
+			Chat3: 土豆
+			Chat4: 呃，也许我应该现在就杀了
+			Chat4_1: 你。哦！我没看见你在这
+			Chat4_2: ……你什么都没听到，对吧？
+			Chat5: 话说，真的是你在做这些决定吗？还是幕后的操纵者在牵动你的线？
+			Chat6: 多么适合猎杀怪物的夜晚。血月让这事变得更有趣了。
+			Chat7: 我永远无法理解人类在每年的这个时候感到的满足感。他们显然没见过真正的怪物。而这南瓜月里的生物与真正的怪物相比，也算不了什么。
+			Chat8: 至少这个寒冷的夜晚以一场精彩的战斗结束，而不是一个冰雪女王唱着她的疑虑。呃。
+			Chat9: 去告诉
+			Chat9_1: 安静点，我受够了她的派对了。
+			Chat10: 自称年长。她几乎才刚刚出生。
+			Chat11: 这
+			Chat11_1: 到底是什么东西？我在这里这么久，从未见过如此奇特的生物……
+			Chat12: “的武器都是些微不足道的小玩意儿。”
+			Chat13: 哈，
+			Chat13_1: 是个没用的傻瓜！没人需要他那点“小提示”。可笑……
+			Chat14: 真的吗？Boss清单？难道我还不够好吗……好吧，看来我得证明我更强。你会看到的。
+			Chat15: 啊，月亮领主被打败了……干得好，你几乎和我一样强大。
+			Chat16: 老
+			Chat16_1: 居然害怕一个渺小的眼球！如果我认为它值得我费力气，我几秒钟就能把它宰了。哈！
+			Chat17: 啊！这些该死的蝎子老是进我家！我听说在那个巨眼被杀死后，一个基因实验室发生了泄漏。这群笨蛋连一只蝎子都管不住！
+			Chat18: 丛林里开始出现奇怪的植物生物了……我看到一个用花瓣做壳的！
+			Chat19: 天空再次明亮起来，蕴藏着巨大力量矿石的生物现在栖息在那里。
+			Chat20: 死亡在蔓延。小动物们看起来病恹恹的。我亲眼看到一只被一只巨大的紫色壁虱从内部吃掉……
+			Chat21: 燃烧的灵魂开始出现在地牢里。我怀疑是月球的能量波动导致沃尔坎诺斯把它们释放到了世界上。
+			Chat22: 你看起来很累，
+			Chat22_1: “。去拜访一下”
+			Chat23: 你看起来很累，
+			Chat23_1: 。去拜访一下护士吧。哦等等……我们没有护士。
+			Chat24: 我不建议你和我打架。我可能老了，但相信我，我力气还大得很。
+			Chat25: 泰拉瑞亚的野兽很凶猛，我会卖给你一些厉害的武器来帮助你战斗。
+			Chat26: 这些武器都是用100%纯天然材料制成的！
+			Chat27: 希望你喜欢我卖的东西。开玩笑的，你肯定会喜欢的！
+			Chat28: 哼。有时候站在这里和这些人混在一起真无聊。我想念战争的日子。
+			Chat29: 你想要制作方面的帮助？我是个讲故事的！我只懂传说，不懂知识。
+			Chat30: 为什么我不自己去杀怪物？呃，我非常忙，而且你看起来像个强壮的年轻人。
+			Chat31: 我讨厌饼干。它们对我来说太甜了。老实说，我更喜欢辣的东西。
 		}
 
 		Content_1_4: {
-			BossD: There are rumors of a giant humanoid single-eyed monster roving the everfrosen lands of the Tundra, who seems to have come from a different dimension. Not that i know much about it, but crafting a certain '
-			BossD_1: "'might lure it, probably."
-			BossQ: You definitely have seen the king of all slimes, have you not? What if i tell you that there is a queen of all slimes, which might also have wings? I've heard about a '
-			BossQ_1: "' made of pure gelatin, try using it in the Hallow, who knows, maybe something will happen."
-			BossE: Do you know who's behind the Hallow and all of the bizarre stuff there? No one else than the infamous Empress of Light herself! And have you seen the weird, iridescent '
-			BossE_1: "'s there? I wonder if are connected in some way."
+			BossD: 有传言说，一个巨大的独眼人形怪物在冰封的雪原上游荡，它似乎来自另一个维度。我虽然不太了解，但制作一个特定的'
+			BossD_1: "'也许能引诱它。"
+			BossQ: 你肯定见过史莱姆之王，对吧？如果我告诉你还有一个史莱姆女王，而且可能还有翅膀呢？我听说过一种用纯明胶制成的'
+			BossQ_1: "'，试着在神圣之地使用它，谁知道呢，也许会发生什么。"
+			BossE: 你知道神圣之地和那里所有奇异事物的幕后黑手是谁吗？正是臭名昭著的光之女皇本人！你见过那里那些奇怪的、闪着彩虹色光的'
+			BossE_1: "'吗？我怀疑它们之间有什么联系。"
 		}
 	}
 
-	CrystalSerpentTail.DisplayName: Crystal Serpent
-	CrystalSerpentHead.DisplayName: Crystal Serpent
-	CrystalSerpentBody.DisplayName: Crystal Serpent
-	Krecheus.DisplayName: Krecheus
-	Kirvein.DisplayName: Kirvein
-	Izaris.DisplayName: Izaris
-	EnergySeeker.DisplayName: Energy Seeker
+	CrystalSerpentTail.DisplayName: 水晶魔蛇
+	CrystalSerpentHead.DisplayName: 水晶魔蛇
+	CrystalSerpentBody.DisplayName: 水晶魔蛇
+	Krecheus.DisplayName: 克雷修斯
+	Kirvein.DisplayName: 柯文
+	Izaris.DisplayName: 伊扎里斯
+	EnergySeeker.DisplayName: 能量追踪者
 	ShardBase.DisplayName: ""
-	Xernon.DisplayName: Xernon
-	AncientAmalgamFist.DisplayName: Ancient Amalgamate Fist
-	AncientAmalgamDeath.DisplayName: The Ancient Amalgamate
+	Xernon.DisplayName: 泽农
+	AncientAmalgamFist.DisplayName: 远古混合体之拳
+	AncientAmalgamDeath.DisplayName: 远古混合体
 
 	AncientAmalgam: {
-		DisplayName: The Ancient Amalgamate
+		DisplayName: 远古混合体
 
 		BossChecklistIntegration: {
-			EntryName: The Ancient Amalgamate
-			SpawnInfo: Talk to the Storyteller after defeating Azana. Use the [i:ElementsAwoken/AncientsSummon] at any time anywhere after defeating the Ancients for the first time.
+			EntryName: 远古混合体
+			SpawnInfo: 击败阿扎娜后与故事大王交谈。首次击败远古三王后，可在任何时间任何地点使用 [i:ElementsAwoken/AncientsSummon] 。
 		}
 	}
 
-	Puff.DisplayName: Puff
-	SpikedPuff.DisplayName: Spiked Puff
-	AbyssSkull.DisplayName: Abyss Skull
-	AbyssSkullette.DisplayName: Abyss Skullette
-	AccursedFlier.DisplayName: Accursed Flier
-	DimensionalHive.DisplayName: Dimensional Hive
-	Immolator.DisplayName: Immolator
-	ReaverSlime.DisplayName: Reaver Slime
-	VoidFly.DisplayName: Void Fly
-	VoidKnight.DisplayName: Void Knight
-	ZergCaster.DisplayName: Zerg Caster
-	EtherealHunter.DisplayName: Ethereal Hunter
-	VoidCrawler.DisplayName: Void Crawler
-	VoidGolem.DisplayName: Void Golem
-	VoidElemental.DisplayName: Void Elemental
-	AllKnowerBody.DisplayName: All Knower
-	AllKnowerHead.DisplayName: All Knower
-	AllKnowerTail.DisplayName: All Knower
-	RadiantWarrior.DisplayName: Radiant Warrior
-	SparklingSlime.DisplayName: Sparkling Slime
-	StarlightGlobule.DisplayName: Starlight Globule
-	StellarStarfish.DisplayName: Stellar Starfish
-	WaterElemental.DisplayName: Water Elemental
-	SkyElemental.DisplayName: Sky Elemental
-	FrostElemental.DisplayName: Frost Elemental
-	FireElemental.DisplayName: Fire Elemental
-	DesertElemental.DisplayName: Desert Elemental
-	ArmoredTrencherTail.DisplayName: Armored Trencher
-	ArmoredTrencherHead.DisplayName: Armored Trencher
-	ArmoredTrencherBody.DisplayName: Armored Trencher
-	Stoneer.DisplayName: Stoneer
-	Pebleer.DisplayName: Pebleer
-	InfernoSpirit.DisplayName: Inferno Spirit
-	GiantVampireBat.DisplayName: Giant Vampire Bat
-	DragonCharger.DisplayName: Dragon Charger
-	GreaterDrakoniteGolem.DisplayName: Drakoknight
-	MagmaSlime.DisplayName: Magma
-	DragonBat.DisplayName: Dragon Bat
-	DragonSlime.DisplayName: Dragon Slime
-	DragonWarrior.DisplayName: Dragon Warrior
-	DrakoniteElemental.DisplayName: Drakonite Elemental
-	FlyingJaw.DisplayName: Flying Jaw
-	PetalClasper.DisplayName: Petal Clasper
-	GiantTick.DisplayName: Giant Tick
-	MortemWalker.DisplayName: Mortem Walker
-	SkyCrawler.DisplayName: Sky Crawler
-	StellarBat.DisplayName: Stellar Bat
-	StellarCenturion.DisplayName: Stellar Centurion
-	StellarEntity.DisplayName: Stellar Entity
-	MutatedScorpion.DisplayName: Mutated Scorpion
-	InfernaceGuardian.DisplayName: Infernace's Guardian
-	GiantToad.DisplayName: Giant Toad
-	VampireBat.DisplayName: Vampire Bat
+	Puff.DisplayName: 气鼓鱼
+	SpikedPuff.DisplayName: 尖刺气鼓鱼
+	AbyssSkull.DisplayName: 深渊头骨
+	AbyssSkullette.DisplayName: 深渊小头骨
+	AccursedFlier.DisplayName: 诅咒飞虫
+	DimensionalHive.DisplayName: 维度蜂巢
+	Immolator.DisplayName: 献祭者
+	ReaverSlime.DisplayName: 掠夺者史莱姆
+	VoidFly.DisplayName: 虚空飞虫
+	VoidKnight.DisplayName: 虚空骑士
+	ZergCaster.DisplayName: 虫群施法者
+	EtherealHunter.DisplayName: 以太猎手
+	VoidCrawler.DisplayName: 虚空爬行者
+	VoidGolem.DisplayName: 虚空魔像
+	VoidElemental.DisplayName: 虚空元素
+	AllKnowerBody.DisplayName: 全知者
+	AllKnowerHead.DisplayName: 全知者
+	AllKnowerTail.DisplayName: 全知者
+	RadiantWarrior.DisplayName: 光辉战士
+	SparklingSlime.DisplayName: 闪光史莱姆
+	StarlightGlobule.DisplayName: 星光球
+	StellarStarfish.DisplayName: 恒星海星
+	WaterElemental.DisplayName: 水元素
+	SkyElemental.DisplayName: 天域元素
+	FrostElemental.DisplayName: 冰霜元素
+	FireElemental.DisplayName: 火焰元素
+	DesertElemental.DisplayName: 沙漠元素
+	ArmoredTrencherTail.DisplayName: 装甲战壕蠕虫
+	ArmoredTrencherHead.DisplayName: 装甲战壕蠕虫
+	ArmoredTrencherBody.DisplayName: 装甲战壕蠕虫
+	Stoneer.DisplayName: 投石怪
+	Pebleer.DisplayName: 投砾怪
+	InfernoSpirit.DisplayName: 炼狱之魂
+	GiantVampireBat.DisplayName: 巨型吸血蝙蝠
+	DragonCharger.DisplayName: 龙裔冲锋者
+	GreaterDrakoniteGolem.DisplayName: 龙裔骑士
+	MagmaSlime.DisplayName: 岩浆
+	DragonBat.DisplayName: 龙裔蝙蝠
+	DragonSlime.DisplayName: 龙裔史莱姆
+	DragonWarrior.DisplayName: 龙裔战士
+	DrakoniteElemental.DisplayName: 龙裔元素
+	FlyingJaw.DisplayName: 飞颚
+	PetalClasper.DisplayName: 花瓣捕兽夹
+	GiantTick.DisplayName: 巨型壁虱
+	MortemWalker.DisplayName: 死亡行者
+	SkyCrawler.DisplayName: 天空爬行者
+	StellarBat.DisplayName: 恒星蝙蝠
+	StellarCenturion.DisplayName: 恒星百夫长
+	StellarEntity.DisplayName: 恒星实体
+	MutatedScorpion.DisplayName: 突变蝎子
+	InfernaceGuardian.DisplayName: 炼狱魔匠的守卫
+	GiantToad.DisplayName: 巨型蟾蜍
+	VampireBat.DisplayName: 吸血蝙蝠
 
 	Alchemist: {
-		DisplayName: Alchemist
+		DisplayName: 炼金术士
 
 		TownNPCMood: {
-			Content: Ah, splendid. Thank you for such a nice house.
-			NoHome: Hmm, what a curious situation, i came from a faraway land... To become homeless?
-			FarFromHome: Ah, i wandered far from my home again... I hope, i remember the way back.
-			LoveSpace: I decided to wander around the world to find the serenity and peace... And i finally found it. Thank you dearly.
-			DislikeCrowded: I still like your home, it's very cozy, but i'd like it more if there weren't so many people in it.
-			HateCrowded: I'm deeply sorry, but how can i do my work, if there are so many people here?
-			LoveBiome: Ah, how pleasant it is to live in the {BiomeName}. Reminds me of the place i came from...
-			LikeBiome: I always liked going to the {BiomeName}. What a captivating sight over here, isn't it?
-			DislikeBiome: Don't get me wrong, i enjoy solitude... But {BiomeName} is way too desolate even for my liking.
-			LoveNPC: People like {NPCName} are exactly who i wanted to see in these curious lands. I'm always glad about encounters like these.
-			LikeNPC: I feel a kindred spirit in {NPCName}, and i can't help but like it!
-			DislikeNPC: I'm not a misantrophe, of course, but people like {NPCName} - are the ones i prefer to not cross roads with.
-			HateNPC: I decided to wander around the world, trying to find serenity, mostly because of ones like {NPCName}...
-			LikeNPC_Princess: "{NPCName} is a very nice child."
-			Princess_LovesNPC: I like {NPCName}, he knows a lot about plants and potion brewing!
+			Content: 啊，太棒了。谢谢你给我这么好的房子。
+			NoHome: 嗯，真是个奇怪的处境，我从遥远的地方来……结果成了无家可归的人？
+			FarFromHome: 啊，我又离家太远了……希望我还记得回去的路。
+			LoveSpace: 我决定周游世界以寻求宁静与和平……而我终于找到了。衷心感谢你。
+			DislikeCrowded: 我仍然喜欢你的房子，它很舒适，但如果人少一点我会更喜欢。
+			HateCrowded: 我深感抱歉，但如果这里有这么多人，我该如何工作呢？
+			LoveBiome: 啊，住在{BiomeName}是多么愉快。让我想起了我来的地方……
+			LikeBiome: 我一直很喜欢去{BiomeName}。这里的景色多么迷人，不是吗？
+			DislikeBiome: 别误会，我享受独处……但{BiomeName}对我来说也太荒凉了。
+			LoveNPC: 像{NPCName}这样的人正是我希望在这片奇特的土地上看到的。我总是为这样的相遇感到高兴。
+			LikeNPC: 我在{NPCName}身上感到一种志同道合的精神，我不由自主地喜欢上了！
+			DislikeNPC: 我当然不是个厌世者，但像{NPCName}这样的人——是我宁愿不与之打交道的人。
+			HateNPC: 我决定周游世界，试图寻找宁静，主要是因为像{NPCName}这样的人……
+			LikeNPC_Princess: “{NPCName}是个非常好的孩子。”
+			Princess_LovesNPC: 我喜欢{NPCName}，他对植物和药剂酿造了解很多！
 		}
 
 		Name: {
-			Saul: Saul
-			Darius: Darius
-			Eliseo: Eliseo
-			Cadmus: Cadmus
+			Saul: 扫罗
+			Darius: 大流士
+			Eliseo: 埃利塞奥
+			Cadmus: 卡德摩斯
 		}
 
 		Chat: {
-			Say: No matter how large the wound, healing potions shall fix it.
-			Say1: All your potion needs, taken care of right here.
-			Say2: I travel the world searching for ingredients for my potions, its not an easy task.
-			Say3: I come from a dark world...
-			Say4: Be careful out there, I hate fighting. I'd much rather talk my way out of it.
-			Say5: Going truffle worm hunting? I suggest an invisibility potion.
-			Say6: Health and Mana
-			Say7: Combat
-			Say8: Other
-			Say9: Transmutation
-			Say10: Shop:
+			Say: 无论伤口多大，治疗药水都能治好。
+			Say1: 你所有的药水需求，在这里都能得到满足。
+			Say2: 我周游世界为我的药水寻找原料，这不是一件容易的事。
+			Say3: 我来自一个黑暗的世界……
+			Say4: 在外面要小心，我讨厌战斗。我宁愿通过交谈解决问题。
+			Say5: 要去猎松露虫吗？我建议用一瓶隐身药水。
+			Say6: 生命与魔力
+			Say7: 战斗
+			Say8: 其他
+			Say9: 转化
+			Say10: 商店：
 		}
 
 		ButtonName: {
-			Name: Convert
-			Name1: Next Shop
-			Name2: Transmutation
+			Name: 转换
+			Name1: 下一商店
+			Name2: 炼金
 		}
 
-		Census.SpawnCondition: Conditions unknown
+		Census.SpawnCondition: 生成条件未知
 	}
 
 	Psychologist: {
 		TownNPCMood: {
-			Princess_LovesNPC: "{NPCName} always helps me via good talk when i'm sad!"
-			LikeNPC_Princess: I've heard a lot about {NPCName} and now i finally have a chance to meet her myself! Thank you for such an opportunity.
-			HateNPC: "{NPCName} sometimes grinds even my gears..."
-			DislikeNPC: Of course, i understand human psychology, but i'm still struggling to understand what is {NPCName}'s problem.
-			LikeNPC: "{NPCName} is a very interesting person to talk with."
-			LoveNPC: Thanks for housing me with {NPCName}, i really appreciate it.
-			DislikeBiome: I wouldn't exactly say that i like living in {BiomeName}... But i can't complain anyway.
-			LikeBiome: I like {BiomeName}, there are a lot of peculiar and curious creatures.
-			LoveBiome: "{BiomeName} is one of my favourite places to be. So pleasant scenery..."
-			HateCrowded: I don't want to complain... But is it just me, or your house is a little overpopulated?
-			DislikeCrowded: Hmm, you have a pretty densely populated house, do you not?
-			LoveSpace: Great, there is quiet and little to no people here.
-			FarFromHome: Oh, it appears i wandered far from my house again...
-			NoHome: It seems that i have nowhere to live now... Do you happen to have a free room in your house?
-			Content: Everything's fine, thank you.
+			Princess_LovesNPC: “在我难过的时候，{NPCName}总是通过愉快的交谈来帮助我！”
+			LikeNPC_Princess: 我听说了很多关于{NPCName}的事，现在我终于有机会亲自见到她了！感谢你给我这个机会。
+			HateNPC: “{NPCName}有时甚至能磨掉我的耐性……”
+			DislikeNPC: 当然，我理解人类心理学，但我仍然很难理解{NPCName}的问题是什么。
+			LikeNPC: “{NPCName}是一个非常有趣的交谈对象。”
+			LoveNPC: 谢谢你把我安排和{NPCName}住在一起，我真的很感激。
+			DislikeBiome: 我不会说我喜欢住在{BiomeName}……但我也不能抱怨什么。
+			LikeBiome: 我喜欢{BiomeName}，这里有很多奇特而有趣的生物。
+			LoveBiome: “{BiomeName}是我最喜欢待的地方之一。多么宜人的景色……”
+			HateCrowded: 我不想抱怨……但你的房子是不是有点人满为患了？
+			DislikeCrowded: 嗯，你家的居住密度相当高，不是吗？
+			LoveSpace: 太好了，这里很安静，几乎没有人。
+			FarFromHome: 哦，看来我又离家太远了……
+			NoHome: 看来我现在无处可住了……你家碰巧有空房间吗？
+			Content: 一切都很好，谢谢你。
 		}
 
-		DisplayName: Psychologist
-		Button: Counselling
+		DisplayName: 心理学家
+		Button: 心理咨询
 
 		Chat: {
-			Say9: I'm doing fine. I'm ABSOLUTELY DOING FINE. NOW STOP ASKING!
-			Say8: You took down a being said to make others grow insane with alone it's presence. Are you even human?
-			Say7: The fact that we never sleep is extremely strange. Who coded us to be this way?
-			Say6: Your sanity is pretty low...you should maybe see a psychologist. Oh, wait...
-			Say5: The townspeople seem plagued by hallucinations...luckily I am not. Anyways, who's your zombie friend there?
-			Say4: To be honest, I'm surprised by the fact that you don't have an trauma - considering you fought an gigantic wall made out of flesh...
-			Say3: Did you see my glasses? I can't seem to find them...oh, there they are. What do you want?
-			Say2: I am the best psychologist around...and most likely the only one.
-			Say1: I hear there is a 'Book of Shadows' that shows what is affecting your sanity. I'm sure it isnt as effective as my services.
-			Say: And, how are we feeling today?
+			Say9: 我很好。我绝对好得很。现在别再问了！
+			Say8: 你击败了一个据说仅凭其存在就能让其他人疯狂的生物。你真的是人类吗？
+			Say7: 我们从不睡觉这个事实非常奇怪。是谁把我们编写成这样的？
+			Say6: 你的理智值很低……你也许该看看心理医生。哦，等等……
+			Say5: 镇民们似乎被幻觉所困扰……幸运的是我没有。话说回来，你那个僵尸朋友是谁？
+			Say4: 老实说，我对你没有受到任何创伤感到惊讶——考虑到你曾与一堵巨大的血肉之墙战斗过……
+			Say3: 你看到我的眼镜了吗？我好像找不到了……哦，在这儿呢。你想要什么？
+			Say2: 我是这里最好的心理学家……也很有可能是唯一的一个。
+			Say1: 我听说有一本“暗影之书”，可以显示影响你理智的东西。我敢肯定它没有我的服务有效。
+			Say: 那么，我们今天感觉怎么样？
 		}
 
 		Name: {
-			Dan: Dan
-			Alex: Alex
-			Sam: Sam
-			Drew: Drew
+			Dan: 丹
+			Alex: 亚历克斯
+			Sam: 萨姆
+			Drew: 德鲁
 		}
 
-		Census.SpawnCondition: Conditions unknown
+		Census.SpawnCondition: 生成条件未知
 	}
 
-	ChaosKnight.DisplayName: Chaos Knight
-	ChaosWraith.DisplayName: Chaos Wraith
+	ChaosKnight.DisplayName: 混沌骑士
+	ChaosWraith.DisplayName: 混沌怨灵
 }
 
 Projectiles: {
