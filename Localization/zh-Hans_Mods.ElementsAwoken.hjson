@@ -7518,10 +7518,10 @@ NPCs: {
 	AqueousMinion2.DisplayName: 水域仆从
 
 	Azana: {
-		DisplayName: 阿扎娜
+		DisplayName: 末日领主-阿扎娜
 
 		BossChecklistIntegration: {
-			EntryName: 阿扎娜
+			EntryName: 末日领主-阿扎娜
 			SpawnInfo: 在一天中的任何时间、任何地点使用 [i:ElementsAwoken/AzanaSummon]
 		}
 	}
@@ -7623,19 +7623,19 @@ NPCs: {
 	SoulOfInfernace.DisplayName: 炼狱魔匠之魂
 
 	Volcanox: {
-		DisplayName: 沃尔坎诺斯
+		DisplayName: 火山之主
 
 		BossChecklistIntegration: {
-			EntryName: 沃尔坎诺斯
+			EntryName: 火山之主
 			SpawnInfo: 在任何时候于地狱使用 [i:ElementsAwoken/VolcanoxSummon]
 		}
 	}
 
-	VolcanoxHook.DisplayName: 沃尔坎诺斯之钩
-	VolcanoxTentacle.DisplayName: 沃尔坎诺斯触手
+	VolcanoxHook.DisplayName: 火山之主爪钩
+	VolcanoxTentacle.DisplayName: 火山之主触手
 
 	Storyteller: {
-		DisplayName: 故事大王
+		DisplayName: 说书人
 
 		TownNPCMood: {
 			Content: 一切都还好，我猜
