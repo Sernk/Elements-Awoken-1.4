@@ -7782,14 +7782,14 @@ NPCs: {
 	CrystalSerpentTail.DisplayName: 水晶魔蛇
 	CrystalSerpentHead.DisplayName: 水晶魔蛇
 	CrystalSerpentBody.DisplayName: 水晶魔蛇
-	Krecheus.DisplayName: 克雷修斯
-	Kirvein.DisplayName: 柯文
+	Krecheus.DisplayName: 克瑞修斯
+	Kirvein.DisplayName: 柯维恩
 	Izaris.DisplayName: 伊扎里斯
-	EnergySeeker.DisplayName: 能量追踪者
-	ShardBase.DisplayName: ""
-	Xernon.DisplayName: 泽农
-	AncientAmalgamFist.DisplayName: 远古混合体之拳
-	AncientAmalgamDeath.DisplayName: 远古混合体
+	EnergySeeker.DisplayName: 能量追猎者
+	ShardBase.DisplayName: 碎片之源
+	Xernon.DisplayName: 泽尔农
+	AncientAmalgamFist.DisplayName: 远古融合之拳
+	AncientAmalgamDeath.DisplayName: 远古融合者
 
 	AncientAmalgam: {
 		DisplayName: 远古混合体
