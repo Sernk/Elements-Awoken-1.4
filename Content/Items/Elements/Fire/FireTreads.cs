@@ -38,6 +38,7 @@ namespace ElementsAwoken.Content.Items.Elements.Fire
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.lavaRose = true;
             player.accRunSpeed = 8.8f;
             player.rocketBoots = 1;
             player.fireWalk = true;

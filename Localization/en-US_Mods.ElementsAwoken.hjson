@@ -391,7 +391,7 @@ Items: {
 
 	ThrowerEmblem: {
 		DisplayName: Thrower Emblem
-		Tooltip: ""
+		Tooltip: 15% increased throwing damage
 	}
 
 	SanityRegenerationPotion: {
@@ -8803,6 +8803,7 @@ Projectiles: {
 	ToadTongue.DisplayName: Giant Toad
 	ToadTongueTip.DisplayName: Giant Toad
 	SuperStinkPotion.DisplayName: Super Stink Potion
+	RocetI.DisplayName: Rocet I
 }
 
 Configs: {

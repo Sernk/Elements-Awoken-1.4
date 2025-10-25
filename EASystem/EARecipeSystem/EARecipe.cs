@@ -1,5 +1,10 @@
 ﻿using ElementsAwoken.Content.Items.Accessories;
 using ElementsAwoken.Content.Items.Accessories.Emblems;
+using ElementsAwoken.Content.Items.Ancient;
+using ElementsAwoken.Content.Items.Ancient.Izaris;
+using ElementsAwoken.Content.Items.Ancient.Kirvein;
+using ElementsAwoken.Content.Items.Ancient.Krecheus;
+using ElementsAwoken.Content.Items.Ancient.Xernon;
 using ElementsAwoken.Content.Items.Elements.Desert;
 using ElementsAwoken.Content.Items.Materials;
 using System.Linq;
@@ -166,6 +171,74 @@ namespace ElementsAwoken.EASystem.EARecipeSystem
             recipe.AddIngredient(ItemID.IceBlock, 20);
             recipe.AddTile(TileID.Anvils);
             recipe.Register();
+
+            Recipe recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<LamentI>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<LamentII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<LamentIII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<LamentIV>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DesolationI>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DesolationII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DesolationIII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DesolationIV>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<AtaxiaI>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<AtaxiaII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<AtaxiaIII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<AtaxiaIV>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DisarrayI>(), 1);
+            recipegem.Register();
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DisarrayII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DisarrayIII>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
+            recipegem = Recipe.Create(ModContent.ItemType<MysticGemstone>());
+            recipegem.AddIngredient(ModContent.ItemType<DisarrayIV>(), 1);
+            recipegem.AddTile(TileID.DemonAltar);
+            recipegem.Register();
         }
     }
 }

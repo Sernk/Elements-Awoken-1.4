@@ -24,6 +24,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.breathEffectiveness = StatModifier.Default + 5f;
             player.magicCuffs = true;
             player.manaMagnet = true;
             player.manaFlower = true;

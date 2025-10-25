@@ -533,8 +533,8 @@ namespace ElementsAwoken.Content.NPCs.Bosses.CosmicObserver
         {
             if (Main.hardMode && (spawnInfo.Player.ZoneSkyHeight || spawnInfo.Player.ZoneNormalSpace))
             {
-                if (spawnInfo.Player.GetModPlayer<MyPlayer>().observerChanceTimer > 0) return 0.65f;
-                else return 0.35f;
+                if (spawnInfo.Player.GetModPlayer<MyPlayer>().observerChanceTimer > 0) return 0.5f;
+                else return 0.006f;
             }
             return 0f;
         }

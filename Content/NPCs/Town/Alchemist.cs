@@ -250,6 +250,7 @@ namespace ElementsAwoken.NPCs.Town
         public override void AddShops()
         {
             Condition IfEnabled = new(EALocalization.ShopNeme(), () => ModContent.GetInstance<Config>().alchemistPotions);
+            Condition IfEnabledFalse = new(EALocalization.ShopNeme(false), () => ModContent.GetInstance<Config>().alchemistPotions == false);
             Condition ShopName0 = new(EALocalization.ShopNeme(0), () => shopNumber == 0);
             Condition ShopName1 = new(EALocalization.ShopNeme(1), () => shopNumber == 1);
             Condition ShopName2 = new(EALocalization.ShopNeme(2), () => shopNumber == 2);
@@ -258,6 +259,7 @@ namespace ElementsAwoken.NPCs.Town
             Condition BossName2 = new(EALocalization.BossName(2), () => NPC.downedBoss2);
             Condition BossName14 = new(EALocalization.BossName(14), () => NPC.downedQueenBee);
             Condition BossName3 = new(EALocalization.BossName(3), () => NPC.downedBoss3);
+            Condition BossName8 = new(EALocalization.BossName(8), () => NPC.downedPlantBoss);
             Condition BossName4 = new(EALocalization.BossName(4), () => Main.hardMode);
             Condition AnyMechBoss = new(EALocalization.DownedMechBossAny, () => NPC.downedMechBossAny);
             Condition BossName12 = new(EALocalization.BossName(12), () => NPC.downedAncientCultist);
@@ -358,20 +360,20 @@ namespace ElementsAwoken.NPCs.Town
 
             shop.Add(new Item(ItemID.TeleportationPotion) { value = 50000 }, IfEnabled, ShopName2, AnyMechBoss);
             shop.Add(new Item(ItemID.GenderChangePotion) { value = 100000 }, IfEnabled, ShopName2);
-            shop.Add(new Item(ModContent.ItemType<ChaosPotion>()) { value = 50000 }, IfEnabled, ShopName2, BossName3);
+            shop.Add(new Item(ModContent.ItemType<ChaosPotion>()) { value = 50000 }, IfEnabled, ShopName2, BossName8);
             shop.Add(new Item(ModContent.ItemType<HavocPotion>()) { value = 100000 }, IfEnabled, ShopName2, AnyMechBoss);
             shop.Add(new Item(ModContent.ItemType<CalamityPotion>()) { value = 250000 }, IfEnabled, ShopName2, BossName11);
             #endregion
             #endregion
 
             #region Shop3
-            shop.Add(new Item(ItemID.DaybloomSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
-            shop.Add(new Item(ItemID.MoonglowSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
-            shop.Add(new Item(ItemID.BlinkrootSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
-            shop.Add(new Item(ItemID.DeathweedSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
-            shop.Add(new Item(ItemID.WaterleafSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
-            shop.Add(new Item(ItemID.ShiverthornSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
-            shop.Add(new Item(ItemID.FireblossomSeeds) { value = Item.buyPrice(0, 0, 5, 0) });
+            shop.Add(new Item(ItemID.DaybloomSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
+            shop.Add(new Item(ItemID.MoonglowSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
+            shop.Add(new Item(ItemID.BlinkrootSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
+            shop.Add(new Item(ItemID.DeathweedSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
+            shop.Add(new Item(ItemID.WaterleafSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
+            shop.Add(new Item(ItemID.ShiverthornSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
+            shop.Add(new Item(ItemID.FireblossomSeeds) { value = Item.buyPrice(0, 0, 5, 0) }, IfEnabledFalse);
 
             while (Slot < 3)
             {
@@ -379,14 +381,14 @@ namespace ElementsAwoken.NPCs.Town
                 Slot++;
             }
 
-            shop.Add(ItemID.DayBloomPlanterBox, BossName13);
-            shop.Add(ItemID.MoonglowPlanterBox, BossName14);
-            shop.Add(ItemID.BlinkrootPlanterBox, BossName1);
-            shop.Add(ItemID.CorruptPlanterBox, BossName2, WoroldEvilCo);
-            shop.Add(ItemID.CrimsonPlanterBox, BossName2, WoroldEvilCr);
-            shop.Add(ItemID.WaterleafPlanterBox, BossName3);
-            shop.Add(ItemID.ShiverthornPlanterBox, BossName3);
-            shop.Add(ItemID.FireBlossomPlanterBox, BossName4);
+            shop.Add(ItemID.DayBloomPlanterBox, BossName13, IfEnabledFalse);
+            shop.Add(ItemID.MoonglowPlanterBox, BossName14, IfEnabledFalse);
+            shop.Add(ItemID.BlinkrootPlanterBox, BossName1, IfEnabledFalse);
+            shop.Add(ItemID.CorruptPlanterBox, BossName2, WoroldEvilCo, IfEnabledFalse);
+            shop.Add(ItemID.CrimsonPlanterBox, BossName2, WoroldEvilCr, IfEnabledFalse);
+            shop.Add(ItemID.WaterleafPlanterBox, BossName3, IfEnabledFalse);
+            shop.Add(ItemID.ShiverthornPlanterBox, BossName3, IfEnabledFalse);
+            shop.Add(ItemID.FireBlossomPlanterBox, BossName4, IfEnabledFalse);
 
             shop.Add(ModContent.ItemType<AlchemistsTimer>(), MoonPhaseFull);
             #endregion

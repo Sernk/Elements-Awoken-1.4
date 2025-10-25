@@ -2682,15 +2682,15 @@ namespace ElementsAwoken.EASystem.EAPlayer
             {
                 if (Main.rand.Next(4) == 0)
                 {
-                    target.AddBuff(BuffID.OnFire, 360);
+                    target.AddBuff(BuffID.OnFire3, 360);
                 }
                 else if (Main.rand.Next(2) == 0)
                 {
-                    target.AddBuff(BuffID.OnFire, 240);
+                    target.AddBuff(BuffID.OnFire3, 240);
                 }
                 else
                 {
-                    target.AddBuff(BuffID.OnFire, 120);
+                    target.AddBuff(BuffID.OnFire3, 120);
                 }
             }
             if (venomSample || vilePower)
@@ -2717,7 +2717,7 @@ namespace ElementsAwoken.EASystem.EAPlayer
             if (frozenGauntlet)
             {
                 target.AddBuff(BuffID.Chilled, 300);
-                target.AddBuff(BuffID.Frostburn, 300);
+                target.AddBuff(BuffID.Frostburn2, 300);
             }
             if (replenishRing)
             {

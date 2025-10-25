@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.EASystem.EAPlayer;
+﻿using ElementsAwoken.Content.Items.BossDrops.TheGuardian;
+using ElementsAwoken.EASystem.EAPlayer;
 using ElementsAwoken.EAUtilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -6,12 +7,14 @@ using ReLogic.Content;
 using ReLogic.Graphics;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.UI.ResourceSets;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
+using static ElementsAwoken.EASystem.Loot.InMultipleConditionByMode;
 
 namespace ElementsAwoken.EASystem.UI
 {
@@ -180,6 +183,54 @@ namespace ElementsAwoken.EASystem.UI
                     Main.spriteBatch.Draw(arrowTex, arrowPos, source, Color.White, 0f, new Vector2(arrowTex.Width / 2, arrowHeight / 2), 1f, flip, 0f);
                 }
             }
+            if (MyWorld.awakenedMode && ModContent.GetInstance<Config>().resourceBars)
+            {
+                Texture2D backgroundTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityUI").Value;
+                Texture2D barTex = awakenedPlayer.sanity >= awakenedPlayer.sanityMax * 0.4f ? ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBar").Value : ModContent.Request<Texture2D>("ElementsAwoken/Extra/InsanityBarDistorted").Value;
+                Texture2D arrowTex = ModContent.Request<Texture2D>("ElementsAwoken/Extra/SanityArrow").Value;
+
+                Vector2 sanityBasePos;
+                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") sanityBasePos = basePosition - new Vector2(377, 6);
+                else sanityBasePos = basePosition - new Vector2(160, 12);
+                   
+                Vector2 origin = new(backgroundTex.Width / 2f, backgroundTex.Height / 2f);
+                Vector2 drawPos = sanityBasePos + new Vector2(backgroundTex.Width / 2f, backgroundTex.Height / 2f);
+
+                Main.spriteBatch.Draw(backgroundTex, drawPos, null, Color.White, 0f, origin, 1f, SpriteEffects.None, 0f);
+
+                float fillPercent = Math.Clamp((float)awakenedPlayer.sanity / awakenedPlayer.sanityMax, 0f, 1f);
+                int barWidth = (int)(barTex.Width * fillPercent);
+
+                if (awakenedPlayer.sanity >= awakenedPlayer.sanityMax * 0.4f)
+                {
+                    Rectangle dest = new Rectangle((int)drawPos.X - barTex.Width / 2 + 11, (int)drawPos.Y, barWidth, barTex.Height);
+                    Rectangle src = new Rectangle(0, 0, barWidth, barTex.Height);
+                    Main.spriteBatch.Draw(barTex, dest, src, Color.White, 0f, new Vector2(0, barTex.Height / 2f), SpriteEffects.None, 0f);
+                }
+                else
+                {
+                    int barHeight = 28;
+                    Rectangle src = new Rectangle(0, barHeight * awakenedPlayer.sanityGlitchFrame, barWidth, barHeight);
+                    Rectangle dest = new Rectangle((int)drawPos.X - barTex.Width / 2 + 11, (int)drawPos.Y, barWidth, barHeight);
+                    Main.spriteBatch.Draw(barTex, dest, src, Color.White, 0f, new Vector2(0, barHeight / 2f), SpriteEffects.None, 0f);
+                }
+
+                string sanityText = $"{EALocalization.Sanity}: {awakenedPlayer.sanity}/{awakenedPlayer.sanityMax}";
+                Vector2 textSize = font.MeasureString(sanityText);
+                Vector2 textPos = drawPos - new Vector2(textSize.X / 2f, backgroundTex.Height / 2f + 18f);
+                Main.spriteBatch.DrawString(font, sanityText, textPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
+
+                if (awakenedPlayer.sanityRegen != 0)
+                {
+                    int arrowFrame = awakenedPlayer.sanityArrowFrame;
+                    int arrowHeight = 26;
+                    Rectangle source = new Rectangle(0, arrowHeight * arrowFrame, arrowTex.Width, arrowHeight);
+                    SpriteEffects flip = awakenedPlayer.sanityRegen < 0 ? SpriteEffects.None : SpriteEffects.FlipVertically;
+
+                    Vector2 arrowPos = drawPos + new Vector2(backgroundTex.Width / 2f + 12, 0f);
+                    Main.spriteBatch.Draw(arrowTex, arrowPos, source, Color.White, 0f, new Vector2(arrowTex.Width / 2f, arrowHeight / 2f), 1f, flip, 0f);
+                }
+            }
             // === Отображение Energy ===
             if (energyPlayer.maxEnergy >= 1 && ModContent.GetInstance<Config>().resourceBars == false)
             {
@@ -233,6 +284,30 @@ namespace ElementsAwoken.EASystem.UI
                     string tooltip = $"{energyPlayer.energy}/{energyPlayer.maxEnergy}";
                     ChatManager.DrawColorCodedStringWithShadow(Main.spriteBatch, font, tooltip, new Vector2(Main.mouseX + 17, Main.mouseY + 17), new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor), 0f, Vector2.Zero, Vector2.One, -1f, 2f);
                 }
+            }
+            if (energyPlayer.maxEnergy >= 1 && ModContent.GetInstance<Config>().resourceBars)
+            {
+                Texture2D energyBack = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyUI").Value;
+                Texture2D energyFill = ModContent.Request<Texture2D>("ElementsAwoken/Extra/EnergyBar").Value;
+
+                float fillPercent = energyPlayer.energy / (float)energyPlayer.maxEnergy;
+                fillPercent = Math.Clamp(fillPercent, 0f, 1f);
+
+                Vector2 energyBasePos;
+                if (displaySet.NameKey == "HorizontalBars" || displaySet.NameKey == "HorizontalBarsWithFullText" || displaySet.NameKey == "HorizontalBarsWithText") energyBasePos = basePosition - new Vector2(640, 7);
+                else energyBasePos = basePosition - new Vector2(400, 12);
+
+                Rectangle backRect = new Rectangle((int)energyBasePos.X, (int)energyBasePos.Y, energyBack.Width, energyBack.Height);
+                Rectangle fillRect = new Rectangle(backRect.X, backRect.Y, (int)(energyFill.Width * fillPercent), energyFill.Height);
+
+                Main.spriteBatch.Draw(energyBack, backRect, Color.White);
+                Main.spriteBatch.Draw(energyFill, new Vector2(backRect.X + 24, backRect.Y), new Rectangle(0, 0, fillRect.Width, fillRect.Height), Color.White);
+
+                string energyText = $"{EALocalization.Energy}: {energyPlayer.energy}/{energyPlayer.maxEnergy}";
+                Vector2 textSize = font.MeasureString(energyText);
+                Vector2 textPos = energyBasePos + new Vector2((energyBack.Width - textSize.X) / 2f, -20f);
+
+                Main.spriteBatch.DrawString(font, energyText, textPos, new Color(Main.mouseTextColor, Main.mouseTextColor, Main.mouseTextColor));
             }
         }
         private bool CompareAssets(Asset<Texture2D> currentAsset, string compareAssetPath)

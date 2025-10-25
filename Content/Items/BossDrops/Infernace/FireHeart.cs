@@ -19,6 +19,7 @@ namespace ElementsAwoken.Content.Items.BossDrops.Infernace
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.lavaRose = true;
             Lighting.AddLight((int)(player.Center.X / 16f), (int)(player.Center.Y / 16f), 0.7f, 0.2f, 0.2f);
 
             if (Main.rand.NextBool()) Dust.NewDust(player.position, player.width, player.height, 6, 0, 0, 0, default(Color));

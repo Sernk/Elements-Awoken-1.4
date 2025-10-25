@@ -8869,6 +8869,7 @@ Projectiles: {
 	ToadTongue.DisplayName: Язык гигажабы
 	ToadTongueTip.DisplayName: Кончик языка гигажабы
 	SuperStinkPotion.DisplayName: Супервонючее зелье
+	// RocetI.DisplayName: Rocet I
 }
 
 Configs: {

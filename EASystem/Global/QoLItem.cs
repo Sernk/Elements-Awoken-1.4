@@ -1,4 +1,5 @@
-﻿using ElementsAwoken.EASystem.EAPlayer;
+﻿using ElementsAwoken.Content.Items.Ancient;
+using ElementsAwoken.EASystem.EAPlayer;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
@@ -34,6 +35,7 @@ namespace ElementsAwoken.EASystem.Global
             }
             static bool ТewКequirements(On_ShimmerTransforms.orig_IsItemTransformLocked orig, int type)
             {
+                if (type == ModContent.ItemType<MysticGemstone>()) return NPC.downedBoss3;
                 if (type == ItemID.RodofDiscord) return !MyWorld.downedAzana;
                 else return orig(type);
             }

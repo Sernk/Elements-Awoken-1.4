@@ -43,6 +43,7 @@ namespace ElementsAwoken.Content.Items.Artifacts
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             MyPlayer modPlayer = player.GetModPlayer<MyPlayer>();
+            player.breathEffectiveness = StatModifier.Default + 5f;
             player.pickSpeed -= 0.3f;
             player.endurance += 0.05f;
             player.jumpSpeedBoost += 2.0f;

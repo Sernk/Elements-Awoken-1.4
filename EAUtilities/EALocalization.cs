@@ -472,9 +472,10 @@ namespace ElementsAwoken.EAUtilities
                 _ => ""
             };
         }
-        public static string ShopNeme()
+        public static string ShopNeme(bool IsTrue = true)
         {
-            return string.Format(IfEnbleShop, Language.GetTextValue("Mods.ElementsAwoken.Config.AlchemistPotionShop"));
+            if(IsTrue) return string.Format(IfEnbleShop, Language.GetTextValue("Mods.ElementsAwoken.Config.AlchemistPotionShop"));
+            else return "";
         }
         public static string ShopNeme(int a)
         {
