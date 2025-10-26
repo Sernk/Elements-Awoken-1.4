@@ -922,10 +922,7 @@ Items: {
 
 	LamentI: {
 		DisplayName: 哀悼 I
-		Tooltip:
-			'''
-			发射一颗哀悼魔球
-			'''
+		Tooltip: 发射一颗哀悼魔球
 	}
 
 	LamentII: {
@@ -1455,10 +1452,7 @@ Items: {
 
 	PurgeRifle: {
 		DisplayName: 混沌加速器
-		Tooltip:
-			'''
-			发射一道混沌高能粒子射流，穿透多个敌人并引发爆炸
-			'''
+		Tooltip: 发射一道混沌高能粒子射流，穿透多个敌人并引发爆炸
 	}
 
 	RingOfChaos: {
@@ -1651,10 +1645,7 @@ Items: {
 
 	Ultramarine: {
 		DisplayName: 群青
-		Tooltip:
-			'''
-			发射一道青色射线，在射线途中会落下数道垂直的分裂射线
-			'''
+		Tooltip: 发射一道青色射线，在射线途中会落下数道垂直的分裂射线
 	}
 
 	VioletEdge: {
