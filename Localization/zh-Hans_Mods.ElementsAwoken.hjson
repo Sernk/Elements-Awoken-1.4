@@ -922,22 +922,38 @@ Items: {
 
 	LamentI: {
 		DisplayName: 哀悼 I
-		Tooltip: ""
+		Tooltip:
+			'''
+			发射一颗哀悼魔球
+			'''
 	}
 
 	LamentII: {
 		DisplayName: 哀悼 II
-		Tooltip: ""
+		Tooltip:
+			'''
+			连续发射两颗哀悼魔球
+			接触敌人后产生爆炸
+			'''
 	}
 
 	LamentIII: {
 		DisplayName: 哀悼 III
-		Tooltip: ""
+		Tooltip:
+			'''
+			以极快的速度发射连续的哀悼魔球
+			20%概率额外发射哀悼冲击波或者哀悼射线
+			'''
 	}
 
 	LamentIV: {
 		DisplayName: 哀悼 IV
-		Tooltip: ""
+		Tooltip:
+			'''
+			以极快的速度发射连续的哀悼魔球
+			20%概率额外发射哀悼冲击波
+			33%概率额外发射一道哀悼超级穿刺
+			'''
 	}
 
 	AxolotlMask: {
@@ -1332,7 +1348,7 @@ Items: {
 
 	TheWave: {
 		DisplayName: 满溢
-		Tooltip: ""
+		Tooltip: 挥舞发射两到三颗泡泡
 	}
 
 	Varee: {
@@ -1411,7 +1427,11 @@ Items: {
 
 	GleamOfAnnhialation: {
 		DisplayName: 剧毒微光
-		Tooltip: ""
+		Tooltip:
+			'''
+			发射阿扎娜魔球
+			命中敌人后会往八个方向分裂出混乱冲击波
+			'''
 	}
 
 	InfectionHeart: {
@@ -1425,13 +1445,20 @@ Items: {
 	}
 
 	Pandemonium: {
-		DisplayName: 喧嚣
-		Tooltip: ""
+		DisplayName: 群魔殿
+		Tooltip:
+			'''
+			挥舞发射混沌魔球
+			命中敌人后分裂出大量混沌穿刺
+			'''
 	}
 
 	PurgeRifle: {
 		DisplayName: 混沌加速器
-		Tooltip: ""
+		Tooltip:
+			'''
+			发射一道混沌高能粒子射流，穿透多个敌人并引发爆炸
+			'''
 	}
 
 	RingOfChaos: {
@@ -1489,7 +1516,11 @@ Items: {
 
 	EnergyFork: {
 		DisplayName: 能量叉
-		Tooltip: ""
+		Tooltip:
+			'''
+			投掷出一枚受重力影响的能量叉
+			命中敌人后生成一个上下穿刺移动的能量复制体
+			'''
 	}
 
 	OrionsBelt: {
@@ -1498,8 +1529,12 @@ Items: {
 	}
 
 	PlanetaryWave: {
-		DisplayName: 行星波
-		Tooltip: ""
+		DisplayName: 行星冲击波
+		Tooltip:
+			'''
+			在玩家头顶生成一个行星传送门
+			传送门会发射一连串的行星尖刺
+			'''
 	}
 
 	CosmicalusVisor: {
@@ -1587,7 +1622,11 @@ Items: {
 
 	Magmarox: {
 		DisplayName: 熔岩石
-		Tooltip: ""
+		Tooltip:
+			'''
+			挥舞发射一颗直线飞行的岩石球
+			命中敌人后迸发出大量熔岩
+			'''
 	}
 
 	ObsidiousTrophy: {
@@ -1612,12 +1651,15 @@ Items: {
 
 	Ultramarine: {
 		DisplayName: 群青
-		Tooltip: ""
+		Tooltip:
+			'''
+			发射一道青色射线，在射线途中会落下数道垂直的分裂射线
+			'''
 	}
 
 	VioletEdge: {
 		DisplayName: 紫罗兰之刃
-		Tooltip: ""
+		Tooltip: 发射紫罗兰魔球
 	}
 
 	ObsidiousBag: {
@@ -8108,9 +8150,9 @@ Projectiles: {
 	AquaticArrow.DisplayName: 水生箭
 	AquaticArrow2.DisplayName: 水生箭
 	Watershot.DisplayName: 水枪
-	AnarchyLaser.DisplayName: 无政府激光
-	AnarchyWave.DisplayName: 无政府波
-	AnarchyP.DisplayName: 无政府
+	AnarchyLaser.DisplayName: 混乱激光
+	AnarchyWave.DisplayName: 混乱冲击波
+	AnarchyP.DisplayName: 混乱
 	InfectionMouthMinion.DisplayName: 饥饿
 	ExplosionHostile.DisplayName: 爆炸
 	OutbreakDart.DisplayName: 爆发飞镖
