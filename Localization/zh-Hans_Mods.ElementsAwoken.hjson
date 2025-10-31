@@ -1,12 +1,12 @@
-﻿Items: {
+Items: {
 	DeathwishFlame: {
 		Tooltip: ""
-		DisplayName: 死亡之愿焰
+		DisplayName: 死志之焰
 	}
 
 	Deathwish: {
 		Tooltip: ""
-		DisplayName: 死亡之愿
+		DisplayName: 死志
 	}
 
 	DemonicFleshClump: {
@@ -129,28 +129,28 @@
 	}
 
 	KawaiiOrangesMask: {
-		DisplayName: 那颗多汁橙子的面具
+		DisplayName: ThatOneJuicyOrange的面具
 		Tooltip: 好可爱
 	}
 
 	OrangesBreastplate: {
-		DisplayName: 那颗多汁橙子的胸甲
+		DisplayName: ThatOneJuicyOrange的胸甲
 		Tooltip: ""
 	}
 
 	OrangesLeggings: {
-		DisplayName: 那颗多汁橙子的护胫
+		DisplayName: ThatOneJuicyOrange的护胫
 		Tooltip: ""
 	}
 
 	OrangesMask: {
-		DisplayName: 那颗多汁橙子的面具
+		DisplayName: ThatOneJuicyOrange的面具
 		Tooltip: 那么多汁
 	}
 
 	VolcanicStone: {
 		DisplayName: 火山岩
-		Tooltip: 这些岩石似乎在不断地碎裂并燃起火焰
+		Tooltip: 这些岩石在不断地碎裂并迸发出火焰
 	}
 
 	ElementalCapsule: {
@@ -172,7 +172,7 @@
 	}
 
 	VoidbloodHeart: {
-		DisplayName: 虚空之血心脏
+		DisplayName: 幽血之心
 		Tooltip:
 			'''
 			禁用所有自然生命再生
@@ -821,22 +821,22 @@
 	}
 
 	DisarrayI: {
-		DisplayName: 混乱 I
+		DisplayName: 无序 I
 		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
 	}
 
 	DisarrayII: {
-		DisplayName: 混乱 II
+		DisplayName: 无序 II
 		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
 	}
 
 	DisarrayIII: {
-		DisplayName: 混乱 III
+		DisplayName: 无序 III
 		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
 	}
 
 	DisarrayIV: {
-		DisplayName: 混乱 IV
+		DisplayName: 无序 IV
 		Tooltip: 召唤一个水晶实体保护你。每个水晶实体占用2个仆从位
 	}
 
@@ -887,12 +887,12 @@
 	}
 
 	AtaxiaI: {
-		DisplayName: 共济失调 I
+		DisplayName: 失协 I
 		Tooltip: 每第五次攻击释放出滞留的水晶刀刃
 	}
 
 	AtaxiaII: {
-		DisplayName: 共济失调 II
+		DisplayName: 失协 II
 		Tooltip:
 			'''
 			随机发射滞留的水晶刀刃
@@ -901,7 +901,7 @@
 	}
 
 	AtaxiaIII: {
-		DisplayName: 共济失调 III
+		DisplayName: 失协 III
 		Tooltip:
 			'''
 			随机发射滞留的水晶刀刃
@@ -911,7 +911,7 @@
 	}
 
 	AtaxiaIV: {
-		DisplayName: 共济失调 IV
+		DisplayName: 失协 IV
 		Tooltip:
 			'''
 			随机发射滞留的水晶刀刃
@@ -922,22 +922,35 @@
 
 	LamentI: {
 		DisplayName: 哀悼 I
-		Tooltip: ""
+		Tooltip: 发射一颗哀悼魔球
 	}
 
 	LamentII: {
 		DisplayName: 哀悼 II
-		Tooltip: ""
+		Tooltip:
+			'''
+			连续发射两颗哀悼魔球
+			接触敌人后产生爆炸
+			'''
 	}
 
 	LamentIII: {
 		DisplayName: 哀悼 III
-		Tooltip: ""
+		Tooltip:
+			'''
+			以极快的速度发射连续的哀悼魔球
+			20%概率额外发射哀悼冲击波或者哀悼射线
+			'''
 	}
 
 	LamentIV: {
 		DisplayName: 哀悼 IV
-		Tooltip: ""
+		Tooltip:
+			'''
+			以极快的速度发射连续的哀悼魔球
+			20%概率额外发射哀悼冲击波
+			33%概率额外发射一道哀悼超级穿刺
+			'''
 	}
 
 	AxolotlMask: {
@@ -1332,7 +1345,7 @@
 
 	TheWave: {
 		DisplayName: 满溢
-		Tooltip: ""
+		Tooltip: 挥舞发射两到三颗泡泡
 	}
 
 	Varee: {
@@ -1411,7 +1424,11 @@
 
 	GleamOfAnnhialation: {
 		DisplayName: 剧毒微光
-		Tooltip: ""
+		Tooltip:
+			'''
+			发射阿扎娜魔球
+			命中敌人后会往八个方向分裂出混乱冲击波
+			'''
 	}
 
 	InfectionHeart: {
@@ -1425,13 +1442,17 @@
 	}
 
 	Pandemonium: {
-		DisplayName: 喧嚣
-		Tooltip: ""
+		DisplayName: 群魔殿
+		Tooltip:
+			'''
+			挥舞发射混沌魔球
+			命中敌人后分裂出大量混沌穿刺
+			'''
 	}
 
 	PurgeRifle: {
 		DisplayName: 混沌加速器
-		Tooltip: ""
+		Tooltip: 发射一道混沌高能粒子射流，穿透多个敌人并引发爆炸
 	}
 
 	RingOfChaos: {
@@ -1489,7 +1510,11 @@
 
 	EnergyFork: {
 		DisplayName: 能量叉
-		Tooltip: ""
+		Tooltip:
+			'''
+			投掷出一枚受重力影响的能量叉
+			命中敌人后生成一个上下穿刺移动的能量复制体
+			'''
 	}
 
 	OrionsBelt: {
@@ -1498,8 +1523,12 @@
 	}
 
 	PlanetaryWave: {
-		DisplayName: 行星波
-		Tooltip: ""
+		DisplayName: 行星冲击波
+		Tooltip:
+			'''
+			在玩家头顶生成一个行星传送门
+			传送门会发射一连串的行星尖刺
+			'''
 	}
 
 	CosmicalusVisor: {
@@ -1587,7 +1616,11 @@
 
 	Magmarox: {
 		DisplayName: 熔岩石
-		Tooltip: ""
+		Tooltip:
+			'''
+			挥舞发射一颗直线飞行的岩石球
+			命中敌人后迸发出大量熔岩
+			'''
 	}
 
 	ObsidiousTrophy: {
@@ -1612,12 +1645,12 @@
 
 	Ultramarine: {
 		DisplayName: 群青
-		Tooltip: ""
+		Tooltip: 发射一道青色射线，在射线途中会落下数道垂直的分裂射线
 	}
 
 	VioletEdge: {
 		DisplayName: 紫罗兰之刃
-		Tooltip: ""
+		Tooltip: 发射紫罗兰魔球
 	}
 
 	ObsidiousBag: {
@@ -2013,7 +2046,7 @@
 	}
 
 	ChitinStaff: {
-		DisplayName: 母亲的魔法
+		DisplayName: 蝎母之力
 		Tooltip: 召唤一只蝎子为你作战
 	}
 
@@ -2028,7 +2061,7 @@
 	}
 
 	Stinger: {
-		DisplayName: 受折磨者权杖
+		DisplayName: 受难者之杖
 		Tooltip: ""
 	}
 
@@ -2133,7 +2166,7 @@
 	}
 
 	BleedingHeart: {
-		DisplayName: 流血之心
+		DisplayName: 浴血之心
 		Tooltip:
 			'''
 			冲刺时释放追踪投射物
@@ -2351,7 +2384,7 @@
 
 	BrokenToys: {
 		Tooltip: 对脚最有效
-		DisplayName: 破碎的玩具
+		DisplayName: 积木
 	}
 
 	ToySlimeSummon: {
@@ -2425,7 +2458,7 @@
 	}
 
 	Nihongo: {
-		DisplayName: 日本语
+		DisplayName: 霓虹长矛
 		Tooltip: 日本的古老长矛
 	}
 
@@ -2460,7 +2493,7 @@
 	}
 
 	PoseidonsTrident: {
-		DisplayName: 波塞冬的三叉戟
+		DisplayName: 海神三叉戟
 		Tooltip: ""
 	}
 
@@ -2504,7 +2537,7 @@
 	}
 
 	CalamityPotion: {
-		DisplayName: 灾厄药水
+		DisplayName: 灾难药水
 		Tooltip: 3分钟内生成率增加12.5倍
 	}
 
@@ -2806,12 +2839,12 @@
 			近战攻击使敌人着火
 			The Buildmonger的捐助者物品
 			'''
-		DisplayName: 锻造面具
+		DisplayName: 锻铁面具
 	}
 
 	ForgedIronBar: {
 		Tooltip: ""
-		DisplayName: 锻造铁锭
+		DisplayName: 锻铁锭
 	}
 
 	ForgedGreaves: {
@@ -2820,7 +2853,7 @@
 			护甲穿透增加6
 			The Buildmonger的捐助者物品
 			'''
-		DisplayName: 锻造护胫
+		DisplayName: 锻铁护胫
 	}
 
 	ForgedBreastplate: {
@@ -2829,7 +2862,7 @@
 			近战和移动速度增加10%
 			The Buildmonger的捐助者物品
 			'''
-		DisplayName: 锻造胸甲
+		DisplayName: 锻铁胸甲
 	}
 
 	BioReactor: {
@@ -2914,7 +2947,7 @@
 	}
 
 	EoitesBlade: {
-		DisplayName: 村正波
+		DisplayName: Eoites之刃
 		Tooltip:
 			'''
 			当有疑问时，追求速度 - 宅男主播
@@ -8108,9 +8141,9 @@ Projectiles: {
 	AquaticArrow.DisplayName: 水生箭
 	AquaticArrow2.DisplayName: 水生箭
 	Watershot.DisplayName: 水枪
-	AnarchyLaser.DisplayName: 无政府激光
-	AnarchyWave.DisplayName: 无政府波
-	AnarchyP.DisplayName: 无政府
+	AnarchyLaser.DisplayName: 混乱激光
+	AnarchyWave.DisplayName: 混乱冲击波
+	AnarchyP.DisplayName: 混乱
 	InfectionMouthMinion.DisplayName: 饥饿
 	ExplosionHostile.DisplayName: 爆炸
 	OutbreakDart.DisplayName: 爆发飞镖
@@ -8808,6 +8841,7 @@ Projectiles: {
 	ToadTongue.DisplayName: 巨型蟾蜍
 	ToadTongueTip.DisplayName: 巨型蟾蜍
 	SuperStinkPotion.DisplayName: 超级臭气药水
+	// RocetI.DisplayName: Rocet I
 }
 
 Configs: {
