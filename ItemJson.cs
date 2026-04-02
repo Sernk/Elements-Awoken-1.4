@@ -5,7 +5,6 @@ using System.IO;
 namespace ElementsAwoken;
 
 /// <summary>
-/// Thanks to skyzephire for filling out the file
 /// </summary>
 public class ItemJson
 {
