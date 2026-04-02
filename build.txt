@@ -1,5 +1,5 @@
 displayName = Elements Awoken
-author = ThatOneJuicyOrange_, Aeris, skyzephire 
+author = ThatOneJuicyOrange_, Aeris
 version = 1.3.13.14
 weakReferences = CalamityMod,RecipeBrowser
 modReferences = Luminance
