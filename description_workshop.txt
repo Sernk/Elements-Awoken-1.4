@@ -21,5 +21,4 @@ Be sure to download the 'Elements Awoken Music' addon if you want the mods music
 [list]
 [*]ThatOneJuicyOrange and the original Elements Awoken Development Team - making the original mod.
 [*]Aeris - making the port itself and everything code-related.
-[*]skyzephire - reaching out to the dev team asking if an unofficial port is allowed in the first place, making the Russian translation and fixing the English localization, playtesting, writing all bestiary entries for the mod's entities, moving the mod's wiki from Fandom to the Terraria Mods Wiki on wiki.gg and few smaller miscellaneous things.
 [/list]
